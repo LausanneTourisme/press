@@ -1,38 +1,111 @@
-# sv
+# Press Kit <small>(running on svelte 😎)</small>
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Prerequisites
 
-## Creating a project
+### Node
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+This project follow the availabilities of [Vercel](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions).
+Please install [`nvm`](https://github.com/nvm-sh/nvm) to manage your Node versions:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-## Building
+Then, the `package.json` file handles automatic node version.
 
-To create a production version of your app:
+### Bun
+
+This project uses [`bun`](https://bun.sh/), simply because it's super fast. Install it with:
+```bash
+curl -fsSL https://bun.sh/install | bash
+# or
+npm install -g bun
+```
+
+> Simply replace your usual `npm <command>` with `bun <command>`, it will work most of the time.
+
+### Doppler
+
+This project stores secrets in `doppler`, but doesn't require a login. Instead, you should download an `.env` file directly in the dashboard and put it in the root of this project.
+
+## Deploy
+
+Run:
+```bash
+bun run deploy
+```
+
+And answer the prompts.
+
+Alternatively, you may run:
+```bash
+bun run deploy --staging # to directly create a staging release
+```
+then
+```bash
+bun run deploy --main # to directly deploy to main
+```
+
+> Please allow a deploy time of 5 minutes. Vercel usually wants to build the <develop> branch but the `vercel-deploy.sh` script in this project prevents the build.
+
+### Production environment
+The following URL points to the `main` branch: [https://press.lausanne-tourisme.ch](https://press.lausanne-tourisme.ch)
+
+### Staging environment
+The following URL points to the `staging` branch: [https://press.stage.lausanne-tourisme.ch](https://press.stage.lausanne-tourisme.ch)
+
+## Install
+
+Clone this repository:
 
 ```bash
-npm run build
+git clone git@github.com:LausanneTourisme/press press && cd press
 ```
 
-You can preview the production build with `npm run preview`.
+Install the dependencies:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+bun i
+```
+
+Run the project using:
+```bash
+bun run dev
+```
+
+Happy development!
+
+## Managing translations
+
+This project uses the `svelte-i18n` package to manage locales and translations.
+In order for you to avoid adding keys in every language manually, a convenient script has been defined in `package.json`:
+
+```bash
+bun run translations:scan
+```
+
+This script will scan all `html`, `ts`, `js`, `svelte` files and add translations keys if they don't exist already in every language.
+
+Run this script anytime you add, modify, or delete keys using the `{$_('key')}` syntax in `svelte` files.
+
+If a key was changed or deleted, those keys will also be deleted from every locale file.
+
+Alternatively, you may also use the `translations:sync` command to synchronize translations keys from the `fr.json` locale file to the other languages.
+
+## Managing medias
+
+A local "registry" file, located in `app/cache`, lists all the files that have been uploaded to Cloudinary. This file prevents re-upload and easy diffing between new files and existing ones.
+
+However, if you'd like to rename a file, bear in mind that you should edit the registry file, as well as modifying files on [Cloudinary](https://www.cloudinary.com/console).
+
+Alternatively you may delete the old file, and add a new one with a different name.
+
+> Cloudinary has no `invalidate` link so the old file may still reside in their cache.
+
+## Development mantra
+
+### Styling
+
+This project uses `Tailwind`, the `Typography` plugin and `Daisy UI`. So, by default, you should always develop for mobile before testing a bigger resolution.
+
+In your `svelte` files, you may be tempted to use logic for your `CSS` class, but bear in mind that `tailwind` only looks for fully-qualified classes for them to be recognized.
