@@ -1,27 +1,39 @@
 <script lang="ts">
   import Button from '$lib/components/Button.svelte';
-  import { goto } from '$app/navigation';
+  import Image from '$lib/components/Image.svelte';
+  import type { Locale } from '$lib/i18n';
+  import { twMerge } from 'tailwind-merge';
 
-  export let hide: boolean = false;
+  type NavProps = {
+    hide?: boolean;
+    class?: string;
+  };
 
+  const { hide = false, class: additionalClass }: NavProps = $props();
+
+  const locales: Locale[] = ['en', 'fr', 'de'];
+  const locale: Locale = 'en';
+  const style = twMerge(
+    `sticky left-0 top-0 z-[11] h-[60px] w-full bg-white shadow-lg transition-all xl:h-[120px] ${hide ? 'hidden' : ''}`,
+    additionalClass
+  );
 </script>
 
-<nav
-  class="w-full h-[60px] xl:h-[120px] shadow-lg bg-white sticky top-0 left-0 z-[11] transition-all ${hide ? 'hidden' : ''}">
-  <div class="flex justify-between items-center h-full">
-    <Button nofx="{true}" border="{false}" href="/" tag="a">
-      <!--{#if $locale === 'fr'}-->
-      <!--  <Image src="/images/LT_logo_medias_fr.svg" alt="Lausanne Capitale Olympique"-->
-      <!--         class="w-[117px] xl:w-[170px] 2xl:w-[230px] max-w-[230px]" />-->
-      <!--{:else}-->
-      <!--  <Image src="/images/LT_logo_medias_en.svg" alt="Lausanne Capitale Olympique"-->
-      <!--         class="w-[117px] xl:w-[170px] 2xl:w-[230px] max-w-[230px]" />-->
-      <!--{/if}-->
-      <span>home</span>
+<nav class={style}>
+  <div class="flex h-full items-center justify-between">
+    <Button
+      nofx={true}
+      border={false}
+      href="/"
+      class="invertable flex max-w-[230px]  pl-[15px]"
+      tag="a"
+    >
+      <Image
+        src="/images/logo_{locale === 'fr' ? 'fr' : 'en'}.svg"
+        alt="Lausanne Capitale Olympique"
+        class="w-[117px] max-w-[230px] xl:w-[170px] 2xl:w-[230px]"
+      />
     </Button>
-    <Button nofx="{true}" border="{false}" href="/about" onclick={() => goto('/about')}>
-      <span>lol</span>
-    </Button>
-    <a href="/sverdle"> mdr </a>
+    <div class="ml-6 hidden h-full flex-grow items-center justify-start xl:flex"></div>
   </div>
 </nav>
