@@ -1,12 +1,12 @@
 <script lang="ts">
-  import Header from './Header.svelte';
   import '../app.css';
+  import Nav from '$lib/components/Nav.svelte';
 
   let { children } = $props();
 </script>
 
 <div class="app">
-  <Header />
+  <Nav />
 
   <main>
     {@render children()}
