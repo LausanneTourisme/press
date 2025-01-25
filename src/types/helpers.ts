@@ -1,0 +1,1 @@
+export type onclick = (event: Event) => unknown;
