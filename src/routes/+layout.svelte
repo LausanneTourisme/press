@@ -1,6 +1,6 @@
 <script lang="ts">
-  import '../app.css';
   import Nav from '$lib/components/Nav.svelte';
+  import '../app.css';
 
   let { children } = $props();
 </script>
@@ -19,7 +19,18 @@
   </footer>
 </div>
 
-<style>
+<style lang="postcss">
+  :global(.invert-colours .invertable) {
+    filter: invert(100%);
+  }
+
+  :global(.invert-colours .items-list) {
+  }
+
+  :global(.invert-colours .items-list-element) {
+    color: #1e1e1f;
+  }
+
   .app {
     display: flex;
     flex-direction: column;
