@@ -1,6 +1,6 @@
 import { getLocaleFromNavigator, getLocaleFromPathname, getLocaleFromQueryString, init, register } from 'svelte-i18n';
-import type { Locale } from '$types/I18n';
 
+export type Locale = 'fr' | 'en' | 'de';
 export const defaultLocale: Locale = 'fr';
 export const supportedLocales: Array<Locale> = ['fr', 'en', 'de'];
 

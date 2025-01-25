@@ -1,5 +1,4 @@
-import { supportedLocales } from '$lib/i18n/index';
-import type { Locale } from '$types/I18n';
+import { supportedLocales, type Locale } from '$lib/i18n/index';
 
 interface Transform {
   [key: string]: string;
