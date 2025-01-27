@@ -3,7 +3,7 @@
   import type { Snippet } from 'svelte';
   import { preventDefault } from '$lib/helpers/events';
   import { blankable } from '$lib/helpers';
-  
+
   type ButtonProps = {
     tag?: 'a' | 'button';
     negative?: boolean;
@@ -17,7 +17,7 @@
     children: Snippet;
     prefix?: Snippet;
     suffix?: Snippet;
-  }
+  };
 
   let {
     tag = 'button',
