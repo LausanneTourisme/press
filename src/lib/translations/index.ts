@@ -78,3 +78,7 @@ export const isValidLocale = (locale: Locale | string): boolean => {
   // Use default locale if current locale is not supported
   return supportedLocales.includes(locale.toLowerCase())
 }
+
+export const isLocale = (param: string): param is Locale => {
+  return supportedLocales.includes(param as Locale);
+};
