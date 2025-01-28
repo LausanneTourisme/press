@@ -1,13 +1,14 @@
 <script lang="ts">
   import { page } from "$app/state";
-  import { locale, locales } from "$lib/translations";
+  import { locale, locales, t, translations } from "$lib/translations";
+  import { RouteSlug } from "$enums";
 
-  console.log({locale: $locale, locales: $locales, page: page.data})
+
 </script>
 
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+  <title>{$t(`route.type.${RouteSlug.Home}.title`)}</title>
+  <meta name="description" content="" />
 </svelte:head>
 
 <div class="text-column">
