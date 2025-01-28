@@ -2,7 +2,7 @@
   import Nav from '$lib/components/Nav.svelte';
   import { loadTranslations, locale } from '$lib/translations';
   import { onMount } from 'svelte';
-  import '../app.css';
+  import '../app.pcss';
 
   let { children } = $props();
 
@@ -26,34 +26,6 @@
 </div>
 
 <style lang="postcss">
-  :global(.invert-colours .invertable) {
-    filter: invert(100%);
-  }
-
-  :global(.invert-colours .items-list) {
-  }
-
-  :global(.invert-colours .items-list-element) {
-    color: #1e1e1f;
-  }
-
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
   footer {
     display: flex;
     flex-direction: column;

@@ -35,11 +35,11 @@ export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
     }
 
     const lang: undefined | Locale = getUrlLocale(pathname);
-    if (!lang) error(404)
 
-    await setLocale(lang);
-    await loadTranslations(lang, pathname); // keep this just before the `return`
-    // await loadTranslations(locale); // to enable all translations
+    // undefined cased covered by src/params/locale.ts
+    await setLocale(lang ?? defaultLocale);
+    await loadTranslations(lang ?? defaultLocale);
+    await loadTranslations(lang ?? defaultLocale, pathname);
     
     return {
         i18n: { locale: lang, route: pathname },
