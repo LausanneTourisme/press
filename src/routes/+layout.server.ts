@@ -1,48 +1,48 @@
-import { defaultLocale, loadTranslations, locales, translations } from '$lib/translations';
-import { redirect, type ServerLoad } from '@sveltejs/kit';
+import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, translations, type Locale } from '$lib/translations';
+import { error, redirect, type ServerLoad } from '@sveltejs/kit';
 
-export const load: ServerLoad = async ({ url, cookies, request }) => {
+const getNavLocale = (request: Request): Locale => {
+    // If no cookie is set, try to determine the locale from the 'Accept-Language' header
+    const acceptLanguageHeader = request.headers.get('accept-language') || '';
+    // Attempt to match the language code with optional region code
+    let match = acceptLanguageHeader.match(/^[a-z]+(?=[-_])/i);
+
+    // If no match is found, try to match just the language code
+    if (!match) {
+        match = acceptLanguageHeader.match(/^[a-z]+/i);
+    }
+
+    if (match && isValidLocale(match[0])) return match[0].toLowerCase() as Locale;
+
+    // If a match is found, use it as the locale, otherwise fall back to the default locale
+    return defaultLocale;
+}
+
+const getUrlLocale = (pathname: string): undefined | Locale => {
+    let match = pathname.match(/^\/[a-z]{2}/i);
+    if (!match) return undefined;
+
+    return isValidLocale(match[0].replace('/', '')) ? match[0].replace('/', '') as Locale : undefined;
+}
+
+
+
+export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
     const { pathname } = url;
-
-
-    // Try to get the locale from cookie
-    let locale = (cookies.get('lang') || '').toLowerCase();
-
-    console.log({ locale });
-    // Get user preferred locale
-    if (!locale) {
-        // If no cookie is set, try to determine the locale from the 'Accept-Language' header
-        const acceptLanguageHeader = request.headers.get('accept-language') || '';
-        // Attempt to match the language code with optional region code
-        let match = acceptLanguageHeader.match(/^[a-z]+(?=[-_])/i);
-
-        // If no match is found, try to match just the language code
-        if (!match) {
-            match = acceptLanguageHeader.match(/^[a-z]+/i);
-        }
-
-        // If a match is found, use it as the locale, otherwise fall back to the default locale
-        locale = match ? match[0].toLowerCase() : defaultLocale;
+    // console.log(locals)
+    if (pathname === '/') {
+        redirect(302, `/${getNavLocale(request)}`)
     }
 
-    console.log({ locale })
-    // Get defined locales
-    const supportedLocales = locales.get().map((l) => l.toLowerCase());
+    const lang: undefined | Locale = getUrlLocale(pathname);
+    if (!lang) error(404)
 
-    // Use default locale if current locale is not supported
-    if (!supportedLocales.includes(locale)) {
-        locale = defaultLocale;
-    }
-
-    if(pathname === '/'){
-        redirect(302, `/${locale}`)
-    }
-
-    console.log({ locale, pathname })
-    await loadTranslations(locale, pathname); // keep this just before the `return`
-
+    await setLocale(lang);
+    await loadTranslations(lang, pathname); // keep this just before the `return`
+    // await loadTranslations(locale); // to enable all translations
+    
     return {
-        i18n: { locale, route: pathname },
+        i18n: { locale: lang, route: pathname },
         translations: translations.get(), // `translations` on server contain all translations loaded by different clients
     };
 };

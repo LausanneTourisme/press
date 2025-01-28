@@ -1,8 +1,14 @@
 <script lang="ts">
   import Nav from '$lib/components/Nav.svelte';
+  import { loadTranslations, locale } from '$lib/translations';
+  import { onMount } from 'svelte';
   import '../app.css';
 
   let { children } = $props();
+
+  onMount(async () => {
+    await loadTranslations($locale);
+  });
 </script>
 
 <div class="app">
