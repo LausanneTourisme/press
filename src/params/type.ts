@@ -1,9 +1,10 @@
-import { RouteType } from "$enums";
-import { locale, t, translations } from "$lib/translations";
+import { RouteTypes } from "$enums";
+import { locale, translations } from "$lib/translations";
+import type { ParamMatcher } from "@sveltejs/kit";
 
-export const match = (param: string): boolean => {
+export const match: ParamMatcher = (param: string): boolean => {
     const lang = locale.get()
-    const types = Object.values(RouteType).map(type => translations.get()[lang][`route.type.${type}.slug`]);
-    
+    const types: string[] = Object.values(RouteTypes).map(type => translations.get()[lang][`route.type.${type}.slug`]);
+
     return types.includes(param);
 }
