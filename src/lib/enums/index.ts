@@ -1,5 +1,5 @@
 
-export enum RouteSlug {
+export enum RouteType {
     Home = "home",
     Contact = "contact",
     Articles = "articles",
