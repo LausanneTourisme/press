@@ -1,5 +1,6 @@
-import { supportedLocales, type Locale } from "$lib/translations";
+import { isLocale } from '$lib/translations';
+import type { ParamMatcher } from '@sveltejs/kit';
 
-export const match = (param: string): boolean => {
-    return /^[a-z]{2}$/.test(param) && supportedLocales.includes(param as Locale);
-}
+export const match: ParamMatcher = (param: string) => {
+    return isLocale(param.toLowerCase());
+};
