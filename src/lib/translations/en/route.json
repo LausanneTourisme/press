@@ -1,25 +1,25 @@
 {
-    "type.home.title": "Media corner",
-    "type.home.slug": "",
+  "type.home.title": "Media corner",
+  "type.home.slug": "",
 
-    "type.contact.title": "Contact us",
-    "type.contact.slug": "",
+  "type.contact.title": "Contact us",
+  "type.contact.slug": "kontakt",
 
-    "type.articles.title": "",
-    "type.articles.slug": "",
+  "type.articles.title": "Articles",
+  "type.articles.slug": "articles",
 
-    "type.themes.title": "",
-    "type.themes.slug": "",
+  "type.themes.title": "Thèmes",
+  "type.themes.slug": "themes",
 
-    "type.coverage.title": "",
-    "type.coverage.slug": "",
+  "type.coverage.title": "Presseartikeln",
+  "type.coverage.slug": "coverage",
 
-    "type.press-release.title": "",
-    "type.press-release.slug": "",
+  "type.press-release.title": "Press releases and press kits",
+  "type.press-release.slug": "press-releases",
 
-    "type.press-kit.title": "",
-    "type.press-kit.slug": "",
+  "type.press-kit.title": "Press releases and press kits",
+  "type.press-kit.slug": "press-kit",
 
-    "type.highlights.title": "",
-    "type.highlights.slug": ""
+  "type.highlights.title": "Sehenswürdigkeiten und Neuheiten",
+  "type.highlights.slug": ""
 }

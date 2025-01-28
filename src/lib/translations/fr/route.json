@@ -1,25 +1,25 @@
 {
-    "type.home.title": "Espace médias",
-    "type.home.slug": "",
+  "type.home.title": "Espace médias",
+  "type.home.slug": "",
 
-    "type.contact.title": "Nous contacter",
-    "type.contact.slug": "",
+  "type.contact.title": "Nous contacter",
+  "type.contact.slug": "contact",
 
-    "type.articles.title": "",
-    "type.articles.slug": "",
+  "type.articles.title": "Articles",
+  "type.articles.slug": "articles",
 
-    "type.themes.title": "",
-    "type.themes.slug": "",
+  "type.themes.title": "Thèmes",
+  "type.themes.slug": "themes",
 
-    "type.coverage.title": "",
-    "type.coverage.slug": "",
+  "type.coverage.title": "Parutions presse",
+  "type.coverage.slug": "parutions",
 
-    "type.press-release.title": "",
-    "type.press-release.slug": "",
+  "type.press-release.title": "Communiqués et dossiers de presse",
+  "type.press-release.slug": "communiques-de-presse",
 
-    "type.press-kit.title": "",
-    "type.press-kit.slug": "",
+  "type.press-kit.title": "Communiqués et dossiers de presse",
+  "type.press-kit.slug": "dossier-de-presse",
 
-    "type.highlights.title": "",
-    "type.highlights.slug": ""
+  "type.highlights.title": "Immanquables et nouveautés",
+  "type.highlights.slug": "immanquables"
 }
