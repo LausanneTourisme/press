@@ -1,0 +1,25 @@
+{
+    "type.home.title": "Media corner",
+    "type.home.slug": "",
+
+    "type.contact.title": "Contact us",
+    "type.contact.slug": "",
+
+    "type.articles.title": "",
+    "type.articles.slug": "",
+
+    "type.themes.title": "",
+    "type.themes.slug": "",
+
+    "type.coverage.title": "",
+    "type.coverage.slug": "",
+
+    "type.press-release.title": "",
+    "type.press-release.slug": "",
+
+    "type.press-kit.title": "",
+    "type.press-kit.slug": "",
+
+    "type.highlights.title": "",
+    "type.highlights.slug": ""
+}
