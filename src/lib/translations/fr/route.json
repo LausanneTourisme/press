@@ -8,9 +8,6 @@
   "type.articles.title": "Articles",
   "type.articles.slug": "articles",
 
-  "type.themes.title": "Thèmes",
-  "type.themes.slug": "themes",
-
   "type.coverage.title": "Parutions presse",
   "type.coverage.slug": "parutions",
 
@@ -21,5 +18,20 @@
   "type.press-kit.slug": "dossier-de-presse",
 
   "type.highlights.title": "Immanquables et nouveautés",
-  "type.highlights.slug": "immanquables"
+  "type.highlights.slug": "immanquables",
+
+
+  "type.themes.title": "Thèmes",
+  "type.themes.slug": "themes",
+  "type.themes.architecture.slug": "architecture-design",
+  "type.themes.culture.slug": "culture",
+  "type.themes.education.slug": "education",
+  "type.themes.family.slug": "famille",
+  "type.themes.gastronomy.slug": "gastronomie",
+  "type.themes.lacustrine.slug": "lacustre",
+  "type.themes.nature.slug": "nature",
+  "type.themes.sport.slug": "sport",
+  "type.themes.sustainability.slug": "durabilite",
+  "type.themes.unusual.slug": "insolite",
+  "type.themes.wellness.slug": "bien-etre"
 }
