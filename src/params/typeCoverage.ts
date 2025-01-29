@@ -4,7 +4,6 @@ import type { ParamMatcher } from "@sveltejs/kit";
 
 export const match: ParamMatcher = (param: string): boolean => {
     const lang = locale.get()
-    const types: string[] = Object.values(RouteTypes).map(type => translations.get()[lang][`route.type.${type}.slug`]);
 
-    return types.includes(param);
+    return translations.get()[lang][`route.type.${RouteTypes.Coverage}.slug`] === param;
 }

@@ -5,12 +5,12 @@
 </script>
 
 <svelte:head>
-  <title>{$t(`route.type.${RouteTypes.Contact}.title`)}</title>
+  <title>{$t(`route.type.${RouteTypes.Themes}.title`)}</title>
   <meta name="description" content="" />
 </svelte:head>
 
 <div class="text-center text-column">
   {$locale}
   <br>
-  {$t('route.type.contact.title')}
+  {$t(`route.type.${RouteTypes.Themes}.title`)}
 </div>
