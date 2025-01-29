@@ -11,16 +11,18 @@ interface Parent {
         [key in Locale]: Record<string, string>
     },
     locale: Locale,
+    type: RouteType,
     id: number
 };
 
 export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
-    const { i18n, translations, locale, id }: Parent = await parent() as Parent;
+    const { i18n, translations, locale, type, id }: Parent = await parent() as Parent;
 
     return {
         i18n,
         translations,
         locale,
+        type,
         id,
     };
 };

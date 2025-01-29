@@ -18,12 +18,13 @@ interface Params {
 }
 
 export const load: ServerLoad = async ({ params, parent }) => {
-    // console.log({from:'/src/routes/[locale=locale]/[type=type]/+layout.server.ts', parent: await parent(), params})
     const { i18n, translations }: Parent = await parent() as Parent;
+    const { locale, type }: Partial<Params> = params as Partial<Params>;
 
     return {
         i18n,
         translations,
-        locale: params.locale,
+        locale,
+        type,
     };
 };
