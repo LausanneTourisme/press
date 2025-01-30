@@ -65,6 +65,14 @@ export const config: Config = {
       loader: async () => (await import(`./${locale}/route.json`)).default,
     })),
 
+    // Menu
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'menu',
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/menu.json`)).default,
+    })),
+
     // GDPR
     ...supportedLocales.map(locale => ({
       locale,

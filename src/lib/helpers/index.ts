@@ -1,3 +1,5 @@
+import type { Locale } from "$lib/translations";
+
 /**
  * simple wrapper for scan.js to pick it up
  */
@@ -17,7 +19,7 @@ export const filename = (path: string, withExtension: boolean = true): string =>
   return <string>filename.split('.').shift();
 }
 
-export const getMediaLibraryRegisterLink = (locale: string|undefined|null): string => {
+export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   let lang = 'lang=';
 
   switch (locale) {
