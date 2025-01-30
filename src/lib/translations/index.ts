@@ -1,19 +1,19 @@
 import { dev } from "$app/environment";
-import i18n, { type Config, type Parser } from 'sveltekit-i18n';
+import { RouteTypes } from "$enums";
+import i18n, { type Config } from 'sveltekit-i18n';
 import langDe from './de/lang.json';
 import routeTypeDe from './de/route.json';
 import langEn from './en/lang.json';
 import routeTypeEn from './en/route.json';
 import langFr from './fr/lang.json';
 import routeTypeFr from './fr/route.json';
-import { RouteTypes } from "$enums";
 
 export type Locale = 'fr' | 'en' | 'de';
 export const defaultLocale: Locale = dev ? 'fr' : 'en'; // devs working with french content ❤️
 export const supportedLocales: Locale[] = ['fr', 'en', 'de'];
 
 //helper for dynamic imports
-const routeTypes = {
+const routeTypes: Record<Locale, Record<string, string>> = {
   de: routeTypeDe,
   en: routeTypeEn,
   fr: routeTypeFr
@@ -81,12 +81,12 @@ export const config: Config = {
       loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
     })),
 
-    //create all routes excepted HOME that was a special case
+    //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
       .filter(x => x !== RouteTypes.Home)
       .flatMap(type => supportedLocales.map(locale => {
         const slug = routeTypes[locale][`type.${type}.slug`];
-        
+
         return {
           locale,
           key: 'pages',
