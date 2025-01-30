@@ -5,6 +5,7 @@
   import { twMerge } from 'tailwind-merge';
   import Button from './Button.svelte';
   import Link from './Link.svelte';
+  import { Link as LinkIcon } from 'lucide-svelte';
 
   type NavProps = {
     hide?: boolean;
@@ -57,7 +58,7 @@
           {#if item.items && item.items.length}
             {@const items = item.items}
             <ul
-              class="items-list dropdown-content bg-base-100 z-[1] w-[450px] border-t border-t-transparent p-2 shadow group-hover:border-t-brand-600"
+              class="items-list dropdown-content bg-base-100 z-[1] w-[450px] border-t border-t-transparent p-2 shadow-sm group-hover:border-t-brand-600"
             >
               {#each items as item}
                 <li>
@@ -67,6 +68,14 @@
                     preload="tap"
                   >
                     {item.title}
+                    {#if item.icon}
+                      {@const Icon = item.icon}
+                      {#snippet icon()}
+                        <!-- <LinkIcon/> -->
+                         <!-- TODO -->
+                         <span>TODO</span>
+                      {/snippet}
+                    {/if}
                   </Link>
                 </li>
               {/each}

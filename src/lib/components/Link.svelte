@@ -1,8 +1,8 @@
 <script lang="ts">
   import { blankable } from '$lib/helpers';
+  import { ChevronRight } from 'lucide-svelte';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-  import { ChevronRightSolid } from 'flowbite-svelte-icons';
 
   interface LinkProps {
     href: string;
@@ -17,7 +17,7 @@
   const {
     href,
     preload = 'hover',
-    withIcon = false,
+    withIcon = true,
     class: additionalClass,
     classIcon,
     children,
@@ -30,14 +30,14 @@
     'hover:opacity-75',
     additionalClass
   );
-  let iconStyle = twMerge('h-3 w-3 inline ml-2', classIcon);
+  let iconStyle = twMerge('h-3 w-3 inline ml-2 ', classIcon);
 </script>
 
 <a {href} {target} class={style} data-sveltekit-preload-data={preload}>
   {@render children()}
   {#if withIcon}
     {#if !icon}
-      <ChevronRightSolid class={iconStyle} />
+      <ChevronRight class={iconStyle} />      
     {:else}
       {@render icon()}
     {/if}

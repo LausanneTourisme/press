@@ -1,7 +1,8 @@
 import { RouteTypes } from "$enums";
 import { t, type Locale } from "$lib/translations";
 import type { Menu, MenuItem } from "$types";
-import {LinkSolid} from "flowbite-svelte-icons";
+import { Link } from "lucide-svelte";
+
 import { getMediaLibraryRegisterLink } from ".";
 
 // FIXME it's not an helper but currently i don't know where i've to place it...
@@ -12,7 +13,7 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
             {
                 title: t.get('menu.ressources.medialibrary'),
                 link: getMediaLibraryRegisterLink(locale),
-                icon: LinkSolid,
+                icon: Link,
             },
             {
                 title:t.get('menu.ressources.pressrelease'),

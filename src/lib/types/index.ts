@@ -4,6 +4,7 @@ import type { SvelteComponent } from "svelte";
 export type MenuItem = {
     title: string,
     link: string,
+    icon?: SvelteComponent,
 }
 
 export type Menu = {
