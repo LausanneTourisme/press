@@ -3,8 +3,10 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 import { readFileSync } from 'node:fs';
 
-const json = readFileSync(path.resolve('./package.json'), 'utf8');
+let json = readFileSync(path.resolve('./package.json'), 'utf8');
 const pkg = JSON.parse(json);
+json = readFileSync(path.resolve('./src/lib/translations/fr/lang.json'), 'utf8');
+const supportedLocales = Object.keys(json);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,6 +26,11 @@ const config = {
       $enums: path.resolve('./src/lib/enums'),
       $types: path.resolve('./src/lib/types'),
       $pages: path.resolve('./src/lib/pages')
+    },
+    
+    prerender: {
+      // NOTE: You can modify your exported error pages here.
+      entries: supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`], ['*']),
     }
   }
 };

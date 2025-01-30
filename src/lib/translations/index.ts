@@ -1,5 +1,5 @@
 import { dev } from "$app/environment";
-import { RouteTypes } from "$enums";
+import { RouteTypes, Themes } from "$enums";
 import i18n, { type Config } from 'sveltekit-i18n';
 import langDe from './de/lang.json';
 import routeTypeDe from './de/route.json';
@@ -73,6 +73,14 @@ export const config: Config = {
       loader: async () => (await import(`./${locale}/menu.json`)).default,
     })),
 
+    // Common
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'common',
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/common.json`)).default,
+    })),
+
     // GDPR
     ...supportedLocales.map(locale => ({
       locale,
@@ -94,12 +102,26 @@ export const config: Config = {
       .filter(x => x !== RouteTypes.Home)
       .flatMap(type => supportedLocales.map(locale => {
         const slug = routeTypes[locale][`type.${type}.slug`];
-
+        console.log(`/${locale}/${slug}/`)
         return {
           locale,
           key: 'pages',
           routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
           loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
+        }
+      })),
+
+      //create all themes
+      ...Object.values(Themes)
+      .flatMap(theme => supportedLocales.map(locale => {
+        const type = routeTypes[locale][`type.${RouteTypes.Themes}.slug`]
+        const slug = routeTypes[locale][`type.themes.${theme}.slug`];
+        
+        return {
+          locale,
+          key: `themes.${theme}`,
+          routes: [`/${locale}/${type}/${slug}`, `/${locale}/${type}/${slug}/`],
+          loader: async () => (await import(`./${locale}/pages/themes/${theme}.json`)).default,
         }
       })),
   ],
@@ -118,11 +140,7 @@ export const {
 } = new i18n(config);
 
 export const isValidLocale = (locale: Locale | string): boolean => {
-  // Get defined locales
-  const supportedLocales = locales.get();
-
-  // Use default locale if current locale is not supported
-  return supportedLocales.includes(locale.toLowerCase())
+  return (supportedLocales as string[]).includes(locale.toLowerCase())
 }
 
 export const isLocale = (param: string): param is Locale => {

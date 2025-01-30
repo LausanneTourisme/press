@@ -17,7 +17,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
     const { i18n, translations }: Parent = await parent() as Parent;
 
     const lang = params.locale as Locale;
-    const type = params.type as RouteType;
+    const type = params.type; // FIXME returns value not Themes key
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,

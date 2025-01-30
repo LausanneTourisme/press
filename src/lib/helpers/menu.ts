@@ -3,7 +3,7 @@ import { t, type Locale } from "$lib/translations";
 import type { Menu, MenuItem } from "$types";
 import { Link } from "lucide-svelte";
 
-import { getMediaLibraryRegisterLink } from ".";
+import { getMediaLibraryRegisterLink, route } from ".";
 
 // FIXME it's not an helper but currently i don't know where i've to place it...
 export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
@@ -14,18 +14,19 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
                 title: t.get('menu.ressources.medialibrary'),
                 link: getMediaLibraryRegisterLink(locale),
                 icon: Link,
+                strokeWidth: 2,
             },
             {
                 title:t.get('menu.ressources.pressrelease'),
-                link: `/${locale}/${t.get(`route.type.${RouteTypes.Pressrelease}.slug`)}`,
+                link: route(RouteTypes.Pressrelease),
             },
             {
                 title:t.get('menu.ressources.coverage'),
-                link: `/${locale}/${t.get(`route.type.${RouteTypes.Coverage}.slug`)}`,
+                link: route(RouteTypes.Coverage),
             },
             {
                 title: t.get('menu.ressources.themes'),
-                link: `/${locale}/${t.get(`route.type.${RouteTypes.Themes}.slug`)}`,
+                link: route(RouteTypes.Themes),
             },
         ]
     },
@@ -34,24 +35,24 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
         items: <MenuItem[]>[
             {
                 title:t.get('menu.news.news'),
-                link: `/${locale}/${t.get(`route.type.${RouteTypes.Highlights}.slug`)}#news`,
+                link: `${route(RouteTypes.Highlights)}#news`,
             },
             {
                 title:t.get('menu.news.unmissable'),
-                link: `/${locale}/${t.get(`route.type.${RouteTypes.Highlights}.slug`)}#highlights`,
+                link: `${route(RouteTypes.Highlights)}#highlights`,
             }
         ]
     },
     {
         title:t.get('menu.numbers'),
-        link: `/${locale}/${t.get(`route.type.${RouteTypes.Home}.slug`)}#numbers`,
+        link: `${route(RouteTypes.Home)}#numbers`,
     },
     {
         title: t.get('menu.distinctions'),
-        link: `/${locale}/${t.get(`route.type.${RouteTypes.Home}.slug`)}#distinctions`,
+        link: `${route(RouteTypes.Home)}#distinctions`,
     },
     {
         title:t.get('menu.faq'),
-        link: `/${locale}/${t.get(`route.type.${RouteTypes.Home}.slug`)}#faq`,
+        link: `${route(RouteTypes.Home)}#faq`,
     }
   ];

@@ -5,12 +5,12 @@
 </script>
 
 <svelte:head>
-  <title>{$t(`route.type.${RouteTypes.Presskit}.title`)}</title>
-  <meta name="description" content="" />
+  <title>{$t(`pages.title`)} • TITRE ARTICLE • Lausanne Tourisme</title>
+  <meta name="description" content="{$t(`pages.description`)}" />
 </svelte:head>
 
 <div class="text-center text-column">
   {$locale}
   <br>
-  {$t(`route.type.${RouteTypes.Presskit}.title`)}
+  {$t(`pages.title`)}
 </div>

@@ -3,11 +3,6 @@
   import { locale } from '$lib/translations';
 </script>
 
-<svelte:head>
-  <title>Nous somme dans un Thème</title>
-  <meta name="description" content="" />
-</svelte:head>
-
 <div class="text-column text-center">
   {$locale}
   <br />

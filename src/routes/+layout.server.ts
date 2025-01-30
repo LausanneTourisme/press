@@ -32,9 +32,9 @@ export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
     if (url.pathname === '/') {
         redirect(302, `/${getNavLocale(request)}`)
     }
-
+    
     const lang: undefined | Locale = getUrlLocale(url.pathname);
-
+    
     // undefined cased covered by src/params/locale.ts
     await setLocale(lang ?? defaultLocale);
     await loadTranslations(lang ?? defaultLocale);

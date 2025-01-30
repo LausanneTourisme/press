@@ -1,10 +1,11 @@
 import type { Locale } from "$lib/translations";
-import type { SvelteComponent } from "svelte";
+import type { Component  } from "svelte";
 
 export type MenuItem = {
     title: string,
     link: string,
-    icon?: SvelteComponent,
+    icon?: Component,
+    strokeWidth?: number,
 }
 
 export type Menu = {

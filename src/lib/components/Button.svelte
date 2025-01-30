@@ -36,25 +36,25 @@
 
   let target: string | undefined = blankable(href);
   let style: string = twMerge(
-    'group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded',
+    'group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded-sm text-base-content',
     !border ? 'border-0' : 'border-2',
     !inline ? 'inline-block' : 'inline',
-    !negative ? 'text-gray-950 border-gray-700' : 'text-white border-gray-200',
+    !negative ? 'border-gray-700' : 'border-gray-200',
     !nofx
       ? !negative
-        ? 'hover:bg-gray-950 hover:text-white shadow-white'
-        : 'hover:bg-white hover:text-gray-950 shadow-gray-950'
+        ? 'hover:bg-neutral dark:hover:bg-zinc-700 hover:text-white shadow-base-100'
+        : 'hover:bg-white  shadow-gray-950'
       : '',
-    !nofx ? 'px-8 hover:rounded hover:border-transparent hover:shadow-lg' : 'px-0 hover:opacity-75',
+    !nofx ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-lg' : 'px-0 hover:opacity-75',
     additionalClass
   );
 
   // If href is provided, the default behavior (navigation) should be preserved
   const handleClick = (event: Event) => {
-    if (href && !onclick) {
+    if (tag === "button" && href) {
       return; // Let the default anchor behavior proceed
     }
-    preventDefault(onclick)?.(event); // Otherwise, handle the custom onclick with preventDefault
+    onclick?.(event); // Otherwise, handle the custom onclick with preventDefault
   };
 </script>
 

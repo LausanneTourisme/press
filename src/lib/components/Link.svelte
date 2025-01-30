@@ -30,14 +30,14 @@
     'hover:opacity-75',
     additionalClass
   );
-  let iconStyle = twMerge('h-3 w-3 inline ml-2 ', classIcon);
+  let iconStyle = twMerge('h-4 w-4 inline ml-2 ', classIcon);
 </script>
 
 <a {href} {target} class={style} data-sveltekit-preload-data={preload}>
   {@render children()}
   {#if withIcon}
     {#if !icon}
-      <ChevronRight class={iconStyle} />      
+      <ChevronRight strokeWidth={3} class={iconStyle} />      
     {:else}
       {@render icon()}
     {/if}
