@@ -6,10 +6,18 @@ import langEn from './en/lang.json';
 import routeTypeEn from './en/route.json';
 import langFr from './fr/lang.json';
 import routeTypeFr from './fr/route.json';
+import { RouteTypes } from "$enums";
 
 export type Locale = 'fr' | 'en' | 'de';
 export const defaultLocale: Locale = dev ? 'fr' : 'en'; // devs working with french content ❤️
 export const supportedLocales: Locale[] = ['fr', 'en', 'de'];
+
+//helper for dynamic imports
+const routeTypes = {
+  de: routeTypeDe,
+  en: routeTypeEn,
+  fr: routeTypeFr
+};
 
 export const config: Config = {
   fallbackLocale: defaultLocale,
@@ -56,6 +64,36 @@ export const config: Config = {
       routes: undefined,
       loader: async () => (await import(`./${locale}/route.json`)).default,
     })),
+
+    // GDPR
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'gdpr',
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/gdpr.json`)).default,
+    })),
+
+    // Home
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'pages',
+      routes: ['/', `/${locale}`, `/${locale}/`],
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
+    })),
+
+    //create all routes excepted HOME that was a special case
+    ...Object.values(RouteTypes)
+      .filter(x => x !== RouteTypes.Home)
+      .flatMap(type => supportedLocales.map(locale => {
+        const slug = routeTypes[locale][`type.${type}.slug`];
+        
+        return {
+          locale,
+          key: 'pages',
+          routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
+          loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
+        }
+      })),
   ],
 }
 
