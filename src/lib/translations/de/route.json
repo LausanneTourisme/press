@@ -1,26 +1,12 @@
 {
-  "type.home.title": "Media Corner",
   "type.home.slug": "",
-
-  "type.contact.title": "Kontaktieren Sie uns",
   "type.contact.slug": "contact",
-
-  "type.articles.title": "Artikeln",
   "type.articles.slug": "artikeln",
-
-  "type.coverage.title": "Media coverage",
   "type.coverage.slug": "veroeffentlichungen",
-
-  "type.press-release.title": "Pressemitteilungen und Pressedossier",
   "type.press-release.slug": "pressemitteilungen",
-
-  "type.press-kit.title": "Pressemitteilungen und Pressedossier",
   "type.press-kit.slug": "pressedossier",
-
-  "type.highlights.title": "Must-sees and new features",
   "type.highlights.slug": "highlights",
 
-  "type.themes.title": "Themen",
   "type.themes.slug": "themen",
   "type.themes.architecture.slug": "architektur-design",
   "type.themes.culture.slug": "kultur",
