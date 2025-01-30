@@ -5,6 +5,7 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
+  import {dev} from "$app/environment"
 
   interface ImageProps {
     src: string;
@@ -34,10 +35,15 @@
   }: ImageProps = $props();
 
   let style = twMerge('object-cover w-full h-full', additionalClass);
-  let image: HTMLImageElement;
-  let srcResolved: string = $state();
+  let image: undefined|HTMLImageElement = $state(undefined);
+  let srcResolved: string = $state('');
 
   const generateImagePath = () => {
+    if(!image) {
+      srcResolved = src;
+      return;
+    }
+
     let resolution: { width?: number; height?: number } = {};
 
     if ((!height || !width) && !ignoreAutoSize) {
@@ -59,7 +65,7 @@
     }
 
     // filter locally-called images from API images with a cloudinary ID (that don't have "images" in their name)
-    if (src.match(/(?=images)|(?=lib)/g)?.length && !src.includes('http')) {
+    if (!dev && src.match(/(?=images)|(?=lib)/g)?.length && !src.includes('http')) {
       srcResolved = Cloudinary.make(`${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`).url({
         ...resolution,
         ...transform
@@ -70,7 +76,6 @@
   };
 
   onMount(generateImagePath);
-  $effect(generateImagePath);
 </script>
 
 {#key srcResolved}

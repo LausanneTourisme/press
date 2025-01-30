@@ -2,6 +2,7 @@
   import { page } from '$app/state';
   import logo from '$lib/images/svelte-logo.svg';
   import github from '$lib/images/github.svg';
+  // TODO delete with counter
 </script>
 
 <header>

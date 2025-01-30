@@ -3,12 +3,12 @@ import type { SvelteComponent } from "svelte";
 
 export type MenuItem = {
     title: string,
-    link?: string,
-    anchor?: string,
-    icon?: SvelteComponent
+    link: string,
 }
 
-export type Menu = MenuItem & {
+export type Menu = {
+    title: string,
+    link?: string,
     items?: MenuItem[]
 }
 
