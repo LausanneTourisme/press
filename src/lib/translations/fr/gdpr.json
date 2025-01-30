@@ -1,0 +1,13 @@
+{
+    "necessary.label": "Cookies nécessaires",
+    "necessary.description": "Utilisé pour le stockage de vos paramètres dans un cookie. Ne peut pas être désactivé.",
+    "tracking.label": "Cookie de tracking (Google Analytics)",
+    "tracking.description": "Utilisé à des fins d'analyses de performances et d'utilisation du site. Les données sont collectées anonymement.",
+    "banner.heading": "Paramètres des cookies",
+    "banner.description": "Ce site web utilise des cookies pour améliorer continuellement l'expérience des utilisateur-trice-s sur le site. Sélectionnez \"ok\" pour confirmer vos choix ou \"Définir mes préférences\" pour obtenir plus de détails et pour gérer vos options.",
+    "banner.accept": "Ok",
+    "banner.reject": "Tout refuser",
+    "banner.settings": "Définir mes préférences",
+    "banner.close": "Fermer la fenêtre",
+    "banner.edit": "Editer mes préférences"
+}
