@@ -1,6 +1,7 @@
 import type { RouteType } from '$enums';
-import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, translations, type Locale } from '$lib/translations';
-import { error, redirect, type ServerLoad } from '@sveltejs/kit';
+import { supportedLocales, type Locale } from '$lib/translations';
+import type { SeoHeader } from '$types';
+import { type ServerLoad } from '@sveltejs/kit';
 
 interface Parent {
     i18n: {
@@ -12,19 +13,28 @@ interface Parent {
     }
 };
 
-interface Params {
-    locale: Locale,
-    type: RouteType,
-}
-
-export const load: ServerLoad = async ({ params, parent }) => {
+export const load: ServerLoad = async ({ url, params, parent }) => {
     const { i18n, translations }: Parent = await parent() as Parent;
-    const { locale, type }: Partial<Params> = params as Partial<Params>;
+
+    const lang = params.locale as Locale;
+    const type = params.type as RouteType;
+    
+    const seo: SeoHeader = {
+        canonical: `${url.origin}${url.pathname}`,
+        title: translations[lang][`pages.title`],
+        description: translations[lang][`pages.description`],
+        image: '', //TODO add picture please
+        alternate: supportedLocales.map(locale => ({
+            hreflang: locale,
+            href: `/${locale}/${translations[locale][`route.type.${type}.slug`]}`
+        })),
+    }
 
     return {
         i18n,
         translations,
-        locale,
+        seo,
+        locale: lang,
         type,
     };
 };

@@ -1,4 +1,5 @@
-import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, translations, type Locale } from '$lib/translations';
+import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, supportedLocales, translations, type Locale } from '$lib/translations';
+import type { SeoHeader } from '$types';
 import { error, redirect, type ServerLoad } from '@sveltejs/kit';
 
 const getNavLocale = (request: Request): Locale => {
@@ -28,21 +29,33 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
 
 
 export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
-    const { pathname } = url;
-    // console.log(locals)
-    if (pathname === '/') {
+    if (url.pathname === '/') {
         redirect(302, `/${getNavLocale(request)}`)
     }
 
-    const lang: undefined | Locale = getUrlLocale(pathname);
+    const lang: undefined | Locale = getUrlLocale(url.pathname);
 
     // undefined cased covered by src/params/locale.ts
     await setLocale(lang ?? defaultLocale);
     await loadTranslations(lang ?? defaultLocale);
-    await loadTranslations(lang ?? defaultLocale, pathname);
+    await loadTranslations(lang ?? defaultLocale, url.pathname);
     
+    // FIXME
+    // TODO create common translations and insert 404
+    const seo: SeoHeader = {
+        canonical: `${url.origin}${url.pathname}`,
+        title: "Page not found",
+        description: "Page informing user that page cannot be found",
+        image: '',
+        alternate: supportedLocales.map(locale => ({
+            hreflang: locale,
+            href: `/${locale}/404`
+        })),
+    }
+
     return {
-        i18n: { locale: lang, route: pathname },
+        i18n: { locale: lang, route: url.pathname },
         translations: translations.get(), // `translations` on server contain all translations loaded by different clients
+        seo,
     };
 };
