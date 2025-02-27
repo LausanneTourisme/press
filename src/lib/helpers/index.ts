@@ -40,6 +40,12 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 
 export const route = (type: RouteType, forceLocale: Locale|undefined = undefined): string => {
   const lang = forceLocale ?? locale.get() as Locale ?? defaultLocale;
+  const slug: string|undefined = t.get(`route.type.${type}.slug`);
 
-  return  `/${lang}/${t.get(`route.type.${type}.slug`)}`;
+  if(!slug) return `/${lang}`;
+  return  `/${lang}/${slug}`;
+}
+
+export const getKeyByValue = (object: Record<string, unknown>, value: unknown): unknown => {
+  return Object.keys(object).find((key: string) => object[key] === value);
 }
