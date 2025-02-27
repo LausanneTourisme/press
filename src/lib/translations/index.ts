@@ -102,7 +102,6 @@ export const config: Config = {
       .filter(x => x !== RouteTypes.Home)
       .flatMap(type => supportedLocales.map(locale => {
         const slug = routeTypes[locale][`type.${type}.slug`];
-        console.log(`/${locale}/${slug}/`)
         return {
           locale,
           key: 'pages',
@@ -116,7 +115,7 @@ export const config: Config = {
       .flatMap(theme => supportedLocales.map(locale => {
         const type = routeTypes[locale][`type.${RouteTypes.Themes}.slug`]
         const slug = routeTypes[locale][`type.themes.${theme}.slug`];
-        
+
         return {
           locale,
           key: `themes.${theme}`,
