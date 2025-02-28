@@ -7,23 +7,20 @@
     type Props = {
       class?: string;
       titleClass?: string;
+      isOpen: boolean;
+      onToggle: () => void;
       children: Snippet;
       title: string;
     };
 
-    const { class: additionalClass, children, title, titleClass }: Props = $props();
-    let isOpen = $state(false);
+    const { class: additionalClass, children, title, titleClass, isOpen, onToggle }: Props = $props();
     const style = twMerge(additionalClass);
-
-    const toggle = () => {
-      isOpen = !isOpen;
-    };
   </script>
 
   <div class={style}>
     <button
       class={twMerge("cursor-pointer font-semibold flex justify-between pr-1 w-full", titleClass)}
-      onclick={toggle}
+      onclick={onToggle}
     >
       {title}
       <span
@@ -40,4 +37,3 @@
       </div>
     {/if}
   </div>
-

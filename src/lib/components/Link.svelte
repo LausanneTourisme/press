@@ -12,6 +12,7 @@
     classIcon?: string;
     children: Snippet;
     icon?: Snippet;
+    onclick?: (this: Window, ev: MouseEvent) => any;
   }
 
   const {
@@ -21,7 +22,8 @@
     class: additionalClass,
     classIcon,
     children,
-    icon
+    icon,
+    onclick,
   }: LinkProps = $props();
   let target: string | undefined = blankable(href);
 
@@ -33,11 +35,11 @@
   let iconStyle = twMerge('h-4 w-4 inline ml-2 ', classIcon);
 </script>
 
-<a {href} {target} class={style} data-sveltekit-preload-data={preload}>
+<a {href} {target} class={style} data-sveltekit-preload-data={preload} {onclick}>
   {@render children()}
   {#if withIcon}
     {#if !icon}
-      <ChevronRight strokeWidth={3} class={iconStyle} />      
+      <ChevronRight strokeWidth={3} class={iconStyle} />
     {:else}
       {@render icon()}
     {/if}

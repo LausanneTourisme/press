@@ -16,17 +16,25 @@
   };
 
   const { class: additionalClass }: Props = $props();
-  const style = twMerge('flex h-full items-center justify-between', additionalClass);
+  const style: string = twMerge('flex h-full items-center justify-between', additionalClass);
 
   let open = $state(false);
+  let openShelfIndex: number | null = $state(null); // Stores which shelf is open
+
   const toggleMenu = () => {
     open = !open;
     document.body.classList.toggle('overflow-hidden', open);
+    if (!open) openShelfIndex = null;
   };
 
   const closeMenu = () => {
     open = false;
+    openShelfIndex = null;
     document.body.classList.toggle('overflow-hidden', open);
+  };
+
+  const toggleShelf: (index: number) => void = (index) => {
+    openShelfIndex = openShelfIndex === index ? null : index;
   };
 
   onMount(() => {
@@ -107,31 +115,41 @@
   <!-- DRAWER -->
   <div class="p-4">
     <div class="flex flex-col gap-2">
-      {#each menuItems($locale as Locale) as item}
+      {#each menuItems($locale as Locale) as item, index}
         {#if item.link}
           <Link
-            class="flex justify-between p-4 text-left font-semibold rounded-md hover:bg-slate-100"
+            class="flex justify-between rounded-md p-4 text-left font-semibold hover:bg-slate-100"
             href={item.link}
             preload="tap"
+            onclick={closeMenu}
           >
             {item.title}
           </Link>
         {:else if item.items}
           {@const subItems = item.items}
-          <Shelf titleClass="hover:opacity-75 rounded-md p-3 pr-4 hover:bg-slate-100" title={item.title}>
+          <Shelf
+            onToggle={() => {console.log(index);toggleShelf(index)}}
+            isOpen={openShelfIndex === index}
+            titleClass="hover:opacity-75 rounded-md p-3 pr-4 hover:bg-slate-100"
+            title={item.title}
+          >
             {#each subItems as subItem}
               {#snippet icon()}
                 {#if subItem.icon}
                   {@const Component = subItem.icon}
-                  <Component strokeWidth={subItem.strokeWidth ?? 3} class="ml-2 mr-4 inline h-4 w-4" />
+                  <Component
+                    strokeWidth={subItem.strokeWidth ?? 3}
+                    class="mr-4 ml-2 inline h-4 w-4"
+                  />
                 {/if}
               {/snippet}
               <Link
-                class="flex justify-between p-3 text-left font-semibold rounded-md hover:bg-slate-100"
+                class="flex justify-between rounded-md p-3 text-left font-semibold hover:bg-slate-100"
                 href={subItem.link}
                 preload="tap"
                 icon={subItem.icon ? icon : undefined}
                 classIcon={'mr-4'}
+                onclick={closeMenu}
               >
                 <span class="pl-4">{subItem.title}</span>
               </Link>
