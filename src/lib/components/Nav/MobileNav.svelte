@@ -54,7 +54,7 @@
     />
   </a>
   <div class="flex h-full items-center px-6">
-    <!-- Desktop locales selector -->
+    <!-- locales selector -->
     <div class="dropdown dropdown-hover group">
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
         <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
@@ -107,9 +107,44 @@
         class="w-[117px] xl:w-[170px] 2xl:w-[230px] dark:text-white"
       />
     </a>
-    <button class="cursor-pointer" aria-label="close menu" onclick={toggleMenu}>
-      <X class="text-brand-600 h-6 w-6" />
-    </button>
+    <div class="flex">
+      <!-- locales selector -->
+      <div class="dropdown dropdown-hover group">
+        <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
+          <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
+            <span>{$locale.toUpperCase()}</span>
+            {#if page.data.seo.alternate.length > 1}
+              <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
+            {/if}
+          </p>
+        </div>
+        {#if page.data.seo.alternate.length > 1}
+          <div>
+            <ul
+              class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
+            >
+              {#key page.url}
+                {#each page.data.seo.alternate as alternate}
+                  <li>
+                    <Link
+                      class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
+                      href={alternate.href}
+                      preload="tap"
+                      withIcon={false}
+                    >
+                      {alternate.hreflang.toUpperCase()}
+                    </Link>
+                  </li>
+                {/each}
+              {/key}
+            </ul>
+          </div>
+        {/if}
+      </div>
+      <button class="cursor-pointer" aria-label="close menu" onclick={toggleMenu}>
+        <X class="text-brand-600 h-6 w-6" />
+      </button>
+    </div>
   </div>
 
   <!-- DRAWER -->
@@ -128,7 +163,10 @@
         {:else if item.items}
           {@const subItems = item.items}
           <Shelf
-            onToggle={() => {console.log(index);toggleShelf(index)}}
+            onToggle={() => {
+              console.log(index);
+              toggleShelf(index);
+            }}
             isOpen={openShelfIndex === index}
             titleClass="hover:opacity-75 rounded-md p-3 pr-4 hover:bg-slate-100"
             title={item.title}
