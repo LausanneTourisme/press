@@ -9,6 +9,7 @@
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
   import { twMerge } from 'tailwind-merge';
+  import Logo from './Logo.svelte';
 
   type Props = {
     class?: string;
@@ -24,11 +25,7 @@
     href={route(RouteTypes.Home)}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all hover:invert-25 dark:invert dark:hover:invert-75"
   >
-    <Image
-      src="/images/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
-      alt="Lausanne Capitale Olympique"
-      class="w-[117px] max-w-[230px] xl:w-[170px] 2xl:w-[230px] dark:text-white"
-    />
+    <Logo/>
   </a>
   <div class="ml-6 h-full grow items-center justify-start flex">
     <!-- Desktop menu -->
@@ -105,7 +102,7 @@
               {#each page.data.seo.alternate as alternate}
                 <li>
                   <Link
-                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
+                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 dark:hover:bg-slate-600 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
                     href={alternate.href}
                     preload="tap"
                     withIcon={false}

@@ -1,15 +1,16 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import Nav from '$lib/components/Nav/Nav.svelte';
   import { loadTranslations, locale } from '$lib/translations';
   import { onMount } from 'svelte';
   import '../app.css';
+  import Nav from '$lib/components/Nav/Nav.svelte';
 
   let { children } = $props();
 
   onMount(async () => {
     await loadTranslations($locale);
   });
+
   //FIXME Add altenate routes in page state ! To do it, use type var in layout.server.ts and enum to get all slugs by locale and every layout.server use previous parentLayout.alternate !
 </script>
 
@@ -35,7 +36,7 @@
   <meta property="og:url" content={`${page.data.seo.canonical}${page.url.hash}`} />
 </svelte:head>
 
-<div class="app">
+<div class="app ">
   <Nav />
 
   <main>
@@ -48,3 +49,6 @@
     </p>
   </footer>
 </div>
+
+<style>
+</style>
