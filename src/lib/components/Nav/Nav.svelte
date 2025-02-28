@@ -19,18 +19,3 @@
   <DesktopNav class="hidden xl:flex" />
   <MobileNav class="flex xl:hidden" />
 </nav>
-
-<style lang="postcss">
-  @media (prefers-color-scheme: light) {
-    :global(.invert-colours .invertable) {
-      filter: invert(100%);
-    }
-
-    :global(.invert-colours .items-list) {
-    }
-
-    :global(.invert-colours .items-list-element) {
-      color: #1e1e1f;
-    }
-  }
-</style>

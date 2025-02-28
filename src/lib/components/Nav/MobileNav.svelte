@@ -1,17 +1,16 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
-  import Image from '$lib/components/Image.svelte';
   import { route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
   import { locale, t, type Locale } from '$lib/translations';
-  import { ChevronDown, ChevronUp, Menu, X } from 'lucide-svelte';
-  import Link from '../Link.svelte';
-  import { twMerge } from 'tailwind-merge';
+  import { ChevronDown, Menu, X } from 'lucide-svelte';
   import { onDestroy, onMount } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
+  import Button from '../Button.svelte';
+  import Link from '../Link.svelte';
   import Shelf from '../Shelf.svelte';
   import SocialNetworks from '../SocialNetworks.svelte';
-  import Button from '../Button.svelte';
   import Logo from './Logo.svelte';
 
   type Props = {
@@ -218,4 +217,3 @@
     </div>
   </div>
 </nav>
-
