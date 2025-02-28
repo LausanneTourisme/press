@@ -5,11 +5,11 @@
   import { route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
   import { locale, t, type Locale } from '$lib/translations';
-  import { ChevronDown, Menu, X } from 'lucide-svelte';
-  import Button from '../Button.svelte';
+  import { ChevronDown, ChevronUp, Menu, X } from 'lucide-svelte';
   import Link from '../Link.svelte';
   import { twMerge } from 'tailwind-merge';
   import { onMount } from 'svelte';
+  import Shelf from '../Shelf.svelte';
 
   type Props = {
     class?: string;
@@ -27,7 +27,7 @@
   const closeMenu = () => {
     open = false;
     document.body.classList.toggle('overflow-hidden', open);
-  }
+  };
 
   onMount(() => {
     document.body.classList.remove('overflow-hidden');
@@ -35,11 +35,17 @@
 </script>
 
 <nav class={style} aria-labelledby="mobile-navigation">
-  <a href={route(RouteTypes.Home)} class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]">
-    <Image src="/images/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg" alt="Lausanne Capitale Olympique" class="w-[117px] xl:w-[170px] 2xl:w-[230px] dark:text-white" />
+  <a
+    href={route(RouteTypes.Home)}
+    class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
+  >
+    <Image
+      src="/images/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
+      alt="Lausanne Capitale Olympique"
+      class="w-[117px] xl:w-[170px] 2xl:w-[230px] dark:text-white"
+    />
   </a>
   <div class="flex h-full items-center px-6">
-
     <!-- Desktop locales selector -->
     <div class="dropdown dropdown-hover group">
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
@@ -80,35 +86,57 @@
 </nav>
 
 <!-- Full-Page Drawer -->
-<div class="fixed inset-0 bg-base-100 z-50 transition-transform duration-300" class:translate-x-full={!open}>
+<div
+  class="bg-base-100 fixed inset-0 z-50 transition-transform duration-300"
+  class:translate-x-full={!open}
+>
+  <!-- HEADER -->
   <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
     <a href={route(RouteTypes.Home)} class="flex max-w-[230px] cursor-pointer">
-      <Image src="/images/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg" alt="Lausanne Capitale Olympique" class="w-[117px] xl:w-[170px] 2xl:w-[230px] dark:text-white" />
+      <Image
+        src="/images/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
+        alt="Lausanne Capitale Olympique"
+        class="w-[117px] xl:w-[170px] 2xl:w-[230px] dark:text-white"
+      />
     </a>
     <button class="cursor-pointer" aria-label="close menu" onclick={toggleMenu}>
       <X class="text-brand-600 h-6 w-6" />
     </button>
   </div>
 
+  <!-- DRAWER -->
   <div class="p-4">
     <div class="flex flex-col gap-2">
       {#each menuItems($locale as Locale) as item}
-      {#if item.link}
-      <Link class="p-4 text-left font-semibold hover:bg-slate-100" href={item.link} preload="tap" withIcon={false}>
-        {item.title}
-      </Link>
-      {:else}
+        {#if item.link}
+          <Link
+            class="flex justify-between p-4 text-left font-semibold rounded-md hover:bg-slate-100"
+            href={item.link}
+            preload="tap"
+          >
+            {item.title}
+          </Link>
+        {:else if item.items}
           {@const subItems = item.items}
-          <details class="bg-base-200 p-3 rounded-md">
-            <summary class="font-semibold cursor-pointer">{item.title}</summary>
-            <div class="pl-4 mt-2 space-y-2">
-              {#each subItems as subItem}
-                <Link class="block p-3 text-left font-semibold hover:bg-slate-100" href={subItem.link} preload="tap">
-                  {subItem.title}
-                </Link>
-              {/each}
-            </div>
-          </details>
+          <Shelf titleClass="hover:opacity-75 rounded-md p-3 pr-4 hover:bg-slate-100" title={item.title}>
+            {#each subItems as subItem}
+              {#snippet icon()}
+                {#if subItem.icon}
+                  {@const Component = subItem.icon}
+                  <Component strokeWidth={subItem.strokeWidth ?? 3} class="ml-2 mr-4 inline h-4 w-4" />
+                {/if}
+              {/snippet}
+              <Link
+                class="flex justify-between p-3 text-left font-semibold rounded-md hover:bg-slate-100"
+                href={subItem.link}
+                preload="tap"
+                icon={subItem.icon ? icon : undefined}
+                classIcon={'mr-4'}
+              >
+                <span class="pl-4">{subItem.title}</span>
+              </Link>
+            {/each}
+          </Shelf>
         {/if}
       {/each}
     </div>
