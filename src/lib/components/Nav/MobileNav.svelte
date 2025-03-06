@@ -171,7 +171,6 @@
             {@const subItems = item.items}
             <Shelf
               onToggle={() => {
-                console.log(index);
                 toggleShelf(index);
               }}
               isOpen={openShelfIndex === index}

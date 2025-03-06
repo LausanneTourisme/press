@@ -20,7 +20,6 @@ interface Parent {
 export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
     const { i18n, translations, locale, type, id,seo }: Parent = await parent() as Parent;
     
-console.log(translations)
     return {
         i18n,
         translations,
