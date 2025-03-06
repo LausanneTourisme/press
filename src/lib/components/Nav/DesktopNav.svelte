@@ -1,14 +1,13 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
-  import Image from '$lib/components/Image.svelte';
   import { route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
   import { locale, t, type Locale } from '$lib/translations';
-  import { ChevronDown, Menu } from 'lucide-svelte';
+  import { ChevronDown } from 'lucide-svelte';
+  import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
-  import { twMerge } from 'tailwind-merge';
   import Logo from './Logo.svelte';
 
   type Props = {
