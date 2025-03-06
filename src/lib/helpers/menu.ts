@@ -1,58 +1,58 @@
+import { RouteTypes } from "$enums";
+import { t, type Locale } from "$lib/translations";
 import type { Menu, MenuItem } from "$types";
-import {LinkSolid} from "flowbite-svelte-icons";
+import { Link } from "lucide-svelte";
 
-// //FIXME I want 
-// const getMenuItems: (locale: string) => Menu[] = (locale: string) => [
-//     {
-//         title: _("Ressources"),
-//         items: <MenuItem[]>[
-//             {
-//                 title: _("Vidéos et images"),
-//                 link: getMediaLibraryRegisterLink(locale),
-//                 icon: LinkSolid,
-//             },
-//             {
-//                 title: _("Communiqués et dossiers de presse"),
-//                 link: Web.pressrelease,
-//             },
-//             {
-//                 title: _("Parutions presse"),
-//                 link: Web.coverage,
-//             },
-//             {
-//                 title: _("Thématiques et textes médias"),
-//                 link: Web.themes,
-//             },
-//         ]
-//     },
-//     {
-//         title: _("Nouveautés et incontournables"),
-//         items: <MenuItem[]>[
-//             {
-//                 title: _("Nouveautés"),
-//                 link: Web.highlights,
-//                 anchor: "#news",
-//             },
-//             {
-//                 title: _("Incontournables"),
-//                 link: Web.highlights,
-//                 anchor: "#highlights",
-//             }
-//         ]
-//     },
-//     {
-//         title: _("Chiffres"),
-//         link: Web.home,
-//         anchor: "#numbers"
-//     },
-//     {
-//         title: _("Distinctions"),
-//         link: Web.home,
-//         anchor: "#distinctions",
-//     },
-//     {
-//         title: _("FAQ"),
-//         link: Web.home,
-//         anchor: "#faq",
-//     }
-//   ];
+import { getMediaLibraryRegisterLink, route } from ".";
+
+// FIXME it's not an helper but currently i don't know where i've to place it...
+export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
+    {
+        title: t.get('menu.ressources'),
+        items: <MenuItem[]>[
+            {
+                title: t.get('menu.ressources.medialibrary'),
+                link: getMediaLibraryRegisterLink(locale),
+                icon: Link,
+                strokeWidth: 2,
+            },
+            {
+                title:t.get('menu.ressources.pressrelease'),
+                link: route(RouteTypes.Pressrelease),
+            },
+            {
+                title:t.get('menu.ressources.coverage'),
+                link: route(RouteTypes.Coverage),
+            },
+            {
+                title: t.get('menu.ressources.themes'),
+                link: route(RouteTypes.Themes),
+            },
+        ]
+    },
+    {
+        title: t.get('menu.news'),
+        items: <MenuItem[]>[
+            {
+                title:t.get('menu.news.news'),
+                link: `${route(RouteTypes.Highlights)}#news`,
+            },
+            {
+                title:t.get('menu.news.unmissable'),
+                link: `${route(RouteTypes.Highlights)}#highlights`,
+            }
+        ]
+    },
+    {
+        title:t.get('menu.numbers'),
+        link: `${route(RouteTypes.Home)}#numbers`,
+    },
+    {
+        title: t.get('menu.distinctions'),
+        link: `${route(RouteTypes.Home)}#distinctions`,
+    },
+    {
+        title:t.get('menu.faq'),
+        link: `${route(RouteTypes.Home)}#faq`,
+    }
+  ];

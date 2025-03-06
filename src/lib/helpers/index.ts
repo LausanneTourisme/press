@@ -1,3 +1,6 @@
+import type { RouteType } from "$enums";
+import { defaultLocale, locale, t, type Locale } from "$lib/translations";
+
 /**
  * simple wrapper for scan.js to pick it up
  */
@@ -17,7 +20,7 @@ export const filename = (path: string, withExtension: boolean = true): string =>
   return <string>filename.split('.').shift();
 }
 
-export const getMediaLibraryRegisterLink = (locale: string|undefined|null): string => {
+export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   let lang = 'lang=';
 
   switch (locale) {
@@ -33,4 +36,16 @@ export const getMediaLibraryRegisterLink = (locale: string|undefined|null): stri
   }
 
   return `https://medialibrary.lausanne-tourisme.ch?registration&${lang}`;
+}
+
+export const route = (type: RouteType, forceLocale: Locale|undefined = undefined): string => {
+  const lang = forceLocale ?? locale.get() as Locale ?? defaultLocale;
+  const slug: string|undefined = t.get(`route.type.${type}.slug`);
+
+  if(!slug) return `/${lang}`;
+  return  `/${lang}/${slug}`;
+}
+
+export const getKeyByValue = (object: Record<string, unknown>, value: unknown): unknown => {
+  return Object.keys(object).find((key: string) => object[key] === value);
 }

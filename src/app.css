@@ -1,110 +1,138 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import '@fontsource/fira-mono';
+@import 'tailwindcss';
+
+@plugin "daisyui"{
+  include: dropdown;
+};
+
+@theme {
+  --font-euclid: Euclid\Flex, title;
+
+  --color-base-dark: rgb(43, 49, 58);
+
+  --color-brand-50: #fff1f1;
+  --color-brand-100: #ffe1e1;
+  --color-brand-200: #ffc7c7;
+  --color-brand-300: #ffa2a1;
+  --color-brand-400: #ff6b6a;
+  --color-brand-500: #f73d3c;
+  --color-brand-600: #e7302f;
+  --color-brand-700: #c11514;
+  --color-brand-800: #9f1615;
+  --color-brand-900: #841918;
+  --color-brand-950: #480707;
+
+  --color-apple-50: #f3fbf2;
+  --color-apple-100: #e3f6e2;
+  --color-apple-200: #c9ecc6;
+  --color-apple-300: #9ddc99;
+  --color-apple-400: #6bc365;
+  --color-apple-500: #44a83f;
+  --color-apple-600: #358930;
+  --color-apple-700: #2b6d28;
+  --color-apple-800: #275724;
+  --color-apple-900: #20481f;
+  --color-apple-950: #0c270c;
+
+  --color-glacier-50: #f5f8fa;
+  --color-glacier-100: #e9f1f5;
+  --color-glacier-200: #cee2e9;
+  --color-glacier-300: #8fbdcc;
+  --color-glacier-400: #72adbe;
+  --color-glacier-500: #5193a6;
+  --color-glacier-600: #3e778b;
+  --color-glacier-700: #336071;
+  --color-glacier-800: #2d515f;
+  --color-glacier-900: #2a4550;
+  --color-glacier-950: #1c2d35;
+
+  --color-shakespeare-50: #f2f9f8;
+  --color-shakespeare-100: #ddeff0;
+  --color-shakespeare-200: #c0e0e1;
+  --color-shakespeare-300: #94cacc;
+  --color-shakespeare-400: #75b6ba;
+  --color-shakespeare-500: #458f95;
+  --color-shakespeare-600: #3c767e;
+  --color-shakespeare-700: #366168;
+  --color-shakespeare-800: #325258;
+  --color-shakespeare-900: #2e454b;
+  --color-shakespeare-950: #1a2d32;
+
+  --color-agenda-50: #fffdea;
+  --color-agenda-100: #fffbc5;
+  --color-agenda-200: #fff687;
+  --color-agenda-300: #ffeb48;
+  --color-agenda-400: #ffdc1e;
+  --color-agenda-500: #fcbd05;
+  --color-agenda-600: #df9100;
+  --color-agenda-700: #b96704;
+  --color-agenda-800: #964f0a;
+  --color-agenda-900: #7b410c;
+  --color-agenda-950: #472101;
+
+  --color-metallic-50: #f7f7f8;
+  --color-metallic-100: #eeeef0;
+  --color-metallic-200: #d9d9de;
+  --color-metallic-300: #b8b9c1;
+  --color-metallic-400: #92949e;
+  --color-metallic-500: #747683;
+  --color-metallic-600: #5e606b;
+  --color-metallic-700: #4d4f57;
+  --color-metallic-800: #3e3f46;
+  --color-metallic-900: #3a3b40;
+  --color-metallic-950: #26262b;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+::selection {
+    @apply bg-brand-600 text-white;
+}
+
+html {
+  @apply bg-base-100 dark:bg-base-dark
+}
+
+/* FIREFOX */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* CHROME */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
 
 :root {
-    --font-body: 'Euclid Flex', sans-serif, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --font-mono: 'Fira Mono', monospace;
-    --color-bg-0: rgb(202, 216, 228);
-    --color-bg-1: hsl(209, 36%, 86%);
-    --color-bg-2: hsl(224, 44%, 95%);
-    --color-theme-1: #ff3e00;
-    --color-theme-2: #4075a6;
-    --color-text: rgba(0, 0, 0, 0.7);
-    --column-width: 42rem;
-    --column-margin-top: 4rem;
-    font-family: var(--font-body);
-    color: var(--color-text);
+    font-family: 'Euclid Flex', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body {
-    min-height: 100vh;
-    margin: 0;
-    background-attachment: fixed;
-    background-color: var(--color-bg-1);
-    background-size: 100vw 100vh;
-    background-image: radial-gradient(
-            50% 50% at 50% 50%,
-            rgba(255, 255, 255, 0.75) 0%,
-            rgba(255, 255, 255, 0) 100%
-    ),
-    linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
-}
-
-h1,
-h2,
-p {
-    font-weight: 400;
-}
-
-p {
-    line-height: 1.5;
-}
-
-a {
-    color: var(--color-theme-1);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1rem;
-}
-
-pre {
-    font-size: 16px;
-    font-family: var(--font-mono);
-    background-color: rgba(255, 255, 255, 0.45);
-    border-radius: 3px;
-    box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-    padding: 0.5em;
-    overflow-x: auto;
-    color: var(--color-text);
-}
-
-.text-column {
-    display: flex;
-    max-width: 48rem;
-    flex: 0.6;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-input,
-button {
-    font-size: inherit;
-    font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-    outline: none;
-}
-
-@media (min-width: 720px) {
-    h1 {
-        font-size: 2.4rem;
-    }
-}
-
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+img {
+    image-rendering: auto;
 }
