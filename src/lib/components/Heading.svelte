@@ -11,7 +11,6 @@
 
   let { class: additionalClass = '', tag = 'h2', title = '', children }: HeadingProps = $props();
 
-  let style: string = $state('');
   let tagStyle: string;
 
   switch (tag) {
@@ -31,7 +30,7 @@
       tagStyle = 'text-lg';
   }
 
-  style = twMerge('font-bold', tagStyle, additionalClass);
+  const style = twMerge('font-bold', tagStyle, additionalClass);
 </script>
 
 <svelte:element this={tag} class={style} {title}>
