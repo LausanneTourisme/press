@@ -1,22 +1,93 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
+  import { RouteTypes } from '$enums';
+  import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
+  import Player from '$lib/components/Media/Player.svelte';
+  import Paragraph from '$lib/components/Paragraph.svelte';
+  import { route } from '$lib/helpers';
   import { locale, t, translations } from '$lib/translations';
-
+  import Device from 'svelte-device-info';
+  
+  const onVideoIntersecting = () => {
+        const nav = document.getElementById('main-nav');
+        if (nav) {
+            if (browser && !Device.isMobile) {
+                nav.classList.remove('bg-white', 'shadow-lg');
+                nav.classList.add('invert-colours', 'bg-transparent', 'text-white');
+            } else {
+                nav.classList.remove('invert-colours', 'bg-transparent', 'text-white');
+                nav.classList.add('bg-white', 'shadow-lg');
+            }
+        }
+    };
 </script>
 
-  <Container
-    fullscreen={true}
-    class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
-  >
-  <div class="md:w-1/2 p-6 md:p-16 text-left xl:mt-[25px] 2xl:mt-[5px]">
-    <Heading tag="h1" class="xl:whitespace-nowrap text-white">
-      <span
-          class="inline-block font-light pb-3 text-4xl tracking-[0.45px]">{$t('page.title').toUpperCase()}</span>
-      <br>
-      <span class="inline-block tracking-tight">{$t('page.subtitle')}<span
-          class="[text-shadow:_0_0_1px_var(--tw-shadow-color)] shadow-gray-950">!</span>
-</span>
-  </Heading>
+<!--
+-
+-
+-
+- HERO >>>>>>>>>>>>>>>>>>>>>>>
+-
+-
+-
+-->
+<Container
+  fullscreen={true}
+  class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
+>
+  <div class="p-6 text-left md:w-1/2 md:p-16 xl:mt-[25px] 2xl:mt-[5px]">
+    <Heading tag="h1" class="text-white xl:whitespace-nowrap">
+      <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]"
+        >{$t('page.title').toUpperCase()}</span
+      >
+      <br />
+      <span class="inline-block tracking-tight"
+        >{$t('page.subtitle')}<span
+          class="shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)]">!</span
+        >
+      </span>
+    </Heading>
+    <Paragraph
+      class="3xl:max-w-[90%] text-justify text-white xl:max-w-[528px] xl:tracking-wide 2xl:max-w-[700px] 2xl:tracking-normal"
+    >
+      {$t('page.hero.paragraph')}
+    </Paragraph>
+
+    <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true}>
+      {$t('common.contact-us')}
+    </Button>
   </div>
+  <div
+    class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
+  >
+    <Image
+      src="/images/pages/home/port-de-pully.jpg"
+      class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
+      alt="Port de Pully"
+      transform={{ g: 'west', c: 'auto' }}
+    />
+  </div>
+</Container>
+
+<!--
+  -
+  -
+  -
+  - PLAYER >>>>>>>>>>>>>>>>>>>>>>>
+  -
+  -
+  -
+  -->
+<Container class="relative z-10 py-[3vh]" fullscreen={true}>
+  <!-- FIXME <3 -->
+  <Player
+    src="/videos/welcome_card_{$locale}.mp4"
+    poster="/images/pages/home/poster-video.png"
+    controls={true}
+    onIntersecting={() => onVideoIntersecting()}
+    title="Welcome to Lausanne!"
+  />
 </Container>

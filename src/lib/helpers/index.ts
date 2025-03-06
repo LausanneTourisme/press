@@ -11,7 +11,13 @@ export const blankable = (href: string | undefined): string | undefined => href 
  * get filename from a path
  */
 export const filename = (path: string, withExtension: boolean = true): string => {
-  const filename: string = <string>path.split('/').pop();
+  let filename: string;
+
+  if(path.startsWith('/')){
+    filename = path.substring(1)
+  }
+
+  filename = <string>path.split('/').pop();
 
   if (withExtension) {
       return filename;
@@ -48,4 +54,18 @@ export const route = (type: RouteType, forceLocale: Locale|undefined = undefined
 
 export const getKeyByValue = (object: Record<string, unknown>, value: unknown): unknown => {
   return Object.keys(object).find((key: string) => object[key] === value);
+}
+
+export function randomString(length: number = 6): string {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const charactersLength = characters.length;
+  let counter = 0;
+
+  while (counter < length) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      counter += 1;
+  }
+
+  return result;
 }
