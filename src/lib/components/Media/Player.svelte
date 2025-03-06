@@ -1,0 +1,84 @@
+<script lang="ts">
+  import { Play } from 'lucide-svelte';
+  import { twMerge } from 'tailwind-merge';
+  import Image from './Image.svelte';
+  import Observer from '../Observer.svelte';
+  import { fade } from 'svelte/transition';
+  import Video from './Video.svelte';
+  import Device from 'svelte-device-info';
+
+  type Props = {
+    class?: string;
+    onIntersecting?: () => void;
+    src: string;
+    poster: string;
+    title?: string;
+    autoplay?: boolean;
+    controls?: boolean;
+  };
+
+  const {
+    class: additionalClass,
+    src,
+    poster,
+    title,
+    autoplay = !Device.isMobile,
+    controls = false,
+    onIntersecting = () => {
+      console.log("aaaaaaaaaaaa")
+      video?.play();
+    }
+  }: Props = $props();
+
+  let video: Video | undefined;
+  let posterElement: HTMLDivElement;
+  let controlsElement: HTMLButtonElement;
+  let isPlaying: boolean = false;
+
+  const launch = async () => {
+    if (!video) return;
+
+    isPlaying = !video.play();
+
+    if (isPlaying) {
+      posterElement.classList.add('-translate-y-full');
+      controlsElement.classList.add('opacity-0');
+      controlsElement.classList.remove('z-30');
+    }
+  };
+
+  const style = twMerge('group relative h-full w-full overflow-hidden', additionalClass);
+</script>
+
+<article class={style} transition:fade={{ delay: 330 }}>
+  <button
+    class:hidden={autoplay}
+    class="controls absolute top-0 left-0 z-30 flex h-full w-full cursor-pointer flex-col items-center justify-center text-white transition-opacity"
+    bind:this={controlsElement}
+    onclick={launch}
+  >
+    <p class="my-4 text-xl">{title}</p>
+    <Play
+      class="object-fit h-16 w-16 cursor-pointer rounded-full border-4 border-white p-2 text-white"
+    />
+  </button>
+  <div
+    class:hidden={autoplay}
+    class="poster absolute top-0 left-0 z-20 h-full w-full bg-zinc-950 transition-transform"
+    bind:this={posterElement}
+  >
+    <Image src={poster} alt="" class="opacity-50 transition-opacity group-hover:opacity-75" />
+  </div>
+  <Observer class="video h-full" rootMargin={'500px 0px 0px'} threshold={0.7} onIntersecting={() => onIntersecting()}>
+    <Video
+      bind:this={video}
+      autoplay={false}
+      muted={true}
+      loop={autoplay}
+      {src}
+      {controls}
+      preload="metadata"
+      class="relative z-0 xl:-mt-[10vw]"
+    />
+  </Observer>
+</article>
