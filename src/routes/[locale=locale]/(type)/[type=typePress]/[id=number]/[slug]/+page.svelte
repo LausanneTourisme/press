@@ -5,12 +5,12 @@
 </script>
 
 <svelte:head>
-  <title>{$t(`pages.title`)} • TITRE ARTICLE • Lausanne Tourisme</title>
-  <meta name="description" content="{$t(`pages.description`)}" />
+  <title>{$t(`page.title`)} • TITRE ARTICLE • Lausanne Tourisme</title>
+  <meta name="description" content="{$t(`page.description`)}" />
 </svelte:head>
 
 <div class="text-center text-column">
   {$locale}
   <br>
-  {$t(`pages.title`)}
+  {$t(`page.title`)}
 </div>

@@ -92,7 +92,7 @@ export const config: Config = {
     // Home
     ...supportedLocales.map(locale => ({
       locale,
-      key: 'pages',
+      key: 'page',
       routes: ['/', `/${locale}`, `/${locale}/`],
       loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
     })),
