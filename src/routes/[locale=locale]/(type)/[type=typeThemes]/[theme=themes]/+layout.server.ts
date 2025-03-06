@@ -1,4 +1,4 @@
-import { RouteTypes, type RouteType } from '$enums';
+import { RouteTypes, Themes, type RouteType } from '$enums';
 import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, supportedLocales, translations as libTranslations, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error, redirect, type ServerLoad } from '@sveltejs/kit';
@@ -17,18 +17,20 @@ interface Parent {
 
 export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
     const { i18n, translations, locale, type }: Parent = await parent() as Parent;
-    const theme = params.theme; // FIXME returns value not Themes key
+
+
+    const currentThemeType = Object.values(Themes).find(theme => translations[locale][`route.type.${RouteTypes.Themes}.${theme}.slug`] === params.theme )
 
     await loadTranslations(params.locale ?? defaultLocale, url.pathname);
     
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: translations[locale][`themes.${theme}.title`],
-        description: translations[locale][`themes.${theme}.description`],
+        title: translations[locale][`themes.${currentThemeType}.title`],
+        description: translations[locale][`themes.${currentThemeType}.description`],
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${type}.slug`]}/${translations[locale][`route.type.${type}.${theme}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.type.${RouteTypes.Themes}.slug`]}/${translations[locale][`route.type.${RouteTypes.Themes}.${currentThemeType}.slug`]}`
         })),
     }
     
@@ -38,6 +40,6 @@ export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
         seo,
         locale,
         type,
-        theme,
+        theme: currentThemeType,
     };
 };

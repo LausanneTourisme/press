@@ -18,7 +18,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
     const lang = params.locale as Locale;
 
     const type = translations[lang][`route.type.${RouteTypes.Presskit}.slug`] === params.type ? RouteTypes.Presskit : RouteTypes.Pressrelease
-    console.log(`/${lang}/${params.type}`)
+
     await loadTranslations(params.locale ?? defaultLocale, `/${lang}/${params.type}`)
     
     const seo: SeoHeader = {
