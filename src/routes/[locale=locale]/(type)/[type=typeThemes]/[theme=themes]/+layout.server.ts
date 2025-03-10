@@ -19,10 +19,10 @@ export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
     const { i18n, translations, locale, type }: Parent = await parent() as Parent;
 
 
-    const currentThemeType = Object.values(Themes).find(theme => translations[locale][`route.type.${RouteTypes.Themes}.${theme}.slug`] === params.theme )
+    const currentThemeType = Object.values(Themes).find(theme => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme )
 
     await loadTranslations(params.locale ?? defaultLocale, url.pathname);
-    
+
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
         title: translations[locale][`themes.${currentThemeType}.title`],
@@ -30,10 +30,10 @@ export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${RouteTypes.Themes}.slug`]}/${translations[locale][`route.type.${RouteTypes.Themes}.${currentThemeType}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.${RouteTypes.Themes}.slug`]}/${translations[locale][`route.${RouteTypes.Themes}.${currentThemeType}.slug`]}`
         })),
     }
-    
+
     return {
         i18n,
         translations,
