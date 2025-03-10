@@ -27,12 +27,12 @@
       tagStyle = 'text-lg md:text-xl leading-snug tracking-tight font-medium -mb-2 mt-4';
       break;
     default:
-      tagStyle = 'text-lg';
+      tagStyle = ' text-lg';
   }
 
-  const style = twMerge('font-bold', tagStyle, additionalClass);
+  const style = twMerge('text-black font-bold', tagStyle, additionalClass);
 </script>
 
 <svelte:element this={tag} class={style} {title}>
-    {@render children()}
+  {@render children()}
 </svelte:element>
