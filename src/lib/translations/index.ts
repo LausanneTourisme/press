@@ -101,7 +101,7 @@ export const config: Config = {
     ...Object.values(RouteTypes)
       .filter(x => x !== RouteTypes.Home)
       .flatMap(type => supportedLocales.map(locale => {
-        const slug = routeTypes[locale][`type.${type}.slug`];
+        const slug = routeTypes[locale][`${type}.slug`];
         return {
           locale,
           key: 'pages',
@@ -110,16 +110,16 @@ export const config: Config = {
         }
       })),
 
-      //create all themes
+      //create all translations for specific theme's view
       ...Object.values(Themes)
       .flatMap(theme => supportedLocales.map(locale => {
-        const type = routeTypes[locale][`type.${RouteTypes.Themes}.slug`]
-        const slug = routeTypes[locale][`type.themes.${theme}.slug`];
+        const type = routeTypes[locale][`${RouteTypes.Themes}.slug`]
+        const slug = routeTypes[locale][`themes.${theme}.slug`];
 
         return {
           locale,
           key: `themes.${theme}`,
-          routes: [`/${locale}/${type}/${slug}`, `/${locale}/${type}/${slug}/`],
+          routes: undefined,
           loader: async () => (await import(`./${locale}/pages/themes/${theme}.json`)).default,
         }
       })),
