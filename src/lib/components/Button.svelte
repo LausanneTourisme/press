@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { twMerge } from 'tailwind-merge';
-  import type { Snippet } from 'svelte';
-  import { preventDefault } from '$lib/helpers/events';
   import { blankable } from '$lib/helpers';
+  import type { Snippet } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
 
   type ButtonProps = {
     tag?: 'a' | 'button';
@@ -39,19 +38,21 @@
     'group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded-sm text-base-content',
     !border ? 'border-0' : 'border-2',
     !inline ? 'inline-block' : 'inline',
-    !negative ? 'border-gray-700' : 'border-gray-200',
+    !negative ? 'border-gray-700 text-black' : 'text-white border-gray-200',
     !nofx
       ? !negative
         ? 'hover:bg-neutral dark:hover:bg-zinc-700 hover:text-white shadow-base-100'
-        : 'hover:bg-white  shadow-gray-950'
+        : 'hover:bg-white shadow-gray-950 hover:text-black'
       : '',
-    !nofx ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-lg' : 'px-0 hover:opacity-75',
+    !nofx
+      ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-lg'
+      : 'px-0 hover:opacity-75',
     additionalClass
   );
 
   // If href is provided, the default behavior (navigation) should be preserved
   const handleClick = (event: Event) => {
-    if (tag === "button" && href) {
+    if (tag === 'button' && href) {
       return; // Let the default anchor behavior proceed
     }
     onclick?.(event); // Otherwise, handle the custom onclick with preventDefault
