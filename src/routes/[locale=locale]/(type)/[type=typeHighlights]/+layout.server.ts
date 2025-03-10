@@ -25,7 +25,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${RouteTypes.Highlights}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.${RouteTypes.Highlights}.slug`]}`
         })),
     }
 

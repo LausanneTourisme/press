@@ -20,12 +20,12 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: translations[lang][`page.title`],        
+        title: translations[lang][`page.title`],
         description: translations[lang][`page.meta-description`],
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${RouteTypes.Themes}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.${RouteTypes.Themes}.slug`]}`
         })),
     }
 

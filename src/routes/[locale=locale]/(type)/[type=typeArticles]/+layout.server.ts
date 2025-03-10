@@ -18,7 +18,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
 
     const lang = params.locale as Locale;
     const type = params.type as RouteType;
-    
+
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
         title: translations[lang][`page.title`],
@@ -26,7 +26,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${type}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.${type}.slug`]}`
         })),
     }
 

@@ -17,10 +17,10 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
     const { i18n, translations }: Parent = await parent() as Parent;
     const lang = params.locale as Locale;
 
-    const type = translations[lang][`route.type.${RouteTypes.Presskit}.slug`] === params.type ? RouteTypes.Presskit : RouteTypes.Pressrelease
+    const type = translations[lang][`route.${RouteTypes.Presskit}.slug`] === params.type ? RouteTypes.Presskit : RouteTypes.Pressrelease
 
     await loadTranslations(params.locale ?? defaultLocale, `/${lang}/${params.type}`)
-    
+
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
         title: translations[lang][`page.title`],
@@ -28,7 +28,7 @@ export const load: ServerLoad = async ({ url, params, parent }) => {
         image: '', //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.type.${type}.slug`]}`
+            href: `/${locale}/${translations[locale][`route.${type}.slug`]}`
         })),
     }
 
