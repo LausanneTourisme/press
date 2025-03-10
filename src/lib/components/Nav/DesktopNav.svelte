@@ -78,7 +78,7 @@
   </div>
   <!-- End desktop menu -->
   <div class="flex h-full items-center justify-between px-6">
-    <Button href={route(RouteTypes.Contact)} class="invertable px-3 block" tag="a">
+    <Button href={route(RouteTypes.Contact)} class="invertable dark:text-white px-3 block" tag="a">
       {$t('common.contact-us')}
     </Button>
 
