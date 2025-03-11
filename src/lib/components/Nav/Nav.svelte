@@ -15,7 +15,7 @@
   );
 </script>
 
-<nav class={style} aria-labelledby="group-navigation">
+<nav class={style} aria-labelledby="group-navigation" id="desktop-navigation">
   <DesktopNav class="hidden xl:flex" />
   <MobileNav class="flex xl:hidden" />
 </nav>
