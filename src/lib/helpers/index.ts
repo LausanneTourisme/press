@@ -1,4 +1,4 @@
-import type { RouteType } from "$enums";
+import { RouteTypes, Themes, type RouteType, type Theme } from "$enums";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";
 
 /**
@@ -44,9 +44,15 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   return `https://medialibrary.lausanne-tourisme.ch?registration&${lang}`;
 }
 
-export const route = (type: RouteType, forceLocale: Locale | undefined = undefined): string => {
-  const lang = forceLocale ?? locale.get() as Locale ?? defaultLocale;
+export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme } = { forceLocale: undefined, theme: undefined }): string => {
+  const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
+  if (type === RouteTypes.Themes) {
+    if (!options.theme) return `/${lang}/${slug}/${options.theme}`;
+
+    return `/${lang}/${slug}/${t.get(`route.${RouteTypes.Themes}.${options.theme}.slug`)}/`
+  }
+
 
   if (!slug) return `/${lang}`;
   return `/${lang}/${slug}`;
@@ -73,4 +79,19 @@ export const randomString = (length: number = 6): string => {
 export const isDarkMode = (): boolean => {
   const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
   return darkModeQuery.matches;
+}
+
+export function chunkify<Type>(a: Type[], perChunk: number = 4): Type[][] {
+  return a.reduce((result: Type[][], item, index) => {
+    const chunkIndex = Math.floor(index / perChunk);
+
+    // Ensure the chunk array exists
+    if (!result[chunkIndex]) {
+      result[chunkIndex] = [];
+    }
+
+    result[chunkIndex].push(item);
+
+    return result;
+  }, []);
 }
