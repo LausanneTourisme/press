@@ -7,6 +7,7 @@
   interface LinkProps {
     href: string;
     preload?: true | '' | 'hover' | 'tap' | 'off';
+    noscroll?: boolean;
     withIcon?: boolean;
     class?: string;
     classIcon?: string;
@@ -18,6 +19,7 @@
   const {
     href,
     preload = 'hover',
+    noscroll = false,
     withIcon = true,
     class: additionalClass,
     classIcon,
@@ -35,7 +37,7 @@
   let iconStyle = twMerge('h-4 w-4 inline ml-2 ', classIcon);
 </script>
 
-<a {href} {target} class={style} data-sveltekit-preload-data={preload} {onclick}>
+<a {href} {target} class={style} data-sveltekit-noscroll={noscroll} data-sveltekit-preload-data={preload} {onclick}>
   {@render children()}
   {#if withIcon}
     {#if !icon}
