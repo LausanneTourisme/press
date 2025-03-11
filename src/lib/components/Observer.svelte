@@ -7,15 +7,15 @@
     intersecting?: boolean;
     threshold?: number;
     rootMargin?: string;
-    onIntersecting?: () => void;
+    onIntersecting?: (intersecting: boolean) => void;
   };
 
   const {
     class: additionalClass,
     children,
     intersecting = false,
-    threshold = 0.5,
-    rootMargin = '0px',
+    threshold = 0.75,
+    rootMargin = "0px",
     onIntersecting = () => {}
   }: Props = $props();
 
@@ -27,7 +27,7 @@
     observer = new IntersectionObserver(
       (entries, observer) => {
         isIntersecting = entries[0].isIntersecting;
-        onIntersecting();
+        onIntersecting(isIntersecting);
       },
       {
         root: null,
@@ -40,6 +40,6 @@
   });
 </script>
 
-<div bind:this={div}>
+<div bind:this={div} class={additionalClass}>
   {@render children({ intersecting: isIntersecting })}
 </div>
