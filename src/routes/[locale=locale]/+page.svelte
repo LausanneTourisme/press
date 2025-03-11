@@ -1,47 +1,60 @@
 <script lang="ts">
+  import { City, Museum, Park, People, Sport, School } from '$lib/Icons';
   import { RouteTypes } from '$enums';
+  import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
+  import Counter from '$lib/components/Counter.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
+  import Observer from '$lib/components/Observer.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import Themes from '$lib/components/Themes.svelte';
-  import { getMediaLibraryRegisterLink, route, isDarkMode as getDarkMode } from '$lib/helpers';
+  import { isDarkMode as getDarkMode, getMediaLibraryRegisterLink, route } from '$lib/helpers';
   import { locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
 
   let isDarkMode = $state(false);
+  let isMobile = $state(false);
+
+  const updateSize = () => {
+    isMobile = window.innerWidth < 1280;
+  };
+  // Listen for changes
+  const updateDarkMode = () => {
+    isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  };
 
   onMount(() => {
-    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-    // Set initial value
-    isDarkMode = getDarkMode();
-
-    // Listen for changes
-    const updateDarkMode = () => {
-      isDarkMode = getDarkMode();
-    };
-
-    darkModeQuery.addEventListener('change', updateDarkMode);
+    updateSize();
+    updateDarkMode();
+    /*
+     *  Event listeners
+     */
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateDarkMode);
+    window.addEventListener('resize', updateSize);
+    window.addEventListener('orientationchange', updateSize);
 
     // Cleanup event listener when the component is destroyed
-    return () => darkModeQuery.removeEventListener('change', updateDarkMode);
+    return () => {
+      window.removeEventListener('resize', updateSize);
+      window.removeEventListener('orientationchange', updateSize);
+      window
+        .matchMedia('(prefers-color-scheme: dark)')
+        .removeEventListener('change', updateDarkMode);
+    };
   });
 
-  const onVideoIntersecting = () => {
-    console.log('intersecting video');
-    //       const nav = document.getElementById('main-nav');
-    //       if (nav) {
-    //           if (browser && !Device.isMobile) {
-    //               nav.classList.remove('bg-white', 'shadow-lg');
-    //               nav.classList.add('invert-colours', 'bg-transparent', 'text-white');
-    //           } else {
-    //               nav.classList.remove('invert-colours', 'bg-transparent', 'text-white');
-    //               nav.classList.add('bg-white', 'shadow-lg');
-    //           }
-    //       }
+  const onVideoIntersecting = (isIntersecting: boolean) => {
+    const nav = document.getElementById('main-nav');
+    if (nav && !isMobile) {
+      // ['invert-colours', 'bg-transparent', 'dark:bg-transparent', 'text-white'].forEach(
+      //   (x) => nav.classList.toggle(x, isIntersecting) // Use second arg to set state explicitly
+      // );
+      // nav.classList.toggle('shadow-lg', !isIntersecting); // Use second arg to set state explicitly
+      nav.classList.toggle('hidden-nav', isIntersecting);
+    }
   };
 </script>
 
@@ -103,14 +116,14 @@
   -->
 <Container class="relative z-10 py-[3vh]" fullscreen={true}>
   <!-- FIXME <3 -->
-  <!-- <Player
+  <Player
+    autoplay={!isMobile}
     src="/videos/welcome_card_{$locale}.mp4"
     poster="/images/pages/home/poster-video.png"
     controls={true}
     onIntersecting={onVideoIntersecting}
     title="Welcome to Lausanne!"
-  /> -->
-  <div>I don't want see video everytime</div>
+  />
 </Container>
 <!--
   -
@@ -233,4 +246,56 @@
   -->
 <Container fullscreen={true} class="mb-12">
   <Themes />
+</Container>
+<!--
+  -
+  -
+  -
+  - Numbers >>>>>>>>>>>>>>>>>>>>>>>
+  -
+  -
+  -
+  -->
+<Anchor anchor="numbers" />
+<Container fullscreen={true} class="bg-shakespeare-100 md:px-16">
+  <Heading class="pt-5 text-center">
+    {$t('page.numbers')}
+  </Heading>
+  <Observer
+    rootMargin={isMobile ? '0px' : '100px'}
+    class="w-full rounded-none stats stats-vertical md:grid md:grid-cols-2 xl:stats-horizontal xl:h-56 xl:flex xl:justify-center xl:items-start overflow-x-hidden bg-transparent"
+  >
+    {#snippet children({ intersecting })}
+      <Counter animate={intersecting} value={350} label={$t('page.counter.park')}>
+        {#snippet icon()}
+          <Park class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+      <Counter animate={intersecting} value={150_000} label={$t('page.counter.people')}>
+        {#snippet icon()}
+          <People class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+      <Counter animate={intersecting} value={4} label={$t('page.counter.city')}>
+        {#snippet icon()}
+          <City class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+      <Counter animate={intersecting} value={21} label={$t('page.counter.museum')}>
+        {#snippet icon()}
+          <Museum class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+      <Counter animate={intersecting} value={11} label={$t('page.counter.school')}>
+        {#snippet icon()}
+          <School class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+      <Counter animate={intersecting} value={58} label={$t('page.counter.sport')}>
+        {#snippet icon()}
+          <Sport class="xl:h-12 xl:w-12 2xl:h-16 2xl:w-16" />
+        {/snippet}
+      </Counter>
+    {/snippet}
+  </Observer>
 </Container>
