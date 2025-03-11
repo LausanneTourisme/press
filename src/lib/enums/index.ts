@@ -13,15 +13,20 @@ export const RouteTypes = {
 } as const;
 
 export const Themes = {
-  Nature: 'nature',
-  Education: 'education',
   Culture: 'culture',
+  Nature: 'nature',
+  Sport: 'sport',
   Gastronomy: 'gastronomy',
+  Education: 'education',
   Sustainability: 'sustainability',
   Family: 'family',
   Architecture: 'architecture',
   Lacustrine: 'lacustrine',
   Wellness: 'wellness',
   Unusual: 'unusual',
-  Sport: 'sport',
 } as const;
+
+// Manually create reverse mapping: (because TS enum isn't really good)
+export const ThemeKeys = Object.fromEntries(
+  Object.entries(Themes).map(([key, value]) => [value, key])
+) as Record<Theme, keyof typeof Themes>;
