@@ -10,7 +10,7 @@
     onIntersecting?: () => void;
   };
 
-  let {
+  const {
     class: additionalClass,
     children,
     intersecting = false,
@@ -19,17 +19,18 @@
     onIntersecting = () => {}
   }: Props = $props();
 
+  let isIntersecting = $state(intersecting);
   let div: HTMLElement;
   let observer: IntersectionObserver | null = null;
 
   onMount(() => {
     observer = new IntersectionObserver(
       (entries, observer) => {
-        intersecting = entries[0].isIntersecting;
+        isIntersecting = entries[0].isIntersecting;
         onIntersecting();
       },
       {
-        root: div,
+        root: null,
         rootMargin,
         threshold
       }
@@ -40,5 +41,5 @@
 </script>
 
 <div bind:this={div}>
-  {@render children({ intersecting })}
+  {@render children({ intersecting: isIntersecting })}
 </div>
