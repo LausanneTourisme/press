@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Play } from 'lucide-svelte';
-  import Device from 'svelte-device-info';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import Observer from '../Observer.svelte';
@@ -9,7 +8,7 @@
 
   type Props = {
     class?: string;
-    onIntersecting?: () => void;
+    onIntersecting?: (isIntersecting: boolean) => void;
     src: string;
     poster: string;
     title?: string;
@@ -22,22 +21,19 @@
     src,
     poster,
     title,
-    autoplay = !Device.isMobile,
+    autoplay = false,
     controls = false,
     onIntersecting
   }: Props = $props();
 
-  let video: Video | undefined;
+  let video: Video;
   let posterElement: HTMLDivElement;
   let controlsElement: HTMLButtonElement;
-  let isPlaying: boolean = false;
 
   const launch = async () => {
-    if (!video) return;
+    video.toggleVideoState();
 
-    isPlaying = !video.play();
-
-    if (isPlaying) {
+    if (video.isRunning()) {
       posterElement.classList.add('-translate-y-full');
       controlsElement.classList.add('opacity-0');
       controlsElement.classList.remove('z-30');
@@ -68,11 +64,13 @@
   </div>
   <Observer
     class="video h-full"
-    rootMargin={'500px 0px 0px'}
-    threshold={0.7}
-    onIntersecting={() => {
-      video?.play();
-      onIntersecting?.();
+    onIntersecting={(isIntersecting) => {
+      if (isIntersecting) {
+        video.play();
+      } else {
+        video.pause(); // Optional: Pause video on exit
+      }
+      onIntersecting?.(isIntersecting); // Pass state up
     }}
   >
     <Video
