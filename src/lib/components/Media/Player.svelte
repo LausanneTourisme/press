@@ -1,11 +1,11 @@
 <script lang="ts">
   import { Play } from 'lucide-svelte';
-  import { twMerge } from 'tailwind-merge';
-  import Image from './Image.svelte';
-  import Observer from '../Observer.svelte';
-  import { fade } from 'svelte/transition';
-  import Video from './Video.svelte';
   import Device from 'svelte-device-info';
+  import { fade } from 'svelte/transition';
+  import { twMerge } from 'tailwind-merge';
+  import Observer from '../Observer.svelte';
+  import Image from './Image.svelte';
+  import Video from './Video.svelte';
 
   type Props = {
     class?: string;
@@ -24,10 +24,7 @@
     title,
     autoplay = !Device.isMobile,
     controls = false,
-    onIntersecting = () => {
-      console.log("aaaaaaaaaaaa")
-      video?.play();
-    }
+    onIntersecting
   }: Props = $props();
 
   let video: Video | undefined;
@@ -69,7 +66,15 @@
   >
     <Image src={poster} alt="" class="opacity-50 transition-opacity group-hover:opacity-75" />
   </div>
-  <Observer class="video h-full" rootMargin={'500px 0px 0px'} threshold={0.7} onIntersecting={() => onIntersecting()}>
+  <Observer
+    class="video h-full"
+    rootMargin={'500px 0px 0px'}
+    threshold={0.7}
+    onIntersecting={() => {
+      video?.play();
+      onIntersecting?.();
+    }}
+  >
     <Video
       bind:this={video}
       autoplay={false}
