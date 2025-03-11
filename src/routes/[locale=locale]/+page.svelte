@@ -31,18 +31,18 @@
   });
 
   const onVideoIntersecting = () => {
-    console.log("intersecting video")
-  //       const nav = document.getElementById('main-nav');
-  //       if (nav) {
-  //           if (browser && !Device.isMobile) {
-  //               nav.classList.remove('bg-white', 'shadow-lg');
-  //               nav.classList.add('invert-colours', 'bg-transparent', 'text-white');
-  //           } else {
-  //               nav.classList.remove('invert-colours', 'bg-transparent', 'text-white');
-  //               nav.classList.add('bg-white', 'shadow-lg');
-  //           }
-  //       }
-    };
+    console.log('intersecting video');
+    //       const nav = document.getElementById('main-nav');
+    //       if (nav) {
+    //           if (browser && !Device.isMobile) {
+    //               nav.classList.remove('bg-white', 'shadow-lg');
+    //               nav.classList.add('invert-colours', 'bg-transparent', 'text-white');
+    //           } else {
+    //               nav.classList.remove('invert-colours', 'bg-transparent', 'text-white');
+    //               nav.classList.add('bg-white', 'shadow-lg');
+    //           }
+    //       }
+  };
 </script>
 
 <!--
@@ -231,4 +231,6 @@
   -
   -
   -->
-  <Themes/>
+<Container fullscreen={true} class="mb-12">
+  <Themes />
+</Container>

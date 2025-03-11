@@ -12,41 +12,39 @@
   let showMore: boolean = $state(false);
 </script>
 
-<Container fullscreen={true} class="mb-12">
-  <div class="p-6 md:pt-16">
-    <Heading class="text-center">
-      {$t('page.themes.title')}
-    </Heading>
-    <Paragraph centered>
-      {$t('page.themes.paragraph')}
-    </Paragraph>
-  </div>
+<div class="p-6 md:pt-16">
+  <Heading class="text-center">
+    {$t('page.themes.title')}
+  </Heading>
+  <Paragraph centered>
+    {$t('page.themes.paragraph')}
+  </Paragraph>
+</div>
 
-  <Container width="medium">
-    {#each chunks as chunk, chunckIndex}
-      {@const length = chunk.length}
-      {#if chunckIndex === 0}
-        <section class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8">
-          {#each chunk as theme, index}
-            <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} />
-          {/each}
-        </section>
-      {/if}
+<Container width="medium">
+  {#each chunks as chunk, chunckIndex}
+    {@const length = chunk.length}
+    {#if chunckIndex === 0}
+      <section class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8">
+        {#each chunk as theme, index}
+          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} />
+        {/each}
+      </section>
+    {/if}
 
-      {#if chunckIndex}
-        <section
-          class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8 {!showMore
-            ? 'hidden'
-            : ''}"
-        >
-          {#each chunk as theme, index}
-            <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {length} />
-          {/each}
-        </section>
-      {/if}
-    {/each}
-  </Container>
-  <div class="mt-8 flex justify-center {showMore ? 'hidden' : ''}">
-    <Button onclick={() => (showMore = true)}>{$t(`common.btn.showMoreThemes`)}</Button>
-  </div>
+    {#if chunckIndex}
+      <section
+        class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8 {!showMore
+          ? 'hidden'
+          : ''}"
+      >
+        {#each chunk as theme, index}
+          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {length} />
+        {/each}
+      </section>
+    {/if}
+  {/each}
 </Container>
+<div class="mt-8 flex justify-center {showMore ? 'hidden' : ''}">
+  <Button onclick={() => (showMore = true)}>{$t(`common.btn.showMoreThemes`)}</Button>
+</div>
