@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { CircleX, Pause, Play, Volume2 } from 'lucide-svelte';
-  import { onMount, type Snippet } from 'svelte';
-  import { twMerge } from 'tailwind-merge';
-  import Device from 'svelte-device-info';
   import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-  import { filename } from '$lib/helpers';
   import { Cloudinary } from '$lib/cloudinary';
+  import { filename } from '$lib/helpers';
+  import { CircleX, Pause, Play, Volume2 } from 'lucide-svelte';
+  import { onMount, type Snippet } from 'svelte';
+  import Device from 'svelte-device-info';
+  import { twMerge } from 'tailwind-merge';
 
   type VideoProps = {
     src: string;
@@ -34,17 +34,20 @@
     children
   }: VideoProps = $props();
 
-  export function play() {
-    if (!video) return false;
-
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
-    }
-
-    return video.paused;
+  export function toggleVideoState(){
+    if(isRunning()) pause();
+    else play();
   }
+
+  export function play() {
+      video?.play();
+  }
+
+  export function pause() {
+    video?.pause();
+  }
+
+  export const isRunning = () => video ? !video.paused : false;
 
   const refreshSrc = () => {
     if (video) {
