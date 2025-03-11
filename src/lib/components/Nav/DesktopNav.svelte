@@ -16,7 +16,7 @@
 
   const { class: additionalClass }: Props = $props();
 
-  const style = twMerge("flex h-full items-center justify-between", additionalClass)
+  const style = twMerge('flex h-full items-center justify-between', additionalClass);
 </script>
 
 <nav class={style} aria-labelledby="desktop-navigation">
@@ -24,9 +24,9 @@
     href={route(RouteTypes.Home)}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
-    <Logo/>
+    <Logo />
   </a>
-  <div class="ml-6 h-full grow items-center justify-start flex">
+  <div class="ml-6 flex h-full grow items-center justify-start">
     <!-- Desktop menu -->
     {#each menuItems($locale as Locale) as item}
       {#if !item.link}
@@ -78,7 +78,7 @@
   </div>
   <!-- End desktop menu -->
   <div class="flex h-full items-center justify-between px-6">
-    <Button href={route(RouteTypes.Contact)} class="invertable dark:text-white px-3 block" tag="a">
+    <Button href={route(RouteTypes.Contact)} class="invertable block px-3 dark:text-white" tag="a">
       {$t('common.contact-us')}
     </Button>
 
@@ -105,6 +105,7 @@
                     href={alternate.href}
                     preload="tap"
                     withIcon={false}
+                    noscroll={true}
                   >
                     {alternate.hreflang.toUpperCase()}
                   </Link>
