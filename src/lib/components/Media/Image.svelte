@@ -1,11 +1,10 @@
 <script lang="ts">
+  import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { Cloudinary, type Transform } from '$lib/cloudinary';
   import { filename } from '$lib/helpers';
   import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
-  import {dev} from "$app/environment"
 
   interface ImageProps {
     src: string;
@@ -35,11 +34,11 @@
   }: ImageProps = $props();
 
   let style = twMerge('object-cover w-full h-full', additionalClass);
-  let image: undefined|HTMLImageElement = $state(undefined);
+  let image: undefined | HTMLImageElement = $state(undefined);
   let srcResolved: string = $state('');
 
   const generateImagePath = () => {
-    if(!image) {
+    if (!image) {
       srcResolved = src;
       return;
     }
