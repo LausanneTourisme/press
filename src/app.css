@@ -81,6 +81,31 @@
   --color-metallic-950: #26262b;
 }
 
+@layer navbar {
+  /* Hide the nav with an animation */
+  .hidden-nav {
+    @apply transition-transform duration-500 ease-in-out;
+    transform: translateY(-110%);
+  }
+
+  /* Make the nav invisible (remove shadow, set transparent background) */
+  .invisible-nav {
+    @apply bg-transparent shadow-none;
+  }
+
+  /* Adjust nav logo on light mode */
+  @media (prefers-color-scheme: light) {
+    .invisible-nav .nav-logo {
+      filter: invert(1);
+    }
+  }
+
+  /* Style menu items when nav is invisible */
+  .invisible-nav .menu-item {
+    @apply text-white;
+  }
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still

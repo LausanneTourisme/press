@@ -19,10 +19,3 @@
   <DesktopNav class="hidden xl:flex" />
   <MobileNav class="flex xl:hidden" />
 </nav>
-
-<style>
-  .hidden-nav {
-    transform: translateY(-110%);
-    transition: transform 0.5s ease-in-out;
-  }
-</style>

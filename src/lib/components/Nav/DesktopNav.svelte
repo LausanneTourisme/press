@@ -22,7 +22,7 @@
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
     href={route(RouteTypes.Home)}
-    class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
+    class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo />
   </a>
@@ -31,7 +31,7 @@
     {#each menuItems($locale as Locale) as item}
       {#if !item.link}
         <div class="dropdown dropdown-hover group">
-          <div tabindex="0" role="button" class="m-3 rounded-none hover:opacity-75">
+          <div tabindex="0" role="button" class="menu-item m-3 rounded-none hover:opacity-75">
             <p class="py-9 text-[17px] font-bold">
               <span>{item.title}</span>
             </p>
@@ -63,7 +63,7 @@
           {/if}
         </div>
       {:else}
-        <p class="h-full content-center text-[17px] font-bold">
+        <p class="menu-item h-full content-center text-[17px] font-bold">
           <Link
             class="h-full justify-between p-2 text-left font-bold"
             href={item.link}

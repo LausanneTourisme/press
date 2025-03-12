@@ -77,11 +77,9 @@
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
     if (nav && !isMobile) {
-      // ['invert-colours', 'bg-transparent', 'dark:bg-transparent', 'text-white'].forEach(
-      //   (x) => nav.classList.toggle(x, isIntersecting) // Use second arg to set state explicitly
-      // );
-      // nav.classList.toggle('shadow-lg', !isIntersecting); // Use second arg to set state explicitly
-      nav.classList.toggle('hidden-nav', isIntersecting);
+      nav.classList.toggle('invisible-nav', isIntersecting) // Use second arg to set state explicitly
+      // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
+      // nav.classList.toggle('hidden-nav', isIntersecting);
     }
   };
 </script>
