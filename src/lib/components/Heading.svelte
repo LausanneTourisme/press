@@ -30,7 +30,7 @@
       tagStyle = ' text-lg';
   }
 
-  const style = twMerge('text-black font-bold', tagStyle, additionalClass);
+  const style = twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass);
 </script>
 
 <svelte:element this={tag} class={style} {title}>

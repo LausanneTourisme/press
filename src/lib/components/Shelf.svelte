@@ -7,13 +7,14 @@
   type Props = {
     class?: string;
     titleClass?: string;
+    childClass?: string;
     isOpen: boolean;
     onToggle: () => void;
     children: Snippet;
     title: string | Snippet;
   };
 
-  const { class: additionalClass, children, title, titleClass, isOpen, onToggle }: Props = $props();
+  const { class: additionalClass, children, title, titleClass, childClass, isOpen, onToggle }: Props = $props();
   const style = twMerge(additionalClass);
 </script>
 
@@ -36,7 +37,7 @@
   </button>
 
   {#if isOpen}
-    <div transition:slide class="space-y-2">
+    <div transition:slide class={twMerge("space-y-2", childClass)}>
       {@render children()}
     </div>
   {/if}

@@ -30,9 +30,9 @@
     <!-- Desktop menu -->
     {#each menuItems($locale as Locale) as item}
       {#if !item.link}
-        <div class="dropdown dropdown-hover group">
-          <div tabindex="0" role="button" class="menu-item m-3 rounded-none hover:opacity-75">
-            <p class="py-9 text-[17px] font-bold">
+        <div class="dropdown dropdown-hover group rounded-none">
+          <div tabindex="0" role="button" class="menu-item m-3">
+            <p class="py-9 text-[17px] font-bold hover:opacity-75">
               <span>{item.title}</span>
             </p>
           </div>
@@ -50,7 +50,7 @@
                 {/snippet}
                 <li>
                   <Link
-                    class="items-list-element hover:text-brand-600 hover:bg-base-100 justify-between px-6 py-4 text-left text-[20px] font-medium hover:rounded-sm hover:border-none hover:underline hover:opacity-100"
+                    class="items-list-element hover:text-brand-600 hover:bg-base-100 dark:hover:base-dark-hover justify-between px-6 py-4 text-left text-[20px] font-medium hover:rounded-sm hover:border-none hover:underline hover:opacity-100"
                     href={item.link}
                     preload="tap"
                     icon={item.icon ? icon : undefined}
@@ -63,9 +63,9 @@
           {/if}
         </div>
       {:else}
-        <p class="menu-item h-full content-center text-[17px] font-bold">
+        <p class="menu-item h-full content-center p-2 px-5 text-[17px] font-bold">
           <Link
-            class="h-full justify-between p-2 text-left font-bold"
+            class="h-full justify-between text-left font-bold"
             href={item.link}
             preload="tap"
             withIcon={false}

@@ -42,7 +42,7 @@
     !nofx
       ? !negative
         ? 'hover:bg-neutral dark:hover:bg-zinc-700 hover:text-white shadow-base-100'
-        : 'hover:bg-white shadow-gray-950 hover:text-black'
+        : 'hover:bg-white hover:text-black '
       : '',
     !nofx
       ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-lg'

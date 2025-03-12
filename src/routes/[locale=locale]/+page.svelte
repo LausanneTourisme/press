@@ -4,6 +4,7 @@
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Counter from '$lib/components/Counter.svelte';
+  import Faq from '$lib/components/Faq.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
@@ -115,7 +116,7 @@
       {$t('page.hero.paragraph')}
     </Paragraph>
 
-    <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true}>
+    <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true} tag="a">
       {$t('common.contact-us')}
     </Button>
   </div>
@@ -173,7 +174,7 @@
       </Paragraph>
       <div>
         {#key isDarkMode}
-          <Button negative={isDarkMode} href={getMediaLibraryRegisterLink($locale as Locale)}>
+          <Button negative={isDarkMode} href={getMediaLibraryRegisterLink($locale as Locale)} tag="a">
             {$t('page.goToMediaLibrary')}
           </Button>
         {/key}
@@ -208,7 +209,7 @@
         {$t('page.whatIsNew.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Highlights)}>
+        <Button negative={true} href={route(RouteTypes.Highlights)} tag="a">
           {$t('common.btn.learnMore')}
         </Button>
       </div>
@@ -230,7 +231,7 @@
         {$t('page.pressRelease.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Pressrelease)}>
+        <Button negative={true} href={route(RouteTypes.Pressrelease)} tag="a">
           {$t('common.btn.learnMore')}
         </Button>
       </div>
@@ -253,7 +254,7 @@
         {$t('page.mediaCoverage.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Coverage)}>
+        <Button negative={true} href={route(RouteTypes.Coverage)} tag="a">
           {$t('common.btn.learnMore')}
         </Button>
       </div>
@@ -283,7 +284,7 @@
   -
   -->
 <Anchor name="numbers" />
-<Container fullscreen={true} class="bg-shakespeare-100 md:px-16">
+<Container fullscreen={true} class="bg-shakespeare-100 dark:bg-shakespeare-400 md:px-16">
   <Heading class="pt-5 text-center">
     {$t('page.numbers')}
   </Heading>
@@ -390,7 +391,7 @@
     </div>
   </div>
   <Paragraph class="text-center">
-    <Button href={route(RouteTypes.Contact)}>
+    <Button href={route(RouteTypes.Contact)} class="px-3 dark:text-white" tag="a">
       {$t('common.contact-us')}
     </Button>
   </Paragraph>
@@ -409,4 +410,5 @@
     <Heading class="text-center my-8">
         {$t("page.faq.title")}
     </Heading>
+    <Faq />
 </Container>

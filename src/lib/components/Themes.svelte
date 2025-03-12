@@ -13,7 +13,7 @@
 </script>
 
 <div class="p-6 md:pt-16">
-  <Heading class="text-center">
+  <Heading class="text-center ">
     {$t('page.themes.title')}
   </Heading>
   <Paragraph centered>

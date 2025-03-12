@@ -11,7 +11,7 @@
   let { class: additionalClass = '', centered = false, children }: HeadingProps = $props();
 
   const style = twMerge(
-    'text-neutral-700 font-lighter leading-7 my-3',
+    'dark:text-white text-neutral-700 font-lighter leading-7 my-3',
     centered ? 'md:text-center mx-auto max-w-[560px] md:max-w-[800px]' : '',
     additionalClass
   );

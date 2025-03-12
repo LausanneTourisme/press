@@ -40,22 +40,22 @@
         "title": "Distinctions",
         "paragraph": "Il faut reconnaitre que la belle vaudoise a su se faire une place de choix parmi les plus grands, en cumulant les records du monde notamment. Ainsi, si elle peut se targuer de figurer parmi les 52 destinations à visiter selon le NY Times, Lausanne a aussi été élue « Meilleure petite ville du monde » par le célèbre magazine britannique Monocle. Rien que ça !",
         "trophies": {
-            "first":{
+            "first": {
                 "name": "Lausanne, Where the Olympics never end",
                 "content": "En 2024, Lausanne et son esprit olympique sont mis à l'honneur par le New York Times.",
                 "link": "https://www.nytimes.com/2024/07/08/travel/lausanne-food-art-olympics.html"
             },
-            "second":{
+            "second": {
                 "name": "52 places to go in 2023",
                 "content": "Le New York Times recommande Lausanne dans son sacrosaint classement des 52 destinations incontournables.",
                 "link": "https://www.nytimes.com/interactive/2023/travel/52-places-travel-2023.html"
             },
-            "third":{
+            "third": {
                 "name": "Swisstainable",
                 "content": "Ce label créé par Suisse Tourisme rassemble les nombreux restaurants et hébergements lausannois engagés en faveur de la promotion du terroir et de la durabilité.",
                 "link": "https://www.lausanne-tourisme.ch/fr/le-guide-du-voyage-durable-a-lausanne/"
             },
-            "fourth":{
+            "fourth": {
                 "name": "Best small city in the world",
                 "content": "Fin 2019, Monocle - le réputé magazine britannique lifestyle - désignait Lausanne comme étant la « Meilleure petite ville du monde ».",
                 "link": "https://www.lausanne-tourisme.ch/fr/lausanne-meilleure-petite-ville/"
@@ -67,6 +67,43 @@
         "paragraph": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités&nbsp;? N'hésitez pas à nous contacter en remplissant le formulaire ci-dessous. Nous nous efforcerons de vous répondre dans les meilleurs délais."
     },
     "faq": {
-        "title": "Foire aux questions"
+        "title": "Foire aux questions",
+        "authorisation": {
+            "title": "Autorisation de tournage à Lausanne",
+            "paragraph1": "Quelles sont les autorisations pour filmer dans l'espace public ?",
+            "paragraph2": "Il n'y a pas d'autorisation spécifique pour tourner à Lausanne. Cependant, le consentement doit être obtenu lorsqu'il s'agit de filmer des personnes identifiables. Il est également important, lors de tournage dans l'espace public de faciliter les déplacements des riverains et ne pas perturber la circulation routière.",
+            "paragraph3": "En cas d'occupation accrue du domaine public, merci de prendre contact avec le service presse de Lausanne Tourisme.",
+            "paragraph4": "Quelles sont les autorisations pour filmer dans l'espace privé ?",
+            "paragraph5": "Pour toutes demandes de tournage se situant dans l'espace privé (par ex. musées, restaurants, …) une demande d'autorisation auprès de l'établissement est obligatoire. La demande doit être faite quelques jours auparavant."
+        },
+        "drone": {
+            "title": "Utilisation d'un drone",
+            "paragraph1": "Quelles sont les autorisations pour l'utilisation d'un drone à Lausanne ?",
+            "paragraph2.part1": "Aucune autorisation n'est nécessaire si le drone ne dépasse pas le poids de 250g. Au-delà, une autorisation doit être faite auprès de l'aéroport de la Blécherette",
+            "paragraph2.part2": "et du Corps de police de la Ville de Lausanne",
+            "paragraph3": "Le formulaire à remplir avec toutes les informations nécessaires se trouve",
+            "paragraph3.link-text": "ici",
+            "paragraph4": "La demande doit être effectuée au moins 3 jours ouvrables avant le jour du survol."
+        },
+        "access": {
+            "title": "Accès à Lausanne",
+            "paragraph1": "Lausanne est facilement accessible : par le rail (réseau CFF, EC Directs et TGV de Paris et Milan), par la route (autoroute A1/E25 et A9/E27), par les airs (à 60 km de l'Aéroport International de Genève, en 45 minutes de voiture ou de train) et par l'eau, grâce aux bateaux de la Compagnie Générale de Navigation sur le lac Léman.",
+            "paragraph1.slug": "acces-a-lausanne",
+            "paragraph1.more-informations": "Plus d'informations"
+        },
+        "travel": {
+            "title": "Se déplacer gratuitement à Lausanne",
+            "paragraph1.part1": "Les visiteurs séjournant dans un hôtel, une auberge de jeunesse, un camping ou un bed & breakfast pour lesquels la taxe de séjour est applicable bénéficient de la ",
+            "paragraph1.link": "https://www.lausanne-tourisme.ch/fr/lausanne-transport-card-and-more/",
+            "paragraph1.part2": "Cette carte leur permet de profiter d'un accès gratuit aux transports publics de l'agglomération (bus, train, métro) pendant toute la durée de leur séjour (max. 15 jours)."
+        },
+        "mention": {
+            "title": "Comment nous mentionner dans vos articles ou contenus ?",
+            "paragraph1": "Merci de bien vouloir faire mention de notre site internet dans toutes publications dédiées à notre destination :",
+            "paragraph2.in-social-networks": "Sur les réseaux :",
+            "paragraph2.instagram": "Identifiez @thelausanner en story et en post, et insérez le hashtag #thelausanner en post",
+            "paragraph2.linkedIn": "Identifiez @Lausanne, Capitale Olympique",
+            "paragraph3.find-us": "Identifiez @Lausanne, Capitale Olympique"
+        }
     }
 }
