@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
-  import { route } from '$lib/helpers';
+  import { maxMobileWidth, route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
   import { locale, t, type Locale } from '$lib/translations';
   import { ChevronDown, Menu, X } from 'lucide-svelte';
@@ -18,7 +18,7 @@
     maxWidth?: number; //max width to trigger the auto close of the menu on window size change
   };
 
-  const { class: additionalClass, maxWidth = 1280 }: Props = $props();
+  const { class: additionalClass, maxWidth = maxMobileWidth }: Props = $props();
   const style: string = twMerge('flex h-full items-center justify-between', additionalClass);
 
   let open = $state(false);

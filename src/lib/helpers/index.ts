@@ -1,10 +1,7 @@
 import { RouteTypes, Themes, type RouteType, type Theme } from "$enums";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";
 
-/**
- * simple wrapper for scan.js to pick it up
- */
-export const _ = (text: string): string => text;
+export const maxMobileWidth = 1280;
 export const blankable = (href: string | undefined): string | undefined => href && href.includes('http') ? '_blank' : undefined;
 
 /**
@@ -56,29 +53,6 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
 
   if (!slug) return `/${lang}`;
   return `/${lang}/${slug}`;
-}
-
-export const getKeyByValue = (object: Record<string, unknown>, value: unknown): unknown => {
-  return Object.keys(object).find((key: string) => object[key] === value);
-}
-
-export const randomString = (length: number = 6): string => {
-  let result = '';
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  const charactersLength = characters.length;
-  let counter = 0;
-
-  while (counter < length) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    counter += 1;
-  }
-
-  return result;
-}
-
-export const isDarkMode = (): boolean => {
-  const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  return darkModeQuery.matches;
 }
 
 export function chunkify<Type>(a: Type[], perChunk: number = 4): Type[][] {
