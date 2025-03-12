@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { City, Museum, Park, People, Sport, School } from '$lib/Icons';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -11,15 +10,44 @@
   import Observer from '$lib/components/Observer.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import Themes from '$lib/components/Themes.svelte';
-  import { isDarkMode as getDarkMode, getMediaLibraryRegisterLink, route } from '$lib/helpers';
+  import Trophies, { type Trophy } from '$lib/components/Trophies.svelte';
+  import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';
+  import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
   import { locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
 
   let isDarkMode = $state(false);
   let isMobile = $state(false);
 
+  const trophies: Trophy[] = [
+    {
+      name: $t('page.distinctions.trophies.first.name'),
+      content: $t('page.distinctions.trophies.first.content'),
+      image: '/images/pages/home/articles/parc-musee-olympique.jpg',
+      link: $t('page.distinctions.trophies.first.link')
+    },
+    {
+      name: $t('page.distinctions.trophies.second.name'),
+      content: $t('page.distinctions.trophies.second.content'),
+      image: '/images/pages/home/articles/52placestogo.jpg',
+      link: $t('page.distinctions.trophies.second.link')
+    },
+    {
+      name: $t('page.distinctions.trophies.third.name'),
+      content: $t('page.distinctions.trophies.third.content'),
+      image: '/images/pages/home/articles/nature.jpg',
+      link: $t('page.distinctions.trophies.third.link')
+    },
+    {
+      name: $t('page.distinctions.trophies.fourth.name'),
+      content: $t('page.distinctions.trophies.fourth.content'),
+      image: '/images/pages/home/articles/best-small-city.jpg',
+      link: $t('page.distinctions.trophies.fourth.link')
+    }
+  ];
+
   const updateSize = () => {
-    isMobile = window.innerWidth < 1280;
+    isMobile = window.innerWidth < maxMobileWidth;
   };
   // Listen for changes
   const updateDarkMode = () => {
@@ -74,11 +102,11 @@
   <div class="p-6 text-left md:w-1/2 md:p-16 xl:mt-[25px] 2xl:mt-[5px]">
     <Heading tag="h1" class="text-white xl:whitespace-nowrap">
       <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]"
-        >{$t('page.title').toUpperCase()}</span
+        >{$t('page.hero.title').toUpperCase()}</span
       >
       <br />
       <span class="inline-block tracking-tight"
-        >{$t('page.subtitle')}<span
+        >{$t('page.hero.subtitle')}<span
           class="shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)]">!</span
         >
       </span>
@@ -256,14 +284,14 @@
   -
   -
   -->
-<Anchor anchor="numbers" />
+<Anchor name="numbers" />
 <Container fullscreen={true} class="bg-shakespeare-100 md:px-16">
   <Heading class="pt-5 text-center">
     {$t('page.numbers')}
   </Heading>
   <Observer
     rootMargin={isMobile ? '0px' : '100px'}
-    class="w-full rounded-none stats stats-vertical md:grid md:grid-cols-2 xl:stats-horizontal xl:h-56 xl:flex xl:justify-center xl:items-start overflow-x-hidden bg-transparent"
+    class="stats stats-vertical xl:stats-horizontal w-full overflow-x-hidden rounded-none bg-transparent md:grid md:grid-cols-2 xl:flex xl:h-56 xl:items-start xl:justify-center"
   >
     {#snippet children({ intersecting })}
       <Counter animate={intersecting} value={350} label={$t('page.counter.park')}>
@@ -298,4 +326,89 @@
       </Counter>
     {/snippet}
   </Observer>
+</Container>
+<!--
+  -
+  -
+  -
+  - Distintions >>>>>>>>>>>>>>>>>>>>>>>
+  -
+  -
+  -
+  -->
+<Anchor name="distinctions" />
+<Container fullscreen={true} class="pt-16">
+  <Heading class="mb-4 text-center">
+    {$t('page.distinctions.title')}
+  </Heading>
+  <Paragraph centered class="p-6">
+    {$t('page.distinctions.paragraph')}
+  </Paragraph>
+
+  <!-- TROPHIES -->
+  <Container width="large">
+    <Trophies values={trophies} />
+  </Container>
+</Container>
+<!--
+  -
+  -
+  -
+  - Contact >>>>>>>>>>>>>>>>>>>>>>>
+  -
+  -
+  -
+  -->
+<Container>
+  <Heading class="text-center">
+    {$t('page.contact.title')}
+  </Heading>
+
+  <Paragraph centered>
+    {@html $t('page.contact.paragraph')}
+  </Paragraph>
+  <div class="text-center md:flex md:items-center md:justify-center">
+    <div class="mt-12 md:mx-12">
+      <article>
+        <div class="avatar w-full">
+          <div class="mx-auto w-48 rounded-full md:w-64">
+            <Image src="/images/olivia.jpg" alt="Olivia Bosshart" />
+          </div>
+        </div>
+        <Heading tag="h3">Olivia Bosshart</Heading>
+        <Paragraph>Press & Public Relations Manager</Paragraph>
+      </article>
+    </div>
+    <div class="mt-12 md:mx-12">
+      <article>
+        <div class="avatar w-full">
+          <div class="mx-auto w-48 rounded-full md:w-64">
+            <Image src="/images/laura.jpg" alt="Laura Ragonese" />
+          </div>
+        </div>
+        <Heading tag="h3">Laura Ragonese</Heading>
+        <Paragraph>Media & Press Coordinator</Paragraph>
+      </article>
+    </div>
+  </div>
+  <Paragraph class="text-center">
+    <Button href={route(RouteTypes.Contact)}>
+      {$t('common.contact-us')}
+    </Button>
+  </Paragraph>
+</Container>
+<!--
+  -
+  -
+  -
+  - FAQ >>>>>>>>>>>>>>>>>>>>>>>
+  -
+  -
+  -
+  -->
+<Anchor name="faq"/>
+<Container class="mb-16">
+    <Heading class="text-center my-8">
+        {$t("page.faq.title")}
+    </Heading>
 </Container>
