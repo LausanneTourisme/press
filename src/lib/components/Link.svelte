@@ -11,6 +11,7 @@
     withIcon?: boolean;
     class?: string;
     classIcon?: string;
+    withFlex?: boolean;
     children: Snippet;
     icon?: Snippet;
     onclick?: (this: Window, ev: MouseEvent) => any;
@@ -19,8 +20,9 @@
   const {
     href,
     preload = 'hover',
-    noscroll = false,
+    noscroll = true,
     withIcon = true,
+    withFlex = true,
     class: additionalClass,
     classIcon,
     children,
@@ -30,7 +32,8 @@
   const target: string | undefined = blankable(href);
 
   const style = twMerge(
-    'flex justify-center items-center text-center transition-all font-medium',
+    withFlex ? 'flex justify-center items-center' : '',
+    'text-center transition-all font-medium',
     'hover:opacity-75',
     additionalClass
   );

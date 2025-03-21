@@ -7,9 +7,25 @@
   import { t } from '$lib/translations';
   import Button from './Button.svelte';
   import ThemeCard from './ThemeCard.svelte';
+  type Props = {
+    class?: string;
+    expanded?: boolean;
+    onShowMore?: () => void;
+  };
+
+  const { class: additionalClass, onShowMore = () => {}, expanded = false }: Props = $props();
 
   const chunks = chunkify(Object.values(Themes));
   let showMore: boolean = $state(false);
+
+  $effect(() => {
+    showMore = expanded;
+  });
+
+  const displayMore = () => {
+    showMore = true;
+    onShowMore();
+  };
 </script>
 
 <div class="p-6 md:pt-16">
@@ -46,5 +62,5 @@
   {/each}
 </Container>
 <div class="mt-8 flex justify-center {showMore ? 'hidden' : ''}">
-  <Button onclick={() => (showMore = true)}>{$t(`common.btn.showMoreThemes`)}</Button>
+  <Button onclick={displayMore}>{$t(`common.btn.showMoreThemes`)}</Button>
 </div>

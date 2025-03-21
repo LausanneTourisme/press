@@ -19,6 +19,7 @@
 
   let isDarkMode = $state(false);
   let isMobile = $state(false);
+  let displayAllThemes= $state(false);
 
   const trophies: Trophy[] = [
     {
@@ -58,6 +59,7 @@
   onMount(() => {
     updateSize();
     updateDarkMode();
+    displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
     /*
      *  Event listeners
      */
@@ -78,7 +80,7 @@
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
     if (nav && !isMobile) {
-      nav.classList.toggle('invisible-nav', isIntersecting) // Use second arg to set state explicitly
+      nav.classList.toggle('invisible-nav', isIntersecting); // Use second arg to set state explicitly
       // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
       // nav.classList.toggle('hidden-nav', isIntersecting);
     }
@@ -142,7 +144,6 @@
   -
   -->
 <Container class="relative z-10 py-[3vh]" fullscreen={true}>
-  <!-- FIXME <3 -->
   <Player
     autoplay={!isMobile}
     src="/videos/welcome_card_{$locale}.mp4"
@@ -174,7 +175,11 @@
       </Paragraph>
       <div>
         {#key isDarkMode}
-          <Button negative={isDarkMode} href={getMediaLibraryRegisterLink($locale as Locale)} tag="a">
+          <Button
+            negative={isDarkMode}
+            href={getMediaLibraryRegisterLink($locale as Locale)}
+            tag="a"
+          >
             {$t('page.goToMediaLibrary')}
           </Button>
         {/key}
@@ -272,7 +277,7 @@
   -
   -->
 <Container fullscreen={true} class="mb-12">
-  <Themes />
+  <Themes expanded={displayAllThemes} onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}/>
 </Container>
 <!--
   -
@@ -287,9 +292,11 @@
 <Container fullscreen={true} class="bg-shakespeare-100 dark:bg-shakespeare-400 md:px-16">
   <Heading class="pt-5 text-center">
     {$t('page.numbers')}
+    {isMobile}
   </Heading>
   <Observer
-    rootMargin={isMobile ? '0px' : '100px'}
+    threshold={isMobile ? 0.5 : 0.75}
+    rootMargin={isMobile ? '50%' : '100px'}
     class="stats stats-vertical xl:stats-horizontal w-full overflow-x-hidden rounded-none bg-transparent md:grid md:grid-cols-2 xl:flex xl:h-56 xl:items-start xl:justify-center"
   >
     {#snippet children({ intersecting })}
@@ -405,10 +412,10 @@
   -
   -
   -->
-<Anchor name="faq"/>
+<Anchor name="faq" />
 <Container class="mb-16">
-    <Heading class="text-center my-8">
-        {$t("page.faq.title")}
-    </Heading>
-    <Faq />
+  <Heading class="my-8 text-center">
+    {$t('page.faq.title')}
+  </Heading>
+  <Faq />
 </Container>

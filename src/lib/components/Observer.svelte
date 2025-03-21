@@ -7,6 +7,7 @@
     intersecting?: boolean;
     threshold?: number;
     rootMargin?: string;
+    root?: null|Element
     onIntersecting?: (intersecting: boolean) => void;
   };
 
@@ -16,6 +17,7 @@
     intersecting = false,
     threshold = 0.75,
     rootMargin = "0px",
+    root,
     onIntersecting = () => {}
   }: Props = $props();
 
@@ -23,14 +25,14 @@
   let div: HTMLElement;
   let observer: IntersectionObserver | null = null;
 
-  onMount(() => {
+  $effect( () => {
     observer = new IntersectionObserver(
       (entries, observer) => {
         isIntersecting = entries[0].isIntersecting;
         onIntersecting(isIntersecting);
       },
       {
-        root: null,
+        root,
         rootMargin,
         threshold
       }

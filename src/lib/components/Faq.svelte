@@ -10,6 +10,7 @@
   import LinkedIn from '$lib/Icons/LinkedIn.svelte';
   import Facebook from '$lib/Icons/Facebook.svelte';
   import Youtube from '$lib/Icons/Youtube.svelte';
+  import { onMount } from 'svelte';
 
   type Props = {
     class?: string;
@@ -20,8 +21,15 @@
 
   const toggleShelf: (index: number) => void = (index) => {
     openShelfIndex = openShelfIndex === index ? null : index;
+    // TODO check if it's really necessary
+    // sessionStorage.setItem('FAQindex', openShelfIndex !== null ? openShelfIndex.toString() : '');
   };
 
+  onMount(() => {
+    // const FAQindex: string | null = sessionStorage.getItem('FAQindex');
+    // if (!FAQindex || isNaN(parseInt(FAQindex as string))) openShelfIndex = null;
+    // else openShelfIndex = parseInt(FAQindex as string);
+  });
   const style = twMerge('h-full', additionalClass);
 </script>
 
@@ -29,12 +37,12 @@
   <Shelf
     onToggle={() => toggleShelf(0)}
     isOpen={openShelfIndex === 0}
-    class="border-b-4 border-gray-300  hover:bg-slate-100 dark:hover:bg-base-dark-hover"
+    class="dark:hover:bg-base-dark-hover border-b-4  border-gray-300 hover:bg-slate-100"
     titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
-      <Heading tag="h3" class="mt-0 text-xl font-semibold">
+      <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
         {$t('page.faq.authorisation.title')}
       </Heading>
     {/snippet}
@@ -63,12 +71,12 @@
   <Shelf
     onToggle={() => toggleShelf(1)}
     isOpen={openShelfIndex === 1}
-    class="border-b-4 border-gray-300 dark:hover:bg-base-dark-hover"
+    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
     titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
-      <Heading tag="h3" class="mt-0 text-xl font-semibold">
+      <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
         {$t('page.faq.drone.title')}
       </Heading>
     {/snippet}
@@ -111,12 +119,12 @@
   <Shelf
     onToggle={() => toggleShelf(2)}
     isOpen={openShelfIndex === 2}
-    class="border-b-4 border-gray-300 dark:hover:bg-base-dark-hover"
+    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
     titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
-      <Heading tag="h3" class="mt-0 text-xl font-semibold">
+      <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
         {$t('page.faq.access.title')}
       </Heading>
     {/snippet}
@@ -139,12 +147,12 @@
   <Shelf
     onToggle={() => toggleShelf(3)}
     isOpen={openShelfIndex === 3}
-    class="border-b-4 border-gray-300 dark:hover:bg-base-dark-hover"
+    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
     titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
-      <Heading tag="h3" class="mt-0 text-xl font-semibold">
+      <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
         {$t('page.faq.travel.title')}
       </Heading>
     {/snippet}
@@ -160,7 +168,7 @@
           Lausanne Transport Card
           <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
         </a>
-        <br/>
+        <br />
         {$t('page.faq.travel.paragraph1.part2')}
       </Paragraph>
     {/snippet}
@@ -169,12 +177,12 @@
   <Shelf
     onToggle={() => toggleShelf(4)}
     isOpen={openShelfIndex === 4}
-    class="border-b-4 border-gray-300 dark:hover:bg-base-dark-hover"
+    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
     titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
-      <Heading tag="h3" class="mt-0 text-xl font-semibold">
+      <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
         {$t('page.faq.mention.title')}
       </Heading>
     {/snippet}
@@ -194,14 +202,14 @@
         </span>
       </Paragraph>
 
-      <div class="overflow-x-auto rounded bg-red-50">
-        <Paragraph class="px-4 font-bold">
+      <div class="overflow-x-auto bg-red-50 dark:text-black">
+        <Paragraph class="px-4 font-bold dark:text-black">
           {$t('page.faq.mention.paragraph2.in-social-networks')}
         </Paragraph>
 
         <table class="table">
           <tbody>
-            <tr class="h-auto md:h-20">
+            <tr class="h-auto border-gray-300 md:h-20">
               <td class="w-16 text-center">
                 <div class="flex items-center gap-3">
                   <Link
@@ -209,7 +217,7 @@
                     href="https://www.instagram.com/thelausanner/"
                     class="ml-4"
                   >
-                    <Instagram class="w-6 h-6"/>
+                    <Instagram class="h-6 w-6" />
                   </Link>
                 </div>
               </td>
@@ -225,7 +233,7 @@
                     href="https://www.linkedin.com/company/lausanne-capitale-olympique"
                     class="ml-4"
                   >
-                    <LinkedIn class="w-6 h-6"/>
+                    <LinkedIn class="h-6 w-6" />
                   </Link>
                 </div>
               </td>
@@ -237,8 +245,8 @@
         </table>
       </div>
 
-      <div class="mt-1 pb-5 bg-red-50 p-4">
-        <Paragraph class="font-bold">
+      <div class="mt-1 bg-red-50 p-4 pb-5 dark:text-black">
+        <Paragraph class="font-bold  dark:text-black">
           {$t('page.faq.mention.paragraph3.find-us')}
         </Paragraph>
         <div class="inline-flex">

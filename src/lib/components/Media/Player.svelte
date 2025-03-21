@@ -26,14 +26,14 @@
     onIntersecting
   }: Props = $props();
 
-  let video: Video;
+  let video: Video|undefined = $state(undefined);
   let posterElement: HTMLDivElement;
   let controlsElement: HTMLButtonElement;
 
   const launch = async () => {
-    video.toggleVideoState();
+    video?.toggleVideoState();
 
-    if (video.isRunning()) {
+    if (video?.isRunning()) {
       posterElement.classList.add('-translate-y-full');
       controlsElement.classList.add('opacity-0');
       controlsElement.classList.remove('z-30');
@@ -66,9 +66,9 @@
     class="video h-full"
     onIntersecting={(isIntersecting) => {
       if (isIntersecting) {
-        video.play();
+        video?.play();
       } else {
-        video.pause(); // Optional: Pause video on exit
+        video?.pause(); // Optional: Pause video on exit
       }
       onIntersecting?.(isIntersecting); // Pass state up
     }}

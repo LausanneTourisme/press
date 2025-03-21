@@ -29,7 +29,7 @@
       <span>{title}</span>
     {/if}
     <span
-      class="inline-flex items-center justify-center transition-transform duration-300"
+      class="inline-flex items-center justify-center transition-transform duration-300 ml-2.5"
       class:rotate-180={isOpen}
     >
       <ChevronDown strokeWidth={3} class="inline h-4 w-4" />
