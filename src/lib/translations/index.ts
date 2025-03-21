@@ -73,6 +73,14 @@ export const config: Config = {
       loader: async () => (await import(`./${locale}/menu.json`)).default,
     })),
 
+    // Footer
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'footer',
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/footer.json`)).default,
+    })),
+
     // Common
     ...supportedLocales.map(locale => ({
       locale,

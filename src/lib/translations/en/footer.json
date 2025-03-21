@@ -1,0 +1,39 @@
+{
+    "follow-us": "Suivez-nous !",
+    "newsletter": "Recevez les bons plans de Lausanne",
+    "subscribe": {
+        "text": "S'inscrire",
+        "url": "https://www.lausanne-tourisme.ch/fr/newsletter/"
+    },
+    "partners": "Nos partenaires",
+    "contact": "Contact",
+    "where": {
+        "text": "Où nous trouver ?",
+        "url": "https://www.lausanne-tourisme.ch/fr/ou-nous-trouver/"
+    },
+    "infos": {
+        "corporate": {
+            "title": "Institutionnel",
+            "about-us": {
+                "text": "A propos de nous",
+                "url": "https://www.lausanne-tourisme.ch/fr/a-propos/"
+            },
+            "member-space": {
+                "text": "Espace Membres",
+                "url": "https://www.lausanne-tourisme.ch/fr/espace-membres/"
+            },
+            "jobs": {
+                "text": "Emploi",
+                "url": "https://www.lausanne-tourisme.ch/fr/emploi/"
+            },
+            "general-terms": {
+                "text": "Conditions générales d'utilisation",
+                "url": "https://www.lausanne-tourisme.ch/fr/conditions-utilisation/"
+            },
+            "privacy": {
+                "text": "Politique de confidentialité",
+                "url": "https://www.lausanne-tourisme.ch/fr/politique-confidentialite/"
+            }
+        }
+    }
+}
