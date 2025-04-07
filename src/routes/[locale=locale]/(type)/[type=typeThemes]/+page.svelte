@@ -1,10 +1,8 @@
 <script lang="ts">
-  import { RouteTypes } from "$enums";
-  import { locale } from '$lib/translations';
+  import Container from '$lib/components/Container.svelte';
+  import Themes from '$lib/components/Themes.svelte';
 </script>
 
-<div class="text-column text-center">
-  {$locale}
-  <br />
-  {RouteTypes.Themes}
-</div>
+<Container fullscreen={true} class="mb-12">
+  <Themes expanded={true} />
+</Container>
