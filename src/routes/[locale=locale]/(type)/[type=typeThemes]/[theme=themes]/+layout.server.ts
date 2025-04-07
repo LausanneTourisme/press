@@ -1,4 +1,6 @@
 import { RouteTypes, Themes, type RouteType } from '$enums';
+import { ucfirst } from '$lib/helpers';
+import { getFavorites, getPosts } from '$lib/helpers/requests.server';
 import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, supportedLocales, translations as libTranslations, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error, redirect, type ServerLoad } from '@sveltejs/kit';
@@ -17,11 +19,13 @@ interface Parent {
 
 export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
     const { i18n, translations, locale, type }: Parent = await parent() as Parent;
+    const currentThemeType = Object.values(Themes).find(theme => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme)
 
+    const articles = await getPosts({ type: 'post', highlighted: false, locale });
+    const highlightedPosts = await getPosts({ type: 'post', highlighted: true, locale });
+    const favorites = await getFavorites({ locale, tag: ucfirst(translations['fr'][`route.${RouteTypes.Themes}.${currentThemeType}.slug`]) })
 
-    const currentThemeType = Object.values(Themes).find(theme => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme )
-
-    await loadTranslations(params.locale ?? defaultLocale, url.pathname);
+    await loadTranslations(locale, url.pathname);
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
@@ -41,5 +45,10 @@ export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
         locale,
         type,
         theme: currentThemeType,
+        payload: {
+            articles,
+            highlightedPosts,
+            favorites,
+        }
     };
 };
