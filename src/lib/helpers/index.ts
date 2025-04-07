@@ -45,7 +45,7 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
   if (type === RouteTypes.Themes) {
-    if (!options.theme) return `/${lang}/${slug}/${options.theme}`;
+    if (!options.theme) return `/${lang}/${slug}`;
 
     return `/${lang}/${slug}/${t.get(`route.${RouteTypes.Themes}.${options.theme}.slug`)}/`
   }
