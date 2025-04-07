@@ -49,7 +49,7 @@
 
     {#snippet children()}
       <Paragraph class="font-semibold">
-        <ChevronRight class="mb-2 inline h-2 w-2" />
+        <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
         {$t('page.faq.authorisation.paragraph1')}
       </Paragraph>
       <Paragraph>
@@ -59,7 +59,7 @@
         {$t('page.faq.authorisation.paragraph3')}
       </Paragraph>
       <Paragraph class="font-semibold">
-        <ChevronRight class="mb-2 inline h-2 w-2" />
+        <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
         {$t('page.faq.authorisation.paragraph4')}
       </Paragraph>
       <Paragraph>
