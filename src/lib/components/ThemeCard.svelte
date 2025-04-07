@@ -3,7 +3,7 @@
   import Figure from '$lib/components/Figure.svelte';
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
-  import { t } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import { blur } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import Clickable from './Clickable.svelte';
@@ -52,7 +52,7 @@
 </script>
 
 <article class={style} in:blur={{ delay: 150 * gridIndex, opacity: 0.2 }}>
-  <Clickable href={route(RouteTypes.Themes, { theme })}>
+  <Clickable href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}>
     <Heading
       tag="h3"
       class="translate-y-0 p-2 text-white opacity-100 shadow-gray-950 transition-transform [text-shadow:_0_0_10px_var(--tw-shadow-color)] group-hover:translate-y-72 group-hover:opacity-0 md:p-4"
