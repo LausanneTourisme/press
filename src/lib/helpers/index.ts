@@ -69,3 +69,7 @@ export function chunkify<Type>(a: Type[], perChunk: number = 4): Type[][] {
     return result;
   }, []);
 }
+
+export function ucfirst(string: string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
