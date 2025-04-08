@@ -14,13 +14,9 @@
   };
 
   const { class: additionalClass, onShowMore = () => {}, expanded = false }: Props = $props();
-//TODO on expanded param directly load all
-  const chunks = chunkify(Object.values(Themes));
-  let showMore: boolean = $state(false);
 
-  $effect(() => {
-    showMore = expanded;
-  });
+  const chunks = chunkify(Object.values(Themes));
+  let showMore: boolean = $state(expanded);
 
   const displayMore = () => {
     showMore = true;
