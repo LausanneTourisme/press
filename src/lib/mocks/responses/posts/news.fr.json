@@ -1,0 +1,133 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "total": 4,
+            "data": [
+                {
+                    "id": "4",
+                    "author": "Lausanne Tourisme",
+                    "name": "Food Halle 15",
+                    "lead": "Ouverture d'un nouveau food court à Lausanne",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://foodhalle15.ch/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "amjSr0mZLWMpvRuI5Yp9huhLxLYkgz8XZ2pvrGiu",
+                            "copyright": "© Food Halle 15",
+                            "public_name": "Food Halle 15"
+                        }
+                    ],
+                    "published_at": "1722549600",
+                    "seo": {
+                        "description": "Ouverture d'un nouveau food court à Lausanne",
+                        "noindex": false,
+                        "slug": "lausanne-elue-meilleure-petite-ville-du-monde"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "5",
+                    "author": "Lausanne Tourisme",
+                    "name": "La Bise",
+                    "lead": "Ouverture d'un nouveau glacier",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.lausanne-tourisme.ch/fr/decouvrir/la-bise/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "qDkeNRim62CpXYzRuUluEFkK7bSvmOVr9e5iQp5a",
+                            "copyright": "© La bise",
+                            "public_name": "La bise"
+                        }
+                    ],
+                    "published_at": "1722722400",
+                    "seo": {
+                        "description": "Ouverture d'un nouveau glacier",
+                        "noindex": false,
+                        "slug": "lausanne-la-plus-belle"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "6",
+                    "author": "Lausanne Tourisme",
+                    "name": "PIC au Beau-Rivage Palace",
+                    "lead": "Réouverture du restaurant Pic au Beau-Rivage Palace",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.brp.ch/restaurants-bars/pic-au-beau-rivage-palace/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "eXj9aUhdJyHeJ55izLcSsnn3C0rLbNUJnt71qSzg",
+                            "copyright": "© Beau Rivage Palace",
+                            "public_name": "Pic au Beau Rivage Palace"
+                        }
+                    ],
+                    "published_at": "1722808800",
+                    "seo": {
+                        "description": "Réouverture du restaurant Pic au Beau-Rivage Palace",
+                        "noindex": false,
+                        "slug": "superbe"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "7",
+                    "author": "Lausanne Tourisme",
+                    "name": "La Cathédrale de Lausanne",
+                    "lead": "2025: 750 ans de la Cathédrale de Lausanne",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.24heures.ch/patrimoine-bati-de-lausanne-la-cathedrale-aura-une-illumination-spirituelle-669206510544",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "brsgda500HgIWQvALuBTQqhHXeEt5QUjsVjRQTlM",
+                            "copyright": "© 24heures",
+                            "public_name": "Cathédrale de Lausanne"
+                        }
+                    ],
+                    "published_at": "1722895200",
+                    "seo": {
+                        "description": "2025: 750 ans de la Cathédrale de Lausanne",
+                        "noindex": false,
+                        "slug": "et-une-de-plus-pour-samuser"
+                    },
+                    "tags": []
+                }
+            ]
+        }
+    }
+}

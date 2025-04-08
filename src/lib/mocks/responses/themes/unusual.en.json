@@ -1,0 +1,477 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 15,
+            "total": 15,
+            "data": [
+                {
+                    "id": 100,
+                    "name": "Aux spécialités de la Palud",
+                    "content": "This tiny speciality grocery shop offers an impressive assortment of products from all over the world as well as a delicatessen section featuring empanadas, hummus, tzatziki and stuffed grape leaves, to name a few. However, the flagship product remains their famous merguez fresh sausages.",
+                    "tags": [
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 5
+                    },
+                    "pois": [
+                        {
+                            "id": 606,
+                            "name": "Aux spécialités de la Palud",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5218",
+                                    "longitude": "6.63326"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 222,
+                    "name": "Bar Tabac",
+                    "content": "An intimate and peaceful café that invites you to linger. Located at Rue Beau-Séjour, the Bar Tabac has retained all the charm of days gone by with its menu and its unusual décor. One of my favourite cafés to study or work!",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 734,
+                            "name": "Bar Tabac",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5177",
+                                    "longitude": "6.6357"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 137,
+                    "name": "Café Mozart",
+                    "content": "I love the feeling of being in the middle of town but with views of the Alps and the lake. Its location by the music conservatory of Lausanne and just up the road from the Opéra of Lausanne makes it a great stopover before enjoying some music.",
+                    "tags": [
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 15
+                    },
+                    "pois": [
+                        {
+                            "id": 667,
+                            "name": "Café Mozart",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5187004",
+                                    "longitude": "6.63311"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 161,
+                    "name": "Centre Culturel des Terreaux",
+                    "content": "This former Bel-Air church transformed into a cultural centre welcomes an eclectic audience since 2004. A small, intimist theatre, it hosts politically active and educational plays, comedians as well as dance performances by Lausanne companies.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 676,
+                            "name": "Centre culturel des Terreaux",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229997",
+                                    "longitude": "6.6279979"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 35,
+                    "name": "Bellevaux Cinema",
+                    "content": "I love independent cinema partly because it makes me cooler than other people, but mainly because I’m passionate about it. That’s why I regularly go to the Bellevaux Cinema, which shows films that are lesser known, a bit less commercial, but often unusual and moving.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 549,
+                            "name": "Cinema Bellevaux",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5349",
+                                    "longitude": "6.63337"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 268,
+                    "name": "Thelonica",
+                    "content": "Immerse yourself in a musical moment full of serenity with Thelonica. Every summer, the association offers you concerts at dawn, at the Jetée de la Compagnie. Its eclectic programming includes jazz, modern, classic and contemporary music. The unique atmosphere at dawn invites to an experience of discovery, dialogue and inner peace.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 131,
+                    "name": "Saint-François Kiosk",
+                    "content": "When I get off the bus at Saint-François, I just can’t walk by without stopping. This former tramway shelter has retained its charm from the 1910s with its glass awning, its marquetry, the small fountain leaning against it and its Art Nouveau aura. Savouring a good coffee in a beautiful café, what could be better?",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 627,
+                            "name": "Kiosque Saint-François",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5195",
+                                    "longitude": "6.63327"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 267,
+                    "name": "Lavaux Express",
+                    "content": "Would you be tempted by a magnificent view over the lake and vineyards? The Lavaux Express takes you on a tour of its site listed as UNESCO World Heritage. Various loops are available, each as stunning as the others. You also have the option of stopping in one of the many wine cellars of the area for a wine tasting or to savour an aperitif during your trip.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 639,
+                            "name": "Lavaux Express",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5017711",
+                                    "longitude": "6.6841041"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 209,
+                    "name": "Le Montriond",
+                    "content": "On the edge of Milan Park, the Montriond is the ideal meeting point for a coffee, a mate or an IPA. Located in the area just under the train station, this former Lausanne kiosk is my ideal landing place where I feel at home, with the promise of a chilled and intergenerational atmosphere.",
+                    "tags": [
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 771,
+                            "name": "Le Montriond",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.514984",
+                                    "longitude": "6.625161"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 196,
+                    "name": "Le Perchoir",
+                    "content": "In the heart of the magnificent Lausanne University campus, between the river and the green spaces, is a rather strange building: the Vortex. This circular building is a must see during any visit to Lausanne: designed as accommodation for UNIL and EPFL students, it is structured around a 2.8-kilometre spiral walkway that accesses all the student rooms. You can nevertheless reach the 8th floor by lift to get to one of the friendliest bars in Lausanne, Le Perchoir. A large terrace, sunset, view over the lake, food and especially quite low prices, and sometimes even concerts – what more could you ask for?",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 648,
+                            "name": "Le Perchoir Rooftop-Bar",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5243813",
+                                    "longitude": "6.5751886"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 72,
+                    "name": "Le Vestibule",
+                    "content": "Le Vestibule, known as the city's clandestine bar, is modelled after a speakeasy from the '20s. Once you've discovered its secret doors, you can take a seat on one of the comfy sofas and sip a delicious little cocktail. However, making your choice is difficult –  each new drink is more original than the last. In summer you can even sit on a terrace with a view of the cathedral while reading one of the books plucked from the shelves lining the bar.",
+                    "tags": [
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 570,
+                            "name": "Le Vestibule",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235",
+                                    "longitude": "6.6352"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 107,
+                    "name": "Les Arches",
+                    "content": "Right in the centre of the Place de l’Europe and nestling under the ancient stonework of the Grand-Pont alongside a slight slope which you can gently coast down to arrive at “Les Arches” terrace, a different sort of place and always a hit for enjoying an apéritif with friends, a snack or a mojito while taking in the sun (or sheltering from the rain!).",
+                    "tags": [
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 4
+                    },
+                    "pois": [
+                        {
+                            "id": 37,
+                            "name": "Les Arches",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5208897",
+                                    "longitude": "6.6308084"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 195,
+                    "name": "Les Grandes Roches",
+                    "content": "With its colourful and mismatched tables and chairs and palm trees, a feeling of being on holiday permeates the area under the Pont Bessières. I love that pop-up bar for its friendly, arty and inspiring atmosphere at all times of the day.",
+                    "tags": [
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 318,
+                            "name": "Les Grandes Roches",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5200646",
+                                    "longitude": "6.6365576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 231,
+                    "name": "Denantou Park",
+                    "content": "Denantou Park in Lausanne is a place that deeply inspires me as a photographer. Its Thai temple, surrounded by the lake’s tranquillity, creates a magical atmosphere. I like to organise shootings there to capture the unique beauty of the spot, and the proximity to the Olympic Museum adds a fantastic cultural touch!",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 91,
+                            "name": "Denantou Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 110,
+                    "name": "The Jump Spot",
+                    "content": "Jumping high in the air in the middle of Lausanne without raising eyebrows? Yes, you can do this now by making your way to “The Jump Spot”, Switzerland’s biggest indoor trampoline park with no less than 150 trampolines spread over 3300 m2. You just have to say: “I believe I can fly”!",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 4
+                    },
+                    "pois": [
+                        {
+                            "id": 615,
+                            "name": "The Jump Spot",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5236",
+                                    "longitude": "6.61962"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

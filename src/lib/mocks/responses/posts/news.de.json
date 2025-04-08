@@ -1,0 +1,133 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "total": 4,
+            "data": [
+                {
+                    "id": "4",
+                    "author": "Lausanne Tourisme",
+                    "name": "Food Halle 15",
+                    "lead": "Eröffnung eines neuen Food-Courts in Lausanne",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://foodhalle15.ch/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "amjSr0mZLWMpvRuI5Yp9huhLxLYkgz8XZ2pvrGiu",
+                            "copyright": "© Food Halle 15",
+                            "public_name": null
+                        }
+                    ],
+                    "published_at": "1722549600",
+                    "seo": {
+                        "description": "Eröffnung eines neuen Food-Courts in Lausanne",
+                        "noindex": false,
+                        "slug": "food-halle-15"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "5",
+                    "author": "Lausanne Tourisme",
+                    "name": "La Bise",
+                    "lead": "Eröffnung eines neuen Eiscafés",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.lausanne-tourisme.ch/de/entdecken/la-bise/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "qDkeNRim62CpXYzRuUluEFkK7bSvmOVr9e5iQp5a",
+                            "copyright": "© La bise",
+                            "public_name": "La bise"
+                        }
+                    ],
+                    "published_at": "1722722400",
+                    "seo": {
+                        "description": "Eröffnung eines neuen Eiscafés",
+                        "noindex": false,
+                        "slug": "la-bise"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "6",
+                    "author": "Lausanne Tourisme",
+                    "name": "PIC im Beau-Rivage Palace",
+                    "lead": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.brp.ch/restaurants-bars/pic-au-beau-rivage-palace/",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "eXj9aUhdJyHeJ55izLcSsnn3C0rLbNUJnt71qSzg",
+                            "copyright": "© Beau Rivage Palace",
+                            "public_name": null
+                        }
+                    ],
+                    "published_at": "1722808800",
+                    "seo": {
+                        "description": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace",
+                        "noindex": false,
+                        "slug": "pic-au-beau-rivage-palace"
+                    },
+                    "tags": []
+                },
+                {
+                    "id": "7",
+                    "author": "Lausanne Tourisme",
+                    "name": "Kathedrale von Lausanne",
+                    "lead": "2025: 750 Jahre Kathedrale von Lausanne",
+                    "summary": null,
+                    "highlight": false,
+                    "link": "https://www.24heures.ch/patrimoine-bati-de-lausanne-la-cathedrale-aura-une-illumination-spirituelle-669206510544",
+                    "content": [
+                        {
+                            "type": "generic",
+                            "empty": null
+                        }
+                    ],
+                    "type": "news",
+                    "medias": [
+                        {
+                            "cloudinary_id": "brsgda500HgIWQvALuBTQqhHXeEt5QUjsVjRQTlM",
+                            "copyright": "© 24heures",
+                            "public_name": null
+                        }
+                    ],
+                    "published_at": "1722895200",
+                    "seo": {
+                        "description": "2025: 750 Jahre Kathedrale von Lausanne",
+                        "noindex": false,
+                        "slug": "750-jahre-kathedrale"
+                    },
+                    "tags": []
+                }
+            ]
+        }
+    }
+}

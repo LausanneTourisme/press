@@ -1,0 +1,243 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 8,
+            "total": 8,
+            "data": [
+                {
+                    "id": 226,
+                    "name": "Die Gewächshäuser im Milan-Park",
+                    "content": "Mit ihren vielen Pärken und umgeben von Natur ist Lausanne ja schon eine grüne Stadt. Wenn ihr jedoch auf der Suche nach etwas Exotischerem seid, empfehle ich euch einen Besuch des botanischen Gartens im Milan-Park und vor allem der Gewächshäuser. Mit Hunderten von verschiedenen exotischen Arten nimmt uns das kleine Gewächshaus mit an einen anderen Ort. Im ersten Stock hat es sogar einen Tisch, wenn euch trotz der Hitze nach Verweilen ist.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 234,
+                            "name": "Naturéum - Botanische Garten",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5139602",
+                                    "longitude": "6.621955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "name": "Der Milan-Park",
+                    "content": "Der botanische Garten im Milan-Park ist eine kleine Insel der Vielfalt und eine willkommene Zuflucht vor dem geschäftigen Treiben der Einkaufszentren und dem Lärm der Stadt. Dem Quaken der Frösche und dem Summen der Bienen zu lauschen, ist eine echte Wohltat.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 279,
+                    "name": "Café de Grancy",
+                    "content": "Dieses Café befindet sich inmitten des Stadtviertels, und das kommt nicht von ungefähr. Es zeichnet sich durch seine gemütliche Atmosphäre und eine raffinierte, authentische Küche mit frischen und saisonalen Zutaten aus. Ob für einen Brunch, ein Mittag- oder Abendessen: Ein Besuch in diesem Café lohnt sich immer.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 34
+                    },
+                    "pois": [
+                        {
+                            "id": 43,
+                            "name": "Café de Grancy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5152778",
+                                    "longitude": "6.6286111"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "Die beste 100 % Schweizer Naturkosmetik-Marke. Köstlich duftende Seifen, feuchtigkeitsspendende Trockenöle mit betörenden Düften und hydroalkoholische Eisenkraut-Gels, die Ihre Hände nicht austrocknen, denn das Jahr 2020 verpflichtet.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Ferme de la Rovéréaz",
+                    "content": "Unweit von der Stadt und der Natur entfernt, bietet uns der Bauernhof Ferme de la Rovéréaz eine Vielzahl von Produkten (Obst, Gemüse, Öle, Käse, Honig, Aufschnitt, Eier...), natürlich alles ganz frisch und saisonal! Werfen Sie doch mal einen Blick auf ihr hervorragendes Permakultur-Programm, bei dem partizipatorische und pädagogische Ansätze miteinander verknüpft werden.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 576,
+                            "name": "Ferme de la Rovéréaz",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5334",
+                                    "longitude": "6.6475"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 266,
+                    "name": "Frip Square",
+                    "content": "Das Konzept dieses Geschäfts ist der Ausdruck einer Generation, die hin- und hergerissen ist zwischen ihrer Begeisterung für neue Trends und ihrem Umweltbewusstsein. Es fördert das Teilen, Tauschen und den verantwortungsbewussten Konsum im Bereich der Mode. Die Secondhand-Boutique war lange Zeit in einer ehemaligen Taxistation im Stadtviertel Sous-Gare untergebracht und ist kürzlich an den Chemin de la Joliette 5 gezogen, wo sie nicht nur Secondhand-Kleidung in ausgezeichnetem Zustand anbietet, sondern neu auch einen gleichnamigen Coffeeshop betreibt.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 889,
+                            "name": "Fripsquare",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5119289",
+                                    "longitude": "6.6288702"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 119,
+                    "name": "Le Fraisier",
+                    "content": "Le Fraisier bietet ein grossartiges kulinarisches Erlebnis in Lausanne. Veggie-Menüs unter der Woche am Mittag, mit frischen Produkten zubereitet und in einem schönen Vintage-Dekor serviert ‒ ich liebe es einfach. Ein Genuss für Augen und Gaumen!",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 17
+                    },
+                    "pois": [
+                        {
+                            "id": 293,
+                            "name": "Le Fraisier",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5217166",
+                                    "longitude": "6.6314848"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 38,
+                    "name": "Markt auf dem Place de la Riponne",
+                    "content": "Mein Samstagsritual: Ich stehe früh auf und gehe zum Place de la Riponne, bevor die Menschenmenge eintrifft. Um 8 Uhr morgens habe ich bereits alle meine Bio-Früchte und Gemüse aus Schweizer Anbau für die gesamte Woche eingekauft.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 9
+                    },
+                    "pois": [
+                        {
+                            "id": 613,
+                            "name": "Markt in der Innenstadt",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5232331",
+                                    "longitude": "6.6327695"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

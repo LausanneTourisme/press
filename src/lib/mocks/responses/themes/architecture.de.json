@@ -1,0 +1,405 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 13,
+            "total": 13,
+            "data": [
+                {
+                    "id": 56,
+                    "name": "Sauvabelin-Turm",
+                    "content": "Seine Wendeltreppe ist eine echte Überraschung. Auf- und Abstieg erfolgen auf der Doppelhelix auf entgegengesetzten Treppenläufen. Und der unverbaute Blick über Lausanne ist den Aufstieg allemal wert.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 306,
+                            "name": "Auf dem Sauvabelin-Turm",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5352803",
+                                    "longitude": "6.6384553"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 198,
+                    "name": "Turm der Kathedrale",
+                    "content": "Geht in Richtung Kathedrale für einen Blick auf Lausanne von oben. Bewältigt einige Dutzend Höhenmeter durch die kleinen Gässchen der Altstadt und schon befindet ihr euch bei der Kathedrale. Jetzt gilt es, die Stufen zur Turmspitze zu erklimmen. Oben erwarten euch eine Rundumsicht über Lausanne und die Glocken der Kathedrale. Ein Tipp: Steigt wieder hinunter, bevor sie ertönen!",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 372,
+                            "name": "Kathedrale von Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 85,
+                    "name": "L'Avenue des Alpes",
+                    "content": "Jeder von uns hat ein Stadtviertel, in dem er gerne leben würde... Die Avenue des Alpes ist für mich eine der schönsten Strassen Lausannes mit ihren schönen Gebäuden, die mich an die Architektur der Pariser Stadtvillen erinnern; mit dem Blick auf den See, den man zwischen den einzelnen Gebäuden erhaschen kann und mit dem gemütlichen Leben in diesem kleinen und unglaublich schicken Viertel. Und wenn ich auch nicht dort wohne, so mache ich mich doch immer wieder auf den Weg dorthin, um einfach nur herumzulaufen... und zu träumen.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 360,
+                            "name": "Georgette-quartier",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51736035",
+                                    "longitude": "6.63786038"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 31,
+                    "name": "Le Grant-Pont",
+                    "content": "Die Fotografie ist für mich nicht nur Beruf, sondern vor allem eine Leidenschaft, und die Grosse Brücke gehört zu den Orten, die ich besonders zum Sonnenuntergang unwiderstehlich finde. Man kann auf das gesamte Flon-Viertel mit seinem geschäftigen Treiben blicken und dabei das wunderbare Licht der letzten Sonnenstrahlen geniessen.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 390,
+                            "name": "Grand-Pont",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5223107",
+                                    "longitude": "6.623884"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 147,
+                    "name": "Escaliers du Marché",
+                    "content": "Diese malerischen Stufen erinnern an das Lausanne aus vergangenen Zeiten und verleihen der Stadt einen besonderen Charme. Die schönen Fassaden der umliegenden Gebäude machen diesen Ort noch attraktiver. Der Aufstieg mag zwar anstrengend erscheinen, aber die Mühe lohnt sich, denn oben angekommen erwartet euch eine wunderschöne Aussicht direkt auf die Kathedrale hinunter und über die ganze Stadt!",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 38,
+                            "name": "Escaliers du Marché",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5221316",
+                                    "longitude": "6.6338261"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 151,
+                    "name": "Cité, die Altstadt",
+                    "content": "Ein Spaziergang durch die charmanten Gässchen, in denen sich historische Denkmäler und typische Bistros abwechseln, ist für mich wie ein Reise in vergangene Zeiten. Ich finde die Gassen unglaublich malerisch und die Atmosphäre, die sie ausstrahlen, ist einfach einzigartig! Ich empfehle euch, alle zu durchforsten und am Schluss auf die Esplanade des Schlosses Saint-Maire hochzugehen, um die herrliche Aussicht zu geniessen.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 329,
+                            "name": "La Cité",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 68,
+                    "name": "Palais de Rumine",
+                    "content": "Als Fotograf hat mir die Architektur des Palais de Rumine sofort gefallen, sowohl von aussen als auch von innen. Ich komme auch hierher, um ein wenig in Ruhe arbeiten zu können, wenn ich in der Stadt bin.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 286,
+                    "name": "Bel-Air-Turm und Flon-Viertel",
+                    "content": "Der Bel-Air-Turm ist von der amerikanischen Wolkenkratzer-Architektur inspiriert und gilt als erstes Hochhaus der Schweiz. Dieses unumgängliche Symbol der Stadt ist von weit her zu sehen. Gleich nebenan befindet sich das lebendige und angesagte Flon-Viertel, das sich über die Jahre hinweg immer wieder neu erfunden hat und heute bei den Einheimischen, Besucherinnen und Besuchern zu den beliebtesten Orten gehört. Hier kommen Architektur, Kunst und Design zusammen.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 356,
+                            "name": "Bel-Air-Turm und Salle Métropole",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5221014",
+                                    "longitude": "6.6281883"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 89,
+                            "name": "Flon",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520487",
+                                    "longitude": "6.6300153"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 144,
+                    "name": "Galeries Saint-François",
+                    "content": "Ein Ort, der mich an die Einkaufspassagen in Paris erinnert. Die Passage mit ihren kleinen Geschäften und Restaurants ist in natürliches Licht getaucht und der geflieste Boden verleiht ihr ein gewisse Etwas, das sehr fotogen ist.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 404,
+                            "name": "Saint-François Platz - Bourg Strasse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.519712",
+                                    "longitude": "6.6333282"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Campus der Universität Lausanne (UNIL) und Eidgenössische Technische Hochschule Lausanne (EPFL)",
+                    "content": "Ideal am Seeufer gelegen und von schönen Grünflächen umgeben, wirken die UNIL und die EPFL wie zwei Dörfer in der Stadt. Spaziert über die Campusse und schaut euch den modernen Baustil der von renommierten Architekten entworfenen Gebäude an. Besondere Highlights sind die Unithèque (auch „Banane“ genannt), der Wohnbau Vortex, das Rolex Learning Center und die Gebäude Géopolis, Batochime, EPFL Pavilions, MED (und seine Treppen) und das SwissTech Convention Center. Kleiner Bonus: die farbenfrohe Unterführung der Metrostation EPFL.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "Universität Lausanne (UNIL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Eidgenössische Technische Hochschule Lausanne (EPFL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 131,
+                    "name": "Kiosque Saint-François",
+                    "content": "Wenn ich in Saint-François aus dem Bus steige, kann ich unmöglich einfach daran vorbeigehen. Das ehemalige Tramhäuschen mit seinem Glasdach, den Einlegearbeiten, dem Brunnen und dem Hauch von Jugendstil hat seinen ganzen Charme aus den 1910er-Jahren bewahrt. Was gibt es Angenehmeres, als einen guten Kaffee in einem schönen Café zu geniessen?",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 627,
+                            "name": "Kiosque Saint-François",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5195",
+                                    "longitude": "6.63327"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 297,
+                    "name": "Plateforme 10",
+                    "content": "Für Kulturbegeisterte oder Fotografen wie mich ist das neue Kunstviertel von Lausanne ein absolutes Muss. Hier könnt ihr Museen besuchen oder einfach draussen den architektonischen Schmuckstücken entlang flanieren, auf einer der Terrassen unter den Bögen einen Drink schlürfen, das Kommen und Gehen der Passantinnen und Passanten beobachten oder euch vom Spiel von Licht und Schatten einnehmen lassen. Kleiner Tipp: Auf dem Veloweg könnt ihr den Kreisverkehr des Bahnhofs zu den Stosszeiten umgehen.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 36
+                    },
+                    "pois": [
+                        {
+                            "id": 288,
+                            "name": "Plateforme 10",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5184198",
+                                    "longitude": "6.624533"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 205,
+                    "name": "Stade Olympique de la Pontaise",
+                    "content": "Das Stade Olympique de la Pontaise ist einer meiner Lieblingsorte in der Stadt Lausanne. Ich trainiere in diesem Stadion, seit ich 13 Jahre alt bin und fühle mich dort wie zu Hause. Bei ausverkauftem Fussballmatch oder Konzert ist die Stimmung einfach grossartig! Für mich ist das Athletissima-Meeting eine Veranstaltung, die man mindestens einmal erleben muss, wenn man aus Lausanne kommt.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 23
+                    },
+                    "pois": [
+                        {
+                            "id": 346,
+                            "name": "La Pontaise – Olympiastadion",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5332326",
+                                    "longitude": "6.6243555"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

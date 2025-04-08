@@ -1,0 +1,633 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 21,
+            "total": 21,
+            "data": [
+                {
+                    "id": 143,
+                    "name": "La colline du Languedoc",
+                    "content": "C'est une petite colline bien cachée sur laquelle on trouve de belles bâtisses, mais surtout une très belle esplanade qui offre une vue en plongée sur le lac. C'est un des endroits les plus agréables à Lausanne pour se prélasser en admirant le paysage et la singularité des Alpes, mention spéciale pour le coucher du soleil qui vaut largement son pesant de cacahuètes. On y trouve également un petit vignoble qui rappelle le passé viticole de cette partie de la ville et à quel point on est quand même dans un bien bel endroit.",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 18
+                    },
+                    "pois": [
+                        {
+                            "id": 66,
+                            "name": "Sur la colline du Languedoc",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5189091",
+                                    "longitude": "6.6148287"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 56,
+                    "name": "Tour de Sauvabelin",
+                    "content": "Quel escalier surprenant en double hélice où la montée et la descente se font des côtés opposés. Et la vue imprenable sur Lausanne est à ne pas manquer.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 306,
+                            "name": "Tour de Sauvabelin",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5352803",
+                                    "longitude": "6.6384553"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 275,
+                    "name": "Parc de l'Elysée",
+                    "content": "Une vue à couper le souffle sur les montagnes, le lac et les bateaux s’ouvre si vous vous posez sur un banc au parc de l’Élysée. C’est mon endroit préféré quand il fait beau. Et surtout pendant la période de floraison des cerisiers. C'est un des meilleurs endroits pour profiter de la vue panoramique sur le lac Léman que peut nous offrir la ville de Lausanne.",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 34
+                    },
+                    "pois": [
+                        {
+                            "id": 283,
+                            "name": "Parc de l'Elysée",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5184452",
+                                    "longitude": "6.6238765"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 36,
+                    "name": "Le Crêt de Montriond",
+                    "content": "Un de mes lieux préférés pour m’entrainer en plein air. J’adore y aller au coucher du soleil un soir d’été ou de bon matin pour faire une séance de cardio. C’est toujours calme et la vue qui surplombe le lac est imbattable !",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 9
+                    },
+                    "pois": [
+                        {
+                            "id": 490,
+                            "name": "Le Crêt de Montriond",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5141249",
+                                    "longitude": "6.6239854"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "name": "Le Parc de Milan",
+                    "content": "Le jardin botanique du parc de Milan est un petit îlot de diversité dans lequel on peut se réfugier, à l’abri des centres commerciaux et du bruit de la ville. Retrouver les sons des grenouilles et des abeilles, c’est une vraie renaissance.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Parc de Milan",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 219,
+                    "name": "L'Esplanade de Montbenon",
+                    "content": "Il offre un panorama de carte postale sur Lausanne et une vue imprenable sur le lac. Quoi de mieux que de venir y poser son linge sur la pelouse avec une petite bouteille de rouge, un saucisson et un bout de fromage tout en savourant cette vue. Enjoy the moment !",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 419,
+                            "name": "Esplanade de Montbenon",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5200194",
+                                    "longitude": "6.625943"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 125,
+                    "name": "Parc de Valency",
+                    "content": "L'endroit parfait pour une vue sur le Léman lors du coucher de soleil ... c'est aussi un de mes endroits favoris pour admirer la symphonie des couleurs automnales !",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 56,
+                            "name": "Parc de Valency",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5294911",
+                                    "longitude": "6.6117603"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 241,
+                    "name": "La Vallée de la Jeunesse",
+                    "content": "En tant qu'amoureuse du roller, le parc de la Vallée de la Jeunesse est un endroit magique pour moi où je peux m'entraîner et m'amuser. Avec ses pentes abruptes, on y trouve des skateurs et des rollers dévalant un chemin d'un kilomètre avant d'arriver sur la plaine de Vidy. Mais le parc offre bien plus que cela : il propose également un espace de jeu pour enfants, des aménagements de bosses et même le musée scientifique pour enfants, l'Espace des Inventions. C'est vraiment un lieu polyvalent où chacun peut trouver son bonheur.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 308,
+                            "name": "Vallée de la Jeunesse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520411",
+                                    "longitude": "6.604334"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 199,
+                    "name": "Lavaux et le Deck",
+                    "content": "C'est sûrement l'un de mes endroits préférés de la région. Juste après Lausanne, en direction de Montreux à quelques minutes en train. Les petites collines sont recouvertes de vignes en terrasses et il est possible de s'y balader avec une vue imprenable sur le lac en contrebas ainsi que le soleil couchant. Si vous avez envie d'un rafraichissement, n'hésitez pas à aller à la terrasse du Deck, sans doute la plus belle vue de tout le canton. De quoi passer une superbe soirée d'été !",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 701,
+                            "name": "Le Deck",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.4799649",
+                                    "longitude": "6.7732904"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "name": "Le jardin botanique",
+                    "content": "Du printemps, lorsque la nature se réveille doucement, à l’hiver, quand la nouvelle serre offre un abri bienvenu parmi les plantes tropicales, le Jardin botanique est l’endroit parfait où se promener tranquillement en toutes saisons.",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 5
+                    },
+                    "pois": [
+                        {
+                            "id": 234,
+                            "name": "Naturéum - Jardin botanique",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5139602",
+                                    "longitude": "6.621955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 230,
+                    "name": "Parc de Sauvabelin",
+                    "content": "Le parc de Sauvabelin, c'est comme un havre de paix au milieu de l'effervescence urbaine. Les sentiers paisibles, le lac serein et la tour panoramique offrent une évasion parfaite. J'y ai passé d'innombrables moments de détente au bord de l'eau et admiré la ville depuis la tour. Un lieu qui capture l'essence de Lausanne et qui restera toujours cher à mon cœur.",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 16,
+                            "name": "Parc de Sauvabelin",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5353354",
+                                    "longitude": "6.6383805"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Vidy",
+                    "content": "Quoi de mieux que de terminer une journée d’été à la plage de Vidy ? À distance de marche du centre-ville nous adorons relaxer en famille autour d’un BBQ ainsi que de nous rafraichir dans le Léman. Et les couchers de soleil sont splendides …",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Ferme de la Rovéréaz",
+                    "content": "Située à deux pas de la ville et de la nature, la ferme de la Rovéréaz nous propose de produits variés (fruits, légumes, huiles, fromages, miels, charcuterie, oeufs…), frais et de saison bien entendu ! Je vous invite à jeter un oeil à leur superbe programme de permaculture qui allie le participatif et la pédagogie.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 576,
+                            "name": "Ferme de la Rovéréaz",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5334",
+                                    "longitude": "6.6475"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 179,
+                    "name": "Le Parc de Mon-Repos et la Folie Voltaire",
+                    "content": "Certainement mon parc préféré à Lausanne. Un hâvre de paix à l’abri du tumulte citadin où j’ai l’impression de déambuler à l’intérieur d’un tableau vivant. Un lieu enchanté, hors du temps, qui ne vous laissera sans doute pas indifférent. Quand les beaux jours arrivent, je vous recommande de vous accorder une pause sous l'allée des marronniers à la Folie Voltaire. C'est une buvette des plus charmantes qui propose une carte délicieuse et de saison !",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 21
+                    },
+                    "pois": [
+                        {
+                            "id": 349,
+                            "name": "La Folie Voltaire",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5193532",
+                                    "longitude": "6.6420739"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 192,
+                    "name": "Les plages de Saint-Sulpice à la Tour Haldimand",
+                    "content": "La magie de la région Lausannoise réside dans sa diversité. En à peine 10min, l’on passe du cœur bourdonnant du Flon, aux rives paisibles du Léman. De nombreuses plages de sable et de galets invitent à se prélasser au soleil ou à l’ombre des arbres. De la Tour Haldimand à Saint-Sulpice, vous aurez l’embarras de choix. Si vous avez un penchant pour le sport, ne ratez pas celle de Vidy, où de nombreux terrains de basket et de volley sont à disposition.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 26
+                    },
+                    "pois": [
+                        {
+                            "id": 92,
+                            "name": "Le lac Léman",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5052125",
+                                    "longitude": "6.624588"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 103,
+                    "name": "Le parc Guillemin",
+                    "content": "Le parc Guillemin, plus connu sous le nom de « Parc des Biches », entre Lausanne et Pully ; est le lieu idéal pour les familles : place de jeux moderne, enclos à biches et pataugeoire pour les chaudes journées d’été. On a plus qu’à s’installer sur un banc ou dans l’herbe en haut du parc et admirer la vue sur le lac pendant que les enfants s’amusent.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 612,
+                            "name": "Le Parc Guillemin",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5137",
+                                    "longitude": "6.65593"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 191,
+                    "name": "Le Parc de l'Hermitage",
+                    "content": "Le Parc de l’Hermitage, dans les hauts de Lausanne est sans aucun doute mon préféré. Un livre à la main, allongée sur l’herbe bien verte, je suis prête pour un moment de détente avec pour vue, la silhouette de la Cathédrale qui se détache devant le lac et les Alpes.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 26
+                    },
+                    "pois": [
+                        {
+                            "id": 385,
+                            "name": "Parc de l'Hermitage",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5295332",
+                                    "longitude": "6.6370921"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 129,
+                    "name": "Parc du Désert",
+                    "content": "Rien de désert dans ce parc, bien au contraire ! Avec son monumental bassin longiligne, on se croirait presque dans un autre monde. Pour moi, c’est un lieu apaisant et propice à la rêverie. Pour la petite histoire, il doit son nom poétique au courant du Romantisme, à la mode au tournant du XIXe siècle. Dans le genre « oh comme je suis loin de tout, mais j’ai un immense domaine alors ça va », on fait pas mieux.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 393,
+                            "name": "Parc du Désert",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.53848053",
+                                    "longitude": "6.61526553"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 231,
+                    "name": "Parc du Denantou",
+                    "content": "Le parc du Denantou à Lausanne est un endroit qui m'inspire profondément en tant que photographe. Son temple thaïlandais, entouré par la tranquillité du lac, crée une ambiance magique. J'aime organiser des shootings ici pour capturer la beauté unique de cet endroit, et la proximité du Musée Olympique ajoute une touche culturelle géniale !",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 91,
+                            "name": "Parc du Denantou",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 185,
+                    "name": "Plage de Vidy",
+                    "content": "Une plage avec du sable !? Oui il se trouve qu’à Lausanne on a aussi notre « Venice beach ».\r\nA deux pas du Skate Park de Vidy, il y a de quoi jouer au volley, au basket et flâner sur les petites plages au sable fin. Petit coins d’ombre ? Il y a de quoi faire ! Tout au long de la promenade, les petites plages sont ombragées par de somptueux chênes. Prenez votre masque et tuba et peut-être que vous croiserez Nemo !",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 649,
+                            "name": "Plage de Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5192217",
+                                    "longitude": "6.5875543"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 148,
+                    "name": "Vignobles de Lavaux",
+                    "content": "Le plus beau panorama à mes yeux ! Je ne compte plus le nombre de fois où je me suis baladé à travers les vignes dans ce cadre à couper le souffle ! Le meilleur moyen pour déconnecter et renouer avec la nature.",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 513,
+                            "name": "Les terrasses de Lavaux UNESCO",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.4935227",
+                                    "longitude": "6.7158056"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,519 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 16,
+            "total": 16,
+            "data": [
+                {
+                    "id": 65,
+                    "name": "Ouchy",
+                    "content": "I’m often in Paris, so I realise how lucky Lausanners are to have that lake! Just walking in Ouchy or diving in Lake Geneva is a pure moment of happiness.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 194,
+                            "name": "Ouchy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.510155",
+                                    "longitude": "6.626487"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 84,
+                    "name": "Le Petit-Théâtre",
+                    "content": "Every year in August, the whole family eagerly waits for the Petit Théâtre's programme to be published. Situated just a few steps from the cathedral in an old building with a lovely garden, the Petit Théâtre offers a variety of performances for children of all ages. Pssst, sometimes there are still a few tickets available at the box office on the day of the performance!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 578,
+                            "name": "Le Petit Théâtre",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5228",
+                                    "longitude": "6.6347"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 103,
+                    "name": "Parc Guillemin",
+                    "content": "Parc Guillemin, better known as the “Parc des Biches” (Deer Park), is located between Lausanne and Pully. It’s the ideal place for families with a modern playground, deer enclosure and paddling pool for hot summer days. All you have to do is sit down on a bench or on the grass at the highest point in the park and enjoy the view of the lake while your kids play.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 612,
+                            "name": "Parc Guillemin",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5137",
+                                    "longitude": "6.65593"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 110,
+                    "name": "The Jump Spot",
+                    "content": "Jumping high in the air in the middle of Lausanne without raising eyebrows? Yes, you can do this now by making your way to “The Jump Spot”, Switzerland’s biggest indoor trampoline park with no less than 150 trampolines spread over 3300 m2. You just have to say: “I believe I can fly”!",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 4
+                    },
+                    "pois": [
+                        {
+                            "id": 615,
+                            "name": "The Jump Spot",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5236",
+                                    "longitude": "6.61962"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 129,
+                    "name": "Parc du Désert",
+                    "content": "There’s nothing desert-like in this park, quite the opposite! Its monumental elongated water feature makes you feel you’re in a different world. For me, it’s a soothing place conducive to daydreaming. Anecdotally, it owes its poetic name to the current of Romanticism that was in vogue at the turn of the 19th century. There’s no better example of the “oh, how far away from everything I am, but I have a huge estate, so I’m ok” attitude.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 393,
+                            "name": "Parc du Désert",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.53848053",
+                                    "longitude": "6.61526553"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 130,
+                    "name": "Davidson toys",
+                    "content": "This shop is a veritable institution in Lausanne. A maze of stairs, levels and half-levels to be explored as you would during a treasure hunt, as well as shelves packed with toys and board games… it’s heaven! As a child, I went there with my brothers to add to our collection of marbles, and I’m delighted to go back now with my children.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 423,
+                            "name": "Addresses of children’s shops",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229023",
+                                    "longitude": "6.6292159"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 146,
+                    "name": "The Ouchy lakeside",
+                    "content": "Impossible to end my day without a short walk by the Ouchy lakeside. The ideal place to observe a magnificent sunset on the lake with the Alps as a backdrop. I love the atmosphere that emerges from the children at play, skateboarders and other artists.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 264,
+                            "name": "Quais d'Ouchy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 166,
+                    "name": "L'Esquisse",
+                    "content": "Whatever the season, L’Esquisse is a place where I love to go, whether for a coffee with friends before visiting a new exhibition at the Fondation de l’Hermitage or for a romantic evening… The menu varies according to the season and I still remember the venison I ate one autumn evening! In summer, I’m attracted by the view of the sunset over Lausanne from the terrace, as well as the delicious meal – a lighter one – with a glass of wine! The cocktail buffet during an event that took place there enchanted the whole family with its mini-burgers! The only thing I have yet to experience is the brunch!",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 184,
+                            "name": "L'Esquisse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5285739",
+                                    "longitude": "6.6368545"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 179,
+                    "name": "Mon-Repos Park and the Folie Voltaire",
+                    "content": "Certainly my favourite park in Lausanne. A haven of peace away from the urban hustle and bustle where I feel like I’m wandering inside a living painting. An enchanting, timeless spot that is bound to move you. When the days get warmer, I recommend treating yourself to a break in the alley of chestnut trees at the Folie Voltaire. It’s the most charming kiosk with a menu featuring simple yet delicious, seasonal dishes!",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 21
+                    },
+                    "pois": [
+                        {
+                            "id": 349,
+                            "name": "La Folie Voltaire",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5193532",
+                                    "longitude": "6.6420739"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "On the lakeside in Vidy, let yourself be enticed by the aromas of barbecues, the sound of berimbau, the spontaneous party for a newborn, the runners, bystanders and Sunday pétanque players. Just settle comfortably on a bench or on the water’s edge and watch the goings-on around you. It’s the peaceful mix and intermingling of cultures that are Lausanners.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 185,
+                    "name": "Vidy Beach",
+                    "content": "A sandy beach?! Yes, we do also have our “Venice Beach” in Lausanne.\r\nA stone’s throw from the Vidy Skate Park, there are volleyball and basketball courts, as well as small fine-sand beaches for a stroll. Want shade? There is that too! All along the promenade, the small beaches are shaded by magnificent oaks. Take your snorkelling gear and who knows, you might meet Nemo!",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 649,
+                            "name": "Plage de Vidy (Vidy beach)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5192217",
+                                    "longitude": "6.5875543"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 191,
+                    "name": "The Hermitage Park",
+                    "content": "The Hermitage Park, above the city of Lausanne, is without a doubt my favourite. A book in hand, lying on the green grass, I am ready for a relaxing break with, as a view, the silhouette of the Cathedral standing out in front of the lake and the Alps.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 26
+                    },
+                    "pois": [
+                        {
+                            "id": 385,
+                            "name": "Hermitage Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5295332",
+                                    "longitude": "6.6370921"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 192,
+                    "name": "The beaches from Saint-Sulpice to Haldimand Tower",
+                    "content": "The magic of the Lausanne region lies in its diversity. In only 10 minutes, you get from the thriving heart of the Flon to the peaceful shores of Lake Geneva. Many pebble or sandy beaches invite you to bask in the sun or in the shade of trees. From the Haldimand Tower to Saint-Sulpice, you will be spoilt for choice. If you enjoy sports activities, don’t miss the Vidy area, where many basketball and volleyball courts are available.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 26
+                    },
+                    "pois": [
+                        {
+                            "id": 92,
+                            "name": "Lake Geneva",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5052125",
+                                    "longitude": "6.624588"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 241,
+                    "name": "The Vallée de la Jeunesse",
+                    "content": "As an avid roller skater, the Vallée de la Jeunesse is a magical place for me where I can practise and have fun. With its steep slopes, you’ll see skateboarders and roller skaters tearing down a 1 km long path before arriving on the Vidy plaine. However, the park offers much more than that: it also has a play area for children, tracks with bumps and even the Espace des Inventions, a science museum for children. It’s really a multi-purpose space where everyone will find something to their liking.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 308,
+                            "name": "Vallée de la Jeunesse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520411",
+                                    "longitude": "6.604334"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 267,
+                    "name": "Lavaux Express",
+                    "content": "Would you be tempted by a magnificent view over the lake and vineyards? The Lavaux Express takes you on a tour of its site listed as UNESCO World Heritage. Various loops are available, each as stunning as the others. You also have the option of stopping in one of the many wine cellars of the area for a wine tasting or to savour an aperitif during your trip.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 639,
+                            "name": "Lavaux Express",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5017711",
+                                    "longitude": "6.6841041"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 278,
+                    "name": "Milan Park",
+                    "content": "This park is really the heart of the neighbourhood. Whatever activity takes your fancy, you’ll find the space for it. A table-tennis, football or basketball match, a picnic with friends or an outing with your family on the playground for toddlers.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 34
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

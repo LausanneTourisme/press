@@ -1,0 +1,341 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 10,
+            "total": 10,
+            "data": [
+                {
+                    "id": 68,
+                    "name": "Rumine Palace",
+                    "content": "As a photographer, the architecture of Rumine Palace immediately appealed to me, both inside and out. It’s also a quiet place where I can work when I’m in town.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 222,
+                    "name": "Bar Tabac",
+                    "content": "An intimate and peaceful café that invites you to linger. Located at Rue Beau-Séjour, the Bar Tabac has retained all the charm of days gone by with its menu and its unusual décor. One of my favourite cafés to study or work!",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 734,
+                            "name": "Bar Tabac",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5177",
+                                    "longitude": "6.6357"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 132,
+                    "name": "Coffee Page",
+                    "content": "A warning to lovers of both art books and coffee: someone has brought them together at last! I’ll browse a volume from the bookcase that favours richly illustrated books, order a drink and for once, leave my phone aside. My ideal combo: a chai latte and a book on Bauhaus.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 546,
+                            "name": "Coffee Page",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5183146",
+                                    "longitude": "6.633748"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Lausanne University Campus (UNIL) and Lausanne Federal Institute of Technology (EPFL)",
+                    "content": "Ideally located by the lakeside and surrounded by beautiful green spaces, UNIL and EPFL are two villages within the town. Walk around their campuses to discover the contemporary architecture of buildings designed by renowned architects. Don’t miss the Unithèque (aka “the Banana”), Vortex, Géopolis, Batochime, Rolex Learning Center, EPFL Pavilions, MED (and its staircase) and SwissTech Convention Center. And as a bonus, the colourful pedestrian underpass of the EPFL metro station.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "University of Lausanne (UNIL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Swiss Federal Institute of Technology Lausanne (EPFL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 234,
+                    "name": "Impact Hub",
+                    "content": "Impact Hub is a huge coworking space of which I am a member since March 2023. It’s a place where you can exchange with several other inspiring people, all driven by the desire to bring about positive change. You can go there for half a day, a day or, like me, register for several months. Get lost in the vast expanse of the premises while taking the time to savour a coffee on the terrasse perched on top of the containers or on the esplanade offering a view over the lake.",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 828,
+                            "name": "Impact Hub Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5288571",
+                                    "longitude": "6.6230624"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 196,
+                    "name": "Le Perchoir",
+                    "content": "In the heart of the magnificent Lausanne University campus, between the river and the green spaces, is a rather strange building: the Vortex. This circular building is a must see during any visit to Lausanne: designed as accommodation for UNIL and EPFL students, it is structured around a 2.8-kilometre spiral walkway that accesses all the student rooms. You can nevertheless reach the 8th floor by lift to get to one of the friendliest bars in Lausanne, Le Perchoir. A large terrace, sunset, view over the lake, food and especially quite low prices, and sometimes even concerts – what more could you ask for?",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 648,
+                            "name": "Le Perchoir Rooftop-Bar",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5243813",
+                                    "longitude": "6.5751886"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "name": "Basta! bookshop",
+                    "content": "Where to go to buy a progressive rock vinyl and a book on humanities could be quite a conundrum. Fortunately, there is a place dedicated to both: the Basta! bookshop and just below, Obsession Records.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 547,
+                            "name": "Librairie Basta!",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5242",
+                                    "longitude": "6.62619"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 128,
+                    "name": "Librairie de la Louve",
+                    "content": "Simply pronouncing that name fills me with joy! A great-quality second-hand bookshop, with so many books you don’t know where to start. For me, two compulsory topics: the “town of Lausanne” bookshelf next to the bookseller’s desk, with old books that give off that lovely aroma of paper, and the “architecture” shelves in the small recess. I can’t wait to go back there!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 664,
+                            "name": "Librairie de la Louve",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5215",
+                                    "longitude": "6.6321"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Gasterea Bookshop",
+                    "content": "In this small, utterly charming bookshop in the Cité, you’ll find all the ancient and modern books on gastronomy. It’s a delight for the eyes that will also awaken your taste buds!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 728,
+                            "name": "Librairie Gastéréa",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229",
+                                    "longitude": "6.6359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "Madeleine",
+                    "content": "In the heart of Lausanne, not far from the Place de la Palud, is nestled Madeleine. No, it’s not where my aunt Madeleine lives, but a bookshop café. On one side is the bookshop and on the other the café. The place is timeless. I suggest taking a seat at a table to sip an iced coffee and savour a madeleine (of course!). You’ll be lulled by the surrounding peacefulness created by the pastel touches of the decoration and the soft lounge music in the background.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 770,
+                            "name": "Madeleine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522322",
+                                    "longitude": "6.6328523"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

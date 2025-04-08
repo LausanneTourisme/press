@@ -1,0 +1,215 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 6,
+            "total": 6,
+            "data": [
+                {
+                    "id": 197,
+                    "name": "Natürliche Strände in Saint-Sulpice",
+                    "content": "Am Ende von Saint-Sulpice, im Parc du Débarcadère, beginnt ein kleiner, fast geheimnisvoller Weg. Er führt dem Seeufer entlang, an wunderschönen Villen vorbei und zu kleinen, wilden Stränden. Wenn ihr weitergeht, erreicht ihr den Strand in Saint-Sulpice, der fast völlig unberührt geblieben ist. Er ist zwischen Wald und langen weissen Sandstränden eingebettet – ein Paradies für Abenteuerlustige, die neue Wege gehen und dennoch nahe der Stadt Lausanne bleiben möchten.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 449,
+                            "name": "Saint-Sulpice",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51794729",
+                                    "longitude": "6.57957061"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "Lasst euch am Seeufer in Vidy von der Atmosphäre mit Grillgerüchen, Berimbau-Klängen, einem improvisierten Baby-Geburtstag, Joggerinnen, Schaulustigen und sonntäglichen Pétanque-Spielern einfangen. Setzt euch einfach auf eine Bank oder an das Seeufer und beobachtet alles um euch herum. Das sind die Lausannerinnen und Lausanner: ein harmonischer interkultureller Mischmasch.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "Die beste 100 % Schweizer Naturkosmetik-Marke. Köstlich duftende Seifen, feuchtigkeitsspendende Trockenöle mit betörenden Düften und hydroalkoholische Eisenkraut-Gels, die Ihre Hände nicht austrocknen, denn das Jahr 2020 verpflichtet.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 236,
+                    "name": "Yoga an der Jetée de la Compagnie",
+                    "content": "Mein absoluter Lieblingsort für einen guten Start in den Tag. Jedes Jahr kann ich es kaum erwarten, bis die Yoga-Kurse an der Jetée de la Compagnie wieder beginnen. Zu diesem Lebensraum am Seeufer gehören zwei Gastro-Container und ein Musikbereich als Treffpunkt nach Feierabend. Es werden aber auch jeden Morgen Yoga-Kurse angeboten. Ihr braucht euch dafür nicht anzumelden. Nehmt einfach eure Matte mit, macht es euch am See gemütlich und entspannt euch eine Stunde lang. Der Tarif richtet sich nach einer freiwilligen Spende.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 179,
+                    "name": "Park Mon-Repos und Folie Voltaire",
+                    "content": "Der Park Mon-Repos ist mein liebster Park in Lausanne. Er ist eine wahre Oase der Ruhe, in der ich das Gefühl habe, eine Figur in einem lebenden Gemälde zu sein. Dieser bezaubernde, zeitlose Ort lässt niemanden unberührt. Wenn die warmen Tage kommen, empfehle ich eine Pause in der Kastanienallee im Folie Voltaire. Das kleine, äusserst charmante Café bietet eine köstliche, saisonale Speisekarte.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 21
+                    },
+                    "pois": [
+                        {
+                            "id": 349,
+                            "name": "La Folie Voltaire",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5193532",
+                                    "longitude": "6.6420739"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 231,
+                    "name": "Denantou-Park",
+                    "content": "Für mich als Fotograf ist der Denantou-Park in Lausanne ein wahnsinnig inspirierender Ort. Der thailändische Pavillon, umgeben von der Ruhe des Sees, schafft eine magische Atmosphäre. Ich organisiere hier gerne Shootings, um die einzigartige Schönheit dieses Ortes festzuhalten, und die Nähe zum Olympischen Museum sorgt für eine geniale kulturelle Note!",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 25
+                    },
+                    "pois": [
+                        {
+                            "id": 91,
+                            "name": "Denantou Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

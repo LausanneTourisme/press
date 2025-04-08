@@ -1,0 +1,243 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 8,
+            "total": 8,
+            "data": [
+                {
+                    "id": 226,
+                    "name": "La serre du parc de Milan",
+                    "content": "Lausanne est déjà une ville très verte, remplie de parcs et entourée de nature mais si vous souhaitez plus d'exotisme, je vous conseille d'aller visiter le jardin botanique du parc de Milan et plus particulièrement les serres. Avec des centaines d'espèces exotiques différentes, la petite serre nous transporte ailleurs. Une table est même présente au premier étage si vous souhaitez y rester malgré la chaleur.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 234,
+                            "name": "Naturéum - Jardin botanique",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5139602",
+                                    "longitude": "6.621955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "name": "Le Parc de Milan",
+                    "content": "Le jardin botanique du parc de Milan est un petit îlot de diversité dans lequel on peut se réfugier, à l’abri des centres commerciaux et du bruit de la ville. Retrouver les sons des grenouilles et des abeilles, c’est une vraie renaissance.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Parc de Milan",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 279,
+                    "name": "Café de Grancy",
+                    "content": "Ce café se trouve au cœur du quartier et ce n'est pas pour rien. Une ambiance chaleureuse est accompagnée par sa cuisine raffinée qui met en avant des saveurs authentiques, préparées avec des ingrédients frais et de saison. N'hésitez pas à y rendre visite, que cela soit pour un brunch, lunch ou dîner.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 34
+                    },
+                    "pois": [
+                        {
+                            "id": 43,
+                            "name": "Café de Grancy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5152778",
+                                    "longitude": "6.6286111"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "La meilleure marque de cosmétiques naturels 100% suisse. Des pains de savon sentant délicieusement bon, des huiles sèches hydratantes aux odeurs envoutantes et, 2020 oblige, des gels hydroalcoliques à la verveine qui ne dessèchent pas les mains.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Ferme de la Rovéréaz",
+                    "content": "Située à deux pas de la ville et de la nature, la ferme de la Rovéréaz nous propose de produits variés (fruits, légumes, huiles, fromages, miels, charcuterie, oeufs…), frais et de saison bien entendu ! Je vous invite à jeter un oeil à leur superbe programme de permaculture qui allie le participatif et la pédagogie.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 576,
+                            "name": "Ferme de la Rovéréaz",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5334",
+                                    "longitude": "6.6475"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 266,
+                    "name": "Frip Square",
+                    "content": "Fripsquare, c'est l'expression d'une génération partagée entre son amour pour les dernières tendances et sa conscience environnementale. C'est un concept qui promeut le partage, l'échange et une consommation responsable dans le domaine de la mode. Longtemps situé dans une ancienne station taxis sous-gare, le Thrift Shop a récemment déménagé au Chemin de la Joliette 5, où il propose non seulement des vêtements de seconde main en excellent état, mais possède à présent également un Coffee Shop du même nom.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 889,
+                            "name": "Fripsquare",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5119289",
+                                    "longitude": "6.6288702"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 119,
+                    "name": "Le Fraisier",
+                    "content": "Le fraisier, c'est une superbe découverte culinaire à Lausanne. Des repas végé les midis en semaine, avec des produis frais et une belle déco vintage. J'adore, tout simplement. De quoi se régaler visuellement et gustativement",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 17
+                    },
+                    "pois": [
+                        {
+                            "id": 293,
+                            "name": "Le Fraisier",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5217166",
+                                    "longitude": "6.6314848"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 38,
+                    "name": "Marché de la Place de la Riponne",
+                    "content": "Mon rituel du samedi : je me réveille tôt et je marche jusqu’à la place de la Riponne avant que la foule n'arrive. Avant 8h du matin, j’ai déjà acheté tous mes fruits et mes légumes bio suisses pour la semaine.",
+                    "tags": [
+                        {
+                            "id": 81,
+                            "name": "Durabilité"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 9
+                    },
+                    "pois": [
+                        {
+                            "id": 613,
+                            "name": "Marché du centre-ville",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5232331",
+                                    "longitude": "6.6327695"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

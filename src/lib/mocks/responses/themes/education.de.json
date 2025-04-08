@@ -1,0 +1,341 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 10,
+            "total": 10,
+            "data": [
+                {
+                    "id": 68,
+                    "name": "Palais de Rumine",
+                    "content": "Als Fotograf hat mir die Architektur des Palais de Rumine sofort gefallen, sowohl von aussen als auch von innen. Ich komme auch hierher, um ein wenig in Ruhe arbeiten zu können, wenn ich in der Stadt bin.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 222,
+                    "name": "Die Bar Tabac",
+                    "content": "Ein kleines und ruhiges Café, das dazu einlädt, sich Zeit zu nehmen. Die spezielle Karte und der ungewöhnliche Stil betonen den antiken Charme dieses Lokals an der Rue Beau-Séjour. Eines meiner Lieblingscafés zum Lernen oder Arbeiten!",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 734,
+                            "name": "Bar Tabac",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5177",
+                                    "longitude": "6.6357"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 132,
+                    "name": "Coffee Page",
+                    "content": "Insidertipp für alle, die Kunstbücher und Kaffee lieben: Endlich hat jemand beides zusammengebracht! Dies ist der ideale Ort, um einen der zahlreichen schönen Bildbände aus dem Regal zu nehmen und darin zu schmökern, ein Getränk zu bestellen und das Telefon für einmal wegzulegen. Meine bevorzugte Kombination: ein Chai Latte und ein Buch zum Bauhausstil.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 546,
+                            "name": "Coffee Page",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5183146",
+                                    "longitude": "6.633748"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Campus der Universität Lausanne (UNIL) und Eidgenössische Technische Hochschule Lausanne (EPFL)",
+                    "content": "Ideal am Seeufer gelegen und von schönen Grünflächen umgeben, wirken die UNIL und die EPFL wie zwei Dörfer in der Stadt. Spaziert über die Campusse und schaut euch den modernen Baustil der von renommierten Architekten entworfenen Gebäude an. Besondere Highlights sind die Unithèque (auch „Banane“ genannt), der Wohnbau Vortex, das Rolex Learning Center und die Gebäude Géopolis, Batochime, EPFL Pavilions, MED (und seine Treppen) und das SwissTech Convention Center. Kleiner Bonus: die farbenfrohe Unterführung der Metrostation EPFL.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "Universität Lausanne (UNIL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Eidgenössische Technische Hochschule Lausanne (EPFL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 234,
+                    "name": "Impact Hub",
+                    "content": "Impact Hub ist ein riesengrosser Coworking-Space, den ich seit März 2023 nutze. Hier kann man sich mit inspirierenden Menschen austauschen, die alle danach streben, positive Veränderungen herbeizuführen. Es besteht die Möglichkeit, den Coworking-Space an halben Tagen, tageweise oder – wie ich es mache – über mehrere Monate zu nutzen. Lasst die Grösse der Räumlichkeiten auf euch wirken und nehmt euch Zeit für eine Kaffeepause auf der Terrasse über den Containern oder auf der Esplanade mit Aussicht auf den See.",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 828,
+                            "name": "Impact Hub Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5288571",
+                                    "longitude": "6.6230624"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 196,
+                    "name": "Le Perchoir",
+                    "content": "Mitten auf dem wunderschönen Universitätsgelände, eingebettet zwischen Fluss und Grünflächen, steht das sehr seltsame Vortex-Gebäude. Der kreisförmige Bau ist bei einem Aufenthalt in Lausanne ein Muss: Er wurde für die Unterbringung der Studierenden der UNIL und der EPFL entworfen und verfügt rundherum über einen 2,8 Kilometer langen Aussenwendelgang, der Zugang zu allen Zimmern bietet. Ihr könnt aber auch den Lift in den 8. Stock nehmen, um in eine der coolsten Bars in Lausanne zu gelangen: Le Perchoir. Eine grosse Terrasse, Sonnenuntergang, Blick auf den See, etwas zu essen und vor allem erschwingliche Preise und manchmal sogar Konzerte, was will man mehr?",
+                    "tags": [
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 648,
+                            "name": "Le Perchoir Rooftop-Bar",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5243813",
+                                    "longitude": "6.5751886"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "name": "Librairie Basta! Buchhandlung",
+                    "content": "Wer auf der Suche nach einer anständigen Progressive-Rock-Platte und einem guten geisteswissenschaftlichen Buch ist, wird selten an ein und demselben Ort fündig. Glücklicherweise gibt es in Lausanne einen Laden, der beides vereint, denn direkt unter der Buchhandlung Basta! befindet sich Obsession Records.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 547,
+                            "name": "Buchhandlung Basta!",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5242",
+                                    "longitude": "6.62619"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 128,
+                    "name": "Librairie de la Louve",
+                    "content": "Nur schon den Namen auszusprechen, erfüllt mich mit Freude! Die exquisite Secondhand-Buchhandlung zählt so viele Bücher, dass man gar nicht weiss, wo man beginnen soll. Zwei Abteilungen sind für mich schlicht ein Muss: jene über die Stadt Lausanne, gleich neben dem Tisch des Buchhändlers, mit antiken Büchern, die so wunderbar nach Papier riechen, und jene über Architektur, in der kleinen Nische. Ich freue mich schon auf meinen nächsten Besuch!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 664,
+                            "name": "Librairie de la Louve",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5215",
+                                    "longitude": "6.6321"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Buchhandlung Gasterea",
+                    "content": "In dieser kleinen Buchhandlung im Stadtviertel Cité findet ihr eine grosse Auswahl an antiken und modernen Büchern über die Gastronomie. Augenweide und Gaumenkitzel sind garantiert!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 728,
+                            "name": "Librairie Gastéréa",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229",
+                                    "longitude": "6.6359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "Madeleine",
+                    "content": "Im Herzen von Lausanne, unweit des Place de la Palud, erwartet euch Madeleine. Nein, es handelt sich nicht um die Adresse meiner Tante Madeleine, sondern um ein Café mit Buchhandlung. Auf der einen Seite befindet sich die Buchhandlung und auf der anderen das Café. Hier steht die Zeit still. Man setzt sich an einen Tisch, schlürft einen Iced Coffee und beisst (natürlich) in ein Madeleine. Die Pastelltöne der Einrichtung und die Lounge-Musik im Hintergrund führt euch in euren inneren Raum der Ruhe.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 770,
+                            "name": "Madeleine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522322",
+                                    "longitude": "6.6328523"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

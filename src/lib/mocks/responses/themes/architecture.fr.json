@@ -1,0 +1,405 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 13,
+            "total": 13,
+            "data": [
+                {
+                    "id": 56,
+                    "name": "Tour de Sauvabelin",
+                    "content": "Quel escalier surprenant en double hélice où la montée et la descente se font des côtés opposés. Et la vue imprenable sur Lausanne est à ne pas manquer.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 306,
+                            "name": "Tour de Sauvabelin",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5352803",
+                                    "longitude": "6.6384553"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 198,
+                    "name": "Le beffroi de la Cathédrale",
+                    "content": "Si vous voulez prendre de la hauteur à Lausanne, dirigez-vous vers la Cathédrale. Après quelques dizaines de mètres de dénivelé dans les petites rues de la vieille ville, vous voilà donc dans la Cité au pied de la Cathédrale. C'est maintenant le moment de monter les marches qui mènent au sommet de la tour. On y trouve une vue sur Lausanne à 360°, mais aussi les cloches de la Cathédrale. Un conseil, partez avant qu'elles ne sonnent !",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 372,
+                            "name": "La Cathédrale de Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 85,
+                    "name": "L'Avenue des Alpes",
+                    "content": "On a tous un quartier dans lequel on rêverait d’habiter… L’Avenue des Alpes est pour moi l’une des plus belles rues de Lausanne avec ses beaux immeubles me rappelant l'architecture des bâtiments parisiens ; sa vue sur le lac entre chaque immeuble et sa petite vie de quartier si chic et paisible. Alors à défaut d’y habiter, j’adore me balader là-bas… et rêver",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 360,
+                            "name": "Quartier de Georgette",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51736035",
+                                    "longitude": "6.63786038"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 31,
+                    "name": "Le Grand-Pont",
+                    "content": "La photographie étant avant tout une passion en plus d’être mon métier, le Grand-Pont est un des spots que j’apprécie le plus pendant un coucher de soleil. On peut avoir une vue globale du Flon, animée par ses passants tout en profitant des couleurs apportées par les dernières lumières.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 390,
+                            "name": "Grand-Pont",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5223107",
+                                    "longitude": "6.623884"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 147,
+                    "name": "Les Escaliers du Marché",
+                    "content": "Le petit charme de la ville. Des escaliers magnifiques qui rappellent Lausanne dans les siècles passés. Les jolies façades des bâtiments aux alentours donnent encore plus de saveurs à cet endroit incontournable. La montée peut paraître rude mais l'effort en vaut la peine car arrivé en haut, on tombe directement sur la Cathédrale et une belle vue sur la ville !",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 38,
+                            "name": "Escaliers du Marché",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5221316",
+                                    "longitude": "6.6338261"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 151,
+                    "name": "Le Quartier de la Cité",
+                    "content": "Marcher dans ses charmantes ruelles où les monuments historiques côtoient les bistrots typiques me fait naviguer dans un autre temps. Je trouve les rues tellement photogéniques et l'ambiance qu'elles dégagent est tout simplement incroyable ! Je vous conseille de marcher dans toutes les rues et terminer sur l’Esplanade du Château St-Maire où la vue est superbe.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 329,
+                            "name": "La Cité",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 68,
+                    "name": "Le Palais de Rumine",
+                    "content": "Etant photographe, l’architecture du Palais de Rumine m’a tout de suite séduit, extérieurement comme intérieurement. C’est aussi un lieu où je peux profiter d’un peu de tranquillité pour travailler quand je suis en ville.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 8
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 286,
+                    "name": "Tour Bel-Air & Quartier du Flon",
+                    "content": "S’inspirant du modèle architectural du gratte-ciel américain, la Tour Bel-Air est le premier gratte-ciel de Suisse. Symbole incontournable de la ville, on la repère loin à la ronde. Juste à côté se trouve le Flon, quartier animé et branché, qui a su se réinventer au fil des années pour devenir l'un des lieux les plus prisés par les habitants et les visiteurs, où se mélangent architecture, art et design.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 356,
+                            "name": "La tour Bel-Air et la Salle Métropole",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5221014",
+                                    "longitude": "6.6281883"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 89,
+                            "name": "Le Flon",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520487",
+                                    "longitude": "6.6300153"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 144,
+                    "name": "Galeries Saint-François",
+                    "content": "Un spot qui me rapelle les galeries marchandes parisiennes. Avec ses petites boutiques et restaurants, le lieu est baigné de lumière naturelle et le carrelage au sol rajoute cette petite touche en plus qui est très photogénique.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 19
+                    },
+                    "pois": [
+                        {
+                            "id": 404,
+                            "name": "Place Saint-François - Rue de Bourg",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.519712",
+                                    "longitude": "6.6333282"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Campus Unil et EPFL",
+                    "content": "Idéalement situées au bord du lac et entourées de beaux espaces verts, l’UNIL et l’EPFL sont deux villages dans la ville. Promenez-vous sur les campus pour découvrir l’architecture contemporaine des bâtiments conçus par des architectes renommés. A ne pas manquer l’Unithèque (aka « La Banane »), le Vortex, le Géopolis, le Batochime, le Rolex Learning Center, l’EPFL Pavilions, le MED (et son escalier), le SwissTech Convention Center. En bonus : le passage souterrain coloré de l’arrêt de métro EPFL.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 35
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "Université de Lausanne (UNIL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Ecole polytechnique fédérale de Lausanne (EPFL)",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 131,
+                    "name": "Kiosque Saint-François",
+                    "content": "Quand je descends du bus à Saint-François, impossible de passer devant sans m’arrêter. Cet ancien abri des Tramways a conservé tout son charme des années 1910, avec sa marquise de verre, ses marqueteries, la fontaine adossée et son petit air Art Nouveau. Déguster un bon café dans un beau café, quoi de mieux ?",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 627,
+                            "name": "Kiosque Saint-François",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5195",
+                                    "longitude": "6.63327"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 297,
+                    "name": "Plateforme 10",
+                    "content": "Passionné de culture ou alors photographe comme moi, le nouveau quartier des arts de Lausanne est un endroit à ne pas louper. A l’intérieur des musées mais aussi et surtout flâner aux abords de ces bijoux architecturaux ou en sirotant un verre sur l’une des terrasses à l’abri des arches. Observer les allées et venues des passants et se laisser bercer par les jeux d’ombres. Le petit plus, la piste cyclable qui permet d’éviter le rond-point de la gare aux heures de pointe.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 36
+                    },
+                    "pois": [
+                        {
+                            "id": 288,
+                            "name": "Plateforme 10",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5184198",
+                                    "longitude": "6.624533"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 205,
+                    "name": "Le stade olympique de la Pontaise",
+                    "content": "Le stade olympique est l’un de mes endroits favoris dans la ville de Lausanne. Je m’y entraîne depuis l’âge de 13ans et je m’y sens comme à la maison. Lorsque le stade est complet, que ce soit pour un match de foot où pour un concert, l’ambiance est magnifique! Pour moi, le meeting d’athletissima est un événement à faire au moins une fois lorsque l’on est Lausannois.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 23
+                    },
+                    "pois": [
+                        {
+                            "id": 346,
+                            "name": "Stade Olympique de la Pontaise",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5332326",
+                                    "longitude": "6.6243555"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

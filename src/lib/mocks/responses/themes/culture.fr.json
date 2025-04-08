@@ -1,0 +1,773 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 26,
+            "total": 26,
+            "data": [
+                {
+                    "id": 22,
+                    "name": "Théâtre de Vidy",
+                    "content": "Devenu la référence en matière de théâtre contemporain dans la région grâce à son directeur Vincent Baudriller, la programmation située nettement au-delà de ma zone de confort, m’a appris à apprécier le théâtre contemporain et ses thématiques si actuelles.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 33,
+                            "name": "Théâtre Vidy-Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5127454",
+                                    "longitude": "6.6120019"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 53,
+                    "name": "Collection de l'Art Brut",
+                    "content": "Amateur.ice. ou curieux.se, partez à la découverte de créations drôles, déroutantes, fascinantes, intrigantes ou même inquiétantes. Un coup de coeur ? Sans aucun doute la lausannoise Aloïse et ses belles dames aux grands yeux bleus qui me font rêver depuis toujours. On n’en ressort pas indifférent.e.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 332,
+                            "name": "Collection de l'Art Brut",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.527318",
+                                    "longitude": "6.62466"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "name": "Librairie Basta!",
+                    "content": "Je suis souvent embêté lorsque je dois acheter à la fois un vinyle de rock progressif et un livre de sciences humaines. Mais fort heureusement, il existe un lieu dédié aux deux objets: la librairie Basta ! et juste en-dessous, Obsession Records.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 547,
+                            "name": "Librairie Basta!",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5242",
+                                    "longitude": "6.62619"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 35,
+                    "name": "Cinéma Bellevaux",
+                    "content": "J’aime le cinéma indépendant pour être plus cool que les autres, mais surtout parce que je suis passionné. C’est pourquoi je me rends régulièrement au Cinéma Bellevaux, qui propose des films un peu moins connus, un peu moins industriels, mais souvent singuliers et émouvants",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 13
+                    },
+                    "pois": [
+                        {
+                            "id": 549,
+                            "name": "Cinema Bellevaux",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5349",
+                                    "longitude": "6.63337"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 52,
+                    "name": "Cinéma City Club",
+                    "content": "Une belle programmation pour petits et grands saluée par les critiques, de l’improvisation théâtrale, des concerts et festivals, l’équipe associative du city club ne chôme pas! Viens poser ton fessier sur leurs sièges au confort légendaire, la suite ne s’annonce que meilleure.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 553,
+                            "name": "Cinéma CityClub Pully",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.511",
+                                    "longitude": "6.66228"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 54,
+                    "name": "Théâtre 2.21",
+                    "content": "Je l’apprécie pour son attachement à la scène locale, son engagement dans le quartier et la richesse de sa programmation. Le lieu est à la fois un tremplin pour les jeunes artistes et accueille des personnalités aux parcours confirmés. Il est un incontournable de la scène lausannoise.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 10
+                    },
+                    "pois": [
+                        {
+                            "id": 554,
+                            "name": "Théâtre 2.21",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5262484",
+                                    "longitude": "6.639163"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 57,
+                    "name": "Opéra de Lausanne",
+                    "content": "Tandis que l'intérieur de l'opéra nous rappelle les salles à l'italienne, son extérieur en miroirs nous reflète la ville sous différents angles !",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 9,
+                            "name": "Opéra de Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.518049",
+                                    "longitude": "6.636892"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 84,
+                    "name": "Le Petit-Théâtre",
+                    "content": "Chaque année, en août, toute la famille attend impatiemment la programmation du Petit Théâtre. A 2 pas de la cathédrale ; dans une vieille bâtisse avec un joli jardin ; le Petit Théâtre, offre une diversité de spectacle pour les enfants (petits et grands). Pssst, il reste parfois quelques places le jour J à l’accueil !",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 7
+                    },
+                    "pois": [
+                        {
+                            "id": 578,
+                            "name": "Le Petit Théâtre",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5228",
+                                    "longitude": "6.6347"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 123,
+                    "name": "MCBA",
+                    "content": "Inauguré en 2019, j'adore le MCBA avec son architecture marquante et moderne. Ses expositions originales, ainsi que la vue sur la ville et le Léman depuis le hall d'entrée, sont à ne pas manquer",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 3
+                    },
+                    "pois": [
+                        {
+                            "id": 80,
+                            "name": "MCBA - Musée cantonal des Beaux-Arts",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.517992",
+                                    "longitude": "6.6254261"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 128,
+                    "name": "Librairie de la Louve",
+                    "content": "Prononcer ce nom me remplit déjà de joie! Une librairie d’occasion de grande qualité, avec tellement de livres qu’on ne sait plus où donner de la tête. Deux passages obligés pour moi : le rayon « ville de Lausanne », à côté du bureau du libraire, avec des livres anciens qui sentent bon le papier, et le rayon « architecture », dans la petite niche. J’ai hâte d’y retourner!",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 664,
+                            "name": "Librairie de la Louve",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5215",
+                                    "longitude": "6.6321"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 132,
+                    "name": "Coffee Page",
+                    "content": "Avis aux amateurs de livres d’art et de café : quelqu’un a enfin réuni les deux ! On feuillette un ouvrage de la bibliothèque, qui privilégie les livres richement illustrés, on commande une boisson et on laisse un peu son téléphone de côté, pour une fois. Mon combo idéal: un chaï latte et un livre sur le Bauhaus.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 20
+                    },
+                    "pois": [
+                        {
+                            "id": 546,
+                            "name": "Coffee Page",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5183146",
+                                    "longitude": "6.633748"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 161,
+                    "name": "Centre Culturel des Terreaux",
+                    "content": "Cette ancienne église de Bel-Air transformé en centre culturel accueille un public varié depuis 2004. Petite salle intimiste on y retrouvera des pièces engagées et pédagogiques, des humoristes mais aussi des spectacles de danse des compagnies lausannoises.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 676,
+                            "name": "Centre culturel des Terreaux",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229997",
+                                    "longitude": "6.6279979"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 162,
+                    "name": "Pulloff",
+                    "content": "Situé dans les anciens magasins de la Ville, un peu caché derrière le Tunnel, ce petit théâtre à but non lucratif permet ainsi aux compagnies indépendantes de proposer chaque année une programmation moderne, originale et pertinente.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 677,
+                            "name": "Pulloff Théâtres",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5262484",
+                                    "longitude": "6.639163"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Librairie Gasterea",
+                    "content": "Dans cette petite librairie de la Cité pleine de charme, on y trouve tous les livres anciens et modernes sur la gastronomie. De quoi se remplir les yeux et faire saliver les papilles !",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 728,
+                            "name": "Librairie Gastéréa",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229",
+                                    "longitude": "6.6359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 174,
+                    "name": "Cie Igokat",
+                    "content": "A la fois, école de danse et compagnie professionnelle, le centre Igokat, dirigé par deux anciens danseurs du Béjart Ballet est l’école de danse classique et moderne de référence à Lausanne. Kathryn Bradney est également la directrice du grand concours de danse le Prix de Lausanne.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 6
+                    },
+                    "pois": [
+                        {
+                            "id": 729,
+                            "name": "Compagnie Igokat",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5211",
+                                    "longitude": "6.63793"
+                                },
+                                {
+                                    "latitude": "46.5209",
+                                    "longitude": "6.63368"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 193,
+                    "name": "L’Arsenic",
+                    "content": "Danse, théâtre, performance, l’Arsenic c’est une scène contemporaine et expérimentale qui me permet toujours de faire des découvertes bouleversantes. En plus, le café est super pour boire un verre et commenter la représentation entres amis.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 365,
+                            "name": "Théâtre Arsenic",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522665",
+                                    "longitude": "6.6216065"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 194,
+                    "name": "Le musée d’art de Pully",
+                    "content": "A deux pas du lac, ce tout petit musée n’a rien a envier aux collections de plus grandes institutions. L’occasion d’admirer les oeuvres en toute intimité dans le charmant village de Pully.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 63,
+                            "name": "Musée d’art de Pully",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.509004",
+                                    "longitude": "6.66036"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 198,
+                    "name": "Le beffroi de la Cathédrale",
+                    "content": "Si vous voulez prendre de la hauteur à Lausanne, dirigez-vous vers la Cathédrale. Après quelques dizaines de mètres de dénivelé dans les petites rues de la vieille ville, vous voilà donc dans la Cité au pied de la Cathédrale. C'est maintenant le moment de monter les marches qui mènent au sommet de la tour. On y trouve une vue sur Lausanne à 360°, mais aussi les cloches de la Cathédrale. Un conseil, partez avant qu'elles ne sonnent !",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 28
+                    },
+                    "pois": [
+                        {
+                            "id": 372,
+                            "name": "La Cathédrale de Lausanne",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "Madeleine",
+                    "content": "Au coeur de Lausanne, non loin de la Place de la Palud, se trouve Madeleine. Non, il ne s'agit pas de l'adresse de ma tante Madeleine, mais d'un café-librairie. D'un côté, on trouve une librairie et de l'autre un café. Le lieu est hors du temps. On se pose à une table tout en sirotant un iced coffee et savourant une madeleine (bien évidemment). Les touches pastel de la décoration et la petite musique lounge en arrière-fond vous bercent de cette quiétude environnante.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 80,
+                            "name": "Éducation"
+                        },
+                        {
+                            "id": 38,
+                            "name": "Gastronomie"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 770,
+                            "name": "Madeleine",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522322",
+                                    "longitude": "6.6328523"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 221,
+                    "name": "La Fondation de l'Hermitage",
+                    "content": "Un musée dont les expositions et collections sont aussi belles que le cadre qui les accueille. La maison comme le parc offrent une vue magnifique sur la Cathédrale et le lac. Cerise sur le gâteau, le café de l'Esquisse permet de combiner art & brunch.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 167,
+                            "name": "Fondation de l'Hermitage",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5281459",
+                                    "longitude": "6.6371554"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 224,
+                    "name": "Les Docks",
+                    "content": "Vous aimez la musique ? Les Docks, c’est une salle de concert qui affiche de grands noms dans une petite salle. Une proximité avec les artistes qui font de vos concerts une expérience marquante !",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 27
+                    },
+                    "pois": [
+                        {
+                            "id": 375,
+                            "name": "Salle de concert des Docks",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522407",
+                                    "longitude": "6.619252"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 235,
+                    "name": "Mudac et Photo Elysée",
+                    "content": "Le Musée cantonal de design et d'arts appliqués contemporains et Photo Elysée sont deux musées regroupés dans un même bâtiment, et je dois dire que l'architecture est vraiment magnifique avec ses lignes épurées. J'adore aller là-bas pour profiter des expositions en cours et prendre un café au café Lumen, qui se trouve au mudac. Et tu sais quoi ? Même en hiver, si le soleil est au rendez-vous, je n'hésite pas à me rendre sur la terrasse extérieure encastrée. C'est génial de pouvoir se réchauffer tout en profitant de la vue.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 290,
+                            "name": "mudac",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5181393",
+                                    "longitude": "6.6241716"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 106,
+                            "name": "Photo Elysée",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5184452",
+                                    "longitude": "6.6238765"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 238,
+                    "name": "Le Musée Olympique",
+                    "content": "L'expérience de courir sur la piste de 100 mètres au parc du Musée Olympique de Lausanne, avec les faisceaux lumineux recréant la vitesse d'Usain Bolt, était tout simplement incroyable. En plus de cela, il y a d'autres activités passionnantes à découvrir et en haut du Musée, le TOM Café propose un buffet gourmand à volonté les weekends. Je recommande de réserver à l'avance.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 337,
+                            "name": "Le Musée Olympique",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087324",
+                                    "longitude": "6.6340879"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 241,
+                    "name": "La Vallée de la Jeunesse",
+                    "content": "En tant qu'amoureuse du roller, le parc de la Vallée de la Jeunesse est un endroit magique pour moi où je peux m'entraîner et m'amuser. Avec ses pentes abruptes, on y trouve des skateurs et des rollers dévalant un chemin d'un kilomètre avant d'arriver sur la plaine de Vidy. Mais le parc offre bien plus que cela : il propose également un espace de jeu pour enfants, des aménagements de bosses et même le musée scientifique pour enfants, l'Espace des Inventions. C'est vraiment un lieu polyvalent où chacun peut trouver son bonheur.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 308,
+                            "name": "Vallée de la Jeunesse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520411",
+                                    "longitude": "6.604334"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 268,
+                    "name": "Thelonica",
+                    "content": "Plongez dans un moment musical empreint de sérénité avec Thelonica. Chaque été, l'association vous offre des concerts à l'aube, sur la Jetée de la Compagnie. Sa programmation éclectique inclut le jazz, les musiques actuelles, classiques et contemporaines. L'ambiance unique de l'aube invite à la découverte, au dialogue et à la paix intérieure.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 79,
+                            "name": "Insolite"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 33
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 297,
+                    "name": "Plateforme 10",
+                    "content": "Passionné de culture ou alors photographe comme moi, le nouveau quartier des arts de Lausanne est un endroit à ne pas louper. A l’intérieur des musées mais aussi et surtout flâner aux abords de ces bijoux architecturaux ou en sirotant un verre sur l’une des terrasses à l’abri des arches. Observer les allées et venues des passants et se laisser bercer par les jeux d’ombres. Le petit plus, la piste cyclable qui permet d’éviter le rond-point de la gare aux heures de pointe.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 36
+                    },
+                    "pois": [
+                        {
+                            "id": 288,
+                            "name": "Plateforme 10",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5184198",
+                                    "longitude": "6.624533"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

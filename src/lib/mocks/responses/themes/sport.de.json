@@ -1,0 +1,307 @@
+{
+    "data": {
+        "items": {
+            "has_more_pages": false,
+            "current_page": 1,
+            "last_page": 1,
+            "per_page": 99999,
+            "from": 1,
+            "to": 10,
+            "total": 10,
+            "data": [
+                {
+                    "id": 36,
+                    "name": "Crêt de Montriond",
+                    "content": "Einer meiner Lieblingsorte, um im Freien zu trainieren. Besonders gern komme ich an Sommerabenden zum Sonnenuntergang her – oder für ein Cardiotraining am frühen Morgen. Hier ist es immer herrlich ruhig und die Aussicht auf den See ist unschlagbar!",
+                    "tags": [
+                        {
+                            "id": 51,
+                            "name": "Nature"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 9
+                    },
+                    "pois": [
+                        {
+                            "id": 490,
+                            "name": "Le Crêt de Montriond",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5141249",
+                                    "longitude": "6.6239854"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 105,
+                    "name": "La Vallée de la Jeunesse",
+                    "content": "Echte Skater und alle anderen mit einem Skateboard ähnlichen Gefährt unter den Füssen, kommen an diesem Ort in Lausanne einfach nicht vorbei! Dieser prächtige Park ist nach der Weltausstellung von 1964 benannt. Es macht immer wieder Spass, auf dieser perfekten Runde hinunter zu sausen! Die Strecke ist 1 km lang und perfekt asphaltiert. Die Asphaltschwellen warten nur darauf, von den Skatern erobert zu werden. Obendrein gibt es hier keinen Autoverkehr und so schlängelt sich der Weg durch ein herrliches Blumenmeer aus ungefähr 8.000 verschiedenen Rosensorten!",
+                    "tags": [
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 4
+                    },
+                    "pois": [
+                        {
+                            "id": 308,
+                            "name": "Vallée de la Jeunesse",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520411",
+                                    "longitude": "6.604334"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 109,
+                    "name": "Der Bowl de Vidy",
+                    "content": "Grinds, Airs, Slides, Plants, Roll-in… Auf die Moves kommt es gar nicht so sehr an, wenn man sie im berühmten Bowl de Vidy übt, dem grössten, schweizerischen Outdoor-Skatepark seiner Art. Und mit nur wenigen Metern Entfernung zum Genfersee gibt es anschliessend den Sprung ins kühle Nass GESCHENKT!",
+                    "tags": [
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 4
+                    },
+                    "pois": [
+                        {
+                            "id": 417,
+                            "name": "Skatepark Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.514768",
+                                    "longitude": "6.6000953"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 136,
+                    "name": "Joggingrunde in der Cité",
+                    "content": "Das liebe ich, aber dann, wenn niemand da ist, normalerweise abends. Dann fühle ich mich als Teil der Stadt, wie eine Königin, die durch ihre Stadt läuft ‒ die ganz ihr gehört, da alle anderen zu Hause sind. Die Herausforderung, auf den gepflasterten Gassen und die alten Treppen hoch- und wieder runter zu laufen, macht diese Strecke zu einer grossartigen Runde!",
+                    "tags": [
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 15
+                    },
+                    "pois": [
+                        {
+                            "id": 329,
+                            "name": "La Cité",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "Lasst euch am Seeufer in Vidy von der Atmosphäre mit Grillgerüchen, Berimbau-Klängen, einem improvisierten Baby-Geburtstag, Joggerinnen, Schaulustigen und sonntäglichen Pétanque-Spielern einfangen. Setzt euch einfach auf eine Bank oder an das Seeufer und beobachtet alles um euch herum. Das sind die Lausannerinnen und Lausanner: ein harmonischer interkultureller Mischmasch.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 82,
+                            "name": "Lacustre"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 24
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 205,
+                    "name": "Stade Olympique de la Pontaise",
+                    "content": "Das Stade Olympique de la Pontaise ist einer meiner Lieblingsorte in der Stadt Lausanne. Ich trainiere in diesem Stadion, seit ich 13 Jahre alt bin und fühle mich dort wie zu Hause. Bei ausverkauftem Fussballmatch oder Konzert ist die Stimmung einfach grossartig! Für mich ist das Athletissima-Meeting eine Veranstaltung, die man mindestens einmal erleben muss, wenn man aus Lausanne kommt.",
+                    "tags": [
+                        {
+                            "id": 5,
+                            "name": "Architecture"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 23
+                    },
+                    "pois": [
+                        {
+                            "id": 346,
+                            "name": "La Pontaise – Olympiastadion",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5332326",
+                                    "longitude": "6.6243555"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 236,
+                    "name": "Yoga an der Jetée de la Compagnie",
+                    "content": "Mein absoluter Lieblingsort für einen guten Start in den Tag. Jedes Jahr kann ich es kaum erwarten, bis die Yoga-Kurse an der Jetée de la Compagnie wieder beginnen. Zu diesem Lebensraum am Seeufer gehören zwei Gastro-Container und ein Musikbereich als Treffpunkt nach Feierabend. Es werden aber auch jeden Morgen Yoga-Kurse angeboten. Ihr braucht euch dafür nicht anzumelden. Nehmt einfach eure Matte mit, macht es euch am See gemütlich und entspannt euch eine Stunde lang. Der Tarif richtet sich nach einer freiwilligen Spende.",
+                    "tags": [
+                        {
+                            "id": 9,
+                            "name": "Bien-être"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 238,
+                    "name": "Olympisches Museum",
+                    "content": "Im Olympischen Museum auf der 100-Meter-Bahn zu laufen und sich durch Lichtstrahlen mit Usain Bolt zu messen – unglaublich! Es gibt auch andere spannende Aktivitäten zu entdecken und das TOM Café im obersten Stock bietet jeweils am Wochenende ein Buffet à discrétion an. Kleiner Tipp: Es lohnt sich, zu reservieren.",
+                    "tags": [
+                        {
+                            "id": 29,
+                            "name": "Culture"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 29
+                    },
+                    "pois": [
+                        {
+                            "id": 337,
+                            "name": "Das Olympische Museum",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087324",
+                                    "longitude": "6.6340879"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 278,
+                    "name": "Milan-Park",
+                    "content": "Dieser Park ist wirklich das Herz des Stadtviertels. Egal welche Aktivität euch vorschwebt, hier findet ihr den Platz dafür – sei es für einen Pingpong-, Fussball- oder Basketballmatch, ein Picknick unter Freunden oder einen Familienausflug auf den Spielplatz mit den Kleinsten.",
+                    "tags": [
+                        {
+                            "id": 36,
+                            "name": "Famille"
+                        },
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 34
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 246,
+                    "name": "The 3x3 Lab",
+                    "content": "Dieser Ort ist ein echter Tempel für alle, die 3x3-Basketball lieben. Die Halle bietet zwei erstklassige Spielfelder, wo ihr eure Techniken üben, erlernen und perfektionieren könnt. Ein absolutes Muss für alle Lausanner Basketballerinnen und Basketballer!",
+                    "tags": [
+                        {
+                            "id": 60,
+                            "name": "Sport"
+                        }
+                    ],
+                    "lausanner": {
+                        "id": 30
+                    },
+                    "pois": [
+                        {
+                            "id": 745,
+                            "name": "Sporthallen Beaulieu",
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5296089",
+                                    "longitude": "6.6229958"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
