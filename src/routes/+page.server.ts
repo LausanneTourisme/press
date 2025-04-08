@@ -1,14 +1,14 @@
 
-import { redirect, type ServerLoad } from '@sveltejs/kit';
 import { dev } from '$app/environment';
 import { defaultLocale, isValidLocale, type Locale } from '$lib/translations';
+import { redirect, type ServerLoad } from '@sveltejs/kit';
 
 const getNavLocale = (request: Request) => {
-	if (dev) return defaultLocale;
+    if (dev) return defaultLocale;
 
-	const acceptLanguageHeader = request.headers.get('accept-language') || '';
+    const acceptLanguageHeader = request.headers.get('accept-language') || '';
     // Attempt to match the language code with optional region code
-	let match = acceptLanguageHeader.match(/^[a-z]{2}/i);
+    let match = acceptLanguageHeader.match(/^[a-z]{2}/i);
     // If no match is found, try to match just the language code
     if (!match) {
         match = acceptLanguageHeader.match(/^[a-z]+/i);
@@ -21,6 +21,6 @@ const getNavLocale = (request: Request) => {
 };
 
 export const load: ServerLoad = async ({ url, request }) => {
-	const locale = getNavLocale(request);
-	throw redirect(302, `/${locale}`);
+    const locale = getNavLocale(request);
+    throw redirect(302, `/${locale}`);
 };
