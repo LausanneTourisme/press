@@ -4,30 +4,30 @@ import type { Locale } from "$lib/translations";
 import moment from "moment";
 
 const itemsLimit = 9999
-const getTag = (theme: Theme): string => {
+export const getTag = (theme: Theme): string => {
     switch (theme) {
         case Themes.Architecture:
-            return 'architecture';
+            return 'Architecture';
         case Themes.Culture:
-            return 'culture';
+            return 'Culture';
         case Themes.Education:
-            return 'éducation';
+            return 'Éducation';
         case Themes.Family:
-            return 'famille';
+            return 'Famille';
         case Themes.Gastronomy:
-            return 'gastronomie';
+            return 'Gastronomie';
         case Themes.Lacustrine:
-            return 'lacustre';
+            return 'Lacustre';
         case Themes.Nature:
-            return 'nature';
+            return 'Nature';
         case Themes.Sport:
-            return 'sport';
+            return 'Sport';
         case Themes.Sustainability:
-            return 'durabilité';
+            return 'Durabilité';
         case Themes.Unusual:
-            return 'insolite';
+            return 'Insolite';
         case Themes.Wellness:
-            return 'bien-être';
+            return 'Bien-être';
         default:
             return theme;
     }
@@ -120,7 +120,7 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
     return await result.json();
 }
 
-export const getFavorites = async ({ locale, tag }: { locale: Locale, tag: Theme }) => {
+export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: Theme }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -131,8 +131,8 @@ export const getFavorites = async ({ locale, tag }: { locale: Locale, tag: Theme
             variables: {
                 locale,
                 limit: 100,
-                tag: tag, //used for mocks
-                tags: [getTag(tag)],
+                theme, //used for mocks
+                tags: [getTag(theme)],
             },
             query: `query GetFavorites ($locale: String, $limit: Int, $tags: [String] ) {
                 favorites(locale: $locale, limit: $limit, page: 1, tags: $tags) {
