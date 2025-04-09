@@ -1,12 +1,14 @@
-import { Themes } from '$enums';
-import { graphql, HttpResponse, } from 'msw'
-import { setupServer } from 'msw/node'
+import { graphql, HttpResponse, } from 'msw';
+import { setupServer } from 'msw/node';
 
 export const handlers = [
     graphql.query('GetPosts', async ({ variables }) => {
         if (variables.type === 'press_release, press_kit') {
             return HttpResponse.json(await import(`./responses/posts/press_kit.${variables.locale}.json`));
         } else if (variables.type === "post") {
+            if(variables.highlighted){
+                return HttpResponse.json(await import(`./responses/posts/posts.highlighted.${variables.locale}.json`));
+            }
             return HttpResponse.json(await import(`./responses/posts/posts.${variables.locale}.json`));
         } else if (variables.type === "news") {
             return HttpResponse.json(await import(`./responses/posts/news.${variables.locale}.json`));
@@ -29,8 +31,7 @@ export const handlers = [
         return HttpResponse.json(await import(`./responses/groups/posts.${variables.locale}.json`));
     }),
     graphql.query('GetFavorites',async ({ variables }) => {
-        console.log(variables)
-        return HttpResponse.json(await import(`./responses/favorites/${variables.tag}.${variables.locale}.json`));
+        return HttpResponse.json(await import(`./responses/favorites/${variables.theme}.${variables.locale}.json`));
     }),
     graphql.query('GetAgendaEvents',async () => {
         return HttpResponse.json(await import(`./responses/events/all.json`));
