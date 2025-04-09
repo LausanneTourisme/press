@@ -11,13 +11,15 @@
     width?: number;
     height?: number;
     class?: string;
+    imgClass?: string;
   }
 
   const {
     class: additionalClass,
+    imgClass,
     src = '',
     alt = '',
-    transform = {},
+    transform,
     crop = true,
     width = 0,
     height = 0
@@ -32,5 +34,5 @@
 </script>
 
 <figure bind:this={figure} class={style}>
-  <Image {src} {alt} {width} {height} {transform} {crop} onload={removeBackground} />
+  <Image class={imgClass} {src} {alt} {width} {height} {transform} {crop} onload={removeBackground} />
 </figure>
