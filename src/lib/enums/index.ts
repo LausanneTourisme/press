@@ -1,6 +1,8 @@
 export type RouteType = typeof RouteTypes[keyof typeof RouteTypes]
 export type Theme = typeof Themes[keyof typeof Themes]
 
+//ThemeKeys available under 😉 needs reference of Themes
+
 export const RouteTypes = {
   Home: "home",
   Articles: "articles",

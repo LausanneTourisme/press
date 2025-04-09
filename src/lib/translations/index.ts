@@ -118,6 +118,14 @@ export const config: Config = {
         }
       })),
 
+    // Themes
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'themes',
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/pages/themes.json`)).default,
+    })),
+
       //create all translations for specific theme's view
       ...Object.values(Themes)
       .flatMap(theme => supportedLocales.map(locale => {

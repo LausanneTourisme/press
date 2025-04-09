@@ -1,10 +1,10 @@
+import { dev } from '$app/environment';
 import { type RouteType, type Theme } from '$enums';
+import { filterByTag } from '$lib/helpers';
 import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
+import { server } from '$lib/mocks/handler';
 import { type Locale } from '$lib/translations';
 import { type ServerLoad } from '@sveltejs/kit';
-import { filterByTag } from '$lib/helpers';
-import { server } from '$lib/mocks/handler';
-import { dev } from '$app/environment';
 
 interface Parent {
     i18n: {
