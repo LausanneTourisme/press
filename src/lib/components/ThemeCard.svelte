@@ -60,7 +60,10 @@
       {$t(`themes.${theme}.title`)}
     </Heading>
     <div
-      class="absolute top-0 left-0 h-full w-full opacity-0 transition-opacity group-hover:opacity-100 {themeInformation.background} flex items-center justify-center"
+      class={twMerge(
+        "absolute top-0 left-0 h-full w-full opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center",
+        `${themeInformation.background}/50`
+      )}
     >
       <div
         class="h-48 w-48 shadow {themeInformation.card} flex translate-y-96 flex-col items-center justify-center transition-transform group-hover:translate-y-0"
