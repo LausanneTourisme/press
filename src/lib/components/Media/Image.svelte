@@ -18,21 +18,24 @@
     onload?: (event: Event) => unknown;
   }
 
-  const {
+  let {
     src,
     alt = '',
     ignoreAutoSize = false,
     height = undefined,
     width = undefined,
     crop = false,
-    transform = {
-      g: 'auto',
-      c: 'fill'
-    },
+    transform,
     class: additionalClass = '',
     onload
   }: ImageProps = $props();
 
+  if(!transform){
+    transform = {
+      g: 'auto',
+      c: 'fill'
+    };
+  }
   let style = twMerge('object-cover w-full h-full', additionalClass);
   let image: undefined | HTMLImageElement = $state(undefined);
   let srcResolved: string = $state('');
