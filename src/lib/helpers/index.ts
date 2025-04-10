@@ -45,14 +45,17 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme } = { forceLocale: undefined, theme: undefined }): string => {
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
-  if (type === RouteTypes.Themes) {
-    if (!options.theme) return `/${lang}/${slug}`;
+  
+  if (!slug) return `/${lang}`;
 
-    return `/${lang}/${slug}/${t.get(`route.${RouteTypes.Themes}.${options.theme}.slug`)}/`
+  if (type === RouteTypes.Themes) {
+    const theme = options.theme;
+    const themeSlug = theme ? t.get(`route.${RouteTypes.Themes}.${theme}.slug`) : null;
+
+    if (!themeSlug) return `/${lang}/${slug}`;
+    return `/${lang}/${slug}/${themeSlug}/`;
   }
 
-
-  if (!slug) return `/${lang}`;
   return `/${lang}/${slug}`;
 }
 
