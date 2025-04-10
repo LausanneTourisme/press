@@ -12,10 +12,6 @@
   import { Send } from 'lucide-svelte';
 
   let { children } = $props();
-
-  onMount(async () => {
-    await loadTranslations($locale);
-  });
 </script>
 
 <svelte:head>
@@ -125,7 +121,7 @@
             <a href="mailto:info@lausanne-tourisme.ch">info@lausanne-tourisme.ch</a><br />
             <a href="tel:+41216137373">+41 21 613 73 73</a>
           </p>
-          <Button negative={true} href={$t('footer.where.url')}>
+          <Button negative={true} href={page.data.translations[locale.get()]['footer.where.url']}>
             {$t('footer.where.text')}
           </Button>
         </div>
@@ -143,7 +139,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.corporate.about-us.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.corporate.about-us.url']}
                   >
                     {$t('footer.infos.corporate.about-us.text')}
                   </Link>
@@ -153,7 +149,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.corporate.member-space.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.corporate.member-space.url']}
                   >
                     {$t('footer.infos.corporate.member-space.text')}
                   </Link>
@@ -163,7 +159,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.corporate.jobs.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.corporate.jobs.url']}
                   >
                     {$t('footer.infos.corporate.jobs.text')}
                   </Link>
@@ -173,7 +169,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.corporate.general-terms.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.corporate.general-terms.url']}
                   >
                     {$t('footer.infos.corporate.general-terms.text')}
                   </Link>
@@ -183,7 +179,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.corporate.privacy.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.corporate.privacy.url']}
                   >
                     {$t('footer.infos.corporate.privacy.text')}
                   </Link>
@@ -202,7 +198,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.meeting.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.meeting.url']}
                   >
                     {$t('footer.infos.more.meeting.text')}
                   </Link>
@@ -212,7 +208,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.congress.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.congress.url']}
                   >
                     {$t('footer.infos.more.congress.text')}
                   </Link>
@@ -222,7 +218,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.trade.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.trade.url']}
                   >
                     {$t('footer.infos.more.trade.text')}
                   </Link>
@@ -232,7 +228,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.presskit.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.presskit.url']}
                   >
                     {$t('footer.infos.more.presskit.text')}
                   </Link>
@@ -242,7 +238,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.press.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.press.url']}
                   >
                     {$t('footer.infos.more.press.text')}
                   </Link>
@@ -252,7 +248,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={$t('footer.infos.more.brochures.url')}
+                    href={page.data.translations[locale.get()]['footer.infos.more.brochures.url']}
                   >
                     {$t('footer.infos.more.brochures.text')}
                   </Link>

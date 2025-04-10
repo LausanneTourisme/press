@@ -11,7 +11,7 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
 
 export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
     const lang: undefined | Locale = getUrlLocale(url.pathname) ?? defaultLocale;
-
+    
     // undefined cased covered by src/params/locale.ts
     await setLocale(lang);
     await loadTranslations(lang);
