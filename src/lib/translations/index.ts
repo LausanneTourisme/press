@@ -20,6 +20,7 @@ const routeTypes: Record<Locale, Record<string, string>> = {
 };
 
 export const config: Config = {
+  initLocale: defaultLocale,
   fallbackLocale: defaultLocale,
   cache: dev ? 0 : undefined, //no cache in dev
   log: {
@@ -62,7 +63,7 @@ export const config: Config = {
       locale,
       key: 'route',
       routes: undefined,
-      loader: async () => (await import(`./${locale}/route.json`)).default,
+      loader: async () => routeTypes[locale],
     })),
 
     // Menu
@@ -129,9 +130,6 @@ export const config: Config = {
       //create all translations for specific theme's view
       ...Object.values(Themes)
       .flatMap(theme => supportedLocales.map(locale => {
-        const type = routeTypes[locale][`${RouteTypes.Themes}.slug`]
-        const slug = routeTypes[locale][`themes.${theme}.slug`];
-
         return {
           locale,
           key: `themes.${theme}`,
