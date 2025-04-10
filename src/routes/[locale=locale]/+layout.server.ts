@@ -1,5 +1,4 @@
-import { RouteTypes } from '$enums';
-import { loadTranslations, translations as libTranslations, supportedLocales, type Locale } from '$lib/translations';
+import { supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { type ServerLoad } from '@sveltejs/kit';
 
@@ -15,7 +14,7 @@ interface Parent {
 
 export const load: ServerLoad = async ({ url, params, parent }) => {
     const { i18n, translations }: Parent = await parent() as Parent;
-    const lang: Locale = params.locale as Locale; 
+    const lang: Locale = params.locale as Locale;
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,

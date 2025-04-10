@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -19,32 +20,32 @@
 
   let isDarkMode = $state(false);
   let isMobile = $state(false);
-  let displayAllThemes= $state(false);
+  let displayAllThemes = $state(false);
 
   const trophies: Trophy[] = [
     {
       name: $t('page.distinctions.trophies.first.name'),
       content: $t('page.distinctions.trophies.first.content'),
       image: '/images/pages/home/articles/parc-musee-olympique.jpg',
-      link: $t('page.distinctions.trophies.first.link')
+      link: page.data.translations[locale.get()]['page.distinctions.trophies.first.link']
     },
     {
       name: $t('page.distinctions.trophies.second.name'),
       content: $t('page.distinctions.trophies.second.content'),
       image: '/images/pages/home/articles/52placestogo.jpg',
-      link: $t('page.distinctions.trophies.second.link')
+      link: page.data.translations[locale.get()]['page.distinctions.trophies.second.link']
     },
     {
       name: $t('page.distinctions.trophies.third.name'),
       content: $t('page.distinctions.trophies.third.content'),
       image: '/images/pages/home/articles/nature.jpg',
-      link: $t('page.distinctions.trophies.third.link')
+      link: page.data.translations[locale.get()]['page.distinctions.trophies.third.link']
     },
     {
       name: $t('page.distinctions.trophies.fourth.name'),
       content: $t('page.distinctions.trophies.fourth.content'),
       image: '/images/pages/home/articles/best-small-city.jpg',
-      link: $t('page.distinctions.trophies.fourth.link')
+      link: page.data.translations[locale.get()]['page.distinctions.trophies.fourth.link']
     }
   ];
 
@@ -277,7 +278,10 @@
   -
   -->
 <Container fullscreen={true} class="mb-12">
-  <Themes expanded={displayAllThemes} onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}/>
+  <Themes
+    expanded={displayAllThemes}
+    onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
+  />
 </Container>
 <!--
   -
