@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 let json = readFileSync(path.resolve('./package.json'), 'utf8');
 const pkg = JSON.parse(json);
 json = readFileSync(path.resolve('./src/lib/translations/fr/lang.json'), 'utf8');
-const supportedLocales = Object.keys(json);
+const supportedLocales = Object.keys(JSON.parse(json));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -30,7 +30,7 @@ const config = {
     
     prerender: {
       // NOTE: You can modify your exported error pages here.
-      entries: supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`], ['*']),
+      entries: supportedLocales.flatMap((locale) => [`/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`]),
     }
   }
 };
