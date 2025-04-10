@@ -62,7 +62,7 @@
     <div
       class={twMerge(
         "absolute top-0 left-0 h-full w-full opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center",
-        `${themeInformation.background}/50`
+        themeInformation.background
       )}
     >
       <div
