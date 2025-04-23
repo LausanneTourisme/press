@@ -42,7 +42,7 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   return `https://medialibrary.lausanne-tourisme.ch?registration&${lang}`;
 }
 
-export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme } = { forceLocale: undefined, theme: undefined }): string => {
+export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme, suffix?: string } = { forceLocale: undefined, theme: undefined }): string => {
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
   if (type === RouteTypes.Themes) {
@@ -53,6 +53,7 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
 
 
   if (!slug) return `/${lang}`;
+  if (options.suffix) return `/${lang}/${slug}/${options.suffix}`;
   return `/${lang}/${slug}`;
 }
 
