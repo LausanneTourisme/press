@@ -31,7 +31,6 @@ export const load: ServerLoad = async ({ parent }) => {
     // 0 highlighted posts in this list
     let articles = await getPosts({ type: 'post', highlighted: false, locale });
     articles = filterByTag(articles?.data?.items?.data ?? [], tag);
-
     const highlightedArticles = await getPosts({ type: 'post', highlighted: true, locale });
     const highlightedArticle = filterByTag(highlightedArticles?.data?.items?.data ?? [], tag)[0] ?? undefined;
 
