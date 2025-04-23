@@ -19,7 +19,7 @@
 
   let isDarkMode = $state(false);
   let isMobile = $state(false);
-  let displayAllThemes= $state(false);
+  let displayAllThemes = $state(false);
 
   const trophies: Trophy[] = [
     {
@@ -277,7 +277,12 @@
   -
   -->
 <Container fullscreen={true} class="mb-12">
-  <Themes expanded={displayAllThemes} onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}/>
+  <Themes
+    title={$t('themes.title')}
+    paragraph={$t('themes.description')}
+    expanded={displayAllThemes}
+    onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
+  />
 </Container>
 <!--
   -

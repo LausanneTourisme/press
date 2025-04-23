@@ -112,7 +112,7 @@ export const config: Config = {
         const slug = routeTypes[locale][`${type}.slug`];
         return {
           locale,
-          key: 'pages',
+          key: 'page',
           routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
           loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
         }
