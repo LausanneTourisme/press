@@ -19,7 +19,9 @@ const routeTypes: Record<Locale, Record<string, string>> = {
   fr: routeTypeFr
 };
 
-export const config: Config = {
+export const config: Config<{
+  value?: any;
+}> = {
   fallbackLocale: defaultLocale,
   cache: dev ? 0 : undefined, //no cache in dev
   log: {
