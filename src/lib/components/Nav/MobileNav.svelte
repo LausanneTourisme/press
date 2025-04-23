@@ -12,6 +12,7 @@
   import Shelf from '../Shelf.svelte';
   import SocialNetworks from '../SocialNetworks.svelte';
   import Logo from './Logo.svelte';
+  import type { SeoHeader } from '$types';
 
   type Props = {
     class?: string;
@@ -19,6 +20,7 @@
   };
 
   const { class: additionalClass, maxWidth = maxMobileWidth }: Props = $props();
+  const pageSeo: SeoHeader = $derived(page.data.seo);
   const style: string = twMerge('flex h-full items-center justify-between', additionalClass);
 
   let open = $state(false);
@@ -61,7 +63,7 @@
 
 <nav class={style} aria-labelledby="mobile-navigation">
   <a
-    href={route(RouteTypes.Home)}
+    href={route(RouteTypes.Home, { forceLocale: $locale as Locale })}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
   >
     <Logo />
@@ -72,18 +74,18 @@
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
         <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
           <span>{$locale.toUpperCase()}</span>
-          {#if page.data.seo.alternate.length > 1}
+          {#if pageSeo.alternate.length > 1}
             <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
           {/if}
         </p>
       </div>
-      {#if page.data.seo.alternate.length > 1}
+      {#if pageSeo.alternate.length > 1}
         <div>
           <ul
             class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
           >
-            {#key page.url}
-              {#each page.data.seo.alternate as alternate}
+            {#key pageSeo.alternate}
+              {#each pageSeo.alternate as alternate}
                 <li>
                   <Link
                     class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
@@ -111,7 +113,7 @@
   >
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
-      <a href={route(RouteTypes.Home)} class="flex max-w-[230px] cursor-pointer">
+      <a href={route(RouteTypes.Home, {forceLocale: $locale as Locale})} class="flex max-w-[230px] cursor-pointer">
         <Logo />
       </a>
       <div class="flex">
@@ -120,18 +122,18 @@
           <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
             <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
               <span>{$locale.toUpperCase()}</span>
-              {#if page.data.seo.alternate.length > 1}
+              {#if pageSeo.alternate.length > 1}
                 <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
               {/if}
             </p>
           </div>
-          {#if page.data.seo.alternate.length > 1}
+          {#if pageSeo.alternate.length > 1}
             <div>
               <ul
                 class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
               >
-                {#key page.url}
-                  {#each page.data.seo.alternate as alternate}
+                {#key pageSeo.alternate}
+                  {#each pageSeo.alternate as alternate}
                     <li>
                       <Link
                         class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
