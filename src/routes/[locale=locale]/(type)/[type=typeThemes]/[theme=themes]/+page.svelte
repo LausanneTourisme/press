@@ -9,14 +9,16 @@
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t } from '$lib/translations';
-  import type { Post } from '$types';
+  import type { Favorite, Post } from '$types';
   import { ArrowRight } from 'lucide-svelte';
   import moment from 'moment';
   import { fade } from 'svelte/transition';
+  import { twMerge } from 'tailwind-merge';
 
   const highlightedArticle: Post | undefined = $derived(page.data.payload.highlightedArticle);
   const title: string = $derived(highlightedArticle?.name ?? page.data.seo.title);
-  const articles: Post[] = page.data.payload.articles;
+  const articles: Post[] = $derived(page.data.payload.articles);
+  const favorites: Favorite[] = $derived(page.data.payload.favorites);
   const theme: Theme = page.data.theme;
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
@@ -65,8 +67,10 @@
         transform={ThemeDetails[ThemeKeys[theme]]?.transform}
       />
       <div
-        class="{ThemeDetails[ThemeKeys[theme]]
-          .background} absolute top-4 left-16 -z-10 h-56 w-2/3 rounded md:left-32 md:h-72 md:w-1/2"
+        class={twMerge(
+          ThemeDetails[ThemeKeys[theme]].background,
+          'absolute top-4 left-16 -z-10 h-56 w-2/3 rounded md:left-32 md:h-72 md:w-1/2'
+        )}
       ></div>
     </div>
   </div>
@@ -131,7 +135,7 @@
       <Paragraph>
         {$t('themes.lausanners.paragraph2', { value: $t(`themes.${theme}.title`) })}
       </Paragraph>
-      <Button href="https://www.lausanne-tourisme.ch/{$locale}/the-lausanner/">
+      <Button href="https://www.lausanne-tourisme.ch/{$locale}/the-lausanner/" tag="a">
         {$t('themes.lausanners.button')}
       </Button>
     </div>
@@ -142,3 +146,13 @@
     </div>
   </div>
 </Container>
+<!--
+    -
+    -
+    -
+    - MAP >>>>>>>>>>>>>>>>>>>>>>>
+    -
+    -
+    -
+    -->
+<!-- <Map /> -->
