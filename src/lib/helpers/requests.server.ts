@@ -1,6 +1,7 @@
 import { Themes, type Theme } from "$enums";
 import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL, GROUP_ID_PAGE_HIGHLIGHTS } from "$env/static/private";
 import type { Locale } from "$lib/translations";
+import type { Favorite, GraphQLResponse, Group, Page, Post, Release } from "$types";
 import moment from "moment";
 
 const itemsLimit = 9999
@@ -32,6 +33,7 @@ export const getTag = (theme: Theme): string => {
             return theme;
     }
 }
+
 export const getPosts = async ({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted: boolean }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
@@ -79,7 +81,7 @@ export const getPosts = async ({ type, locale, highlighted }: { type: 'press_rel
             }`,
         }),
     });
-    return await result.json();
+    return (await result.json()) as Promise<GraphQLResponse<Post|Release|Page>>;
 }
 
 /**
@@ -117,7 +119,7 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
             }`
         })
     });
-    return await result.json();
+    return (await result.json()) as Promise<GraphQLResponse<Group>>;
 }
 
 export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: Theme }) => {
@@ -175,7 +177,7 @@ export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: T
             }`,
         }),
     });
-    return await result.json();
+    return (await result.json()) as Promise<GraphQLResponse<Favorite>>;
 }
 
 export const getAgendaEvents = async () => {
@@ -257,5 +259,5 @@ export const getAgendaEvents = async () => {
         }),
     });
 
-    return await result.json();
+    return (await result.json()) as Promise<GraphQLResponse<Event>>;
 }
