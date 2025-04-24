@@ -49,7 +49,7 @@ export const getPosts = async ({ type, locale, highlighted }: { type: 'press_rel
                 highlighted,
             },
             query: `query GetPosts($limit: Int, $locale: String, $type: String, $highlighted: Boolean) {
-                posts(type: $type, locale: $locale, limit: $limit, highlighted: $highlighted) {
+                items: posts(type: $type, locale: $locale, limit: $limit, highlighted: $highlighted) {
                     data {
                         id
                         languages
@@ -100,7 +100,7 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
                 locale
             },
             query: `query GetGroup ($id: Int!, $locale: String) {
-                group(id: $id, locale: $locale) {
+                items:group(id: $id, locale: $locale) {
                     pois {
                         id
                         name
@@ -137,7 +137,7 @@ export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: T
                 tags: [getTag(theme)],
             },
             query: `query GetFavorites ($locale: String, $limit: Int, $tags: [String] ) {
-                favorites(locale: $locale, limit: $limit, page: 1, tags: $tags) {
+                items: favorites(locale: $locale, limit: $limit, page: 1, tags: $tags) {
                     data {
                         id
                         name
@@ -194,7 +194,7 @@ export const getAgendaEvents = async () => {
                 limit: itemsLimit,
             },
             query: `GetAgendaEvents ($from:String, highlighted: $highlighted, limit: Int) {
-                events(from: $from, highlighted: $highlighted, limit: $limit) {
+                items: events(from: $from, highlighted: $highlighted, limit: $limit) {
                     data {
                         id
                         name
