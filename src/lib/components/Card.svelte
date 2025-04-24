@@ -1,6 +1,6 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
-  import { onMount, type Snippet } from 'svelte';
+  import { type Snippet } from 'svelte';
   import Image from './Media/Image.svelte';
 
   type Props = {

@@ -25,11 +25,11 @@
     // sessionStorage.setItem('FAQindex', openShelfIndex !== null ? openShelfIndex.toString() : '');
   };
 
-  onMount(() => {
-    // const FAQindex: string | null = sessionStorage.getItem('FAQindex');
-    // if (!FAQindex || isNaN(parseInt(FAQindex as string))) openShelfIndex = null;
-    // else openShelfIndex = parseInt(FAQindex as string);
-  });
+  // onMount(() => {
+  //   const FAQindex: string | null = sessionStorage.getItem('FAQindex');
+  //   if (!FAQindex || isNaN(parseInt(FAQindex as string))) openShelfIndex = null;
+  //   else openShelfIndex = parseInt(FAQindex as string);
+  // });
   const style = twMerge('h-full', additionalClass);
 </script>
 

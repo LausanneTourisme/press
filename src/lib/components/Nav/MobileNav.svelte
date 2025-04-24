@@ -5,7 +5,7 @@
   import { menuItems } from '$lib/helpers/menu';
   import { locale, t, type Locale } from '$lib/translations';
   import { ChevronDown, Menu, X } from 'lucide-svelte';
-  import { onDestroy, onMount } from 'svelte';
+  import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
@@ -55,9 +55,7 @@
 
     mediaQuery.addEventListener('change', handleResize);
 
-    onDestroy(() => {
-      mediaQuery.removeEventListener('change', handleResize);
-    });
+    return () =>  mediaQuery.removeEventListener('change', handleResize);
   });
 </script>
 
