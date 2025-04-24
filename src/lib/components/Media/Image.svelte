@@ -67,13 +67,13 @@
     }
 
     // filter locally-called images from API images with a cloudinary ID (that don't have "images" in their name)
-    if (!dev && src.match(/(?=images)|(?=lib)/g)?.length && !src.includes('http')) {
+    if (!dev && !src.includes('http')) {
       srcResolved = Cloudinary.make(`${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`).url({
         ...resolution,
         ...transform
       });
     } else {
-      srcResolved = src;
+      srcResolved = src.startsWith('/') ? `/images${src}` : `/images/${src}`;
     }
   };
 
