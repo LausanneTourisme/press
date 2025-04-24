@@ -1,31 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 15,
-            "total": 15,
+        "favorites": {
             "data": [
                 {
                     "id": 100,
                     "name": "Aux spécialités de la Palud",
                     "content": "Cette minuscule épicerie propose un impressionnant assortiment de produits venus des quatre coins du monde ainsi qu’une partie traiteur avec empanadas, houmous, tzatziki ou feuilles de vignes. Mais le produit phare reste leur fameuse merguez.",
-                    "tags": [
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 5
+                        "id": 5,
+                        "name": "Camille, la chasseuse de merveilles",
+                        "seo": {
+                            "slug": "camille-la-chasseuse-de-merveilles"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ozpsrxmrzrwdthksmpst",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 606,
                             "name": "Aux spécialités de la Palud",
+                            "lead": "Des spécialités des 4 coins du monde en plein centre-ville.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cbgltb4lfohnqmxmcyag",
+                                    "copyright": "© Aux spécialités de la Palud",
+                                    "public_name": "Aux spécialités de la Palud"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "aux-specialites-de-la-palud",
+                                "hreflang": "/fr/decouvrir/aux-specialites-de-la-palud"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5218",
@@ -39,27 +49,36 @@
                     "id": 222,
                     "name": "Le bar Tabac",
                     "content": "Un café intimiste et paisible qui invite à prendre son temps. Situé à la rue Beau-Séjour, le bar Tabac conserve tout le charme de l’époque avec sa carte et sa déco atypique. Un de mes cafés favoris pour étudier ou travailler !",
-                    "tags": [
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, l'arty trendy",
+                        "seo": {
+                            "slug": "valerie-larty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Valérie"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 734,
                             "name": "Bar Tabac",
+                            "lead": "A la recherche d'un bar convivial pour boire un café ou un verre après le travail ? Au Bar Tabac, vous vous sentirez comme à la maison.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bar-tabac-tospjn",
+                                    "copyright": "© (c) Lausanne tourisme",
+                                    "public_name": "Bar Tabac"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bar-tabac",
+                                "hreflang": "/fr/decouvrir/bar-tabac"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5177",
@@ -73,23 +92,36 @@
                     "id": 137,
                     "name": "Café Mozart",
                     "content": "J’adore la sensation d’être au milieu de la ville, mais avec des vues sur les Alpes et le lac. Son emplacement à côté du conservatoire de musique de Lausanne et juste au-dessus de l’Opéra de Lausanne en fait une excellente halte avant d’aller écouter de la musique.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 15
+                        "id": 15,
+                        "name": "Clarence, la sporty spice",
+                        "seo": {
+                            "slug": "clarence-la-sporty-spice"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uzspdk8uavs8i809z5lf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": "Clarence"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 667,
                             "name": "Café Mozart",
+                            "lead": "Son nom « Café Mozart » n’est pas une coïncidence, puisqu’il se situe au dernier étage du Conservatoire, et à quelques pas de l’Opéra de Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-mozart-awe8ce",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": "Café Mozart"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-mozart",
+                                "hreflang": "/fr/decouvrir/cafe-mozart"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5187004",
@@ -103,23 +135,36 @@
                     "id": 161,
                     "name": "Centre Culturel des Terreaux",
                     "content": "Cette ancienne église de Bel-Air transformé en centre culturel accueille un public varié depuis 2004. Petite salle intimiste on y retrouvera des pièces engagées et pédagogiques, des humoristes mais aussi des spectacles de danse des compagnies lausannoises.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, l'épicultur'elle",
+                        "seo": {
+                            "slug": "sabine-lepiculturelle"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 676,
                             "name": "Centre culturel des Terreaux",
+                            "lead": "Une ancienne église reconvertie en centre culturel",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "fd1hj6rxy1gx5xatuqkl",
+                                    "copyright": "© Centre Culturel des terreaux",
+                                    "public_name": "Centre Culturel des terreaux"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "centre-culturel-des-terreaux",
+                                "hreflang": "/fr/decouvrir/centre-culturel-des-terreaux"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5229997",
@@ -133,23 +178,36 @@
                     "id": 35,
                     "name": "Cinéma Bellevaux",
                     "content": "J’aime le cinéma indépendant pour être plus cool que les autres, mais surtout parce que je suis passionné. C’est pourquoi je me rends régulièrement au Cinéma Bellevaux, qui propose des films un peu moins connus, un peu moins industriels, mais souvent singuliers et émouvants",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 13
+                        "id": 13,
+                        "name": "Realsousgare, le king de la satire",
+                        "seo": {
+                            "slug": "realsousgare-le-king-de-la-satire"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 549,
                             "name": "Cinema Bellevaux",
+                            "lead": "L'un des derniers cinémas d'art et d'essai de Lausanne. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "eumrzmd8hanxlonxd1h4",
+                                    "copyright": "© Cinéma Bellevaux",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cinema-bellevaux",
+                                "hreflang": "/fr/decouvrir/cinema-bellevaux"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5349",
@@ -163,23 +221,36 @@
                     "id": 268,
                     "name": "Thelonica",
                     "content": "Plongez dans un moment musical empreint de sérénité avec Thelonica. Chaque été, l'association vous offre des concerts à l'aube, sur la Jetée de la Compagnie. Sa programmation éclectique inclut le jazz, les musiques actuelles, classiques et contemporaines. L'ambiance unique de l'aube invite à la découverte, au dialogue et à la paix intérieure.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 33
+                        "id": 33,
+                        "name": "Luana, l'âme créative",
+                        "seo": {
+                            "slug": "luana-lame-creative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": "Luana"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 153,
                             "name": "Jetée de la Compagnie",
+                            "lead": "La Jetée de la Compagnie est une terrasse éphémère au bord du lac Léman, à Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": "Jetée de la compagnie"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/fr/decouvrir/jetee-de-la-compagnie"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5087646",
@@ -193,27 +264,36 @@
                     "id": 131,
                     "name": "Kiosque Saint-François",
                     "content": "Quand je descends du bus à Saint-François, impossible de passer devant sans m’arrêter. Cet ancien abri des Tramways a conservé tout son charme des années 1910, avec sa marquise de verre, ses marqueteries, la fontaine adossée et son petit air Art Nouveau. Déguster un bon café dans un beau café, quoi de mieux ?",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, Madame patrimoine",
+                        "seo": {
+                            "slug": "manon-madame-patrimoine"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": "Manon"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 627,
                             "name": "Kiosque Saint-François",
+                            "lead": "Une petite restauration dans un monument historique de Lausanne",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "kiosque-saint-francois-1evtp5",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": "Kiosque Saint-François"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kiosque-saint-francois",
+                                "hreflang": "/fr/decouvrir/kiosque-saint-francois"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5195",
@@ -227,23 +307,36 @@
                     "id": 267,
                     "name": "Lavaux Express",
                     "content": "Vue magnifique sur le lac et les vignes, ça vous parle ? Le Lavaux Express vous emmène faire un tour dans son domaine classé au patrimoine mondial de l'UNESCO. Diverses boucles sont à choix, chacune aussi resplendissante que les autres. Vous possédez également l'option de vous arrêter dans l'un des nombreux caveaux du domaine pour une dégustation de vin, ou de savourer un apéritif lors de votre trajet.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 33
+                        "id": 33,
+                        "name": "Luana, l'âme créative",
+                        "seo": {
+                            "slug": "luana-lame-creative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": "Luana"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 639,
                             "name": "Lavaux Express",
+                            "lead": "Le petit train Lavaux Express vous embarque pour un roadtrip viticole à travers les vignobles en terrasses de Lavaux.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mgrivs4y0sdckcu0hbap",
+                                    "copyright": "© montreuxriviera.com",
+                                    "public_name": "Lavaux Express"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lavaux-express",
+                                "hreflang": "/fr/decouvrir/lavaux-express"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5017711",
@@ -257,23 +350,36 @@
                     "id": 209,
                     "name": "Le Montriond",
                     "content": "A l’orée du parc de Milan, le Montriond est le point de rencontre idéal pour un café, un maté, ou une IPA. Situé juste sous-gare, cet ancien kiosque lausannois est mon point de chute idéal pour me sentir comme à la maison, la promesse d’une ambiance détendue et intergénérationnelle.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, l'arty trendy",
+                        "seo": {
+                            "slug": "valerie-larty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Valérie"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 771,
                             "name": "Le Montriond",
+                            "lead": "Un véritable lieu de rencontres situé Sous-Gare.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-montriond-fjay0g",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": "Le Montriond"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-montriond",
+                                "hreflang": "/fr/decouvrir/le-montriond"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.514984",
@@ -287,27 +393,36 @@
                     "id": 196,
                     "name": "Le Perchoir",
                     "content": "En plein milieu du magnifique campus de l'Université, entre la rivière et les coins de verdure se trouve un bâtiment bien étrange : le Vortex. Ce bâtiment circulaire est à visiter absolument lors d'un passage à Lausanne : conçu pour accueillir les étudiants de l'UNIL et de l'EPFL il s'articule autour d'une piste en forme d'hélice de 2,8km qui desserre toutes les chambres d'étudiants. Vous pourrez tout de même atteindre le 8ème étage en ascenseur pour arriver dans l'un des bars les plus sympas de Lausanne : Le Perchoir. Une grande terrasse, coucher de soleil, vue sur le lac, de quoi manger et surtout des prix relativement bas, et parfois même des concerts, que demander de mieux ?",
-                    "tags": [
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, le chasseur d'instants",
+                        "seo": {
+                            "slug": "victor-le-chasseur-dinstants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Victor"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 648,
                             "name": "Le Perchoir Rooftop-Bar",
+                            "lead": "Au 8ème étage du Vortex, le Perchoir Rooftop-Bar vous accueille tous les jours.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sprerqn66ye8vvdlutvm",
+                                    "copyright": "© Fernando Guerra Itten+Brechbühl SA",
+                                    "public_name": "Perchoir Rooftop-Bar"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-perchoir-rooftop-bar",
+                                "hreflang": "/fr/decouvrir/le-perchoir-rooftop-bar"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5243813",
@@ -321,23 +436,36 @@
                     "id": 72,
                     "name": "Le Vestibule",
                     "content": "Le Vestibule ou le bar clandestin de la Cité, imaginé tel un speakeasy des années '20. Une fois qu'on a découvert les portes secrètes, on peut s'installer confortablement dans un des canapés pour y siroter un délicieux petit cocktail. Mais le choix est difficile... car ils sont tous plus originaux les uns que les autres. Et même qu'en été on peut s'installer en terrasse avec vue sur la cathédrale tout en lisant un des bouquins dénichés dans une malle.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, l'épicultur'elle",
+                        "seo": {
+                            "slug": "sabine-lepiculturelle"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 570,
                             "name": "Le Vestibule",
+                            "lead": "Une librairie qui se transforme en bar une fois la porte franchie, ce qui en fait le premier bar caché de Lausanne !",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xlzakkmokzolhr4wfbth",
+                                    "copyright": "© Chicandswiss",
+                                    "public_name": "Le Vestibule"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-vestibule",
+                                "hreflang": "/fr/decouvrir/le-vestibule"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5235",
@@ -351,23 +479,36 @@
                     "id": 107,
                     "name": "Les Arches",
                     "content": "En plein cœur de la place de l'Europe, niché sous les vieilles pierres du Grand-Pont et bordé d’une légère pente pour arriver en dérapage contrôlé, la terrasse « Les Arches » est un lieu insolite et toujours une valeur sûre pour un apéro entre amis, une planchette ou un mojito au soleil ! (ou à l’abri de la pluie !)",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 4
+                        "id": 4,
+                        "name": "Pierre, le snowboardeur d'asphalte",
+                        "seo": {
+                            "slug": "pierre-le-snowboardeur-dasphalte"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 37,
                             "name": "Les Arches",
+                            "lead": "Le bar des Arches repose certainement sur l’un des meilleurs concepts à Lausanne: il est allé se loger sous les arches du Grand Pont.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ycxzjw8fgd2h8yxouy2o",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Les Arches"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "les-arches",
+                                "hreflang": "/fr/decouvrir/les-arches"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5208897",
@@ -381,23 +522,36 @@
                     "id": 195,
                     "name": "Les Grandes Roches",
                     "content": "Tables et chaises colorées et dépareillées, des palmiers, un air de vacances s’invite sous le pont Bessières. J’adore ce bar éphémère pour son ambiance arty et inspirante, sympa à toute heure de la journée.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, l'arty trendy",
+                        "seo": {
+                            "slug": "valerie-larty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Valérie"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 318,
                             "name": "Les Grandes Roches",
+                            "lead": "Lotie sous les arches du Pont Bessières, la joyeuse terrasse colorée des Grandes Roches prend ses quartiers d'été.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "les-grandes-roches-salezv",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": "Les grandes roches"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "les-grandes-roches",
+                                "hreflang": "/fr/decouvrir/les-grandes-roches"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5200646",
@@ -411,27 +565,36 @@
                     "id": 231,
                     "name": "Parc du Denantou",
                     "content": "Le parc du Denantou à Lausanne est un endroit qui m'inspire profondément en tant que photographe. Son temple thaïlandais, entouré par la tranquillité du lac, crée une ambiance magique. J'aime organiser des shootings ici pour capturer la beauté unique de cet endroit, et la proximité du Musée Olympique ajoute une touche culturelle géniale !",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, le nomade 360",
+                        "seo": {
+                            "slug": "tommaso-le-nomade-360"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Tommaso"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 91,
                             "name": "Parc du Denantou",
+                            "lead": "Au bout des quais d’Ouchy se déploie un vaste parc public aux pelouses généreuses et aux arbres séculaires.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "hafoqjklxjxrxstv2boh",
+                                    "copyright": "© LT/mano",
+                                    "public_name": "Denantou en Automne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "parc-du-denantou",
+                                "hreflang": "/fr/decouvrir/parc-du-denantou"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.50629044",
@@ -445,23 +608,36 @@
                     "id": 110,
                     "name": "The Jump Spot",
                     "content": "S’envoyer en l’air en plein Lausanne et sans tabou ? C’est désormais chose possible en te rendant à « The Jump Spot » la nouvelle et plus grande salle indoor de Trampoline en Suisse avec pas moins de 150 Trampolines dans plus de 3300 m2 ! Juste envie de dire : « I Believe I Can Fly » !",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 4
+                        "id": 4,
+                        "name": "Pierre, le snowboardeur d'asphalte",
+                        "seo": {
+                            "slug": "pierre-le-snowboardeur-dasphalte"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 615,
                             "name": "The Jump Spot",
+                            "lead": "150 trampolines dans plus de 3300 m2",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "u7lnhhiidxf06blr2iqr",
+                                    "copyright": "© The Jump Spot",
+                                    "public_name": "The Jump Spot"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "the-jump-spot",
+                                "hreflang": "/fr/decouvrir/the-jump-spot"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5236",

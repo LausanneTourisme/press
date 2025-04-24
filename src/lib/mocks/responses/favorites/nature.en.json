@@ -1,31 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 21,
-            "total": 21,
+        "favorites": {
             "data": [
                 {
                     "id": 143,
                     "name": "The Languedoc Hill",
                     "content": "It’s a small, well-hidden hill where there are beautiful buildings and, especially, a gorgeous esplanade that looks down over the lake. It’s one of the most pleasant places in Lausanne to chill while admiring the landscape and the uniqueness of the Alps – special mention for the sunset that is something else. There is also a small vineyard that evokes the wine-growing past of this part of town, as well as the extent to which we’re in a really lovely place.",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 18
+                        "id": 18,
+                        "name": "Sainath, the walking man",
+                        "seo": {
+                            "slug": "sainath-the-walking-man"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "y6m8luygzuuqtlcus9n1",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 66,
                             "name": "On the Languedoc hillside",
+                            "lead": "In the heart of the urban area, discover a unique vineyard.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "197600a19e994e7a",
+                                    "copyright": "© sous réserve",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "on-the-languedoc-hillside",
+                                "hreflang": "/en/explore/on-the-languedoc-hillside"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5189091",
@@ -39,23 +49,36 @@
                     "id": 56,
                     "name": "Sauvabelin Tower",
                     "content": "What a surprising staircase – laid out in a double helix structure, with visitors ascending and descending at opposite sides. And the fantastic views over Lausanne are not to be missed.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, the arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-the-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 306,
                             "name": "Sauvabelin Tower",
+                            "lead": "From a vantage point of 35 metres, a 360° view reveals: the Lausanne conurbation, Lake Geneva, the three geographic regions of Switzerland.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "tour-de-sauvabelin-xxdjnd",
+                                    "copyright": "© LT/Sébastien Closuit",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "sauvabelin-tower",
+                                "hreflang": "/en/explore/sauvabelin-tower"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5352803",
@@ -69,19 +92,36 @@
                     "id": 275,
                     "name": "Elysée Park",
                     "content": "A breathtaking view over the mountains, lake and boats reveals itself to you if you sit on a bench in Elysée Park. It’s my favourite place when the weather is sunny, especially when the cherry trees are in blossom. It’s one of the best spots to enjoy the panoramic view over Lake Geneva that the town of Lausanne can offer us.",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 34
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 283,
                             "name": "Elysée Park",
+                            "lead": "Tiered terraces, majestic trees, seductive views across the Savoy Alps: there are so many different elements to the prestigious Elysée Park!",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "txqr3lf9f4sngnhmjzzn",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "elysee-park",
+                                "hreflang": "/en/explore/elysee-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5184452",
@@ -95,23 +135,36 @@
                     "id": 36,
                     "name": "Crêt de Montriond",
                     "content": "One of my favourite places to train out in the open. I love going there at sunset during a summer evening or early in the morning for a cardio session. It’s always quiet and the view over the lake is unbeatable!",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        },
-                        {
-                            "id": 60,
-                            "name": "Sport"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 9
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 490,
                             "name": "Le Crêt de Montriond",
+                            "lead": "Formed by an ancient glacial moraine, this hill offers a unique panoramic vista over Lake Geneva, the mountains and the city.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rvyxkcj2qk176fcakn8c",
+                                    "copyright": "© LT/ Laurent Kaczor",
+                                    "public_name": "Crêt de Montriond"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-cret-de-montriond",
+                                "hreflang": "/en/explore/le-cret-de-montriond"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5141249",
@@ -125,23 +178,36 @@
                     "id": 32,
                     "name": "Milan Park",
                     "content": "The Milan Park botanical garden is a small island of diversity in which to take refuge, far from shopping malls and the noise of the town. Simply listening to the sounds of frogs and bees feels like a regeneration.",
-                    "tags": [
-                        {
-                            "id": 81,
-                            "name": "Durabilité"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 13
+                        "id": 13,
+                        "name": "Realsousgare, the king of satire",
+                        "seo": {
+                            "slug": "realsousgare-the-king-of-satire"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 107,
                             "name": "Milan Park",
+                            "lead": "You might summarily describe it as a vast grassy square (Place de Milan) with a steep mound (Montriond Hill).",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vnojm4txhzihhlfaquid",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Parc de Milan"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "milan-park",
+                                "hreflang": "/en/explore/milan-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5147533",
@@ -155,19 +221,36 @@
                     "id": 219,
                     "name": "Montbenon Park",
                     "content": "It offers a picture-postcard panorama over Lausanne and a stunning view over the lake. What could be better than to spread your picnic blanket on the lawn with a bottle of red wine, a saucisson and a piece of cheese to relish as you savour the view. Enjoy the moment!",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 419,
                             "name": "Montbenon Esplanade",
+                            "lead": "This site is one of the most beautiful balconies from which to view the lake.\r\nHere you will find a statue of a legendary Helvetian  William Tell",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "oppbrr5srrv528w6incu",
+                                    "copyright": "© Marino Trotta",
+                                    "public_name": "Parc Montbenon"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "montbenon-esplanade",
+                                "hreflang": "/en/explore/montbenon-esplanade"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5200194",
@@ -181,19 +264,36 @@
                     "id": 125,
                     "name": "Valency Park",
                     "content": "The perfect place for a view over the lake at sunset… It’s also one of my favourite spots to admire the symphony of autumn colours",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, the arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-the-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 56,
                             "name": "Valency Park",
+                            "lead": "Recently remodelled, the upper part of Valency Park plays on Mediterranean impressions.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ffxjdojs9c9s4fyjtkeb",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Valency"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "valency-park",
+                                "hreflang": "/en/explore/valency-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5294911",
@@ -207,27 +307,36 @@
                     "id": 241,
                     "name": "The Vallée de la Jeunesse",
                     "content": "As an avid roller skater, the Vallée de la Jeunesse is a magical place for me where I can practise and have fun. With its steep slopes, you’ll see skateboarders and roller skaters tearing down a 1 km long path before arriving on the Vidy plaine. However, the park offers much more than that: it also has a play area for children, tracks with bumps and even the Espace des Inventions, a science museum for children. It’s really a multi-purpose space where everyone will find something to their liking.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 308,
                             "name": "Vallée de la Jeunesse",
+                            "lead": "Rollerskaters can weave and speed for hundreds of yards without crossing a road, and strollers admire masses of roses set amid sloping lawns.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "dnfg9e6xg3ve1rf0vukq",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "vallee-de-la-jeunesse",
+                                "hreflang": "/en/explore/vallee-de-la-jeunesse"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.520411",
@@ -241,19 +350,36 @@
                     "id": 199,
                     "name": "Lavaux and the Deck",
                     "content": "It’s got to be one of my favourite places in the region. Just beyond Lausanne, heading towards Montreux and a few minutes away by train. The hillsides are covered in terraced vineyards and the walks there offer a spectacular view over the lake and the setting sun. If you’re tempted by a refreshing drink, don’t hesitate to go to the Deck, a terrace that undoubtedly has the best view in the canton. Just what you need to spend a fab summer evening!",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 701,
                             "name": "Le Deck",
+                            "lead": "Perched high above the shores of Lake Geneva, the terrace of Le Deck offers one of the most spectacular vistas in all of Switzerland.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "hoxtg2m8pbgelejpkieh",
+                                    "copyright": "© Baron Tavernier",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-deck",
+                                "hreflang": "/en/explore/le-deck"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.4799649",
@@ -267,19 +393,36 @@
                     "id": 14,
                     "name": "Botanical Garden",
                     "content": "From springtime, when nature wakes up gradually, to wintertime, when the new greenhouse offers a welcome shelter among tropical plants, the Botanical Garden is the perfect place for a quiet wander in all seasons.",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 5
+                        "id": 5,
+                        "name": "Camille, the spontaneous shutterbug",
+                        "seo": {
+                            "slug": "camille-the-spontaneous-shutterbug"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ozpsrxmrzrwdthksmpst",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 234,
                             "name": "Naturéum - Botanical garden",
+                            "lead": "Open every day and with free admission, the Lausanne botanical gardens are a natural paradise in the heart of the city.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "epcsckdihemplrq6rm7i",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Musée et Jardin Botanique de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lausanne-botanical-museum-and-garden",
+                                "hreflang": "/en/explore/lausanne-botanical-museum-and-garden"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5139602",
@@ -293,19 +436,36 @@
                     "id": 230,
                     "name": "Sauvabelin Park",
                     "content": "Sauvabelin Park is like a haven of peace in the midst of urban effervescence. The peaceful paths, serene lake and panoramic tower offer the perfect escape. I spent many moments relaxing on the lakeside and admiring the town from the tower. A place that captures the essence of Lausanne and that will always be close to my heart.",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, the 360 nomad",
+                        "seo": {
+                            "slug": "tommaso-the-360-nomad"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 16,
                             "name": "Sauvabelin Park",
+                            "lead": "In a beautiful forest overlooking Lausanne, Sauvabelin Park is the ideal place for walks and picnics.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "RcyBCKsdHJlDjghCdVj9wltyu699ORan5Rv2u29G",
+                                    "copyright": "© LT / Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "sauvabelin-park",
+                                "hreflang": "/en/explore/sauvabelin-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5353354",
@@ -319,19 +479,36 @@
                     "id": 6,
                     "name": "Vidy",
                     "content": "What could be better than ending a summer day at the beach in Vidy? Within walking distance of the town centre, we love chilling there with the family around a barbecue as well as cooling down in the lake. Not to mention the splendid sunsets…",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, the arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-the-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 211,
                             "name": "Plaines de Vidy",
+                            "lead": "Here, each can truly do their own thing, because it has everything: history with a capital H, sport, boats and picnics, theatre and camping, ...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/en/explore/plaines-de-vidy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5393375",
@@ -345,23 +522,36 @@
                     "id": 76,
                     "name": "Rovéréaz Farm",
                     "content": "Located right on the border between city and countryside, Rovéréaz Farm offers us a variety of products (fruit, vegetables, oils, cheese, honey, cured meats, eggs...), and everything is fresh and seasonal, of course! I invite you to take a look at their outstanding permaculture programme that combines both cooperative and educational approaches.",
-                    "tags": [
-                        {
-                            "id": 81,
-                            "name": "Durabilité"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, the alternative view",
+                        "seo": {
+                            "slug": "carla-the-alternative-view"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 576,
                             "name": "Rovéréaz Farm",
+                            "lead": "Organic farm products within the city limits. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ix7qyjb3znjnwlygnxqr",
+                                    "copyright": "© Ferme Rovéréaz",
+                                    "public_name": "Ferme Rovéréaz"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "rovereaz-farm",
+                                "hreflang": "/en/explore/rovereaz-farm"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5334",
@@ -375,31 +565,36 @@
                     "id": 179,
                     "name": "Mon-Repos Park and the Folie Voltaire",
                     "content": "Certainly my favourite park in Lausanne. A haven of peace away from the urban hustle and bustle where I feel like I’m wandering inside a living painting. An enchanting, timeless spot that is bound to move you. When the days get warmer, I recommend treating yourself to a break in the alley of chestnut trees at the Folie Voltaire. It’s the most charming kiosk with a menu featuring simple yet delicious, seasonal dishes!",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 21
+                        "id": 21,
+                        "name": "Alix, the flower power",
+                        "seo": {
+                            "slug": "alix-the-flower-power"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 349,
                             "name": "La Folie Voltaire",
+                            "lead": "Folie Voltaire awaits you beneath Allée des Marroniers in the heart of Mon-Repos park.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "folie-voltaire-ggetnj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-folie-voltaire",
+                                "hreflang": "/en/explore/la-folie-voltaire"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5193532",
@@ -413,27 +608,36 @@
                     "id": 192,
                     "name": "The beaches from Saint-Sulpice to Haldimand Tower",
                     "content": "The magic of the Lausanne region lies in its diversity. In only 10 minutes, you get from the thriving heart of the Flon to the peaceful shores of Lake Geneva. Many pebble or sandy beaches invite you to bask in the sun or in the shade of trees. From the Haldimand Tower to Saint-Sulpice, you will be spoilt for choice. If you enjoy sports activities, don’t miss the Vidy area, where many basketball and volleyball courts are available.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 26
+                        "id": 26,
+                        "name": "Valentine, the travlover",
+                        "seo": {
+                            "slug": "valentine-the-travlover"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 92,
                             "name": "Lake Geneva",
+                            "lead": "Lake Geneva, the largest freshwater lake in western Europe and certainly the most romantic.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wa4bqpi0ao0rbfomct6g",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lake-geneva",
+                                "hreflang": "/en/explore/lake-geneva"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5052125",
@@ -447,23 +651,36 @@
                     "id": 103,
                     "name": "Parc Guillemin",
                     "content": "Parc Guillemin, better known as the “Parc des Biches” (Deer Park), is located between Lausanne and Pully. It’s the ideal place for families with a modern playground, deer enclosure and paddling pool for hot summer days. All you have to do is sit down on a bench or on the grass at the highest point in the park and enjoy the view of the lake while your kids play.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 7
+                        "id": 7,
+                        "name": "Chloé, the family designer",
+                        "seo": {
+                            "slug": "chloe-the-family-designer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ihrk5qhwn3votkfcgsev",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 612,
                             "name": "Parc Guillemin",
+                            "lead": "An ideal park for relaxing with your family",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jdh8chu04j3isdfbozcu",
+                                    "copyright": "© Parc Guillemin",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "parc-guillemin",
+                                "hreflang": "/en/explore/parc-guillemin"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5137",
@@ -477,23 +694,36 @@
                     "id": 191,
                     "name": "The Hermitage Park",
                     "content": "The Hermitage Park, above the city of Lausanne, is without a doubt my favourite. A book in hand, lying on the green grass, I am ready for a relaxing break with, as a view, the silhouette of the Cathedral standing out in front of the lake and the Alps.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 26
+                        "id": 26,
+                        "name": "Valentine, the travlover",
+                        "seo": {
+                            "slug": "valentine-the-travlover"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 385,
                             "name": "Hermitage Park",
+                            "lead": "This magnificent country park boasts one of the best vantage points in Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "aaxz9gpjocq7bcqwv9iu",
+                                    "copyright": "© LT/ Yannic Bartolozzi",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "hermitage-park",
+                                "hreflang": "/en/explore/hermitage-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5295332",
@@ -507,23 +737,36 @@
                     "id": 129,
                     "name": "Parc du Désert",
                     "content": "There’s nothing desert-like in this park, quite the opposite! Its monumental elongated water feature makes you feel you’re in a different world. For me, it’s a soothing place conducive to daydreaming. Anecdotally, it owes its poetic name to the current of Romanticism that was in vogue at the turn of the 19th century. There’s no better example of the “oh, how far away from everything I am, but I have a huge estate, so I’m ok” attitude.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 393,
                             "name": "Parc du Désert",
+                            "lead": "The Parc du Désert forms the boundary between the city and the countryside. Although on the edge of Lausanne, it is well worth the trip.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "t2o9azxtn8sknjx0tdlo",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "parc-du-desert",
+                                "hreflang": "/en/explore/parc-du-desert"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.53848053",
@@ -537,27 +780,36 @@
                     "id": 231,
                     "name": "Denantou Park",
                     "content": "Denantou Park in Lausanne is a place that deeply inspires me as a photographer. Its Thai temple, surrounded by the lake’s tranquillity, creates a magical atmosphere. I like to organise shootings there to capture the unique beauty of the spot, and the proximity to the Olympic Museum adds a fantastic cultural touch!",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, the 360 nomad",
+                        "seo": {
+                            "slug": "tommaso-the-360-nomad"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 91,
                             "name": "Denantou Park",
+                            "lead": "From Ouchy the quays open out into a vast public park with extensive grassed areas and age old trees.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "hafoqjklxjxrxstv2boh",
+                                    "copyright": "© LT/mano",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "denantou-park",
+                                "hreflang": "/en/explore/denantou-park"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.50629044",
@@ -571,27 +823,36 @@
                     "id": 185,
                     "name": "Vidy Beach",
                     "content": "A sandy beach?! Yes, we do also have our “Venice Beach” in Lausanne.\r\nA stone’s throw from the Vidy Skate Park, there are volleyball and basketball courts, as well as small fine-sand beaches for a stroll. Want shade? There is that too! All along the promenade, the small beaches are shaded by magnificent oaks. Take your snorkelling gear and who knows, you might meet Nemo!",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, the 360 nomad",
+                        "seo": {
+                            "slug": "tommaso-the-360-nomad"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 649,
                             "name": "Plage de Vidy (Vidy beach)",
+                            "lead": "Also known as the Louis Bourget Park beach, Vidy beach is the largest beach and green space on Lake Geneva.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wn42hz1aupccmahj4f9s",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Plage Vidy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plage-de-vidy-vidy-beach",
+                                "hreflang": "/en/explore/plage-de-vidy-vidy-beach"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5192217",
@@ -605,19 +866,36 @@
                     "id": 148,
                     "name": "Lavaux vineyards",
                     "content": "To my mind, it’s the most beautiful panorama! I can’t count the number of times I’ve walked through the vineyards in that breathtaking setting! The best way to unplug and reconnect with nature.",
-                    "tags": [
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 513,
                             "name": "UNESCO-listed Lavaux vineyard terraces",
+                            "lead": "Between Lausanne and Montreux, a vast network of pathways wind through the slopes of the UNESCO-listed Lavaux vineyard terraces.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "yiauru3dv5mkmg9gvonh",
+                                    "copyright": "© Karim Kanoun",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "unesco-listed-lavaux-vineyard-terraces",
+                                "hreflang": "/en/explore/unesco-listed-lavaux-vineyard-terraces"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.4935227",

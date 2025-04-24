@@ -1,31 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 64,
-            "total": 64,
+        "favorites": {
             "data": [
                 {
                     "id": 28,
                     "name": "The Great Escape",
                     "content": "It’s probably one of Lausanne’s unmissable places, but it’s also my hangout in the evenings when I join friends for a beer. It’s the very relaxed, even festive atmosphere that immediately appealed to me, as well as the industrial setting. They have excellent IPAs that are the reward I need after a long day’s work.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 8
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 439,
                             "name": "The Great Escape",
+                            "lead": "The Great Escape is one of the most popular bars in Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "great-escape-b9wbew",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "the-great-escape",
+                                "hreflang": "/en/explore/the-great-escape"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5227149",
@@ -39,19 +49,36 @@
                     "id": 45,
                     "name": "Tibits Lausanne",
                     "content": "In the evening, in the morning, even on Sunday – in fact anytime – Tibits is open and offers a buffet with delicious vegetarian dishes. I love going there in the middle of the afternoon, when it’s quiet, so I can sit peacefully with a copious plate of veg and a ginger and lemon punch.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 9
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 452,
                             "name": "Tibits Lausanne",
+                            "lead": "Tibits, recognized for its delicious vegetarian and vegan cuisine, opened a restaurant in the traditional \"Buffet de la Gare\" at Lausanne station.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "tibits-qponlq",
+                                    "copyright": "© Maude Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "tibits-lausanne",
+                                "hreflang": "/en/explore/tibits-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5172178",
@@ -65,19 +92,36 @@
                     "id": 42,
                     "name": "Ça Passe Crème",
                     "content": "The peerless local small café; Steve and Davide have succeeded in creating a real community. When I want a quiet spot to chat with a girlfriend, we sit on the bench in that charming café with a “dirty oat chai”. There’s nothing more comforting.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 9
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 531,
                             "name": "Ca Passe Crème",
+                            "lead": "Ça Passe Crème is the coffee shop which gives you a good reason to get out of bed in the morning.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ca-passe-creme-v6x3fy",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ca-passe-creme",
+                                "hreflang": "/en/explore/ca-passe-creme"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5156",
@@ -91,19 +135,36 @@
                     "id": 17,
                     "name": "Mauro",
                     "content": "The dilemma when you reach the counter? Choosing between the thick slices of pizza straight from the oven, the pasta or the focaccias garnished with uber-fresh ingredients! To be savoured ideally in the nearby Mon-Repos Park.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 5
+                        "id": 5,
+                        "name": "Camille, the spontaneous shutterbug",
+                        "seo": {
+                            "slug": "camille-the-spontaneous-shutterbug"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ozpsrxmrzrwdthksmpst",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 534,
                             "name": "Mauro Traiteur",
+                            "lead": "The Italian flavours of the Mauro delicatessen will transport you to the land of la dolce vita.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mauro-traiteur-pziqqs",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "mauro-traiteur",
+                                "hreflang": "/en/explore/mauro-traiteur"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5213",
@@ -121,19 +182,36 @@
                     "id": 49,
                     "name": "Crazy Wolf",
                     "content": "Hungry as a wolf? I suggest you try this crazy brunch! On the menu: English breakfast, avocado toast or burgers, all that served with a plate of pancakes. As an included extra treat: homemade ice tea! Book ahead as it’s very popular!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 537,
                             "name": "Crazy Wolf",
+                            "lead": "A restaurant dedicated to “fast & casual” eating right in the centre of Lausanne. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cr0fcinzjwm8xqyvhzhx",
+                                    "copyright": "© Crazy Wolf",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "crazy-wolf",
+                                "hreflang": "/en/explore/crazy-wolf"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5224",
@@ -147,19 +225,36 @@
                     "id": 51,
                     "name": "Thaï au lac",
                     "content": "Want some exoticism with a magnificent view on Lake Geneva? This lakeside restaurant offers all the classics of Thai cuisine with different levels of heat to satisfy all palates. A true voyage for your taste buds.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 538,
                             "name": "Thaï au lac",
+                            "lead": "A restaurant which take you on a trip both by its setting and its delicious food. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uyomzxraaznbnhhqplhg",
+                                    "copyright": "© Thai au lac",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "thai-au-lac",
+                                "hreflang": "/en/explore/thai-au-lac"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5122",
@@ -173,19 +268,36 @@
                     "id": 11,
                     "name": "Le Prince D'Egypte",
                     "content": "When I’m in a hurry, there’s nothing like a kebab, but only if it’s healthy and tasty! They’re just that at the Prince D’Egypte, where you’ll get a yummy falafel as soon as you walk in to snack on while you wait for your order! The must? A meat and falafel kebab!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 4
+                        "id": 4,
+                        "name": "Pierre, the asphalt snowboarder",
+                        "seo": {
+                            "slug": "pierre-the-asphalt-snowboarder"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 541,
                             "name": "Prince d'Egypte",
+                            "lead": "A delicious kebab house in the centre of the city. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jcqjmpqekjveq6m2vkbq",
+                                    "copyright": "© LT",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "prince-degypte",
+                                "hreflang": "/en/explore/prince-degypte"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5209",
@@ -199,19 +311,36 @@
                     "id": 23,
                     "name": "Uchitomi",
                     "content": "Simply because they are the best sushi in Lausanne and that the deli is packed full of original Japanese products, among which delicious gyozas and mixes for Okonomyaki that are easy to make at home.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 545,
                             "name": "Uchitomi",
+                            "lead": "A grocery store where you will find all your favourite Japanese products. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "qsfk8mn0d7coput74lo1",
+                                    "copyright": "© Uchitomi Instagram",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "uchitomi",
+                                "hreflang": "/en/explore/uchitomi"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5214",
@@ -225,19 +354,36 @@
                     "id": 40,
                     "name": "Racines",
                     "content": "Dieses kleine Café wird von einer Familie betrieben, die aus Italien stammt. Hier ist alles hausgemacht – und das schmeckt man sofort! Sämtliche Gerichte sind vegan und glutenfrei und werden aus lokalen Bio-Produkten zubereitet. Meine Favoriten sind die Gemüse-Quiche und die Blaubeerplätzchen zum Nachtisch (denn denen kann niemand widerstehen!).",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 9
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 550,
                             "name": "Racines",
+                            "lead": "Located at number 11 Rue Neuve in Lausanne, Racines is a small vegan café which opened at the end of 2018. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ebjyo6krklyh427rwlx5",
+                                    "copyright": "© Racines",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "racines",
+                                "hreflang": "/en/explore/racines"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5233",
@@ -251,19 +397,36 @@
                     "id": 63,
                     "name": "The Bleu Lézard",
                     "content": "Another unmissable place in Lausanne, the “Bleu” is just as pleasant for a coffee as to go clubbing to wild music downstairs.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 8
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 249,
                             "name": "Bleu Lézard et sa Cave, arty bistro",
+                            "lead": "As a select meeting place for the people of Lausanne since 1992, this arty bistro and its little underground sister,",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "u15my8tjwmw5iqydo0ac",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bleu-lezard-et-sa-cave-arty-bistro",
+                                "hreflang": "/en/explore/bleu-lezard-et-sa-cave-arty-bistro"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5201448",
@@ -277,23 +440,36 @@
                     "id": 72,
                     "name": "Le Vestibule",
                     "content": "Le Vestibule, known as the city's clandestine bar, is modelled after a speakeasy from the '20s. Once you've discovered its secret doors, you can take a seat on one of the comfy sofas and sip a delicious little cocktail. However, making your choice is difficult –  each new drink is more original than the last. In summer you can even sit on a terrace with a view of the cathedral while reading one of the books plucked from the shelves lining the bar.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 570,
                             "name": "Le Vestibule",
+                            "lead": "A library that transforms into a bar once you step through the door, making it the first hidden bar in Lausanne!",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xlzakkmokzolhr4wfbth",
+                                    "copyright": "© Chicandswiss",
+                                    "public_name": "Le Vestibule"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-vestibule",
+                                "hreflang": "/en/explore/le-vestibule"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5235",
@@ -307,19 +483,36 @@
                     "id": 73,
                     "name": "Beau-Rivage Palace",
                     "content": "Something to celebrate or do you want to indulge yourself? Brunch at the Beau-Rivage includes everything you could want and then some. Quality seasonal products! Their hot dishes are scrumptious. Advice: everything is delicious so take a bit of everything!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 386,
                             "name": "Beau-Rivage Palace",
+                            "lead": "Historical jewel on the shores of Lake Geneva, the Beau-Rivage Palace is the location for luxury holidays and exceptional events.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wroc0giflbx38g7l2llk",
+                                    "copyright": "© REGIS COLOMBO/diapo.ch",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "beau-rivage-palace",
+                                "hreflang": "/en/explore/beau-rivage-palace"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5080535",
@@ -333,19 +526,36 @@
                     "id": 74,
                     "name": "Le Spot",
                     "content": "Poke bowls have finally arrived in Switzerland - straight from Hawaii. SPOT has adopted the idea and added local seasonal produce. The perfect meal to enjoy on the shores of the lake: a real treat and healthy all at the same time!  And their cookies are to die for!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 573,
                             "name": "Le Spot",
+                            "lead": "Poke bowls prepared with fresh local ingredients. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "iqvqgvw1kxueyc4hjofp",
+                                    "copyright": "© Le Spot",
+                                    "public_name": "Le Spot"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-spot",
+                                "hreflang": "/en/explore/le-spot"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5184",
@@ -359,19 +569,36 @@
                     "id": 78,
                     "name": "Lucha Libre",
                     "content": "Very often filled to capacity in the evening, I had never dared to visit this restaurant until recently. But once I finally took the plunge, this eatery shot to the top of my list of favourites. Finally, we have some sophisticated South American cuisine and finally something other than burgers in Lausanne! You've got the idea: Make reservations, order a ceviche (or something else, everything is good!) and ENJOY!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, the alternative view",
+                        "seo": {
+                            "slug": "carla-the-alternative-view"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 579,
                             "name": "Lucha Libre",
+                            "lead": "Dishes drawing their inspiration from all over Latin America and served in a welcoming atmosphere. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "qfsqqdq9unt50gspugko",
+                                    "copyright": "© Lucha Libre",
+                                    "public_name": "Lucha Libre"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lucha-libre",
+                                "hreflang": "/en/explore/lucha-libre"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5216",
@@ -385,19 +612,36 @@
                     "id": 79,
                     "name": "L'Auberge de Beaulieu",
                     "content": "Especially popular with local residents and visitors to the Collection de l’Art Brut, this bar-restaurant is a welcome new discovery. The large terrace offers shade in the summer in a peaceful setting, and the interior is cosy (although perhaps just a bit noisy). Perfect for eating/enjoying a drink after a visit to the art museum!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, the alternative view",
+                        "seo": {
+                            "slug": "carla-the-alternative-view"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 575,
                             "name": "L’Auberge de Beaulieu",
+                            "lead": "This bar-restaurant is located just a stone's throw from the Collection de l'Art Brut and the Palais de Beaulieu.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "f6qyscukelmhj0xcvycq",
+                                    "copyright": "© L'Auberge de Beaulieu",
+                                    "public_name": "L'Auberge de Beaulieu"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lauberge-de-beaulieu",
+                                "hreflang": "/en/explore/lauberge-de-beaulieu"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5271",
@@ -411,19 +655,36 @@
                     "id": 80,
                     "name": "LABO gelateria",
                     "content": "Chailly is not the most dynamic part of Lausanne but this ice cream has definitely changed the way I look at my neighbourhood. Sesame, matcha, fior di latte, ooooh, I’m melting. In my humble opinion, this is the best ice cream (light and refreshing instead of overly creamy!) in Lausanne.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, the alternative view",
+                        "seo": {
+                            "slug": "carla-the-alternative-view"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 577,
                             "name": "LABO gelateria",
+                            "lead": "Artisanal ice cream featuring flavours ranging from classic to creative.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "labo-gelateria-68ipqr",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "labo-gelateria",
+                                "hreflang": "/en/explore/labo-gelateria"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5253",
@@ -441,19 +702,36 @@
                     "id": 91,
                     "name": "Pasta e Sfizi",
                     "content": "I return there time and time again just for their quite exceptional mafalde alla “carbonara” di pistacchio. But diners find it almost impossible to choose between the pasta specialities, each one more original than the other and which leave the usual “spag bols” or spaghetti carbonara far behind.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 586,
                             "name": "Pasta e Sfizi",
+                            "lead": "An extensive menu which carries us off to Italy. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cssfwjgtcuqotbcbx1fl",
+                                    "copyright": "© Pasta e Sfizi",
+                                    "public_name": "Pasta e Sfizi"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "pasta-e-sfizi",
+                                "hreflang": "/en/explore/pasta-e-sfizi"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5159",
@@ -467,19 +745,36 @@
                     "id": 93,
                     "name": "K.Pultau",
                     "content": "If, like me, you adore indulgent breakfasts, don’t hesitate to make a bee-line for Saint Sulpice - this pâtisserie sells pains au chocolat oozing with butter but crisp at the same time. Their cakes are original, full of flavour and with an unbeatable price. I can’t resist their caramel millefeuille pastries flavoured with peanuts.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 605,
                             "name": "K. Pultau",
+                            "lead": "A pâtisserie-chocolaterie selecting its ingredients wherever possible from the neighbouring region or from further afield in Switzerland. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uok7zsttmmiak5mvdkrs",
+                                    "copyright": "© K. Pultau",
+                                    "public_name": "K. Pultau"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "k-pultau",
+                                "hreflang": "/en/explore/k-pultau"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5105",
@@ -493,19 +788,36 @@
                     "id": 96,
                     "name": "La Brasserie de Montbenon",
                     "content": "Housed in a superbly renovated historic hall, this brasserie highlights the canton of Vaud by relying on suppliers from the region. In the summer, the terrace becomes a popular place to dine or sip on a drink with a stunning view of the lake.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 5
+                        "id": 5,
+                        "name": "Camille, the spontaneous shutterbug",
+                        "seo": {
+                            "slug": "camille-the-spontaneous-shutterbug"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ozpsrxmrzrwdthksmpst",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 94,
                             "name": "Brasserie de Montbenon",
+                            "lead": "One of Lausanne’s most beautiful terraces with a superb view of the Alps and Lake Geneva..",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "brasserie-de-montbenon-x2vawe",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "brasserie-de-montbenon",
+                                "hreflang": "/en/explore/brasserie-de-montbenon"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5205136",
@@ -519,23 +831,36 @@
                     "id": 107,
                     "name": "Les Arches",
                     "content": "Right in the centre of the Place de l’Europe and nestling under the ancient stonework of the Grand-Pont alongside a slight slope which you can gently coast down to arrive at “Les Arches” terrace, a different sort of place and always a hit for enjoying an apéritif with friends, a snack or a mojito while taking in the sun (or sheltering from the rain!).",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 4
+                        "id": 4,
+                        "name": "Pierre, the asphalt snowboarder",
+                        "seo": {
+                            "slug": "pierre-the-asphalt-snowboarder"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 37,
                             "name": "Les Arches",
+                            "lead": "The Arches bar certainly boasts one of the finest locations in Lausanne, embedding itself under the arches of the Grand Pont.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ycxzjw8fgd2h8yxouy2o",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Les Arches"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "les-arches",
+                                "hreflang": "/en/explore/les-arches"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5208897",
@@ -549,19 +874,36 @@
                     "id": 115,
                     "name": "My Sandwiches Lausanne",
                     "content": "If you are a fan of Vietnamese food this little, unpretentious shop will surprise your taste-buds and carry you off to the other side of the world. You can try delicious Bao and Bánh mì there to eat on the go, but my overall favourite is their Phô Bô, a soup bursting with traditional flavours. A real delight!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 618,
                             "name": "My Sandwiches Lausanne",
+                            "lead": "Discover the tasty flavors of Vietnam in downtown Lausanne with delicious sandwiches and specialties like Bo Bun, Pho Bo, and more.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "my-sandwiches-r2tnhc",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "my-sandwiches-lausanne",
+                                "hreflang": "/en/explore/my-sandwiches-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.523",
@@ -579,23 +921,36 @@
                     "id": 119,
                     "name": "Le Fraisier",
                     "content": "Le Fraisier is a fantastic culinary discovery in Lausanne. Veggie meals made from fresh products at lunchtime during the week, and a gorgeous vintage décor. I just love it. A delight for the eyes and taste buds!",
-                    "tags": [
-                        {
-                            "id": 81,
-                            "name": "Durabilité"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 17
+                        "id": 17,
+                        "name": "Charlotte, the dancer rider",
+                        "seo": {
+                            "slug": "charlotte-the-dancer-rider"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tjqxtwrgz0nlgufaotd6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 293,
                             "name": "Le Fraisier",
+                            "lead": "The dishes here essentially comprise vegetables, fruit and salads and often come accompanied by fresh cheese.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-fraisier-bhguuh",
+                                    "copyright": "© MAud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-fraisier",
+                                "hreflang": "/en/explore/le-fraisier"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5217166",
@@ -609,27 +964,36 @@
                     "id": 131,
                     "name": "Saint-François Kiosk",
                     "content": "When I get off the bus at Saint-François, I just can’t walk by without stopping. This former tramway shelter has retained its charm from the 1910s with its glass awning, its marquetry, the small fountain leaning against it and its Art Nouveau aura. Savouring a good coffee in a beautiful café, what could be better?",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 627,
                             "name": "Kiosque Saint-François",
+                            "lead": "A small restaurant in a historical monument in Lausanne",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "kiosque-saint-francois-1evtp5",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kiosque-saint-francois",
+                                "hreflang": "/en/explore/kiosque-saint-francois"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5195",
@@ -643,27 +1007,36 @@
                     "id": 132,
                     "name": "Coffee Page",
                     "content": "A warning to lovers of both art books and coffee: someone has brought them together at last! I’ll browse a volume from the bookcase that favours richly illustrated books, order a drink and for once, leave my phone aside. My ideal combo: a chai latte and a book on Bauhaus.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 546,
                             "name": "Coffee Page",
+                            "lead": "Coffee Page, a relaxing and cosy café-cum-bookshop. You will find a large selection of coffees to savour accompanied by a slice of their home-made cake.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "coffee-page-h9yccj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "coffee-page",
+                                "hreflang": "/en/explore/coffee-page"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5183146",
@@ -677,19 +1050,36 @@
                     "id": 133,
                     "name": "Maison Buet",
                     "content": "One of my favourite pastries and chocolate shops in the heart of Lausanne. It’s impossible to resist their buttery and so crispy “Galette des rois”. Not to mention their chocolate Easter creations that are as beautiful as they are delicious, and always highly original!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 665,
                             "name": "Maison Buet",
+                            "lead": "Maison Buet offers a large variety of homemade bakery, patisserie and chocolate products in its two Lausanne boutiques.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "maison-buet-ichtlv",
+                                    "copyright": "© Maison Buet",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "maison-buet",
+                                "hreflang": "/en/explore/maison-buet"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5216",
@@ -703,23 +1093,36 @@
                     "id": 137,
                     "name": "Café Mozart",
                     "content": "I love the feeling of being in the middle of town but with views of the Alps and the lake. Its location by the music conservatory of Lausanne and just up the road from the Opéra of Lausanne makes it a great stopover before enjoying some music.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 15
+                        "id": 15,
+                        "name": "Clarence, the sporty spice",
+                        "seo": {
+                            "slug": "clarence-the-sporty-spice"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uzspdk8uavs8i809z5lf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 667,
                             "name": "Café Mozart",
+                            "lead": "Its name “Café Mozart” owes nothing to chance as it’s located on the top floor of the music conservatory, a stone’s throw from the Lausanne Opera.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-mozart-awe8ce",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-mozart",
+                                "hreflang": "/en/explore/cafe-mozart"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5187004",
@@ -733,19 +1136,36 @@
                     "id": 139,
                     "name": "Slice pizza",
                     "content": "Slice Pizza is a cozy neighborhood pizza place, somewhere you always get a friendly welcome and a delicious pizza. One of my favourite things to order is the Abeille – who knew the combination of spicy salami and honey could be so tasty?!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 15
+                        "id": 15,
+                        "name": "Clarence, the sporty spice",
+                        "seo": {
+                            "slug": "clarence-the-sporty-spice"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uzspdk8uavs8i809z5lf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 633,
                             "name": "Slice Pizza",
+                            "lead": "Delicious pizzas to be eaten in, delivered or taken away",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "hj3kcjxluaylolrpoiv7",
+                                    "copyright": "© Slice Pizza",
+                                    "public_name": "Slice Pizza"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "slice-pizza",
+                                "hreflang": "/en/explore/slice-pizza"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5256",
@@ -759,19 +1179,36 @@
                     "id": 149,
                     "name": "Bagel on the Way",
                     "content": "Nostalgic of my trip to New York, I feel I’m back there when I savour one of the many bagels they offer. Good street food just the way I love it with fresh and local ingredients. A shoutout for their homemade iced tea that is excellent.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 621,
                             "name": "Bagel on the Way",
+                            "lead": "Bagels made from fresh produce that transport you directly to the United States",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ifvx21a7ywaq2yomhxj9",
+                                    "copyright": "© Bagel on the Way",
+                                    "public_name": "Bagel on the Way"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bagel-on-the-way",
+                                "hreflang": "/en/explore/bagel-on-the-way"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5185",
@@ -785,19 +1222,36 @@
                     "id": 160,
                     "name": "Un Po’ di Più",
                     "content": "The new Italian trattoria in the Riponne neighbourhood that radiates the joy of living from the South of Italy. It will be hard to choose between fried paccheri, burrata, pasta with truffle or the delicious Neapolitan pizzas. But why choose, after all??",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 675,
                             "name": "Un Po’ Di Più",
+                            "lead": "Delicious dishes that taste of Italy",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ch5hmlz14jvwsrav0sht",
+                                    "copyright": "© Un Po’ Di Più",
+                                    "public_name": "Un Po’ Di Più"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "un-po-di-piu",
+                                "hreflang": "/en/explore/un-po-di-piu"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5246",
@@ -811,19 +1265,36 @@
                     "id": 165,
                     "name": "Le Marrakech Lausanne",
                     "content": "If, like me, you love Moroccan cuisine but don’t know how to cook it, this restaurant located just opposite the CHUV is well worth the detour. The royal couscous and their tajines are incredible, the flavours will transport you and, as the servings are very generous, I can guarantee you’ll walk away feeling full.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 687,
                             "name": "Le Marrakech Lausanne",
+                            "lead": "Moroccan and Lebanese flavours prepared in a traditional way",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "gbzkbreey9f00tyednpg",
+                                    "copyright": "© Le Marrakech Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-marrakech-lausanne",
+                                "hreflang": "/en/explore/le-marrakech-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5305",
@@ -837,23 +1308,36 @@
                     "id": 166,
                     "name": "L'Esquisse",
                     "content": "Whatever the season, L’Esquisse is a place where I love to go, whether for a coffee with friends before visiting a new exhibition at the Fondation de l’Hermitage or for a romantic evening… The menu varies according to the season and I still remember the venison I ate one autumn evening! In summer, I’m attracted by the view of the sunset over Lausanne from the terrace, as well as the delicious meal – a lighter one – with a glass of wine! The cocktail buffet during an event that took place there enchanted the whole family with its mini-burgers! The only thing I have yet to experience is the brunch!",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, the arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-the-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 184,
                             "name": "L'Esquisse",
+                            "lead": "Restaurant L’Esquisse in the park of Fondation de l’Hermitage offers tasty cuisine, Sunday brunches and a terrace.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "twfzgc2iqh7zhsfvhndw",
+                                    "copyright": "© LT/Mano",
+                                    "public_name": "L'Esquisse"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lesquisse",
+                                "hreflang": "/en/explore/lesquisse"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5285739",
@@ -867,19 +1351,36 @@
                     "id": 170,
                     "name": "Mosto",
                     "content": "Located in one of the Flon garages, Mosto is the benchmark for natural wines, both Swiss and foreign. And if, like me, you know nothing about these wines, they’ll be delighted to advise you.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 727,
                             "name": "Mosto",
+                            "lead": "Discover the Mosto wine shop that offers local wine, cider and beer that are respectful of nature.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mosto-lausanne-yeb81s",
+                                    "copyright": "© Mosto Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "mosto",
+                                "hreflang": "/en/explore/mosto"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5216",
@@ -893,27 +1394,36 @@
                     "id": 171,
                     "name": "Gasterea Bookshop",
                     "content": "In this small, utterly charming bookshop in the Cité, you’ll find all the ancient and modern books on gastronomy. It’s a delight for the eyes that will also awaken your taste buds!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 728,
                             "name": "Librairie Gastéréa",
+                            "lead": "Are you hunting for an ancient book on gastronomy? The Gasterea Bookshop has just what you need. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "librairie-gasterea-1m8ghc",
+                                    "copyright": "© Librairie Gastéréa",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-gasterea",
+                                "hreflang": "/en/explore/librairie-gasterea"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5229",
@@ -927,19 +1437,36 @@
                     "id": 175,
                     "name": "Osio",
                     "content": "If you fancy drinking tea and savouring a sweet indulgence, why not do something different and try this Japanese tea room? Their pastries are delicious and so cute! Their cheesecake shaped like an actual piece of cheese is light but so moreish and I love their savoury chicken curry bao buns!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 11
+                        "id": 11,
+                        "name": "Pauline, the culinary explorer",
+                        "seo": {
+                            "slug": "pauline-the-culinary-explorer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "mxz5ezokjfnquwm9rfaf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 733,
                             "name": "Osio",
+                            "lead": "Head to the Osio bakery to discover many delicious Japanese specialities.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "osio-duoube",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "osio",
+                                "hreflang": "/en/explore/osio"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5246",
@@ -953,31 +1480,36 @@
                     "id": 179,
                     "name": "Mon-Repos Park and the Folie Voltaire",
                     "content": "Certainly my favourite park in Lausanne. A haven of peace away from the urban hustle and bustle where I feel like I’m wandering inside a living painting. An enchanting, timeless spot that is bound to move you. When the days get warmer, I recommend treating yourself to a break in the alley of chestnut trees at the Folie Voltaire. It’s the most charming kiosk with a menu featuring simple yet delicious, seasonal dishes!",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 21
+                        "id": 21,
+                        "name": "Alix, the flower power",
+                        "seo": {
+                            "slug": "alix-the-flower-power"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 349,
                             "name": "La Folie Voltaire",
+                            "lead": "Folie Voltaire awaits you beneath Allée des Marroniers in the heart of Mon-Repos park.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "folie-voltaire-ggetnj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-folie-voltaire",
+                                "hreflang": "/en/explore/la-folie-voltaire"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5193532",
@@ -991,19 +1523,36 @@
                     "id": 180,
                     "name": "Street Cellar",
                     "content": "It’s the obvious choice for afterwork, where I feel so at home!\r\nThey serve a selection of draught wines from the barrel and world street food made with local ingredients in case you feel peckish. All that on a background of good sound tracks ;)",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 22
+                        "id": 22,
+                        "name": "Doris, the shiny foodie",
+                        "seo": {
+                            "slug": "doris-the-shiny-foodie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "doris-m2lvzz",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 674,
                             "name": "Street Cellar",
+                            "lead": "At Street Cellar, you can choose from a dozen white and red wines sold by the glass, on tap or to take away.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sfg4mnu9gkqnmt1sahq9",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "street-cellar",
+                                "hreflang": "/en/explore/street-cellar"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5222",
@@ -1017,19 +1566,36 @@
                     "id": 184,
                     "name": "The Lacustre",
                     "content": "Perched atop the CGN building in Ouchy, The Lacustre is an essential stop. Feast your eyes on the lake view while enjoying your pizza (my favourite is the Scamorza) and sipping ginger ale. What more could you want? Children and grown-up alike will love playing table football. Special mention for the uber cute toilets. Remember it’s bar service only, but the atmosphere is just so chilled…",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 75,
                             "name": "The Lacustre",
+                            "lead": "The trendy bar-restaurant Le Lacustre and its lakeside terrace is appreciated for afterwork events and its beach café atmosphere.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-lacustre-fojcgz",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-lacustre",
+                                "hreflang": "/en/explore/le-lacustre"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.50505",
@@ -1043,19 +1609,36 @@
                     "id": 189,
                     "name": "The Café de Prélaz",
                     "content": "With an interior décor straight from the most beautiful Pinterest account, the Café de Prélaz is the place where you can go at any time of the day. For a nice start in the morning with a coffee, at lunchtime for revisited brasserie dishes, for jazz events every Thursday or for a weekend brunch. I’m a fan of the wallpapered wall and its pretty yellow neon light.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 26
+                        "id": 26,
+                        "name": "Valentine, the travlover",
+                        "seo": {
+                            "slug": "valentine-the-travlover"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 740,
                             "name": "Café de Prélaz",
+                            "lead": "Discover the Café de Prélaz, the ideal place to sip cocktails with friends or savour a delicious meal. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-de-prelaz-585kcd",
+                                    "copyright": "© Café de Prélaz",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-de-prelaz",
+                                "hreflang": "/en/explore/cafe-de-prelaz"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5237",
@@ -1069,23 +1652,36 @@
                     "id": 195,
                     "name": "Les Grandes Roches",
                     "content": "With its colourful and mismatched tables and chairs and palm trees, a feeling of being on holiday permeates the area under the Pont Bessières. I love that pop-up bar for its friendly, arty and inspiring atmosphere at all times of the day.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, the trendy artsy",
+                        "seo": {
+                            "slug": "valerie-the-trendy-artsy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 318,
                             "name": "Les Grandes Roches",
+                            "lead": "Nestled under the arches of Bessières Bridge, the cheerful and colourful Grandes Roches terrace is taking up its summer quarters.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "les-grandes-roches-salezv",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "les-grandes-roches",
+                                "hreflang": "/en/explore/les-grandes-roches"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5200646",
@@ -1099,27 +1695,36 @@
                     "id": 196,
                     "name": "Le Perchoir",
                     "content": "In the heart of the magnificent Lausanne University campus, between the river and the green spaces, is a rather strange building: the Vortex. This circular building is a must see during any visit to Lausanne: designed as accommodation for UNIL and EPFL students, it is structured around a 2.8-kilometre spiral walkway that accesses all the student rooms. You can nevertheless reach the 8th floor by lift to get to one of the friendliest bars in Lausanne, Le Perchoir. A large terrace, sunset, view over the lake, food and especially quite low prices, and sometimes even concerts – what more could you ask for?",
-                    "tags": [
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 648,
                             "name": "Le Perchoir Rooftop-Bar",
+                            "lead": "Le Perchoir Rooftop Bar is waiting to welcome you every day.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sprerqn66ye8vvdlutvm",
+                                    "copyright": "© Fernando Guerra Itten+Brechbühl SA",
+                                    "public_name": "Perchoir Rooftop-Bar"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-perchoir-rooftop-bar",
+                                "hreflang": "/en/explore/le-perchoir-rooftop-bar"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5243813",
@@ -1133,19 +1738,36 @@
                     "id": 200,
                     "name": "Oy Isan Thai Food",
                     "content": "An excellent Thai restaurant that deserves to be known! As I live in the area, I regularly order takeaway.\r\nAn address that is becoming better known thanks to word-of-mouth advertising. The chef and her team are extremely kind. The pad thai, prawn fritters and red curry chicken or duck are so delicious!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 21
+                        "id": 21,
+                        "name": "Alix, the flower power",
+                        "seo": {
+                            "slug": "alix-the-flower-power"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 766,
                             "name": "Oy Isan Thai Food",
+                            "lead": "A Thai restaurant that takes you on a journey.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "RwCQ1qiH42AL0RBYGfAZu9vCyi65vpzTCqQLuBqT",
+                                    "copyright": "© Chris Blaser",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "oy-isan-thai-food",
+                                "hreflang": "/en/explore/oy-isan-thai-food"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": null,
@@ -1159,19 +1781,36 @@
                     "id": 202,
                     "name": "Royaume Melazic",
                     "content": "A truly magical realm that will add glitter to your life: cupcakes, biscuits, baking tools, gift ideas, workshops… It’s a compulsory stop for all foodies and all bakers, whether experienced or beginners.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 22
+                        "id": 22,
+                        "name": "Doris, the shiny foodie",
+                        "seo": {
+                            "slug": "doris-the-shiny-foodie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "doris-m2lvzz",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 768,
                             "name": "Royaume Melazic",
+                            "lead": "The realm of the sweet-toothed and foodies.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "5hbTXgBtgzeXhLCpyohaQrd10VKJ6hgg7aTM54Lu",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "royaume-melazic",
+                                "hreflang": "/en/explore/royaume-melazic"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": null,
@@ -1185,27 +1824,36 @@
                     "id": 203,
                     "name": "Madeleine",
                     "content": "In the heart of Lausanne, not far from the Place de la Palud, is nestled Madeleine. No, it’s not where my aunt Madeleine lives, but a bookshop café. On one side is the bookshop and on the other the café. The place is timeless. I suggest taking a seat at a table to sip an iced coffee and savour a madeleine (of course!). You’ll be lulled by the surrounding peacefulness created by the pastel touches of the decoration and the soft lounge music in the background.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 770,
                             "name": "Madeleine",
+                            "lead": " A timeless bookshop café.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uu3pjwEjju3v8pKM7g9L9si1MifHAvMdz4uqY1M9",
+                                    "copyright": "© Madeleine",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "madeleine",
+                                "hreflang": "/en/explore/madeleine"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.522322",
@@ -1219,19 +1867,36 @@
                     "id": 206,
                     "name": "Loom Gelateria",
                     "content": "It’s a meeting place for foodies. The many unique ice cream flavours that are served in that gelateria give us food for thought and create quite a gathering at Boulevard de Grancy when the weather is hot.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 23
+                        "id": 23,
+                        "name": "Marithé, the shooting star",
+                        "seo": {
+                            "slug": "marithe-the-shooting-star"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "marithe-rwwomp",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 548,
                             "name": "Loom Gelateria",
+                            "lead": "One of the best-known places for ice-cream in Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "loom-qogkcq",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "loom-gelateria",
+                                "hreflang": "/en/explore/loom-gelateria"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5163282",
@@ -1249,23 +1914,36 @@
                     "id": 209,
                     "name": "Le Montriond",
                     "content": "On the edge of Milan Park, the Montriond is the ideal meeting point for a coffee, a mate or an IPA. Located in the area just under the train station, this former Lausanne kiosk is my ideal landing place where I feel at home, with the promise of a chilled and intergenerational atmosphere.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, the trendy artsy",
+                        "seo": {
+                            "slug": "valerie-the-trendy-artsy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 771,
                             "name": "Le Montriond",
+                            "lead": "A true meeting place located under the train station (Sous-Gare).",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-montriond-fjay0g",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-montriond",
+                                "hreflang": "/en/explore/le-montriond"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.514984",
@@ -1279,19 +1957,36 @@
                     "id": 211,
                     "name": "Zymi",
                     "content": "Close to Mon-Repos Park in Lausanne, do go there and taste their sandwiches. They’re perfect to take with you and savour al fresco! What makes them unique is the little twist of oriental combinations that often change in each sandwich. And don’t forget to taste the cardamom roll, it’s delicious!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 21
+                        "id": 21,
+                        "name": "Alix, the flower power",
+                        "seo": {
+                            "slug": "alix-the-flower-power"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 611,
                             "name": "ZYMI",
+                            "lead": "A traditional bakery using time-honoured recipes",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vozwmqzt4pvdwpz5dfbm",
+                                    "copyright": "© ZYMI",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "zymi",
+                                "hreflang": "/en/explore/zymi"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.516",
@@ -1305,19 +2000,36 @@
                     "id": 212,
                     "name": "Indian Zayeka",
                     "content": "For an explosion of Indian flavours, head to this small restaurant in the Lausanne region. Don’t judge it on its simple exterior, as the dishes served there are delicious. I recommend the unmissable lunchtime buffet during the week that offers excellent value for money. Don’t miss it!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 21
+                        "id": 21,
+                        "name": "Alix, the flower power",
+                        "seo": {
+                            "slug": "alix-the-flower-power"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 666,
                             "name": "Indian Zayeka",
+                            "lead": "Delicious Indian dishes at Chavannes-près-Renens",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "zkzvwumiworlpqj0muhn",
+                                    "copyright": "© Indian Zayeka",
+                                    "public_name": "Indian Zayeka"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "indian-zayeka",
+                                "hreflang": "/en/explore/indian-zayeka"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5253",
@@ -1331,19 +2043,36 @@
                     "id": 214,
                     "name": "Mangiobevo",
                     "content": "A small corner of Italy hidden in a Lausanne street, with quality ingredients and products. Proper Italian sandwiches await you every day of the year. At Christmas, you’ve simply got to try the Panettone and, at Easter, the Colomba.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 22
+                        "id": 22,
+                        "name": "Doris, the shiny foodie",
+                        "seo": {
+                            "slug": "doris-the-shiny-foodie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "doris-m2lvzz",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 709,
                             "name": "Mangiobevo",
+                            "lead": "Mangiobevo located in the Flon district, offers a broad choice of Italian artisan products.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mangiobevo-0o6ddr",
+                                    "copyright": "© Maude Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "mangiobevo",
+                                "hreflang": "/en/explore/mangiobevo"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5218542",
@@ -1357,19 +2086,36 @@
                     "id": 216,
                     "name": "Le Pointu",
                     "content": "For breakfast with a good cup of coffee, lunch with their “tranches”, afternoon tea with a lush cheesecake, apéro with cocktails and mocktails, as well as dinner with dishes to be shared (or not)… We could spend all day there!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 22
+                        "id": 22,
+                        "name": "Doris, the shiny foodie",
+                        "seo": {
+                            "slug": "doris-the-shiny-foodie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "doris-m2lvzz",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 76,
                             "name": "Le Pointu",
+                            "lead": "A stone throw from the Place de la Riponne, the Pointu offers you open sandwiches, salads and soups in a warm and relaxed atmosphere.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-pointu-4vdfrv",
+                                    "copyright": "© Florian Cella/Ville de Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-pointu",
+                                "hreflang": "/en/explore/le-pointu"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.523429",
@@ -1383,19 +2129,36 @@
                     "id": 218,
                     "name": "Maison 66",
                     "content": "Go to this restaurant run by a couple of cooking enthusiasts to savour lovingly prepared and tasty dishes. They serve homemade local cuisine with local products. The chef’s personal touches are the specialities from Ukraine, Belarus and Latvia. You’ll get a warm welcome and be made to feel quite at home!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 950,
                             "name": "Maison 66",
+                            "lead": "Located at Rue de Genève, Maison 66 is a charming neighbourhood restaurant managed by a passionate and devoted couple.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "FLrZqOH3XdCyzJQ7AC8sBDEONZ221jETnxLTMMvi",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": "Maison 66"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "maison-66",
+                                "hreflang": "/en/explore/maison-66"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5242191",
@@ -1409,27 +2172,36 @@
                     "id": 222,
                     "name": "Bar Tabac",
                     "content": "An intimate and peaceful café that invites you to linger. Located at Rue Beau-Séjour, the Bar Tabac has retained all the charm of days gone by with its menu and its unusual décor. One of my favourite cafés to study or work!",
-                    "tags": [
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, the trendy artsy",
+                        "seo": {
+                            "slug": "valerie-the-trendy-artsy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 734,
                             "name": "Bar Tabac",
+                            "lead": "Looking for a welcoming bar to enjoy a coffee or after-work drinks? At the Bar Tabac, you’ll feel at home.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bar-tabac-tospjn",
+                                    "copyright": "© (c) Lausanne tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bar-tabac",
+                                "hreflang": "/en/explore/bar-tabac"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5177",
@@ -1443,19 +2215,36 @@
                     "id": 223,
                     "name": "Doki Doki",
                     "content": "Do you love ramen? I recommend Doki Doki! With its variations, both vegetarian and traditional, this restaurant invites you on a journey with its ingredients – although they are very local. Fun fact, you’ll savour your noodles with a nice view over the Mon-Repos swimming pools.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, the trendy artsy",
+                        "seo": {
+                            "slug": "valerie-the-trendy-artsy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 923,
                             "name": "Doki Doki",
+                            "lead": "Doki Doki restaurant is a Japanese establishment located at the Mon Repos swimming pool that specialises in the preparation of ramen.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "doki-doki-dkas5m",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "doki-doki",
+                                "hreflang": "/en/explore/doki-doki"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5200511",
@@ -1469,19 +2258,36 @@
                     "id": 228,
                     "name": "Ajò",
                     "content": "Ajò Café is an absolute delight for lovers of focaccia and pizzas. Their creations are excellent, particularly the focaccia with mortadella and stracciatella – my favourite! The manager, who comes from Sardinia as I do, has succeeded in creating a place that has conquered my heart. A gastronomy experience not to be missed!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, the 360 nomad",
+                        "seo": {
+                            "slug": "tommaso-the-360-nomad"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 944,
                             "name": "Ajò Café",
+                            "lead": " Just south of the Lausanne train station, in Rue du Simplon, you will discover Ajò Café, an address that will instantly transport you to Italy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "JIKhOysBFIOXDUAx8cXA37SG7TV7mXaUyqlEBjRN",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": "Ajò Café"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ajo-cafe",
+                                "hreflang": "/en/explore/ajo-cafe"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5156912",
@@ -1495,19 +2301,36 @@
                     "id": 237,
                     "name": "Nandanam",
                     "content": "I spent two months in India and Indian cuisine is simply my favourite. Nandanam, Lausanne’s must-go Indian restaurant, is the place where I know I’ll savour a delicious meal every time. The dishes are generous and flavourful, and the staff extremely welcoming. What’s more, you can enjoy the terrace at the back that offers a superb view over Plateforme 10. As it’s often very busy, I recommend booking a table ahead.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 345,
                             "name": "Nandanam",
+                            "lead": "This restaurant with 13 GaultMillau points welcomes lovers of the original and authentic flavours of India",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "nandanam-qudqh9",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "nandanam",
+                                "hreflang": "/en/explore/nandanam"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.51824",
@@ -1521,19 +2344,36 @@
                     "id": 239,
                     "name": "Le Barbare",
                     "content": "Le Barbare, located next to the Escaliers du Marché, is a must-go café restaurant that I highly recommend. Every day, they publish the day’s specials on Instagram, with two delicious local and seasonal dishes to choose from. I love to take a seat on their terrace and savour a Marta luscious hot chocolate, an absolute essential for me!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 714,
                             "name": "Le Barbare",
+                            "lead": "Le Barbare and its famous hot chocolate are back! The legendary café restaurant so dear to the hearts of Lausanners is reopening at last.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-barbare-xlsprp",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-barbare",
+                                "hreflang": "/en/explore/le-barbare"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5219",
@@ -1547,19 +2387,36 @@
                     "id": 251,
                     "name": "La Parada",
                     "content": "Immerse yourself in the lively atmosphere of La Parada, a colourful and artistic neighbourhood in Lausanne, where you’ll find art galleries, trendy cafés and a unique creative energy.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 31
+                        "id": 31,
+                        "name": "Jasmine, the dancing queen",
+                        "seo": {
+                            "slug": "jasmine-the-dancing-queen"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "jasmin-lxl1kc",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 893,
                             "name": "La Parada",
+                            "lead": "Located at Rue du Tunnel, La Parada is a Latino American restaurant with a vintage, colourful and warm décor. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "la-parada-0cmlsh",
+                                    "copyright": "© Etienne Aubin",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-parada",
+                                "hreflang": "/en/explore/la-parada"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.525271",
@@ -1573,19 +2430,36 @@
                     "id": 271,
                     "name": "Eat Me",
                     "content": "Travel through the flavours of the world at Eat Me, a place where international culinary delights come to life on small plates. The menu is packed with “tasty souvenirs” that go from street food delicacies to sophisticated gastronomy creations. Discover the richness of the textures, colours, aromas and tastes in each mouthful, specially served on small plates designed to share these treats with your close ones. A memorable and friendly culinary experience!",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 33
+                        "id": 33,
+                        "name": "Luana, the creative soul",
+                        "seo": {
+                            "slug": "luana-the-creative-soul"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 202,
                             "name": "Eat Me",
+                            "lead": "The world on small plates: lovely tapas served coming from all over the world. Bar and restaurant in the heart of Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sgzajtcsrhlv8xprqcd9",
+                                    "copyright": "© Eat Me",
+                                    "public_name": "Eat Me"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "eat-me",
+                                "hreflang": "/en/explore/eat-me"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.520266",
@@ -1599,19 +2473,36 @@
                     "id": 274,
                     "name": "Sleepy Bear",
                     "content": "This place is much more than a café. The speciality coffee is exceptional, the staff welcomes you with a big smile and the teddy bears can keep you company when you go there on your own. A stone’s throw from the train station, Sleepy Bear is a must visit if you’re leaving Lausanne or if you’re returning there (pets and kids friendly).",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 34
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 535,
                             "name": "Sleepy Bear",
+                            "lead": "When making coffee becomes and art: take yourself over to the Sleepy Bear for a coffee which is truly home-produced.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sleepy-bear-coffee-ta1ya4",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "sleepy-bear",
+                                "hreflang": "/en/explore/sleepy-bear"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.516",
@@ -1629,19 +2520,36 @@
                     "id": 276,
                     "name": "Elssi Pâtisserie",
                     "content": "A brand-new spot in Lausanne. It’s a pastry shop that offers you a large choice of gluten-free, lactose-free and low-sugar pastries. The recipes are unique and delicious. This place shouldn’t be missed when you’re strolling in the beautiful neighbourhood called “Sous Gare”.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 34
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 917,
                             "name": "Elssi pâtisserie",
+                            "lead": "Located a stone’s throw from the Délices metro station, this pastry shop specialises in products free from gluten and lactose.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "oDamFwqLPpEq2awYlB2VrgPOSBrTLGdiHVCqsHrf",
+                                    "copyright": "© Elssi pâtisserie",
+                                    "public_name": "Elssi pâtisserie"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "elssi-patisserie",
+                                "hreflang": "/en/explore/elssi-patisserie"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5126669",
@@ -1655,23 +2563,36 @@
                     "id": 279,
                     "name": "Café de Grancy",
                     "content": "This café is located in the heart of the neighbourhood and for good reasons: a friendly atmosphere as well as its refined cuisine that highlights authentic flavours, prepared with fresh, seasonal ingredients. Don’t hesitate to go there, whether for brunch, lunch or dinner.",
-                    "tags": [
-                        {
-                            "id": 81,
-                            "name": "Durabilité"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 34
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 43,
                             "name": "Café de Grancy",
+                            "lead": "At the Boulevard de Grancy, under the train station, come and discover this café that offers contemporary bistro cooking, with a touch of creativity.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-de-grancy-eyvyc5",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-de-grancy",
+                                "hreflang": "/en/explore/cafe-de-grancy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5152778",
@@ -1685,19 +2606,36 @@
                     "id": 284,
                     "name": "Inglewood",
                     "content": "For the best burgers in town, head this way. No matter the address – Boulevard the Grancy (my favourite) or Rue Saint-Laurent – the concept is the same with quality, original hamburgers. The setting subtly combines a contemporary style with a touch of rustic elegance. Let yourself be tempted by the “Valaisan” and, if you’re not too full, treat yourself to a slice of their homemade cheesecake.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 35
+                        "id": 35,
+                        "name": "Michaël, the urban spirit",
+                        "seo": {
+                            "slug": "michael-the-urban-spirit"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 617,
                             "name": "Inglewood",
+                            "lead": "Tasty burgers made with local ingredients",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "inglewood-cafe-de-lavenir-intufs",
+                                    "copyright": "© Florian Cella/Ville de Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ingelwood",
+                                "hreflang": "/en/explore/ingelwood"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5166",
@@ -1711,19 +2649,36 @@
                     "id": 285,
                     "name": "Umamido",
                     "content": "Located in the area below the train station, Umamido is a true delight for aficionados of ramen prepared with local products. This restaurant welcomes you in a bright room with an open kitchen, a main counter decorated with vintage mosaics and wood trimmings (a legacy of the former Café des Arcades) that give the place real character. One small tip: go there early as they don’t take bookings.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 35
+                        "id": 35,
+                        "name": "Michaël, the urban spirit",
+                        "seo": {
+                            "slug": "michael-the-urban-spirit"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 848,
                             "name": "Umamido Grancy",
+                            "lead": "At the Boulevard de Grancy, in the area under the station, this ramen restaurant with an open kitchen welcomes you in a young and friendly atmosphere.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "Uc6C8SIbu584pckW4Iha0by4J7lU9996JcniF0wm",
+                                    "copyright": "© Umamido",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "umamido-grancy",
+                                "hreflang": "/en/explore/umamido-grancy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5163198",
@@ -1737,19 +2692,36 @@
                     "id": 291,
                     "name": "Dalat Restaurant",
                     "content": "Total change of scenery, both on the plate or in the atmosphere that prevails in that Vietnamese restaurant housed in the former funicular station. A summer night on the terrace, watching the Vallon neighbourhood come to life creates a different kind of atmosphere, and one so pleasant to experience in Lausanne.",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 36
+                        "id": 36,
+                        "name": "Vincent, the cyclo flash",
+                        "seo": {
+                            "slug": "vincent-the-cyclo-flash"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vincent-w2yz31",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 555,
                             "name": "Café Dalat",
+                            "lead": "A Vietnamese restaurant offering fragrant family cuisine. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ueuobte1uti0dwo5widv",
+                                    "copyright": "© Café Dalat",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-dalat",
+                                "hreflang": "/en/explore/cafe-dalat"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5273",
@@ -1763,19 +2735,36 @@
                     "id": 292,
                     "name": "Café du Simplon",
                     "content": "An unmissable address in the area below the train station, whether at lunchtime, for afterwork or in the evening. Every hour has its own clientele. A culinary journey through Europe and, who knows, possibly that foretaste that will tempt you to board a night train heading for …",
-                    "tags": [
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 36
+                        "id": 36,
+                        "name": "Vincent, the cyclo flash",
+                        "seo": {
+                            "slug": "vincent-the-cyclo-flash"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vincent-w2yz31",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 981,
                             "name": "Café du Simplon",
+                            "lead": "Located near the Lausanne train station, the Café du Simplon offers a cuisine with French, Balkan and Greek flavours.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-du-simplon-sdf8ef",
+                                    "copyright": "© Café du Simplon",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-du-simplon",
+                                "hreflang": "/en/explore/cafe-du-simplon"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5158333",

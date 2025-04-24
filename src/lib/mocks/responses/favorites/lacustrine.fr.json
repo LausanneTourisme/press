@@ -1,43 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 7,
-            "total": 7,
+        "favorites": {
             "data": [
                 {
                     "id": 183,
                     "name": "Vidy",
                     "content": "Au bord du lac à Vidy, laissez-vous prendre par les odeurs de grillade, le son des berimbau, l'anniversaire improvisé d'un nouveau-né, des coureurs, des badauds, des joueurs de pétanque du dimanche. Il suffit de vous poser sur un banc ou au bord du lac et d'observer tout ce qui vous entoure. Un doux mélange et brassage interculturel que sont les Lausannoises et Lausannois.",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        },
-                        {
-                            "id": 60,
-                            "name": "Sport"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, la chic mama",
+                        "seo": {
+                            "slug": "ratana-la-chic-mama"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Ratana"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 211,
                             "name": "Plaines de Vidy",
+                            "lead": "Ici tout s'y trouve: l'histoire, le sport, les bateaux et les pique-niques, le théâtre et le camping...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique, Siège du CIO, Vidy Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/fr/decouvrir/plaines-de-vidy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5393375",
@@ -51,23 +49,36 @@
                     "id": 197,
                     "name": "Les plages sauvages de St.Sulpice",
                     "content": "Au bout de St.Sulpice, au parc du Débarcadère débute un petit chemin presque mystérieux. Celui-ci longe le lac entre les magnifiques maisons côtières et les petites plages sauvages. En continuant, on arrive à la plage de St.Sulpice : un endroit resté presque entièrement sauvage. Entre la forêt et les longues plages de sable blanc, cet endroit saura ravire les aventureux souhaitant sortir des sentiers battus en restant pourtant si proche de Lausanne.",
-                    "tags": [
-                        {
-                            "id": 9,
-                            "name": "Bien-être"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, le chasseur d'instants",
+                        "seo": {
+                            "slug": "victor-le-chasseur-dinstants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Victor"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 449,
                             "name": "Saint-Sulpice",
+                            "lead": "Cette petite commune résidentielle à l'ouest de Lausanne est une ancienne cité médiévale, avec un prieuré et une église romane achevée au XIIe siècle.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rtqhhyjro1e0rtoj6gkh",
+                                    "copyright": "© Droits Réservés",
+                                    "public_name": "Saint-Sulpice"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "saint-sulpice",
+                                "hreflang": "/fr/decouvrir/saint-sulpice"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.51794729",
@@ -81,19 +92,36 @@
                     "id": 247,
                     "name": "La Jetée de la Compagnie",
                     "content": "Plus qu'un simple point de vue, La Jetée de la Compagnie est un véritable coin de paradis à Lausanne. Entre une vue imprenable sur le lac Léman et une carte alléchante de grignotages et cocktails, c'est l'endroit parfait pour un moment de détente le matin ou une soirée sympa entre amis.",
-                    "tags": [
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 30
+                        "id": 30,
+                        "name": "Axel, le speedy dunker",
+                        "seo": {
+                            "slug": "axel-le-speedy-dunker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "axel-7ensox",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": "Axel"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 153,
                             "name": "Jetée de la Compagnie",
+                            "lead": "La Jetée de la Compagnie est une terrasse éphémère au bord du lac Léman, à Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": "Jetée de la compagnie"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/fr/decouvrir/jetee-de-la-compagnie"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5087646",
@@ -107,27 +135,36 @@
                     "id": 192,
                     "name": "Les plages de Saint-Sulpice à la Tour Haldimand",
                     "content": "La magie de la région Lausannoise réside dans sa diversité. En à peine 10min, l’on passe du cœur bourdonnant du Flon, aux rives paisibles du Léman. De nombreuses plages de sable et de galets invitent à se prélasser au soleil ou à l’ombre des arbres. De la Tour Haldimand à Saint-Sulpice, vous aurez l’embarras de choix. Si vous avez un penchant pour le sport, ne ratez pas celle de Vidy, où de nombreux terrains de basket et de volley sont à disposition.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 26
+                        "id": 26,
+                        "name": "Valentine, la voyamoureuse",
+                        "seo": {
+                            "slug": "valentine-la-voyamoureuse"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Valentine"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 92,
                             "name": "Le lac Léman",
+                            "lead": "Le lac Léman est le plus grand lac d’eau douce d’Europe occidentale, et sans doute le plus romantique.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wa4bqpi0ao0rbfomct6g",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-lac-leman",
+                                "hreflang": "/fr/decouvrir/le-lac-leman"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5052125",
@@ -141,23 +178,36 @@
                     "id": 65,
                     "name": "Ouchy",
                     "content": "Etant régulièrement à Paris, je me rends compte de la chance qu’ont les lausannois d’avoir ce lac! Un vrai moment de bonheur quand il s’agit tout simplement de marcher à Ouchy ou de faire un plongeon dans le Léman.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 8
+                        "id": 8,
+                        "name": "Sébastien, l'aventurier",
+                        "seo": {
+                            "slug": "sebastien-laventurier"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 194,
                             "name": "Ouchy",
+                            "lead": "Ouchy, ses quais, le lac et les balades des après-midi au milieu de la foule. En été comme en hiver, on s’y presse à la moindre apparition du soleil.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "akouddhpza3wodid9fdy",
+                                    "copyright": "© LT/ Laurent Kaczor",
+                                    "public_name": "Ouchy - Place de la navigation"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ouchy",
+                                "hreflang": "/fr/decouvrir/ouchy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.510155",
@@ -171,27 +221,36 @@
                     "id": 185,
                     "name": "Plage de Vidy",
                     "content": "Une plage avec du sable !? Oui il se trouve qu’à Lausanne on a aussi notre « Venice beach ».\r\nA deux pas du Skate Park de Vidy, il y a de quoi jouer au volley, au basket et flâner sur les petites plages au sable fin. Petit coins d’ombre ? Il y a de quoi faire ! Tout au long de la promenade, les petites plages sont ombragées par de somptueux chênes. Prenez votre masque et tuba et peut-être que vous croiserez Nemo !",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 25
+                        "id": 25,
+                        "name": "Tommaso, le nomade 360",
+                        "seo": {
+                            "slug": "tommaso-le-nomade-360"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Tommaso"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 649,
                             "name": "Plage de Vidy",
+                            "lead": "La plage de Vidy est la plus grande plage et le plus grand espace vert au bord du lac Léman.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wn42hz1aupccmahj4f9s",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Plage Vidy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plage-de-vidy",
+                                "hreflang": "/fr/decouvrir/plage-de-vidy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5192217",
@@ -205,23 +264,36 @@
                     "id": 146,
                     "name": "Les Quais d'Ouchy",
                     "content": "Impossible de terminer ma journée sans une petite balade sur les quais d'Ouchy. L'endroit idéal pour observer un magnifique coucher de soleil sur le Léman avec les Alpes en toile de fond. Entre les enfants qui s'amusent, les skateurs et autres artistes, j'adore l'ambiance qui s'y dégage.",
-                    "tags": [
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 82,
-                            "name": "Lacustre"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, le créateur de souvenirs",
+                        "seo": {
+                            "slug": "alexandre-le-createur-de-souvenirs"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": "Alexandre"
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 264,
                             "name": "Quais d'Ouchy",
+                            "lead": "Construits en 1901, les quais relient le vieux port à la Tour Haldimand qui s’élevait autrefois sur une île, comme le Château d’Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mlmtfhjfzadbd1qkdz60",
+                                    "copyright": "© LT/ Laurent KACZOR",
+                                    "public_name": "Ouchy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "quais-douchy",
+                                "hreflang": "/fr/decouvrir/quais-douchy"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.50629044",

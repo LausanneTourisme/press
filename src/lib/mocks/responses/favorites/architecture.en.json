@@ -1,35 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 13,
-            "total": 13,
+        "favorites": {
             "data": [
                 {
                     "id": 56,
                     "name": "Sauvabelin Tower",
                     "content": "What a surprising staircase – laid out in a double helix structure, with visitors ascending and descending at opposite sides. And the fantastic views over Lausanne are not to be missed.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, the arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-the-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 306,
                             "name": "Sauvabelin Tower",
+                            "lead": "From a vantage point of 35 metres, a 360° view reveals: the Lausanne conurbation, Lake Geneva, the three geographic regions of Switzerland.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "tour-de-sauvabelin-xxdjnd",
+                                    "copyright": "© LT/Sébastien Closuit",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "sauvabelin-tower",
+                                "hreflang": "/en/explore/sauvabelin-tower"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5352803",
@@ -43,23 +49,36 @@
                     "id": 198,
                     "name": "The Cathedral’s belfry",
                     "content": "If you wish to gain height in Lausanne, head to the Cathedral. After a few dozen metres of elevation in the small streets of the old town, here you are in the Cité, at the foot of the Cathedral. It’s now time to climb the steps that lead to the top of the belfry. From there, you’ll have a 360° view over Lausanne, as well as on the Cathedral’s bells. One important tip: leave before they ring!",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 372,
                             "name": "Lausanne Cathedral",
+                            "lead": "As a spiritual stronghold of French-speaking Switzerland, Lausanne Cathedral enjoys international interest and importance.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "6yLenM0MZJ1YD3n1Gog3woVeV5M6vFA6ROnJ6qgj",
+                                    "copyright": "© Régis Colombo",
+                                    "public_name": "Cathédrale de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lausanne-cathedral",
+                                "hreflang": "/en/explore/lausanne-cathedral"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5226215",
@@ -73,19 +92,36 @@
                     "id": 85,
                     "name": "L'Avenue des Alpes",
                     "content": "We all have a neighbourhood where we dream about living someday... For me, the Avenue des Alpes is one of the most beautiful streets in Lausanne with its lovely buildings reminding me of Parisian architecture, its view of the lake visible from every angle, and its sense of community: all found in a chic and tranquil neighbourhood. So, even if I can’t live here, I love to walk around...and dream.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 7
+                        "id": 7,
+                        "name": "Chloé, the family designer",
+                        "seo": {
+                            "slug": "chloe-the-family-designer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ihrk5qhwn3votkfcgsev",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 360,
                             "name": "Georgette quarter",
+                            "lead": "Discover the Georgette neighbourhood and its various shops.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ptu1tlysqywyfadqy2ip",
+                                    "copyright": "© LT/Hugues Siegenthaler",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "georgette-quarter",
+                                "hreflang": "/en/explore/georgette-quarter"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.51736035",
@@ -99,19 +135,36 @@
                     "id": 31,
                     "name": "The Grand Pont Bridge",
                     "content": "As photography is above all a passion in addition to being my job, the Grand Pont is one of the spots I like best at sunset. You can have a global view of the Flon, awash with life, while enjoying the colours provided by the last rays of light.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 8
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 390,
                             "name": "Grand-Pont",
+                            "lead": "The Grand-Pont is the nerve centre of Lausanne. Located literally in the heart of the city, it offers remarkable views, particularly of the Cathedral.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "yrjaxp4nag0mqrhm2rro",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "grand-pont",
+                                "hreflang": "/en/explore/grand-pont"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5223107",
@@ -125,19 +178,36 @@
                     "id": 147,
                     "name": "The Escaliers du Marché",
                     "content": "The city’s small gem. A magnificent staircase that recalls Lausanne during the centuries gone by. The surrounding buildings’ pretty façades give even more appeal to this must-see place. The ascent might seem hard, but it’s worth the effort as when you reach the top, you’re at the foot of the Cathedral and have a beautiful view over the town!",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 38,
                             "name": "Escaliers du Marché",
+                            "lead": "The Escaliers du Marché staircase is one of the most picturesque sites in Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "escaliers-du-marche-faip7u",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "escaliers-du-marche",
+                                "hreflang": "/en/explore/escaliers-du-marche"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5221316",
@@ -151,19 +221,36 @@
                     "id": 151,
                     "name": "The Cité neighbourhood",
                     "content": "Walking in these charming narrow streets where historical monuments rub shoulders with typical bars plunges me into a different time. I find the streets so photogenic and the atmosphere they convey simply incredible! I suggest you roam all the streets and end on the Esplanade of the St-Maire Castle, from where the view is stunning.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 329,
                             "name": "La Cité",
+                            "lead": "This is a quarter full of typical small bistros and craft shops.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wkwgjd0j64k347su5qbd",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-cite",
+                                "hreflang": "/en/explore/la-cite"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5226215",
@@ -177,23 +264,36 @@
                     "id": 68,
                     "name": "Rumine Palace",
                     "content": "As a photographer, the architecture of Rumine Palace immediately appealed to me, both inside and out. It’s also a quiet place where I can work when I’m in town.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 8
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 60,
                             "name": "Palais de Rumine",
+                            "lead": "The Palais de Rumine houses the Cantonal museum of natural sciences, the cantonal museum of archaeology and history and the BCU - Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q5afsewwktxmjh7stepn",
+                                    "copyright": "© Michel Krafft/MZL",
+                                    "public_name": "Rumine Palace"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "palais-de-rumine",
+                                "hreflang": "/en/explore/palais-de-rumine"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5235686",
@@ -207,19 +307,36 @@
                     "id": 286,
                     "name": "Bel-Air Tower & Flon District",
                     "content": "Taking inspiration from the architectural model of American skyscrapers, the Bel-Air Tower is Switzerland’s such building. An unmissable symbol of the city, it can be spotted from afar. Just next to it is the Flon, a lively and trendy district that has successfully reinvented itself as the years have gone by to become one of the most popular areas for inhabitants and visitors alike, where architecture, art and design mix.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 35
+                        "id": 35,
+                        "name": "Michaël, the urban spirit",
+                        "seo": {
+                            "slug": "michael-the-urban-spirit"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 356,
                             "name": "Bel-Air Tower and Salle Métropole",
+                            "lead": "Built in 1932 by Alphonse Laverrière, Bel-Air Tower was based on the American model (with a metal framework covered in stone).",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vlbpbdopcpdik7xepkxv",
+                                    "copyright": "© LT/Laurent KACZOR",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bel-air-tower-and-salle-metropole",
+                                "hreflang": "/en/explore/bel-air-tower-and-salle-metropole"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5221014",
@@ -230,6 +347,18 @@
                         {
                             "id": 89,
                             "name": "The Flon",
+                            "lead": "Flon is the heart of the city of Lausanne, pulsing with life, day and night, in a modern and innovative setting.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "5d7e637ca4e09021",
+                                    "copyright": "© Place de l",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "flon-the-heart-of-lausanne",
+                                "hreflang": "/en/explore/flon-the-heart-of-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.520487",
@@ -243,19 +372,36 @@
                     "id": 144,
                     "name": "Galeries Saint-François",
                     "content": "A place that reminds me of Parisian shopping arcades. With those small boutiques and restaurants, the place is bathed in natural light and the floor tiles add that extra touch that is so photogenic.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 19
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 404,
                             "name": "Saint-François square - Bourg street",
+                            "lead": "It’s an area of chic, avant-garde boutiques: high-flying fashion, trendy fashion, but also daring contemporary jewellery, tableware, objets d’art...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ka4bghtt3po5zcvdwoza",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "saint-francois-square-bourg-street",
+                                "hreflang": "/en/explore/saint-francois-square-bourg-street"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.519712",
@@ -269,23 +415,36 @@
                     "id": 288,
                     "name": "Lausanne University Campus (UNIL) and Lausanne Federal Institute of Technology (EPFL)",
                     "content": "Ideally located by the lakeside and surrounded by beautiful green spaces, UNIL and EPFL are two villages within the town. Walk around their campuses to discover the contemporary architecture of buildings designed by renowned architects. Don’t miss the Unithèque (aka “the Banana”), Vortex, Géopolis, Batochime, Rolex Learning Center, EPFL Pavilions, MED (and its staircase) and SwissTech Convention Center. And as a bonus, the colourful pedestrian underpass of the EPFL metro station.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 35
+                        "id": 35,
+                        "name": "Michaël, the urban spirit",
+                        "seo": {
+                            "slug": "michael-the-urban-spirit"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 84,
                             "name": "University of Lausanne (UNIL)",
+                            "lead": "The University of Lausanne is composed of seven faculties and caters for more than 14'000 students and 2'700 researchers.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "466988441da7c95a",
+                                    "copyright": "© Geopolis Universite de Lausanne Geopolis Universite de Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "university-of-lausanne-unil",
+                                "hreflang": "/en/explore/university-of-lausanne-unil"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.52230113",
@@ -296,6 +455,18 @@
                         {
                             "id": 351,
                             "name": "Swiss Federal Institute of Technology Lausanne (EPFL)",
+                            "lead": "The EPFL is an institution at the cutting edge of training, research and innovation.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "l0qyviytpw0en8h8hs7l",
+                                    "copyright": "© Hisao Suzuki",
+                                    "public_name": "Rolex Learning Center"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "swiss-federal-institute-of-technology-lausanne",
+                                "hreflang": "/en/explore/swiss-federal-institute-of-technology-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5190557",
@@ -309,27 +480,36 @@
                     "id": 131,
                     "name": "Saint-François Kiosk",
                     "content": "When I get off the bus at Saint-François, I just can’t walk by without stopping. This former tramway shelter has retained its charm from the 1910s with its glass awning, its marquetry, the small fountain leaning against it and its Art Nouveau aura. Savouring a good coffee in a beautiful café, what could be better?",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 627,
                             "name": "Kiosque Saint-François",
+                            "lead": "A small restaurant in a historical monument in Lausanne",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "kiosque-saint-francois-1evtp5",
+                                    "copyright": "© Maud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kiosque-saint-francois",
+                                "hreflang": "/en/explore/kiosque-saint-francois"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5195",
@@ -343,23 +523,36 @@
                     "id": 297,
                     "name": "Plateforme 10",
                     "content": "Passionate about culture or photography like me, Lausanne’s new arts district is a place not to be missed. Inside the museums and especially strolling by these architectural jewels or sipping a drink on one of the terraces sheltered by the arches. To watch the comings and goings of passers-by and let yourself be lulled by the play of light and shade. A wee bonus, the cycle path that lets you avoid the roundabout in front of the train station at rush hours.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 36
+                        "id": 36,
+                        "name": "Vincent, the cyclo flash",
+                        "seo": {
+                            "slug": "vincent-the-cyclo-flash"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vincent-w2yz31",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 288,
                             "name": "Plateforme 10",
+                            "lead": "The new PLATEFORME 10 arts district is a unique venue dedicated to culture.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "p10-sewsqq",
+                                    "copyright": "© Khashayar Javanmardi",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plateforme-10",
+                                "hreflang": "/en/explore/plateforme-10"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5184198",
@@ -373,23 +566,36 @@
                     "id": 205,
                     "name": "Pontaise Olympic Stadium",
                     "content": "The Olympic Stadium is one of my favourite places in Lausanne. I have been training there since I was 13 and I feel quite at home in that arena. When the stadium is full, whether for a football match or a concert, the atmosphere is fantastic! For me, the Athletissima meeting is an event everyone who lives in Lausanne should attend at least once.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 60,
-                            "name": "Sport"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 23
+                        "id": 23,
+                        "name": "Marithé, the shooting star",
+                        "seo": {
+                            "slug": "marithe-the-shooting-star"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "marithe-rwwomp",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 346,
                             "name": "La Pontaise – Olympic stadium",
+                            "lead": "Ideal for staging football matches, it also has an athletics track, which is the setting for the famous international Athletissima meeting each year.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "b8gqg9k5kdkhczbiujos",
+                                    "copyright": "© OTV/Laurent Ryser",
+                                    "public_name": "Athletissima"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-pontaise-olympic-stadium",
+                                "hreflang": "/en/explore/la-pontaise-olympic-stadium"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5332326",

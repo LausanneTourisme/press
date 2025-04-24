@@ -1,31 +1,41 @@
 {
     "data": {
-        "items": {
-            "has_more_pages": false,
-            "current_page": 1,
-            "last_page": 1,
-            "per_page": 99999,
-            "from": 1,
-            "to": 26,
-            "total": 26,
+        "favorites": {
             "data": [
                 {
                     "id": 22,
                     "name": "Théâtre de Vidy",
                     "content": "Dank Direktor Vincent Baudriller ist das Théâtre de Vidy mit seinem Programm zu einer Referenz auf dem Gebiet des zeitgenössischen Theaterschaffens der Region geworden. Es begeistert mit hochaktuellen Themen und hat mich motiviert, meine Komfortzone auch einmal zu verlassen.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 33,
                             "name": "Théâtre Vidy-Lausanne",
+                            "lead": "Das Théâtre de Vidy ist ein Ort, der allen offen steht und der Schaffung zeitgenössischer Bühnenkunst gewidmet ist.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "zwcjv5fidaemhjfjpszj",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": "Vidy-Theater"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "vidy-theater",
+                                "hreflang": "/de/entdecken/vidy-theater"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5127454",
@@ -39,19 +49,36 @@
                     "id": 53,
                     "name": "Collection de l'Art Brut",
                     "content": "Kunstliebhaber und Neugierige können hier witzige, verwirrende, faszinierende, abenteuerliche oder auch verstörende Kreationen entdecken. Mein Favorit? Auf jeden Fall die Lausannerin Aloïse und ihre schönen Damen mit grossen blauen Augen, die mich schon immer zum Träumen gebracht haben. Diese Ausstellung lässt niemanden gleichgültig!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, die Alternative",
+                        "seo": {
+                            "slug": "carla-die-alternative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 332,
                             "name": "Collection de l’Art Brut",
+                            "lead": "Lassen Sie sich von der Collection de l’Art Brut und ihren Werken autodidaktischer Künstler überraschen.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rfcbqzis2zidtplkvmov",
+                                    "copyright": "© Caroline Smyrliadis",
+                                    "public_name": "Collection de l’Art Brut"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "collection-de-lart-brut",
+                                "hreflang": "/de/entdecken/collection-de-lart-brut"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.527318",
@@ -65,23 +92,36 @@
                     "id": 33,
                     "name": "Librairie Basta! Buchhandlung",
                     "content": "Wer auf der Suche nach einer anständigen Progressive-Rock-Platte und einem guten geisteswissenschaftlichen Buch ist, wird selten an ein und demselben Ort fündig. Glücklicherweise gibt es in Lausanne einen Laden, der beides vereint, denn direkt unter der Buchhandlung Basta! befindet sich Obsession Records.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 13
+                        "id": 13,
+                        "name": "Realsousgare, der Satirenkönig",
+                        "seo": {
+                            "slug": "realsousgare-der-satirenkonig"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 547,
                             "name": "Buchhandlung Basta!",
+                            "lead": "Eine unabhängige Buchhandlung, in der sie gut beraten werden.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "pux7zoevzkjzzjrd2tm8",
+                                    "copyright": "© LT",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "buchhandlung-basta",
+                                "hreflang": "/de/entdecken/buchhandlung-basta"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5242",
@@ -95,23 +135,36 @@
                     "id": 35,
                     "name": "Cinéma Bellevaux",
                     "content": "Als leidenschaftlicher Kinogänger mag ich unabhängige Kinos, denn sie sind einfach cooler. Daher besuche ich regelmässig das Cinéma Bellevaux, das etwas weniger bekannte und «industrielle», aber oft einzigartige und bewegende Filme zeigt.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 13
+                        "id": 13,
+                        "name": "Realsousgare, der Satirenkönig",
+                        "seo": {
+                            "slug": "realsousgare-der-satirenkonig"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 549,
                             "name": "Cinema Bellevaux",
+                            "lead": "Eines der letzten Programmkinos in Lausanne. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "eumrzmd8hanxlonxd1h4",
+                                    "copyright": "© Cinéma Bellevaux",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cinema-bellevaux",
+                                "hreflang": "/de/entdecken/cinema-bellevaux"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5349",
@@ -125,19 +178,36 @@
                     "id": 52,
                     "name": "Cinéma City Club",
                     "content": "Ein wunderschönes, von den Kritikern gelobtes Programm für Jung und Alt, das Improvisationstheater, Konzerte und Festivals umfasst: Das Vereinsteam des City Clubs scheut keine Mühen. Schaut vorbei, platziert euren Allerwertesten auf die legendär bequemen Sitze und freut euch auf das, was da kommt!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, die Alternative",
+                        "seo": {
+                            "slug": "carla-die-alternative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 553,
                             "name": "Kino CityClub Pully",
+                            "lead": "Eines der letzten unabhängigen Kinos in der Region.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cinema-cityclub-pully-hzqq4u",
+                                    "copyright": "© Michel Bertholet",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kino-cityclub-pully",
+                                "hreflang": "/de/entdecken/kino-cityclub-pully"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.511",
@@ -151,19 +221,36 @@
                     "id": 54,
                     "name": "Théâtre 2.21",
                     "content": "Ich schätze es für seine Verbundenheit zur lokalen Theaterszene, sein Engagement für das Viertel und die Vielfältigkeit seines Programms. Das Théâtre 2.21 ist nicht nur ein Sprungbrett für junge Künstler, sondern begrüsst zudem etablierte Theaterschaffende und ist aus der Lausanner Theaterszene nicht wegzudenken.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 10
+                        "id": 10,
+                        "name": "Carla, die Alternative",
+                        "seo": {
+                            "slug": "carla-die-alternative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 554,
                             "name": "Théâtre 2.21",
+                            "lead": "Aufführungen, die hauptsächlich von Theaterensembles aus Lausanne und der Westschweiz ausgearbeitet wurden.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sl3gfavshi25ct4jycfm",
+                                    "copyright": "© Théâtre 2.21",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "theatre-221",
+                                "hreflang": "/de/entdecken/theatre-221"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5262484",
@@ -177,19 +264,36 @@
                     "id": 57,
                     "name": "Oper Lausanne",
                     "content": "Ihr Innenleben mag an Säle im italienischen Stil erinnern, doch aussen zeigt sich in der Spiegelfassade der Oper die Stadt in unterschiedlichsten Facetten!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, der arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-der-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 9,
                             "name": "Opernhaus in Lausanne",
+                            "lead": "Die Lausanner Oper bietet jede Saison eine grosse Auswahl an Opern und Konzerten an und begrüsst jedes Jahr mehr als 45.000 Zuschauer.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "up7cmru8thyjpu7jt9it",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Opéra de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "opernhaus-in-lausanne",
+                                "hreflang": "/de/entdecken/opernhaus-in-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.518049",
@@ -203,23 +307,36 @@
                     "id": 84,
                     "name": "Le Petit-Théâtre",
                     "content": "Jedes Jahr im August wartet die ganze Familie gespannt auf das Programm des Petit Théâtre. Ganz in der Nähe der Kathedrale, in einem alten Gebäude mit einem schönen Garten, bietet das Petit Théâtre eine Vielzahl von Vorstellungen für (kleine und grosse) Kinder. Pssst, manchmal sind am Empfang noch ein paar Karten für die Vorstellung am gleichen Tag erhältlich!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 7
+                        "id": 7,
+                        "name": "Chloé, die family designer",
+                        "seo": {
+                            "slug": "chloe-die-family-designer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ihrk5qhwn3votkfcgsev",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 578,
                             "name": "Le Petit Théâtre",
+                            "lead": "Hochwertige Aufführungen für die Kleinsten. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "zsrstbmcwdm2dq4rsf1s",
+                                    "copyright": "© Le Petit-Théâtre",
+                                    "public_name": "Le Petit-Théâtre"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-petit-theatre",
+                                "hreflang": "/de/entdecken/le-petit-theatre"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5228",
@@ -233,19 +350,36 @@
                     "id": 123,
                     "name": "MCBA",
                     "content": "Ich liebe das 2019 eröffnete Kunstmuseum mit seiner markanten und modernen Architektur. Die originellen Ausstellungen und der Blick auf die Stadt und den Genfersee von der Eingangshalle aus sind ein Muss.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 3
+                        "id": 3,
+                        "name": "Dominik, der arch-photo fan",
+                        "seo": {
+                            "slug": "dominik-der-arch-photo-fan"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vaqpy6xwhpcs4d1q99du",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 80,
                             "name": "MCBA - Kantonales Kunstmuseum",
+                            "lead": "Das Kantonale Kunstmuseum ist für seine rund 10'000 Werke umfassende Sammlung mit bemerkenswerten Beständen bekannt.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mcba-zsfkcf",
+                                    "copyright": "© KHASHAYAR_JAVANMARDI",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kantonales-kunstmuseum-mcba",
+                                "hreflang": "/de/entdecken/kantonales-kunstmuseum-mcba"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.517992",
@@ -259,23 +393,36 @@
                     "id": 128,
                     "name": "Librairie de la Louve",
                     "content": "Nur schon den Namen auszusprechen, erfüllt mich mit Freude! Die exquisite Secondhand-Buchhandlung zählt so viele Bücher, dass man gar nicht weiss, wo man beginnen soll. Zwei Abteilungen sind für mich schlicht ein Muss: jene über die Stadt Lausanne, gleich neben dem Tisch des Buchhändlers, mit antiken Büchern, die so wunderbar nach Papier riechen, und jene über Architektur, in der kleinen Nische. Ich freue mich schon auf meinen nächsten Besuch!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, Frau Kulturerbe",
+                        "seo": {
+                            "slug": "manon-frau-kulturerbe"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 664,
                             "name": "Librairie de la Louve",
+                            "lead": "Eine Secondhand-Buchhandlung am Place de la Louve",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "J7c4Mlfiu9EIKQFP2Frtdk68vpHW4XLQtTQGoOFG",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-de-la-louve",
+                                "hreflang": "/de/entdecken/librairie-de-la-louve"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5215",
@@ -289,27 +436,36 @@
                     "id": 132,
                     "name": "Coffee Page",
                     "content": "Insidertipp für alle, die Kunstbücher und Kaffee lieben: Endlich hat jemand beides zusammengebracht! Dies ist der ideale Ort, um einen der zahlreichen schönen Bildbände aus dem Regal zu nehmen und darin zu schmökern, ein Getränk zu bestellen und das Telefon für einmal wegzulegen. Meine bevorzugte Kombination: ein Chai Latte und ein Buch zum Bauhausstil.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 20
+                        "id": 20,
+                        "name": "Manon, Frau Kulturerbe",
+                        "seo": {
+                            "slug": "manon-frau-kulturerbe"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 546,
                             "name": "Coffee Page",
+                            "lead": "Coffee Page, ein entspannendes und gemütliches Lesecafé. Es gibt eine grosse Auswahl an Kaffees, zu denen man ein Stück hausgemachten Kuchen geniessen kann.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "coffee-page-h9yccj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "coffee-page",
+                                "hreflang": "/de/entdecken/coffee-page"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5183146",
@@ -323,23 +479,36 @@
                     "id": 161,
                     "name": "Kulturzentrum Les Terreaux",
                     "content": "Diese ehemalige Kirche in Bel-Air wurde in ein Kulturzentrum umgewandelt und empfängt seit 2004 ein vielfältiges Publikum. An diesem kleinen, fast privat anmutenden Ort werden engagierte und pädagogische Theaterstücke, Komödien und auch Aufführungen der Lausanner Tanzgruppen gezeigt.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 676,
                             "name": "Kulturzentrum Les Terreaux",
+                            "lead": "Eine ehemalige Kirche, die in ein Kulturzentrum umgewandelt wurde",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "fd1hj6rxy1gx5xatuqkl",
+                                    "copyright": "© Centre Culturel des terreaux",
+                                    "public_name": "Centre Culturel des terreaux"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kulturzentrum-les-terreaux",
+                                "hreflang": "/de/entdecken/kulturzentrum-les-terreaux"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5229997",
@@ -353,19 +522,36 @@
                     "id": 162,
                     "name": "Pulloff",
                     "content": "In diesem kleinen gemeinnützigen Theater, das etwas versteckt hinter dem Tunnel in der alten Stadtgasse (Anciens Magasins de la Ville) liegt, bieten unabhängige Theatergruppen jedes Jahr ein modernes, originelles und aussagestarkes Programm an.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 677,
                             "name": "Pulloff Théâtres",
+                            "lead": "Ein Ort, wo ausschliesslich unabhängige Theatergruppen auftreten",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jjpzzpjevfrmtceddeh6",
+                                    "copyright": "© Pulloff",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "pulloff-theatres",
+                                "hreflang": "/de/entdecken/pulloff-theatres"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5262484",
@@ -379,27 +565,36 @@
                     "id": 171,
                     "name": "Buchhandlung Gasterea",
                     "content": "In dieser kleinen Buchhandlung im Stadtviertel Cité findet ihr eine grosse Auswahl an antiken und modernen Büchern über die Gastronomie. Augenweide und Gaumenkitzel sind garantiert!",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 728,
                             "name": "Librairie Gastéréa",
+                            "lead": "Sind Sie auf der Suche nach einem antiken Buch über Gastronomie? Die Buchhandlung Gastéréa hat genau das Richtige für Sie.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "librairie-gasterea-1m8ghc",
+                                    "copyright": "© Librairie Gastéréa",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-gasterea",
+                                "hreflang": "/de/entdecken/librairie-gasterea"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5229",
@@ -413,19 +608,36 @@
                     "id": 174,
                     "name": "Cie Igokat",
                     "content": "Igokat ist sowohl eine Tanzschule als auch eine professionelle Tanzgruppe. Die führende Schule für klassischen und modernen Tanz in Lausanne wird von zwei ehemaligen Ballettstars des Béjart Ballett geleitet. Kathryn Bradney ist zudem Direktorin des grossen Tanzwettbewerbs Prix de Lausanne.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 6
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 729,
                             "name": "Compagnie Igokat",
+                            "lead": "Entdecken Sie die Balletttruppe Igokat, die Tanzshows aufführt, Kurse für alle Altersgruppen anbietet und einen eigenen Laden hat.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "compagnie-igokat-6yf14z",
+                                    "copyright": "© Compagnie Igokat",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "compagnie-igokat",
+                                "hreflang": "/de/entdecken/compagnie-igokat"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5211",
@@ -443,19 +655,36 @@
                     "id": 193,
                     "name": "Arsenic",
                     "content": "Das Arsenic ist der Ort für Tanz, Theater und Performance. Seine zeitgenössische und experimentelle Szene überrascht und fesselt mich immer wieder. Ausserdem servieren sie köstlichen Kaffee. Für mich ist es der ideale Ort, um mit Freunden etwas zu trinken und sich über die gesehene Aufführung auszutauschen.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, die Arty Trendy",
+                        "seo": {
+                            "slug": "valerie-die-arty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 365,
                             "name": "Théâtre Arsenic",
+                            "lead": "Das Théâtre Arsenic ist ein multidisziplinäres Zentrum für die regionale zeitgenössische Kunstkreation.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bzh56unyuenrdsmlk3lu",
+                                    "copyright": "© ",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "theatre-arsenic",
+                                "hreflang": "/de/entdecken/theatre-arsenic"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.522665",
@@ -469,19 +698,36 @@
                     "id": 194,
                     "name": "Kunstmuseum in Pully",
                     "content": "Nur wenige Schritte vom See entfernt liegt dieses winzige Museum, das den Sammlungen grösserer Museen in nichts nachsteht. Es bietet die einzigartige Gelegenheit, die ausgestellten Werke in privater Atmosphäre im charmanten Dorf Pully zu bewundern.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, die Arty Trendy",
+                        "seo": {
+                            "slug": "valerie-die-arty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 63,
                             "name": "Pully Museum",
+                            "lead": "Das Museumsgebäude grenzt an das Elternhaus des Schriftstellers C. F. Ramuz und umfasst eine bedeutende Sammlung zu dessen Werk.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uv88rhdyej3tixxiunqm",
+                                    "copyright": "© Mathieu Bernard-Reymond - Musée d'art de Pully",
+                                    "public_name": "Hodler et le léman, Pully Museum"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "pully-museum",
+                                "hreflang": "/de/entdecken/pully-museum"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.509004",
@@ -495,23 +741,36 @@
                     "id": 198,
                     "name": "Turm der Kathedrale",
                     "content": "Geht in Richtung Kathedrale für einen Blick auf Lausanne von oben. Bewältigt einige Dutzend Höhenmeter durch die kleinen Gässchen der Altstadt und schon befindet ihr euch bei der Kathedrale. Jetzt gilt es, die Stufen zur Turmspitze zu erklimmen. Oben erwarten euch eine Rundumsicht über Lausanne und die Glocken der Kathedrale. Ein Tipp: Steigt wieder hinunter, bevor sie ertönen!",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 28
+                        "id": 28,
+                        "name": "Victor, der Momentesammler",
+                        "seo": {
+                            "slug": "victor-der-momentesammler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 372,
                             "name": "Kathedrale von Lausanne",
+                            "lead": "Die Kathedrale von Lausanne ist nicht nur ein wichtiges spirituelles Zentrum der Westschweiz, sondern stösst auch international auf Interesse.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "6yLenM0MZJ1YD3n1Gog3woVeV5M6vFA6ROnJ6qgj",
+                                    "copyright": "© Régis Colombo",
+                                    "public_name": "Cathédrale de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "kathedrale-von-lausanne",
+                                "hreflang": "/de/entdecken/kathedrale-von-lausanne"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5226215",
@@ -525,27 +784,36 @@
                     "id": 203,
                     "name": "Madeleine",
                     "content": "Im Herzen von Lausanne, unweit des Place de la Palud, erwartet euch Madeleine. Nein, es handelt sich nicht um die Adresse meiner Tante Madeleine, sondern um ein Café mit Buchhandlung. Auf der einen Seite befindet sich die Buchhandlung und auf der anderen das Café. Hier steht die Zeit still. Man setzt sich an einen Tisch, schlürft einen Iced Coffee und beisst (natürlich) in ein Madeleine. Die Pastelltöne der Einrichtung und die Lounge-Musik im Hintergrund führt euch in euren inneren Raum der Ruhe.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 80,
-                            "name": "Éducation"
-                        },
-                        {
-                            "id": 38,
-                            "name": "Gastronomie"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 24
+                        "id": 24,
+                        "name": "Ratana, die schicke Mama",
+                        "seo": {
+                            "slug": "ratana-die-schicke-mama"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 770,
                             "name": "Madeleine",
+                            "lead": "Ein Café mit Buchhandlung, wo die Zeit stillsteht. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uu3pjwEjju3v8pKM7g9L9si1MifHAvMdz4uqY1M9",
+                                    "copyright": "© Madeleine",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "madeleine",
+                                "hreflang": "/de/entdecken/madeleine"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.522322",
@@ -559,19 +827,36 @@
                     "id": 221,
                     "name": "Die Fondation de l’Hermitage",
                     "content": "Ein Museum mit Ausstellungen und Sammlungen, die so schön sind wie ihre prächtige Umgebung. Das Herrenhaus und der Park bieten eine wunderschöne Aussicht auf die Kathedrale und den See. Und das i-Tüpfelchen: Im Café L’Esquisse könnt ihr Kunst und Brunch miteinander verbinden.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, die Arty Trendy",
+                        "seo": {
+                            "slug": "valerie-die-arty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 167,
                             "name": "Fondation de l’Hermitage",
+                            "lead": "Oberhalb von Lausanne zeigt das berühmte Museum in einer wunderschönen natürlichen Umgebung Werke von internationaler Bedeutung.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bbcicfsjabhhhfvmrouq",
+                                    "copyright": "© Laurent Mäusli, Fondation de l'Hermitage",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "fondation-de-lhermitage",
+                                "hreflang": "/de/entdecken/fondation-de-lhermitage"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5281459",
@@ -585,19 +870,36 @@
                     "id": 224,
                     "name": "Les Docks",
                     "content": "Ihr liebt Musik? Im Konzertsaal Les Docks treten grosse Namen in einem kleinen Rahmen auf. Die Nähe zu den Künstlerinnen und Künstlern macht die Konzerte zu einem unvergesslichen Erlebnis.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 27
+                        "id": 27,
+                        "name": "Valérie, die Arty Trendy",
+                        "seo": {
+                            "slug": "valerie-die-arty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 375,
                             "name": "Konzertsaal Les Docks",
+                            "lead": "Der Konzertsaal der Docks räumt der zeitgenössischen Musik aus dem In- und Ausland einen Ehrenplatz ein.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ufOMDYXiTO0cprWBb7iG4kYoY2kJOM3HKuopphwQ",
+                                    "copyright": "© Thomas Ebert",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "konzertsaal-les-docks",
+                                "hreflang": "/de/entdecken/konzertsaal-les-docks"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.522407",
@@ -611,19 +913,36 @@
                     "id": 235,
                     "name": "Museen mudac und Photo Elysée",
                     "content": "Das Kantonale Museum für Design und angewandte Gegenwartskunst (mudac) und das Photo Elysée sind im gleichen Gebäude untergebracht und ich muss sagen, die Architektur mit ihren klaren Linien ist wirklich grossartig. Ich liebe es, dort die laufenden Ausstellungen zu besuchen und im Café Lumen im mudac einen Kaffee zu trinken. Und wisst ihr was? Wenn die Sonne scheint, setze ich mich sogar im Winter gerne auf die Terrasse. Es ist einfach genial, sich aufwärmen und gleichzeitig die schöne Aussicht geniessen zu können.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, die bezaubernde Illustratorin",
+                        "seo": {
+                            "slug": "amelie-die-bezaubernde-illustratorin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 290,
                             "name": "mudac",
+                            "lead": "Das Museum mudac ist die einzige Institution der Westschweiz, die ganz dem Design gewidmet ist. Seine Sammlungen Design, zeitgenössische Glaskunst, zeitgenössischer Schmuck, Grafik und Keramik sind absolut empfehlenswert!",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mudac-qfst8p",
+                                    "copyright": "© KHASHAYAR JAVANMARDI",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "mudac-museum-fur-design-und-angewandte-kunst",
+                                "hreflang": "/de/entdecken/mudac-museum-fur-design-und-angewandte-kunst"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5181393",
@@ -634,6 +953,18 @@
                         {
                             "id": 106,
                             "name": "Photo Elysée",
+                            "lead": "Photo Elysée ist schweiz- und weltweit eins der bedeutendsten Museen, das ausschliesslich der Fotografie gewidmet ist.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "7adfa48dd230ca74",
+                                    "copyright": "© Lorenz Richard",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "musee-de-lelysee",
+                                "hreflang": "/de/entdecken/musee-de-lelysee"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5184452",
@@ -647,23 +978,36 @@
                     "id": 238,
                     "name": "Olympisches Museum",
                     "content": "Im Olympischen Museum auf der 100-Meter-Bahn zu laufen und sich durch Lichtstrahlen mit Usain Bolt zu messen – unglaublich! Es gibt auch andere spannende Aktivitäten zu entdecken und das TOM Café im obersten Stock bietet jeweils am Wochenende ein Buffet à discrétion an. Kleiner Tipp: Es lohnt sich, zu reservieren.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 60,
-                            "name": "Sport"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, die bezaubernde Illustratorin",
+                        "seo": {
+                            "slug": "amelie-die-bezaubernde-illustratorin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 337,
                             "name": "Das Olympische Museum",
+                            "lead": "Das offizielle Museum des IOK am Genfersee ist dem olympischen Gedanken gewidmet und die meistbesuchte Kulturstätte Lausannes.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q2sv6almukovljqc4qnh",
+                                    "copyright": "© Le Musée Olympique",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "das-olympische-museum",
+                                "hreflang": "/de/entdecken/das-olympische-museum"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5087324",
@@ -677,27 +1021,36 @@
                     "id": 241,
                     "name": "Parkanlage Vallée de la jeunesse",
                     "content": "Als leidenschaftliche Inlineskaterin ist die Parkanlage Vallée de la jeunesse für mich ein magischer Ort, wo ich trainieren und Spass haben kann. Skateboarderinnen und Inlineskater sausen hier die steile, ein Kilometer lange Strecke bis zur Vidy-Ebene hinunter. Der Park bietet aber weit mehr als das, so zum Beispiel einen Kinderspielplatz, ein Wellen-Parcours und sogar ein interaktives Wissenschaftsmuseum für Kinder, das Espaces des Inventions. An diesem vielseitigen Ort ist für alle etwas dabei.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 36,
-                            "name": "Famille"
-                        },
-                        {
-                            "id": 51,
-                            "name": "Nature"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 29
+                        "id": 29,
+                        "name": "Amélie, die bezaubernde Illustratorin",
+                        "seo": {
+                            "slug": "amelie-die-bezaubernde-illustratorin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 308,
                             "name": "Vallée de la Jeunesse",
+                            "lead": "Ein idealer Übungsplatz für Skateboarder und Rollschuhfahrer, die auf einer Strecke von einem Kilometer keine Strasse überqueren müssen.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "dnfg9e6xg3ve1rf0vukq",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "vallee-de-la-jeunesse",
+                                "hreflang": "/de/entdecken/vallee-de-la-jeunesse"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.520411",
@@ -711,23 +1064,36 @@
                     "id": 268,
                     "name": "Thelonica",
                     "content": "Musikalische Momente in einer ruhigen Atmosphäre, dafür steht der Verein Thelonica. Jeden Sommer bietet er an der Jetée de la Compagnie Konzerte bei Sonnenaufgang an. Auf dem vielseitigen Programm stehen Jazz sowie aktuelle, klassische und zeitgenössische Musik. Die einzigartige Stimmung der Morgendämmerung lädt zum Entdecken und Austauschen ein und fördert den inneren Frieden.",
-                    "tags": [
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        },
-                        {
-                            "id": 79,
-                            "name": "Insolite"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 33
+                        "id": 33,
+                        "name": "Luana, die kreative Seele",
+                        "seo": {
+                            "slug": "luana-die-kreative-seele"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 153,
                             "name": "Jetée de la Compagnie",
+                            "lead": "Die Jetée de la Compagnie ist eine saisonale Terrasse am Ufer des Genfersees in Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/de/entdecken/jetee-de-la-compagnie"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5087646",
@@ -741,23 +1107,36 @@
                     "id": 297,
                     "name": "Plateforme 10",
                     "content": "Für Kulturbegeisterte oder Fotografen wie mich ist das neue Kunstviertel von Lausanne ein absolutes Muss. Hier könnt ihr Museen besuchen oder einfach draussen den architektonischen Schmuckstücken entlang flanieren, auf einer der Terrassen unter den Bögen einen Drink schlürfen, das Kommen und Gehen der Passantinnen und Passanten beobachten oder euch vom Spiel von Licht und Schatten einnehmen lassen. Kleiner Tipp: Auf dem Veloweg könnt ihr den Kreisverkehr des Bahnhofs zu den Stosszeiten umgehen.",
-                    "tags": [
-                        {
-                            "id": 5,
-                            "name": "Architecture"
-                        },
-                        {
-                            "id": 29,
-                            "name": "Culture"
-                        }
-                    ],
                     "lausanner": {
-                        "id": 36
+                        "id": 36,
+                        "name": "Vincent, der cycle Flash",
+                        "seo": {
+                            "slug": "vincent-der-cycle-flash"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vincent-w2yz31",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
                     },
                     "pois": [
                         {
                             "id": 288,
                             "name": "Plateforme 10",
+                            "lead": "Das neue Kunstquartier PLATEFORME 10 ist ein einzigartiger Ort der Kultur.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "p10-sewsqq",
+                                    "copyright": "© Khashayar Javanmardi",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plateforme-10",
+                                "hreflang": "/de/entdecken/plateforme-10"
+                            },
                             "geolocations": [
                                 {
                                     "latitude": "46.5184198",
