@@ -12,6 +12,7 @@
     height?: number;
     class?: string;
     imgClass?: string;
+    onclick?: (event: unknown) => void;
   }
 
   const {
@@ -22,7 +23,8 @@
     transform,
     crop = true,
     width = 0,
-    height = 0
+    height = 0,
+    onclick
   }: Props = $props();
 
   let figure: HTMLElement | undefined = $state();
@@ -33,6 +35,34 @@
   let style = twMerge('bg-loading animate-pulse', additionalClass);
 </script>
 
-<figure bind:this={figure} class={style}>
-  <Image class={imgClass} {src} {alt} {width} {height} {transform} {crop} onload={removeBackground} />
-</figure>
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+{#if onclick}
+  <button {onclick}>
+    <figure bind:this={figure} class={style} {onclick}>
+      <Image
+        class={imgClass}
+        {src}
+        {alt}
+        {width}
+        {height}
+        {transform}
+        {crop}
+        onload={removeBackground}
+      />
+    </figure>
+  </button>
+{:else}
+  <figure bind:this={figure} class={style} {onclick}>
+    <Image
+      class={imgClass}
+      {src}
+      {alt}
+      {width}
+      {height}
+      {transform}
+      {crop}
+      onload={removeBackground}
+    />
+  </figure>
+{/if}
