@@ -1,4 +1,7 @@
 {
     "contact-us": "Contact us",
-    "btn.learnMore": "Learn more"
+    "btn.learnMore": "Learn more",
+    "btn.showMoreThemes": "",
+    "poi.favorite.from": "{{poi}} ... {{lausanner}}",
+    "other-tips": ""
 }
