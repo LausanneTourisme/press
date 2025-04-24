@@ -19,7 +19,9 @@ const routeTypes: Record<Locale, Record<string, string>> = {
   fr: routeTypeFr
 };
 
-export const config: Config = {
+export const config: Config<{
+  value?: any;
+}> = {
   initLocale: defaultLocale,
   fallbackLocale: defaultLocale,
   cache: dev ? 0 : undefined, //no cache in dev
@@ -113,7 +115,7 @@ export const config: Config = {
         const slug = routeTypes[locale][`${type}.slug`];
         return {
           locale,
-          key: 'pages',
+          key: 'page',
           routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
           loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
         }
@@ -127,8 +129,8 @@ export const config: Config = {
       loader: async () => (await import(`./${locale}/pages/themes.json`)).default,
     })),
 
-      //create all translations for specific theme's view
-      ...Object.values(Themes)
+    //create all translations for specific theme's view
+    ...Object.values(Themes)
       .flatMap(theme => supportedLocales.map(locale => {
         return {
           locale,

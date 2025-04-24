@@ -3,10 +3,11 @@ import { setupServer } from 'msw/node';
 
 export const handlers = [
     graphql.query('GetPosts', async ({ variables }) => {
+        console.warn("mock request: GetPosts");
         if (variables.type === 'press_release, press_kit') {
             return HttpResponse.json(await import(`./responses/posts/press_kit.${variables.locale}.json`));
         } else if (variables.type === "post") {
-            if(variables.highlighted){
+            if (variables.highlighted) {
                 return HttpResponse.json(await import(`./responses/posts/posts.highlighted.${variables.locale}.json`));
             }
             return HttpResponse.json(await import(`./responses/posts/posts.${variables.locale}.json`));
@@ -28,12 +29,15 @@ export const handlers = [
         }
     }),
     graphql.query('GetGroup', async ({ variables }) => {
+        console.warn("mock request: GetGroup");
         return HttpResponse.json(await import(`./responses/groups/posts.${variables.locale}.json`));
     }),
-    graphql.query('GetFavorites',async ({ variables }) => {
+    graphql.query('GetFavorites', async ({ variables }) => {
+        console.warn("mock request: GetFavorites");
         return HttpResponse.json(await import(`./responses/favorites/${variables.theme}.${variables.locale}.json`));
     }),
-    graphql.query('GetAgendaEvents',async () => {
+    graphql.query('GetAgendaEvents', async () => {
+        console.warn("mock request: GetAgendaEvents");
         return HttpResponse.json(await import(`./responses/events/all.json`));
     }),
 ];

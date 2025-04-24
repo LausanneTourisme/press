@@ -42,7 +42,7 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   return `https://medialibrary.lausanne-tourisme.ch?registration&${lang}`;
 }
 
-export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme } = { forceLocale: undefined, theme: undefined }): string => {
+export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme, suffix?: string } = { forceLocale: undefined, theme: undefined }): string => {
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
   
@@ -56,6 +56,9 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
     return `/${lang}/${slug}/${themeSlug}/`;
   }
 
+
+  if (!slug) return `/${lang}`;
+  if (options.suffix) return `/${lang}/${slug}/${options.suffix}`;
   return `/${lang}/${slug}`;
 }
 
@@ -96,7 +99,7 @@ export const filterByTag = (data: Post[], tags: string | string[]) => {
     if (!post?.tags?.length) {
       return false;
     }
-    return tags.some(tag => post.tags.map(x => x.name).includes(tag))
+    return tags.some(tag => post.tags?.map(x => x.name).includes(tag))
   })
     .sort((a: Post, b: Post): number => {
       if ((Number)(a.published_at) < (Number)(b.published_at)) return 1;

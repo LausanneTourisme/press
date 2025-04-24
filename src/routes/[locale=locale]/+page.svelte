@@ -279,6 +279,8 @@
   -->
 <Container fullscreen={true} class="mb-12">
   <Themes
+    title={$t('themes.title')}
+    paragraph={$t('themes.description')}
     expanded={displayAllThemes}
     onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
   />

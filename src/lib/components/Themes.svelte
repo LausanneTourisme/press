@@ -10,10 +10,18 @@
   type Props = {
     class?: string;
     expanded?: boolean;
+    title: string;
+    paragraph: string;
     onShowMore?: () => void;
   };
 
-  const { class: additionalClass, onShowMore = () => {}, expanded = false }: Props = $props();
+  const {
+    class: additionalClass,
+    title,
+    paragraph,
+    onShowMore = () => {},
+    expanded = false
+  }: Props = $props();
 
   const chunks = chunkify(Object.values(Themes));
   let showMore: boolean = $state(expanded);
@@ -26,10 +34,10 @@
 
 <div class="p-6 md:pt-16">
   <Heading class="text-center ">
-    {$t('page.themes.title')}
+    {title}
   </Heading>
   <Paragraph centered>
-    {$t('page.themes.paragraph')}
+    {paragraph}
   </Paragraph>
 </div>
 

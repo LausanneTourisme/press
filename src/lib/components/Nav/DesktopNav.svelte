@@ -21,7 +21,7 @@
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={route(RouteTypes.Home)}
+    href={route(RouteTypes.Home, {forceLocale: $locale as Locale})}
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo />
@@ -78,7 +78,7 @@
   </div>
   <!-- End desktop menu -->
   <div class="flex h-full items-center justify-between px-6">
-    <Button href={route(RouteTypes.Contact)} class="invertable block px-3 dark:text-white" tag="a">
+    <Button href={route(RouteTypes.Contact, {forceLocale: $locale as Locale})} class="invertable block px-3 dark:text-white" tag="a">
       {$t('common.contact-us')}
     </Button>
 

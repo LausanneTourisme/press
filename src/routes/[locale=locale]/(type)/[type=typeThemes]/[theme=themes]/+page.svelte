@@ -1,29 +1,33 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { ThemeKeys, type Theme } from '$enums';
+  import { RouteTypes, ThemeKeys, type Theme } from '$enums';
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import Swiper from '$lib/components/Swiper.svelte';
+  import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t } from '$lib/translations';
-  import type { Post } from '$types';
+  import type { Favorite, Post } from '$types';
   import { ArrowRight } from 'lucide-svelte';
   import moment from 'moment';
   import { fade } from 'svelte/transition';
+  import { twMerge } from 'tailwind-merge';
 
-  const highlightedArticle: Post|undefined = page.data.payload.highlightedArticle
-  const articles: Post[] = page.data.payload.articles
-  const theme: Theme = page.data.theme
-  const title = highlightedArticle?.name ?? page.data.seo.title;
+  const highlightedArticle: Post | undefined = $derived(page.data.payload.highlightedArticle);
+  const title: string = $derived(highlightedArticle?.name ?? page.data.seo.title);
+  const articles: Post[] = $derived(page.data.payload.articles);
+  const favorites: Favorite[] = $derived(page.data.payload.favorites);
+  const theme: Theme = page.data.theme;
+  const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
   if (typeof window !== 'undefined') {
     console.log(page.data.payload);
-    window.moment = moment
+    window.moment = moment;
   }
 </script>
+
 <!--
 	-
 	-
@@ -34,27 +38,42 @@
 	-
 	-->
 <Container width="medium" class="relative mt-8">
-  <div class="py-5 my-2"></div>
+  <div class="my-2 py-5"></div>
   <div in:fade>
     <Heading tag="h1">
-        {title}
+      {title}
     </Heading>
-    <div class="md:flex justify-between items-top">
-        <div class="md:w-1/2 pr-4">
-            <Paragraph class="md:mb-12">
-                {highlightedArticle?.summary ?? page.data.seo.description}
-            </Paragraph>
-            {#if highlightedArticle}
-                <Button href="{/*route(Web.articles)}/{data[0]?.id}/{data[0]?.seo.slug*/undefined}" class="inline-flex items-center">
-                    {$t("themes.read-more")}
-                    <ArrowRight class="w-4 h-4 ml-2"/>
-                </Button>
-            {/if}
-        </div>
-        <Figure class="md:w-1/2 h-72" src={ThemeDetails[ThemeKeys[theme]].image} alt={title} imgClass="rounded" transform={ThemeDetails[ThemeKeys[theme]]?.transform}/>
-        <div class="{ThemeDetails[ThemeKeys[theme]].background} absolute rounded top-4 left-16 md:left-32 h-56 md:h-72 w-2/3 md:w-1/2 -z-10"></div>
+    <div class="items-top justify-between md:flex">
+      <div class="pr-4 md:w-1/2">
+        <Paragraph class="md:mb-12">
+          {highlightedArticle?.summary ?? page.data.seo.description}
+        </Paragraph>
+        {#if highlightedArticle}
+          <Button
+            tag="a"
+            href={route(RouteTypes.Articles, { suffix: highlightedArticle?.seo?.slug })}
+            class="inline-flex items-center"
+          >
+            {$t('themes.read-more')}
+            <ArrowRight class="ml-2 h-4 w-4" />
+          </Button>
+        {/if}
+      </div>
+      <Figure
+        class="h-72 md:w-1/2"
+        src={ThemeDetails[ThemeKeys[theme]].image}
+        alt={title}
+        imgClass="rounded"
+        transform={ThemeDetails[ThemeKeys[theme]]?.transform}
+      />
+      <div
+        class={twMerge(
+          ThemeDetails[ThemeKeys[theme]].color,
+          'absolute top-4 left-16 -z-10 h-56 w-2/3 rounded md:left-32 md:h-72 md:w-1/2'
+        )}
+      ></div>
     </div>
-</div>
+  </div>
 </Container>
 <!--
 	-
@@ -65,11 +84,11 @@
 	-
 	-
 	-->
-	<Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
-		<Container width="medium">
-      todo
-      <!-- <Swiper containerClass={"md:m-0 py-4 flex gap-x-4"}> -->
-        <!-- {#each articles as article}
+<Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
+  <Container width="medium">
+    todo swiper
+    <!-- <Swiper containerClass={"md:m-0 py-4 flex gap-x-4"}> -->
+    <!-- {#each articles as article}
           {@const publishedAt = DateTime.fromSeconds(parseInt(article.published_at)).setLocale($locale)}
           {#key article.seo.slug}
             <Clickable href={`${route(Web.articles)}/${article.id}/${article.seo.slug}`}
@@ -93,5 +112,47 @@
           {/key}
         {/each}
       </Swiper> -->
-    </Container>
   </Container>
+</Container>
+<!--
+    -
+    -
+    -
+    - LAUSANNERS >>>>>>>>>>>>>>>>>>>>>>>
+    -
+    -
+    -
+    -->
+<Container width="medium" class="mt-4 xl:-mb-12">
+  <Heading>
+    # {$t('themes.lausanners.title')}
+  </Heading>
+  <div class="flex">
+    <div class="w-2/3 xl:w-1/2">
+      <Paragraph>
+        {$t('themes.lausanners.paragraph1')}
+      </Paragraph>
+      <Paragraph>
+        {$t('themes.lausanners.paragraph2', { value: $t(`themes.${theme}.title`) })}
+      </Paragraph>
+      <Button href="https://www.lausanne-tourisme.ch/{$locale}/the-lausanner/" tag="a">
+        {$t('themes.lausanners.button')}
+      </Button>
+    </div>
+    <div class="flex w-1/3 items-center xl:w-1/2">
+      <div class="h-32 xl:h-64">
+        <Figure src={themeInformation.head} class="aspect-square max-h-32 xl:max-h-64" />
+      </div>
+    </div>
+  </div>
+</Container>
+<!--
+    -
+    -
+    -
+    - MAP >>>>>>>>>>>>>>>>>>>>>>>
+    -
+    -
+    -
+    -->
+<!-- <Map /> -->
