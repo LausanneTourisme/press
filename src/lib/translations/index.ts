@@ -20,7 +20,10 @@ const routeTypes: Record<Locale, Record<string, string>> = {
 };
 
 export const config: Config<{
+  //this attributes are used only for TS warnings...
   value?: any;
+  poi?: string;
+  lausanner?: string;
 }> = {
   initLocale: defaultLocale,
   fallbackLocale: defaultLocale,
