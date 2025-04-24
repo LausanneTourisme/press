@@ -5,6 +5,7 @@
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import Heading from '$lib/components/Heading.svelte';
+  import Map from '$lib/components/Map/Map.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
@@ -123,7 +124,7 @@
     -
     -
     -->
-<Container width="medium" class="mt-4 xl:-mb-12">
+<Container width="medium" class="mt-4">
   <Heading>
     # {$t('themes.lausanners.title')}
   </Heading>
@@ -155,4 +156,10 @@
     -
     -
     -->
-<!-- <Map /> -->
+<Container width="padded">
+  <Map
+    {favorites}
+    themeColor={themeInformation.color}
+    listBorderColor={themeInformation.borderColor}
+  />
+</Container>
