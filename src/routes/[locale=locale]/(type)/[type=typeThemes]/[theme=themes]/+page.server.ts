@@ -1,6 +1,6 @@
 import { dev } from '$app/environment';
 import { type RouteType, type Theme } from '$enums';
-import { ENABLE_OFFLINE_MODE } from '$env/static/private';
+import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
 import { filterByTag } from '$lib/helpers';
 import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
@@ -22,7 +22,7 @@ interface Parent {
 };
 
 export const load: ServerLoad = async ({ parent }) => {
-    if(dev && ENABLE_OFFLINE_MODE){
+    if(dev && PUBLIC_ENABLE_OFFLINE_MODE === "true"){
         //MOCK fetch requests
         server.listen()
     }
