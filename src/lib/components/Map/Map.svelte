@@ -10,11 +10,12 @@
   import Image from '../Media/Image.svelte';
   import Link from '../Link.svelte';
   import { defaultLocale, locale, t, type Locale } from '$lib/translations';
-  import { PUBLIC_CLOUDINARY_UPLOAD_PRESET, PUBLIC_ENABLE_OFFLINE_MODE, PUBLIC_MAPTILER_URL } from '$env/static/public';
+  import { PUBLIC_CLOUDINARY_UPLOAD_PRESET, PUBLIC_MAPTILER_URL } from '$env/static/public';
   import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
   import { Cloudinary } from '$lib/cloudinary';
   import { getBoundsFromMarkers } from '$lib/coordinates';
+  import { isOfflineMode } from '$lib/helpers';
 
   type Props = {
     class?: string;
@@ -24,12 +25,11 @@
   };
 
   const { class: additionalClass, themeColor, listBorderColor, favorites }: Props = $props();
-  const {Map, NavigationControl, Popup} = maplibregl;
+  const { Map, NavigationControl, Popup } = maplibregl;
   let favoriteId: number | undefined = $state();
-	let mapContainer: HTMLDivElement;
-	const markers: Marker[] = [];
+  let mapContainer: HTMLDivElement;
+  const markers: Marker[] = [];
   let map: maplibregl.Map;
-
 
   let aside: {
     show: boolean;
@@ -111,92 +111,107 @@
     );
   };
 
-	const getMarker = (favoriteId: undefined|number) => markers.find((m) => m.key === favoriteId);
-  
-  const newPopup = ({ id, background, img, title }: { id: number, background: string, img: string, title: string }): maplibregl.Popup => {
-		const popup = new Popup({ className: 'popup', closeOnClick: true })
-			.setHTML(`
+  const getMarker = (favoriteId: undefined | number) => markers.find((m) => m.key === favoriteId);
+
+  const newPopup = ({
+    id,
+    background,
+    img,
+    title
+  }: {
+    id: number;
+    background: string;
+    img: string;
+    title: string;
+  }): maplibregl.Popup => {
+    const popup = new Popup({ className: 'popup', closeOnClick: true }).setHTML(`
 				<div data-key="${id}" class="${background} text-center max-w-[320px] rounded-l-[3px] pl-1">
 						<h3 class="p-1 text-white">${title}</h3>
 				</div>
 			`);
 
-		popup.on('open', () => {
-			popup._closeButton?.addEventListener('click', closeAside);
-		}).on('close', () => {
-			aside.show = false;
-			getMarker(favoriteId)?.popup?.remove();
-		});
+    popup
+      .on('open', () => {
+        popup._closeButton?.addEventListener('click', closeAside);
+      })
+      .on('close', () => {
+        aside.show = false;
+        getMarker(favoriteId)?.popup?.remove();
+      });
 
-		return popup;
-	};
+    return popup;
+  };
 
-	const mapClick = (event: MouseEvent) => {
-		let target: HTMLElement|null|undefined = event.target as HTMLElement|null|undefined;
+  const mapClick = (event: MouseEvent) => {
+    let target: HTMLElement | null | undefined = event.target as HTMLElement | null | undefined;
 
-    if(!target) return;
+    if (!target) return;
 
-		if (['PATH', 'SVG'].includes(target.nodeName)) {
-			while (target && target.classList.contains('maplibregl-marker')) {
-				target = target.parentElement as HTMLElement|null|undefined;
-			}
+    if (['PATH', 'SVG'].includes(target.nodeName)) {
+      while (target && target.classList.contains('maplibregl-marker')) {
+        target = target.parentElement as HTMLElement | null | undefined;
+      }
 
-			target?.click();
-		}
-	};
+      target?.click();
+    }
+  };
 
   onMount(() => {
-		if (!favorites.length) {
-			console.error('An expected error occurred while getting favorites, please refresh.');
-		}
-    
-		map = new Map({
-			container: mapContainer,
-			style: PUBLIC_MAPTILER_URL,
-			center: [initialState.lng, initialState.lat],
-			zoom: initialState.zoom
-		});
+    if (!favorites.length) {
+      console.error('An expected error occurred while getting favorites, please refresh.');
+    }
 
-    
-		map.addControl(new NavigationControl(), 'top-right');
-    
-		map.on('wheel', event => {
-			if (event.originalEvent.ctrlKey) { // Check if CTRL key is pressed
-				event.originalEvent.preventDefault(); // Prevent chrome/firefox default behavior
-				if (!map.scrollZoom._enabled) map.scrollZoom.enable(); // Enable zoom only if it's disabled
-			} else {
-				if (map.scrollZoom._enabled) map.scrollZoom.disable(); // Disable zoom only if it's enabled
-			}
-		});
+    map = new Map({
+      container: mapContainer,
+      style: PUBLIC_MAPTILER_URL,
+      center: [initialState.lng, initialState.lat],
+      zoom: initialState.zoom
+    });
+
+    map.addControl(new NavigationControl(), 'top-right');
+
+    map.on('wheel', (event) => {
+      if (event.originalEvent.ctrlKey) {
+        // Check if CTRL key is pressed
+        event.originalEvent.preventDefault(); // Prevent chrome/firefox default behavior
+        if (!map.scrollZoom._enabled) map.scrollZoom.enable(); // Enable zoom only if it's disabled
+      } else {
+        if (map.scrollZoom._enabled) map.scrollZoom.disable(); // Disable zoom only if it's enabled
+      }
+    });
 
     favorites.forEach((favorite: Favorite) => {
-			const { pois, lausanner } = favorite;
+      const { pois, lausanner } = favorite;
 
-			pois?.forEach((poi: Poi) => {
-				const { geolocations } = poi;
-				geolocations?.forEach((geolocation: Geolocation) => {
-					markers.push({
-						key: favorite.id as number,
-						coordinates: { lat: parseFloat(geolocation.latitude), lng: parseFloat(geolocation.longitude) },
-						popup: newPopup({
-							id: favorite.id as number,
-							background: themeColor ?? "",
-							img: Cloudinary.make(`${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${lausanner?.medias?.at(0)?.cloudinary_id}`).url({ w: 60 }),
-							title: poi.name as string
-						}),
-						backgroundColor: themeColor
-					});
-				});
-			});
-		});
+      pois?.forEach((poi: Poi) => {
+        const { geolocations } = poi;
+        geolocations?.forEach((geolocation: Geolocation) => {
+          markers.push({
+            key: favorite.id as number,
+            coordinates: {
+              lat: parseFloat(geolocation.latitude),
+              lng: parseFloat(geolocation.longitude)
+            },
+            popup: newPopup({
+              id: favorite.id as number,
+              background: themeColor ?? '',
+              img: Cloudinary.make(
+                `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${lausanner?.medias?.at(0)?.cloudinary_id}`
+              ).url({ w: 60 }),
+              title: poi.name as string
+            }),
+            backgroundColor: themeColor
+          });
+        });
+      });
+    });
 
-    
-		if (markers.length) {
+    if (markers.length) {
       const boundsFromMarkers = getBoundsFromMarkers(markers);
-			map.fitBounds(boundsFromMarkers, {
-				padding: 20
-			});
-		}
+      map.fitBounds(boundsFromMarkers, {
+        padding: 20
+      });
+    }
 
     return () => map.remove();
   });
@@ -219,8 +234,10 @@
             >
               <X class="m-auto h-2 w-2" />
             </button>
+            <!-- TODO replace it by Image component-->
             <Figure
-              src={PUBLIC_ENABLE_OFFLINE_MODE ? '/pages/themes/user_not_found.png' : aside.image}
+              src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
+              useCloudinaryPreset={false}
               class="h-56 shadow"
               onclick={closeAside}
             />
@@ -235,10 +252,11 @@
             <Image
               class="h-12 w-12 rounded-full"
               alt=""
-              src={PUBLIC_ENABLE_OFFLINE_MODE
-                ? '/pages/themes/user_not_found.png'
+              useCloudinaryPreset={false}
+              src={isOfflineMode
+                ? '/images/pages/themes/user_not_found.png'
                 : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
-                  '/pages/themes/user_not_found.png')}
+                  '/images/pages/themes/user_not_found.png')}
               transform={{
                 g: 'north',
                 c: 'auto',

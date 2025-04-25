@@ -8,6 +8,7 @@
 
   interface ImageProps {
     src: string;
+    useCloudinaryPreset?: boolean,
     alt?: string;
     ignoreAutoSize?: boolean;
     height?: number;
@@ -20,6 +21,7 @@
 
   let {
     src,
+    useCloudinaryPreset = true,
     alt = '',
     ignoreAutoSize = false,
     height = undefined,
@@ -67,13 +69,14 @@
     }
 
     // filter locally-called images from API images with a cloudinary ID (that don't have "images" in their name)
-    if (!dev && !src.includes('http')) {
-      srcResolved = Cloudinary.make(`${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`).url({
+    if ((!dev && !src.includes('http')) || !src.startsWith('/images')) {
+      const path = useCloudinaryPreset ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}` : filename(src);
+      srcResolved = Cloudinary.make(path).url({
         ...resolution,
         ...transform
       });
     } else {
-      srcResolved = src.startsWith('/') ? `/images${src}` : `/images/${src}`;
+      srcResolved = src.startsWith('/') ? src : `/${src}`;
     }
   };
 

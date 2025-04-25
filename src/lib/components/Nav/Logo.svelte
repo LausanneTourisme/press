@@ -16,7 +16,7 @@
 </script>
 
 <Image
-  src="/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
+  src="/images/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
   alt="Lausanne Capitale Olympique"
   class={style}
 />

@@ -5,6 +5,7 @@
 
   interface Props {
     src?: string;
+    useCloudinaryPreset?: boolean;
     alt?: string;
     transform?: Transform;
     crop?: boolean;
@@ -19,6 +20,7 @@
     class: additionalClass,
     imgClass,
     src = '',
+    useCloudinaryPreset = true,
     alt = '',
     transform,
     crop = true,
@@ -42,6 +44,7 @@
     <figure bind:this={figure} class={style} {onclick}>
       <Image
         class={imgClass}
+        {useCloudinaryPreset}
         {src}
         {alt}
         {width}

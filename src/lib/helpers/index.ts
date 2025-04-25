@@ -1,7 +1,9 @@
 import { RouteTypes, type RouteType, type Theme } from "$enums";
+import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";
 import type { Post } from '$lib/types';
 
+export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
 export const maxMobileWidth = 1280;
 export const blankable = (href: string | undefined): string | undefined => href && href.includes('http') ? '_blank' : undefined;
 
@@ -45,7 +47,7 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme, suffix?: string } = { forceLocale: undefined, theme: undefined }): string => {
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
   const slug: string | undefined = t.get(`route.${type}.slug`);
-  
+
   if (!slug) return `/${lang}`;
 
   if (type === RouteTypes.Themes) {

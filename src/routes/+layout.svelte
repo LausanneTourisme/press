@@ -72,13 +72,13 @@
       >
         <Link withIcon={false} href="https://www.lausanne.ch" class="inline-flex w-full">
           <Image
-            src="/logo/partners/ville_de_lausanne.svg"
+            src="/images/logo/partners/ville_de_lausanne.svg"
             class="h-[48px] object-contain md:h-[84px]"
           />
         </Link>
         <Link withIcon={false} href="https://www.myvaud.ch/" class="inline-flex w-full">
           <Image
-            src="/logo/partners/vaud_promotion.svg"
+            src="/images/logo/partners/vaud_promotion.svg"
             class="mt-2 h-[16px] object-contain md:h-[29px]"
           />
         </Link>
@@ -87,20 +87,20 @@
           href="https://www.lausanne-montreux-congress.ch/"
           class="inline-flex w-full"
         >
-          <Image src="/logo/partners/lmc.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image src="/images/logo/partners/lmc.svg" class="h-[48px] object-contain md:h-[84px]" />
         </Link>
         <Link withIcon={false} href="https://www.myswitzerland.com/" class="inline-flex w-full">
           <Image
-            src="/logo/partners/suisse_tourisme_partner.svg"
+            src="/images/logo/partners/suisse_tourisme_partner.svg"
             class="h-[48px] w-[100px] object-contain md:h-[84px] md:w-[170px]"
           />
         </Link>
         <Link withIcon={false} href="https://www.t-l.ch/" class="inline-flex w-full">
-          <Image src="/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image src="/images/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
         </Link>
         <Link withIcon={false} href="https://www.tgv-lyria.com/" class="inline-flex w-full">
           <Image
-            src="/logo/partners/lyria.svg"
+            src="/images/logo/partners/lyria.svg"
             class="h-full w-full object-contain md:h-[84px]"
           />
         </Link>
@@ -257,7 +257,7 @@
           </ul>
         </nav>
         <div class="footer-logo flex w-full justify-center xl:mt-4 xl:justify-end">
-          <Image src="/logo/partners/lt_logo_white.svg" class="h-56 w-48 md:h-36 md:w-24" />
+          <Image src="/images/logo/partners/lt_logo_white.svg" class="h-56 w-48 md:h-36 md:w-24" />
         </div>
       </div>
     </section>

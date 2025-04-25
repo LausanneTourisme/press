@@ -4,7 +4,7 @@
   import { twMerge } from 'tailwind-merge';
   import Image from '../Media/Image.svelte';
   import { t } from '$lib/translations';
-  import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
+  import { isOfflineMode } from '$lib/helpers';
 
   type Props = {
     class?: string;
@@ -17,10 +17,10 @@
     favorite,
     onclick,
   }: Props = $props();
-  
+
   const poi: Poi|undefined = favorite.pois?.at(0);
   const lausanner = favorite.lausanner;
-  const lausannerImage = PUBLIC_ENABLE_OFFLINE_MODE ? '/pages/themes/user_not_found.png' : lausanner?.medias?.find(() => true)?.cloudinary_id ?? '/pages/themes/user_not_found.png'
+  const lausannerImage = isOfflineMode ? '/images/pages/themes/user_not_found.png' : lausanner?.medias?.find(() => true)?.cloudinary_id ?? '/images/pages/themes/user_not_found.png'
 </script>
 
 <button
@@ -31,6 +31,7 @@
   <figure class="h-full w-1/3 xl:w-[160px]">
     <Image
       src={lausannerImage}
+      useCloudinaryPreset={false}
       transform={{ gravity: 'north', c: 'auto', h: 200 }}
       alt={lausanner?.name?.replace(/,.+/gi, '')}
     />

@@ -26,25 +26,25 @@
     {
       name: $t('page.distinctions.trophies.first.name'),
       content: $t('page.distinctions.trophies.first.content'),
-      image: '/pages/home/articles/parc-musee-olympique.jpg',
+      image: '/images/pages/home/articles/parc-musee-olympique.jpg',
       link: page.data.translations[locale.get()]['page.distinctions.trophies.first.link']
     },
     {
       name: $t('page.distinctions.trophies.second.name'),
       content: $t('page.distinctions.trophies.second.content'),
-      image: '/pages/home/articles/52placestogo.jpg',
+      image: '/images/pages/home/articles/52placestogo.jpg',
       link: page.data.translations[locale.get()]['page.distinctions.trophies.second.link']
     },
     {
       name: $t('page.distinctions.trophies.third.name'),
       content: $t('page.distinctions.trophies.third.content'),
-      image: '/pages/home/articles/nature.jpg',
+      image: '/images/pages/home/articles/nature.jpg',
       link: page.data.translations[locale.get()]['page.distinctions.trophies.third.link']
     },
     {
       name: $t('page.distinctions.trophies.fourth.name'),
       content: $t('page.distinctions.trophies.fourth.content'),
-      image: '/pages/home/articles/best-small-city.jpg',
+      image: '/images/pages/home/articles/best-small-city.jpg',
       link: page.data.translations[locale.get()]['page.distinctions.trophies.fourth.link']
     }
   ];
@@ -127,7 +127,7 @@
     class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
   >
     <Image
-      src="/pages/home/port-de-pully.jpg"
+      src="/images/pages/home/port-de-pully.jpg"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       alt="Port de Pully"
       transform={{ g: 'west', c: 'auto' }}
@@ -148,7 +148,7 @@
   <Player
     autoplay={!isMobile}
     src="/videos/welcome_card_{$locale}.mp4"
-    poster="/pages/home/poster-video.png"
+    poster="/images/pages/home/poster-video.png"
     controls={true}
     onIntersecting={onVideoIntersecting}
     title="Welcome to Lausanne!"
@@ -187,7 +187,7 @@
       </div>
     </article>
     <Image
-      src="/pages/home/masonry/cathedrale.jpg"
+      src="/images/pages/home/masonry/cathedrale.jpg"
       transform={{ g: 'auto', c: 'fill', ar: '9:16' }}
       alt="Cathédrale de Lausanne"
       class="h-72 md:h-auto md:w-1/2"
@@ -221,7 +221,7 @@
       </div>
     </article>
     <Image
-      src="/pages/home/nouveautes-lacustre.jpg"
+      src="/images/pages/home/nouveautes-lacustre.jpg"
       alt=""
       class="h-72 md:h-auto md:w-1/2"
     />
@@ -243,7 +243,7 @@
       </div>
     </article>
     <Image
-      src="/pages/home/communiques-de-presse.jpg"
+      src="/images/pages/home/communiques-de-presse.jpg"
       transform={{ c: 'fill' }}
       alt=""
       class="h-72 md:h-auto md:w-1/2"
@@ -265,7 +265,7 @@
         </Button>
       </div>
     </article>
-    <Image src="/pages/home/exposition.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
+    <Image src="/images/pages/home/exposition.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
   </div>
 </Container>
 <!--
@@ -384,7 +384,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/olivia.jpg" alt="Olivia Bosshart" />
+            <Image src="/images/olivia.jpg" alt="Olivia Bosshart" />
           </div>
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
@@ -395,7 +395,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/laura.jpg" alt="Laura Ragonese" />
+            <Image src="/images/laura.jpg" alt="Laura Ragonese" />
           </div>
         </div>
         <Heading tag="h3">Laura Ragonese</Heading>
