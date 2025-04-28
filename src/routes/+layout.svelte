@@ -23,7 +23,7 @@
     <link rel="alternate" hreflang={route.lang} href={route.href} />
   {/each}
   <link rel="icon" href="/favicon.png" />
-  <link rel="canonical" href={`${page.data.seo.canonical}${page.url.hash}`} />
+  <link rel="canonical" href={`${page.data.seo.canonical}`} />
   <!-- Open Graph -->
   <meta property="twitter:image" content={page.data.seo.image} />
   <meta property="twitter:card" content="summary_large_image" />
