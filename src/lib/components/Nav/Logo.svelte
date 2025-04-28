@@ -15,8 +15,10 @@
   );
 </script>
 
-<Image
-  src="/images/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
-  alt="Lausanne Capitale Olympique"
-  class={style}
-/>
+{#key $locale}
+  <Image
+    src="/images/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
+    alt="Lausanne Capitale Olympique"
+    class={style}
+  />
+{/key}

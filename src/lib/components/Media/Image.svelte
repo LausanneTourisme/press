@@ -3,7 +3,6 @@
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { Cloudinary, type Transform } from '$lib/cloudinary';
   import { filename } from '$lib/helpers';
-  import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
   interface ImageProps {
@@ -80,7 +79,7 @@
     }
   };
 
-  onMount(generateImagePath);
+  $effect(generateImagePath);
 </script>
 
 {#key srcResolved}
