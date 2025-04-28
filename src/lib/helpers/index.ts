@@ -109,3 +109,13 @@ export const filterByTag = (data: Post[], tags: string | string[]) => {
       return 0;
     });
 };
+
+export function getTailwindColor(tailwindClass: string) {
+  const element = document.createElement('div');
+  element.className = tailwindClass;
+  document.body.appendChild(element);
+
+  const color = getComputedStyle(element).backgroundColor;
+  document.body.removeChild(element);
+  return color;
+}
