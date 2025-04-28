@@ -15,6 +15,7 @@
   import Image from '../Media/Image.svelte';
   import Paragraph from '../Paragraph.svelte';
   import LausannerCard from './LausannerCard.svelte';
+  import MarkerComponent from './Marker.svelte';
 
   type Props = {
     class?: string;
@@ -36,7 +37,7 @@
   let favoriteId: number | undefined = $state();
   let mapContainer: HTMLDivElement;
   const markers: Marker[] = [];
-  let map: maplibregl.Map;
+  let map: maplibregl.Map|undefined = $state();
 
   let aside: {
     show: boolean;
@@ -64,10 +65,12 @@
 
   const handleLausannerClick = ({
     favorite,
-    lausanner
+    lausanner,
+    isMarkerClick,
   }: {
     favorite: Favorite;
     lausanner?: Lausanner;
+    isMarkerClick?: boolean,
   }) => {
     const poi = favorite.pois?.at(0);
     favoriteId = favorite.id;
@@ -82,22 +85,19 @@
     aside.lausanner = lausanner ?? favorite.lausanner;
     aside.show = true;
 
-    /*
-    TODO
-    const { latitude, longitude } = poi.geolocations[0];
+    const geolocation = poi?.geolocations?.at(0);
 		const marker = getMarker(favorite.id);
 
-		if (!markerClick) marker?.marker?._element?.click();
+		if (!isMarkerClick) marker?.marker?._element?.click();
 
-		map.flyTo({
+		map?.flyTo({
 			center: [
-				longitude,
-				latitude
+				Number(geolocation?.longitude ?? ''),
+				Number(geolocation?.latitude ?? ''),
 			],
 			zoom: 15,
 			essential: true
 		});
-    */
   };
 
   const closeAside = () => {
@@ -108,11 +108,11 @@
 
     favoriteId = undefined;
 
-    // const boundsFromMarkers = getBoundsFromMarkers(markers);
+    const boundsFromMarkers = getBoundsFromMarkers(markers);
 
-    // map.fitBounds(boundsFromMarkers, {
-    // 	padding: 20
-    // });
+    map?.fitBounds(boundsFromMarkers, {
+    	padding: 20
+    });
   };
 
   const getLausannerUrl = (lausanner: Lausanner | undefined): string => {
@@ -128,6 +128,13 @@
   };
 
   const getMarker = (favoriteId: undefined | number) => markers.find((m) => m.key === favoriteId);
+
+  const markerClick = (marker: Marker) => {
+		getMarker(favoriteId)?.popup?.remove();
+		const favorite: Favorite = favorites.find((favorite: Favorite) => favorite.id === marker.key)!;
+
+    handleLausannerClick({favorite, lausanner: favorite.lausanner, isMarkerClick: true})
+  }
 
   const newPopup = ({
     id,
@@ -190,9 +197,9 @@
       if (event.originalEvent.ctrlKey) {
         // Check if CTRL key is pressed
         event.originalEvent.preventDefault(); // Prevent chrome/firefox default behavior
-        if (!map.scrollZoom._enabled) map.scrollZoom.enable(); // Enable zoom only if it's disabled
+        if (!map?.scrollZoom._enabled) map?.scrollZoom.enable(); // Enable zoom only if it's disabled
       } else {
-        if (map.scrollZoom._enabled) map.scrollZoom.disable(); // Disable zoom only if it's enabled
+        if (map?.scrollZoom._enabled) map?.scrollZoom.disable(); // Disable zoom only if it's enabled
       }
     });
 
@@ -229,7 +236,7 @@
       });
     }
 
-    return () => map.remove();
+    return () => map?.remove();
   });
 </script>
 
@@ -310,10 +317,16 @@
   {/if}
   <!--display map without lausanners if problem on loading-->
   <section
-    class="map-wrap relative h-full w-full {favorites.length ? 'md:w-3/5' : ''} my-2 md:my-0"
+    class="map-wrap relative h-full w-full {favorites.length ? 'md:w-3/5' : ''} my-2 md:my-0 overflow-hidden"
   >
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class="map h-full w-full" bind:this={mapContainer} onclick={mapClick}></div>
+    <div id="map" class="h-full w-full" bind:this={mapContainer} onclick={mapClick}></div>
   </section>
 </div>
+
+{#if map}
+  {#each markers as marker }
+    <MarkerComponent {marker} {map} onclick={markerClick}/>
+  {/each}
+{/if}
