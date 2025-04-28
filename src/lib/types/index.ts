@@ -5,6 +5,8 @@ import maplibregl from "maplibre-gl";
 
 export type * from './nova';
 
+export type MaybePromise<T> = T | Promise<T> | PromiseLike<T>;
+
 export type MenuItem = {
     title: string,
     link: string,
