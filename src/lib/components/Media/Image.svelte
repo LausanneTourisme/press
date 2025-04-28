@@ -8,6 +8,7 @@
   interface ImageProps {
     src: string;
     useCloudinaryPreset?: boolean,
+    title?: string;
     alt?: string;
     ignoreAutoSize?: boolean;
     height?: number;
@@ -21,6 +22,7 @@
   let {
     src,
     useCloudinaryPreset = true,
+    title,
     alt = '',
     ignoreAutoSize = false,
     height = undefined,
@@ -87,7 +89,7 @@
     bind:this={image}
     src={srcResolved}
     {alt}
-    title={alt}
+    title={title ?? alt}
     loading="lazy"
     class={style}
     {onload}
