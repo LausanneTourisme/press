@@ -1,30 +1,37 @@
 <script lang="ts">
-  import type { Favorite, Geolocation, Lausanner, Marker, Poi } from '$types';
-  import { twMerge } from 'tailwind-merge';
-  import LausannerCard from './LausannerCard.svelte';
-  import { fade } from 'svelte/transition';
-  import { ArrowRight, SquareArrowOutUpRight, X } from 'lucide-svelte';
-  import Figure from '../Figure.svelte';
-  import Heading from '../Heading.svelte';
-  import Paragraph from '../Paragraph.svelte';
-  import Image from '../Media/Image.svelte';
-  import Link from '../Link.svelte';
-  import { defaultLocale, locale, t, type Locale } from '$lib/translations';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET, PUBLIC_MAPTILER_URL } from '$env/static/public';
-  import maplibregl from 'maplibre-gl';
-  import { onMount } from 'svelte';
   import { Cloudinary } from '$lib/cloudinary';
   import { getBoundsFromMarkers } from '$lib/coordinates';
   import { isOfflineMode } from '$lib/helpers';
+  import { defaultLocale, locale, t, type Locale } from '$lib/translations';
+  import type { Favorite, Geolocation, Lausanner, Marker, Poi } from '$types';
+  import { ArrowRight, SquareArrowOutUpRight, X } from 'lucide-svelte';
+  import maplibregl from 'maplibre-gl';
+  import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+  import { twMerge } from 'tailwind-merge';
+  import Heading from '../Heading.svelte';
+  import Link from '../Link.svelte';
+  import Image from '../Media/Image.svelte';
+  import Paragraph from '../Paragraph.svelte';
+  import LausannerCard from './LausannerCard.svelte';
 
   type Props = {
     class?: string;
     themeColor?: string;
     listBorderColor?: string;
     favorites: Favorite[];
+    onclose?: () => void;
   };
 
-  const { class: additionalClass, themeColor, listBorderColor, favorites }: Props = $props();
+  const {
+    class: additionalClass,
+    themeColor,
+    listBorderColor,
+    favorites,
+    onclose
+  }: Props = $props();
+
   const { Map, NavigationControl, Popup } = maplibregl;
   let favoriteId: number | undefined = $state();
   let mapContainer: HTMLDivElement;
@@ -68,7 +75,9 @@
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
     aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? '') : ''; // { w: 700 }
-    aside.imageName = poi?.medias?.at(0) ? (poi.medias[0].public_name as string|undefined ?? '') : '';
+    aside.imageName = poi?.medias?.at(0)
+      ? ((poi.medias[0].public_name as string | undefined) ?? '')
+      : '';
     aside.imageCopyright = poi?.medias?.at(0) ? (poi.medias[0].copyright ?? '') : '';
     aside.lausanner = lausanner ?? favorite.lausanner;
     aside.show = true;
@@ -92,6 +101,7 @@
   };
 
   const closeAside = () => {
+    onclose?.();
     aside.show = false;
     // TODO
     // getMarker(favoriteId)?.popup?.remove();
@@ -238,11 +248,9 @@
               class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
               onclick={closeAside}
             >
-              <X class="m-auto h-3 w-3" strokeWidth={3}/>
+              <X class="m-auto h-3 w-3" strokeWidth={3} />
             </button>
-            <button
-            class="w-full h-56 shadow"
-            onclick={closeAside}>
+            <button class="h-56 w-full shadow" onclick={closeAside}>
               <Image
                 src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
                 alt={aside.imageCopyright}

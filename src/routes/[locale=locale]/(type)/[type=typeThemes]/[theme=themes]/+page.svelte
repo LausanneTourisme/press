@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
+  import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
@@ -156,10 +158,12 @@
     -
     -
     -->
+<Anchor name="theme-map"/>
 <Container width="padded">
   <Map
     {favorites}
     themeColor={themeInformation.color}
     listBorderColor={themeInformation.borderColor}
+    onclose={() => goto('#theme-map')}
   />
 </Container>
