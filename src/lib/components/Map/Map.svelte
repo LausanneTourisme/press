@@ -36,12 +36,16 @@
     title: string;
     content: string;
     image: string;
+    imageName: string;
+    imageCopyright: string;
     lausanner: Lausanner | undefined;
   } = $state({
     show: false,
     title: '',
     content: '',
     image: '',
+    imageName: '',
+    imageCopyright: '',
     lausanner: undefined
   });
 
@@ -64,6 +68,8 @@
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
     aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? '') : ''; // { w: 700 }
+    aside.imageName = poi?.medias?.at(0) ? (poi.medias[0].public_name as string|undefined ?? '') : '';
+    aside.imageCopyright = poi?.medias?.at(0) ? (poi.medias[0].copyright ?? '') : '';
     aside.lausanner = lausanner ?? favorite.lausanner;
     aside.show = true;
 
@@ -232,15 +238,18 @@
               class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
               onclick={closeAside}
             >
-              <X class="m-auto h-2 w-2" />
+              <X class="m-auto h-3 w-3" strokeWidth={3}/>
             </button>
-            <!-- TODO replace it by Image component-->
-            <Figure
-              src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
-              useCloudinaryPreset={false}
-              class="h-56 shadow"
-              onclick={closeAside}
-            />
+            <button
+            class="w-full h-56 shadow"
+            onclick={closeAside}>
+              <Image
+                src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
+                alt={aside.imageCopyright}
+                useCloudinaryPreset={false}
+                class="h-full w-full"
+              />
+            </button>
             <Heading tag="h3">
               {aside.title}
             </Heading>
