@@ -158,7 +158,7 @@
     -
     -
     -->
-<Anchor name="theme-map"/>
+<Anchor name="theme-map" />
 <Container width="padded">
   <Map
     {favorites}
@@ -166,4 +166,5 @@
     listBorderColor={themeInformation.borderColor}
     onclose={() => goto('#theme-map')}
   />
+  <!-- TODO fix scrolling on close -->
 </Container>
