@@ -160,69 +160,70 @@
           <LausannerCard {favorite} class={listBorderColor} onclick={handleLausannerClick} />
         {/each}
       </div>
-      {#if aside.show}
-        <div class="aside-popup h-full overflow-y-scroll p-4" transition:fade>
-          <div class="relative">
+      <div
+        class={twMerge('aside-popup h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
+        transition:fade
+      >
+        <div class="relative">
+          <button
+            class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
+            onclick={closeAside}
+          >
+            <X class="m-auto h-3 w-3" strokeWidth={3} />
+          </button>
+          <button class="h-56 w-full shadow" onclick={closeAside}>
+            <Image
+              src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
+              alt={aside.imageCopyright}
+              useCloudinaryPreset={false}
+              class="h-full w-full"
+            />
+          </button>
+          <Heading tag="h3">
+            {aside.title}
+          </Heading>
+          <Paragraph>
+            {aside.content}
+          </Paragraph>
+        </div>
+        <aside class={twMerge('flex items-center rounded-lg p-4', themeColor)}>
+          <Image
+            class="h-12 w-12 rounded-full"
+            alt=""
+            useCloudinaryPreset={false}
+            src={isOfflineMode
+              ? '/images/pages/themes/user_not_found.png'
+              : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
+                '/images/pages/themes/user_not_found.png')}
+            transform={{ g: 'north', c: 'auto', w: 48, h: 48 }}
+          />
+          <div class="flex w-full items-center justify-between">
+            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:w-2/3 md:text-base">
+              <Link
+                withIcon={true}
+                href={getLausannerUrl({
+                  lausanner: aside.lausanner,
+                  locale: ($locale as Locale) ?? defaultLocale
+                })}
+                class="text-left xl:text-center"
+              >
+                {aside.lausanner?.name}
+
+                {#snippet icon()}
+                  <SquareArrowOutUpRight class="ml-2 h-3 w-3" />
+                {/snippet}
+              </Link>
+            </Paragraph>
             <button
-              class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
+              class="inline-flex items-center py-2 hover:cursor-pointer hover:opacity-80"
               onclick={closeAside}
             >
-              <X class="m-auto h-3 w-3" strokeWidth={3} />
+              {$t('common.other-tips')}
+              <ArrowRight class="ml-1 h-4 w-4" />
             </button>
-            <button class="h-56 w-full shadow" onclick={closeAside}>
-              <Image
-                src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
-                alt={aside.imageCopyright}
-                useCloudinaryPreset={false}
-                class="h-full w-full"
-              />
-            </button>
-            <Heading tag="h3">
-              {aside.title}
-            </Heading>
-            <Paragraph>
-              {aside.content}
-            </Paragraph>
           </div>
-          <aside class={twMerge('flex items-center rounded-lg p-4', themeColor)}>
-            <Image
-              class="h-12 w-12 rounded-full"
-              alt=""
-              useCloudinaryPreset={false}
-              src={isOfflineMode
-                ? '/images/pages/themes/user_not_found.png'
-                : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
-                  '/images/pages/themes/user_not_found.png')}
-              transform={{ g: 'north', c: 'auto', w: 48, h: 48 }}
-            />
-            <div class="flex w-full items-center justify-between">
-              <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:w-2/3 md:text-base">
-                <Link
-                  withIcon={true}
-                  href={getLausannerUrl({
-                    lausanner: aside.lausanner,
-                    locale: ($locale as Locale) ?? defaultLocale
-                  })}
-                  class="text-left xl:text-center"
-                >
-                  {aside.lausanner?.name}
-
-                  {#snippet icon()}
-                    <SquareArrowOutUpRight class="ml-2 h-3 w-3" />
-                  {/snippet}
-                </Link>
-              </Paragraph>
-              <button
-                class="inline-flex items-center py-2 hover:cursor-pointer hover:opacity-80"
-                onclick={closeAside}
-              >
-                {$t('common.other-tips')}
-                <ArrowRight class="ml-1 h-4 w-4" />
-              </button>
-            </div>
-          </aside>
-        </div>
-      {/if}
+        </aside>
+      </div>
     </section>
   {/if}
   <MapLibre
@@ -243,7 +244,10 @@
         <Popup
           open={favoriteId === marker.favorite.id}
           onopen={() => {
-            setTimeout(() => handleLausannerClick({favorite: marker.favorite, isMarkerClick:true}), 50);
+            setTimeout(
+              () => handleLausannerClick({ favorite: marker.favorite, isMarkerClick: true }),
+              50
+            );
           }}
           onclose={closeAside}
           offset={{
@@ -258,7 +262,7 @@
             'bottom-right': [0, -12]
           }}
         >
-          <span class="text-white text-base p-2">{marker.poiName}</span>
+          <span class="p-2 text-base text-white">{marker.poiName}</span>
         </Popup>
       </Marker>
     {/each}
