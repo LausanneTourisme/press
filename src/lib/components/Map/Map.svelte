@@ -32,7 +32,7 @@
   }: Props = $props();
 
   const markers: MarkerType[] = $state([]);
-  let favoriteId: number | undefined = $state();
+  let markerIndex: string | undefined = $state();
   let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
 
@@ -72,16 +72,8 @@
     );
   };
 
-  const handleLausannerClick = ({
-    favorite,
-    lausanner
-  }: {
-    favorite: Favorite;
-    lausanner?: Lausanner;
-    isMarkerClick?: boolean;
-  }) => {
-    const poi = favorite.pois?.at(0);
-    favoriteId = favorite.id;
+  const handleLausannerClick = ({ favorite, poi }: { favorite: Favorite; poi: Poi }) => {
+    markerIndex = `poi#${poi.id}|favorite#${favorite.id}`;
 
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
@@ -90,7 +82,7 @@
       ? ((poi.medias[0].public_name as string | undefined) ?? '')
       : '';
     aside.imageCopyright = poi?.medias?.at(0) ? (poi.medias[0].copyright ?? '') : '';
-    aside.lausanner = lausanner ?? favorite.lausanner;
+    aside.lausanner = favorite.lausanner;
     aside.show = true;
 
     const geolocation = poi?.geolocations?.at(0);
@@ -106,7 +98,7 @@
   const closeAside = () => {
     onclose?.();
     aside.show = false;
-    favoriteId = undefined;
+    markerIndex = undefined;
 
     map?.flyTo({
       center: [initialState.lng, initialState.lat],
@@ -120,11 +112,10 @@
       const { pois, lausanner } = favorite;
 
       pois?.forEach((poi: Poi) => {
-        const { geolocations } = poi;
-        geolocations?.forEach((geolocation: Geolocation) => {
+        poi.geolocations?.forEach((geolocation: Geolocation) => {
           markers.push({
-            poiName: poi.name as string,
             favorite,
+            poi,
             lausanner,
             coordinates: {
               lat: parseFloat(geolocation.latitude),
@@ -134,17 +125,23 @@
         });
       });
     });
-
+    console.log(favorites);
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
   });
 </script>
 
 <div class="relative flex h-[550px] md:flex-row 2xl:h-[768px]">
-  {#if favorites.length}
+  {#if markers.length}
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 md:w-2/5">
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-        {#each favorites as favorite (favorite.id)}
-          <LausannerCard {favorite} class={listBorderColor} onclick={handleLausannerClick} />
+        {#each markers as marker}
+          <LausannerCard
+            favorite={marker.favorite}
+            poi={marker.poi}
+            lausanner={marker.lausanner}
+            class={listBorderColor}
+            onclick={handleLausannerClick}
+          />
         {/each}
       </div>
       <div
@@ -230,12 +227,9 @@
           <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
         {/snippet}
         <Popup
-          open={favoriteId === marker.favorite.id}
+          open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
           onopen={() => {
-            setTimeout(
-              () => handleLausannerClick({ favorite: marker.favorite, isMarkerClick: true }),
-              50
-            );
+            setTimeout(() => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }), 50);
           }}
           onclose={closeAside}
           offset={{
@@ -250,7 +244,7 @@
             'bottom-right': [0, -12]
           }}
         >
-          <span class="p-2 text-base text-white">{marker.poiName}</span>
+          <span class="p-2 text-base text-white">{marker.poi.name}</span>
         </Popup>
       </Marker>
     {/each}

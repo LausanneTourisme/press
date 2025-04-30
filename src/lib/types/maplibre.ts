@@ -1,4 +1,4 @@
-import type { Favorite, Lausanner } from "$types";
+import type { Favorite, Lausanner, Poi } from "$types";
 
 export type Latitude = number;
 export type Longitude = number;
@@ -9,7 +9,7 @@ export type Coordinate = {
 }
 
 export type Marker = {
-    poiName: string;
+    poi: Poi;
     lausanner?: Lausanner;
     favorite: Favorite;
     coordinates: Coordinate;

@@ -35,17 +35,17 @@
         return 'md:px-16';
     }
   }
-
-  const style = twMerge(
-    !fullscreen ? `p-6 ${getWidthStyle(width)}` : 'overflow-hidden max-w-screen',
-    sticky ? 'sticky top-24' : '',
-    additionalClass
-  );
 </script>
 
 <!-- wrapping div to help with background colors and other...-->
 <div class="w-full {background}">
-  <section class={style}>
+  <section
+    class={twMerge(
+      !fullscreen ? `p-6 ${getWidthStyle(width)}` : 'max-w-screen overflow-hidden',
+      sticky ? 'sticky top-24' : '',
+      additionalClass
+    )}
+  >
     {@render children()}
   </section>
 </div>

@@ -158,7 +158,7 @@
     -
     -
     -->
-<Container width="padded">
+<Container width="padded" class="md:pt-0">
   <Map
     {favorites}
     themeColor={themeInformation.color}
