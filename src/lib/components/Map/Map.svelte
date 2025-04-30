@@ -1,18 +1,19 @@
 <script lang="ts">
   import { PUBLIC_MAPTILER_URL } from '$env/static/public';
+  import Heading from '$lib/components/Heading.svelte';
+  import Link from '$lib/components/Link.svelte';
+  import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
+  import Paragraph from '$lib/components/Paragraph.svelte';
   import { getTailwindColor, isOfflineMode } from '$lib/helpers';
   import { defaultLocale, locale, t, type Locale } from '$lib/translations';
-  import type { Coordinate, Favorite, Geolocation, Lausanner, Poi } from '$types';
+  import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
   import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
+  import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
   import { MapLibre, Marker, NavigationControl, Popup } from 'svelte-maplibre-gl';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
-  import Heading from '../Heading.svelte';
-  import Link from '../Link.svelte';
-  import Image from '../Media/Image.svelte';
-  import Paragraph from '../Paragraph.svelte';
-  import LausannerCard from './LausannerCard.svelte';
 
   type Props = {
     class?: string;
@@ -30,14 +31,9 @@
     onclose
   }: Props = $props();
 
-  const markers: {
-    poiName: string;
-    lausanner?: Lausanner;
-    favorite: Favorite;
-    coordinates: Coordinate;
-  }[] = $state([]);
+  const markers: MarkerType[] = $state([]);
   let favoriteId: number | undefined = $state();
-
+  let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
 
   let aside: {
@@ -78,8 +74,7 @@
 
   const handleLausannerClick = ({
     favorite,
-    lausanner,
-    isMarkerClick
+    lausanner
   }: {
     favorite: Favorite;
     lausanner?: Lausanner;
@@ -98,34 +93,26 @@
     aside.lausanner = lausanner ?? favorite.lausanner;
     aside.show = true;
 
-    // const geolocation = poi?.geolocations?.at(0);
-    // const marker = getMarker(favorite.id);
+    const geolocation = poi?.geolocations?.at(0);
+    if (!geolocation) return;
 
-    // if (!isMarkerClick) marker?.marker?._element?.click();
-
-    // map?.flyTo({
-    // 	center: [
-    // 		Number(geolocation?.longitude ?? ''),
-    // 		Number(geolocation?.latitude ?? ''),
-    // 	],
-    // 	zoom: 15,
-    // 	essential: true
-    // });
+    map?.flyTo({
+      center: [Number(geolocation.longitude ?? ''), Number(geolocation.latitude ?? '')],
+      zoom: 15,
+      essential: true
+    });
   };
 
   const closeAside = () => {
     onclose?.();
     aside.show = false;
-    // TODO
-    // getMarker(favoriteId)?.popup?.remove();
-
     favoriteId = undefined;
 
-    // const boundsFromMarkers = getBoundsFromMarkers(markers);
-
-    // map?.fitBounds(boundsFromMarkers, {
-    // 	padding: 20
-    // });
+    map?.flyTo({
+      center: [initialState.lng, initialState.lat],
+      zoom: initialState.zoom,
+      essential: true
+    });
   };
 
   onMount(() => {
@@ -234,6 +221,7 @@
     locale={$locale}
     pitchWithRotate={false}
     cooperativeGestures={true}
+    bind:map
   >
     <NavigationControl position={'top-right'} />
     {#each markers as marker}
