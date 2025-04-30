@@ -1,4 +1,4 @@
-import maplibregl from "maplibre-gl";
+import type { Favorite, Lausanner } from "$types";
 
 export type Latitude = number;
 export type Longitude = number;
@@ -9,12 +9,12 @@ export type Coordinate = {
 }
 
 export type Marker = {
-    key: number,
-    coordinates: Coordinate,
-    popup: Popup,
-    marker?: maplibregl.Marker,
-    backgroundColor: undefined|string,
+    poiName: string;
+    lausanner?: Lausanner;
+    favorite: Favorite;
+    coordinates: Coordinate;
 }
+
 
 export type Coordinates = [Longitude, Latitude];
 
@@ -22,5 +22,3 @@ export type Geolocation = {
     latitude: string,
     longitude: string,
 }
-
-export type Popup = maplibregl.Popup
