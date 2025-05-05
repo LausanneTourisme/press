@@ -118,14 +118,13 @@
             poi,
             lausanner,
             coordinates: {
-              lat: parseFloat(geolocation.latitude),
-              lng: parseFloat(geolocation.longitude)
+              lat: Number(geolocation.latitude),
+              lng: Number(geolocation.longitude)
             }
           });
         });
       });
     });
-    console.log(favorites);
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
   });
 </script>
@@ -222,7 +221,7 @@
   >
     <NavigationControl position={'top-right'} />
     {#each markers as marker}
-      <Marker lnglat={marker.coordinates}>
+      <Marker lnglat={{lat: marker.coordinates.lat, lng: marker.coordinates.lng}}>
         {#snippet content()}
           <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
         {/snippet}

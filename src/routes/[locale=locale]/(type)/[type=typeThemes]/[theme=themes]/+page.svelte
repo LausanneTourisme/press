@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { dev } from '$app/environment';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
@@ -26,8 +27,7 @@
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
   if (typeof window !== 'undefined') {
-    console.log(page.data.payload);
-    window.moment = moment;
+    if(dev) console.log(page.data.payload);
   }
 </script>
 
