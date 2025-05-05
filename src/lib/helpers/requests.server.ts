@@ -261,3 +261,42 @@ export const getAgendaEvents = async () => {
 
     return (await result.json()) as Promise<GraphQLResponse<Event>>;
 }
+
+export const getArticle = async (slug: string) => {
+    const result = await fetch(`${GRAPHQL_URL}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${GRAPHQL_TOKEN}`
+        },
+        body: JSON.stringify({
+            variables: {
+                slug
+            },
+            query: `query getPost($id: Int, $slug: String, $locale: String){
+                item: post(id: $id, slug: $slug locale: $locale){
+                    id
+                    languages
+                    name
+                    lead
+                    summary
+                    content
+                    medias(cover:true) {
+                        cloudinary_id
+                        copyright
+                        public_name
+                    }
+                    published_at
+                    seo
+                    {
+                        description
+                        noindex
+                        slug
+                    }
+                }
+            }`
+        })
+    });
+
+    return (await result.json()) as Promise<GraphQLResponse<Post>>;
+}
