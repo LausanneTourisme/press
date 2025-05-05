@@ -1,0 +1,472 @@
+{
+    "data": {
+        "item": {
+            "id": "305",
+            "languages": [
+                "fr",
+                "en",
+                "de"
+            ],
+            "name": {
+                "fr": "Lausanne et le sport : ça match !",
+                "en": "Lausanne and sports: a winning combo",
+                "de": "Lausanne und Sport – eine perfekte Kombination"
+            },
+            "lead": {
+                "fr": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
+                "en": "Of course, we’re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva’s gem is the paradise for both athletes and creators.",
+                "de": "Sie sind in Lausanne, der Waadtländer und Olympia-Hauptstadt und dem beliebtesten Treffpunkt für alle möglichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies für Sportliche und kreative Köpfe."
+            },
+            "summary": {
+                "fr": "Véritable joyau du canton de Vaud, elle trône fièrement au bord du Léman. Les cinq anneaux olympiques ornent le fronton de sa gare ferroviaire, dignement. Bordée de part en part de merveilles naturelles, à l’instar de ses plages de sable ou du célèbre vignoble de Lavaux, inscrit à l’UNESCO, la belle n’en finit pas de faire parler d’elle. Mais qui est-elle ? ",
+                "en": "A jewel in the Canton of Vaud, she rises proudly on the shores of Lake Geneva. The five Olympic rings adorn with dignity the gable of its railway station. Surrounded by natural wonders, such as beaches and the famous Lavaux vineyards, listed as a UNESCO site, the beauty never ceases to make headline news. But who is she?",
+                "de": "Stolz thront das Juwel des Kantons Waadt am Genfersee. Die fünf olympischen Ringe schmücken würdevoll den Eingang des Bahnhofs. Mit ihren vielen Naturschönheiten wie den feinen Sandstränden oder den berühmten, zum UNESCO-Weltkulturerbe gehörenden Weinbergen von Lavaux macht die Stadt Lausanne immer wieder von sich reden. Doch wer ist sie?"
+            },
+            "content": [
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26185,
+                        "name": "Lausanne, ville nature",
+                        "public_name": {
+                            "fr": "Lausanne, ville nature"
+                        },
+                        "cloudinary_id": "95b220b08d3b9431",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© ",
+                        "metadata": {
+                            "width": 1920,
+                            "height": 2560,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1920\" height=\"2560\"",
+                            "tags": null,
+                            "description": null,
+                            "file_name_from_url": "95b220b08d3b9431.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_01-scaled.jpg"
+                        }
+                    },
+                    "size": "parallax",
+                    "focus": "auto"
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
+                        "en": "Of course, we’re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva’s gem is the paradise for both athletes and creators.",
+                        "de": "Sie sind in Lausanne, der Waadtländer und Olympia-Hauptstadt und dem beliebtesten Treffpunkt für alle möglichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies für Sportliche und kreative Köpfe."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h2",
+                    "value": {
+                        "fr": "Un peu d’histoire pour vous mettre en jambe !",
+                        "en": "A little history to get in the swing of things!",
+                        "de": "Ein bisschen Geschichte zum Aufwärmen"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "En guise d’échauffement, nous vous proposons de remonter le temps. Car oui, les lausannois et le sport, c’est une belle et grande histoire d’amour qui dure depuis plus de cent ans ! C’est bien en 1915 que le Siège du Comité International Olympique (CIO) – créé et présidé par Pierre de Coubertin – choisit de s’établir à Lausanne. Et depuis lors, force est de constater que l’esprit sportif n’a jamais cessé d’animer et de faire battre le coeur de la Cité.",
+                        "en": "As a warmup, we suggest going back in time, since Lausanners and sports have woven together a long and beautiful love story that has lasted more than 100 years! It was in 1915 that the Headquarters of the International Olympic Committee (IOC) – created and chaired by Pierre de Coubertin – were set up in Lausanne. Since then, it has to be said that sportsmanship has constantly enlivened and sparked the City.",
+                        "de": "Als Aufwärmprogramm machen wir eine kleine Zeitreise in die Vergangenheit. Lausanne und den Sport verbindet nämlich eine grosse Liebesgeschichte, die seit rund 100 Jahren andauert. Im Jahr 1915 verlegte das Internationale Olympische Komitee (IOK) rund um den Gründer und damaligen Präsidenten Pierre de Coubertin seinen Sitz nach Lausanne. Seither ist der Sportgeist tief in Lausanne verankert und hält die Stadt in Schwung."
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em><strong>« L’Olympisme trouvera dans l’atmosphère indépendante et fière que l’on respire à Lausanne, le gage de liberté dont il a besoin pour progresser. » – Pierre de Coubertin</strong></em>",
+                        "en": "<em><strong>“In the proud and independent atmosphere of Lausanne, Olympism will find guarantees of the freedom it must enjoy in order to move forward.” – Pierre de Coubertin</strong></em>",
+                        "de": "<em><strong>„Der Olympismus wird in der unabhängigen und stolzen Atmosphäre, die man in Lausanne atmet, die Sicherheit der Freiheit finden, die er für seine Entwicklung braucht.“ – Pierre de Coubertin</strong></em>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Quarante ans plus tard, c’est au tour de la première Maison olympique d’être inaugurée du côté de Vidy, et il faudra attendre 1994 pour que la belle vaudoise se voit officiellement décerner le titre de « Capitale olympique ». Une distinction d’exception qui encourage quelque 60 fédérations et associations sportives internationales à y élire domicile à leur tour, à l’instar de la Maison du Sport International. C’est donc au bord du Léman, au coeur de cet environnement éblouissant, que celles-ci travaillent collectivement à faire rayonner les méritantes valeurs de l’Olympisme et du sport.",
+                        "en": "Forty years later, the first Olympic House was inaugurated in Vidy, yet it was only in 1994 that Lausanne was officially crowned “Olympic Capital”. An exceptional distinction that prompted some 60 international sports federations and associations to take up residence here, for instance in the House of International Sport. It is therefore on the shores of Lake Geneva, in the heart of this glorious setting, that these organisations work together to promote the worthy values of Olympism and sport.",
+                        "de": "40 Jahre später wurde das erste Olympische Haus in Vidy eingeweiht und 1994 wurde Lausanne offiziell zur Olympia-Hauptstadt ernannt. Diese aussergewöhnliche Auszeichnung bewegte rund 60 internationale Sportverbände und -organisationen dazu, Lausanne als Hauptsitz auszuwählen, so auch das Haus des internationalen Sports. Am Ufer des Genfersees, inmitten dieser atemberaubenden Umgebung, arbeiten sie alle gemeinsam daran, die verdienstvollen Werte des Olympismus und des Sports zu verbreiten."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "Le sport, un art de vivre lausannois",
+                        "en": "Sport, a Lausanner’s way of life",
+                        "de": "Sport als Lebenskunst in Lausanne"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Aujourd’hui, ce ne sont pas moins de 300 associations et clubs sportifs de haut niveau qui s’épanouissent à Lausanne, à l’instar des mythiques Football Club Lausanne-Sport et Stade Lausanne Ouchy, du club de basket-ball Pully Lausanne Foxes ou encore du Lausanne Hockey Club. Fière de ces puissants piliers, la ville ne manque pas d’accueillir et de soutenir chaque année un grand nombre de rendez-vous sportifs incontournables illustrant les meilleurs athlètes internationaux, tels qu’Athletissima, FIBA 3×3 World Tour, le Tour de France ou encore les Ladies Open de tennis. Forte aussi de ses infrastructures sportives dernier cri, à l’image du Stade de la Tuilière ou de la désormais mythique Vaudoise aréna – qui a accueilli la troisième édition des Jeux Olympiques de la Jeunesse en 2020 – la Ville de Lausanne se donne les moyens d’un soutien à toute épreuve, affichant clairement sa volonté de rendre le sport toujours plus accessible et engageant. Consécration s’il en est une : en 2019, Lausanne se classe deux années de suite au top 10 des villes les plus sportives du monde*. Un vrai score de champion : inspirant non ?<br>\n* Selon le classement de l’agence internationale de communication BCW",
+                        "en": "Today, no less than 300 high-level sports associations and clubs thrive in Lausanne, such as the iconic Lausanne-Sport Football Club and Stade Lausanne Ouchy, Pully Lausanne Foxes Basketball Club and Lausanne Hockey Club. Proud of these powerful pillars, the city also hosts and supports every year a great number of unmissable sports events that showcase the best international athletes, such as Athletissima, FIBA 3×3 World Tour, the Tour de France as well as the Ladies Tennis Open. With its state-of-the-art sports infrastructures, such as the Stade de la Tuilière or the now legendary Vaudoise aréna – that hosted the third edition of the Youth Olympic Games in 2020 – the City of Lausanne ensures it has the means to provide full support, clearly demonstrating its willingness to keep making sports more accessible and attractive. If ever a consecration was needed, in 2019 Lausanne was ranked two years running one of the top ten sports cities in the world.* A proper champion’s score; inspiring, isn’t it?<br>\n* According to the ranking established by international communication’s agency BCV.",
+                        "de": "Heute sind nicht weniger als 300 hochkarätige Sportverbände und -clubs in Lausanne zu Hause. Dazu zählen die legendären Fussballclubs Lausanne-Sport und Stade Lausanne-Ouchy, der Basketballverein Pully Lausanne Foxes und der Lausanne Hockey Club. Die Stadt ist stolz auf diese mächtigen Pfeiler und organisiert und unterstützt jedes Jahr zahlreiche unumgängliche Sportevents mit den besten internationalen Athletinnen und Athleten. Die Athletissima, die FIBA 3×3 World Tour, die Tour de France und das Tennisturnier Ladies Open sind nur einige davon. Dank modernster Sportinfrastrukturen wie des Fussballstadions Stade de la Tuilière oder der inzwischen berühmten Vaudoise Aréna – sie war Austragungsort der dritten Olympischen Jugendspiele im Jahr 2020 – ist die Stadt Lausanne bestens aufgestellt und zeigt damit klar ihren Willen, den Sport immer zugänglicher und attraktiver zu machen. Als Krönung schaffte es Lausanne 2019 zwei Jahre in Folge unter die Top 10 der weltweit bedeutendsten Sportstädte*. Ein beeindruckender Erfolg. Ist das nicht inspirierend?<br>\n* Gemäss Ranking der internationalen Kommunikationsagentur BCW"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 27191,
+                        "name": "Lausanne et le sport : ça match ! - vélo",
+                        "public_name": {
+                            "fr": "Lavaux velo",
+                            "en": "Lavaux velo",
+                            "de": "Lavaux velo",
+                            "es": null
+                        },
+                        "cloudinary_id": "V2zKGyrFbbk3qHLiPBthIYjLOkwlOkA21xBFrO5i",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© Suisse Tourisme",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": "Couple; Vélo; Sport; Environs; Lavaux; Balade",
+                            "description": null,
+                            "file_name_from_url": "42cc7583b2ee6ab7.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/07/Lavaux-velo.jpg"
+                        }
+                    },
+                    "size": "parallax",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h2",
+                    "value": {
+                        "fr": "À vos marques, prêts… bougez !",
+                        "en": "On your marks, get set… Move!",
+                        "de": "Auf die Plätze, fertig, los!"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Lausannois d’un jour ou de toujours, c’est à votre tour ! Vous voilà bien échauffés et fins prêts pour une séance d’entrainement pleine de rebondissements. Car oui, dans la Capitale olympique, l’activité physique et sportive se pratique partout, tout le temps et par tous les temps. Que vous ayez plutôt le pied « marin », alpin ou bien encore urbain, une large palette de choix s’offre à vous, tous plus séduisants les uns que les autres.",
+                        "en": "Lausanner for a day or Lausanner forever, it’s your turn! You’re now well warmed up and fully prepared for an action-packed training session. Indeed, in the Olympic Capital, physical and sports activities are practised everywhere, all the time and in all weathers. Whether you prefer to tread water, alpine summits or urban streets, a broad choice is available to you, each more attractive than the last.",
+                        "de": "Egal, ob Sie nur für einen Tag oder für immer in Lausanne sind: Jetzt sind Sie an der Reihe! So, genug aufgewärmt. Auf gehts zu einer Trainingseinheit voller Überraschungen. In der Olympia-Hauptstadt können Sie sich nämlich überall, jederzeit und bei jedem Wetter körperlich und sportlich betätigen. Wasser-, Berg- oder urbane Sportarten – bei der breiten Palette an attraktiven Angeboten ist für alle etwas dabei."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "Emporté par la foulée",
+                        "en": "Getting into your stride",
+                        "de": "Es läuft wie von selbst"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Avis à tous nos amis joggeurs : existe-t-il un meilleur terrain de jeux que celui qu’offre la Cité lausannoise ? De notre côté, on a eu beau chercher, on n’a pas trouvé ! Alors d’accord, on peut courir partout nous direz-vous, mais le long d’un lac à l’eau translucide et au calme légendaire, bordé de montagnes aux cimes sublimes, c’est le bonheur, non ? En tout cas, il semblerait, car côté lac, à Lausanne, marche et footing sont légion le long du très apprécié quai d’Ouchy. Et tout au long de l’année, les amoureux de footing sont gâtés ! Tour à tour, ils se retrouvent aux 20 KM de Lausanne, à la Wake up and run ou encore au très couru Marathon de Lausanne. Alors c’est parti ! Vos baskets préférées aux pieds, on démarre en petites foulées. Direction Pully ou Vidy, selon vos envies.",
+                        "en": "To all our jogger friends: is there a better playground than the one offered by the City of Lausanne? As for us, we’ve tried to find one, without success! Of course, you’ll remind us that we can run everywhere, yet on the shores of a lake with crystal-clear waters and a legendary serenity, surrounded by mountains with sublime peaks, isn’t that just heaven? The many walkers and joggers on the very popular Quai d’Ouchy by the lakeside definitely seem to agree. And all year round, lovers of running are spoiled! They can in turn take part in the 20 KM de Lausanne, the Wake Up and Run, or the very sought-after Lausanne Marathon. So, let’s go! Slip on your favourite trainers, and let’s set off with short strides, heading to Pully or Vidy, depending on your mood.",
+                        "de": "Joggerinnen und Jogger aufgepasst: Gibt es eine bessere Spielwiese als Lausanne? Wir haben bisher jedenfalls keine gefunden! Zugegeben, laufen kann man überall, aber an einem ruhigen See mit kristallklarem Wasser und umgeben von überwältigenden Berggipfeln ist es doch besonders schön, oder nicht? Die vielen Spazierenden und Joggenden auf dem äusserst geschätzten Uferweg in Ouchy scheinen uns jedenfalls recht zu geben. Und Lauffans kommen das ganze Jahr über auf ihre Kosten, zum Beispiel mit Läufen wie dem 20KM von Lausanne, dem Wake up and run oder dem äusserst beliebten Lausanne Marathon. Na dann, auf gehts! Ziehen Sie Ihre Lieblingslaufschuhe an, wir starten langsam in Richtung Pully oder Vidy, je nach Lust und Laune."
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "value": [
+                        {
+                            "id": 27110,
+                            "name": "Lausanne et le sport : ça match ! - 20KM Lausanne",
+                            "public_name": {
+                                "fr": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "en": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "de": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "es": null
+                            },
+                            "cloudinary_id": "waYEMBYOHwRfxR98DFlwEvXfe5SIgK3tE0btNRz0",
+                            "mime_type": "image/jpeg",
+                            "copyright": "© 20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1067,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1067\"",
+                                "tags": "Sport: Lausanne; Evénement;",
+                                "description": null,
+                                "file_name_from_url": "c53184d44944ab33.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/20km-de-Lausanne-1.jpg"
+                            }
+                        },
+                        {
+                            "id": 27108,
+                            "name": "Lausanne et le sport : ça match ! - Olympique City",
+                            "public_name": {
+                                "fr": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "en": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "de": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "es": null
+                            },
+                            "cloudinary_id": "9FnURzZHVBUB2v0kz4KRsAA6W4TgotXXYJGQMykX",
+                            "mime_type": "image/jpeg",
+                            "copyright": "© ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1067,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1067\"",
+                                "tags": "Sport; Cité, Vieille Ville, Couple; Sportif; Lausanne; Cathédrale",
+                                "description": null,
+                                "file_name_from_url": "66909da3169d176a.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/ST_3x2_MMS-Olympic-City-Lausanne_76610.jpg"
+                            }
+                        },
+                        {
+                            "id": 27109,
+                            "name": "Lausanne et le sport : ça match ! - Lausanne Marathon",
+                            "public_name": {
+                                "fr": "Marathon de Lausanne",
+                                "en": "Marathon de Lausanne",
+                                "de": "Marathon de Lausanne",
+                                "es": null
+                            },
+                            "cloudinary_id": "Gc5xIujdKCDttlWi0x65AXgkR9TZBttDvIzcTScv",
+                            "mime_type": "image/jpeg",
+                            "copyright": "© Marathon de Lausanne",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1598,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1598\"",
+                                "tags": "Course; Evénement; Sport;",
+                                "description": null,
+                                "file_name_from_url": "bf215ee52e14fd16.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marathon-Lausanne.jpg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #0078d0;\">Des bains et des jeux</span>",
+                        "en": "<span style=\"color: #0078d0;\">Sun and fun on the water</span>",
+                        "de": "<span style=\"color: #0078d0;\">Bade- und Spielspass</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Bravo ! C’est ce que l’on appelle mouiller le maillot… A présent, rendez-vous sur l’eau, où stand-up paddle, wakeboard et aviron attendent les adeptes de grandes émotions. Et si vous préférez vous la couler douce en famille ou en solo, cap sur les paddles et autres pédalos. Vous sentez ? Il flotte comme un parfum d’été dans l’air… Pas de doute, vous êtes bien à Lausanne sur Mer ! A présent, place à la détente : baignade à gogo ou exploration subaquatique au club de plongée d’Ouchy, si le coeur vous en dit. A ciel ouvert elles aussi, les piscines de Bellerive et Pully-Plage – dotées de bassins olympiques – feront par ailleurs le bonheur des nageurs de la première heure.",
+                        "en": "Bravo! That’s what we call pushing yourself… A now, let’s get ready for some water sports: stand-up paddle and rowing await lovers of adrenaline. Perhaps you prefer a more chilled experience with your family or on your own? Then go for the stand-up paddleboards or pedal boats. Can you sense that feeling of summer in the air? There’s no doubt about it, you are in Lausanne on Sea! And now, it’s time to relax with as much bathing as you like or underwater exploration with the Ouchy Diving Club, if you fancy it. As for outdoor swimming pools, those of Bellerive and Pully-Plage – both with Olympic-sized pools – will delight those who love swimming above all.",
+                        "de": "Gut gemacht! Das nennt man schwitzen. Gehen wir nun ans Wasser, wo Wasserskifahren, Wakeboarden und Rudern für einen Adrenalin-Kick sorgen. Und für alle, die ein gemütlicheres Programm allein oder mit der Familie bevorzugen, heisst es auf zu den Paddles oder Pedalos. Riechen Sie es? Es liegt ein Sommerduft in der Luft … Kein Zweifel, Sie sind in Lausanne sur Mer! Jetzt ist es Zeit zum Entspannen: Baden nach Belieben oder Erkunden der Unterwasserwelt im Tauchclub von Ouchy, wenn Sie Lust dazu haben. In den Freibädern Bellerive und Pully-Plage mit olympischem Becken können sich Wasserratten ab dem Morgen nach Herzenslust austoben."
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em>Le + : Du côté de Bellerive, mais aussi de Vidy, Saint-Sulpice ou encore Lutry, des <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\" target=\"_blank\" rel=\"noopener\">casiers multisports connectés</a> mettent désormais à disposition de la population du matériel de sport et de loisirs. Pratique, facile et gratuit !</em>",
+                        "en": "<em>The + : In Bellerive, as well as in Vidy, Saint-Sulpice and Lutry, <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\">connected multisport lockers</a> are now available to the general public, offering a wide range of sports and leisure equipment. Convenient, easy and free!</em>",
+                        "de": "<em>Das + : In Bellerive, aber auch in Vidy, Saint-Sulpice und Lutry stehen den Bürgern jetzt angeschlossene <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\" target=\"_blank\" rel=\"noopener\">Multisport-Schliessfächer</a> zur Verfügung, in denen eine breite Palette von Sport- und Freizeitgeräten angeboten wird. Bequem, einfach und kostenlos!</em>"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 25915,
+                        "name": "Lausanne et le sport : ça match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : ça match !"
+                        },
+                        "cloudinary_id": "f86865a3bfa147c0",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© Voile et paddle sur le lac Leman",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": null,
+                            "description": null,
+                            "file_name_from_url": "f86865a3bfa147c0.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Paddle-lac.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #00a651;\">Echappées vertes</span>",
+                        "en": "<span style=\"color: #00a651;\">Green getaways</span>",
+                        "de": "<span style=\"color: #00a651;\">Auszeit im Grünen</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "De leur côté, les amateurs de bains de forêt ne sont pas moins gâtés. Il faut dire que les lieux arborés – eux aussi très prisés en été – ne manquent pas à Lausanne. Ses quelque 350 hectares de parcs et de jardins font de la ville l’une des plus vertes du monde. Parcs de Milan, de Mon-Repos ou encore du Musée Olympique, vous n’avez plus qu’à faire votre choix pour une escapade luxuriante et ressourçante. Quant à lui, le foisonnant bois de Sauvabelin est parfait pour les familles qui souhaitent allier virée et activités nature grâce à son parc animalier, sa place de jeux et sa cantine sur le lac. Côté forêt, c’est tout près de Chalet-à-Gobet que celle du Jorat séduira les amateurs de Parcours vita. A présent que diriez-vous d’une petite partie de Golf pour tester votre légendaire déhanché sur le green ? Une chose est sure : au Golf Club de Lausanne, ça swing dur !",
+                        "en": "Lovers of forest bathing are just as spoilt. It must be said that leafy spots – also very popular in the summer – are many in Lausanne. The city’s 350 hectares of parks and gardens make it one of the greenest in the world. Milan, Mon-Repos or the Olympic Museum, simply choose which park will be your destination for a lush and revitalising excursion. Sauvabelin wood is perfect for families who wish to combine an outing with nature activities thanks to its animal park, playground and canteen overlooking the lake. As for forests, it’s near Chalet-à-Gobet that the Jorat Forest will appeal to lovers of a Parcours vita (a fitness trail). And now, what would you say to a round of golf to show off your legendary hip rotation on the green? One thing is certain: the Lausanne Golf Club is going full swing!",
+                        "de": "Auch alle, die sich im Wald pudelwohl fühlen, kommen auf ihre Kosten. An bewaldeten Flächen, die gerade im Sommer sehr beliebt sind, fehlt es in der Waadtländer Hauptstadt nicht. Die rund 350 Hektaren Park- und Gartenanlagen machen Lausanne zu einer der grünsten Städte der Welt. Mit dem Milan-Park, dem Park Mon-Repos und dem Park des Olympischen Museums stehen gleich mehrere Möglichkeiten für eine erholsame Auszeit in einer prächtigen Umgebung zur Auswahl. Und der üppige Wald von Sauvabelin mit Tierpark, Spielplatz und Bistro mit Seeblick eignet sich perfekt für Familien, die einen Spaziergang und Aktivitäten in der Natur miteinander verbinden wollen. Vitaparcours-Fans finden ihr Glück in den Wäldern des Jorat ganz in der Nähe von Chalet-à-Gobet. Wie wäre es nun mit einer kleinen Runde Golf, um Ihren legendären Hüftschwung zu testen? Eines ist sicher: Im Golf Club Lausanne wird geschwungen, was der Rasen hält."
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26000,
+                        "name": "Lausanne et le sport : ça match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : ça match !"
+                        },
+                        "cloudinary_id": "28a553399d706fe7",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© Foret et Tour de Sauvabelin",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": "Ville verte, promenade; Lausanne; tour",
+                            "description": null,
+                            "file_name_from_url": "28a553399d706fe7.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #ffb114;\">L’arène des glaces</span>",
+                        "en": "<span style=\"color: #ffb114;\">The frozen arena</span>",
+                        "de": "<span style=\"color: #ffb114;\">Die Eisarena</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Alors, vous suivez ? Pas trop essoufflés ? Rentrez donc vous rafraîchir les idées : « LHC allez ! ». Pendant la saison de hockey, les Lausannois ne manquent pas de se retrouver au Centre de glace de la Vaudoise aréna pour soutenir leur équipe favorite. Trois patinoires y accueillent tour à tour entrainements amateurs, championnats régionaux et grandes compétitions pour le plus grand plaisir des spectateurs. Et tenez-vous bien, les jours de match, la reine des arènes peut accueillir jusqu’à 9600 personnes en son sein! Une information qui, nous le savons, ne vous laissera pas de glace… Allez, en piste : crosse et lames affutées, c’est à vous de jouer !",
+                        "en": "Are you keeping up? Not too out of breath? To cool down, come and cheer on the Lausanne Hockey Club Ice Centre. During the hockey season, Lausanners don’t miss an opportunity to meet up at the Vaudoise aréna to support their favourite team. Amateur practice, local leagues and major competitions take place in turn on the three ice rinks to delight the crowds. Just think that on match days, the main arena can accommodate up to 9,600 spectators! Information that is bound to cut ice with you… Right, on to the rink with sticks and blades at the ready, it’s your turn!",
+                        "de": "Alles gut? Nicht zu sehr ausser Atem? Weiter geht es in einer kühleren Umgebung: „LHC allez!” Während der Hockey-Saison treffen sich die Lausannerinnen und Lausanner in der Eishalle der Vaudoise Aréna, um ihr Lieblingsteam anzufeuern. Auf drei Eisbahnen finden Trainings für den Amateursport, regionale Meisterschaften und grosse Sportveranstaltungen, die ein breites Publikum anziehen, statt. Und halten Sie sich fest: An den Wettkampftagen bietet diese zu den grössten des Landes zählende Arena Platz für bis zu 9600 Zuschauerinnen und Zuschauer! Eine Information, die Sie bestimmt nicht kalt lässt … Also, los gehts: Mit Schläger und geschliffenen Kufen aufs Eis!"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26084,
+                        "name": "Lausanne et le sport : ça match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : ça match !"
+                        },
+                        "cloudinary_id": "c4bc65810e6cf288",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© ",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1200,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1200\"",
+                            "tags": "Sport; Hockey; Lausanne; Ambiance",
+                            "description": null,
+                            "file_name_from_url": "c4bc65810e6cf288.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/02/LHC-ambiance-2.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #f0282d;\">Sensations béton</span>",
+                        "en": "<span style=\"color: #f0282d;\">Bowled over</span>",
+                        "de": "<span style=\"color: #f0282d;\">Nervenkitzel pur</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Au skatepark de Vidy, si la planche à roulette est reine, le roller et le BMX ne sont pas en reste. Et les lausannois ont du bol, ce « Bowl » est aussi l’un des plus grands de Suisse ! Vidy, c’est aussi le paradis des sports d’équipe ; sur ses nombreux terrains de jeux urbains, basket, volley ou football la jouent collectif, avec en prime, une vue lac des plus sublimes. Dernière passe décisive pour la route et déjà le coup de sifflet retenti : c’est la fin de l’entrainement ! Toujours parmi nous ? Alors, dites-nous tout, quel a été votre terrain de jeu favori ? Ici, pas de jaloux : c’est l’égalité parfaite. Un partout, balle au centre et place à la troisième mi-temps !",
+                        "en": "At the Vidy skatepark, while skateboards reign supreme, rollerblades and BMX aren’t to be outdone. Lausanners are in luck, as this “bowl” is one of the largest in Switzerland! Vidy is also a paradise for team sports, with many urban playgrounds for basketball, volleyball or football, where players also enjoy the most splendid lake views. A last pass to clinch victory and already the whistle signals the end of training time! Are you still with us? Then tell us what your favourite playground is. As for us, we love them all equally. With a score of one all, it’s a draw and time for the third half-time!",
+                        "de": "Im Skatepark Vidy beherrschen die Skateboards das Geschehen, die Inlineskates und BMX-Räder stehen ihnen aber in nichts nach. Und die Lausannerinnen und Lausanner haben Glück, denn der „Bowl“ ist einer der grössten der Schweiz. Vidy ist auch das Paradies für Mannschaftssport. Auf den zahlreichen urbanen Spielplätzen können Sie sich gemeinsam mit anderen im Basketball, Beachvolleyball und Fussball messen, und obendrein eine fantastische Aussicht auf den See geniessen. Ein letzter Assist und dann ertönt auch schon der Schlusspfiff: Das Training ist zu Ende! Immer noch da? Was hat Ihnen am meisten Spass gemacht? Für uns steht es ganz klar unentschieden. Also, Anstoss und auf gehts ins dritte Drittel!"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em>Le + : Des casiers multisports connectés mettent désormais à disposition de la population du matériel de sport et de loisirs. Pratique, facile et gratuit !</em>",
+                        "en": "<em>The + : In Bellerive, as well as in Vidy, Saint-Sulpice and Lutry, connected multisport lockers are now available to the general public, offering a wide range of sports and leisure equipment. Convenient, easy and free!</em>",
+                        "de": "<em>Das + : In Bellerive, aber auch in Vidy, Saint-Sulpice und Lutry stehen den Bürgern jetzt angeschlossene Multisport-Schliessfächer zur Verfügung, in denen eine breite Palette von Sport- und Freizeitgeräten angeboten wird. Bequem, einfach und kostenlos!</em>"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 23359,
+                        "name": "Bowl de Vidy",
+                        "public_name": {
+                            "fr": "Bowl de Vidy",
+                            "en": "Bowl in Vidy",
+                            "de": "Bowl in Vidy",
+                            "es": null
+                        },
+                        "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+                        "mime_type": "image/jpeg",
+                        "copyright": "© LT/www.diapo.ch",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1061,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1061\"",
+                            "tags": "Vélo; Activité; Bowl; Enfant",
+                            "description": null,
+                            "file_name_from_url": "21bafda50ef9e559.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Bowl-de-Vidy.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                }
+            ],
+            "medias": [
+                {
+                    "cloudinary_id": "f86865a3bfa147c0",
+                    "copyright": "© Voile et paddle sur le lac Leman",
+                    "public_name": {
+                        "fr": "Lausanne et le sport : ça match !"
+                    }
+                }
+            ],
+            "published_at": "1709517839",
+            "seo": {
+                "description": {
+                    "fr": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
+                    "en": "Of course, we’re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva’s gem is the paradise for both athletes and creators.",
+                    "de": "Sie sind in Lausanne, der Waadtländer und Olympia-Hauptstadt und dem beliebtesten Treffpunkt für alle möglichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies für Sportliche und kreative Köpfe."
+                },
+                "noindex": false,
+                "slug": {
+                    "fr": "lausanne-et-le-sport-ca-match",
+                    "en": "lausanne-and-sports-a-winning-combo",
+                    "de": "lausanne-und-sport-eine-perfekte-kombination"
+                },
+                "name": {
+                    "fr": "Lausanne et le sport : ça match !",
+                    "en": "Lausanne and sports: a winning combo",
+                    "de": "Lausanne und Sport – eine perfekte Kombination"
+                }
+            }
+        }
+    }
+}

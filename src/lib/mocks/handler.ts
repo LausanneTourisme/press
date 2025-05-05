@@ -2,6 +2,7 @@ import { graphql, HttpResponse, } from 'msw';
 import { setupServer } from 'msw/node';
 
 import eventsMock from './responses/events/all.json'
+import articleMock from './responses/articles/culture.json'
 const favoritesMocks = import.meta.glob('./responses/favorites/*.json', { eager: true });
 const postsMocks = import.meta.glob('./responses/posts/*.json', { eager: true });
 
@@ -24,7 +25,7 @@ for (const path in postsMocks) {
 
 export const handlers = [
     graphql.query('GetPosts', async ({ variables }) => {
-        
+
         if (variables.type === 'press_release, press_kit') {
             console.warn("mock request: GetPosts (press)");
             const key = `press_kit.${variables.locale}`;
@@ -36,7 +37,7 @@ export const handlers = [
                 console.warn("mock request: GetPosts (highlighted posts)");
                 const key = `posts.highlighted.${variables.locale}`;
                 const mock = postsMap[key];
-                
+
                 return HttpResponse.json(mock);
             }
             console.warn("mock request: GetPosts (posts)");
@@ -82,6 +83,10 @@ export const handlers = [
     graphql.query('GetAgendaEvents',async () => {
         console.warn("mock request: GetAgendaEvents");
         return HttpResponse.json(eventsMock);
+    }),
+    graphql.query('GetArticle', async ({ variables }) => {
+        console.warn("mock request: GetArticle");
+        return HttpResponse.json(articleMock)
     }),
 ];
 
