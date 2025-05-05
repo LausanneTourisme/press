@@ -8,27 +8,27 @@ const itemsLimit = 9999
 export const getTag = (theme: Theme): string => {
     switch (theme) {
         case Themes.Architecture:
-            return 'Architecture';
+            return 'lt-architecture';
         case Themes.Culture:
-            return 'Culture';
+            return 'lt-culture';
         case Themes.Education:
-            return 'Éducation';
+            return 'lt-education';
         case Themes.Family:
-            return 'Famille';
+            return 'lt-famille';
         case Themes.Gastronomy:
-            return 'Gastronomie';
+            return 'lt-gastronomie';
         case Themes.Lacustrine:
-            return 'Lacustre';
+            return 'lt-lacustre';
         case Themes.Nature:
-            return 'Nature';
+            return 'lt-nature';
         case Themes.Sport:
-            return 'Sport';
+            return 'lt-sport';
         case Themes.Sustainability:
-            return 'Durabilité';
+            return 'lt-durabilite';
         case Themes.Unusual:
-            return 'Insolite';
+            return 'lt-insolite';
         case Themes.Wellness:
-            return 'Bien-être';
+            return 'lt-bien-etre';
         default:
             return theme;
     }
