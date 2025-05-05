@@ -1,5 +1,5 @@
-import { RouteTypes, type RouteType } from '$enums';
-import { locale, supportedLocales, type Locale } from '$lib/translations';
+import { RouteTypes } from '$enums';
+import { supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { type ServerLoad } from '@sveltejs/kit';
 

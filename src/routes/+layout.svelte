@@ -9,8 +9,46 @@
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import { Send } from 'lucide-svelte';
-
   let { children } = $props();
+
+  const ldJson = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `${page.data.seo.title} • Lausanne Tourisme`,
+    image: page.data.seo.image,
+    description: page.data.seo.description,
+    url: page.data.seo.canonical
+  };
+
+  const ldJsonOrganisation = {
+    '@context': 'http://schema.org',
+    '@type': 'Organization',
+    url: 'https://www.lausanne-tourisme.ch',
+    logo: `${page.url.origin}/images/logo/LT_Logo.png`,
+    name: 'Lausanne Tourisme',
+    email: 'info@lausanne-tourisme.ch',
+    telephone: '+41 21 613 73 73',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'info@lausanne-tourisme.ch',
+      telephone: '+41 21 613 73 73'
+    },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Avenue de Rhodanie 2 – CP 975',
+      addressLocality: 'Lausanne',
+      addressCountry: 'CH',
+      addressRegion: 'Vaud',
+      postalCode: '1001'
+    },
+    sameAs: [
+      'https://www.facebook.com/LausanneCapitaleOlympique',
+      'https://www.x.com/LausanneCO',
+      'https://www.instagram.com/thelausanner/',
+      'https://www.youtube.com/LausanneTourisme',
+      'https://www.linkedin.com/company/lausanne-capitale-olympique'
+    ]
+  };
 </script>
 
 <svelte:head>
@@ -19,11 +57,11 @@
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
+  <link rel="canonical" href={page.data.seo.canonical} />
   {#each page.data.seo.alternate as route}
     <link rel="alternate" hreflang={route.lang} href={route.href} />
   {/each}
   <link rel="icon" href="/favicon.png" />
-  <link rel="canonical" href={`${page.data.seo.canonical}`} />
   <!-- Open Graph -->
   <meta property="twitter:image" content={page.data.seo.image} />
   <meta property="twitter:card" content="summary_large_image" />
@@ -33,6 +71,11 @@
   <meta property="og:title" content={page.data.seo.title} />
   <meta property="og:description" content={page.data.seo.description} />
   <meta property="og:url" content={`${page.data.seo.canonical}${page.url.hash}`} />
+  <script type="application/ld+json">
+  </script>
+  <!-- Structured Data -->
+  {@html `<script type="application/ld+json">${JSON.stringify(ldJson)}</script>`}
+  {@html `<script type="application/ld+json">${JSON.stringify(ldJsonOrganisation)}</script>`}
 </svelte:head>
 
 <div class="app">
@@ -138,7 +181,9 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.corporate.about-us.url']}
+                    href={page.data.translations[locale.get()][
+                      'footer.infos.corporate.about-us.url'
+                    ]}
                   >
                     {$t('footer.infos.corporate.about-us.text')}
                   </Link>
@@ -148,7 +193,9 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.corporate.member-space.url']}
+                    href={page.data.translations[locale.get()][
+                      'footer.infos.corporate.member-space.url'
+                    ]}
                   >
                     {$t('footer.infos.corporate.member-space.text')}
                   </Link>
@@ -168,7 +215,9 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.corporate.general-terms.url']}
+                    href={page.data.translations[locale.get()][
+                      'footer.infos.corporate.general-terms.url'
+                    ]}
                   >
                     {$t('footer.infos.corporate.general-terms.text')}
                   </Link>
@@ -178,7 +227,9 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.corporate.privacy.url']}
+                    href={page.data.translations[locale.get()][
+                      'footer.infos.corporate.privacy.url'
+                    ]}
                   >
                     {$t('footer.infos.corporate.privacy.text')}
                   </Link>

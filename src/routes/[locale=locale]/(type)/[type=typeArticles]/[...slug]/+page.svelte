@@ -7,5 +7,5 @@
 <div class="text-center text-column">
   {$locale}
   <br>
-  {$t(`route.${RouteTypes.Presskit}.slug`)}
+  {$t(`route.${RouteTypes.Presskit}.slug`)} détails
 </div>
