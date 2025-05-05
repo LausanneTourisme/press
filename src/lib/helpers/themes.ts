@@ -105,4 +105,3 @@ export const ThemeDetails: ThemeDetail = {
         card: "bg-lime-300/90",
     },
 }
-

@@ -28,9 +28,9 @@ export type Tag = {
 
 export type Seo = {
     id?: number,
-    name?: string,
-    slug?: string,
-    hreflang?: string,
+    name?: string|Translatable,
+    slug?: string|Translatable,
+    hreflang?: string|Translatable,
 }
 
 export type Release = {
