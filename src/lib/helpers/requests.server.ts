@@ -273,7 +273,7 @@ export const getArticle = async (slug: string) => {
             variables: {
                 slug
             },
-            query: `query getPost($id: Int, $slug: String, $locale: String){
+            query: `query GetArticle($id: Int, $slug: String, $locale: String){
                 item: post(id: $id, slug: $slug locale: $locale){
                     id
                     languages
