@@ -2,7 +2,7 @@ import { Themes, type Theme } from "$enums";
 import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL, GROUP_ID_PAGE_HIGHLIGHTS } from "$env/static/private";
 import type { Locale } from "$lib/translations";
 import type { Favorite, GraphQLResponse, Group, Page, Post, Release } from "$types";
-import moment from "moment";
+import { DateTime } from "luxon";
 
 const itemsLimit = 9999
 export const getTag = (theme: Theme): string => {
@@ -189,7 +189,7 @@ export const getAgendaEvents = async () => {
         },
         body: JSON.stringify({
             variables: {
-                from: moment().format('YYYY-MM-DD'),
+                from: DateTime.now().toSQLDate(),
                 highlighted: true,
                 limit: itemsLimit,
             },

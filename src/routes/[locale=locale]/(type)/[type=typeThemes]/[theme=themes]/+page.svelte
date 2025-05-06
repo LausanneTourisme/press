@@ -1,9 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
-  import { goto } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
-  import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
@@ -15,7 +13,6 @@
   import { locale, t } from '$lib/translations';
   import type { Favorite, Post } from '$types';
   import { ArrowRight } from 'lucide-svelte';
-  import moment from 'moment';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
 
@@ -54,7 +51,7 @@
         {#if highlightedArticle}
           <Button
             tag="a"
-            href={route(RouteTypes.Articles, { suffix: highlightedArticle?.seo?.slug })}
+            href={route(RouteTypes.Articles, { suffix: (highlightedArticle?.seo?.slug as string|undefined)})}
             class="inline-flex items-center"
           >
             {$t('themes.read-more')}
