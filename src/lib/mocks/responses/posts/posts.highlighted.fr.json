@@ -658,7 +658,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Gastronomie",
+                            "name": "lt-gastronomie",
                             "public_name": "Gastronomie"
                         }
                     ]
@@ -1750,7 +1750,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Architecture",
+                            "name": "lt-architecture",
                             "public_name": "Architecture"
                         }
                     ]
@@ -2151,7 +2151,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Éducation",
+                            "name": "lt-education",
                             "public_name": "Éducation"
                         }
                     ]
@@ -2453,7 +2453,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Bien-être",
+                            "name": "lt-bien-etre",
                             "public_name": "Bien-être"
                         }
                     ]
@@ -2883,7 +2883,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Durabilité",
+                            "name": "lt-durabilite",
                             "public_name": "Durabilité"
                         }
                     ]
@@ -3222,7 +3222,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Lacustre",
+                            "name": "lt-lacustre",
                             "public_name": "Lacustre"
                         }
                     ]
@@ -3831,7 +3831,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Culture",
+                            "name": "lt-culture",
                             "public_name": "Culture"
                         }
                     ]
@@ -4203,7 +4203,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Nature",
+                            "name": "lt-nature",
                             "public_name": "Nature"
                         }
                     ]
@@ -4649,7 +4649,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Sport",
+                            "name": "lt-sport",
                             "public_name": "Sport"
                         }
                     ]
@@ -5178,7 +5178,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Insolite",
+                            "name": "lt-insolite",
                             "public_name": "Insolite"
                         }
                     ]
@@ -6382,7 +6382,7 @@
                     },
                     "tags": [
                         {
-                            "name": "Famille",
+                            "name": "lt-famille",
                             "public_name": "Famille"
                         }
                     ]
