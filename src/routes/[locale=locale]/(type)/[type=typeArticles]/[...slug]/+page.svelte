@@ -8,8 +8,12 @@
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { DateTime } from 'luxon';
+import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
+  import { twMerge } from 'tailwind-merge';
+  import Heading from '$lib/components/Heading.svelte';
+  import Paragraph from '$lib/components/Paragraph.svelte';
 
-  const article: Post | undefined = $derived(page.data.article);
+  const article: Post<Translatable> | undefined = $derived(page.data.article);
   const type: RouteType = $derived(page.data.type)
 
   onMount(() => {

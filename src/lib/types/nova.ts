@@ -9,90 +9,94 @@ export type Translatable = {
     es?: string,
 }
 
-export type Media = {
+export type Media<T extends Translatable | string> = {
     id?: number,
     is_cover?: boolean,
     name?: string,
-    public_name?: Translatable | string,
+    public_name?: T,
     cover?: boolean,
     cloudinary_id?: string,
     copyright?: string,
-    metadata?: object,
+    metadata?: unknown,
+    mime_type?: string,
 }
 
-export type Tag = {
+export type Tag<T extends Translatable | string> = {
     id?: number,
     name?: string,
-    public_name?: string,
+    public_name?: T,
 }
 
-export type Seo = {
+export type Seo<T extends Translatable | string> = {
     id?: number,
-    name?: string|Translatable,
-    slug?: string|Translatable,
-    hreflang?: string|Translatable,
+    name?: T,
+    slug?: T,
+    hreflang?: T,
 }
 
-export type Release = {
+export type Release<T extends Translatable | string> = {
     published_at?: string,
     id?: number,
-    name?: Translatable | string,
-    lead?: Translatable | string,
-    summary?: Translatable | string,
-    medias?: Media[],
+    name?: T,
+    lead?: T,
+    summary?: T,
+    medias?: Media<T>[],
     type?: string,
-    seo?: Seo,
-    tags?: Tag[],
+    seo?: Seo<T>,
+    tags?: Tag<T>[],
     highlight?: boolean,
+    content?: unknown & {
+        type: string,
+    }[]
 }
-export type Post = Release;
-export type Page = Release;
+export type Post<T extends Translatable | string> = Release<T>;
+export type Page<T extends Translatable | string> = Release<T>;
 
-export type Favorite = {
+export type Favorite<T extends Translatable | string> = {
     id?: number,
-    lausanner?: Lausanner,
+    lausanner?: Lausanner<T>,
     name?: string,
     content?: string,
-    pois?: Poi[],
-    tags?: Tag[],
+    pois?: Poi<T>[],
+    tags?: Tag<T>[],
 }
 
-export type Lausanner = {
+export type Lausanner<T extends Translatable | string> = {
     id?: number,
     name?: string,
     languages?: string[],
-    seo?: Seo,
+    seo?: Seo<T>,
     self_intro?: string | string[],
     biography?: string | string[],
-    medias?: Media[],
+    medias?: Media<T>[],
 }
 
-export type Group = {
+export type Group<T extends Translatable | string> = {
     id?: number,
     languages?: string[],
-    name?: Translatable | string,
-    lead?: Translatable | string,
-    medias?: Media[],
-    seo: Seo,
+    name?: T,
+    lead?: T,
+    medias?: Media<T>[],
+    seo: Seo<T>,
 }
 
-export type Poi = {
+export type Poi<T extends Translatable | string> = {
     id?: number,
     languages?: string[],
-    name?: Translatable | string,
-    lead?: Translatable | string,
-    summary?: Translatable | string,
-    description?: Translatable | string,
-    practical?: Translatable | string,
+    name?: T,
+    lead?: T,
+    summary?: T,
+    description?: T,
+    practical?: T,
     highlight?: boolean,
-    medias?: Media[],
-    seo?: Seo,
-    tags?: Tag[],
+    medias?: Media<T>[],
+    seo?: Seo<T>,
+    tags?: Tag<T>[],
     schedules?: Schedules,
-    favorites?: Favorite[],
+    favorites?: Favorite<T>[],
     geolocations?: Geolocation[],
 }
-export type Event = Poi;
+export type Event<T extends Translatable | string> = Poi<T>;
 
 export type Schedules = {
     dates?: ScheduleDate[],

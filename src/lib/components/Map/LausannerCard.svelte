@@ -8,10 +8,10 @@
 
   type Props = {
     class?: string;
-    favorite: Favorite;
-    lausanner?: Lausanner;
-    poi: Poi;
-    onclick?: (options: { lausanner?: Lausanner; favorite: Favorite; poi: Poi }) => void;
+    favorite: Favorite<string>;
+    lausanner?: Lausanner<string>;
+    poi: Poi<string>;
+    onclick?: (options: { lausanner?: Lausanner<string>; favorite: Favorite<string>; poi: Poi<string> }) => void;
   };
 
   const { class: additionalClass, favorite, lausanner, poi, onclick }: Props = $props();

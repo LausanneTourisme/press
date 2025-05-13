@@ -27,7 +27,7 @@ export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
     }
 
     const { i18n, translations, locale, type }: Parent = await parent() as Parent;
-    const article: Post | undefined = (await getArticle(params.slug ?? '')).data.item;
+    const article: Post<Translatable> | undefined = (await getArticle(params.slug ?? '')).data.item;
 
     if (!article) throw error(404);
 

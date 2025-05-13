@@ -19,7 +19,7 @@
     class?: string;
     themeColor?: string;
     listBorderColor?: string;
-    favorites: Favorite[];
+    favorites: Favorite<string>[];
     onclose?: () => void;
   };
 
@@ -43,7 +43,7 @@
     image: string;
     imageName: string;
     imageCopyright: string;
-    lausanner: Lausanner | undefined;
+    lausanner: Lausanner<string> | undefined;
   } = $state({
     show: false,
     title: '',
@@ -58,7 +58,7 @@
     lausanner,
     locale
   }: {
-    lausanner: Lausanner | undefined;
+    lausanner: Lausanner<string> | undefined;
     locale: Locale;
   }): string => {
     if (!lausanner) return '#';
@@ -72,7 +72,7 @@
     );
   };
 
-  const handleLausannerClick = ({ favorite, poi }: { favorite: Favorite; poi: Poi }) => {
+  const handleLausannerClick = ({ favorite, poi }: { favorite: Favorite<string>; poi: Poi<string> }) => {
     markerIndex = `poi#${poi.id}|favorite#${favorite.id}`;
 
     aside.title = (poi?.name as string) ?? '';
@@ -106,12 +106,12 @@
       essential: true
     });
   };
-
+  
   onMount(() => {
-    favorites.forEach((favorite: Favorite) => {
+    favorites.forEach((favorite: Favorite<string>) => {
       const { pois, lausanner } = favorite;
 
-      pois?.forEach((poi: Poi) => {
+      pois?.forEach((poi: Poi<string>) => {
         poi.geolocations?.forEach((geolocation: Geolocation) => {
           markers.push({
             favorite,
@@ -250,7 +250,7 @@
   </MapLibre>
 </div>
 
-<style lang="postcss">
+<style>
   :global(.maplibregl-cooperative-gesture-screen) {
     z-index: 1 !important;
   }

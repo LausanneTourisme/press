@@ -16,10 +16,10 @@
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
 
-  const highlightedArticle: Post | undefined = $derived(page.data.payload.highlightedArticle);
+  const highlightedArticle: Post<string> | undefined = $derived(page.data.payload.highlightedArticle);
   const title: string = $derived(highlightedArticle?.name ?? page.data.seo.title);
-  const articles: Post[] = $derived(page.data.payload.articles);
-  const favorites: Favorite[] = $derived(page.data.payload.favorites);
+  const articles: Post<string>[] = $derived(page.data.payload.articles);
+  const favorites: Favorite<string>[] = $derived(page.data.payload.favorites);
   const theme: Theme = page.data.theme;
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
