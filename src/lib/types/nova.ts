@@ -9,16 +9,45 @@ export type Translatable = {
     es?: string,
 }
 
+export type Video<T extends Translatable | string> = {
+    id?: number,
+    type?: "native" | "hosted",
+    name: string,
+    public_name?: T,
+    poster?: Media<T>,
+    url?: {
+        language: "fr" | "en" | "de" | "it" | "es" | "all",
+        url: string,
+    },
+    video?: string,
+}
+
 export type Media<T extends Translatable | string> = {
     id?: number,
     is_cover?: boolean,
     name?: string,
     public_name?: T,
+    file_name?: string,
     cover?: boolean,
     cloudinary_id?: string,
     copyright?: string,
-    metadata?: unknown,
+    metadata?: {
+        width?: number,
+        height?: number,
+        mimeType?: string,
+        copyright?: string,
+        attr?: string,
+        tags?: string,
+        description?: T
+    },
     mime_type?: string,
+    is_in_gallery?: boolean,
+    original_width: number,
+    original_height: number,
+    original_ratio?: string,
+    seo?: Seo<T>,
+    updated_at: string,
+    created_at: string,
 }
 
 export type Tag<T extends Translatable | string> = {
