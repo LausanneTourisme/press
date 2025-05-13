@@ -3,7 +3,7 @@
   import Nav from '$lib/components/Nav/Nav.svelte';
   import { locale, t } from '$lib/translations';
   import '../app.css';
-  import Heading from '$lib/components/Heading.svelte';
+  import Heading from '$lib/components/Blocks/Heading.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import Button from '$lib/components/Button.svelte';
   import Link from '$lib/components/Link.svelte';

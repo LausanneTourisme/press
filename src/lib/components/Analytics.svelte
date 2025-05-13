@@ -58,13 +58,13 @@
   {choices}
 />
 
-<style lang="postcss">
-  :global(.cookieConsent__Button[type='submit']) {
+<style>
+  /* :global(.cookieConsent__Button[type='submit']) {
     @apply bg-brand-600 text-white !important;
   }
 
   :global(button.cookieConsentToggle) {
     @apply left-[20px] !important;
     right: unset !important;
-  }
+  } */
 </style>

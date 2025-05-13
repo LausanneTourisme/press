@@ -1,10 +1,10 @@
 <script lang="ts">
   import { PUBLIC_MAPTILER_URL } from '$env/static/public';
-  import Heading from '$lib/components/Heading.svelte';
+  import Heading from '$lib/components/Blocks/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
   import Image from '$lib/components/Media/Image.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
+  import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
   import { getTailwindColor, isOfflineMode } from '$lib/helpers';
   import { defaultLocale, locale, t, type Locale } from '$lib/translations';
   import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';

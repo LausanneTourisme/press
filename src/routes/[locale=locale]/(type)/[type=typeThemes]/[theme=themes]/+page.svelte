@@ -5,9 +5,9 @@
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
-  import Heading from '$lib/components/Heading.svelte';
+  import Heading from '$lib/components/Blocks/Heading.svelte';
   import Map from '$lib/components/Map/Map.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
+  import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t } from '$lib/translations';

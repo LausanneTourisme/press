@@ -1,8 +1,8 @@
 <script lang="ts">
   import { Themes } from '$enums';
   import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
+  import Heading from '$lib/components/Blocks/Heading.svelte';
+  import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
   import { chunkify } from '$lib/helpers';
   import { t } from '$lib/translations';
   import Button from './Button.svelte';
