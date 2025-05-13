@@ -1,4 +1,4 @@
-import { Themes } from "$enums";
+import { Themes, type Theme } from "$enums";
 import type { Transform } from "$lib/cloudinary";
 
 export type ThemeDetail = {
@@ -105,3 +105,32 @@ export const ThemeDetails: ThemeDetail = {
         card: "bg-lime-300/90",
     },
 }
+
+export const getThemeByTagName = (tag: string|undefined): undefined | Theme => {
+    switch (tag) {
+      case 'lt-architecture':
+        return Themes.Architecture;
+      case 'lt-culture':
+        return Themes.Culture;
+      case 'lt-education':
+        return Themes.Education;
+      case 'lt-famille':
+        return Themes.Family;
+      case 'lt-gastronomie':
+        return Themes.Gastronomy;
+      case 'lt-lacustre':
+        return Themes.Lacustrine;
+      case 'lt-nature':
+        return Themes.Nature;
+      case 'lt-sport':
+        return Themes.Sport;
+      case 'lt-durabilite':
+        return Themes.Sustainability;
+      case 'lt-insolite':
+        return Themes.Unusual;
+      case 'lt-bien-etre':
+        return Themes.Wellness;
+      default:
+        return undefined;
+    }
+  }
