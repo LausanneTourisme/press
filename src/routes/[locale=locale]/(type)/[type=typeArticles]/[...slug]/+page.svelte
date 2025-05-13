@@ -10,20 +10,18 @@
   import { DateTime } from 'luxon';
   import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
   import { twMerge } from 'tailwind-merge';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
+  import Heading from '$lib/components/Blocks/Heading.svelte';
+  import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
+  import Hero from '$lib/components/Blocks/Hero.svelte';
+  import type { Hero as HeroType } from '$types/releaseContents';
 
   const article: Post<Translatable> | undefined = $derived(page.data.article);
   const type: RouteType = $derived(page.data.type);
-  const hero = $derived(
-    (page.data.article as undefined | Post<Translatable>)?.content?.find((block) => block.type === 'hero')
+  const hero: undefined|HeroType = $derived(
+    (page.data.article as undefined | Post<Translatable>)?.content?.find(
+      (block) => block.type === 'hero'
+    ) as undefined|HeroType
   );
-  onMount(() => {
-    if (typeof window !== 'undefined') {
-      if (dev) console.log(article);
-      window.DateTime = DateTime;
-    }
-  });
 </script>
 
 <div class="text-column text-center">
@@ -58,16 +56,19 @@
         </p>
       {/if}
       <hr class="mt-4 border border-gray-300" />
+      {#if !hero}
+        <Heading tag="h1">
+          {article?.name?.[$locale as Locale]}
+        </Heading>
+        <Paragraph class="mb-6 leading-6 tracking-[0.45px]">
+          <strong>
+            {article?.summary?.[$locale as Locale]}
+          </strong>
+        </Paragraph>
+      {/if}
     </Container>
-    {#if !hero}
-      <Heading tag="h1">
-        {article?.name?.[$locale as Locale]}
-      </Heading>
-      <Paragraph class="mb-6 leading-6 tracking-[0.45px]">
-        <strong>
-          {article?.summary?.[$locale as Locale]}
-        </strong>
-      </Paragraph>
+    {#if hero}
+      <Hero {hero} />
     {/if}
   </article>
 </Container>
