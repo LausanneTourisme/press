@@ -41,7 +41,15 @@ export type Youtube = {
     type: "youtube",
     value: string,
 }
+
 export type Video = {
     type: "video",
     value: NovaVideo<Translatable>
 }
+
+export type Embed = {
+    type: "embed",
+    value: string
+}
+
+export type ContentBlock = Hero | Heading | Paragraphe | Gallery | Image | Instagram | Youtube | Video

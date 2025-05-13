@@ -1,4 +1,5 @@
 import type { Geolocation } from "$types"
+import type { ContentBlock } from "./releaseContents"
 
 
 export type Translatable = {
@@ -74,9 +75,7 @@ export type Release<T extends Translatable | string> = {
     seo?: Seo<T>,
     tags?: Tag<T>[],
     highlight?: boolean,
-    content?: unknown & {
-        type: string,
-    }[]
+    content?: ContentBlock[]
 }
 export type Post<T extends Translatable | string> = Release<T>;
 export type Page<T extends Translatable | string> = Release<T>;
