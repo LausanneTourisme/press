@@ -22,6 +22,7 @@
       (block) => block.type === 'hero'
     ) as undefined|HeroType
   );
+  onMount(() => console.log(article))
 </script>
 
 <div class="text-column text-center">
@@ -32,7 +33,7 @@
 
 <Container fullscreen>
   <article transition:fade>
-    <Container width="medium">
+    <Container width="medium" class={hero && 'pb-0'}>
       <p>
         {type}
         &mdash; {DateTime.fromSeconds(parseInt(article?.published_at ?? '0'))
@@ -68,7 +69,7 @@
       {/if}
     </Container>
     {#if hero}
-      <Hero {hero} />
+      <Hero {hero} class="pt-0" />
     {/if}
   </article>
 </Container>
