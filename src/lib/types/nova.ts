@@ -22,6 +22,15 @@ export type Video<T extends Translatable | string> = {
     },
     video?: string,
 }
+export type Metadata<T extends Translatable | string> = {
+    width?: number,
+    height?: number,
+    mimeType?: string,
+    copyright?: string,
+    attr?: string,
+    tags?: string,
+    description?: T
+}
 
 export type Media<T extends Translatable | string> = {
     id?: number,
@@ -32,15 +41,7 @@ export type Media<T extends Translatable | string> = {
     cover?: boolean,
     cloudinary_id?: string,
     copyright?: string,
-    metadata?: {
-        width?: number,
-        height?: number,
-        mimeType?: string,
-        copyright?: string,
-        attr?: string,
-        tags?: string,
-        description?: T
-    },
+    metadata?: Metadata<T>,
     mime_type?: string,
     is_in_gallery?: boolean,
     original_width: number,

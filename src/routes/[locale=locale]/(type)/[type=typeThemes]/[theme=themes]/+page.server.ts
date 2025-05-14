@@ -31,9 +31,9 @@ export const load: ServerLoad = async ({ parent }) => {
     const tag =  getTag(theme)
     // 0 highlighted posts in this list
     let articles: Post<string>[]|undefined = (await getPosts({ type: 'post', highlighted: false, locale })).data?.items?.data;
-    articles = filterByTag(articles ?? [], tag);
+    articles = filterByTag<string>(articles ?? [], tag);
     const highlightedArticles: Post<string>[]|undefined = (await getPosts({ type: 'post', highlighted: true, locale })).data?.items?.data;
-    const highlightedArticle: Post<string>|undefined = filterByTag(highlightedArticles ?? [], tag)[0] ?? undefined;
+    const highlightedArticle: Post<string>|undefined = filterByTag<string>(highlightedArticles ?? [], tag)[0] ?? undefined;
 
     const favorites: Favorite<string>[]|undefined = (await getFavorites({ locale, theme})).data?.items?.data;
 

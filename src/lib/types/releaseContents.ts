@@ -4,7 +4,7 @@ export type Hero = {
     type: "hero",
     tag: `h${1 | 2 | 3 | 4 | 5 | 6}`,
     value: Translatable,
-    lead: Translatable,
+    lead?: Translatable,
     color: "white" | "black",
     image: Media<Translatable>,
 }

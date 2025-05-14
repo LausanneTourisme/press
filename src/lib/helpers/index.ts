@@ -1,7 +1,7 @@
 import { RouteTypes, type RouteType, type Theme } from "$enums";
 import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";
-import type { Post } from '$lib/types';
+import type { Post, Translatable } from '$lib/types';
 
 export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
 export const maxMobileWidth = 1280;
@@ -91,19 +91,19 @@ export function normalize(string: string): string {
   return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-export const filterByTag = (data: Post[], tags: string | string[]) => {
+export const filterByTag = <T extends Translatable|string>(data: Post<T>[], tags: string | string[]) => {
 
   if (typeof tags === 'string') {
     tags = [tags] // Will convert to array anyway
   }
 
-  return data.filter((post: Post) => {
+  return data.filter((post: Post<T>) => {
     if (!post?.tags?.length) {
       return false;
     }
     return tags.some(tag => post.tags?.map(x => x.name).includes(tag))
   })
-    .sort((a: Post, b: Post): number => {
+    .sort((a: Post<T>, b: Post<T>): number => {
       if ((Number)(a.published_at) < (Number)(b.published_at)) return 1;
       if ((Number)(a.published_at) > (Number)(b.published_at)) return -1;
       return 0;
