@@ -59,6 +59,7 @@
   <figure bind:this={figure} class={style} {onclick}>
     <Image
       class={imgClass}
+      {useCloudinaryPreset}
       {src}
       {alt}
       {width}
