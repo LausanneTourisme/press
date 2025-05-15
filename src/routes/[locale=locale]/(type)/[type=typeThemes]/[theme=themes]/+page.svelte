@@ -1,7 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import { page } from '$app/state';
-  import { RouteTypes, ThemeKeys, type Theme } from '$enums';
+  import { RouteTypes, ThemeKeys } from '$enums';
   import Button from '$lib/components/Button.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
@@ -11,7 +11,6 @@
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t } from '$lib/translations';
-  import type { Favorite, Post } from '$types';
   import { ArrowRight } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -163,4 +162,44 @@
     themeColor={themeInformation.color}
     listBorderColor={themeInformation.borderColor}
     />
+</Container>
+
+<!--
+	-
+	-
+	-
+	- THEMES >>>>>>>>>>>>>>>>>>>>>>>
+	-
+	-
+	-
+	-->
+<Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
+  <Container width="medium">
+    todo swiper
+    <!-- <Swiper containerClass={"md:m-0 py-4 flex gap-x-4"}> -->
+    <!-- {#each articles as article}
+          {@const publishedAt = DateTime.fromSeconds(parseInt(article.published_at)).setLocale($locale)}
+          {#key article.seo.slug}
+            <Clickable href={`${route(Web.articles)}/${article.id}/${article.seo.slug}`}
+                       overflow={true}
+                       class="group card min-w-72 md:w-96 bg-base-100 shadow hover:shadow-lg rounded-none transition-all">
+              <Figure class="h-48 rounded"
+                      src="{Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({w: 330})}"
+                      alt="" />
+              <div class="card-body px-4 h-64">
+                <small class="text-gray-500">{publishedAt?.toFormat("dd.MM.yyyy")}</small>
+                <h2 class="card-title text-gray-700 group-hover:text-gray-950 transition-colors">{article.name}</h2>
+                <p class="line-clamp-3 text-gray-700 group-hover:text-gray-950 transition-colors -mb-2">{article.lead}</p>
+                <div class="card-actions justify-end relative top-2">
+                  <div class="flex items-center text-gray-500 group-hover:text-gray-950 transition-colors">
+                    {$_("Lire")}&nbsp;
+                    <ArrowRightSolid class="w-4 h-4" />
+                  </div>
+                </div>
+              </div>
+            </Clickable>
+          {/key}
+        {/each}
+      </Swiper> -->
+  </Container>
 </Container>
