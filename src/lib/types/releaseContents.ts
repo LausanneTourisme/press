@@ -52,4 +52,4 @@ export type Embed = {
     value: string
 }
 
-export type ContentBlock = Hero | Heading | Paragraphe | Gallery | Image | Instagram | Youtube | Video
+export type ContentBlock = Hero | Heading | Paragraphe | Gallery | Image | Instagram | Youtube | Video | Embed
