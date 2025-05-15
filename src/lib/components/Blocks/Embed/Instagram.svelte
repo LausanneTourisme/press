@@ -1,3 +1,7 @@
+<script module>
+  let inserted = false;
+</script>
+
 <script lang="ts">
   import { browser } from '$app/environment';
   import { t } from '$lib/translations';
@@ -7,10 +11,13 @@
     url: string;
   };
   const { class: additionalClass = '', url }: HeadingProps = $props();
+
+  let shouldInsert = !inserted;
+  inserted = true;
 </script>
 
 <svelte:head>
-  {#if browser}
+  {#if browser && shouldInsert}
     <script async src="https://www.instagram.com/embed.js" defer></script>
   {/if}
 </svelte:head>
