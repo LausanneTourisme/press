@@ -3,7 +3,7 @@ import type { ContentBlock } from "./releaseContents"
 
 
 export type Translatable = {
-    fr: string,
+    fr?: string,
     en?: string,
     de?: string,
     it?: string,
@@ -65,6 +65,7 @@ export type Seo<T extends Translatable | string> = {
     hreflang?: T,
 }
 
+// TODO fix me bro
 export type Release<T extends Translatable | string> = {
     published_at?: string,
     id?: number,
@@ -78,7 +79,11 @@ export type Release<T extends Translatable | string> = {
     highlight?: boolean,
     content?: ContentBlock[]
 }
-export type Post<T extends Translatable | string> = Release<T>;
+// TODO fix me bro
+export type Post<T extends Translatable | string> = Release<T> ;/*& {
+    type: "post"
+};*/
+// TODO fix me bro
 export type Page<T extends Translatable | string> = Release<T>;
 
 export type Favorite<T extends Translatable | string> = {
