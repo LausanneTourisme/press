@@ -1,7 +1,7 @@
 import { Themes, type Theme } from "$enums";
 import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL, GROUP_ID_PAGE_HIGHLIGHTS } from "$env/static/private";
 import type { Locale } from "$lib/translations";
-import type { Favorite, GraphQLResponse, Group, Page, Post, Release, Translatable } from "$types";
+import type { Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from "$types";
 import { DateTime } from "luxon";
 
 const itemsLimit = 9999
@@ -34,7 +34,7 @@ export const getTag = (theme: Theme): string => {
     }
 }
 
-export const getPosts = async ({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted: boolean }) => {
+export const getPosts = async <T extends PostType<string | Translatable>>({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted: boolean }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -81,7 +81,7 @@ export const getPosts = async ({ type, locale, highlighted }: { type: 'press_rel
             }`,
         }),
     });
-    return (await result.json()) as Promise<GraphQLResponse<Post<string>|Release<string>|Page<string>>>;
+    return (await result.json()) as Promise<GraphQLResponse<T>>;
 }
 
 /**
@@ -122,7 +122,7 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
     return (await result.json()) as Promise<GraphQLResponse<Group<string>>>;
 }
 
-export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: Theme }) => {
+export const getFavorites = async <T extends Translatable | string>({ locale, theme }: { locale: Locale, theme: Theme }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -177,7 +177,7 @@ export const getFavorites = async ({ locale, theme }: { locale: Locale, theme: T
             }`,
         }),
     });
-    return (await result.json()) as Promise<GraphQLResponse<Favorite<string>>>;
+    return (await result.json()) as Promise<GraphQLResponse<Favorite<T>>>;
 }
 
 export const getAgendaEvents = async () => {
