@@ -91,7 +91,7 @@ export function normalize(string: string): string {
   return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-export const filterByTag = <T extends PostType<Translatable|string>>(data: T[], tags: string | string[]) => {
+export const filterByTag = <T extends PostType<Translatable | string>>(data: T[], tags: string | string[]) => {
 
   if (typeof tags === 'string') {
     tags = [tags] // Will convert to array anyway

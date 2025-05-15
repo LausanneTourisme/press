@@ -18,6 +18,7 @@
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
+  import { ucfirst } from '$lib/helpers';
 
   const data = page.data as PageData;
   const article = $derived(data.article);
@@ -26,17 +27,11 @@
   onMount(() => console.log(article));
 </script>
 
-<div class="text-column text-center">
-  {$locale}
-  <br />
-  {$t(`route.${RouteTypes.Presskit}.slug`)} détails
-</div>
-
 <Container fullscreen class="articles">
   <article transition:fade>
     <Container width="medium" class={hero && 'pb-0'}>
       <p>
-        {type}
+        {ucfirst($t(`route.${type}.slug`))}
         &mdash; {DateTime.fromSeconds(parseInt(article.published_at ?? '0'))
           .setLocale($locale)
           .toFormat('dd MMMM, yyyy')}
