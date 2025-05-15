@@ -126,7 +126,7 @@
 }
 
 ::selection {
-    @apply bg-brand-600 text-white;
+  @apply bg-brand-600 text-white;
 }
 
 html {
@@ -135,33 +135,41 @@ html {
 
 /* FIREFOX */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
 }
 
 /* CHROME */
 ::-webkit-scrollbar {
-    width: 0.5rem;
+  width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
 }
 
 :root {
-    font-family: 'Euclid Flex', sans-serif;
-    scroll-behavior: smooth;
+  font-family: 'Euclid Flex', sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
-    image-rendering: auto;
+  image-rendering: auto;
 }
 
 .font-euclid {
   font-family: var(--font-euclid);
+}
+
+.articles p {
+  @apply leading-relaxed mb-6
+}
+
+.articles .paragraph a {
+  @apply !text-brand-500 !font-bold
 }
