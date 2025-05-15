@@ -11,10 +11,12 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
 export const load = async ({ url, cookies, request, locals }) => {
     const lang = getUrlLocale(url.pathname) ?? defaultLocale;
 
-    // undefined cased covered by src/params/locale.ts
-    await setLocale(lang);
-    await loadTranslations(lang);
-    await loadTranslations(lang, url.pathname);
+    // undefined case covered by src/params/locale.ts
+    await Promise.all([
+        setLocale(lang),
+        loadTranslations(lang),
+        loadTranslations(lang, url.pathname),
+    ])
 
     // FIXME
     // TODO create common translations and insert 404
