@@ -24,7 +24,7 @@
     useCloudinaryPreset = true,
     title,
     alt = '',
-    ignoreAutoSize = false,
+    ignoreAutoSize = true,
     height = undefined,
     width = undefined,
     crop = false,
