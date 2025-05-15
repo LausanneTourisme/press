@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import Heading from '$lib/components/Blocks/Heading.svelte';
+  import Heading from '$lib/components/Heading.svelte';
   import Button from '$lib/components/Button.svelte';
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';

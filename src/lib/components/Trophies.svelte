@@ -3,8 +3,8 @@
   import Card from './Card.svelte';
   import Clickable from './Clickable.svelte';
   import Container from './Container.svelte';
-  import Heading from './Blocks/Heading.svelte';
-  import Paragraph from './Blocks/Paragraph.svelte';
+  import Heading from './Heading.svelte';
+  import Paragraph from './Paragraph.svelte';
   import Swiper from './Swiper.svelte';
 
   export type Trophy = {

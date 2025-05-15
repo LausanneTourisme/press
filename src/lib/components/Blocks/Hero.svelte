@@ -7,8 +7,8 @@
   import Image from './Image.svelte';
   import { locale, type Locale } from '$lib/translations';
   import Container from '../Container.svelte';
-  import Heading from './Heading.svelte';
-  import Paragraph from './Paragraph.svelte';
+  import Heading from '../Heading.svelte';
+  import Paragraph from '../Paragraph.svelte';
 
   type Props = {
     class?: string;

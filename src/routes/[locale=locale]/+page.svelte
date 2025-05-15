@@ -6,11 +6,11 @@
   import Container from '$lib/components/Container.svelte';
   import Counter from '$lib/components/Counter.svelte';
   import Faq from '$lib/components/Faq.svelte';
-  import Heading from '$lib/components/Blocks/Heading.svelte';
+  import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
   import Observer from '$lib/components/Observer.svelte';
-  import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
+  import Paragraph from '$lib/components/Paragraph.svelte';
   import Themes from '$lib/components/Themes.svelte';
   import Trophies, { type Trophy } from '$lib/components/Trophies.svelte';
   import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';

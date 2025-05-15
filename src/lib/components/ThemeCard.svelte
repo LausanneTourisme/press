@@ -7,8 +7,8 @@
   import { blur } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import Clickable from './Clickable.svelte';
-  import Heading from './Blocks/Heading.svelte';
-  import Paragraph from './Blocks/Paragraph.svelte';
+  import Heading from './Heading.svelte';
+  import Paragraph from './Paragraph.svelte';
   import Image from './Media/Image.svelte';
 
   type Props = {

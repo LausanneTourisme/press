@@ -1,16 +1,12 @@
 <!-- Used only for post content -->
 <script lang="ts">
-  import { Cloudinary } from '$lib/cloudinary';
   import type { Metadata, Translatable } from '$types';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-  import Container from '../Container.svelte';
-  import Figure from '../Figure.svelte';
-  import { maxMobileWidth } from '$lib/helpers';
-  import VerticalImage from './images/Vertical.svelte';
   import HorizontalImage from './images/Horizontal.svelte';
-  import SquareImage from './images/Square.svelte';
   import Parallax from './images/Parallax.svelte';
+  import SquareImage from './images/Square.svelte';
+  import VerticalImage from './images/Vertical.svelte';
 
   type Props = {
     class?: string;
@@ -21,7 +17,7 @@
     focus?: 'face' | 'auto' | 'null';
     fixed?: boolean;
     metadata?: Metadata<Translatable>;
-    children: Snippet;
+    children?: Snippet;
   };
 
   const {
@@ -36,7 +32,7 @@
     fixed = true
   }: Props = $props();
   let parallaxWidth: number = $state(0);
-
+  
   const getImgType = (
     width: number | undefined,
     height: number | undefined
@@ -100,9 +96,9 @@
     </Parallax>
   </div>
 {:else if imgFormat === 'vertical'}
-  <VerticalImage focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <VerticalImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {:else if imgFormat === 'horizontal'}
-  <HorizontalImage focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <HorizontalImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {:else}
-  <SquareImage focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <SquareImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {/if}

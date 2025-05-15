@@ -2,8 +2,8 @@
   import { locale, t } from '$lib/translations';
   import { ChevronRight } from 'lucide-svelte';
   import { twMerge } from 'tailwind-merge';
-  import Heading from './Blocks/Heading.svelte';
-  import Paragraph from './Blocks/Paragraph.svelte';
+  import Heading from './Heading.svelte';
+  import Paragraph from './Paragraph.svelte';
   import Shelf from './Shelf.svelte';
   import Link from './Link.svelte';
   import Instagram from '$lib/Icons/Instagram.svelte';

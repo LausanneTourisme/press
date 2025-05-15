@@ -8,10 +8,11 @@
     children: Snippet;
   };
 
-  const { class: additionalClass = '', children }: HeadingProps = $props();
+  let { class: additionalClass = '', centered = false, children }: HeadingProps = $props();
 
   const style = twMerge(
-    'paragraph leading-8 tracking-[0.45px]',
+    'dark:text-white text-neutral-700 font-lighter leading-7 my-3',
+    centered ? 'md:text-center mx-auto max-w-[560px] md:max-w-[800px]' : '',
     additionalClass
   );
 </script>

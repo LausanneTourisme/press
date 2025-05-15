@@ -15,25 +15,22 @@
 
   switch (tag) {
     case 'h1':
-      tagStyle = 'text-5xl font-bold py-3';
+      tagStyle = 'text-3xl md:text-[2.4rem] leading-tight tracking-[.45px] py-3';
       break;
     case 'h2':
-      tagStyle = 'text-4xl font-semibold py-4';
+      tagStyle = 'text-2xl md:text-[2.4rem] md:leading-tight tracking-[.45px] py-1';
       break;
     case 'h3':
-      tagStyle = 'text-xl font-medium mb-2';
+      tagStyle = 'text-xl md:text-2xl leading-snug tracking-tight font-semibold -mb-2 mt-4';
       break;
     case 'h4':
-      tagStyle = 'text-lg font-medium mb-2';
-      break;
-    case 'h5':
-      tagStyle = 'text-lg font-medium italic mb-2';
+      tagStyle = 'text-lg md:text-xl leading-snug tracking-tight font-medium -mb-2 mt-4';
       break;
     default:
-      tagStyle = 'mb-6';
+      tagStyle = ' text-lg';
   }
 
-  const style = twMerge('dark:text-white text-black', tagStyle, additionalClass);
+  const style = twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass);
 </script>
 
 <svelte:element this={tag} class={style} {title}>

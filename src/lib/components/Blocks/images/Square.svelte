@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { Cloudinary } from '$lib/cloudinary';
+  import { Cloudinary, type Transform } from '$lib/cloudinary';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
+  import { onMount } from 'svelte';
 
   type Props = {
     class?: string;
@@ -19,24 +20,41 @@
     isMobile = false,
     focus = 'auto'
   }: Props = $props();
-  let url: string = $state('');
+  let transform: Transform = $state({});
 
-  $effect(() => {
-    url = Cloudinary.make(cloudinaryId).url({
+  onMount(() => {
+    transform = {
       w: isMobile ? window.innerWidth : Math.round(window.innerWidth / 1.4),
-      ar: '1:1',
       g: focus,
       c: 'fill'
-    });
+    };
   });
 </script>
 
 <Container width={size === 'large' ? 'medium' : 'small'} class="flex justify-center">
   {#if size === 'small'}
-    <Figure class="small aspect-square w-full max-w-md" src={url} {alt} />
+    <Figure
+      useCloudinaryPreset={false}
+      class="small aspect-square w-full max-w-md"
+      src={cloudinaryId}
+      {transform}
+      {alt}
+    />
   {:else if size === 'medium'}
-    <Figure class="medium aspect-square w-full max-w-xl" src={url} {alt} />
+    <Figure
+      useCloudinaryPreset={false}
+      class="medium aspect-square w-full max-w-xl"
+      src={cloudinaryId}
+      {transform}
+      {alt}
+    />
   {:else}
-    <Figure class="large aspect-square w-full max-w-3xl" src={url} {alt} />
+    <Figure
+      useCloudinaryPreset={false}
+      class="large aspect-square w-full max-w-3xl"
+      src={cloudinaryId}
+      {transform}
+      {alt}
+    />
   {/if}
 </Container>
