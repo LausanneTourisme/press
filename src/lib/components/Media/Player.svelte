@@ -26,7 +26,7 @@
     onIntersecting
   }: Props = $props();
 
-  let video: Video|undefined = $state(undefined);
+  let video: Video | undefined = $state(undefined);
   let posterElement: HTMLDivElement;
   let controlsElement: HTMLButtonElement;
 

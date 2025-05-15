@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -17,39 +16,36 @@
   import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
   import { locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
-  import type { PageData } from './$types';
 
-  const translations = (page.data as PageData).translations;
-  const currentLocale = locale.get() as Locale;
-  
   let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
+  let videoUrl = $state(`/videos/welcome_card_${$locale}.mp4`);
 
   const trophies: Trophy[] = [
     {
       name: $t('page.distinctions.trophies.first.name'),
       content: $t('page.distinctions.trophies.first.content'),
       image: '/images/pages/home/articles/parc-musee-olympique.jpg',
-      link: translations[currentLocale]['page.distinctions.trophies.first.link']
+      link: $t('page.distinctions.trophies.first.link')
     },
     {
       name: $t('page.distinctions.trophies.second.name'),
       content: $t('page.distinctions.trophies.second.content'),
       image: '/images/pages/home/articles/52placestogo.jpg',
-      link: translations[currentLocale]['page.distinctions.trophies.second.link']
+      link: $t('page.distinctions.trophies.second.link')
     },
     {
       name: $t('page.distinctions.trophies.third.name'),
       content: $t('page.distinctions.trophies.third.content'),
       image: '/images/pages/home/articles/nature.jpg',
-      link: translations[currentLocale]['page.distinctions.trophies.third.link']
+      link: $t('page.distinctions.trophies.third.link')
     },
     {
       name: $t('page.distinctions.trophies.fourth.name'),
       content: $t('page.distinctions.trophies.fourth.content'),
       image: '/images/pages/home/articles/best-small-city.jpg',
-      link: translations[currentLocale]['page.distinctions.trophies.fourth.link']
+      link: $t('page.distinctions.trophies.fourth.link')
     }
   ];
 
@@ -59,6 +55,15 @@
   // Listen for changes
   const updateDarkMode = () => {
     isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  };
+
+  const onVideoIntersecting = (isIntersecting: boolean) => {
+    const nav = document.getElementById('main-nav');
+    if (nav && !isMobile) {
+      nav.classList.toggle('invisible-nav', isIntersecting); // Use second arg to set state explicitly
+      // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
+      // nav.classList.toggle('hidden-nav', isIntersecting);
+    }
   };
 
   onMount(() => {
@@ -82,14 +87,9 @@
     };
   });
 
-  const onVideoIntersecting = (isIntersecting: boolean) => {
-    const nav = document.getElementById('main-nav');
-    if (nav && !isMobile) {
-      nav.classList.toggle('invisible-nav', isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('hidden-nav', isIntersecting);
-    }
-  };
+  $effect(() => {
+    videoUrl = `/videos/welcome_card_${$locale}.mp4`;
+  });
 </script>
 
 <!--
@@ -151,7 +151,7 @@
 <Container class="relative z-10 py-[3vh]" fullscreen={true}>
   <Player
     autoplay={!isMobile}
-    src="/videos/welcome_card_{$locale}.mp4"
+    src={videoUrl}
     poster="/images/pages/home/poster-video.png"
     controls={true}
     onIntersecting={onVideoIntersecting}

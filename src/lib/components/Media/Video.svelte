@@ -34,29 +34,31 @@
     children
   }: VideoProps = $props();
 
-  export function toggleVideoState(){
-    if(isRunning()) pause();
+  export function toggleVideoState() {
+    if (isRunning()) pause();
     else play();
   }
 
   export function play() {
-      video?.play();
+    video?.play();
   }
 
   export function pause() {
     video?.pause();
   }
 
-  export const isRunning = () => video ? !video.paused : false;
+  export const isRunning = () => (video ? !video.paused : false);
 
-  const refreshSrc = () => {
+  const refreshSrc = (filepath: string) => {
     if (video) {
       let { width } = video.getBoundingClientRect();
 
       width = Math.round(width);
 
       if (!dev && src.includes('videos')) {
-        srcResolved = Cloudinary.make(`${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`).url({
+        srcResolved = Cloudinary.make(
+          `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(filepath)}`
+        ).url({
           width
         });
       } else {
@@ -69,8 +71,8 @@
     muted = !muted;
   };
 
-  onMount(() => {
-    refreshSrc();
+  $effect(() => {
+    refreshSrc(src);
   });
 
   const style = twMerge('w-full h-full relative z-0', additionalClass);
