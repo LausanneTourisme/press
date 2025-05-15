@@ -1,7 +1,7 @@
 <script lang="ts">
   import { defaultLocale, locale } from '$lib/translations';
 
-  const url: string = $locale ? `/${$locale}` : `/${defaultLocale}`;
+  const url = $locale ? `/${$locale}` : `/${defaultLocale}`;
 </script>
 
 <section

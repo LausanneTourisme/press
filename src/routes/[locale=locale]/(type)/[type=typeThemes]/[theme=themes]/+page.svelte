@@ -15,12 +15,14 @@
   import { ArrowRight } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
+  import type { PageData } from './$types';
 
-  const highlightedArticle: Post<string> | undefined = $derived(page.data.payload.highlightedArticle);
-  const title: string = $derived(highlightedArticle?.name ?? page.data.seo.title);
-  const articles: Post<string>[] = $derived(page.data.payload.articles);
-  const favorites: Favorite<string>[] = $derived(page.data.payload.favorites);
-  const theme: Theme = page.data.theme;
+  const pageData = page.data as PageData
+  const highlightedArticle = $derived(pageData.payload.highlightedArticle);
+  const title = $derived(highlightedArticle?.name ?? pageData.seo.title);
+  const articles= $derived(pageData.payload.articles ?? []);
+  const favorites = $derived(pageData.payload.favorites ?? []);
+  const theme = pageData.theme;
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
   if (typeof window !== 'undefined') {

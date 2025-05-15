@@ -1,23 +1,27 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import Nav from '$lib/components/Nav/Nav.svelte';
-  import { locale, t } from '$lib/translations';
-  import '../app.css';
   import Heading from '$lib/components/Blocks/Heading.svelte';
-  import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import Button from '$lib/components/Button.svelte';
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';
+  import Nav from '$lib/components/Nav/Nav.svelte';
+  import SocialNetworks from '$lib/components/SocialNetworks.svelte';
+  import { locale, t } from '$lib/translations';
   import { Send } from 'lucide-svelte';
-  let { children } = $props();
+  import type { Snippet } from 'svelte';
+  import '../app.css';
+  import { type PageData } from './[locale=locale]/$types';
+
+  let { children } = $props<{ children: Snippet }>();
+  const pageData = page.data as PageData;
 
   const ldJson = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `${page.data.seo.title} • Lausanne Tourisme`,
-    image: page.data.seo.image,
-    description: page.data.seo.description,
-    url: page.data.seo.canonical
+    name: `${pageData.seo.title} • Lausanne Tourisme`,
+    image: pageData.seo.image,
+    description: pageData.seo.description,
+    url: pageData.seo.canonical
   };
 
   const ldJsonOrganisation = {
@@ -52,25 +56,25 @@
 </script>
 
 <svelte:head>
-  <title>{page.data.seo.title} • Lausanne Tourisme</title>
-  <meta name="description" content={page.data.seo.description} />
+  <title>{pageData.seo.title} • Lausanne Tourisme</title>
+  <meta name="description" content={pageData.seo.description} />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
-  <link rel="canonical" href={page.data.seo.canonical} />
-  {#each page.data.seo.alternate as route}
-    <link rel="alternate" hreflang={route.lang} href={route.href} />
+  <link rel="canonical" href={pageData.seo.canonical} />
+  {#each pageData.seo.alternate as route}
+    <link rel="alternate" hreflang={route.hreflang} href={route.href} />
   {/each}
   <link rel="icon" href="/favicon.png" />
   <!-- Open Graph -->
-  <meta property="twitter:image" content={page.data.seo.image} />
+  <meta property="twitter:image" content={pageData.seo.image} />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content={page.data.seo.title} />
-  <meta property="twitter:description" content={page.data.seo.description} />
-  <meta property="og:image" content={page.data.seo.image} />
-  <meta property="og:title" content={page.data.seo.title} />
-  <meta property="og:description" content={page.data.seo.description} />
-  <meta property="og:url" content={`${page.data.seo.canonical}${page.url.hash}`} />
+  <meta property="twitter:title" content={pageData.seo.title} />
+  <meta property="twitter:description" content={pageData.seo.description} />
+  <meta property="og:image" content={pageData.seo.image} />
+  <meta property="og:title" content={pageData.seo.title} />
+  <meta property="og:description" content={pageData.seo.description} />
+  <meta property="og:url" content={`${pageData.seo.canonical}${page.url.hash}`} />
   <script type="application/ld+json">
   </script>
   <!-- Structured Data -->
@@ -163,7 +167,7 @@
             <a href="mailto:info@lausanne-tourisme.ch">info@lausanne-tourisme.ch</a><br />
             <a href="tel:+41216137373">+41 21 613 73 73</a>
           </p>
-          <Button negative={true} href={page.data.translations[locale.get()]['footer.where.url']}>
+          <Button negative={true} href={pageData.translations[locale.get()]['footer.where.url']}>
             {$t('footer.where.text')}
           </Button>
         </div>
@@ -181,7 +185,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()][
+                    href={pageData.translations[locale.get()][
                       'footer.infos.corporate.about-us.url'
                     ]}
                   >
@@ -193,7 +197,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()][
+                    href={pageData.translations[locale.get()][
                       'footer.infos.corporate.member-space.url'
                     ]}
                   >
@@ -205,7 +209,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.corporate.jobs.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.corporate.jobs.url']}
                   >
                     {$t('footer.infos.corporate.jobs.text')}
                   </Link>
@@ -215,7 +219,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()][
+                    href={pageData.translations[locale.get()][
                       'footer.infos.corporate.general-terms.url'
                     ]}
                   >
@@ -227,7 +231,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()][
+                    href={pageData.translations[locale.get()][
                       'footer.infos.corporate.privacy.url'
                     ]}
                   >
@@ -248,7 +252,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.meeting.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.meeting.url']}
                   >
                     {$t('footer.infos.more.meeting.text')}
                   </Link>
@@ -258,7 +262,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.congress.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.congress.url']}
                   >
                     {$t('footer.infos.more.congress.text')}
                   </Link>
@@ -268,7 +272,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.trade.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.trade.url']}
                   >
                     {$t('footer.infos.more.trade.text')}
                   </Link>
@@ -278,7 +282,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.presskit.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.presskit.url']}
                   >
                     {$t('footer.infos.more.presskit.text')}
                   </Link>
@@ -288,7 +292,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.press.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.press.url']}
                   >
                     {$t('footer.infos.more.press.text')}
                   </Link>
@@ -298,7 +302,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={page.data.translations[locale.get()]['footer.infos.more.brochures.url']}
+                    href={pageData.translations[locale.get()]['footer.infos.more.brochures.url']}
                   >
                     {$t('footer.infos.more.brochures.text')}
                   </Link>

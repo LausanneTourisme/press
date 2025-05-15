@@ -1,25 +1,17 @@
-import { RouteTypes, type RouteType } from '$enums';
-import { defaultLocale, loadTranslations, locale, supportedLocales, translations as libTranslations, type Locale } from '$lib/translations';
+import { RouteTypes } from '$enums';
+import { defaultLocale, translations as libTranslations, loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
-import { type ServerLoad } from '@sveltejs/kit';
 
-interface Parent {
-    i18n: {
-        locale: Locale,
-        route: string
-    },
-    translations: {
-        [key in Locale]: Record<string, string>
-    }
-};
+export const load = async ({ url, params, parent }) => {
+    const [{ i18n, translations }] = await Promise.all([
+        parent(),
+        loadTranslations(params.locale ?? defaultLocale, `/${params.locale}/${params.type}`),
 
-export const load: ServerLoad = async ({ url, params, parent }) => {
-    const { i18n, translations }: Parent = await parent() as Parent;
+    ]);
+    
     const lang = params.locale as Locale;
 
     const type = translations[lang][`route.${RouteTypes.Presskit}.slug`] === params.type ? RouteTypes.Presskit : RouteTypes.Pressrelease
-
-    await loadTranslations(params.locale ?? defaultLocale, `/${lang}/${params.type}`)
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,

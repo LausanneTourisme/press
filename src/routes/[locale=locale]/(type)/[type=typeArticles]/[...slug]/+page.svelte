@@ -14,13 +14,15 @@
   import Paragraph from '$lib/components/Blocks/Paragraph.svelte';
   import Hero from '$lib/components/Blocks/Hero.svelte';
   import type { Hero as HeroType } from '$types/releaseContents';
+  import type { PageData } from './$types';
 
-  const article: Post<Translatable> | undefined = $derived(page.data.article);
-  const type: RouteType = $derived(page.data.type);
-  const hero: undefined|HeroType = $derived(
-    (page.data.article as undefined | Post<Translatable>)?.content?.find(
+  const data = page.data as PageData;
+  const article = $derived(data.article);
+  const type = $derived(data.type);
+  const hero = $derived(
+    data.article.content?.find(
       (block) => block.type === 'hero'
-    ) as undefined|HeroType
+    )
   );
   onMount(() => console.log(article))
 </script>
@@ -36,11 +38,11 @@
     <Container width="medium" class={hero && 'pb-0'}>
       <p>
         {type}
-        &mdash; {DateTime.fromSeconds(parseInt(article?.published_at ?? '0'))
+        &mdash; {DateTime.fromSeconds(parseInt(article.published_at ?? '0'))
           .setLocale($locale)
           .toFormat('dd MMMM, yyyy')}
       </p>
-      {#if article?.tags?.length}
+      {#if article.tags?.length}
         <p class="pt-2">
           {#each article.tags as tag}
             {@const theme = getThemeByTagName(tag.name)}

@@ -1,20 +1,9 @@
 import { supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
-import { type ServerLoad } from '@sveltejs/kit';
 
-interface Parent {
-    i18n: {
-        locale: Locale,
-        route: string
-    },
-    translations: {
-        [key in Locale]: Record<string, string>
-    }
-};
-
-export const load: ServerLoad = async ({ url, params, parent }) => {
-    const { i18n, translations }: Parent = await parent() as Parent;
-    const lang: Locale = params.locale as Locale;
+export const load = async ({ url, params, parent }) => {
+    const { i18n, translations } = await parent();
+    const lang = params.locale as Locale;
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,

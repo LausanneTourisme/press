@@ -1,6 +1,5 @@
 import { defaultLocale, isValidLocale, loadTranslations, setLocale, supportedLocales, translations, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
-import { type ServerLoad } from '@sveltejs/kit';
 
 const getUrlLocale = (pathname: string): undefined | Locale => {
     let match = pathname.match(/^\/[a-z]{2}/i);
@@ -9,8 +8,8 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
     return isValidLocale(match[0].replace('/', '')) ? match[0].replace('/', '') as Locale : undefined;
 }
 
-export const load: ServerLoad = async ({ url, cookies, request, locals }) => {
-    const lang: undefined | Locale = getUrlLocale(url.pathname) ?? defaultLocale;
+export const load = async ({ url, cookies, request, locals }) => {
+    const lang = getUrlLocale(url.pathname) ?? defaultLocale;
 
     // undefined cased covered by src/params/locale.ts
     await setLocale(lang);

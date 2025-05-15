@@ -1,7 +1,7 @@
 
 import { dev } from '$app/environment';
 import { defaultLocale, isValidLocale, type Locale } from '$lib/translations';
-import { redirect, type ServerLoad } from '@sveltejs/kit';
+import { redirect } from '@sveltejs/kit';
 
 const getNavLocale = (request: Request) => {
     if (dev) return defaultLocale;
@@ -20,7 +20,7 @@ const getNavLocale = (request: Request) => {
     return defaultLocale;
 };
 
-export const load: ServerLoad = async ({ url, request }) => {
+export const load = async ({ url, request }) => {
     const locale = getNavLocale(request);
     throw redirect(302, `/${locale}`);
 };

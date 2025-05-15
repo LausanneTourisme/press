@@ -17,7 +17,11 @@
   import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
   import { locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
+  import type { PageData } from './$types';
 
+  const translations = (page.data as PageData).translations;
+  const currentLocale = locale.get() as Locale;
+  
   let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
@@ -27,25 +31,25 @@
       name: $t('page.distinctions.trophies.first.name'),
       content: $t('page.distinctions.trophies.first.content'),
       image: '/images/pages/home/articles/parc-musee-olympique.jpg',
-      link: page.data.translations[locale.get()]['page.distinctions.trophies.first.link']
+      link: translations[currentLocale]['page.distinctions.trophies.first.link']
     },
     {
       name: $t('page.distinctions.trophies.second.name'),
       content: $t('page.distinctions.trophies.second.content'),
       image: '/images/pages/home/articles/52placestogo.jpg',
-      link: page.data.translations[locale.get()]['page.distinctions.trophies.second.link']
+      link: translations[currentLocale]['page.distinctions.trophies.second.link']
     },
     {
       name: $t('page.distinctions.trophies.third.name'),
       content: $t('page.distinctions.trophies.third.content'),
       image: '/images/pages/home/articles/nature.jpg',
-      link: page.data.translations[locale.get()]['page.distinctions.trophies.third.link']
+      link: translations[currentLocale]['page.distinctions.trophies.third.link']
     },
     {
       name: $t('page.distinctions.trophies.fourth.name'),
       content: $t('page.distinctions.trophies.fourth.content'),
       image: '/images/pages/home/articles/best-small-city.jpg',
-      link: page.data.translations[locale.get()]['page.distinctions.trophies.fourth.link']
+      link: translations[currentLocale]['page.distinctions.trophies.fourth.link']
     }
   ];
 

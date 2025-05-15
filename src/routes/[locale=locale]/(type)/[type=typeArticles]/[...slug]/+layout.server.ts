@@ -1,33 +1,25 @@
 import { dev } from '$app/environment';
-import { RouteTypes, type RouteType } from '$enums';
+import { RouteTypes } from '$enums';
 import { Cloudinary } from '$lib/cloudinary';
 import { isOfflineMode } from '$lib/helpers';
 import { getArticle } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
-import { defaultLocale, isValidLocale, loadTranslations, locale, locales, setLocale, supportedLocales, translations, type Locale } from '$lib/translations';
-import type { Post, SeoHeader, Translatable } from '$types';
-import { error, redirect, type ServerLoad } from '@sveltejs/kit';
+import { loadTranslations, supportedLocales } from '$lib/translations';
+import type { SeoHeader, Translatable } from '$types';
+import { error } from '@sveltejs/kit';
 
-interface Parent {
-    i18n: {
-        locale: Locale,
-        route: string
-    },
-    translations: {
-        [key in Locale]: Record<string, string>
-    },
-    locale: Locale,
-    type: RouteType,
-};
-
-export const load: ServerLoad = async ({ params, parent, url, ...rest }) => {
+export const load = async ({ params, parent, url, ...rest }) => {
     if (dev && isOfflineMode) {
         //MOCK fetch requests
         server.listen()
     }
 
-    const { i18n, translations, locale, type }: Parent = await parent() as Parent;
-    const article: Post<Translatable> | undefined = (await getArticle(params.slug ?? '')).data.item;
+    const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([
+        parent(),
+        getArticle(params.slug ?? ''),
+    ]);
+
+    const article = articleRes.data.item;
 
     if (!article) throw error(404);
 
