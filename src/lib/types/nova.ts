@@ -65,26 +65,36 @@ export type Seo<T extends Translatable | string> = {
     hreflang?: T,
 }
 
-// TODO fix me bro
-export type Release<T extends Translatable | string> = {
+type PostBase<T extends Translatable | string> = {
     published_at?: string,
     id?: number,
     name?: T,
     lead?: T,
     summary?: T,
     medias?: Media<T>[],
-    type?: string,
     seo?: Seo<T>,
     tags?: Tag<T>[],
     highlight?: boolean,
     content?: ContentBlock[]
 }
-// TODO fix me bro
-export type Post<T extends Translatable | string> = Release<T> ;/*& {
-    type: "post"
-};*/
-// TODO fix me bro
-export type Page<T extends Translatable | string> = Release<T>;
+
+export type Release<T extends Translatable | string> = PostBase<T> & {
+    type?: "press_release" | "press_kit",
+}
+
+export type Post<T extends Translatable | string> = PostBase<T> & {
+    type?: "post"
+};
+
+export type Page<T extends Translatable | string> = PostBase<T> & {
+    type?: "page"
+};
+
+export type News<T extends Translatable | string> = PostBase<T> & {
+    type?: "news"
+};
+
+export type PostType<T extends Translatable | string> = Release<T> | Post<T> | Page<T> | News<T>;
 
 export type Favorite<T extends Translatable | string> = {
     id?: number,
