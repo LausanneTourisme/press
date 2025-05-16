@@ -2,12 +2,12 @@
   import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { Cloudinary, type Transform } from '$lib/cloudinary';
-  import { filename } from '$lib/helpers';
+  import { filename, isOfflineMode } from '$lib/helpers';
   import { twMerge } from 'tailwind-merge';
 
   interface ImageProps {
     src: string;
-    useCloudinaryPreset?: boolean,
+    useCloudinaryPreset?: boolean;
     title?: string;
     alt?: string;
     ignoreAutoSize?: boolean;
@@ -33,7 +33,7 @@
     onload
   }: ImageProps = $props();
 
-  if(!transform){
+  if (!transform) {
     transform = {
       g: 'auto',
       c: 'fill'
@@ -45,6 +45,14 @@
 
   const generateImagePath = () => {
     if (!image) {
+      srcResolved = src;
+      return;
+    }
+    if (isOfflineMode) {
+      if (src.includes('http') || src.startsWith('/images')) {
+        srcResolved = '/images/pages/themes/cathedrale_skate.jpg';
+        return;
+      }
       srcResolved = src;
       return;
     }
@@ -70,14 +78,16 @@
     }
 
     // filter locally-called images from API images with a cloudinary ID (that don't have "images" in their name)
-    if ((!dev && !src.includes('http')) || !src.startsWith('/images')) {
-      const path = useCloudinaryPreset ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}` : filename(src);
+    if (!src.includes('http') && !src.startsWith('/images')) {
+      const path = useCloudinaryPreset
+        ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`
+        : filename(src);
       srcResolved = Cloudinary.make(path).url({
         ...resolution,
         ...transform
       });
     } else {
-      srcResolved = src.startsWith('/') ? src : `/${src}`;
+      srcResolved = src.includes('http') || src.startsWith('/') ? src : `/${src}`;
     }
   };
 
