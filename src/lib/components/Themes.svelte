@@ -30,6 +30,10 @@
     showMore = true;
     onShowMore();
   };
+
+  $effect(() => {
+    showMore = expanded
+  })
 </script>
 
 <div class="p-6 md:pt-16">

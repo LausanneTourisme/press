@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { afterNavigate } from '$app/navigation';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -69,7 +70,15 @@
   onMount(() => {
     updateSize();
     updateDarkMode();
-    displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
+
+    afterNavigate(({ to, from, type }) => {
+      // If user used back/forward, we keep themes state
+      if (type === 'popstate') {
+        displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
+      } else {
+        displayAllThemes = false;
+      }
+    });
     /*
      *  Event listeners
      */
