@@ -106,7 +106,7 @@
       essential: true
     });
   };
-  
+
   onMount(() => {
     favorites.forEach((favorite: Favorite<string>) => {
       const { pois, lausanner } = favorite;
@@ -129,9 +129,9 @@
   });
 </script>
 
-<div class="relative flex h-[550px] md:flex-row 2xl:h-[768px]">
+<div class="relative flex flex-col-reverse h-[550px] xl:flex-row 2xl:h-[768px]">
   {#if markers.length}
-    <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 md:w-2/5">
+    <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 xl:w-2/5">
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
         {#each markers as marker}
           <LausannerCard
