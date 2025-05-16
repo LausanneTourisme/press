@@ -1,4 +1,8 @@
 {
-    "title": "",
-    "meta-description": ""
+    "title": "Immanquables et nouveautés",
+    "meta-description": "Vivez l'aventure lausannoise à 100% : ne ratez rien de ses incontournables comme de son actualité et faites de votre séjour chez nous une expérience inoubliable !",
+    "news": {
+        "title": "Nouveautés",
+        "paragraph": "Vivez l'aventure lausannoise à 100% : ne ratez rien de ses incontournables comme de son actualité et faites de votre séjour chez nous une expérience inoubliable !"
+    }
 }
