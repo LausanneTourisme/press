@@ -13,73 +13,92 @@
   import { type PageData } from './[locale=locale]/$types';
 
   let { children } = $props<{ children: Snippet }>();
-  const pageData = page.data as PageData;
+  const origin = $derived(page.url.origin);
+  const translations = $derived((page.data as PageData).translations[locale.get()]);
+  const seo = $derived.by(() => {
 
-  const ldJson = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: `${pageData.seo.title} • Lausanne Tourisme`,
-    image: pageData.seo.image,
-    description: pageData.seo.description,
-    url: pageData.seo.canonical
-  };
-
-  const ldJsonOrganisation = {
-    '@context': 'http://schema.org',
-    '@type': 'Organization',
-    url: 'https://www.lausanne-tourisme.ch',
-    logo: `${page.url.origin}/images/logo/LT_Logo.png`,
-    name: 'Lausanne Tourisme',
-    email: 'info@lausanne-tourisme.ch',
-    telephone: '+41 21 613 73 73',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'info@lausanne-tourisme.ch',
-      telephone: '+41 21 613 73 73'
-    },
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Avenue de Rhodanie 2 – CP 975',
-      addressLocality: 'Lausanne',
-      addressCountry: 'CH',
-      addressRegion: 'Vaud',
-      postalCode: '1001'
-    },
-    sameAs: [
-      'https://www.facebook.com/LausanneCapitaleOlympique',
-      'https://www.x.com/LausanneCO',
-      'https://www.instagram.com/thelausanner/',
-      'https://www.youtube.com/LausanneTourisme',
-      'https://www.linkedin.com/company/lausanne-capitale-olympique'
-    ]
-  };
+  const pageData = $state(page.data as PageData);
+    return {
+      title: pageData.seo.title,
+      description: pageData.seo.description,
+      canonical: pageData.seo.canonical,
+      alternates: pageData.seo.alternate
+        .map(
+          (alternate) =>
+            `<link rel="alternate" hreflang="${alternate.hreflang}" href="${origin}${alternate.href}" />`
+        )
+        .join('\n'),
+      image: pageData.seo.image
+    };
+  });
 </script>
 
 <svelte:head>
-  <title>{pageData.seo.title} • Lausanne Tourisme</title>
-  <meta name="description" content={pageData.seo.description} />
+  <title>{seo.title} • Lausanne Tourisme</title>
+  <meta name="description" content={seo.description} />
   <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
-  <link rel="canonical" href={pageData.seo.canonical} />
-  {#each pageData.seo.alternate as route}
-    <link rel="alternate" hreflang={route.hreflang} href={route.href} />
-  {/each}
+  <link rel="canonical" href={seo.canonical} />
+  {@html seo.alternates}
   <link rel="icon" href="/favicon.png" />
   <!-- Open Graph -->
-  <meta property="twitter:image" content={pageData.seo.image} />
+  <meta property="twitter:image" content={seo.image} />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content={pageData.seo.title} />
-  <meta property="twitter:description" content={pageData.seo.description} />
-  <meta property="og:image" content={pageData.seo.image} />
-  <meta property="og:title" content={pageData.seo.title} />
-  <meta property="og:description" content={pageData.seo.description} />
-  <meta property="og:url" content={`${pageData.seo.canonical}${page.url.hash}`} />
+  <meta property="twitter:title" content={seo.title} />
+  <meta property="twitter:description" content={seo.description} />
+  <meta property="og:image" content={seo.image} />
+  <meta property="og:title" content={seo.title} />
+  <meta property="og:description" content={seo.description} />
+  <meta property="og:url" content={`${seo.canonical}`} />
   <script type="application/ld+json">
   </script>
   <!-- Structured Data -->
-  {@html `<script type="application/ld+json">${JSON.stringify(ldJson)}</script>`}
-  {@html `<script type="application/ld+json">${JSON.stringify(ldJsonOrganisation)}</script>`}
+  {@html `
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "${seo.title} • Lausanne Tourisme",
+        "image": "${seo.image}",
+        "description": "${seo.description}",
+        "url": "${seo.canonical}"
+      }
+      </script>
+    `}
+  {@html `
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.lausanne-tourisme.ch",
+      "logo": "${origin}/images/logo/LT_Logo.png",
+      "name": "Lausanne Tourisme",
+      "email": "info@lausanne-tourisme.ch",
+      "telephone": "+41 21 613 73 73",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@lausanne-tourisme.ch",
+        "telephone": "+41 21 613 73 73"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue de Rhodanie 2 – CP 975",
+        "addressLocality": "Lausanne",
+        "addressCountry": "CH",
+        "addressRegion": "Vaud",
+        "postalCode": "1001"
+      },
+      "sameAs": [
+        "https://www.facebook.com/LausanneCapitaleOlympique",
+        "https://www.x.com/LausanneCO",
+        "https://www.instagram.com/thelausanner/",
+        "https://www.youtube.com/LausanneTourisme",
+        "https://www.linkedin.com/company/lausanne-capitale-olympique"
+      ]
+    }
+    </script>
+    `}
 </svelte:head>
 
 <div class="app">
@@ -167,7 +186,7 @@
             <a href="mailto:info@lausanne-tourisme.ch">info@lausanne-tourisme.ch</a><br />
             <a href="tel:+41216137373">+41 21 613 73 73</a>
           </p>
-          <Button negative={true} href={pageData.translations[locale.get()]['footer.where.url']}>
+          <Button negative={true} href={translations['footer.where.url']}>
             {$t('footer.where.text')}
           </Button>
         </div>
@@ -185,7 +204,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()][
+                    href={translations[
                       'footer.infos.corporate.about-us.url'
                     ]}
                   >
@@ -197,7 +216,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()][
+                    href={translations[
                       'footer.infos.corporate.member-space.url'
                     ]}
                   >
@@ -209,7 +228,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.corporate.jobs.url']}
+                    href={translations['footer.infos.corporate.jobs.url']}
                   >
                     {$t('footer.infos.corporate.jobs.text')}
                   </Link>
@@ -219,7 +238,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()][
+                    href={translations[
                       'footer.infos.corporate.general-terms.url'
                     ]}
                   >
@@ -231,9 +250,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()][
-                      'footer.infos.corporate.privacy.url'
-                    ]}
+                    href={translations['footer.infos.corporate.privacy.url']}
                   >
                     {$t('footer.infos.corporate.privacy.text')}
                   </Link>
@@ -252,7 +269,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.meeting.url']}
+                    href={translations['footer.infos.more.meeting.url']}
                   >
                     {$t('footer.infos.more.meeting.text')}
                   </Link>
@@ -262,7 +279,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.congress.url']}
+                    href={translations['footer.infos.more.congress.url']}
                   >
                     {$t('footer.infos.more.congress.text')}
                   </Link>
@@ -272,7 +289,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.trade.url']}
+                    href={translations['footer.infos.more.trade.url']}
                   >
                     {$t('footer.infos.more.trade.text')}
                   </Link>
@@ -282,7 +299,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.presskit.url']}
+                    href={translations['footer.infos.more.presskit.url']}
                   >
                     {$t('footer.infos.more.presskit.text')}
                   </Link>
@@ -292,7 +309,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.press.url']}
+                    href={translations['footer.infos.more.press.url']}
                   >
                     {$t('footer.infos.more.press.text')}
                   </Link>
@@ -302,7 +319,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={pageData.translations[locale.get()]['footer.infos.more.brochures.url']}
+                    href={translations['footer.infos.more.brochures.url']}
                   >
                     {$t('footer.infos.more.brochures.text')}
                   </Link>

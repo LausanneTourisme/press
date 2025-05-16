@@ -24,6 +24,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
     if (!article) throw error(404);
 
     await loadTranslations(locale, url.pathname);
+
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
         title: (article.name as undefined | Translatable)?.[locale] ?? translations[locale][`page.title`],
