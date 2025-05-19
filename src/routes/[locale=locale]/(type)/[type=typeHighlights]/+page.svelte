@@ -14,11 +14,19 @@
   import { chunkify, maxMobileWidth } from '$lib/helpers';
   import Image from '$lib/components/Media/Image.svelte';
   import { twMerge } from 'tailwind-merge';
+  import type { Poi } from '$types';
 
   const pageData = page.data as PageData;
-  const events = pageData.events;
-  const groupPois = $derived(pageData.group?.pois ?? []);
-  const news = pageData.news;
+  const events = $derived((page.data as PageData).events);
+  const news = $derived((page.data as PageData).news);
+  const groupPois = $derived.by(() => {
+    const pageData = page.data as PageData;
+    return pageData.group?.pois?.map((poi) => ({
+      ...poi,
+      href: `https://www.lausanne-tourisme.ch${poi.seo?.hreflang}`
+    })) as (Poi<string> & { href: string })[] ?? [];
+  });
+  let poisChunks: (Poi<string> & { href: string })[][] = $state([]);
 
   let isMobile = $state(false);
 
@@ -37,6 +45,9 @@
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
     };
+  });
+  $effect(() => {
+    poisChunks = chunkify(groupPois ?? [], 11);
   });
 </script>
 
@@ -58,51 +69,47 @@
     {$t('page.news.paragraph')}
   </Paragraph>
 </Container>
-<!--
-	-
-	-
-	-
-	- NEWS SWIPER >>>>>>>>>>>>>>>>>>>>>>>
-	-
-	-
-	-
-	-->
+<!-- NEWS SWIPER -->
 <Container width="large">
-  TODO swiper
-  {#each news as n, k (`${n.published_at}-${n.name}`)}
-    <Clickable overflow={true} href={n.link ?? '#'}>
-      <Card
-        src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? '').url({
-          w: 500,
-          h: 500,
-          ar: '16:9',
-          g: 'auto',
-          c: 'fill'
-        })}
-        alt={n.medias?.at(0)?.public_name}
-        background="bg-glacier-300"
-        class="carousel-item"
-        nofx={true}
-      >
-        <p>
-          <small>
-            {$t('common.published-at')}&nbsp;{DateTime.fromSeconds(Number(n.published_at))
-              .setLocale($locale)
-              .toFormat('dd/MM/yyyy')}
-          </small>
-        </p>
-        <Heading
-          tag="h3"
-          class="text-shadow:_0_0_20px_var(--tw-shadow-color)] text-white shadow-gray-950"
+  <div class="flex">
+    TODO swiper
+    {#each news as n, k (`${n.published_at}-${n.name}`)}
+      <Clickable overflow={true} href={n.link ?? '#'}>
+        <Card
+          src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? '').url({
+            w: 500,
+            h: 500,
+            ar: '16:9',
+            g: 'auto',
+            c: 'fill'
+          })}
+          alt={n.medias?.at(0)?.public_name}
+          background="bg-glacier-300"
+          class="carousel-item"
+          nofx={true}
         >
-          {n.name}
-        </Heading>
-        <Paragraph class="text-shadow:_0_0_2px_var(--tw-shadow-color)] text-white shadow-gray-950">
-          {n.lead}
-        </Paragraph>
-      </Card>
-    </Clickable>
-  {/each}
+          <p>
+            <small>
+              {$t('common.published-at')}&nbsp;{DateTime.fromSeconds(Number(n.published_at))
+                .setLocale($locale)
+                .toFormat('dd/MM/yyyy')}
+            </small>
+          </p>
+          <Heading
+            tag="h3"
+            class="text-shadow:_0_0_20px_var(--tw-shadow-color)] text-white shadow-gray-950"
+          >
+            {n.name}
+          </Heading>
+          <Paragraph
+            class="text-shadow:_0_0_2px_var(--tw-shadow-color)] text-white shadow-gray-950"
+          >
+            {n.lead}
+          </Paragraph>
+        </Card>
+      </Clickable>
+    {/each}
+  </div>
 </Container>
 <!--
 	-
@@ -121,7 +128,7 @@
   <Paragraph>
     {$t('page.highlights.paragraph')}
   </Paragraph>
-  {#each chunkify(groupPois, 11) as chunk}
+  {#each poisChunks as chunk}
     <div
       class="pois mt-12 grid grid-flow-row grid-cols-2 grid-rows-1 gap-2 md:grid-cols-4 md:grid-rows-12 md:gap-4"
     >
@@ -148,14 +155,11 @@
             [
               'mobile-0 col-span-2 h-56 md:h-auto',
               'mobile-1 col-span-1 h-56 md:h-auto',
-              'mobile-2 col-span-1 h-56 md:h-auto',
-            ].at(index % 3) ?? '',
+              'mobile-2 col-span-1 h-56 md:h-auto'
+            ].at(index % 3) ?? ''
           )}
         >
-          <Clickable
-            href="https://www.lausanne-tourisme.ch{poi?.seo?.hreflang}"
-            class="relative h-full w-full"
-          >
+          <Clickable href={poi.href} class="relative h-full w-full">
             <article class="flex h-full w-full items-end">
               <!-- we want every first element to be bigger -->
               <header
@@ -174,7 +178,7 @@
               <Heading
                 class="relative z-0 w-full bg-gradient-to-t from-zinc-950/50 to-transparent p-2 text-sm text-white md:p-4 md:text-xl"
               >
-                {poi?.name}
+                {poi.name}
               </Heading>
             </article>
           </Clickable>
@@ -193,8 +197,8 @@
 	-
 	-->
 <Container width="agenda" fullscreen={isMobile} background="bg-agenda-500">
-  <Heading class="text-center p-4 mb-4">
-		{$t("page.agenda.title")}
-	</Heading>
+  <Heading class="mb-4 p-4 text-center">
+    {$t('page.agenda.title')}
+  </Heading>
   TODO SWIPER
 </Container>

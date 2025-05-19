@@ -70,8 +70,8 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
  * @param itemsPerChunk how many items per chunk
  * @returns an array with your data splited
  */
-export function chunkify<Type>(data: Type[], itemsPerChunk: number = 4): Type[][] {
-  return data.reduce((result: Type[][], item, index) => {
+export function chunkify<T>(data: T[], itemsPerChunk: number = 4): T[][] {
+  return data.reduce((result: T[][], item, index) => {
     const chunkIndex = Math.floor(index / itemsPerChunk);
 
     // Ensure the chunk array exists
