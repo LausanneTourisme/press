@@ -123,7 +123,7 @@ export type Group<T extends Translatable | string> = {
     lead?: T,
     medias?: Media<T>[],
     seo: Seo<T>,
-    pois: Poi<T>,
+    pois: Poi<T>[],
 }
 
 export type Poi<T extends Translatable | string> = {
