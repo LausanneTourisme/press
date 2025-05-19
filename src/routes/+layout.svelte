@@ -1,14 +1,15 @@
 <script lang="ts">
+  import { afterNavigate } from '$app/navigation';
   import { page } from '$app/state';
-  import Heading from '$lib/components/Heading.svelte';
   import Button from '$lib/components/Button.svelte';
+  import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Nav from '$lib/components/Nav/Nav.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import { locale, t } from '$lib/translations';
   import { Send } from 'lucide-svelte';
-  import type { Snippet } from 'svelte';
+  import { type Snippet } from 'svelte';
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
 
@@ -16,8 +17,7 @@
   const origin = $derived(page.url.origin);
   const translations = $derived((page.data as PageData).translations[locale.get()]);
   const seo = $derived.by(() => {
-
-  const pageData = $state(page.data as PageData);
+    const pageData = $state(page.data as PageData);
     return {
       title: pageData.seo.title,
       description: pageData.seo.description,
@@ -30,6 +30,17 @@
         .join('\n'),
       image: pageData.seo.image
     };
+  });
+
+  afterNavigate(() => {
+    /*
+     * Go to Anchor tags !
+     */
+    const { hash } = document.location;
+    if (hash) {
+      const anchor = document.querySelector(hash ?? '');
+      anchor?.scrollIntoView({ behavior: 'instant' });
+    }
   });
 </script>
 
@@ -204,9 +215,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={translations[
-                      'footer.infos.corporate.about-us.url'
-                    ]}
+                    href={translations['footer.infos.corporate.about-us.url']}
                   >
                     {$t('footer.infos.corporate.about-us.text')}
                   </Link>
@@ -216,9 +225,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={translations[
-                      'footer.infos.corporate.member-space.url'
-                    ]}
+                    href={translations['footer.infos.corporate.member-space.url']}
                   >
                     {$t('footer.infos.corporate.member-space.text')}
                   </Link>
@@ -238,9 +245,7 @@
                     class="text-left font-normal text-white"
                     withFlex={false}
                     withIcon={false}
-                    href={translations[
-                      'footer.infos.corporate.general-terms.url'
-                    ]}
+                    href={translations['footer.infos.corporate.general-terms.url']}
                   >
                     {$t('footer.infos.corporate.general-terms.text')}
                   </Link>

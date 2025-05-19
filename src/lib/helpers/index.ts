@@ -65,9 +65,9 @@ export const route = (type: RouteType, options: { forceLocale?: Locale | undefin
 }
 
 /**
- * Split `data` into small chuncks
+ * Split `data` into small chunks
  * @param data Your data to split
- * @param itemsPerChunk how many items per chunck
+ * @param itemsPerChunk how many items per chunk
  * @returns an array with your data splited
  */
 export function chunkify<Type>(data: Type[], itemsPerChunk: number = 4): Type[][] {
