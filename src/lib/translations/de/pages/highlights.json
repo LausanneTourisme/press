@@ -1,4 +1,13 @@
 {
-    "title": "",
-    "meta-description": ""
+    "title": "Sehenswürdigkeiten und Neuheiten",
+    "meta-description": "Erleben Sie das Abenteuer Lausanne zu 100 %: Verpassen Sie nichts von den Highlights und aktuellen Geschehnissen und machen Sie Ihren Aufenthalt bei uns zu einem unvergesslichen Erlebnis!",
+    "news": {
+        "title": "",
+        "paragraph": ""
+    },
+    "highlights": {
+        "title": "",
+        "paragraph": ""
+    },
+    "agenda.title": ""
 }

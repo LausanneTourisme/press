@@ -1,7 +1,7 @@
 import { Themes, type Theme } from "$enums";
-import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL, GROUP_ID_PAGE_HIGHLIGHTS } from "$env/static/private";
+import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL } from "$env/static/private";
 import type { Locale } from "$lib/translations";
-import type { Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from "$types";
+import type { Favorite, GraphQLResponse, Group, Post, Event, PostType, Translatable } from "$types";
 import { DateTime } from "luxon";
 
 const itemsLimit = 9999
@@ -34,7 +34,7 @@ export const getTag = (theme: Theme): string => {
     }
 }
 
-export const getPosts = async <T extends PostType<string | Translatable>>({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted: boolean }) => {
+export const getPosts = async <T extends PostType<string | Translatable>>({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted?: boolean }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -59,6 +59,7 @@ export const getPosts = async <T extends PostType<string | Translatable>>({ type
                         lead
                         summary
                         highlight
+                        published_at
                         link
                         content
                         medias(cover:true) {
@@ -87,7 +88,7 @@ export const getPosts = async <T extends PostType<string | Translatable>>({ type
 /**
  * this request call a specific group from SIT, see global env GROUP_ID_PAGE_HIGHLIGHTS
  */
-export const getGroup = async ({ locale }: { locale: Locale }) => {
+export const getGroup = async <T extends string|Translatable>({ locale, id }: { locale: Locale, id: number }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -96,11 +97,11 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
         },
         body: JSON.stringify({
             variables: {
-                id: GROUP_ID_PAGE_HIGHLIGHTS,
+                id,
                 locale
             },
             query: `query GetGroup ($id: Int!, $locale: String) {
-                items:group(id: $id, locale: $locale) {
+                item:group(id: $id, locale: $locale) {
                     pois {
                         id
                         name
@@ -119,7 +120,7 @@ export const getGroup = async ({ locale }: { locale: Locale }) => {
             }`
         })
     });
-    return (await result.json()) as Promise<GraphQLResponse<Group<string>>>;
+    return (await result.json()) as Promise<GraphQLResponse<Group<T>>>;
 }
 
 export const getFavorites = async <T extends Translatable | string>({ locale, theme }: { locale: Locale, theme: Theme }) => {
@@ -193,7 +194,7 @@ export const getAgendaEvents = async () => {
                 highlighted: true,
                 limit: itemsLimit,
             },
-            query: `GetAgendaEvents ($from:String, highlighted: $highlighted, limit: Int) {
+            query: `query GetAgendaEvents ($from: String, $highlighted: Boolean, $limit: Int) {
                 items: events(from: $from, highlighted: $highlighted, limit: $limit) {
                     data {
                         id
@@ -259,7 +260,7 @@ export const getAgendaEvents = async () => {
         }),
     });
 
-    return (await result.json()) as Promise<GraphQLResponse<Event>>;
+    return (await result.json()) as Promise<GraphQLResponse<Event<Translatable>>>;
 }
 
 export const getArticle = async (slug: string) => {
@@ -293,9 +294,9 @@ export const getArticle = async (slug: string) => {
                         noindex
                         slug
                     }
-                    tags { 
-                        name 
-                        public_name 
+                    tags {
+                        name
+                        public_name
                     }
                 }
             }`

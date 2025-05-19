@@ -1,4 +1,13 @@
 {
-    "title": "",
-    "meta-description": ""
+    "title": "Immanquables et nouveautés",
+    "meta-description": "Vivez l'aventure lausannoise à 100% : ne ratez rien de ses incontournables comme de son actualité et faites de votre séjour chez nous une expérience inoubliable !",
+    "news": {
+        "title": "Nouveautés",
+        "paragraph": "Vivez l'aventure lausannoise à 100% : ne ratez rien de ses incontournables comme de son actualité et faites de votre séjour chez nous une expérience inoubliable !"
+    },
+    "highlights": {
+        "title": "Les incontournables à Lausanne",
+        "paragraph": "À la fois urbaine et balnéaire, entre lac, montagnes, vignobles et forêts, Lausanne séduit par sa douceur de vivre. Élue meilleure petite ville du monde, elle peut se targuer d'offrir toutes les caractéristiques d'une métropole à taille humaine."
+    },
+    "agenda.title": "Événements à ne pas manquer"
 }

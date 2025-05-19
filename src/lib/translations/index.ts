@@ -103,14 +103,6 @@ export const config: Config<{
       loader: async () => (await import(`./${locale}/gdpr.json`)).default,
     })),
 
-    // Home
-    ...supportedLocales.map(locale => ({
-      locale,
-      key: 'page',
-      routes: ['/', `/${locale}`, `/${locale}/`],
-      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
-    })),
-
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
       .filter(x => x !== RouteTypes.Home)
@@ -123,6 +115,14 @@ export const config: Config<{
           loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
         }
       })),
+
+    // Home
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: 'page',
+      routes: ['/', `/${locale}`, `/${locale}/`],
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
+    })),
 
     // Themes
     ...supportedLocales.map(locale => ({

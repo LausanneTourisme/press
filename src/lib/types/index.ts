@@ -45,5 +45,6 @@ export type GraphQLResponse<T> = {
             data: T[],
         },
         item?: T
-    }
+    },
+    errors?: unknown[]
 }

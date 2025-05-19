@@ -79,6 +79,7 @@
         displayAllThemes = false;
       }
     });
+
     /*
      *  Event listeners
      */
@@ -311,7 +312,6 @@
 <Container fullscreen={true} class="bg-shakespeare-100 dark:bg-shakespeare-400 md:px-16">
   <Heading class="pt-5 text-center">
     {$t('page.numbers')}
-    {isMobile}
   </Heading>
   <Observer
     threshold={isMobile ? 0.5 : 0.75}
