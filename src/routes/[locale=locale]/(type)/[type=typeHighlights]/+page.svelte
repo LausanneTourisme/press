@@ -149,7 +149,6 @@
               'mobile-0 col-span-2 h-56 md:h-auto',
               'mobile-1 col-span-1 h-56 md:h-auto',
               'mobile-2 col-span-1 h-56 md:h-auto',
-              'mobile-3'
             ].at(index % 3) ?? '',
           )}
         >
@@ -193,3 +192,9 @@
 	-
 	-
 	-->
+<Container width="agenda" fullscreen={isMobile} background="bg-agenda-500">
+  <Heading class="text-center p-4 mb-4">
+		{$t("page.agenda.title")}
+	</Heading>
+  TODO SWIPER
+</Container>
