@@ -434,7 +434,7 @@
 <Anchor name="faq" />
 <Container class="mb-16">
   <Heading class="my-8 text-center">
-    {$t('page.faq.title')}
+    {$t('common.faq.title')}
   </Heading>
   <Faq />
 </Container>
