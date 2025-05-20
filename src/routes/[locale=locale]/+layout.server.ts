@@ -5,7 +5,10 @@ export const load = async ({ url, params, parent }) => {
     const { i18n, translations } = await parent();
     const lang = params.locale as Locale;
 
-    await loadTranslations(lang);
+    await Promise.all([
+        loadTranslations(lang, '/'),
+        loadTranslations(lang, `/${lang}`),
+    ]);
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
