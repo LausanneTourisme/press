@@ -1,4 +1,17 @@
 {
-    "title": "",
-    "meta-description": ""
+    "title": "Nous contacter",
+    "meta-description": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités ? N'hésitez pas à nous contacter.",
+    "heading": "Contact",
+    "description": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités&nbsp;? N'hésitez pas à nous contacter en remplissant le formulaire ci-dessous. Nous nous efforcerons de vous répondre dans les meilleurs délais.",
+    "form": {
+        "title": "Comment souhaitez-vous nous joindre ?",
+        "type": {
+            "message": "Par message",
+            "call": {
+                "cta":"Nous appeler",
+                "title": "Pour nous appeler :"
+            }
+        },
+        "send-message": "Envoyer un message"
+    }
 }
