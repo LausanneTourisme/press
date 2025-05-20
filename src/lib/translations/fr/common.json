@@ -6,5 +6,44 @@
     "other-tips": "Autres tips",
     "instagram-link": "Voir ce post sur Instagram",
     "published-at": "Publié le",
-    "restart": "Recommencer"
+    "faq": {
+        "title": "Foire aux questions",
+        "authorisation": {
+            "title": "Autorisation de tournage à Lausanne",
+            "paragraph1": "Quelles sont les autorisations pour filmer dans l'espace public ?",
+            "paragraph2": "Il n'y a pas d'autorisation spécifique pour tourner à Lausanne. Cependant, le consentement doit être obtenu lorsqu'il s'agit de filmer des personnes identifiables. Il est également important, lors de tournage dans l'espace public de faciliter les déplacements des riverains et ne pas perturber la circulation routière.",
+            "paragraph3": "En cas d'occupation accrue du domaine public, merci de prendre contact avec le service presse de Lausanne Tourisme.",
+            "paragraph4": "Quelles sont les autorisations pour filmer dans l'espace privé ?",
+            "paragraph5": "Pour toutes demandes de tournage se situant dans l'espace privé (par ex. musées, restaurants, …) une demande d'autorisation auprès de l'établissement est obligatoire. La demande doit être faite quelques jours auparavant."
+        },
+        "drone": {
+            "title": "Utilisation d'un drone",
+            "paragraph1": "Quelles sont les autorisations pour l'utilisation d'un drone à Lausanne ?",
+            "paragraph2.part1": "Aucune autorisation n'est nécessaire si le drone ne dépasse pas le poids de 250g. Au-delà, une autorisation doit être faite auprès de l'aéroport de la Blécherette",
+            "paragraph2.part2": "et du Corps de police de la Ville de Lausanne",
+            "paragraph3": "Le formulaire à remplir avec toutes les informations nécessaires se trouve",
+            "paragraph3.link-text": "ici",
+            "paragraph4": "La demande doit être effectuée au moins 3 jours ouvrables avant le jour du survol."
+        },
+        "access": {
+            "title": "Accès à Lausanne",
+            "paragraph1": "Lausanne est facilement accessible : par le rail (réseau CFF, EC Directs et TGV de Paris et Milan), par la route (autoroute A1/E25 et A9/E27), par les airs (à 60 km de l'Aéroport International de Genève, en 45 minutes de voiture ou de train) et par l'eau, grâce aux bateaux de la Compagnie Générale de Navigation sur le lac Léman.",
+            "paragraph1.slug": "acces-a-lausanne",
+            "paragraph1.more-informations": "Plus d'informations"
+        },
+        "travel": {
+            "title": "Se déplacer gratuitement à Lausanne",
+            "paragraph1.part1": "Les visiteurs séjournant dans un hôtel, une auberge de jeunesse, un camping ou un bed & breakfast pour lesquels la taxe de séjour est applicable bénéficient de la ",
+            "paragraph1.link": "https://www.lausanne-tourisme.ch/fr/lausanne-transport-card-and-more/",
+            "paragraph1.part2": "Cette carte leur permet de profiter d'un accès gratuit aux transports publics de l'agglomération (bus, train, métro) pendant toute la durée de leur séjour (max. 15 jours)."
+        },
+        "mention": {
+            "title": "Comment nous mentionner dans vos articles ou contenus ?",
+            "paragraph1": "Merci de bien vouloir faire mention de notre site internet dans toutes publications dédiées à notre destination :",
+            "paragraph2.in-social-networks": "Sur les réseaux :",
+            "paragraph2.instagram": "Identifiez @thelausanner en story et en post, et insérez le hashtag #thelausanner en post",
+            "paragraph2.linkedIn": "Identifiez @Lausanne, Capitale Olympique",
+            "paragraph3.find-us": "Identifiez @Lausanne, Capitale Olympique"
+        }
+    }
 }

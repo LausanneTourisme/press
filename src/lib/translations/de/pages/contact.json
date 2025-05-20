@@ -2,5 +2,61 @@
     "title": "Kontaktieren Sie uns",
     "meta-description": "Möchten Sie als Journalist/Journalistin oder Autor/Autorin von Inhalten mehr über Lausanne und seine Möglichkeiten erfahren? Zögern Sie nicht, uns zu kontaktieren",
     "heading": "Kontakt",
-    "description": "Möchten Sie als Journalist, Journalistin oder Content Creator mehr über die Stadt Lausanne und ihr Angebot erfahren? Zögern Sie nicht, uns zu kontaktieren, indem Sie das unten stehende Formular ausfüllen. Wir werden uns so schnell wie möglich bei Ihnen melden."
+    "description": "Möchten Sie als Journalist, Journalistin oder Content Creator mehr über die Stadt Lausanne und ihr Angebot erfahren? Zögern Sie nicht, uns zu kontaktieren, indem Sie das unten stehende Formular ausfüllen. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "form": {
+        "select-section": {
+            "title": "Comment souhaitez-vous nous joindre ?",
+            "button": {
+                "message": "Par message",
+                "call": "Nous appeler"
+            }
+        },
+        "call-section": {
+            "title": "Pour nous appeler :"
+        },
+        "mail-section": {
+            "title": "Envoyer un message",
+            "form": {
+                "gender-section": {
+                    "title": "Titre :",
+                    "sir": "Monsieur",
+                    "madam": "Madame"
+                },
+                "name-section": {
+                    "title": "Comment vous applez-vous ?",
+                    "placeholder": "John Doe"
+                },
+                "email-section": {
+                    "title": "Votre adesse email :",
+                    "placeholder": "john@doe.com"
+                },
+                "area-of-activity-section": {
+                    "title": "Domaine d'activité :",
+                    "choices": {
+                        "journalist": "Journaliste",
+                        "influencer": "Influenceur",
+                        "media": "Media",
+                        "other": "Autre"
+                    }
+                },
+                "message-section": {
+                    "title": "Votre message :",
+                    "placeholder": "Bonjour, j'aurais souhaité...",
+                    "validation-text": "Veuillez rédiger un message plus long que 10 caractères."
+                },
+                "send": "Envoyer"
+            }
+        },
+        "confirmation-section": {
+            "success": {
+                "title": "Demande envoyée !",
+                "message": "Nous vous répondrons dans les plus brefs délais."
+            },
+            "invalid": {
+                "title": "Formulaire invalide !"
+
+            }
+        },
+        "restart-button": "Formular zurücksetzen"
+    }
 }
