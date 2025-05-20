@@ -49,6 +49,7 @@
     </div>
   </div>
 </Container>
+<Anchor name="form" />
 <Container fullscreen={true} class={twMerge(bgColor, 'py-32')}>
   <section class="my-12 rounded px-4" transition:fade={{ delay: 200 }}>
     <div
@@ -58,7 +59,7 @@
       out:fade
     >
       <Heading class="-mt-4 mb-8 text-lg font-bold">
-        {$t('page.form.title')}
+        {$t('page.form.select-section.title')}
       </Heading>
       <div
         class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
@@ -68,21 +69,21 @@
           onclick={() => (displayForm = true)}
         >
           <Mail strokeWidth={2.5} class="aspect-square h-5" />
-          {$t('page.form.type.message')}
+          {$t('page.form.select-section.button.message')}
         </button>
         <button
           class="rounded-lg shadow btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 text-white"
           onclick={() => (displayPhone = true)}
         >
           <Phone strokeWidth={2.5} class="aspect-square h-5" />
-          {$t('page.form.type.call.cta')}
+          {$t('page.form.select-section.button.call')}
         </button>
       </div>
     </div>
     <!-- Mail Form -->
     <section class="mx-auto md:w-1/3 {displayForm && !displayPhone ? '' : 'hidden'}" in:fade>
       <Heading class="pb-4 text-lg font-bold">
-        {$t('page.form.send-message')}
+        {$t('page.form.mail-section.title')}
       </Heading>
       <!-- <Form bind:this={form} action="/{$locale}/forms/contact" {fields} on:success={onSuccess}
               on:failure={onFailure}/> -->
@@ -95,7 +96,7 @@
       in:fly
     >
       <Paragraph class="text-lg font-bold text-gray-800">
-        {$t('page.form.type.call.title')}
+        {$t('page.form.call-section.title')}
       </Paragraph>
       <a
         href="tel:0041216137373"
@@ -122,7 +123,7 @@
         }}
       >
         <ArrowLeft class="h-4 w-4" />
-        {$t('common.restart')}
+        {$t('page.form.restart-button')}
       </button>
     </section>
   </section>
@@ -130,7 +131,7 @@
 <Anchor name="faq" />
 <Container class="mb-16">
   <Heading class="my-8 text-center">
-    {$t('page.faq.title')}
+    {$t('common.faq.title')}
   </Heading>
   <Faq />
 </Container>
