@@ -24,6 +24,7 @@ export const config: Config<{
   value?: any;
   poi?: string;
   lausanner?: string;
+  number?: number;
 }> = {
   initLocale: defaultLocale,
   fallbackLocale: defaultLocale,
