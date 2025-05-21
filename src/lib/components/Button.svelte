@@ -5,6 +5,7 @@
 
   type ButtonProps = {
     tag?: 'a' | 'button';
+    type?: string,
     negative?: boolean;
     inline?: boolean;
     disabled?: boolean;
@@ -26,6 +27,7 @@
     href = undefined,
     border = true,
     nofx = false,
+    type,
     class: additionalClass = '',
     onclick = undefined,
     children,
@@ -60,7 +62,7 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<svelte:element this={tag} class={style} {href} {target} {disabled} onclick={handleClick}>
+<svelte:element this={tag} class={style} {href} {target} {disabled} onclick={handleClick} {type}>
   {@render prefix?.()}
   {@render children()}
   {@render suffix?.()}
