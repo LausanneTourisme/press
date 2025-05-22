@@ -27,6 +27,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@types/beyonk__gdpr-cookie-consent-banner": "^9.0.4",
     "@types/luxon": "^3.6.2",
+    "@types/mailchimp__mailchimp_transactional": "^1.0.11",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.35",
     "eslint": "^9.26.0",
@@ -53,6 +54,8 @@
   "dependencies": {
     "@beyonk/gdpr-cookie-consent-banner": "^12.1.6",
     "@botpoison/browser": "^0.1.30",
+    "@botpoison/node": "^0.1.10",
+    "@mailchimp/mailchimp_transactional": "^1.0.59",
     "@tailwindcss/vite": "^4.1.6",
     "@types/node": "^22.15.18",
     "dotenv": "^16.5.0",
