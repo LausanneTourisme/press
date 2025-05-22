@@ -47,11 +47,7 @@
             },
             "trade": {
                 "text": "Trade",
-                "url": "https://www.lausanne-tourisme.ch/fr/emploi/"
-            },
-            "presskit": {
-                "text": "Espace Médias",
-                "url": "https://press.lausanne-tourisme.ch/fr/"
+                "url": "https://www.lausanne-tourisme.ch/fr/trade/"
             },
             "press": {
                 "text": "Annonceurs",

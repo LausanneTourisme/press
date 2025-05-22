@@ -1,38 +1,61 @@
 {
-    "follow-us": "Suivez-nous !",
-    "newsletter": "Recevez les bons plans de Lausanne",
+    "follow-us": "Follow us!",
+    "newsletter": "Receive the best tips from Lausanne",
     "subscribe": {
-        "text": "S'inscrire",
-        "url": "https://www.lausanne-tourisme.ch/fr/newsletter/"
+        "text": "Sign up",
+        "url": "https://www.lausanne-tourisme.ch/en/newsletter/"
     },
-    "partners": "Nos partenaires",
+    "partners": "Our partners",
     "contact": "Contact",
     "where": {
-        "text": "Où nous trouver ?",
-        "url": "https://www.lausanne-tourisme.ch/fr/ou-nous-trouver/"
+        "text": "Where can you find us?",
+        "url": "https://www.lausanne-tourisme.ch/en/tourism-office/"
     },
     "infos": {
         "corporate": {
-            "title": "Institutionnel",
+            "title": "Institutional",
             "about-us": {
-                "text": "A propos de nous",
-                "url": "https://www.lausanne-tourisme.ch/fr/a-propos/"
+                "text": "About us",
+                "url": "https://www.lausanne-tourisme.ch/en/a-propos/"
             },
             "member-space": {
-                "text": "Espace Membres",
+                "text": "Members' area",
                 "url": "https://www.lausanne-tourisme.ch/fr/espace-membres/"
             },
             "jobs": {
-                "text": "Emploi",
-                "url": "https://www.lausanne-tourisme.ch/fr/emploi/"
+                "text": "Jobs",
+                "url": "https://www.lausanne-tourisme.ch/en/emploi/"
             },
             "general-terms": {
-                "text": "Conditions générales d'utilisation",
-                "url": "https://www.lausanne-tourisme.ch/fr/conditions-utilisation/"
+                "text": "General terms and conditions of use",
+                "url": "https://www.lausanne-tourisme.ch/en/terms-condition-website/"
             },
             "privacy": {
-                "text": "Politique de confidentialité",
-                "url": "https://www.lausanne-tourisme.ch/fr/politique-confidentialite/"
+                "text": "Privacy policy",
+                "url": "https://www.lausanne-tourisme.ch/en/privacy-notice/"
+            }
+        },
+        "more": {
+            "title": "More",
+            "meeting": {
+                "text": "Meetings & events",
+                "url": "https://www.lausanne-tourisme.ch/en/business/"
+            },
+            "congress": {
+                "text": "Congress",
+                "url": "https://www.lausanne-montreux-congress.ch/en/"
+            },
+            "trade": {
+                "text": "Trade",
+                "url": "https://www.lausanne-tourisme.ch/en/trade/"
+            },
+            "press": {
+                "text": "Advertisers",
+                "url": "https://www.lausanne-tourisme.ch/en/press/"
+            },
+            "brochures": {
+                "text": "Brochures and guides",
+                "url": "https://www.lausanne-tourisme.ch/en/brochures-guides/"
             }
         }
     }

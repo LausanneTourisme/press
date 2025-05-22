@@ -12,6 +12,7 @@
   import { type Snippet } from 'svelte';
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
+  import { twMerge } from 'tailwind-merge';
 
   let { children } = $props<{ children: Snippet }>();
   const origin = $derived(page.url.origin);
@@ -220,7 +221,7 @@
                     {$t('footer.infos.corporate.about-us.text')}
                   </Link>
                 </li>
-                <li class="list-none">
+                <li class={twMerge("list-none", $locale !== "fr" ? 'hidden' : '')}>
                   <Link
                     class="text-left font-normal text-white"
                     withFlex={false}
@@ -297,16 +298,6 @@
                     href={translations['footer.infos.more.trade.url']}
                   >
                     {$t('footer.infos.more.trade.text')}
-                  </Link>
-                </li>
-                <li class="list-none">
-                  <Link
-                    class="text-left font-normal text-white"
-                    withFlex={false}
-                    withIcon={false}
-                    href={translations['footer.infos.more.presskit.url']}
-                  >
-                    {$t('footer.infos.more.presskit.text')}
                   </Link>
                 </li>
                 <li class="list-none">
