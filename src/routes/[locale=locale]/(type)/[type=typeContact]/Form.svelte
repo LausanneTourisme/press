@@ -68,6 +68,7 @@
         incorrectData = true;
         failedMessage = validationState?.message;
         isLoading = false;
+        onFailure?.();
         cancel();
         return;
       }
@@ -79,11 +80,10 @@
       }
 
       cancel();
-    } finally {
-      isLoading = false;
-    }
+    } 
 
     return async ({ result }) => {
+      console.log({ result });
       if (result.type === 'success') {
         onSuccess?.();
         incorrectData = false;
@@ -95,6 +95,7 @@
       }
 
       await applyAction(result);
+      isLoading = false;
     };
   };
 
@@ -102,8 +103,6 @@
     botpoison = new Botpoison({
       publicKey: PUBLIC_BOTPOISON_PUBLICKEY
     });
-
-    return () => {};
   });
 </script>
 
@@ -136,10 +135,18 @@
       class="btn group flex items-center rounded border-gray-700 bg-gray-200 text-gray-800"
       disabled={isLoading}
     >
-      <span class="h-4 w-4 transition-transform group-hover:rotate-45">
-        <Loading class={twMerge(isLoading ? '' : 'hidden', 'h-4 w-4')} />
-        <Send class={twMerge(!isLoading ? '' : 'hidden', 'h-4 w-4')} />
+      <span
+        class={twMerge(
+          !isLoading ? '' : 'hidden',
+          'h-4 w-4 transition-transform group-hover:rotate-45'
+        )}
+      >
+        <Send class="h-4 w-4" />
       </span>
+      <span class={twMerge(isLoading ? '' : 'hidden')}>
+        <Loading />
+      </span>
+
       {$t('page.form.mail-section.form.send')}
     </Button>
   </div>
