@@ -23,11 +23,11 @@
                     "madam": "Madame"
                 },
                 "name-section": {
-                    "title": "Comment vous applez-vous ?",
+                    "title": "Comment vous appelez-vous ?",
                     "placeholder": "John Doe"
                 },
                 "email-section": {
-                    "title": "Votre adesse email :",
+                    "title": "Votre adresse email :",
                     "placeholder": "john@doe.com"
                 },
                 "area-of-activity-section": {
@@ -42,7 +42,7 @@
                 },
                 "message-section": {
                     "title": "Votre message :",
-                    "placeholder": "Bonjour, j'aurais souhaité...",
+                    "placeholder": "Bonjour, j'aurais souhaité…",
                     "validation-text": "Veuillez rédiger un message plus long que 10 caractères."
                 },
                 "send": "Envoyer"
@@ -55,7 +55,7 @@
             },
             "response": {
                 "from-name": "Presse - Lausanne Tourisme",
-                "subject": "Merci pour votre demande",
+                "subject": "Merci pour votre demande.",
                 "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre demande a bien été transmise. Nous vous répondrons dans les plus brefs délais.",
                 "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
             }
