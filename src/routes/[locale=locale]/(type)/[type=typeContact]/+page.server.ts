@@ -1,8 +1,10 @@
-import { BOTPOISON_SKEY, MAIL_DEFAULT_RECIPIENTS, MAIL_TO } from "$env/static/private";
+import { BOTPOISON_SKEY, MAIL_DEFAULT_RECIPIENTS, MAIL_FROM, MAIL_TO } from "$env/static/private";
+import mailchimp, { type MessagesMessage } from "@mailchimp/mailchimp_transactional";
 import { t } from "$lib/translations";
 import Botpoison from "@botpoison/node";
 import { error, fail } from "@sveltejs/kit";
 import type { Actions } from "./$types";
+import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
 
 const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
 
@@ -19,6 +21,10 @@ const verifyIfHuman = async (data: FormData) => {
         error(401, "No thank you, we don't like bots.");
     }
 }
+
+const validateEmail = (email: string | null | undefined) => {
+    return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
+};
 
 export const actions: Actions = {
     default: async ({ request, params }) => {
@@ -43,7 +49,15 @@ export const actions: Actions = {
             message: string,
         }> = {};
 
-        if (name && name.trim().length < nameMinimumCharacters) {
+        if (!title) {
+            errors.title = {
+                value: title,
+                incorrect: true,
+                message: t.get("page.form.mail-section.validations.radio-buttons"),
+            }
+        }
+
+        if (!name || (name && name.trim().length < nameMinimumCharacters)) {
             errors.name = {
                 value: name,
                 incorrect: true,
@@ -51,7 +65,7 @@ export const actions: Actions = {
             }
         }
 
-        if (message && message.trim().length < messageMinimumCharacters) {
+        if (!message || (message && message.trim().length < messageMinimumCharacters)) {
             errors.message = {
                 value: message,
                 incorrect: true,
@@ -67,10 +81,16 @@ export const actions: Actions = {
             }
         }
 
-        //TODO check email
+        if (!validateEmail(email)) {
+            errors.email = {
+                value: email,
+                incorrect: true,
+                message: t.get("page.form.mail-section.validations.mail"),
+            }
+        }
 
         if (Object.keys(errors).length > 0) {
-            return fail(400, { fields: errors })
+            return fail(422, { fields: errors })
         }
 
         const html = `De <b>${title}</b> ${name}<br>
@@ -80,6 +100,52 @@ export const actions: Actions = {
             <b>Message</b>: <br> ${message}
             <br><br>
             <a href="mailto:${email}">Répondre</a>`;
-        return { status: 204 }
+
+        const mailchimpTx = mailchimp(PUBLIC_MANDRILL_API_KEY);
+
+        /**
+         * Using the `send` API from Mandrill/Mailchimp, this is considered as an "outbound" email,
+         * meaning from LT to the world.
+         *
+         * If from_email is set with any other domain than lausanne-tourisme.ch, then it will be rejected.
+         *
+         * Alternatives: either use noreply@lausanne-tourisme.ch as from_email, or use nodemailer with LT's
+         * mail provider.
+         * */
+        const mail: MessagesMessage = {
+            from_email: MAIL_FROM,
+            from_name: "No Reply - Press",
+            subject: "[Contact] - nouvelle demande",
+            html,
+            to: recipients.map((recipient: string) => {
+                return {
+                    email: recipient,
+                    type: "to",
+                }
+            }),
+        }
+
+        const response = await mailchimpTx.messages.send({ message: mail }) as mailchimp.MessagesSendResponse[];
+        const confirm = await mailchimpTx.messages.send({
+            message: {
+                from_email: MAIL_FROM,
+                from_name: t.get('page.form.mail-section.response.from-name'),
+                subject: t.get('page.form.mail-section.response.subject'),
+                html: `<p>${t.get('page.form.mail-section.response.content', { name })}</p><p><i>${t.get('page.form.mail-section.response.automatic-mail-disclaimer')}</i></p>`,
+                to: [{
+                    email: email as string,
+                    type: "to",
+                }]
+            }
+        }) as mailchimp.MessagesSendResponse[]
+
+        if (response[0].status === 'sent' && confirm[0].status === 'sent') {
+            return { message: "Mail sent." }
+        }
+        if (response[0].status === 'sent' && confirm[0].status !== 'sent') {
+            return { partial: true, message: "Mail sent, but fails to sent to recipient..." }
+        }
+
+        return fail(500, { message: "Please retry later." })
     }
 } satisfies Actions;
