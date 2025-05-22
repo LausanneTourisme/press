@@ -1,12 +1,12 @@
 {
-    "title": "",
-    "meta-description": "",
-    "description": "",
-    "read-more": "",
+    "title": "Themen",
+    "meta-description": "Hier können Sie alles entdecken, was Lausanne zu bieten hat, und sich von den Lausannerinnen und Lausannern beraten lassen.",
+    "description": "Sportlich, kulturell, kulinarisch, modern, nachhaltig und geschichtsträchtig ‒ Lausanne zeichnet sich in vielerlei Hinsicht aus. Entdecken Sie hier, was Lausanne alles zu bieten hat, und erhalten Sie zahlreiche Tipps von Einheimischen.",
+    "read-more": "Lesen Sie mehr",
     "lausanners": {
-        "title": "",
-        "paragraph1": "",
-        "paragraph2": "",
-        "button": ""
+        "title": "Die Lausannerinnen und Lausanner",
+        "paragraph1": "Niemand anders als die Einheimischen können Ihnen Lausanne authentischer und leidenschaftlicher näherbringen?",
+        "paragraph2": "Besuchen Sie Lausanne wie eine Lausannerin oder ein Lausanner: Lassen Sie sich von den Tipps zu \"{{value}}\" der Einheimischen leiten!",
+        "button": "Entdecken Sie die Lausannerinnen und Lausanner"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "title": "",
-    "meta-description": "",
-    "description": "",
-    "read-more": "",
+    "title": "Themes",
+    "meta-description": "Here you can discover all that Lausanne has to offer, as well as sound advice from the Lausanners.",
+    "description": "Sporting, cultural, gourmet, modern, sustainable and full of history, Lausanne shines and stands out in many ways. Here you can discover all that Lausanne has to offer, as well as sound advice from the Lausanners.",
+    "read-more": "Read more",
     "lausanners": {
-        "title": "",
-        "paragraph1": "",
-        "paragraph2": "",
-        "button": ""
+        "title": "The Lausanners",
+        "paragraph1": "Who better than locals to show you Lausanne in an authentic and passionate way?",
+        "paragraph2": "Visit Lausanne like a local: let yourself be guided by the \"{{value}}\" tips from our Lausanners!",
+        "button": "Discover the Lausanners"
     }
 }
