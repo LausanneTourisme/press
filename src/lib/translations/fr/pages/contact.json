@@ -50,7 +50,14 @@
             "validations": {
                 "radio-buttons": "Veuillez choisir une des options.",
                 "select": "Veuillez choisir un domaine d'activité.",
-                "text-length": "Veuillez renseigner un nom plus long que {{number}} caractères."
+                "text-length": "Veuillez renseigner un nom plus long que {{number}} caractères.",
+                "mail": "Veullez écrire un email valide. (exemple@domain.com)"
+            },
+            "response": {
+                "from-name": "Presse - Lausanne Tourisme",
+                "subject": "Merci pour votre demande",
+                "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre demande a bien été transmise. Nous vous répondrons dans les plus brefs délais.",
+                "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
             }
         },
         "confirmation-section": {
