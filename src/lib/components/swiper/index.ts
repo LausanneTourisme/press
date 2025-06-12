@@ -4,5 +4,5 @@ import Slider from "./Slide.svelte";
 
 export {
     Swiper,
-    Slider,
+    Slide,
 };
