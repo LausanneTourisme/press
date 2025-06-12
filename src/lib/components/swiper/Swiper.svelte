@@ -30,11 +30,12 @@
   let swiperEl: HTMLElement | undefined;
   let swiperNextEl: HTMLElement | undefined;
   let swiperPreviousEl: HTMLElement | undefined;
+  let swiperPaginationEl: HTMLElement | undefined;
   const style = twMerge('relative', additionalClass);
 
   let swiper: Swiper | undefined;
   onMount(() => {
-    swiper = new Swiper('.swiper', {
+    swiper = new Swiper(swiperEl!, {
       breakpoints: {
         720: {
           slidesPerGroup: 2,
@@ -50,11 +51,11 @@
       mousewheel: false,
       navigation: {
         disabledClass: '!hidden',
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: swiperNextEl,
+        prevEl: swiperPreviousEl
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: swiperPaginationEl,
         clickable: true
       },
       modules: [Navigation, Pagination]
@@ -82,14 +83,15 @@
       {@render children({ class: 'swiper-slide' })}
     </div>
 
-    {#if showPagination}
-      <div class="swiper-pagination !relative !-bottom-1"></div>
-    {/if}
+    <div bind:this={swiperPaginationEl} class={twMerge(
+      "swiper-pagination !relative !-bottom-1",
+      showPagination ? '' : 'hidden'
+    )}></div>
   </div>
   <div
     bind:this={swiperNextEl}
     class={twMerge(
-      'swiper-button-next absolute top-2/5 -right-5 z-10 flex aspect-square h-8 w-8 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-right-10 sm:h-16 sm:w-16',
+      'swiper-button-next absolute top-2/5 -right-5 z-10 flex aspect-square h-10 w-10  sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-right-10',
       showNavigationButtons ? '' : 'hidden'
     )}
   >
@@ -98,10 +100,10 @@
   <div
     bind:this={swiperPreviousEl}
     class={twMerge(
-      'swiper-button-prev absolute top-2/5 -left-5 z-10 flex aspect-square h-8 w-8 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-left-10 sm:h-16 sm:w-16',
+      'swiper-button-prev absolute top-2/5 -left-5 z-10 flex aspect-square h-10 w-10  sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-left-10',
       showNavigationButtons ? '' : 'hidden'
     )}
   >
-    <ChevronLeft stroke="3" class="h-4 w-4 sm:h-8 sm:w-8" />
+    <ChevronLeft stroke="3" class="h-6 w-6 sm:h-8 sm:w-8" />
   </div>
 </div>
