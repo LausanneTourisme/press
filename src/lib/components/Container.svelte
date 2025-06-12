@@ -24,7 +24,7 @@
     switch (width) {
       default:
       case 'padded':
-        return 'md:p-16';
+        return 'mx-auto md:p-16 md:max-w-[1900px]';
       case 'large':
         return 'md:max-w-[1536px] mx-auto';
       case 'medium':
