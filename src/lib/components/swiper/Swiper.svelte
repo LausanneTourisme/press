@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-// core version + navigation, pagination modules :
+  // core version + navigation, pagination modules :
   import Swiper from 'swiper';
   import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
+  // import Swiper and modules styles
   import { ChevronLeft, ChevronRight } from 'lucide-svelte';
   import 'swiper/css';
   import 'swiper/css/pagination';
@@ -27,6 +27,9 @@
     children
   }: Props = $props();
 
+  let swiperEl: HTMLElement | undefined;
+  let swiperNextEl: HTMLElement | undefined;
+  let swiperPreviousEl: HTMLElement | undefined;
   const style = twMerge('relative', additionalClass);
 
   let swiper: Swiper | undefined;
@@ -36,7 +39,7 @@
         720: {
           slidesPerGroup: 2,
           spaceBetween: 20
-        },
+        }
       },
       slidesPerGroup: 1,
       slidesPerView: 'auto',
@@ -57,18 +60,16 @@
       modules: [Navigation, Pagination]
     });
 
-    const swiperEl = document.querySelector('.swiper');
-
-    swiperEl!.addEventListener('wheel', (e) => {
+    swiperEl?.addEventListener('wheel', (e) => {
       const event = e as WheelEvent;
       if (event.shiftKey) {
         event.preventDefault(); // prevent page scroll
 
         // simulate swiper control manually
         if (event.deltaY > 0) {
-          swiper?.slideNext();
+          swiperNextEl?.click();
         } else if (event.deltaY < 0) {
-          swiper?.slidePrev();
+          swiperPreviousEl?.click();
         }
       }
     });
@@ -76,24 +77,31 @@
 </script>
 
 <div class={style}>
-  <div class="swiper">
+  <div class="swiper" bind:this={swiperEl}>
     <div class={twMerge('swiper-wrapper', containerClass)}>
       {@render children({ class: 'swiper-slide' })}
     </div>
+
+    {#if showPagination}
+      <div class="swiper-pagination !relative !-bottom-1"></div>
+    {/if}
   </div>
-  {#if showNavigationButtons}
-    <div
-      class="swiper-button-next absolute top-2/5 -right-5 sm:-right-10 z-10 flex aspect-square h-8 w-8 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600"
-    >
-      <ChevronRight stroke="3" class="h-6 w-6 sm:h-8 sm:w-8" />
-    </div>
-    <div
-      class="swiper-button-prev absolute top-2/5 -left-5 sm:-left-10 z-10 flex aspect-square h-8 w-8 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600"
-    >
-      <ChevronLeft stroke="3" class="h-4 w-4 sm:h-8 sm:w-8" />
-    </div>
-  {/if}
-  {#if showPagination}
-    <div class="swiper-pagination !relative !bottom-0"></div>
-  {/if}
+  <div
+    bind:this={swiperNextEl}
+    class={twMerge(
+      'swiper-button-next absolute top-2/5 -right-5 z-10 flex aspect-square h-8 w-8 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-right-10 sm:h-16 sm:w-16',
+      showNavigationButtons ? '' : 'hidden'
+    )}
+  >
+    <ChevronRight stroke="3" class="h-6 w-6 sm:h-8 sm:w-8" />
+  </div>
+  <div
+    bind:this={swiperPreviousEl}
+    class={twMerge(
+      'swiper-button-prev absolute top-2/5 -left-5 z-10 flex aspect-square h-8 w-8 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-left-10 sm:h-16 sm:w-16',
+      showNavigationButtons ? '' : 'hidden'
+    )}
+  >
+    <ChevronLeft stroke="3" class="h-4 w-4 sm:h-8 sm:w-8" />
+  </div>
 </div>
