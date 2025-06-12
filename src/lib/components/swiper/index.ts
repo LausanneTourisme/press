@@ -1,5 +1,5 @@
 import Swiper from "./Swiper.svelte";
-import Slider from "./Slide.svelte";
+import Slide from "./Slide.svelte";
 
 
 export {
