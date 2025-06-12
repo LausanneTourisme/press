@@ -1,24 +1,25 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import { page } from '$app/state';
-  import { RouteTypes, ThemeKeys } from '$enums';
+  import { RouteTypes, ThemeKeys, Themes } from '$enums';
+  import { Cloudinary } from '$lib/cloudinary';
   import Button from '$lib/components/Button.svelte';
+  import Clickable from '$lib/components/Clickable.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Map from '$lib/components/Map/Map.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
+  import { Slide, Swiper } from '$lib/components/swiper';
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
+  import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
-  import { Swiper, Slide } from '$lib/components/swiper';
-  import Clickable from '$lib/components/Clickable.svelte';
-  import { DateTime } from 'luxon';
-  import { Cloudinary } from '$lib/cloudinary';
 
   const pageData = page.data as PageData;
   const highlightedArticle = $derived(pageData.payload.highlightedArticle);
@@ -91,54 +92,56 @@
 	-
 	-
 	-->
-  {#if articles}
-<Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
-  <Container width="medium">
-    <Swiper>
-      {#each articles as article}
-        {#if article.seo}
-          {@const publishedAt = DateTime.fromSeconds(
-            parseInt(article?.published_at ?? '')
-          ).setLocale($locale)}
-          <Slide>
-            <Clickable
-              href={`${route(RouteTypes.Articles, { forceLocale: $locale as Locale })}/${article.seo.slug}`}
-              overflow={true}
-              class="card group bg-base-100 relative min-w-[220px] max-w-[290px] rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
-            >
-              <Figure
-                class="h-48 rounded"
-                src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
-                  w: 330
-                })}
-                alt=""
-              />
-              <div class="card-body h-64 sm:h-58 px-4">
-                <small class="text-gray-500 text-sm">{publishedAt?.toFormat('dd.MM.yyyy')}</small>
-                <h2 class="card-title text-xl text-gray-700 transition-colors group-hover:text-gray-950">
-                  {article.name}
-                </h2>
-                <p
-                  class="-mb-2 line-clamp-3 text-base text-gray-700 transition-colors group-hover:text-gray-950"
-                >
-                  {article.lead}
-                </p>
-                <div class="card-actions relative top-2 justify-end">
-                  <div
-                    class="flex items-center text-gray-500 transition-colors group-hover:text-gray-950"
+{#if articles}
+  <Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
+    <Container width="medium">
+      <Swiper>
+        {#each articles as article}
+          {#if article.seo}
+            {@const publishedAt = DateTime.fromSeconds(
+              parseInt(article?.published_at ?? '')
+            ).setLocale($locale)}
+            <Slide>
+              <Clickable
+                href={`${route(RouteTypes.Articles, { forceLocale: $locale as Locale })}/${article.seo.slug}`}
+                overflow={true}
+                class="card group bg-base-100 relative max-w-[290px] min-w-[220px] rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
+              >
+                <Figure
+                  class="h-48 rounded"
+                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
+                    w: 330
+                  })}
+                  alt=""
+                />
+                <div class="card-body h-64 px-4 sm:h-58">
+                  <small class="text-sm text-gray-500">{publishedAt?.toFormat('dd.MM.yyyy')}</small>
+                  <h2
+                    class="card-title text-xl text-gray-700 transition-colors group-hover:text-gray-950"
                   >
-                    {$t('themes.read')}&nbsp;
-                    <ArrowRight class="h-4 w-4" />
+                    {article.name}
+                  </h2>
+                  <p
+                    class="-mb-2 line-clamp-3 text-base text-gray-700 transition-colors group-hover:text-gray-950"
+                  >
+                    {article.lead}
+                  </p>
+                  <div class="card-actions relative top-2 justify-end">
+                    <div
+                      class="flex items-center text-gray-500 transition-colors group-hover:text-gray-950"
+                    >
+                      {$t('themes.read')}&nbsp;
+                      <ArrowRight class="h-4 w-4" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Clickable>
-          </Slide>
-        {/if}
-      {/each}
-    </Swiper>
+              </Clickable>
+            </Slide>
+          {/if}
+        {/each}
+      </Swiper>
+    </Container>
   </Container>
-</Container>
 {/if}
 <!--
     -
@@ -198,6 +201,49 @@
 	-
 	-
 	-->
-<Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
-  <Container width="medium">TODO THEME SWIPER</Container>
+<Container width="padded" class="bg-gray-100 md:bg-gray-50">
+  <Container width="medium">
+    <Heading class="text-center">
+      {$t('themes.other')}&nbsp;:
+    </Heading>
+  </Container>
+  <Swiper>
+    {#each Object.values(Themes) as theme}
+      {@const selecteTheme = ThemeDetails[ThemeKeys[theme]]}
+      <Slide>
+        <Clickable
+          href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}
+          overflow={true}
+        >
+          <div
+            class="card group relative h-[360px] w-[315px] min-w-[315px] rounded-none shadow-none md:ml-0 md:h-[460px] md:w-[375px]"
+            transition:fade
+          >
+            <div class="card-body relative z-0 p-4 md:p-6">
+              <figure
+                class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
+              >
+                <Image
+                  src={selecteTheme.image}
+                  transform={selecteTheme.transform ?? { g: 'auto', c: 'auto' }}
+                />
+              </figure>
+              <div
+                class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selecteTheme.background} opacity-50 group-hover:opacity-60"
+              ></div>
+              <div class="absolute bottom-0 left-0">
+                <Heading
+                  tag="h3"
+                  class="my-4 px-4 text-clip whitespace-break-spaces text-white md:text-3xl"
+                  title={$t(`themes.${theme}.title`)}
+                >
+                  {$t(`themes.${theme}.title`)}
+                </Heading>
+              </div>
+            </div>
+          </div>
+        </Clickable>
+      </Slide>
+    {/each}
+  </Swiper>
 </Container>
