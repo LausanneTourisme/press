@@ -7,9 +7,9 @@
     children: Snippet;
   };
 
-  const { class: additionalClass, children }: Props = $props();
+  const { class: additionalClass = "w-min!", children }: Props = $props();
 </script>
 
-<div class={twMerge('swiper-slide w-min!', additionalClass)}>
+<div class={twMerge('swiper-slide', additionalClass)}>
   {@render children?.()}
 </div>
