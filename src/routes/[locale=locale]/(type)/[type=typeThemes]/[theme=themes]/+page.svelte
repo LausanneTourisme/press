@@ -10,22 +10,26 @@
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
-  import { locale, t } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
+  import { Swiper, Slide } from '$lib/components/swiper';
+  import Clickable from '$lib/components/Clickable.svelte';
+  import { DateTime } from 'luxon';
+  import { Cloudinary } from '$lib/cloudinary';
 
-  const pageData = page.data as PageData
+  const pageData = page.data as PageData;
   const highlightedArticle = $derived(pageData.payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? pageData.seo.title);
-  const articles= $derived(pageData.payload.articles ?? []);
+  const articles = $derived(pageData.payload.articles ?? []);
   const favorites = $derived(pageData.payload.favorites ?? []);
   const theme = pageData.theme;
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
 
   if (typeof window !== 'undefined') {
-    if(dev) console.log(page.data.payload);
+    if (dev) console.log(page.data.payload);
   }
 </script>
 
@@ -52,7 +56,9 @@
         {#if highlightedArticle}
           <Button
             tag="a"
-            href={route(RouteTypes.Articles, { suffix: (highlightedArticle?.seo?.slug as string|undefined)})}
+            href={route(RouteTypes.Articles, {
+              suffix: highlightedArticle?.seo?.slug as string | undefined
+            })}
             class="inline-flex items-center"
           >
             {$t('themes.read-more')}
@@ -85,36 +91,55 @@
 	-
 	-
 	-->
+  {#if articles}
 <Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
   <Container width="medium">
-    todo swiper
-    <!-- <Swiper containerClass={"md:m-0 py-4 flex gap-x-4"}> -->
-    <!-- {#each articles as article}
-          {@const publishedAt = DateTime.fromSeconds(parseInt(article.published_at)).setLocale($locale)}
-          {#key article.seo.slug}
-            <Clickable href={`${route(Web.articles)}/${article.id}/${article.seo.slug}`}
-                       overflow={true}
-                       class="group card min-w-72 md:w-96 bg-base-100 shadow hover:shadow-lg rounded-none transition-all">
-              <Figure class="h-48 rounded"
-                      src="{Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({w: 330})}"
-                      alt="" />
-              <div class="card-body px-4 h-64">
-                <small class="text-gray-500">{publishedAt?.toFormat("dd.MM.yyyy")}</small>
-                <h2 class="card-title text-gray-700 group-hover:text-gray-950 transition-colors">{article.name}</h2>
-                <p class="line-clamp-3 text-gray-700 group-hover:text-gray-950 transition-colors -mb-2">{article.lead}</p>
-                <div class="card-actions justify-end relative top-2">
-                  <div class="flex items-center text-gray-500 group-hover:text-gray-950 transition-colors">
-                    {$_("Lire")}&nbsp;
-                    <ArrowRightSolid class="w-4 h-4" />
+    <Swiper>
+      {#each articles as article}
+        {#if article.seo}
+          {@const publishedAt = DateTime.fromSeconds(
+            parseInt(article?.published_at ?? '')
+          ).setLocale($locale)}
+          <Slide>
+            <Clickable
+              href={`${route(RouteTypes.Articles, { forceLocale: $locale as Locale })}/${article.seo.slug}`}
+              overflow={true}
+              class="card group bg-base-100 relative min-w-[220px] max-w-[290px] rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
+            >
+              <Figure
+                class="h-48 rounded"
+                src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
+                  w: 330
+                })}
+                alt=""
+              />
+              <div class="card-body h-64 sm:h-58 px-4">
+                <small class="text-gray-500 text-sm">{publishedAt?.toFormat('dd.MM.yyyy')}</small>
+                <h2 class="card-title text-xl text-gray-700 transition-colors group-hover:text-gray-950">
+                  {article.name}
+                </h2>
+                <p
+                  class="-mb-2 line-clamp-3 text-base text-gray-700 transition-colors group-hover:text-gray-950"
+                >
+                  {article.lead}
+                </p>
+                <div class="card-actions relative top-2 justify-end">
+                  <div
+                    class="flex items-center text-gray-500 transition-colors group-hover:text-gray-950"
+                  >
+                    {$t('themes.read')}&nbsp;
+                    <ArrowRight class="h-4 w-4" />
                   </div>
                 </div>
               </div>
             </Clickable>
-          {/key}
-        {/each}
-      </Swiper> -->
+          </Slide>
+        {/if}
+      {/each}
+    </Swiper>
   </Container>
 </Container>
+{/if}
 <!--
     -
     -
@@ -161,7 +186,7 @@
     {favorites}
     themeColor={themeInformation.color}
     listBorderColor={themeInformation.borderColor}
-    />
+  />
 </Container>
 
 <!--
@@ -174,32 +199,5 @@
 	-
 	-->
 <Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
-  <Container width="medium">
-    todo swiper
-    <!-- <Swiper containerClass={"md:m-0 py-4 flex gap-x-4"}> -->
-    <!-- {#each articles as article}
-          {@const publishedAt = DateTime.fromSeconds(parseInt(article.published_at)).setLocale($locale)}
-          {#key article.seo.slug}
-            <Clickable href={`${route(Web.articles)}/${article.id}/${article.seo.slug}`}
-                       overflow={true}
-                       class="group card min-w-72 md:w-96 bg-base-100 shadow hover:shadow-lg rounded-none transition-all">
-              <Figure class="h-48 rounded"
-                      src="{Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({w: 330})}"
-                      alt="" />
-              <div class="card-body px-4 h-64">
-                <small class="text-gray-500">{publishedAt?.toFormat("dd.MM.yyyy")}</small>
-                <h2 class="card-title text-gray-700 group-hover:text-gray-950 transition-colors">{article.name}</h2>
-                <p class="line-clamp-3 text-gray-700 group-hover:text-gray-950 transition-colors -mb-2">{article.lead}</p>
-                <div class="card-actions justify-end relative top-2">
-                  <div class="flex items-center text-gray-500 group-hover:text-gray-950 transition-colors">
-                    {$_("Lire")}&nbsp;
-                    <ArrowRightSolid class="w-4 h-4" />
-                  </div>
-                </div>
-              </div>
-            </Clickable>
-          {/key}
-        {/each}
-      </Swiper> -->
-  </Container>
+  <Container width="medium">TODO THEME SWIPER</Container>
 </Container>
