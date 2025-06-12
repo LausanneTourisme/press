@@ -34,9 +34,11 @@
     swiper = new Swiper('.swiper', {
       breakpoints: {
         720: {
+          slidesPerGroup: 2,
           spaceBetween: 20
-        }
+        },
       },
+      slidesPerGroup: 1,
       slidesPerView: 'auto',
       spaceBetween: 10,
       grabCursor: true,
