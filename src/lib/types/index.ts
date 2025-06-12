@@ -4,6 +4,7 @@ import type { Component } from "svelte";
 export type * from './maplibre';
 export type * from './nova';
 
+export type SelectedDates = { start: string, end: string | undefined | null };
 export type MaybePromise<T> = T | Promise<T> | PromiseLike<T>;
 
 export type MenuItem = {
