@@ -186,7 +186,7 @@
     </section>
     <section class="mx-auto flex w-full max-w-[1270px] flex-wrap p-[15px]">
       <hr class="-mt-2 w-full border-t-2 border-white" />
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-[1.5fr_2.5fr_1.5fr]">
+      <div class="grid grid-cols-1 gap-8 w-full md:grid-cols-[1.5fr_2.5fr_1.5fr]">
         <div class="footer-contact max-w-[400px]">
           <Heading class="mt-4 mb-2 text-base text-white md:text-base ">
             {$t('footer.contact')}
@@ -202,8 +202,8 @@
             {$t('footer.where.text')}
           </Button>
         </div>
-        <nav class="footer-infos xl:w-full">
-          <ul class=" grid list-none grid-cols-2 gap-5">
+        <nav class="footer-infos w-full">
+          <ul class=" grid list-none grid-cols-1 xs:grid-cols-2 gap-5">
             <li class="footer-info list-none pb-2.5 tracking-[.75px] text-white">
               <Heading
                 class="mb-1 text-base font-bold tracking-normal text-white md:text-base xl:mt-4 "
@@ -324,8 +324,8 @@
             </li>
           </ul>
         </nav>
-        <div class="footer-logo flex w-full justify-center xl:mt-4 xl:justify-end">
-          <Image src="/images/logo/partners/lt_logo_white.svg" class="h-56 w-48 md:h-36 md:w-24" />
+        <div class="footer-logo w-full justify-center -mt-10 sm:mt-0 xl:mt-4 xl:justify-end">
+          <Image src="/images/logo/partners/lt_logo_white.svg" class="h-56 w-56 md:h-36 md:w-36 mx-auto" />
         </div>
       </div>
     </section>
