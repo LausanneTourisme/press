@@ -115,21 +115,17 @@
   fullscreen={true}
   class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
 >
-  <div class="p-6 text-left md:w-1/2 md:p-16 xl:mt-[25px] 2xl:mt-[5px]">
-    <Heading tag="h1" class="text-white xl:whitespace-nowrap">
-      <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]"
-        >{$t('page.hero.title').toUpperCase()}</span
-      >
-      <br />
-      <span class="inline-block tracking-tight"
-        >{$t('page.hero.subtitle')}<span
-          class="shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)]">!</span
-        >
+  <div
+    class="md:w-1/2 md:p-16 p-6 text-left shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)] lg:w-1/2"
+  >
+    <Heading tag="h1" class="w-full text-white">
+      <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]">
+        {$t('page.hero.title').toUpperCase()}
       </span>
+      <br />
+      <span class="inline-block tracking-tight">{@html $t('page.hero.subtitle')}</span>
     </Heading>
-    <Paragraph
-      class="3xl:max-w-[90%] text-justify text-white xl:max-w-[528px] xl:tracking-wide 2xl:max-w-[700px] 2xl:tracking-normal"
-    >
+    <Paragraph class="w-full text-justify text-white xl:tracking-wide 2xl:tracking-normal">
       {$t('page.hero.paragraph')}
     </Paragraph>
 

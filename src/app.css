@@ -3,6 +3,12 @@
 @plugin "daisyui";
 
 @theme {
+  --breakpoint-xs: 28rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+@theme {
   --font-euclid: Euclid\Flex, title;
 
   --color-loading: #7d7d7d21;
@@ -172,4 +178,12 @@ img {
 
 .articles .paragraph a {
   @apply !text-brand-500 !font-bold
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply !bg-brand-500
+}
+
+.swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
+  @apply !bg-brand-500 opacity-45
 }

@@ -64,6 +64,7 @@
     "luxon": "^3.6.1",
     "svelte-device-info": "^1.0.6",
     "sveltekit-i18n": "^2.4.2",
+    "swiper": "^11.2.8",
     "tailwind-merge": "^2.6.0"
   },
   "trustedDependencies": [
