@@ -5,10 +5,11 @@
   type HeadingProps = {
     class?: string;
     centered?: boolean;
+    title?: string,
     children: Snippet;
   };
 
-  let { class: additionalClass = '', centered = false, children }: HeadingProps = $props();
+  let { class: additionalClass = '', centered = false, children, title }: HeadingProps = $props();
 
   const style = twMerge(
     'dark:text-white text-neutral-700 font-lighter leading-7 my-3',
@@ -17,6 +18,6 @@
   );
 </script>
 
-<p class={style}>
+<p class={style} {title}>
   {@render children()}
 </p>

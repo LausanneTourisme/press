@@ -4,9 +4,8 @@
   import Themes from '$lib/components/Themes.svelte';
   import type { PageData } from './$types';
 
-  const pageData = page.data as PageData;
-  const title = pageData.translations[pageData.i18n.locale]["themes.title"];
-  const description = pageData.translations[pageData.i18n.locale]["themes.description"];
+  const title = $derived((page.data as PageData).translations[(page.data as PageData).i18n.locale]["themes.title"]);
+  const description = $derived((page.data as PageData).translations[(page.data as PageData).i18n.locale]["themes.description"]);
 </script>
 
 <Container fullscreen={true} class="mb-12">

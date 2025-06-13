@@ -20,14 +20,14 @@ export const load = async ({ parent }) => {
     ]);
 
     // 0 highlighted posts in this list
-    const articles = articlesRes.data?.items?.data;
-    const highlightedArticles = highlightedArticlesRes.data?.items?.data;
-    const favorites = favoritesRes.data?.items?.data;
-    
+    const articles = articlesRes.data?.items?.data ?? [];
+    const highlightedArticles = highlightedArticlesRes.data?.items?.data ?? [];
+    const favorites = favoritesRes.data?.items?.data ?? [];
+
     return {
         payload: {
-            articles: filterByTag(articles ?? [], tag),
-            highlightedArticle: filterByTag(highlightedArticles ?? [], tag)?.at(0),
+            articles: filterByTag(articles, tag),
+            highlightedArticle: filterByTag(highlightedArticles, tag)?.at(0),
             favorites,
         }
     }

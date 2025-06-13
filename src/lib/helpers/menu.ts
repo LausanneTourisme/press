@@ -17,8 +17,8 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
                 strokeWidth: 2,
             },
             {
-                title:t.get('menu.ressources.pressrelease'),
-                link: route(RouteTypes.Pressrelease),
+                title:t.get('menu.ressources.press-realeases-and-press-kits'),
+                link: route(RouteTypes.PressreleasesAndPresskits),
             },
             {
                 title:t.get('menu.ressources.coverage'),

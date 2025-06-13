@@ -6,8 +6,9 @@
   "press-release.slug": "communiques-de-presse",
   "press-kit.slug": "dossier-de-presse",
   "highlights.slug": "immanquables",
-  "themes.slug": "themes",
+  "press-releases-and-press-kits.slug": "communiques-de-presse-et-dossier-de-presse",
 
+  "themes.slug": "themes",
   "themes.architecture.slug": "architecture-design",
   "themes.culture.slug": "culture",
   "themes.education.slug": "education",

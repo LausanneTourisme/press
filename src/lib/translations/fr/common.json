@@ -43,7 +43,12 @@
             "paragraph2.in-social-networks": "Sur les réseaux :",
             "paragraph2.instagram": "Identifiez @thelausanner en story et en post, et insérez le hashtag #thelausanner en post",
             "paragraph2.linkedIn": "Identifiez @Lausanne, Capitale Olympique",
-            "paragraph3.find-us": "Identifiez @Lausanne, Capitale Olympique"
+            "paragraph3.find-us": "Retrouvez-nous également sur :"
         }
+    },
+    "route-titles": {
+        "press-release": "Communiqué de presse",
+        "press-kit": "Dossier de presse",
+        "articles": "Article"
     }
 }
