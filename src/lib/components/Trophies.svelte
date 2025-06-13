@@ -28,7 +28,7 @@
   {#each values as article, k}
     <Slide>
       <Clickable href={article.link}>
-        <Card src={article.image} alt={article.name} background="bg-glacier-300" nofx={true}>
+        <Card src={article.image} alt={article.name} background="bg-glacier-300"  class="md:w-[375px]" nofx={true}>
           <Heading
             tag="h3"
             class="text-shadow:_0_0_20px_var(--tw-shadow-color)] text-white shadow-gray-950"
