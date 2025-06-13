@@ -12,7 +12,7 @@ export const RouteTypes = {
   Themes: 'themes',
   Pressrelease: "press-release",
   Presskit: "press-kit",
-  PressreleasesAndPresskits: "press-realeases-and-press-kits"
+  PressreleasesAndPresskits: "press-releases-and-press-kits"
 } as const;
 
 export const Themes = {
