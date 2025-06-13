@@ -161,7 +161,6 @@
     {#snippet children()}
       <Paragraph>
         {$t('common.faq.travel.paragraph1.part1')}
-        <!-- TODO inject tag inside translation !!! -->
         <a
           href={$t('common.faq.travel.paragraph1.link')}
           class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
