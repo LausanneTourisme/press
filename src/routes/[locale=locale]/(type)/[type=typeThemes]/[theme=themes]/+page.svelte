@@ -21,17 +21,12 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
-  const pageData = page.data as PageData;
-  const highlightedArticle = $derived(pageData.payload.highlightedArticle);
-  const title = $derived(highlightedArticle?.name ?? pageData.seo.title);
-  const articles = $derived(pageData.payload.articles ?? []);
-  const favorites = $derived(pageData.payload.favorites ?? []);
-  const theme = pageData.theme;
-  const themeInformation = ThemeDetails[ThemeKeys[theme]];
-
-  if (typeof window !== 'undefined') {
-    if (dev) console.log(page.data.payload);
-  }
+  const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
+  const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
+  const articles = $derived((page.data as PageData).payload.articles);
+  const favorites = $derived((page.data as PageData).payload.favorites);
+  const theme = $derived((page.data as PageData).theme);
+  const themeInformation = $derived(ThemeDetails[ThemeKeys[(page.data as PageData).theme]]);
 </script>
 
 <!--
@@ -69,14 +64,14 @@
       </div>
       <Figure
         class="h-72 md:w-1/2"
-        src={ThemeDetails[ThemeKeys[theme]].image}
+        src={themeInformation.image}
         alt={title}
         imgClass="rounded"
-        transform={ThemeDetails[ThemeKeys[theme]]?.transform}
+        transform={themeInformation.transform}
       />
       <div
         class={twMerge(
-          ThemeDetails[ThemeKeys[theme]].color,
+          themeInformation.color,
           'absolute top-4 left-16 -z-10 h-56 w-2/3 rounded md:left-32 md:h-72 md:w-1/2'
         )}
       ></div>
