@@ -1,4 +1,7 @@
 {
-    "title": "Pressemitteilungen und -mappen",
-    "meta-description": "Hier finden Sie die neuesten Nachrichten aus Lausanne sowie Pressemappen und Mitteilungen von Lausanne Tourisme."
+    "title": "Press releases and press kits",
+    "meta-description": "Find the latest news from Lausanne here, as well as press kits and releases from Lausanne Tourisme.",
+    "heading": "Press releases and press kits",
+    "description": "Find the latest news from Lausanne here, as well as press kits and releases from Lausanne Tourisme.",
+    "no-releases": "No articles available."
 }
