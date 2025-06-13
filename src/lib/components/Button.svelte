@@ -5,6 +5,7 @@
 
   type ButtonProps = {
     tag?: 'a' | 'button';
+    preload?: true | '' | 'hover' | 'tap' | 'off',
     type?: string,
     negative?: boolean;
     inline?: boolean;
@@ -21,6 +22,7 @@
 
   let {
     tag = 'button',
+    preload = "tap",
     negative = false,
     inline = false,
     disabled = false,
@@ -62,7 +64,7 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<svelte:element this={tag} class={style} {href} {target} {disabled} onclick={handleClick} {type}>
+<svelte:element this={tag} class={style} {href} {target} {disabled} onclick={handleClick} {type} data-sveltekit-preload-data={preload}>
   {@render prefix?.()}
   {@render children()}
   {@render suffix?.()}
