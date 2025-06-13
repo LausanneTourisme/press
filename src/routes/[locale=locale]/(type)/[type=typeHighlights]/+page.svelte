@@ -20,7 +20,6 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
-  const pageData = page.data as PageData;
   const events = $derived((page.data as PageData).events);
   const news = $derived((page.data as PageData).news);
   const groupPois = $derived.by(() => {
