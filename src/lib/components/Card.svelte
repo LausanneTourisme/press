@@ -27,7 +27,7 @@
 
   const cardStyle = twMerge(
     'relative',
-    'min-w-[220px] xs:min-w-[300px] w-full',
+    'min-w-[220px] xs:min-w-[300px] md:min-w-[375px] w-full',
     'h-[460px]',
     'md:ml-0 group transition-all',
     negative ? 'text-zinc-950' : 'text-white',
