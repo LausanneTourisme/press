@@ -88,7 +88,7 @@ export const getPosts = async <T extends PostType<string | Translatable>>({ type
 /**
  * this request call a specific group from SIT, see global env GROUP_ID_PAGE_HIGHLIGHTS
  */
-export const getGroup = async <T extends string|Translatable>({ locale, id }: { locale: Locale, id: number }) => {
+export const getGroup = async <T extends string | Translatable>({ locale, id }: { locale: Locale, id: number }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
