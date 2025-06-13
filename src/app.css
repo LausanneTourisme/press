@@ -172,11 +172,11 @@ img {
   font-family: var(--font-euclid);
 }
 
-.articles p {
+.articles .content p {
   @apply leading-relaxed mb-6
 }
 
-.articles .paragraph a {
+.articles .content .paragraph a {
   @apply !text-brand-500 !font-bold
 }
 

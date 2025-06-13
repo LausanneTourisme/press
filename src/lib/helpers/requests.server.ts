@@ -263,7 +263,7 @@ export const getAgendaEvents = async () => {
     return (await result.json()) as Promise<GraphQLResponse<Event<Translatable>>>;
 }
 
-export const getArticle = async (slug: string) => {
+export const getPost = async (slug: string) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {

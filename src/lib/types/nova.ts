@@ -68,6 +68,7 @@ export type Seo<T extends Translatable | string> = {
 type PostBase<T extends Translatable | string> = {
     published_at?: string,
     id?: number,
+    languages?: string[],
     name?: T,
     lead?: T,
     link?: T,
