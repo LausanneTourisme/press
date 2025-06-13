@@ -1,4 +1,4 @@
-import type { Event, Period, ScheduleDate, SelectedDates, Translatable } from "$types";
+import type { Event, Period, PostType, ScheduleDate, SelectedDates, Translatable } from "$types";
 import { DateTime } from "luxon";
 
 
@@ -92,3 +92,20 @@ export const isBetween = (period: Period, start: DateTime | undefined | null, en
 
     return false;
 };
+
+export const sortByYears = <T extends PostType<Translatable | string>>(posts: T[]) => {
+    const sortedPosts = new Map<string, T[]>();
+
+    posts.forEach(post => {
+        if (!post.published_at) return;
+
+        const date = DateTime.fromSeconds(parseInt(post.published_at));
+        const year = date.toFormat('yyyy');
+        if (!sortedPosts.get(year)) {
+            sortedPosts.set(year, []);
+        }
+        sortedPosts.get(year)?.push(post);
+    });
+
+    return sortedPosts;
+}
