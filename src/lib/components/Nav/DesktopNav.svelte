@@ -78,7 +78,7 @@
   </div>
   <!-- End desktop menu -->
   <div class="flex h-full items-center justify-between px-6">
-    <Button href={route(RouteTypes.Contact, {forceLocale: $locale as Locale})} class="invertable block px-3 dark:text-white" tag="a">
+    <Button href={route(RouteTypes.Contact, {forceLocale: $locale as Locale})} class="invertable block px-3 dark:text-white" tag="a" preload="off">
       {$t('common.contact-us')}
     </Button>
 
