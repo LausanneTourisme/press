@@ -22,13 +22,14 @@
     analytics: {
       label: $t('gdpr.analytics.label'),
       description: $t('gdpr.analytics.description'),
-      value: true
+      value: false
     },
     tracking: {
       label: $t('gdpr.tracking.label'),
       description: $t('gdpr.tracking.description'),
-      value: true
-    }
+      value: false
+    },
+    marketing: undefined,
   };
 
   let gtag: (...args: unknown[]) => void = $state(() => {});
@@ -167,7 +168,6 @@
   on:analytics={(e: CustomEvent<{ agreed: boolean }>) => {
     handleConsent({ type: e.type, agreed: e.detail.agreed });
   }}
-  on:consent={(e) => console.log(e)}
   cookieName="consent"
   heading={$t('gdpr.banner.heading')}
   description={$t('gdpr.banner.description')}

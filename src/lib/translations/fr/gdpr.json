@@ -9,7 +9,7 @@
     },
     "tracking": {
         "label": "Cookie de tracking (Instagram)",
-        "description": "Utilisé de sorte à afficher les intégrations instagram sur le site."
+        "description": "Utilisé pour l'affichage des intégrations instagram sur le site."
     },
     "banner": {
         "heading": "Paramètres des cookies",
