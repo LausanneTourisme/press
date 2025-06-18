@@ -31,7 +31,7 @@
     onclose
   }: Props = $props();
 
-  const markers: MarkerType[] = $state([]);
+  const markers: MarkerType<string>[] = $state([]);
   let markerIndex: string | undefined = $state();
   let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
@@ -126,6 +126,10 @@
       });
     });
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
+
+    return () => {
+      map?.remove();
+    }
   });
 </script>
 

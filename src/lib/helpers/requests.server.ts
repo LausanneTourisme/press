@@ -1,5 +1,5 @@
 import { Themes, type Theme } from "$enums";
-import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_AGENDA_URL, GRAPHQL_TOKEN, GRAPHQL_URL } from "$env/static/private";
+import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_URL, GRAPHQL_TOKEN } from "$env/static/private";
 import type { Locale } from "$lib/translations";
 import type { Favorite, GraphQLResponse, Group, Post, Event, PostType, Translatable } from "$types";
 import { DateTime } from "luxon";
@@ -182,7 +182,7 @@ export const getFavorites = async <T extends Translatable | string>({ locale, th
 }
 
 export const getAgendaEvents = async () => {
-    const result = await fetch(`${GRAPHQL_AGENDA_URL}`, {
+    const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

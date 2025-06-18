@@ -1,4 +1,4 @@
-import type { Favorite, Lausanner, Poi } from "$types";
+import type { Favorite, Lausanner, Poi, Translatable } from "$types";
 
 export type Latitude = number;
 export type Longitude = number;
@@ -8,10 +8,10 @@ export type Coordinate = {
     lng: Longitude,
 }
 
-export type Marker = {
-    poi: Poi;
-    lausanner?: Lausanner;
-    favorite: Favorite;
+export type Marker<T extends Translatable | string> = {
+    poi: Poi<T>;
+    lausanner?: Lausanner<T>;
+    favorite: Favorite<T>;
     coordinates: Coordinate;
 }
 

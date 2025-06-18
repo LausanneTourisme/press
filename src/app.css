@@ -187,3 +187,12 @@ img {
 .swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
   @apply !bg-brand-500 opacity-45
 }
+
+.cookieConsent__Button[type='submit'] {
+  @apply bg-brand-600 text-white;
+}
+
+button.cookieConsentToggle {
+  @apply !left-[20px];
+  right: unset !important;
+}

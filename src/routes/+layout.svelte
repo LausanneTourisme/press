@@ -13,6 +13,7 @@
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
   import { twMerge } from 'tailwind-merge';
+  import Analytics from '$lib/components/GDPR/Analytics.svelte';
 
   let { children } = $props<{ children: Snippet }>();
   const origin = $derived(page.url.origin);
@@ -118,6 +119,7 @@
 
   <main>
     {@render children()}
+    <Analytics />
   </main>
 
   <footer class="bg-metallic-800 relative z-10 leading-[1.7] tracking-wider text-white">

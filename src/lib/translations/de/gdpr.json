@@ -1,13 +1,25 @@
 {
-    "necessary.label": "Notwendige Cookies",
-    "necessary.description": "Wird verwendet, um Ihre Einstellungen in einem Cookie zu speichern. Kann nicht deaktiviert werden.",
-    "tracking.label": "Tracking-Cookie (Google Analytics)",
-    "tracking.description": "Dient der Analyse von Leistung und Nutzung der Website. Die Daten werden anonymisiert erhoben.",
-    "banner.heading": "Cookie-Einstellungen",
-    "banner.description": "Diese Website verwendet Cookies, um die Nutzungserfahrung auf der Website kontinuierlich zu verbessern. Wählen Sie „ok“, um Ihre Auswahl zu bestätigen, oder „Meine Einstellungen festlegen“, um weitere Informationen zu erhalten und Ihre Optionen zu verwalten.",
-    "banner.accept": "Ok",
-    "banner.reject": "Alles ablehnen",
-    "banner.settings": "Meine Einstellungen festlegen",
-    "banner.close": "Fenster schliessen",
-    "banner.edit": "Meine Einstellungen bearbeiten"
+    "necessary": {
+        "label": "Notwendige Cookies",
+        "description": "Wird verwendet, um Ihre Einstellungen in einem Cookie zu speichern. Kann nicht deaktiviert werden."
+    },
+    "analytics": {
+        "label": "Analytics-Cookies (Google Analytics, Cloudflare Analytics, Hotjar)",
+        "description": "Dient der Analyse von Leistung und Nutzung der Website. Die Daten werden anonymisiert erhoben."
+    },
+    "tracking": {
+        "label": "Traking-Cookie (Instagram)",
+        "description": "Wird so verwendet, dass instagram-Integrationen auf der Website angezeigt werden."
+    },
+    "banner": {
+        "heading": "Cookie-Einstellungen",
+        "description": "Diese Website verwendet Cookies, um die Nutzungserfahrung auf der Website kontinuierlich zu verbessern. Wählen Sie „ok“, um Ihre Auswahl zu bestätigen, oder „Meine Einstellungen festlegen“, um weitere Informationen zu erhalten und Ihre Optionen zu verwalten.",
+        "accept": "Ok",
+        "acceptAll": "Alles akzeptieren",
+        "acceptSelected": "Auswahl übernehmen",
+        "reject": "Alles ablehnen",
+        "settings": "Meine Einstellungen festlegen",
+        "close": "Fenster schliessen",
+        "edit": "Meine Einstellungen bearbeiten"
+    }
 }
