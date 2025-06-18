@@ -1,13 +1,25 @@
 {
-    "necessary.label": "Necessary cookies",
-    "necessary.description": "Used to store your settings in a cookie. Cannot be disabled.",
-    "tracking.label": "Tracking cookie (Google Analytics)",
-    "tracking.description": "Used to analyse site performance and usage. The data is collected anonymously.",
-    "banner.heading": "Cookie settings",
-    "banner.description": "This website uses cookies to continually improve the user experience on the site. Select \"ok\" to confirm your choices or \"Set my preferences\" for more details and to manage your options.",
-    "banner.accept": "Ok",
-    "banner.reject": "Reject all",
-    "banner.settings": "Set my preferences",
-    "banner.close": "Close window",
-    "banner.edit": "Edit my preferences"
+    "necessary": {
+        "label": "Necessary cookies",
+        "description": "Used to store your settings in a cookie. Cannot be disabled."
+    },
+    "analytics": {
+        "label": "Analytics cookies (Google Analytics, Cloudflare Analytics, Hotjar)",
+        "description": "Used to analyse site performance and usage. The data is collected anonymously."
+    },
+    "tracking": {
+        "label": "Traking-Cookie (Instagram)",
+        "description": "Used to display Instagram integrations on the site."
+    },
+    "banner": {
+        "heading": "Cookie settings",
+        "description": "This website uses cookies to continually improve the user experience on the site. Select \"ok\" to confirm your choices or \"Set my preferences\" for more details and to manage your options.",
+        "accept": "Ok",
+        "acceptAll": "Accept all",
+        "acceptSelected": "Accept selection",
+        "reject": "Reject all",
+        "settings": "Set my preferences",
+        "close": "Close window",
+        "edit": "Edit my preferences"
+    }
 }

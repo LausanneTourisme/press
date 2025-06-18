@@ -1,3 +1,4 @@
+import { browser } from "$app/environment";
 import { RouteTypes, type RouteType, type Theme } from "$enums";
 import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";

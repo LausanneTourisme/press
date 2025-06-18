@@ -16,6 +16,7 @@
     "deploy": "scripts/build.sh"
   },
   "devDependencies": {
+    "@beyonk/gdpr-cookie-consent-banner": "^16.0.1",
     "@eslint/compat": "^1.2.9",
     "@eslint/js": "^9.26.0",
     "@fontsource/fira-mono": "^5.2.6",
@@ -26,6 +27,7 @@
     "@tailwindcss/postcss": "^4.1.6",
     "@tailwindcss/typography": "^0.5.16",
     "@types/beyonk__gdpr-cookie-consent-banner": "^9.0.4",
+    "@types/js-cookie": "^3.0.6",
     "@types/luxon": "^3.6.2",
     "@types/mailchimp__mailchimp_transactional": "^1.0.11",
     "autoprefixer": "^10.4.21",
@@ -52,7 +54,6 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@beyonk/gdpr-cookie-consent-banner": "^12.1.6",
     "@botpoison/browser": "^0.1.30",
     "@botpoison/node": "^0.1.10",
     "@mailchimp/mailchimp_transactional": "^1.0.59",
@@ -61,6 +62,7 @@
     "dotenv": "^16.5.0",
     "embla-carousel": "^8.6.0",
     "embla-carousel-svelte": "^8.6.0",
+    "js-cookie": "^3.0.5",
     "luxon": "^3.6.1",
     "svelte-device-info": "^1.0.6",
     "sveltekit-i18n": "^2.4.2",

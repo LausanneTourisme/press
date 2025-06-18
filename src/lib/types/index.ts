@@ -4,6 +4,12 @@ import type { Component } from "svelte";
 export type * from './maplibre';
 export type * from './nova';
 
+declare global {
+	interface Window {
+		dataLayer: unknown[];
+	}
+}
+
 export type SelectedDates = { start: string, end: string | undefined | null };
 export type MaybePromise<T> = T | Promise<T> | PromiseLike<T>;
 
