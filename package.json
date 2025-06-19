@@ -13,7 +13,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
-    "deploy": "scripts/build.sh"
+    "deploy": "scripts/build.sh",
+    "sync:cloudinary": "node scripts/cloudinary.js"
   },
   "devDependencies": {
     "@beyonk/gdpr-cookie-consent-banner": "^16.0.1",
@@ -31,6 +32,7 @@
     "@types/luxon": "^3.6.2",
     "@types/mailchimp__mailchimp_transactional": "^1.0.11",
     "autoprefixer": "^10.4.21",
+    "cloudinary": "^2.7.0",
     "daisyui": "^5.0.35",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
@@ -39,6 +41,7 @@
     "lucide-svelte": "^0.474.0",
     "maplibre-gl": "^5.5.0",
     "msw": "^2.8.2",
+    "ora": "^8.2.0",
     "postcss": "^8.5.3",
     "postcss-load-config": "^4.0.2",
     "prettier": "^3.5.3",
