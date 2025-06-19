@@ -1,0 +1,309 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "Lasst euch am Seeufer in Vidy von der Atmosphäre mit Grillgerüchen, Berimbau-Klängen, einem improvisierten Baby-Geburtstag, Joggerinnen, Schaulustigen und sonntäglichen Pétanque-Spielern einfangen. Setzt euch einfach auf eine Bank oder an das Seeufer und beobachtet alles um euch herum. Das sind die Lausannerinnen und Lausanner: ein harmonischer interkultureller Mischmasch.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, die schicke Mama",
+                        "seo": {
+                            "slug": "ratana-die-schicke-mama"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "lead": "Hier kann sich jeder auf seine Art vergnügen, denn es wird allen etwas geboten: Geschichte, Sport, Bootsfahrten und Picknick...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/de/entdecken/plaines-de-vidy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 197,
+                    "name": "Natürliche Strände in Saint-Sulpice",
+                    "content": "Am Ende von Saint-Sulpice, im Parc du Débarcadère, beginnt ein kleiner, fast geheimnisvoller Weg. Er führt dem Seeufer entlang, an wunderschönen Villen vorbei und zu kleinen, wilden Stränden. Wenn ihr weitergeht, erreicht ihr den Strand in Saint-Sulpice, der fast völlig unberührt geblieben ist. Er ist zwischen Wald und langen weissen Sandstränden eingebettet – ein Paradies für Abenteuerlustige, die neue Wege gehen und dennoch nahe der Stadt Lausanne bleiben möchten.",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, der Momentesammler",
+                        "seo": {
+                            "slug": "victor-der-momentesammler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 449,
+                            "name": "Saint-Sulpice",
+                            "lead": "Diese kleine Wohngemeinde im Westen von Lausanne entstand im Mittelalter.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rtqhhyjro1e0rtoj6gkh",
+                                    "copyright": "© Droits Réservés",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "saint-sulpice",
+                                "hreflang": "/de/entdecken/saint-sulpice"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51794729",
+                                    "longitude": "6.57957061"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 247,
+                    "name": "La Jetée de la Compagnie",
+                    "content": "Dieser Ort ist mehr als nur ein Aussichtspunkt. Die Jetée de la Compagnie ist ein kleines Stück Paradies in Lausanne. Sie bietet einen atemberaubenden Blick auf den Genfersee und eine tolle Auswahl an Snacks und Cocktails. Der perfekte Rahmen für einen entspannten Moment am Morgen oder einen schönen Abend unter Freunden.",
+                    "lausanner": {
+                        "id": 30,
+                        "name": "Axel, der speedy Dunker",
+                        "seo": {
+                            "slug": "axel-der-speedy-dunker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "axel-7ensox",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "lead": "Die Jetée de la Compagnie ist eine saisonale Terrasse am Ufer des Genfersees in Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/de/entdecken/jetee-de-la-compagnie"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 192,
+                    "name": "Von den Stränden in Saint-Sulpice bis zum Tour Haldimand",
+                    "content": "Der Zauber der Region Lausanne liegt in ihrer Vielfalt. In kaum zehn Minuten gelangt man vom quirligen Flon-Viertel zu den geruhsamen Ufern des Genfersees. Zahlreiche Sand- und Kieselstrände laden zum Verweilen in der Sonne oder im Schatten der Bäume ein. Vom Tour Haldimand bis hin zu Saint-Sulpice hat man die Qual der Wahl. Wer eine Vorliebe für Sport hat, sollte sich den Stand in Vidy nicht entgehen lassen, wo zahlreiche Basketball- und Volleyballfelder zur Verfügung stehen.",
+                    "lausanner": {
+                        "id": 26,
+                        "name": "Valentine, die leidenschaftliche Entdeckerin",
+                        "seo": {
+                            "slug": "valentine-die-leidenschaftliche-entdeckerin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 92,
+                            "name": "Der Genfersee",
+                            "lead": "Der grösste See in Western Europas, umgeben von seiner malerischen Landschaft, bietet Ihnen zahlreiche Möglichkeiten.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wa4bqpi0ao0rbfomct6g",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "der-genfersee",
+                                "hreflang": "/de/entdecken/der-genfersee"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5052125",
+                                    "longitude": "6.624588"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 65,
+                    "name": "Ouchy",
+                    "content": "Da ich regelmässig in Paris bin, weiss ich, wie glücklich wir Lausanner uns schätzen können, den See zu haben. Schon ein Spaziergang durch Ouchy oder ein Sprung ins kühle Nass des Genfersees sorgen für wahre Glücksgefühle.",
+                    "lausanner": {
+                        "id": 8,
+                        "name": "Sébastien, der Abenteurer",
+                        "seo": {
+                            "slug": "sebastien-der-abenteurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 194,
+                            "name": "Ouchy",
+                            "lead": "Ouchy mit seinen Uferkais, dem Genfersee und sommerlichen Spaziergängen inmitten der Leute verleiht Lausanne einen Hauch von Mittelmeer-Feeling.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "akouddhpza3wodid9fdy",
+                                    "copyright": "© LT/ Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ouchy",
+                                "hreflang": "/de/entdecken/ouchy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.510155",
+                                    "longitude": "6.626487"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 185,
+                    "name": "Strand von Vidy",
+                    "content": "Sandstrand? Ja, auch wir in Lausanne haben unsere Venice Beach.\r\nNur wenige Schritte vom Skatepark Vidy entfernt kann man Volleyball und Basketball spielen und an den kleinen feinen Sandstränden flanieren. Schatten gefällig? Kein Problem! Die kleinen Strände sind entlang der gesamten Promenade von prächtigen Eichen beschattet. Zieht euch Taucherbrille und Schnorchel an. Wer weiss, vielleicht begegnet ihr Nemo!",
+                    "lausanner": {
+                        "id": 25,
+                        "name": "Tommaso, der Weltenbummler",
+                        "seo": {
+                            "slug": "tommaso-der-weltenbummler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 649,
+                            "name": "Plage de Vidy (Strand von Vidy)",
+                            "lead": "Auch bekannt unter dem Namen «Plage du Parc Louis Bourget» ist der Strand von Vidy der grösste Strand und die grösste Grünfläche am Ufer des Genfersees.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wn42hz1aupccmahj4f9s",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Plage Vidy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plage-de-vidy-strand-von-vidy",
+                                "hreflang": "/de/entdecken/plage-de-vidy-strand-von-vidy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5192217",
+                                    "longitude": "6.5875543"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 146,
+                    "name": "Quai d'Ouchy",
+                    "content": "Ein kleiner Spaziergang auf dem Uferweg in Ouchy ist für mich ein Muss, um den Tag gut abzuschliessen. Der Ort ist perfekt, um einen herrlichen Sonnenuntergang über dem Genfersee mit den Alpen als Kulisse zu erleben. Ich liebe die Atmosphäre mit den spielenden Kindern, den Skateboardern und anderen Künstlern.",
+                    "lausanner": {
+                        "id": 19,
+                        "name": "Alexandre, der Souvenirhersteller",
+                        "seo": {
+                            "slug": "alexandre-der-souvenirhersteller"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 264,
+                            "name": "Quais d'Ouchy",
+                            "lead": "Die 1901 erbauten Quais verbinden den alten Hafen mit der Tour Haldimand, die früher wie das Schloss Ouchy auf einer Insel stand.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mlmtfhjfzadbd1qkdz60",
+                                    "copyright": "© LT/ Laurent KACZOR",
+                                    "public_name": "Ouchy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "quais-douchy",
+                                "hreflang": "/de/entdecken/quais-douchy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

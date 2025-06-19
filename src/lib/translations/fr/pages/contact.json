@@ -1,0 +1,74 @@
+{
+    "title": "Nous contacter",
+    "meta-description": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités ? N'hésitez pas à nous contacter.",
+    "heading": "Contact",
+    "description": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités&nbsp;? N'hésitez pas à nous contacter en remplissant le formulaire ci-dessous. Nous nous efforcerons de vous répondre dans les meilleurs délais.",
+    "form": {
+        "select-section": {
+            "title": "Comment souhaitez-vous nous joindre ?",
+            "button": {
+                "message": "Par message",
+                "call": "Nous appeler"
+            }
+        },
+        "call-section": {
+            "title": "Pour nous appeler :"
+        },
+        "mail-section": {
+            "title": "Envoyer un message",
+            "form": {
+                "gender-section": {
+                    "title": "Titre :",
+                    "sir": "Monsieur",
+                    "madam": "Madame"
+                },
+                "name-section": {
+                    "title": "Comment vous appelez-vous ?",
+                    "placeholder": "John Doe"
+                },
+                "email-section": {
+                    "title": "Votre adresse email :",
+                    "placeholder": "john@doe.com"
+                },
+                "area-of-activity-section": {
+                    "title": "Domaine d'activité :",
+                    "choices": {
+                        "please-select": "Veuillez choisir une option",
+                        "journalist": "Journaliste",
+                        "influencer": "Influenceur",
+                        "media": "Media",
+                        "other": "Autre"
+                    }
+                },
+                "message-section": {
+                    "title": "Votre message :",
+                    "placeholder": "Bonjour, j'aurais souhaité…",
+                    "validation-text": "Veuillez rédiger un message plus long que 10 caractères."
+                },
+                "send": "Envoyer"
+            },
+            "validations": {
+                "radio-buttons": "Veuillez choisir une des options.",
+                "select": "Veuillez choisir un domaine d'activité.",
+                "text-length": "Veuillez renseigner un nom plus long que {{number}} caractères.",
+                "mail": "Veullez écrire un email valide. (exemple@domain.com)"
+            },
+            "response": {
+                "from-name": "Presse - Lausanne Tourisme",
+                "subject": "Merci pour votre demande.",
+                "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre demande a bien été transmise. Nous vous répondrons dans les plus brefs délais.",
+                "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
+            }
+        },
+        "confirmation-section": {
+            "success": {
+                "title": "Demande envoyée !",
+                "message": "Nous vous répondrons dans les plus brefs délais."
+            },
+            "invalid": {
+                "title": "Formulaire invalide !"
+            }
+        },
+        "restart-button": "Recommencer"
+    }
+}

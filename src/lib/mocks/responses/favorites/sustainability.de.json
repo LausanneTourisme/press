@@ -1,0 +1,352 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 226,
+                    "name": "Die Gewächshäuser im Milan-Park",
+                    "content": "Mit ihren vielen Pärken und umgeben von Natur ist Lausanne ja schon eine grüne Stadt. Wenn ihr jedoch auf der Suche nach etwas Exotischerem seid, empfehle ich euch einen Besuch des botanischen Gartens im Milan-Park und vor allem der Gewächshäuser. Mit Hunderten von verschiedenen exotischen Arten nimmt uns das kleine Gewächshaus mit an einen anderen Ort. Im ersten Stock hat es sogar einen Tisch, wenn euch trotz der Hitze nach Verweilen ist.",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, der Momentesammler",
+                        "seo": {
+                            "slug": "victor-der-momentesammler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 234,
+                            "name": "Naturéum - Botanische Garten",
+                            "lead": "Der das ganze Jahr über gratis zugängliche botanische Garten von Lausanne ist ein Paradies mitten in der Stadt.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "epcsckdihemplrq6rm7i",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Musée et Jardin Botanique de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "botanische-garten-und-museum-von-lausanne",
+                                "hreflang": "/de/entdecken/botanische-garten-und-museum-von-lausanne"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5139602",
+                                    "longitude": "6.621955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "name": "Der Milan-Park",
+                    "content": "Der botanische Garten im Milan-Park ist eine kleine Insel der Vielfalt und eine willkommene Zuflucht vor dem geschäftigen Treiben der Einkaufszentren und dem Lärm der Stadt. Dem Quaken der Frösche und dem Summen der Bienen zu lauschen, ist eine echte Wohltat.",
+                    "lausanner": {
+                        "id": 13,
+                        "name": "Realsousgare, der Satirenkönig",
+                        "seo": {
+                            "slug": "realsousgare-der-satirenkonig"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "lead": "Ein grosser begrünter Platz und eine steile AnhöheSo könnte man zusammenfassend diese neun grünen Hektaren beschreiben.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vnojm4txhzihhlfaquid",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Parc de Milan"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "milan-park",
+                                "hreflang": "/de/entdecken/milan-park"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 279,
+                    "name": "Café de Grancy",
+                    "content": "Dieses Café befindet sich inmitten des Stadtviertels, und das kommt nicht von ungefähr. Es zeichnet sich durch seine gemütliche Atmosphäre und eine raffinierte, authentische Küche mit frischen und saisonalen Zutaten aus. Ob für einen Brunch, ein Mittag- oder Abendessen: Ein Besuch in diesem Café lohnt sich immer.",
+                    "lausanner": {
+                        "id": 34,
+                        "name": "Madina, die classy Mommy",
+                        "seo": {
+                            "slug": "madina-die-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 43,
+                            "name": "Café de Grancy",
+                            "lead": "Entdecken Sie in diesem Café am Boulevard de Grancy unterhalb des Bahnhofs eine moderne Bistro-Küche mit der gewissen kreativen Note.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-de-grancy-eyvyc5",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-de-grancy",
+                                "hreflang": "/de/entdecken/cafe-de-grancy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5152778",
+                                    "longitude": "6.6286111"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "Die beste 100 % Schweizer Naturkosmetik-Marke. Köstlich duftende Seifen, feuchtigkeitsspendende Trockenöle mit betörenden Düften und hydroalkoholische Eisenkraut-Gels, die Ihre Hände nicht austrocknen, denn das Jahr 2020 verpflichtet.",
+                    "lausanner": {
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "lead": "100 % Schweizer Naturkosmetik. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "evdc9xbzjp3hqxdiba89",
+                                    "copyright": "© Cocooning biocosmetics",
+                                    "public_name": "Cocooning biocosmetics"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cocooning-biocosmetics",
+                                "hreflang": "/de/entdecken/cocooning-biocosmetics"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Ferme de la Rovéréaz",
+                    "content": "Unweit von der Stadt und der Natur entfernt, bietet uns der Bauernhof Ferme de la Rovéréaz eine Vielzahl von Produkten (Obst, Gemüse, Öle, Käse, Honig, Aufschnitt, Eier...), natürlich alles ganz frisch und saisonal! Werfen Sie doch mal einen Blick auf ihr hervorragendes Permakultur-Programm, bei dem partizipatorische und pädagogische Ansätze miteinander verknüpft werden.",
+                    "lausanner": {
+                        "id": 10,
+                        "name": "Carla, die Alternative",
+                        "seo": {
+                            "slug": "carla-die-alternative"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 576,
+                            "name": "Ferme de la Rovéréaz",
+                            "lead": "Bioprodukte vor den Toren der Stadt. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ix7qyjb3znjnwlygnxqr",
+                                    "copyright": "© Ferme Rovéréaz",
+                                    "public_name": "Ferme Rovéréaz"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ferme-de-la-rovereaz",
+                                "hreflang": "/de/entdecken/ferme-de-la-rovereaz"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5334",
+                                    "longitude": "6.6475"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 266,
+                    "name": "Frip Square",
+                    "content": "Das Konzept dieses Geschäfts ist der Ausdruck einer Generation, die hin- und hergerissen ist zwischen ihrer Begeisterung für neue Trends und ihrem Umweltbewusstsein. Es fördert das Teilen, Tauschen und den verantwortungsbewussten Konsum im Bereich der Mode. Die Secondhand-Boutique war lange Zeit in einer ehemaligen Taxistation im Stadtviertel Sous-Gare untergebracht und ist kürzlich an den Chemin de la Joliette 5 gezogen, wo sie nicht nur Secondhand-Kleidung in ausgezeichnetem Zustand anbietet, sondern neu auch einen gleichnamigen Coffeeshop betreibt.",
+                    "lausanner": {
+                        "id": 33,
+                        "name": "Luana, die kreative Seele",
+                        "seo": {
+                            "slug": "luana-die-kreative-seele"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 889,
+                            "name": "Fripsquare",
+                            "lead": "Entdecken Sie die Secondhand-Boutique Fripsquare in Délices. Hier finden Sie Kleidung, Accessoires, Schuhe und ein Café.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "z3xQ5iZEp0qLdLuWIugKogOxn2qLeBmbP8z6kIkV",
+                                    "copyright": "© Fripsquare",
+                                    "public_name": "Fripsquare"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "fripsquare",
+                                "hreflang": "/de/entdecken/fripsquare"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5119289",
+                                    "longitude": "6.6288702"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 119,
+                    "name": "Le Fraisier",
+                    "content": "Le Fraisier bietet ein grossartiges kulinarisches Erlebnis in Lausanne. Veggie-Menüs unter der Woche am Mittag, mit frischen Produkten zubereitet und in einem schönen Vintage-Dekor serviert ‒ ich liebe es einfach. Ein Genuss für Augen und Gaumen!",
+                    "lausanner": {
+                        "id": 17,
+                        "name": "Charlotte, die tanzende Riderin",
+                        "seo": {
+                            "slug": "charlotte-die-tanzende-riderin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tjqxtwrgz0nlgufaotd6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 293,
+                            "name": "Le Fraisier",
+                            "lead": "Die Speisen hier basieren hauptsächlich auf Gemüse, Obst und Salaten, zu denen häufig Frischkäse gereicht wird.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-fraisier-bhguuh",
+                                    "copyright": "© MAud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-fraisier",
+                                "hreflang": "/de/entdecken/le-fraisier"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5217166",
+                                    "longitude": "6.6314848"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 38,
+                    "name": "Markt auf dem Place de la Riponne",
+                    "content": "Mein Samstagsritual: Ich stehe früh auf und gehe zum Place de la Riponne, bevor die Menschenmenge eintrifft. Um 8 Uhr morgens habe ich bereits alle meine Bio-Früchte und Gemüse aus Schweizer Anbau für die gesamte Woche eingekauft.",
+                    "lausanner": {
+                        "id": 9,
+                        "name": "Victoria, die green smoothie",
+                        "seo": {
+                            "slug": "victoria-die-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 613,
+                            "name": "Markt in der Innenstadt",
+                            "lead": "Jeden Mittwoch und Samstag findet zwischen dem Place de la Riponne und dem Place Saint-François sowie in den angrenzenden Strassen der Fussgängerzone der Zentrum-Markt statt.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q4uilyxgkraenptjyrbt",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Marché lausannois"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "markt-in-der-innenstadt",
+                                "hreflang": "/de/entdecken/markt-in-der-innenstadt"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5232331",
+                                    "longitude": "6.6327695"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

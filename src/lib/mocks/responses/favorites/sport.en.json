@@ -1,0 +1,438 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 36,
+                    "name": "Crêt de Montriond",
+                    "content": "One of my favourite places to train out in the open. I love going there at sunset during a summer evening or early in the morning for a cardio session. It’s always quiet and the view over the lake is unbeatable!",
+                    "lausanner": {
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 490,
+                            "name": "Le Crêt de Montriond",
+                            "lead": "Formed by an ancient glacial moraine, this hill offers a unique panoramic vista over Lake Geneva, the mountains and the city.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rvyxkcj2qk176fcakn8c",
+                                    "copyright": "© LT/ Laurent Kaczor",
+                                    "public_name": "Crêt de Montriond"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-cret-de-montriond",
+                                "hreflang": "/en/explore/le-cret-de-montriond"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5141249",
+                                    "longitude": "6.6239854"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 105,
+                    "name": "La Vallée de la Jeunesse",
+                    "content": "A “must do” in Lausanne for all skateboard fans or fans of any other way of speeding DOWNHILL! This magnificent park owes its name to Expo 64. It’s always a pleasure to speed down this perfect slope! No less than 1 km of flawless bitumen, asphalt humps and hillocks just waiting for skateboarders, no cars and all this criss-crossing a splendid garden containing 8000 varieties of roses.",
+                    "lausanner": {
+                        "id": 4,
+                        "name": "Pierre, the asphalt snowboarder",
+                        "seo": {
+                            "slug": "pierre-the-asphalt-snowboarder"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 308,
+                            "name": "Vallée de la Jeunesse",
+                            "lead": "Rollerskaters can weave and speed for hundreds of yards without crossing a road, and strollers admire masses of roses set amid sloping lawns.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "dnfg9e6xg3ve1rf0vukq",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "vallee-de-la-jeunesse",
+                                "hreflang": "/en/explore/vallee-de-la-jeunesse"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.520411",
+                                    "longitude": "6.604334"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 109,
+                    "name": "Bowl de Vidy",
+                    "content": "Grinds, airs, slides, plants, roll-ins... Whatever your technique, come and practice your tricks in the famous Bowl de Vidy, the largest outdoor skate park of its kind in Switzerland. It’s just a few metres from Lake Geneva so follow your skateboard session with a swim - it’s FREE!!",
+                    "lausanner": {
+                        "id": 4,
+                        "name": "Pierre, the asphalt snowboarder",
+                        "seo": {
+                            "slug": "pierre-the-asphalt-snowboarder"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "app5cynl6lioen6oez7q",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 417,
+                            "name": "Vidy Bowl",
+                            "lead": "Designed by the same architect who conceived the Lugano bowl, its layout and its twists and turns were first approved by young skaters.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Bowl in Vidy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "vidy-bowl",
+                                "hreflang": "/en/explore/vidy-bowl"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.514768",
+                                    "longitude": "6.6000953"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 136,
+                    "name": "A run in La Cité",
+                    "content": "I love it so much, but I pick a time when nobody will be there, usually in the evening and it makes me feel part of the city, like a queen running in her city where it is all mine since everyone else is at home. The challenge of running on cobbled streets and up and down the ancient steps makes this route a great parcour!",
+                    "lausanner": {
+                        "id": 15,
+                        "name": "Clarence, the sporty spice",
+                        "seo": {
+                            "slug": "clarence-the-sporty-spice"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uzspdk8uavs8i809z5lf",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 329,
+                            "name": "La Cité",
+                            "lead": "This is a quarter full of typical small bistros and craft shops.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wkwgjd0j64k347su5qbd",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-cite",
+                                "hreflang": "/en/explore/la-cite"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5226215",
+                                    "longitude": "6.6353689"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "On the lakeside in Vidy, let yourself be enticed by the aromas of barbecues, the sound of berimbau, the spontaneous party for a newborn, the runners, bystanders and Sunday pétanque players. Just settle comfortably on a bench or on the water’s edge and watch the goings-on around you. It’s the peaceful mix and intermingling of cultures that are Lausanners.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "lead": "Here, each can truly do their own thing, because it has everything: history with a capital H, sport, boats and picnics, theatre and camping, ...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/en/explore/plaines-de-vidy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 205,
+                    "name": "Pontaise Olympic Stadium",
+                    "content": "The Olympic Stadium is one of my favourite places in Lausanne. I have been training there since I was 13 and I feel quite at home in that arena. When the stadium is full, whether for a football match or a concert, the atmosphere is fantastic! For me, the Athletissima meeting is an event everyone who lives in Lausanne should attend at least once.",
+                    "lausanner": {
+                        "id": 23,
+                        "name": "Marithé, the shooting star",
+                        "seo": {
+                            "slug": "marithe-the-shooting-star"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "marithe-rwwomp",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 346,
+                            "name": "La Pontaise – Olympic stadium",
+                            "lead": "Ideal for staging football matches, it also has an athletics track, which is the setting for the famous international Athletissima meeting each year.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "b8gqg9k5kdkhczbiujos",
+                                    "copyright": "© OTV/Laurent Ryser",
+                                    "public_name": "Athletissima"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-pontaise-olympic-stadium",
+                                "hreflang": "/en/explore/la-pontaise-olympic-stadium"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5332326",
+                                    "longitude": "6.6243555"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 236,
+                    "name": "Yoga at the Jetée de la Compagnie",
+                    "content": "Without a doubt my favourite spot to get the day off to a great start. Every year, I impatiently await the return of yoga sessions at the Jetée de la Compagnie. The Jetée is a lively place located on the lake shore, with two containers serving food and drinks, as well as a musical space to meet after work. However, the Jetée is also characterised by its yoga classes organised every morning of the week. No need to register, you simply turn up with your mat and take up a spot facing the lake to relax for an hour. There’s no fixed rate, you contribute a free donation.",
+                    "lausanner": {
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "lead": "The Jetée de la Compagnie is a temporary terrace on the shores of Lake Geneva, in Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/en/explore/jetee-de-la-compagnie"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 238,
+                    "name": "The Olypique Museum",
+                    "content": "The experience of sprinting on the 100-metre track in the park of the Lausanne Olympic Museum, with light beams recreating Usain Bolt’s speed, is simply incredible. In addition, there are other fascinating activities to be discovered, and on the museum’s top floor, the TOM Café serves a gourmet all-you-can-eat buffet at the weekends. I recommend booking ahead.",
+                    "lausanner": {
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 337,
+                            "name": "The Olympic Museum",
+                            "lead": "Unique official Museum of the IOC located on the banks of Lake Geneva and dedicated to the spirit of olympism, is the most visited Museum in Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q2sv6almukovljqc4qnh",
+                                    "copyright": "© Le Musée Olympique",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "the-olympic-museum",
+                                "hreflang": "/en/explore/the-olympic-museum"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087324",
+                                    "longitude": "6.6340879"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 278,
+                    "name": "Milan Park",
+                    "content": "This park is really the heart of the neighbourhood. Whatever activity takes your fancy, you’ll find the space for it. A table-tennis, football or basketball match, a picnic with friends or an outing with your family on the playground for toddlers.",
+                    "lausanner": {
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "lead": "You might summarily describe it as a vast grassy square (Place de Milan) with a steep mound (Montriond Hill).",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vnojm4txhzihhlfaquid",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Parc de Milan"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "milan-park",
+                                "hreflang": "/en/explore/milan-park"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 246,
+                    "name": "The 3x3 Lab",
+                    "content": "A true temple for all lovers of 3x3 basketball, the hall offers two quality courts to play, learn and perfect your techniques. A must for all Lausanne basketball players!",
+                    "lausanner": {
+                        "id": 30,
+                        "name": "Axel, the speedy dunker",
+                        "seo": {
+                            "slug": "axel-the-speedy-dunker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "axel-7ensox",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 745,
+                            "name": "Beaulieu Sports Halls",
+                            "lead": "Ideally located in the heart of Lausanne, the Beaulieu Sports Halls offer close to 14 different sports disciplines for the whole population.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "HfITduD6RIyp8qOtjy37sCr5KMEPNznrqKUaSiPd",
+                                    "copyright": "© Droits réservés",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "halles-sportives-de-beaulieu",
+                                "hreflang": "/en/explore/halles-sportives-de-beaulieu"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5296089",
+                                    "longitude": "6.6229958"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

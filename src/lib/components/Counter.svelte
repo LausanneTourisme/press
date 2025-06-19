@@ -1,99 +1,81 @@
 <script lang="ts">
-  import { Spring } from 'svelte/motion';
+  import type { Snippet } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
 
-  const count = new Spring(0);
-  const offset = $derived(modulo(count.current, 1));
+  type Props = {
+    animate: boolean;
+    icon: Snippet;
+    label: string;
+    value: number;
+    duration?: number; // seconds
+    step?: number;
+    class?: string;
+  };
 
-  function modulo(n: number, m: number) {
-    // handle negative numbers
-    return ((n % m) + m) % m;
-  }
+  const {
+    class: additionalClass,
+    animate,
+    icon,
+    label,
+    value,
+    duration = 150,
+    step = value / duration
+  }: Props = $props();
+
+  let span: HTMLSpanElement;
+  let playing: boolean = $state(false);
+  let animatedResult: number = $state(0);
+  let done = $state(false);
+  let timing: number = duration / value / 1000;
+
+  const formatNumber = (input: number, format: boolean = true) => {
+    if (format) {
+      return Math.round(input).toLocaleString();
+    }
+
+    return input;
+  };
+
+  const play = () => {
+    span.classList.add('font-mono', 'bold');
+
+    if (!playing) {
+      let intervalId = setInterval(() => {
+        if (animatedResult <= value) {
+          animatedResult += step;
+        } else {
+          span?.classList.remove('font-mono', 'bold');
+          clearInterval(intervalId);
+          done = true;
+          animatedResult = value;
+        }
+      }, timing);
+    } else {
+      span.classList.remove('font-mono', 'bold');
+    }
+
+    playing = true;
+
+    return !done;
+  };
+
+  $effect(() => {
+    if (animate) play();
+  });
+  const style = twMerge('stat place-items-center border-none xl:px-2 !border-none', additionalClass);
 </script>
 
-<div class="counter">
-  <button onclick={() => (count.target -= 1)} aria-label="Decrease the counter by one">
-    <svg aria-hidden="true" viewBox="0 0 1 1">
-      <path d="M0,0.5 L1,0.5" />
-    </svg>
-  </button>
-
-  <div class="counter-viewport">
-    <div class="counter-digits" style="transform: translate(0, {100 * offset}%)">
-      <strong class="hidden" aria-hidden="true">{Math.floor(count.current + 1)}</strong>
-      <strong>{Math.floor(count.current)}</strong>
-    </div>
+<div class={style}>
+  <div class="py-2">
+    {@render icon()}
   </div>
-
-  <button onclick={() => (count.target += 1)} aria-label="Increase the counter by one">
-    <svg aria-hidden="true" viewBox="0 0 1 1">
-      <path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" />
-    </svg>
-  </button>
+  <div class="stat-value xl:text-2xl 2xl:text-4xl">
+    <span
+      bind:this={span}
+      class="animated-element inline-block w-40 text-center font-mono transition-[filter]"
+    >
+      {formatNumber(animatedResult)}
+    </span>
+  </div>
+  <p class="stat-title !text-base max-w-48 text-center text-wrap break-words">{label}</p>
 </div>
-
-<style>
-  .counter {
-    display: flex;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
-  }
-
-  .counter button {
-    width: 2em;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    background-color: transparent;
-    touch-action: manipulation;
-    font-size: 2rem;
-  }
-
-  .counter button:hover {
-    background-color: var(--color-bg-1);
-  }
-
-  svg {
-    width: 25%;
-    height: 25%;
-  }
-
-  path {
-    vector-effect: non-scaling-stroke;
-    stroke-width: 2px;
-    stroke: #444;
-  }
-
-  .counter-viewport {
-    width: 8em;
-    height: 4em;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-  }
-
-  .counter-viewport strong {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-weight: 400;
-    color: var(--color-theme-1);
-    font-size: 4rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .counter-digits {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
-  .hidden {
-    top: -100%;
-    user-select: none;
-  }
-</style>

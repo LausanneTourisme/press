@@ -1,0 +1,54 @@
+{
+    "contact-us": "Contact us",
+    "btn.learnMore": "Learn more",
+    "btn.showMoreThemes": "More themes",
+    "poi.favorite.from": "{{poi}}: tips from {{lausanner}}",
+    "other-tips": "Other tips",
+    "instagram-link": "See this post on Instagram",
+    "published-at": "Published on",
+    "faq": {
+        "title": "Frequently asked questions",
+        "authorisation": {
+            "title": "Authorisation to film in Lausanne",
+            "paragraph1": "What authorisations are required for filming in public spaces?",
+            "paragraph2": "No specific authorisation is required for filming in Lausanne. However, consent must be obtained when filming identifiable people. It is also important, when filming in the public space, to facilitate the movement of local residents and not to disrupt road traffic.",
+            "paragraph3": "In the event of increased occupation of the public domain, please contact the Lausanne Tourisme press office.",
+            "paragraph4": "What authorisations are required for filming in private areas?",
+            "paragraph5": "All requests for filming in private areas (e.g. museums, restaurants, etc.) must be submitted to the establishment for authorisation. The request must be made a few days in advance."
+        },
+        "drone": {
+            "title": "Use of a drone",
+            "paragraph1": "What authorisations are required to use a drone in Lausanne?",
+            "paragraph2.part1": "No authorisation is required if the drone weighs less than 250g. Above that weight, authorisation must be obtained from Blécherette airport",
+            "paragraph2.part2": "and the Police Department of the City of Lausanne",
+            "paragraph3": "The form to fill in with all the necessary information can be found",
+            "paragraph3.link-text": "here",
+            "paragraph4": "The request must be made at least 3 working days before the day of the flight."
+        },
+        "access": {
+            "title": "Access to Lausanne",
+            "paragraph1": "Lausanne is easily accessible: by rail (SBB network, direct Eurocity and TGV from Paris and Milan), by road (A1/E25 and A9/E27 motorways), by air (60 km from Geneva International Airport, a 45-minute drive or train ride), and by water, thanks to the boats of the Compagnie Générale de Navigation on Lake Geneva.",
+            "paragraph1.slug": "access-to-lausanne",
+            "paragraph1.more-informations": "More information"
+        },
+        "travel": {
+            "title": "Travel for free in Lausanne",
+            "paragraph1.part1": "Visitors staying in a hotel, youth hostel, campsite or bed & breakfast for which tourist tax is applicable are entitled to the ",
+            "paragraph1.link": "https://www.lausanne-tourisme.ch/en/lausanne-transport-card-and-more/",
+            "paragraph1.part2": "This card gives them free access to public transport in the urban area (bus, train, metro) for the duration of their stay (max. 15 days)."
+        },
+        "mention": {
+            "title": "How to mention us in your articles or content",
+            "paragraph1": "Please mention our website in all publications about our destination:",
+            "paragraph2.in-social-networks": "On social media:",
+            "paragraph2.instagram": "Identify @thelausanner in your story and post, and use the hashtag #thelausanner in your post.",
+            "paragraph2.linkedIn": "Identify @Lausanne, Olympic Capital",
+            "paragraph3.find-us": "Find us also on:"
+        }
+    },
+    "route-titles": {
+        "press-release": "Press release",
+        "press-kit": "Press kit",
+        "articles": "Article"
+    }
+}

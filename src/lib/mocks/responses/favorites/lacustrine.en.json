@@ -1,0 +1,309 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "On the lakeside in Vidy, let yourself be enticed by the aromas of barbecues, the sound of berimbau, the spontaneous party for a newborn, the runners, bystanders and Sunday pétanque players. Just settle comfortably on a bench or on the water’s edge and watch the goings-on around you. It’s the peaceful mix and intermingling of cultures that are Lausanners.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "lead": "Here, each can truly do their own thing, because it has everything: history with a capital H, sport, boats and picnics, theatre and camping, ...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/en/explore/plaines-de-vidy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 197,
+                    "name": "The wild beaches of St-Sulpice",
+                    "content": "At the end of St-Sulpice, at the Débarcadère Park, begins a small path that seems quite mysterious. It runs alongside the lake between the magnificent lakeside houses and the small wild beaches. Following it, we arrive at St-Sulpice beach that has remained almost entirely wild. Between the forest and the long, white sandy beaches, this place will delight the adventurous souls who wish to get off the beaten tracks while remaining close to Lausanne.",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 449,
+                            "name": "Saint-Sulpice",
+                            "lead": "The beautiful 12th century Romanesque church beside the lake at this small village to the west of Lausanne is a moving witness to medieval times.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rtqhhyjro1e0rtoj6gkh",
+                                    "copyright": "© Droits Réservés",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "saint-sulpice",
+                                "hreflang": "/en/explore/saint-sulpice"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51794729",
+                                    "longitude": "6.57957061"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 247,
+                    "name": "La Jetée de la Compagnie",
+                    "content": "More than a simple viewpoint, La Jetée de la Compagnie is a real corner of paradise in Lausanne. What with a breathtaking view over Lake Geneva and an appetising menu of snacks and cocktails, it’s the perfect place for a relaxing moment in the morning or a friendly evening with friends.",
+                    "lausanner": {
+                        "id": 30,
+                        "name": "Axel, the speedy dunker",
+                        "seo": {
+                            "slug": "axel-the-speedy-dunker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "axel-7ensox",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "lead": "The Jetée de la Compagnie is a temporary terrace on the shores of Lake Geneva, in Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/en/explore/jetee-de-la-compagnie"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 192,
+                    "name": "The beaches from Saint-Sulpice to Haldimand Tower",
+                    "content": "The magic of the Lausanne region lies in its diversity. In only 10 minutes, you get from the thriving heart of the Flon to the peaceful shores of Lake Geneva. Many pebble or sandy beaches invite you to bask in the sun or in the shade of trees. From the Haldimand Tower to Saint-Sulpice, you will be spoilt for choice. If you enjoy sports activities, don’t miss the Vidy area, where many basketball and volleyball courts are available.",
+                    "lausanner": {
+                        "id": 26,
+                        "name": "Valentine, the travlover",
+                        "seo": {
+                            "slug": "valentine-the-travlover"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valentine-wvow1h",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 92,
+                            "name": "Lake Geneva",
+                            "lead": "Lake Geneva, the largest freshwater lake in western Europe and certainly the most romantic.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wa4bqpi0ao0rbfomct6g",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lake-geneva",
+                                "hreflang": "/en/explore/lake-geneva"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5052125",
+                                    "longitude": "6.624588"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 65,
+                    "name": "Ouchy",
+                    "content": "I’m often in Paris, so I realise how lucky Lausanners are to have that lake! Just walking in Ouchy or diving in Lake Geneva is a pure moment of happiness.",
+                    "lausanner": {
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 194,
+                            "name": "Ouchy",
+                            "lead": "Ouchy represents one of the favourite Sunday strolls for Lausanne citizens and passing visitors.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "akouddhpza3wodid9fdy",
+                                    "copyright": "© LT/ Laurent Kaczor",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ouchy",
+                                "hreflang": "/en/explore/ouchy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.510155",
+                                    "longitude": "6.626487"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 185,
+                    "name": "Vidy Beach",
+                    "content": "A sandy beach?! Yes, we do also have our “Venice Beach” in Lausanne.\r\nA stone’s throw from the Vidy Skate Park, there are volleyball and basketball courts, as well as small fine-sand beaches for a stroll. Want shade? There is that too! All along the promenade, the small beaches are shaded by magnificent oaks. Take your snorkelling gear and who knows, you might meet Nemo!",
+                    "lausanner": {
+                        "id": 25,
+                        "name": "Tommaso, the 360 nomad",
+                        "seo": {
+                            "slug": "tommaso-the-360-nomad"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 649,
+                            "name": "Plage de Vidy (Vidy beach)",
+                            "lead": "Also known as the Louis Bourget Park beach, Vidy beach is the largest beach and green space on Lake Geneva.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "wn42hz1aupccmahj4f9s",
+                                    "copyright": "© LT/Laurent Kaczor",
+                                    "public_name": "Plage Vidy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plage-de-vidy-vidy-beach",
+                                "hreflang": "/en/explore/plage-de-vidy-vidy-beach"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5192217",
+                                    "longitude": "6.5875543"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 146,
+                    "name": "The Ouchy lakeside",
+                    "content": "Impossible to end my day without a short walk by the Ouchy lakeside. The ideal place to observe a magnificent sunset on the lake with the Alps as a backdrop. I love the atmosphere that emerges from the children at play, skateboarders and other artists.",
+                    "lausanner": {
+                        "id": 19,
+                        "name": "Alexandre, the souvenir maker",
+                        "seo": {
+                            "slug": "alexandre-the-souvenir-maker"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "uezuisxb1qtqqendqdgn",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 264,
+                            "name": "Quais d'Ouchy",
+                            "lead": "Built in 1901, the lakeside walk links the old port and the Haldimand Tower, previously located on an island.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "mlmtfhjfzadbd1qkdz60",
+                                    "copyright": "© LT/ Laurent KACZOR",
+                                    "public_name": "Ouchy"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "quais-douchy",
+                                "hreflang": "/en/explore/quais-douchy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "title": "Espace médias",
+    "meta-description": "Découvrez Lausanne avec Lausanne Tourisme, votre source d'information sur la région. Accédez à notre Espace média dédié aux journalistes et médias audiovisuels.",
+    "hero": {
+        "subtitle": "Laissez Lausanne vous inspirer&nbsp;!",
+        "title": "Espace médias",
+        "paragraph": "Vous êtes journaliste ou créateur de contenu et vous souhaitez obtenir plus d'informations sur notre destination ? Retrouvez sur ce site toutes les ressources utiles à vos publications : médiathèque, actualités, communiqués de presse, textes médias, chiffres clés, formulaires de visite de presse..."
+    },
+    "video&images": {
+        "title": "Vidéos et images",
+        "paragraph": "Pour toute demande d'images ou de vidéos en haute définition, un accès libre à la médiathèque de Lausanne Tourisme est disponible ci-dessous."
+    },
+    "goToMediaLibrary": "Vers la médiathèque",
+    "whatIsNew": {
+        "title": "Nouveautés et incontournables",
+        "paragraph": "Vivez l'aventure lausannoise à 100% : ne ratez rien de ses incontournables comme de son actualité et faites de votre séjour chez nous une expérience inoubliable !"
+    },
+    "pressRelease": {
+        "title": "Communiqués et dossiers de presse",
+        "paragraph": "Retrouvez ici les dernières nouvelles de Lausanne, ainsi que les dossiers et communiqués de presse de Lausanne Tourisme."
+    },
+    "mediaCoverage": {
+        "title": "Parutions presse",
+        "paragraph": "Qui dit visites de presse, demandes ou événements médias et actions de promotion, dit retombées médiatiques. Lumière sur les derniers articles parus dans la presse nationale et internationale, qui font rayonner notre destination à travers le monde."
+    },
+    "themes": {
+        "title": "Thématiques et textes médias",
+        "paragraph": "À la fois sportive, culturelle et gourmande, moderne, durable et pleine d'histoire, Lausanne brille et se distingue à de nombreux égards. Découvrez ici toute la richesse de Lausanne, ainsi que les conseils avisés des lausannois."
+    },
+    "numbers": "Chiffres",
+    "counter": {
+        "park": "Hectares de parcs et de jardins",
+        "people": "Habitants",
+        "city": "Quatrième plus grande ville de Suisse",
+        "museum": "Musées",
+        "school": "Écoles à renommée internationale",
+        "sport": "Fédérations sportives"
+    },
+    "distinctions": {
+        "title": "Distinctions",
+        "paragraph": "Il faut reconnaitre que la belle vaudoise a su se faire une place de choix parmi les plus grands, en cumulant les records du monde notamment. Ainsi, si elle peut se targuer de figurer parmi les 52 destinations à visiter selon le NY Times, Lausanne a aussi été élue « Meilleure petite ville du monde » par le célèbre magazine britannique Monocle. Rien que ça !",
+        "trophies": {
+            "first": {
+                "name": "Lausanne, Where the Olympics never end",
+                "content": "En 2024, Lausanne et son esprit olympique sont mis à l'honneur par le New York Times.",
+                "link": "https://www.nytimes.com/2024/07/08/travel/lausanne-food-art-olympics.html"
+            },
+            "second": {
+                "name": "52 places to go in 2023",
+                "content": "Le New York Times recommande Lausanne dans son sacrosaint classement des 52 destinations incontournables.",
+                "link": "https://www.nytimes.com/interactive/2023/travel/52-places-travel-2023.html"
+            },
+            "third": {
+                "name": "Swisstainable",
+                "content": "Ce label créé par Suisse Tourisme rassemble les nombreux restaurants et hébergements lausannois engagés en faveur de la promotion du terroir et de la durabilité.",
+                "link": "https://www.lausanne-tourisme.ch/fr/le-guide-du-voyage-durable-a-lausanne/"
+            },
+            "fourth": {
+                "name": "Best small city in the world",
+                "content": "Fin 2019, Monocle - le réputé magazine britannique lifestyle - désignait Lausanne comme étant la « Meilleure petite ville du monde ».",
+                "link": "https://www.lausanne-tourisme.ch/fr/lausanne-meilleure-petite-ville/"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "paragraph": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités&nbsp;? N'hésitez pas à nous contacter en remplissant le formulaire ci-dessous. Nous nous efforcerons de vous répondre dans les meilleurs délais."
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "home.slug": "",
+  "contact.slug": "kontakt",
+  "articles.slug": "artikeln",
+  "coverage.slug": "veroeffentlichungen",
+  "press-release.slug": "pressemitteilungen",
+  "press-kit.slug": "pressedossier",
+  "highlights.slug": "highlights",
+  "press-releases-and-press-kits.slug": "pressemitteilungen-und-pressedossier",
+
+  "themes.slug": "themen",
+  "themes.architecture.slug": "architektur-design",
+  "themes.culture.slug": "kultur",
+  "themes.education.slug": "bildung",
+  "themes.family.slug": "familie",
+  "themes.gastronomy.slug": "gastronomie",
+  "themes.lacustrine.slug": "lakustrin",
+  "themes.nature.slug": "natur",
+  "themes.sport.slug": "sport",
+  "themes.sustainability.slug": "nachhaltigkeit",
+  "themes.unusual.slug": "ungewoehnlich",
+  "themes.wellness.slug": "wohlbefinden"
+}

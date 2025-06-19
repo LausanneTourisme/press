@@ -1,0 +1,460 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 68,
+                    "name": "Le Palais de Rumine",
+                    "content": "Etant photographe, l’architecture du Palais de Rumine m’a tout de suite séduit, extérieurement comme intérieurement. C’est aussi un lieu où je peux profiter d’un peu de tranquillité pour travailler quand je suis en ville.",
+                    "lausanner": {
+                        "id": 8,
+                        "name": "Sébastien, l'aventurier",
+                        "seo": {
+                            "slug": "sebastien-laventurier"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "lead": "Le Palais de Rumine accueille le Muséum cantonal des sciences naturelles, le Musée cantonal d’archéologie et d’histoire et la BCU - Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q5afsewwktxmjh7stepn",
+                                    "copyright": "© Michel Krafft/MZL",
+                                    "public_name": "Palais de Rumine"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "palais-de-rumine",
+                                "hreflang": "/fr/decouvrir/palais-de-rumine"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 222,
+                    "name": "Le bar Tabac",
+                    "content": "Un café intimiste et paisible qui invite à prendre son temps. Situé à la rue Beau-Séjour, le bar Tabac conserve tout le charme de l’époque avec sa carte et sa déco atypique. Un de mes cafés favoris pour étudier ou travailler !",
+                    "lausanner": {
+                        "id": 27,
+                        "name": "Valérie, l'arty trendy",
+                        "seo": {
+                            "slug": "valerie-larty-trendy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Valérie"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 734,
+                            "name": "Bar Tabac",
+                            "lead": "A la recherche d'un bar convivial pour boire un café ou un verre après le travail ? Au Bar Tabac, vous vous sentirez comme à la maison.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bar-tabac-tospjn",
+                                    "copyright": "© (c) Lausanne tourisme",
+                                    "public_name": "Bar Tabac"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bar-tabac",
+                                "hreflang": "/fr/decouvrir/bar-tabac"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5177",
+                                    "longitude": "6.6357"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 132,
+                    "name": "Coffee Page",
+                    "content": "Avis aux amateurs de livres d’art et de café : quelqu’un a enfin réuni les deux ! On feuillette un ouvrage de la bibliothèque, qui privilégie les livres richement illustrés, on commande une boisson et on laisse un peu son téléphone de côté, pour une fois. Mon combo idéal: un chaï latte et un livre sur le Bauhaus.",
+                    "lausanner": {
+                        "id": 20,
+                        "name": "Manon, Madame patrimoine",
+                        "seo": {
+                            "slug": "manon-madame-patrimoine"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": "Manon"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 546,
+                            "name": "Coffee Page",
+                            "lead": "Coffee Page, un café-librairie relaxant et cosy. On y trouve un large choix de cafés, à déguster accompagné d’une tranche de cake maison.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "coffee-page-h9yccj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": "Coffee Page"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "coffee-page",
+                                "hreflang": "/fr/decouvrir/coffee-page"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5183146",
+                                    "longitude": "6.633748"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Campus Unil et EPFL",
+                    "content": "Idéalement situées au bord du lac et entourées de beaux espaces verts, l’UNIL et l’EPFL sont deux villages dans la ville. Promenez-vous sur les campus pour découvrir l’architecture contemporaine des bâtiments conçus par des architectes renommés. A ne pas manquer l’Unithèque (aka « La Banane »), le Vortex, le Géopolis, le Batochime, le Rolex Learning Center, l’EPFL Pavilions, le MED (et son escalier), le SwissTech Convention Center. En bonus : le passage souterrain coloré de l’arrêt de métro EPFL.",
+                    "lausanner": {
+                        "id": 35,
+                        "name": "Michaël, l'esprit urbain",
+                        "seo": {
+                            "slug": "michael-lesprit-urbain"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": "Michaël"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "Université de Lausanne (UNIL)",
+                            "lead": "Fondée en 1537, l’Université de Lausanne compte aujourd’hui sept facultés et se profile comme un campus interdisciplinaire et durable",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "466988441da7c95a",
+                                    "copyright": "© Geopolis Universite de Lausanne Geopolis Universite de Lausanne",
+                                    "public_name": "Lausanne et ses perles d’architecture"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "universite-de-lausanne-unil",
+                                "hreflang": "/fr/decouvrir/universite-de-lausanne-unil"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Ecole polytechnique fédérale de Lausanne (EPFL)",
+                            "lead": "L’EPFL est une institution de pointe en matière de formation, de recherche et d’innovation.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "l0qyviytpw0en8h8hs7l",
+                                    "copyright": "© Hisao Suzuki",
+                                    "public_name": "Rolex Learning Center"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "ecole-polytechnique-federale-de-lausanne",
+                                "hreflang": "/fr/decouvrir/ecole-polytechnique-federale-de-lausanne"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 234,
+                    "name": "Impact Hub",
+                    "content": "Impact Hub, c'est un immense espace de coworking duquel je fais partie depuis mars 2023. C'est un lieu où tu peux échanger avec plusieurs personnes inspirantes, toutes animées par la volonté de provoquer des changements positifs. Tu as la possibilité de venir pour une demi-journée, une journée, ou bien, comme moi, de t'inscrire pour plusieurs mois. Perds-toi dans la grandeur des locaux tout en prenant le temps de déguster un café sur la terrasse située au-dessus des conteneurs ou sur l'esplanade offrant une vue sur le lac.",
+                    "lausanner": {
+                        "id": 29,
+                        "name": "Amélie, l'illustratrice enchantée",
+                        "seo": {
+                            "slug": "amelie-lillustratrice-enchantee"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": "Amélie"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 828,
+                            "name": "Impact Hub Lausanne",
+                            "lead": "Cet espace de coworking, situé à Beaulieu, fait partie d’un réseau mondial de plus de 100 communautés connectées qui permettent la collaboration.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "TI05xFbicmKoloang8gXGoXTDjKXhg8KCQEiMlTQ",
+                                    "copyright": "© Impact Hub Lausanne",
+                                    "public_name": "Impact Hub Lausanne / Image d'ambiance"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "impact-hub-lausanne",
+                                "hreflang": "/fr/decouvrir/impact-hub-lausanne"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5288571",
+                                    "longitude": "6.6230624"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 196,
+                    "name": "Le Perchoir",
+                    "content": "En plein milieu du magnifique campus de l'Université, entre la rivière et les coins de verdure se trouve un bâtiment bien étrange : le Vortex. Ce bâtiment circulaire est à visiter absolument lors d'un passage à Lausanne : conçu pour accueillir les étudiants de l'UNIL et de l'EPFL il s'articule autour d'une piste en forme d'hélice de 2,8km qui desserre toutes les chambres d'étudiants. Vous pourrez tout de même atteindre le 8ème étage en ascenseur pour arriver dans l'un des bars les plus sympas de Lausanne : Le Perchoir. Une grande terrasse, coucher de soleil, vue sur le lac, de quoi manger et surtout des prix relativement bas, et parfois même des concerts, que demander de mieux ?",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, le chasseur d'instants",
+                        "seo": {
+                            "slug": "victor-le-chasseur-dinstants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Victor"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 648,
+                            "name": "Le Perchoir Rooftop-Bar",
+                            "lead": "Au 8ème étage du Vortex, le Perchoir Rooftop-Bar vous accueille tous les jours.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sprerqn66ye8vvdlutvm",
+                                    "copyright": "© Fernando Guerra Itten+Brechbühl SA",
+                                    "public_name": "Perchoir Rooftop-Bar"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-perchoir-rooftop-bar",
+                                "hreflang": "/fr/decouvrir/le-perchoir-rooftop-bar"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5243813",
+                                    "longitude": "6.5751886"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "name": "Librairie Basta!",
+                    "content": "Je suis souvent embêté lorsque je dois acheter à la fois un vinyle de rock progressif et un livre de sciences humaines. Mais fort heureusement, il existe un lieu dédié aux deux objets: la librairie Basta ! et juste en-dessous, Obsession Records.",
+                    "lausanner": {
+                        "id": 13,
+                        "name": "Realsousgare, le king de la satire",
+                        "seo": {
+                            "slug": "realsousgare-le-king-de-la-satire"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 547,
+                            "name": "Librairie Basta!",
+                            "lead": "Une librairie indépendante qui saura vous conseiller.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "pux7zoevzkjzzjrd2tm8",
+                                    "copyright": "© LT",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-basta",
+                                "hreflang": "/fr/decouvrir/librairie-basta"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5242",
+                                    "longitude": "6.62619"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 128,
+                    "name": "Librairie de la Louve",
+                    "content": "Prononcer ce nom me remplit déjà de joie! Une librairie d’occasion de grande qualité, avec tellement de livres qu’on ne sait plus où donner de la tête. Deux passages obligés pour moi : le rayon « ville de Lausanne », à côté du bureau du libraire, avec des livres anciens qui sentent bon le papier, et le rayon « architecture », dans la petite niche. J’ai hâte d’y retourner!",
+                    "lausanner": {
+                        "id": 20,
+                        "name": "Manon, Madame patrimoine",
+                        "seo": {
+                            "slug": "manon-madame-patrimoine"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": "Manon"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 664,
+                            "name": "Librairie de la Louve",
+                            "lead": "Une librairie de seconde main située Place de la Louve",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "J7c4Mlfiu9EIKQFP2Frtdk68vpHW4XLQtTQGoOFG",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": "Librairie de la Louve"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-de-la-louve",
+                                "hreflang": "/fr/decouvrir/librairie-de-la-louve"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5215",
+                                    "longitude": "6.6321"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Librairie Gasterea",
+                    "content": "Dans cette petite librairie de la Cité pleine de charme, on y trouve tous les livres anciens et modernes sur la gastronomie. De quoi se remplir les yeux et faire saliver les papilles !",
+                    "lausanner": {
+                        "id": 6,
+                        "name": "Sabine, l'épicultur'elle",
+                        "seo": {
+                            "slug": "sabine-lepiculturelle"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 728,
+                            "name": "Librairie Gastéréa",
+                            "lead": "Êtes-vous à la recherche d’un ancien livre sur la gastronomie ? La librairie Gastéréa a ce qu’il vous faut.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "librairie-gasterea-1m8ghc",
+                                    "copyright": "© Librairie Gastéréa",
+                                    "public_name": "Librairie Gastéréa"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-gasterea",
+                                "hreflang": "/fr/decouvrir/librairie-gasterea"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229",
+                                    "longitude": "6.6359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "Madeleine",
+                    "content": "Au coeur de Lausanne, non loin de la Place de la Palud, se trouve Madeleine. Non, il ne s'agit pas de l'adresse de ma tante Madeleine, mais d'un café-librairie. D'un côté, on trouve une librairie et de l'autre un café. Le lieu est hors du temps. On se pose à une table tout en sirotant un iced coffee et savourant une madeleine (bien évidemment). Les touches pastel de la décoration et la petite musique lounge en arrière-fond vous bercent de cette quiétude environnante.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, la chic mama",
+                        "seo": {
+                            "slug": "ratana-la-chic-mama"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": "Ratana"
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 770,
+                            "name": "Madeleine",
+                            "lead": "Un café-librairie hors du temps. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uu3pjwEjju3v8pKM7g9L9si1MifHAvMdz4uqY1M9",
+                                    "copyright": "© Madeleine",
+                                    "public_name": "Madeleine"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "madeleine",
+                                "hreflang": "/fr/decouvrir/madeleine"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522322",
+                                    "longitude": "6.6328523"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

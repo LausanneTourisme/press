@@ -1,0 +1,460 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 68,
+                    "name": "Rumine Palace",
+                    "content": "As a photographer, the architecture of Rumine Palace immediately appealed to me, both inside and out. It’s also a quiet place where I can work when I’m in town.",
+                    "lausanner": {
+                        "id": 8,
+                        "name": "Sébastien, the adventurer",
+                        "seo": {
+                            "slug": "sebastien-the-adventurer"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "vhzekwjfvbeza4v8cgs6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 60,
+                            "name": "Palais de Rumine",
+                            "lead": "The Palais de Rumine houses the Cantonal museum of natural sciences, the cantonal museum of archaeology and history and the BCU - Lausanne.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q5afsewwktxmjh7stepn",
+                                    "copyright": "© Michel Krafft/MZL",
+                                    "public_name": "Rumine Palace"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "palais-de-rumine",
+                                "hreflang": "/en/explore/palais-de-rumine"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5235686",
+                                    "longitude": "6.6337871"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 222,
+                    "name": "Bar Tabac",
+                    "content": "An intimate and peaceful café that invites you to linger. Located at Rue Beau-Séjour, the Bar Tabac has retained all the charm of days gone by with its menu and its unusual décor. One of my favourite cafés to study or work!",
+                    "lausanner": {
+                        "id": 27,
+                        "name": "Valérie, the trendy artsy",
+                        "seo": {
+                            "slug": "valerie-the-trendy-artsy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "valerie-bpaoe9",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 734,
+                            "name": "Bar Tabac",
+                            "lead": "Looking for a welcoming bar to enjoy a coffee or after-work drinks? At the Bar Tabac, you’ll feel at home.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "bar-tabac-tospjn",
+                                    "copyright": "© (c) Lausanne tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "bar-tabac",
+                                "hreflang": "/en/explore/bar-tabac"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5177",
+                                    "longitude": "6.6357"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 132,
+                    "name": "Coffee Page",
+                    "content": "A warning to lovers of both art books and coffee: someone has brought them together at last! I’ll browse a volume from the bookcase that favours richly illustrated books, order a drink and for once, leave my phone aside. My ideal combo: a chai latte and a book on Bauhaus.",
+                    "lausanner": {
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 546,
+                            "name": "Coffee Page",
+                            "lead": "Coffee Page, a relaxing and cosy café-cum-bookshop. You will find a large selection of coffees to savour accompanied by a slice of their home-made cake.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "coffee-page-h9yccj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "coffee-page",
+                                "hreflang": "/en/explore/coffee-page"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5183146",
+                                    "longitude": "6.633748"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 288,
+                    "name": "Lausanne University Campus (UNIL) and Lausanne Federal Institute of Technology (EPFL)",
+                    "content": "Ideally located by the lakeside and surrounded by beautiful green spaces, UNIL and EPFL are two villages within the town. Walk around their campuses to discover the contemporary architecture of buildings designed by renowned architects. Don’t miss the Unithèque (aka “the Banana”), Vortex, Géopolis, Batochime, Rolex Learning Center, EPFL Pavilions, MED (and its staircase) and SwissTech Convention Center. And as a bonus, the colourful pedestrian underpass of the EPFL metro station.",
+                    "lausanner": {
+                        "id": 35,
+                        "name": "Michaël, the urban spirit",
+                        "seo": {
+                            "slug": "michael-the-urban-spirit"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "michael-5jdudb",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 84,
+                            "name": "University of Lausanne (UNIL)",
+                            "lead": "The University of Lausanne is composed of seven faculties and caters for more than 14'000 students and 2'700 researchers.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "466988441da7c95a",
+                                    "copyright": "© Geopolis Universite de Lausanne Geopolis Universite de Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "university-of-lausanne-unil",
+                                "hreflang": "/en/explore/university-of-lausanne-unil"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.52230113",
+                                    "longitude": "6.58028953"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 351,
+                            "name": "Swiss Federal Institute of Technology Lausanne (EPFL)",
+                            "lead": "The EPFL is an institution at the cutting edge of training, research and innovation.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "l0qyviytpw0en8h8hs7l",
+                                    "copyright": "© Hisao Suzuki",
+                                    "public_name": "Rolex Learning Center"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "swiss-federal-institute-of-technology-lausanne",
+                                "hreflang": "/en/explore/swiss-federal-institute-of-technology-lausanne"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5190557",
+                                    "longitude": "6.5667576"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 234,
+                    "name": "Impact Hub",
+                    "content": "Impact Hub is a huge coworking space of which I am a member since March 2023. It’s a place where you can exchange with several other inspiring people, all driven by the desire to bring about positive change. You can go there for half a day, a day or, like me, register for several months. Get lost in the vast expanse of the premises while taking the time to savour a coffee on the terrasse perched on top of the containers or on the esplanade offering a view over the lake.",
+                    "lausanner": {
+                        "id": 29,
+                        "name": "Amélie, the enchanted illustrator",
+                        "seo": {
+                            "slug": "amelie-the-enchanted-illustrator"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 828,
+                            "name": "Impact Hub Lausanne",
+                            "lead": "This coworking space, located at Beaulieu, belongs to a global network of more than 100 connected communities that enable collaboration.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "TI05xFbicmKoloang8gXGoXTDjKXhg8KCQEiMlTQ",
+                                    "copyright": "© Impact Hub Lausanne",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "impact-hub-lausanne",
+                                "hreflang": "/en/explore/impact-hub-lausanne"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5288571",
+                                    "longitude": "6.6230624"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 196,
+                    "name": "Le Perchoir",
+                    "content": "In the heart of the magnificent Lausanne University campus, between the river and the green spaces, is a rather strange building: the Vortex. This circular building is a must see during any visit to Lausanne: designed as accommodation for UNIL and EPFL students, it is structured around a 2.8-kilometre spiral walkway that accesses all the student rooms. You can nevertheless reach the 8th floor by lift to get to one of the friendliest bars in Lausanne, Le Perchoir. A large terrace, sunset, view over the lake, food and especially quite low prices, and sometimes even concerts – what more could you ask for?",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 648,
+                            "name": "Le Perchoir Rooftop-Bar",
+                            "lead": "Le Perchoir Rooftop Bar is waiting to welcome you every day.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "sprerqn66ye8vvdlutvm",
+                                    "copyright": "© Fernando Guerra Itten+Brechbühl SA",
+                                    "public_name": "Perchoir Rooftop-Bar"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-perchoir-rooftop-bar",
+                                "hreflang": "/en/explore/le-perchoir-rooftop-bar"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5243813",
+                                    "longitude": "6.5751886"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "name": "Basta! bookshop",
+                    "content": "Where to go to buy a progressive rock vinyl and a book on humanities could be quite a conundrum. Fortunately, there is a place dedicated to both: the Basta! bookshop and just below, Obsession Records.",
+                    "lausanner": {
+                        "id": 13,
+                        "name": "Realsousgare, the king of satire",
+                        "seo": {
+                            "slug": "realsousgare-the-king-of-satire"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 547,
+                            "name": "Librairie Basta!",
+                            "lead": "An independent bookshop which is happy to offer advice. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "pux7zoevzkjzzjrd2tm8",
+                                    "copyright": "© LT",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-basta",
+                                "hreflang": "/en/explore/librairie-basta"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5242",
+                                    "longitude": "6.62619"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 128,
+                    "name": "Librairie de la Louve",
+                    "content": "Simply pronouncing that name fills me with joy! A great-quality second-hand bookshop, with so many books you don’t know where to start. For me, two compulsory topics: the “town of Lausanne” bookshelf next to the bookseller’s desk, with old books that give off that lovely aroma of paper, and the “architecture” shelves in the small recess. I can’t wait to go back there!",
+                    "lausanner": {
+                        "id": 20,
+                        "name": "Manon, miss cultural heritage",
+                        "seo": {
+                            "slug": "manon-miss-cultural-heritage"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "sgepjcvwlokfdvyn4mbr",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 664,
+                            "name": "Librairie de la Louve",
+                            "lead": "A second-hand bookshop located at the Place de la Louve",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "J7c4Mlfiu9EIKQFP2Frtdk68vpHW4XLQtTQGoOFG",
+                                    "copyright": "© Lausanne Tourisme",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-de-la-louve",
+                                "hreflang": "/en/explore/librairie-de-la-louve"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5215",
+                                    "longitude": "6.6321"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Gasterea Bookshop",
+                    "content": "In this small, utterly charming bookshop in the Cité, you’ll find all the ancient and modern books on gastronomy. It’s a delight for the eyes that will also awaken your taste buds!",
+                    "lausanner": {
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 728,
+                            "name": "Librairie Gastéréa",
+                            "lead": "Are you hunting for an ancient book on gastronomy? The Gasterea Bookshop has just what you need. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "librairie-gasterea-1m8ghc",
+                                    "copyright": "© Librairie Gastéréa",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "librairie-gasterea",
+                                "hreflang": "/en/explore/librairie-gasterea"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5229",
+                                    "longitude": "6.6359"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 203,
+                    "name": "Madeleine",
+                    "content": "In the heart of Lausanne, not far from the Place de la Palud, is nestled Madeleine. No, it’s not where my aunt Madeleine lives, but a bookshop café. On one side is the bookshop and on the other the café. The place is timeless. I suggest taking a seat at a table to sip an iced coffee and savour a madeleine (of course!). You’ll be lulled by the surrounding peacefulness created by the pastel touches of the decoration and the soft lounge music in the background.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, the chic mamma",
+                        "seo": {
+                            "slug": "ratana-the-chic-mamma"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 770,
+                            "name": "Madeleine",
+                            "lead": " A timeless bookshop café.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "uu3pjwEjju3v8pKM7g9L9si1MifHAvMdz4uqY1M9",
+                                    "copyright": "© Madeleine",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "madeleine",
+                                "hreflang": "/en/explore/madeleine"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.522322",
+                                    "longitude": "6.6328523"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,266 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 197,
+                    "name": "Natürliche Strände in Saint-Sulpice",
+                    "content": "Am Ende von Saint-Sulpice, im Parc du Débarcadère, beginnt ein kleiner, fast geheimnisvoller Weg. Er führt dem Seeufer entlang, an wunderschönen Villen vorbei und zu kleinen, wilden Stränden. Wenn ihr weitergeht, erreicht ihr den Strand in Saint-Sulpice, der fast völlig unberührt geblieben ist. Er ist zwischen Wald und langen weissen Sandstränden eingebettet – ein Paradies für Abenteuerlustige, die neue Wege gehen und dennoch nahe der Stadt Lausanne bleiben möchten.",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, der Momentesammler",
+                        "seo": {
+                            "slug": "victor-der-momentesammler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 449,
+                            "name": "Saint-Sulpice",
+                            "lead": "Diese kleine Wohngemeinde im Westen von Lausanne entstand im Mittelalter.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "rtqhhyjro1e0rtoj6gkh",
+                                    "copyright": "© Droits Réservés",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "saint-sulpice",
+                                "hreflang": "/de/entdecken/saint-sulpice"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.51794729",
+                                    "longitude": "6.57957061"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Vidy",
+                    "content": "Lasst euch am Seeufer in Vidy von der Atmosphäre mit Grillgerüchen, Berimbau-Klängen, einem improvisierten Baby-Geburtstag, Joggerinnen, Schaulustigen und sonntäglichen Pétanque-Spielern einfangen. Setzt euch einfach auf eine Bank oder an das Seeufer und beobachtet alles um euch herum. Das sind die Lausannerinnen und Lausanner: ein harmonischer interkultureller Mischmasch.",
+                    "lausanner": {
+                        "id": 24,
+                        "name": "Ratana, die schicke Mama",
+                        "seo": {
+                            "slug": "ratana-die-schicke-mama"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ratana-j868zd",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 211,
+                            "name": "Plaines de Vidy",
+                            "lead": "Hier kann sich jeder auf seine Art vergnügen, denn es wird allen etwas geboten: Geschichte, Sport, Bootsfahrten und Picknick...",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "xwenbkhkjl9ynim00hgz",
+                                    "copyright": "© Laurent Kaczor",
+                                    "public_name": "La Maison Olympique"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "plaines-de-vidy",
+                                "hreflang": "/de/entdecken/plaines-de-vidy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5393375",
+                                    "longitude": "6.6208276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "Die beste 100 % Schweizer Naturkosmetik-Marke. Köstlich duftende Seifen, feuchtigkeitsspendende Trockenöle mit betörenden Düften und hydroalkoholische Eisenkraut-Gels, die Ihre Hände nicht austrocknen, denn das Jahr 2020 verpflichtet.",
+                    "lausanner": {
+                        "id": 6,
+                        "name": "Sabine, die Geniesserin & Kulturliebhaberin",
+                        "seo": {
+                            "slug": "sabine-die-geniesserin-kulturliebhaberin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "lead": "100 % Schweizer Naturkosmetik. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "evdc9xbzjp3hqxdiba89",
+                                    "copyright": "© Cocooning biocosmetics",
+                                    "public_name": "Cocooning biocosmetics"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cocooning-biocosmetics",
+                                "hreflang": "/de/entdecken/cocooning-biocosmetics"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 236,
+                    "name": "Yoga an der Jetée de la Compagnie",
+                    "content": "Mein absoluter Lieblingsort für einen guten Start in den Tag. Jedes Jahr kann ich es kaum erwarten, bis die Yoga-Kurse an der Jetée de la Compagnie wieder beginnen. Zu diesem Lebensraum am Seeufer gehören zwei Gastro-Container und ein Musikbereich als Treffpunkt nach Feierabend. Es werden aber auch jeden Morgen Yoga-Kurse angeboten. Ihr braucht euch dafür nicht anzumelden. Nehmt einfach eure Matte mit, macht es euch am See gemütlich und entspannt euch eine Stunde lang. Der Tarif richtet sich nach einer freiwilligen Spende.",
+                    "lausanner": {
+                        "id": 29,
+                        "name": "Amélie, die bezaubernde Illustratorin",
+                        "seo": {
+                            "slug": "amelie-die-bezaubernde-illustratorin"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "amelie-x7azjn",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 153,
+                            "name": "Jetée de la Compagnie",
+                            "lead": "Die Jetée de la Compagnie ist eine saisonale Terrasse am Ufer des Genfersees in Lausanne-Ouchy.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "jetee-de-la-compagnie-xg65ix",
+                                    "copyright": "© Lucas Fierro",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "jetee-de-la-compagnie",
+                                "hreflang": "/de/entdecken/jetee-de-la-compagnie"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5087646",
+                                    "longitude": "6.6164703"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 179,
+                    "name": "Park Mon-Repos und Folie Voltaire",
+                    "content": "Der Park Mon-Repos ist mein liebster Park in Lausanne. Er ist eine wahre Oase der Ruhe, in der ich das Gefühl habe, eine Figur in einem lebenden Gemälde zu sein. Dieser bezaubernde, zeitlose Ort lässt niemanden unberührt. Wenn die warmen Tage kommen, empfehle ich eine Pause in der Kastanienallee im Folie Voltaire. Das kleine, äusserst charmante Café bietet eine köstliche, saisonale Speisekarte.",
+                    "lausanner": {
+                        "id": 21,
+                        "name": "Alix, die Flower-Power-Frau",
+                        "seo": {
+                            "slug": "alix-die-flower-power-frau"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "alix-s6ovil",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 349,
+                            "name": "La Folie Voltaire",
+                            "lead": "Das Folie Voltaire liegt in einer schönen Kastanienallee inmitten des Mon-Repos Parks.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "folie-voltaire-ggetnj",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "la-folie-voltaire",
+                                "hreflang": "/de/entdecken/la-folie-voltaire"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5193532",
+                                    "longitude": "6.6420739"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 231,
+                    "name": "Denantou-Park",
+                    "content": "Für mich als Fotograf ist der Denantou-Park in Lausanne ein wahnsinnig inspirierender Ort. Der thailändische Pavillon, umgeben von der Ruhe des Sees, schafft eine magische Atmosphäre. Ich organisiere hier gerne Shootings, um die einzigartige Schönheit dieses Ortes festzuhalten, und die Nähe zum Olympischen Museum sorgt für eine geniale kulturelle Note!",
+                    "lausanner": {
+                        "id": 25,
+                        "name": "Tommaso, der Weltenbummler",
+                        "seo": {
+                            "slug": "tommaso-der-weltenbummler"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tommaso-ytjbgo",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 91,
+                            "name": "Denantou Park",
+                            "lead": "Am Ende der Uferanlagen von Ouchy erstreckt sich ein grosser öffentlicher Park mit grosszügigen Rasenflächen und prachtvollen Bäumen.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "hafoqjklxjxrxstv2boh",
+                                    "copyright": "© LT/mano",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "denantou-park",
+                                "hreflang": "/de/entdecken/denantou-park"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.50629044",
+                                    "longitude": "6.63982837"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

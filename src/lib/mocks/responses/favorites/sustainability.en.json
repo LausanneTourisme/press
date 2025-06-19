@@ -1,0 +1,352 @@
+{
+    "data": {
+        "items": {
+            "data": [
+                {
+                    "id": 226,
+                    "name": "The Milan Park greenhouse",
+                    "content": "Lausanne happens to be a very green city, full of parks and surrounded by nature, but if you would like something more exotic, I recommend visiting the botanical garden in Milan Park, and more specifically the greenhouse. What with a hundred or so different exotic species, the small greenhouse transports us elsewhere. A table is even available on the first floor in case you’d like to stay despite the heat.",
+                    "lausanner": {
+                        "id": 28,
+                        "name": "Victor, the hunter of instants",
+                        "seo": {
+                            "slug": "victor-the-hunter-of-instants"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victor-anyhho",
+                                "copyright": "© Guillaume Megevand",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 234,
+                            "name": "Naturéum - Botanical garden",
+                            "lead": "Open every day and with free admission, the Lausanne botanical gardens are a natural paradise in the heart of the city.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "epcsckdihemplrq6rm7i",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Musée et Jardin Botanique de Lausanne"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "lausanne-botanical-museum-and-garden",
+                                "hreflang": "/en/explore/lausanne-botanical-museum-and-garden"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5139602",
+                                    "longitude": "6.621955"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "name": "Milan Park",
+                    "content": "The Milan Park botanical garden is a small island of diversity in which to take refuge, far from shopping malls and the noise of the town. Simply listening to the sounds of frogs and bees feels like a regeneration.",
+                    "lausanner": {
+                        "id": 13,
+                        "name": "Realsousgare, the king of satire",
+                        "seo": {
+                            "slug": "realsousgare-the-king-of-satire"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "ticwm54wegatcskrb6qk",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 107,
+                            "name": "Milan Park",
+                            "lead": "You might summarily describe it as a vast grassy square (Place de Milan) with a steep mound (Montriond Hill).",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "vnojm4txhzihhlfaquid",
+                                    "copyright": "© LT/ www.diapo.ch",
+                                    "public_name": "Parc de Milan"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "milan-park",
+                                "hreflang": "/en/explore/milan-park"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5147533",
+                                    "longitude": "6.6217016"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 279,
+                    "name": "Café de Grancy",
+                    "content": "This café is located in the heart of the neighbourhood and for good reasons: a friendly atmosphere as well as its refined cuisine that highlights authentic flavours, prepared with fresh, seasonal ingredients. Don’t hesitate to go there, whether for brunch, lunch or dinner.",
+                    "lausanner": {
+                        "id": 34,
+                        "name": "Madina, the classy mommy",
+                        "seo": {
+                            "slug": "madina-the-classy-mommy"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "madina-c5gni6",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 43,
+                            "name": "Café de Grancy",
+                            "lead": "At the Boulevard de Grancy, under the train station, come and discover this café that offers contemporary bistro cooking, with a touch of creativity.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "cafe-de-grancy-eyvyc5",
+                                    "copyright": "© Raphaël Dupertuis",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cafe-de-grancy",
+                                "hreflang": "/en/explore/cafe-de-grancy"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5152778",
+                                    "longitude": "6.6286111"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Cocooning biocosmétics",
+                    "content": "The best 100% Swiss brand of natural cosmetics. Bars of soap smelling absolutely delicious, dry hydrating oils bewitchingly perfumed and, in keeping with 2020, verbena sanitizing gels which do not dry one’s hands.",
+                    "lausanner": {
+                        "id": 6,
+                        "name": "Sabine, the cultural connoisseur",
+                        "seo": {
+                            "slug": "sabine-the-cultural-connoisseur"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "xza4g256urvnkha4a03h",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 583,
+                            "name": "Cocooning biocosmetics",
+                            "lead": "Natural cosmetics - 100% Swiss made. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "evdc9xbzjp3hqxdiba89",
+                                    "copyright": "© Cocooning biocosmetics",
+                                    "public_name": "Cocooning biocosmetics"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "cocooning-biocosmetics",
+                                "hreflang": "/en/explore/cocooning-biocosmetics"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5213",
+                                    "longitude": "6.6315"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Rovéréaz Farm",
+                    "content": "Located right on the border between city and countryside, Rovéréaz Farm offers us a variety of products (fruit, vegetables, oils, cheese, honey, cured meats, eggs...), and everything is fresh and seasonal, of course! I invite you to take a look at their outstanding permaculture programme that combines both cooperative and educational approaches.",
+                    "lausanner": {
+                        "id": 10,
+                        "name": "Carla, the alternative view",
+                        "seo": {
+                            "slug": "carla-the-alternative-view"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "nqdmtrli2lnbqt1kig5o",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 576,
+                            "name": "Rovéréaz Farm",
+                            "lead": "Organic farm products within the city limits. ",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "ix7qyjb3znjnwlygnxqr",
+                                    "copyright": "© Ferme Rovéréaz",
+                                    "public_name": "Ferme Rovéréaz"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "rovereaz-farm",
+                                "hreflang": "/en/explore/rovereaz-farm"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5334",
+                                    "longitude": "6.6475"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 266,
+                    "name": "Frip Square",
+                    "content": "Fripsquare is the expression of a generation split between its love of the latest trends and its environmental conscience. It’s a concept that promotes sharing, exchanges and responsible consumption in the area of fashion. Located for a long time in a former taxi booth in the area below the train station, the thrift shop has recently moved to Chemin de la Joliette 5, where it offers not only second-hand clothes in excellent condition, but now also a coffee shop going by the same name.",
+                    "lausanner": {
+                        "id": 33,
+                        "name": "Luana, the creative soul",
+                        "seo": {
+                            "slug": "luana-the-creative-soul"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "luana-vcytoj",
+                                "copyright": "© Jordi Ruiz Cirera",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 889,
+                            "name": "Fripsquare",
+                            "lead": "Discover the second-hand boutique Fripsquare in the Délices neighbourhood. There, you will find clothing, accessories, shoes and a café.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "z3xQ5iZEp0qLdLuWIugKogOxn2qLeBmbP8z6kIkV",
+                                    "copyright": "© Fripsquare",
+                                    "public_name": "Fripsquare"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "fripsquare",
+                                "hreflang": "/en/explore/fripsquare"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5119289",
+                                    "longitude": "6.6288702"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 119,
+                    "name": "Le Fraisier",
+                    "content": "Le Fraisier is a fantastic culinary discovery in Lausanne. Veggie meals made from fresh products at lunchtime during the week, and a gorgeous vintage décor. I just love it. A delight for the eyes and taste buds!",
+                    "lausanner": {
+                        "id": 17,
+                        "name": "Charlotte, the dancer rider",
+                        "seo": {
+                            "slug": "charlotte-the-dancer-rider"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "tjqxtwrgz0nlgufaotd6",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 293,
+                            "name": "Le Fraisier",
+                            "lead": "The dishes here essentially comprise vegetables, fruit and salads and often come accompanied by fresh cheese.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "le-fraisier-bhguuh",
+                                    "copyright": "© MAud Guye-Vuillème",
+                                    "public_name": null
+                                }
+                            ],
+                            "seo": {
+                                "slug": "le-fraisier",
+                                "hreflang": "/en/explore/le-fraisier"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5217166",
+                                    "longitude": "6.6314848"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 38,
+                    "name": "Place de la Riponne market",
+                    "content": "My Saturday ritual: I wake up early and walk to the Place de la Riponne to beat the crowd. Before 8 am, I have already bought all my organic and Swiss fruit and veg for the week.",
+                    "lausanner": {
+                        "id": 9,
+                        "name": "Victoria, the green smoothie",
+                        "seo": {
+                            "slug": "victoria-the-green-smoothie"
+                        },
+                        "medias": [
+                            {
+                                "cloudinary_id": "victoria-the-green-smoothie-v1cuhq",
+                                "copyright": "© Maxime Genoud",
+                                "public_name": null
+                            }
+                        ]
+                    },
+                    "pois": [
+                        {
+                            "id": 613,
+                            "name": "City Centre Market",
+                            "lead": "The town centre market sets out its stalls every Wednesday and Saturday morning from the Place de la Riponne to the Place Saint-François as well as in the adjacent pedestrianised streets.",
+                            "medias": [
+                                {
+                                    "cloudinary_id": "q4uilyxgkraenptjyrbt",
+                                    "copyright": "© LT/www.diapo.ch",
+                                    "public_name": "Marché lausannois"
+                                }
+                            ],
+                            "seo": {
+                                "slug": "city-centre-market",
+                                "hreflang": "/en/explore/city-centre-market"
+                            },
+                            "geolocations": [
+                                {
+                                    "latitude": "46.5232331",
+                                    "longitude": "6.6327695"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

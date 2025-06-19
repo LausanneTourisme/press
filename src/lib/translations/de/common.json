@@ -1,0 +1,54 @@
+{
+    "contact-us": "Kontaktieren Sie uns",
+    "btn.learnMore": "Weitere Informationen",
+    "btn.showMoreThemes": "Mehr Themen",
+    "poi.favorite.from": "{{poi}}: Tipps der {{lausanner}}",
+    "other-tips": "Andere Tipps",
+    "instagram-link": "Diesen Beitrag auf Instagram ansehen",
+    "published-at": "Veröffentlicht am",
+    "faq": {
+        "title": "Häufig gestellte Fragen",
+        "authorisation": {
+            "title": "Bewilligung für Dreharbeiten in Lausanne",
+            "paragraph1": "Welche Bewilligungen sind für Dreharbeiten im öffentlichen Raum erforderlich?",
+            "paragraph2": "Für Dreharbeiten in Lausanne ist keine besondere Bewilligung erforderlich. Beim Filmen von identifizierbaren Personen muss jedoch deren Zustimmung eingeholt werden. Beim Filmen im öffentlichen Raum ist es zudem wichtig, die Bewegungsfreiheit der Anwohnenden zu gewährleisten und den Strassenverkehr nicht zu behindern.",
+            "paragraph3": "Bei erhöhter Beanspruchung des öffentlichen Raums wenden Sie sich bitte an die Medienstelle von Lausanne Tourisme.",
+            "paragraph4": "Welche Bewilligungen sind für Dreharbeiten in privaten Bereichen erforderlich?",
+            "paragraph5": "Anfragen für Dreharbeiten in privaten Bereichen (z. B. Museen, Restaurants usw.) müssen einige Tage im Voraus beim betroffenen Betrieb zur Genehmigung eingereicht werden."
+        },
+        "drone": {
+            "title": "Verwendung einer Drohne",
+            "paragraph1": "Welche Bewilligungen sind für den Einsatz einer Drohne in Lausanne erforderlich?",
+            "paragraph2.part1": "Wenn die Drohne nicht mehr als 250 g wiegt, ist keine Bewilligung erforderlich. Darüber muss eine Bewilligung beim Flughafen Blécherette eingeholt werden.",
+            "paragraph2.part2": "und dem Polizeikorps der Stadt Lausanne",
+            "paragraph3": "Das Formular zum Ausfüllen mit allen notwendigen Informationen finden Scie",
+            "paragraph3.link-text": "hier",
+            "paragraph4": "Der Antrag muss mindestens drei Arbeitstage vor dem Überflug gestellt werden."
+        },
+        "access": {
+            "title": "Anreise nach Lausanne",
+            "paragraph1": "Lausanne ist leicht erreichbar: per Bahn (SBB-Netz, EC-Direktverbindungen und TGV aus Paris und Mailand), per Strasse (Autobahnen A1/E25 und A9/E27), per Flugzeug (60 Kilometer bzw. 45 Minuten mit dem Auto oder Zug vom internationalen Flughafen Genf) und per Schiff dank der Genfersee-Schifffahrtsgesellschaft (CGN).",
+            "paragraph1.slug": "zugang-nach-lausanne",
+            "paragraph1.more-informations": "Mehr Informationen"
+        },
+        "travel": {
+            "title": "Kostenloser Transport in Lausanne",
+            "paragraph1.part1": "Gäste, die in einem Hotel, in einer Jugendherberge, auf einem Campingplatz oder in einem Bed & Breakfast übernachten, wo die Kurtaxe zu entrichten ist, können von dieser Karte profitieren.",
+            "paragraph1.link": "https://www.lausanne-tourisme.ch/de/lausanne-transport-card-and-more/",
+            "paragraph1.part2": "Diese Karte gewährt den Gästen während ihres gesamten Aufenthalts (maximal 15 Tage) freie Fahrt mit den öffentlichen Verkehrsmitteln (Bus, Zug, Metro) im Grossraum Lausanne."
+        },
+        "mention": {
+            "title": "So können Sie uns in Ihren Artikeln oder Inhalten erwähnen.",
+            "paragraph1": "Bitte erwähnen Sie unsere Website in allen Publikationen zum Reiseziel Lausanne:",
+            "paragraph2.in-social-networks": "In den sozialen Netzwerken:",
+            "paragraph2.instagram": "Identifizieren Sie mit @thelausanner in der Story und im Post und verwenden Sie das Hashtag #thelausanner im Post.",
+            "paragraph2.linkedIn": "Identifizieren Sie mit @Lausanne, Capitale Olympique",
+            "paragraph3.find-us": "Sie finden uns auch auf:"
+        }
+    },
+    "route-titles": {
+        "press-release": "Pressemitteilungen",
+        "press-kit": "Pressedossier",
+        "articles": "Artikel"
+    }
+}

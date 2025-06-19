@@ -1,0 +1,23 @@
+{
+  "home.slug": "",
+  "contact.slug": "contact",
+  "articles.slug": "articles",
+  "coverage.slug": "parutions",
+  "press-release.slug": "communiques-de-presse",
+  "press-kit.slug": "dossier-de-presse",
+  "highlights.slug": "immanquables",
+  "press-releases-and-press-kits.slug": "communiques-de-presse-et-dossier-de-presse",
+
+  "themes.slug": "themes",
+  "themes.architecture.slug": "architecture-design",
+  "themes.culture.slug": "culture",
+  "themes.education.slug": "education",
+  "themes.family.slug": "famille",
+  "themes.gastronomy.slug": "gastronomie",
+  "themes.lacustrine.slug": "lacustre",
+  "themes.nature.slug": "nature",
+  "themes.sport.slug": "sport",
+  "themes.sustainability.slug": "durabilite",
+  "themes.unusual.slug": "insolite",
+  "themes.wellness.slug": "bien-etre"
+}

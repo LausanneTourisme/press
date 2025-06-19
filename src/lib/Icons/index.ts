@@ -1,0 +1,11 @@
+export {default as City} from '$lib/Icons/City.svelte';
+export {default as Facebook} from '$lib/Icons/Facebook.svelte';
+export {default as Instagram} from '$lib/Icons/Instagram.svelte';
+export {default as LinkedIn} from '$lib/Icons/LinkedIn.svelte';
+export {default as Museum} from '$lib/Icons/Museum.svelte';
+export {default as Park} from '$lib/Icons/Park.svelte';
+export {default as People} from '$lib/Icons/People.svelte';
+export {default as School} from '$lib/Icons/School.svelte';
+export {default as Sport} from '$lib/Icons/Sport.svelte';
+export {default as TikTok} from '$lib/Icons/Tiktok.svelte';
+export {default as Youtube} from '$lib/Icons/Youtube.svelte';

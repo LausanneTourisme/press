@@ -1,17 +1,14 @@
 import adapter from '@sveltejs/adapter-vercel';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 import { readFileSync } from 'node:fs';
 
-const json = readFileSync(path.resolve('./package.json'), 'utf8');
+let json = readFileSync(path.resolve('./package.json'), 'utf8');
 const pkg = JSON.parse(json);
+json = readFileSync(path.resolve('./src/lib/translations/fr/lang.json'), 'utf8');
+const supportedLocales = Object.keys(JSON.parse(json));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://svelte.dev/docs/kit/integrations
-  // for more information about preprocessors
-  preprocess: vitePreprocess(),
-
   kit: {
     version: {
       name: pkg.version
@@ -21,8 +18,14 @@ const config = {
     // See https://svelte.dev/docs/kit/adapters for more information about adapters.
     adapter: adapter(),
     alias: {
-      $types: path.resolve('./src/types'),
+      $enums: path.resolve('./src/lib/enums'),
+      $types: path.resolve('./src/lib/types'),
       $pages: path.resolve('./src/lib/pages')
+    },
+    
+    prerender: {
+      // NOTE: You can modify your exported error pages here.
+      entries: supportedLocales.flatMap((locale) => [`/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`]),
     }
   }
 };

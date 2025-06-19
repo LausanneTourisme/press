@@ -1,0 +1,62 @@
+{
+    "follow-us": "Follow us!",
+    "newsletter": "Receive the best tips from Lausanne",
+    "subscribe": {
+        "text": "Sign up",
+        "url": "https://www.lausanne-tourisme.ch/en/newsletter/"
+    },
+    "partners": "Our partners",
+    "contact": "Contact",
+    "where": {
+        "text": "Where can you find us?",
+        "url": "https://www.lausanne-tourisme.ch/en/tourism-office/"
+    },
+    "infos": {
+        "corporate": {
+            "title": "Institutional",
+            "about-us": {
+                "text": "About us",
+                "url": "https://www.lausanne-tourisme.ch/en/a-propos/"
+            },
+            "member-space": {
+                "text": "Members' area",
+                "url": "https://www.lausanne-tourisme.ch/fr/espace-membres/"
+            },
+            "jobs": {
+                "text": "Jobs",
+                "url": "https://www.lausanne-tourisme.ch/en/emploi/"
+            },
+            "general-terms": {
+                "text": "General terms and conditions of use",
+                "url": "https://www.lausanne-tourisme.ch/en/terms-condition-website/"
+            },
+            "privacy": {
+                "text": "Privacy policy",
+                "url": "https://www.lausanne-tourisme.ch/en/privacy-notice/"
+            }
+        },
+        "more": {
+            "title": "More",
+            "meeting": {
+                "text": "Meetings & events",
+                "url": "https://www.lausanne-tourisme.ch/en/business/"
+            },
+            "congress": {
+                "text": "Congress",
+                "url": "https://www.lausanne-montreux-congress.ch/en/"
+            },
+            "trade": {
+                "text": "Trade",
+                "url": "https://www.lausanne-tourisme.ch/en/trade/"
+            },
+            "press": {
+                "text": "Advertisers",
+                "url": "https://www.lausanne-tourisme.ch/en/press/"
+            },
+            "brochures": {
+                "text": "Brochures and guides",
+                "url": "https://www.lausanne-tourisme.ch/en/brochures-guides/"
+            }
+        }
+    }
+}
