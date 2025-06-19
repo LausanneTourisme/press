@@ -12,19 +12,11 @@ export const blankable = (href: string | undefined): string | undefined => href 
  * get filename from a path
  */
 export const filename = (path: string, withExtension: boolean = true): string => {
-  let filename: string;
-
-  if (path.startsWith('/')) {
-    filename = path.substring(1)
+   if (withExtension) {
+    return path;
   }
 
-  filename = <string>path.split('/').pop();
-
-  if (withExtension) {
-    return filename;
-  }
-
-  return <string>filename.split('.').shift();
+  return <string>path.split('.').shift();
 }
 
 export const getMediaLibraryRegisterLink = (locale: Locale): string => {

@@ -58,7 +58,6 @@
   }
 
   const generateImagePath = () => {
-    console.log({inCloudinary, src})
       if (isOfflineMode) {
         if (src.startsWith('http') && inCloudinary) {
           srcResolved = '/pages/themes/cathedrale_skate.jpg';
@@ -82,7 +81,7 @@
 
       if (!ignoreAutoSize) {
         if (!imageBoundaries) {
-          throw new Error('Image boundaries not found');
+          return;
         }
         const width = transform.w ?? transform.width ?? imageBoundaries.width;
         const height = transform.h ?? transform.height ?? imageBoundaries.height;
