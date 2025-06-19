@@ -64,7 +64,7 @@ else
 fi
 
 # If developer forgot passing an argument
-if [[ "$branch" == "staging" ]] ; then
+if [[ "$branch" == "stage" ]] ; then
   PS3="Choose version type: "
 
   select version in "${versionning[@]}"
