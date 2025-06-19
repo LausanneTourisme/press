@@ -76,7 +76,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/images/olivia.jpg" alt="Olivia Bosshart" />
+            <Image src="/olivia.jpg" alt="Olivia Bosshart" />
           </div>
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
@@ -87,7 +87,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/images/laura.jpg" alt="Laura Ragonese" />
+            <Image src="/laura.jpg" alt="Laura Ragonese" />
           </div>
         </div>
         <Heading tag="h3">Laura Ragonese</Heading>

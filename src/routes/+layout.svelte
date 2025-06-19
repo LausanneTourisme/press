@@ -85,7 +85,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": "https://www.lausanne-tourisme.ch",
-      "logo": "${origin}/images/logo/LT_Logo.png",
+      "logo": "${origin}/logo/LT_Logo.png",
       "name": "Lausanne Tourisme",
       "email": "info@lausanne-tourisme.ch",
       "telephone": "+41 21 613 73 73",
@@ -152,13 +152,13 @@
       >
         <Link withIcon={false} href="https://www.lausanne.ch" class="inline-flex w-full">
           <Image
-            src="/images/logo/partners/ville_de_lausanne.svg"
+            src="/logo/partners/ville_de_lausanne.svg"
             class="h-[48px] object-contain md:h-[84px]"
           />
         </Link>
         <Link withIcon={false} href="https://www.myvaud.ch/" class="inline-flex w-full">
           <Image
-            src="/images/logo/partners/vaud_promotion.svg"
+            src="/logo/partners/vaud_promotion.svg"
             class="mt-2 h-[16px] object-contain md:h-[29px]"
           />
         </Link>
@@ -167,20 +167,20 @@
           href="https://www.lausanne-montreux-congress.ch/"
           class="inline-flex w-full"
         >
-          <Image src="/images/logo/partners/lmc.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image src="/logo/partners/lmc.svg" class="h-[48px] object-contain md:h-[84px]" />
         </Link>
         <Link withIcon={false} href="https://www.myswitzerland.com/" class="inline-flex w-full">
           <Image
-            src="/images/logo/partners/suisse_tourisme_partner.svg"
+            src="/logo/partners/suisse_tourisme_partner.svg"
             class="h-[48px] w-[100px] object-contain md:h-[84px] md:w-[170px]"
           />
         </Link>
         <Link withIcon={false} href="https://www.t-l.ch/" class="inline-flex w-full">
-          <Image src="/images/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image src="/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
         </Link>
         <Link withIcon={false} href="https://www.tgv-lyria.com/" class="inline-flex w-full">
           <Image
-            src="/images/logo/partners/lyria.svg"
+            src="/logo/partners/lyria.svg"
             class="h-full w-full object-contain md:h-[84px]"
           />
         </Link>
@@ -327,7 +327,7 @@
           </ul>
         </nav>
         <div class="footer-logo w-full justify-center -mt-10 sm:mt-0 xl:mt-4 xl:justify-end">
-          <Image src="/images/logo/partners/lt_logo_white.svg" class="h-56 w-56 md:h-36 md:w-36 mx-auto" />
+          <Image src="/logo/partners/lt_logo_white.svg" class="h-56 w-56 md:h-36 md:w-36 mx-auto" />
         </div>
       </div>
     </section>

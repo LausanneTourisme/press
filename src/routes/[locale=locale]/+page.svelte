@@ -21,31 +21,31 @@
   let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
-  let videoUrl = $state(`/videos/welcome_card_${$locale}.mp4`);
+  let videoUrl = $state(`/pages/home/welcome_card_${$locale}.mp4`);
 
   const trophies: Trophy[] = [
     {
       name: $t('page.distinctions.trophies.first.name'),
       content: $t('page.distinctions.trophies.first.content'),
-      image: '/images/pages/home/articles/parc-musee-olympique.jpg',
+      image: '/pages/home/articles/parc-musee-olympique.jpg',
       link: $t('page.distinctions.trophies.first.link')
     },
     {
       name: $t('page.distinctions.trophies.second.name'),
       content: $t('page.distinctions.trophies.second.content'),
-      image: '/images/pages/home/articles/52placestogo.jpg',
+      image: '/pages/home/articles/52placestogo.jpg',
       link: $t('page.distinctions.trophies.second.link')
     },
     {
       name: $t('page.distinctions.trophies.third.name'),
       content: $t('page.distinctions.trophies.third.content'),
-      image: '/images/pages/home/articles/nature.jpg',
+      image: '/pages/home/articles/nature.jpg',
       link: $t('page.distinctions.trophies.third.link')
     },
     {
       name: $t('page.distinctions.trophies.fourth.name'),
       content: $t('page.distinctions.trophies.fourth.content'),
-      image: '/images/pages/home/articles/best-small-city.jpg',
+      image: '/pages/home/articles/best-small-city.jpg',
       link: $t('page.distinctions.trophies.fourth.link')
     }
   ];
@@ -98,7 +98,7 @@
   });
 
   $effect(() => {
-    videoUrl = `/videos/welcome_card_${$locale}.mp4`;
+    videoUrl = `/pages/home/welcome_card_${$locale}.mp4`;
   });
 </script>
 
@@ -137,7 +137,7 @@
     class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
   >
     <Image
-      src="/images/pages/home/port-de-pully.jpg"
+      src="/pages/home/port-de-pully.jpg"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       alt="Port de Pully"
       transform={{ g: 'west', c: 'auto' }}
@@ -158,7 +158,7 @@
   <Player
     autoplay={!isMobile}
     src={videoUrl}
-    poster="/images/pages/home/poster-video.png"
+    poster="/pages/home/poster-video.png"
     controls={true}
     onIntersecting={onVideoIntersecting}
     title="Welcome to Lausanne!"
@@ -197,7 +197,7 @@
       </div>
     </article>
     <Image
-      src="/images/pages/home/masonry/cathedrale.jpg"
+      src="/pages/home/masonry/cathedrale.jpg"
       transform={{ g: 'auto', c: 'fill', ar: '9:16' }}
       alt="Cathédrale de Lausanne"
       class="h-72 md:h-auto md:w-1/2"
@@ -231,7 +231,7 @@
       </div>
     </article>
     <Image
-      src="/images/pages/home/nouveautes-lacustre.jpg"
+      src="/pages/home/nouveautes-lacustre.jpg"
       alt=""
       class="h-72 md:h-auto md:w-1/2"
     />
@@ -253,7 +253,7 @@
       </div>
     </article>
     <Image
-      src="/images/pages/home/communiques-de-presse.jpg"
+      src="/pages/home/communiques-de-presse.jpg"
       transform={{ c: 'fill' }}
       alt=""
       class="h-72 md:h-auto md:w-1/2"
@@ -275,7 +275,7 @@
         </Button>
       </div>
     </article>
-    <Image src="/images/pages/home/exposition.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
+    <Image src="/pages/home/exposition.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
   </div>
 </Container>
 <!--
@@ -393,7 +393,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/images/olivia.jpg" alt="Olivia Bosshart" />
+            <Image src="/olivia.jpg" alt="Olivia Bosshart" />
           </div>
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
@@ -404,7 +404,7 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/images/laura.jpg" alt="Laura Ragonese" />
+            <Image src="/laura.jpg" alt="Laura Ragonese" />
           </div>
         </div>
         <Heading tag="h3">Laura Ragonese</Heading>

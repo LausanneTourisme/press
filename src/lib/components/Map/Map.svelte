@@ -160,7 +160,7 @@
           </button>
           <button class="h-56 w-full shadow" onclick={closeAside}>
             <Image
-              src={isOfflineMode ? '/images/pages/themes/user_not_found.png' : aside.image}
+              src={isOfflineMode ? '/pages/themes/user_not_found.png' : aside.image}
               alt={aside.imageCopyright}
               useCloudinaryPreset={false}
               class="h-full w-full"
@@ -179,9 +179,9 @@
             alt=""
             useCloudinaryPreset={false}
             src={isOfflineMode
-              ? '/images/pages/themes/user_not_found.png'
+              ? '/pages/themes/user_not_found.png'
               : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
-                '/images/pages/themes/user_not_found.png')}
+                '/pages/themes/user_not_found.png')}
             transform={{ g: 'north', c: 'auto', w: 48, h: 48 }}
           />
           <div class="flex w-full items-center justify-between">
