@@ -107,7 +107,8 @@
         let width = transform.w || transform.width ? (transform.w ?? transform.width) : 'auto';
 
         if (width === 'auto' && height === 'auto' && !imageBoundaries) {
-          return
+          height = 720;
+          width = 1280;
         } else if (width === 'auto' && height === 'auto') {
           height = imageBoundaries!.height;
           width = imageBoundaries!.width;
