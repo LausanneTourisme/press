@@ -171,6 +171,8 @@ const process = async (files, cacheFilepath) => {
         }
         spinner.prefixText = '';
         spinner.info(`${filesDeleted.length} file${filesDeleted.length === 1 ? '' : 's'} ${filesDeleted.length === 1 ? 'was' : 'were'} deleted`);
+
+        console.log();
     }
 
     //remove files from chache
@@ -181,6 +183,7 @@ const process = async (files, cacheFilepath) => {
             cachedFiles.splice(cachedFiles.indexOf(file), 1);
         }
         spinner.succeed('Deletes completed.');
+        console.log();
     }
 
     //upload new files

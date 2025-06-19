@@ -35,6 +35,7 @@
   let markerIndex: string | undefined = $state();
   let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
+  let asideElement: HTMLDivElement | undefined = $state();
 
   let aside: {
     show: boolean;
@@ -72,7 +73,13 @@
     );
   };
 
-  const handleLausannerClick = ({ favorite, poi }: { favorite: Favorite<string>; poi: Poi<string> }) => {
+  const handleLausannerClick = ({
+    favorite,
+    poi
+  }: {
+    favorite: Favorite<string>;
+    poi: Poi<string>;
+  }) => {
     markerIndex = `poi#${poi.id}|favorite#${favorite.id}`;
 
     aside.title = (poi?.name as string) ?? '';
@@ -126,14 +133,18 @@
       });
     });
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
-
+    window.addEventListener('keyup', (e) => {
+      if (e.key === 'Escape' && aside.show) {
+        closeAside();
+      }
+    });
     return () => {
       map?.remove();
-    }
+    };
   });
 </script>
 
-<div class="relative flex flex-col-reverse h-[550px] xl:flex-row 2xl:h-[768px]">
+<div class="relative flex h-[550px] flex-col-reverse xl:flex-row 2xl:h-[768px]">
   {#if markers.length}
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 xl:w-2/5">
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
@@ -148,6 +159,7 @@
         {/each}
       </div>
       <div
+        bind:this={asideElement}
         class={twMerge('aside-popup h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
         transition:fade
       >
@@ -177,7 +189,7 @@
           <Image
             class="h-12 w-12 rounded-full"
             alt=""
-            useCloudinaryPreset={false}
+            useCloudinaryPreset={aside.lausanner?.medias?.at(0)?.cloudinary_id ? false : true}
             src={isOfflineMode
               ? '/pages/themes/user_not_found.png'
               : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
@@ -197,7 +209,7 @@
                 {aside.lausanner?.name}
 
                 {#snippet icon()}
-                  <SquareArrowOutUpRight class="ml-2 h-3 w-3" />
+                  <SquareArrowOutUpRight class="ml-2 h-10 md:h-4 w-10 md:w-4 " />
                 {/snippet}
               </Link>
             </Paragraph>
@@ -225,14 +237,17 @@
   >
     <NavigationControl position={'top-right'} />
     {#each markers as marker}
-      <Marker lnglat={{lat: marker.coordinates.lat, lng: marker.coordinates.lng}}>
+      <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
         {#snippet content()}
           <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
         {/snippet}
         <Popup
           open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
           onopen={() => {
-            setTimeout(() => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }), 50);
+            setTimeout(
+              () => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }),
+              50
+            );
           }}
           onclose={closeAside}
           offset={{

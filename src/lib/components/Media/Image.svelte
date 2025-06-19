@@ -107,7 +107,7 @@
         let width = transform.w || transform.width ? (transform.w ?? transform.width) : 'auto';
 
         if (width === 'auto' && height === 'auto' && !imageBoundaries) {
-          throw new Error('Image boundaries not found');
+          return
         } else if (width === 'auto' && height === 'auto') {
           height = imageBoundaries!.height;
           width = imageBoundaries!.width;
