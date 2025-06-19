@@ -33,8 +33,8 @@ export const load = async ({ url, params, parent }) => {
         seo,
         locale: lang,
         type: RouteTypes.Highlights,
-        events: eventsRes.data.items?.data ?? [],
-        group: groupRes.data.item,
-        news: newsRes.data.items?.data ?? [],
+        events: eventsRes.data?.items?.data ?? [],
+        group: groupRes.data?.item,
+        news: newsRes.data?.items?.data ?? [],
     };
 };
