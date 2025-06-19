@@ -19,7 +19,7 @@ export class Cloudinary {
     protected extension: "png" | "jpg" | "jpeg" | "svg" | undefined;
 
     static DEFAULT_RESOLUTION: number = 1280;
-    protected resolutions: number[] = [
+    public static resolutions: number[] = [
         80, 120, 240, 320, 480, 640, 720, 960, Cloudinary.DEFAULT_RESOLUTION, 1640, 1920, 2560, 3840
     ];
 
@@ -60,13 +60,13 @@ export class Cloudinary {
 
                 case "width":
                 case "w":
-                    resolution = this.breakpoints(<number>transform[key]);
+                    resolution = Cloudinary.breakpoints(<number>transform[key]);
                     parameters.push(`w_${resolution}`);
                     break;
 
                 case "height":
                 case "h":
-                    resolution = this.breakpoints(<number>transform[key]);
+                    resolution = Cloudinary.breakpoints(<number>transform[key]);
                     parameters.push(`h_${resolution}`);
                     break;
 
@@ -96,7 +96,7 @@ export class Cloudinary {
         return `https://${PUBLIC_CLOUDINARY_CNAME}/${this.type}/upload/${this.parameters}${this.id}.${extension}`
     }
 
-    protected breakpoints(width: number): number {
-        return this.resolutions.find(resolution => width <= resolution) ?? Cloudinary.DEFAULT_RESOLUTION;
+    public static breakpoints(width: number): number {
+        return Cloudinary.resolutions.find(resolution => width <= resolution) ?? Cloudinary.DEFAULT_RESOLUTION;
     }
 }
