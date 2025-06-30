@@ -1,9 +1,9 @@
 import { dev } from '$app/environment';
-import { filterByTag, isOfflineMode } from '$lib/helpers';
+import { isOfflineMode } from '$lib/helpers';
 import { sortByYears } from '$lib/helpers/date';
-import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
+import { getPosts } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
-import type { Post, Release } from '$types';
+import type { Release } from '$types';
 
 export const load = async ({ parent }) => {
     if (dev && isOfflineMode) {
@@ -19,7 +19,7 @@ export const load = async ({ parent }) => {
 
     return {
         payload: {
-            releasesByDates: new Map([...sortByYears(releases).entries()].reverse())
+            releasesByDates: new Map([...sortByYears(releases)].reverse())
         }
     }
 };
