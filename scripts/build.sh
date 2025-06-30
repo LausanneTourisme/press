@@ -55,7 +55,7 @@ done;
 if [ ! "$version" ]; then illegal ""; fi;
 
 
-npm version "$version"
+packageVersion=$(npm version "$version")
 git push origin develop;
 
 echo -e "\n\t>>> LAUNCHING BUILD ON ${GREEN}$branch${NC} <<<\n"
@@ -66,7 +66,7 @@ git pull origin "$branch";
 
 # Create a commit message on main using version from package.json
 git fetch;
-git merge develop -m "$version";
+git merge develop -m "$packageVersion";
 
 git push;
 git checkout develop;
