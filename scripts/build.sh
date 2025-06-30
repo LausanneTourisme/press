@@ -4,10 +4,9 @@ NC='\033[0m' # No color
 RED='\033[0;31m' #
 GREEN='\033[0;32m' #
 
-branches=(main stage);
 versionning=(major minor patch);
 version="";
-branch="";
+branch="main";
 
 illegal()
 {
@@ -40,45 +39,24 @@ fi
 # If developer forgot passing an argument
 if [ $# -eq 0 ]; then
   PS3="Choose Git branch: "
-
-  select branch in "${branches[@]}"
-  do
-    branch="$branch"
-    break;
-  done;
   # Simple check if $branch is not empty
   if [ ! "$branch" ]; then illegal ""; fi;
-else
-# Get the release branch from named argument
-  while [ $# -gt 0 ]; do
-    if [[ $1 == *"--"* ]]; then
-      v="${1/--/}"
-      if [[ ${branches[*]} =~ $v ]]; then
-        branch="$v"
-      else
-        illegal "$1"
-      fi
-    fi
-    shift
-  done
-fi
+fi;
 
 # If developer forgot passing an argument
-if [[ "$branch" == "stage" ]] ; then
-  PS3="Choose version type: "
+PS3="Choose version type: "
 
-  select version in "${versionning[@]}"
-  do
-    version="$version"
-    break;
-  done;
-  # Simple check if $version is not empty
-  if [ ! "$version" ]; then illegal ""; fi;
+select version in "${versionning[@]}"
+do
+  version="$version"
+  break;
+done;
+# Simple check if $version is not empty
+if [ ! "$version" ]; then illegal ""; fi;
 
 
-  npm version "$version"
-  git push origin develop;
-fi;
+npm version "$version"
+git push origin develop;
 
 echo -e "\n\t>>> LAUNCHING BUILD ON ${GREEN}$branch${NC} <<<\n"
 
@@ -86,13 +64,6 @@ echo -e "\n\t>>> LAUNCHING BUILD ON ${GREEN}$branch${NC} <<<\n"
 git checkout "$branch";
 git pull origin "$branch";
 
-if [[ "$branch" == "main" ]] ;  then
-  # Create a commit message on main using version from package.json
-  git fetch;
-  git merge develop -m "$(node -e "console.log(require('./package.json').version)")";
-else
-  git pull origin develop;
-fi;
 
 git push;
 git checkout develop;

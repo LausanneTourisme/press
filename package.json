@@ -1,7 +1,7 @@
 {
-  "name": "presskit2.0",
+  "name": "press",
   "private": true,
-  "version": "1.1.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "preinstall": "([ -e $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh && nvm install && nvm use) || true",
