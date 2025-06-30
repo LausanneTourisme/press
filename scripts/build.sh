@@ -4,7 +4,7 @@ NC='\033[0m' # No color
 RED='\033[0;31m' #
 GREEN='\033[0;32m' #
 
-branches=(main staging);
+branches=(main stage);
 versionning=(major minor patch);
 version="";
 branch="";
@@ -64,7 +64,7 @@ else
 fi
 
 # If developer forgot passing an argument
-if [[ "$branch" == "staging" ]] ; then
+if [[ "$branch" == "stage" ]] ; then
   PS3="Choose version type: "
 
   select version in "${versionning[@]}"

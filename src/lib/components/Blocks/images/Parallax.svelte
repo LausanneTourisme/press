@@ -47,10 +47,10 @@
 
   $effect(() => {
     url = Cloudinary.make(cloudinaryId).url({
-      w: isMobile ? width : Math.round(width / 1.4),
+      width: isMobile ? width : Math.round(width / 1.4),
       ar: '4:5',
-      g: focus,
-      c: 'fill'
+      gravity: focus,
+      crop: 'fill'
     });
   });
 </script>
@@ -59,8 +59,8 @@
   <div
     style="background: url({Cloudinary.make(cloudinaryId, 'image').url({
       width,
-      g: focus,
-      c: 'fill'
+      gravity: focus,
+      crop: 'fill'
     })}) {fixed ? 'fixed' : ''} no-repeat center/cover"
     class={imageClass}
     class:shadow-inner={fixed}

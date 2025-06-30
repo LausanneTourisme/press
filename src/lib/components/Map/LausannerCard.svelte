@@ -16,10 +16,10 @@
 
   const { class: additionalClass, favorite, lausanner, poi, onclick }: Props = $props();
 
+  const defaultImage = '/pages/themes/user_not_found.png';
   const lausannerImage = isOfflineMode
-    ? '/images/pages/themes/user_not_found.png'
-    : (lausanner?.medias?.find(() => true)?.cloudinary_id ??
-      '/images/pages/themes/user_not_found.png');
+    ? '/pages/themes/user_not_found.png'
+    : lausanner?.medias?.find(() => true)?.cloudinary_id;
 </script>
 
 <button
@@ -32,9 +32,10 @@
 >
   <figure class="h-full w-1/3 xl:w-[160px]">
     <Image
-      src={lausannerImage}
-      useCloudinaryPreset={false}
-      transform={{ gravity: 'north', c: 'auto', h: 200 }}
+      src={lausannerImage ?? defaultImage}
+      useCloudinaryPreset={lausannerImage ? false : true}
+      ignoreAutoSize={true}
+      transform={{ gravity: 'auto', crop: 'auto', width: 240, h:320}}
       alt={lausanner?.name?.replace(/,.+/gi, '')}
     />
     <figcaption class="hidden">{lausanner?.name?.replace(/,.+/gi, '')}</figcaption>

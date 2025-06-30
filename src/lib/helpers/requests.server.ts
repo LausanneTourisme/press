@@ -49,34 +49,33 @@ export const getPosts = async <T extends PostType<string | Translatable>>({ type
                 highlighted,
             },
             query: `query GetPosts($limit: Int, $locale: String, $type: String, $highlighted: Boolean) {
-                items: posts(type: $type, locale: $locale, limit: $limit, highlighted: $highlighted) {
+                items: posts(limit: $limit, locale: $locale, type: $type, highlighted: $highlighted) {
                     data {
-                        id
+                        id 
                         languages
-                        author
-                        name
+                        author 
+                        name 
                         type
-                        lead
-                        summary
-                        highlight
+                        lead 
+                        summary 
+                        highlight 
                         published_at
-                        link
-                        content
-                        medias(cover:true) {
-                            cloudinary_id
-                            copyright
-                            public_name
-                        }
-                        published_at
-                        seo {
-                            description
-                            noindex
-                            slug
-                        }
-                        tags {
+                        link 
+                        content 
+                        medias(cover:true) { 
+                            cloudinary_id 
+                            copyright 
+                            public_name 
+                        } 
+                        seo { 
+                            description 
+                            noindex 
+                            slug 
+                        } 
+                        tags { 
                             name
-                            public_name
-                        }
+                            public_name 
+                        } 
                     }
                 }
             }`,

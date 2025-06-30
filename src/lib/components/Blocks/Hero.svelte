@@ -51,7 +51,7 @@
   size="parallax"
   fixed={false}
   focus="auto"
-  cloudinaryId={hero.image.cloudinary_id ?? ''}
+  cloudinaryId={hero.image.cloudinary_id ?? 'default'}
   alt="{hero.image.public_name?.[$locale as Locale]} - {hero.image.copyright}"
 >
   <Container

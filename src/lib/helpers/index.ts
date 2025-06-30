@@ -2,7 +2,7 @@ import { browser } from "$app/environment";
 import { RouteTypes, type RouteType, type Theme } from "$enums";
 import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
 import { defaultLocale, locale, t, type Locale } from "$lib/translations";
-import type { PostType, Translatable } from '$lib/types';
+import type { ImageDimensions, PostType, Translatable } from '$lib/types';
 
 export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
 export const maxMobileWidth = 1280;
@@ -12,19 +12,11 @@ export const blankable = (href: string | undefined): string | undefined => href 
  * get filename from a path
  */
 export const filename = (path: string, withExtension: boolean = true): string => {
-  let filename: string;
-
-  if (path.startsWith('/')) {
-    filename = path.substring(1)
+   if (withExtension) {
+    return path;
   }
 
-  filename = <string>path.split('/').pop();
-
-  if (withExtension) {
-    return filename;
-  }
-
-  return <string>filename.split('.').shift();
+  return <string>path.split('.').shift();
 }
 
 export const getMediaLibraryRegisterLink = (locale: Locale): string => {
@@ -135,3 +127,19 @@ export const shuffle = <T>(array: T[]) => {
   }
   return newArray
 };
+
+export function resizeWithAspectRatio({
+  original,
+  targetWidth
+}: {
+  original: ImageDimensions;
+  targetWidth: number;
+}): ImageDimensions {
+  const aspectRatio = original.width / original.height;
+  const newHeight = Math.round(targetWidth / aspectRatio);
+
+  return {
+    width: targetWidth,
+    height: newHeight
+  };
+}

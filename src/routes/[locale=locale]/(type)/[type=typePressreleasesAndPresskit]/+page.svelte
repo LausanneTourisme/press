@@ -51,7 +51,7 @@
                       title={release.name}
                     >
                       <Card
-                        src={Cloudinary.make(release.medias?.at(0)?.cloudinary_id ?? '').url({
+                        src={Cloudinary.make(release.medias?.at(0)?.cloudinary_id ?? 'default').url({
                           h: 440
                         })}
                         alt={`${release.medias?.at(0)?.public_name} - ${release.medias?.at(0)?.copyright}`}

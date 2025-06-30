@@ -5,9 +5,9 @@ export type * from './maplibre';
 export type * from './nova';
 
 declare global {
-	interface Window {
-		dataLayer: unknown[];
-	}
+    interface Window {
+        dataLayer: unknown[];
+    }
 }
 
 export type SelectedDates = { start: string, end: string | undefined | null };
@@ -55,3 +55,9 @@ export type GraphQLResponse<T> = {
     },
     errors?: unknown[]
 }
+
+export type ImageDimensions = {
+    width: number;
+    height: number;
+};
+
