@@ -104,7 +104,7 @@
               >
                 <Figure
                   class="h-48 rounded"
-                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
+                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? 'default').url({
                     w: 330,
                   })}
                   alt=""

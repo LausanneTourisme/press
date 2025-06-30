@@ -67,7 +67,7 @@
           metadata={block.value.metadata}
           size={block.size}
           focus={block.focus}
-          cloudinaryId={block.value.cloudinary_id ?? ''}
+          cloudinaryId={block.value.cloudinary_id ?? 'default'}
           alt={`${block.value?.public_name?.fr ?? ''} - ${block.value?.copyright}`}
         />
       {:else if block.type === 'instagram'}

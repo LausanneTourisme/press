@@ -27,6 +27,12 @@ export const load = async ({ url, params, parent }) => {
         })),
     }
 
+    const news = newsRes.data?.items?.data ?? [];
+    news.sort((a, b) => {
+        if(a.published_at! < b.published_at!) return 1;
+        if(a.published_at! > b.published_at!) return -1;
+        return 0;
+    })
     return {
         i18n,
         translations,
@@ -35,6 +41,6 @@ export const load = async ({ url, params, parent }) => {
         type: RouteTypes.Highlights,
         events: eventsRes.data?.items?.data ?? [],
         group: groupRes.data?.item,
-        news: newsRes.data?.items?.data ?? [],
+        news: news,
     };
 };

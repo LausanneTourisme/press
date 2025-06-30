@@ -41,7 +41,7 @@
     const { hash } = document.location;
     if (hash) {
       const anchor = document.querySelector(hash ?? '');
-      anchor?.scrollIntoView({ behavior: 'instant' });
+      anchor?.scrollIntoView({ behavior: 'smooth' });
     }
   });
 </script>
@@ -179,16 +179,13 @@
           <Image src="/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
         </Link>
         <Link withIcon={false} href="https://www.tgv-lyria.com/" class="inline-flex w-full">
-          <Image
-            src="/logo/partners/lyria.svg"
-            class="h-full w-full object-contain md:h-[84px]"
-          />
+          <Image src="/logo/partners/lyria.svg" class="h-full w-full object-contain md:h-[84px]" />
         </Link>
       </div>
     </section>
     <section class="mx-auto flex w-full max-w-[1270px] flex-wrap p-[15px]">
       <hr class="-mt-2 w-full border-t-2 border-white" />
-      <div class="grid grid-cols-1 gap-8 w-full md:grid-cols-[1.5fr_2.5fr_1.5fr]">
+      <div class="grid w-full grid-cols-1 gap-8 md:grid-cols-[1.5fr_2.5fr_1.5fr]">
         <div class="footer-contact max-w-[400px]">
           <Heading class="mt-4 mb-2 text-base text-white md:text-base ">
             {$t('footer.contact')}
@@ -205,7 +202,7 @@
           </Button>
         </div>
         <nav class="footer-infos w-full">
-          <ul class=" grid list-none grid-cols-1 xs:grid-cols-2 gap-5">
+          <ul class=" xs:grid-cols-2 grid list-none grid-cols-1 gap-5">
             <li class="footer-info list-none pb-2.5 tracking-[.75px] text-white">
               <Heading
                 class="mb-1 text-base font-bold tracking-normal text-white md:text-base xl:mt-4 "
@@ -223,7 +220,7 @@
                     {$t('footer.infos.corporate.about-us.text')}
                   </Link>
                 </li>
-                <li class={twMerge("list-none", $locale !== "fr" ? 'hidden' : '')}>
+                <li class={twMerge('list-none', $locale !== 'fr' ? 'hidden' : '')}>
                   <Link
                     class="text-left font-normal text-white"
                     withFlex={false}
@@ -326,8 +323,8 @@
             </li>
           </ul>
         </nav>
-        <div class="footer-logo w-full justify-center -mt-10 sm:mt-0 xl:mt-4 xl:justify-end">
-          <Image src="/logo/partners/lt_logo_white.svg" class="h-56 w-56 md:h-36 md:w-36 mx-auto" />
+        <div class="footer-logo -mt-10 w-full justify-center sm:mt-0 xl:mt-4 xl:justify-end">
+          <Image src="/logo/partners/lt_logo_white.svg" class="mx-auto h-56 w-56 md:h-36 md:w-36" />
         </div>
       </div>
     </section>

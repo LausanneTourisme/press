@@ -84,7 +84,7 @@
 
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
-    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? '') : ''; // { w: 700 }
+    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? 'default') : ''; // { w: 700 }
     aside.imageName = poi?.medias?.at(0)
       ? ((poi.medias[0].public_name as string | undefined) ?? '')
       : '';

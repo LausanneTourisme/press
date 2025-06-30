@@ -29,7 +29,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
         canonical: `${url.origin}${url.pathname}`,
         title: article.name?.[locale as Locale] ?? translations[locale][`page.title`],
         description: article.lead?.[locale as Locale] ?? translations[locale][`page.meta-description`],
-        image: Cloudinary.make(article.medias?.at(0)?.cloudinary_id ?? '').url({ h: 720, w: 1280 }),
+        image: Cloudinary.make(article.medias?.at(0)?.cloudinary_id ?? 'default').url({ h: 720, w: 1280 }),
         alternate: supportedLocales.filter(l => article.languages?.includes(l)).map(locale => ({
             hreflang: locale,
             href: `/${locale}/${translations[locale][`route.${RouteTypes.Articles}.slug`]}/${article.seo?.slug?.[locale]}`

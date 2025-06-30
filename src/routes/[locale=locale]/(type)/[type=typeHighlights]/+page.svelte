@@ -81,7 +81,7 @@
       <Slide>
         <Clickable overflow={true} href={n.link ?? '#'}>
           <Card
-            src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? '').url({
+            src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? 'default').url({
               width: 500,
               height: 500,
               ar: '16:9',
@@ -172,7 +172,7 @@
                 class="from-shakespeare-500 absolute top-0 left-0 -z-10 h-full w-full bg-gradient-to-t to-gray-900/50"
               >
                 <Image
-                  src={Cloudinary.make(poi.medias?.at(0)?.cloudinary_id ?? '').url({
+                  src={Cloudinary.make(poi.medias?.at(0)?.cloudinary_id ?? 'default').url({
                     height: 500
                   })}
                   ignoreAutoSize={true}
@@ -225,7 +225,7 @@
               <div class="card-body p-4">
                 <figure class="pointer-events-none aspect-square w-44 sm:w-72">
                   <Image
-                    src={Cloudinary.make(media?.cloudinary_id ?? '').url({ h: 330 })}
+                    src={Cloudinary.make(media?.cloudinary_id ?? 'default').url({ h: 330 })}
                     alt={media?.name}
                   />
                 </figure>
