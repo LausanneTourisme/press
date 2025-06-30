@@ -69,4 +69,14 @@ git fetch;
 git merge develop -m "$packageVersion";
 
 git push;
+git push --tags;
+
+if command -v gh ; then
+  gh release create "$packageVersion" --generate-notes;
+else
+  echo -e "\n${RED}Github CLI is not installed. You should create a new release on Github.";
+fi
+
+printf "\n${GREEN}New version %s successfully released :)${NC}\n" "$packageVersion";
+
 git checkout develop;
