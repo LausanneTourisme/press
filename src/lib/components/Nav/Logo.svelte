@@ -17,8 +17,9 @@
 
 {#key $locale}
   <Image
-    src="/images/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
+    src="/logo/logo_{$locale === 'fr' ? 'fr' : 'en'}.svg"
     alt="Lausanne Capitale Olympique"
+    inCloudinary={false}
     class={style}
   />
 {/key}

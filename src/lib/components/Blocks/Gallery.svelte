@@ -40,9 +40,9 @@
         class="h-64"
         src={image?.cloudinary_id}
         transform={{
-          h: isMobile ? 440 : 800,
-          g: 'auto',
-          c: 'fill'
+          height: isMobile ? 440 : 800,
+          gravity: 'auto',
+          crop: 'fill'
         }}
         alt={`${image?.public_name?.[$locale as Locale]} - ${image?.copyright}`}
       />
@@ -56,9 +56,9 @@
         class="h-full"
         src={images[0]?.cloudinary_id}
         transform={{
-          h: isMobile ? 440 : 800,
-          g: 'auto',
-          c: 'fill'
+          height: isMobile ? 440 : 800,
+          gravity: 'auto',
+          crop: 'fill'
         }}
         alt={`${images[0]?.public_name?.[$locale as Locale]} - ${images[0]?.copyright}`}
       />
@@ -69,9 +69,9 @@
         class="h-full"
         src={images[1]?.cloudinary_id}
         transform={{
-          h: isMobile ? 340 : 500,
-          g: 'auto',
-          c: 'fill'
+          height: isMobile ? 340 : 500,
+          gravity: 'auto',
+          crop: 'fill'
         }}
         alt={`${images[1]?.public_name?.[$locale as Locale]} - ${images[1]?.copyright}`}
       />
@@ -82,9 +82,9 @@
         class="h-full"
         src={images[2]?.cloudinary_id}
         transform={{
-          h: isMobile ? 340 : 500,
-          g: 'auto',
-          c: 'fill'
+          height: isMobile ? 340 : 500,
+          gravity: 'auto',
+          crop: 'fill'
         }}
         alt={`${images[2]?.public_name?.[$locale as Locale]} - ${images[2]?.copyright}`}
       />

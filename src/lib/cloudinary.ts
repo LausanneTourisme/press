@@ -1,14 +1,15 @@
 import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from "$env/static/public";
-
+type gravity = "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "east" | "south_east" | "west" | "south_west";
+type crop = "auto" | "crop" | "fill" | "scale" | "thumb";
 export type Transform = {
     width?: number | string;
     w?: number | string;
     height?: number | string;
     h?: number | string;
-    gravity?: "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "west" | "east",
-    g?: "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "west" | "east",
-    crop?: "auto" | "crop" | "fill" | "scale" | "thumb",
-    c?: "auto" | "crop" | "fill" | "scale" | "thumb",
+    gravity?: gravity,
+    g?: gravity,
+    crop?: crop,
+    c?: crop,
     ar?: string
 }
 
@@ -19,7 +20,7 @@ export class Cloudinary {
     protected extension: "png" | "jpg" | "jpeg" | "svg" | undefined;
 
     static DEFAULT_RESOLUTION: number = 1280;
-    protected resolutions: number[] = [
+    public static resolutions: number[] = [
         80, 120, 240, 320, 480, 640, 720, 960, Cloudinary.DEFAULT_RESOLUTION, 1640, 1920, 2560, 3840
     ];
 
@@ -31,7 +32,7 @@ export class Cloudinary {
         this.id = cloudinaryId
             .replace(" ", "_")
             .replace(/[()]/ig, "")
-            .replace(/\.(\w{1,4})$/i,'') as string;
+            .replace(/\.(\w{1,4})$/i, '') as string;
         this.parameters = "";
         this.type = type;
         this.extension = cloudinaryId.match(/\.(\w{1,4})$/i)?.pop() as "png" | "jpg" | "jpeg" | "svg" | undefined;
@@ -60,13 +61,13 @@ export class Cloudinary {
 
                 case "width":
                 case "w":
-                    resolution = this.breakpoints(<number>transform[key]);
+                    resolution = Cloudinary.breakpoints(<number>transform[key]);
                     parameters.push(`w_${resolution}`);
                     break;
 
                 case "height":
                 case "h":
-                    resolution = this.breakpoints(<number>transform[key]);
+                    resolution = Cloudinary.breakpoints(<number>transform[key]);
                     parameters.push(`h_${resolution}`);
                     break;
 
@@ -96,7 +97,7 @@ export class Cloudinary {
         return `https://${PUBLIC_CLOUDINARY_CNAME}/${this.type}/upload/${this.parameters}${this.id}.${extension}`
     }
 
-    protected breakpoints(width: number): number {
-        return this.resolutions.find(resolution => width <= resolution) ?? Cloudinary.DEFAULT_RESOLUTION;
+    public static breakpoints(width: number): number {
+        return Cloudinary.resolutions.find(resolution => width <= resolution) ?? Cloudinary.DEFAULT_RESOLUTION;
     }
 }

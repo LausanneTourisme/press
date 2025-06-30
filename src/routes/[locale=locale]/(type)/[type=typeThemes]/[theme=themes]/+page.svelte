@@ -67,7 +67,7 @@
         src={themeInformation.image}
         alt={title}
         imgClass="rounded"
-        transform={themeInformation.transform}
+        transform={{h:undefined, height: undefined, w: undefined, width: undefined, ...themeInformation.transform}}
       />
       <div
         class={twMerge(
@@ -104,8 +104,8 @@
               >
                 <Figure
                   class="h-48 rounded"
-                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
-                    w: 330
+                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? 'default').url({
+                    w: 330,
                   })}
                   alt=""
                 />
@@ -204,39 +204,33 @@
   </Container>
   <Swiper>
     {#each Object.values(Themes) as theme}
-      {@const selecteTheme = ThemeDetails[ThemeKeys[theme]]}
-      <Slide>
+      {@const selectedTheme = ThemeDetails[ThemeKeys[theme]]}
+      <Slide class="w-max xs:w-min!">
         <Clickable
           href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}
           overflow={true}
+          class="card group relative h-[360px] w-full xs:w-80 md:h-[460px] md:w-[375px] min-w-[220px] rounded-none shadow-none md:ml-0"
         >
-          <div
-            class="card group relative h-[360px] w-[315px] min-w-[315px] rounded-none shadow-none md:ml-0 md:h-[460px] md:w-[375px]"
-            transition:fade
-          >
-            <div class="card-body relative z-0 p-4 md:p-6">
-              <figure
-                class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
+            <figure
+              class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
+            >
+              <Image
+                src={selectedTheme.image}
+                transform={selectedTheme.transform ?? { gravity: 'auto', crop: 'auto' }}
+              />
+            </figure>
+            <div
+              class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selectedTheme.background} opacity-50 group-hover:opacity-60"
+            ></div>
+            <div class="absolute bottom-0 left-0">
+              <Heading
+                tag="h3"
+                class="my-4 px-4 text-clip whitespace-break-spaces text-white md:text-3xl"
+                title={$t(`themes.${theme}.title`)}
               >
-                <Image
-                  src={selecteTheme.image}
-                  transform={selecteTheme.transform ?? { g: 'auto', c: 'auto' }}
-                />
-              </figure>
-              <div
-                class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selecteTheme.background} opacity-50 group-hover:opacity-60"
-              ></div>
-              <div class="absolute bottom-0 left-0">
-                <Heading
-                  tag="h3"
-                  class="my-4 px-4 text-clip whitespace-break-spaces text-white md:text-3xl"
-                  title={$t(`themes.${theme}.title`)}
-                >
-                  {$t(`themes.${theme}.title`)}
-                </Heading>
-              </div>
+                {$t(`themes.${theme}.title`)}
+              </Heading>
             </div>
-          </div>
         </Clickable>
       </Slide>
     {/each}

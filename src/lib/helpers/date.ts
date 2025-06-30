@@ -94,18 +94,18 @@ export const isBetween = (period: Period, start: DateTime | undefined | null, en
 };
 
 export const sortByYears = <T extends PostType<Translatable | string>>(posts: T[]) => {
-    const sortedPosts = new Map<string, T[]>();
+    const sortedPosts = new Map<number, T[]>();
 
     posts.forEach(post => {
         if (!post.published_at) return;
 
         const date = DateTime.fromSeconds(parseInt(post.published_at));
-        const year = date.toFormat('yyyy');
+        const year = Number(date.toFormat('yyyy'));
         if (!sortedPosts.get(year)) {
             sortedPosts.set(year, []);
         }
         sortedPosts.get(year)?.push(post);
     });
 
-    return sortedPosts;
+    return new Map([...sortedPosts.entries()].sort(([a], [b]) => a - b));
 }
