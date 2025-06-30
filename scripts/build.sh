@@ -4,7 +4,7 @@ NC='\033[0m' # No color
 RED='\033[0;31m' #
 GREEN='\033[0;32m' #
 
-branches=(main staging);
+branches=(main stage);
 versionning=(major minor patch);
 version="";
 branch="";
