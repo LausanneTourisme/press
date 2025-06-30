@@ -64,6 +64,9 @@ echo -e "\n\t>>> LAUNCHING BUILD ON ${GREEN}$branch${NC} <<<\n"
 git checkout "$branch";
 git pull origin "$branch";
 
+# Create a commit message on main using version from package.json
+git fetch;
+git merge develop -m "$(node -e "console.log(require('./package.json').version)")";
 
 git push;
 git checkout develop;
