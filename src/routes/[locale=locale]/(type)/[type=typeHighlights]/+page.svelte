@@ -175,7 +175,6 @@
                   src={Cloudinary.make(poi.medias?.at(0)?.cloudinary_id ?? '').url({
                     height: 500
                   })}
-                  height={500}
                   ignoreAutoSize={true}
                   class="transition-opacity group-hover:opacity-50"
                   alt={poi?.medias?.at(0)?.copyright}

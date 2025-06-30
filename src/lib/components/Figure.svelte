@@ -9,8 +9,6 @@
     alt?: string;
     transform?: Transform;
     crop?: boolean;
-    width?: number;
-    height?: number;
     class?: string;
     imgClass?: string;
     ignoreAutoSize?:boolean
@@ -25,8 +23,6 @@
     alt = '',
     transform,
     crop = true,
-    width = 0,
-    height = 0,
     ignoreAutoSize,
     onclick
   }: Props = $props();
@@ -49,8 +45,6 @@
         {useCloudinaryPreset}
         {src}
         {alt}
-        {width}
-        {height}
         {transform}
         {crop}
         onload={removeBackground}
@@ -64,8 +58,6 @@
       {useCloudinaryPreset}
       {src}
       {alt}
-      {width}
-      {height}
       {transform}
       {crop}
       onload={removeBackground}
