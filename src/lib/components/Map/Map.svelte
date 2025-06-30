@@ -144,9 +144,9 @@
   });
 </script>
 
-<div class="relative flex h-[550px] flex-col-reverse xl:flex-row 2xl:h-[768px]">
+<div class="relative flex h-[550px] flex-col-reverse lg:flex-row 2xl:h-[768px]">
   {#if markers.length}
-    <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 xl:w-2/5">
+    <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
         {#each markers as marker}
           <LausannerCard
@@ -194,17 +194,18 @@
               ? '/pages/themes/user_not_found.png'
               : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
                 '/pages/themes/user_not_found.png')}
-            transform={{ g: 'north', c: 'auto', w: 48, h: 48 }}
+            transform={{ gravity: 'north', crop: 'auto', width: 240, height: 320 }}
+            ignoreAutoSize
           />
           <div class="flex w-full items-center justify-between">
-            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:w-2/3 md:text-base">
+            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold lg:w-2/3 md:text-base">
               <Link
                 withIcon={true}
                 href={getLausannerUrl({
                   lausanner: aside.lausanner,
                   locale: ($locale as Locale) ?? defaultLocale
                 })}
-                class="text-left xl:text-center"
+                class="text-left lg:text-center"
               >
                 {aside.lausanner?.name}
 

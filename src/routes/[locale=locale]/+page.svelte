@@ -140,7 +140,7 @@
       src="/pages/home/port-de-pully.jpg"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       alt="Port de Pully"
-      transform={{ g: 'west', c: 'auto' }}
+      transform={{ gravity: 'west', crop: 'auto' }}
     />
   </div>
 </Container>
@@ -198,7 +198,7 @@
     </article>
     <Image
       src="/pages/home/masonry/cathedrale.jpg"
-      transform={{ g: 'auto', c: 'fill', ar: '9:16' }}
+      transform={{ gravity: 'auto', crop: 'fill', ar: '9:16' }}
       alt="Cathédrale de Lausanne"
       class="h-72 md:h-auto md:w-1/2"
     />
@@ -254,7 +254,7 @@
     </article>
     <Image
       src="/pages/home/communiques-de-presse.jpg"
-      transform={{ c: 'fill' }}
+      transform={{ crop: 'fill' }}
       alt=""
       class="h-72 md:h-auto md:w-1/2"
     />

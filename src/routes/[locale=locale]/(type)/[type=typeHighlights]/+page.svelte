@@ -82,11 +82,11 @@
         <Clickable overflow={true} href={n.link ?? '#'}>
           <Card
             src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? '').url({
-              w: 500,
-              h: 500,
+              width: 500,
+              height: 500,
               ar: '16:9',
-              g: 'auto',
-              c: 'fill'
+              gravity: 'auto',
+              crop: 'fill'
             })}
             alt={n.medias?.at(0)?.public_name}
             background="bg-glacier-300"

@@ -13,6 +13,7 @@
     height?: number;
     class?: string;
     imgClass?: string;
+    ignoreAutoSize?:boolean
     onclick?: (event: unknown) => void;
   }
 
@@ -26,6 +27,7 @@
     crop = true,
     width = 0,
     height = 0,
+    ignoreAutoSize,
     onclick
   }: Props = $props();
 
@@ -67,6 +69,7 @@
       {transform}
       {crop}
       onload={removeBackground}
+      {ignoreAutoSize}
     />
   </figure>
 {/if}

@@ -67,7 +67,7 @@
         src={themeInformation.image}
         alt={title}
         imgClass="rounded"
-        transform={themeInformation.transform}
+        transform={{h:undefined, height: undefined, w: undefined, width: undefined, ...themeInformation.transform}}
       />
       <div
         class={twMerge(
@@ -105,7 +105,7 @@
                 <Figure
                   class="h-48 rounded"
                   src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? '').url({
-                    w: 330
+                    w: 330,
                   })}
                   alt=""
                 />
@@ -204,7 +204,7 @@
   </Container>
   <Swiper>
     {#each Object.values(Themes) as theme}
-      {@const selecteTheme = ThemeDetails[ThemeKeys[theme]]}
+      {@const selectedTheme = ThemeDetails[ThemeKeys[theme]]}
       <Slide class="w-max xs:w-min!">
         <Clickable
           href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}
@@ -215,12 +215,12 @@
               class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
             >
               <Image
-                src={selecteTheme.image}
-                transform={selecteTheme.transform ?? { g: 'auto', c: 'auto' }}
+                src={selectedTheme.image}
+                transform={selectedTheme.transform ?? { gravity: 'auto', crop: 'auto' }}
               />
             </figure>
             <div
-              class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selecteTheme.background} opacity-50 group-hover:opacity-60"
+              class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selectedTheme.background} opacity-50 group-hover:opacity-60"
             ></div>
             <div class="absolute bottom-0 left-0">
               <Heading

@@ -24,9 +24,9 @@
 
   onMount(() => {
     transform = {
-      w: isMobile ? window.innerWidth : Math.round(window.innerWidth / 1.4),
-      g: focus,
-      c: 'fill'
+      width: isMobile ? window.innerWidth : Math.round(window.innerWidth / 1.4),
+      gravity: focus,
+      crop: 'fill'
     };
   });
 </script>

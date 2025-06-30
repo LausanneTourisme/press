@@ -37,6 +37,10 @@ export const ThemeDetails: ThemeDetail = {
         borderColor: "border-indigo-300",
         background: "bg-indigo-300/50",
         card: "bg-indigo-300/90",
+        transform: {
+          gravity: 'west',
+          crop: "fill"
+        }
     },
     Family: {
         image: '/pages/themes/famille-musee-olympique.jpg',
@@ -69,7 +73,7 @@ export const ThemeDetails: ThemeDetail = {
         borderColor: "border-apple-300",
         background: "bg-apple-300/50",
         card: "bg-apple-300/90",
-        transform: {gravity: "north", crop: 'auto'},
+        transform: {gravity: "north", crop: 'fill',},
     },
     Sport: {
         image: '/pages/themes/cathedrale_skate.jpg',
@@ -94,7 +98,7 @@ export const ThemeDetails: ThemeDetail = {
         borderColor: "border-pink-300",
         background: "bg-pink-300/50",
         card: "bg-pink-300/90",
-        transform: {g: 'auto', c: 'fill'}
+        transform: {gravity: 'auto', crop: 'fill'}
     },
     Wellness: {
         image: '/pages/themes/bienetre-brp.jpg',

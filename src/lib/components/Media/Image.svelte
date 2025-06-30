@@ -2,14 +2,9 @@
   import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { Cloudinary, type Transform } from '$lib/cloudinary';
-  import { filename, isOfflineMode } from '$lib/helpers';
+  import { filename, isOfflineMode, resizeWithAspectRatio } from '$lib/helpers';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-
-  type ImageDimensions = {
-    width: number;
-    height: number;
-  };
 
   type Props = {
     src: string;
@@ -41,99 +36,89 @@
   let image: undefined | HTMLImageElement = $state(undefined);
   let srcResolved: string = $state('');
 
-  export function resizeWithAspectRatio({
-    original,
-    targetWidth
-  }: {
-    original: ImageDimensions;
-    targetWidth: number;
-  }): ImageDimensions {
-    const aspectRatio = original.width / original.height;
-    const newHeight = Math.round(targetWidth / aspectRatio);
-
-    return {
-      width: targetWidth,
-      height: newHeight
-    };
-  }
-
   const generateImagePath = () => {
-      if (isOfflineMode) {
-        if (src.startsWith('http') && inCloudinary) {
-          srcResolved = '/pages/themes/cathedrale_skate.jpg';
-          return;
-        }
-        srcResolved = src.startsWith('/') ? src : `/${src}`;
+    if (isOfflineMode) {
+      if (src.startsWith('http') && inCloudinary) {
+        srcResolved = '/pages/themes/cathedrale_skate.jpg';
         return;
       }
-      if (src.startsWith('http') || !inCloudinary) {
-        srcResolved = src.startsWith('http') || src.startsWith('/') ? src : `/${src}`;
-        return;
-      }
+      srcResolved = src.startsWith('/') ? src : `/${src}`;
+      return;
+    }
+    if (src.startsWith('http') || !inCloudinary) {
+      srcResolved = src.startsWith('http') || src.startsWith('/') ? src : `/${src}`;
+      return;
+    }
 
-      // Cloudinary section
-      let transform = userTransform ?? {
-        g: 'auto',
-        c: 'fill'
-      };
-
-      const imageBoundaries = image?.getBoundingClientRect();
-
-      if (!ignoreAutoSize) {
-        if (!imageBoundaries) {
-          return;
-        }
-        const width = transform.w ?? transform.width ?? imageBoundaries.width;
-        const height = transform.h ?? transform.height ?? imageBoundaries.height;
-
-        //replace by img boundaries
-        delete transform.w;
-        delete transform.width;
-        delete transform.h;
-        delete transform.height;
-
-        transform = {
-          ...transform,
-          ...resizeWithAspectRatio({
-            original: {
-              width: typeof width === 'string' ? parseInt(width) : width,
-              height: typeof height === 'string' ? parseInt(height) : height,
-            },
-            targetWidth: Cloudinary.breakpoints(imageBoundaries.width)
-          })
-        };
-      } else {
-        let height = transform.h || transform.height ? (transform.h ?? transform.height) : 'auto';
-        let width = transform.w || transform.width ? (transform.w ?? transform.width) : 'auto';
-
-        if (width === 'auto' && height === 'auto' && !imageBoundaries) {
-          height = 720;
-          width = 1280;
-        } else if (width === 'auto' && height === 'auto') {
-          height = imageBoundaries!.height;
-          width = imageBoundaries!.width;
-        }
-
-        transform = {
-          ...transform,
-          width,
-          height
-        };
-      }
-
-      const path = useCloudinaryPreset
-        ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(src)}`
-        : filename(src);
-      srcResolved = Cloudinary.make(path).url({
-        ...transform
-      });
+    // Cloudinary section
+    let transform: Transform = userTransform ?? {
+      gravity: 'auto',
+      crop: 'fill'
     };
+
+    const imageBoundaries = image?.getBoundingClientRect();
+
+    if (!ignoreAutoSize) {
+      if (!imageBoundaries) {
+        return;
+      }
+      const width = transform.w ?? transform.width ?? imageBoundaries.width;
+      const height = transform.h ?? transform.height ?? imageBoundaries.height;
+
+      //replace by img boundaries
+      delete transform.w;
+      delete transform.width;
+      delete transform.h;
+      delete transform.height;
+
+      transform = {
+        ...transform,
+        ...resizeWithAspectRatio({
+          original: {
+            width: typeof width === 'string' ? parseInt(width) : width,
+            height: typeof height === 'string' ? parseInt(height) : height
+          },
+          targetWidth: Cloudinary.breakpoints(imageBoundaries.width)
+        })
+      };
+    } else {
+      let height = transform.h || transform.height ? (transform.h ?? transform.height) : 'auto';
+      let width = transform.w || transform.width ? (transform.w ?? transform.width) : 'auto';
+
+      delete transform.w;
+      delete transform.width;
+      delete transform.h;
+      delete transform.height;
+
+      if (width === 'auto' && height === 'auto' && !imageBoundaries) {
+        height = 720;
+        width = 1280;
+      } else if (width === 'auto' && height === 'auto') {
+        height = imageBoundaries!.height;
+        width = imageBoundaries!.width;
+      }
+
+      transform = {
+        ...transform,
+        width,
+        height
+      };
+    }
+
+    const path = useCloudinaryPreset
+      ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${filename(src)}`
+      : filename(src);
+
+    srcResolved = Cloudinary.make(path).url(transform);
+  };
 
   onMount(() => {
-    window.addEventListener('resize', generateImagePath);
+    generateImagePath();
+    if (!ignoreAutoSize) {
+      window.addEventListener('resize', generateImagePath);
+    }
   });
 
-  $effect(generateImagePath);
 </script>
 
 {#key srcResolved}

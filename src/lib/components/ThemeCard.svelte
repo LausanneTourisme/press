@@ -1,7 +1,7 @@
 <script lang="ts">
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
   import Figure from '$lib/components/Figure.svelte';
-  import { route } from '$lib/helpers';
+  import { resizeWithAspectRatio, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t, type Locale } from '$lib/translations';
   import { blur } from 'svelte/transition';
@@ -24,7 +24,7 @@
     theme,
     gridIndex = 0,
     inverted = false,
-    length = 0
+    length = 4
   }: Props = $props();
 
   const themeInformation = ThemeDetails[ThemeKeys[theme]];
@@ -44,10 +44,40 @@
         'md:row-span-4 md:col-start-3 md:row-start-5'
       ];
 
+  const imageSizes = () => {
+    if (length === 4) {
+      if (inverted) {
+        switch (gridIndex) {
+          case 0:
+            return { height: 960, width: 480 };
+          case 1:
+            return { height: 480, width: 960 };
+        }
+      } else {
+        switch (gridIndex) {
+          case 0:
+            return { height: 480, width: 960 };
+          case 1:
+            return { height: 960, width: 480 };
+        }
+      }
+    } else if (length === 3) {
+        switch (gridIndex) {
+          case 0:
+          case 2:
+            return { height: 480, width: 960 };
+          case 1:
+            return { height: 960, width: 480 };
+        }
+    }
+
+    return { height: 360, width: 360 };
+  };
   const style = twMerge(
     'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
     gridPosition[gridIndex],
-    additionalClass
+    additionalClass,
+    `grind_index=${gridIndex}-${length}`
   );
 </script>
 
@@ -61,14 +91,19 @@
     </Heading>
     <div
       class={twMerge(
-        "absolute top-0 left-0 h-full w-full opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center",
+        'absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 transition-opacity group-hover:opacity-100',
         `${themeInformation.background}`
       )}
     >
       <div
         class="h-48 w-48 shadow {themeInformation.card} flex translate-y-96 flex-col items-center justify-center transition-transform group-hover:translate-y-0"
       >
-        <Figure src={themeInformation.head} class="aspect-square max-h-24" />
+        <Figure
+          src={themeInformation.head}
+          transform={{ height: 120, width: 120 }}
+          ignoreAutoSize
+          class="aspect-square max-h-24"
+        />
         <Paragraph class="w-full px-2 text-center text-base font-medium text-gray-950">
           {$t(`themes.${theme}.themecard.more`)}
         </Paragraph>
@@ -78,6 +113,15 @@
   <div
     class="absolute top-0 left-0 -z-10 h-full w-full bg-zinc-200 transition-transform group-hover:scale-110"
   >
-    <Image src={themeInformation.image} transform={themeInformation.transform ?? { g: 'auto', c: 'auto' }} />
+    <Image
+      src={themeInformation.image}
+      transform={{
+        gravity: 'auto',
+        crop: 'auto',
+        ...themeInformation.transform,
+        ...imageSizes(),
+      }}
+      ignoreAutoSize={true}
+    />
   </div>
 </article>

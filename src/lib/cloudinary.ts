@@ -1,14 +1,15 @@
 import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from "$env/static/public";
-
+type gravity = "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "east" | "south_east" | "west" | "south_west";
+type crop = "auto" | "crop" | "fill" | "scale" | "thumb";
 export type Transform = {
     width?: number | string;
     w?: number | string;
     height?: number | string;
     h?: number | string;
-    gravity?: "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "west" | "east",
-    g?: "face" | "auto" | "north_east" | "north" | "north_west" | "south" | "west" | "east",
-    crop?: "auto" | "crop" | "fill" | "scale" | "thumb",
-    c?: "auto" | "crop" | "fill" | "scale" | "thumb",
+    gravity?: gravity,
+    g?: gravity,
+    crop?: crop,
+    c?: crop,
     ar?: string
 }
 
@@ -31,7 +32,7 @@ export class Cloudinary {
         this.id = cloudinaryId
             .replace(" ", "_")
             .replace(/[()]/ig, "")
-            .replace(/\.(\w{1,4})$/i,'') as string;
+            .replace(/\.(\w{1,4})$/i, '') as string;
         this.parameters = "";
         this.type = type;
         this.extension = cloudinaryId.match(/\.(\w{1,4})$/i)?.pop() as "png" | "jpg" | "jpeg" | "svg" | undefined;
