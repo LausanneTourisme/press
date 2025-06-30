@@ -55,7 +55,7 @@ done;
 if [ ! "$version" ]; then illegal ""; fi;
 
 
-$packageVersion="$(npm version "$version")"
+packageVersion=$(npm version "$version")
 git push origin develop;
 
 echo -e "\n\t>>> LAUNCHING BUILD ON ${GREEN}$branch${NC} <<<\n"
