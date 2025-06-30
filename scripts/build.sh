@@ -66,7 +66,7 @@ git pull origin "$branch";
 
 # Create a commit message on main using version from package.json
 git fetch;
-git merge develop -m "$(node -e "console.log(require('./package.json').version)")";
+git merge develop -m "$version";
 
 git push;
 git checkout develop;
