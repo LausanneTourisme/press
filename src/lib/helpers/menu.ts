@@ -6,7 +6,7 @@ import { Link } from "lucide-svelte";
 import { getMediaLibraryRegisterLink, route } from ".";
 
 // FIXME it's not an helper but currently i don't know where i've to place it...
-export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
+export const menuItems: (locale: Locale) => Menu[] = (locale) => [
     {
         title: t.get('menu.ressources'),
         items: <MenuItem[]>[
@@ -17,16 +17,16 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
                 strokeWidth: 2,
             },
             {
-                title:t.get('menu.ressources.press-realeases-and-press-kits'),
-                link: route(RouteTypes.PressreleasesAndPresskits),
+                title: t.get('menu.ressources.press-realeases-and-press-kits'),
+                link: route(RouteTypes.PressreleasesAndPresskits, { forceLocale: locale }),
             },
             {
-                title:t.get('menu.ressources.coverage'),
-                link: route(RouteTypes.Coverage),
+                title: t.get('menu.ressources.coverage'),
+                link: route(RouteTypes.Coverage, { forceLocale: locale }),
             },
             {
                 title: t.get('menu.ressources.themes'),
-                link: route(RouteTypes.Themes),
+                link: route(RouteTypes.Themes, { forceLocale: locale }),
             },
         ]
     },
@@ -34,25 +34,25 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) =>[
         title: t.get('menu.news'),
         items: <MenuItem[]>[
             {
-                title:t.get('menu.news.news'),
-                link: `${route(RouteTypes.Highlights)}#news`,
+                title: t.get('menu.news.news'),
+                link: `${route(RouteTypes.Highlights, { forceLocale: locale })}#news`,
             },
             {
-                title:t.get('menu.news.unmissable'),
-                link: `${route(RouteTypes.Highlights)}#highlights`,
+                title: t.get('menu.news.unmissable'),
+                link: `${route(RouteTypes.Highlights, { forceLocale: locale })}#highlights`,
             }
         ]
     },
     {
-        title:t.get('menu.numbers'),
-        link: `${route(RouteTypes.Home)}#numbers`,
+        title: t.get('menu.numbers'),
+        link: `${route(RouteTypes.Home, { forceLocale: locale })}#numbers`,
     },
     {
         title: t.get('menu.distinctions'),
-        link: `${route(RouteTypes.Home)}#distinctions`,
+        link: `${route(RouteTypes.Home, { forceLocale: locale })}#distinctions`,
     },
     {
-        title:t.get('menu.faq'),
-        link: `${route(RouteTypes.Home)}#faq`,
+        title: t.get('menu.faq'),
+        link: `${route(RouteTypes.Home, { forceLocale: locale })}#faq`,
     }
-  ];
+];
