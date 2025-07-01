@@ -32,7 +32,7 @@
     fixed = true
   }: Props = $props();
   let parallaxWidth: number = $state(0);
-  
+
   const getImgType = (
     width: number | undefined,
     height: number | undefined
@@ -82,7 +82,7 @@
 {#if size === 'parallax'}
   <div bind:clientWidth={parallaxWidth}>
     <Parallax
-        class={twMerge(!fixed && 'pt-0')}
+        class={twMerge(!fixed ? 'pt-0' : '')}
         imageClass={twMerge(style, parallaxClass)}
         width={parallaxWidth}
         focus={getFocus()}
@@ -96,9 +96,9 @@
     </Parallax>
   </div>
 {:else if imgFormat === 'vertical'}
-  <VerticalImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <VerticalImage class="vertical-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {:else if imgFormat === 'horizontal'}
-  <HorizontalImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <HorizontalImage class="hotizontal-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {:else}
-  <SquareImage focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <SquareImage class="sqaure-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
 {/if}

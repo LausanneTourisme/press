@@ -55,7 +55,7 @@
   });
 </script>
 
-<Container fullscreen={true} class={twMerge('py-10 relative', additionalClass)}>
+<Container fullscreen={true} class={twMerge('parallax-image py-10 relative', additionalClass)}>
   <div
     style="background: url({Cloudinary.make(cloudinaryId, 'image').url({
       width,

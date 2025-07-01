@@ -11,7 +11,7 @@
     crop?: boolean;
     class?: string;
     imgClass?: string;
-    ignoreAutoSize?:boolean
+    ignoreAutoSize?: boolean;
     onclick?: (event: unknown) => void;
   }
 
@@ -48,6 +48,7 @@
         {transform}
         {crop}
         onload={removeBackground}
+        {ignoreAutoSize}
       />
     </figure>
   </button>
