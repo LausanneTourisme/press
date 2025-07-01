@@ -8,32 +8,30 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
     return isValidLocale(match[0].replace('/', '')) ? match[0].replace('/', '') as Locale : undefined;
 }
 
-export const load = async ({ url, cookies, request, locals }) => {
+export const load = async ({ url, cookies, request, locals, route , ...rest }) => {
     const lang = getUrlLocale(url.pathname) ?? defaultLocale;
-
     // undefined case covered by src/params/locale.ts
     await Promise.all([
         setLocale(lang),
         loadTranslations(lang),
         loadTranslations(lang, url.pathname),
     ])
+    const translationsLoaded = translations.get();
 
-    // FIXME
-    // TODO create common translations and insert 404
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: "Page not found",
-        description: "Page informing user that page cannot be found",
-        image: '',
+        title: translationsLoaded[lang]['common.error.default.title'],
+        description: translationsLoaded[lang]['common.error.default.subtitle'],
+        image: `${url.origin}/seo/poster-home.png`,
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
-            href: `/${locale}/404`
+            href: `/${locale}`
         })),
     }
 
     return {
         i18n: { locale: lang, route: url.pathname },
-        translations: translations.get(), // `translations` on server contain all translations loaded by different clients
+        translations: translationsLoaded, // `translations` on server contain all translations loaded by different clients
         seo,
     };
 };

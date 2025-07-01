@@ -50,5 +50,19 @@
         "press-release": "Press release",
         "press-kit": "Press kit",
         "articles": "Article"
+    },
+    "error": {
+        "404" : {
+            "title": "error 404: Page not found",
+            "subtitle": "Oops ... It looks like you're not on the right track!",
+            "description": "The link you used may be broken or you may have typed the address (URL) incorrectly.",
+            "button-text": "Return to home page?"
+        },
+        "default" : {
+            "title": "An error has occurred",
+            "subtitle": "Oops... It seems you've run into a problem!",
+            "description": "Please contact us if the problem persists.",
+            "button-text": "Return to home page?"
+        }
     }
 }
