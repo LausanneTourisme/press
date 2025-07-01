@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 @plugin "daisyui";
-
 @theme {
   --breakpoint-xs: 28rem;
   --breakpoint-2xl: 100rem;
@@ -208,3 +207,4 @@ img {
 .cookieConsentWrapper .cookieConsent__Button {
   margin: 3px;
 }
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

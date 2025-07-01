@@ -50,5 +50,19 @@
         "press-release": "Pressemitteilungen",
         "press-kit": "Pressedossier",
         "articles": "Artikel"
+    },
+    "error": {
+        "404" : {
+            "title": "Fehler 404: Seite nicht gefunden",
+            "subtitle": "Ups... Es scheint, dass Sie nicht auf dem richtigen Weg sind!",
+            "description": "Es kann sein, dass der Link, den Sie verwendet haben, gebrochen ist oder dass Sie die Adresse (URL) falsch eingegeben haben.",
+            "button-text": "Zurück zur Startseite?"
+        },
+        "default" : {
+            "title": "Ein Fehler ist aufgetreten",
+            "subtitle": "Ups... Sie scheinen ein Problem zu haben!",
+            "description": "Bitte kontaktieren Sie uns, wenn das Problem weiterhin besteht.",
+            "button-text": "Zurück zur Startseite?"
+        }
     }
 }

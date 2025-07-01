@@ -26,7 +26,6 @@
   const style: string = twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass);
 
   onMount(() => {
-    console.log({ hero });
     updateSize();
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);

@@ -3,6 +3,7 @@
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import { onMount } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
 
   type Props = {
     class?: string;
@@ -31,7 +32,7 @@
   });
 </script>
 
-<Container width={size === 'large' ? 'medium' : 'small'} class="flex justify-center">
+<Container width={size === 'large' ? 'medium' : 'small'} class={twMerge("flex justify-center", additionalClass)}>
   {#if size === 'small'}
     <Figure
       useCloudinaryPreset={false}

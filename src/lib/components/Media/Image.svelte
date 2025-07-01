@@ -51,9 +51,10 @@
     }
 
     // Cloudinary section
-    let transform: Transform = userTransform ?? {
+    let transform: Transform = {
       gravity: 'auto',
-      crop: 'fill'
+      crop: 'fill',
+      ...userTransform,
     };
 
     const imageBoundaries = image?.getBoundingClientRect();
@@ -93,9 +94,6 @@
       if (width === 'auto' && height === 'auto' && !imageBoundaries) {
         height = 720;
         width = 1280;
-      } else if (width === 'auto' && height === 'auto') {
-        height = imageBoundaries!.height;
-        width = imageBoundaries!.width;
       }
 
       transform = {
@@ -118,7 +116,6 @@
       window.addEventListener('resize', generateImagePath);
     }
   });
-
 </script>
 
 {#key srcResolved}

@@ -11,7 +11,7 @@ export const load = async ({ url, params, parent }) => {
         canonical: `${url.origin}${url.pathname}`,
         title: translations[lang][`themes.title`],
         description: translations[lang][`themes.meta-description`],
-        image: '', //TODO add picture please
+        image: `${url.origin}/seo/poster-home.png`, //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
             href: `/${locale}/${translations[locale][`route.${RouteTypes.Themes}.slug`]}`

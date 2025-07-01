@@ -165,7 +165,7 @@
     </div>
     <div class="flex w-1/3 items-center xl:w-1/2">
       <div class="h-32 xl:h-64">
-        <Figure src={themeInformation.head} class="aspect-square max-h-32 xl:max-h-64" />
+        <Figure src={themeInformation.head} class="aspect-square max-h-32 xl:max-h-64" transform={{height: 320, width: 320}} />
       </div>
     </div>
   </div>

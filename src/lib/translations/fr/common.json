@@ -50,5 +50,19 @@
         "press-release": "Communiqué de presse",
         "press-kit": "Dossier de presse",
         "articles": "Article"
+    },
+    "error": {
+        "404" : {
+            "title": "erreur 404: Page non trouvée",
+            "subtitle": "Oups... Il semble que vous ne soyez pas sur la bonne route!",
+            "description": "Il se peut que le lien que vous avez utilisé soit rompu ou que vous ayez tapé l’adresse (URL) incorrectement.",
+            "button-text": "Retourner à la page d'accueil ?"
+        },
+        "default" : {
+            "title": "Une erreur est survenue",
+            "subtitle": "Oups... Il semble que vous ayiez rencontré un soucis!",
+            "description": "Merci de nous contacter si le problème persiste.",
+            "button-text": "Retourner à la page d'accueil ?"
+        }
     }
 }

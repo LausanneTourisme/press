@@ -12,7 +12,7 @@ export const load = async ({ url, params, parent }) => {
         canonical: `${url.origin}${url.pathname}`,
         title: translations[lang][`page.title`],
         description: translations[lang][`page.meta-description`],
-        image: '', //TODO add picture please
+        image: `${url.origin}/seo/poster-home.png`,
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
             href: `/${locale}/${translations[locale][`route.${RouteTypes.Contact}.slug`]}`

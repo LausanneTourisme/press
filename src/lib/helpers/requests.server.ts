@@ -34,7 +34,7 @@ export const getTag = (theme: Theme): string => {
     }
 }
 
-export const getPosts = async <T extends PostType<string | Translatable>>({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale: Locale, highlighted?: boolean }) => {
+export const getPosts = async <T extends PostType<string | Translatable>>({ type, locale, highlighted }: { type: 'press_release' | 'post' | 'news', locale?: Locale, highlighted?: boolean }) => {
     const result = await fetch(`${GRAPHQL_URL}`, {
         method: 'POST',
         headers: {
@@ -51,31 +51,31 @@ export const getPosts = async <T extends PostType<string | Translatable>>({ type
             query: `query GetPosts($limit: Int, $locale: String, $type: String, $highlighted: Boolean) {
                 items: posts(limit: $limit, locale: $locale, type: $type, highlighted: $highlighted) {
                     data {
-                        id 
+                        id
                         languages
-                        author 
-                        name 
+                        author
+                        name
                         type
-                        lead 
-                        summary 
-                        highlight 
+                        lead
+                        summary
+                        highlight
                         published_at
-                        link 
-                        content 
-                        medias(cover:true) { 
-                            cloudinary_id 
-                            copyright 
-                            public_name 
-                        } 
-                        seo { 
-                            description 
-                            noindex 
-                            slug 
-                        } 
-                        tags { 
+                        link
+                        content
+                        medias(cover:true) {
+                            cloudinary_id
+                            copyright
+                            public_name
+                        }
+                        seo {
+                            description
+                            noindex
+                            slug
+                        }
+                        tags {
                             name
-                            public_name 
-                        } 
+                            public_name
+                        }
                     }
                 }
             }`,

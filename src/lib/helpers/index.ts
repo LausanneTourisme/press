@@ -1,7 +1,6 @@
-import { browser } from "$app/environment";
 import { RouteTypes, type RouteType, type Theme } from "$enums";
 import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
-import { defaultLocale, locale, t, type Locale } from "$lib/translations";
+import { defaultLocale, locale, translations, type Locale } from "$lib/translations";
 import type { ImageDimensions, PostType, Translatable } from '$lib/types';
 
 export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
@@ -39,13 +38,13 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 
 export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme, suffix?: string } = { forceLocale: undefined, theme: undefined }): string => {
   const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
-  const slug: string | undefined = t.get(`route.${type}.slug`);
+  const slug: string | undefined = translations.get()[lang][`route.${type}.slug`];
 
   if (!slug) return `/${lang}`;
 
   if (type === RouteTypes.Themes) {
     const theme = options.theme;
-    const themeSlug = theme ? t.get(`route.${RouteTypes.Themes}.${theme}.slug`) : null;
+    const themeSlug = theme ? translations.get()[lang][`route.${RouteTypes.Themes}.${theme}.slug`] : null;
 
     if (!themeSlug) return `/${lang}/${slug}`;
     return `/${lang}/${slug}/${themeSlug}/`;

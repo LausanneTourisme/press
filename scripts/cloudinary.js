@@ -35,8 +35,8 @@ const getUploadedFiles = (path) => {
 }
 
 /**
- * @param {string} path 
- * @param {'mb'|'gb'|'tb'|'kb'} unit 
+ * @param {string} path
+ * @param {'mb'|'gb'|'tb'|'kb'} unit
  * @returns {number}
  */
 const getFileSize = (path, unit = 'mb') => {
@@ -79,7 +79,7 @@ const getFileInformations = (path) => {
 }
 
 /**
- * @param {'jpeg'|'jpg'|'png'|'svg'|'mp4'} extension 
+ * @param {'jpeg'|'jpg'|'png'|'svg'|'mp4'} extension
  * @returns {'image','video'}
  */
 const cloudinaryRessourceType = (extension) => {
@@ -141,7 +141,7 @@ const uploadToCloudinary = async (path) => {
 }
 
 /**
- * @param {string[]} files 
+ * @param {string[]} files
  * @param {string} cacheFilepath
  */
 const process = async (files, cacheFilepath) => {

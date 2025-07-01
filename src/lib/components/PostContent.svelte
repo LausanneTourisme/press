@@ -12,7 +12,6 @@
   import { locale, type Locale } from '$lib/translations';
   import type { PostType, Translatable } from '$types';
   import type { Hero } from '$types/releaseContents';
-  import { twMerge } from 'tailwind-merge';
 
   type Props = {
     class?: string;
@@ -27,13 +26,13 @@
   {#if hero}
     <HeroBlock {hero} class="pt-0" />
   {:else}
-    <Container width="medium" class='py-0'>
+    <Container width="medium" class="py-0">
       <Heading tag="h1">
-        {post?.name?.[$locale as Locale]}
+        {@html post?.name?.[$locale as Locale]}
       </Heading>
       <Paragraph class="leading-6 tracking-[0.45px]">
         <strong>
-          {post?.summary?.[$locale as Locale]}
+          {@html post?.summary?.[$locale as Locale]}
         </strong>
       </Paragraph>
     </Container>

@@ -20,9 +20,8 @@ const config = {
     alias: {
       $enums: path.resolve('./src/lib/enums'),
       $types: path.resolve('./src/lib/types'),
-      $pages: path.resolve('./src/lib/pages')
     },
-    
+
     prerender: {
       // NOTE: You can modify your exported error pages here.
       entries: supportedLocales.flatMap((locale) => [`/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`]),
