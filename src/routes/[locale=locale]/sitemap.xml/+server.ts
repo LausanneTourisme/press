@@ -4,10 +4,9 @@ import { menuItems } from "$lib/helpers/menu";
 import { getPosts } from "$lib/helpers/requests.server";
 import { defaultLocale, type Locale, supportedLocales, translations } from "$lib/translations";
 import type { Release, Translatable } from "$types";
-import type { RequestHandler } from "@sveltejs/kit";
 
-export const GET: RequestHandler = async ({ url }) => {
-  const urlSets = await Promise.all([generateUrlSets(url.origin), generatePresskitAndPressReleasesUrlSets(url.origin)]);
+export const GET = async ({ url, params }) => {
+  const urlSets = await Promise.all([generateUrlSets(url.origin, params.locale as Locale), generatePresskitAndPressReleasesUrlSets(url.origin, params.locale as Locale)]);
 
   return new Response(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`, {
     headers: {
@@ -16,26 +15,29 @@ export const GET: RequestHandler = async ({ url }) => {
   });
 };
 
-const generateUrlSets = async (urlOrigin: string) => {
-  const urlSets: string[] = [generateAlternateUrlBlocks(urlOrigin, supportedLocales.map(x => `/${x}`))];
+// CODE duplicate and adapted from /src/routes/sitemap.xml/+server.ts to return only current locale
+
+const generateUrlSets = async (urlOrigin: string, locale: Locale) => {
+  const urlSets: string[] = [generateAlternateUrlBlocks(urlOrigin, supportedLocales.map(x => `/${x}`), locale)];
   const links = new Map<Locale, Map<string, string>>();
 
   supportedLocales.forEach((locale) => {
     links.set(locale, getLinksByLocale(locale));
   });
 
-  const keys = Array.from(links.get(defaultLocale)!.keys()).map(x => x.substring(3));
+  const keys = Array.from(links.get(locale)!.keys()).map(x => x.substring(3));
 
   keys.forEach((key) => {
     const alternates: string[] = [];
     supportedLocales.forEach((locale) => {
       alternates.push(links.get(locale)!.get(`${locale}.${key}`)!)
     });
-    urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates));
+    urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates, locale));
   });
 
   return urlSets;
 }
+
 
 const getLinksByLocale = (locale: Locale) => {
   const list = menuItems(locale);
@@ -57,22 +59,26 @@ const getLinksByLocale = (locale: Locale) => {
   return links;
 }
 
-const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[]) => {
-  return paths
-    .map((locUrl) => {
-      const alternates = paths
-        .map((alternateUrl) => {
-          const locale = alternateUrl.split("/")[1]; // extract 'fr', 'de', etc.
-          return `\t\t<xhtml:link rel="alternate" hreflang="${locale}" href="${urlOrigin}${alternateUrl}" />`;
-        })
-        .join("\n");
+const generateAlternateUrlBlocks = (
+  urlOrigin: string,
+  paths: string[],
+  canonLocale: Locale
+) => {
+  const canonicalUrl =
+    paths.find((p) => p.split('/')[1] === canonLocale) ?? paths[0];
 
-      return `\t<url>\n\t\t<loc>${urlOrigin}${locUrl}</loc>\n${alternates}\n\t</url>`;
+  const alternates = paths
+    .map((alt) => {
+      const locale = alt.split('/')[1];
+      return `\t\t<xhtml:link rel="alternate" hreflang="${locale}" href="${urlOrigin}${alt}" />`;
     })
-    .join("\n");
-}
+    .join('\n');
 
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
+  return `\t<url>\n\t\t<loc>${urlOrigin}${canonicalUrl}</loc>\n${alternates}\n\t</url>`;
+};
+
+// adapted to return only posts existing in current local
+const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale: Locale) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 
@@ -81,6 +87,9 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
 
   for (const release of releases) {
     const languages = release.languages!;
+
+    if (!languages.includes(locale)) continue;
+
     const seo = release.seo!;
     const type = release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease;
     const alternates: string[] = [];
@@ -92,7 +101,7 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
       slugsAlreadyCreated.push(slug);
       alternates.push(`/${l}/${translations.get()[l][`route.${type}.slug`]}/${slug}`)
     });
-    urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates));
+    urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates, locale));
   }
 
   return urlSets;
