@@ -126,19 +126,3 @@ export const shuffle = <T>(array: T[]) => {
   }
   return newArray
 };
-
-export function resizeWithAspectRatio({
-  original,
-  targetWidth
-}: {
-  original: ImageDimensions;
-  targetWidth: number;
-}): ImageDimensions {
-  const aspectRatio = original.width / original.height;
-  const newHeight = Math.round(targetWidth / aspectRatio);
-
-  return {
-    width: targetWidth,
-    height: newHeight
-  };
-}
