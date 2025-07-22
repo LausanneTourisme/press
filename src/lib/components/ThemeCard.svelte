@@ -1,7 +1,7 @@
 <script lang="ts">
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
   import Figure from '$lib/components/Figure.svelte';
-  import { resizeWithAspectRatio, route } from '$lib/helpers';
+  import { route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t, type Locale } from '$lib/translations';
   import { blur } from 'svelte/transition';

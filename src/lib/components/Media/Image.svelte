@@ -3,7 +3,7 @@
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { Cloudinary, type Transform } from '$lib/cloudinary';
   import { filename, isOfflineMode } from '$lib/helpers';
-  import { getBreakpoint, resizeWithAspectRatio } from '$lib/helpers/image';
+  import { resizeWithAspectRatio, selectBestWidth } from '$lib/helpers/image';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
@@ -80,7 +80,7 @@
             width: typeof width === 'string' ? parseInt(width) : width,
             height: typeof height === 'string' ? parseInt(height) : height
           },
-          targetWidth: getBreakpoint(imageBoundaries.width)
+          targetWidth: selectBestWidth(imageBoundaries.width)
         })
       };
     } else {

@@ -8,6 +8,7 @@
   import Faq from '$lib/components/Faq.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
+  import Image2 from '$lib/components/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
   import Observer from '$lib/components/Observer.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
@@ -116,7 +117,7 @@
   class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
 >
   <div
-    class="md:w-1/2 md:p-16 p-6 text-left shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)] lg:w-1/2"
+    class="p-6 text-left shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)] md:w-1/2 md:p-16 lg:w-1/2"
   >
     <Heading tag="h1" class="w-full text-white">
       <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]">
@@ -136,11 +137,38 @@
   <div
     class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
   >
-    <Image
-      src="/pages/home/port-de-pully.jpg"
-      class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
+    <Image2
       alt="Port de Pully"
+      title="Port de Pully"
+      class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
+      localSrc="/pages/home/port-de-pully.jpg"
       transform={{ gravity: 'west', crop: 'auto' }}
+      srcset={[
+        {
+          size: '100w',
+          transform: { gravity: 'west', crop: 'auto', width: 100 },
+          src: '/pages/home/port-de-pully',
+          usePreset: true
+        },
+        {
+          size: '720w',
+          transform: { gravity: 'west', crop: 'auto', height: 600, width: 720 },
+          src: '/pages/home/port-de-pully',
+          usePreset: true
+        },
+        {
+          size: '1080w',
+          transform: { gravity: 'west', crop: 'auto', width: 1080 },
+          src: '/pages/home/port-de-pully',
+          usePreset: true
+        },
+        {
+          size: '2560w',
+          transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
+          src: '/pages/home/port-de-pully',
+          usePreset: true
+        }
+      ]}
     />
   </div>
 </Container>
@@ -230,11 +258,7 @@
         </Button>
       </div>
     </article>
-    <Image
-      src="/pages/home/nouveautes-lacustre.jpg"
-      alt=""
-      class="h-72 md:h-auto md:w-1/2"
-    />
+    <Image src="/pages/home/nouveautes-lacustre.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
   </div>
   <div class="md:flex md:h-96 md:flex-row-reverse">
     <article
