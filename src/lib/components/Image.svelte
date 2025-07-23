@@ -1,19 +1,18 @@
 <script lang="ts">
   import { dev } from '$app/environment';
-  import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
   import { isOfflineMode } from '$lib/helpers';
-  import { generateCloudinaryUrl, transformToString } from '$lib/helpers/image';
-  import type { CloudinarySize, Transform } from '$types';
+  import { generateCloudinaryUrl } from '$lib/helpers/image';
+  import type { Transform } from '$types';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {
     class?: string;
-    sizes?: string;
     srcset?: {
+      isLocal?: boolean;
       usePreset?: boolean;
-      transform: Transform;
+      transform?: Transform;
       src: string;
-      size: CloudinarySize;
+      size: number;
     }[];
     transform?: Transform;
     useCloudinaryPreset?: boolean;
@@ -25,7 +24,6 @@
 
   const {
     class: additionalClass = '',
-    sizes,
     srcset,
     transform,
     useCloudinaryPreset = true,
@@ -59,19 +57,27 @@
 
   const srcSetFinal = $derived.by(() => {
     if ((dev && isOfflineMode) || !srcset) {
-      return '';
+      return [];
     }
     if (srcset.length) {
-      return srcset.map((s) => generateCloudinaryUrl(s)).join(',\n');
+      return srcset.map((s) => {
+        if (s.isLocal) {
+          return { size: s.size, src: `${s.src}` }; // ${s.size}
+        }
+        return { size: s.size, src: generateCloudinaryUrl(s)};
+      });
     }
 
-    return '';
+    return [];
   });
 
-  const style=twMerge(
-    "object-cover h-full w-full",
-    additionalClass
-  )
+  const style = twMerge('flex object-cover h-full w-full', additionalClass);
 </script>
 
-<img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} />
+<!-- <img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} /> -->
+<picture class={style}>
+  {#each srcSetFinal.reverse() as srcSet}
+    <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
+  {/each}
+  <img class="w-full h-auto object-cover" src={srcFinal} {alt} {title} />
+</picture>

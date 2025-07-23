@@ -10,35 +10,20 @@ export const defaultHeights: number[] = [
     60, 90, 180, 240, 320, 480, 600, 720, 900, 1080, 1440, 2160
 ];
 
-export const transformToString = (transform: Transform, options: { prefixText?: string, suffixText?: string }) => {
+export const transformToString = (transform?: Transform, options?: { prefixText?: string, suffixText?: string }) => {
     const parameters: string[] = [];
     const { prefixText, suffixText } = { prefixText: '', suffixText: '', ...options };
     let resolution: number | undefined;
-    const transformClean = clearDuplicatesInTransform(transform)
+    if (transform) {
+        const transformClean = clearDuplicatesInTransform(transform)
 
-    for (const key in transformClean) {
-        // Gravity & Crop first
-        switch (key) {
-            case "width":
-            case "w":
-                resolution = selectBestWidth(<number>transformClean[key]);
-                parameters.push(`w_${resolution}`);
-                break;
+        for (const key in transformClean) {
+            // @ts-ignore keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
+            parameters.push(`${key}_${transformClean[key]}`)
+        };
+    }
 
-            case "height":
-            case "h":
-                resolution = transformClean.w ? transformClean[key] : selectBestHeight(<number>transformClean[key]);
-                parameters.push(`h_${resolution}`);
-                break;
-
-            default:
-                // @ts-ignore keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
-                parameters.push(`${key}_${transformClean[key]}`)
-                break;
-        }
-    };
-
-    return `${prefixText}${parameters.join(',')}${suffixText}`;
+    return `${prefixText}f_auto,q_auto${transform ? ',' : ''}${parameters.join(',')}${suffixText}`;
 }
 
 /**
@@ -83,12 +68,12 @@ export const resizeWithAspectRatio = ({
     };
 }
 
-export const generateCloudinaryUrl = ({ src, usePreset, transform, size }: { src: string, usePreset?: boolean, transform?: Transform, size?: CloudinarySize }) => {
+export const generateCloudinaryUrl = ({ src, usePreset, transform }: { src: string, usePreset?: boolean, transform?: Transform }) => {
     const baseUrl = `https://${PUBLIC_CLOUDINARY_CNAME}/image/upload/`;
     let url = src;
     if (usePreset) {
         url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${url}`;
     }
 
-    return `${baseUrl}${transform ? transformToString(transform, { suffixText: '/' }) : ''}${url}${size ? ` ${size}` : ''}`;
+    return `${baseUrl}${transformToString(transform, { suffixText: '/' })}${url}`;
 }
