@@ -502,7 +502,7 @@
               title="Olivia Bosshart"
               localSrc="/olivia.jpg"
               src="/olivia"
-              transform={{ width: 512, aspect_ratio: "1:1" }}
+              transform={{ width: 512, aspect_ratio: '1:1' }}
             />
           </div>
         </div>
@@ -519,7 +519,7 @@
               title="Laura Ragonese"
               localSrc="/laura.jpg"
               src="/laura"
-              transform={{ width: 512, aspect_ratio: "1:1" }}
+              transform={{ width: 512, aspect_ratio: '1:1' }}
             />
           </div>
         </div>
