@@ -4,7 +4,7 @@
   import Button from '$lib/components/Button.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
+  import Image from '$lib/components/Image.svelte';
   import Nav from '$lib/components/Nav/Nav.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import { locale, t } from '$lib/translations';
@@ -152,14 +152,20 @@
       >
         <Link withIcon={false} href="https://www.lausanne.ch" class="inline-flex w-full">
           <Image
-            src="/logo/partners/ville_de_lausanne.svg"
             class="h-[48px] object-contain md:h-[84px]"
+            alt="Ville de Lausanne"
+            title="Ville de Lausanne"
+            src="/logo/partners/ville_de_lausanne.svg"
+            localSrc="/logo/partners/ville_de_lausanne.svg"
           />
         </Link>
         <Link withIcon={false} href="https://www.myvaud.ch/" class="inline-flex w-full">
           <Image
-            src="/logo/partners/vaud_promotion.svg"
             class="mt-2 h-[16px] object-contain md:h-[29px]"
+            alt="Vaud Promotion"
+            title="Vaud Promotion"
+            src="/logo/partners/vaud_promotion.svg"
+            localSrc="/logo/partners/vaud_promotion.svg"
           />
         </Link>
         <Link
@@ -167,19 +173,40 @@
           href="https://www.lausanne-montreux-congress.ch/"
           class="inline-flex w-full"
         >
-          <Image src="/logo/partners/lmc.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image
+            class="h-[48px] object-contain md:h-[84px]"
+            alt="Lausanne Montreux Congress"
+            title="Lausanne Montreux Congrès"
+            src="/logo/partners/lmc.svg"
+            localSrc="/logo/partners/lmc.svg"
+          />
         </Link>
         <Link withIcon={false} href="https://www.myswitzerland.com/" class="inline-flex w-full">
           <Image
-            src="/logo/partners/suisse_tourisme_partner.svg"
             class="h-[48px] w-[100px] object-contain md:h-[84px] md:w-[170px]"
+            alt="Switzerland Tourism"
+            title="Switzerland Tourism"
+            src="/logo/partners/suisse_tourisme_partner.svg"
+            localSrc="/logo/partners/suisse_tourisme_partner.svg"
           />
         </Link>
         <Link withIcon={false} href="https://www.t-l.ch/" class="inline-flex w-full">
-          <Image src="/logo/partners/tl.svg" class="h-[48px] object-contain md:h-[84px]" />
+          <Image
+            class="h-[48px] object-contain md:h-[84px]"
+            alt="t-l"
+            title="t-l"
+            src="/logo/partners/tl.svg"
+            localSrc="/logo/partners/tl.svg"
+          />
         </Link>
         <Link withIcon={false} href="https://www.tgv-lyria.com/" class="inline-flex w-full">
-          <Image src="/logo/partners/lyria.svg" class="h-full w-full object-contain md:h-[84px]" />
+          <Image
+            class="h-full w-full object-contain md:h-[84px]"
+            alt="TGV Lyria"
+            title="TGV Lyria"
+            src="/logo/partners/lyria.svg"
+            localSrc="/logo/partners/lyria.svg"
+          />
         </Link>
       </div>
     </section>
@@ -324,7 +351,13 @@
           </ul>
         </nav>
         <div class="footer-logo -mt-10 w-full justify-center sm:mt-0 xl:mt-4 xl:justify-end">
-          <Image src="/logo/partners/lt_logo_white.svg" class="mx-auto h-56 w-56 md:h-36 md:w-36" />
+          <Image
+            class="mx-auto h-56 w-56 md:h-36 md:w-36"
+            alt="Lausanne Tourisme"
+            title="Lausanne Tourisme"
+            src="/logo/partners/lt_logo_white.svg"
+            localSrc="/logo/partners/lt_logo_white.svg"
+          />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
+  import Image from '$lib/components/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { getTailwindColor, isOfflineMode } from '$lib/helpers';
   import { defaultLocale, locale, t, type Locale } from '$lib/translations';
@@ -104,7 +104,15 @@
 
   const closeAside = () => {
     onclose?.();
-    aside.show = false;
+    aside = {
+      show: false,
+      title: '',
+      content: '',
+      image: '',
+      imageName: '',
+      imageCopyright: '',
+      lausanner: undefined
+    };
     markerIndex = undefined;
 
     map?.flyTo({
@@ -172,10 +180,12 @@
           </button>
           <button class="h-56 w-full shadow" onclick={closeAside}>
             <Image
-              src={isOfflineMode ? '/pages/themes/user_not_found.png' : aside.image}
-              alt={aside.imageCopyright}
-              useCloudinaryPreset={false}
               class="h-full w-full"
+              alt={aside.imageCopyright}
+              title={aside.imageName}
+              src={aside.image}
+              localSrc="/pages/themes/user_not_found.png"
+              useCloudinaryPreset={false}
             />
           </button>
           <Heading tag="h3">
@@ -187,18 +197,23 @@
         </div>
         <aside class={twMerge('flex items-center rounded-lg p-4', themeColor)}>
           <Image
-            class="h-12 w-12 rounded-full"
-            alt=""
+            class="h-12 w-12 items-center rounded-full"
+            alt={aside.lausanner?.name ?? ''}
             useCloudinaryPreset={aside.lausanner?.medias?.at(0)?.cloudinary_id ? false : true}
-            src={isOfflineMode
-              ? '/pages/themes/user_not_found.png'
-              : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
-                '/pages/themes/user_not_found.png')}
-            transform={{ gravity: 'north', crop: 'auto', width: 240, height: 320 }}
-            ignoreAutoSize
+            localSrc={'/pages/themes/user_not_found.png'}
+            src={aside.lausanner?.medias?.at(0)?.cloudinary_id ??
+              '/pages/themes/user_not_found.png'}
+            transform={{
+              round: 'max',
+              gravity: 'north',
+              crop: 'auto',
+              aspect_ratio: '1:1',
+              width: 50,
+              height: 50
+            }}
           />
           <div class="flex w-full items-center justify-between">
-            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold lg:w-2/3 md:text-base">
+            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:text-base lg:w-2/3">
               <Link
                 withIcon={true}
                 href={getLausannerUrl({
@@ -210,7 +225,7 @@
                 {aside.lausanner?.name}
 
                 {#snippet icon()}
-                  <SquareArrowOutUpRight class="ml-2 h-10 md:h-4 w-10 md:w-4 " />
+                  <SquareArrowOutUpRight class="ml-2 h-10 w-10 md:h-4 md:w-4 " />
                 {/snippet}
               </Link>
             </Paragraph>

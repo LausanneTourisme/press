@@ -1,5 +1,5 @@
 import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from "$env/static/public";
-import type { CloudinarySize, ImageDimensions, Transform } from "$types";
+import type { ImageDimensions, Transform } from "$types";
 
 export const defaultWidth: number = 1280;
 export const defaultHeight: number = 720;
@@ -13,7 +13,7 @@ export const defaultHeights: number[] = [
 export const transformToString = (transform?: Transform, options?: { prefixText?: string, suffixText?: string }) => {
     const parameters: string[] = [];
     const { prefixText, suffixText } = { prefixText: '', suffixText: '', ...options };
-    let resolution: number | undefined;
+
     if (transform) {
         const transformClean = clearDuplicatesInTransform(transform)
 
@@ -23,13 +23,15 @@ export const transformToString = (transform?: Transform, options?: { prefixText?
         };
     }
 
-    return `${prefixText}f_auto,q_auto${transform ? ',' : ''}${parameters.join(',')}${suffixText}`;
+    return `${prefixText}f_auto,q_auto${parameters.length ? ',' : ''}${parameters.join(',')}${suffixText}`;
 }
 
 /**
  * Returns a new transform with keys compatible with cloudinary and delete undefined entries
  */
-const clearDuplicatesInTransform = (transform: Transform) => {
+const clearDuplicatesInTransform = (transform?: Transform) => {
+    if(!transform) return;
+
     const result = {
         w: transform.w ?? transform.width,
         h: transform.h ?? transform.height,
@@ -37,6 +39,7 @@ const clearDuplicatesInTransform = (transform: Transform) => {
         c: transform.c ?? transform.crop,
         a: transform.a ?? transform.angle,
         ar: transform.ar ?? transform.aspect_ratio,
+        r: transform.r ?? transform.round,
     };
 
     return Object.fromEntries(
@@ -68,12 +71,13 @@ export const resizeWithAspectRatio = ({
     };
 }
 
-export const generateCloudinaryUrl = ({ src, usePreset, transform }: { src: string, usePreset?: boolean, transform?: Transform }) => {
+export const generateCloudinaryUrl = ({ src, usePreset, transform }: { src?: string, usePreset?: boolean, transform?: Transform }) => {
     const baseUrl = `https://${PUBLIC_CLOUDINARY_CNAME}/image/upload/`;
+    if(!src) return `${baseUrl}${transformToString(transform)}/default`;
     let url = src;
     if (usePreset) {
         url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${url}`;
     }
 
-    return `${baseUrl}${transformToString(transform, { suffixText: '/' })}${url}`;
+    return `${baseUrl}${transformToString(clearDuplicatesInTransform(transform), { suffixText: '/' })}${url}`;
 }

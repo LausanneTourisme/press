@@ -1,7 +1,7 @@
 <script lang="ts">
   import { RouteTypes, ThemeKeys, type Theme } from '$enums';
   import Figure from '$lib/components/Figure.svelte';
-  import { route } from '$lib/helpers';
+  import { filename, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t, type Locale } from '$lib/translations';
   import { blur } from 'svelte/transition';
@@ -9,7 +9,7 @@
   import Clickable from './Clickable.svelte';
   import Heading from './Heading.svelte';
   import Paragraph from './Paragraph.svelte';
-  import Image from './Media/Image.svelte';
+  import Image from './Image.svelte';
 
   type Props = {
     class?: string;
@@ -101,7 +101,6 @@
         <Figure
           src={themeInformation.head}
           transform={{ height: 120, width: 120 }}
-          ignoreAutoSize
           class="aspect-square max-h-24"
         />
         <Paragraph class="w-full px-2 text-center text-base font-medium text-gray-950">
@@ -114,14 +113,15 @@
     class="absolute top-0 left-0 -z-10 h-full w-full bg-zinc-200 transition-transform group-hover:scale-110"
   >
     <Image
-      src={themeInformation.image}
+      alt={$t(`themes.${theme}.title`)}
+      src={filename(themeInformation.image, false)}
+      localSrc={themeInformation.image}
       transform={{
-        gravity: 'auto',
         crop: 'auto',
+        gravity: 'south',
         ...themeInformation.transform,
         ...imageSizes(),
       }}
-      ignoreAutoSize={true}
     />
   </div>
 </article>

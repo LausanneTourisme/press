@@ -1,7 +1,8 @@
 <script lang="ts">
   import { type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-  import Image from './Media/Image.svelte';
+  import Image from './Image.svelte';
+  import { filename } from '$lib/helpers';
 
   type Props = {
     children: Snippet;
@@ -45,7 +46,7 @@
 
 <div class={cardStyle}>
   <div class="image pointer-events-none absolute top-0 left-0 h-full w-full">
-    <Image {src} {alt} class="" />
+    <Image alt={alt ?? ''} src={filename(src, false)} localSrc={src} />
   </div>
   <div
     class="to-shakespeare-950/80 pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent from-0% via-transparent via-40% to-100% transition-all group-hover:opacity-70"

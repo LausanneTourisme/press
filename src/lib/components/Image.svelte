@@ -20,6 +20,7 @@
     localSrc: string;
     title?: string;
     alt: string;
+    onload?: (event: Event) => unknown;
   };
 
   const {
@@ -30,7 +31,8 @@
     src,
     localSrc,
     title,
-    alt
+    alt,
+    onload
   }: Props = $props();
 
   // if localSrc use it in otherwise use src and if https = external link
@@ -79,5 +81,5 @@
   {#each srcSetFinal.reverse() as srcSet}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
-  <img class="w-full h-auto object-cover" src={srcFinal} {alt} {title} />
+  <img class="w-full h-auto object-cover" src={srcFinal} {alt} {title} {onload} />
 </picture>

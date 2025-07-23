@@ -33,4 +33,6 @@ export type Transform = {
     angle?: number;
     a?: number;
     y?: number;
+    round?: number|'max';
+    r?: number|'max';
 }

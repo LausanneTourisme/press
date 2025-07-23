@@ -2,17 +2,16 @@
   import { dev } from '$app/environment';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, Themes } from '$enums';
-  import { Cloudinary } from '$lib/cloudinary';
   import Button from '$lib/components/Button.svelte';
   import Clickable from '$lib/components/Clickable.svelte';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Map from '$lib/components/Map/Map.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
+  import Image from '$lib/components/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { Slide, Swiper } from '$lib/components/swiper';
-  import { route } from '$lib/helpers';
+  import { filename, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { locale, t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
@@ -20,6 +19,7 @@
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
+  import { generateCloudinaryUrl } from '$lib/helpers/image';
 
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
@@ -67,7 +67,12 @@
         src={themeInformation.image}
         alt={title}
         imgClass="rounded"
-        transform={{h:undefined, height: undefined, w: undefined, width: undefined, ...themeInformation.transform}}
+        transform={{
+          ...themeInformation.transform,
+          crop: 'auto',
+          height: 720,
+          width: 1280
+        }}
       />
       <div
         class={twMerge(
@@ -93,6 +98,7 @@
       <Swiper>
         {#each articles as article}
           {#if article.seo}
+            {@const media = article.medias?.find(() => true)}
             {@const publishedAt = DateTime.fromSeconds(
               parseInt(article?.published_at ?? '')
             ).setLocale($locale)}
@@ -104,10 +110,10 @@
               >
                 <Figure
                   class="h-48 rounded"
-                  src={Cloudinary.make(article.medias?.find(() => true)?.cloudinary_id ?? 'default').url({
-                    w: 330,
-                  })}
-                  alt=""
+                  src={media?.cloudinary_id}
+                  useCloudinaryPreset={false}
+                  transform={{ width: 330, crop: 'auto' }}
+                  alt={media?.public_name}
                 />
                 <div class="card-body h-64 px-4 sm:h-58">
                   <small class="text-sm text-gray-500">{publishedAt?.toFormat('dd.MM.yyyy')}</small>
@@ -165,7 +171,12 @@
     </div>
     <div class="flex w-1/3 items-center xl:w-1/2">
       <div class="h-32 xl:h-64">
-        <Figure src={themeInformation.head} class="aspect-square max-h-32 xl:max-h-64" transform={{height: 320, width: 320}} />
+        <Figure
+          alt="# {$t('themes.lausanners.title')}"
+          src={themeInformation.head}
+          class="aspect-square max-h-32 xl:max-h-64"
+          transform={{ height: 320, width: 320 }}
+        />
       </div>
     </div>
   </div>
@@ -205,32 +216,40 @@
   <Swiper>
     {#each Object.values(Themes) as theme}
       {@const selectedTheme = ThemeDetails[ThemeKeys[theme]]}
-      <Slide class="w-max xs:w-min!">
+      <Slide class="xs:w-min! w-max">
         <Clickable
           href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}
           overflow={true}
-          class="card group relative h-[360px] w-full xs:w-80 md:h-[460px] md:w-[375px] min-w-[220px] rounded-none shadow-none md:ml-0"
+          class="card group xs:w-80 relative h-[360px] w-full min-w-[220px] rounded-none shadow-none md:ml-0 md:h-[460px] md:w-[375px]"
         >
-            <figure
-              class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
+          <figure
+            class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
+          >
+            <Image
+              src={filename(selectedTheme.image)}
+              localSrc={selectedTheme.image}
+              transform={{
+                gravity: 'auto',
+                crop: 'auto',
+                width: 375,
+                height: 460,
+                ...selectedTheme.transform
+              }}
+              alt={$t(`themes.${theme}.title`)}
+            />
+          </figure>
+          <div
+            class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selectedTheme.background} opacity-50 group-hover:opacity-60"
+          ></div>
+          <div class="absolute bottom-0 left-0">
+            <Heading
+              tag="h3"
+              class="my-4 px-4 text-clip whitespace-break-spaces !text-white text-shadow-lg md:text-3xl"
+              title={$t(`themes.${theme}.title`)}
             >
-              <Image
-                src={selectedTheme.image}
-                transform={selectedTheme.transform ?? { gravity: 'auto', crop: 'auto' }}
-              />
-            </figure>
-            <div
-              class="pointer-events-none absolute top-0 left-0 -z-10 h-full w-full transition-all {selectedTheme.background} opacity-50 group-hover:opacity-60"
-            ></div>
-            <div class="absolute bottom-0 left-0">
-              <Heading
-                tag="h3"
-                class="my-4 px-4 text-clip whitespace-break-spaces text-white md:text-3xl"
-                title={$t(`themes.${theme}.title`)}
-              >
-                {$t(`themes.${theme}.title`)}
-              </Heading>
-            </div>
+              {$t(`themes.${theme}.title`)}
+            </Heading>
+          </div>
         </Clickable>
       </Slide>
     {/each}

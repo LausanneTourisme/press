@@ -4,14 +4,18 @@
   import type { Favorite, Lausanner, Poi } from '$types';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
-  import Image from '../Media/Image.svelte';
+  import Image from '$lib/components/Image.svelte';
 
   type Props = {
     class?: string;
     favorite: Favorite<string>;
     lausanner?: Lausanner<string>;
     poi: Poi<string>;
-    onclick?: (options: { lausanner?: Lausanner<string>; favorite: Favorite<string>; poi: Poi<string> }) => void;
+    onclick?: (options: {
+      lausanner?: Lausanner<string>;
+      favorite: Favorite<string>;
+      poi: Poi<string>;
+    }) => void;
   };
 
   const { class: additionalClass, favorite, lausanner, poi, onclick }: Props = $props();
@@ -32,11 +36,11 @@
 >
   <figure class="h-full w-1/3 xl:w-[160px]">
     <Image
+      localSrc={defaultImage}
       src={lausannerImage ?? defaultImage}
       useCloudinaryPreset={lausannerImage ? false : true}
-      ignoreAutoSize={true}
-      transform={{ gravity: 'auto', crop: 'auto', width: 240, h:320}}
-      alt={lausanner?.name?.replace(/,.+/gi, '')}
+      transform={{ gravity: 'auto', crop: 'auto', width: 240, h: 320 }}
+      alt={lausanner?.name?.replace(/,.+/gi, '') ?? ''}
     />
     <figcaption class="hidden">{lausanner?.name?.replace(/,.+/gi, '')}</figcaption>
   </figure>
