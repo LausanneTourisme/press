@@ -39,7 +39,7 @@
       localSrc={defaultImage}
       src={lausannerImage ?? defaultImage}
       useCloudinaryPreset={lausannerImage ? false : true}
-      transform={{ gravity: 'auto', crop: 'auto', width: 240, h: 320 }}
+      transform={{ gravity: 'auto', crop: 'auto', width: 320, h: 380 }}
       alt={lausanner?.name?.replace(/,.+/gi, '') ?? ''}
     />
     <figcaption class="hidden">{lausanner?.name?.replace(/,.+/gi, '')}</figcaption>
