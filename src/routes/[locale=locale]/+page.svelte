@@ -7,8 +7,7 @@
   import Counter from '$lib/components/Counter.svelte';
   import Faq from '$lib/components/Faq.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
-  import Image2 from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
   import Observer from '$lib/components/Observer.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
@@ -137,36 +136,34 @@
   <div
     class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
   >
-    <Image2
+    <Image
       alt="Port de Pully"
       title="Port de Pully"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       localSrc="/pages/home/port-de-pully.jpg"
+      src="/pages/home/port-de-pully"
       transform={{ gravity: 'west', crop: 'auto' }}
       srcset={[
         {
-          size: '100w',
-          transform: { gravity: 'west', crop: 'auto', width: 100 },
-          src: '/pages/home/port-de-pully',
-          usePreset: true
+          size: 768,
+          transform: { gravity: 'west', crop: 'auto', width: 720 },
+          src: '/pages/home/ipad.jpg',
+          usePreset: false,
+          isLocal: true
         },
         {
-          size: '720w',
-          transform: { gravity: 'west', crop: 'auto', height: 600, width: 720 },
-          src: '/pages/home/port-de-pully',
-          usePreset: true
+          size: 1280,
+          transform: { gravity: 'west', crop: 'auto', width: 1920 },
+          src: '/pages/home/fhd.jpg',
+          usePreset: false,
+          isLocal: true
         },
         {
-          size: '1080w',
-          transform: { gravity: 'west', crop: 'auto', width: 1080 },
-          src: '/pages/home/port-de-pully',
-          usePreset: true
-        },
-        {
-          size: '2560w',
+          size: 2560,
           transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
-          src: '/pages/home/port-de-pully',
-          usePreset: true
+          src: '/pages/home/4k.jpg',
+          usePreset: false,
+          isLocal: true
         }
       ]}
     />
@@ -213,22 +210,50 @@
         {$t('page.video&images.paragraph')}
       </Paragraph>
       <div>
-        {#key isDarkMode}
-          <Button
-            negative={isDarkMode}
-            href={getMediaLibraryRegisterLink($locale as Locale)}
-            tag="a"
-          >
-            {$t('page.goToMediaLibrary')}
-          </Button>
-        {/key}
+        <Button href={getMediaLibraryRegisterLink($locale as Locale)} tag="a">
+          {$t('page.goToMediaLibrary')}
+        </Button>
       </div>
     </article>
     <Image
-      src="/pages/home/masonry/cathedrale.jpg"
-      transform={{ gravity: 'auto', crop: 'fill', ar: '9:16' }}
-      alt="Cathédrale de Lausanne"
       class="h-72 md:h-auto md:w-1/2"
+      alt="Cathédrale de Lausanne"
+      title="Cathédrale de Lausanne"
+      localSrc="/pages/home/masonry/cathedrale.jpg"
+      src="/pages/home/masonry/cathedrale"
+      transform={{ gravity: 'auto', crop: 'fill', ar: '1:1', width: 720 }}
+      srcset={[
+        {
+          size: 500,
+          transform: { gravity: 'auto', crop: 'fill', width: 1000, height: 600 },
+          src: '/pages/home/masonry/cathedrale',
+          usePreset: true
+        },
+        {
+          size: 768,
+          transform: { gravity: 'north', crop: 'auto', ar: '9:16', width: 600, height: 768 },
+          src: '/pages/home/masonry/cathedrale',
+          usePreset: true
+        },
+        {
+          size: 900,
+          transform: { gravity: 'north', crop: 'auto', ar: '9:16', width: 800, height: 1152 },
+          src: '/pages/home/masonry/cathedrale',
+          usePreset: true
+        },
+        {
+          size: 1280,
+          transform: { gravity: 'auto', crop: 'fill', aspect_ratio: '17:9', height: 384 },
+          src: '/pages/home/masonry/cathedrale',
+          usePreset: true
+        },
+        {
+          size: 1920,
+          transform: { gravity: 'auto', crop: 'fill', aspect_ratio: '17:9', height: 500 },
+          src: '/pages/home/masonry/cathedrale',
+          usePreset: true
+        }
+      ]}
     />
   </div>
 </Container>
@@ -258,7 +283,28 @@
         </Button>
       </div>
     </article>
-    <Image src="/pages/home/nouveautes-lacustre.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
+    <Image
+      alt="Lacustre"
+      title={$t('page.whatIsNew.title')}
+      class="h-72 md:h-auto md:w-1/2"
+      localSrc="/pages/home/nouveautes-lacustre.jpg"
+      src="/pages/home/nouveautes-lacustre"
+      transform={{ width: 1280 }}
+      srcset={[
+        {
+          size: 1280,
+          transform: { width: 1920 },
+          src: '/pages/home/nouveautes-lacustre',
+          usePreset: true
+        },
+        {
+          size: 2560,
+          transform: { width: 2560 },
+          src: '/pages/home/nouveautes-lacustre',
+          usePreset: true
+        }
+      ]}
+    />
   </div>
   <div class="md:flex md:h-96 md:flex-row-reverse">
     <article
@@ -277,10 +323,26 @@
       </div>
     </article>
     <Image
-      src="/pages/home/communiques-de-presse.jpg"
-      transform={{ crop: 'fill' }}
-      alt=""
       class="h-72 md:h-auto md:w-1/2"
+      alt="Communiques de presse"
+      title={$t('page.pressRelease.title')}
+      src="/pages/home/communiques-de-presse"
+      localSrc="/pages/home/communiques-de-presse.jpg"
+      transform={{ crop: 'fill', width: 1280 }}
+      srcset={[
+        {
+          size: 1280,
+          transform: { crop: 'fill', width: 1920 },
+          src: '/pages/home/communiques-de-presse',
+          usePreset: true
+        },
+        {
+          size: 2560,
+          transform: { crop: 'fill', width: 2560 },
+          src: '/pages/home/communiques-de-presse',
+          usePreset: true
+        }
+      ]}
     />
   </div>
   <div class="md:flex md:h-96">
@@ -299,7 +361,25 @@
         </Button>
       </div>
     </article>
-    <Image src="/pages/home/exposition.jpg" alt="" class="h-72 md:h-auto md:w-1/2" />
+    <Image
+      class="h-72 md:h-auto md:w-1/2"
+      alt="Exposition"
+      title={$t('page.mediaCoverage.title')}
+      src="/pages/home/exposition"
+      localSrc="/pages/home/exposition.jpg"
+      srcset={[
+        {
+          size: 1280,
+          src: '/pages/home/exposition',
+          usePreset: true
+        },
+        {
+          size: 2560,
+          src: '/pages/home/exposition',
+          usePreset: true
+        }
+      ]}
+    />
   </div>
 </Container>
 <!--
@@ -417,7 +497,13 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/olivia.jpg" alt="Olivia Bosshart" />
+            <Image
+              alt="Olivia Bosshart"
+              title="Olivia Bosshart"
+              localSrc="/olivia.jpg"
+              src="/olivia"
+              transform={{ width: 512, aspect_ratio: "1:1" }}
+            />
           </div>
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
@@ -428,7 +514,13 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/laura.jpg" alt="Laura Ragonese" />
+            <Image
+              alt="Laura Ragonese"
+              title="Laura Ragonese"
+              localSrc="/laura.jpg"
+              src="/laura"
+              transform={{ width: 512, aspect_ratio: "1:1" }}
+            />
           </div>
         </div>
         <Heading tag="h3">Laura Ragonese</Heading>
