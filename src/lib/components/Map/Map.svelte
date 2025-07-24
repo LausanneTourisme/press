@@ -3,7 +3,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { getTailwindColor, isOfflineMode } from '$lib/helpers';
   import { defaultLocale, locale, t, type Locale } from '$lib/translations';

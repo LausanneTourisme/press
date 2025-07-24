@@ -4,7 +4,7 @@
   import Button from '$lib/components/Button.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Nav from '$lib/components/Nav/Nav.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import { locale, t } from '$lib/translations';
@@ -152,7 +152,8 @@
       >
         <Link withIcon={false} href="https://www.lausanne.ch" class="inline-flex w-full">
           <Image
-            class="h-[48px] object-contain md:h-[84px]"
+            class="block h-[48px] object-contain md:h-[84px]"
+            imgClass="object-contain h-full"
             alt="Ville de Lausanne"
             title="Ville de Lausanne"
             src="/logo/partners/ville_de_lausanne.svg"
@@ -161,7 +162,8 @@
         </Link>
         <Link withIcon={false} href="https://www.myvaud.ch/" class="inline-flex w-full">
           <Image
-            class="mt-2 h-[16px] object-contain md:h-[29px]"
+            class="block mt-2 h-[16px] object-contain md:h-full"
+            imgClass="object-contain h-full"
             alt="Vaud Promotion"
             title="Vaud Promotion"
             src="/logo/partners/vaud_promotion.svg"
@@ -174,7 +176,8 @@
           class="inline-flex w-full"
         >
           <Image
-            class="h-[48px] object-contain md:h-[84px]"
+            class="block h-[48px] object-contain md:h-[84px]"
+            imgClass="object-contain h-full"
             alt="Lausanne Montreux Congress"
             title="Lausanne Montreux Congrès"
             src="/logo/partners/lmc.svg"
@@ -183,7 +186,8 @@
         </Link>
         <Link withIcon={false} href="https://www.myswitzerland.com/" class="inline-flex w-full">
           <Image
-            class="h-[48px] w-[100px] object-contain md:h-[84px] md:w-[170px]"
+            class="block h-[48px] w-[100px] object-contain md:h-[84px] md:w-[170px]"
+            imgClass="object-contain h-full"
             alt="Switzerland Tourism"
             title="Switzerland Tourism"
             src="/logo/partners/suisse_tourisme_partner.svg"
@@ -192,7 +196,8 @@
         </Link>
         <Link withIcon={false} href="https://www.t-l.ch/" class="inline-flex w-full">
           <Image
-            class="h-[48px] object-contain md:h-[84px]"
+            class="block h-[48px] object-contain md:h-[84px]"
+            imgClass="object-contain h-full"
             alt="t-l"
             title="t-l"
             src="/logo/partners/tl.svg"
@@ -201,7 +206,8 @@
         </Link>
         <Link withIcon={false} href="https://www.tgv-lyria.com/" class="inline-flex w-full">
           <Image
-            class="h-full w-full object-contain md:h-[84px]"
+            class="block h-full w-full object-contain md:h-[84px]"
+            imgClass="object-contain h-full"
             alt="TGV Lyria"
             title="TGV Lyria"
             src="/logo/partners/lyria.svg"

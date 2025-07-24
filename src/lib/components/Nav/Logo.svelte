@@ -1,7 +1,7 @@
 <script lang="ts">
   import { locale } from '$lib/translations';
   import { twMerge } from 'tailwind-merge';
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
 
   type Props = {
     class?: string;

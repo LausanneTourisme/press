@@ -8,7 +8,7 @@
   import Figure from '$lib/components/Figure.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Map from '$lib/components/Map/Map.svelte';
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { Slide, Swiper } from '$lib/components/swiper';
   import { filename, route } from '$lib/helpers';

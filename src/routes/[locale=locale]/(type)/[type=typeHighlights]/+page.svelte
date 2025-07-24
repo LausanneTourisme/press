@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Cloudinary } from '$lib/cloudinary';
   import Anchor from '$lib/components/Anchor.svelte';
   import Card from '$lib/components/Card.svelte';
   import Clickable from '$lib/components/Clickable.svelte';
@@ -81,13 +80,15 @@
       <Slide>
         <Clickable overflow={true} href={n.link ?? '#'}>
           <Card
-            src={Cloudinary.make(n.medias?.at(0)?.cloudinary_id ?? 'default').url({
+            src={n.medias?.at(0)?.cloudinary_id ?? 'default'}
+            useCloudinaryPreset={false}
+            transform={{
               width: 500,
               height: 500,
               ar: '16:9',
               gravity: 'auto',
               crop: 'fill'
-            })}
+            }}
             alt={n.medias?.at(0)?.public_name}
             background="bg-glacier-300"
             class="carousel-item"
@@ -172,12 +173,14 @@
                 class="from-shakespeare-500 absolute top-0 left-0 -z-10 h-full w-full bg-gradient-to-t to-gray-900/50"
               >
                 <Image
-                  src={Cloudinary.make(poi.medias?.at(0)?.cloudinary_id ?? 'default').url({
+                  src={poi.medias?.at(0)?.cloudinary_id ?? 'default'}
+                  localSrc="/pages/themes/cathedrale_skate.jpg"
+                  transform={{
                     height: 500
-                  })}
-                  ignoreAutoSize={true}
+                  }}
+                  useCloudinaryPreset={false}
                   class="transition-opacity group-hover:opacity-50"
-                  alt={poi?.medias?.at(0)?.copyright}
+                  alt={poi?.medias?.at(0)?.copyright ?? 'highlight'}
                 />
               </header>
               <Heading
@@ -225,8 +228,11 @@
               <div class="card-body p-4">
                 <figure class="pointer-events-none aspect-square w-44 sm:w-72">
                   <Image
-                    src={Cloudinary.make(media?.cloudinary_id ?? 'default').url({ h: 330 })}
-                    alt={media?.name}
+                    src={media?.cloudinary_id ?? 'default'}
+                    useCloudinaryPreset={false}
+                    localSrc="/static/pages/home/mansory/jardins.jpg"
+                    transform={{ h: 330 }}
+                    alt={media?.name ?? 'Agenda picture'}
                   />
                 </figure>
                 <Heading

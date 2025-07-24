@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Video from '$lib/components/Media/Video.svelte';
   import Observer from '$lib/components/Observer.svelte';
   import { filename } from '$lib/helpers';

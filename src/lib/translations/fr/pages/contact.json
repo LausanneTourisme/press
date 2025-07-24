@@ -5,7 +5,7 @@
     "description": "En tant que journaliste ou créateur de contenu, vous souhaitez en savoir plus sur Lausanne et ses possibilités&nbsp;? N'hésitez pas à nous contacter en remplissant le formulaire ci-dessous. Nous nous efforcerons de vous répondre dans les meilleurs délais.",
     "form": {
         "select-section": {
-            "title": "Comment souhaitez-vous nous joindre ?",
+            "title": "Comment souhaitez-vous nous joindre&nbsp;?",
             "button": {
                 "message": "Par message",
                 "call": "Nous appeler"

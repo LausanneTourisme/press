@@ -1,26 +1,20 @@
 <script lang="ts">
-  import { Cloudinary } from '$lib/cloudinary';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
   import { maxMobileWidth } from '$lib/helpers';
+  import { generateCloudinaryUrl, selectBestWidth } from '$lib/helpers/image';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {
     class?: string;
     imageClass?: string;
-    isMobile?: boolean;
     cloudinaryId: string;
     width: number;
     fixed?: boolean;
     size: 'small' | 'medium' | 'large' | 'parallax';
     focus?: 'face' | 'auto';
     children?: Snippet;
-  };
-  let isMobile = $state(false);
-
-  const updateSize = () => {
-    isMobile = width < maxMobileWidth;
   };
 
   const {
@@ -32,36 +26,48 @@
     focus = 'auto',
     children
   }: Props = $props();
-  let url: string = $state('');
+
+  const updateUrl = () => {
+    let finalWidth = 1920;
+    if (width) {
+      finalWidth = width < maxMobileWidth ? width : Math.round(width / 1.4);
+    }
+
+    return generateCloudinaryUrl({
+      src: cloudinaryId,
+      usePreset: false,
+      transform: {
+        width: selectBestWidth(finalWidth),
+        ar: '4:5',
+        gravity: focus,
+        crop: 'fill'
+      }
+    });
+  }
+
+  let url = $derived.by(updateUrl);
+  
+  const update = () => {
+    url = updateUrl();
+  };
 
   onMount(() => {
-    updateSize();
-    window.addEventListener('resize', updateSize);
-    window.addEventListener('orientationchange', updateSize);
+    update();
+    window.addEventListener('DOMContentLoaded', update);
+    window.addEventListener('resize', update);
+    window.addEventListener('orientationchange', update);
 
     return () => {
-      window.removeEventListener('resize', updateSize);
-      window.removeEventListener('orientationchange', updateSize);
+      window.removeEventListener('DOMContentLoaded', update);
+      window.removeEventListener('resize', update);
+      window.removeEventListener('orientationchange', update);
     };
-  });
-
-  $effect(() => {
-    url = Cloudinary.make(cloudinaryId).url({
-      width: isMobile ? width : Math.round(width / 1.4),
-      ar: '4:5',
-      gravity: focus,
-      crop: 'fill'
-    });
   });
 </script>
 
-<Container fullscreen={true} class={twMerge('parallax-image py-10 relative', additionalClass)}>
+<Container fullscreen={true} class={twMerge('parallax-image relative py-10', additionalClass)}>
   <div
-    style="background: url({Cloudinary.make(cloudinaryId, 'image').url({
-      width,
-      gravity: focus,
-      crop: 'fill'
-    })}) {fixed ? 'fixed' : ''} no-repeat center/cover"
+    style="background: url({url}) {fixed ? 'fixed' : ''} no-repeat center/cover"
     class={imageClass}
     class:shadow-inner={fixed}
   >

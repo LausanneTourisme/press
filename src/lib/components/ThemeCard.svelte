@@ -9,7 +9,7 @@
   import Clickable from './Clickable.svelte';
   import Heading from './Heading.svelte';
   import Paragraph from './Paragraph.svelte';
-  import Image from './Image.svelte';
+  import Image from './Media/Image.svelte';
 
   type Props = {
     class?: string;

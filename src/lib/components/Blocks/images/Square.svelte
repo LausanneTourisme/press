@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Cloudinary, type Transform } from '$lib/cloudinary';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
+  import type { Transform } from '$types';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
@@ -32,7 +32,10 @@
   });
 </script>
 
-<Container width={size === 'large' ? 'medium' : 'small'} class={twMerge("flex justify-center", additionalClass)}>
+<Container
+  width={size === 'large' ? 'medium' : 'small'}
+  class={twMerge('flex justify-center', additionalClass)}
+>
   {#if size === 'small'}
     <Figure
       useCloudinaryPreset={false}

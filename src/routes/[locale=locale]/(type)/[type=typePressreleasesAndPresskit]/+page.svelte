@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
-  import { Cloudinary } from '$lib/cloudinary';
   import Card from '$lib/components/Card.svelte';
   import Clickable from '$lib/components/Clickable.svelte';
   import Container from '$lib/components/Container.svelte';
@@ -51,9 +50,9 @@
                       title={release.name}
                     >
                       <Card
-                        src={Cloudinary.make(release.medias?.at(0)?.cloudinary_id ?? 'default').url({
-                          h: 440
-                        })}
+                        src={release.medias?.at(0)?.cloudinary_id ?? 'default'}
+                        useCloudinaryPreset={false}
+                        transform={{ height: 600 }}
                         alt={`${release.medias?.at(0)?.public_name} - ${release.medias?.at(0)?.copyright}`}
                         background="bg-shakespeare-700"
                         class="carousel-item w-auto"

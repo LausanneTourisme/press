@@ -7,6 +7,7 @@
 
   type Props = {
     class?: string;
+    imgClass?: string;
     srcset?: {
       isLocal?: boolean;
       usePreset?: boolean;
@@ -25,6 +26,7 @@
 
   const {
     class: additionalClass = '',
+    imgClass,
     srcset,
     transform,
     useCloudinaryPreset = true,
@@ -81,5 +83,5 @@
   {#each srcSetFinal.reverse() as srcSet}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
-  <img class="w-full h-auto object-cover" src={srcFinal} {alt} {title} {onload} />
+  <img class={twMerge("w-full h-auto object-cover", imgClass)} src={srcFinal} {alt} {title} {onload} />
 </picture>

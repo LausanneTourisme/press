@@ -7,7 +7,7 @@
   import Counter from '$lib/components/Counter.svelte';
   import Faq from '$lib/components/Faq.svelte';
   import Heading from '$lib/components/Heading.svelte';
-  import Image from '$lib/components/Image.svelte';
+  import Image from '$lib/components/Media/Image.svelte';
   import Player from '$lib/components/Media/Player.svelte';
   import Observer from '$lib/components/Observer.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
