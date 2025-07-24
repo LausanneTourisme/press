@@ -155,6 +155,7 @@
 <div class="relative flex h-[550px] flex-col-reverse lg:flex-row 2xl:h-[768px]">
   {#if markers.length}
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
+      {#key markers}
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
         {#each markers as marker}
           <LausannerCard
@@ -166,12 +167,13 @@
           />
         {/each}
       </div>
+      {/key}
       <div
         bind:this={asideElement}
-        class={twMerge('aside-popup h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
+        class={twMerge('aside-popup flex flex-col h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
         transition:fade
       >
-        <div class="relative">
+        <div class="relative flex-auto">
           <button
             class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
             onclick={closeAside}

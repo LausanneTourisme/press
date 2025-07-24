@@ -191,11 +191,13 @@
     -
     -->
 <Container width="padded" class="md:pt-0">
-  <Map
-    {favorites}
-    themeColor={themeInformation.color}
-    listBorderColor={themeInformation.borderColor}
-  />
+  {#key themeInformation}
+    <Map
+      {favorites}
+      themeColor={themeInformation.color}
+      listBorderColor={themeInformation.borderColor}
+    />
+  {/key}
 </Container>
 
 <!--
