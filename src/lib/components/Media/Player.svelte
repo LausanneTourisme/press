@@ -1,15 +1,18 @@
 <script lang="ts">
+  import Image from '$lib/components/Media/Image.svelte';
+  import Video from '$lib/components/Media/Video.svelte';
+  import Observer from '$lib/components/Observer.svelte';
+  import { filename } from '$lib/helpers';
   import { Play } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
-  import Observer from '../Observer.svelte';
-  import Image from './Image.svelte';
-  import Video from './Video.svelte';
 
   type Props = {
     class?: string;
     onIntersecting?: (isIntersecting: boolean) => void;
     src: string;
+    useCloudinaryPreset?: boolean;
+    useCloudinary?: boolean;
     poster: string;
     title?: string;
     autoplay?: boolean;
@@ -19,6 +22,8 @@
   const {
     class: additionalClass,
     src,
+    useCloudinaryPreset = true,
+    useCloudinary = true,
     poster,
     title,
     autoplay = false,
@@ -60,7 +65,12 @@
     class="poster absolute top-0 left-0 z-20 h-full w-full bg-zinc-950 transition-transform"
     bind:this={posterElement}
   >
-    <Image src={poster} alt="" class="opacity-50 transition-opacity group-hover:opacity-75" />
+    <Image
+      class="opacity-50 transition-opacity group-hover:opacity-75"
+      alt="Poster"
+      src={filename(poster)}
+      localSrc={poster}
+    />
   </div>
   <Observer
     class="video h-full"
@@ -79,6 +89,8 @@
       muted={true}
       loop={autoplay}
       {src}
+      {useCloudinaryPreset}
+      {useCloudinary}
       {controls}
       preload="metadata"
       class="relative z-0 xl:-mt-[10vw]"

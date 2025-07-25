@@ -1,7 +1,7 @@
 import { RouteTypes, type RouteType, type Theme } from "$enums";
 import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
 import { defaultLocale, locale, translations, type Locale } from "$lib/translations";
-import type { ImageDimensions, PostType, Translatable } from '$lib/types';
+import type { PostType, Translatable } from '$lib/types';
 
 export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
 export const maxMobileWidth = 1280;
@@ -126,19 +126,3 @@ export const shuffle = <T>(array: T[]) => {
   }
   return newArray
 };
-
-export function resizeWithAspectRatio({
-  original,
-  targetWidth
-}: {
-  original: ImageDimensions;
-  targetWidth: number;
-}): ImageDimensions {
-  const aspectRatio = original.width / original.height;
-  const newHeight = Math.round(targetWidth / aspectRatio);
-
-  return {
-    width: targetWidth,
-    height: newHeight
-  };
-}

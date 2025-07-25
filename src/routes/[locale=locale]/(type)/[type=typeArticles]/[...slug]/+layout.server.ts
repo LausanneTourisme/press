@@ -1,11 +1,11 @@
 import { dev } from '$app/environment';
 import { RouteTypes } from '$enums';
-import { Cloudinary } from '$lib/cloudinary';
 import { isOfflineMode } from '$lib/helpers';
+import { generateCloudinaryUrl } from '$lib/helpers/image.js';
 import { getPost } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
-import type { SeoHeader, Translatable } from '$types';
+import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
 export const load = async ({ params, parent, url, ...rest }) => {
@@ -29,7 +29,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
         canonical: `${url.origin}${url.pathname}`,
         title: article.name?.[locale as Locale] ?? translations[locale][`page.title`],
         description: article.lead?.[locale as Locale] ?? translations[locale][`page.meta-description`],
-        image: Cloudinary.make(article.medias?.at(0)?.cloudinary_id ?? 'default').url({ h: 720, w: 1280 }),
+        image: generateCloudinaryUrl({ src: article.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),
         alternate: supportedLocales.filter(l => article.languages?.includes(l)).map(locale => ({
             hreflang: locale,
             href: `/${locale}/${translations[locale][`route.${RouteTypes.Articles}.slug`]}/${article.seo?.slug?.[locale]}`

@@ -1,5 +1,5 @@
 import { RouteTypes } from '$enums';
-import { Cloudinary } from '$lib/cloudinary.js';
+import { generateCloudinaryUrl } from '$lib/helpers/image.js';
 import { getPost } from '$lib/helpers/requests.server.js';
 import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
@@ -22,7 +22,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
         canonical: `${url.origin}${url.pathname}`,
         title: release.name?.[lang as Locale] ?? translations[lang][`page.title`],
         description: release.lead?.[lang as Locale] ?? translations[lang][`page.meta-description`],
-        image: Cloudinary.make(release.medias?.at(0)?.cloudinary_id ?? 'default').url({ h: 720, w: 1280 }),
+        image: generateCloudinaryUrl({ src: release.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),
         alternate: supportedLocales.filter(l => release.languages?.includes(l)).map(locale => ({
             hreflang: locale,
             href: `/${locale}/${translations[locale][`route.${type}.slug`]}/${release.seo?.slug?.[locale]}`

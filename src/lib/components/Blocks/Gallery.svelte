@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Cloudinary } from '$lib/cloudinary';
   import { maxMobileWidth } from '$lib/helpers';
   import { locale, type Locale } from '$lib/translations';
   import type { Media, Translatable } from '$types';

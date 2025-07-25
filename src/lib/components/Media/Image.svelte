@@ -1,131 +1,87 @@
 <script lang="ts">
   import { dev } from '$app/environment';
-  import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-  import { Cloudinary, type Transform } from '$lib/cloudinary';
-  import { filename, isOfflineMode, resizeWithAspectRatio } from '$lib/helpers';
-  import { onMount } from 'svelte';
+  import { isOfflineMode } from '$lib/helpers';
+  import { generateCloudinaryUrl } from '$lib/helpers/image';
+  import type { Transform } from '$types';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {
-    src: string;
-    inCloudinary?: boolean;
-    useCloudinaryPreset?: boolean;
-    title?: string;
-    alt?: string;
-    ignoreAutoSize?: boolean;
-    crop?: boolean;
-    transform?: Transform;
     class?: string;
+    imgClass?: string;
+    srcset?: {
+      isLocal?: boolean;
+      usePreset?: boolean;
+      transform?: Transform;
+      src: string;
+      size: number;
+    }[];
+    transform?: Transform;
+    useCloudinaryPreset?: boolean;
+    src?: string;
+    localSrc: string;
+    title?: string;
+    alt: string;
     onload?: (event: Event) => unknown;
   };
 
   const {
-    src,
-    inCloudinary = true,
-    useCloudinaryPreset = true,
-    title,
-    alt = '',
-    ignoreAutoSize = true,
-    crop = false,
-    transform: userTransform,
     class: additionalClass = '',
+    imgClass,
+    srcset,
+    transform,
+    useCloudinaryPreset = true,
+    src,
+    localSrc,
+    title,
+    alt,
     onload
   }: Props = $props();
 
-  const style = twMerge('object-cover w-full h-full', additionalClass);
-  let image: undefined | HTMLImageElement = $state(undefined);
-  let srcResolved: string = $state('');
+  // if localSrc use it in otherwise use src and if https = external link
 
-  const generateImagePath = () => {
-    if (isOfflineMode) {
-      if (src.startsWith('http') && inCloudinary) {
-        srcResolved = '/pages/themes/cathedrale_skate.jpg';
-        return;
+  const srcFinal = $derived.by(() => {
+    if (!src) {
+      return localSrc;
+    }
+
+    //offline mode and double check for empty src
+    if (dev && isOfflineMode) {
+      if (src?.startsWith('http')) {
+        return '/pages/themes/cathedrale_skate.jpg';
       }
-      srcResolved = src.startsWith('/') ? src : `/${src}`;
-      return;
-    }
-    if (src.startsWith('http') || !inCloudinary) {
-      srcResolved = src.startsWith('http') || src.startsWith('/') ? src : `/${src}`;
-      return;
+      return localSrc;
     }
 
-    // Cloudinary section
-    let transform: Transform = {
-      gravity: 'auto',
-      crop: 'fill',
-      ...userTransform,
-    };
-
-    const imageBoundaries = image?.getBoundingClientRect();
-
-    if (!ignoreAutoSize) {
-      if (!imageBoundaries) {
-        return;
-      }
-      const width = transform.w ?? transform.width ?? imageBoundaries.width;
-      const height = transform.h ?? transform.height ?? imageBoundaries.height;
-
-      //replace by img boundaries
-      delete transform.w;
-      delete transform.width;
-      delete transform.h;
-      delete transform.height;
-
-      transform = {
-        ...transform,
-        ...resizeWithAspectRatio({
-          original: {
-            width: typeof width === 'string' ? parseInt(width) : width,
-            height: typeof height === 'string' ? parseInt(height) : height
-          },
-          targetWidth: Cloudinary.breakpoints(imageBoundaries.width)
-        })
-      };
-    } else {
-      let height = transform.h || transform.height ? (transform.h ?? transform.height) : 'auto';
-      let width = transform.w || transform.width ? (transform.w ?? transform.width) : 'auto';
-
-      delete transform.w;
-      delete transform.width;
-      delete transform.h;
-      delete transform.height;
-
-      if (width === 'auto' && height === 'auto' && !imageBoundaries) {
-        height = 720;
-        width = 1280;
-      }
-
-      transform = {
-        ...transform,
-        width,
-        height
-      };
-    }
-
-    const path = useCloudinaryPreset
-      ? `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${filename(src)}`
-      : filename(src);
-
-    srcResolved = Cloudinary.make(path).url(transform);
-  };
-
-  onMount(() => {
-    generateImagePath();
-    if (!ignoreAutoSize) {
-      window.addEventListener('resize', generateImagePath);
-    }
+    return generateCloudinaryUrl({
+      src,
+      usePreset: useCloudinaryPreset,
+      transform
+    });
   });
+
+  const srcSetFinal = $derived.by(() => {
+    if ((dev && isOfflineMode) || !srcset) {
+      return [];
+    }
+    if (srcset.length) {
+      return srcset.map((s) => {
+        if (s.isLocal) {
+          return { size: s.size, src: `${s.src}` }; // ${s.size}
+        }
+        return { size: s.size, src: generateCloudinaryUrl(s)};
+      });
+    }
+
+    return [];
+  });
+
+  const style = twMerge('flex object-cover h-full w-full', additionalClass);
 </script>
 
-{#key srcResolved}
-  <img
-    bind:this={image}
-    src={srcResolved}
-    {alt}
-    title={title ?? alt}
-    loading="lazy"
-    class={style}
-    {onload}
-  />
-{/key}
+<!-- <img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} /> -->
+<picture class={style}>
+  {#each srcSetFinal.reverse() as srcSet}
+    <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
+  {/each}
+  <img class={twMerge("w-full h-auto object-cover", imgClass)} src={srcFinal} {alt} {title} {onload} />
+</picture>

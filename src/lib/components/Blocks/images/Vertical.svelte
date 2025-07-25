@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { Cloudinary, type Transform } from '$lib/cloudinary';
   import Container from '$lib/components/Container.svelte';
   import Figure from '$lib/components/Figure.svelte';
+  import type { Transform } from '$types';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
@@ -22,14 +22,12 @@
     focus = 'auto'
   }: Props = $props();
   let transform: Transform = $state({
-    height: 'auto',
     gravity: focus,
     crop: 'auto'
   });
 
   onMount(() => {
     transform = {
-      height: 'auto',
       width: isMobile ? window.innerWidth : Math.round(window.innerWidth / 1.4),
       gravity: focus,
       crop: 'auto'
@@ -54,7 +52,6 @@
       useCloudinaryPreset={false}
       class="medium w-full max-w-xl"
       src={cloudinaryId}
-      ignoreAutoSize
       {transform}
       {alt}
     />
@@ -62,7 +59,6 @@
     <Figure
       useCloudinaryPreset={false}
       class="large w-full max-w-2xl"
-      ignoreAutoSize
       src={cloudinaryId}
       {transform}
       {alt}

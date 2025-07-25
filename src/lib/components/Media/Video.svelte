@@ -1,8 +1,7 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-  import { Cloudinary } from '$lib/cloudinary';
-  import { filename } from '$lib/helpers';
+  import { filename, isOfflineMode } from '$lib/helpers';
   import { CircleX, Pause, Play, Volume2 } from 'lucide-svelte';
   import { onMount, type Snippet } from 'svelte';
   import Device from 'svelte-device-info';
@@ -11,6 +10,8 @@
   type VideoProps = {
     src: string;
     class?: string;
+    useCloudinaryPreset?: boolean;
+    useCloudinary?: boolean;
     preload?: '' | 'auto' | 'metadata' | 'none' | null | undefined;
     muted?: boolean;
     autoplay?: boolean;
@@ -21,11 +22,12 @@
 
   let video: HTMLVideoElement | null | undefined;
   let playing: boolean = $state(false);
-  let srcResolved: string = $state('');
 
   let {
     class: additionalClass,
     src,
+    useCloudinaryPreset = true,
+    useCloudinary = true,
     muted = false,
     autoplay = false,
     loop = false,
@@ -33,6 +35,32 @@
     preload = 'auto',
     children
   }: VideoProps = $props();
+
+  const videoSource = $derived.by(() => {
+    if (!useCloudinary || (dev && isOfflineMode)) {
+      return src;
+    }
+    //replace any video format by optimized format
+    const videoExtensions = [
+      'mp4',
+      'avi',
+      'mov',
+      // 'mkv', // because MKV is a container that could contain subs
+      'webm',
+      'flv',
+      'wmv',
+      'mpeg',
+      'mpg',
+      '3gp',
+      'm4v',
+      'ts',
+      'ogv'
+    ];
+    const videoRegex = new RegExp(`\\.(${videoExtensions.join('|')})$`, 'i');
+    let path = src.replace(videoRegex, '.webm');
+    path = path.startsWith('/') ? path : `/${path}`;
+    return `https://static.lausanne-tourisme.ch/video/upload/w_1920/${useCloudinaryPreset ? PUBLIC_CLOUDINARY_UPLOAD_PRESET : ''}${path}`;
+  });
 
   export function toggleVideoState() {
     if (isRunning()) pause();
@@ -49,31 +77,9 @@
 
   export const isRunning = () => (video ? !video.paused : false);
 
-  const refreshSrc = (filepath: string) => {
-    if (video) {
-      let { width } = video.getBoundingClientRect();
-
-      width = Math.round(width);
-
-      if (!dev && src.includes('videos')) {
-        srcResolved = Cloudinary.make(
-          `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${filename(filepath)}`
-        ).url({
-          width
-        });
-      } else {
-        srcResolved = src;
-      }
-    }
-  };
-
   const mute = () => {
     muted = !muted;
   };
-
-  $effect(() => {
-    refreshSrc(src);
-  });
 
   const style = twMerge('w-full h-full relative z-0', additionalClass);
 </script>
@@ -112,7 +118,7 @@
   <video
     bind:this={video}
     bind:paused={playing}
-    src={srcResolved}
+    src={videoSource}
     {controls}
     {muted}
     {autoplay}
