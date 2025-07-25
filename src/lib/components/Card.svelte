@@ -1,11 +1,15 @@
 <script lang="ts">
+  import Image from '$lib/components/Media/Image.svelte';
+  import type { Transform } from '$types';
   import { type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-  import Image from './Media/Image.svelte';
 
   type Props = {
     children: Snippet;
     src: string;
+    useCloudinaryPreset?: boolean;
+    localSrc?: string;
+    transform?: Transform;
     alt?: string;
     border?: string;
     background?: string;
@@ -18,6 +22,9 @@
     children,
     class: additionalClass,
     src,
+    useCloudinaryPreset = true,
+    localSrc = '/pages/themes/cathedrale_skate.jpg',
+    transform,
     alt,
     border,
     background,
@@ -45,7 +52,7 @@
 
 <div class={cardStyle}>
   <div class="image pointer-events-none absolute top-0 left-0 h-full w-full">
-    <Image {src} {alt} class="" />
+    <Image alt={alt ?? ''} {src} {localSrc} {transform} {useCloudinaryPreset} />
   </div>
   <div
     class="to-shakespeare-950/80 pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent from-0% via-transparent via-40% to-100% transition-all group-hover:opacity-70"

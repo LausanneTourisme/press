@@ -1,17 +1,16 @@
 <script lang="ts">
-  import { type Transform } from '$lib/cloudinary';
+  import { type Transform } from '$types';
   import { twMerge } from 'tailwind-merge';
   import Image from './Media/Image.svelte';
+  import { filename } from '$lib/helpers';
 
   interface Props {
     src?: string;
     useCloudinaryPreset?: boolean;
     alt?: string;
     transform?: Transform;
-    crop?: boolean;
     class?: string;
     imgClass?: string;
-    ignoreAutoSize?: boolean;
     onclick?: (event: unknown) => void;
   }
 
@@ -22,8 +21,6 @@
     useCloudinaryPreset = true,
     alt = '',
     transform,
-    crop = true,
-    ignoreAutoSize,
     onclick
   }: Props = $props();
 
@@ -42,13 +39,12 @@
     <figure bind:this={figure} class={style} {onclick}>
       <Image
         class={imgClass}
-        {useCloudinaryPreset}
-        {src}
         {alt}
+        src={filename(src)}
+        localSrc={src}
+        {useCloudinaryPreset}
         {transform}
-        {crop}
         onload={removeBackground}
-        {ignoreAutoSize}
       />
     </figure>
   </button>
@@ -56,13 +52,12 @@
   <figure bind:this={figure} class={style} {onclick}>
     <Image
       class={imgClass}
-      {useCloudinaryPreset}
-      {src}
       {alt}
+      src={filename(src)}
+      localSrc={src}
+      {useCloudinaryPreset}
       {transform}
-      {crop}
       onload={removeBackground}
-      {ignoreAutoSize}
     />
   </figure>
 {/if}

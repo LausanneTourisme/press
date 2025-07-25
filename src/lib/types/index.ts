@@ -3,6 +3,7 @@ import type { Component } from "svelte";
 
 export type * from './maplibre';
 export type * from './nova';
+export type * from './images'
 
 declare global {
     interface Window {
@@ -55,9 +56,3 @@ export type GraphQLResponse<T> = {
     },
     errors?: unknown[]
 }
-
-export type ImageDimensions = {
-    width: number;
-    height: number;
-};
-

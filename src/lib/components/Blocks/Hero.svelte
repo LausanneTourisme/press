@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { Transform } from '$lib/cloudinary';
   import { maxMobileWidth } from '$lib/helpers';
   import type { Hero } from '$types/releaseContents';
   import { onMount, type Snippet } from 'svelte';
@@ -9,6 +8,7 @@
   import Container from '../Container.svelte';
   import Heading from '../Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
+  import type { Transform } from '$types';
 
   type Props = {
     class?: string;
@@ -21,7 +21,7 @@
   const updateSize = () => {
     isMobile = window.innerWidth < maxMobileWidth;
   };
-  const transform: Transform = $state({});
+  const transform: Transform = $state({width:1920, height:1280});
 
   const style: string = twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass);
 

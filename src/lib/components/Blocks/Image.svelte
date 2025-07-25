@@ -59,7 +59,7 @@
   };
 
   const updateWidth = () => {
-    parallaxWidth = window.innerWidth;
+    parallaxWidth = window.innerWidth ? window.innerWidth : 1920;
   };
 
   const style = twMerge('min-h-96', additionalClass);

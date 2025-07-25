@@ -104,7 +104,15 @@
 
   const closeAside = () => {
     onclose?.();
-    aside.show = false;
+    aside = {
+      show: false,
+      title: '',
+      content: '',
+      image: '',
+      imageName: '',
+      imageCopyright: '',
+      lausanner: undefined
+    };
     markerIndex = undefined;
 
     map?.flyTo({
@@ -147,6 +155,7 @@
 <div class="relative flex h-[550px] flex-col-reverse lg:flex-row 2xl:h-[768px]">
   {#if markers.length}
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
+      {#key markers}
       <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
         {#each markers as marker}
           <LausannerCard
@@ -158,12 +167,13 @@
           />
         {/each}
       </div>
+      {/key}
       <div
         bind:this={asideElement}
-        class={twMerge('aside-popup h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
+        class={twMerge('aside-popup flex flex-col h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
         transition:fade
       >
-        <div class="relative">
+        <div class="relative flex-auto">
           <button
             class="absolute top-2 left-2 flex cursor-pointer rounded-full border border-slate-300 bg-white p-2 hover:bg-gray-100"
             onclick={closeAside}
@@ -172,10 +182,12 @@
           </button>
           <button class="h-56 w-full shadow" onclick={closeAside}>
             <Image
-              src={isOfflineMode ? '/pages/themes/user_not_found.png' : aside.image}
-              alt={aside.imageCopyright}
-              useCloudinaryPreset={false}
               class="h-full w-full"
+              alt={aside.imageCopyright}
+              title={aside.imageName}
+              src={aside.image}
+              localSrc="/pages/themes/user_not_found.png"
+              useCloudinaryPreset={false}
             />
           </button>
           <Heading tag="h3">
@@ -187,18 +199,23 @@
         </div>
         <aside class={twMerge('flex items-center rounded-lg p-4', themeColor)}>
           <Image
-            class="h-12 w-12 rounded-full"
-            alt=""
+            class="h-12 w-12 items-center rounded-full"
+            alt={aside.lausanner?.name ?? ''}
             useCloudinaryPreset={aside.lausanner?.medias?.at(0)?.cloudinary_id ? false : true}
-            src={isOfflineMode
-              ? '/pages/themes/user_not_found.png'
-              : (aside.lausanner?.medias?.at(0)?.cloudinary_id ??
-                '/pages/themes/user_not_found.png')}
-            transform={{ gravity: 'north', crop: 'auto', width: 240, height: 320 }}
-            ignoreAutoSize
+            localSrc={'/pages/themes/user_not_found.png'}
+            src={aside.lausanner?.medias?.at(0)?.cloudinary_id ??
+              '/pages/themes/user_not_found.png'}
+            transform={{
+              round: 'max',
+              gravity: 'north',
+              crop: 'auto',
+              aspect_ratio: '1:1',
+              width: 50,
+              height: 50
+            }}
           />
           <div class="flex w-full items-center justify-between">
-            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold lg:w-2/3 md:text-base">
+            <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:text-base lg:w-2/3">
               <Link
                 withIcon={true}
                 href={getLausannerUrl({
@@ -210,7 +227,7 @@
                 {aside.lausanner?.name}
 
                 {#snippet icon()}
-                  <SquareArrowOutUpRight class="ml-2 h-10 md:h-4 w-10 md:w-4 " />
+                  <SquareArrowOutUpRight class="ml-2 h-10 w-10 md:h-4 md:w-4 " />
                 {/snippet}
               </Link>
             </Paragraph>

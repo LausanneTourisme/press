@@ -3,7 +3,6 @@
   import Anchor from '$lib/components/Anchor.svelte';
   import Container from '$lib/components/Container.svelte';
   import Faq from '$lib/components/Faq.svelte';
-  import Form from './Form.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
@@ -12,7 +11,7 @@
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { ActionData } from './$types';
-  import type { SvelteComponent } from 'svelte';
+  import Form from './Form.svelte';
 
   const pageForm = $derived(page.form as ActionData);
   let displayForm: boolean = $state(false);
@@ -76,7 +75,13 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/olivia.jpg" alt="Olivia Bosshart" />
+            <Image
+              alt="Olivia Bosshart"
+              title="Olivia Bosshart"
+              localSrc="/olivia.jpg"
+              src="/olivia"
+              transform={{ width: 512, aspect_ratio: '1:1' }}
+            />
           </div>
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
@@ -87,7 +92,13 @@
       <article>
         <div class="avatar w-full">
           <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image src="/laura.jpg" alt="Laura Ragonese" />
+            <Image
+              alt="Laura Ragonese"
+              title="Laura Ragonese"
+              localSrc="/laura.jpg"
+              src="/laura"
+              transform={{ width: 512, aspect_ratio: '1:1' }}
+            />
           </div>
         </div>
         <Heading tag="h3">Laura Ragonese</Heading>
@@ -105,8 +116,8 @@
         : ''}"
       out:fade
     >
-      <Heading class="-mt-4 mb-8 text-lg font-bold">
-        {$t('page.form.select-section.title')}
+      <Heading class="-mt-4 mb-8 text-lg font-bold text-center">
+        {@html $t('page.form.select-section.title')}
       </Heading>
       <div
         class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"

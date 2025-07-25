@@ -1,5 +1,5 @@
 import { Themes, type Theme } from "$enums";
-import type { Transform } from "$lib/cloudinary";
+import type { Transform } from "$types";
 
 export type ThemeDetail = {
   [key in keyof typeof Themes]: {
