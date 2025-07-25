@@ -36,8 +36,8 @@
   <Shelf
     onToggle={() => toggleShelf(0)}
     isOpen={openShelfIndex === 0}
-    class="dark:hover:bg-base-dark-hover border-b-4  border-gray-300 hover:bg-slate-100"
-    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
+    class="dark:hover:bg-base-dark-hover border-b-4  border-gray-300"
+    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md hover:bg-slate-100"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
@@ -71,7 +71,7 @@
     onToggle={() => toggleShelf(1)}
     isOpen={openShelfIndex === 1}
     class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
-    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
+    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md hover:bg-slate-100"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
@@ -119,7 +119,7 @@
     onToggle={() => toggleShelf(2)}
     isOpen={openShelfIndex === 2}
     class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
-    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
+    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md hover:bg-slate-100"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
@@ -149,7 +149,7 @@
     onToggle={() => toggleShelf(3)}
     isOpen={openShelfIndex === 3}
     class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
-    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
+    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md hover:bg-slate-100"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
@@ -177,8 +177,8 @@
   <Shelf
     onToggle={() => toggleShelf(4)}
     isOpen={openShelfIndex === 4}
-    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300"
-    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md"
+    class="dark:hover:bg-base-dark-hover border-b-4 border-gray-300 "
+    titleClass="min-h-14 pt-10 pb-8 px-4 rounded-md hover:bg-slate-100"
     childClass="px-4 pb-12"
   >
     {#snippet title()}
