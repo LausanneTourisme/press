@@ -52,7 +52,9 @@
 
 <div class={cardStyle}>
   <div class="image pointer-events-none absolute top-0 left-0 h-full w-full">
-    <Image alt={alt ?? ''} {src} {localSrc} {transform} {useCloudinaryPreset} />
+    {#key src}
+      <Image alt={alt ?? ''} {src} {localSrc} {transform} {useCloudinaryPreset} />
+    {/key}
   </div>
   <div
     class="to-shakespeare-950/80 pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent from-0% via-transparent via-40% to-100% transition-all group-hover:opacity-70"

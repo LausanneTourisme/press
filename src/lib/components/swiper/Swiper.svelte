@@ -78,7 +78,7 @@
 </script>
 
 <div class={style}>
-  <div class="swiper" bind:this={swiperEl}>
+  <div class="swiper !p-0.5" bind:this={swiperEl}>
     <div class={twMerge('swiper-wrapper', containerClass)}>
       {@render children({ class: 'swiper-slide' })}
     </div>
