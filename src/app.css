@@ -187,24 +187,19 @@ img {
   @apply !bg-brand-500 opacity-45
 }
 
-.cookieConsentWrapper .cookieConsent__Button[type='submit'] {
-  @apply bg-brand-600 text-white;
+.cookieConsentToggle {
+  box-shadow: 0 0 10px #0000004d;
+  box-sizing: border-box;
+  transition: .2s;
+  cursor: pointer;
+}
+.cookieConsentToggle:hover {
+  color: #fff;
+  background: #000;
+  transition: .2s;
 }
 
-.cookieConsentWrapper button.cookieConsentToggle {
-  @apply !left-[20px];
-  right: unset !important;
-}
-.cookieConsentWrapper .cookieConsent__Right {
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-.cookieConsentWrapper .cookieConsent__Left {
-  flex: 1
-}
-.cookieConsentWrapper .cookieConsent__Button {
-  margin: 3px;
+.biskoui-cookie-banner-sticker {
+  display: none !important;
 }
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
