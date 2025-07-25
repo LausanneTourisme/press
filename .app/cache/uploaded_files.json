@@ -6,7 +6,6 @@ static/logo/logo_fr.svg
 static/logo/logo_en.svg
 static/logo/LT_Logo.png
 static/pages/themes/vendanges.jpg
-static/pages/themes/user_not_found.png
 static/pages/themes/rolex-learning-center.jpg
 static/pages/themes/plateforme_10.jpg
 static/pages/themes/lacustre-jetee-compagnie.jpg
@@ -59,3 +58,7 @@ static/pages/home/articles/nature.jpg
 static/pages/home/articles/best-small-city.jpg
 static/pages/home/articles/52placestogo.jpg
 static/default.jpg
+static/pages/home/ipad.jpg
+static/pages/home/fhd.jpg
+static/pages/home/4k.jpg
+static/pages/themes/user_not_found.png
