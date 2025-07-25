@@ -1,6 +1,5 @@
 <script lang="ts">
   import { browser, dev } from '$app/environment';
-  import { consentStore } from '$lib/stores/CookiesConsent';
   import { t } from '$lib/translations';
   import { onMount } from 'svelte';
 
@@ -11,9 +10,10 @@
   const { class: additionalClass = '', url }: HeadingProps = $props();
   const instagramEmbedUrl = 'https://www.instagram.com/embed.js';
 
+  //TODO migrate with Biskoui consent
   const addOnlyOnceInstagramScript = () => {
     const alreadyInjected = !!document.querySelector(`script[src="${instagramEmbedUrl}"]`);
-    const hasTrackingConsent = $consentStore.tracking ?? false;
+    const hasTrackingConsent =  false;
 
     if (!alreadyInjected && hasTrackingConsent) {
       const script = document.createElement('script');
@@ -26,18 +26,6 @@
       document.head.appendChild(script);
     }
   };
-
-  $effect(() => {
-    if (browser && $consentStore.tracking) {
-      addOnlyOnceInstagramScript();
-    }
-  });
-
-  onMount(() => {
-    if (browser && $consentStore.tracking) {
-      addOnlyOnceInstagramScript();
-    }
-  });
 </script>
 
 <blockquote
