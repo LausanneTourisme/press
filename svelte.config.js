@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-node';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 import { readFileSync } from 'node:fs';
 
@@ -26,7 +27,8 @@ const config = {
       // NOTE: You can modify your exported error pages here.
       entries: supportedLocales.flatMap((locale) => [`/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`]),
     }
-  }
+  },
+	preprocess: vitePreprocess(),
 };
 
 export default config;
