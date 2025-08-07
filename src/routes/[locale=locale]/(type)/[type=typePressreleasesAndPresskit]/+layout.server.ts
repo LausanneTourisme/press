@@ -1,12 +1,12 @@
 import { RouteTypes } from '$enums';
-import { translations as libTranslations, loadTranslations, supportedLocales, type Locale } from '$lib/translations';
+import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 
 export const load = async ({ url, params, parent }) => {
     const lang = params.locale as Locale;
     const [{ i18n, translations }] = await Promise.all([
         parent(),
-        loadTranslations(lang, url.pathname),
+        loadTranslations(lang, url.pathname)
     ]);
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
@@ -21,7 +21,7 @@ export const load = async ({ url, params, parent }) => {
 
     return {
         i18n,
-        translations: libTranslations.get(),
+        translations,
         seo,
         locale: lang,
         type: RouteTypes.PressreleasesAndPresskits,

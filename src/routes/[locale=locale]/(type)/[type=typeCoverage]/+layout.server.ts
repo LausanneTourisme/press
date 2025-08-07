@@ -1,11 +1,12 @@
 import { RouteTypes } from '$enums';
-import { supportedLocales, type Locale } from '$lib/translations';
+import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 
 export const load = async ({ url, params, parent }) => {
     const { i18n, translations } = await parent();
 
     const lang = params.locale as Locale;
+    await loadTranslations(lang, url.pathname)
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
