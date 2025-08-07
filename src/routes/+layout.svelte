@@ -2,6 +2,7 @@
   import { afterNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import Button from '$lib/components/Button.svelte';
+  import Analytics from '$lib/components/GDPR/Analytics.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';
@@ -10,16 +11,15 @@
   import { locale, t } from '$lib/translations';
   import { Send } from 'lucide-svelte';
   import { type Snippet } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
-  import { twMerge } from 'tailwind-merge';
-  import Analytics from '$lib/components/GDPR/Analytics.svelte';
 
   let { children } = $props<{ children: Snippet }>();
-  const origin = $derived(page.url.origin);
-  const translations = $derived((page.data as PageData).translations[locale.get()]);
-  const seo = $derived.by(() => {
-    const pageData = $state(page.data as PageData);
+  let origin = $derived(page.url.origin);
+  let translations = $derived((page.data as PageData).translations[locale.get()]);
+  let seo = $derived.by(() => {
+    const pageData = page.data as PageData;
     return {
       title: pageData.seo.title,
       description: pageData.seo.description,
