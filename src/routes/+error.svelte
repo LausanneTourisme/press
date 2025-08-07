@@ -53,7 +53,7 @@
     </div>
 
     <div class="flex w-full md:w-1/3 justify-center items-center min-h-40">
-        <Figure src={themeInformation.head} class="aspect-square max-h-40 md:max-h-64" ignoreAutoSize={true} transform={{height: 320, width: 320}} />
+        <Figure src={themeInformation.head} class="aspect-square max-h-40 md:max-h-64" transform={{height: 320, width: 320}} />
     </div>
   </div>
 </Container>
