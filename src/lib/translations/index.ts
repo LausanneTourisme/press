@@ -48,23 +48,6 @@ export const config: Config<{
     },
   },
   loaders: [
-    // ALL because old system was ""perfect""
-    // ...[{
-    //   locale: 'fr',
-    //   key: '',
-    //   loader: async () => (await import('./fr/all.json')).default,
-    // },
-    // {
-    //   locale: 'en',
-    //   key: '',
-    //   loader: async () => (await import('./en/all.json')).default,
-    // },
-    // {
-    //   locale: 'de',
-    //   key: '',
-    //   loader: async () => (await import('./de/all.json')).default,
-    // },],
-
     // Route
     ...supportedLocales.map(locale => ({
       locale,
