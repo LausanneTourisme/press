@@ -5,6 +5,10 @@ import Botpoison from "@botpoison/node";
 import { error, fail } from "@sveltejs/kit";
 import type { Actions } from "./$types";
 import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
+import { RouteTypes } from "$enums";
+import { supportedLocales, translations } from "$lib/translations";
+import type { EntryGenerator } from "./$types";
+
 
 const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
 
@@ -23,6 +27,7 @@ const verifyIfHuman = async (data: FormData) => {
 }
 
 const validateEmail = (email: string | null | undefined) => {
+    if(!email) return false;
     return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
 };
 
@@ -149,3 +154,15 @@ export const actions: Actions = {
         return fail(500, { message: "Please retry later." })
     }
 } satisfies Actions;
+
+export const entries: EntryGenerator = () => {
+    const t = translations.get();
+
+    return supportedLocales.flatMap(locale => {
+        const type = t[locale][`route.${RouteTypes.Contact}.slug`];
+        return {
+            locale,
+            type,
+        };
+    });
+};
