@@ -20,8 +20,8 @@ export const load = async ({ params, parent, url, ...rest }) => {
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: release.name?.[lang as Locale] ?? translations[lang][`page.title`],
-        description: release.lead?.[lang as Locale] ?? translations[lang][`page.meta-description`],
+        title: release.name?.[lang as Locale] ?? translations[lang][`${type}.title`],
+        description: release.lead?.[lang as Locale] ?? translations[lang][`${type}.meta-description`],
         image: generateCloudinaryUrl({ src: release.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),
         alternate: supportedLocales.filter(l => release.languages?.includes(l)).map(locale => ({
             hreflang: locale,

@@ -9,8 +9,8 @@ export const load = async ({ url, params, parent }) => {
 
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: translations[lang][`themes.title`],
-        description: translations[lang][`themes.meta-description`],
+        title: translations[lang][`${RouteTypes.Themes}.title`],
+        description: translations[lang][`${RouteTypes.Themes}.meta-description`],
         image: `${url.origin}/seo/poster-home.png`, //TODO add picture please
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,

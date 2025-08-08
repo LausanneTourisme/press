@@ -2,7 +2,6 @@
   import { afterNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import Button from '$lib/components/Button.svelte';
-  import Analytics from '$lib/components/GDPR/Analytics.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import Image from '$lib/components/Media/Image.svelte';
@@ -119,7 +118,6 @@
 
   <main>
     {@render children()}
-    <Analytics />
   </main>
 
   <footer class="bg-metallic-800 relative z-10 leading-[1.7] tracking-wider text-white">

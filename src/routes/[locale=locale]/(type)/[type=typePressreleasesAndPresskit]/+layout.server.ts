@@ -10,8 +10,8 @@ export const load = async ({ url, params, parent }) => {
     ]);
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: translations[lang][`page.title`],
-        description: translations[lang][`page.meta-description`],
+        title: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.title`],
+        description: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.meta-description`],
         image: `${url.origin}/seo/poster-home.png`,
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
