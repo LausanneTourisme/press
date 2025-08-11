@@ -2,7 +2,7 @@ import { RouteTypes, Themes } from "$enums";
 import { getMediaLibraryRegisterLink, route } from "$lib/helpers";
 import { menuItems } from "$lib/helpers/menu";
 import { getPosts } from "$lib/helpers/requests.server";
-import { defaultLocale, type Locale, supportedLocales, translations } from "$lib/translations";
+import { type Locale, supportedLocales, translations } from "$lib/translations";
 import type { Release, Translatable } from "$types";
 
 export const GET = async ({ url, params }) => {

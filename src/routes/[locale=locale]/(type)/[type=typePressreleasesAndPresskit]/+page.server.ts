@@ -4,6 +4,9 @@ import { sortByYears } from '$lib/helpers/date';
 import { getPosts } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
 import type { Release } from '$types';
+import { RouteTypes } from "$enums";
+import { supportedLocales, translations } from "$lib/translations";
+import type { EntryGenerator } from "./$types";
 
 export const load = async ({ parent }) => {
     if (dev && isOfflineMode) {
@@ -22,4 +25,17 @@ export const load = async ({ parent }) => {
             releasesByDates: new Map([...sortByYears(releases)].reverse())
         }
     }
+};
+
+
+export const entries: EntryGenerator = () => {
+    const t = translations.get();
+
+    return supportedLocales.flatMap(locale => {
+        const type = t[locale][`route.${RouteTypes.PressreleasesAndPresskits}.slug`];
+        return {
+            locale,
+            type,
+        };
+    });
 };

@@ -48,23 +48,6 @@ export const config: Config<{
     },
   },
   loaders: [
-    // ALL because old system was ""perfect""
-    // ...[{
-    //   locale: 'fr',
-    //   key: '',
-    //   loader: async () => (await import('./fr/all.json')).default,
-    // },
-    // {
-    //   locale: 'en',
-    //   key: '',
-    //   loader: async () => (await import('./en/all.json')).default,
-    // },
-    // {
-    //   locale: 'de',
-    //   key: '',
-    //   loader: async () => (await import('./de/all.json')).default,
-    // },],
-
     // Route
     ...supportedLocales.map(locale => ({
       locale,
@@ -107,12 +90,12 @@ export const config: Config<{
 
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
-      .filter(x => x !== RouteTypes.Home)
+      .filter(x => x !== RouteTypes.Home && x !== RouteTypes.Themes)
       .flatMap(type => supportedLocales.map(locale => {
         const slug = routeTypes[locale][`${type}.slug`];
         return {
           locale,
-          key: 'page',
+          key: type,
           routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
           loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
         }

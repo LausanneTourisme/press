@@ -5,6 +5,10 @@ import Botpoison from "@botpoison/node";
 import { error, fail } from "@sveltejs/kit";
 import type { Actions } from "./$types";
 import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
+import { RouteTypes } from "$enums";
+import { supportedLocales, translations } from "$lib/translations";
+import type { EntryGenerator } from "./$types";
+
 
 const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
 
@@ -23,6 +27,7 @@ const verifyIfHuman = async (data: FormData) => {
 }
 
 const validateEmail = (email: string | null | undefined) => {
+    if(!email) return false;
     return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
 };
 
@@ -53,7 +58,7 @@ export const actions: Actions = {
             errors.title = {
                 value: title,
                 incorrect: true,
-                message: t.get("page.form.mail-section.validations.radio-buttons"),
+                message: t.get(`${RouteTypes.Contact}.form.mail-section.validations.radio-buttons`),
             }
         }
 
@@ -61,7 +66,7 @@ export const actions: Actions = {
             errors.name = {
                 value: name,
                 incorrect: true,
-                message: t.get("page.form.mail-section.validations.text-length", { number: nameMinimumCharacters }),
+                message: t.get(`${RouteTypes.Contact}.form.mail-section.validations.text-length`, { number: nameMinimumCharacters }),
             }
         }
 
@@ -69,7 +74,7 @@ export const actions: Actions = {
             errors.message = {
                 value: message,
                 incorrect: true,
-                message: t.get("page.form.mail-section.validations.text-length", { number: messageMinimumCharacters }),
+                message: t.get(`${RouteTypes.Contact}.form.mail-section.validations.text-length`, { number: messageMinimumCharacters }),
             }
         }
 
@@ -77,7 +82,7 @@ export const actions: Actions = {
             errors.job_title = {
                 value: job_title,
                 incorrect: true,
-                message: t.get("page.form.mail-section.validations.select"),
+                message: t.get(`${RouteTypes.Contact}.form.mail-section.validations.select`),
             }
         }
 
@@ -85,7 +90,7 @@ export const actions: Actions = {
             errors.email = {
                 value: email,
                 incorrect: true,
-                message: t.get("page.form.mail-section.validations.mail"),
+                message: t.get(`${RouteTypes.Contact}.form.mail-section.validations.mail`),
             }
         }
 
@@ -129,9 +134,9 @@ export const actions: Actions = {
         const confirm = await mailchimpTx.messages.send({
             message: {
                 from_email: MAIL_FROM,
-                from_name: t.get('page.form.mail-section.response.from-name'),
-                subject: t.get('page.form.mail-section.response.subject'),
-                html: `<p>${t.get('page.form.mail-section.response.content', { name })}</p><p><i>${t.get('page.form.mail-section.response.automatic-mail-disclaimer')}</i></p>`,
+                from_name: t.get(`${RouteTypes.Contact}.form.mail-section.response.from-name`),
+                subject: t.get(`${RouteTypes.Contact}.form.mail-section.response.subject`),
+                html: `<p>${t.get(`${RouteTypes.Contact}.form.mail-section.response.content`, { name })}</p><p><i>${t.get(`${RouteTypes.Contact}.form.mail-section.response.automatic-mail-disclaimer`)}</i></p>`,
                 to: [{
                     email: email as string,
                     type: "to",
@@ -149,3 +154,15 @@ export const actions: Actions = {
         return fail(500, { message: "Please retry later." })
     }
 } satisfies Actions;
+
+export const entries: EntryGenerator = () => {
+    const t = translations.get();
+
+    return supportedLocales.flatMap(locale => {
+        const type = t[locale][`route.${RouteTypes.Contact}.slug`];
+        return {
+            locale,
+            type,
+        };
+    });
+};

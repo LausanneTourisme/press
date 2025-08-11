@@ -1,19 +1,17 @@
 import { RouteTypes } from '$enums';
-import { defaultLocale, translations as libTranslations, loadTranslations, supportedLocales, type Locale } from '$lib/translations';
+import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 
 export const load = async ({ url, params, parent }) => {
+    const lang = params.locale as Locale;
     const [{ i18n, translations }] = await Promise.all([
         parent(),
-        loadTranslations(params.locale ?? defaultLocale, `/${params.locale}/${params.type}`),
+        loadTranslations(lang, url.pathname)
     ]);
-
-    const lang = params.locale as Locale;
-
     const seo: SeoHeader = {
         canonical: `${url.origin}${url.pathname}`,
-        title: translations[lang][`page.title`],
-        description: translations[lang][`page.meta-description`],
+        title: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.title`],
+        description: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.meta-description`],
         image: `${url.origin}/seo/poster-home.png`,
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
@@ -23,7 +21,7 @@ export const load = async ({ url, params, parent }) => {
 
     return {
         i18n,
-        translations: libTranslations.get(),
+        translations,
         seo,
         locale: lang,
         type: RouteTypes.PressreleasesAndPresskits,

@@ -1,8 +1,12 @@
 import { dev } from '$app/environment';
+import { RouteTypes, Themes } from '$enums';
+import { LANG } from '$env/static/private';
 import { filterByTag, isOfflineMode } from '$lib/helpers';
 import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
+import { supportedLocales, translations } from '$lib/translations';
 import type { Post } from '$types';
+import type { EntryGenerator } from './$types';
 
 export const load = async ({ parent }) => {
     if (dev && isOfflineMode) {
@@ -31,4 +35,20 @@ export const load = async ({ parent }) => {
             favorites,
         }
     }
+};
+
+export const entries: EntryGenerator = () => {
+    const t = translations.get();
+    const themes = Object.values(Themes)
+
+    return supportedLocales.flatMap(locale => {
+        const type = t[locale][`route.${RouteTypes.Themes}.slug`];
+        return themes.map(theme => {
+            return {
+                locale,
+                type,
+                theme: t[locale][`route.${RouteTypes.Themes}.${theme}.slug`]
+            };
+        });
+    });
 };

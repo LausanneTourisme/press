@@ -10,16 +10,16 @@
   import { locale, t } from '$lib/translations';
   import { Send } from 'lucide-svelte';
   import { type Snippet } from 'svelte';
+  import { twMerge } from 'tailwind-merge';
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
-  import { twMerge } from 'tailwind-merge';
-  import Analytics from '$lib/components/GDPR/Analytics.svelte';
+  import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
 
   let { children } = $props<{ children: Snippet }>();
-  const origin = $derived(page.url.origin);
-  const translations = $derived((page.data as PageData).translations[locale.get()]);
-  const seo = $derived.by(() => {
-    const pageData = $state(page.data as PageData);
+  let origin = $derived(page.url.origin);
+  let translations = $derived((page.data as PageData).translations[locale.get()]);
+  let seo = $derived.by(() => {
+    const pageData = page.data as PageData;
     return {
       title: pageData.seo.title,
       description: pageData.seo.description,
@@ -112,14 +112,40 @@
     }
     </script>
     `}
+  <!-- Google Tag Manager -->
+  {@html `
+  <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', '${PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
+  </script>
+  `}
+  <!-- End Google Tag Manager -->
 </svelte:head>
 
 <div class="app">
   <Nav />
 
   <main>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NP52NDFF"
+        height="0"
+        width="0"
+        title="Google Tag Manager"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {@render children()}
-    <Analytics />
   </main>
 
   <footer class="bg-metallic-800 relative z-10 leading-[1.7] tracking-wider text-white">
@@ -162,7 +188,7 @@
         </Link>
         <Link withIcon={false} href="https://www.myvaud.ch/" class="inline-flex w-full">
           <Image
-            class="block mt-2 h-[16px] object-contain md:h-full"
+            class="mt-2 block h-[16px] object-contain md:h-full"
             imgClass="object-contain h-full"
             alt="Vaud Promotion"
             title="Vaud Promotion"

@@ -67,10 +67,10 @@
 <Anchor name="news" />
 <Container width="medium">
   <Heading tag="h1">
-    {$t('page.news.title')}
+    {$t('highlights.news.title')}
   </Heading>
   <Paragraph>
-    {$t('page.news.paragraph')}
+    {$t('highlights.news.paragraph')}
   </Paragraph>
 </Container>
 <!-- NEWS SWIPER -->
@@ -130,10 +130,10 @@
 <Anchor name="highlights" />
 <Container width="medium">
   <Heading class="py-4 text-center text-3xl">
-    {$t('page.highlights.title')}
+    {$t('highlights.highlights.title')}
   </Heading>
   <Paragraph>
-    {$t('page.highlights.paragraph')}
+    {$t('highlights.highlights.paragraph')}
   </Paragraph>
   {#each poisChunks as chunk}
     <div
@@ -206,7 +206,7 @@
 	-->
 <Container width="agenda" fullscreen={isMobile} background="bg-agenda-500">
   <Heading class="mb-4 p-4 text-center">
-    {$t('page.agenda.title')}
+    {$t('highlights.agenda.title')}
   </Heading>
   <Swiper showPagination={false}>
     {#each events as event}

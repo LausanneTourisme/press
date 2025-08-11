@@ -23,13 +23,13 @@
 <Container fullscreen={true}>
   <Container width="medium">
     <Heading tag="h1">
-      {$t('page.heading')}
+      {$t('press-releases-and-press-kits.heading')}
     </Heading>
     <Paragraph>
-      {$t('page.description')}
+      {$t('press-releases-and-press-kits.description')}
     </Paragraph>
     {#if releasesByDates.size === 0}
-      {$t('page.no-releases')}
+      {$t('press-releases-and-press-kits.no-releases')}
     {:else}
       {#each releasesByDates as [year, releases]}
         <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
