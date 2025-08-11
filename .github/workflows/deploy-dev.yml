@@ -1,0 +1,42 @@
+name: Deploy to the production server
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: "Install SSHPass"
+        run: sudo apt-get install sshpass
+
+      - name: Test to connect to the server
+        run: sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "true"
+
+      - name: Install & Configure Doppler
+        run: |
+          sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+          curl -sLf --retry 3 --tlsv1.2 --proto "=https" 'https://packages.doppler.com/public/cli/gpg.DE2A7741A397C129.key' | sudo gpg --dearmor -o /usr/share/keyrings/doppler-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/doppler-archive-keyring.gpg] https://packages.doppler.com/public/cli/deb/debian any-version main" | sudo tee /etc/apt/sources.list.d/doppler-cli.list
+          sudo apt-get update && sudo apt-get install doppler
+
+      - name: Get env from Doppler
+        run: |
+          export HISTIGNORE='doppler*'
+          echo "${{ secrets.DOPPLER_TOKEN }}" | doppler configure set token --scope ~/
+          doppler secrets download --no-file --format=env > ~/.env
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' scp ~/.env ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PATH }}/.env
+
+      - name: Deploy to Production server
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} <<'ENDSSH'
+          . ~/.bash_profile
+          cd ${{secrets.SSH_PATH}}
+          git checkout main
+          npm ci
+          NODE_OPTIONS="--max-old-space-size=4096" npm run build
+          ENDSSH
