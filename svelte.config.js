@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-node';
+import node from '@sveltejs/adapter-node';
+import vercel from '@sveltejs/adapter-vercel'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 import { readFileSync } from 'node:fs';
@@ -14,12 +15,11 @@ const config = {
     version: {
       name: `Presskit v${pkg.version}`
     },
-    adapter: adapter(),
+    adapter:  process.env.ENVIRONMENT === 'node' ? node() : vercel(),
     alias: {
       $enums: path.resolve('./src/lib/enums'),
       $types: path.resolve('./src/lib/types'),
     },
-
   }
 };
 

@@ -61,6 +61,7 @@
     "@botpoison/browser": "^0.1.30",
     "@botpoison/node": "^0.1.10",
     "@mailchimp/mailchimp_transactional": "^1.0.59",
+    "@sveltejs/adapter-vercel": "^5.8.2",
     "@tailwindcss/vite": "^4.1.6",
     "dotenv": "^16.5.0",
     "embla-carousel": "^8.6.0",
