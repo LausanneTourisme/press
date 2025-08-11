@@ -80,14 +80,6 @@ export const config: Config<{
       loader: async () => (await import(`./${locale}/common.json`)).default,
     })),
 
-    // GDPR
-    ...supportedLocales.map(locale => ({
-      locale,
-      key: 'gdpr',
-      routes: undefined,
-      loader: async () => (await import(`./${locale}/gdpr.json`)).default,
-    })),
-
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
       .filter(x => x !== RouteTypes.Home && x !== RouteTypes.Themes)
