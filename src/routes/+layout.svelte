@@ -38,11 +38,13 @@
     /*
      * Go to Anchor tags !
      */
-    const { hash } = document.location;
-    if (hash) {
-      const anchor = document.querySelector(hash ?? '');
-      anchor?.scrollIntoView({ behavior: 'smooth' });
-    }
+    setTimeout(() => {
+      const { hash } = document.location;
+      if (hash) {
+        const anchor = document.querySelector(hash ?? '');
+        anchor?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
   });
 </script>
 
