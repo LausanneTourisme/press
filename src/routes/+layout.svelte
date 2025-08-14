@@ -34,7 +34,10 @@
     };
   });
 
-  afterNavigate(() => {
+  afterNavigate((navigate) => {
+    // return back in navigation doesn't re-trigger scroll to anchor
+    if(navigate.type === "popstate") return;
+
     /*
      * Go to Anchor tags !
      */
