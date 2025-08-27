@@ -36,9 +36,9 @@
   })
 </script>
 
-<Container width="medium" class="md:h-screen flex justify-center flex-col">
+<Container width="medium" class="md:h-screen flex justify-center flex-col md:min-h-[600px]">
   <Heading tag="h1" class="uppercase md:pb-20">{error.title}</Heading>
-  <div class="flex flex-col-reverse md:flex-row md:pb-40">
+  <div class="flex flex-col-reverse md:flex-row md:pb-20">
     <div class="w-full md:w-2/3">
       <Heading>
         {error.subtitle}
