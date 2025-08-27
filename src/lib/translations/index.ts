@@ -1,5 +1,5 @@
 import { dev } from "$app/environment";
-import { RouteTypes, Themes } from "$enums";
+import { Forms, RouteTypes, Themes } from "$enums";
 import i18n, { type Config } from 'sveltekit-i18n';
 import langDe from './de/lang.json';
 import routeTypeDe from './de/route.json';
@@ -104,9 +104,9 @@ export const config: Config<{
     // Themes
     ...supportedLocales.map(locale => ({
       locale,
-      key: 'themes',
+      key: RouteTypes.Themes,
       routes: undefined,
-      loader: async () => (await import(`./${locale}/pages/themes.json`)).default,
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Themes}.json`)).default,
     })),
 
     //create all translations for specific theme's view
@@ -114,11 +114,22 @@ export const config: Config<{
       .flatMap(theme => supportedLocales.map(locale => {
         return {
           locale,
-          key: `themes.${theme}`,
+          key: `${RouteTypes.Themes}.${theme}`,
           routes: undefined,
-          loader: async () => (await import(`./${locale}/pages/themes/${theme}.json`)).default,
+          loader: async () => (await import(`./${locale}/pages/${RouteTypes.Themes}/${theme}.json`)).default,
         }
       })),
+
+      //create all translations for specific form's view
+      ...Object.values(Forms)
+        .flatMap(form => supportedLocales.map(locale => {
+          return {
+            locale,
+            key: `${RouteTypes.Form}.${form}`,
+            routes: undefined,
+            loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default,
+          }
+        })),
   ],
 }
 
