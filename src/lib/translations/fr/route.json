@@ -7,6 +7,7 @@
   "press-kit.slug": "dossier-de-presse",
   "highlights.slug": "immanquables",
   "press-releases-and-press-kits.slug": "communiques-de-presse-et-dossier-de-presse",
+  "form.slug":"formulaire",
 
   "themes.slug": "themes",
   "themes.architecture.slug": "architecture-design",
@@ -19,5 +20,8 @@
   "themes.sport.slug": "sport",
   "themes.sustainability.slug": "durabilite",
   "themes.unusual.slug": "insolite",
-  "themes.wellness.slug": "bien-etre"
+  "themes.wellness.slug": "bien-etre",
+
+  "form.content-creator.slug": "createur-de-contenu",
+  "form.journalist.slug": "journaliste"
 }

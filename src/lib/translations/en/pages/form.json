@@ -1,0 +1,7 @@
+{
+    "title": "Form",
+    "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
+    "validations": {
+        "nonEmptyArray": "Pick at least one option"
+    }
+}

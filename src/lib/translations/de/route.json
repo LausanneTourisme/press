@@ -7,6 +7,7 @@
   "press-kit.slug": "pressedossier",
   "highlights.slug": "highlights",
   "press-releases-and-press-kits.slug": "pressemitteilungen-und-pressedossier",
+  "form.slug":"formular",
 
   "themes.slug": "themen",
   "themes.architecture.slug": "architektur-design",
@@ -19,5 +20,8 @@
   "themes.sport.slug": "sport",
   "themes.sustainability.slug": "nachhaltigkeit",
   "themes.unusual.slug": "ungewoehnlich",
-  "themes.wellness.slug": "wohlbefinden"
+  "themes.wellness.slug": "wohlbefinden",
+
+  "form.content-creator.slug": "inhaltsersteller",
+  "form.journalist.slug": "journalist"
 }
