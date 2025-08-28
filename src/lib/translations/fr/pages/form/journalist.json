@@ -1,1 +1,34 @@
-{}
+{
+    "validations": {
+        "media-name": "Veuillez indiquer le nom de votre média",
+        "thematic": "Sur quelle thématique est votre média ? (générale, voyage, culture, lifestyle, ...)",
+        "audience-profile": "Veuillez indiquer le profil de l'audience (âge, niveau d'éducation, sexe lieu de résidence, intérêts, ...)",
+        "print-media-statistics": "Veuillez remplir au moins une des deux statistiques",
+        "media-statistics": "Les statistiques sur les médias sont nécessaires",
+        "broadcast-location": "Sur quel lieu diffusez-vous l'information ? (Kiosk, Hôtel, Abonnement payant, etc.)",
+        "emission-name": "Veuillez indiquer sur quelle émission vous allez diffuser",
+        "article-length": "De combien de mots/charactères sera votre article ?",
+        "article-thematic": "La thématique de l'article ne peut pas être vide",
+        "travel-information": {
+            "city": "Veuillez indiquer la ville de départ",
+            "country": "Veuillez indiquer le pays de départ"
+        },
+        "personal-information": {
+            "first-name": "Prénom requis",
+            "last-name": "Nom requis",
+            "phone-number": "Veuillez indiquer votre numméro de téléphone",
+            "spoken-languages": "Quelles langues savez-vous parler ? (français, anglais, allemand, italien, ...)",
+            "address": {
+                "address": "Veuillez indiquer votre adresse de domicile",
+                "city": "Veuillez indiquer votre ville de domicile",
+                "country": "Veuillez indiquer votre pays de domicile",
+                "postal-code": "Veuillez indiquer votre code postal"
+            }
+        },
+        "emergency-contacts": {
+            "name": "Veuillez indiquer le nom de votre contact d'urgence",
+            "phone-number": "Veuillez indiquer le numéro de votre contact d'urgence",
+            "minimum": "Veuillez au moins un contact d'urgence"
+        }
+    }
+}

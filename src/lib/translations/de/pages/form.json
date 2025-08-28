@@ -2,6 +2,7 @@
     "title": "Formular",
     "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
     "validations": {
-        "nonEmptyArray": "Wählen Sie mindestens eine Option aus"
+        "non-empty-array": "Wählen Sie mindestens eine Option aus",
+        "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren"
     }
 }

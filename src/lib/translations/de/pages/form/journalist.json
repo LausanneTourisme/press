@@ -1,1 +1,34 @@
-{}
+{
+    "validations": {
+        "media-name": "Bitte geben Sie den Namen Ihres Mediums an",
+        "thematic": "Welches Thema behandelt Ihr Medium? (Allgemein, Reisen, Kultur, Lifestyle, ...)",
+        "audience-profile": "Bitte geben Sie das Profil Ihres Publikums an (Alter, Bildungsstand, Geschlecht, Wohnort, Interessen, ...)",
+        "print-media-statistics": "Bitte füllen Sie mindestens eine der beiden Statistiken aus.",
+        "media-statistics": "Die Medienstatistik ist erforderlich.",
+        "broadcast-location": "Wo verbreiten Sie die Informationen? (Kiosk, Hotel, kostenpflichtiges Abonnement usw.)",
+        "emission-name": "Bitte geben Sie an, in welcher Sendung Sie den Beitrag ausstrahlen werden.",
+        "article-length": "Wie viele Wörter/Zeichen wird Ihr Artikel enthalten?",
+        "article-thematic": "Das Thema des Artikels darf nicht leer sein.",
+        "travel-information": {
+            "city": "Bitte geben Sie die Abfahrtsstadt an.",
+            "country": "Bitte geben Sie das Abfahrtsland an."
+        },
+        "personal-information": {
+            "first-name": "Vorname ist erforderlich.",
+            "last-name": "Nachname ist erforderlich.",
+            "phone-number": "Bitte geben Sie Ihre Telefonnummer an.",
+            "spoken-languages": "Welche Sprachen sprechen Sie? (Deutsch, Englisch, Französisch, Italienisch, usw.)",
+            "address": {
+                "address": "Bitte geben Sie Ihre Wohnadresse an.",
+                "city": "Bitte geben Sie Ihre Wohnstadt an.",
+                "country": "Bitte geben Sie Ihr Wohnland an.",
+                "postal-code": "Bitte geben Sie Ihre Postleitzahl an."
+            }
+        },
+        "emergency-contacts": {
+            "name": "Bitte geben Sie den Namen Ihrer Notfallkontaktperson an.",
+            "phone-number": "Bitte geben Sie die Telefonnummer Ihrer Notfallkontaktperson an.",
+            "minimum": "Bitte geben Sie mindestens eine Notfallkontaktperson an."
+        }
+    }
+}
