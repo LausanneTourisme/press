@@ -1,1 +1,34 @@
-{}
+{
+    "validations": {
+        "media-name": "Please enter the name of your media",
+        "thematic": "What is the theme of your media? (General, Travel, Culture, Lifestyle, ...)",
+        "audience-profile": "Please provide the audience profile (age, level of education, gender, place of residence, interests, ...)",
+        "print-media-statistics": "Please complete at least one of the two statistics.",
+        "media-statistics": "Media statistics are required.",
+        "broadcast-location": "Where do you distribute the information? (kiosk, hotel, paid subscription, etc.)",
+        "emission-name": "Please indicate which programme you will be broadcasting on.",
+        "article-length": "How many words/characters will your article have?",
+        "article-thematic": "The article's topic cannot be empty.",
+        "travel-information": {
+            "city": "Please enter the departure city.",
+            "country": "Please enter the departure country."
+        },
+        "personal-information": {
+            "first-name": "First name is required.",
+            "last-name": "Last name is required.",
+            "phone-number": "Please enter your phone number.",
+            "spoken-languages": "Which languages can you speak? (English, French, German, Italian, etc.)",
+            "address": {
+                "address": "Please enter your home address.",
+                "city": "Please enter your home city.",
+                "country": "Please enter your home country.",
+                "postal-code": "Please enter your postcode."
+            }
+        },
+        "emergency-contacts": {
+            "name": "Please enter the name of your emergency contact.",
+            "phone-number": "Please enter the phone number of your emergency contact.",
+            "minimum": "Please provide at least one emergency contact."
+        }
+    }
+}
