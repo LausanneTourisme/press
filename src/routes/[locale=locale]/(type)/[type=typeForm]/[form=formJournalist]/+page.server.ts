@@ -1,58 +1,30 @@
-import { RouteTypes, Forms } from "$enums";
+import { Forms, RouteTypes } from "$enums";
 import { supportedLocales, translations } from "$lib/translations";
-import { z } from 'zod'
-import type { EntryGenerator } from "./$types";
-import countries from 'i18n-iso-countries'
+import countries from 'i18n-iso-countries';
+import de from "i18n-iso-countries/langs/de.json";
 import en from "i18n-iso-countries/langs/en.json";
 import fr from "i18n-iso-countries/langs/fr.json";
-import de from "i18n-iso-countries/langs/de.json";
+import { superValidate, type Infer } from 'sveltekit-superforms';
+import { zod } from 'sveltekit-superforms/adapters';
+import type { EntryGenerator } from "./$types";
+import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from "./schema";
 
-const COUNTRIES: Record<string, any> = { en, fr, de };
-
+type Message = { step: number; message?: string };
+const countriesByLocale: Record<string, any> = { en, fr, de };
+const steps = [zod(schemaStep1), zod(schemaStep2), zod(schemaStep3), zod(schemaStep4),] as const
+const lastStep = zod(schemaStep4);
 
 export const load = async ({ parent }) => {
-    const { locale } = await parent();
-    const t = translations.get();
+    const [{ locale }, form] = await Promise.all([
+        parent(),
+        superValidate<Infer<typeof schemaStep4>, Message>(lastStep)
+    ]);
 
-    countries.registerLocale(COUNTRIES[locale]);
-
-    const MediaEnum = z.enum(["print", "online", "tv", "radio"]);
-    const TravelReductionsEnum = z.enum(['Swiss GA Travel Card', 'Half-fare', 'Swiss GA Travel Card'])
-    const schema = z.object({
-        mediaName: z.string(),
-        thematic: z.string(),
-        audienceProfile: z.string(),
-        mediaType: z.array(MediaEnum).nonempty(t[`${RouteTypes.Form}.validations.nonEmptyArray`]),
-        printMediaStatistics: z.object({
-            copies: z.number(),
-            readers: z.number(),
-
-        }),
-        onlineMediaStatistics: z.object({
-            website: z.string().url(),
-            monthlyVisitors: z.number(),
-            montlhyPageViews: z.number(),
-            mediaCoverage: z.object({
-                totalPages: z.number(),
-                articleLength: z.string(),
-                subject: z.string(),
-                publishDate: z.date(),
-            })
-        }),
-        radioAndTVMediaStatistics: z.object({
-            viewers: z.number(),
-        }),
-        travelInformation: z.object({
-            departurePoint: z.string(),
-            country: z.string(),
-            outwardJourney: z.string(),
-            returnJourney: z.string(),
-            anyReduction: z.array(TravelReductionsEnum),
-        })
-    })
+    countries.registerLocale(countriesByLocale[locale]);
 
     return {
-        countries: Object.values(countries.getNames(locale, {select: "official"})).sort(),
+        countries: Object.values(countries.getNames(locale, { select: "official" })).sort(),
+        form,
     }
 }
 
