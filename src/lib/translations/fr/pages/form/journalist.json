@@ -1,4 +1,6 @@
 {
+    "title": "Journaliste",
+    "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
     "validations": {
         "media-name": "Veuillez indiquer le nom de votre média",
         "thematic": "Sur quelle thématique est votre média ? (générale, voyage, culture, lifestyle, ...)",

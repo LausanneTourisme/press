@@ -1,4 +1,6 @@
 {
+    "title": "Journalist",
+    "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
     "validations": {
         "media-name": "Bitte geben Sie den Namen Ihres Mediums an",
         "thematic": "Welches Thema behandelt Ihr Medium? (Allgemein, Reisen, Kultur, Lifestyle, ...)",
