@@ -34,15 +34,20 @@
     };
   });
 
-  afterNavigate(() => {
+  afterNavigate((navigate) => {
+    // return back in navigation doesn't re-trigger scroll to anchor
+    if(navigate.type === "popstate") return;
+
     /*
      * Go to Anchor tags !
      */
-    const { hash } = document.location;
-    if (hash) {
-      const anchor = document.querySelector(hash ?? '');
-      anchor?.scrollIntoView({ behavior: 'smooth' });
-    }
+    setTimeout(() => {
+      const { hash } = document.location;
+      if (hash) {
+        const anchor = document.querySelector(hash ?? '');
+        anchor?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
   });
 </script>
 

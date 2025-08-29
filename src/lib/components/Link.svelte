@@ -20,7 +20,7 @@
   const {
     href,
     preload = 'hover',
-    noscroll = true,
+    noscroll = false,
     withIcon = true,
     withFlex = true,
     class: additionalClass,

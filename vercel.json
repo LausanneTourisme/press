@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:lang(fr|en|de)/:section(articles|artikeln)/:id(\\d+)/:slug",
+      "destination": "/:lang/:section/:slug",
+      "permanent": false
+    }
+  ]
+}
