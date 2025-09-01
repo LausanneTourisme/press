@@ -1,3 +1,4 @@
+import type { MediaType, TravelReduction } from "$enums";
 import type { Locale } from "$lib/translations";
 import type { Component } from "svelte";
 
@@ -56,3 +57,74 @@ export type GraphQLResponse<T> = {
     },
     errors?: unknown[]
 }
+
+export type MediaProfileJournalist = {
+    mediaName?: string,
+    thematic?: string,
+    audienceProfile?: string,
+    mediaType?: MediaType[],
+    printMediaStatistics: {
+      copies?: number,
+      readers?: number,
+      broadcastLocation?: string
+    },
+    radioAndTVMediaStatistics: {
+      emissionName?: string,
+      viewers?: number
+    },
+    onlineMediaStatistics: {
+      website?: string,
+      monthlyUniqueVisitors?: number,
+      montlhyPageViews?: number
+    },
+    mediaCoveragePrint: {
+      totalPages?: number,
+      articleLength?: number,
+      publishDate?: Date
+    },
+    mediaCoverageOnline: {
+      articleLength?: number,
+      articleThematic?: number,
+      publishDate?: Date
+    },
+    mediaCoverageTvOrRadio: {
+      articleThematic?: string,
+      publishDate?: Date
+    },
+    travelInformation: {
+      departurePoint: {
+        city?: string,
+        country?: string,
+        outwardJourney?: string
+      },
+      returnJourney?: string,
+      anyReduction?: TravelReduction[],
+      lastVisit?: Date
+    },
+    personalInformation: {
+      title?: string,
+      firstName?: string,
+      lastName?: string,
+      birthday?: Date,
+      phoneNumber?: string,
+      email?: string,
+      address: {
+        address?: string,
+        city?: string,
+        postalcode?: string,
+        country?: string
+      },
+      freelance?: boolean,
+      spokenLanguages?: string,
+      medicalAndPhysicalCondition?: string,
+      passport: {
+        number?: string,
+        validity?: Date
+      },
+      emergencyContacts: {name: string, phoneNumber: string}[],
+    },
+    travelInsuranceCoveringSwitzerland?: boolean,
+    remarks?: string,
+    readTermsOfAcceptance?: boolean,
+    newsletter?: boolean
+  }
