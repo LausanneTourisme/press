@@ -4,9 +4,10 @@ import { menuItems } from "$lib/helpers/menu";
 import { getPosts } from "$lib/helpers/requests.server";
 import { type Locale, supportedLocales, translations } from "$lib/translations";
 import type { Release, Translatable } from "$types";
+import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const GET = async ({ url, params }) => {
-  const urlSets = await Promise.all([generateUrlSets(url.origin, params.locale as Locale), generatePresskitAndPressReleasesUrlSets(url.origin, params.locale as Locale)]);
+  const urlSets = await Promise.all([generateUrlSets(PUBLIC_BASE_URL, params.locale as Locale), generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL, params.locale as Locale)]);
 
   return new Response(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`, {
     headers: {
