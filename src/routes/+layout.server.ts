@@ -1,3 +1,4 @@
+import { PUBLIC_BASE_URL } from '$env/static/public';
 import { defaultLocale, isValidLocale, loadTranslations, setLocale, supportedLocales, translations, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 
@@ -19,10 +20,10 @@ export const load = async ({ url, cookies, request, locals, route , ...rest }) =
     const translationsLoaded = translations.get();
 
     const seo: SeoHeader = {
-        canonical: `${url.origin}${url.pathname}`,
+        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
         title: translationsLoaded[lang]['common.error.default.title'],
         description: translationsLoaded[lang]['common.error.default.subtitle'],
-        image: `${url.origin}/seo/poster-home.png`,
+        image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
         alternate: supportedLocales.map(locale => ({
             hreflang: locale,
             href: `/${locale}`

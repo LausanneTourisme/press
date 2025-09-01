@@ -4,6 +4,7 @@ import { getPost } from '$lib/helpers/requests.server.js';
 import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
+import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url, ...rest }) => {
 
@@ -19,7 +20,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
     const type = translations[lang][`route.${RouteTypes.Presskit}.slug`] === params.type ? RouteTypes.Presskit : RouteTypes.Pressrelease;
 
     const seo: SeoHeader = {
-        canonical: `${url.origin}${url.pathname}`,
+        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
         title: release.name?.[lang as Locale] ?? translations[lang][`${type}.title`],
         description: release.lead?.[lang as Locale] ?? translations[lang][`${type}.meta-description`],
         image: generateCloudinaryUrl({ src: release.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),

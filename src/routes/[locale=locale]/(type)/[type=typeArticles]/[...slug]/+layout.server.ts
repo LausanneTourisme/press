@@ -7,6 +7,7 @@ import { server } from '$lib/mocks/handler';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
+import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url, ...rest }) => {
     if (dev && isOfflineMode) {
@@ -26,7 +27,7 @@ export const load = async ({ params, parent, url, ...rest }) => {
     await loadTranslations(locale, url.pathname);
 
     const seo: SeoHeader = {
-        canonical: `${url.origin}${url.pathname}`,
+        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
         title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
         description: article.lead?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.meta-description`],
         image: generateCloudinaryUrl({ src: article.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),

@@ -5,9 +5,10 @@ import { getPosts } from "$lib/helpers/requests.server";
 import { defaultLocale, type Locale, supportedLocales, translations } from "$lib/translations";
 import type { Release, Translatable } from "$types";
 import type { RequestHandler } from "@sveltejs/kit";
+import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const GET: RequestHandler = async ({ url }) => {
-  const urlSets = await Promise.all([generateUrlSets(url.origin), generatePresskitAndPressReleasesUrlSets(url.origin)]);
+  const urlSets = await Promise.all([generateUrlSets(PUBLIC_BASE_URL), generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL)]);
 
   return new Response(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`, {
     headers: {
