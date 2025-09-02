@@ -101,7 +101,10 @@
   <input type="hidden" name="__superform_id" bind:value={$formId} />
   Step{step}<br />
 
-  <section class="step1">
+  <section class="step1 about-media">
+    <h2>
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.about-media`)}
+    </h2>
     <div class="media-name">
       <label for="media-name">
         {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
@@ -171,10 +174,10 @@
     </fieldset>
 
     {#if mediaProfile.mediaTypes.includes(MediaTypes.Print)}
-      <fieldset class="print-statistics">
-        <legend>
+      <section class="print-statistics">
+        <h3>
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
-        </legend>
+        </h3>
         <div class="container">
           <div class="copies">
             <label for="print-statistics-copies" class="">
@@ -205,26 +208,26 @@
             />
           </div>
         </div>
-      </fieldset>
+      </section>
     {/if}
     {#if (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && !mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Radio) && !mediaProfile.mediaTypes.includes(MediaTypes.Tv))}
-      <fieldset class="tv-and-radio-statistics">
-        <legend>
+      <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics">
+        <h3>
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
           )}
-        </legend>
+        </h3>
         <div class="container">
           <div class="emission-name">
-            <label for="tv-and-radio-statistics-emission-name" class="">
+            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name" class="">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
               )}
             </label>
             <input
               type="text"
-              id="tv-and-radio-statistics-emission-name"
-              name="tv-and-radio-statistics-emission-name"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
               placeholder={$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name-placeholder`
               )}
@@ -232,27 +235,27 @@
             />
           </div>
           <div class="viewers">
-            <label for="tv-and-radio-statistics-viewers" class="">
+            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers" class="">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.viewers`
               )}
             </label>
             <input
               type="number"
-              id="tv-and-radio-statistics-viewers"
-              name="tv-and-radio-statistics-viewers"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
               defaultValue={mediaProfile.radioAndTVMediaStatistics.viewers}
               bind:value={mediaProfile.radioAndTVMediaStatistics.viewers}
             />
           </div>
         </div>
-      </fieldset>
+      </section>
     {/if}
     {#if mediaProfile.mediaTypes.includes(MediaTypes.Online)}
-      <fieldset class="online-statistics">
-        <legend>
+      <section class="online-statistics">
+        <h3>
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.title`)}
-        </legend>
+        </h3>
         <div class="container">
           <div class="website">
             <label for="online-statistics-website" class="">
@@ -299,11 +302,148 @@
             />
           </div>
         </div>
-      </fieldset>
+      </section>
     {/if}
   </section>
 
-  <section class="step2"></section>
+  <section class="step2 media-coverage">
+    <h2>
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.about-media-results`)}
+    </h2>
+
+    {#if mediaProfile.mediaTypes.includes(MediaTypes.Print)}
+      <section class="print-coverage">
+        <h3>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
+        </h3>
+        <div class="container">
+          <div class="total-pages">
+            <label for="print-coverage-total-pages" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
+              )}
+            </label>
+            <input
+              type="number"
+              id="print-coverage-total-pages"
+              name="print-coverage-total-pages"
+              defaultValue={mediaProfile.mediaCoveragePrint.totalPages}
+              bind:value={mediaProfile.mediaCoveragePrint.totalPages}
+            />
+          </div>
+          <div class="article-length">
+            <label for="print-coverage-article-length" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
+              )}
+            </label>
+            <input
+              type="text"
+              id="print-coverage-article-length"
+              name="print-coverage-article-length"
+              defaultValue={mediaProfile.mediaCoveragePrint.articleLength}
+              bind:value={mediaProfile.mediaCoveragePrint.articleLength}
+            />
+          </div>
+        </div>
+      </section>
+    {/if}
+    {#if (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && !mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Radio) && !mediaProfile.mediaTypes.includes(MediaTypes.Tv))}
+    <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
+      <h3>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+      </h3>
+      <div class="container">
+        <div class="article-thematic">
+          <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic" class="">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
+            )}
+          </label>
+          <input
+            type="text"
+            id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+            name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+            placeholder={$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
+            )}
+            bind:value={mediaProfile.mediaCoverageOnline.articleThematic}
+          />
+        </div>
+        <div class="publish-date">
+          <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+            )}
+          </label>
+          <input
+            type="date"
+            id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+            name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+            bind:value={mediaProfile.mediaCoverageOnline.publishDate}
+          />
+        </div>
+      </div>
+    </section>
+    {/if}
+    {#if mediaProfile.mediaTypes.includes(MediaTypes.Online)}
+      <section class="online-coverage">
+        <h3>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+        </h3>
+        <div class="container">
+          <div class="article-length">
+            <label for="online-coverage-article-length" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
+              )}
+            </label>
+            <input
+              type="text"
+              id="online-coverage-article-length"
+              name="online-coverage-article-length"
+              bind:value={mediaProfile.mediaCoverageOnline.articleLength}
+            />
+          </div>
+          <div class="article-thematic">
+            <label for="online-coverage-article-thematic" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
+              )}
+            </label>
+            <input
+              type="text"
+              id="online-coverage-article-thematic"
+              name="online-coverage-article-thematic"
+              placeholder={$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
+              )}
+              bind:value={mediaProfile.mediaCoverageOnline.articleThematic}
+            />
+          </div>
+          <div class="publish-date">
+            <label for="online-coverage-publish-date" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+              )}
+            </label>
+            <input
+              type="date"
+              id="online-coverage-publish-date"
+              name="online-coverage-publish-date"
+              bind:value={mediaProfile.mediaCoverageOnline.publishDate}
+            />
+          </div>
+        </div>
+      </section>
+    {/if}
+  </section>
+
+  <section class="step3 travel-informations">
+  </section>
+
+  <section class="step4 personal-information">
+  </section>
 
   <button>Submit</button>
 </form>
