@@ -34,36 +34,58 @@
         }
     },
     "form": {
-        "media-name": "media-name",
+        "about-media": "Information sur le média",
+        "media-name": "Nom du média",
         "media-name-placeholder": "",
-        "media-thematic": "media-thematic",
+        "media-thematic": "Thématique du média",
         "media-thematic-placeholder": "",
-        "audience-profile": "audience-profile",
-        "audience-profile-placeholder": "",
+        "audience-profile": "Profil de l'audience",
+        "audience-profile-placeholder": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ...",
         "types": {
-            "print": "print",
-            "online": "online",
-            "tv": "tv",
-            "radio": "radio"
+            "print": "Print",
+            "online": "Online",
+            "tv": "TV",
+            "radio": "Radio"
         },
         "statistics": {
             "print": {
-                "title": "print",
-                "copies": "copies",
-                "readers": "readers"
+                "title": "Statistiques du média print",
+                "copies": "Circulation/nombre d'exemplaires",
+                "readers": "Couverture/nombre de lecteurs"
             },
             "radio-and-tv": {
-                "title": "radio-and-tv",
-                "emission-name": "emission-name",
+                "title": "Statistique du média radio/TV",
+                "emission-name": "Nom de l'émission",
                 "emission-name-placeholder": "RTS",
-                "viewers": "viewers"
+                "viewers": "Nombre d'auditeurs"
             },
             "online": {
-                "title": "online",
-                "website": "website",
+                "title": "Statistiques du média online (site web)",
+                "website": "Site web",
                 "website-placeholder": "https://",
-                "monthly-unique-visitors": "monthly-unique-visitors",
-                "montlhy-page-views": "montlhy-page-views"
+                "monthly-unique-visitors": "Reach/visiteurs par mois (uniques)",
+                "montlhy-page-views": "Nombre de page vues par mois"
+            }
+        },
+        "about-media-results": "Information sur le résultat médiatique",
+        "coverage": {
+            "print": {
+                "title": "Couverture médiatique print",
+                "total-pages": "Nombre de pages",
+                "article-length": "Longueur de l'article"
+            },
+            "radio-and-tv": {
+                "title": "Couverture médiatique radio/TV",
+                "article-thematic": "Thématique de l'émission",
+                "article-thematic-placeholder": "",
+                "publish-date": "Date de sortie de l'émission"
+            },
+            "online": {
+                "title": "Couverture médiatique online (site web)",
+                "article-length": "Longueur de l'article",
+                "article-thematic": "Thématique de l'article",
+                "article-thematic-placeholder": "",
+                "publish-date": "Date de sortie de l'article"
             }
         }
     }
