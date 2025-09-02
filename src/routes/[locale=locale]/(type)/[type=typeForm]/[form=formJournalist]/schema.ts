@@ -1,13 +1,12 @@
 
 import { Forms, Genders, getValues, MediaTypes, RouteTypes, TravelReductions } from "$enums";
 import { zodOptionalString, zodRequiredString } from "$lib/helpers/zod";
-import type { Translations } from "@sveltekit-i18n/base";
 import { z } from 'zod';
 
 const mediaEnum = z.enum(getValues(MediaTypes));
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 
-export const mediaType = z.array(mediaEnum).nonempty(`${RouteTypes.Form}.validations.non-empty-array`);
+export const mediaTypes = z.array(mediaEnum).nonempty(`${RouteTypes.Form}.validations.non-empty-array`);
 
 // required when media type is "print" (via superRefine)
 export const printMediaStatistics = z.object({
@@ -107,7 +106,7 @@ export const schemaStep1 = z.object({
     mediaName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-name` }),
     thematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.thematic` }),
     audienceProfile: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.audience-profile` }),
-    mediaType: mediaType,
+    mediaTypes: mediaTypes,
     printMediaStatistics: printMediaStatistics,
     radioAndTVMediaStatistics: radioAndTVMediaStatistics,
     onlineMediaStatistics: onlineMediaStatistics,
@@ -115,7 +114,7 @@ export const schemaStep1 = z.object({
 
 export const schemaStep1Refined = schemaStep1
     .superRefine((data, ctx) => {
-        if (data.mediaType.includes(MediaTypes.Print) && !data.printMediaStatistics) {
+        if (data.mediaTypes.includes(MediaTypes.Print) && !data.printMediaStatistics) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["printMediaStatistics"],
@@ -123,7 +122,7 @@ export const schemaStep1Refined = schemaStep1
             });
         }
 
-        if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaType.includes(requiredType)) && !data.radioAndTVMediaStatistics) {
+        if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaTypes.includes(requiredType)) && !data.radioAndTVMediaStatistics) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["radioAndTVMediaStatistics"],
@@ -131,7 +130,7 @@ export const schemaStep1Refined = schemaStep1
             });
         }
 
-        if (data.mediaType.includes(MediaTypes.Online) && !data.onlineMediaStatistics) {
+        if (data.mediaTypes.includes(MediaTypes.Online) && !data.onlineMediaStatistics) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["onlineMediaStatistics"],
@@ -149,7 +148,7 @@ export const schemaStep2 = schemaStep1.extend({
 
 export const schemaStep2Refined = schemaStep2
     .superRefine((data, ctx) => {
-        if (data.mediaType.includes(MediaTypes.Print) && !data.mediaCoveragePrint) {
+        if (data.mediaTypes.includes(MediaTypes.Print) && !data.mediaCoveragePrint) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["mediaCoveragePrint"],
@@ -157,7 +156,7 @@ export const schemaStep2Refined = schemaStep2
             });
         }
 
-        if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaType.includes(requiredType)) && !data.mediaCoverageTvOrRadio) {
+        if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaTypes.includes(requiredType)) && !data.mediaCoverageTvOrRadio) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["mediaCoverageTvOrRadio"],
@@ -165,7 +164,7 @@ export const schemaStep2Refined = schemaStep2
             });
         }
 
-        if (data.mediaType.includes(MediaTypes.Online) && !data.mediaCoverageOnline) {
+        if (data.mediaTypes.includes(MediaTypes.Online) && !data.mediaCoverageOnline) {
             ctx.addIssue({
                 code: z.ZodIssueCode.custom,
                 path: ["mediaCoverageOnline"],

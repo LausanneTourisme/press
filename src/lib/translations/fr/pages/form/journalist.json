@@ -32,5 +32,39 @@
             "phone-number": "Veuillez indiquer le numéro de votre contact d'urgence",
             "minimum": "Veuillez au moins un contact d'urgence"
         }
+    },
+    "form": {
+        "media-name": "media-name",
+        "media-name-placeholder": "",
+        "media-thematic": "media-thematic",
+        "media-thematic-placeholder": "",
+        "audience-profile": "audience-profile",
+        "audience-profile-placeholder": "",
+        "types": {
+            "print": "print",
+            "online": "online",
+            "tv": "tv",
+            "radio": "radio"
+        },
+        "statistics": {
+            "print": {
+                "title": "print",
+                "copies": "copies",
+                "readers": "readers"
+            },
+            "radio-and-tv": {
+                "title": "radio-and-tv",
+                "emission-name": "emission-name",
+                "emission-name-placeholder": "RTS",
+                "viewers": "viewers"
+            },
+            "online": {
+                "title": "online",
+                "website": "website",
+                "website-placeholder": "https://",
+                "monthly-unique-visitors": "monthly-unique-visitors",
+                "montlhy-page-views": "montlhy-page-views"
+            }
+        }
     }
 }

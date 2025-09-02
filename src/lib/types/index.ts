@@ -62,7 +62,7 @@ export type MediaProfileJournalist = {
     mediaName?: string,
     thematic?: string,
     audienceProfile?: string,
-    mediaType?: MediaType[],
+    mediaTypes: MediaType[],
     printMediaStatistics: {
       copies?: number,
       readers?: number,
