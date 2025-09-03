@@ -1,11 +1,12 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes } from '$enums';
+  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
   import { t } from '$lib/translations';
   import type { MediaProfileJournalist } from '$types';
   import { superForm } from 'sveltekit-superforms';
   import type { PageData } from './$types';
   // TODO SEO
+  // TODO all dates return a string and not Date object
   const countries = $derived(Object.values((page.data as PageData).countries));
   const { form, formId, errors, message, capture, restore } = $derived.by(() =>
     superForm((page.data as PageData).form, {
@@ -55,11 +56,11 @@
         outwardJourney: undefined
       },
       returnJourney: undefined,
-      anyReduction: [],
+      travelReductions: [],
       lastVisit: undefined
     },
     personalInformation: {
-      title: undefined,
+      title: 'they',
       firstName: undefined,
       lastName: undefined,
       birthday: undefined,
@@ -73,6 +74,7 @@
       },
       freelance: undefined,
       spokenLanguages: undefined,
+      allergies: undefined,
       medicalAndPhysicalCondition: undefined,
       passport: {
         number: undefined,
@@ -92,9 +94,6 @@
 </script>
 
 <h2>Media information</h2>
-<!-- {#each countries as country}
-  {country} <br />
-{/each} -->
 
 <form method="POST">
   <input type="hidden" name="step" value={step} />
@@ -144,9 +143,9 @@
       />
     </div>
 
-    <fieldset id="media-type">
+    <fieldset id="media-types">
       <legend>
-        {$t(`${RouteTypes.Form}.${Forms.Journalist}.media-type`)}
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)}
       </legend>
       <div class="container">
         {#each Object.values(MediaTypes) as mediaType}
@@ -308,7 +307,7 @@
 
   <section class="step2 media-coverage">
     <h2>
-      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.about-media-results`)}
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.title`)}
     </h2>
 
     {#if mediaProfile.mediaTypes.includes(MediaTypes.Print)}
@@ -349,42 +348,42 @@
       </section>
     {/if}
     {#if (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Tv) && !mediaProfile.mediaTypes.includes(MediaTypes.Radio)) || (mediaProfile.mediaTypes.includes(MediaTypes.Radio) && !mediaProfile.mediaTypes.includes(MediaTypes.Tv))}
-    <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
-      <h3>
-        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
-      </h3>
-      <div class="container">
-        <div class="article-thematic">
-          <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic" class="">
-            {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
-            )}
-          </label>
-          <input
-            type="text"
-            id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-            name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-            placeholder={$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
-            )}
-            bind:value={mediaProfile.mediaCoverageOnline.articleThematic}
-          />
+      <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
+        <h3>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+        </h3>
+        <div class="container">
+          <div class="article-thematic">
+            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
+              )}
+            </label>
+            <input
+              type="text"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+              placeholder={$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
+              )}
+              bind:value={mediaProfile.mediaCoverageOnline.articleThematic}
+            />
+          </div>
+          <div class="publish-date">
+            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+              )}
+            </label>
+            <input
+              type="date"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+              bind:value={mediaProfile.mediaCoverageOnline.publishDate}
+            />
+          </div>
         </div>
-        <div class="publish-date">
-          <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="">
-            {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
-            )}
-          </label>
-          <input
-            type="date"
-            id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
-            name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
-            bind:value={mediaProfile.mediaCoverageOnline.publishDate}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
     {/if}
     {#if mediaProfile.mediaTypes.includes(MediaTypes.Online)}
       <section class="online-coverage">
@@ -439,11 +438,346 @@
     {/if}
   </section>
 
-  <section class="step3 travel-informations">
+  <section class="step3 travel-information">
+    <h2>
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
+    </h2>
+
+    <section class="departure-point">
+      <h3>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`)}
+      </h3>
+      <div class="departure-point-city">
+        <label for="departure-point-city">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
+          )}
+        </label>
+        <input
+          type="text"
+          id="departure-point-city"
+          name="departure-point-city"
+          placeholder={$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
+          )}
+          bind:value={mediaProfile.travelInformation.departurePoint.city}
+        />
+      </div>
+      <div class="departure-point-country">
+        <label for="departure-point-country">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
+          )}
+        </label>
+        <!-- TODO select country -->
+        <!-- <input
+          type="text"
+          id="departure-point-country"
+          name="departure-point-country"
+          placeholder={$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
+          )}
+          bind:value={mediaProfile.travelInformation.departurePoint.country}
+        /> -->
+      </div>
+      <div class="departure-point-outward-journey">
+        <label for="departure-point-outward-journey">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
+          )}
+        </label>
+        <p class="departure-point-outward-journey information">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.information`
+          )}
+        </p>
+        <textarea
+          id="departure-point-outward-journey"
+          name="departure-point-outward-journey"
+          bind:value={mediaProfile.travelInformation.departurePoint.outwardJourney}
+          maxlength="300"
+        >
+        </textarea>
+      </div>
+    </section>
+
+    <div class="return-journey">
+      <label for="travel-information-return-journey">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`)}
+      </label>
+      <p class="travel-information-return-journey information">
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.information`
+        )}
+      </p>
+      <textarea
+        id="travel-information-return-journey"
+        name="travel-information-return-journey"
+        bind:value={mediaProfile.travelInformation.returnJourney}
+        maxlength="300"
+      >
+      </textarea>
+    </div>
+
+    <section class="travel-reductions">
+      <h3>
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
+        )}
+      </h3>
+
+      <fieldset id="travel-reductions">
+        <legend>
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
+          )}
+        </legend>
+        <div class="container">
+          {#each Object.values(TravelReductions) as travelReduction}
+            <div>
+              <input
+                class=""
+                name={travelReduction}
+                type="checkbox"
+                defaultValue={mediaProfile.travelInformation.travelReductions.includes(
+                  travelReduction
+                )}
+                id={travelReduction}
+                onchange={(e) => {
+                  if (!e.currentTarget.checked) {
+                    mediaProfile.travelInformation.travelReductions =
+                      mediaProfile.travelInformation.travelReductions.filter(
+                        (x) => x !== travelReduction
+                      );
+                  } else {
+                    mediaProfile.travelInformation.travelReductions.push(travelReduction);
+                  }
+                }}
+              />
+              <label for={travelReduction} class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
+                )}
+              </label>
+            </div>
+          {/each}
+        </div>
+      </fieldset>
+    </section>
+
+    <div class="last-visit">
+      <label for="travel-information-return-journey">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
+      </label>
+      <input
+        type="date"
+        id="travel-information-return-journey"
+        name="travel-information-return-journey"
+        bind:value={mediaProfile.travelInformation.lastVisit}
+      />
+    </div>
   </section>
 
   <section class="step4 personal-information">
+    <h2>
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+    </h2>
+
+    <fieldset class="titles">
+      <legend>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
+      </legend>
+      <div class="container">
+        {#each Object.values(Titles) as title}
+          <input
+            type="radio"
+            id="personal-information-title-{title}"
+            name="personal-information-title"
+            checked={title === 'they'}
+            onchange={(e) => {
+              if (e.currentTarget.checked) {
+                mediaProfile.personalInformation.title = title;
+              }
+            }}
+          />
+          <label for="personal-information-title-{title}">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`)}
+          </label>
+        {/each}
+      </div>
+    </fieldset>
+
+    <div class="personal-information-first-name">
+      <label for="personal-information-first-name">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-first-name"
+        name="personal-information-first-name"
+        placeholder={$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name-placeholder`
+        )}
+        bind:value={mediaProfile.personalInformation.firstName}
+      />
+    </div>
+
+    <div class="personal-information-last-name">
+      <label for="personal-information-last-name">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-last-name"
+        name="personal-information-last-name"
+        placeholder={$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name-placeholder`
+        )}
+        bind:value={mediaProfile.personalInformation.lastName}
+      />
+    </div>
+
+    <fieldset class="is-freelance">
+      <legend>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
+      </legend>
+      <div class="freelance-false">
+        <input
+          type="radio"
+          id="personal-information-freelance-false"
+          name="personal-information-freelance"
+          onchange={(e) => (mediaProfile.personalInformation.freelance = false)}
+        />
+        <label for="personal-information-freelance-false">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.no`)}
+        </label>
+      </div>
+      <div class="freelance-true">
+        <input
+          type="radio"
+          id="personal-information-freelance-true"
+          name="personal-information-freelance"
+          onchange={(e) => (mediaProfile.personalInformation.freelance = true)}
+        />
+        <label for="personal-information-freelance-true">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.yes`)}
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="personal-information-spoken-languages">
+      <label for="personal-information-spoken-languages">
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`
+        )}
+      </label>
+      <input
+        type="text"
+        id="personal-information-spoken-languages"
+        name="personal-information-spoken-languages"
+        placeholder={$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.placeholder`
+        )}
+        bind:value={mediaProfile.personalInformation.spokenLanguages}
+      />
+    </div>
+
+    <section class="passport">
+      <h3>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
+      </h3>
+
+      <div>
+        <label for="personal-information-passport-number">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`
+          )}
+        </label>
+        <input
+          type="text"
+          id="personal-information-passport-number"
+          name="personal-information-passport-number"
+          bind:value={mediaProfile.personalInformation.passport.number}
+        />
+      </div>
+
+      <div>
+        <label for="personal-information-passport-validity">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
+          )}
+        </label>
+        <input
+          type="date"
+          id="personal-information-passport-validity"
+          name="personal-information-passport-validity"
+          bind:value={mediaProfile.personalInformation.passport.validity}
+        />
+      </div>
+    </section>
   </section>
 
+  <div class="personal-information-birth-date">
+    <label for="personal-information-birth-date">
+      {$t(
+        `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`
+      )}
+    </label>
+    <input
+      type="date"
+      id="personal-information-birth-date"
+      name="personal-information-birth-date"
+      bind:value={mediaProfile.personalInformation.birthday}
+    />
+  </div>
+
+
+  <section class="address">
+    <h3>
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+    </h3>
+
+    <div class="personal-information-address-adress">
+      <label for="personal-information-address-adress">
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.adress`
+        )}
+      </label>
+      <input
+        type="text"
+        id="personal-information-address-adress"
+        name="personal-information-address-adress"
+        bind:value={mediaProfile.personalInformation.address.address}
+      />
+    </div>
+
+    <div class="personal-information-address-city">
+      <label for="personal-information-address-city">
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.city`
+        )}
+      </label>
+      <input
+        type="text"
+        id="personal-information-address-city"
+        name="personal-information-address-city"
+        bind:value={mediaProfile.personalInformation.address.city}
+      />
+    </div>
+
+    <div class="personal-information-address-country">
+      <label for="personal-information-address-country">
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.country`
+        )}
+      </label>
+      <input
+        type="text"
+        id="personal-information-address-adress"
+        name="personal-information-address-adress"
+        bind:value={mediaProfile.personalInformation.address.address}
+      />
+    </div>
+  </section>
   <button>Submit</button>
 </form>
