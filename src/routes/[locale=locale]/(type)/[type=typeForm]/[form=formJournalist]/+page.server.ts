@@ -23,7 +23,7 @@ export const load = async ({ parent }) => {
     countries.registerLocale(countriesByLocale[locale]);
 
     return {
-        countries: Object.values(countries.getNames(locale, { select: "official" })).sort(),
+        countries: Object.values<string>(countries.getNames(locale, { select: "official" })).sort(),
         form,
     }
 }
