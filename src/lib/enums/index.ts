@@ -3,7 +3,7 @@ export type Theme = typeof Themes[keyof typeof Themes]
 export type Form = typeof Forms[keyof typeof Forms]
 export type MediaType = typeof MediaTypes[keyof typeof MediaTypes]
 export type TravelReduction = typeof TravelReductions[keyof typeof TravelReductions]
-export type Gender = typeof Genders[keyof typeof Genders]
+export type Title = typeof Titles[keyof typeof Titles]
 
 //ThemeKeys available under 😉 needs reference of Themes
 
@@ -52,7 +52,7 @@ export const TravelReductions = {
   SwissGATravelCard: 'swiss-ga-travelcard',
 } as const;
 
-export const Genders = {
+export const Titles = {
   Mrs: 'mrs',
   Mr: 'mr',
   They: 'they',
@@ -74,4 +74,4 @@ export const ThemeKeys = invert(Themes);
 export const FormsKeys = invert(Forms);
 export const MediaTypesKeys = invert(MediaTypes);
 export const TravelReductionsKeys = invert(TravelReductions);
-export const GendersKeys = invert(Genders);
+export const TitlesKeys = invert(Titles);
