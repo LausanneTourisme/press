@@ -34,6 +34,8 @@
         }
     },
     "form": {
+        "yes": "Oui",
+        "no": "Non",
         "about-media": "Information sur le média",
         "media-name": "Nom du média",
         "media-name-placeholder": "",
@@ -42,6 +44,7 @@
         "audience-profile": "Profil de l'audience",
         "audience-profile-placeholder": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ...",
         "types": {
+            "title": "Type de média",
             "print": "Print",
             "online": "Online",
             "tv": "TV",
@@ -67,8 +70,8 @@
                 "montlhy-page-views": "Nombre de page vues par mois"
             }
         },
-        "about-media-results": "Information sur le résultat médiatique",
         "coverage": {
+            "title": "Information sur le résultat médiatique",
             "print": {
                 "title": "Couverture médiatique print",
                 "total-pages": "Nombre de pages",
@@ -86,6 +89,83 @@
                 "article-thematic": "Thématique de l'article",
                 "article-thematic-placeholder": "",
                 "publish-date": "Date de sortie de l'article"
+            }
+        },
+        "travel-information": {
+            "title": "Information de voyage",
+            "departure-point": {
+                "title": "Lieu de départ",
+                "city": "Ville",
+                "city-placeholder": "Lausanne",
+                "country": "Pays",
+                "country-placeholder": "Veuillez choisir une ville...",
+                "outward-journey": {
+                    "title": "Trajet aller",
+                    "information": "Merci de préciser la date, l'heure, le numéro de vol/train et la gare/aéroport à l'arrivée"
+                }
+            },
+            "return-journey": {
+                "title": "Trajet retour",
+                "information": "Merci de préciser la date, l'heure, le numéro de vol/train et la gare/aéroport au départ"
+            },
+            "travel-reduction": {
+                "title": "Réduction sur les transports suisses",
+                "please-tick": "Merci de cocher ce qui correspond",
+                "point-to-point-travelcard": "Abonnement Général",
+                "half-fare": "Demi-Tarif",
+                "swiss-ga-travelcard": "Abonnement de parcours"
+            },
+            "last-visit": "Dernière date de visite à Lausanne/en Suisse"
+        },
+        "personal-information": {
+            "title": "Informations personelles",
+            "titles": {
+                "title": "Titre",
+                "mrs": "Madame",
+                "mr": "Monsieur",
+                "they": "Ne pas spécifier"
+            },
+            "first-name": "Prénom",
+            "first-name-placeholder": "Anne",
+            "last-name": "Nom",
+            "last-name-placeholder": "Tique",
+            "freelance": "Êtes-vous freelance ?",
+            "spoken-languages": {
+                "title": "Langue(s) parlée(s)",
+                "placeholder": "français, anglais, allemand, italien, ..."
+            },
+            "passport":{
+                "title": "Numéro et validité du passport",
+                "number": "Numéro",
+                "validity": "Validité"
+            },
+            "birth-date": "Date de naissance",
+            "address": {
+                "title": "Adresse",
+                "address": "Adresse",
+                "city": "Ville",
+                "country": "Pays",
+                "postal-code": "ZIP"
+            },
+            "phone-number": "Numéro de téléphone portable (avec indicatif)",
+            "email": "Email",
+            "allergies": "Allergies alimentaires ou restrictions",
+            "medical-and-physicalCondition": "Conditions médicales et forme physique",
+            "emergency-contacts": {
+                "title": "Contacts d'urgence",
+                "name": "Nom",
+                "phone-number": "Numéro de téléphone (avec indicatif)"
+            },
+            "travel-insurance": "Assurance de voyage couvrant la Suisse ?",
+            "remarks": "Remarques",
+            "terms-of-acceptance": {
+                "title": "Protection & Gestion des données",
+                "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
+                "accept-terms": "J'ai pris connaissance et accepte les conditions"
+            },
+            "newsletter": {
+                "title": "Newsletter",
+                "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
             }
         }
     }
