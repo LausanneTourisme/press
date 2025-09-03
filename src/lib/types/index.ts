@@ -1,4 +1,4 @@
-import type { MediaType, TravelReduction } from "$enums";
+import type { MediaType, Title, TravelReduction } from "$enums";
 import type { Locale } from "$lib/translations";
 import type { Component } from "svelte";
 
@@ -98,11 +98,11 @@ export type MediaProfileJournalist = {
         outwardJourney?: string
       },
       returnJourney?: string,
-      anyReduction?: TravelReduction[],
+      travelReductions: TravelReduction[],
       lastVisit?: Date
     },
     personalInformation: {
-      title?: string,
+      title?: Title,
       firstName?: string,
       lastName?: string,
       birthday?: Date,
@@ -116,6 +116,7 @@ export type MediaProfileJournalist = {
       },
       freelance?: boolean,
       spokenLanguages?: string,
+      allergies?: string,
       medicalAndPhysicalCondition?: string,
       passport: {
         number?: string,
