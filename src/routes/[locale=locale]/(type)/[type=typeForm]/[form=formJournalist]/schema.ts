@@ -1,5 +1,5 @@
 
-import { Forms, Genders, getValues, MediaTypes, RouteTypes, TravelReductions } from "$enums";
+import { Forms, Titles, getValues, MediaTypes, RouteTypes, TravelReductions } from "$enums";
 import { zodOptionalString, zodRequiredString } from "$lib/helpers/zod";
 import { z } from 'zod';
 
@@ -69,7 +69,7 @@ export const travelInformation = z.object({
     departurePoint: z.object({
         city: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.city` }),
         country: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.country` }),
-        outwardJourney: z.string().nullish(),
+        outwardJourney: z.string().max(300).nullish(),
     }),
     returnJourney: z.string().nullish(),
     anyReduction: z.array(travelReductionsEnum).nullish(),
@@ -77,7 +77,7 @@ export const travelInformation = z.object({
 }).required();
 
 export const personalInformation = z.object({
-    title: z.enum(getValues(Genders)),
+    title: z.enum(getValues(Titles)),
     firstName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.first-name` }),
     lastName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.last-name` }),
     birthday: z.date(),
