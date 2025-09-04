@@ -140,8 +140,7 @@
       alt="Port de Pully"
       title="Port de Pully"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
-      localSrc="/pages/home/port-de-pully.jpg"
-      src="/pages/home/port-de-pully"
+      localSrc="/pages/home/mobile.jpg"
       transform={{ gravity: 'west', crop: 'crop', width: 1280 }}
       srcset={[
         {
