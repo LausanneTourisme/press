@@ -122,7 +122,7 @@ export type MediaProfileJournalist = {
         number?: string,
         validity?: Date
       },
-      emergencyContacts: {name: string, phoneNumber: string}[],
+      emergencyContacts: {name?: string, phoneNumber?: string}[],
     },
     travelInsuranceCoveringSwitzerland?: boolean,
     remarks?: string,

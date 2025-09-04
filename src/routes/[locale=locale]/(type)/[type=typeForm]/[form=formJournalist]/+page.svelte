@@ -81,14 +81,18 @@
         number: undefined,
         validity: undefined
       },
-      emergencyContacts: []
+      emergencyContacts: [{ name: undefined, phoneNumber: undefined },]
     },
     travelInsuranceCoveringSwitzerland: undefined,
     remarks: undefined,
     readTermsOfAcceptance: undefined,
     newsletter: undefined
   });
+  let canDeleteEmergencyContacts = $state(false)
 
+  $effect(() => {
+    canDeleteEmergencyContacts=mediaProfile.personalInformation.emergencyContacts.length>1
+  });
   $effect(() => {
     console.log({ errors: $errors, message: $message });
   });
@@ -470,7 +474,11 @@
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
           )}
         </label>
-        <select id="departure-point-country" name="departure-point-country" bind:value={mediaProfile.travelInformation.departurePoint.country}>
+        <select
+          id="departure-point-country"
+          name="departure-point-country"
+          bind:value={mediaProfile.travelInformation.departurePoint.country}
+        >
           <option hidden disabled selected value={undefined}
             >{$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
@@ -774,7 +782,11 @@
         {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
       </label>
 
-      <select id="personal-information-address-country" name="personal-information-address-country" bind:value={mediaProfile.personalInformation.address.country}>
+      <select
+        id="personal-information-address-country"
+        name="personal-information-address-country"
+        bind:value={mediaProfile.personalInformation.address.country}
+      >
         <option hidden disabled selected value={undefined}>
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
@@ -785,7 +797,7 @@
         {/each}
       </select>
     </div>
-    
+
     <div class="personal-information-phone-number">
       <label for="personal-information-phone-number">
         {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
@@ -797,7 +809,7 @@
         bind:value={mediaProfile.personalInformation.phoneNumber}
       />
     </div>
-    
+
     <div class="personal-information-email">
       <label for="personal-information-email">
         {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
@@ -824,7 +836,9 @@
 
     <div class="personal-information-medical-and-physical-condition">
       <label for="personal-information-medical-and-physical-condition">
-        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`)}
+        {$t(
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`
+        )}
       </label>
       <input
         type="text"
@@ -833,8 +847,50 @@
         bind:value={mediaProfile.personalInformation.medicalAndPhysicalCondition}
       />
     </div>
-    
-    
+
+    <div class="personal-information-emergency-contacts">
+      {#each mediaProfile.personalInformation.emergencyContacts as _, index}
+        <div class="personal-information-emergency-contact">
+          <div class="hidden">{index}</div>
+          <input
+            type="text"
+            id="personal-information-emergency-contact-name-{index}"
+            name="personal-information-emergency-contact-{index}[]"
+            defaultValue={mediaProfile.personalInformation.emergencyContacts[index].name ?? ''}
+            onchange={(e) => {
+              const value = e.currentTarget.value;
+              if(value.trim().length < 2){
+                mediaProfile.personalInformation.emergencyContacts[index].name=undefined
+              } else {
+                mediaProfile.personalInformation.emergencyContacts[index].name=value.trimStart();
+              }
+            }}
+          />
+          <input
+            type="text"
+            id="personal-information-emergency-contact-phone-number-{index}"
+            name="personal-information-emergency-contact-{index}[]"
+            defaultValue={mediaProfile.personalInformation.emergencyContacts[index].phoneNumber ?? ''}
+            onchange={(e) => {
+              const value = e.currentTarget.value;
+              if(value.trim().length < 2){
+                mediaProfile.personalInformation.emergencyContacts[index].phoneNumber=undefined
+              } else {
+                mediaProfile.personalInformation.emergencyContacts[index].phoneNumber=value.trimStart();
+              }
+            }}
+          />
+          {canDeleteEmergencyContacts}
+          <button type="button" onclick={() =>  mediaProfile.personalInformation.emergencyContacts.push({name: undefined, phoneNumber: undefined})}>add</button>
+          <button type="button" onclick={() =>  mediaProfile.personalInformation.emergencyContacts.splice(index,1)} disabled={!canDeleteEmergencyContacts}>delete</button>
+        </div>
+      {/each}
+
+      
+      {#each mediaProfile.personalInformation.emergencyContacts as a}
+      {a.name} | {a.phoneNumber} <br>
+      {/each}
+    </div>
     <!-- <div class="personal-information-">
       <label for="personal-information-">
         {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.`)}
