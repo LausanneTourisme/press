@@ -142,15 +142,16 @@
             "birth-date": "Date de naissance",
             "address": {
                 "title": "Adresse",
-                "address": "Adresse",
+                "street-address": "Adresse",
                 "city": "Ville",
                 "country": "Pays",
+                "country-placeholder": "Pays de résidence...",
                 "postal-code": "ZIP"
             },
             "phone-number": "Numéro de téléphone portable (avec indicatif)",
             "email": "Email",
             "allergies": "Allergies alimentaires ou restrictions",
-            "medical-and-physicalCondition": "Conditions médicales et forme physique",
+            "medical-and-physical-condition": "Conditions médicales et forme physique",
             "emergency-contacts": {
                 "title": "Contacts d'urgence",
                 "name": "Nom",
