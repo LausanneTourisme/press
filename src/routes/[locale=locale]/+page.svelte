@@ -141,25 +141,26 @@
       title="Port de Pully"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       localSrc="/pages/home/mobile.jpg"
+      src="/pages/home/port-de-pully"
       transform={{ gravity: 'west', crop: 'crop', width: 1280 }}
       srcset={[
         {
           size: 768,
           transform: { gravity: 'west', crop: 'auto', width: 1280 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/ipad.jpg',
+          isLocal: true
         },
         {
           size: 1280,
           transform: { gravity: 'west', crop: 'auto', width: 1920 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/fhd.jpg',
+          isLocal: true
         },
         {
           size: 2560,
           transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/4k.jpg',
+          isLocal: true
         }
       ]}
     />
