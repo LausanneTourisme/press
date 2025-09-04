@@ -5,6 +5,7 @@
   import type { MediaProfileJournalist } from '$types';
   import { superForm } from 'sveltekit-superforms';
   import type { PageData } from './$types';
+  import { personalInformation } from './schema';
   // TODO SEO
   // TODO all dates return a string and not Date object
   const countries = $derived(Object.values((page.data as PageData).countries));
@@ -67,7 +68,7 @@
       phoneNumber: undefined,
       email: undefined,
       address: {
-        address: undefined,
+        streetAddress: undefined,
         city: undefined,
         postalcode: undefined,
         country: undefined
@@ -469,16 +470,16 @@
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
           )}
         </label>
-        <!-- TODO select country -->
-        <!-- <input
-          type="text"
-          id="departure-point-country"
-          name="departure-point-country"
-          placeholder={$t(
-            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
-          )}
-          bind:value={mediaProfile.travelInformation.departurePoint.country}
-        /> -->
+        <select id="departure-point-country" name="departure-point-country" bind:value={mediaProfile.travelInformation.departurePoint.country}>
+          <option hidden disabled selected value={undefined}
+            >{$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
+            )}</option
+          >
+          {#each countries as country}
+            <option value={country}>{country}</option>
+          {/each}
+        </select>
       </div>
       <div class="departure-point-outward-journey">
         <label for="departure-point-outward-journey">
@@ -689,9 +690,7 @@
 
       <div>
         <label for="personal-information-passport-number">
-          {$t(
-            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`
-          )}
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
         </label>
         <input
           type="text"
@@ -703,9 +702,7 @@
 
       <div>
         <label for="personal-information-passport-validity">
-          {$t(
-            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
-          )}
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`)}
         </label>
         <input
           type="date"
@@ -719,9 +716,7 @@
 
   <div class="personal-information-birth-date">
     <label for="personal-information-birth-date">
-      {$t(
-        `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`
-      )}
+      {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
     </label>
     <input
       type="date"
@@ -731,31 +726,28 @@
     />
   </div>
 
-
   <section class="address">
     <h3>
       {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
     </h3>
 
-    <div class="personal-information-address-adress">
-      <label for="personal-information-address-adress">
+    <div class="personal-information-address-street-address">
+      <label for="personal-information-address-street-address">
         {$t(
-          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.adress`
+          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
         )}
       </label>
       <input
         type="text"
-        id="personal-information-address-adress"
-        name="personal-information-address-adress"
-        bind:value={mediaProfile.personalInformation.address.address}
+        id="personal-information-address-street-address"
+        name="personal-information-address-street-address"
+        bind:value={mediaProfile.personalInformation.address.streetAddress}
       />
     </div>
 
     <div class="personal-information-address-city">
       <label for="personal-information-address-city">
-        {$t(
-          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.city`
-        )}
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
       </label>
       <input
         type="text"
@@ -765,19 +757,95 @@
       />
     </div>
 
-    <div class="personal-information-address-country">
-      <label for="personal-information-address-country">
-        {$t(
-          `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.country`
-        )}
+    <div class="personal-information-address-zip">
+      <label for="personal-information-address-zip">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`)}
       </label>
       <input
         type="text"
-        id="personal-information-address-adress"
-        name="personal-information-address-adress"
-        bind:value={mediaProfile.personalInformation.address.address}
+        id="personal-information-address-zip"
+        name="personal-information-address-zip"
+        bind:value={mediaProfile.personalInformation.address.postalcode}
       />
     </div>
+
+    <div class="personal-information-address-country">
+      <label for="personal-information-address-country">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
+      </label>
+
+      <select id="personal-information-address-country" name="personal-information-address-country" bind:value={mediaProfile.personalInformation.address.country}>
+        <option hidden disabled selected value={undefined}>
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
+          )}
+        </option>
+        {#each countries as country}
+          <option value={country}>{country}</option>
+        {/each}
+      </select>
+    </div>
+    
+    <div class="personal-information-phone-number">
+      <label for="personal-information-phone-number">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-phone-number"
+        name="personal-information-phone-number"
+        bind:value={mediaProfile.personalInformation.phoneNumber}
+      />
+    </div>
+    
+    <div class="personal-information-email">
+      <label for="personal-information-email">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
+      </label>
+      <input
+        type="email"
+        id="personal-information-email"
+        name="personal-information-email"
+        bind:value={mediaProfile.personalInformation.email}
+      />
+    </div>
+
+    <div class="personal-information-allergies">
+      <label for="personal-information-allergies">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-allergies"
+        name="personal-information-allergies"
+        bind:value={mediaProfile.personalInformation.allergies}
+      />
+    </div>
+
+    <div class="personal-information-medical-and-physical-condition">
+      <label for="personal-information-medical-and-physical-condition">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-medical-and-physical-condition"
+        name="personal-information-medical-and-physical-condition"
+        bind:value={mediaProfile.personalInformation.medicalAndPhysicalCondition}
+      />
+    </div>
+    
+    
+    <!-- <div class="personal-information-">
+      <label for="personal-information-">
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.`)}
+      </label>
+      <input
+        type="text"
+        id="personal-information-"
+        name="personal-information-"
+        bind:value={mediaProfile.personalInformation.}
+      />
+    </div> -->
   </section>
   <button>Submit</button>
 </form>

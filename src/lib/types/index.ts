@@ -109,7 +109,7 @@ export type MediaProfileJournalist = {
       phoneNumber?: string,
       email?: string,
       address: {
-        address?: string,
+        streetAddress?: string,
         city?: string,
         postalcode?: string,
         country?: string
