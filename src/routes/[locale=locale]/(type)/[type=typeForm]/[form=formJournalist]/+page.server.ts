@@ -36,7 +36,7 @@ console.log({formData})
         const step = +(formData.get('step') ?? 0);
         const form = await superValidate(formData, steps[step]);
         if (!form.valid) return message(form, { step })
-        return message(form, { oldStep: step, text: 'Form posted successfully!', step: (step + 1) % 4 });
+        return message(form, { text: 'Form posted successfully!', step: (step + 1) % 4 });
     }
 }
 
