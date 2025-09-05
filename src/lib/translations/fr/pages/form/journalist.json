@@ -34,8 +34,6 @@
         }
     },
     "form": {
-        "yes": "Oui",
-        "no": "Non",
         "about-media": "Information sur le média",
         "media-name": "Nom du média",
         "media-name-placeholder": "",
@@ -54,7 +52,9 @@
             "print": {
                 "title": "Statistiques du média print",
                 "copies": "Circulation/nombre d'exemplaires",
-                "readers": "Couverture/nombre de lecteurs"
+                "readers": "Couverture/nombre de lecteurs",
+                "broadcast-location": "Lieu de diffusion",
+                "broadcast-location-placeholder": "kiosk, hôtel, abonnement, etc."
             },
             "radio-and-tv": {
                 "title": "Statistique du média radio/TV",
@@ -158,16 +158,7 @@
                 "phone-number": "Numéro de téléphone (avec indicatif)"
             },
             "travel-insurance": "Assurance de voyage couvrant la Suisse ?",
-            "remarks": "Remarques",
-            "terms-of-acceptance": {
-                "title": "Protection & Gestion des données",
-                "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
-                "accept-terms": "J'ai pris connaissance et accepte les conditions"
-            },
-            "newsletter": {
-                "title": "Newsletter",
-                "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
-            }
+            "remarks": "Remarques"
         }
     }
 }

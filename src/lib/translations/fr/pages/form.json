@@ -3,6 +3,16 @@
     "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
     "validations": {
         "non-empty-array": "Veuillez sélectionner au moins une valeur",
-        "read-terms-of-acceptance": "Veuillez accepter les conditions d'utilisation pour continuer"
-    }
+        "terms-of-acceptance": {
+            "title": "Protection & Gestion des données",
+            "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
+            "accept-terms": "J'ai pris connaissance et accepte les conditions"
+        },
+        "newsletter": {
+            "title": "Newsletter",
+            "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
+        }
+    },
+    "yes": "Oui",
+    "no": "Non"
 }
