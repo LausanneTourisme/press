@@ -24,7 +24,7 @@ export const config: Config<{
   value?: any;
   poi?: string;
   lausanner?: string;
-  name?: string|null;
+  name?: string | null;
   number?: number;
 }> = {
   initLocale: defaultLocale,
@@ -82,7 +82,7 @@ export const config: Config<{
 
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
-      .filter(x => x !== RouteTypes.Home && x !== RouteTypes.Themes)
+      .filter(x => x !== RouteTypes.Home && x !== RouteTypes.Themes && x !== RouteTypes.Form)
       .flatMap(type => supportedLocales.map(locale => {
         const slug = routeTypes[locale][`${type}.slug`];
         return {
@@ -120,16 +120,25 @@ export const config: Config<{
         }
       })),
 
-      //create all translations for specific form's view
-      ...Object.values(Forms)
-        .flatMap(form => supportedLocales.map(locale => {
-          return {
-            locale,
-            key: `${RouteTypes.Form}.${form}`,
-            routes: undefined,
-            loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default,
-          }
-        })),
+
+    // Form
+    ...supportedLocales.map(locale => ({
+      locale,
+      key: RouteTypes.Form,
+      routes: undefined,
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}.json`)).default,
+    })),
+
+    //create all translations for specific form's view
+    ...Object.values(Forms)
+      .flatMap(form => supportedLocales.map(locale => {
+        return {
+          locale,
+          key: `${RouteTypes.Form}.${form}`,
+          routes: undefined,
+          loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default,
+        }
+      })),
   ],
 }
 
