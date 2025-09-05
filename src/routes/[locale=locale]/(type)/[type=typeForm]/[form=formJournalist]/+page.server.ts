@@ -17,7 +17,7 @@ const lastStep = zod(schemaStep4);
 export const load = async ({ parent }) => {
     const [{ locale }, form] = await Promise.all([
         parent(),
-        superValidate<Infer<typeof schemaStep4>, Message>(lastStep)
+        superValidate<Infer<typeof schemaStep1>, Message>(steps[0])
     ]);
 
     countries.registerLocale(countriesByLocale[locale]);
@@ -32,10 +32,10 @@ export const load = async ({ parent }) => {
 export const actions = {
     default: async ({ request }) => {
         const formData = await request.formData()
-        console.log({ formData })
-
+console.log({formData})
         const step = +(formData.get('step') ?? 0);
         const form = await superValidate(formData, steps[step]);
+        if (!form.valid) return message(form, { step })
         return message(form, { oldStep: step, text: 'Form posted successfully!', step: (step + 1) % 4 });
     }
 }
