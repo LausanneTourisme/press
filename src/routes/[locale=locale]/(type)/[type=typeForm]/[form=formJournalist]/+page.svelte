@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes } from '$enums';
+  import { Forms, MediaTypes, RouteTypes, TravelReductions } from '$enums';
   import { t } from '$lib/translations';
   import { superForm } from 'sveltekit-superforms';
   import { zod } from 'sveltekit-superforms/adapters';
@@ -537,5 +537,158 @@
       {/if}
     </section>
   {/if}
+
+
+  {#if step === 2}
+    <section class="step3 travel-information">
+      <h2>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
+      </h2>
+
+      <section class="departure-point">
+        <h3>
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`
+          )}
+        </h3>
+        <div class="departure-point-city">
+          <label for="departure-point-city">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
+            )}
+          </label>
+          <input
+            type="text"
+            id="departure-point-city"
+            name="departure-point-city"
+            placeholder={$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
+            )}
+            bind:value={$form.travelInformation.departurePoint.city}
+          />
+        </div>
+        <div class="departure-point-country">
+          <label for="departure-point-country">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
+            )}
+          </label>
+          <select
+            id="departure-point-country"
+            name="departure-point-country"
+            bind:value={$form.travelInformation.departurePoint.country}
+          >
+            <option hidden disabled selected value={undefined}
+              >{$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
+              )}</option
+            >
+            {#each countries as country}
+              <option value={country}>{country}</option>
+            {/each}
+          </select>
+        </div>
+        <div class="departure-point-outward-journey">
+          <label for="departure-point-outward-journey">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
+            )}
+          </label>
+          <p class="departure-point-outward-journey information">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.information`
+            )}
+          </p>
+          <textarea
+            id="departure-point-outward-journey"
+            name="departure-point-outward-journey"
+            bind:value={$form.travelInformation.departurePoint.outwardJourney}
+            maxlength="300"
+          >
+          </textarea>
+        </div>
+      </section>
+
+      <div class="return-journey">
+        <label for="travel-information-return-journey">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`
+          )}
+        </label>
+        <p class="travel-information-return-journey information">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.information`
+          )}
+        </p>
+        <textarea
+          id="travel-information-return-journey"
+          name="travel-information-return-journey"
+          bind:value={$form.travelInformation.returnJourney}
+          maxlength="300"
+        >
+        </textarea>
+      </div>
+
+      <section class="travel-reductions">
+        <h3>
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
+          )}
+        </h3>
+
+        <fieldset id="travel-reductions">
+          <legend>
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
+            )}
+          </legend>
+          <div class="container">
+            {#each Object.values(TravelReductions) as travelReduction}
+              <div>
+                <input
+                  class=""
+                  name={travelReduction}
+                  type="checkbox"
+                  defaultValue={$form.travelInformation.travelReductions?.includes(
+                    travelReduction
+                  )}
+                  id={travelReduction}
+                  onchange={(e) => {
+                    if (!e.currentTarget.checked) {
+                      $form.travelInformation.travelReductions =
+                        $form.travelInformation.travelReductions.filter(
+                          (x) => x !== travelReduction
+                        ) ?? [];
+                    } else {
+                      $form.travelInformation.travelReductions.push(travelReduction);
+                    }
+                  }}
+                />
+                <label for={travelReduction} class="">
+                  {$t(
+                    `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
+                  )}
+                </label>
+              </div>
+            {/each}
+          </div>
+        </fieldset>
+      </section>
+
+      <div class="last-visit">
+        <label for="travel-information-return-journey">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
+        </label>
+        <input
+          type="date"
+          id="travel-information-return-journey"
+          name="travel-information-return-journey"
+          bind:value={$form.travelInformation.lastVisit}
+        />
+      </div>
+    </section>
+  {/if}
+
+
   <button>Submit</button>
 </form>
