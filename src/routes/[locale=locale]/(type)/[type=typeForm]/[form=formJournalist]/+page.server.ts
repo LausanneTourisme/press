@@ -1,5 +1,6 @@
 import { Forms, RouteTypes } from "$enums";
 import { supportedLocales, translations } from "$lib/translations";
+import { fail } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from "i18n-iso-countries/langs/de.json";
 import en from "i18n-iso-countries/langs/en.json";
@@ -31,13 +32,12 @@ export const load = async ({ parent }) => {
 
 export const actions = {
     default: async ({ request }) => {
-        const formData = await request.formData()
-console.log({formData})
-        const step = +(formData.get('step') ?? 0);
-        const form = await superValidate(formData, steps[step]);
-        console.log(form)
-        if (!form.valid) return message(form, { step })
-        return message(form, { text: 'Form posted successfully!', step: (step + 1) % 4 });
+        const form = await superValidate(request, steps[steps.length - 1]);
+
+        console.log(form);
+        if (!form.valid) return fail(400, { form });
+
+        return message(form, 'Form posted successfully!');
     }
 }
 

@@ -14,7 +14,6 @@ export const printMediaStatistics = z.object({
     readers: z.number().default(0),
     broadcastLocation: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.broadcast-location` }).default('')
 }).refine(({ copies, readers }) => {
-    console.log({ copies, readers })
     if (copies === 0 && readers > 0) {
         return true
     }

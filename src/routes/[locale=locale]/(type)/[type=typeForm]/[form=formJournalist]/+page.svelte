@@ -3,36 +3,40 @@
   import { Forms, MediaTypes, RouteTypes } from '$enums';
   import { t } from '$lib/translations';
   import { superForm } from 'sveltekit-superforms';
+  import { zod } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
+  import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
   // TODO SEO
   // TODO all dates return a string and not Date object
+
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const {
-    form,
-    formId,
-    errors,
-    message,
-    enhance,
-    submit: formSubmit
-  } = $derived.by(() =>
+  const steps = [
+    zod(schemaStep1Refined),
+    zod(schemaStep2Refined),
+    zod(schemaStep3),
+    zod(schemaStep4)
+  ];
+  let step = $state(0);
+
+  const { form, formId, errors, enhance, message, options, validateForm } = $derived.by(() =>
     superForm((page.data as PageData).form, {
-      dataType: 'json'
+      dataType: 'json',
+      onSubmit: async ({ cancel }) => {
+        options.validators = steps[step];
+        console.log({ form: $form, errors: $errors, message: $message, step });
+        // If on last step, make a normal request
+        if (step + 1 == steps.length) return;
+        else cancel();
+
+        const result = await validateForm({ update: true });
+        if (result.valid) step = step + 1;
+      }
     })
   );
-  const step = $derived($message?.step ?? 0);
-
-  $effect(() => {
-    console.log({ form: $form, errors: $errors, message: $message });
-  });
-
-  async function onSubmit() {
-    const res = await formSubmit(); // sends JSON
-    console.log(res);
-  }
 </script>
 
 <h2>Media information</h2>
-
+{step}
 <form method="POST" use:enhance>
   <input type="hidden" name="step" value={step} />
   <input type="hidden" name="__superform_id" bind:value={$formId} />
@@ -352,8 +356,8 @@
                       monthlyUniqueVisitors: 0,
                       website: '',
                       montlhyPageViews: 0,
-                      ...$form.onlineMediaStatistics,
-                    }
+                      ...$form.onlineMediaStatistics
+                    };
                   }
                 }}
                 aria-invalid={$errors.onlineMediaStatistics?.montlhyPageViews ? 'true' : undefined}
@@ -365,5 +369,173 @@
     </section>
   {/if}
 
+  {#if step === 1}
+    <section class="step2 media-coverage">
+      <h2>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.title`)}
+      </h2>
+
+      {#if $form.mediaTypes.includes(MediaTypes.Print)}
+        <section class="print-coverage">
+          <h3>
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
+          </h3>
+          <div class="container">
+            <div class="total-pages">
+              <label for="print-coverage-total-pages" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
+                )}
+              </label>
+              <input
+                type="number"
+                id="print-coverage-total-pages"
+                name="print-coverage-total-pages"
+                defaultValue={$form.mediaCoveragePrint.totalPages ?? 0}
+                bind:value={$form.mediaCoveragePrint.totalPages}
+              />
+            </div>
+            <div class="article-length">
+              <label for="print-coverage-article-length" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
+                )}
+              </label>
+              <input
+                type="text"
+                id="print-coverage-article-length"
+                name="print-coverage-article-length"
+                defaultValue={$form.mediaCoveragePrint.articleLength}
+                bind:value={$form.mediaCoveragePrint.articleLength}
+              />
+            </div>
+            <div class="publish-date">
+              <label for="print-coverage-publish-date" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
+                )}
+              </label>
+              <input
+                type="date"
+                id="{MediaTypes.Print}-coverage-publish-date"
+                name="{MediaTypes.Print}-coverage-publish-date"
+                defaultValue={$form.mediaCoveragePrint.publishDate}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsDate;
+                  if(value) {
+                    $form.mediaCoveragePrint.publishDate = value;
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </section>
+      {/if}
+      {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
+        <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
+          <h3>
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`)}
+          </h3>
+          <div class="container">
+            <div class="article-thematic">
+              <label
+                for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+                class=""
+              >
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic`
+                )}
+              </label>
+              <input
+                type="text"
+                id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+                name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+                placeholder={$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic-placeholder`
+                )}
+                bind:value={$form.mediaCoverageTvOrRadio.articleThematic}
+              />
+            </div>
+            <div class="publish-date">
+              <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+                )}
+              </label>
+              <input
+                type="date"
+                id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+                name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+                defaultValue={$form.mediaCoverageTvOrRadio.publishDate}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsDate;
+                  if(value) {
+                    $form.mediaCoverageTvOrRadio.publishDate = value;
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </section>
+      {/if}
+      {#if $form.mediaTypes.includes(MediaTypes.Online)}
+        <section class="online-coverage">
+          <h3>
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+          </h3>
+          <div class="container">
+            <div class="article-length">
+              <label for="online-coverage-article-length" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
+                )}
+              </label>
+              <input
+                type="text"
+                id="online-coverage-article-length"
+                name="online-coverage-article-length"
+                bind:value={$form.mediaCoverageOnline.articleLength}
+              />
+            </div>
+            <div class="article-thematic">
+              <label for="online-coverage-article-thematic" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
+                )}
+              </label>
+              <input
+                type="text"
+                id="online-coverage-article-thematic"
+                name="online-coverage-article-thematic"
+                placeholder={$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
+                )}
+                bind:value={$form.mediaCoverageOnline.articleThematic}
+              />
+            </div>
+            <div class="publish-date">
+              <label for="online-coverage-publish-date" class="">
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+                )}
+              </label>
+              <input
+                type="date"
+                id="online-coverage-publish-date"
+                name="online-coverage-publish-date"
+                defaultValue={$form.mediaCoverageOnline.publishDate}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsDate;
+                  if(value) {
+                    $form.mediaCoverageOnline.publishDate = value;
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </section>
+      {/if}
+    </section>
+  {/if}
   <button>Submit</button>
 </form>
