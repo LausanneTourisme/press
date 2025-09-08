@@ -1,14 +1,20 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, getValues, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
+  import { Forms, MediaTypes, RouteTypes } from '$enums';
   import { t } from '$lib/translations';
-  import type { MediaProfileJournalist } from '$types';
   import { superForm } from 'sveltekit-superforms';
   import type { PageData } from './$types';
   // TODO SEO
   // TODO all dates return a string and not Date object
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const { form, formId, errors, message, enhance, submit: formSubmit } = $derived.by(() =>
+  const {
+    form,
+    formId,
+    errors,
+    message,
+    enhance,
+    submit: formSubmit
+  } = $derived.by(() =>
     superForm((page.data as PageData).form, {
       dataType: 'json'
     })
@@ -135,8 +141,18 @@
                 placeholder={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location-placeholder`
                 )}
-                defaultValue={$form.printMediaStatistics.broadcastLocation}
-                bind:value={$form.printMediaStatistics.broadcastLocation}
+                defaultValue={$form.printMediaStatistics?.broadcastLocation ?? ''}
+                onchange={(e) => {
+                  const value = e.currentTarget.value;
+                  if (value.trim().length) {
+                    $form.printMediaStatistics = {
+                      copies: 0,
+                      readers: 0,
+                      ...$form.printMediaStatistics,
+                      broadcastLocation: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.printMediaStatistics?.broadcastLocation ? 'true' : undefined}
               />
             </div>
@@ -149,8 +165,18 @@
               <input
                 type="number"
                 id="print-statistics-copies"
-                defaultValue={$form.printMediaStatistics.copies}
-                bind:value={$form.printMediaStatistics.copies}
+                defaultValue={$form.printMediaStatistics?.copies ?? 0}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsNumber;
+                  if (!Number.isNaN(value)) {
+                    $form.printMediaStatistics = {
+                      readers: 0,
+                      broadcastLocation: '',
+                      ...$form.printMediaStatistics,
+                      copies: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.printMediaStatistics?.copies ? 'true' : undefined}
               />
             </div>
@@ -163,8 +189,18 @@
               <input
                 type="number"
                 id="print-statistics-readers"
-                defaultValue={$form.printMediaStatistics.readers}
-                bind:value={$form.printMediaStatistics.readers}
+                defaultValue={$form.printMediaStatistics?.readers ?? 0}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsNumber;
+                  if (!Number.isNaN(value)) {
+                    $form.printMediaStatistics = {
+                      copies: 0,
+                      broadcastLocation: '',
+                      ...$form.printMediaStatistics,
+                      readers: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.printMediaStatistics?.readers ? 'true' : undefined}
               />
             </div>
@@ -191,7 +227,17 @@
                 placeholder={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name-placeholder`
                 )}
-                bind:value={$form.radioAndTVMediaStatistics.emissionName}
+                defaultValue={$form.radioAndTVMediaStatistics?.emissionName ?? ''}
+                onchange={(e) => {
+                  const value = e.currentTarget.value;
+                  if (value.trim().length) {
+                    $form.radioAndTVMediaStatistics = {
+                      viewers: 0,
+                      ...$form.radioAndTVMediaStatistics,
+                      emissionName: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.radioAndTVMediaStatistics?.emissionName ? 'true' : undefined}
               />
             </div>
@@ -204,8 +250,17 @@
               <input
                 type="number"
                 id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
-                defaultValue={$form.radioAndTVMediaStatistics.viewers}
-                bind:value={$form.radioAndTVMediaStatistics.viewers}
+                defaultValue={$form.radioAndTVMediaStatistics?.viewers ?? 0}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsNumber;
+                  if (!Number.isNaN(value)) {
+                    $form.radioAndTVMediaStatistics = {
+                      emissionName: '',
+                      ...$form.radioAndTVMediaStatistics,
+                      viewers: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.radioAndTVMediaStatistics?.viewers ? 'true' : undefined}
               />
             </div>
@@ -232,7 +287,18 @@
                 placeholder={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.website-placeholder`
                 )}
-                bind:value={$form.onlineMediaStatistics.website}
+                defaultValue={$form.onlineMediaStatistics?.website ?? ''}
+                onchange={(e) => {
+                  const value = e.currentTarget.value;
+                  if (value.trim().length) {
+                    $form.onlineMediaStatistics = {
+                      monthlyUniqueVisitors: 0,
+                      montlhyPageViews: 0,
+                      ...$form.onlineMediaStatistics,
+                      website: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.onlineMediaStatistics?.website ? 'true' : undefined}
               />
             </div>
@@ -245,8 +311,18 @@
               <input
                 type="number"
                 id="online-statistics-monthly-unique-visitors"
-                defaultValue={$form.onlineMediaStatistics.monthlyUniqueVisitors}
-                bind:value={$form.onlineMediaStatistics.monthlyUniqueVisitors}
+                defaultValue={$form.onlineMediaStatistics?.monthlyUniqueVisitors ?? 0}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsNumber;
+                  if (!Number.isNaN(value)) {
+                    $form.onlineMediaStatistics = {
+                      montlhyPageViews: 0,
+                      website: '',
+                      ...$form.onlineMediaStatistics,
+                      monthlyUniqueVisitors: value
+                    };
+                  }
+                }}
                 aria-invalid={$errors.onlineMediaStatistics?.monthlyUniqueVisitors
                   ? 'true'
                   : undefined}
@@ -261,8 +337,25 @@
               <input
                 type="number"
                 id="online-statistics-montlhy-page-views"
-                defaultValue={$form.onlineMediaStatistics.montlhyPageViews}
-                bind:value={$form.onlineMediaStatistics.montlhyPageViews}
+                defaultValue={$form.onlineMediaStatistics?.montlhyPageViews ?? 0}
+                onchange={(e) => {
+                  const value = e.currentTarget.valueAsNumber;
+                  if (!Number.isNaN(value)) {
+                    $form.onlineMediaStatistics = {
+                      monthlyUniqueVisitors: 0,
+                      website: '',
+                      ...$form.onlineMediaStatistics,
+                      montlhyPageViews: value
+                    };
+                  } else {
+                    $form.onlineMediaStatistics = {
+                      monthlyUniqueVisitors: 0,
+                      website: '',
+                      montlhyPageViews: 0,
+                      ...$form.onlineMediaStatistics,
+                    }
+                  }
+                }}
                 aria-invalid={$errors.onlineMediaStatistics?.montlhyPageViews ? 'true' : undefined}
               />
             </div>

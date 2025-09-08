@@ -7,17 +7,17 @@ import fr from "i18n-iso-countries/langs/fr.json";
 import { message, superValidate, type Infer } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
-import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from "./schema";
+import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from "./schema";
 
 type Message = { step: number; message?: string };
 const countriesByLocale: Record<string, any> = { en, fr, de };
-const steps = [zod(schemaStep1), zod(schemaStep2), zod(schemaStep3), zod(schemaStep4)]
+const steps = [zod(schemaStep1Refined), zod(schemaStep2Refined), zod(schemaStep3), zod(schemaStep4)]
 const lastStep = zod(schemaStep4);
 
 export const load = async ({ parent }) => {
     const [{ locale }, form] = await Promise.all([
         parent(),
-        superValidate<Infer<typeof schemaStep1>, Message>(steps[0])
+        superValidate<Infer<typeof schemaStep4>, Message>(lastStep)
     ]);
 
     countries.registerLocale(countriesByLocale[locale]);
@@ -35,6 +35,7 @@ export const actions = {
 console.log({formData})
         const step = +(formData.get('step') ?? 0);
         const form = await superValidate(formData, steps[step]);
+        console.log(form)
         if (!form.valid) return message(form, { step })
         return message(form, { text: 'Form posted successfully!', step: (step + 1) % 4 });
     }

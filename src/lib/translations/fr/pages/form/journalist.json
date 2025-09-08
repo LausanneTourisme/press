@@ -66,7 +66,7 @@
                 "title": "Statistiques du média online (site web)",
                 "website": "Site web",
                 "website-placeholder": "https://",
-                "monthly-unique-visitors": "Reach/visiteurs par mois (uniques)",
+                "monthly-unique-visitors": "Reach/visiteurs uniques par mois",
                 "montlhy-page-views": "Nombre de page vues par mois"
             }
         },

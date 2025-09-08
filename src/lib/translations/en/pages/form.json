@@ -3,6 +3,7 @@
     "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
     "validations": {
         "non-empty-array": "Pick at least one option",
-        "read-terms-of-acceptance": "You must accept the terms of service to continue."
+        "read-terms-of-acceptance": "You must accept the terms of service to continue.",
+        "number-min-1": "Number must be greater than or equal to 1"
     }
 }

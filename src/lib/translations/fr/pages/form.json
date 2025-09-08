@@ -11,7 +11,8 @@
         "newsletter": {
             "title": "Newsletter",
             "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
-        }
+        },
+        "number-min-1": "Le nombre doit être plus grand ou égal à 1"
     },
     "yes": "Oui",
     "no": "Non"
