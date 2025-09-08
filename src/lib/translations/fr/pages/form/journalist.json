@@ -75,7 +75,8 @@
             "print": {
                 "title": "Couverture médiatique print",
                 "total-pages": "Nombre de pages",
-                "article-length": "Longueur de l'article"
+                "article-length": "Longueur de l'article",
+                "publish-date": "Date de sortie de l'article"
             },
             "radio-and-tv": {
                 "title": "Couverture médiatique radio/TV",
