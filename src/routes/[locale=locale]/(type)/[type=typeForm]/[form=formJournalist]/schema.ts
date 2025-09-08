@@ -69,7 +69,7 @@ export const travelInformation = z.object({
         outwardJourney: z.string().max(300).nullish(),
     }),
     returnJourney: z.string().nullish(),
-    anyReduction: z.array(travelReductionsEnum).nullish(),
+    travelReductions: z.array(travelReductionsEnum).default([]),
     lastVisit: z.date().nullish(), // last visit in lausanne or swiss
 }).required();
 
