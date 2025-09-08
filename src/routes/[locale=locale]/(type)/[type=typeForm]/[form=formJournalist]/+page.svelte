@@ -1,14 +1,12 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes, TravelReductions } from '$enums';
+  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
   import { t } from '$lib/translations';
-  import { superForm } from 'sveltekit-superforms';
+  import { superForm, type SuperForm } from 'sveltekit-superforms';
   import { zod } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
   // TODO SEO
-  // TODO all dates return a string and not Date object
-
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
     zod(schemaStep1Refined),
@@ -17,22 +15,44 @@
     zod(schemaStep4)
   ];
   let step = $state(0);
+  let canDeleteEmergencyContacts = $state(false);
 
   const { form, formId, errors, enhance, message, options, validateForm } = $derived.by(() =>
     superForm((page.data as PageData).form, {
       dataType: 'json',
       onSubmit: async ({ cancel }) => {
+        const isLast = steps.length - 1 === steps.length;
         options.validators = steps[step];
         console.log({ form: $form, errors: $errors, message: $message, step });
         // If on last step, make a normal request
-        if (step + 1 == steps.length) return;
-        else cancel();
-
+        if (isLast) {
+          $form.personalInformation.emergencyContacts =
+            $form.personalInformation.emergencyContacts.filter(
+              (x) => x.name !== undefined && x.phoneNumber !== undefined
+            );
+          return;
+        } else {
+          cancel();
+        }
         const result = await validateForm({ update: true });
         if (result.valid) step = step + 1;
       }
     })
   );
+
+  function addEmergencyContact() {
+    $form.personalInformation.emergencyContacts = [
+      ...$form.personalInformation.emergencyContacts,
+      { phoneNumber: '', name: '' }
+    ];
+    canDeleteEmergencyContacts = true;
+  }
+
+  function removeEmergencyContact(index: number) {
+    $form.personalInformation.emergencyContacts =
+      $form.personalInformation.emergencyContacts.filter((_, i) => i !== index);
+    if ($form.personalInformation.emergencyContacts.length <= 1) canDeleteEmergencyContacts = false;
+  }
 </script>
 
 <h2>Media information</h2>
@@ -422,7 +442,7 @@
                 defaultValue={$form.mediaCoveragePrint.publishDate}
                 onchange={(e) => {
                   const value = e.currentTarget.valueAsDate;
-                  if(value) {
+                  if (value) {
                     $form.mediaCoveragePrint.publishDate = value;
                   }
                 }}
@@ -434,7 +454,9 @@
       {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
         <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
           <h3>
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`)}
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
+            )}
           </h3>
           <div class="container">
             <div class="article-thematic">
@@ -469,7 +491,7 @@
                 defaultValue={$form.mediaCoverageTvOrRadio.publishDate}
                 onchange={(e) => {
                   const value = e.currentTarget.valueAsDate;
-                  if(value) {
+                  if (value) {
                     $form.mediaCoverageTvOrRadio.publishDate = value;
                   }
                 }}
@@ -526,7 +548,7 @@
                 defaultValue={$form.mediaCoverageOnline.publishDate}
                 onchange={(e) => {
                   const value = e.currentTarget.valueAsDate;
-                  if(value) {
+                  if (value) {
                     $form.mediaCoverageOnline.publishDate = value;
                   }
                 }}
@@ -537,7 +559,6 @@
       {/if}
     </section>
   {/if}
-
 
   {#if step === 2}
     <section class="step3 travel-information">
@@ -575,7 +596,6 @@
           </label>
           <select
             id="departure-point-country"
-            name="departure-point-country"
             bind:value={$form.travelInformation.departurePoint.country}
           >
             <option hidden disabled selected value={undefined}
@@ -601,11 +621,9 @@
           </p>
           <textarea
             id="departure-point-outward-journey"
-            name="departure-point-outward-journey"
             bind:value={$form.travelInformation.departurePoint.outwardJourney}
             maxlength="300"
-          >
-          </textarea>
+          ></textarea>
         </div>
       </section>
 
@@ -622,11 +640,9 @@
         </p>
         <textarea
           id="travel-information-return-journey"
-          name="travel-information-return-journey"
           bind:value={$form.travelInformation.returnJourney}
           maxlength="300"
-        >
-        </textarea>
+        ></textarea>
       </div>
 
       <section class="travel-reductions">
@@ -649,14 +665,15 @@
                   class=""
                   name={travelReduction}
                   type="checkbox"
-                  defaultValue={$form.travelInformation.travelReductions?.includes(
-                    travelReduction
-                  )}
+                  defaultValue={$form.travelInformation.travelReductions?.includes(travelReduction)}
                   id={travelReduction}
                   onchange={(e) => {
+                    if (!$form.travelInformation.travelReductions) {
+                      $form.travelInformation.travelReductions = [];
+                    }
                     if (!e.currentTarget.checked) {
                       $form.travelInformation.travelReductions =
-                        $form.travelInformation.travelReductions.filter(
+                        $form.travelInformation.travelReductions?.filter(
                           (x) => x !== travelReduction
                         ) ?? [];
                     } else {
@@ -682,13 +699,406 @@
         <input
           type="date"
           id="travel-information-return-journey"
-          name="travel-information-return-journey"
-          bind:value={$form.travelInformation.lastVisit}
+          defaultValue={$form.travelInformation.lastVisit}
+          onchange={(e) => {
+            const value = e.currentTarget.valueAsDate;
+            if (value) {
+              $form.travelInformation.lastVisit = value;
+            }
+          }}
         />
       </div>
     </section>
   {/if}
 
+  {#if step === 3}
+    <section class="step4 personal-information">
+      <h2>
+        {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+      </h2>
 
+      <fieldset class="titles">
+        <legend>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
+        </legend>
+        {#each Object.values(Titles) as title}
+          <input
+            type="radio"
+            id="personal-information-title-{title}"
+            name="personal-information-title"
+            checked={title === 'they'}
+            onchange={(e) => {
+              if (e.currentTarget.checked) {
+                $form.personalInformation.title = title;
+              }
+            }}
+          />
+          <label for="personal-information-title-{title}">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`)}
+          </label>
+        {/each}
+      </fieldset>
+
+      <div class="personal-information-first-name">
+        <label for="personal-information-first-name">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
+        </label>
+        <input
+          type="text"
+          id="personal-information-first-name"
+          placeholder={$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name-placeholder`
+          )}
+          bind:value={$form.personalInformation.firstName}
+        />
+      </div>
+
+      <div class="personal-information-last-name">
+        <label for="personal-information-last-name">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)}
+        </label>
+        <input
+          type="text"
+          id="personal-information-last-name"
+          placeholder={$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name-placeholder`
+          )}
+          bind:value={$form.personalInformation.lastName}
+        />
+      </div>
+
+      <fieldset class="is-freelance">
+        <legend>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
+        </legend>
+        <div class="freelance-false">
+          <input
+            type="radio"
+            id="personal-information-freelance-false"
+            name="personal-information-freelance"
+            onchange={(e) => ($form.personalInformation.freelance = false)}
+          />
+          <label for="personal-information-freelance-false">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+        </div>
+        <div class="freelance-true">
+          <input
+            type="radio"
+            id="personal-information-freelance-true"
+            name="personal-information-freelance"
+            onchange={(e) => ($form.personalInformation.freelance = true)}
+          />
+          <label for="personal-information-freelance-true">
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="personal-information-spoken-languages">
+        <label for="personal-information-spoken-languages">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`
+          )}
+        </label>
+        <input
+          type="text"
+          id="personal-information-spoken-languages"
+          placeholder={$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.placeholder`
+          )}
+          bind:value={$form.personalInformation.spokenLanguages}
+        />
+      </div>
+
+      <section class="passport">
+        <h3>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
+        </h3>
+
+        <div>
+          <label for="personal-information-passport-number">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
+          </label>
+          <input
+            type="text"
+            id="personal-information-passport-number"
+            bind:value={$form.personalInformation.passport.number}
+          />
+        </div>
+
+        <div>
+          <label for="personal-information-passport-validity">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
+            )}
+          </label>
+          <input
+            type="date"
+            id="personal-information-passport-validity"
+            defaultValue={$form.personalInformation.passport.validity}
+            onchange={(e) => {
+              const value = e.currentTarget.valueAsDate;
+              if (value) {
+                $form.personalInformation.passport.validity = value;
+              }
+            }}
+          />
+        </div>
+      </section>
+
+      <div class="personal-information-birth-date">
+        <label for="personal-information-birth-date">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
+        </label>
+        <input
+          type="date"
+          id="personal-information-birth-date"
+          defaultValue={$form.personalInformation.birthday}
+          onchange={(e) => {
+            const value = e.currentTarget.valueAsDate;
+            if (value) {
+              $form.personalInformation.birthday = value;
+            }
+          }}
+        />
+      </div>
+      <section class="address">
+        <h3>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+        </h3>
+
+        <div class="personal-information-address-street-address">
+          <label for="personal-information-address-street-address">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
+            )}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-street-address"
+            bind:value={$form.personalInformation.address.streetAddress}
+          />
+        </div>
+
+        <div class="personal-information-address-city">
+          <label for="personal-information-address-city">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-city"
+            bind:value={$form.personalInformation.address.city}
+          />
+        </div>
+
+        <div class="personal-information-address-zip">
+          <label for="personal-information-address-zip">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`
+            )}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-zip"
+            bind:value={$form.personalInformation.address.postalcode}
+          />
+        </div>
+
+        <div class="personal-information-address-country">
+          <label for="personal-information-address-country">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
+          </label>
+
+          <select
+            id="personal-information-address-country"
+            bind:value={$form.personalInformation.address.country}
+          >
+            <option hidden disabled selected value={undefined}>
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
+              )}
+            </option>
+            {#each countries as country}
+              <option value={country}>{country}</option>
+            {/each}
+          </select>
+        </div>
+      </section>
+
+      <div class="personal-information-phone-number">
+        <label for="personal-information-phone-number">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
+        </label>
+        <input
+          type="text"
+          id="personal-information-phone-number"
+          bind:value={$form.personalInformation.phoneNumber}
+        />
+      </div>
+
+      <div class="personal-information-email">
+        <label for="personal-information-email">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
+        </label>
+        <input
+          type="email"
+          id="personal-information-email"
+          bind:value={$form.personalInformation.email}
+        />
+      </div>
+
+      <div class="personal-information-allergies">
+        <label for="personal-information-allergies">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
+        </label>
+        <input
+          type="text"
+          id="personal-information-allergies"
+          bind:value={$form.personalInformation.allergies}
+        />
+      </div>
+
+      <div class="personal-information-medical-and-physical-condition">
+        <label for="personal-information-medical-and-physical-condition">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`
+          )}
+        </label>
+        <input
+          type="text"
+          id="personal-information-medical-and-physical-condition"
+          bind:value={$form.personalInformation.medicalAndPhysicalCondition}
+        />
+      </div>
+
+      <div class="personal-information-emergency-contacts">
+        <h3>
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
+          )}
+        </h3>
+        <div>
+          <p>
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
+            )}
+          </p>
+          <p>
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
+            )}
+          </p>
+        </div>
+        {#each $form.personalInformation.emergencyContacts as _, i}
+          <div class="personal-information-emergency-contact">
+            <input
+              type="text"
+              class="personal-information-emergency-contact-name"
+              bind:value={$form.personalInformation.emergencyContacts[i].name}
+            />
+            <input
+              type="text"
+              class="personal-information-emergency-contact-phone-number"
+              bind:value={$form.personalInformation.emergencyContacts[i].phoneNumber}
+            />
+            <button type="button" onclick={addEmergencyContact}>add</button>
+            <button
+              type="button"
+              class={[!canDeleteEmergencyContacts && 'hidden']}
+              onclick={() => removeEmergencyContact(i)}
+              disabled={!canDeleteEmergencyContacts}>delete</button
+            >
+          </div>
+        {/each}
+      </div>
+
+      <fieldset class="has-travel-insurance">
+        <legend>
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
+        </legend>
+        <div class="travel-insurance-false">
+          <input
+            type="radio"
+            id="personal-information-travel-insurance-false"
+            name="personal-information-travel-insurance"
+            onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
+          />
+          <label for="personal-information-travel-insurance-false">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+        </div>
+        <div class="travel-insurance-true">
+          <input
+            type="radio"
+            id="personal-information-travel-insurance-true"
+            name="personal-information-travel-insurance"
+            onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
+          />
+          <label for="personal-information-travel-insurance-true">
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="personal-information-remarks">
+        <label for="personal-information-remarks">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
+        </label>
+        <textarea id="personal-information-remarks" bind:value={$form.remarks}></textarea>
+      </div>
+
+      <div class="terms-of-acceptance">
+        <h3>
+          {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
+        </h3>
+        <p>
+          {$t(`${RouteTypes.Form}.terms-of-acceptance.content`)}
+        </p>
+        <input
+          type="checkbox"
+          defaultValue={false}
+          id="terms-of-acceptance"
+          onchange={(e) => {
+            $form.readTermsOfAcceptance = e.currentTarget.checked;
+          }}
+        />
+        <label for="terms-of-acceptance" class="">
+          {$t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
+        </label>
+      </div>
+
+      <fieldset class="newsletter">
+        <legend>
+          {$t(`${RouteTypes.Form}.newsletter.title`)}
+        </legend>
+        <p>
+          {$t(`${RouteTypes.Form}.newsletter.paragraph`)}
+        </p>
+        <div class="newsletter-false">
+          <input
+            type="radio"
+            id="personal-information-newsletter-false"
+            name="personal-information-newsletter"
+            onchange={(e) => ($form.newsletter = false)}
+          />
+          <label for="personal-information-newsletter-false">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+        </div>
+        <div class="newsletter-true">
+          <input
+            type="radio"
+            id="personal-information-newsletter-true"
+            name="personal-information-newsletter"
+            onchange={(e) => ($form.newsletter = true)}
+          />
+          <label for="personal-information-newsletter-true">
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
+        </div>
+      </fieldset>
+    </section>
+  {/if}
   <button>Submit</button>
 </form>

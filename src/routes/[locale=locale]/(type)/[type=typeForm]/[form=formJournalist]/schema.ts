@@ -80,8 +80,9 @@ export const personalInformation = z.object({
     birthday: z.date(),
     phoneNumber: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.phone-number` }),
     email: z.string().email().nonempty(),
+    allergies: z.string().default(''),
     address: z.object({
-        address: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.address` }),
+        streetAddress: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.address` }),
         city: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.city` }),
         postalcode: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.country` }),
         country: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.postal-code` }),
@@ -93,10 +94,16 @@ export const personalInformation = z.object({
         number: zodOptionalString(),
         validity: z.date().optional(),
     }).optional(),
-    emergencyContacts: z.array(z.object({
+    emergencyContacts: z
+    .array(z.object({
         name: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.name` }),
         phoneNumber: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.phone-number` }),
-    })).min(1, { message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.minimum` }),
+    }))
+    .min(1, { message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.minimum` })
+    .default([{
+        name: '',
+        phoneNumber: '',
+    }]),
 }).required();
 
 export const schemaStep1 = z.object({
