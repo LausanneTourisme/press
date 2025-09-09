@@ -142,6 +142,8 @@ html {
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+
+  --color-error: #e7302f !important;
 }
 
 /* CHROME */

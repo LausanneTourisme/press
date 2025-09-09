@@ -6,7 +6,7 @@
         "thematic": "Sur quelle thématique est votre média ? (générale, voyage, culture, lifestyle, ...)",
         "audience-profile": "Veuillez indiquer le profil de l'audience (âge, niveau d'éducation, sexe lieu de résidence, intérêts, ...)",
         "print-media-statistics": "Veuillez remplir au moins une des deux statistiques",
-        "media-statistics": "Les statistiques sur les médias sont nécessaires",
+        "media-statistics": "Au moins une des statistiques sur les médias sont requises",
         "broadcast-location": "Sur quel lieu diffusez-vous l'information ? (Kiosk, Hôtel, Abonnement payant, etc.)",
         "emission-name": "Veuillez indiquer sur quelle émission vous allez diffuser",
         "article-length": "De combien de mots/charactères sera votre article ?",
