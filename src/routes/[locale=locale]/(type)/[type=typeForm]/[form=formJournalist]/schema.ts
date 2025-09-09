@@ -46,20 +46,20 @@ export const onlineMediaStatistics = z.object({
 export const mediaCoveragePrint = z.object({
     totalPages: z.number().min(1).default(0),
     articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
-    publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
+    publishDate: zodRequiredString({min:10})
 }).nullish();
 
 //required when media type is "online" (via superRefine)
 export const mediaCoverageOnline = z.object({
     articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }).default(''),
-    publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
+    publishDate: zodRequiredString({min:10}) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
 }).nullish();
 
 //required when media type is "tv" or "radio" (via superRefine)
 export const mediaCoverageTvOrRadio = z.object({
     articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }),
-    publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
+    publishDate: zodRequiredString({min:10})  // faire si possible que choix année / mois, si date précise ils peuvent la mettre
 }).nullish();
 
 export const travelInformation = z.object({
@@ -70,14 +70,14 @@ export const travelInformation = z.object({
     }),
     returnJourney: z.string().nullish(),
     travelReductions: z.array(travelReductionsEnum).default([]),
-    lastVisit: z.date().nullish(), // last visit in lausanne or swiss
+    lastVisit: zodRequiredString({min:10}) .nullish(), // last visit in lausanne or swiss
 }).required();
 
 export const personalInformation = z.object({
     title: z.enum(getValues(Titles)),
     firstName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.first-name` }),
     lastName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.last-name` }),
-    birthday: z.date(),
+    birthday: zodRequiredString({min:10}) ,
     phoneNumber: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.phone-number` }),
     email: z.string().email().nonempty(),
     allergies: z.string().default(''),
@@ -92,7 +92,7 @@ export const personalInformation = z.object({
     medicalAndPhysicalCondition: z.string().nullish(),
     passport: z.object({
         number: zodOptionalString(),
-        validity: z.date().optional(),
+        validity: zodRequiredString({min:10}) .optional(),
     }).optional(),
     emergencyContacts: z
     .array(z.object({
