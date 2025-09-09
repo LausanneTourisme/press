@@ -34,7 +34,6 @@
         }
     },
     "form": {
-        "about-media": "Information sur le média",
         "media-name": "Nom du média",
         "media-name-placeholder": "",
         "media-thematic": "Thématique du média",
@@ -49,6 +48,7 @@
             "radio": "Radio"
         },
         "statistics": {
+            "title": "Information sur le média",
             "print": {
                 "title": "Statistiques du média print",
                 "copies": "Circulation/nombre d'exemplaires",
