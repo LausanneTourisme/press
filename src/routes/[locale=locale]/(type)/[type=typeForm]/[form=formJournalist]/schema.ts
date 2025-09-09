@@ -44,7 +44,7 @@ export const onlineMediaStatistics = z.object({
 
 //required when media type is "print" (via superRefine)
 export const mediaCoveragePrint = z.object({
-    totalPages: z.number().default(0).nullish(),
+    totalPages: z.number().min(1).default(0),
     articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
 }).nullish();
