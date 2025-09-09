@@ -88,11 +88,11 @@
 
     {#if step === 0}
       <section class="step1 about-media w-full">
-        <h3>
+        <h2>
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.about-media`)}
-        </h3>
+        </h2>
         <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
-          <label for="media-name">
+          <label for="media-name" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
             {#if $constraints.mediaName?.required}
               <span class="text-brand-600 italic">
@@ -109,7 +109,7 @@
             class="input w-full {$errors.mediaName ? 'input-error' : ''}"
           />
 
-          <label for="media-thematic">
+          <label for="media-thematic" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)}
             {#if $constraints.thematic?.required}
               <span class="text-brand-600 italic">
@@ -128,7 +128,7 @@
             class="input w-full {$errors.thematic ? 'input-error' : ''}"
           />
 
-          <label for="audience-profile">
+          <label for="audience-profile" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)}
             {#if $constraints.audienceProfile?.required}
               <span class="text-brand-600 italic">
@@ -148,7 +148,7 @@
           />
 
           <div id="media-types" class="join join-vertical">
-            <p>
+            <p class="label mb-1">
               {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)}
               {#if $constraints.mediaTypes?.required}
                 <span class="text-brand-600 italic">
@@ -194,7 +194,7 @@
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location`
               )}
-              {#if Number($constraints.printMediaStatistics?.broadcastLocation?.minlength) > 0 }
+              {#if Number($constraints.printMediaStatistics?.broadcastLocation?.minlength) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -302,7 +302,7 @@
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
               )}
-              {#if Number($constraints.radioAndTVMediaStatistics?.emissionName?.minlength) > 0 }
+              {#if Number($constraints.radioAndTVMediaStatistics?.emissionName?.minlength) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -336,7 +336,7 @@
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.viewers`
               )}
-              {#if Number($constraints.radioAndTVMediaStatistics?.viewers?.min) > 0 }
+              {#if Number($constraints.radioAndTVMediaStatistics?.viewers?.min) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -365,7 +365,7 @@
           </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <h3>
+          <h3 class="mt-4">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.title`
             )}
@@ -497,170 +497,197 @@
         </h2>
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <section class="print-coverage">
-            <h3>
-              {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
-            </h3>
-            <div class="container">
-              <div class="total-pages">
-                <label for="print-coverage-total-pages" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
-                  )}
-                </label>
-                <input
-                  type="number"
-                  id="print-coverage-total-pages"
-                  name="print-coverage-total-pages"
-                  defaultValue={$form.mediaCoveragePrint!.totalPages ?? 0}
-                  bind:value={$form.mediaCoveragePrint!.totalPages}
-                />
-              </div>
-              <div class="article-length">
-                <label for="print-coverage-article-length" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
-                  )}
-                </label>
-                <input
-                  type="text"
-                  id="print-coverage-article-length"
-                  name="print-coverage-article-length"
-                  defaultValue={$form.mediaCoveragePrint!.articleLength}
-                  bind:value={$form.mediaCoveragePrint!.articleLength}
-                />
-              </div>
-              <div class="publish-date">
-                <label for="print-coverage-publish-date" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
-                  )}
-                </label>
-                <input
-                  type="date"
-                  id="{MediaTypes.Print}-coverage-publish-date"
-                  name="{MediaTypes.Print}-coverage-publish-date"
-                  defaultValue={$form.mediaCoveragePrint!.publishDate.toISOString().split('T')[0]}
-                  onchange={(e) => {
-                    const value = e.currentTarget.valueAsDate;
-                    if (value) {
-                      $form.mediaCoveragePrint!.publishDate = value;
-                    }
-                  }}
-                />
-              </div>
-            </div>
-          </section>
+          <h3 class="mt-4">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
+          </h3>
+          <fieldset
+            class="fieldset print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
+          >
+            <label for="print-coverage-total-pages" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
+              )}
+              {#if Number($constraints.mediaCoveragePrint?.totalPages?.min) > 0}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="number"
+              id="print-coverage-total-pages"
+              class="input w-full"
+              name="print-coverage-total-pages"
+              defaultValue={$form.mediaCoveragePrint!.totalPages ?? 0}
+              bind:value={$form.mediaCoveragePrint!.totalPages}
+            />
+
+            <label for="print-coverage-article-length" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
+              )}
+              {#if Number($constraints.mediaCoveragePrint?.articleLength?.minlength) > 0}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="text"
+              id="print-coverage-article-length"
+              class="input w-full"
+              name="print-coverage-article-length"
+              defaultValue={$form.mediaCoveragePrint!.articleLength}
+              bind:value={$form.mediaCoveragePrint!.articleLength}
+            />
+
+            <label for="print-coverage-publish-date" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
+              )}
+              {#if $constraints.mediaCoveragePrint?.publishDate?.required}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="date"
+              id="{MediaTypes.Print}-coverage-publish-date"
+              class="input w-full"
+              name="{MediaTypes.Print}-coverage-publish-date"
+              onchange={(e) => {
+                const value = e.currentTarget.valueAsDate;
+                if (value) {
+                  $form.mediaCoveragePrint!.publishDate = value;
+                }
+              }}
+            />
+          </fieldset>
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
-          <section class="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage">
-            <h3>
+          <h3 class="mt-4">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
+            )}
+          </h3>
+          <fieldset
+            class="fieldset {MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
+          >
+            <label
+              for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+              class="label"
+            >
               {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic`
               )}
-            </h3>
-            <div class="container">
-              <div class="article-thematic">
-                <label
-                  for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-                  class=""
-                >
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic`
-                  )}
-                </label>
-                <input
-                  type="text"
-                  id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-                  name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-                  placeholder={$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic-placeholder`
-                  )}
-                  bind:value={$form.mediaCoverageTvOrRadio!.articleThematic}
-                />
-              </div>
-              <div class="publish-date">
-                <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
-                  )}
-                </label>
-                <input
-                  type="date"
-                  id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
-                  name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
-                  defaultValue={$form
-                    .mediaCoverageTvOrRadio!.publishDate.toISOString()
-                    .split('T')[0]}
-                  onchange={(e) => {
-                    const value = e.currentTarget.valueAsDate;
-                    if (value) {
-                      $form.mediaCoverageTvOrRadio!.publishDate = value;
-                    }
-                  }}
-                />
-              </div>
-            </div>
-          </section>
+              {#if Number($constraints.mediaCoverageTvOrRadio?.articleThematic?.minlength) > 0}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="text"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
+              class="input"
+              placeholder={$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic-placeholder`
+              )}
+              bind:value={$form.mediaCoverageTvOrRadio!.articleThematic}
+            />
+
+            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+              )}
+              {#if $constraints.mediaCoverageTvOrRadio?.publishDate?.required}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="date"
+              id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+              name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+              class="input"
+              onchange={(e) => {
+                const value = e.currentTarget.valueAsDate;
+                if (value) {
+                  $form.mediaCoverageTvOrRadio!.publishDate = value;
+                }
+              }}
+            />
+          </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <section class="online-coverage">
-            <h3>
+          <h3 class="mt-4">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+          </h3>
+          <fieldset
+            class="fieldset online-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
+          >
+            <label for="online-coverage-article-length" class="label">
               {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
               )}
-            </h3>
-            <div class="container">
-              <div class="article-length">
-                <label for="online-coverage-article-length" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
-                  )}
-                </label>
-                <input
-                  type="text"
-                  id="online-coverage-article-length"
-                  name="online-coverage-article-length"
-                  bind:value={$form.mediaCoverageOnline!.articleLength}
-                />
-              </div>
-              <div class="article-thematic">
-                <label for="online-coverage-article-thematic" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
-                  )}
-                </label>
-                <input
-                  type="text"
-                  id="online-coverage-article-thematic"
-                  name="online-coverage-article-thematic"
-                  placeholder={$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
-                  )}
-                  bind:value={$form.mediaCoverageOnline!.articleThematic}
-                />
-              </div>
-              <div class="publish-date">
-                <label for="online-coverage-publish-date" class="">
-                  {$t(
-                    `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
-                  )}
-                </label>
-                <input
-                  type="date"
-                  id="online-coverage-publish-date"
-                  name="online-coverage-publish-date"
-                  defaultValue={$form.mediaCoverageOnline!.publishDate.toISOString().split('T')[0]}
-                  onchange={(e) => {
-                    const value = e.currentTarget.valueAsDate;
-                    if (value) {
-                      $form.mediaCoverageOnline!.publishDate = value;
-                    }
-                  }}
-                />
-              </div>
-            </div>
-          </section>
+              {#if Number($constraints.mediaCoverageOnline?.articleLength?.minlength) > 0}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="text"
+              id="online-coverage-article-length"
+              class="input"
+              bind:value={$form.mediaCoverageOnline!.articleLength}
+            />
+
+            <label for="online-coverage-article-thematic" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
+              )}
+              {#if Number($constraints.mediaCoverageOnline?.articleThematic?.minlength) > 0}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="text"
+              id="online-coverage-article-thematic"
+              class="input"
+              placeholder={$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
+              )}
+              bind:value={$form.mediaCoverageOnline!.articleThematic}
+            />
+
+            <label for="online-coverage-publish-date" class="label">
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+              )}
+              {#if $constraints.mediaCoverageOnline?.publishDate?.required}
+                <span class="text-brand-600 italic">
+                  {$t(`${RouteTypes.Form}.required`)}
+                </span>
+              {/if}
+            </label>
+            <input
+              type="date"
+              id="online-coverage-publish-date"
+              class="input"
+              onchange={(e) => {
+                const value = e.currentTarget.valueAsDate;
+                if (value) {
+                  $form.mediaCoverageOnline!.publishDate = value;
+                }
+              }}
+            />
+          </fieldset>
         {/if}
       </section>
     {/if}
