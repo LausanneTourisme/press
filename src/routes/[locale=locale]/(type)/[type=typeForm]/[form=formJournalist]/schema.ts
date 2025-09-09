@@ -27,40 +27,40 @@ export const printMediaStatistics = z.object({
 }, {
     path: ['printMediaStatistics'],
     message: `${RouteTypes.Form}.${Forms.Journalist}.validations.print-media-statistics`
-}).nullable();
+}).nullish();
 
 // required when media type is "radio" or "tv" (via superRefine)
 export const radioAndTVMediaStatistics = z.object({
     emissionName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emission-name` }).default(''),
     viewers: z.number().min(1).default(0),
-}).nullable();
+}).nullish();
 
 // required when media type is "online" (via superRefine)
 export const onlineMediaStatistics = z.object({
     website: z.string().url(),
     monthlyUniqueVisitors: z.number().min(1, {message: `${RouteTypes.Form}.validations.number-min-1`}).default(0),
-    montlhyPageViews: z.number().default(0).nullish(),
-}).nullable();
+    montlhyPageViews: z.number().default(0).nullable(),
+}).nullish();
 
 //required when media type is "print" (via superRefine)
 export const mediaCoveragePrint = z.object({
     totalPages: z.number().default(0).nullish(),
     articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
-});
+}).nullish();
 
 //required when media type is "online" (via superRefine)
 export const mediaCoverageOnline = z.object({
     articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }).default(''),
     publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
-});
+}).nullish();
 
 //required when media type is "tv" or "radio" (via superRefine)
 export const mediaCoverageTvOrRadio = z.object({
     articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }),
     publishDate: z.date() // faire si possible que choix année / mois, si date précise ils peuvent la mettre
-});
+}).nullish();
 
 export const travelInformation = z.object({
     departurePoint: z.object({
@@ -190,72 +190,3 @@ export const schemaStep4 = schemaStep3
         readTermsOfAcceptance: z.literal<boolean>(true, { errorMap: () => ({ message: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }) }),
         newsletter: z.boolean(),
     });
-
-// export const completeSchema = z.object({
-//     mediaName: z.string(),
-//     thematic: z.string(),
-//     audienceProfile: z.string(),
-//     mediaType: mediaType,
-//     printMediaStatistics: printMediaStatistics,
-//     radioAndTVMediaStatistics: radioAndTVMediaStatistics,
-//     onlineMediaStatistics: onlineMediaStatistics,
-//     mediaCoveragePrint: mediaCoveragePrint,
-//     mediaCoverageOnline: mediaCoverageOnline,
-//     mediaCoverageTvOrRadio: mediaCoverageTvOrRadio,
-//     travelInformation: travelInformation,
-//     personalInformation: personalInformation,
-//     travelInsuranceCoveringSwitzerland: z.boolean(),
-//     remarks: z.string().nullish(),
-//     readTermsOfAcceptance: z.literal<boolean>(true, { errorMap: () => ({ message: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }) }),
-//     newsletter: z.boolean(),
-// })
-//     .required()
-//     .superRefine((data, ctx) => {
-//         if (data.mediaType.includes(MediaTypes.Print) && !data.printMediaStatistics) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["printMediaStatistics"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-
-//         if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaType.includes(requiredType)) && !data.radioAndTVMediaStatistics) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["radioAndTVMediaStatistics"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-
-//         if (data.mediaType.includes(MediaTypes.Online) && !data.onlineMediaStatistics) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["onlineMediaStatistics"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-
-//         if (data.mediaType.includes(MediaTypes.Print) && !data.mediaCoveragePrint) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["mediaCoveragePrint"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-
-//         if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaType.includes(requiredType)) && !data.mediaCoverageTvOrRadio) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["mediaCoverageTvOrRadio"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-
-//         if (data.mediaType.includes(MediaTypes.Online) && !data.mediaCoverageOnline) {
-//             ctx.addIssue({
-//                 code: z.ZodIssueCode.custom,
-//                 path: ["mediaCoverageOnline"],
-//                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
-//             });
-//         }
-//     });
