@@ -1,13 +1,12 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
+  import Container from '$lib/components/Container.svelte';
   import { t } from '$lib/translations';
-  import { DateTime } from 'luxon';
   import { superForm } from 'sveltekit-superforms';
   import { zod } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
-  import Container from '$lib/components/Container.svelte';
   // TODO SEO
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
@@ -38,21 +37,21 @@
               if ([MediaTypes.Radio, MediaTypes.Tv].some((x) => $form.mediaTypes.includes(x))) {
                 $form.mediaCoverageTvOrRadio = {
                   articleThematic: '',
-                  publishDate: DateTime.now().toJSDate()
+                  publishDate: ''
                 };
               }
               if ($form.mediaTypes.includes(MediaTypes.Online)) {
                 $form.mediaCoverageOnline = {
                   articleLength: '',
                   articleThematic: '',
-                  publishDate: DateTime.now().toJSDate()
+                  publishDate: ''
                 };
               }
               if ($form.mediaTypes.includes(MediaTypes.Print)) {
                 $form.mediaCoveragePrint = {
                   totalPages: 0,
                   articleLength: '',
-                  publishDate: DateTime.now().toJSDate()
+                  publishDate: ''
                 };
               }
             }
@@ -62,6 +61,7 @@
 
           const result = await validateForm({ update: true });
           if (result.valid) step = step + 1;
+          console.log({ errors: $errors });
         }
       })
     );
@@ -88,8 +88,8 @@
 
     {#if step === 0}
       <section class="step1 about-media w-full">
-        <h2>
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.about-media`)}
+        <h2 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.title`)}
         </h2>
         <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
           <label for="media-name" class="label">
@@ -184,7 +184,7 @@
         <!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
           </h3>
           <fieldset
@@ -287,7 +287,7 @@
           </fieldset>
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
@@ -365,7 +365,7 @@
           </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.title`
             )}
@@ -497,7 +497,7 @@
         </h2>
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
           </h3>
           <fieldset
@@ -516,10 +516,11 @@
             <input
               type="number"
               id="print-coverage-total-pages"
-              class="input w-full"
+              class="input w-full {$errors.mediaCoveragePrint?.totalPages ? 'input-error' : ''}"
               name="print-coverage-total-pages"
               defaultValue={$form.mediaCoveragePrint!.totalPages ?? 0}
               bind:value={$form.mediaCoveragePrint!.totalPages}
+              aria-invalid={$errors.mediaCoveragePrint?.totalPages ? 'true' : undefined}
             />
 
             <label for="print-coverage-article-length" class="label">
@@ -535,17 +536,18 @@
             <input
               type="text"
               id="print-coverage-article-length"
-              class="input w-full"
+              class="input w-full {$errors.mediaCoveragePrint?.articleLength ? 'input-error' : ''}"
               name="print-coverage-article-length"
               defaultValue={$form.mediaCoveragePrint!.articleLength}
               bind:value={$form.mediaCoveragePrint!.articleLength}
+              aria-invalid={$errors.mediaCoveragePrint?.articleLength ? 'true' : undefined}
             />
 
             <label for="print-coverage-publish-date" class="label">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
               )}
-              {#if $constraints.mediaCoveragePrint?.publishDate?.required}
+              {#if Number($constraints.mediaCoveragePrint?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -554,19 +556,15 @@
             <input
               type="date"
               id="{MediaTypes.Print}-coverage-publish-date"
-              class="input w-full"
+              class="input w-full {$errors.mediaCoveragePrint?.publishDate ? 'input-error' : ''}"
               name="{MediaTypes.Print}-coverage-publish-date"
-              onchange={(e) => {
-                const value = e.currentTarget.valueAsDate;
-                if (value) {
-                  $form.mediaCoveragePrint!.publishDate = value;
-                }
-              }}
+              bind:value={$form.mediaCoveragePrint!.publishDate}
+              aria-invalid={$errors.mediaCoveragePrint?.publishDate ? 'true' : undefined}
             />
           </fieldset>
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
@@ -591,18 +589,21 @@
               type="text"
               id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
               name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-              class="input"
+              class="input w-full {$errors.mediaCoverageTvOrRadio?.articleThematic
+                ? 'input-error'
+                : ''}"
               placeholder={$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic-placeholder`
               )}
               bind:value={$form.mediaCoverageTvOrRadio!.articleThematic}
+              aria-invalid={$errors.mediaCoverageTvOrRadio?.articleThematic ? 'true' : undefined}
             />
 
             <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="label">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
-              {#if $constraints.mediaCoverageTvOrRadio?.publishDate?.required}
+              {#if Number($constraints.mediaCoverageTvOrRadio?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -612,18 +613,16 @@
               type="date"
               id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
               name="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
-              class="input"
-              onchange={(e) => {
-                const value = e.currentTarget.valueAsDate;
-                if (value) {
-                  $form.mediaCoverageTvOrRadio!.publishDate = value;
-                }
-              }}
+              class="input w-full {$errors.mediaCoverageTvOrRadio?.publishDate
+                ? 'input-error'
+                : ''}"
+              bind:value={$form.mediaCoverageTvOrRadio!.publishDate}
+              aria-invalid={$errors.mediaCoverageTvOrRadio?.publishDate ? 'true' : undefined}
             />
           </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <h3 class="mt-4">
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
           </h3>
           <fieldset
@@ -642,8 +641,9 @@
             <input
               type="text"
               id="online-coverage-article-length"
-              class="input"
+              class="input w-full {$errors.mediaCoverageOnline?.articleLength ? 'input-error' : ''}"
               bind:value={$form.mediaCoverageOnline!.articleLength}
+              aria-invalid={$errors.mediaCoverageOnline?.articleLength ? 'true' : undefined}
             />
 
             <label for="online-coverage-article-thematic" class="label">
@@ -659,18 +659,21 @@
             <input
               type="text"
               id="online-coverage-article-thematic"
-              class="input"
+              class="input w-full {$errors.mediaCoverageOnline?.articleThematic
+                ? 'input-error'
+                : ''}"
               placeholder={$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic-placeholder`
               )}
               bind:value={$form.mediaCoverageOnline!.articleThematic}
+              aria-invalid={$errors.mediaCoverageOnline?.articleThematic ? 'true' : undefined}
             />
 
             <label for="online-coverage-publish-date" class="label">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
-              {#if $constraints.mediaCoverageOnline?.publishDate?.required}
+              {#if Number($constraints.mediaCoverageOnline?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
                   {$t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -679,13 +682,9 @@
             <input
               type="date"
               id="online-coverage-publish-date"
-              class="input"
-              onchange={(e) => {
-                const value = e.currentTarget.valueAsDate;
-                if (value) {
-                  $form.mediaCoverageOnline!.publishDate = value;
-                }
-              }}
+              class="input w-full {$errors.mediaCoverageOnline?.publishDate ? 'input-error' : ''}"
+              bind:value={$form.mediaCoverageOnline!.publishDate}
+              aria-invalid={$errors.mediaCoverageOnline?.publishDate ? 'true' : undefined}
             />
           </fieldset>
         {/if}
@@ -698,69 +697,82 @@
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
         </h2>
 
-        <section class="departure-point">
-          <h3>
+        <h3 class="mt-6 mb-2">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`
+          )}
+        </h3>
+        <fieldset
+          class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <label for="departure-point-city" class="label">
             {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
             )}
-          </h3>
-          <div class="departure-point-city">
-            <label for="departure-point-city">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
-              )}
-            </label>
-            <input
-              type="text"
-              id="departure-point-city"
-              name="departure-point-city"
-              placeholder={$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
-              )}
-              bind:value={$form.travelInformation.departurePoint.city}
-            />
-          </div>
-          <div class="departure-point-country">
-            <label for="departure-point-country">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
-              )}
-            </label>
-            <select
-              id="departure-point-country"
-              bind:value={$form.travelInformation.departurePoint.country}
-            >
-              <option hidden disabled selected value={undefined}
-                >{$t(
-                  `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
-                )}</option
-              >
-              {#each countries as country}
-                <option value={country}>{country}</option>
-              {/each}
-            </select>
-          </div>
-          <div class="departure-point-outward-journey">
-            <label for="departure-point-outward-journey">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
-              )}
-            </label>
-            <p class="departure-point-outward-journey information">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.information`
-              )}
-            </p>
-            <textarea
-              id="departure-point-outward-journey"
-              bind:value={$form.travelInformation.departurePoint.outwardJourney}
-              maxlength="300"
-            ></textarea>
-          </div>
-        </section>
+          </label>
+          <input
+            type="text"
+            id="departure-point-city"
+            class="input w-full {$errors.travelInformation?.departurePoint?.city
+              ? 'input-error'
+              : ''}"
+            placeholder={$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city-placeholder`
+            )}
+            bind:value={$form.travelInformation.departurePoint.city}
+            aria-invalid={$errors.travelInformation?.departurePoint?.city ? 'true' : undefined}
+          />
 
-        <div class="return-journey">
-          <label for="travel-information-return-journey">
+          <label for="departure-point-country" class="label">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
+            )}
+          </label>
+          <select
+            id="departure-point-country"
+            class="select w-full {$errors.travelInformation?.departurePoint?.country
+              ? 'select-error'
+              : ''}"
+            bind:value={$form.travelInformation.departurePoint.country}
+            aria-invalid={$errors.travelInformation?.departurePoint?.country ? 'true' : undefined}
+          >
+            <option disabled selected value={undefined}>
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
+              )}
+            </option>
+            {#each countries as country}
+              <option value={country}>{country}</option>
+            {/each}
+          </select>
+
+          <label for="departure-point-outward-journey" class="label">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
+            )}
+          </label>
+          <p class="departure-point-outward-journey information">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.information`
+            )}
+          </p>
+          <textarea
+            id="departure-point-outward-journey"
+            class="textarea w-full {$errors.travelInformation?.departurePoint?.outwardJourney
+              ? 'textarea-error'
+              : ''}"
+            bind:value={$form.travelInformation.departurePoint.outwardJourney}
+            maxlength="300"
+            aria-invalid={$errors.travelInformation?.departurePoint?.outwardJourney
+              ? 'true'
+              : undefined}
+          ></textarea>
+        </fieldset>
+
+        <fieldset
+          class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        >
+          <label for="travel-information-return-journey" class="label">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`
             )}
@@ -772,76 +784,81 @@
           </p>
           <textarea
             id="travel-information-return-journey"
+            class="textarea w-full {$errors.travelInformation?.returnJourney
+              ? 'textarea-error'
+              : ''}"
             bind:value={$form.travelInformation.returnJourney}
             maxlength="300"
+            aria-invalid={$errors.travelInformation?.returnJourney ? 'true' : undefined}
           ></textarea>
-        </div>
+        </fieldset>
 
-        <section class="travel-reductions">
-          <h3>
+        <h3 class="mt-6 mb-2">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
+          )}
+        </h3>
+        <fieldset
+          class="fieldset travel-reductions bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <label for="travel-information-travel-reduction" class="label">
             {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
+              `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
             )}
-          </h3>
+          </label>
+          <div id="travel-information-travel-reduction" class="join join-vertical">
+            {#each Object.values(TravelReductions) as travelReduction}
+              <label
+                for="travel-reduction-{travelReduction}"
+                class="label my-1 {$errors.travelInformation?.travelReductions ? 'text-error' : ''}"
+              >
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  value={$form.travelInformation.travelReductions?.includes(travelReduction)}
+                  id="travel-reduction-{travelReduction}"
+                  onchange={(e) => {
+                    if (!$form.travelInformation.travelReductions) {
+                      $form.travelInformation.travelReductions = [];
+                    }
+                    if (!e.currentTarget.checked) {
+                      $form.travelInformation.travelReductions =
+                        $form.travelInformation.travelReductions?.filter(
+                          (x) => x !== travelReduction
+                        ) ?? [];
+                    } else {
+                      $form.travelInformation.travelReductions = [
+                        ...$form.travelInformation.travelReductions,
+                        travelReduction
+                      ];
+                    }
+                  }}
+                  aria-label={$t(
+                    `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
+                  )}
+                />
+                {$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
+                )}
+              </label>
+            {/each}
+          </div>
+        </fieldset>
 
-          <fieldset id="travel-reductions">
-            <legend>
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
-              )}
-            </legend>
-            <div class="container">
-              {#each Object.values(TravelReductions) as travelReduction}
-                <div>
-                  <input
-                    class=""
-                    name={travelReduction}
-                    type="checkbox"
-                    defaultValue={$form.travelInformation.travelReductions?.includes(
-                      travelReduction
-                    )}
-                    id={travelReduction}
-                    onchange={(e) => {
-                      if (!$form.travelInformation.travelReductions) {
-                        $form.travelInformation.travelReductions = [];
-                      }
-                      if (!e.currentTarget.checked) {
-                        $form.travelInformation.travelReductions =
-                          $form.travelInformation.travelReductions?.filter(
-                            (x) => x !== travelReduction
-                          ) ?? [];
-                      } else {
-                        $form.travelInformation.travelReductions.push(travelReduction);
-                      }
-                    }}
-                  />
-                  <label for={travelReduction} class="">
-                    {$t(
-                      `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
-                    )}
-                  </label>
-                </div>
-              {/each}
-            </div>
-          </fieldset>
-        </section>
-
-        <div class="last-visit">
-          <label for="travel-information-return-journey">
+        <fieldset
+          class="fieldset last-visit bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        >
+          <label for="travel-information-return-journey" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
           </label>
           <input
             type="date"
             id="travel-information-return-journey"
-            defaultValue={$form.travelInformation.lastVisit}
-            onchange={(e) => {
-              const value = e.currentTarget.valueAsDate;
-              if (value) {
-                $form.travelInformation.lastVisit = value;
-              }
-            }}
+            class="input w-full {$errors.travelInformation?.lastVisit ? 'input-error' : ''}"
+            bind:value={$form.travelInformation.lastVisit}
+            aria-invalid={$errors.travelInformation?.lastVisit ? 'true' : undefined}
           />
-        </div>
+        </fieldset>
       </section>
     {/if}
 
@@ -948,7 +965,7 @@
         </div>
 
         <section class="passport">
-          <h3>
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
           </h3>
 
@@ -974,13 +991,7 @@
             <input
               type="date"
               id="personal-information-passport-validity"
-              defaultValue={$form.personalInformation.passport.validity}
-              onchange={(e) => {
-                const value = e.currentTarget.valueAsDate;
-                if (value) {
-                  $form.personalInformation.passport.validity = value;
-                }
-              }}
+              bind:value={$form.personalInformation.passport.validity}
             />
           </div>
         </section>
@@ -992,17 +1003,11 @@
           <input
             type="date"
             id="personal-information-birth-date"
-            defaultValue={$form.personalInformation.birthday}
-            onchange={(e) => {
-              const value = e.currentTarget.valueAsDate;
-              if (value) {
-                $form.personalInformation.birthday = value;
-              }
-            }}
+            bind:value={$form.personalInformation.birthday}
           />
         </div>
         <section class="address">
-          <h3>
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
           </h3>
 
@@ -1113,7 +1118,7 @@
         </div>
 
         <div class="personal-information-emergency-contacts">
-          <h3>
+          <h3 class="mt-6 mb-2">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
             )}
@@ -1191,7 +1196,7 @@
         </div>
 
         <div class="terms-of-acceptance">
-          <h3>
+          <h3 class="mt-6 mb-2">
             {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
           </h3>
           <p>
