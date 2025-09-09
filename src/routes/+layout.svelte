@@ -135,10 +135,10 @@
   <!-- End Google Tag Manager -->
 </svelte:head>
 
-<div class="app">
+<div class="app flex min-h-screen flex-col">
   <Nav />
 
-  <main>
+  <main class="flex-1">
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
