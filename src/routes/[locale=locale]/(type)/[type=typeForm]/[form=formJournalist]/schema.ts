@@ -96,7 +96,7 @@ export const personalInformation = z.object({
     })
         .optional()
         .superRefine((data, ctx) => {
-            if (data === undefined) return; // normal case
+            if (data === undefined || data.number === undefined && data.validity === undefined) return; // normal case, optionnal field
             // when data not undefined fields required
             if (data.number === undefined || data.validity === undefined) {
                 ctx.addIssue({
@@ -199,6 +199,15 @@ export const schemaStep4 = schemaStep3
         personalInformation: personalInformation,
         travelInsuranceCoveringSwitzerland: z.boolean(),
         remarks: z.string().nullish(),
-        readTermsOfAcceptance: z.literal<boolean>(true, { error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
+        readTermsOfAcceptance: z.boolean( { error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
         newsletter: z.boolean(),
+    })
+    .superRefine((data, ctx) => {
+        if(!data.readTermsOfAcceptance) {
+            ctx.addIssue({
+                code: "custom",
+                path: ["readTermsOfAcceptance"],
+                message: `${RouteTypes.Form}.validations.terms-of-acceptance`,
+            });
+        }
     });
