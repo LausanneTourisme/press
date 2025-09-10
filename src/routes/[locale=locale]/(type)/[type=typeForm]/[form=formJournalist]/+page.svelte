@@ -3,12 +3,12 @@
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
   import Container from '$lib/components/Container.svelte';
   import { t } from '$lib/translations';
+  import { CircleMinus, CirclePlus } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
+  import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
-  import { twMerge } from 'tailwind-merge';
-  import { CircleMinus, CirclePlus } from 'lucide-svelte';
   // TODO SEO
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
@@ -62,8 +62,7 @@
           }
 
           const result = await validateForm({ update: true });
-          if (result.valid) step = step + 1;
-          console.log({ errors: $errors, form: $form });
+          if (result.valid && step < steps.length - 1) step = step + 1;
         }
       })
     );
@@ -94,7 +93,7 @@
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.title`)}
         </h2>
         <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
-          <label for="media-name" class="label">
+          <label for="media-name" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
             {#if $constraints.mediaName?.required}
               <span class="text-brand-600 italic">
@@ -111,7 +110,7 @@
             class="input w-full {$errors.mediaName ? 'input-error' : ''}"
           />
 
-          <label for="media-thematic" class="label">
+          <label for="media-thematic" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)}
             {#if $constraints.thematic?.required}
               <span class="text-brand-600 italic">
@@ -130,7 +129,7 @@
             class="input w-full {$errors.thematic ? 'input-error' : ''}"
           />
 
-          <label for="audience-profile" class="label">
+          <label for="audience-profile" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)}
             {#if $constraints.audienceProfile?.required}
               <span class="text-brand-600 italic">
@@ -150,7 +149,7 @@
           />
 
           <div id="media-types" class="join join-vertical">
-            <p class="label mb-1">
+            <p class="label mb-1 text-wrap break-words">
               {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)}
               {#if $constraints.mediaTypes?.required}
                 <span class="text-brand-600 italic">
@@ -160,7 +159,9 @@
             </p>
 
             {#each Object.values(MediaTypes) as mediaType}
-              <label class="label my-1 {$errors.mediaTypes ? 'text-error' : ''}">
+              <label
+                class="label my-1 text-wrap break-words {$errors.mediaTypes ? 'text-error' : ''}"
+              >
                 <input
                   class="checkbox color-white {$errors.mediaTypes ? 'border-error' : ''}"
                   type="checkbox"
@@ -192,7 +193,7 @@
           <fieldset
             class="fieldset print-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
-            <label for="print-statistics-broadcastLocation" class="label">
+            <label for="print-statistics-broadcastLocation" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location`
               )}
@@ -237,7 +238,7 @@
                 {/each}
               </p>
             {/if}
-            <label for="print-statistics-copies" class="label">
+            <label for="print-statistics-copies" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.copies`
               )}
@@ -264,7 +265,7 @@
               aria-invalid={$errors.printMediaStatistics?._errors ? 'true' : undefined}
             />
 
-            <label for="print-statistics-readers" class="label">
+            <label for="print-statistics-readers" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.readers`
               )}
@@ -300,7 +301,7 @@
           >
             <label
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
-              class="label"
+              class="label text-wrap break-words"
             >
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
@@ -335,7 +336,10 @@
               aria-invalid={$errors.radioAndTVMediaStatistics?.emissionName ? 'true' : undefined}
             />
 
-            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers" class="label">
+            <label
+              for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
+              class="label text-wrap break-words"
+            >
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.viewers`
               )}
@@ -377,7 +381,7 @@
           <fieldset
             class="fieldset online-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
-            <label for="online-statistics-website" class="label">
+            <label for="online-statistics-website" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.website`
               )}
@@ -416,7 +420,10 @@
                 {/each}
               </p>
             {/if}
-            <label for="online-statistics-monthly-unique-visitors" class="label">
+            <label
+              for="online-statistics-monthly-unique-visitors"
+              class="label text-wrap break-words"
+            >
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.monthly-unique-visitors`
               )}
@@ -450,7 +457,7 @@
                 : undefined}
             />
 
-            <label for="online-statistics-montlhy-page-views" class="label">
+            <label for="online-statistics-montlhy-page-views" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.montlhy-page-views`
               )}
@@ -506,7 +513,7 @@
           <fieldset
             class="fieldset print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
-            <label for="print-coverage-total-pages" class="label">
+            <label for="print-coverage-total-pages" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
               )}
@@ -526,7 +533,7 @@
               aria-invalid={$errors.mediaCoveragePrint?.totalPages ? 'true' : undefined}
             />
 
-            <label for="print-coverage-article-length" class="label">
+            <label for="print-coverage-article-length" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
               )}
@@ -551,7 +558,7 @@
               aria-invalid={$errors.mediaCoveragePrint?.articleLength ? 'true' : undefined}
             />
 
-            <label for="print-coverage-publish-date" class="label">
+            <label for="print-coverage-publish-date" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
               )}
@@ -582,7 +589,7 @@
           >
             <label
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
-              class="label"
+              class="label text-wrap break-words"
             >
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic`
@@ -607,7 +614,10 @@
               aria-invalid={$errors.mediaCoverageTvOrRadio?.articleThematic ? 'true' : undefined}
             />
 
-            <label for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date" class="label">
+            <label
+              for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
+              class="label text-wrap break-words"
+            >
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
@@ -636,7 +646,7 @@
           <fieldset
             class="fieldset online-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
-            <label for="online-coverage-article-length" class="label">
+            <label for="online-coverage-article-length" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
               )}
@@ -659,7 +669,7 @@
               aria-invalid={$errors.mediaCoverageOnline?.articleLength ? 'true' : undefined}
             />
 
-            <label for="online-coverage-article-thematic" class="label">
+            <label for="online-coverage-article-thematic" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
               )}
@@ -682,7 +692,7 @@
               aria-invalid={$errors.mediaCoverageOnline?.articleThematic ? 'true' : undefined}
             />
 
-            <label for="online-coverage-publish-date" class="label">
+            <label for="online-coverage-publish-date" class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
@@ -718,7 +728,7 @@
         <fieldset
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box border p-4"
         >
-          <label for="departure-point-city" class="label">
+          <label for="departure-point-city" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
             )}
@@ -741,7 +751,7 @@
             aria-invalid={$errors.travelInformation?.departurePoint?.city ? 'true' : undefined}
           />
 
-          <label for="departure-point-country" class="label">
+          <label for="departure-point-country" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
             )}
@@ -769,7 +779,7 @@
             {/each}
           </select>
 
-          <label for="departure-point-outward-journey" class="label">
+          <label for="departure-point-outward-journey" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
             )}
@@ -800,7 +810,7 @@
         <fieldset
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
-          <label for="travel-information-return-journey" class="label">
+          <label for="travel-information-return-journey" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`
             )}
@@ -834,7 +844,7 @@
         <fieldset
           class="fieldset travel-reductions bg-base-200/50 border-base-300 rounded-box border p-4"
         >
-          <label for="travel-information-travel-reduction" class="label">
+          <label for="travel-information-travel-reduction" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
             )}
@@ -848,7 +858,9 @@
             {#each Object.values(TravelReductions) as travelReduction}
               <label
                 for="travel-reduction-{travelReduction}"
-                class="label my-1 {$errors.travelInformation?.travelReductions ? 'text-error' : ''}"
+                class="label my-1 text-wrap break-words {$errors.travelInformation?.travelReductions
+                  ? 'text-error'
+                  : ''}"
               >
                 <input
                   class="checkbox"
@@ -886,7 +898,7 @@
         <fieldset
           class="fieldset last-visit bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
-          <label for="travel-information-return-journey" class="label">
+          <label for="travel-information-return-journey" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
             {#if $constraints.travelInformation?.lastVisit?.required}
               <span class="text-brand-600 italic">
@@ -914,7 +926,7 @@
         <fieldset
           class="fieldset personal-information bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
-          <p class="label mb-1">
+          <p class="label mb-1 text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
             {#if $constraints.personalInformation?.title?.required}
               <span class="text-brand-600 italic">
@@ -925,7 +937,7 @@
           {#each Object.values(Titles) as title}
             <label
               aria-invalid={$errors.personalInformation?.title ? 'true' : undefined}
-              class="label"
+              class="label text-wrap break-words"
             >
               <input
                 type="radio"
@@ -948,7 +960,7 @@
             </label>
           {/each}
 
-          <label for="personal-information-first-name" class="label">
+          <label for="personal-information-first-name" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
 
             {#if $constraints.personalInformation?.firstName?.required}
@@ -987,7 +999,7 @@
             aria-invalid={$errors.personalInformation?.lastName ? 'true' : undefined}
           />
 
-          <p class="label mb-1">
+          <p class="label mb-1 text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
             {#if $constraints.personalInformation?.freelance?.required}
               <span class="text-brand-600 italic">
@@ -997,7 +1009,7 @@
           </p>
 
           <label
-            class="label"
+            class="label text-wrap break-words"
             aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
           >
             <input
@@ -1006,25 +1018,27 @@
               class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
               onchange={() => ($form.personalInformation.freelance = false)}
               aria-label={$t(`${RouteTypes.Form}.no`)}
+              required
             />
             {$t(`${RouteTypes.Form}.no`)}
           </label>
 
           <label
-            class="label"
+            class="label text-wrap break-words"
             aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
           >
             <input
               type="radio"
-              id="personal-information-freelance-true"
+              name="personal-information-freelance"
               class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
               onchange={() => ($form.personalInformation.freelance = true)}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
+              required
             />
             {$t(`${RouteTypes.Form}.yes`)}
           </label>
 
-          <label for="personal-information-spoken-languages" class="label">
+          <label for="personal-information-spoken-languages" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`
             )}
@@ -1045,7 +1059,7 @@
             aria-invalid={$errors.personalInformation?.spokenLanguages ? 'true' : undefined}
           />
 
-          <label for="personal-information-birth-date" class="label">
+          <label for="personal-information-birth-date" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
             {#if $constraints.personalInformation?.birthday?.required}
               <span class="text-brand-600 italic">
@@ -1061,7 +1075,7 @@
             aria-invalid={$errors.personalInformation?.birthday ? 'true' : undefined}
           />
 
-          <label for="personal-information-allergies" class="label">
+          <label for="personal-information-allergies" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
             {#if $constraints.personalInformation?.allergies?.required}
               <span class="text-brand-600 italic">
@@ -1079,7 +1093,10 @@
             aria-invalid={$errors.personalInformation?.allergies ? 'true' : undefined}
           />
 
-          <label for="personal-information-medical-and-physical-condition" class="label">
+          <label
+            for="personal-information-medical-and-physical-condition"
+            class="label text-wrap break-words"
+          >
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`
             )}
@@ -1111,7 +1128,7 @@
               {$t($errors.personalInformation?.passport?.personalInformationPassport?.[0])}
             </p>
           {/if}
-          <label for="personal-information-passport-number" class="label">
+          <label for="personal-information-passport-number" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
             {#if $constraints.personalInformation?.passport?.number?.required}
               <span class="text-brand-600 italic">
@@ -1140,7 +1157,7 @@
               : undefined}
           />
 
-          <label for="personal-information-passport-validity" class="label">
+          <label for="personal-information-passport-validity" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
             )}
@@ -1171,7 +1188,10 @@
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
         </h3>
         <fieldset class="fieldset address bg-base-200/50 border-base-300 rounded-box border p-4">
-          <label for="personal-information-address-street-address" class="label">
+          <label
+            for="personal-information-address-street-address"
+            class="label text-wrap break-words"
+          >
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
             )}
@@ -1191,7 +1211,7 @@
             aria-invalid={$errors.personalInformation?.address?.streetAddress ? 'true' : undefined}
           />
 
-          <label for="personal-information-address-city" class="label">
+          <label for="personal-information-address-city" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
             {#if $constraints.personalInformation?.address?.city?.required}
               <span class="text-brand-600 italic">
@@ -1207,7 +1227,7 @@
             aria-invalid={$errors.personalInformation?.address?.city ? 'true' : undefined}
           />
 
-          <label for="personal-information-address-zip" class="label">
+          <label for="personal-information-address-zip" class="label text-wrap break-words">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`
             )}
@@ -1227,7 +1247,7 @@
             aria-invalid={$errors.personalInformation?.address?.postalcode ? 'true' : undefined}
           />
 
-          <label for="personal-information-address-country" class="label">
+          <label for="personal-information-address-country" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
             {#if $constraints.personalInformation?.address?.country?.required}
               <span class="text-brand-600 italic">
@@ -1253,7 +1273,7 @@
             {/each}
           </select>
 
-          <label for="personal-information-phone-number" class="label">
+          <label for="personal-information-phone-number" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
             {#if $constraints.personalInformation?.phoneNumber?.required}
               <span class="text-brand-600 italic">
@@ -1269,7 +1289,7 @@
             aria-invalid={$errors.personalInformation?.phoneNumber ? 'true' : undefined}
           />
 
-          <label for="personal-information-email" class="label">
+          <label for="personal-information-email" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
             {#if $constraints.personalInformation?.email?.required}
               <span class="text-brand-600 italic">
@@ -1290,17 +1310,20 @@
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
           )}
+          <span class="text-brand-600 italic">
+            {$t(`${RouteTypes.Form}.required`)}
+          </span>
         </h3>
         <fieldset
           class="fieldset personal-information-emergency-contacts bg-base-200/50 border-base-300 rounded-box border p-4"
         >
           <div class="hidden md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4">
-            <p class="label">
+            <p class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
               )}
             </p>
-            <p class="label">
+            <p class="label text-wrap break-words">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
               )}
@@ -1308,10 +1331,10 @@
           </div>
           {#each $form.personalInformation.emergencyContacts as _, i}
             <div
-              class="personal-information-emergency-contact md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 my-1 md:my-0 border md:border-none rounded-sm md:rounded-none border-gray-300"
+              class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >
               <div
-                class="before:content-[attr(data-label)] md:before:content-none p-1 md:p-0"
+                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
                 )}
@@ -1337,7 +1360,7 @@
                 />
               </div>
               <div
-                class="before:content-[attr(data-label)] md:before:content-none p-1 md:p-0"
+                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
                 )}
@@ -1362,110 +1385,164 @@
                     : undefined}
                 />
               </div>
-              <div class="p-2 md:p-0 flex justify-center bg-gray-300 md:bg-transparent md:justify-around md:mt-auto ">
-                <button type="button" class="h-fit" onclick={addEmergencyContact}>
-                  <CirclePlus strokeWidth={2.5} class="label aspect-square h-5" />
+              <div
+                class={twMerge(
+                  'flex md:mt-auto md:justify-around',
+                  'rounded-sm border-t border-gray-300 md:border-none'
+                )}
+              >
+                <button
+                  type="button"
+                  class={twMerge(
+                    'btn',
+                    'rounded-none border-gray-300 md:rounded',
+                    'flex-1 md:flex-auto',
+                    'h-full w-full md:h-fit md:w-auto',
+                    'py-2'
+                  )}
+                  onclick={addEmergencyContact}
+                >
+                  <CirclePlus
+                    strokeWidth={2.5}
+                    class="label aspect-square h-5 text-wrap break-words"
+                  />
                 </button>
                 <button
                   type="button"
-                  class={twMerge('h-fit', [!canDeleteEmergencyContacts && 'hidden'])}
+                  class={twMerge(
+                    'btn',
+                    'rounded-none  border-gray-300 md:rounded',
+                    [!canDeleteEmergencyContacts && 'hidden'],
+                    'flex-1 md:flex-auto',
+                    'h-full w-full md:h-fit md:w-auto',
+                    'py-2'
+                  )}
                   onclick={() => removeEmergencyContact(i)}
                   disabled={!canDeleteEmergencyContacts}
                 >
-                  <CircleMinus strokeWidth={2.5} class="label aspect-square h-5" />
+                  <CircleMinus
+                    strokeWidth={2.5}
+                    class="label aspect-square h-5 text-wrap break-words"
+                  />
                 </button>
               </div>
             </div>
           {/each}
         </fieldset>
 
-        <fieldset class="has-travel-insurance">
-          <legend>
-            {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`
-            )}
-          </legend>
-          <div class="travel-insurance-false">
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
+        </h3>
+        <fieldset
+          class="fieldset has-travel-insurance bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <label
+            class="label text-wrap break-words"
+            aria-invalid={$errors.travelInsuranceCoveringSwitzerland ? 'true' : undefined}
+          >
             <input
               type="radio"
-              id="personal-information-travel-insurance-false"
               name="personal-information-travel-insurance"
+              class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
               onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
+              aria-label={$t(`${RouteTypes.Form}.no`)}
+              required
             />
-            <label for="personal-information-travel-insurance-false">
-              {$t(`${RouteTypes.Form}.no`)}
-            </label>
-          </div>
-          <div class="travel-insurance-true">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+          <label class="label text-wrap break-words">
             <input
               type="radio"
-              id="personal-information-travel-insurance-true"
               name="personal-information-travel-insurance"
+              class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
               onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
+              aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
-            <label for="personal-information-travel-insurance-true">
-              {$t(`${RouteTypes.Form}.yes`)}
-            </label>
-          </div>
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
         </fieldset>
 
-        <div class="personal-information-remarks">
-          <label for="personal-information-remarks">
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
+        </h3>
+        <fieldset
+          class="fieldset personal-information-remarks bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <label for="personal-information-remarks" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
+            {#if $constraints.remarks?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
-          <textarea id="personal-information-remarks" bind:value={$form.remarks}></textarea>
-        </div>
+          <textarea id="personal-information-remarks" bind:value={$form.remarks} class="textarea"
+          ></textarea>
+        </fieldset>
 
-        <div class="terms-of-acceptance">
-          <h3 class="mt-6 mb-2">
-            {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
-          </h3>
-          <p>
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
+          <span class="text-brand-600 italic">
+            {$t(`${RouteTypes.Form}.required`)}
+          </span>
+        </h3>
+        <fieldset
+          class="fieldset terms-of-acceptance bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <p class="text-wrap">
             {$t(`${RouteTypes.Form}.terms-of-acceptance.content`)}
           </p>
-          <input
-            type="checkbox"
-            defaultValue={false}
-            id="terms-of-acceptance"
-            onchange={(e) => {
-              $form.readTermsOfAcceptance = e.currentTarget.checked;
-            }}
-          />
-          <label for="terms-of-acceptance" class="">
+
+          <label class="label text-wrap break-words">
+            <input
+              type="checkbox"
+              defaultValue={false}
+              class="checkbox {$errors.readTermsOfAcceptance ? 'checkbox-error' : ''}"
+              onchange={(e) => {
+                $form.readTermsOfAcceptance = e.currentTarget.checked;
+              }}
+              aria-invalid={$errors.readTermsOfAcceptance ? 'true' : undefined}
+            />
             {$t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
           </label>
-        </div>
+        </fieldset>
 
-        <fieldset class="newsletter">
-          <legend>
-            {$t(`${RouteTypes.Form}.newsletter.title`)}
-          </legend>
-          <p>
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.newsletter.title`)}
+        </h3>
+        <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
+          <p class="">
             {$t(`${RouteTypes.Form}.newsletter.paragraph`)}
           </p>
-          <div class="newsletter-false">
+
+          <label
+            class="label text-wrap break-words"
+            aria-invalid={$errors.travelInsuranceCoveringSwitzerland ? 'true' : undefined}
+          >
             <input
               type="radio"
-              id="personal-information-newsletter-false"
               name="personal-information-newsletter"
+              class="radio {$errors.newsletter ? 'radio-error' : ''}"
               onchange={(e) => ($form.newsletter = false)}
+              aria-label={$t(`${RouteTypes.Form}.no`)}
+              required
             />
-            <label for="personal-information-newsletter-false">
-              {$t(`${RouteTypes.Form}.no`)}
-            </label>
-          </div>
-          <div class="newsletter-true">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+
+          <label
+            class="label text-wrap break-words"
+            aria-invalid={$errors.travelInsuranceCoveringSwitzerland ? 'true' : undefined}
+          >
             <input
               type="radio"
-              id="personal-information-newsletter-true"
               name="personal-information-newsletter"
-              required
+              class="radio {$errors.newsletter ? 'radio-error' : ''}"
               onchange={(e) => ($form.newsletter = true)}
+              aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
-            <label for="personal-information-newsletter-true">
-              {$t(`${RouteTypes.Form}.yes`)}
-            </label>
-          </div>
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
         </fieldset>
       </section>
     {/if}
