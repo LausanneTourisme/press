@@ -5,20 +5,19 @@ import countries from 'i18n-iso-countries';
 import de from "i18n-iso-countries/langs/de.json";
 import en from "i18n-iso-countries/langs/en.json";
 import fr from "i18n-iso-countries/langs/fr.json";
-import { message, superValidate, type Infer } from 'sveltekit-superforms';
-import { zod } from 'sveltekit-superforms/adapters';
+import { message, superValidate } from 'sveltekit-superforms';
+import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
 import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from "./schema";
 
-type Message = { step: number; message?: string };
 const countriesByLocale: Record<string, any> = { en, fr, de };
-const steps = [zod(schemaStep1Refined), zod(schemaStep2Refined), zod(schemaStep3), zod(schemaStep4)]
-const lastStep = zod(schemaStep4);
+const steps = [zod4(schemaStep1Refined), zod4(schemaStep2Refined), zod4(schemaStep3), zod4(schemaStep4)]
+const lastStep = zod4(schemaStep4);
 
 export const load = async ({ parent }) => {
     const [{ locale }, form] = await Promise.all([
         parent(),
-        superValidate<Infer<typeof schemaStep4>, Message>(lastStep)
+        superValidate(lastStep)
     ]);
 
     countries.registerLocale(countriesByLocale[locale]);

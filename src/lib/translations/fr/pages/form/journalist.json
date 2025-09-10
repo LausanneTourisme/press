@@ -25,7 +25,8 @@
                 "city": "Veuillez indiquer votre ville de domicile",
                 "country": "Veuillez indiquer votre pays de domicile",
                 "postal-code": "Veuillez indiquer votre code postal"
-            }
+            },
+            "passport": "Veuillez indiquer toutes les informations"
         },
         "emergency-contacts": {
             "name": "Veuillez indiquer le nom de votre contact d'urgence",

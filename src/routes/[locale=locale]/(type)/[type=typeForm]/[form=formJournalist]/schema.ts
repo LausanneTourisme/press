@@ -1,18 +1,18 @@
 
 import { Forms, Titles, getValues, MediaTypes, RouteTypes, TravelReductions } from "$enums";
 import { zodOptionalString, zodRequiredString } from "$lib/helpers/zod";
-import { z } from 'zod';
+import { z } from 'zod/v4';
 
 const mediaEnum = z.enum(getValues(MediaTypes));
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 
-export const mediaTypes = z.array(mediaEnum).min(1,`${RouteTypes.Form}.validations.non-empty-array`);
+export const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Form}.validations.non-empty-array`);
 
 // required when media type is "print" (via superRefine)
 export const printMediaStatistics = z.object({
     copies: z.number().default(0),
     readers: z.number().default(0),
-    broadcastLocation: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.broadcast-location` }).default('')
+    broadcastLocation: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.broadcast-location` }).default('')
 }).refine(({ copies, readers }) => {
     if (copies === 0 && readers > 0) {
         return true
@@ -31,85 +31,97 @@ export const printMediaStatistics = z.object({
 
 // required when media type is "radio" or "tv" (via superRefine)
 export const radioAndTVMediaStatistics = z.object({
-    emissionName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emission-name` }).default(''),
+    emissionName: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emission-name` }).default(''),
     viewers: z.number().min(1).default(0),
 }).nullish();
 
 // required when media type is "online" (via superRefine)
 export const onlineMediaStatistics = z.object({
-    website: z.string().url(),
-    monthlyUniqueVisitors: z.number().min(1, {message: `${RouteTypes.Form}.validations.number-min-1`}).default(0),
+    website: z.url(),
+    monthlyUniqueVisitors: z.number().min(1, { error: `${RouteTypes.Form}.validations.number-min-1` }).default(0),
     montlhyPageViews: z.number().default(0).nullable(),
 }).nullish();
 
 //required when media type is "print" (via superRefine)
 export const mediaCoveragePrint = z.object({
     totalPages: z.number().min(1).default(0),
-    articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
-    publishDate: zodRequiredString({min:10})
+    articleLength: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
+    publishDate: zodRequiredString({ min: 10 })
 }).nullish();
 
 //required when media type is "online" (via superRefine)
 export const mediaCoverageOnline = z.object({
-    articleLength: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
-    articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }).default(''),
-    publishDate: zodRequiredString({min:10}) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
+    articleLength: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
+    articleThematic: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }).default(''),
+    publishDate: zodRequiredString({ min: 10 }) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
 }).nullish();
 
 //required when media type is "tv" or "radio" (via superRefine)
 export const mediaCoverageTvOrRadio = z.object({
-    articleThematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }),
-    publishDate: zodRequiredString({min:10})  // faire si possible que choix année / mois, si date précise ils peuvent la mettre
+    articleThematic: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }),
+    publishDate: zodRequiredString({ min: 10 })  // faire si possible que choix année / mois, si date précise ils peuvent la mettre
 }).nullish();
 
 export const travelInformation = z.object({
     departurePoint: z.object({
-        city: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.city` }),
-        country: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.country` }),
-        outwardJourney: z.string().max(300).nullish(),
+        city: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.city` }),
+        country: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.country` }),
+        outwardJourney: z.string().max(300).nullable(),
     }),
-    returnJourney: z.string().nullish(),
+    returnJourney: z.string().nullable(),
     travelReductions: z.array(travelReductionsEnum).default([]),
-    lastVisit: zodRequiredString({min:10}) .nullish(), // last visit in lausanne or swiss
+    lastVisit: zodRequiredString({ min: 10 }).nullable(), // last visit in lausanne or swiss
 }).required();
 
 export const personalInformation = z.object({
-    title: z.enum(getValues(Titles)),
-    firstName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.first-name` }),
-    lastName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.last-name` }),
-    birthday: zodRequiredString({min:10}) ,
-    phoneNumber: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.phone-number` }),
-    email: z.string().email().nonempty(),
+    title: z.enum(getValues(Titles)).default(Titles.They),
+    firstName: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.first-name` }),
+    lastName: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.last-name` }),
+    birthday: zodRequiredString({ min: 10 }),
+    phoneNumber: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.phone-number` }),
+    email: z.email().nonempty(),
     allergies: z.string().default(''),
     address: z.object({
-        streetAddress: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.address` }),
-        city: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.city` }),
-        postalcode: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.country` }),
-        country: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.postal-code` }),
+        streetAddress: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.address` }),
+        city: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.city` }),
+        postalcode: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.country` }),
+        country: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.postal-code` }),
     }).required(),
     freelance: z.boolean(),
-    spokenLanguages: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.spoken-languages` }),
+    spokenLanguages: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.spoken-languages` }),
     medicalAndPhysicalCondition: z.string().nullish(),
     passport: z.object({
         number: zodOptionalString(),
-        validity: zodRequiredString({min:10}) .optional(),
-    }).optional(),
+        validity: zodOptionalString({ min: 10 }),
+    })
+        .optional()
+        .superRefine((data, ctx) => {
+            if (data === undefined) return; // normal case
+            // when data not undefined fields required
+            if (data.number === undefined || data.validity === undefined) {
+                ctx.addIssue({
+                    code: "custom",
+                    path: ["personalInformationPassport"],
+                    message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.passport`,
+                });
+            }
+        }),
     emergencyContacts: z
-    .array(z.object({
-        name: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.name` }),
-        phoneNumber: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.phone-number` }),
-    }))
-    .min(1, { message: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.minimum` })
-    .default([{
-        name: '',
-        phoneNumber: '',
-    }]),
+        .array(z.object({
+            name: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.name` }),
+            phoneNumber: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.phone-number` }),
+        }))
+        .min(1, { error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.minimum` })
+        .default([{
+            name: '',
+            phoneNumber: '',
+        }]),
 }).required();
 
 export const schemaStep1 = z.object({
-    mediaName: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-name` }),
-    thematic: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.thematic` }),
-    audienceProfile: zodRequiredString({ message: `${RouteTypes.Form}.${Forms.Journalist}.validations.audience-profile` }),
+    mediaName: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-name` }),
+    thematic: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.thematic` }),
+    audienceProfile: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.audience-profile` }),
     mediaTypes: mediaTypes,
     printMediaStatistics: printMediaStatistics,
     radioAndTVMediaStatistics: radioAndTVMediaStatistics,
@@ -120,7 +132,7 @@ export const schemaStep1Refined = schemaStep1
     .superRefine((data, ctx) => {
         if (data.mediaTypes.includes(MediaTypes.Print) && !data.printMediaStatistics) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["printMediaStatistics"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -128,7 +140,7 @@ export const schemaStep1Refined = schemaStep1
 
         if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaTypes.includes(requiredType)) && !data.radioAndTVMediaStatistics) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["radioAndTVMediaStatistics"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -136,7 +148,7 @@ export const schemaStep1Refined = schemaStep1
 
         if (data.mediaTypes.includes(MediaTypes.Online) && !data.onlineMediaStatistics) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["onlineMediaStatistics"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -154,7 +166,7 @@ export const schemaStep2Refined = schemaStep2
     .superRefine((data, ctx) => {
         if (data.mediaTypes.includes(MediaTypes.Print) && !data.mediaCoveragePrint) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["mediaCoveragePrint"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -162,7 +174,7 @@ export const schemaStep2Refined = schemaStep2
 
         if ([MediaTypes.Radio, MediaTypes.Tv].some(requiredType => data.mediaTypes.includes(requiredType)) && !data.mediaCoverageTvOrRadio) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["mediaCoverageTvOrRadio"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -170,7 +182,7 @@ export const schemaStep2Refined = schemaStep2
 
         if (data.mediaTypes.includes(MediaTypes.Online) && !data.mediaCoverageOnline) {
             ctx.addIssue({
-                code: z.ZodIssueCode.custom,
+                code: "custom",
                 path: ["mediaCoverageOnline"],
                 message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`,
             });
@@ -187,6 +199,6 @@ export const schemaStep4 = schemaStep3
         personalInformation: personalInformation,
         travelInsuranceCoveringSwitzerland: z.boolean(),
         remarks: z.string().nullish(),
-        readTermsOfAcceptance: z.literal<boolean>(true, { errorMap: () => ({ message: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }) }),
+        readTermsOfAcceptance: z.literal<boolean>(true, { error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
         newsletter: z.boolean(),
     });
