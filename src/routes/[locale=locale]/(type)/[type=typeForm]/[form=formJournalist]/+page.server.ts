@@ -31,7 +31,7 @@ export const load = async ({ parent }) => {
 
 export const actions = {
     default: async ({ request }) => {
-        const form = await superValidate(request, steps[steps.length - 1]);
+        const form = await superValidate(request, lastStep);
 
         console.log(form);
         if (!form.valid) return fail(400, { form });
