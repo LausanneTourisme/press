@@ -62,7 +62,13 @@
           }
 
           const result = await validateForm({ update: true });
-          if (result.valid && step < steps.length - 1) step = step + 1;
+          if (result.valid && step < steps.length - 1) {
+            document.querySelector('body')?.scrollIntoView()
+            step = step + 1;
+          }
+        },
+        onUpdated: async ({ form }) => {
+          if (form.valid) step = 1;
         }
       })
     );
