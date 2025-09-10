@@ -1482,7 +1482,7 @@
               </span>
             {/if}
           </label>
-          <textarea id="personal-information-remarks" bind:value={$form.remarks} class="textarea"
+          <textarea id="personal-information-remarks" bind:value={$form.remarks} class="textarea w-full"
           ></textarea>
         </fieldset>
 
