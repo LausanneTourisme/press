@@ -4,16 +4,18 @@
   import Container from '$lib/components/Container.svelte';
   import { t } from '$lib/translations';
   import { superForm } from 'sveltekit-superforms';
-  import { zod } from 'sveltekit-superforms/adapters';
+  import { zod4 } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
+  import { twMerge } from 'tailwind-merge';
+  import { CircleMinus, CirclePlus } from 'lucide-svelte';
   // TODO SEO
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
-    zod(schemaStep1Refined),
-    zod(schemaStep2Refined),
-    zod(schemaStep3),
-    zod(schemaStep4)
+    zod4(schemaStep1Refined),
+    zod4(schemaStep2Refined),
+    zod4(schemaStep3),
+    zod4(schemaStep4)
   ];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
@@ -61,7 +63,7 @@
 
           const result = await validateForm({ update: true });
           if (result.valid) step = step + 1;
-          console.log({ errors: $errors });
+          console.log({ errors: $errors, form: $form });
         }
       })
     );
@@ -228,8 +230,9 @@
             />
 
             {#if $errors.printMediaStatistics?._errors}
+              {@const printErrors = $errors.printMediaStatistics?._errors ?? []}
               <p id="media-types-error" class="text-error error">
-                {#each $errors.printMediaStatistics._errors as error}
+                {#each printErrors as error}
                   {$t(error)}<br />
                 {/each}
               </p>
@@ -533,6 +536,11 @@
                 </span>
               {/if}
             </label>
+            {#if $errors.mediaCoveragePrint?.articleLength}
+              <p class="text-brand-600">
+                {$t($errors.mediaCoveragePrint.articleLength[0])}
+              </p>
+            {/if}
             <input
               type="text"
               id="print-coverage-article-length"
@@ -638,6 +646,11 @@
                 </span>
               {/if}
             </label>
+            {#if $errors.mediaCoverageOnline?.articleLength}
+              <p class="text-brand-600">
+                {$t($errors.mediaCoverageOnline.articleLength[0])}
+              </p>
+            {/if}
             <input
               type="text"
               id="online-coverage-article-length"
@@ -709,6 +722,11 @@
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
             )}
+            {#if $constraints.travelInformation?.departurePoint?.city?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
@@ -727,6 +745,11 @@
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
             )}
+            {#if $constraints.travelInformation?.departurePoint?.country?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <select
             id="departure-point-country"
@@ -750,6 +773,11 @@
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
             )}
+            {#if $constraints.travelInformation?.departurePoint?.outwardJourney?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <p class="departure-point-outward-journey information">
             {$t(
@@ -776,6 +804,11 @@
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`
             )}
+            {#if $constraints.travelInformation?.returnJourney?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <p class="travel-information-return-journey information">
             {$t(
@@ -805,6 +838,11 @@
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
             )}
+            {#if $constraints.travelInformation?.travelReductions?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <div id="travel-information-travel-reduction" class="join join-vertical">
             {#each Object.values(TravelReductions) as travelReduction}
@@ -850,6 +888,11 @@
         >
           <label for="travel-information-return-journey" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
+            {#if $constraints.travelInformation?.lastVisit?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="date"
@@ -868,295 +911,473 @@
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
         </h2>
 
-        <fieldset class="titles">
-          <legend>
+        <fieldset
+          class="fieldset personal-information bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        >
+          <p class="label mb-1">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
-          </legend>
+            {#if $constraints.personalInformation?.title?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </p>
           {#each Object.values(Titles) as title}
-            <input
-              type="radio"
-              id="personal-information-title-{title}"
-              name="personal-information-title"
-              checked={title === 'they'}
-              onchange={(e) => {
-                if (e.currentTarget.checked) {
-                  $form.personalInformation.title = title;
-                }
-              }}
-            />
-            <label for="personal-information-title-{title}">
+            <label
+              aria-invalid={$errors.personalInformation?.title ? 'true' : undefined}
+              class="label"
+            >
+              <input
+                type="radio"
+                name="personal-information-title"
+                checked={title === $form.personalInformation?.title}
+                required
+                class="radio {$errors.personalInformation?.title ? 'radio-error' : ''}"
+                onchange={(e) => {
+                  if (e.currentTarget.checked) {
+                    $form.personalInformation.title = title;
+                  }
+                }}
+                aria-label={$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`
+                )}
+              />
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`
               )}
             </label>
           {/each}
-        </fieldset>
 
-        <div class="personal-information-first-name">
-          <label for="personal-information-first-name">
+          <label for="personal-information-first-name" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
+
+            {#if $constraints.personalInformation?.firstName?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
             id="personal-information-first-name"
+            class="input w-full {$errors.personalInformation?.firstName ? 'input-error' : ''}"
             placeholder={$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name-placeholder`
             )}
             bind:value={$form.personalInformation.firstName}
+            aria-invalid={$errors.personalInformation?.firstName ? 'true' : undefined}
           />
-        </div>
 
-        <div class="personal-information-last-name">
           <label for="personal-information-last-name">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)}
+            {#if $constraints.personalInformation?.lastName?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
             id="personal-information-last-name"
+            class="input w-full {$errors.personalInformation?.lastName ? 'input-error' : ''}"
             placeholder={$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name-placeholder`
             )}
             bind:value={$form.personalInformation.lastName}
+            aria-invalid={$errors.personalInformation?.lastName ? 'true' : undefined}
           />
-        </div>
 
-        <fieldset class="is-freelance">
-          <legend>
+          <p class="label mb-1">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
-          </legend>
-          <div class="freelance-false">
+            {#if $constraints.personalInformation?.freelance?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </p>
+
+          <label
+            class="label"
+            aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
+          >
             <input
               type="radio"
-              id="personal-information-freelance-false"
               name="personal-information-freelance"
-              onchange={(e) => ($form.personalInformation.freelance = false)}
+              class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
+              onchange={() => ($form.personalInformation.freelance = false)}
+              aria-label={$t(`${RouteTypes.Form}.no`)}
             />
-            <label for="personal-information-freelance-false">
-              {$t(`${RouteTypes.Form}.no`)}
-            </label>
-          </div>
-          <div class="freelance-true">
+            {$t(`${RouteTypes.Form}.no`)}
+          </label>
+
+          <label
+            class="label"
+            aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
+          >
             <input
               type="radio"
               id="personal-information-freelance-true"
-              name="personal-information-freelance"
-              onchange={(e) => ($form.personalInformation.freelance = true)}
+              class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
+              onchange={() => ($form.personalInformation.freelance = true)}
+              aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
-            <label for="personal-information-freelance-true">
-              {$t(`${RouteTypes.Form}.yes`)}
-            </label>
-          </div>
-        </fieldset>
+            {$t(`${RouteTypes.Form}.yes`)}
+          </label>
 
-        <div class="personal-information-spoken-languages">
-          <label for="personal-information-spoken-languages">
+          <label for="personal-information-spoken-languages" class="label">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`
             )}
+            {#if $constraints.personalInformation?.spokenLanguages?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
             id="personal-information-spoken-languages"
+            class="input w-full {$errors.personalInformation?.spokenLanguages ? 'input-error' : ''}"
             placeholder={$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.placeholder`
             )}
             bind:value={$form.personalInformation.spokenLanguages}
+            aria-invalid={$errors.personalInformation?.spokenLanguages ? 'true' : undefined}
           />
-        </div>
 
-        <section class="passport">
-          <h3 class="mt-6 mb-2">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
-          </h3>
-
-          <div>
-            <label for="personal-information-passport-number">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`
-              )}
-            </label>
-            <input
-              type="text"
-              id="personal-information-passport-number"
-              bind:value={$form.personalInformation.passport.number}
-            />
-          </div>
-
-          <div>
-            <label for="personal-information-passport-validity">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
-              )}
-            </label>
-            <input
-              type="date"
-              id="personal-information-passport-validity"
-              bind:value={$form.personalInformation.passport.validity}
-            />
-          </div>
-        </section>
-
-        <div class="personal-information-birth-date">
-          <label for="personal-information-birth-date">
+          <label for="personal-information-birth-date" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
+            {#if $constraints.personalInformation?.birthday?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="date"
             id="personal-information-birth-date"
+            class="input w-full {$errors.personalInformation?.birthday ? 'input-error' : ''}"
             bind:value={$form.personalInformation.birthday}
+            aria-invalid={$errors.personalInformation?.birthday ? 'true' : undefined}
           />
-        </div>
-        <section class="address">
-          <h3 class="mt-6 mb-2">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
-          </h3>
 
-          <div class="personal-information-address-street-address">
-            <label for="personal-information-address-street-address">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
-              )}
-            </label>
-            <input
-              type="text"
-              id="personal-information-address-street-address"
-              bind:value={$form.personalInformation.address.streetAddress}
-            />
-          </div>
-
-          <div class="personal-information-address-city">
-            <label for="personal-information-address-city">
-              {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
-            </label>
-            <input
-              type="text"
-              id="personal-information-address-city"
-              bind:value={$form.personalInformation.address.city}
-            />
-          </div>
-
-          <div class="personal-information-address-zip">
-            <label for="personal-information-address-zip">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`
-              )}
-            </label>
-            <input
-              type="text"
-              id="personal-information-address-zip"
-              bind:value={$form.personalInformation.address.postalcode}
-            />
-          </div>
-
-          <div class="personal-information-address-country">
-            <label for="personal-information-address-country">
-              {$t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`
-              )}
-            </label>
-
-            <select
-              id="personal-information-address-country"
-              bind:value={$form.personalInformation.address.country}
-            >
-              <option hidden disabled selected value={undefined}>
-                {$t(
-                  `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
-                )}
-              </option>
-              {#each countries as country}
-                <option value={country}>{country}</option>
-              {/each}
-            </select>
-          </div>
-        </section>
-
-        <div class="personal-information-phone-number">
-          <label for="personal-information-phone-number">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
-          </label>
-          <input
-            type="text"
-            id="personal-information-phone-number"
-            bind:value={$form.personalInformation.phoneNumber}
-          />
-        </div>
-
-        <div class="personal-information-email">
-          <label for="personal-information-email">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
-          </label>
-          <input
-            type="email"
-            id="personal-information-email"
-            bind:value={$form.personalInformation.email}
-          />
-        </div>
-
-        <div class="personal-information-allergies">
-          <label for="personal-information-allergies">
+          <label for="personal-information-allergies" class="label">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
+            {#if $constraints.personalInformation?.allergies?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
             id="personal-information-allergies"
+            class="input w-full {$errors.personalInformation?.allergies
+              ? 'input-error'
+              : undefined}"
             bind:value={$form.personalInformation.allergies}
+            aria-invalid={$errors.personalInformation?.allergies ? 'true' : undefined}
           />
-        </div>
 
-        <div class="personal-information-medical-and-physical-condition">
-          <label for="personal-information-medical-and-physical-condition">
+          <label for="personal-information-medical-and-physical-condition" class="label">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`
             )}
+            {#if $constraints.personalInformation?.medicalAndPhysicalCondition?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
           </label>
           <input
             type="text"
             id="personal-information-medical-and-physical-condition"
+            class="input w-full {$errors.personalInformation?.medicalAndPhysicalCondition
+              ? 'input-error'
+              : undefined}"
             bind:value={$form.personalInformation.medicalAndPhysicalCondition}
+            aria-invalid={$errors.personalInformation?.medicalAndPhysicalCondition
+              ? 'true'
+              : undefined}
           />
-        </div>
+        </fieldset>
 
-        <div class="personal-information-emergency-contacts">
-          <h3 class="mt-6 mb-2">
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
+        </h3>
+        <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
+          {#if $errors.personalInformation?.passport}
+            <p class="text-brand-600">
+              {$t($errors.personalInformation?.passport?.personalInformationPassport?.[0])}
+            </p>
+          {/if}
+          <label for="personal-information-passport-number" class="label">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
+            {#if $constraints.personalInformation?.passport?.number?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="text"
+            id="personal-information-passport-number"
+            class="input w-full {$errors.personalInformation?.passport ||
+            $errors.personalInformation?.passport?._errors
+              ? 'input-error'
+              : ''}"
+            value={$form.personalInformation.passport?.number}
+            onchange={(e) => {
+              $form.personalInformation.passport = {
+                number: e.currentTarget.value,
+                validity: '',
+                ...$form.personalInformation.passport
+              };
+            }}
+            aria-invalid={$errors.personalInformation?.passport ||
+            $errors.personalInformation?.passport?._errors
+              ? 'true'
+              : undefined}
+          />
+
+          <label for="personal-information-passport-validity" class="label">
             {$t(
-              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
             )}
-          </h3>
-          <div>
-            <p>
+          </label>
+          <input
+            type="date"
+            id="personal-information-passport-validity"
+            class="input w-full {$errors.personalInformation?.passport ||
+            $errors.personalInformation?.passport?._errors
+              ? 'input-error'
+              : ''}"
+            value={$form.personalInformation.passport?.validity}
+            onchange={(e) => {
+              $form.personalInformation.passport = {
+                number: '',
+                validity: e.currentTarget.value,
+                ...$form.personalInformation.passport
+              };
+            }}
+            aria-invalid={$errors.personalInformation?.passport ||
+            $errors.personalInformation?.passport?._errors
+              ? 'true'
+              : undefined}
+          />
+        </fieldset>
+
+        <h3 class="mt-6 mb-2">
+          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+        </h3>
+        <fieldset class="fieldset address bg-base-200/50 border-base-300 rounded-box border p-4">
+          <label for="personal-information-address-street-address" class="label">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
+            )}
+            {#if $constraints.personalInformation?.address?.streetAddress?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-street-address"
+            class="input w-full {$errors.personalInformation?.address?.streetAddress
+              ? 'input-error'
+              : ''}"
+            bind:value={$form.personalInformation.address.streetAddress}
+            aria-invalid={$errors.personalInformation?.address?.streetAddress ? 'true' : undefined}
+          />
+
+          <label for="personal-information-address-city" class="label">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
+            {#if $constraints.personalInformation?.address?.city?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-city"
+            class="input w-full {$errors.personalInformation?.address?.city ? 'input-error' : ''}"
+            bind:value={$form.personalInformation.address.city}
+            aria-invalid={$errors.personalInformation?.address?.city ? 'true' : undefined}
+          />
+
+          <label for="personal-information-address-zip" class="label">
+            {$t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`
+            )}
+            {#if $constraints.personalInformation?.address?.postalcode?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="text"
+            id="personal-information-address-zip"
+            class="input w-full {$errors.personalInformation?.address?.postalcode
+              ? 'input-error'
+              : ''}"
+            bind:value={$form.personalInformation.address.postalcode}
+            aria-invalid={$errors.personalInformation?.address?.postalcode ? 'true' : undefined}
+          />
+
+          <label for="personal-information-address-country" class="label">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
+            {#if $constraints.personalInformation?.address?.country?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <select
+            id="personal-information-address-country"
+            class="select w-full {$errors.personalInformation?.address?.country
+              ? 'select-error'
+              : ''}"
+            bind:value={$form.personalInformation.address.country}
+            aria-invalid={$errors.personalInformation?.address?.country ? 'true' : undefined}
+          >
+            <option hidden disabled selected value={undefined}>
+              {$t(
+                `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
+              )}
+            </option>
+            {#each countries as country}
+              <option value={country}>{country}</option>
+            {/each}
+          </select>
+
+          <label for="personal-information-phone-number" class="label">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
+            {#if $constraints.personalInformation?.phoneNumber?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="text"
+            id="personal-information-phone-number"
+            class="input w-full {$errors.personalInformation?.phoneNumber ? 'input-error' : ''}"
+            bind:value={$form.personalInformation.phoneNumber}
+            aria-invalid={$errors.personalInformation?.phoneNumber ? 'true' : undefined}
+          />
+
+          <label for="personal-information-email" class="label">
+            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
+            {#if $constraints.personalInformation?.email?.required}
+              <span class="text-brand-600 italic">
+                {$t(`${RouteTypes.Form}.required`)}
+              </span>
+            {/if}
+          </label>
+          <input
+            type="email"
+            id="personal-information-email"
+            class="input w-full {$errors.personalInformation?.email ? 'input-error' : ''}"
+            bind:value={$form.personalInformation.email}
+            aria-invalid={$errors.personalInformation?.email ? 'true' : undefined}
+          />
+        </fieldset>
+
+        <h3 class="mt-6 mb-2">
+          {$t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
+          )}
+        </h3>
+        <fieldset
+          class="fieldset personal-information-emergency-contacts bg-base-200/50 border-base-300 rounded-box border p-4"
+        >
+          <div class="hidden md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4">
+            <p class="label">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
               )}
             </p>
-            <p>
+            <p class="label">
               {$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
               )}
             </p>
           </div>
           {#each $form.personalInformation.emergencyContacts as _, i}
-            <div class="personal-information-emergency-contact">
-              <input
-                type="text"
-                class="personal-information-emergency-contact-name"
-                bind:value={$form.personalInformation.emergencyContacts[i].name}
-              />
-              <input
-                type="text"
-                class="personal-information-emergency-contact-phone-number"
-                bind:value={$form.personalInformation.emergencyContacts[i].phoneNumber}
-              />
-              <button type="button" onclick={addEmergencyContact}>add</button>
-              <button
-                type="button"
-                class={[!canDeleteEmergencyContacts && 'hidden']}
-                onclick={() => removeEmergencyContact(i)}
-                disabled={!canDeleteEmergencyContacts}>delete</button
+            <div
+              class="personal-information-emergency-contact md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 my-1 md:my-0 border md:border-none rounded-sm md:rounded-none border-gray-300"
+            >
+              <div
+                class="before:content-[attr(data-label)] md:before:content-none p-1 md:p-0"
+                data-label={$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
+                )}
               >
+                {#if $errors.personalInformation?.emergencyContacts?.[i]?.name}
+                  <p class="text-brand-600 my-1">
+                    {$t($errors.personalInformation?.emergencyContacts?.[i]?.name?.[0])}
+                  </p>
+                {/if}
+                <input
+                  type="text"
+                  aria-label={$t(
+                    `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
+                  )}
+                  class="personal-information-emergency-contact-name input w-full {$errors
+                    .personalInformation?.emergencyContacts?.[i]?.name
+                    ? 'input-error'
+                    : ''}"
+                  bind:value={$form.personalInformation.emergencyContacts[i].name}
+                  aria-invalid={$errors.personalInformation?.emergencyContacts?.[i]?.name
+                    ? 'true'
+                    : undefined}
+                />
+              </div>
+              <div
+                class="before:content-[attr(data-label)] md:before:content-none p-1 md:p-0"
+                data-label={$t(
+                  `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
+                )}
+              >
+                {#if $errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber}
+                  <p class="text-brand-600 my-1">
+                    {$t($errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber?.[0])}
+                  </p>
+                {/if}
+                <input
+                  type="text"
+                  aria-label={$t(
+                    `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
+                  )}
+                  class="personal-information-emergency-contact-phone-number input w-full {$errors
+                    .personalInformation?.emergencyContacts?.[i]?.phoneNumber
+                    ? 'input-error'
+                    : ''}"
+                  bind:value={$form.personalInformation.emergencyContacts[i].phoneNumber}
+                  aria-invalid={$errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber
+                    ? 'true'
+                    : undefined}
+                />
+              </div>
+              <div class="p-2 md:p-0 flex justify-center bg-gray-300 md:bg-transparent md:justify-around md:mt-auto ">
+                <button type="button" class="h-fit" onclick={addEmergencyContact}>
+                  <CirclePlus strokeWidth={2.5} class="label aspect-square h-5" />
+                </button>
+                <button
+                  type="button"
+                  class={twMerge('h-fit', [!canDeleteEmergencyContacts && 'hidden'])}
+                  onclick={() => removeEmergencyContact(i)}
+                  disabled={!canDeleteEmergencyContacts}
+                >
+                  <CircleMinus strokeWidth={2.5} class="label aspect-square h-5" />
+                </button>
+              </div>
             </div>
           {/each}
-        </div>
+        </fieldset>
 
         <fieldset class="has-travel-insurance">
           <legend>
