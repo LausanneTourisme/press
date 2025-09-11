@@ -27,6 +27,7 @@
         onSubmit: async ({ cancel }) => {
           const isLast = steps.length - 1 === step;
           options.validators = steps[step];
+
           // If on last step, make a normal request
           if (isLast) {
             $form.personalInformation.emergencyContacts =
@@ -57,9 +58,9 @@
                 };
               }
             }
-
-            cancel();
           }
+
+          cancel();
 
           const result = await validateForm({ update: true });
           if (result.valid && step < steps.length - 1) {
@@ -1337,7 +1338,7 @@
               class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >
               <div
-                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none"
+                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none md:flex md:flex-col md:justify-end"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
                 )}
@@ -1363,7 +1364,7 @@
                 />
               </div>
               <div
-                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none"
+                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none md:flex md:flex-col md:justify-end"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
                 )}
