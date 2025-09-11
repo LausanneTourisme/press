@@ -1,4 +1,5 @@
 import { Forms, RouteTypes } from "$enums";
+import { verifyIfHuman } from "$lib/helpers/index.server";
 import { supportedLocales, translations } from "$lib/translations";
 import { fail } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
@@ -8,10 +9,9 @@ import fr from "i18n-iso-countries/langs/fr.json";
 import { message, superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
-import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from "./schema";
+import { schemaStep4 } from "./schema";
 
 const countriesByLocale: Record<string, any> = { en, fr, de };
-const steps = [zod4(schemaStep1Refined), zod4(schemaStep2Refined), zod4(schemaStep3), zod4(schemaStep4)]
 const lastStep = zod4(schemaStep4);
 
 export const load = async ({ parent }) => {
@@ -31,9 +31,11 @@ export const load = async ({ parent }) => {
 
 export const actions = {
     default: async ({ request }) => {
-        const form = await superValidate(request, lastStep);
+        const formdata = await request.formData()
+        await verifyIfHuman(formdata);
 
-        console.log(form);
+        const form = await superValidate(formdata, lastStep);
+
         if (!form.valid) return fail(400, { form });
 
         return message(form, 'Form posted successfully!');

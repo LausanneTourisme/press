@@ -1,30 +1,14 @@
-import { BOTPOISON_SKEY, MAIL_DEFAULT_RECIPIENTS, MAIL_FROM, MAIL_TO } from "$env/static/private";
-import mailchimp, { type MessagesMessage } from "@mailchimp/mailchimp_transactional";
-import { t } from "$lib/translations";
-import Botpoison from "@botpoison/node";
-import { error, fail } from "@sveltejs/kit";
-import type { Actions } from "./$types";
-import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
 import { RouteTypes } from "$enums";
-import { supportedLocales, translations } from "$lib/translations";
-import type { EntryGenerator } from "./$types";
+import { MAIL_DEFAULT_RECIPIENTS, MAIL_FROM, MAIL_TO } from "$env/static/private";
+import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
+import { supportedLocales, t, translations } from "$lib/translations";
+import mailchimp, { type MessagesMessage } from "@mailchimp/mailchimp_transactional";
+import { fail } from "@sveltejs/kit";
+import type { Actions, EntryGenerator } from "./$types";
+import { verifyIfHuman } from "$lib/helpers/index.server";
 
 
 const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
-
-const verifyIfHuman = async (data: FormData) => {
-    const botpoison = new Botpoison({
-        secretKey: BOTPOISON_SKEY,
-    });
-
-    const _botpoison = data.get('_botpoison') as string | null;
-
-    const { ok } = await botpoison.verify(_botpoison ?? '');
-
-    if (!ok) {
-        error(401, "No thank you, we don't like bots.");
-    }
-}
 
 const validateEmail = (email: string | null | undefined) => {
     if(!email) return false;

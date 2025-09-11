@@ -1,14 +1,19 @@
 <script lang="ts">
+  import { dev } from '$app/environment';
   import { page } from '$app/state';
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
   import Container from '$lib/components/Container.svelte';
+  import Heading from '$lib/components/Heading.svelte';
   import { t } from '$lib/translations';
   import { CircleMinus, CirclePlus } from 'lucide-svelte';
-  import { superForm } from 'sveltekit-superforms';
+  import SuperDebug, { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
+  import { onMount } from 'svelte';
+  import Botpoison from '@botpoison/browser';
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   // TODO SEO
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
@@ -20,56 +25,73 @@
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
 
-  const { form, formId, errors, enhance, message, options, validateForm, constraints } =
-    $derived.by(() =>
-      superForm((page.data as PageData).form, {
-        dataType: 'json',
-        onSubmit: async ({ cancel }) => {
-          const isLast = steps.length - 1 === step;
-          options.validators = steps[step];
+  const { form, errors, enhance, message, options, validateForm, constraints } = $derived.by(() =>
+    superForm((page.data as PageData).form, {
+      dataType: 'json',
+      resetForm: false,
+      applyAction: true,
+      clearOnSubmit: 'none',
+      onUpdate: async ({ form }) => {
+        if (form.valid) step = 0;
+      },
+      onSubmit: async ({ cancel, formData }) => {
+        const isLast = steps.length - 1 === step;
+        options.validators = steps[step];
 
-          // If on last step, make a normal request
-          if (isLast) {
-            $form.personalInformation.emergencyContacts =
-              $form.personalInformation.emergencyContacts.filter(
-                (x) => x.name !== undefined && x.phoneNumber !== undefined
-              );
-            return;
-          } else {
-            if (step === 0) {
-              if ([MediaTypes.Radio, MediaTypes.Tv].some((x) => $form.mediaTypes.includes(x))) {
-                $form.mediaCoverageTvOrRadio = {
-                  articleThematic: '',
-                  publishDate: ''
-                };
-              }
-              if ($form.mediaTypes.includes(MediaTypes.Online)) {
-                $form.mediaCoverageOnline = {
-                  articleLength: '',
-                  articleThematic: '',
-                  publishDate: ''
-                };
-              }
-              if ($form.mediaTypes.includes(MediaTypes.Print)) {
-                $form.mediaCoveragePrint = {
-                  totalPages: 0,
-                  articleLength: '',
-                  publishDate: ''
-                };
-              }
-            }
+        // If on last step, make a normal request
+        if (isLast) {
+          $form.personalInformation.emergencyContacts =
+            $form.personalInformation.emergencyContacts.filter(
+              (x) => x.name !== undefined && x.phoneNumber !== undefined
+            );
+
+          // antibot
+          const botpoison = new Botpoison({
+            publicKey: PUBLIC_BOTPOISON_PUBLICKEY
+          });
+
+          const { solution } = await botpoison.challenge();
+          formData.append('_botpoison', solution);
+
+          return;
+        }
+
+        if (step === 0) {
+          if ([MediaTypes.Radio, MediaTypes.Tv].some((x) => $form.mediaTypes.includes(x))) {
+            $form.mediaCoverageTvOrRadio = {
+              articleThematic: '',
+              publishDate: '',
+              ...$form.mediaCoverageTvOrRadio
+            };
           }
-
-          cancel();
-
-          const result = await validateForm({ update: true });
-          if (result.valid && step < steps.length - 1) {
-            document.querySelector('body')?.scrollIntoView()
-            step = step + 1;
+          if ($form.mediaTypes.includes(MediaTypes.Online)) {
+            $form.mediaCoverageOnline = {
+              articleLength: '',
+              articleThematic: '',
+              publishDate: '',
+              ...$form.mediaCoverageOnline
+            };
           }
-        },
-      })
-    );
+          if ($form.mediaTypes.includes(MediaTypes.Print)) {
+            $form.mediaCoveragePrint = {
+              totalPages: 0,
+              articleLength: '',
+              publishDate: '',
+              ...$form.mediaCoveragePrint
+            };
+          }
+        }
+
+        cancel();
+
+        const result = await validateForm({ update: true });
+        if (result.valid) {
+          document.querySelector('body')?.scrollIntoView();
+          step = step + 1;
+        }
+      }
+    })
+  );
 
   function addEmergencyContact() {
     $form.personalInformation.emergencyContacts = [
@@ -87,15 +109,17 @@
 </script>
 
 <Container width="small">
-  <form method="POST" class="w-full" use:enhance>
-    <input type="hidden" name="step" value={step} />
-    <input type="hidden" name="__superform_id" bind:value={$formId} />
+  {#if $message}
+    <p class="text-green-600">{$message}</p>
+  {/if}
 
+  <!-- maybe show summary of $form -->
+  <form method="POST" class="w-full" use:enhance>
     {#if step === 0}
       <section class="step1 about-media w-full">
-        <h2 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.title`)}
-        </h2>
+        </Heading>
         <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
           <label for="media-name" class="label text-wrap break-words">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
@@ -191,9 +215,9 @@
         <!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="text- mt-6  mb-2 text-lg md:text-lg">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
-          </h3>
+          </Heading>
           <fieldset
             class="fieldset print-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
@@ -295,11 +319,11 @@
           </fieldset>
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
-          </h3>
+          </Heading>
           <fieldset
             class="fieldset {MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
@@ -376,11 +400,11 @@
           </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.title`
             )}
-          </h3>
+          </Heading>
 
           <fieldset
             class="fieldset online-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -506,14 +530,14 @@
 
     {#if step === 1}
       <section class="step2 media-coverage">
-        <h2>
+        <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.title`)}
-        </h2>
+        </Heading>
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
-          </h3>
+          </Heading>
           <fieldset
             class="fieldset print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
@@ -583,11 +607,11 @@
           </fieldset>
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
             {$t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
-          </h3>
+          </Heading>
           <fieldset
             class="fieldset {MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
@@ -644,9 +668,9 @@
           </fieldset>
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
-          <h3 class="mt-6 mb-2">
+          <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
-          </h3>
+          </Heading>
           <fieldset
             class="fieldset online-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
@@ -720,15 +744,15 @@
 
     {#if step === 2}
       <section class="step3 travel-information">
-        <h2>
+        <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
-        </h2>
+        </Heading>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`
           )}
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -840,11 +864,11 @@
           ></textarea>
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
           )}
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset travel-reductions bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -923,9 +947,9 @@
 
     {#if step === 3}
       <section class="step4 personal-information">
-        <h2>
+        <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
-        </h2>
+        </Heading>
 
         <fieldset
           class="fieldset personal-information bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
@@ -1123,9 +1147,9 @@
           />
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
-        </h3>
+        </Heading>
         <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
           {#if $errors.personalInformation?.passport}
             <p class="text-brand-600">
@@ -1188,9 +1212,9 @@
           />
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
-        </h3>
+        </Heading>
         <fieldset class="fieldset address bg-base-200/50 border-base-300 rounded-box border p-4">
           <label
             for="personal-information-address-street-address"
@@ -1310,14 +1334,14 @@
           />
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
           )}
           <span class="text-brand-600 italic">
             {$t(`${RouteTypes.Form}.required`)}
           </span>
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset personal-information-emergency-contacts bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -1338,7 +1362,7 @@
               class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >
               <div
-                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none md:flex md:flex-col md:justify-end"
+                class="p-1 before:content-[attr(data-label)] md:flex md:flex-col md:justify-end md:p-0 md:before:content-none"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
                 )}
@@ -1364,7 +1388,7 @@
                 />
               </div>
               <div
-                class="p-1 before:content-[attr(data-label)] md:p-0 md:before:content-none md:flex md:flex-col md:justify-end"
+                class="p-1 before:content-[attr(data-label)] md:flex md:flex-col md:justify-end md:p-0 md:before:content-none"
                 data-label={$t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
                 )}
@@ -1434,9 +1458,9 @@
           {/each}
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset has-travel-insurance bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -1466,9 +1490,9 @@
           </label>
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset personal-information-remarks bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -1480,16 +1504,19 @@
               </span>
             {/if}
           </label>
-          <textarea id="personal-information-remarks" bind:value={$form.remarks} class="textarea w-full"
+          <textarea
+            id="personal-information-remarks"
+            bind:value={$form.remarks}
+            class="textarea w-full"
           ></textarea>
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
           <span class="text-brand-600 italic">
             {$t(`${RouteTypes.Form}.required`)}
           </span>
-        </h3>
+        </Heading>
         <fieldset
           class="fieldset terms-of-acceptance bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -1511,9 +1538,9 @@
           </label>
         </fieldset>
 
-        <h3 class="mt-6 mb-2">
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {$t(`${RouteTypes.Form}.newsletter.title`)}
-        </h3>
+        </Heading>
         <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
           <p class="">
             {$t(`${RouteTypes.Form}.newsletter.paragraph`)}
@@ -1550,6 +1577,22 @@
         </fieldset>
       </section>
     {/if}
-    <button>Submit</button>
+
+    <div class="mt-6 mb-2 flex flex-wrap">
+      <button
+        type="button"
+        class="btn mr-2 {step === 0 ? 'hidden' : ''}"
+        onclick={(e) => {
+          step = step - 1;
+        }}
+      >
+        {$t(`${RouteTypes.Form}.previous`)}
+      </button>
+      <button class="btn">
+        {step < steps.length - 1 ? $t(`${RouteTypes.Form}.next`) : $t(`${RouteTypes.Form}.submit`)}
+      </button>
+    </div>
   </form>
+
+  <SuperDebug label="Useful label" data={$form} display={dev} />
 </Container>
