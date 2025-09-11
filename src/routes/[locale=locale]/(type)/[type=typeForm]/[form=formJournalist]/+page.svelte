@@ -215,7 +215,7 @@
         <!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
-          <Heading tag="h3" class="text- mt-6  mb-2 text-lg md:text-lg">
+          <Heading tag="h3" class="mt-6  mb-2 text-lg md:text-lg">
             {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
           </Heading>
           <fieldset
