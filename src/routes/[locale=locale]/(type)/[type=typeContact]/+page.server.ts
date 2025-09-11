@@ -6,12 +6,13 @@ import mailchimp, { type MessagesMessage } from "@mailchimp/mailchimp_transactio
 import { fail } from "@sveltejs/kit";
 import type { Actions, EntryGenerator } from "./$types";
 import { verifyIfHuman } from "$lib/helpers/index.server";
+import { sendEmail } from "$lib/helpers/mails.server";
 
 
 const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
 
 const validateEmail = (email: string | null | undefined) => {
-    if(!email) return false;
+    if (!email) return false;
     return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
 };
 
@@ -90,33 +91,14 @@ export const actions: Actions = {
             <br><br>
             <a href="mailto:${email}">Répondre</a>`;
 
-        const mailchimpTx = mailchimp(PUBLIC_MANDRILL_API_KEY);
 
-        /**
-         * Using the `send` API from Mandrill/Mailchimp, this is considered as an "outbound" email,
-         * meaning from LT to the world.
-         *
-         * If from_email is set with any other domain than lausanne-tourisme.ch, then it will be rejected.
-         *
-         * Alternatives: either use noreply@lausanne-tourisme.ch as from_email, or use nodemailer with LT's
-         * mail provider.
-         * */
-        const mail: MessagesMessage = {
-            from_email: MAIL_FROM,
-            from_name: "No Reply - Press",
-            subject: "[Contact] - nouvelle demande",
-            html,
-            to: recipients.map((recipient: string) => {
-                return {
-                    email: recipient,
-                    type: "to",
-                }
-            }),
-        }
-
-        const response = await mailchimpTx.messages.send({ message: mail }) as mailchimp.MessagesSendResponse[];
-        const confirm = await mailchimpTx.messages.send({
-            message: {
+        const { internal_reponse, external_response } = await sendEmail({
+            intern_mail: {
+                from_name: "No Reply - Press",
+                subject: "[Contact] - nouvelle demande",
+                html,
+            },
+            external_mail: {
                 from_email: MAIL_FROM,
                 from_name: t.get(`${RouteTypes.Contact}.form.mail-section.response.from-name`),
                 subject: t.get(`${RouteTypes.Contact}.form.mail-section.response.subject`),
@@ -126,12 +108,12 @@ export const actions: Actions = {
                     type: "to",
                 }]
             }
-        }) as mailchimp.MessagesSendResponse[]
+        });
 
-        if (response[0].status === 'sent' && confirm[0].status === 'sent') {
+        if (internal_reponse[0].status === 'sent' && external_response?.[0].status === 'sent') {
             return { message: "Mail sent." }
         }
-        if (response[0].status === 'sent' && confirm[0].status !== 'sent') {
+        if (internal_reponse[0].status === 'sent' && external_response?.[0].status !== 'sent') {
             return { partial: true, message: "Mail sent, but fails to sent to recipient..." }
         }
 
