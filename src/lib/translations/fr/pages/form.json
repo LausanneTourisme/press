@@ -16,5 +16,8 @@
         "accept-terms": "J'ai pris connaissance et accepte les conditions"
     },
     "yes": "Oui",
-    "no": "Non"
+    "no": "Non",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Envoyer"
 }
