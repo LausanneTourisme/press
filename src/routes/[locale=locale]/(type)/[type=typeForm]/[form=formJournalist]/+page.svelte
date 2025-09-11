@@ -25,7 +25,7 @@
       superForm((page.data as PageData).form, {
         dataType: 'json',
         onSubmit: async ({ cancel }) => {
-          const isLast = steps.length - 1 === steps.length;
+          const isLast = steps.length - 1 === step;
           options.validators = steps[step];
           // If on last step, make a normal request
           if (isLast) {
@@ -67,9 +67,6 @@
             step = step + 1;
           }
         },
-        onUpdated: async ({ form }) => {
-          if (form.valid) step = 1;
-        }
       })
     );
 
