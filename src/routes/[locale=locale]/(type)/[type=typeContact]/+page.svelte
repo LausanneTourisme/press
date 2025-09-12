@@ -281,7 +281,7 @@
               )} --
             </option>
             <option
-              value={@html $t(
+              value={$t(
                 'contact.form.mail-section.form.area-of-activity-section.choices.journalist'
               )}
             >
