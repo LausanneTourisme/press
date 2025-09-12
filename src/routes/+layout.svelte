@@ -15,6 +15,7 @@
   import { type PageData } from './[locale=locale]/$types';
   import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
   import { PUBLIC_BASE_URL } from '$env/static/public';
+  import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
   let translations = $derived((page.data as PageData).translations[locale.get()]);
@@ -33,10 +34,14 @@
       image: pageData.seo.image
     };
   });
+  const flash = $derived.by(() =>getFlash(page, {
+    clearAfterMs: 7000,
+    clearOnNavigate: true,
+  }));
 
   afterNavigate((navigate) => {
     // return back in navigation doesn't re-trigger scroll to anchor
-    if(navigate.type === "popstate") return;
+    if (navigate.type === 'popstate') return;
 
     /*
      * Go to Anchor tags !
@@ -149,6 +154,23 @@
         style="display:none;visibility:hidden"
       ></iframe>
     </noscript>
+    {#if $flash}
+      <div
+        class={twMerge(
+          'flash',
+          $flash.type == 'success' ? 'bg-apple-300' : 'bg-red-300',
+          'fixed',
+          'top-[60px] md:top-[120px] left-0',
+          'w-full',
+          'z-11',
+          'text-center font-bold',
+          'p-3'
+        )}
+      >
+        {$flash.message}
+      </div>
+    {/if}
+
     <!-- End Google Tag Manager (noscript) -->
     {@render children()}
   </main>

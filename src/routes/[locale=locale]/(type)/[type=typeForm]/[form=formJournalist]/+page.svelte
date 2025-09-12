@@ -216,7 +216,9 @@
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
           <Heading tag="h3" class="mt-6  mb-2 text-lg md:text-lg">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`
+            )}
           </Heading>
           <fieldset
             class="fieldset print-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -536,7 +538,9 @@
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`
+            )}
           </Heading>
           <fieldset
             class="fieldset print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -669,7 +673,9 @@
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`
+            )}
           </Heading>
           <fieldset
             class="fieldset online-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -893,7 +899,7 @@
                 <input
                   class="checkbox"
                   type="checkbox"
-                  value={$form.travelInformation.travelReductions?.includes(travelReduction)}
+                  checked={$form.travelInformation.travelReductions?.includes(travelReduction)}
                   id="travel-reduction-{travelReduction}"
                   onchange={(e) => {
                     if (!$form.travelInformation.travelReductions) {
@@ -955,7 +961,9 @@
           class="fieldset personal-information bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
           <p class="label mb-1 text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`
+            )}
             {#if $constraints.personalInformation?.title?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -989,7 +997,9 @@
           {/each}
 
           <label for="personal-information-first-name" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`
+            )}
 
             {#if $constraints.personalInformation?.firstName?.required}
               <span class="text-brand-600 italic">
@@ -1035,7 +1045,6 @@
               </span>
             {/if}
           </p>
-
           <label
             class="label text-wrap break-words"
             aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
@@ -1045,12 +1054,12 @@
               name="personal-information-freelance"
               class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
               onchange={() => ($form.personalInformation.freelance = false)}
+              checked={$form.personalInformation?.freelance === false}
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
             />
             {@html $t(`${RouteTypes.Form}.no`)}
           </label>
-
           <label
             class="label text-wrap break-words"
             aria-invalid={$errors.personalInformation?.freelance ? 'true' : undefined}
@@ -1060,6 +1069,7 @@
               name="personal-information-freelance"
               class="radio {$errors.personalInformation?.freelance ? 'radio-error' : ''}"
               onchange={() => ($form.personalInformation.freelance = true)}
+              checked={$form.personalInformation?.freelance === true}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
               required
             />
@@ -1087,8 +1097,10 @@
             aria-invalid={$errors.personalInformation?.spokenLanguages ? 'true' : undefined}
           />
 
-          <label for="personal-information-birth-date" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
+          <label for="personal-information-birthdate" class="label text-wrap break-words">
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`
+            )}
             {#if $constraints.personalInformation?.birthday?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -1097,7 +1109,7 @@
           </label>
           <input
             type="date"
-            id="personal-information-birth-date"
+            id="personal-information-birthdate"
             class="input w-full {$errors.personalInformation?.birthday ? 'input-error' : ''}"
             bind:value={$form.personalInformation.birthday}
             aria-invalid={$errors.personalInformation?.birthday ? 'true' : undefined}
@@ -1148,7 +1160,9 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
-          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
+          {@html $t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`
+          )}
         </Heading>
         <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
           {#if $errors.personalInformation?.passport}
@@ -1157,7 +1171,9 @@
             </p>
           {/if}
           <label for="personal-information-passport-number" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`
+            )}
             {#if $constraints.personalInformation?.passport?.number?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -1171,12 +1187,15 @@
             $errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
-            value={$form.personalInformation.passport?.number}
+            defaultValue={$form.personalInformation.passport?.number ?? ''}
             onchange={(e) => {
-              $form.personalInformation.passport = {
-                number: e.currentTarget.value,
-                validity: '',
-                ...$form.personalInformation.passport
+              $form.personalInformation = {
+                ...$form.personalInformation,
+                passport: {
+                  validity: '',
+                  ...$form.personalInformation.passport,
+                  number: e.currentTarget.value
+                }
               };
             }}
             aria-invalid={$errors.personalInformation?.passport ||
@@ -1197,12 +1216,15 @@
             $errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
-            value={$form.personalInformation.passport?.validity}
+            defaultValue={$form.personalInformation.passport?.validity ?? ''}
             onchange={(e) => {
-              $form.personalInformation.passport = {
-                number: '',
-                validity: e.currentTarget.value,
-                ...$form.personalInformation.passport
+              $form.personalInformation = {
+                ...$form.personalInformation,
+                passport: {
+                  number: '',
+                  ...$form.personalInformation.passport,
+                  validity: e.currentTarget.value
+                }
               };
             }}
             aria-invalid={$errors.personalInformation?.passport ||
@@ -1240,7 +1262,9 @@
           />
 
           <label for="personal-information-address-city" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`
+            )}
             {#if $constraints.personalInformation?.address?.city?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -1276,7 +1300,9 @@
           />
 
           <label for="personal-information-address-country" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`
+            )}
             {#if $constraints.personalInformation?.address?.country?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -1302,7 +1328,9 @@
           </select>
 
           <label for="personal-information-phone-number" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
+            {@html $t(
+              `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`
+            )}
             {#if $constraints.personalInformation?.phoneNumber?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Form}.required`)}
@@ -1395,7 +1423,9 @@
               >
                 {#if $errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber}
                   <p class="text-brand-600 my-1">
-                    {@html $t($errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber?.[0])}
+                    {@html $t(
+                      $errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber?.[0]
+                    )}
                   </p>
                 {/if}
                 <input
@@ -1459,7 +1489,9 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
+          {@html $t(
+            `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`
+          )}
         </Heading>
         <fieldset
           class="fieldset has-travel-insurance bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -1472,6 +1504,7 @@
               type="radio"
               name="personal-information-travel-insurance"
               class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
+              checked={$form.travelInsuranceCoveringSwitzerland === false}
               onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
@@ -1483,6 +1516,7 @@
               type="radio"
               name="personal-information-travel-insurance"
               class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
+              checked={$form.travelInsuranceCoveringSwitzerland === true}
               onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
@@ -1506,6 +1540,7 @@
           </label>
           <textarea
             id="personal-information-remarks"
+            defaultValue={$form.remarks as string|undefined ?? ''}
             bind:value={$form.remarks}
             class="textarea w-full"
           ></textarea>
@@ -1529,6 +1564,7 @@
               type="checkbox"
               defaultValue={false}
               class="checkbox {$errors.readTermsOfAcceptance ? 'checkbox-error' : ''}"
+              checked={$form.readTermsOfAcceptance === true}
               onchange={(e) => {
                 $form.readTermsOfAcceptance = e.currentTarget.checked;
               }}
@@ -1554,6 +1590,7 @@
               type="radio"
               name="personal-information-newsletter"
               class="radio {$errors.newsletter ? 'radio-error' : ''}"
+              checked={$form.newsletter === false}
               onchange={(e) => ($form.newsletter = false)}
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
@@ -1569,6 +1606,7 @@
               type="radio"
               name="personal-information-newsletter"
               class="radio {$errors.newsletter ? 'radio-error' : ''}"
+              checked={$form.newsletter === true}
               onchange={(e) => ($form.newsletter = true)}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
