@@ -90,7 +90,7 @@
         <div
           style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"
         >
-          {$t('common.instagram-link')}
+          {@html $t('common.instagram-link')}
         </div>
       </div>
       <div style="padding: 12.5% 0;"></div>

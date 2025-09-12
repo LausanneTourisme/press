@@ -235,7 +235,7 @@
               class="inline-flex items-center py-2 hover:cursor-pointer hover:opacity-80"
               onclick={closeAside}
             >
-              {$t('common.other-tips')}
+              {@html $t('common.other-tips')}
               <ArrowRight class="ml-1 h-4 w-4" />
             </button>
           </div>

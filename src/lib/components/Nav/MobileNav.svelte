@@ -208,7 +208,7 @@
 
     <div class="bg-base-200 flex flex-shrink flex-col justify-end px-6 py-4">
       <Button href={route(RouteTypes.Contact)} class="invertable block px-3" tag="a">
-        {$t('common.contact-us')}
+        {@html $t('common.contact-us')}
       </Button>
       <div class="flex justify-center pt-2">
         <SocialNetworks />

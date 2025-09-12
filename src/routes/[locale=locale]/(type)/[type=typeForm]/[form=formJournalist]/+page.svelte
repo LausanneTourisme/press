@@ -118,11 +118,11 @@
     {#if step === 0}
       <section class="step1 about-media w-full">
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.title`)}
         </Heading>
         <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
           <label for="media-name" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)}
             {#if $constraints.mediaName?.required}
               <span class="text-brand-600 italic">
                 {$t(`${RouteTypes.Form}.required`)}
@@ -139,10 +139,10 @@
           />
 
           <label for="media-thematic" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)}
             {#if $constraints.thematic?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -158,10 +158,10 @@
           />
 
           <label for="audience-profile" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)}
             {#if $constraints.audienceProfile?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -178,10 +178,10 @@
 
           <div id="media-types" class="join join-vertical">
             <p class="label mb-1 text-wrap break-words">
-              {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)}
+              {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)}
               {#if $constraints.mediaTypes?.required}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </p>
@@ -207,7 +207,7 @@
                   }}
                   aria-label={$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.${mediaType}`)}
                 />
-                {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.${mediaType}`)}
+                {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.types.${mediaType}`)}
               </label>
             {/each}
           </div>
@@ -216,18 +216,18 @@
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
           <Heading tag="h3" class="mt-6  mb-2 text-lg md:text-lg">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.title`)}
           </Heading>
           <fieldset
             class="fieldset print-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
             <label for="print-statistics-broadcastLocation" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location`
               )}
               {#if Number($constraints.printMediaStatistics?.broadcastLocation?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -262,12 +262,12 @@
               {@const printErrors = $errors.printMediaStatistics?._errors ?? []}
               <p id="media-types-error" class="text-error error">
                 {#each printErrors as error}
-                  {$t(error)}<br />
+                  {@html $t(error)}<br />
                 {/each}
               </p>
             {/if}
             <label for="print-statistics-copies" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.copies`
               )}
             </label>
@@ -294,7 +294,7 @@
             />
 
             <label for="print-statistics-readers" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.readers`
               )}
             </label>
@@ -320,7 +320,7 @@
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
           </Heading>
@@ -331,12 +331,12 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
               class="label text-wrap break-words"
             >
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
               )}
               {#if Number($constraints.radioAndTVMediaStatistics?.emissionName?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -368,12 +368,12 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
               class="label text-wrap break-words"
             >
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.viewers`
               )}
               {#if Number($constraints.radioAndTVMediaStatistics?.viewers?.min) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -401,7 +401,7 @@
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.title`
             )}
           </Heading>
@@ -410,12 +410,12 @@
             class="fieldset online-statistics bg-base-200/50 border-base-300 rounded-box border p-4"
           >
             <label for="online-statistics-website" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.website`
               )}
               {#if $constraints.onlineMediaStatistics?.website?.required}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -444,7 +444,7 @@
             {#if $errors.onlineMediaStatistics?._errors}
               <p id="media-types-error" class="text-error error">
                 {#each $errors.onlineMediaStatistics._errors as error}
-                  {$t(error)}<br />
+                  {@html $t(error)}<br />
                 {/each}
               </p>
             {/if}
@@ -452,13 +452,13 @@
               for="online-statistics-monthly-unique-visitors"
               class="label text-wrap break-words"
             >
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.monthly-unique-visitors`
               )}
               {#if $constraints.onlineMediaStatistics?.monthlyUniqueVisitors?.required}<span
                   class="text-brand-600 italic"
                 >
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>{/if}
             </label>
             <input
@@ -486,13 +486,13 @@
             />
 
             <label for="online-statistics-montlhy-page-views" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.montlhy-page-views`
               )}
               {#if $constraints.onlineMediaStatistics?.montlhyPageViews?.required}<span
                   class="text-brand-600 italic"
                 >
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>{/if}
             </label>
             <input
@@ -531,23 +531,23 @@
     {#if step === 1}
       <section class="step2 media-coverage">
         <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.title`)}
         </Heading>
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.title`)}
           </Heading>
           <fieldset
             class="fieldset print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
             <label for="print-coverage-total-pages" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.total-pages`
               )}
               {#if Number($constraints.mediaCoveragePrint?.totalPages?.min) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -562,18 +562,18 @@
             />
 
             <label for="print-coverage-article-length" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.article-length`
               )}
               {#if Number($constraints.mediaCoveragePrint?.articleLength?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
             {#if $errors.mediaCoveragePrint?.articleLength}
               <p class="text-brand-600">
-                {$t($errors.mediaCoveragePrint.articleLength[0])}
+                {@html $t($errors.mediaCoveragePrint.articleLength[0])}
               </p>
             {/if}
             <input
@@ -587,12 +587,12 @@
             />
 
             <label for="print-coverage-publish-date" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Print}.publish-date`
               )}
               {#if Number($constraints.mediaCoveragePrint?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -608,7 +608,7 @@
         {/if}
         {#if ($form.mediaTypes.includes(MediaTypes.Tv) && $form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Tv) && !$form.mediaTypes.includes(MediaTypes.Radio)) || ($form.mediaTypes.includes(MediaTypes.Radio) && !$form.mediaTypes.includes(MediaTypes.Tv))}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.title`
             )}
           </Heading>
@@ -619,12 +619,12 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-article-thematic"
               class="label text-wrap break-words"
             >
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.article-thematic`
               )}
               {#if Number($constraints.mediaCoverageTvOrRadio?.articleThematic?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -646,12 +646,12 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-coverage-publish-date"
               class="label text-wrap break-words"
             >
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
               {#if Number($constraints.mediaCoverageTvOrRadio?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -669,24 +669,24 @@
         {/if}
         {#if $form.mediaTypes.includes(MediaTypes.Online)}
           <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.title`)}
           </Heading>
           <fieldset
             class="fieldset online-coverage print-coverage bg-base-200/50 border-base-300 rounded-box border p-4"
           >
             <label for="online-coverage-article-length" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-length`
               )}
               {#if Number($constraints.mediaCoverageOnline?.articleLength?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
             {#if $errors.mediaCoverageOnline?.articleLength}
               <p class="text-brand-600">
-                {$t($errors.mediaCoverageOnline.articleLength[0])}
+                {@html $t($errors.mediaCoverageOnline.articleLength[0])}
               </p>
             {/if}
             <input
@@ -698,12 +698,12 @@
             />
 
             <label for="online-coverage-article-thematic" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.article-thematic`
               )}
               {#if Number($constraints.mediaCoverageOnline?.articleThematic?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -721,12 +721,12 @@
             />
 
             <label for="online-coverage-publish-date" class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
               )}
               {#if Number($constraints.mediaCoverageOnline?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">
-                  {$t(`${RouteTypes.Form}.required`)}
+                  {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
               {/if}
             </label>
@@ -745,11 +745,11 @@
     {#if step === 2}
       <section class="step3 travel-information">
         <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}
         </Heading>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(
+          {@html $t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`
           )}
         </Heading>
@@ -757,12 +757,12 @@
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box border p-4"
         >
           <label for="departure-point-city" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`
             )}
             {#if $constraints.travelInformation?.departurePoint?.city?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -780,12 +780,12 @@
           />
 
           <label for="departure-point-country" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`
             )}
             {#if $constraints.travelInformation?.departurePoint?.country?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -798,7 +798,7 @@
             aria-invalid={$errors.travelInformation?.departurePoint?.country ? 'true' : undefined}
           >
             <option disabled selected value={undefined}>
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
               )}
             </option>
@@ -808,17 +808,17 @@
           </select>
 
           <label for="departure-point-outward-journey" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`
             )}
             {#if $constraints.travelInformation?.departurePoint?.outwardJourney?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
           <p class="departure-point-outward-journey information">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.information`
             )}
           </p>
@@ -839,17 +839,17 @@
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
           <label for="travel-information-return-journey" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`
             )}
             {#if $constraints.travelInformation?.returnJourney?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
           <p class="travel-information-return-journey information">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.information`
             )}
           </p>
@@ -865,7 +865,7 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(
+          {@html $t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`
           )}
         </Heading>
@@ -873,12 +873,12 @@
           class="fieldset travel-reductions bg-base-200/50 border-base-300 rounded-box border p-4"
         >
           <label for="travel-information-travel-reduction" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.please-tick`
             )}
             {#if $constraints.travelInformation?.travelReductions?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -915,7 +915,7 @@
                     `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
                   )}
                 />
-                {$t(
+                {@html $t(
                   `${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${travelReduction}`
                 )}
               </label>
@@ -927,10 +927,10 @@
           class="fieldset last-visit bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
           <label for="travel-information-return-journey" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)}
             {#if $constraints.travelInformation?.lastVisit?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -948,17 +948,17 @@
     {#if step === 3}
       <section class="step4 personal-information">
         <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
         </Heading>
 
         <fieldset
           class="fieldset personal-information bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         >
           <p class="label mb-1 text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)}
             {#if $constraints.personalInformation?.title?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </p>
@@ -982,18 +982,18 @@
                   `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`
                 )}
               />
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${title}`
               )}
             </label>
           {/each}
 
           <label for="personal-information-first-name" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)}
 
             {#if $constraints.personalInformation?.firstName?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1009,10 +1009,10 @@
           />
 
           <label for="personal-information-last-name">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)}
             {#if $constraints.personalInformation?.lastName?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1028,10 +1028,10 @@
           />
 
           <p class="label mb-1 text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)}
             {#if $constraints.personalInformation?.freelance?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </p>
@@ -1048,7 +1048,7 @@
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
             />
-            {$t(`${RouteTypes.Form}.no`)}
+            {@html $t(`${RouteTypes.Form}.no`)}
           </label>
 
           <label
@@ -1063,16 +1063,16 @@
               aria-label={$t(`${RouteTypes.Form}.yes`)}
               required
             />
-            {$t(`${RouteTypes.Form}.yes`)}
+            {@html $t(`${RouteTypes.Form}.yes`)}
           </label>
 
           <label for="personal-information-spoken-languages" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`
             )}
             {#if $constraints.personalInformation?.spokenLanguages?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1088,10 +1088,10 @@
           />
 
           <label for="personal-information-birth-date" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)}
             {#if $constraints.personalInformation?.birthday?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1104,10 +1104,10 @@
           />
 
           <label for="personal-information-allergies" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.allergies`)}
             {#if $constraints.personalInformation?.allergies?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1125,12 +1125,12 @@
             for="personal-information-medical-and-physical-condition"
             class="label text-wrap break-words"
           >
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.medical-and-physical-condition`
             )}
             {#if $constraints.personalInformation?.medicalAndPhysicalCondition?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1148,19 +1148,19 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)}
         </Heading>
         <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
           {#if $errors.personalInformation?.passport}
             <p class="text-brand-600">
-              {$t($errors.personalInformation?.passport?.personalInformationPassport?.[0])}
+              {@html $t($errors.personalInformation?.passport?.personalInformationPassport?.[0])}
             </p>
           {/if}
           <label for="personal-information-passport-number" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)}
             {#if $constraints.personalInformation?.passport?.number?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1186,7 +1186,7 @@
           />
 
           <label for="personal-information-passport-validity" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`
             )}
           </label>
@@ -1213,19 +1213,19 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}
         </Heading>
         <fieldset class="fieldset address bg-base-200/50 border-base-300 rounded-box border p-4">
           <label
             for="personal-information-address-street-address"
             class="label text-wrap break-words"
           >
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`
             )}
             {#if $constraints.personalInformation?.address?.streetAddress?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1240,10 +1240,10 @@
           />
 
           <label for="personal-information-address-city" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)}
             {#if $constraints.personalInformation?.address?.city?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1256,12 +1256,12 @@
           />
 
           <label for="personal-information-address-zip" class="label text-wrap break-words">
-            {$t(
+            {@html $t(
               `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`
             )}
             {#if $constraints.personalInformation?.address?.postalcode?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1276,10 +1276,10 @@
           />
 
           <label for="personal-information-address-country" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country`)}
             {#if $constraints.personalInformation?.address?.country?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1292,7 +1292,7 @@
             aria-invalid={$errors.personalInformation?.address?.country ? 'true' : undefined}
           >
             <option hidden disabled selected value={undefined}>
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
               )}
             </option>
@@ -1302,10 +1302,10 @@
           </select>
 
           <label for="personal-information-phone-number" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)}
             {#if $constraints.personalInformation?.phoneNumber?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1318,10 +1318,10 @@
           />
 
           <label for="personal-information-email" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)}
             {#if $constraints.personalInformation?.email?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1335,11 +1335,11 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(
+          {@html $t(
             `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`
           )}
           <span class="text-brand-600 italic">
-            {$t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Form}.required`)}
           </span>
         </Heading>
         <fieldset
@@ -1347,12 +1347,12 @@
         >
           <div class="hidden md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4">
             <p class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`
               )}
             </p>
             <p class="label text-wrap break-words">
-              {$t(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`
               )}
             </p>
@@ -1369,7 +1369,7 @@
               >
                 {#if $errors.personalInformation?.emergencyContacts?.[i]?.name}
                   <p class="text-brand-600 my-1">
-                    {$t($errors.personalInformation?.emergencyContacts?.[i]?.name?.[0])}
+                    {@html $t($errors.personalInformation?.emergencyContacts?.[i]?.name?.[0])}
                   </p>
                 {/if}
                 <input
@@ -1395,7 +1395,7 @@
               >
                 {#if $errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber}
                   <p class="text-brand-600 my-1">
-                    {$t($errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber?.[0])}
+                    {@html $t($errors.personalInformation?.emergencyContacts?.[i]?.phoneNumber?.[0])}
                   </p>
                 {/if}
                 <input
@@ -1459,7 +1459,7 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.travel-insurance`)}
         </Heading>
         <fieldset
           class="fieldset has-travel-insurance bg-base-200/50 border-base-300 rounded-box border p-4"
@@ -1476,7 +1476,7 @@
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
             />
-            {$t(`${RouteTypes.Form}.no`)}
+            {@html $t(`${RouteTypes.Form}.no`)}
           </label>
           <label class="label text-wrap break-words">
             <input
@@ -1486,21 +1486,21 @@
               onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
-            {$t(`${RouteTypes.Form}.yes`)}
+            {@html $t(`${RouteTypes.Form}.yes`)}
           </label>
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
+          {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
         </Heading>
         <fieldset
           class="fieldset personal-information-remarks bg-base-200/50 border-base-300 rounded-box border p-4"
         >
           <label for="personal-information-remarks" class="label text-wrap break-words">
-            {$t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
+            {@html $t(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.remarks`)}
             {#if $constraints.remarks?.required}
               <span class="text-brand-600 italic">
-                {$t(`${RouteTypes.Form}.required`)}
+                {@html $t(`${RouteTypes.Form}.required`)}
               </span>
             {/if}
           </label>
@@ -1512,16 +1512,16 @@
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
+          {@html $t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
           <span class="text-brand-600 italic">
-            {$t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Form}.required`)}
           </span>
         </Heading>
         <fieldset
           class="fieldset terms-of-acceptance bg-base-200/50 border-base-300 rounded-box border p-4"
         >
           <p class="text-wrap">
-            {$t(`${RouteTypes.Form}.terms-of-acceptance.content`)}
+            {@html $t(`${RouteTypes.Form}.terms-of-acceptance.content`)}
           </p>
 
           <label class="label text-wrap break-words">
@@ -1534,16 +1534,16 @@
               }}
               aria-invalid={$errors.readTermsOfAcceptance ? 'true' : undefined}
             />
-            {$t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
+            {@html $t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
           </label>
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {$t(`${RouteTypes.Form}.newsletter.title`)}
+          {@html $t(`${RouteTypes.Form}.newsletter.title`)}
         </Heading>
         <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
           <p class="">
-            {$t(`${RouteTypes.Form}.newsletter.paragraph`)}
+            {@html $t(`${RouteTypes.Form}.newsletter.paragraph`)}
           </p>
 
           <label
@@ -1558,7 +1558,7 @@
               aria-label={$t(`${RouteTypes.Form}.no`)}
               required
             />
-            {$t(`${RouteTypes.Form}.no`)}
+            {@html $t(`${RouteTypes.Form}.no`)}
           </label>
 
           <label
@@ -1572,7 +1572,7 @@
               onchange={(e) => ($form.newsletter = true)}
               aria-label={$t(`${RouteTypes.Form}.yes`)}
             />
-            {$t(`${RouteTypes.Form}.yes`)}
+            {@html $t(`${RouteTypes.Form}.yes`)}
           </label>
         </fieldset>
       </section>
@@ -1586,7 +1586,7 @@
           step = step - 1;
         }}
       >
-        {$t(`${RouteTypes.Form}.previous`)}
+        {@html $t(`${RouteTypes.Form}.previous`)}
       </button>
       <button class="btn">
         {step < steps.length - 1 ? $t(`${RouteTypes.Form}.next`) : $t(`${RouteTypes.Form}.submit`)}

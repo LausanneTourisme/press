@@ -64,7 +64,7 @@
 
 <Container>
   <Heading tag="h1" class="text-center">
-    {$t('contact.heading')}
+    {@html $t('contact.heading')}
   </Heading>
 
   <Paragraph centered={true} class="">
@@ -116,7 +116,7 @@
         : ''}"
       out:fade
     >
-      <Heading class="-mt-4 mb-8 text-lg font-bold text-center">
+      <Heading class="-mt-4 mb-8 text-center text-lg font-bold">
         {@html $t('contact.form.select-section.title')}
       </Heading>
       <div
@@ -127,14 +127,14 @@
           onclick={() => (displayForm = true)}
         >
           <Mail strokeWidth={2.5} class="aspect-square h-5" />
-          {$t('contact.form.select-section.button.message')}
+          {@html $t('contact.form.select-section.button.message')}
         </button>
         <button
           class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           onclick={() => (displayPhone = true)}
         >
           <Phone strokeWidth={2.5} class="aspect-square h-5" />
-          {$t('contact.form.select-section.button.call')}
+          {@html $t('contact.form.select-section.button.call')}
         </button>
       </div>
     </div>
@@ -145,7 +145,7 @@
       in:fade
     >
       <Heading class="pb-4 text-lg font-bold">
-        {$t('contact.form.mail-section.title')}
+        {@html $t('contact.form.mail-section.title')}
       </Heading>
       <Form
         action="/{$locale}/contact"
@@ -157,7 +157,7 @@
         <!-- Gender -->
         <div class="my-4" id="title-section" bind:this={titleSection}>
           <p class="font-lighter my-3 text-sm text-neutral-700">
-            {$t('contact.form.mail-section.form.gender-section.title')}
+            {@html $t('contact.form.mail-section.form.gender-section.title')}
             <span class="text-brand-600">*</span>
           </p>
           <div>
@@ -181,7 +181,7 @@
                   )}
                 >
                   <span class="block w-full text-center">
-                    {$t('contact.form.mail-section.form.gender-section.madam')}
+                    {@html $t('contact.form.mail-section.form.gender-section.madam')}
                   </span>
                 </label>
               </li>
@@ -204,25 +204,25 @@
                   )}
                 >
                   <span class="block w-full text-center">
-                    {$t('contact.form.mail-section.form.gender-section.sir')}
+                    {@html $t('contact.form.mail-section.form.gender-section.sir')}
                   </span>
                 </label>
               </li>
             </ul>
           </div>
           <div class="label">
-            <span class="label-text-alt"
-              >{pageForm?.fields?.title?.incorrect || titleSectionFailed
+            <span class="label-text-alt">
+              {@html pageForm?.fields?.title?.incorrect || titleSectionFailed
                 ? (pageForm?.fields?.title?.message ??
                   $t('contact.form.mail-section.validations.radio-buttons'))
-                : undefined}</span
-            >
+                : ''}
+            </span>
           </div>
         </div>
         <!-- Name -->
         <label class="form-control my-4 block w-full">
           <p class="font-lighter my-3 w-full text-sm text-neutral-700">
-            {$t('contact.form.mail-section.form.name-section.title')}
+            {@html $t('contact.form.mail-section.form.name-section.title')}
             <span class="text-brand-600">*</span>
           </p>
           <input
@@ -242,7 +242,7 @@
         <!-- Email -->
         <label class="form-control my-4 block w-full">
           <p class="font-lighter my-3 w-full text-sm text-neutral-700">
-            {$t('contact.form.mail-section.form.email-section.title')}
+            {@html $t('contact.form.mail-section.form.email-section.title')}
             <span class="text-brand-600">*</span>
           </p>
           <input
@@ -263,7 +263,7 @@
         <label class="form-control my-4 block w-full">
           <div class="label my-3 w-full">
             <span class="label-text">
-              {$t('contact.form.mail-section.form.area-of-activity-section.title')}
+              {@html $t('contact.form.mail-section.form.area-of-activity-section.title')}
               <span class="text-brand-600">*</span>
             </span>
           </div>
@@ -276,27 +276,33 @@
             required
           >
             <option disabled selected value>
-              -- {$t('contact.form.mail-section.form.area-of-activity-section.choices.please-select')} --
+              -- {@html $t(
+                'contact.form.mail-section.form.area-of-activity-section.choices.please-select'
+              )} --
             </option>
             <option
-              value={$t('contact.form.mail-section.form.area-of-activity-section.choices.journalist')}
+              value={@html $t(
+                'contact.form.mail-section.form.area-of-activity-section.choices.journalist'
+              )}
             >
-              {$t('contact.form.mail-section.form.area-of-activity-section.choices.journalist')}
+              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.journalist')}
             </option>
             <option
-              value={$t('contact.form.mail-section.form.area-of-activity-section.choices.influencer')}
+              value={$t(
+                'contact.form.mail-section.form.area-of-activity-section.choices.influencer'
+              )}
             >
-              {$t('contact.form.mail-section.form.area-of-activity-section.choices.influencer')}
+              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.influencer')}
             </option>
             <option
               value={$t('contact.form.mail-section.form.area-of-activity-section.choices.media')}
             >
-              {$t('contact.form.mail-section.form.area-of-activity-section.choices.media')}
+              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.media')}
             </option>
             <option
               value={$t('contact.form.mail-section.form.area-of-activity-section.choices.other')}
             >
-              {$t('contact.form.mail-section.form.area-of-activity-section.choices.other')}
+              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.other')}
             </option>
           </select>
           <div class="label w-full text-sm">
@@ -307,7 +313,7 @@
         <label class="form-control my-4 block">
           <div class="label my-3 w-full">
             <span class="label-text">
-              {$t('contact.form.mail-section.form.message-section.title')}
+              {@html $t('contact.form.mail-section.form.message-section.title')}
               <span class="text-brand-600">*</span>
             </span>
           </div>
@@ -334,7 +340,7 @@
       in:fly
     >
       <Paragraph class="text-lg font-bold text-gray-800">
-        {$t('contact.form.call-section.title')}
+        {@html $t('contact.form.call-section.title')}
       </Paragraph>
       <a
         href="tel:0041216137373"
@@ -357,7 +363,7 @@
         onclick={reset}
       >
         <ArrowLeft class="h-4 w-4" />
-        {$t('contact.form.restart-button')}
+        {@html $t('contact.form.restart-button')}
       </button>
     </section>
   </section>
@@ -365,7 +371,7 @@
 <Anchor name="faq" />
 <Container class="mb-16">
   <Heading class="my-8 text-center">
-    {$t('common.faq.title')}
+    {@html $t('common.faq.title')}
   </Heading>
   <Faq />
 </Container>

@@ -57,7 +57,7 @@
             })}
             class="inline-flex items-center"
           >
-            {$t('themes.read-more')}
+            {@html $t('themes.read-more')}
             <ArrowRight class="ml-2 h-4 w-4" />
           </Button>
         {/if}
@@ -131,7 +131,7 @@
                     <div
                       class="flex items-center text-gray-500 transition-colors group-hover:text-gray-950"
                     >
-                      {$t('themes.read')}&nbsp;
+                      {@html $t('themes.read')}&nbsp;
                       <ArrowRight class="h-4 w-4" />
                     </div>
                   </div>
@@ -155,18 +155,18 @@
     -->
 <Container width="medium" class="mt-4">
   <Heading>
-    # {$t('themes.lausanners.title')}
+    # {@html $t('themes.lausanners.title')}
   </Heading>
   <div class="flex">
     <div class="w-2/3 xl:w-1/2">
       <Paragraph>
-        {$t('themes.lausanners.paragraph1')}
+        {@html $t('themes.lausanners.paragraph1')}
       </Paragraph>
       <Paragraph>
-        {$t('themes.lausanners.paragraph2', { value: $t(`themes.${theme}.title`) })}
+        {@html $t('themes.lausanners.paragraph2', { value: $t(`themes.${theme}.title`) })}
       </Paragraph>
       <Button href="https://www.lausanne-tourisme.ch/{$locale}/the-lausanner/" tag="a">
-        {$t('themes.lausanners.button')}
+        {@html $t('themes.lausanners.button')}
       </Button>
     </div>
     <div class="flex w-1/3 items-center xl:w-1/2">
@@ -212,7 +212,7 @@
 <Container width="padded" class="bg-gray-100 md:bg-gray-50">
   <Container width="medium">
     <Heading class="text-center">
-      {$t('themes.other')}&nbsp;:
+      {@html $t('themes.other')}&nbsp;:
     </Heading>
   </Container>
   <Swiper>
@@ -249,7 +249,7 @@
               class="my-4 px-4 text-clip whitespace-break-spaces !text-white text-shadow-lg md:text-3xl"
               title={$t(`themes.${theme}.title`)}
             >
-              {$t(`themes.${theme}.title`)}
+              {@html $t(`themes.${theme}.title`)}
             </Heading>
           </div>
         </Clickable>

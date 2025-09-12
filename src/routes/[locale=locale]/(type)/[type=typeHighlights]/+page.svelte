@@ -67,10 +67,10 @@
 <Anchor name="news" />
 <Container width="medium">
   <Heading tag="h1">
-    {$t('highlights.news.title')}
+    {@html $t('highlights.news.title')}
   </Heading>
   <Paragraph>
-    {$t('highlights.news.paragraph')}
+    {@html $t('highlights.news.paragraph')}
   </Paragraph>
 </Container>
 <!-- NEWS SWIPER -->
@@ -96,7 +96,7 @@
           >
             <p>
               <small>
-                {$t('common.published-at')}&nbsp;{DateTime.fromSeconds(Number(n.published_at))
+                {@html $t('common.published-at')}&nbsp;{DateTime.fromSeconds(Number(n.published_at))
                   .setLocale($locale)
                   .toFormat('dd/MM/yyyy')}
               </small>
@@ -130,10 +130,10 @@
 <Anchor name="highlights" />
 <Container width="medium">
   <Heading class="py-4 text-center text-3xl">
-    {$t('highlights.highlights.title')}
+    {@html $t('highlights.highlights.title')}
   </Heading>
   <Paragraph>
-    {$t('highlights.highlights.paragraph')}
+    {@html $t('highlights.highlights.paragraph')}
   </Paragraph>
   {#each poisChunks as chunk}
     <div
@@ -206,7 +206,7 @@
 	-->
 <Container width="agenda" fullscreen={isMobile} background="bg-agenda-500">
   <Heading class="mb-4 p-4 text-center">
-    {$t('highlights.agenda.title')}
+    {@html $t('highlights.agenda.title')}
   </Heading>
   <Swiper showPagination={false}>
     {#each events as event}

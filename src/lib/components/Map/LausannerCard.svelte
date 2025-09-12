@@ -46,7 +46,7 @@
   </figure>
   <article class="w-3/5 p-4">
     <p class="mb-2 font-bold">
-      {$t('common.poi.favorite.from', {
+      {@html $t('common.poi.favorite.from', {
         poi: poi.name as string | undefined,
         lausanner: lausanner?.name?.replace(/,.+/gi, '')
       })}
@@ -55,7 +55,7 @@
       {favorite.content}
     </p>
     <div class="md:text-default py-2 text-sm underline">
-      {$t('common.btn.learnMore')}
+      {@html $t('common.btn.learnMore')}
     </div>
   </article>
 </button>
