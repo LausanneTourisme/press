@@ -200,7 +200,7 @@ export const schemaStep4 = schemaStep3
         travelInsuranceCoveringSwitzerland: z.boolean(),
         remarks: z.string().nullish(),
         readTermsOfAcceptance: z.boolean( { error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
-        newsletter: z.boolean(),
+        newsletter: z.boolean().default(true),
     })
     .superRefine((data, ctx) => {
         if(!data.readTermsOfAcceptance) {

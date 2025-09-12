@@ -1,6 +1,7 @@
 import { PUBLIC_BASE_URL } from '$env/static/public';
 import { defaultLocale, isValidLocale, loadTranslations, setLocale, supportedLocales, translations, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
+import { loadFlash } from 'sveltekit-flash-message/server';
 
 const getUrlLocale = (pathname: string): undefined | Locale => {
     let match = pathname.match(/^\/[a-z]{2}/i);
@@ -9,7 +10,7 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
     return isValidLocale(match[0].replace('/', '')) ? match[0].replace('/', '') as Locale : undefined;
 }
 
-export const load = async ({ url, cookies, request, locals, route , ...rest }) => {
+export const load = loadFlash(async ({ url, cookies, request, locals, route , ...rest }) => {
     const lang = getUrlLocale(url.pathname) ?? defaultLocale;
     // undefined case covered by src/params/locale.ts
     await Promise.all([
@@ -35,4 +36,4 @@ export const load = async ({ url, cookies, request, locals, route , ...rest }) =
         translations: translationsLoaded, // `translations` on server contain all translations loaded by different clients
         seo,
     };
-};
+});
