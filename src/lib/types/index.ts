@@ -80,16 +80,16 @@ export type MediaProfileJournalist = {
     mediaCoveragePrint: {
       totalPages?: number,
       articleLength?: number,
-      publishDate?: Date
+      publishDate?: string
     },
     mediaCoverageOnline: {
       articleLength?: number,
       articleThematic?: number,
-      publishDate?: Date
+      publishDate?: string
     },
     mediaCoverageTvOrRadio: {
       articleThematic?: string,
-      publishDate?: Date
+      publishDate?: string
     },
     travelInformation: {
       departurePoint: {
@@ -99,13 +99,13 @@ export type MediaProfileJournalist = {
       },
       returnJourney?: string,
       travelReductions: TravelReduction[],
-      lastVisit?: Date
+      lastVisit?: string
     },
     personalInformation: {
       title?: Title,
       firstName?: string,
       lastName?: string,
-      birthday?: Date,
+      birthday?: string,
       phoneNumber?: string,
       email?: string,
       address: {
@@ -120,7 +120,7 @@ export type MediaProfileJournalist = {
       medicalAndPhysicalCondition?: string,
       passport: {
         number?: string,
-        validity?: Date
+        validity?: string
       },
       emergencyContacts: {name?: string, phoneNumber?: string}[],
     },
