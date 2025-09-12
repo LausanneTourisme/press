@@ -38,10 +38,10 @@
 
 <div class="p-6 md:pt-16">
   <Heading class="text-center ">
-    {title}
+    {@html title}
   </Heading>
   <Paragraph centered>
-    {paragraph}
+    {@html paragraph}
   </Paragraph>
 </div>
 
@@ -70,5 +70,5 @@
   {/each}
 </Container>
 <div class="mt-8 flex justify-center {showMore ? 'hidden' : ''}">
-  <Button onclick={displayMore}>{$t(`common.btn.showMoreThemes`)}</Button>
+  <Button onclick={displayMore}>{@html $t(`common.btn.showMoreThemes`)}</Button>
 </div>

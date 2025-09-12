@@ -77,5 +77,5 @@
       {formatNumber(animatedResult)}
     </span>
   </div>
-  <p class="stat-title !text-base max-w-48 text-center text-wrap break-words">{label}</p>
+  <p class="stat-title !text-base max-w-48 text-center text-wrap break-words">{@html label}</p>
 </div>

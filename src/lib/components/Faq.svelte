@@ -42,27 +42,27 @@
   >
     {#snippet title()}
       <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
-        {$t('common.faq.authorisation.title')}
+        {@html $t('common.faq.authorisation.title')}
       </Heading>
     {/snippet}
 
     {#snippet children()}
       <Paragraph class="font-semibold">
         <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
-        {$t('common.faq.authorisation.paragraph1')}
+        {@html $t('common.faq.authorisation.paragraph1')}
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.authorisation.paragraph2')}
+        {@html $t('common.faq.authorisation.paragraph2')}
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.authorisation.paragraph3')}
+        {@html $t('common.faq.authorisation.paragraph3')}
       </Paragraph>
       <Paragraph class="font-semibold">
         <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
-        {$t('common.faq.authorisation.paragraph4')}
+        {@html $t('common.faq.authorisation.paragraph4')}
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.authorisation.paragraph5')}
+        {@html $t('common.faq.authorisation.paragraph5')}
       </Paragraph>
     {/snippet}
   </Shelf>
@@ -76,23 +76,23 @@
   >
     {#snippet title()}
       <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
-        {$t('common.faq.drone.title')}
+        {@html $t('common.faq.drone.title')}
       </Heading>
     {/snippet}
 
     {#snippet children()}
       <Paragraph class="font-semibold">
         <ChevronRight class="mb-2 inline h-2 w-2" />
-        {$t('common.faq.drone.paragraph1')}
+        {@html $t('common.faq.drone.paragraph1')}
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.drone.paragraph2.part1')}
+        {@html $t('common.faq.drone.paragraph2.part1')}
         (
         <a class="inline text-blue-500" href="mailto:drones@lausanne-airport.ch" target="_blank">
           drones@lausanne-airport.ch
         </a>
         )
-        {$t('common.faq.drone.paragraph2.part2')}
+        {@html $t('common.faq.drone.paragraph2.part2')}
         &nbsp; (
         <a class="inline text-blue-500" href="mailto:drones@lausanne.ch" target="_blank">
           drones@lausanne.ch
@@ -100,17 +100,17 @@
         ).
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.drone.paragraph3')}
+        {@html $t('common.faq.drone.paragraph3')}
         <a
           class="inline text-blue-500"
           href="https://www.lausanne.ch/officiel/administration/securite-et-economie/police-de-lausanne/bons-reflexes/autorisation-survol-drone.html"
           target="_blank"
         >
-          {$t('common.faq.drone.paragraph3.link-text')}
+          {@html $t('common.faq.drone.paragraph3.link-text')}
         </a>.
       </Paragraph>
       <Paragraph>
-        {$t('common.faq.drone.paragraph4')}
+        {@html $t('common.faq.drone.paragraph4')}
       </Paragraph>
     {/snippet}
   </Shelf>
@@ -124,13 +124,13 @@
   >
     {#snippet title()}
       <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
-        {$t('common.faq.access.title')}
+        {@html $t('common.faq.access.title')}
       </Heading>
     {/snippet}
 
     {#snippet children()}
       <Paragraph>
-        {$t('common.faq.access.paragraph1')}
+        {@html $t('common.faq.access.paragraph1')}
         &nbsp;
         <a
           href="https://www.lausanne-tourisme.ch/{$locale}/{$t(
@@ -138,7 +138,7 @@
           )}/"
           class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
         >
-          {$t('common.faq.access.paragraph1.more-informations')}
+          {@html $t('common.faq.access.paragraph1.more-informations')}
           <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
         </a>
       </Paragraph>
@@ -154,13 +154,13 @@
   >
     {#snippet title()}
       <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
-        {$t('common.faq.travel.title')}
+        {@html $t('common.faq.travel.title')}
       </Heading>
     {/snippet}
 
     {#snippet children()}
       <Paragraph>
-        {$t('common.faq.travel.paragraph1.part1')}
+        {@html $t('common.faq.travel.paragraph1.part1')}
         <a
           href={$t('common.faq.travel.paragraph1.link')}
           class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
@@ -169,7 +169,7 @@
           <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
         </a>
         <br />
-        {$t('common.faq.travel.paragraph1.part2')}
+        {@html $t('common.faq.travel.paragraph1.part2')}
       </Paragraph>
     {/snippet}
   </Shelf>
@@ -183,13 +183,13 @@
   >
     {#snippet title()}
       <Heading tag="h3" class="mt-0 text-left text-xl font-semibold">
-        {$t('common.faq.mention.title')}
+        {@html $t('common.faq.mention.title')}
       </Heading>
     {/snippet}
 
     {#snippet children()}
       <Paragraph>
-        {$t('common.faq.mention.paragraph1')}
+        {@html $t('common.faq.mention.paragraph1')}
         <span class="font-bold">
           <Link
             withIcon={false}
@@ -204,7 +204,7 @@
 
       <div class="overflow-x-auto bg-red-50 dark:text-black">
         <Paragraph class="px-4 font-bold dark:text-black">
-          {$t('common.faq.mention.paragraph2.in-social-networks')}
+          {@html $t('common.faq.mention.paragraph2.in-social-networks')}
         </Paragraph>
 
         <table class="table">
@@ -222,7 +222,7 @@
                 </div>
               </td>
               <td>
-                {$t('common.faq.mention.paragraph2.instagram')}
+                {@html $t('common.faq.mention.paragraph2.instagram')}
               </td>
             </tr>
             <tr class="h-auto md:h-20">
@@ -238,7 +238,7 @@
                 </div>
               </td>
               <td>
-                {$t('common.faq.mention.paragraph2.linkedIn')}
+                {@html $t('common.faq.mention.paragraph2.linkedIn')}
               </td>
             </tr>
           </tbody>
@@ -247,7 +247,7 @@
 
       <div class="mt-1 bg-red-50 p-4 pb-5 dark:text-black">
         <Paragraph class="font-bold  dark:text-black">
-          {$t('common.faq.mention.paragraph3.find-us')}
+          {@html $t('common.faq.mention.paragraph3.find-us')}
         </Paragraph>
         <div class="inline-flex">
           <Link

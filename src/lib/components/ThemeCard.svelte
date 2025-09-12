@@ -87,7 +87,7 @@
       tag="h3"
       class="translate-y-0 p-2 text-white opacity-100 shadow-gray-950 transition-transform [text-shadow:_0_0_10px_var(--tw-shadow-color)] group-hover:translate-y-72 group-hover:opacity-0 md:p-4"
     >
-      {$t(`themes.${theme}.title`)}
+      {@html $t(`themes.${theme}.title`)}
     </Heading>
     <div
       class={twMerge(
@@ -104,7 +104,7 @@
           class="aspect-square max-h-24"
         />
         <Paragraph class="w-full px-2 text-center text-base font-medium text-gray-950">
-          {$t(`themes.${theme}.themecard.more`)}
+          {@html $t(`themes.${theme}.themecard.more`)}
         </Paragraph>
       </div>
     </div>
