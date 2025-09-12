@@ -33,6 +33,7 @@
                 "area-of-activity-section": {
                     "title": "Area of activity:",
                     "choices": {
+                        "please-select": "Please select",
                         "journalist": "Journalist",
                         "influencer": "Influencer",
                         "media": "Media",

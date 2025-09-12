@@ -33,6 +33,7 @@
                 "area-of-activity-section": {
                     "title": "Tätigkeitsbereich:",
                     "choices": {
+                        "please-select": "Bitte auswählen",
                         "journalist": "Journalistin/Journalist",
                         "influencer": "Influencerin/Influencer",
                         "media": "Medien",
