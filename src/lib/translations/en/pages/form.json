@@ -3,7 +3,22 @@
     "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
     "validations": {
         "non-empty-array": "Pick at least one option",
-        "read-terms-of-acceptance": "You must accept the terms of service to continue.",
         "number-min-1": "Number must be greater than or equal to 1"
-    }
+    },
+    "required": "(required)",
+    "newsletter": {
+        "title": "Newsletter",
+        "paragraph": "I would like to keep posted on current tourist information from Lausanne Tourisme (Invitations to events, Newsletters, Press Releases, …)"
+    },
+    "terms-of-acceptance": {
+        "title": "Data protection & management",
+        "content": "I have read these statements regarding data protection and the handling of personal data. I agree that Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, may integrate the data entered into this form into the dedicated and intended application. I agree that Lausanne Tourisme may share my data with third parties (e.g. travel companies for my travel needs, destinations, agencies, hotels for overnight stays, restaurants for reservations, event locations and other tourist service providers) in order to receive recommendations, information and offers concerning my trip and/or the event from these third parties directly by e-mail.",
+        "accept-terms": "I have read and accept the conditions"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "error-on-sending": "An error occured while sending. Please try again later"
 }

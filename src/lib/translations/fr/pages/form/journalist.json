@@ -60,7 +60,7 @@
             "radio-and-tv": {
                 "title": "Statistique du média radio/TV",
                 "emission-name": "Nom de l'émission",
-                "emission-name-placeholder": "RTS",
+                "emission-name-placeholder": "Lausanne et l'eau",
                 "viewers": "Nombre d'auditeurs"
             },
             "online": {
