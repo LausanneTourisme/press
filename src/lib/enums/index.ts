@@ -37,6 +37,7 @@ export const Themes = {
 export const Forms = {
   Journalist: 'journalist',
   ContentCreator: 'content-creator',
+  Thanks: 'thanks'
 } as const;
 
 export const MediaTypes = {

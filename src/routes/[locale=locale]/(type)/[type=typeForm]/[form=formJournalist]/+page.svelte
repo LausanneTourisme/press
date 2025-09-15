@@ -1,19 +1,17 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
   import { page } from '$app/state';
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import { t } from '$lib/translations';
+  import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus } from 'lucide-svelte';
-  import SuperDebug, { superForm } from 'sveltekit-superforms';
+  import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
-  import { onMount } from 'svelte';
-  import Botpoison from '@botpoison/browser';
-  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   // TODO SEO
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
@@ -1540,7 +1538,7 @@
           </label>
           <textarea
             id="personal-information-remarks"
-            defaultValue={$form.remarks as string|undefined ?? ''}
+            defaultValue={($form.remarks as string | undefined) ?? ''}
             bind:value={$form.remarks}
             class="textarea w-full"
           ></textarea>
