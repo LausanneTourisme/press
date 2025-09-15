@@ -23,5 +23,6 @@
   "themes.wellness.slug": "wohlbefinden",
 
   "form.content-creator.slug": "inhaltsersteller",
-  "form.journalist.slug": "journalist"
+  "form.journalist.slug": "journalist",
+  "form.thanks.slug": "danke"
 }

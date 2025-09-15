@@ -24,5 +24,6 @@
 
 
   "form.content-creator.slug": "content-creator",
-  "form.journalist.slug": "journalist"
+  "form.journalist.slug": "journalist",
+  "form.thanks.slug": "thanks"
 }
