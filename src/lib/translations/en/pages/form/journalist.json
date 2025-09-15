@@ -25,12 +25,142 @@
                 "city": "Please enter your home city.",
                 "country": "Please enter your home country.",
                 "postal-code": "Please enter your postcode."
-            }
+            },
+            "passport": "Please provide all information"
         },
         "emergency-contacts": {
             "name": "Please enter the name of your emergency contact.",
             "phone-number": "Please enter the phone number of your emergency contact.",
             "minimum": "Please provide at least one emergency contact."
+        }
+    },
+    "form": {
+        "media-name": "Media name",
+        "media-name-placeholder": "",
+        "media-thematic": "Media theme",
+        "media-thematic-placeholder": "general, travel, culture, lifestyle, ...",
+        "audience-profile": "Audience profile",
+        "audience-profile-placeholder": "Age, level of education, gender, place of residence, interests, etc.",
+        "types": {
+            "title": "Media type",
+            "print": "Print",
+            "online": "Online",
+            "tv": "TV",
+            "radio": "Radio"
+        },
+        "statistics": {
+            "title": "Information on media statistics",
+            "print": {
+                "title": "Print media statistics",
+                "copies": "Circulation/number of copies",
+                "readers": "Coverage/number of readers",
+                "broadcast-location": "Broadcast location",
+                "broadcast-location-placeholder": "kiosk, hotel, subscription, etc."
+            },
+            "radio-and-tv": {
+                "title": "Radio/TV media statistics",
+                "emission-name": "Emission Name",
+                "emission-name-placeholder": "Lausanne and water",
+                "viewers": "Number of viewers/listeners"
+            },
+            "online": {
+                "title": "Online media statistics",
+                "website": "Website",
+                "website-placeholder": "",
+                "monthly-unique-visitors": "Monthly reach/visitors unique per month",
+                "montlhy-page-views": "Number of page views per month"
+            }
+        },
+        "coverage": {
+            "title": "Information on media results",
+            "print": {
+                "title": "Media coverage (print)",
+                "total-pages": "Total pages",
+                "article-length": "Article length",
+                "publish-date": "Article publish date"
+            },
+            "radio-and-tv": {
+                "title": "Radio/TV media coverage",
+                "article-thematic": "Subject of the broadcast",
+                "article-thematic-placeholder": "",
+                "publish-date": "Airing date"
+            },
+            "online": {
+                "title": "Online media coverage",
+                "article-length": "Article length",
+                "article-thematic": "Subject of the article",
+                "article-thematic-placeholder": "",
+                "publish-date": "Article publish date"
+            }
+        },
+        "travel-information": {
+            "title": "Travel information",
+            "departure-point": {
+                "title": "Departure point",
+                "city": "City",
+                "city-placeholder": "Lausanne",
+                "country": "Country",
+                "country-placeholder": "Switzerland",
+                "outward-journey": {
+                    "title": "Outward journey",
+                    "information": "Please specify the date, time, flight/train number and station/airport of arrival."
+                }
+            },
+            "return-journey": {
+                "title": "Return journey",
+                "information": "Please specify the date, time, flight/train number and station/airport of departure."
+            },
+            "travel-reduction": {
+                "title": "Reduction on swiss transports",
+                "please-tick": "Please tick the appropriate box",
+                "point-to-point-travelcard": "Point-to-point Travelcard",
+                "half-fare": "Half-fare",
+                "swiss-ga-travelcard": "Swiss GA Travel Card"
+            },
+            "last-visit": "Last date for visit to Lausanne/Switzerland"
+        },
+        "personal-information": {
+            "title": "Personal information",
+            "titles": {
+                "title": "Title",
+                "mrs": "Mrs",
+                "mr": "Mr",
+                "they": "They"
+            },
+            "first-name": "First Name",
+            "first-name-placeholder": "Halle ",
+            "last-name": "Last name",
+            "last-name-placeholder": "Lergic",
+            "freelance": "Are you freelance?",
+            "spoken-languages": {
+                "title": "Spoken languages",
+                "placeholder": "English, french, german, italian, ..."
+            },
+            "passport":{
+                "title": "Passport number and validity",
+                "number": "Number",
+                "validity": "Validity"
+            },
+            "birth-date": "Date of birth",
+            "address": {
+                "title": "Address",
+                "street-address": "Street",
+                "city": "City",
+                "country": "Country",
+                "country-placeholder": "Country of residence...",
+                "postal-code": "Postal code"
+            },
+            "phone-number": "Mobile phone number (with area code)",
+            "email": "Email",
+            "allergies": "Food allergies or restrictions",
+            "medical-and-physical-condition": "Medical and physical conditio",
+            "emergency-contacts": {
+                "title": "Emergency contacts",
+                "name": "Name",
+                "phone-number": "Phone number (with area code)"
+            },
+            "travel-insurance": "Travel insurance covering Switzerland?",
+            "remarks": "Remarks"
         }
     }
 }

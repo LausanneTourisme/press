@@ -4,5 +4,21 @@
     "validations": {
         "non-empty-array": "Wählen Sie mindestens eine Option aus",
         "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren"
-    }
+    },
+    "required": "(Erforderlich)",
+    "newsletter": {
+        "title": "Newsletter",
+        "paragraph": "Bitte senden Sie mir aktuelle, touristische Informationen von Lausanne Tourismus (Event-Einladungen, Newsletters, Pressemitteilungen, …)"
+    },
+    "terms-of-acceptance": {
+        "title": "Datenschutz & -verwaltung",
+        "content": "Ich habe über die Datenschutzrichtlinien und deren Nutzung Kenntnis genommen. Lausanne Tourisme, Av. de Rhodanie 2, 1001 Lausanne hat meine Zustimmung, meine Daten aus dem vorliegenden Forumlar zu nutzen.\nIch erlaube Lausanne Tourisme meine Daten an Dritte (z.B. Reisebüros für meine Reiseplanung, Destinationen, Agenturen, Hotels für meine Übernachtungen, Restaurants für Reservationen, Eventlokale und andere touristische Anbieter) weiterzugeben, damit Letztere mir direkt per Email Vorschläge, Informationen, Offerten über meine Reise und/oder den Event zukommenlassen können.",
+        "accept-terms": "Ich habe die Bedingungen zur Kenntnis genommen und akzeptiere sie"
+    },
+    "yes": "Ja",
+    "no": "Nein",
+    "next": "Nächste",
+    "previous": "Vorherige",
+    "submit": "Einsenden",
+    "error-on-sending": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal."
 }
