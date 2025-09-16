@@ -6,5 +6,25 @@
       "destination": "/:lang/:section/:slug",
       "permanent": false
     }
+  ],
+  "headers": [
+    {
+      "source": "/:lang(fr|en|de)/:section(communiques-de-presse-et-dossier-de-presse|press-releases-and-press-kits|pressemitteilungen-und-pressedossier)"
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=3600"
+        }
+      ]
+    },
+    {
+      "source": "/:lang(fr|en|de)/:section(themes|themen)/:theme"
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=3600"
+        }
+      ]
+    }
   ]
 }
