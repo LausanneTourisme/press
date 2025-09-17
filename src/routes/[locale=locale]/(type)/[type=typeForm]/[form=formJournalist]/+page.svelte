@@ -11,12 +11,12 @@
   import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
-  import { schemaStep1Refined, schemaStep2Refined, schemaStep3, schemaStep4 } from './schema';
-  // TODO SEO
+  import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
+
   const countries = $derived(Object.values((page.data as PageData).countries));
   const steps = [
-    zod4(schemaStep1Refined),
-    zod4(schemaStep2Refined),
+    zod4(schemaStep1),
+    zod4(schemaStep2),
     zod4(schemaStep3),
     zod4(schemaStep4)
   ];

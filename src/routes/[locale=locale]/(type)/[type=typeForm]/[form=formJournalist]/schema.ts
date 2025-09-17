@@ -126,9 +126,8 @@ export const schemaStep1 = z.object({
     printMediaStatistics: printMediaStatistics,
     radioAndTVMediaStatistics: radioAndTVMediaStatistics,
     onlineMediaStatistics: onlineMediaStatistics,
-}).required();
-
-export const schemaStep1Refined = schemaStep1
+})
+    .required()
     .superRefine((data, ctx) => {
         if (data.mediaTypes.includes(MediaTypes.Print) && !data.printMediaStatistics) {
             ctx.addIssue({
@@ -155,14 +154,13 @@ export const schemaStep1Refined = schemaStep1
         }
     });
 
+
 export const schemaStep2 = schemaStep1.extend({
     mediaCoveragePrint: mediaCoveragePrint,
     mediaCoverageOnline: mediaCoverageOnline,
     mediaCoverageTvOrRadio: mediaCoverageTvOrRadio,
 })
-    .required();
-
-export const schemaStep2Refined = schemaStep2
+    .required()
     .superRefine((data, ctx) => {
         if (data.mediaTypes.includes(MediaTypes.Print) && !data.mediaCoveragePrint) {
             ctx.addIssue({
@@ -199,11 +197,11 @@ export const schemaStep4 = schemaStep3
         personalInformation: personalInformation,
         travelInsuranceCoveringSwitzerland: z.boolean(),
         remarks: z.string().nullish(),
-        readTermsOfAcceptance: z.boolean( { error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
+        readTermsOfAcceptance: z.boolean({ error: `${RouteTypes.Form}.validations.read-terms-of-acceptance` }),
         newsletter: z.boolean().default(true),
     })
     .superRefine((data, ctx) => {
-        if(!data.readTermsOfAcceptance) {
+        if (!data.readTermsOfAcceptance) {
             ctx.addIssue({
                 code: "custom",
                 path: ["readTermsOfAcceptance"],
