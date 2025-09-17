@@ -155,7 +155,7 @@ export const schemaStep1 = z.object({
     });
 
 
-export const schemaStep2 = schemaStep1.extend({
+export const schemaStep2 = schemaStep1.safeExtend({
     mediaCoveragePrint: mediaCoveragePrint,
     mediaCoverageOnline: mediaCoverageOnline,
     mediaCoverageTvOrRadio: mediaCoverageTvOrRadio,
@@ -188,12 +188,12 @@ export const schemaStep2 = schemaStep1.extend({
     });
 
 export const schemaStep3 = schemaStep2
-    .extend({
+    .safeExtend({
         travelInformation: travelInformation,
     });
 
 export const schemaStep4 = schemaStep3
-    .extend({
+    .safeExtend({
         personalInformation: personalInformation,
         travelInsuranceCoveringSwitzerland: z.boolean(),
         remarks: z.string().nullish(),
