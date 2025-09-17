@@ -6,7 +6,7 @@ import { z } from 'zod/v4';
 const mediaEnum = z.enum(getValues(MediaTypes));
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 
-export const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Form}.validations.non-empty-array`);
+const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Form}.validations.non-empty-array`);
 
 // required when media type is "print" (via superRefine)
 export const printMediaStatistics = z.object({
