@@ -61,7 +61,7 @@ export const schemaStep1 = z.object({
         }
     });
 
-export const schemaStep2 = schemaStep1.extend({
+export const schemaStep2 = schemaStep1.safeExtend({
     coverage: z.object({
         publicationAngle: zodRequiredString(),
         subjectsOfInterest: zodRequiredString(),
@@ -72,7 +72,7 @@ export const schemaStep2 = schemaStep1.extend({
 });
 
 
-export const schemaStep3 = schemaStep2.extend({
+export const schemaStep3 = schemaStep2.safeExtend({
     travelInformation: z.object({
         departurePoint: z.object({
             city: zodRequiredString(),
@@ -85,7 +85,7 @@ export const schemaStep3 = schemaStep2.extend({
     }),
 }).required();
 
-export const schemaStep4 = schemaStep3.extend({
+export const schemaStep4 = schemaStep3.safeExtend({
     personalInformation: z.object({
         title: z.enum(getValues(Titles)).default(Titles.They),
         firstName: zodRequiredString(),
