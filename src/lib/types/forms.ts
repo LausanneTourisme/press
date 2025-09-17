@@ -79,20 +79,20 @@ export type MediaProfileContentCreator = {
         targetAudience?: string,
         onlinePresence: SocialNetwork[],
         statistics: {
-            instagram: {
+            instagram?: {
                 profileURL?: string,
                 subscriberStatisticsScreenshots: File[],
                 accountsThatRespondedScreenshots: File[],
             },
-            tiktok: {
+            tiktok?: {
                 profileURL?: string,
                 subscriberStatisticsScreenshots: File[],
             }
-            youtube: {
+            youtube?: {
                 profileURL: string,
                 subscriberStatisticsScreenshots: File[],
             },
-            blog: {
+            blog?: {
                 url?: string,
                 audienceProfile?: string,
                 performance?: {
@@ -101,49 +101,49 @@ export type MediaProfileContentCreator = {
                 }
             },
         },
-        coverage: {
-            publicationAngle: string,
-            subjectsOfInterest: string,
-            publicationChannels: SocialNetwork[],
-            proposedMediaCoverage: string,
-            timingAndpublicationDates: string
+    },
+    coverage: {
+        publicationAngle: string,
+        subjectsOfInterest: string,
+        publicationChannels: SocialNetwork[],
+        proposedMediaCoverage: string,
+        timingAndpublicationDates: string
+    },
+    travelInformation: {
+        departurePoint: {
+            city?: string,
+            country?: string,
+            outwardJourney?: string
         },
-        travelInformation: {
-            departurePoint: {
-                city?: string,
-                country?: string,
-                outwardJourney?: string
-            },
-            returnJourney?: string,
-            travelReductions: TravelReduction[],
-            lastVisit?: string
+        returnJourney?: string,
+        travelReductions: TravelReduction[],
+        lastVisit?: string
+    },
+    personalInformation: {
+        title?: Title,
+        firstName?: string,
+        lastName?: string,
+        birthday?: string,
+        phoneNumber?: string,
+        email?: string,
+        address: {
+            streetAddress?: string,
+            city?: string,
+            postalcode?: string,
+            country?: string
         },
-        personalInformation: {
-            title?: Title,
-            firstName?: string,
-            lastName?: string,
-            birthday?: string,
-            phoneNumber?: string,
-            email?: string,
-            address: {
-                streetAddress?: string,
-                city?: string,
-                postalcode?: string,
-                country?: string
-            },
-            freelance?: boolean,
-            spokenLanguages?: string,
-            allergies?: string,
-            medicalAndPhysicalCondition?: string,
-            passport: {
-                number?: string,
-                validity?: string
-            },
-            emergencyContacts: { name?: string, phoneNumber?: string }[],
+        freelance?: boolean,
+        spokenLanguages?: string,
+        allergies?: string,
+        medicalAndPhysicalCondition?: string,
+        passport: {
+            number?: string,
+            validity?: string
         },
-        travelInsuranceCoveringSwitzerland?: boolean,
-        remarks?: string,
-        readTermsOfAcceptance?: boolean,
-        newsletter?: boolean
-    }
+        emergencyContacts: { name?: string, phoneNumber?: string }[],
+    },
+    travelInsuranceCoveringSwitzerland?: boolean,
+    remarks?: string,
+    readTermsOfAcceptance?: boolean,
+    newsletter?: boolean
 }
