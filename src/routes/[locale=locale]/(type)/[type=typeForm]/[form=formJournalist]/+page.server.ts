@@ -1,7 +1,7 @@
 import { Forms, MediaTypes, RouteTypes } from "$enums";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { supportedLocales, translations, type Locale } from "$lib/translations";
-import type { MediaProfileJournalist } from "$types";
+import type { MediaProfileJournalist } from "$types/forms";
 import { fail, redirect } from '@sveltejs/kit';
 import type { Translations } from '@sveltekit-i18n/base';
 import countries from 'i18n-iso-countries';
