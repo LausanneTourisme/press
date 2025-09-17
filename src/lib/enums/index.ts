@@ -4,6 +4,7 @@ export type Form = typeof Forms[keyof typeof Forms]
 export type MediaType = typeof MediaTypes[keyof typeof MediaTypes]
 export type TravelReduction = typeof TravelReductions[keyof typeof TravelReductions]
 export type Title = typeof Titles[keyof typeof Titles]
+export type SocialNetwork = typeof SocialNetworks[keyof typeof SocialNetworks]
 
 //ThemeKeys available under 😉 needs reference of Themes
 
@@ -59,6 +60,13 @@ export const Titles = {
   They: 'they',
 } as const;
 
+export const SocialNetworks = {
+  Instagram: "instagram",
+  TikTok: "tiktok",
+  YouTube: "youtube",
+  Blog: "blog",
+} as const
+
 // generic helper
 function invert<T extends Record<string, string>>(obj: T) {
   return Object.fromEntries(
@@ -76,3 +84,4 @@ export const FormsKeys = invert(Forms);
 export const MediaTypesKeys = invert(MediaTypes);
 export const TravelReductionsKeys = invert(TravelReductions);
 export const TitlesKeys = invert(Titles);
+export const SocialNetworksKeys = invert(SocialNetworks);
