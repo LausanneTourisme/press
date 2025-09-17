@@ -74,32 +74,30 @@ export type MediaProfileJournalist = {
 }
 
 export type MediaProfileContentCreator = {
-    socialMediaInformation: {
-        contentPositioning?: string,
-        targetAudience?: string,
-        onlinePresence: SocialNetwork[],
-        statistics: {
-            instagram?: {
-                profileURL?: string,
-                subscriberStatisticsScreenshots: File[],
-                accountsThatRespondedScreenshots: File[],
-            },
-            tiktok?: {
-                profileURL?: string,
-                subscriberStatisticsScreenshots: File[],
+    contentPositioning?: string,
+    targetAudience?: string,
+    onlinePresence: SocialNetwork[],
+    statistics: {
+        instagram?: {
+            profileURL?: string,
+            subscriberStatisticsScreenshots: File[],
+            accountsThatRespondedScreenshots: File[],
+        },
+        tiktok?: {
+            profileURL?: string,
+            subscriberStatisticsScreenshots: File[],
+        }
+        youtube?: {
+            profileURL: string,
+            subscriberStatisticsScreenshots: File[],
+        },
+        blog?: {
+            url?: string,
+            audienceProfile?: string,
+            performance?: {
+                monthlyUniqueVisitors?: number,
+                montlhyPageViews?: number
             }
-            youtube?: {
-                profileURL: string,
-                subscriberStatisticsScreenshots: File[],
-            },
-            blog?: {
-                url?: string,
-                audienceProfile?: string,
-                performance?: {
-                    monthlyUniqueVisitors?: number,
-                    montlhyPageViews?: number
-                }
-            },
         },
     },
     coverage: {
