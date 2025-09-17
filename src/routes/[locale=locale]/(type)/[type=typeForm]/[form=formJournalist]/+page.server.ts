@@ -2,7 +2,7 @@ import { Forms, MediaTypes, RouteTypes } from "$enums";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { supportedLocales, translations, type Locale } from "$lib/translations";
 import type { MediaProfileJournalist } from "$types";
-import { fail } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 import type { Translations } from '@sveltekit-i18n/base';
 import countries from 'i18n-iso-countries';
 import de from "i18n-iso-countries/langs/de.json";
@@ -54,7 +54,7 @@ export const actions = {
             }
         })
         if (internal_reponse[0].status === 'sent') {
-            return message(form, 'Form posted successfully!');
+            return redirect(303,`/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`)
         }
 
         setFlash({
