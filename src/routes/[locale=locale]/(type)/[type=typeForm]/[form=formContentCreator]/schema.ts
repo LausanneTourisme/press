@@ -1,4 +1,4 @@
-import { Forms, getValues, RouteTypes, SocialNetworks, Titles } from "$enums";
+import { Forms, getValues, RouteTypes, SocialNetworks, Titles, TravelReductions } from "$enums";
 import { zodOptionalString, zodRequiredString } from "$lib/helpers/zod";
 import { z } from 'zod/v4';
 
