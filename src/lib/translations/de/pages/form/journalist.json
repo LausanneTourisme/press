@@ -54,7 +54,7 @@
                 "title": "Print Medienstatistiken",
                 "copies": "Auflage/Anzahl der Exemplare",
                 "readers": "Reichweite/Anzahl der Leser",
-                "broadcast-location": "Verteilungsort",
+                "broadcast-location": "Verteilungsorte",
                 "broadcast-location-placeholder": "Kiosk, Hotel, Abonnement usw."
             },
             "radio-and-tv": {
