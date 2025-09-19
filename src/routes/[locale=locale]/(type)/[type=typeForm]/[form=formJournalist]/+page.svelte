@@ -12,16 +12,13 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
+  import Loading from '$lib/components/Loading.svelte';
 
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const steps = [
-    zod4(schemaStep1),
-    zod4(schemaStep2),
-    zod4(schemaStep3),
-    zod4(schemaStep4)
-  ];
+  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
+  let isSubmitting = $state(false);
 
   const { form, errors, enhance, message, options, validateForm, constraints } = $derived.by(() =>
     superForm((page.data as PageData).form, {
@@ -33,6 +30,7 @@
         if (form.valid) step = 0;
       },
       onSubmit: async ({ cancel, formData }) => {
+        isSubmitting = true;
         const isLast = steps.length - 1 === step;
         options.validators = steps[step];
 
@@ -87,6 +85,7 @@
           document.querySelector('body')?.scrollIntoView();
           step = step + 1;
         }
+        isSubmitting = false;
       }
     })
   );
@@ -1621,11 +1620,19 @@
         onclick={(e) => {
           step = step - 1;
         }}
+        disabled={isSubmitting}
       >
         {@html $t(`${RouteTypes.Form}.previous`)}
       </button>
-      <button class="btn">
-        {step < steps.length - 1 ? $t(`${RouteTypes.Form}.next`) : $t(`${RouteTypes.Form}.submit`)}
+      <button class="btn" disabled={isSubmitting}>
+        <span class={isSubmitting ? '' : 'hidden'}>
+          <Loading />
+        </span>
+        <span class={!isSubmitting ? '' : 'hidden'}>
+          {step < steps.length - 1
+            ? $t(`${RouteTypes.Form}.next`)
+            : $t(`${RouteTypes.Form}.submit`)}
+        </span>
       </button>
     </div>
   </form>
