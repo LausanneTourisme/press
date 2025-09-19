@@ -7,8 +7,8 @@ const socialNetworkTypes = z.array(socialNetworkEnum).min(1, `${RouteTypes.Form}
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 
 export const schemaStep1 = z.object({
-    contentPositioning: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.content-positioning` }),
-    targetAudience: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.target-audience` }),
+    contentPositioning: zodRequiredString(),
+    targetAudience: zodRequiredString(),
     onlinePresence: socialNetworkTypes,
     statistics: z.object({
         instagram: z.object({
@@ -67,7 +67,7 @@ export const schemaStep2 = schemaStep1.safeExtend({
         subjectsOfInterest: zodRequiredString(),
         publicationChannels: socialNetworkTypes,
         proposedMediaCoverage: zodRequiredString(),
-        timingAndpublicationDates: zodRequiredString(),
+        timingAndPublicationDates: zodRequiredString(),
     }).required(),
 });
 
