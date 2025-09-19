@@ -54,7 +54,7 @@
                 "title": "Print media statistics",
                 "copies": "Circulation/number of copies",
                 "readers": "Coverage/number of readers",
-                "broadcast-location": "Broadcast location",
+                "broadcast-location": "Broadcast locations",
                 "broadcast-location-placeholder": "kiosk, hotel, subscription, etc."
             },
             "radio-and-tv": {
