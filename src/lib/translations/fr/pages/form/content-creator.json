@@ -25,28 +25,28 @@
         "statistics": {
             "instagram": {
                 "title": "Compte Instagram",
-                "profileURL": "URL du profil",
-                "subscriberStatisticsScreenshots": {
+                "profile-url": "URL du profil",
+                "subscriber-statistics-screenshots": {
                     "title":"Statistiques abonnés (captures d'écran)",
                     "description": "Veuillez inclure les lieux principaux (ville et pays)"
                 },
-                "accountsThatRespondedScreenshots": {
+                "accounts-that-responded-screenshots": {
                     "title": "Comptes ayant réagi (captures d'écran)",
                     "description": "Interaction avec le contenu"
                 }
             },
             "tiktok": {
                 "title": "Compte TikTok",
-                "profileURL": "URL du profil",
-                "subscriberStatisticsScreenshots": {
+                "profile-url": "URL du profil",
+                "subscriber-statistics-screenshots": {
                     "title": "Statistiques abonnés (captures d'écran)",
                     "description": "Veuillez inclure les lieux principaux (ville et pays)"
                 }
             },
             "youtube": {
                 "title": "Compte YouTube",
-                "profileURL": "URL du profil",
-                "subscriberStatisticsScreenshots":  {
+                "profile-url": "URL du profil",
+                "subscriber-statistics-screenshots":  {
                     "title": "Statistiques abonnés (captures d'écran)",
                     "description": "Veuillez inclure les lieux principaux (régions et villes)"
                 }
@@ -54,14 +54,14 @@
             "blog": {
                 "title": "Blog",
                 "url": "URL du Blog",
-                "audienceProfile":  {
+                "audience-profile":  {
                     "title": "Profil de l'audience",
                     "description": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ..."
                 },
-                "performance": {
+                "performances": {
                     "title": "Performances du blog",
-                    "monthlyUniqueVisitors": "Reach/Visiteurs uniques par mois",
-                    "montlhyPageViews": "Nombre de pages vues par mois"
+                    "monthly-unique-visitors": "Reach/Visiteurs uniques par mois",
+                    "montlhy-page-views": "Nombre de pages vues par mois"
                 }
             }
         },
