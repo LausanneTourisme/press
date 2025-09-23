@@ -14,16 +14,16 @@ export const schemaStep1 = z.object({
         instagram: z.object({
             profileURL: z.url(),
             subscriberStatisticsScreenshots: z.file().array(),
-            accountsThatRespondedScreenshots: z.file().array()
-        }).nullable(),
+            accountsThatRespondedScreenshots: z.file().array(),
+        }),
         tiktok: z.object({
             profileURL: z.url(),
             subscriberStatisticsScreenshots: z.file().array(),
-        }).nullable(),
+        }),
         youtube: z.object({
             profileURL: z.url(),
             subscriberStatisticsScreenshots: z.file().array(),
-        }).nullable(),
+        }),
         blog: z.object({
             url: z.url(),
             audienceProfile: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.statistics.${SocialNetworks.Blog}.audience-profile` }),
@@ -31,7 +31,7 @@ export const schemaStep1 = z.object({
                 monthlyUniqueVisitors: z.number().min(1, { error: `${RouteTypes.Form}.validations.number-min-1` }).default(0),
                 montlhyPageViews: z.number().default(0).nullable(),
             }),
-        }).nullable()
+        }),
     }).required()
 })
     .superRefine((data, ctx) => {
