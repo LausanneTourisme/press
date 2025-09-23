@@ -13,16 +13,16 @@ export const schemaStep1 = z.object({
     statistics: z.object({
         instagram: z.object({
             profileURL: z.url(),
-            subscriberStatisticsScreenshots: z.file().array(),
-            accountsThatRespondedScreenshots: z.file().array(),
+            subscriberStatisticsScreenshots: z.file().array().min(1),
+            accountsThatRespondedScreenshots: z.file().array().min(1),
         }),
         tiktok: z.object({
             profileURL: z.url(),
-            subscriberStatisticsScreenshots: z.file().array(),
+            subscriberStatisticsScreenshots: z.file().array().min(1),
         }),
         youtube: z.object({
             profileURL: z.url(),
-            subscriberStatisticsScreenshots: z.file().array(),
+            subscriberStatisticsScreenshots: z.file().array().min(1),
         }),
         blog: z.object({
             url: z.url(),
