@@ -282,7 +282,7 @@
               {@html $t(
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.subscriber-statistics-screenshots.title`
               )}
-              {#if Number($constraints.statistics?.instagram?.subscriberStatisticsScreenshots?.min) >= 0}
+              {#if $constraints.statistics?.instagram?.subscriberStatisticsScreenshots?.required}
                 <span class="text-brand-600 italic">
                   {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -342,7 +342,7 @@
               {@html $t(
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.accounts-that-responded-screenshots.title`
               )}
-              {#if Number($constraints.statistics?.instagram?.accountsThatRespondedScreenshots?.min) >= 0}
+              {#if $constraints.statistics?.instagram?.accountsThatRespondedScreenshots?.required}
                 <span class="text-brand-600 italic">
                   {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -437,7 +437,7 @@
               {@html $t(
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.subscriber-statistics-screenshots.title`
               )}
-              {#if Number($constraints.statistics?.tiktok?.subscriberStatisticsScreenshots?.min) >= 0}
+              {#if $constraints.statistics?.tiktok?.subscriberStatisticsScreenshots?.required}
                 <span class="text-brand-600 italic">
                   {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
@@ -527,7 +527,7 @@
               {@html $t(
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.subscriber-statistics-screenshots.title`
               )}
-              {#if Number($constraints.statistics?.youtube?.subscriberStatisticsScreenshots?.min) >= 0}
+              {#if $constraints.statistics?.youtube?.subscriberStatisticsScreenshots?.required}
                 <span class="text-brand-600 italic">
                   {@html $t(`${RouteTypes.Form}.required`)}
                 </span>
