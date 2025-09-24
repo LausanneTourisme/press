@@ -26,11 +26,11 @@
             "instagram": {
                 "title": "",
                 "profileURL": "",
-                "subscriberStatisticsScreenshots":  {
+                "subscriber-statistics-screenshots":  {
                     "title": "",
                     "description": ""
                 },
-                "accountsThatRespondedScreenshots":  {
+                "accounts-that-responded-screenshots":  {
                     "title": "",
                     "description": ""
                 }
@@ -38,7 +38,7 @@
             "tiktok": {
                 "title": "",
                 "profileURL": "",
-                "subscriberStatisticsScreenshots":  {
+                "subscriber-statistics-screenshots":  {
                     "title": "",
                     "description": ""
                 }
@@ -46,7 +46,7 @@
             "youtube": {
                 "title": "",
                 "profileURL": "",
-                "subscriberStatisticsScreenshots":  {
+                "subscriber-statistics-screenshots":  {
                     "title": "",
                     "description": ""
                 }
