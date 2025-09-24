@@ -1,7 +1,7 @@
-import { Forms, MediaTypes, RouteTypes } from "$enums";
+import { Forms, MediaTypes, RouteTypes, SocialNetworks } from "$enums";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { supportedLocales, translations, type Locale } from "$lib/translations";
-import type { MediaProfileJournalist } from "$types/forms";
+import type { MediaProfileContentCreator, MediaProfileJournalist } from "$types/forms";
 import { fail, redirect } from '@sveltejs/kit';
 import type { Translations } from '@sveltekit-i18n/base';
 import countries from 'i18n-iso-countries';
@@ -45,12 +45,12 @@ export const actions = {
     if (!form.valid) return fail(400, { form });
 
 
-    const html = generateMailContent({ data: form.data as MediaProfileJournalist, userLocale: params.locale as Locale, translations: t })
+    const html = generateMailContent({ data: form.data as MediaProfileContentCreator, userLocale: params.locale as Locale, translations: t })
     const { internal_reponse } = await sendEmail({
       intern_mail: {
         from_name: "No Reply - Press",
         subject: "[Formulaire] - Createur de contenu",
-        html
+        html,
       }
     })
     if (internal_reponse[0].status === 'sent') {
@@ -78,45 +78,157 @@ export const entries: EntryGenerator = () => {
 };
 
 
-const generateMailContent = ({ data, userLocale, translations }: { data: MediaProfileJournalist, userLocale: Locale, translations: Translations.SerializedTranslations }) => {
+const generateMailContent = ({ data, userLocale, translations }: { data: MediaProfileContentCreator, userLocale: Locale, translations: Translations.SerializedTranslations }) => {
+  const t = translations['fr'];
 
 
   let html = `<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Formulaire journaliste</title>
+  <title>Formulaire créateur de contenu</title>
 </head>
 <body>
-  <h1 style="font-weight: 800;width:100%;text-align: center;margin-bottom: 8px;">Formulaire journaliste</h1>
-  <h2 style="font-weight: 800;width: 100%;text-align: center;margin: 8px;">Langue du formulaire: ${translations['fr'][`lang.${userLocale}`]}</h2>
-`;
+  <h1 style="font-weight: 800;width:100%;text-align: center;margin-bottom: 8px;">Formulaire Créateur de contenu</h1>
+  <h2 style="font-weight: 800;width: 100%;text-align: center;margin: 8px;">Langue du formulaire: ${t[`lang.${userLocale}`]}</h2>
+
+  <!-- Profil Média -->
+  <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.social-media-information`]}</h2>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`]} :</span>
+      &nbsp;
+      <span>${data.contentPositioning ?? ''}</span>
+    </div>
+  </section>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.target-audience`]} :</span>
+      &nbsp;
+      <span>${data.targetAudience ?? ''}</span>
+    </div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.title`]} :</span>
+      &nbsp;
+      <span>${data.onlinePresence?.map(x => t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${x}`]).join(', ') ?? ''}</span>
+    </div>
+  `;
+
+  // statistics of the media
+  if (data.onlinePresence?.includes(SocialNetworks.Instagram)) {
+    html += `<!-- Statistiques Print -->
+  <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.title`]}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.profile-url`]} :</span> <span>${data.statistics.instagram?.profileURL ?? ''}</span></div>
+
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
+        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.subscriber-statistics-screenshots`]} :
+      </span>
+      ${data
+        .statistics
+        .instagram
+        ?.subscriberStatisticsScreenshots
+        ?.map((file, index) => {
+          return `<img src="cid:${SocialNetworks.Instagram}_subscriberStatisticsScreenshots_${index}`
+        })
+        ?.join("\n") ?? ''}
+
+    </div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
+        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.accounts-that-responded-screenshots`]} :
+      </span>
+      ${data
+        .statistics
+        .instagram
+        ?.accountsThatRespondedScreenshots
+        ?.map((file, index) => {
+          return `<img src="cid:${SocialNetworks.Instagram}_accountsThatRespondedScreenshots_${index}`
+        })
+        ?.join("\n") ?? ''}
+
+    </div>
+  </section>
+`
+  }
+
 
   html += `<!-- Informations de voyage -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">Informations de voyage</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Départ :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0"><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Ville :</span> <span>${data.travelInformation?.departurePoint?.city ?? ''}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Pays :</span> <span>${data.travelInformation?.departurePoint?.country ?? ''}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Trajet aller :</span> <span>${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span></li></ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Retour :</span> <span>${data.travelInformation?.returnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Réduction sur les transports suisses :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map(x => `<li>${translations['fr'][`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Dernière date de visite à Lausanne/en Suisse :</span> <span>${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).toFormat('dd.MM.yyyy') : ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.`]}</h2>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.title`]} :</span>
+      <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city`]} :</span> <span>${data.travelInformation?.departurePoint?.city ?? ''}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country`]} :</span> <span>${data.travelInformation?.departurePoint?.country ?? ''}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`]} :</span> <span>${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`]} :</span> <span>${data.travelInformation?.returnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`]} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map(x => `<li>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`]} :</span> <span>${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).toFormat('dd.MM.yyyy') : ''}</span></div>
   </section>
 `
 
   html += `<!-- Informations personnelles -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">Informations personnelles</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Titre :</span> <span>${translations['fr'][`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${data.personalInformation.title}`]}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Prénom :</span> <span>${data.personalInformation?.firstName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Nom :</span> <span>${data.personalInformation?.lastName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Date de naissance :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).toFormat('dd.MM.yyyy')}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Téléphone :</span> <span>${data.personalInformation?.phoneNumber ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Email :</span> <span>${data.personalInformation?.email ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Adresse :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0"><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Adresse :</span> <span>${data.personalInformation.address.streetAddress}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Ville :</span> <span>${data.personalInformation.address.city}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">ZIP :</span> <span>${data.personalInformation.address.postalcode}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Pays :</span> <span>${data.personalInformation.address.country}</span></li></ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Langues parlées :</span> <span>${data.personalInformation?.spokenLanguages ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Freelance :</span> <span>${data.personalInformation.freelance ? 'Oui' : 'Non'}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`]}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`]} :</span> <span>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${data.personalInformation.title}`]}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`]} :</span> <span>${data.personalInformation?.firstName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`]} :</span> <span>${data.personalInformation?.lastName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`]} :</span> <span>${data.personalInformation?.phoneNumber ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`]} :</span> <span>${data.personalInformation?.email ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.title`]} :</span>
+      <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.street-address`]} :</span> <span>${data.personalInformation.address.streetAddress}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`]} :</span> <span>${data.personalInformation.address.city}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.postal-code`]} :</span> <span>${data.personalInformation.address.postalcode}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`]} :</span> <span>${data.personalInformation.address.country}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`]} :</span> <span>${data.personalInformation?.spokenLanguages ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.freelance`]} :</span> <span>${data.personalInformation.freelance ? 'Oui' : 'Non'}</span></div>
 
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Passport :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0"><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Numéro :</span> <span>${data.personalInformation?.passport?.number}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Validité :</span> <span>${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).toFormat('dd.MM.yyyy') : ''}</span></li></ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Contacts d'urgence :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.personalInformation?.emergencyContacts?.map(x => `<li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Nom :</span> <span>${x.name}</span></li><li><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Numéro de téléphone :</span> <span>${x.phoneNumber}</span></li>`) ?? ''}</ul></div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.title`]} :</span>
+      <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`]} :</span> <span>${data.personalInformation?.passport?.number}</span>
+        </li>
+        <li>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`]} :</span> <span>${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).toFormat('dd.MM.yyyy') : ''}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.title`]} :</span>
+      <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
+        ${data.personalInformation?.emergencyContacts?.map(x => `
+          <li>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`]} :</span> <span>${x.name}</span>
+          </li>
+          <li>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`]} :</span> <span>${x.phoneNumber}</span>
+          </li>
+        `) ?? ''}
+      </ul>
+    </div>
   </section>
 `
 
