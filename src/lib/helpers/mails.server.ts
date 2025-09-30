@@ -8,13 +8,14 @@ const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).fi
 /**
  * send Email to LT and to the end user.
  * info: from_email is override to use environment variable
- * 
+ *
  * @param intern_mail used to send mail to LT
  * @param external_mail used to send mail to end user
  */
-export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: {from_name: string, subject: string, html: string}, external_mail?: MessagesMessage }): Promise<{
+export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: { from_name: string, subject: string, html: string, images?: mailchimp.MessageImage[] }, external_mail?: MessagesMessage }): Promise<{
     internal_reponse: mailchimp.MessagesSendResponse[],
     external_response?: mailchimp.MessagesSendResponse[],
+    images?: mailchimp.MessageImage[]
 }> => {
 
 
@@ -41,7 +42,7 @@ export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: {
     }
 
     const internal_reponse = await mailchimpTx.messages.send({ message: mail }) as mailchimp.MessagesSendResponse[];
-    
+
     const external_response = external_mail ? await mailchimpTx.messages.send({
         message: {
             ...external_mail,
