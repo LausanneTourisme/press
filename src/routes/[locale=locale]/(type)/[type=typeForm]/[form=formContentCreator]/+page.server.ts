@@ -41,7 +41,7 @@ export const actions = {
   default: async ({ request, params, cookies }) => {
     const t = translations.get();
     const formdata = await request.formData();
-    console.log(formdata)
+    
     await verifyIfHuman(formdata);
 
     const form = await superValidate(formdata, lastStep);
@@ -49,7 +49,6 @@ export const actions = {
     if (!form.valid) {
       return fail(400, { form });
     }
-
 
     // required for mailchimp email body
     const images: Array<{
@@ -69,13 +68,10 @@ export const actions = {
       if (file instanceof File && file.size > 0) {
 
         instagramSubscriberStatisticsScreenshots.push(i);
-
-        const base64Content = await fileToBase64(file);
-        const cid = `${SocialNetworks.Instagram}_subscriber_${i}`;
         images.push({
           type: getMimeType(file.name),
-          name: cid, // Use CID as the name for inline images
-          content: base64Content
+          name: `${SocialNetworks.Instagram}_subscriber_${i}`, // Use CID as the name for inline images
+          content: await fileToBase64(file)
         });
       }
     };
@@ -86,13 +82,10 @@ export const actions = {
       if (file instanceof File && file.size > 0) {
 
         instagramAccountsThatRespondedScreenshots.push(i);
-
-        const base64Content = await fileToBase64(file);
-        const cid = `${SocialNetworks.Instagram}_account_${i}`;
         images.push({
           type: getMimeType(file.name),
-          name: cid, // Use CID as the name for inline images
-          content: base64Content
+          name: `${SocialNetworks.Instagram}_account_${i}`, // Use CID as the name for inline images
+          content: await fileToBase64(file)
         });
       }
     };
@@ -103,13 +96,10 @@ export const actions = {
       if (file instanceof File && file.size > 0) {
 
         tiktokSubscriberStatisticsScreenshots.push(i);
-
-        const base64Content = await fileToBase64(file);
-        const cid = `${SocialNetworks.Instagram}_subscriber_${i}`;
         images.push({
           type: getMimeType(file.name),
-          name: cid, // Use CID as the name for inline images
-          content: base64Content
+          name: `${SocialNetworks.TikTok}_subscriber_${i}`, // Use CID as the name for inline images
+          content: await fileToBase64(file)
         });
       }
     };
@@ -120,13 +110,10 @@ export const actions = {
       if (file instanceof File && file.size > 0) {
 
         youtubeSubscriberStatisticsScreenshots.push(i);
-
-        const base64Content = await fileToBase64(file);
-        const cid = `${SocialNetworks.Instagram}_subscriber_${i}`;
         images.push({
           type: getMimeType(file.name),
-          name: cid, // Use CID as the name for inline images
-          content: base64Content
+          name: `${SocialNetworks.YouTube}_subscriber_${i}`, // Use CID as the name for inline images
+          content: await fileToBase64(file)
         });
       }
     };
@@ -152,8 +139,6 @@ export const actions = {
       }
     });
 
-    console.log("bbbbbbbbbbbbb")
-    console.log(internal_reponse)
     if (internal_reponse.every(x => x.status === 'sent')) {
       return redirect(303, `/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`);
     }
@@ -254,7 +239,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
       </span>
       ${instagramSubscriberStatisticsScreenshots
         .map((index) => {
-          return `<img src="cid:${SocialNetworks.Instagram}_subscriber_${index} style="max-width: 500px; display: block; margin: 10px 0;" />`
+          return `<img src="cid:${SocialNetworks.Instagram}_subscriber_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
         })
         .join("\n") ?? ''}
 
@@ -265,7 +250,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
       </span>
       ${instagramAccountsThatRespondedScreenshots
         .map((index) => {
-          return `<img src="cid:${SocialNetworks.Instagram}_account_${index} style="max-width: 500px; display: block; margin: 10px 0;" />`
+          return `<img src="cid:${SocialNetworks.Instagram}_account_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
         })
         .join("\n") ?? ''}
 
@@ -285,7 +270,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
       </span>
       ${tiktokSubscriberStatisticsScreenshots
         .map((index) => {
-          return `<img src="cid:${SocialNetworks.TikTok}_subscriber_${index} style="max-width: 500px; display: block; margin: 10px 0;" />`
+          return `<img src="cid:${SocialNetworks.TikTok}_subscriber_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
         })
         .join("\n") ?? ''}
 
@@ -344,7 +329,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
     </div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`]} :</span> <span>${data.travelReturnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`]} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelReductions?.map(x => `<li>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`]} :</span> <span>${data.travelLastVisit ? DateTime.fromSQL(data.travelLastVisit).toFormat('dd.MM.yyyy') : ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`]} :</span> <span>${data.travelLastVisit ? DateTime.fromSQL(data.travelLastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
   </section>
 `
 
@@ -354,7 +339,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`]} :</span> <span>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${data.personalTitle}`]}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`]} :</span> <span>${data.personalFirstName ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`]} :</span> <span>${data.personalLastName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalBirthday!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalBirthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`]} :</span> <span>${data.personalPhoneNumber ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`]} :</span> <span>${data.personalEmail ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;">
@@ -384,7 +369,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`]} :</span> <span>${data.passportNumber}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`]} :</span> <span>${data.passportValidity ? DateTime.fromSQL(data.passportValidity).toFormat('dd.MM.yyyy') : ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`]} :</span> <span>${data.passportValidity ? DateTime.fromSQL(data.passportValidity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
         </li>
       </ul>
     </div>
@@ -410,7 +395,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
           <li>
             <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`]} :</span> <span>${data.emergencyContactPhones[index]}</span>
           </li>
-        `) ?? '';
+        `).join("<li>----------------</li>") ?? '';
   }
   html += `
       </ul>
