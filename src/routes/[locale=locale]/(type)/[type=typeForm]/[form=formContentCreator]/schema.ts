@@ -15,9 +15,9 @@ const allowedMimeTypes = [
     'image/svg+xml',
 ];
 const fileSchema = z.instanceof(File)
-    .refine((file) => file.size > 0, "File cannot be empty")
-    .refine((file) => file.size <= 10 * 1024 * 1024, "File size must be less than 10MB")
-    .refine((file) => allowedMimeTypes.includes(file.type), "Invalid file type");
+    .refine((file) => file.size > 0, `${RouteTypes.Form}.validations.file-size`)
+    .refine((file) => file.size <= 10 * 1024 * 1024, `${RouteTypes.Form}.validations.file-size`)
+    .refine((file) => allowedMimeTypes.includes(file.type), `${RouteTypes.Form}.validations.file-invalid-type`);
 
 export const schemaStep1 = z.object({
     contentPositioning: zodRequiredString(),
