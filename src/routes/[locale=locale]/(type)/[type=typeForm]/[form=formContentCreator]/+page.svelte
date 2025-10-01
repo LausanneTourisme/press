@@ -39,7 +39,6 @@
       clearOnSubmit: 'none',
       onUpdate: async ({ form }) => {
         if (form.valid) step = 0;
-        console.log({ update: form });
         isSubmitting = false;
       },
       onSubmit: async ({ cancel, formData }) => {
@@ -63,8 +62,6 @@
 
         const result = await validateForm({ update: true });
 
-        console.log(result);
-
         if (!result.valid) {
           cancel();
           document.querySelector('body')?.scrollIntoView();
@@ -86,7 +83,7 @@
         isSubmitting = false;
       },
       onError: (error) => {
-        console.log({ error });
+        console.error(`Please contact us and explain us how to get this error please. (error ${error.result.status})`);
       }
     })
   );
@@ -105,10 +102,6 @@
     var i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
     return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
   };
-
-  $effect(() => {
-    console.log({ errors: $errors, form: $form, constraints: $constraints });
-  });
 </script>
 
 <Container width="small">
@@ -229,13 +222,14 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
+          <p class="text-brand-600">{@html $t($errors.instagramSubscriberScreenshots?.['0'] ?? $errors.instagramSubscriberScreenshots?.['1'] ?? '')}</p>
           <input
             type="file"
             id="instagramSubscriberScreenshots"
             name="instagramSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.instagramSubscriberScreenshots?._errors
+            class="file-input w-full {$errors.instagramSubscriberScreenshots !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -244,7 +238,7 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.instagramSubscriberScreenshots?._errors ? 'true' : undefined}
+            aria-invalid={$errors.instagramSubscriberScreenshots !== undefined ? 'true' : undefined}
           />
 
           {#if $form.instagramSubscriberScreenshots?.length}
@@ -274,13 +268,14 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
+          <p class="text-brand-600">{@html $t($errors.instagramAccountsScreenshots?.['0'] ?? $errors.instagramAccountsScreenshots?.['1'] ?? '')}</p>
           <input
             type="file"
             id="instagramAccountsScreenshots"
             name="instagramAccountsScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.instagramAccountsScreenshots?._errors
+            class="file-input w-full {$errors.instagramAccountsScreenshots !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -289,7 +284,7 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.instagramAccountsScreenshots?._errors ? 'true' : undefined}
+            aria-invalid={$errors.instagramAccountsScreenshots !== undefined ? 'true' : undefined}
           />
 
           {#if $form.instagramAccountsScreenshots?.length}
@@ -347,13 +342,14 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
+          <p class="text-brand-600">{@html $t($errors.tiktokSubscriberScreenshots?.['0'] ?? $errors.tiktokSubscriberScreenshots?.['1'] ?? '')}</p>
           <input
             type="file"
             id="tiktokSubscriberScreenshots"
             name="tiktokSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.tiktokSubscriberScreenshots?._errors
+            class="file-input w-full {$errors.tiktokSubscriberScreenshots !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -362,7 +358,7 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.tiktokSubscriberScreenshots?._errors ? 'true' : undefined}
+            aria-invalid={$errors.tiktokSubscriberScreenshots !== undefined ? 'true' : undefined}
           />
 
           {#if $form.tiktokSubscriberScreenshots?.length}
@@ -420,16 +416,17 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
+          <p class="text-brand-600">{@html $t($errors.youtubeSubscriberScreenshots?.['0'] ?? $errors.youtubeSubscriberScreenshots?.['1'] ?? '')}</p>
           <input
             type="file"
             id="youtubeSubscriberScreenshots"
             name="youtubeSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.youtubeSubscriberScreenshots?._errors
+            class="file-input w-full {$errors.youtubeSubscriberScreenshots !== undefined
               ? 'file-input-error'
               : ''}"
-            aria-invalid={$errors.youtubeSubscriberScreenshots?._errors ? 'true' : undefined}
+            aria-invalid={$errors.youtubeSubscriberScreenshots !== undefined ? 'true' : undefined}
             onchange={(e) => {
               $form.youtubeSubscriberScreenshots = [
                 ...($form.youtubeSubscriberScreenshots as File[]),
@@ -789,7 +786,6 @@
         <div id="travel-travel-reduction" class="join join-vertical">
           {#each Object.values(TravelReductions) as travelReduction}
             <label
-              for="travel-reduction-{travelReduction}"
               class="label my-1 text-wrap break-words {$errors.travelReductions
                 ? 'text-error'
                 : ''}"
@@ -797,23 +793,19 @@
               <input
                 class="checkbox"
                 type="checkbox"
+                name="travelReductions"
+                value={travelReduction}
                 checked={($form.travelReductions as TravelReduction[]).includes(travelReduction)}
-                id="travel-reduction-{travelReduction}"
-                name="travelReduction"
                 onchange={(e) => {
-                  if (!$form.travelReductions) {
-                    $form.travelReductions = [];
-                  }
-                  if (!e.currentTarget.checked) {
-                    $form.travelReductions =
-                      ($form.travelReductions as TravelReduction[]).filter(
-                        (x) => x !== travelReduction
-                      ) ?? [];
-                  } else {
+                  if (e.currentTarget.checked) {
                     $form.travelReductions = [
                       ...($form.travelReductions as TravelReduction[]),
                       travelReduction
                     ];
+                  } else {
+                    $form.travelReductions = ($form.travelReductions as TravelReduction[]).filter(
+                      (x) => x !== travelReduction
+                    );
                   }
                 }}
                 aria-label={$t(
@@ -1418,6 +1410,7 @@
         </label>
         <textarea
           id="personal-information-remarks"
+          name="remarks"
           defaultValue={($form.remarks as string | undefined) ?? ''}
           bind:value={$form.remarks}
           class="textarea w-full"
