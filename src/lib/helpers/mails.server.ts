@@ -12,10 +12,9 @@ const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).fi
  * @param intern_mail used to send mail to LT
  * @param external_mail used to send mail to end user
  */
-export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: { from_name: string, subject: string, html: string, images?: mailchimp.MessageImage[] }, external_mail?: MessagesMessage }): Promise<{
+export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: { from_name: string, subject: string, html: string, images?: mailchimp.MessageImage[], attachments?: mailchimp.MessageAttachment[] }, external_mail?: MessagesMessage }): Promise<{
     internal_reponse: mailchimp.MessagesSendResponse[],
     external_response?: mailchimp.MessagesSendResponse[],
-    images?: mailchimp.MessageImage[]
 }> => {
 
 
@@ -40,6 +39,7 @@ export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: {
                 type: "to",
             }
         }),
+        attachments: intern_mail.attachments ?? [],
         images: intern_mail.images ?? [],
         preserve_recipients: false,
         inline_css: true,
