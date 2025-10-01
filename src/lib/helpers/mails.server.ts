@@ -31,14 +31,19 @@ export const sendEmail = async ({ intern_mail, external_mail }: { intern_mail: {
      * mail provider.
      * */
     const mail: MessagesMessage = {
-        ...intern_mail,
         from_email: MAIL_FROM,
+        subject: intern_mail.subject,
+        html: intern_mail.html,
         to: recipients.map((recipient: string) => {
             return {
                 email: recipient,
                 type: "to",
             }
         }),
+        images: intern_mail.images ?? [],
+        preserve_recipients: false,
+        inline_css: true,
+        important: false
     }
 
     const internal_reponse = await mailchimpTx.messages.send({ message: mail }) as mailchimp.MessagesSendResponse[];
