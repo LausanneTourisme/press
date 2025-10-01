@@ -137,7 +137,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.total-pages`]} :</span> <span>${data.mediaCoveragePrint.totalPages ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.article-length`]} :</span> <span>${data.mediaCoveragePrint.articleLength ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint.publishDate!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `
   }
@@ -147,7 +147,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-length`]} :</span> <span>${data.mediaCoverageOnline?.articleLength ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-thematic`]} :</span> <span>${data.mediaCoverageOnline?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline.publishDate!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `
   }
@@ -156,7 +156,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.article-thematic`]} :</span> <span>${data.mediaCoverageTvOrRadio?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio.publishDate!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `
   }
@@ -180,7 +180,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     </div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`]} :</span> <span>${data.travelInformation?.returnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`]} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map(x => `<li>${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`]} :</span> <span>${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).toFormat('dd.MM.yyyy') : ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`]} :</span> <span>${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
   </section>
 `
 
@@ -190,7 +190,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`]} :</span> <span>${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${data.personalInformation.title}`]}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`]} :</span> <span>${data.personalInformation?.firstName ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`]} :</span> <span>${data.personalInformation?.lastName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).toFormat('dd.MM.yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`]} :</span> <span>${data.personalInformation?.phoneNumber ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`]} :</span> <span>${data.personalInformation?.email ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;">
@@ -220,7 +220,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`]} :</span> <span>${data.personalInformation?.passport?.number}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`]} :</span> <span>${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).toFormat('dd.MM.yyyy') : ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`]} :</span> <span>${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
         </li>
       </ul>
     </div>
