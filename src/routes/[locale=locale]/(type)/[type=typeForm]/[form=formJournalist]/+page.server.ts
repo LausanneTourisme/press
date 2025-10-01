@@ -1,21 +1,24 @@
 import { Forms, MediaTypes, RouteTypes } from "$enums";
 import { verifyIfHuman } from "$lib/helpers/index.server";
+import { sendEmail } from "$lib/helpers/mails.server";
 import { supportedLocales, translations, type Locale } from "$lib/translations";
 import type { MediaProfileJournalist } from "$types/forms";
+import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { fail, redirect } from '@sveltejs/kit';
 import type { Translations } from '@sveltekit-i18n/base';
 import countries from 'i18n-iso-countries';
 import de from "i18n-iso-countries/langs/de.json";
 import en from "i18n-iso-countries/langs/en.json";
 import fr from "i18n-iso-countries/langs/fr.json";
+import { DateTime } from "luxon";
 import { setFlash } from 'sveltekit-flash-message/server';
-import { message, superValidate } from 'sveltekit-superforms';
+import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
 import { schemaStep4 } from "./schema";
-import { sendEmail } from "$lib/helpers/mails.server";
-import { DateTime } from "luxon";
+import { API_HTML_TO_PDF } from "$env/static/private";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
 const lastStep = zod4(schemaStep4);
 
@@ -45,15 +48,13 @@ export const actions = {
     if (!form.valid) return fail(400, { form });
 
 
-    const html = generateMailContent({ data: form.data as MediaProfileJournalist, userLocale: params.locale as Locale, translations: t })
-    const { internal_reponse } = await sendEmail({
-      intern_mail: {
-        from_name: "No Reply - Press",
-        subject: "[Formulaire] - Journaliste",
-        html
-      }
-    })
-    if (internal_reponse[0].status === 'sent') {
+    const sendWithSuccess = await sendFormByEmail({
+      locale: params.locale as Locale,
+      mediaProfileJournalist: form.data as MediaProfileJournalist,
+      translations: t
+    });
+    
+    if (sendWithSuccess) {
       return redirect(303, `/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`)
     }
 
@@ -77,6 +78,55 @@ export const entries: EntryGenerator = () => {
   });
 };
 
+const sendFormByEmail = async ({
+  mediaProfileJournalist,
+  locale,
+  translations
+}: {
+  mediaProfileJournalist: MediaProfileJournalist, locale: Locale, translations: {
+    [key: string]: any;
+  }
+}) => {
+  const attachments: Mailchimp.MessageAttachment[] = [];
+  const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale, translations });
+
+  const pdfResponse = await fetch(API_HTML_TO_PDF, {
+    method: "POST",
+    headers: {
+      "Cache-Control": "no-cache",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      html,
+      filename: "[Formulaire] - Journaliste",
+    }),
+  });
+
+  if (pdfResponse.ok) {
+    // Convert stream to base64
+    const pdfBuffer = await pdfResponse.arrayBuffer();
+    const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
+
+    const pdf = {
+      name: '[Formulaire] - Createur de contenu',
+      type: 'application/pdf',
+      content: pdfBase64,
+    }
+
+    attachments.push(pdf);
+  }
+
+  const { internal_reponse } = await sendEmail({
+    intern_mail: {
+      from_name: "No Reply - Press",
+      subject: "[Formulaire] - Journaliste",
+      html,
+      attachments,
+    }
+  });
+
+  return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
+}
 
 const generateMailContent = ({ data, userLocale, translations }: { data: MediaProfileJournalist, userLocale: Locale, translations: Translations.SerializedTranslations }) => {
   const t = translations['fr'];
@@ -97,9 +147,9 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`]} :</span> <span>${data.mediaName ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`]} :</span> <span>${data.thematic ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`]} :</span> <span>${data.audienceProfile ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.types`]} :</span> <span>${data.mediaTypes?.map(x => t[`${RouteTypes.Form}.${Forms.Journalist}.form.types.${x}`]).join(', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`]} :</span> <span>${data.mediaTypes?.map(x => t[`${RouteTypes.Form}.${Forms.Journalist}.form.types.${x}`]).join(', ') ?? ''}</span></div>
   </section>
-`
+`;
   // statistics of the media
   if (data.mediaTypes?.includes(MediaTypes.Print)) {
     html += `<!-- Statistiques Print -->
@@ -109,7 +159,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.copies`]} :</span> <span>${data.printMediaStatistics?.copies ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.readers`]} :</span> <span>${data.printMediaStatistics?.readers ?? ''}</span></div>
   </section>
-        `
+        `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Online)) {
     html += `<!-- Statistiques Online -->
@@ -119,7 +169,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-unique-visitors`]} :</span> <span>${data.onlineMediaStatistics?.monthlyUniqueVisitors ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-page-views`]} :</span> <span>${data.onlineMediaStatistics?.montlhyPageViews ?? ''}</span></div>
   </section>
-        `
+        `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Tv) || data.mediaTypes?.includes(MediaTypes.Radio)) {
     html += `<!-- Statistiques TV/Radio -->
@@ -128,7 +178,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.radio-and-tv.emission-name`]} :</span> <span>${data.radioAndTVMediaStatistics?.emissionName ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.radio-and-tv.viewers`]} :</span> <span>${data.radioAndTVMediaStatistics?.viewers ?? ''}</span></div>
   </section>
-        `
+        `;
   }
   // Coverage of the media
   if (data.mediaTypes?.includes(MediaTypes.Print)) {
@@ -139,7 +189,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.article-length`]} :</span> <span>${data.mediaCoveragePrint.articleLength ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
-        `
+        `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Online)) {
     html += `<!-- Couverture Online -->
@@ -149,7 +199,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-thematic`]} :</span> <span>${data.mediaCoverageOnline?.articleThematic ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
-        `
+        `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Tv) || data.mediaTypes?.includes(MediaTypes.Radio)) {
     html += `<!-- Couverture TV/Radio -->
@@ -158,12 +208,12 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.article-thematic`]} :</span> <span>${data.mediaCoverageTvOrRadio?.articleThematic ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`]} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
-        `
+        `;
   }
 
   html += `<!-- Informations de voyage -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`]} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
@@ -182,7 +232,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`]} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map(x => `<li>${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`]} :</span> <span>${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
   </section>
-`
+`;
 
   html += `<!-- Informations personnelles -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
@@ -217,7 +267,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`]} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`]} :</span> <span>${data.personalInformation?.passport?.number}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`]} :</span> <span>${data.personalInformation.passport.number ?? ''}</span>
         </li>
         <li>
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`]} :</span> <span>${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
@@ -238,7 +288,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
       </ul>
     </div>
   </section>
-`
+`;
 
   html += `<!-- Divers -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
@@ -250,7 +300,7 @@ const generateMailContent = ({ data, userLocale, translations }: { data: MediaPr
   </section>
 </body>
 </html>
-  `
+`;
 
   return html;
 }

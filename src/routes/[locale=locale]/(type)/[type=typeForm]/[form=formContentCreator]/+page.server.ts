@@ -1,4 +1,4 @@
-import { Forms, RouteTypes, SocialNetworks } from "$enums";
+import { Forms, RouteTypes, SocialNetworks, type SocialNetwork } from "$enums";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
 import { supportedLocales, translations, type Locale } from "$lib/translations";
@@ -15,12 +15,21 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
 import { schemaStep4 } from "./schema";
+import { subscribe } from "diagnostics_channel";
+import type Mailchimp from "@mailchimp/mailchimp_transactional";
+import { API_HTML_TO_PDF } from "$env/static/private";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
 const lastStep = zod4(schemaStep4);
 
-
+type MailImage = {
+  socialNetwork: SocialNetwork,
+  category: "subscriber" | 'account',
+  type: string;
+  name: string;
+  content: string;
+};
 
 export const load = async ({ parent }) => {
   const [{ locale }, form] = await Promise.all([
@@ -41,7 +50,7 @@ export const actions = {
   default: async ({ request, params, cookies }) => {
     const t = translations.get();
     const formdata = await request.formData();
-    
+
     await verifyIfHuman(formdata);
 
     const form = await superValidate(formdata, lastStep);
@@ -50,96 +59,14 @@ export const actions = {
       return fail(400, { form });
     }
 
-    // required for mailchimp email body
-    const images: Array<{
-      type: string;
-      name: string;
-      content: string;
-    }> = [];
-    const instagramSubscriberStatisticsScreenshots: number[] = [];
-    const instagramAccountsThatRespondedScreenshots: number[] = [];
-    const tiktokSubscriberStatisticsScreenshots: number[] = [];
-    const youtubeSubscriberStatisticsScreenshots: number[] = [];
-
-
-    // Handle Instagram subscriber screenshots (can be single or multiple)
-    const instagramSubscriber = formdata.getAll('instagramSubscriberScreenshots');
-    for (const [i, file] of instagramSubscriber.entries()) {
-      if (file instanceof File && file.size > 0) {
-
-        instagramSubscriberStatisticsScreenshots.push(i);
-        images.push({
-          type: getMimeType(file.name),
-          name: `${SocialNetworks.Instagram}_subscriber_${i}`, // Use CID as the name for inline images
-          content: await fileToBase64(file)
-        });
-      }
-    };
-
-    // Handle Instagram accounts screenshots (can be single or multiple)
-    const instagramAccounts = formdata.getAll('instagramAccountsScreenshots');
-    for (const [i, file] of instagramAccounts.entries()) {
-      if (file instanceof File && file.size > 0) {
-
-        instagramAccountsThatRespondedScreenshots.push(i);
-        images.push({
-          type: getMimeType(file.name),
-          name: `${SocialNetworks.Instagram}_account_${i}`, // Use CID as the name for inline images
-          content: await fileToBase64(file)
-        });
-      }
-    };
-
-    // Handle TikTok subscriber screenshots
-    const tiktokSubscriber = formdata.getAll('tiktokSubscriberScreenshots');
-    for (const [i, file] of tiktokSubscriber.entries()) {
-      if (file instanceof File && file.size > 0) {
-
-        tiktokSubscriberStatisticsScreenshots.push(i);
-        images.push({
-          type: getMimeType(file.name),
-          name: `${SocialNetworks.TikTok}_subscriber_${i}`, // Use CID as the name for inline images
-          content: await fileToBase64(file)
-        });
-      }
-    };
-
-    // Handle YouTube subscriber screenshots
-    const youtubeSubscriber = formdata.getAll('youtubeSubscriberScreenshots');
-    for (const [i, file] of youtubeSubscriber.entries()) {
-      if (file instanceof File && file.size > 0) {
-
-        youtubeSubscriberStatisticsScreenshots.push(i);
-        images.push({
-          type: getMimeType(file.name),
-          name: `${SocialNetworks.YouTube}_subscriber_${i}`, // Use CID as the name for inline images
-          content: await fileToBase64(file)
-        });
-      }
-    };
-
-
-    // Continue with your email generation...
-    const html = generateMailContent({
-      data: form.data as MediaProfileContentCreatorFormData,
-      userLocale: params.locale as Locale,
-      translations: t,
-      instagramSubscriberStatisticsScreenshots,
-      instagramAccountsThatRespondedScreenshots,
-      tiktokSubscriberStatisticsScreenshots,
-      youtubeSubscriberStatisticsScreenshots,
+    const sendWithSuccess = await sendFormByEmail({
+      formdata,
+      locale: params.locale as Locale,
+      mediaProfileContentCreator: form.data as MediaProfileContentCreatorFormData,
+      translations: t
     });
 
-    const { internal_reponse } = await sendEmail({
-      intern_mail: {
-        from_name: "No Reply - Press",
-        subject: "[Formulaire] - Createur de contenu",
-        html,
-        images,
-      }
-    });
-
-    if (internal_reponse.every(x => x.status === 'sent')) {
+    if (sendWithSuccess) {
       return redirect(303, `/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`);
     }
 
@@ -182,18 +109,146 @@ async function fileToBase64(file: File) {
   return buffer.toString('base64');
 }
 
-const generateMailContent = ({ data, userLocale, translations, instagramSubscriberStatisticsScreenshots,
-  instagramAccountsThatRespondedScreenshots,
-  tiktokSubscriberStatisticsScreenshots,
-  youtubeSubscriberStatisticsScreenshots, }: {
-    data: MediaProfileContentCreatorFormData, userLocale: Locale, translations: Translations.SerializedTranslations,
-    instagramSubscriberStatisticsScreenshots: number[],
-    instagramAccountsThatRespondedScreenshots: number[],
-    tiktokSubscriberStatisticsScreenshots: number[],
-    youtubeSubscriberStatisticsScreenshots: number[],
+const sendFormByEmail = async ({ formdata,
+  mediaProfileContentCreator,
+  locale,
+  translations }: {
+    formdata: FormData, mediaProfileContentCreator: MediaProfileContentCreatorFormData, locale: Locale, translations: {
+      [key: string]: any;
+    }
   }) => {
+
+  const images = await getImagesFromForm(formdata);
+
+  const html = generateMailContent({
+    data: mediaProfileContentCreator,
+    userLocale: locale,
+    translations,
+    images,
+  });
+
+
+  const attachments: Mailchimp.MessageAttachment[] = [];
+  const pdfResponse = await fetch(API_HTML_TO_PDF, {
+    method: "POST",
+    headers: {
+      "Cache-Control": "no-cache",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      html: generateMailContent({
+        data: mediaProfileContentCreator,
+        userLocale: locale,
+        translations,
+        images,
+        useImageB64: true
+      }),
+      filename: "[Formulaire] - Createur de contenu.pdf"
+    }),
+  })
+
+  if (pdfResponse.ok) {
+    // Convert stream to base64
+    const pdfBuffer = await pdfResponse.arrayBuffer();
+    const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
+
+    const pdf = {
+      name: '[Formulaire] - Createur de contenu',
+      type: 'application/pdf',
+      content: pdfBase64
+    }
+
+    attachments.push(pdf)
+  }
+
+  const { internal_reponse } = await sendEmail({
+    intern_mail: {
+      from_name: "No Reply - Press",
+      subject: "[Formulaire] - Createur de contenu",
+      html,
+      images,
+      attachments,
+    }
+  });
+  
+  return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
+}
+
+const getImagesFromForm = async (formdata: FormData) => {
+  // required for mailchimp email body
+  const images: MailImage[] = [];
+
+  // Handle Instagram subscriber screenshots (can be single or multiple)
+  for (const [i, file] of formdata.getAll('instagramSubscriberScreenshots').entries()) {
+    if (file instanceof File && file.size > 0) {
+      images.push({
+        socialNetwork: SocialNetworks.Instagram,
+        category: "subscriber",
+        type: getMimeType(file.name),
+        name: `${SocialNetworks.Instagram}_subscriber_${i}`, // Use CID as the name for inline images
+        content: await fileToBase64(file),
+      });
+    }
+  }
+
+  // Handle Instagram accounts screenshots (can be single or multiple)
+  for (const [i, file] of formdata.getAll('instagramAccountsScreenshots').entries()) {
+    if (file instanceof File && file.size > 0) {
+      images.push({
+        socialNetwork: SocialNetworks.Instagram,
+        category: "account",
+        type: getMimeType(file.name),
+        name: `${SocialNetworks.Instagram}_account_${i}`, // Use CID as the name for inline images
+        content: await fileToBase64(file),
+      });
+    }
+  }
+
+  // Handle TikTok subscriber screenshots
+  for (const [i, file] of formdata.getAll('tiktokSubscriberScreenshots').entries()) {
+    if (file instanceof File && file.size > 0) {
+      images.push({
+        socialNetwork: SocialNetworks.TikTok,
+        category: "subscriber",
+        type: getMimeType(file.name),
+        name: `${SocialNetworks.TikTok}_subscriber_${i}`, // Use CID as the name for inline images
+        content: await fileToBase64(file),
+      });
+    }
+  }
+
+  // Handle YouTube subscriber screenshots
+  for (const [i, file] of formdata.getAll('youtubeSubscriberScreenshots').entries()) {
+    if (file instanceof File && file.size > 0) {
+      images.push({
+        socialNetwork: SocialNetworks.YouTube,
+        category: "subscriber",
+        type: getMimeType(file.name),
+        name: `${SocialNetworks.YouTube}_subscriber_${i}`, // Use CID as the name for inline images
+        content: await fileToBase64(file),
+      });
+    }
+  }
+
+  return images;
+}
+
+const generateMailContent = ({
+  data,
+  userLocale,
+  translations,
+  images,
+  useImageB64,
+}: {
+  data: MediaProfileContentCreatorFormData,
+  userLocale: Locale,
+  translations: Translations.SerializedTranslations,
+  images: MailImage[],
+  useImageB64?: boolean,
+}) => {
   const t = translations['fr'];
 
+  const isMailchimpEmail = !!!useImageB64 // default value false
 
   let html = `<!DOCTYPE html>
 <html lang="fr">
@@ -207,13 +262,12 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
 
   <!-- Profil Média -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.social-media-information`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.social-media-information`]}</h2>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`]} :</span>
       &nbsp;
       <span>${data.contentPositioning ?? ''}</span>
     </div>
-  </section>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.target-audience`]} :</span>
       &nbsp;
@@ -224,22 +278,27 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
       &nbsp;
       <span>${data.onlinePresence?.map(x => t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${x}`]).join(', ') ?? ''}</span>
     </div>
+  </section>
   `;
 
   // statistics of the media
   if (data.onlinePresence?.includes(SocialNetworks.Instagram)) {
     html += `<!-- Statistiques Instagram -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.profile-url`]} :</span> <span>${data.instagramProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
         ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.subscriber-statistics-screenshots.title`]} :
       </span>
-      ${instagramSubscriberStatisticsScreenshots
-        .map((index) => {
-          return `<img src="cid:${SocialNetworks.Instagram}_subscriber_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+      ${images
+        .filter(i => i.socialNetwork === SocialNetworks.Instagram && i.category === "subscriber")
+        .map((image, index) => {
+          if (isMailchimpEmail) {
+            return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+          }
+          return `<br/><img src="data:${image.type};base64,${image.content}" style="max-width: 100%; margin: 10px 0;" />`;
         })
         .join("\n") ?? ''}
 
@@ -248,9 +307,13 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
         ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.accounts-that-responded-screenshots.title`]} :
       </span>
-      ${instagramAccountsThatRespondedScreenshots
-        .map((index) => {
-          return `<img src="cid:${SocialNetworks.Instagram}_account_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+      ${images
+        .filter(i => i.socialNetwork === SocialNetworks.Instagram && i.category === "account")
+        .map((image, index) => {
+          if (isMailchimpEmail) {
+            return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+          }
+          return `<br/><img src="data:${image.type};base64,${image.content}" style="max-width: 100%; margin: 10px 0;" />`;
         })
         .join("\n") ?? ''}
 
@@ -261,16 +324,20 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
   if (data.onlinePresence?.includes(SocialNetworks.TikTok)) {
     html += `<!-- Statistiques Tiktok -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.profile-url`]} :</span> <span>${data.tiktokProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
         ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.subscriber-statistics-screenshots.title`]} :
       </span>
-      ${tiktokSubscriberStatisticsScreenshots
-        .map((index) => {
-          return `<img src="cid:${SocialNetworks.TikTok}_subscriber_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+      ${images
+        .filter(i => i.socialNetwork === SocialNetworks.TikTok && i.category === "subscriber")
+        .map((image, index) => {
+          if (isMailchimpEmail) {
+            return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+          }
+          return `<br/><img src="data:${image.type};base64,${image.content}" style="max-width: 100%; margin: 10px 0;" />`;
         })
         .join("\n") ?? ''}
 
@@ -281,16 +348,20 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
   if (data.onlinePresence?.includes(SocialNetworks.YouTube)) {
     html += `<!-- Statistiques Youtube -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.profile-url`]} :</span> <span>${data.youtubeProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
         ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.subscriber-statistics-screenshots.title`]} :
       </span>
-      ${youtubeSubscriberStatisticsScreenshots
-        .map((index) => {
-          return `<img src="cid:${SocialNetworks.YouTube}_subscriber_${index}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+      ${images
+        .filter(i => i.socialNetwork === SocialNetworks.YouTube && i.category === "subscriber")
+        .map((image, index) => {
+          if (isMailchimpEmail) {
+            return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
+          }
+          return `<br/><img src="data:${image.type};base64,${image.content}" style="max-width: 100%; margin: 10px 0;" />`;
         })
         .join("\n") ?? ''}
 
@@ -301,7 +372,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
   if (data.onlinePresence?.includes(SocialNetworks.Blog)) {
     html += `<!-- Statistiques Blog -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.url`]} :</span> <span>${data.blogURL ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.audience-profile.title`]} :</span> <span>${data.blogAudienceProfile ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-unique-visitors`]} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
@@ -312,7 +383,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
 
   html += `<!-- Informations de voyage -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.title`]} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
@@ -335,7 +406,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
 
   html += `<!-- Informations personnelles -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`]}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`]} :</span> <span>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${data.personalTitle}`]}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`]} :</span> <span>${data.personalFirstName ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`]} :</span> <span>${data.personalLastName ?? ''}</span></div>
@@ -395,7 +466,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
           <li>
             <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`]} :</span> <span>${data.emergencyContactPhones[index]}</span>
           </li>
-        `).join("<li>----------------</li>") ?? '';
+        `).join('<li><div style="border: 1px solid #ddd; border-radius: 8px; width: 50%; margin-top: 5px; margin-bottom: 5px;"/></li>') ?? '';
   }
   html += `
       </ul>
@@ -405,7 +476,7 @@ const generateMailContent = ({ data, userLocale, translations, instagramSubscrib
 
   html += `<!-- Divers -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">Informations complémentaires</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">Informations complémentaires</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Assurance de voyage couvrant la Suisse :</span> <span>${data.travelInsuranceCoveringSwitzerland ? 'Oui' : 'Non'}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">A lu les termes d'acceptation :</span> <span>${data.readTermsOfAcceptance ? 'Oui' : 'Non'}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">Remarques :</span> <span>${data.remarks ?? ''}</span></div>
