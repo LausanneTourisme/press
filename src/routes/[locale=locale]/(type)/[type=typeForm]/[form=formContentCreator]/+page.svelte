@@ -70,7 +70,6 @@
         }
 
         if (isLast) {
-          isSubmitting = false;
           return;
         }
 
@@ -83,7 +82,10 @@
         isSubmitting = false;
       },
       onError: (error) => {
-        console.error(`Please contact us and explain us how to get this error please. (error ${error.result.status})`);
+        console.error(
+          `Please contact us and explain us how to get this error please. (error ${error.result.status})`
+        );
+          isSubmitting = false;
       }
     })
   );
@@ -222,7 +224,13 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
-          <p class="text-brand-600">{@html $t($errors.instagramSubscriberScreenshots?.['0'] ?? $errors.instagramSubscriberScreenshots?.['1'] ?? '')}</p>
+          <p class="text-brand-600">
+            {@html $t(
+              $errors.instagramSubscriberScreenshots?.['0'] ??
+                $errors.instagramSubscriberScreenshots?.['1'] ??
+                ''
+            )}
+          </p>
           <input
             type="file"
             id="instagramSubscriberScreenshots"
@@ -268,7 +276,13 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
-          <p class="text-brand-600">{@html $t($errors.instagramAccountsScreenshots?.['0'] ?? $errors.instagramAccountsScreenshots?.['1'] ?? '')}</p>
+          <p class="text-brand-600">
+            {@html $t(
+              $errors.instagramAccountsScreenshots?.['0'] ??
+                $errors.instagramAccountsScreenshots?.['1'] ??
+                ''
+            )}
+          </p>
           <input
             type="file"
             id="instagramAccountsScreenshots"
@@ -342,7 +356,13 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
-          <p class="text-brand-600">{@html $t($errors.tiktokSubscriberScreenshots?.['0'] ?? $errors.tiktokSubscriberScreenshots?.['1'] ?? '')}</p>
+          <p class="text-brand-600">
+            {@html $t(
+              $errors.tiktokSubscriberScreenshots?.['0'] ??
+                $errors.tiktokSubscriberScreenshots?.['1'] ??
+                ''
+            )}
+          </p>
           <input
             type="file"
             id="tiktokSubscriberScreenshots"
@@ -416,7 +436,13 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
             {/if}
           </label>
-          <p class="text-brand-600">{@html $t($errors.youtubeSubscriberScreenshots?.['0'] ?? $errors.youtubeSubscriberScreenshots?.['1'] ?? '')}</p>
+          <p class="text-brand-600">
+            {@html $t(
+              $errors.youtubeSubscriberScreenshots?.['0'] ??
+                $errors.youtubeSubscriberScreenshots?.['1'] ??
+                ''
+            )}
+          </p>
           <input
             type="file"
             id="youtubeSubscriberScreenshots"
@@ -1493,9 +1519,9 @@
     <div class="mt-6 mb-2 flex flex-wrap">
       <button
         type="button"
-        class="btn mr-2 {step === 0 ? 'hidden' : ''}"
+        class="btn mr-2 {step === 1 ? 'hidden' : ''}"
         onclick={(e) => {
-          step = step - 1;
+          if (step > 1) step = step - 1;
         }}
         disabled={isSubmitting}
       >
@@ -1506,7 +1532,7 @@
           <Loading />
         </span>
         <span class={!isSubmitting ? '' : 'hidden'}>
-          {step < steps.length - 1
+          {step < steps.length
             ? $t(`${RouteTypes.Form}.next`)
             : $t(`${RouteTypes.Form}.submit`)}
         </span>

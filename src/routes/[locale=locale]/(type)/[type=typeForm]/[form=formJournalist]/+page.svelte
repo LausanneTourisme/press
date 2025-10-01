@@ -28,6 +28,10 @@
       clearOnSubmit: 'none',
       onUpdate: async ({ form }) => {
         if (form.valid) step = 0;
+        isSubmitting = false;
+      },
+      onError: async () => {
+        isSubmitting = false;
       },
       onSubmit: async ({ cancel, formData }) => {
         isSubmitting = true;
@@ -1184,17 +1188,7 @@
             $errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
-            defaultValue={$form.personalInformation.passport?.number ?? ''}
-            onchange={(e) => {
-              $form.personalInformation = {
-                ...$form.personalInformation,
-                passport: {
-                  validity: '',
-                  ...$form.personalInformation.passport,
-                  number: e.currentTarget.value
-                }
-              };
-            }}
+            bind:value={$form.personalInformation.passport.number}
             aria-invalid={$errors.personalInformation?.passport ||
             $errors.personalInformation?.passport?._errors
               ? 'true'
@@ -1213,17 +1207,7 @@
             $errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
-            defaultValue={$form.personalInformation.passport?.validity ?? ''}
-            onchange={(e) => {
-              $form.personalInformation = {
-                ...$form.personalInformation,
-                passport: {
-                  number: '',
-                  ...$form.personalInformation.passport,
-                  validity: e.currentTarget.value
-                }
-              };
-            }}
+            bind:value={$form.personalInformation.passport.validity}
             aria-invalid={$errors.personalInformation?.passport ||
             $errors.personalInformation?.passport?._errors
               ? 'true'
