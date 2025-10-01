@@ -3,7 +3,9 @@
     "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
     "validations": {
         "non-empty-array": "Veuillez sélectionner au moins une valeur",
-        "number-min-1": "Le nombre doit être plus grand ou égal à 1"
+        "number-min-1": "Le nombre doit être plus grand ou égal à 1",
+        "file-size": "Votre fichier doit faire moins de 10 Mo",
+        "file-invalid-type": "Veuillez choisir un format valide"
     },
     "required": "(Obligatoire)",
     "newsletter": {
