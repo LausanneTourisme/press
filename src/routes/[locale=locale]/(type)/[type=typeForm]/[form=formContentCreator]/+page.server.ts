@@ -15,7 +15,6 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
 import { schemaStep4 } from "./schema";
-import { subscribe } from "diagnostics_channel";
 import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { API_HTML_TO_PDF } from "$env/static/private";
 
@@ -170,7 +169,7 @@ const sendFormByEmail = async ({ formdata,
       attachments,
     }
   });
-  
+
   return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
 }
 
@@ -248,6 +247,8 @@ const generateMailContent = ({
 }) => {
   const t = translations['fr'];
 
+  // convert undefine to false and keep bool with right value
+  // eslint-disable-next-line no-extra-boolean-cast
   const isMailchimpEmail = !!!useImageB64 // default value false
 
   let html = `<!DOCTYPE html>
