@@ -29,8 +29,9 @@
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
 
-  const { form, errors, enhance, message, options, validateForm, constraints } = $derived.by(() =>
-    superForm((page.data as PageData).form, {
+  const { form, errors, enhance, message, options, validateForm, constraints } = superForm(
+    (page.data as PageData).form,
+    {
       errorSelector: '[aria-invalid="true"],[data-invalid]',
       scrollToError: 'smooth',
       autoFocusOnError: 'detect',
@@ -85,9 +86,9 @@
         console.error(
           `Please contact us and explain us how to get this error please. (error ${error.result.status})`
         );
-          isSubmitting = false;
+        isSubmitting = false;
       }
-    })
+    }
   );
 
   const addEmergencyContact = () => {
@@ -104,6 +105,12 @@
     var i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
     return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
   };
+
+  $effect(() => {
+    // force reset step when locale changes
+    page.data.locale;
+    step = 1;
+  });
 </script>
 
 <Container width="small">
@@ -1532,9 +1539,7 @@
           <Loading />
         </span>
         <span class={!isSubmitting ? '' : 'hidden'}>
-          {step < steps.length
-            ? $t(`${RouteTypes.Form}.next`)
-            : $t(`${RouteTypes.Form}.submit`)}
+          {step < steps.length ? $t(`${RouteTypes.Form}.next`) : $t(`${RouteTypes.Form}.submit`)}
         </span>
       </button>
     </div>

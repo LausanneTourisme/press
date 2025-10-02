@@ -20,8 +20,9 @@
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
 
-  const { form, errors, enhance, message, options, validateForm, constraints } = $derived.by(() =>
-    superForm((page.data as PageData).form, {
+  const { form, errors, enhance, message, options, validateForm, constraints } = superForm(
+    (page.data as PageData).form,
+    {
       dataType: 'json',
       resetForm: false,
       applyAction: true,
@@ -91,7 +92,7 @@
         }
         isSubmitting = false;
       }
-    })
+    }
   );
 
   function addEmergencyContact() {
@@ -107,6 +108,12 @@
       $form.personalInformation.emergencyContacts.filter((_, i) => i !== index);
     if ($form.personalInformation.emergencyContacts.length <= 1) canDeleteEmergencyContacts = false;
   }
+
+  $effect(() => {
+    // force reset step when locale changes
+    page.data.locale;
+    step = 0;
+  });
 </script>
 
 <Container width="small">
