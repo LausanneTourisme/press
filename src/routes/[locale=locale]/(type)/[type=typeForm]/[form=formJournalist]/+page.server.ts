@@ -53,7 +53,7 @@ export const actions = {
       mediaProfileJournalist: form.data as MediaProfileJournalist,
       translations: t
     });
-    
+
     if (sendWithSuccess) {
       return redirect(303, `/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`)
     }
@@ -108,7 +108,7 @@ const sendFormByEmail = async ({
     const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
 
     const pdf = {
-      name: '[Formulaire] - Createur de contenu',
+      name: '[Formulaire] - Createur de contenu.pdf',
       type: 'application/pdf',
       content: pdfBase64,
     }
