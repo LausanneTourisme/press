@@ -3,7 +3,10 @@
     "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
     "validations": {
         "non-empty-array": "Pick at least one option",
-        "number-min-1": "Number must be greater than or equal to 1"
+        "number-min-1": "Number must be greater than or equal to 1",
+        "file-size": "Your file must be less than 10 MB.",
+        "file-invalid-type": "Please select a valid format"
+
     },
     "required": "(required)",
     "newsletter": {

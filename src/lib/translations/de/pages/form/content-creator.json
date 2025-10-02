@@ -9,14 +9,14 @@
         }
     },
     "form": {
-        "title": "",
-        "social-media-information": "",
-        "content-positioning": "",
-        "content-positioning-placeholder": "",
-        "target-audience": "",
-        "target-audience-placeholder": "",
+        "title": "Medienprofil",
+        "social-media-information": "Informationen zu sozialen Medien",
+        "content-positioning": "Positionierung von Inhalten",
+        "content-positioning-placeholder": "Reise, Foto, Natur, Mode, Lifestyle, ...",
+        "target-audience": "Zielpublikum(e)",
+        "target-audience-placeholder": "Alleinreisende, Citybreaker, Familien, ...",
         "online-presence": {
-            "title": "",
+            "title": "Online-Präsenz",
             "instagram": "Instagram",
             "tiktok": "TikTok",
             "youtube": "YouTube",
@@ -24,62 +24,62 @@
         },
         "statistics": {
             "instagram": {
-                "title": "",
-                "profileURL": "",
+                "title": "Instagram Konto",
+                "profileURL": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "",
-                    "description": ""
+                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 },
                 "accounts-that-responded-screenshots": {
-                    "title": "",
-                    "description": ""
+                    "title": "Konten, die reagiert haben (Screenshots)",
+                    "description": "Interaktion mit dem Inhalt"
                 }
             },
             "tiktok": {
-                "title": "",
-                "profileURL": "",
+                "title": "TikTok Konto",
+                "profileURL": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "",
-                    "description": ""
+                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 }
             },
             "youtube": {
-                "title": "",
-                "profileURL": "",
+                "title": "Youtube Konto",
+                "profileURL": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "",
-                    "description": ""
+                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 }
             },
             "blog": {
-                "title": "",
-                "url": "",
+                "title": "Blog",
+                "url": "Blog URL",
                 "audienceProfile": {
-                    "title": "",
-                    "description": ""
+                    "title": "Profil des Publikums",
+                    "description": "Alter, Bildungsstand, Geschlecht, Wohnort, Interessen, ..."
                 },
                 "performance": {
-                    "title": "",
-                    "monthlyUniqueVisitors": "",
-                    "montlhyPageViews": ""
+                    "title": "Blog-Performance",
+                    "monthlyUniqueVisitors": "Reach/einzelne Besucher pro Monat",
+                    "montlhyPageViews": "Anzahl der Seitenaufrufe pro Monat"
                 }
             }
         },
         "coverage": {
-            "title": {
-                "title": "",
-                "description": ""
+            "title": "Information über das Medienergebnis",
+            "publication-angle": {
+                "title": "Winkel der Veröffentlichung",
+                "description": "(Gastronomie, Lifestyle, Kultur, Natur, ...)"
             },
-            "publication-angle": "",
-            "subjects-of-interest": "",
-            "publication-channels": "",
+            "subjects-of-interest": "Thema(e) von Interesse",
+            "publication-channels": "Publikationskanäle",
             "proposed-media-coverage": {
-                "title": "",
-                "description": ""
+                "title": "Vorgeschlagene Medienberichterstattung",
+                "description": "Anzahl der Posts, Videos, Stories, Real, Artikel, ..."
             },
             "timing-and-publication-Dates": {
-                "title": "",
-                "description": ""
+                "title": "Timing und Daten der Veröffentlichungen",
+                "description": "vor/während/nach der Reise"
             }
         },
         "travel-information": {
