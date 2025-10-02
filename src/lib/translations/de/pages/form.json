@@ -3,7 +3,9 @@
     "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
     "validations": {
         "non-empty-array": "Wählen Sie mindestens eine Option aus",
-        "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren"
+        "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren",
+        "file-size": "Ihre Datei muss kleiner als 10 MB sein",
+        "file-invalid-type": "Bitte wählen Sie ein gültiges Format"
     },
     "required": "(Erforderlich)",
     "newsletter": {

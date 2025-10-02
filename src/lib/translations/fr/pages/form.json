@@ -4,7 +4,7 @@
     "validations": {
         "non-empty-array": "Veuillez sélectionner au moins une valeur",
         "number-min-1": "Le nombre doit être plus grand ou égal à 1",
-        "file-size": "Votre fichier doit faire moins de 10 Mo",
+        "file-size": "Votre fichier doit faire moins de 10 MB",
         "file-invalid-type": "Veuillez choisir un format valide"
     },
     "required": "(Obligatoire)",
