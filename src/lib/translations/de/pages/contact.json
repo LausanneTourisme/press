@@ -5,10 +5,19 @@
     "description": "Möchten Sie als Journalist, Journalistin oder Content Creator mehr über die Stadt Lausanne und ihr Angebot erfahren? Zögern Sie nicht, uns zu kontaktieren, indem Sie das unten stehende Formular ausfüllen. Wir werden uns so schnell wie möglich bei Ihnen melden.",
     "form": {
         "select-section": {
-            "title": "So können Sie uns erreichen.",
-            "button": {
-                "message": "Nachricht senden",
-                "call": "Rufen Sie uns an"
+            "contact-us": {
+                "title": "So können Sie uns erreichen.",
+                "button": {
+                    "message": "Nachricht senden",
+                    "call": "Rufen Sie uns an"
+                }
+            },
+            "visit-media": {
+                "title": "Medienbesuchsanfrage",
+                "button": {
+                    "journalist": "Journalist",
+                    "content-creator": "Content Creator"
+                }
             }
         },
         "call-section": {
@@ -20,7 +29,8 @@
                 "gender-section": {
                     "title": "Anrede:",
                     "sir": "Herr",
-                    "madam": "Frau"
+                    "madam": "Frau",
+                    "they": "Person"
                 },
                 "name-section": {
                     "title": "Wie heissen Sie?",
@@ -67,7 +77,6 @@
             },
             "invalid": {
                 "title": "Ungültiges Formular!"
-
             }
         },
         "restart-button": "Formular zurücksetzen"

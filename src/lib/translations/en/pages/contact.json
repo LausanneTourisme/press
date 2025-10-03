@@ -5,14 +5,23 @@
     "description": "As a journalist or content creator, would you like to find out more about Lausanne and its possibilities? Don't hesitate to contact us by filling in the form below. We will do our best to get back to you as soon as possible.",
     "form": {
         "select-section": {
-            "title": "How would you like to contact us?",
-            "button": {
-                "message": "By message",
-                "call": "Call us"
+            "contact-us": {
+                "title": "How would you like to contact us?",
+                "button": {
+                    "message": "By message",
+                    "call": "Call us"
+                }
+            },
+            "visit-media": {
+                "title": "Media Visit Request",
+                "button": {
+                    "journalist": "Journalist",
+                    "content-creator": "Content Creator"
+                }
             }
         },
         "call-section": {
-             "title": "To call us:"
+            "title": "To call us:"
         },
         "mail-section": {
             "title": "Send message",
@@ -20,9 +29,10 @@
                 "gender-section": {
                     "title": "Title:",
                     "sir": "Sir",
-                    "madam": "Madam"
+                    "madam": "Madam",
+                    "they": "They"
                 },
-                "name-section":{
+                "name-section": {
                     "title": "What's your name?",
                     "placeholder": "John Doe"
                 },
@@ -67,7 +77,6 @@
             },
             "invalid": {
                 "title": "Invalid form!"
-
             }
         },
         "restart-button": "Start again"

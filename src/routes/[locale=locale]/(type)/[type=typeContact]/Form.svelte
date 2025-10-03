@@ -84,7 +84,6 @@
     }
 
     return async ({ result }) => {
-      console.log({ result });
       if (result.type === 'success') {
         onSuccess?.();
         incorrectData = false;
