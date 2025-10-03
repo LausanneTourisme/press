@@ -156,7 +156,6 @@ export const schemaStep4 = schemaStep3.safeExtend({
     personalBirthday: zodRequiredString({ min: 10 }),
     personalPhoneNumber: zodRequiredString(),
     personalEmail: z.email().nonempty().nonoptional(),
-    personalFreelance: z.boolean(),
     personalSpokenLanguages: zodRequiredString(),
     personalAllergies: z.string().nullish(),
     personalMedicalCondition: z.string().nullish(),
