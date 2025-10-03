@@ -1,10 +1,11 @@
 import { Forms, RouteTypes, SocialNetworks, type SocialNetwork } from "$enums";
+import { API_HTML_TO_PDF, MAIL_FROM } from "$env/static/private";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
-import { supportedLocales, translations, type Locale } from "$lib/translations";
+import { supportedLocales, t, type Locale } from "$lib/translations";
 import type { MediaProfileContentCreatorFormData } from "$types/forms";
+import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { fail, redirect } from '@sveltejs/kit';
-import type { Translations } from '@sveltekit-i18n/base';
 import countries from 'i18n-iso-countries';
 import de from "i18n-iso-countries/langs/de.json";
 import en from "i18n-iso-countries/langs/en.json";
@@ -15,8 +16,6 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
 import { schemaStep4 } from "./schema";
-import type Mailchimp from "@mailchimp/mailchimp_transactional";
-import { API_HTML_TO_PDF } from "$env/static/private";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -47,7 +46,6 @@ export const load = async ({ parent }) => {
 
 export const actions = {
   default: async ({ request, params, cookies }) => {
-    const t = translations.get();
     const formdata = await request.formData();
 
     await verifyIfHuman(formdata);
@@ -61,17 +59,16 @@ export const actions = {
     const sendWithSuccess = await sendFormByEmail({
       formdata,
       locale: params.locale as Locale,
-      mediaProfileContentCreator: form.data as MediaProfileContentCreatorFormData,
-      translations: t
+      mediaProfileContentCreator: form.data as MediaProfileContentCreatorFormData
     });
 
     if (sendWithSuccess) {
-      return redirect(303, `/${params.locale}/${t[params.locale][`route.${RouteTypes.Form}.slug`]}/${t[params.locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`);
+      return redirect(303, `/${params.locale}/${t.get(`route.${RouteTypes.Form}.slug`)}/${t.get(`route.${RouteTypes.Form}.${Forms.Thanks}.slug`)}`);
     }
 
     setFlash({
       type: 'error',
-      message: t[params.locale][`${RouteTypes.Form}.error-on-sending`] ?? ''
+      message: t.get(`${RouteTypes.Form}.error-on-sending`),
     }, cookies);
 
     return fail(500, { form, message: "Please retry later." });
@@ -79,13 +76,12 @@ export const actions = {
 };
 
 export const entries: EntryGenerator = () => {
-  const t = translations.get();
 
   return supportedLocales.flatMap(locale => {
     return {
       locale,
-      type: t[locale][`route.${RouteTypes.Form}.slug`],
-      form: t[locale][`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`]
+      type: t.get(`route.${RouteTypes.Form}.slug`),
+      form: t.get(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
     };
   });
 };
@@ -110,11 +106,8 @@ async function fileToBase64(file: File) {
 
 const sendFormByEmail = async ({ formdata,
   mediaProfileContentCreator,
-  locale,
-  translations }: {
-    formdata: FormData, mediaProfileContentCreator: MediaProfileContentCreatorFormData, locale: Locale, translations: {
-      [key: string]: any;
-    }
+  locale }: {
+    formdata: FormData, mediaProfileContentCreator: MediaProfileContentCreatorFormData, locale: Locale
   }) => {
 
   const images = await getImagesFromForm(formdata);
@@ -122,7 +115,6 @@ const sendFormByEmail = async ({ formdata,
   const html = generateMailContent({
     data: mediaProfileContentCreator,
     userLocale: locale,
-    translations,
     images,
   });
 
@@ -138,7 +130,6 @@ const sendFormByEmail = async ({ formdata,
       html: generateMailContent({
         data: mediaProfileContentCreator,
         userLocale: locale,
-        translations,
         images,
         useImageB64: true
       }),
@@ -167,7 +158,17 @@ const sendFormByEmail = async ({ formdata,
       html,
       images,
       attachments,
-    }
+    },
+    external_mail: mediaProfileContentCreator.personalEmail ? {
+      from_email: MAIL_FROM,
+      from_name: t.get(`${RouteTypes.Form}.email.from-name`),
+      subject: t.get(`${RouteTypes.Form}.email.subject`, { form: t.get(`${RouteTypes.Form}.${Forms.Journalist}.title`) }),
+      html: `<p>${t.get(`${RouteTypes.Form}.email.content`, { name: `${mediaProfileContentCreator.personalFirstName} ${mediaProfileContentCreator.personalLastName}` })}</p><p><i>${t.get(`${RouteTypes.Form}.email.automatic-mail-disclaimer`)}</i></p>`,
+      to: [{
+        email: mediaProfileContentCreator.personalEmail,
+        type: "to",
+      }]
+    } : undefined,
   });
 
   return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
@@ -235,18 +236,14 @@ const getImagesFromForm = async (formdata: FormData) => {
 const generateMailContent = ({
   data,
   userLocale,
-  translations,
   images,
   useImageB64,
 }: {
   data: MediaProfileContentCreatorFormData,
   userLocale: Locale,
-  translations: Translations.SerializedTranslations,
   images: MailImage[],
   useImageB64?: boolean,
 }) => {
-  const t = translations['fr'];
-
   // convert undefine to false and keep bool with right value
   // eslint-disable-next-line no-extra-boolean-cast
   const isMailchimpEmail = !!!useImageB64 // default value false
@@ -259,25 +256,25 @@ const generateMailContent = ({
 </head>
 <body>
   <h1 style="font-weight: 800;width:100%;text-align: center;margin-bottom: 8px;">Formulaire Créateur de contenu</h1>
-  <h2 style="font-weight: 800;width: 100%;text-align: center;margin: 8px;">Langue du formulaire: ${t[`lang.${userLocale}`]}</h2>
+  <h2 style="font-weight: 800;width: 100%;text-align: center;margin: 8px;">Langue du formulaire: ${t.get(`lang.${userLocale}`)}</h2>
 
   <!-- Profil Média -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.social-media-information`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.social-media-information`)}</h2>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`)} :</span>
       &nbsp;
       <span>${data.contentPositioning ?? ''}</span>
     </div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.target-audience`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.target-audience`)} :</span>
       &nbsp;
       <span>${data.targetAudience ?? ''}</span>
     </div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.title`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.title`)} :</span>
       &nbsp;
-      <span>${data.onlinePresence?.map(x => t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${x}`]).join(', ') ?? ''}</span>
+      <span>${data.onlinePresence?.map(x => t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${x}`)).join(', ') ?? ''}</span>
     </div>
   </section>
   `;
@@ -286,16 +283,16 @@ const generateMailContent = ({
   if (data.onlinePresence?.includes(SocialNetworks.Instagram)) {
     html += `<!-- Statistiques Instagram -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.title`]}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.profile-url`]} :</span> <span>${data.instagramProfileURL ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.profile-url`)} :</span> <span>${data.instagramProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
-        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.subscriber-statistics-screenshots.title`]} :
+        ${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.subscriber-statistics-screenshots.title`)} :
       </span>
       ${images
         .filter(i => i.socialNetwork === SocialNetworks.Instagram && i.category === "subscriber")
-        .map((image, index) => {
+        .map((image) => {
           if (isMailchimpEmail) {
             return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
           }
@@ -306,11 +303,11 @@ const generateMailContent = ({
     </div>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
-        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.accounts-that-responded-screenshots.title`]} :
+        ${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.instagram.accounts-that-responded-screenshots.title`)} :
       </span>
       ${images
         .filter(i => i.socialNetwork === SocialNetworks.Instagram && i.category === "account")
-        .map((image, index) => {
+        .map((image) => {
           if (isMailchimpEmail) {
             return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
           }
@@ -325,16 +322,16 @@ const generateMailContent = ({
   if (data.onlinePresence?.includes(SocialNetworks.TikTok)) {
     html += `<!-- Statistiques Tiktok -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.title`]}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.profile-url`]} :</span> <span>${data.tiktokProfileURL ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.profile-url`)} :</span> <span>${data.tiktokProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
-        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.subscriber-statistics-screenshots.title`]} :
+        ${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.tiktok.subscriber-statistics-screenshots.title`)} :
       </span>
       ${images
         .filter(i => i.socialNetwork === SocialNetworks.TikTok && i.category === "subscriber")
-        .map((image, index) => {
+        .map((image) => {
           if (isMailchimpEmail) {
             return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
           }
@@ -349,16 +346,16 @@ const generateMailContent = ({
   if (data.onlinePresence?.includes(SocialNetworks.YouTube)) {
     html += `<!-- Statistiques Youtube -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.title`]}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.profile-url`]} :</span> <span>${data.youtubeProfileURL ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.profile-url`)} :</span> <span>${data.youtubeProfileURL ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">
-        ${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.subscriber-statistics-screenshots.title`]} :
+        ${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.youtube.subscriber-statistics-screenshots.title`)} :
       </span>
       ${images
         .filter(i => i.socialNetwork === SocialNetworks.YouTube && i.category === "subscriber")
-        .map((image, index) => {
+        .map((image) => {
           if (isMailchimpEmail) {
             return `<img src="cid:${image.name}" style="max-width: 500px; display: block; margin: 10px 0;" />`
           }
@@ -373,98 +370,98 @@ const generateMailContent = ({
   if (data.onlinePresence?.includes(SocialNetworks.Blog)) {
     html += `<!-- Statistiques Blog -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.title`]}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.url`]} :</span> <span>${data.blogURL ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.audience-profile.title`]} :</span> <span>${data.blogAudienceProfile ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-unique-visitors`]} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.montlhy-page-views`]} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.url`)} :</span> <span>${data.blogURL ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.audience-profile.title`)} :</span> <span>${data.blogAudienceProfile ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-unique-visitors`)} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.montlhy-page-views`)} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
   </section>
 `
   }
 
   html += `<!-- Informations de voyage -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.title`]}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.title`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city`]} :</span> <span>${data.travelDepartureCity ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city`)} :</span> <span>${data.travelDepartureCity ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country`]} :</span> <span>${data.travelDepartureCountry ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country`)} :</span> <span>${data.travelDepartureCountry ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`]} :</span> <span>${data.travelOutwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span>${data.travelOutwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
         </li>
       </ul>
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`]} :</span> <span>${data.travelReturnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`]} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelReductions?.map(x => `<li>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${x}`]}</li>`).join("")}</ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`]} :</span> <span>${data.travelLastVisit ? DateTime.fromSQL(data.travelLastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`)} :</span> <span>${data.travelReturnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`)} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelReductions?.map(x => `<li>${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${x}`)}</li>`).join("")}</ul></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`)} :</span> <span>${data.travelLastVisit ? DateTime.fromSQL(data.travelLastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
   </section>
 `
 
   html += `<!-- Informations personnelles -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`]}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`]} :</span> <span>${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${data.personalTitle}`]}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`]} :</span> <span>${data.personalFirstName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`]} :</span> <span>${data.personalLastName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`]} :</span> <span>${DateTime.fromSQL(data.personalBirthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`]} :</span> <span>${data.personalPhoneNumber ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`]} :</span> <span>${data.personalEmail ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`)} :</span> <span>${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${data.personalTitle}`)}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`)} :</span> <span>${data.personalFirstName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`)} :</span> <span>${data.personalLastName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`)} :</span> <span>${DateTime.fromSQL(data.personalBirthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`)} :</span> <span>${data.personalPhoneNumber ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`)} :</span> <span>${data.personalEmail ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.title`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.street-address`]} :</span> <span>${data.addressStreetAddress}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.street-address`)} :</span> <span>${data.addressStreetAddress}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`]} :</span> <span>${data.addressCity}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`)} :</span> <span>${data.addressCity}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.postal-code`]} :</span> <span>${data.addressPostalCode}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.postal-code`)} :</span> <span>${data.addressPostalCode}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`]} :</span> <span>${data.addressCountry}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`)} :</span> <span>${data.addressCountry}</span>
         </li>
       </ul>
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`]} :</span> <span>${data.personalSpokenLanguages ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`)} :</span> <span>${data.personalSpokenLanguages ?? ''}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.title`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`]} :</span> <span>${data.passportNumber}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`)} :</span> <span>${data.passportNumber}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`]} :</span> <span>${data.passportValidity ? DateTime.fromSQL(data.passportValidity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`)} :</span> <span>${data.passportValidity ? DateTime.fromSQL(data.passportValidity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
         </li>
       </ul>
     </div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.title`]} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
       `;
 
   if (typeof data.emergencyContactNames === 'string') {
     html += `
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`]} :</span> <span>${data.emergencyContactNames}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`)} :</span> <span>${data.emergencyContactNames}</span>
           </li>
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`]} :</span> <span>${data.emergencyContactPhones}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`)} :</span> <span>${data.emergencyContactPhones}</span>
           </li>
         `;
   } else {
     html += data.emergencyContactNames?.map((_, index) => `
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`]} :</span> <span>${data.emergencyContactNames[index]}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`)} :</span> <span>${data.emergencyContactNames[index]}</span>
           </li>
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t[`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`]} :</span> <span>${data.emergencyContactPhones[index]}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`)} :</span> <span>${data.emergencyContactPhones[index]}</span>
           </li>
         `).join('<li><div style="border: 1px solid #ddd; border-radius: 8px; width: 50%; margin-top: 5px; margin-bottom: 5px;"/></li>') ?? '';
   }
