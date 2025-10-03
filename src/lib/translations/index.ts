@@ -21,11 +21,13 @@ const routeTypes: Record<Locale, Record<string, string>> = {
 
 export const config: Config<{
   //this attributes are used only for TS warnings...
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value?: any;
   poi?: string;
   lausanner?: string;
   name?: string | null;
   number?: number;
+  form?: string;
 }> = {
   initLocale: defaultLocale,
   fallbackLocale: defaultLocale,
