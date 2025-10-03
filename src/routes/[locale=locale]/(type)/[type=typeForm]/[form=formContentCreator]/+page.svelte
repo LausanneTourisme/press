@@ -966,50 +966,6 @@
           aria-invalid={$errors.personalLastName ? 'true' : undefined}
         />
 
-        <p class="label mb-1 text-wrap break-words">
-          {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.freelance`
-          )}
-          {#if $constraints.personalFreelance?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
-        </p>
-        <label
-          class="label text-wrap break-words"
-          aria-invalid={$errors.personalFreelance ? 'true' : undefined}
-        >
-          <input
-            type="radio"
-            name="personalFreelance"
-            value={false}
-            class="radio {$errors.personalFreelance ? 'radio-error' : ''}"
-            onchange={() => ($form.personalFreelance = false)}
-            checked={$form.personalFreelance === false}
-            aria-label={$t(`${RouteTypes.Form}.no`)}
-            required
-          />
-          {@html $t(`${RouteTypes.Form}.no`)}
-        </label>
-
-        <label
-          class="label text-wrap break-words"
-          aria-invalid={$errors.personalFreelance ? 'true' : undefined}
-        >
-          <input
-            type="radio"
-            name="personalFreelance"
-            value={true}
-            class="radio {$errors.personalFreelance ? 'radio-error' : ''}"
-            onchange={() => ($form.personalFreelance = true)}
-            checked={$form.personalFreelance === true}
-            aria-label={$t(`${RouteTypes.Form}.yes`)}
-            required
-          />
-          {@html $t(`${RouteTypes.Form}.yes`)}
-        </label>
-
         <label for="personal-information-spoken-languages" class="label text-wrap break-words">
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`
