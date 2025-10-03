@@ -17,6 +17,12 @@
         "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
         "accept-terms": "J'ai pris connaissance et accepte les conditions"
     },
+    "email": {
+        "from-name": "Presse - Lausanne Tourisme",
+        "subject": "Confirmation de reception pour le formulaire : {{form}}",
+        "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre formulaire a bien été transmis. Nous vous répondrons dans les plus brefs délais.",
+        "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
+    },
     "yes": "Oui",
     "no": "Non",
     "next": "Suivant",

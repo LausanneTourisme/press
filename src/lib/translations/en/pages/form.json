@@ -18,6 +18,12 @@
         "content": "I have read these statements regarding data protection and the handling of personal data. I agree that Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, may integrate the data entered into this form into the dedicated and intended application. I agree that Lausanne Tourisme may share my data with third parties (e.g. travel companies for my travel needs, destinations, agencies, hotels for overnight stays, restaurants for reservations, event locations and other tourist service providers) in order to receive recommendations, information and offers concerning my trip and/or the event from these third parties directly by e-mail.",
         "accept-terms": "I have read and accept the conditions"
     },
+    "email": {
+        "from-name": "Presse - Lausanne Tourisme",
+        "subject": "Confirmation of receipt for the form: {{form}}",
+        "content": "Hello {{name}}, thank you for contacting us.<br>This automatic message confirms that your request has been sent. We will get back to you as soon as possible.",
+        "automatic-mail-disclaimer": "This email has been sent automatically, please do not reply."
+    },
     "yes": "Yes",
     "no": "No",
     "next": "Next",
