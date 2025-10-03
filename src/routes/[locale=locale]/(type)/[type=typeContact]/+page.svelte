@@ -6,12 +6,14 @@
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import { locale, t } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import { ArrowLeft, Mail, Phone } from 'lucide-svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { ActionData } from './$types';
   import Form from './Form.svelte';
+  import { route } from '$lib/helpers';
+  import { Forms, RouteTypes } from '$enums';
 
   const pageForm = $derived(page.form as ActionData);
   let displayForm: boolean = $state(false);
@@ -27,12 +29,14 @@
     displayPhone = false;
     formSended = false;
     bgColor = 'bg-shakespeare-400';
+
+    document.querySelector('#form')?.scrollIntoView({ behavior: 'smooth' });
   };
   const onSuccess = () => {
     bgColor = 'bg-apple-100';
     formSended = true;
     setTimeout(() => {
-      mailForm?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      document.querySelector('#form')?.scrollIntoView({ behavior: 'smooth' });
     }, 150);
   };
   const onFailure = () => {
@@ -117,7 +121,7 @@
       out:fade
     >
       <Heading class="-mt-4 mb-8 text-center text-lg font-bold">
-        {@html $t('contact.form.select-section.title')}
+        {@html $t('contact.form.select-section.contact-us.title')}
       </Heading>
       <div
         class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
@@ -127,15 +131,47 @@
           onclick={() => (displayForm = true)}
         >
           <Mail strokeWidth={2.5} class="aspect-square h-5" />
-          {@html $t('contact.form.select-section.button.message')}
+          {@html $t('contact.form.select-section.contact-us.button.message')}
         </button>
         <button
           class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           onclick={() => (displayPhone = true)}
         >
           <Phone strokeWidth={2.5} class="aspect-square h-5" />
-          {@html $t('contact.form.select-section.button.call')}
+          {@html $t('contact.form.select-section.contact-us.button.call')}
         </button>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center py-4 {displayForm || displayPhone
+        ? 'hidden'
+        : ''}"
+      out:fade
+    >
+      <Heading class="mb-8 text-center text-lg font-bold">
+        {@html $t('contact.form.select-section.visit-media.title')}
+      </Heading>
+      <div
+        class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
+      >
+        <a
+          href={route(RouteTypes.Form, {
+            forceLocale: $locale as Locale,
+            suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
+          })}
+          class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
+        >
+          {@html $t('contact.form.select-section.visit-media.button.journalist')}
+        </a>
+        <a
+          href={route(RouteTypes.Form, {
+            forceLocale: $locale as Locale,
+            suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
+          })}
+          class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
+        >
+          {@html $t('contact.form.select-section.visit-media.button.content-creator')}
+        </a>
       </div>
     </div>
     <!-- Mail Form -->
@@ -161,8 +197,8 @@
             <span class="text-brand-600">*</span>
           </p>
           <div>
-            <ul class="flex items-center justify-center gap-4">
-              <li class="w-full">
+            <ul class="flex items-center justify-center gap-4 h-20 lg:h-14">
+              <li class="w-full h-full">
                 <input
                   type="radio"
                   id="title-0"
@@ -174,7 +210,7 @@
                 <label
                   for="title-0"
                   class={twMerge(
-                    'inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                    'inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300  h-full',
                     pageForm?.fields?.title?.incorrect || titleSectionFailed
                       ? 'border border-red-500 text-red-500 ring-1 ring-red-500'
                       : ''
@@ -185,7 +221,7 @@
                   </span>
                 </label>
               </li>
-              <li class="w-full">
+              <li class="w-full  h-full">
                 <input
                   type="radio"
                   id="title-1"
@@ -197,7 +233,7 @@
                 <label
                   for="title-1"
                   class={twMerge(
-                    'inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                    ' h-full inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
                     pageForm?.fields?.title?.incorrect || titleSectionFailed
                       ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
                       : ''
@@ -205,6 +241,29 @@
                 >
                   <span class="block w-full text-center">
                     {@html $t('contact.form.mail-section.form.gender-section.sir')}
+                  </span>
+                </label>
+              </li>
+              <li class="w-full h-full">
+                <input
+                  type="radio"
+                  id="title-2"
+                  name="title"
+                  value={$t('contact.form.mail-section.form.gender-section.they')}
+                  class="peer hidden"
+                  onchange={() => (titleSectionFailed = false)}
+                />
+                <label
+                  for="title-2"
+                  class={twMerge(
+                    'h-full inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                    pageForm?.fields?.title?.incorrect || titleSectionFailed
+                      ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
+                      : ''
+                  )}
+                >
+                  <span class="block w-full text-center">
+                    {@html $t('contact.form.mail-section.form.gender-section.they')}
                   </span>
                 </label>
               </li>
@@ -285,14 +344,18 @@
                 'contact.form.mail-section.form.area-of-activity-section.choices.journalist'
               )}
             >
-              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.journalist')}
+              {@html $t(
+                'contact.form.mail-section.form.area-of-activity-section.choices.journalist'
+              )}
             </option>
             <option
               value={$t(
                 'contact.form.mail-section.form.area-of-activity-section.choices.influencer'
               )}
             >
-              {@html $t('contact.form.mail-section.form.area-of-activity-section.choices.influencer')}
+              {@html $t(
+                'contact.form.mail-section.form.area-of-activity-section.choices.influencer'
+              )}
             </option>
             <option
               value={$t('contact.form.mail-section.form.area-of-activity-section.choices.media')}

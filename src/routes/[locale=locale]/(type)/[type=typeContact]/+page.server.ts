@@ -1,15 +1,11 @@
 import { RouteTypes } from "$enums";
-import { MAIL_DEFAULT_RECIPIENTS, MAIL_FROM, MAIL_TO } from "$env/static/private";
-import { PUBLIC_MANDRILL_API_KEY } from "$env/static/public";
-import { supportedLocales, t, translations } from "$lib/translations";
-import mailchimp, { type MessagesMessage } from "@mailchimp/mailchimp_transactional";
-import { fail } from "@sveltejs/kit";
-import type { Actions, EntryGenerator } from "./$types";
+import { MAIL_FROM } from "$env/static/private";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
+import { supportedLocales, t, translations } from "$lib/translations";
+import { fail } from "@sveltejs/kit";
+import type { Actions, EntryGenerator } from "./$types";
 
-
-const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '').split(',').concat(MAIL_TO).filter(x => x !== undefined && x !== "");
 
 const validateEmail = (email: string | null | undefined) => {
     if (!email) return false;
@@ -33,7 +29,8 @@ export const actions: Actions = {
         const messageMinimumCharacters = 10;
 
 
-        let errors: Record<string, {
+        const errors: Record<string, {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             value?: any,
             incorrect: boolean,
             message: string,
