@@ -60,7 +60,6 @@
         }
 
         document.querySelector('body')?.scrollIntoView();
-        isSubmitting = false;
       },
       onError: (error) => {
         console.error(
