@@ -3,7 +3,6 @@ import { API_HTML_TO_PDF, MAIL_FROM } from "$env/static/private";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
 import { supportedLocales, t, type Locale } from "$lib/translations";
-import type { MediaProfileContentCreatorFormData } from "$types/forms";
 import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { fail, redirect } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
@@ -15,7 +14,7 @@ import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
-import { schemaStep4 } from "./schema";
+import { schemaStep4, type Schema } from "./schema";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -59,7 +58,7 @@ export const actions = {
     const sendWithSuccess = await sendFormByEmail({
       formdata,
       locale: params.locale as Locale,
-      mediaProfileContentCreator: form.data as MediaProfileContentCreatorFormData
+      mediaProfileContentCreator: form.data
     });
 
     if (sendWithSuccess) {
@@ -107,7 +106,7 @@ async function fileToBase64(file: File) {
 const sendFormByEmail = async ({ formdata,
   mediaProfileContentCreator,
   locale }: {
-    formdata: FormData, mediaProfileContentCreator: MediaProfileContentCreatorFormData, locale: Locale
+    formdata: FormData, mediaProfileContentCreator: Schema, locale: Locale
   }) => {
 
   const images = await getImagesFromForm(formdata);
@@ -239,7 +238,7 @@ const generateMailContent = ({
   images,
   useImageB64,
 }: {
-  data: MediaProfileContentCreatorFormData,
+  data: Schema,
   userLocale: Locale,
   images: MailImage[],
   useImageB64?: boolean,

@@ -17,12 +17,13 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus, Trash2 } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4 } from 'sveltekit-superforms/adapters';
+  import { zod4Client } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
+  import { humanFileSize } from '$lib/helpers';
 
-  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
+  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
   const countries = $derived(Object.values((page.data as PageData).countries));
   let step = $state(1);
   let emergencyContacts = $state([{ name: '', phonenunmber: '' }]);
@@ -101,11 +102,6 @@
     if (emergencyContacts.length <= 1) canDeleteEmergencyContacts = false;
   };
 
-  const humanFileSize = (size: number) => {
-    var i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
-    return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
-  };
-
   $effect(() => {
     // force reset step when locale changes
     page.data.locale;
@@ -116,7 +112,7 @@
 <Container width="small">
   <form method="POST" class="w-full" enctype="multipart/form-data" use:enhance>
     <section class="step1 about-media w-full" class:hidden={step !== 1}>
-      <Heading tag="h2" class="mt-6 mb-2 text-lg md:text-lg">
+      <Heading tag="h2" class="mt-6 mb-2 text-lg md:text-2xl">
         {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.title`)}
       </Heading>
 

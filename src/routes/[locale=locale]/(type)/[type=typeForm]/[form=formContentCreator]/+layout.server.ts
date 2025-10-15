@@ -1,4 +1,4 @@
-import { Forms, RouteTypes, type Form } from '$enums';
+import { Forms, RouteTypes} from '$enums';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 
