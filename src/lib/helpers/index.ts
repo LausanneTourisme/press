@@ -126,3 +126,8 @@ export const shuffle = <T>(array: T[]) => {
   }
   return newArray
 };
+
+export const humanFileSize = (size: number) => {
+  const i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
+  return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
+};

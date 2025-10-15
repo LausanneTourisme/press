@@ -209,3 +209,5 @@ export const schemaStep4 = schemaStep3
             });
         }
     });
+
+export type Schema = z.infer<typeof schemaStep4>;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions } from '$enums';
+  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, MediaType } from '$enums';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
@@ -8,14 +8,14 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4 } from 'sveltekit-superforms/adapters';
+  import { zod4Client } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import Loading from '$lib/components/Loading.svelte';
 
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
+  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
@@ -209,7 +209,7 @@
                       $form.mediaTypes = [...$form.mediaTypes, mediaType];
                     } else {
                       $form.mediaTypes = $form.mediaTypes.filter(
-                        (x) => x !== mediaType
+                        (x: MediaType) => x !== mediaType
                       ) as typeof $form.mediaTypes;
                     }
                   }}

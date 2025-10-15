@@ -3,7 +3,6 @@ import { API_HTML_TO_PDF, MAIL_FROM } from "$env/static/private";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
 import { supportedLocales, t, type Locale } from "$lib/translations";
-import type { MediaProfileJournalist } from "$types/forms";
 import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { fail, redirect } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
@@ -15,7 +14,7 @@ import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from "./$types";
-import { schemaStep4 } from "./schema";
+import { schemaStep4, type Schema } from "./schema";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -47,7 +46,7 @@ export const actions = {
 
     const sendWithSuccess = await sendFormByEmail({
       locale: params.locale as Locale,
-      mediaProfileJournalist: form.data as MediaProfileJournalist
+      mediaProfileJournalist: form.data
     });
 
     if (sendWithSuccess) {
@@ -77,7 +76,7 @@ const sendFormByEmail = async ({
   mediaProfileJournalist,
   locale,
 }: {
-  mediaProfileJournalist: MediaProfileJournalist, locale: Locale
+  mediaProfileJournalist: Schema, locale: Locale
 }) => {
   const attachments: Mailchimp.MessageAttachment[] = [];
   const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale });
@@ -130,7 +129,7 @@ const sendFormByEmail = async ({
   return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
 }
 
-const generateMailContent = ({ data, userLocale }: { data: MediaProfileJournalist, userLocale: Locale }) => {
+const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: Locale }) => {
   let html = `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -185,9 +184,9 @@ const generateMailContent = ({ data, userLocale }: { data: MediaProfileJournalis
     html += `<!-- Couverture Print -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.total-pages`)} :</span> <span>${data.mediaCoveragePrint.totalPages ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.article-length`)} :</span> <span>${data.mediaCoveragePrint.articleLength ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.total-pages`)} :</span> <span>${data.mediaCoveragePrint?.totalPages ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.article-length`)} :</span> <span>${data.mediaCoveragePrint?.articleLength ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
@@ -197,7 +196,7 @@ const generateMailContent = ({ data, userLocale }: { data: MediaProfileJournalis
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-length`)} :</span> <span>${data.mediaCoverageOnline?.articleLength ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-thematic`)} :</span> <span>${data.mediaCoverageOnline?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
@@ -206,7 +205,7 @@ const generateMailContent = ({ data, userLocale }: { data: MediaProfileJournalis
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.article-thematic`)} :</span> <span>${data.mediaCoverageTvOrRadio?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
