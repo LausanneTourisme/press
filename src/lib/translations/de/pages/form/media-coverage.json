@@ -1,0 +1,33 @@
+{
+    "title": "Retombées médiatiques",
+    "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
+    "validations": {},
+    "form": {
+        "title": "Medienberichterstattung",
+        "social-networks": {
+            "title": "In den sozialen Netzwerken",
+            "instagram": "Instagram",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "blog": "Blog"
+        },
+        "upload-files": "Bitte laden Sie Screenshots hoch",
+        "posts-section": {
+            "username": "Benutzername",
+            "number-of-posts": "Anzahl der Posts",
+            "number-of-clicks": "Anzahl der Klicks",
+            "blog-post-url": "URL des Blogbeitrags",
+            "scope-of-posts": "Reichweite von Posts",
+            "interaction-with-posts": "Interaktionen mit Posts"
+        },
+        "stories-section": {
+            "number-of-stories": "Anzahl der Stories",
+            "average-story-reach": "Durchschnittliche Reichweite von Stories",
+            "interaction-with-stories": "Interaktion mit den Stories"
+        },
+        "remarks": {
+            "title": "Bemerkungen",
+            "paragraph": "Feedback von Abonnenten, Rückmeldungen zur Reise, Vorschläge usw."
+        }
+    }
+}
