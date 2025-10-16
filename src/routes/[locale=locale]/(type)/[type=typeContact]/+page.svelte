@@ -7,7 +7,7 @@
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { locale, t, type Locale } from '$lib/translations';
-  import { ArrowLeft, Mail, Phone } from 'lucide-svelte';
+  import { ArrowLeft, Camera, Mail, Newspaper, Phone } from 'lucide-svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { ActionData } from './$types';
@@ -112,72 +112,86 @@
   </div>
 </Container>
 <Anchor name="form" />
-<Container fullscreen={true} class={twMerge(bgColor, 'py-32')}>
-  <section class="my-12 rounded px-4" transition:fade={{ delay: 200 }}>
+<Container fullscreen={true} class={twMerge(bgColor, 'py-5')}>
+  <section class="my-12 flex flex-col items-center rounded px-4" transition:fade={{ delay: 200 }}>
     <div
-      class="flex flex-col items-center justify-center py-4 {displayForm || displayPhone
-        ? 'hidden'
-        : ''}"
+      class={twMerge([
+        'relative',
+        'w-full md:max-w-7xl',
+        'grid grid-cols-1 md:grid-cols-2',
+        'justify-center',
+        displayForm || displayPhone ? 'hidden' : undefined
+      ])}
       out:fade
     >
-      <Heading class="-mt-4 mb-8 text-center text-lg font-bold">
-        {@html $t('contact.form.select-section.contact-us.title')}
-      </Heading>
+      <!-- Contact us -->
+      <section id="contact-us" class="flex flex-col items-center justify-between p-8 md:p-12">
+        <Heading class="mb-8 w-full text-center md:max-w-lg">
+          {@html $t('contact.form.select-section.contact-us.title')}
+        </Heading>
+
+        <div class="flex w-full flex-col items-center justify-center space-y-4">
+          <button
+            class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
+            onclick={() => (displayForm = true)}
+          >
+            <Mail strokeWidth={2.5} class="aspect-square h-5" />
+            {@html $t('contact.form.select-section.contact-us.button.message')}
+          </button>
+          <button
+            class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
+            onclick={() => (displayPhone = true)}
+          >
+            <Phone strokeWidth={2.5} class="aspect-square h-5" />
+            {@html $t('contact.form.select-section.contact-us.button.call')}
+          </button>
+        </div>
+      </section>
+
+      <!-- Vertical border for desktop -->
       <div
-        class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-      >
-        <button
-          class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
-          onclick={() => (displayForm = true)}
-        >
-          <Mail strokeWidth={2.5} class="aspect-square h-5" />
-          {@html $t('contact.form.select-section.contact-us.button.message')}
-        </button>
-        <button
-          class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
-          onclick={() => (displayPhone = true)}
-        >
-          <Phone strokeWidth={2.5} class="aspect-square h-5" />
-          {@html $t('contact.form.select-section.contact-us.button.call')}
-        </button>
+        class="absolute top-1/6 bottom-1/6 left-1/2 hidden w-px -translate-x-1/2 bg-gray-300 md:block"
+      ></div>
+      <!-- Vertical border for desktop -->
+      <div class="flex w-full justify-center md:hidden">
+        <div class="my-8 h-px w-[70%] bg-gray-300"></div>
       </div>
+
+      <!-- Visit Lausanne -->
+      <section id="visit-lausanne" class="flex flex-col items-center justify-between p-8 md:p-12">
+        <Heading class="mb-8 w-full text-center md:max-w-lg">
+          {@html $t('contact.form.select-section.visit-media.title')}
+        </Heading>
+        <div class="flex w-full flex-col items-center justify-center space-y-4">
+          <a
+            href={route(RouteTypes.Form, {
+              forceLocale: $locale as Locale,
+              suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
+            })}
+            class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
+          >
+            <Newspaper strokeWidth={2.5} class="aspect-square h-5" />
+            {@html $t('contact.form.select-section.visit-media.button.journalist')}
+          </a>
+          <a
+            href={route(RouteTypes.Form, {
+              forceLocale: $locale as Locale,
+              suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
+            })}
+            class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
+          >
+            <Camera strokeWidth={2.5} class="aspect-square h-5" />
+            {@html $t('contact.form.select-section.visit-media.button.content-creator')}
+          </a>
+        </div>
+      </section>
     </div>
-    <div
-      class="flex flex-col items-center justify-center py-4 {displayForm || displayPhone
-        ? 'hidden'
-        : ''}"
-      out:fade
-    >
-      <Heading class="mb-8 text-center text-lg font-bold">
-        {@html $t('contact.form.select-section.visit-media.title')}
-      </Heading>
-      <div
-        class="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-4"
-      >
-        <a
-          href={route(RouteTypes.Form, {
-            forceLocale: $locale as Locale,
-            suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
-          })}
-          class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
-        >
-          {@html $t('contact.form.select-section.visit-media.button.journalist')}
-        </a>
-        <a
-          href={route(RouteTypes.Form, {
-            forceLocale: $locale as Locale,
-            suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
-          })}
-          class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
-        >
-          {@html $t('contact.form.select-section.visit-media.button.content-creator')}
-        </a>
-      </div>
-    </div>
+
     <!-- Mail Form -->
     <section
+      id="mail-form"
       bind:this={mailForm}
-      class="mx-auto md:w-1/3 {displayForm && !displayPhone ? '' : 'hidden'}"
+      class={twMerge(['mx-auto md:w-1/3', displayForm && !displayPhone ? '' : 'hidden'])}
       in:fade
     >
       <Heading class="pb-4 text-lg font-bold">
@@ -197,8 +211,8 @@
             <span class="text-brand-600">*</span>
           </p>
           <div>
-            <ul class="flex items-center justify-center gap-4 h-20 lg:h-14">
-              <li class="w-full h-full">
+            <ul class="flex h-20 items-center justify-center gap-4 lg:h-14">
+              <li class="h-full w-full">
                 <input
                   type="radio"
                   id="title-0"
@@ -210,7 +224,7 @@
                 <label
                   for="title-0"
                   class={twMerge(
-                    'inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300  h-full',
+                    'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700  dark:hover:text-gray-300',
                     pageForm?.fields?.title?.incorrect || titleSectionFailed
                       ? 'border border-red-500 text-red-500 ring-1 ring-red-500'
                       : ''
@@ -221,7 +235,7 @@
                   </span>
                 </label>
               </li>
-              <li class="w-full  h-full">
+              <li class="h-full w-full">
                 <input
                   type="radio"
                   id="title-1"
@@ -233,7 +247,7 @@
                 <label
                   for="title-1"
                   class={twMerge(
-                    ' h-full inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                    ' inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
                     pageForm?.fields?.title?.incorrect || titleSectionFailed
                       ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
                       : ''
@@ -244,7 +258,7 @@
                   </span>
                 </label>
               </li>
-              <li class="w-full h-full">
+              <li class="h-full w-full">
                 <input
                   type="radio"
                   id="title-2"
@@ -256,7 +270,7 @@
                 <label
                   for="title-2"
                   class={twMerge(
-                    'h-full inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                    'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
                     pageForm?.fields?.title?.incorrect || titleSectionFailed
                       ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
                       : ''
@@ -397,9 +411,12 @@
     </section>
     <!-- Call Form -->
     <section
-      class="my-4 flex flex-col items-center justify-center {!displayForm && displayPhone
-        ? ''
-        : 'hidden'}"
+      id="call-form"
+      class={twMerge([
+        'my-4',
+        'flex flex-col items-center justify-center',
+        !displayForm && displayPhone ? '' : 'hidden'
+      ])}
       in:fly
     >
       <Paragraph class="text-lg font-bold text-gray-800">
@@ -415,6 +432,7 @@
     </section>
     <!-- Reset Form -->
     <section
+      id="reset-form"
       class="flex flex-col items-center justify-center {(displayForm || displayPhone) && !formSended
         ? ''
         : 'hidden'}"
