@@ -1,10 +1,9 @@
-import type { MediaType, Title, TravelReduction } from "$enums";
 import type { Locale } from "$lib/translations";
 import type { Component } from "svelte";
 
+export type * from './images';
 export type * from './maplibre';
 export type * from './nova';
-export type * from './images'
 
 declare global {
     interface Window {
