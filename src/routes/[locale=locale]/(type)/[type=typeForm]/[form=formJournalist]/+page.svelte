@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, MediaType } from '$enums';
+  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, type MediaType } from '$enums';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
