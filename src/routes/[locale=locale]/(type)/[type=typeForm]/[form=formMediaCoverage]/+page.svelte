@@ -150,10 +150,11 @@
           {/if}
         </label>
         <input
-          type="text"
+          type="url"
           id="posts-section-blog-post-url"
           name="blogPostURL"
           bind:value={$form.blogPostURL}
+          placeholder="https://"
           class="input w-full {$errors.blogPostURL ? 'input-error' : ''}"
           class:hidden={!$form.socialNetworks?.includes('blog')}
           aria-invalid={$errors.blogPostURL ? 'true' : undefined}
