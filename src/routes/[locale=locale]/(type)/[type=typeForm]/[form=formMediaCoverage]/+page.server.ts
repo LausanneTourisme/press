@@ -1,12 +1,10 @@
-import { Forms, RouteTypes, SocialNetworks, type SocialNetwork } from "$enums";
-import { API_HTML_TO_PDF, MAIL_FROM } from "$env/static/private";
+import { Forms, RouteTypes } from "$enums";
+import { API_HTML_TO_PDF } from "$env/static/private";
 import { verifyIfHuman } from "$lib/helpers/index.server";
 import { sendEmail } from "$lib/helpers/mails.server";
 import { supportedLocales, t, type Locale } from "$lib/translations";
-import type { MediaProfileMediaCoverageFormData } from "$types/forms";
 import type Mailchimp from "@mailchimp/mailchimp_transactional";
 import { fail, redirect } from '@sveltejs/kit';
-import { DateTime } from "luxon";
 import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
