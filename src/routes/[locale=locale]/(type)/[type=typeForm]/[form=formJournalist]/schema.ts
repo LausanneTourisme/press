@@ -10,8 +10,8 @@ const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Form}.validations.non
 
 // required when media type is "print" (via superRefine)
 export const printMediaStatistics = z.object({
-    copies: z.number().default(0),
-    readers: z.number().default(0),
+    copies: z.number().positive().default(0),
+    readers: z.number().positive().default(0),
     broadcastLocation: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.broadcast-location` }).default('')
 }).refine(({ copies, readers }) => {
     if (copies === 0 && readers > 0) {
@@ -27,40 +27,40 @@ export const printMediaStatistics = z.object({
 }, {
     path: ['printMediaStatistics'],
     message: `${RouteTypes.Form}.${Forms.Journalist}.validations.print-media-statistics`
-}).nullish();
+}).nullable();
 
 // required when media type is "radio" or "tv" (via superRefine)
 export const radioAndTVMediaStatistics = z.object({
     emissionName: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emission-name` }).default(''),
-    viewers: z.number().min(1).default(0),
-}).nullish();
+    viewers: z.number().positive().min(1).default(0),
+}).nullable();
 
 // required when media type is "online" (via superRefine)
 export const onlineMediaStatistics = z.object({
     website: z.url(),
-    monthlyUniqueVisitors: z.number().min(1, { error: `${RouteTypes.Form}.validations.number-min-1` }).default(0),
-    montlhyPageViews: z.number().default(0).nullable(),
-}).nullish();
+    monthlyUniqueVisitors: z.number().positive().min(1, { error: `${RouteTypes.Form}.validations.number-min-1` }).default(0),
+    montlhyPageViews: z.number().positive().default(0).nullable(),
+}).nullable();
 
 //required when media type is "print" (via superRefine)
 export const mediaCoveragePrint = z.object({
-    totalPages: z.number().min(1).default(0),
+    totalPages: z.number().positive().min(1).default(0),
     articleLength: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     publishDate: zodRequiredString({ min: 10 })
-}).nullish();
+}).nullable();
 
 //required when media type is "online" (via superRefine)
 export const mediaCoverageOnline = z.object({
     articleLength: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length` }).default(''),
     articleThematic: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }).default(''),
     publishDate: zodRequiredString({ min: 10 }) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
-}).nullish();
+}).nullable();
 
 //required when media type is "tv" or "radio" (via superRefine)
 export const mediaCoverageTvOrRadio = z.object({
     articleThematic: zodRequiredString({ error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic` }),
     publishDate: zodRequiredString({ min: 10 })  // faire si possible que choix année / mois, si date précise ils peuvent la mettre
-}).nullish();
+}).nullable();
 
 export const travelInformation = z.object({
     departurePoint: z.object({
@@ -126,6 +126,7 @@ export const schemaStep1 = z.object({
     printMediaStatistics: printMediaStatistics,
     radioAndTVMediaStatistics: radioAndTVMediaStatistics,
     onlineMediaStatistics: onlineMediaStatistics,
+    objectRequest: zodRequiredString(),
 })
     .required()
     .superRefine((data, ctx) => {

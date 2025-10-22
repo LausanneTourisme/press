@@ -147,6 +147,7 @@ const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: L
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)} :</span> <span>${data.thematic ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)} :</span> <span>${data.audienceProfile ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)} :</span> <span>${data.mediaTypes?.map(x => t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.types.${x}`)).join(', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.object-request`)} :</span> <span>${data.objectRequest ?? ''}</span></div>
   </section>
 `;
   // statistics of the media

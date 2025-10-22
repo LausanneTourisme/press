@@ -17,13 +17,14 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus, Trash2 } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4Client } from 'sveltekit-superforms/adapters';
+  import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import { humanFileSize } from '$lib/helpers';
+  import { dev } from '$app/environment';
 
-  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
+  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   const countries = $derived(Object.values((page.data as PageData).countries));
   let step = $state(1);
   let emergencyContacts = $state([{ name: '', phonenunmber: '' }]);
@@ -107,6 +108,12 @@
     page.data.locale;
     step = 1;
   });
+
+  if (dev) {
+    $effect(() => {
+      console.log({ errors: $errors });
+    });
+  }
 </script>
 
 <Container width="small">
@@ -120,9 +127,7 @@
         <!-- Content Positioning -->
         <label for="contentPositioning" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`)}
-          {#if $constraints.contentPositioning?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-          {/if}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
         </label>
         <input
           type="text"
@@ -153,21 +158,23 @@
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">
             {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.title`)}
-            {#if $constraints.onlinePresence?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </p>
 
           {#each Object.values(SocialNetworks) as socialNetwork}
             <label
-              class="label my-1 text-wrap break-words {$errors.onlinePresence ? 'text-error' : ''}"
+              class="label my-1 text-wrap break-words {$errors.onlinePresence?._errors !== undefined
+                ? 'text-error'
+                : ''}"
             >
               <input
                 type="checkbox"
                 name="onlinePresence"
                 value={socialNetwork}
                 checked={($form.onlinePresence as SocialNetwork[]).includes(socialNetwork) ?? false}
-                class="checkbox {$errors.onlinePresence ? 'border-error' : ''}"
+                class="checkbox {$errors.onlinePresence?._errors !== undefined
+                  ? 'border-error'
+                  : ''}"
                 onchange={(e) => {
                   if (e.currentTarget.checked) {
                     $form.onlinePresence = [
@@ -187,6 +194,19 @@
             </label>
           {/each}
         </div>
+
+        <label for="object-request" class="label text-wrap break-words">
+          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.object-request`)}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+        </label>
+        <textarea
+          id="object-request"
+          name="objectRequest"
+          defaultValue={($form.objectRequest as string | undefined) ?? ''}
+          bind:value={$form.objectRequest}
+          class="textarea w-full {$errors.objectRequest ? 'textarea-error' : ''}"
+          aria-required={$errors.objectRequest ? 'true' : undefined}
+        ></textarea>
       </fieldset>
 
       <!-- Instagram Section -->
@@ -204,9 +224,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.profile-url`
             )}
-            {#if $constraints.instagramProfileURL?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="url"
@@ -223,24 +241,15 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.subscriber-statistics-screenshots.title`
             )}
-            {#if $constraints.instagramSubscriberScreenshots?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
-          <p class="text-brand-600">
-            {@html $t(
-              $errors.instagramSubscriberScreenshots?.['0'] ??
-                $errors.instagramSubscriberScreenshots?.['1'] ??
-                ''
-            )}
-          </p>
           <input
             type="file"
             id="instagramSubscriberScreenshots"
             name="instagramSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.instagramSubscriberScreenshots !== undefined
+            class="file-input w-full {$errors.instagramSubscriberScreenshots?._errors !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -249,7 +258,9 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.instagramSubscriberScreenshots !== undefined ? 'true' : undefined}
+            aria-invalid={$errors.instagramSubscriberScreenshots?._errors !== undefined
+              ? 'true'
+              : undefined}
           />
 
           {#if $form.instagramSubscriberScreenshots?.length}
@@ -275,24 +286,15 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.accounts-that-responded-screenshots.title`
             )}
-            {#if $constraints.instagramAccountsScreenshots?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
-          <p class="text-brand-600">
-            {@html $t(
-              $errors.instagramAccountsScreenshots?.['0'] ??
-                $errors.instagramAccountsScreenshots?.['1'] ??
-                ''
-            )}
-          </p>
           <input
             type="file"
             id="instagramAccountsScreenshots"
             name="instagramAccountsScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.instagramAccountsScreenshots !== undefined
+            class="file-input w-full {$errors.instagramAccountsScreenshots?._errors !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -301,7 +303,9 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.instagramAccountsScreenshots !== undefined ? 'true' : undefined}
+            aria-invalid={$errors.instagramAccountsScreenshots?._errors !== undefined
+              ? 'true'
+              : undefined}
           />
 
           {#if $form.instagramAccountsScreenshots?.length}
@@ -338,9 +342,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.profile-url`
             )}
-            {#if $constraints.tiktokProfileURL?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="url"
@@ -355,24 +357,15 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.subscriber-statistics-screenshots.title`
             )}
-            {#if $constraints.tiktokSubscriberScreenshots?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
-          <p class="text-brand-600">
-            {@html $t(
-              $errors.tiktokSubscriberScreenshots?.['0'] ??
-                $errors.tiktokSubscriberScreenshots?.['1'] ??
-                ''
-            )}
-          </p>
           <input
             type="file"
             id="tiktokSubscriberScreenshots"
             name="tiktokSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.tiktokSubscriberScreenshots !== undefined
+            class="file-input w-full {$errors.tiktokSubscriberScreenshots?._errors !== undefined
               ? 'file-input-error'
               : ''}"
             onchange={(e) => {
@@ -381,7 +374,9 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.tiktokSubscriberScreenshots !== undefined ? 'true' : undefined}
+            aria-invalid={$errors.tiktokSubscriberScreenshots?._errors !== undefined
+              ? 'true'
+              : undefined}
           />
 
           {#if $form.tiktokSubscriberScreenshots?.length}
@@ -418,9 +413,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.profile-url`
             )}
-            {#if $constraints.youtubeProfileURL?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="url"
@@ -435,27 +428,20 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.subscriber-statistics-screenshots.title`
             )}
-            {#if $constraints.youtubeSubscriberScreenshots?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
-          <p class="text-brand-600">
-            {@html $t(
-              $errors.youtubeSubscriberScreenshots?.['0'] ??
-                $errors.youtubeSubscriberScreenshots?.['1'] ??
-                ''
-            )}
-          </p>
           <input
             type="file"
             id="youtubeSubscriberScreenshots"
             name="youtubeSubscriberScreenshots"
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.youtubeSubscriberScreenshots !== undefined
+            class="file-input w-full {$errors.youtubeSubscriberScreenshots?._errors !== undefined
               ? 'file-input-error'
               : ''}"
-            aria-invalid={$errors.youtubeSubscriberScreenshots !== undefined ? 'true' : undefined}
+            aria-invalid={$errors.youtubeSubscriberScreenshots?._errors !== undefined
+              ? 'true'
+              : undefined}
             onchange={(e) => {
               $form.youtubeSubscriberScreenshots = [
                 ...($form.youtubeSubscriberScreenshots as File[]),
@@ -498,9 +484,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.url`
             )}
-            {#if $constraints.blogURL?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="url"
@@ -515,9 +499,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.audience-profile.title`
             )}
-            {#if $constraints.blogAudienceProfile?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <textarea
             id="blogAudienceProfile"
@@ -530,9 +512,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.monthly-unique-visitors`
             )}
-            {#if $constraints.blogMonthlyUniqueVisitors?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="number"
@@ -546,9 +526,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.montlhy-page-views`
             )}
-            {#if $constraints.blogMonthlyPageViews?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
           <input
             type="number"
@@ -571,9 +549,7 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.publication-angle.title`
           )}
-          {#if $constraints.coveragePublicationAngle?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-          {/if}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
         </label>
         <input
           type="text"
@@ -587,9 +563,7 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.subjects-of-interest`
           )}
-          {#if $constraints.coverageSubjectsOfInterest?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-          {/if}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
         </label>
         <input
           type="text"
@@ -605,9 +579,7 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.publication-channels`
             )}
-            {#if Number($constraints.coveragePublicationChannels?.min) > 0}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </p>
 
           {#each Object.values(SocialNetworks) as socialNetwork}
@@ -620,7 +592,7 @@
                 type="checkbox"
                 name="coveragePublicationChannels"
                 value={socialNetwork}
-                checked={($form.coveragePublicationChannels as SocialNetwork).includes(
+                checked={($form.coveragePublicationChannels as SocialNetwork[]).includes(
                   socialNetwork
                 ) || false}
                 class="checkbox {$errors.coveragePublicationChannels?._errors
@@ -650,9 +622,7 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.proposed-media-coverage.title`
           )}
-          {#if $constraints.coverageProposedMediaCoverage?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-          {/if}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
         </label>
         <textarea
           id="coverageProposedMediaCoverage"
@@ -665,9 +635,7 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.timing-and-publication-Dates.title`
           )}
-          {#if $constraints.coverageTimingAndPublicationDates?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-          {/if}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
         </label>
         <textarea
           id="coverageTimingAndPublicationDates"
@@ -697,11 +665,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city`
           )}
-          {#if $constraints.travelDepartureCity?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -719,11 +685,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country`
           )}
-          {#if $constraints.travelDepartureCountry?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <select
           id="travel-departure-country"
@@ -746,11 +710,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`
           )}
-          {#if $constraints.travelOutwardJourney?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <p class="departure-point-outward-journey information">
           {@html $t(
@@ -762,7 +721,7 @@
           name="travelOutwardJourney"
           class="textarea w-full {$errors.travelOutwardJourney ? 'textarea-error' : ''}"
           bind:value={$form.travelOutwardJourney}
-          maxlength={$constraints.travelOutwardJourney?.maxLength}
+          maxlength={$constraints.travelOutwardJourney?.maxlength}
           aria-invalid={$errors.travelOutwardJourney ? 'true' : undefined}
         ></textarea>
       </fieldset>
@@ -774,11 +733,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`
           )}
-          {#if $constraints.travelReturnJourney?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <p class="travel-information-return-journey information">
           {@html $t(
@@ -806,11 +760,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.please-tick`
           )}
-          {#if $constraints.travelReductions?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <div id="travel-travel-reduction" class="join join-vertical">
           {#each Object.values(TravelReductions) as travelReduction}
@@ -856,11 +805,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`
           )}
-          {#if $constraints.travelLastVisit?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <input
           type="date"
@@ -885,11 +829,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`
           )}
-          {#if $constraints.personalTitle?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </p>
         {#each Object.values(Titles) as title}
           <label
@@ -922,11 +864,9 @@
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`
           )}
 
-          {#if $constraints.personalFirstName?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -944,11 +884,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`
           )}
-          {#if $constraints.personalLastName?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -966,11 +904,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`
           )}
-          {#if $constraints.personalSpokenLanguages?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -988,11 +924,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`
           )}
-          {#if $constraints.personalBirthday?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="date"
@@ -1007,11 +941,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.allergies`
           )}
-          {#if $constraints.personalAllergies?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <input
           type="text"
@@ -1029,11 +958,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.medical-and-physical-condition`
           )}
-          {#if $constraints.personalMedicalCondition?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <input
           type="text"
@@ -1055,11 +979,6 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`
           )}
-          {#if $constraints.passportNumber?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <input
           type="text"
@@ -1096,11 +1015,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.street-address`
           )}
-          {#if $constraints.addressStreetAddress?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -1115,11 +1032,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`
           )}
-          {#if $constraints.addressCity?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -1134,11 +1049,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.postal-code`
           )}
-          {#if $constraints.addressPostalCode?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -1153,11 +1066,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.country`
           )}
-          {#if $constraints.addressCountry?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <select
           id="personal-information-address-country"
@@ -1180,11 +1091,9 @@
           {@html $t(
             `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`
           )}
-          {#if $constraints.personalPhoneNumber?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="text"
@@ -1197,11 +1106,9 @@
 
         <label for="personal-information-email" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`)}
-          {#if $constraints.personalEmail?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
+          <span class="text-brand-600 italic">
+            {@html $t(`${RouteTypes.Form}.required`)}
+          </span>
         </label>
         <input
           type="email"
@@ -1246,7 +1153,7 @@
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
               )}
             >
-              {#if $errors?.[`emergencyContactNames_${i}`] as string | undefined}
+              {#if ($errors?.[`emergencyContactNames_${i}`] as string | undefined) !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
                     `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.name`
@@ -1260,12 +1167,14 @@
                 )}
                 class="personal-information-emergency-contact-name input w-full {$errors?.[
                   `emergencyContactNames_${i}`
-                ]
+                ] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactNames"
                 bind:value={emergencyContacts[i].name}
-                aria-invalid={$errors?.[`emergencyContactNames_${i}`] ? 'true' : undefined}
+                aria-invalid={$errors?.[`emergencyContactNames_${i}`] !== undefined
+                  ? 'true'
+                  : undefined}
               />
             </div>
             <div
@@ -1274,7 +1183,7 @@
                 `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
               )}
             >
-              {#if $errors?.[`emergencyContactPhones_${i}`] as string | undefined}
+              {#if ($errors?.[`emergencyContactPhones_${i}`] as string | undefined) !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
                     `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
@@ -1288,12 +1197,14 @@
                 )}
                 class="personal-information-emergency-contact-phone-number input w-full {$errors?.[
                   `emergencyContactPhones_${i}`
-                ]
+                ] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactPhones"
                 bind:value={emergencyContacts[i].phonenunmber}
-                aria-invalid={$errors?.[`emergencyContactPhones_${i}`] ? 'true' : undefined}
+                aria-invalid={$errors?.[`emergencyContactPhones_${i}`] !== undefined
+                  ? 'true'
+                  : undefined}
               />
             </div>
             <div
@@ -1387,11 +1298,6 @@
       >
         <label for="personal-information-remarks" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.remarks`)}
-          {#if $constraints.remarks?.required}
-            <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
-            </span>
-          {/if}
         </label>
         <textarea
           id="personal-information-remarks"
