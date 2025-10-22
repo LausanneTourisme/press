@@ -41,6 +41,7 @@
         "media-thematic-placeholder": "general, travel, culture, lifestyle, ...",
         "audience-profile": "Audience profile",
         "audience-profile-placeholder": "Age, level of education, gender, place of residence, interests, etc.",
+        "object-request": "Subject of the request",
         "types": {
             "title": "Media type",
             "print": "Print",

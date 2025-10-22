@@ -41,6 +41,7 @@
         "media-thematic-placeholder": "",
         "audience-profile": "Profil de l'audience",
         "audience-profile-placeholder": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ...",
+        "object-request": "Objet de la demande",
         "types": {
             "title": "Type de média",
             "print": "Print",
