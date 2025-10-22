@@ -11,6 +11,7 @@
         "emission-name": "Bitte geben Sie an, in welcher Sendung Sie den Beitrag ausstrahlen werden.",
         "article-length": "Wie viele Wörter/Zeichen wird Ihr Artikel enthalten?",
         "article-thematic": "Das Thema des Artikels darf nicht leer sein.",
+        "object-request": "Gegenstand des Antrags",
         "travel-information": {
             "city": "Bitte geben Sie die Abfahrtsstadt an.",
             "country": "Bitte geben Sie das Abfahrtsland an."

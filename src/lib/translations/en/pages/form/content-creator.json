@@ -15,6 +15,7 @@
         "content-positioning-placeholder": "travel, photo, nature, fashion, lifestyle, ...",
         "target-audience": "Target audience(s)",
         "target-audience-placeholder": "solo travellers, citybreakers, families, ...",
+        "object-request": "Subject of the request",
         "online-presence": {
           "title": "Online presence",
           "instagram": "Instagram",
@@ -25,7 +26,7 @@
         "statistics": {
             "instagram": {
                 "title": "Instagram account",
-                "profileURL": "Profile URL",
+                "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
                     "title": "Subscriber statistics (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
@@ -37,7 +38,7 @@
             },
             "tiktok": {
                 "title": "TikTok account",
-                "profileURL": "Profile URL",
+                "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
                     "title": "Subscriber statistics (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
@@ -45,7 +46,7 @@
             },
             "youtube": {
                 "title": "Youtube account",
-                "profileURL": "Profile URL",
+                "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
                     "title": "Subscriber statistics (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
@@ -54,14 +55,14 @@
             "blog": {
                 "title": "Blog",
                 "url": "Blog URL",
-                "audienceProfile": {
+                "audience-profile": {
                     "title": "Audience profile",
                     "description": "age, level of education, gender, place of residence, interests, ..."
                 },
                 "performance": {
                     "title": "Blog performance",
-                    "monthlyUniqueVisitors": "Reach/Unique visitors per month",
-                    "montlhyPageViews": "Number of pages viewed per month"
+                    "monthly-unique-visitors": "Reach/Unique visitors per month",
+                    "montlhy-page-views": "Number of pages viewed per month"
                 }
             }
         },

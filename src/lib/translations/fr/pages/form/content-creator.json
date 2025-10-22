@@ -15,6 +15,7 @@
         "content-positioning-placeholder": "voyage, photo, nature, mode, lifestyle, ...",
         "target-audience": "Audience(s) cible(s)",
         "target-audience-placeholder": "voyageurs solo, citybreakers, famille, ...",
+        "object-request": "Objet de la demande",
         "online-presence": {
             "title":"Présence online",
             "instagram": "Instagram",
