@@ -4,6 +4,8 @@ import { z } from 'zod/v4';
 
 const socialNetworkEnum = z.enum(getValues(SocialNetworks));
 const socialNetworkTypes = z.array(socialNetworkEnum).min(1, `${RouteTypes.Form}.validations.non-empty-array`);
+const socialNetworksRequirements = getValues(SocialNetworks).filter((x) => x !== 'blog')
+
 
 const allowedMimeTypes = [
     // Image types
@@ -25,6 +27,7 @@ export const schema = z.object({
     username: zodOptionalString({ min: 2 }),
 
     blogPostURL: z.url().optional(),
+    blogMonthlyUniqueVisitors: z.number().positive().nullish(),
     numberOfPosts: z.number().nonnegative().optional(),
     numberOfClicks: z.number().optional(),
     scopeOfPosts: z.array(fileSchema).max(20).default([]),
@@ -37,7 +40,7 @@ export const schema = z.object({
     remarks: zodOptionalString({ min: 2 }),
 })
     .refine(data => {
-        if (data.socialNetworks.includes("instagram") || data.socialNetworks.includes("tiktok") || data.socialNetworks.includes("youtube")) {
+        if (data.socialNetworks.some( (x) => (socialNetworksRequirements as string[]).includes(x) )) {
             return !!data.username
         }
         return true;
@@ -45,7 +48,7 @@ export const schema = z.object({
         path: ['username']
     })
     .refine(data => {
-        if (data.socialNetworks.some(x => getValues(SocialNetworks).includes(x))) {
+        if (data.socialNetworks.some( (x) => (socialNetworksRequirements as string[]).includes(x) )) {
             return !!data.numberOfPosts
         }
         return true;
@@ -53,7 +56,7 @@ export const schema = z.object({
         path: ['numberOfPosts']
     })
     .refine(data => {
-        if (data.socialNetworks.some(x => getValues(SocialNetworks).includes(x))) {
+        if (data.socialNetworks.some( (x) => (socialNetworksRequirements as string[]).includes(x) )) {
             return data.scopeOfPosts.length > 0
         }
         return true;
@@ -61,7 +64,7 @@ export const schema = z.object({
         path: ['scopeOfPosts']
     })
     .refine(data => {
-        if (data.socialNetworks.some(x => getValues(SocialNetworks).includes(x))) {
+        if (data.socialNetworks.some( (x) => (socialNetworksRequirements as string[]).includes(x) )) {
             return data.interactionWithPosts.length > 0
         }
         return true;
@@ -99,6 +102,14 @@ export const schema = z.object({
         return true;
     }, {
         path: ['blogPostURL']
+    })
+    .refine(data => {
+        if (data.socialNetworks.includes("blog")) {
+            return !!data.blogMonthlyUniqueVisitors
+        }
+        return true;
+    }, {
+        path: ['blogMonthlyUniqueVisitors']
     })
 
 export type Schema = z.infer<typeof schema>;

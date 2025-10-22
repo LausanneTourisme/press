@@ -23,6 +23,7 @@ export const schemaStep1 = z.object({
     contentPositioning: zodRequiredString(),
     targetAudience: zodRequiredString(),
     onlinePresence: socialNetworkTypes.default([]),
+    objectRequest: zodRequiredString(),
 
     // Instagram (optional)
     instagramProfileURL: z.url().nullish(),
@@ -40,95 +41,96 @@ export const schemaStep1 = z.object({
     // Blog (optional)
     blogURL: z.url().nullish(),
     blogAudienceProfile: z.string().nullish(),
-    blogMonthlyUniqueVisitors: z.number().nullish(),
-    blogMonthlyPageViews: z.number().nullish(),
+    blogMonthlyUniqueVisitors: z.number().positive().nullish(),
+    blogMonthlyPageViews: z.number().positive().nullish(),
 })
-    .superRefine((data, ctx) => {
-        if (data.onlinePresence.includes(SocialNetworks.Instagram)) {
-            if (!data.instagramAccountsScreenshots?.length) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["instagramAccountsScreenshots"],
-                    message: "Instagram statistics required"
-                });
-            }
-            if (!data.instagramSubscriberScreenshots?.length) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["instagramSubscriberScreenshots"],
-                    message: "Instagram statistics required"
-                });
-            }
-            if (!data.instagramProfileURL) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["instagramProfileURL"],
-                    message: "Instagram statistics required"
-                });
-            }
+    .refine((data) => {
+        if (data.onlinePresence.includes('instagram')) {
+            return !!data.instagramAccountsScreenshots && data.instagramAccountsScreenshots?.length > 0;
         }
-        if (data.onlinePresence.includes(SocialNetworks.TikTok)) {
-            if (!data.tiktokProfileURL) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["tiktokProfileURL"],
-                    message: "TikTok statistics required"
-                });
-            }
-            if (!data.tiktokSubscriberScreenshots?.length) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["tiktokSubscriberScreenshots"],
-                    message: "TikTok statistics required"
-                });
-            }
+        return true;
+    }, {
+        path: ['instagramAccountsScreenshots']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('instagram')) {
+            return !!data.instagramProfileURL;
         }
-        if (data.onlinePresence.includes(SocialNetworks.YouTube)) {
-            if (!data.youtubeProfileURL) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["youtubeProfileURL"],
-                    message: "Youtube statistics required"
-                });
-            }
-            if (!data.youtubeSubscriberScreenshots?.length) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["youtubeSubscriberScreenshots"],
-                    message: "Youtube statistics required"
-                });
-            }
+        return true;
+    }, {
+        path: ['instagramProfileURL']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('instagram')) {
+            return !!data.instagramSubscriberScreenshots && data.instagramSubscriberScreenshots?.length > 0;
         }
-        if (data.onlinePresence.includes(SocialNetworks.Blog)) {
-            if (!data.blogAudienceProfile) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["blogAudienceProfile"],
-                    message: "Blog statistics required"
-                });
-            }
-            if (!data.blogMonthlyPageViews) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["blogMonthlyPageViews"],
-                    message: "Blog statistics required"
-                });
-            }
-            if (!data.blogMonthlyUniqueVisitors) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["blogMonthlyUniqueVisitors"],
-                    message: "Blog statistics required"
-                });
-            }
-            if (!data.blogURL) {
-                ctx.addIssue({
-                    code: "custom",
-                    path: ["blogURL"],
-                    message: "Blog statistics required"
-                });
-            }
+        return true;
+    }, {
+        path: ['instagramSubscriberScreenshots']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('tiktok')) {
+            return !!data.tiktokProfileURL;
         }
+        return true;
+    }, {
+        path: ['tiktokProfileURL']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('tiktok')) {
+            return !!data.tiktokSubscriberScreenshots && data.tiktokSubscriberScreenshots?.length > 0;
+        }
+        return true;
+    }, {
+        path: ['tiktokSubscriberScreenshots']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('youtube')) {
+            return !!data.youtubeProfileURL;
+        }
+        return true;
+    }, {
+        path: ['youtubeProfileURL']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('youtube')) {
+            return !!data.youtubeSubscriberScreenshots && data.youtubeSubscriberScreenshots?.length > 0;
+        }
+        return true;
+    }, {
+        path: ['youtubeSubscriberScreenshots']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('blog')) {
+            return !!data.blogAudienceProfile;
+        }
+        return true;
+    }, {
+        path: ['blogAudienceProfile']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('blog')) {
+            return !!data.blogMonthlyPageViews;
+        }
+        return true;
+    }, {
+        path: ['blogMonthlyPageViews']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('blog')) {
+            return !!data.blogMonthlyUniqueVisitors;
+        }
+        return true;
+    }, {
+        path: ['blogMonthlyUniqueVisitors']
+    })
+    .refine((data) => {
+        if (data.onlinePresence.includes('blog')) {
+            return !!data.blogURL;
+        }
+        return true;
+    }, {
+        path: ['blogURL']
     });
 
 export const schemaStep2 = schemaStep1.safeExtend({
@@ -188,7 +190,7 @@ export const schemaStep4 = schemaStep3.safeExtend({
         if (
             hasNumber !== hasValidity ||
             data.passportNumber && (data.passportNumber.trim() === "" || !hasNumber) ||
-            data.passportValidity && (data.passportValidity.trim() === "" || !hasValidity))  {
+            data.passportValidity && (data.passportValidity.trim() === "" || !hasValidity)) {
             ctx.addIssue({
                 code: "custom",
                 path: ["personalInformationPassport"],
@@ -206,13 +208,13 @@ export const schemaStep4 = schemaStep3.safeExtend({
 
         // emergency name or phone can't be empty
         data.emergencyContactNames.forEach((_, index) => {
-            if (data.emergencyContactNames[index] === "" || data.emergencyContactNames[index] === undefined ) {
+            if (data.emergencyContactNames[index] === "" || data.emergencyContactNames[index] === undefined) {
                 ctx.addIssue({
                     code: "custom",
                     path: [`emergencyContactNames_${index}`],
                 });
             }
-            if ( data.emergencyContactPhones[index] === "" || data.emergencyContactPhones[index] === undefined) {
+            if (data.emergencyContactPhones[index] === "" || data.emergencyContactPhones[index] === undefined) {
                 ctx.addIssue({
                     code: "custom",
                     path: [`emergencyContactPhones_${index}`],

@@ -8,14 +8,15 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4Client } from 'sveltekit-superforms/adapters';
+  import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import Loading from '$lib/components/Loading.svelte';
+  import { dev } from '$app/environment';
 
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
+  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
@@ -27,6 +28,7 @@
       resetForm: false,
       applyAction: true,
       clearOnSubmit: 'none',
+      errorSelector: '[aria-invalid="true"],[data-invalid]',
       onUpdate: async ({ form }) => {
         if (form.valid) step = 0;
         isSubmitting = false;
@@ -114,6 +116,12 @@
     page.data.locale;
     step = 0;
   });
+
+  if (dev) {
+    $effect(() => {
+      console.log({ errors: $errors });
+    });
+  }
 </script>
 
 <Container width="small">
@@ -196,10 +204,14 @@
 
             {#each Object.values(MediaTypes) as mediaType}
               <label
-                class="label my-1 text-wrap break-words {$errors.mediaTypes ? 'text-error' : ''}"
+                class="label my-1 text-wrap break-words {$errors.mediaTypes?._errors !== undefined
+                  ? 'text-error'
+                  : ''}"
               >
                 <input
-                  class="checkbox color-white {$errors.mediaTypes ? 'border-error' : ''}"
+                  class="checkbox color-white {$errors.mediaTypes?._errors !== undefined
+                    ? 'border-error'
+                    : ''}"
                   type="checkbox"
                   checked={$form.mediaTypes.includes(mediaType)}
                   value={mediaType}
@@ -219,6 +231,19 @@
               </label>
             {/each}
           </div>
+
+          <label for="object-request" class="label text-wrap break-words">
+            {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.object-request`)}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          </label>
+          <textarea
+            id="object-request"
+            name="objectRequest"
+            defaultValue={($form.objectRequest as string | undefined) ?? ''}
+            bind:value={$form.objectRequest}
+            class="textarea w-full {$errors.objectRequest ? 'textarea-error' : ''}"
+            aria-required={$errors.objectRequest ? 'true' : undefined}
+          ></textarea>
         </fieldset>
         <!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 
@@ -268,8 +293,9 @@
               aria-invalid={$errors.printMediaStatistics?.broadcastLocation ? 'true' : undefined}
             />
 
-            {#if $errors.printMediaStatistics?._errors}
-              {@const printErrors = $errors.printMediaStatistics?._errors ?? []}
+            {#if $errors.printMediaStatistics?.printMediaStatistics !== undefined}
+              {@const printErrors =
+                $errors.printMediaStatistics?.printMediaStatistics !== undefined ?? []}
               <p id="media-types-error" class="text-error error">
                 {#each printErrors as error}
                   {@html $t(error)}<br />
@@ -284,7 +310,9 @@
             <input
               id="print-statistics-copies"
               type="number"
-              class="input w-full {$errors.printMediaStatistics?._errors ? 'input-error' : ''}"
+              class="input w-full {$errors.printMediaStatistics?.printMediaStatistics !== undefined
+                ? 'input-error'
+                : ''}"
               defaultValue={$form.printMediaStatistics?.copies ?? 0}
               onchange={(e) => {
                 const value = e.currentTarget.valueAsNumber;
@@ -300,7 +328,9 @@
               aria-label={$t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.copies`
               )}
-              aria-invalid={$errors.printMediaStatistics?._errors ? 'true' : undefined}
+              aria-invalid={$errors.printMediaStatistics?.printMediaStatistics !== undefined
+                ? 'true'
+                : undefined}
             />
 
             <label for="print-statistics-readers" class="label text-wrap break-words">
@@ -311,7 +341,9 @@
             <input
               id="print-statistics-readers"
               type="number"
-              class="input w-full {$errors.printMediaStatistics?._errors ? 'input-error' : ''}"
+              class="input w-full {$errors.printMediaStatistics?.printMediaStatistics !== undefined
+                ? 'input-error'
+                : ''}"
               defaultValue={$form.printMediaStatistics?.readers ?? 0}
               onchange={(e) => {
                 const value = e.currentTarget.valueAsNumber;
@@ -324,7 +356,9 @@
                   };
                 }
               }}
-              aria-invalid={$errors.printMediaStatistics?._errors ? 'true' : undefined}
+              aria-invalid={$errors.printMediaStatistics?.printMediaStatistics !== undefined
+                ? 'true'
+                : undefined}
             />
           </fieldset>
         {/if}

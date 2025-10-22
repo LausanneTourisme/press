@@ -275,6 +275,11 @@ const generateMailContent = ({
       &nbsp;
       <span>${data.onlinePresence?.map(x => t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${x}`)).join(', ') ?? ''}</span>
     </div>
+    <div class="field" style="margin: 0.3rem 0;">
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.object-request`)} :</span>
+      &nbsp;
+      <span>${data.objectRequest ?? ''}</span>
+    </div>
   </section>
   `;
 
