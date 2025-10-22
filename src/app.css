@@ -1,6 +1,14 @@
 @import 'tailwindcss';
 
 @plugin "daisyui";
+
+@theme "daisyui/theme" {
+  --color-base-placeholder: color-mix(in oklab, currentColor 50%, transparent);
+}
+::placeholder {
+  color: var(--color-base-placeholder);
+}
+
 @theme {
   --breakpoint-xs: 28rem;
   --breakpoint-2xl: 100rem;
