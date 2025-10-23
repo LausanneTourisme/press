@@ -429,7 +429,7 @@
       </Paragraph>
       <a
         href="tel:0041216137373"
-        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
+        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg p-4"
       >
         <Phone strokeWidth={2.5} class="aspect-square h-5" />
         +41 21 613 73 73
