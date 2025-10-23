@@ -210,10 +210,8 @@
             {@html $t('contact.form.mail-section.form.gender-section.title')}
             <span class="text-brand-600">*</span>
           </p>
-          <div>
-            <ul class="flex h-20 items-center justify-center gap-4 lg:h-14">
-              <li class="h-full w-full">
-                <input
+          <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 lg:h-14">
+            <input
                   type="radio"
                   id="title-0"
                   name="title"
@@ -234,8 +232,7 @@
                     {@html $t('contact.form.mail-section.form.gender-section.madam')}
                   </span>
                 </label>
-              </li>
-              <li class="h-full w-full">
+
                 <input
                   type="radio"
                   id="title-1"
@@ -257,8 +254,7 @@
                     {@html $t('contact.form.mail-section.form.gender-section.sir')}
                   </span>
                 </label>
-              </li>
-              <li class="h-full w-full">
+
                 <input
                   type="radio"
                   id="title-2"
@@ -280,8 +276,17 @@
                     {@html $t('contact.form.mail-section.form.gender-section.they')}
                   </span>
                 </label>
+            <!-- <ul class="flex flex-wrap lg:flex-nowrap h-20 items-center justify-center gap-4 lg:h-14">
+              <li class="h-full w-full">
+
               </li>
-            </ul>
+              <li class="h-full w-full">
+
+              </li>
+              <li class="h-full w-full">
+
+              </li>
+            </ul> -->
           </div>
           <div class="label">
             <span class="label-text-alt">
