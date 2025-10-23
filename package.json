@@ -8,13 +8,14 @@
     "dev": ". $HOME/.nvm/nvm.sh && nvm use && vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "format": "prettier --write .",
-    "lint": "prettier --check . && eslint .",
+    "prepare": "svelte-kit sync || echo ''",
+    "lint": "prettier --check . && eslint ./src",
+    "format": "prettier --write ./src",
     "deploy": "scripts/build.sh",
-    "sync:cloudinary": "node scripts/cloudinary.js"
+    "sync:cloudinary": "node scripts/cloudinary.js",
+    "test": "vitest"
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
@@ -37,6 +38,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-svelte": "^3.12.5",
     "globals": "^16.4.0",
+    "jsdom": "^27.0.1",
     "lucide-svelte": "^0.546.0",
     "maplibre-gl": "^5.9.0",
     "msw": "^2.11.6",
@@ -56,6 +58,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2",
     "vite": "^7.1.11",
+    "vitest": "^4.0.1",
     "zod": "^4.1.12"
   },
   "dependencies": {
