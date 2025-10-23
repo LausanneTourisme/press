@@ -43,12 +43,12 @@ export type Media<T extends Translatable | string> = {
   metadata?: Metadata<T>;
   mime_type?: string;
   is_in_gallery?: boolean;
-  original_width: number;
-  original_height: number;
+  original_width?: number;
+  original_height?: number;
   original_ratio?: string;
   seo?: Seo<T>;
-  updated_at: string;
-  created_at: string;
+  updated_at?: string;
+  created_at?: string;
 };
 
 export type Tag<T extends Translatable | string> = {
@@ -151,6 +151,11 @@ export type Schedules = {
     dates?: ExceptionDate[] | null | undefined;
   };
 };
+
+export type Range = {
+  from: `${YYYY}-${MM}-${DD}`,
+  to: `${YYYY}-${MM}-${DD}`,
+}
 
 export type ScheduleDate = {
   label?: string | null | undefined;
