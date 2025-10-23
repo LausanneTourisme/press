@@ -150,7 +150,7 @@ const sendFormByEmail = async ({ formdata,
     attachments.push(pdf)
   }
 
-  const { internal_reponse } = await sendEmail({
+  const { internal_reponse, external_response } = await sendEmail({
     intern_mail: {
       from_name: "No Reply - Press",
       subject: "[Formulaire] - Createur de contenu",
@@ -170,7 +170,7 @@ const sendFormByEmail = async ({ formdata,
     } : undefined,
   });
 
-  return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued')
+  return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued') && (external_response?.every(x => x.status === 'sent' || x.status === 'queued') ?? true)
 }
 
 const getImagesFromForm = async (formdata: FormData) => {
