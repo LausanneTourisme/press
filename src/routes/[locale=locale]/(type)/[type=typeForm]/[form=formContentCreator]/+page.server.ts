@@ -161,7 +161,7 @@ const sendFormByEmail = async ({ formdata,
     external_mail: mediaProfileContentCreator.personalEmail ? {
       from_email: MAIL_FROM,
       from_name: t.get(`${RouteTypes.Form}.email.from-name`),
-      subject: t.get(`${RouteTypes.Form}.email.subject`, { form: t.get(`${RouteTypes.Form}.${Forms.Journalist}.title`) }),
+      subject: t.get(`${RouteTypes.Form}.email.subject`, { form: t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.title`) }),
       html: `<p>${t.get(`${RouteTypes.Form}.email.content`, { name: `${mediaProfileContentCreator.personalFirstName} ${mediaProfileContentCreator.personalLastName}` })}</p><p><i>${t.get(`${RouteTypes.Form}.email.automatic-mail-disclaimer`)}</i></p>`,
       to: [{
         email: mediaProfileContentCreator.personalEmail,
