@@ -42,6 +42,8 @@ export const findAvailablePeriod = (
   start: DateTime | null | undefined,
   end: DateTime | null | undefined
 ): Period | null => {
+  if(start && end && end < start) return null;
+
   const today = start ?? DateTime.now();
   for (const period of sortPeriods(schedule.periods ?? [])) {
     if (isBetween(period, today, end)) {
