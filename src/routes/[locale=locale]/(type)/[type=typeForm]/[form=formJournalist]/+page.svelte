@@ -693,7 +693,7 @@
               class="label text-wrap break-words"
             >
               {@html $t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Online}.publish-date`
+                `${RouteTypes.Form}.${Forms.Journalist}.form.coverage.${MediaTypes.Radio}-and-${MediaTypes.Tv}.publish-date`
               )}
               {#if Number($constraints.mediaCoverageTvOrRadio?.publishDate?.minlength) > 0}
                 <span class="text-brand-600 italic">

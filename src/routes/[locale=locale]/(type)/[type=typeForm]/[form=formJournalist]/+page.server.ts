@@ -99,7 +99,7 @@ const sendFormByEmail = async ({
     const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
 
     const pdf = {
-      name: '[Formulaire] - Createur de contenu.pdf',
+      name: '[Formulaire] - Journaliste.pdf',
       type: 'application/pdf',
       content: pdfBase64,
     }
