@@ -141,7 +141,7 @@
         <!-- Username -->
         <label for="posts-section-username" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.username`)}
-          {#if $form.socialNetworks?.some( (x: SocialNetwork) => socialNetworksRequirements.includes(x) )}
+          {#if $form.socialNetworks?.some( (x: SocialNetwork) => (socialNetworksRequirements as string[]).includes(x) )}
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           {/if}
         </label>
@@ -227,9 +227,6 @@
             {@html $t(
               `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`
             )}
-            {#if $form.numberOfClicks?.required}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
-            {/if}
           </label>
           <input
             type="number"
