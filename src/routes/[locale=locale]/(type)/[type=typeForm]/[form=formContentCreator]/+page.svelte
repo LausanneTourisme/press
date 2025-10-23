@@ -510,7 +510,7 @@
 
           <label for="blogMonthlyUniqueVisitors" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.monthly-unique-visitors`
+              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performance.monthly-unique-visitors`
             )}
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
@@ -524,7 +524,7 @@
 
           <label for="blogMonthlyPageViews" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.montlhy-page-views`
+              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performance.montlhy-page-views`
             )}
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
           </label>
