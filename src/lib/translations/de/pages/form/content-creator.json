@@ -28,11 +28,11 @@
                 "title": "Instagram Konto",
                 "profile-url": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "title": "Abonnentenstatistiken (Screenshots)",
                     "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 },
                 "accounts-that-responded-screenshots": {
-                    "title": "Konten, die reagiert haben (Screenshots)",
+                    "title": "Interagierende Konten (Screenshots)",
                     "description": "Interaktion mit dem Inhalt"
                 }
             },
@@ -40,7 +40,7 @@
                 "title": "TikTok Konto",
                 "profile-url": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "title": "Follower-Einblicke (Screenshots)",
                     "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 }
             },
@@ -48,7 +48,7 @@
                 "title": "Youtube Konto",
                 "profile-url": "Profil-URL",
                 "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+                    "title": "Zielgruppen-Statistiken (Screenshots)",
                     "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
                 }
             },

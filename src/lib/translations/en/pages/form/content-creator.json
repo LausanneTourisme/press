@@ -28,11 +28,11 @@
                 "title": "Instagram account",
                 "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
+                    "title": "Audience Insights (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
                 },
                 "accounts-that-responded-screenshots":  {
-                    "title": "Accounts that responded (screenshots)",
+                    "title": "Accounts engaged (screenshots)",
                     "description": "Interaction with content"
                 }
             },
@@ -40,7 +40,7 @@
                 "title": "TikTok account",
                 "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
+                    "title": "Follower insights (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
                 }
             },
@@ -48,7 +48,7 @@
                 "title": "Youtube account",
                 "profile-url": "Profile URL",
                 "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
+                    "title": "Audience Insights (screenshots)",
                     "description": "Please include the main locations (regions and towns)"
                 }
             },
@@ -61,8 +61,8 @@
                 },
                 "performance": {
                     "title": "Blog performance",
-                    "monthly-unique-visitors": "Reach/Unique visitors per month",
-                    "montlhy-page-views": "Number of pages viewed per month"
+                    "monthly-unique-visitors": "Monthly reach/Unique visitors per month",
+                    "montlhy-page-views": "Number of page views per month"
                 }
             }
         },
@@ -107,7 +107,7 @@
                 "half-fare": "Half-fare",
                 "swiss-ga-travelcard": "Swiss GA Travel Card"
             },
-            "last-visit": "Last date for visit to Lausanne/Switzerland"
+            "last-visit": "Last visit to Lausanne/Switzerland"
         },
         "personal-information": {
             "title": "Personal information",
@@ -143,7 +143,7 @@
             "phone-number": "Mobile phone number (with area code)",
             "email": "Email",
             "allergies": "Food allergies or restrictions",
-            "medical-and-physical-condition": "Medical and physical conditio",
+            "medical-and-physical-condition": "Medical and physical condition",
             "emergency-contacts": {
                 "title": "Emergency contacts",
                 "name": "Name",
