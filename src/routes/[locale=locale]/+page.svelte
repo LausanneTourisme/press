@@ -147,19 +147,19 @@
           size: 768,
           transform: { gravity: 'west', crop: 'auto', width: 1280 },
           src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          usePreset: true
         },
         {
           size: 1280,
           transform: { gravity: 'west', crop: 'auto', width: 1920 },
           src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          usePreset: true
         },
         {
           size: 2560,
           transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
           src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          usePreset: true
         }
       ]}
     />

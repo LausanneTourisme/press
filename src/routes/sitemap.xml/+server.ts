@@ -1,42 +1,53 @@
-import { RouteTypes, Themes } from "$enums";
-import { getMediaLibraryRegisterLink, route } from "$lib/helpers";
-import { menuItems } from "$lib/helpers/menu";
-import { getPosts } from "$lib/helpers/requests.server";
-import { defaultLocale, type Locale, supportedLocales, translations } from "$lib/translations";
-import type { Release, Translatable } from "$types";
-import type { RequestHandler } from "@sveltejs/kit";
+import { RouteTypes, Themes } from '$enums';
+import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
+import { menuItems } from '$lib/helpers/menu';
+import { getPosts } from '$lib/helpers/requests.server';
+import { defaultLocale, type Locale, supportedLocales, translations } from '$lib/translations';
+import type { Release, Translatable } from '$types';
+import type { RequestHandler } from '@sveltejs/kit';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const GET: RequestHandler = async ({ url }) => {
-  const urlSets = await Promise.all([generateUrlSets(PUBLIC_BASE_URL), generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL)]);
+  const urlSets = await Promise.all([
+    generateUrlSets(PUBLIC_BASE_URL),
+    generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL)
+  ]);
 
-  return new Response(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`, {
-    headers: {
-      'Content-Type': 'application/xml',
-    },
-  });
+  return new Response(
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`,
+    {
+      headers: {
+        'Content-Type': 'application/xml'
+      }
+    }
+  );
 };
 
 const generateUrlSets = async (urlOrigin: string) => {
-  const urlSets: string[] = [generateAlternateUrlBlocks(urlOrigin, supportedLocales.map(x => `/${x}`))];
+  const urlSets: string[] = [
+    generateAlternateUrlBlocks(
+      urlOrigin,
+      supportedLocales.map((x) => `/${x}`)
+    )
+  ];
   const links = new Map<Locale, Map<string, string>>();
 
   supportedLocales.forEach((locale) => {
     links.set(locale, getLinksByLocale(locale));
   });
 
-  const keys = Array.from(links.get(defaultLocale)!.keys()).map(x => x.substring(3));
+  const keys = Array.from(links.get(defaultLocale)!.keys()).map((x) => x.substring(3));
 
   keys.forEach((key) => {
     const alternates: string[] = [];
     supportedLocales.forEach((locale) => {
-      alternates.push(links.get(locale)!.get(`${locale}.${key}`)!)
+      alternates.push(links.get(locale)!.get(`${locale}.${key}`)!);
     });
     urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates));
   });
 
   return urlSets;
-}
+};
 
 const getLinksByLocale = (locale: Locale) => {
   const list = menuItems(locale);
@@ -51,27 +62,27 @@ const getLinksByLocale = (locale: Locale) => {
         if (menuItem.link === getMediaLibraryRegisterLink(locale)) return;
 
         links.set(`${locale}.${menuIndex}.${menuItemIndex}`, menuItem.link);
-      })
+      });
     }
   });
 
   return links;
-}
+};
 
 const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[]) => {
   return paths
     .map((locUrl) => {
       const alternates = paths
         .map((alternateUrl) => {
-          const locale = alternateUrl.split("/")[1]; // extract 'fr', 'de', etc.
+          const locale = alternateUrl.split('/')[1]; // extract 'fr', 'de', etc.
           return `\t\t<xhtml:link rel="alternate" hreflang="${locale}" href="${urlOrigin}${alternateUrl}" />`;
         })
-        .join("\n");
+        .join('\n');
 
       return `\t<url>\n\t\t<loc>${urlOrigin}${locUrl}</loc>\n${alternates}\n\t</url>`;
     })
-    .join("\n");
-}
+    .join('\n');
+};
 
 const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
   const slugsAlreadyCreated: string[] = [];
@@ -91,10 +102,10 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
       if (slugsAlreadyCreated.includes(slug)) return;
 
       slugsAlreadyCreated.push(slug);
-      alternates.push(`/${l}/${translations.get()[l][`route.${type}.slug`]}/${slug}`)
+      alternates.push(`/${l}/${translations.get()[l][`route.${type}.slug`]}/${slug}`);
     });
     urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates));
   }
 
   return urlSets;
-}
+};

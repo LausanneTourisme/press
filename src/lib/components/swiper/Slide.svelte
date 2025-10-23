@@ -7,7 +7,7 @@
     children: Snippet;
   };
 
-  const { class: additionalClass = "w-min!", children }: Props = $props();
+  const { class: additionalClass = 'w-min!', children }: Props = $props();
 </script>
 
 <div class={twMerge('swiper-slide', additionalClass)}>

@@ -62,13 +62,13 @@
         }
       }
     } else if (length === 3) {
-        switch (gridIndex) {
-          case 0:
-          case 2:
-            return { height: 480, width: 960 };
-          case 1:
-            return { height: 960, width: 480 };
-        }
+      switch (gridIndex) {
+        case 0:
+        case 2:
+          return { height: 480, width: 960 };
+        case 1:
+          return { height: 960, width: 480 };
+      }
     }
 
     return { height: 360, width: 360 };
@@ -120,7 +120,7 @@
         crop: 'auto',
         gravity: 'south',
         ...themeInformation.transform,
-        ...imageSizes(),
+        ...imageSizes()
       }}
     />
   </div>

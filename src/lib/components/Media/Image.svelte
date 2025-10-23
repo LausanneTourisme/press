@@ -68,7 +68,7 @@
         if (s.isLocal) {
           return { size: s.size, src: `${s.src}` }; // ${s.size}
         }
-        return { size: s.size, src: generateCloudinaryUrl(s)};
+        return { size: s.size, src: generateCloudinaryUrl(s) };
       });
     }
 
@@ -83,5 +83,11 @@
   {#each srcSetFinal.reverse() as srcSet}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
-  <img class={twMerge("w-full h-auto object-cover", imgClass)} src={srcFinal} {alt} {title} {onload} />
+  <img
+    class={twMerge('h-auto w-full object-cover', imgClass)}
+    src={srcFinal}
+    {alt}
+    {title}
+    {onload}
+  />
 </picture>

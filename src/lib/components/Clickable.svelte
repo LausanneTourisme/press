@@ -6,7 +6,7 @@
 
   interface Props {
     href: string;
-    title?: string,
+    title?: string;
     preload?: true | '' | 'hover' | 'tap' | 'off';
     overflow?: boolean;
     class?: string;
@@ -32,6 +32,14 @@
   );
 </script>
 
-<a {href} {target} class={style} data-sveltekit-preload-data={preload} {title} {onclick} transition:fade>
+<a
+  {href}
+  {target}
+  class={style}
+  data-sveltekit-preload-data={preload}
+  {title}
+  {onclick}
+  transition:fade
+>
   {@render children()}
 </a>

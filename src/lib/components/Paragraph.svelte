@@ -5,7 +5,7 @@
   type HeadingProps = {
     class?: string;
     centered?: boolean;
-    title?: string,
+    title?: string;
     children: Snippet;
   };
 

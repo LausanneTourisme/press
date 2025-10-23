@@ -34,10 +34,12 @@
       image: pageData.seo.image
     };
   });
-  const flash = $derived.by(() =>getFlash(page, {
-    clearAfterMs: 7000,
-    clearOnNavigate: true,
-  }));
+  const flash = $derived.by(() =>
+    getFlash(page, {
+      clearAfterMs: 7000,
+      clearOnNavigate: true
+    })
+  );
 
   afterNavigate((navigate) => {
     // return back in navigation doesn't re-trigger scroll to anchor
@@ -160,7 +162,7 @@
           'flash',
           $flash.type == 'success' ? 'bg-apple-300' : 'bg-red-300',
           'fixed',
-          'top-[60px] md:top-[120px] left-0',
+          'top-[60px] left-0 md:top-[120px]',
           'w-full',
           'z-11',
           'text-center font-bold',

@@ -62,7 +62,10 @@
   $effect(() => {
     if (animate) play();
   });
-  const style = twMerge('stat place-items-center border-none xl:px-2 !border-none', additionalClass);
+  const style = twMerge(
+    'stat place-items-center border-none xl:px-2 !border-none',
+    additionalClass
+  );
 </script>
 
 <div class={style}>
@@ -77,5 +80,5 @@
       {formatNumber(animatedResult)}
     </span>
   </div>
-  <p class="stat-title !text-base max-w-48 text-center text-wrap break-words">{@html label}</p>
+  <p class="stat-title max-w-48 text-center !text-base text-wrap break-words">{@html label}</p>
 </div>

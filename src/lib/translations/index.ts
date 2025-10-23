@@ -1,5 +1,5 @@
-import { dev } from "$app/environment";
-import { Forms, RouteTypes, Themes } from "$enums";
+import { dev } from '$app/environment';
+import { Forms, RouteTypes, Themes } from '$enums';
 import i18n, { type Config } from 'sveltekit-i18n';
 import langDe from './de/lang.json';
 import routeTypeDe from './de/route.json';
@@ -33,7 +33,7 @@ export const config: Config<{
   fallbackLocale: defaultLocale,
   cache: dev ? 0 : undefined, //no cache in dev
   log: {
-    level: dev ? 'warn' : 'error',
+    level: dev ? 'warn' : 'error'
   },
   translations: {
     fr: {
@@ -47,102 +47,107 @@ export const config: Config<{
     de: {
       lang: langDe,
       route: routeTypeDe
-    },
+    }
   },
   loaders: [
     // Route
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: 'route',
       routes: undefined,
-      loader: async () => routeTypes[locale],
+      loader: async () => routeTypes[locale]
     })),
 
     // Menu
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: 'menu',
       routes: undefined,
-      loader: async () => (await import(`./${locale}/menu.json`)).default,
+      loader: async () => (await import(`./${locale}/menu.json`)).default
     })),
 
     // Footer
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: 'footer',
       routes: undefined,
-      loader: async () => (await import(`./${locale}/footer.json`)).default,
+      loader: async () => (await import(`./${locale}/footer.json`)).default
     })),
 
     // Common
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: 'common',
       routes: undefined,
-      loader: async () => (await import(`./${locale}/common.json`)).default,
+      loader: async () => (await import(`./${locale}/common.json`)).default
     })),
 
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
-      .filter(x => x !== RouteTypes.Home && x !== RouteTypes.Themes && x !== RouteTypes.Form)
-      .flatMap(type => supportedLocales.map(locale => {
-        const slug = routeTypes[locale][`${type}.slug`];
-        return {
-          locale,
-          key: type,
-          routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
-          loader: async () => (await import(`./${locale}/pages/${type}.json`)).default,
-        }
-      })),
+      .filter((x) => x !== RouteTypes.Home && x !== RouteTypes.Themes && x !== RouteTypes.Form)
+      .flatMap((type) =>
+        supportedLocales.map((locale) => {
+          const slug = routeTypes[locale][`${type}.slug`];
+          return {
+            locale,
+            key: type,
+            routes: [`/${locale}/${slug}`, `/${locale}/${slug}/`],
+            loader: async () => (await import(`./${locale}/pages/${type}.json`)).default
+          };
+        })
+      ),
 
     // Home
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: 'page',
       routes: ['/', `/${locale}`, `/${locale}/`],
-      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default,
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Home}.json`)).default
     })),
 
     // Themes
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: RouteTypes.Themes,
       routes: undefined,
-      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Themes}.json`)).default,
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Themes}.json`)).default
     })),
 
     //create all translations for specific theme's view
-    ...Object.values(Themes)
-      .flatMap(theme => supportedLocales.map(locale => {
+    ...Object.values(Themes).flatMap((theme) =>
+      supportedLocales.map((locale) => {
         return {
           locale,
           key: `${RouteTypes.Themes}.${theme}`,
           routes: undefined,
-          loader: async () => (await import(`./${locale}/pages/${RouteTypes.Themes}/${theme}.json`)).default,
-        }
-      })),
-
+          loader: async () =>
+            (await import(`./${locale}/pages/${RouteTypes.Themes}/${theme}.json`)).default
+        };
+      })
+    ),
 
     // Form
-    ...supportedLocales.map(locale => ({
+    ...supportedLocales.map((locale) => ({
       locale,
       key: RouteTypes.Form,
       routes: undefined,
-      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}.json`)).default,
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}.json`)).default
     })),
 
     //create all translations for specific form's view
-    ...Object.values(Forms)
-      .flatMap(form => supportedLocales.map(locale => {
+    ...Object.values(Forms).flatMap((form) =>
+      supportedLocales.map((locale) => {
         return {
           locale,
           key: `${RouteTypes.Form}.${form}`,
           routes: undefined,
-          loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default,
-        }
-      })),
-  ],
-}
+          loader: async () =>
+            (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default
+        };
+      })
+    )
+  ]
+};
 
 export const {
   t,
@@ -153,12 +158,12 @@ export const {
   loadTranslations,
   translations,
   setRoute,
-  setLocale,
+  setLocale
 } = new i18n(config);
 
 export const isValidLocale = (locale: Locale | string): boolean => {
-  return (supportedLocales as string[]).includes(locale.toLowerCase())
-}
+  return (supportedLocales as string[]).includes(locale.toLowerCase());
+};
 
 export const isLocale = (param: string): param is Locale => {
   return supportedLocales.includes(param as Locale);

@@ -10,7 +10,7 @@
 
   type Props = {
     class?: string;
-    parallaxClass?: string,
+    parallaxClass?: string;
     cloudinaryId: string;
     alt: string;
     size: 'small' | 'medium' | 'large' | 'parallax';
@@ -82,23 +82,23 @@
 {#if size === 'parallax'}
   <div bind:clientWidth={parallaxWidth}>
     <Parallax
-        class={twMerge(!fixed ? 'pt-0' : '')}
-        imageClass={twMerge(style, parallaxClass)}
-        width={parallaxWidth}
-        focus={getFocus()}
-        {cloudinaryId}
-        {fixed}
-        {size}
-        >
-        {#if children}
-          {@render children()}
-        {/if}
+      class={twMerge(!fixed ? 'pt-0' : '')}
+      imageClass={twMerge(style, parallaxClass)}
+      width={parallaxWidth}
+      focus={getFocus()}
+      {cloudinaryId}
+      {fixed}
+      {size}
+    >
+      {#if children}
+        {@render children()}
+      {/if}
     </Parallax>
   </div>
 {:else if imgFormat === 'vertical'}
-  <VerticalImage class="vertical-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <VerticalImage class="vertical-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
 {:else if imgFormat === 'horizontal'}
-  <HorizontalImage class="hotizontal-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <HorizontalImage class="hotizontal-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
 {:else}
-  <SquareImage class="sqaure-image" focus={getFocus()} {size} {alt} {cloudinaryId}  />
+  <SquareImage class="sqaure-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
 {/if}

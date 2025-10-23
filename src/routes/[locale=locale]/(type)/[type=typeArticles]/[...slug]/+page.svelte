@@ -29,7 +29,7 @@
 
 <Container fullscreen class="articles pt-5">
   <article transition:fade>
-    <Container width="medium" class='pb-0'>
+    <Container width="medium" class="pb-0">
       <p>
         {ucfirst($t(`common.route-titles.${type}`))}
         &mdash; {DateTime.fromSeconds(parseInt(article.published_at ?? '0'))
@@ -44,7 +44,7 @@
             {#if theme && name}
               <span
                 class={twMerge(
-                  'badge rounded-full mr-2 border-0 py-3 text-white outline-0',
+                  'badge mr-2 rounded-full border-0 py-3 text-white outline-0',
                   ThemeDetails[ThemeKeys[theme]].color
                 )}>#&nbsp;{name}</span
               >
@@ -54,6 +54,6 @@
       {/if}
       <hr class="mt-4 border border-gray-300" />
     </Container>
-    <PostContent {hero} post={article}/>
+    <PostContent {hero} post={article} />
   </article>
 </Container>

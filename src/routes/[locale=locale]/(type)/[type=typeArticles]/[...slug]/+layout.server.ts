@@ -10,39 +10,47 @@ import { error } from '@sveltejs/kit';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url, ...rest }) => {
-    if (dev && isOfflineMode) {
-        //MOCK fetch requests
-        server.listen()
-    }
+  if (dev && isOfflineMode) {
+    //MOCK fetch requests
+    server.listen();
+  }
 
-    const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([
-        parent(),
-        getPost(params.slug ?? ''),
-    ]);
+  const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([
+    parent(),
+    getPost(params.slug ?? '')
+  ]);
 
-    const article = articleRes.data.item;
+  const article = articleRes.data.item;
 
-    if (!article || !article.languages?.includes(locale)) throw error(404);
+  if (!article || !article.languages?.includes(locale)) throw error(404);
 
-    await loadTranslations(locale, url.pathname);
+  await loadTranslations(locale, url.pathname);
 
-    const seo: SeoHeader = {
-        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
-        title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
-        description: article.lead?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.meta-description`],
-        image: generateCloudinaryUrl({ src: article.medias?.at(0)?.cloudinary_id ?? 'default', usePreset: false, transform: { h: 720, w: 1280 } }),
-        alternate: supportedLocales.filter(l => article.languages?.includes(l)).map(locale => ({
-            hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.${RouteTypes.Articles}.slug`]}/${article.seo?.slug?.[locale]}`
-        })),
-    }
+  const seo: SeoHeader = {
+    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
+    description:
+      article.lead?.[locale as Locale] ??
+      translations[locale][`${RouteTypes.Articles}.meta-description`],
+    image: generateCloudinaryUrl({
+      src: article.medias?.at(0)?.cloudinary_id ?? 'default',
+      usePreset: false,
+      transform: { h: 720, w: 1280 }
+    }),
+    alternate: supportedLocales
+      .filter((l) => article.languages?.includes(l))
+      .map((locale) => ({
+        hreflang: locale,
+        href: `/${locale}/${translations[locale][`route.${RouteTypes.Articles}.slug`]}/${article.seo?.slug?.[locale]}`
+      }))
+  };
 
-    return {
-        i18n,
-        translations,
-        seo,
-        locale,
-        type,
-        article
-    };
+  return {
+    i18n,
+    translations,
+    seo,
+    locale,
+    type,
+    article
+  };
 };

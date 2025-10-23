@@ -31,12 +31,12 @@
     };
   });
   const themeInformation = $derived.by(() => {
-    const theme = getRandomTheme()
+    const theme = getRandomTheme();
     return ThemeDetails[ThemeKeys[theme]];
-  })
+  });
 </script>
 
-<Container width="medium" class="md:h-screen flex justify-center flex-col md:min-h-[600px]">
+<Container width="medium" class="flex flex-col justify-center md:h-screen md:min-h-[600px]">
   <Heading tag="h1" class="uppercase md:pb-20">{error.title}</Heading>
   <div class="flex flex-col-reverse md:flex-row md:pb-20">
     <div class="w-full md:w-2/3">
@@ -44,7 +44,7 @@
         {error.subtitle}
       </Heading>
       <Paragraph>
-        {error.description }
+        {error.description}
       </Paragraph>
 
       <Button href="/{$locale}/" tag="a">
@@ -52,8 +52,12 @@
       </Button>
     </div>
 
-    <div class="flex w-full md:w-1/3 justify-center items-center min-h-40">
-        <Figure src={themeInformation.head} class="aspect-square max-h-40 md:max-h-64" transform={{height: 320, width: 320}} />
+    <div class="flex min-h-40 w-full items-center justify-center md:w-1/3">
+      <Figure
+        src={themeInformation.head}
+        class="aspect-square max-h-40 md:max-h-64"
+        transform={{ height: 320, width: 320 }}
+      />
     </div>
   </div>
 </Container>

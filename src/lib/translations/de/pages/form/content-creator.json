@@ -1,156 +1,156 @@
 {
-    "title": "Inhaltsersteller",
-    "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
-    "validations": {
-        "emergency-contacts": {
-            "name": "Bitte geben Sie den Namen Ihrer Notfallkontaktperson an.",
-            "phone-number": "Bitte geben Sie die Telefonnummer Ihrer Notfallkontaktperson an.",
-            "minimum": "Bitte geben Sie mindestens eine Notfallkontaktperson an."
-        }
-    },
-    "form": {
-        "title": "Medienprofil",
-        "social-media-information": "Informationen zu sozialen Medien",
-        "content-positioning": "Positionierung von Inhalten",
-        "content-positioning-placeholder": "Reise, Foto, Natur, Mode, Lifestyle, ...",
-        "target-audience": "Zielpublikum(e)",
-        "target-audience-placeholder": "Alleinreisende, Citybreaker, Familien, ...",
-        "object-request": "Gegenstand des Antrags",
-        "online-presence": {
-            "title": "Online-Präsenz",
-            "instagram": "Instagram",
-            "tiktok": "TikTok",
-            "youtube": "YouTube",
-            "blog": "Blog"
-        },
-        "statistics": {
-            "instagram": {
-                "title": "Instagram Konto",
-                "profile-url": "Profil-URL",
-                "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
-                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
-                },
-                "accounts-that-responded-screenshots": {
-                    "title": "Konten, die reagiert haben (Screenshots)",
-                    "description": "Interaktion mit dem Inhalt"
-                }
-            },
-            "tiktok": {
-                "title": "TikTok Konto",
-                "profile-url": "Profil-URL",
-                "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
-                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
-                }
-            },
-            "youtube": {
-                "title": "Youtube Konto",
-                "profile-url": "Profil-URL",
-                "subscriber-statistics-screenshots": {
-                    "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
-                    "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
-                }
-            },
-            "blog": {
-                "title": "Blog",
-                "url": "Blog URL",
-                "audience-profile": {
-                    "title": "Profil des Publikums",
-                    "description": "Alter, Bildungsstand, Geschlecht, Wohnort, Interessen, ..."
-                },
-                "performance": {
-                    "title": "Blog-Performance",
-                    "monthly-unique-visitors": "Reach/einzelne Besucher pro Monat",
-                    "montlhy-page-views": "Anzahl der Seitenaufrufe pro Monat"
-                }
-            }
-        },
-        "coverage": {
-            "title": "Information über das Medienergebnis",
-            "publication-angle": {
-                "title": "Winkel der Veröffentlichung",
-                "description": "(Gastronomie, Lifestyle, Kultur, Natur, ...)"
-            },
-            "subjects-of-interest": "Thema(e) von Interesse",
-            "publication-channels": "Publikationskanäle",
-            "proposed-media-coverage": {
-                "title": "Vorgeschlagene Medienberichterstattung",
-                "description": "Anzahl der Posts, Videos, Stories, Real, Artikel, ..."
-            },
-            "timing-and-publication-Dates": {
-                "title": "Timing und Daten der Veröffentlichungen",
-                "description": "vor/während/nach der Reise"
-            }
-        },
-        "travel-information": {
-            "title": "Reiseinformationen",
-            "departure-point": {
-                "title": "Ort der Abreise",
-                "city": "Stadt",
-                "city-placeholder": "Lausanne",
-                "country": "Land",
-                "country-placeholder": "Switzerland",
-                "outward-journey": {
-                    "title": "Hinfahrt",
-                    "information": "Bitte geben Sie das Datum, die Uhrzeit, die Flug-/Zugnummer und den Bahnhof/Flughafen der Ankunft an."
-                }
-            },
-            "return-journey": {
-                "title": "Rückfahrt",
-                "information": "Bitte geben Sie Datum, Uhrzeit, Flug-/Zugnummer und Bahnhof/Flughafen bei der Abreise an."
-            },
-            "travel-reduction": {
-                "title": "Ermässigung auf Schweizer Transporte",
-                "please-tick": "Bitte kreuzen Sie das Zutreffende an",
-                "point-to-point-travelcard": "Streckenabonnement",
-                "half-fare": "Halbtax",
-                "swiss-ga-travelcard": "Schweizer Generalabonnement"
-            },
-            "last-visit": "Letzter Besuchstag in Lausanne/in der Schweiz"
-        },
-        "personal-information": {
-            "title": "Persönliche Daten",
-            "titles": {
-                "title": "Anrede",
-                "mrs": "Frau",
-                "mr": "Herr",
-                "they": "Person"
-            },
-            "first-name": "Vorname",
-            "first-name-placeholder": "Karl",
-            "last-name": "Nachname",
-            "last-name-placeholder": "Endar",
-            "freelance": "Sind Sie Freiberufler?",
-            "spoken-languages": {
-                "title": "Sprachen",
-                "placeholder": "Deutsch, Englisch, Französisch, Italien, ..."
-            },
-            "passport": {
-                "title": "Reisepassnummer und Gültigkeit",
-                "number": "Nummer",
-                "validity": "Gültigkeit"
-            },
-            "birth-date": "Geburtsdatum",
-            "address": {
-                "title": "Adresse",
-                "street-address": "Straßenadresse",
-                "city": "Stadt",
-                "country": "Land",
-                "country-placeholder": "Land des Wohnsitzes...",
-                "postal-code": "Postleitzahl"
-            },
-            "phone-number": "Mobiletelefonnummer (mit Vorwahl)",
-            "email": "E-Mail",
-            "allergies": "Nahrungsmittelallergien oder -einschränkungen",
-            "medical-and-physical-condition": "Medizinischer und physischer Zustand",
-            "emergency-contacts": {
-                "title": "Notfallkontakt's",
-                "name": "Name",
-                "phone-number": "Telefonnummer (mit Vorwahl)"
-            },
-            "travel-insurance": "Reiseversicherung für die Schweiz?",
-            "remarks": "Bemerkungen"
-        }
+  "title": "Inhaltsersteller",
+  "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
+  "validations": {
+    "emergency-contacts": {
+      "name": "Bitte geben Sie den Namen Ihrer Notfallkontaktperson an.",
+      "phone-number": "Bitte geben Sie die Telefonnummer Ihrer Notfallkontaktperson an.",
+      "minimum": "Bitte geben Sie mindestens eine Notfallkontaktperson an."
     }
+  },
+  "form": {
+    "title": "Medienprofil",
+    "social-media-information": "Informationen zu sozialen Medien",
+    "content-positioning": "Positionierung von Inhalten",
+    "content-positioning-placeholder": "Reise, Foto, Natur, Mode, Lifestyle, ...",
+    "target-audience": "Zielpublikum(e)",
+    "target-audience-placeholder": "Alleinreisende, Citybreaker, Familien, ...",
+    "object-request": "Gegenstand des Antrags",
+    "online-presence": {
+      "title": "Online-Präsenz",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "blog": "Blog"
+    },
+    "statistics": {
+      "instagram": {
+        "title": "Instagram Konto",
+        "profile-url": "Profil-URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+          "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
+        },
+        "accounts-that-responded-screenshots": {
+          "title": "Konten, die reagiert haben (Screenshots)",
+          "description": "Interaktion mit dem Inhalt"
+        }
+      },
+      "tiktok": {
+        "title": "TikTok Konto",
+        "profile-url": "Profil-URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+          "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
+        }
+      },
+      "youtube": {
+        "title": "Youtube Konto",
+        "profile-url": "Profil-URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)",
+          "description": "Bitte geben Sie die wichtigsten Orte an (Stadt und Land)"
+        }
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "Blog URL",
+        "audience-profile": {
+          "title": "Profil des Publikums",
+          "description": "Alter, Bildungsstand, Geschlecht, Wohnort, Interessen, ..."
+        },
+        "performance": {
+          "title": "Blog-Performance",
+          "monthly-unique-visitors": "Reach/einzelne Besucher pro Monat",
+          "montlhy-page-views": "Anzahl der Seitenaufrufe pro Monat"
+        }
+      }
+    },
+    "coverage": {
+      "title": "Information über das Medienergebnis",
+      "publication-angle": {
+        "title": "Winkel der Veröffentlichung",
+        "description": "(Gastronomie, Lifestyle, Kultur, Natur, ...)"
+      },
+      "subjects-of-interest": "Thema(e) von Interesse",
+      "publication-channels": "Publikationskanäle",
+      "proposed-media-coverage": {
+        "title": "Vorgeschlagene Medienberichterstattung",
+        "description": "Anzahl der Posts, Videos, Stories, Real, Artikel, ..."
+      },
+      "timing-and-publication-Dates": {
+        "title": "Timing und Daten der Veröffentlichungen",
+        "description": "vor/während/nach der Reise"
+      }
+    },
+    "travel-information": {
+      "title": "Reiseinformationen",
+      "departure-point": {
+        "title": "Ort der Abreise",
+        "city": "Stadt",
+        "city-placeholder": "Lausanne",
+        "country": "Land",
+        "country-placeholder": "Switzerland",
+        "outward-journey": {
+          "title": "Hinfahrt",
+          "information": "Bitte geben Sie das Datum, die Uhrzeit, die Flug-/Zugnummer und den Bahnhof/Flughafen der Ankunft an."
+        }
+      },
+      "return-journey": {
+        "title": "Rückfahrt",
+        "information": "Bitte geben Sie Datum, Uhrzeit, Flug-/Zugnummer und Bahnhof/Flughafen bei der Abreise an."
+      },
+      "travel-reduction": {
+        "title": "Ermässigung auf Schweizer Transporte",
+        "please-tick": "Bitte kreuzen Sie das Zutreffende an",
+        "point-to-point-travelcard": "Streckenabonnement",
+        "half-fare": "Halbtax",
+        "swiss-ga-travelcard": "Schweizer Generalabonnement"
+      },
+      "last-visit": "Letzter Besuchstag in Lausanne/in der Schweiz"
+    },
+    "personal-information": {
+      "title": "Persönliche Daten",
+      "titles": {
+        "title": "Anrede",
+        "mrs": "Frau",
+        "mr": "Herr",
+        "they": "Person"
+      },
+      "first-name": "Vorname",
+      "first-name-placeholder": "Karl",
+      "last-name": "Nachname",
+      "last-name-placeholder": "Endar",
+      "freelance": "Sind Sie Freiberufler?",
+      "spoken-languages": {
+        "title": "Sprachen",
+        "placeholder": "Deutsch, Englisch, Französisch, Italien, ..."
+      },
+      "passport": {
+        "title": "Reisepassnummer und Gültigkeit",
+        "number": "Nummer",
+        "validity": "Gültigkeit"
+      },
+      "birth-date": "Geburtsdatum",
+      "address": {
+        "title": "Adresse",
+        "street-address": "Straßenadresse",
+        "city": "Stadt",
+        "country": "Land",
+        "country-placeholder": "Land des Wohnsitzes...",
+        "postal-code": "Postleitzahl"
+      },
+      "phone-number": "Mobiletelefonnummer (mit Vorwahl)",
+      "email": "E-Mail",
+      "allergies": "Nahrungsmittelallergien oder -einschränkungen",
+      "medical-and-physical-condition": "Medizinischer und physischer Zustand",
+      "emergency-contacts": {
+        "title": "Notfallkontakt's",
+        "name": "Name",
+        "phone-number": "Telefonnummer (mit Vorwahl)"
+      },
+      "travel-insurance": "Reiseversicherung für die Schweiz?",
+      "remarks": "Bemerkungen"
+    }
+  }
 }

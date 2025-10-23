@@ -1,16 +1,15 @@
-
-import { RouteTypes } from "$enums";
-import { supportedLocales, translations } from "$lib/translations";
-import type { EntryGenerator } from "./$types";
+import { RouteTypes } from '$enums';
+import { supportedLocales, translations } from '$lib/translations';
+import type { EntryGenerator } from './$types';
 
 export const entries: EntryGenerator = () => {
-    const t = translations.get();
+  const t = translations.get();
 
-    return supportedLocales.flatMap(locale => {
-        const type = t[locale][`route.${RouteTypes.Articles}.slug`];
-        return {
-            locale,
-            type,
-        };
-    });
+  return supportedLocales.flatMap((locale) => {
+    const type = t[locale][`route.${RouteTypes.Articles}.slug`];
+    return {
+      locale,
+      type
+    };
+  });
 };

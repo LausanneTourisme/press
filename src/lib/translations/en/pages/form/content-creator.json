@@ -1,156 +1,156 @@
 {
-    "title": "Content creator",
-    "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
-    "validations": {
-        "emergency-contacts": {
-            "name": "Please enter the name of your emergency contact.",
-            "phone-number": "Please enter the phone number of your emergency contact.",
-            "minimum": "Please provide at least one emergency contact."
-        }
-    },
-    "form": {
-        "title": "Media Profile",
-        "social-media-information": "Social Media information",
-        "content-positioning": "Content positioning",
-        "content-positioning-placeholder": "travel, photo, nature, fashion, lifestyle, ...",
-        "target-audience": "Target audience(s)",
-        "target-audience-placeholder": "solo travellers, citybreakers, families, ...",
-        "object-request": "Subject of the request",
-        "online-presence": {
-          "title": "Online presence",
-          "instagram": "Instagram",
-          "tiktok": "TikTok",
-          "youtube": "YouTube",
-          "blog": "Blog"
-        },
-        "statistics": {
-            "instagram": {
-                "title": "Instagram account",
-                "profile-url": "Profile URL",
-                "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
-                    "description": "Please include the main locations (regions and towns)"
-                },
-                "accounts-that-responded-screenshots":  {
-                    "title": "Accounts that responded (screenshots)",
-                    "description": "Interaction with content"
-                }
-            },
-            "tiktok": {
-                "title": "TikTok account",
-                "profile-url": "Profile URL",
-                "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
-                    "description": "Please include the main locations (regions and towns)"
-                }
-            },
-            "youtube": {
-                "title": "Youtube account",
-                "profile-url": "Profile URL",
-                "subscriber-statistics-screenshots":  {
-                    "title": "Subscriber statistics (screenshots)",
-                    "description": "Please include the main locations (regions and towns)"
-                }
-            },
-            "blog": {
-                "title": "Blog",
-                "url": "Blog URL",
-                "audience-profile": {
-                    "title": "Audience profile",
-                    "description": "age, level of education, gender, place of residence, interests, ..."
-                },
-                "performance": {
-                    "title": "Blog performance",
-                    "monthly-unique-visitors": "Reach/Unique visitors per month",
-                    "montlhy-page-views": "Number of pages viewed per month"
-                }
-            }
-        },
-        "coverage": {
-            "title": "Information on media results",
-            "publication-angle": {
-                "title": "Publication angle",
-                "description": "(gastronomy, lifestyle, culture, nature, ...)"
-            },
-            "subjects-of-interest": "Subject(s) of interest",
-            "publication-channels": "Publication channels",
-            "proposed-media-coverage": {
-                "title": "Proposed media coverage",
-                "description": "number of posts, videos, stories, articles, ..."
-            },
-            "timing-and-publication-Dates": {
-                "title": "Timing and dates of publications",
-                "description": "before/during/after the trip"
-            }
-        },
-        "travel-information": {
-            "title": "Travel information",
-            "departure-point": {
-                "title": "Departure point",
-                "city": "City",
-                "city-placeholder": "Lausanne",
-                "country": "Country",
-                "country-placeholder": "Switzerland",
-                "outward-journey": {
-                    "title": "Outward journey",
-                    "information": "Please specify the date, time, flight/train number and station/airport of arrival."
-                }
-            },
-            "return-journey": {
-                "title": "Return journey",
-                "information": "Please specify the date, time, flight/train number and station/airport of departure."
-            },
-            "travel-reduction": {
-                "title": "Reduction on swiss transports",
-                "please-tick": "Please tick the appropriate box",
-                "point-to-point-travelcard": "Point-to-point Travelcard",
-                "half-fare": "Half-fare",
-                "swiss-ga-travelcard": "Swiss GA Travel Card"
-            },
-            "last-visit": "Last date for visit to Lausanne/Switzerland"
-        },
-        "personal-information": {
-            "title": "Personal information",
-            "titles": {
-                "title": "Title",
-                "mrs": "Mrs",
-                "mr": "Mr",
-                "they": "They"
-            },
-            "first-name": "First Name",
-            "first-name-placeholder": "Halle ",
-            "last-name": "Last name",
-            "last-name-placeholder": "Lergic",
-            "freelance": "Are you freelance?",
-            "spoken-languages": {
-                "title": "Spoken languages",
-                "placeholder": "English, french, german, italian, ..."
-            },
-            "passport":{
-                "title": "Passport number and validity",
-                "number": "Number",
-                "validity": "Validity"
-            },
-            "birth-date": "Date of birth",
-            "address": {
-                "title": "Address",
-                "street-address": "Street",
-                "city": "City",
-                "country": "Country",
-                "country-placeholder": "Country of residence...",
-                "postal-code": "Postal code"
-            },
-            "phone-number": "Mobile phone number (with area code)",
-            "email": "Email",
-            "allergies": "Food allergies or restrictions",
-            "medical-and-physical-condition": "Medical and physical conditio",
-            "emergency-contacts": {
-                "title": "Emergency contacts",
-                "name": "Name",
-                "phone-number": "Phone number (with area code)"
-            },
-            "travel-insurance": "Travel insurance covering Switzerland?",
-            "remarks": "Remarks"
-        }
+  "title": "Content creator",
+  "meta-description": "Explore Lausanne and uncover its richness through inspiring articles and insightful tips from locals for a unique experience of the city.",
+  "validations": {
+    "emergency-contacts": {
+      "name": "Please enter the name of your emergency contact.",
+      "phone-number": "Please enter the phone number of your emergency contact.",
+      "minimum": "Please provide at least one emergency contact."
     }
+  },
+  "form": {
+    "title": "Media Profile",
+    "social-media-information": "Social Media information",
+    "content-positioning": "Content positioning",
+    "content-positioning-placeholder": "travel, photo, nature, fashion, lifestyle, ...",
+    "target-audience": "Target audience(s)",
+    "target-audience-placeholder": "solo travellers, citybreakers, families, ...",
+    "object-request": "Subject of the request",
+    "online-presence": {
+      "title": "Online presence",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "youtube": "YouTube",
+      "blog": "Blog"
+    },
+    "statistics": {
+      "instagram": {
+        "title": "Instagram account",
+        "profile-url": "Profile URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Subscriber statistics (screenshots)",
+          "description": "Please include the main locations (regions and towns)"
+        },
+        "accounts-that-responded-screenshots": {
+          "title": "Accounts that responded (screenshots)",
+          "description": "Interaction with content"
+        }
+      },
+      "tiktok": {
+        "title": "TikTok account",
+        "profile-url": "Profile URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Subscriber statistics (screenshots)",
+          "description": "Please include the main locations (regions and towns)"
+        }
+      },
+      "youtube": {
+        "title": "Youtube account",
+        "profile-url": "Profile URL",
+        "subscriber-statistics-screenshots": {
+          "title": "Subscriber statistics (screenshots)",
+          "description": "Please include the main locations (regions and towns)"
+        }
+      },
+      "blog": {
+        "title": "Blog",
+        "url": "Blog URL",
+        "audience-profile": {
+          "title": "Audience profile",
+          "description": "age, level of education, gender, place of residence, interests, ..."
+        },
+        "performance": {
+          "title": "Blog performance",
+          "monthly-unique-visitors": "Reach/Unique visitors per month",
+          "montlhy-page-views": "Number of pages viewed per month"
+        }
+      }
+    },
+    "coverage": {
+      "title": "Information on media results",
+      "publication-angle": {
+        "title": "Publication angle",
+        "description": "(gastronomy, lifestyle, culture, nature, ...)"
+      },
+      "subjects-of-interest": "Subject(s) of interest",
+      "publication-channels": "Publication channels",
+      "proposed-media-coverage": {
+        "title": "Proposed media coverage",
+        "description": "number of posts, videos, stories, articles, ..."
+      },
+      "timing-and-publication-Dates": {
+        "title": "Timing and dates of publications",
+        "description": "before/during/after the trip"
+      }
+    },
+    "travel-information": {
+      "title": "Travel information",
+      "departure-point": {
+        "title": "Departure point",
+        "city": "City",
+        "city-placeholder": "Lausanne",
+        "country": "Country",
+        "country-placeholder": "Switzerland",
+        "outward-journey": {
+          "title": "Outward journey",
+          "information": "Please specify the date, time, flight/train number and station/airport of arrival."
+        }
+      },
+      "return-journey": {
+        "title": "Return journey",
+        "information": "Please specify the date, time, flight/train number and station/airport of departure."
+      },
+      "travel-reduction": {
+        "title": "Reduction on swiss transports",
+        "please-tick": "Please tick the appropriate box",
+        "point-to-point-travelcard": "Point-to-point Travelcard",
+        "half-fare": "Half-fare",
+        "swiss-ga-travelcard": "Swiss GA Travel Card"
+      },
+      "last-visit": "Last date for visit to Lausanne/Switzerland"
+    },
+    "personal-information": {
+      "title": "Personal information",
+      "titles": {
+        "title": "Title",
+        "mrs": "Mrs",
+        "mr": "Mr",
+        "they": "They"
+      },
+      "first-name": "First Name",
+      "first-name-placeholder": "Halle ",
+      "last-name": "Last name",
+      "last-name-placeholder": "Lergic",
+      "freelance": "Are you freelance?",
+      "spoken-languages": {
+        "title": "Spoken languages",
+        "placeholder": "English, french, german, italian, ..."
+      },
+      "passport": {
+        "title": "Passport number and validity",
+        "number": "Number",
+        "validity": "Validity"
+      },
+      "birth-date": "Date of birth",
+      "address": {
+        "title": "Address",
+        "street-address": "Street",
+        "city": "City",
+        "country": "Country",
+        "country-placeholder": "Country of residence...",
+        "postal-code": "Postal code"
+      },
+      "phone-number": "Mobile phone number (with area code)",
+      "email": "Email",
+      "allergies": "Food allergies or restrictions",
+      "medical-and-physical-condition": "Medical and physical conditio",
+      "emergency-contacts": {
+        "title": "Emergency contacts",
+        "name": "Name",
+        "phone-number": "Phone number (with area code)"
+      },
+      "travel-insurance": "Travel insurance covering Switzerland?",
+      "remarks": "Remarks"
+    }
+  }
 }

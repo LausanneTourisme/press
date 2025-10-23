@@ -27,7 +27,7 @@
     classIcon,
     children,
     icon,
-    onclick,
+    onclick
   }: LinkProps = $props();
   const target: string | undefined = blankable(href);
 
@@ -40,7 +40,14 @@
   const iconStyle = twMerge('h-4 w-4 inline ml-2 ', classIcon);
 </script>
 
-<a {href} {target} class={style} data-sveltekit-noscroll={noscroll} data-sveltekit-preload-data={preload} {onclick}>
+<a
+  {href}
+  {target}
+  class={style}
+  data-sveltekit-noscroll={noscroll}
+  data-sveltekit-preload-data={preload}
+  {onclick}
+>
   {@render children()}
   {#if withIcon}
     {#if !icon}
