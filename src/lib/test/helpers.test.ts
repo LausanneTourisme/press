@@ -4,7 +4,7 @@ import { DateTime } from "luxon";
 import { beforeEach, describe, expect, it } from "vitest";
 
 
-describe('Test all dates helpers', () => {
+describe('Test helper: Date', () => {
     const event: Event<Translatable> = {
         id: 17048,
         name: {
@@ -246,9 +246,21 @@ describe('Test all dates helpers', () => {
         });
     });
 
-    // describe('Test isSameDays', () => {
-    //     it('is same day', () => {
-    //         expect(isSameDays(event, { start: '2023-01-01', end: undefined })).toBeTruthy()
-    //     })
-    // });
+    describe('Test isSameDays', () => {
+        it('is same day', () => {
+            expect(isSameDays(event, { start: '2027-06-30', end: undefined })).toBeTruthy()
+            expect(isSameDays(event, { start: '2027-06-30', end: '2030-12-31' })).toBeTruthy()
+        });
+        
+        it('is not same day', () => {
+            expect(isSameDays(event, { start: '2027-01-01', end: '2027-06-29' })).toBeFalsy()
+            expect(isSameDays(event, { start: '2027-06-29', end: '2027-06-29' })).toBeFalsy()
+            expect(isSameDays(event, { start: '2027-06-29', end: undefined })).toBeFalsy()
+            expect(isSameDays(event, { start: '2060-01-01', end: undefined })).toBeFalsy()
+        });
+    });
+
+    describe('Test findAvailablePeriod', () => {
+
+    });
 })

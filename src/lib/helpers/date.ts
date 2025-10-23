@@ -1,6 +1,9 @@
 import type { Event, Period, PostType, ScheduleDate, SelectedDates, Translatable } from '$types';
 import { DateTime } from 'luxon';
 
+/**
+ * Get first period based on SelectedDates.
+ */
 export const extractStartEndDate = <T extends string | Translatable>(
   event: Event<T>,
   selectedDates: SelectedDates
@@ -28,15 +31,23 @@ export const extractStartEndDate = <T extends string | Translatable>(
     : undefined;
 };
 
+/**
+ * Looks in first matched period if start and end are the same day.
+ */
 export const isSameDays = <T extends string | Translatable>(
   event: Event<T>,
   selectedDates: SelectedDates
 ): boolean => {
   const period = extractStartEndDate(event, selectedDates);
+  
+  if(!period) return false;
 
-  return period?.start.toSQLDate() === period?.end.toSQLDate();
+  return period.start.toSQLDate() === period.end.toSQLDate();
 };
 
+/**
+ * Get in the schedule the first period available today or based on given date
+ */
 export const findAvailablePeriod = (
   schedule: ScheduleDate,
   start: DateTime | null | undefined,
