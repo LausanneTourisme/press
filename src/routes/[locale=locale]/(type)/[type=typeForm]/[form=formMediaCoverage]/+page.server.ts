@@ -116,7 +116,7 @@ const sendFormByEmail = async ({ formdata,
         images,
         useImageB64: true
       }),
-      filename: "[Formulaire] - Createur de contenu.pdf"
+      filename: "[Formulaire] - Retombées médiatiques.pdf"
     }),
   })
 
@@ -126,7 +126,7 @@ const sendFormByEmail = async ({ formdata,
     const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
 
     const pdf = {
-      name: '[Formulaire] - Createur de contenu.pdf',
+      name: '[Formulaire] - Retombées médiatiques.pdf',
       type: 'application/pdf',
       content: pdfBase64
     }
@@ -137,7 +137,7 @@ const sendFormByEmail = async ({ formdata,
   const { internal_reponse } = await sendEmail({
     intern_mail: {
       from_name: "No Reply - Press",
-      subject: "[Formulaire] - Createur de contenu",
+      subject: "[Formulaire] - Retombées médiatiques",
       html,
       images,
       attachments,
