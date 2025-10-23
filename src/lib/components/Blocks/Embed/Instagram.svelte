@@ -1,43 +1,11 @@
 <script lang="ts">
-  import { browser, dev } from '$app/environment';
-  import { consentStore } from '$lib/stores/CookiesConsent';
   import { t } from '$lib/translations';
-  import { onMount } from 'svelte';
 
   type HeadingProps = {
     class?: string;
     url: string;
   };
   const { class: additionalClass = '', url }: HeadingProps = $props();
-  const instagramEmbedUrl = 'https://www.instagram.com/embed.js';
-
-  const addOnlyOnceInstagramScript = () => {
-    const alreadyInjected = !!document.querySelector(`script[src="${instagramEmbedUrl}"]`);
-    const hasTrackingConsent = $consentStore.tracking ?? false;
-
-    if (!alreadyInjected && hasTrackingConsent) {
-      const script = document.createElement('script');
-      script.src = instagramEmbedUrl;
-      script.defer = true;
-      script.async = true;
-      script.onload = () => {
-        dev ? console.log('Embed script for instagram loaded successfully') : undefined;
-      };
-      document.head.appendChild(script);
-    }
-  };
-
-  $effect(() => {
-    if (browser && $consentStore.tracking) {
-      addOnlyOnceInstagramScript();
-    }
-  });
-
-  onMount(() => {
-    if (browser && $consentStore.tracking) {
-      addOnlyOnceInstagramScript();
-    }
-  });
 </script>
 
 <blockquote
