@@ -68,8 +68,27 @@ export const findAvailablePeriod = (
 
 export const sortPeriods = (periods: Period[]): Period[] => {
   return [...periods].sort((a, b): number => {
-    const p1 = DateTime.fromSQL(a.start ?? '').valueOf();
-    const p2 = DateTime.fromSQL(b.start ?? '').valueOf();
+    // undefined move to first position and are sort after
+    if (!a.start && !b.start) return -1;
+    if (!a.start && b.start) return -1;
+    if (a.start && !b.start) return 1;
+    if (!a.start || !b.start) return 0;
+
+    const p1 = DateTime.fromSQL(a.start).valueOf();
+    const p2 = DateTime.fromSQL(b.start).valueOf();
+    if (p1 < p2) return -1;
+    if (p1 > p2) return 1;
+    return 0;
+  }).sort((a, b): number => {
+    // sorted in previous sort
+    if (a.start || b.start) return 0;
+    // undefined values on the top
+    if (!a.start && !a.end || !b.start && !b.end) return -1;
+    // sorted in previous sort
+    if (!a.end || !b.end) return 0;
+
+    const p1 = DateTime.fromSQL(a.end).valueOf();
+    const p2 = DateTime.fromSQL(b.end).valueOf();
     if (p1 < p2) return -1;
     if (p1 > p2) return 1;
     return 0;
