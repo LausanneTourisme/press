@@ -96,12 +96,26 @@ export const sortPeriods = (periods: Period[]): Period[] => {
 };
 
 export const sortDates = (dates: ScheduleDate[]): ScheduleDate[] => {
-  return [...dates].sort((a, b) => {
-    const p1 = DateTime.fromSQL(sortPeriods(a.periods ?? []).at(0)?.start ?? '').valueOf();
-    const p2 = DateTime.fromSQL(sortPeriods(b.periods ?? []).at(0)?.start ?? '').valueOf();
+  return dates
+  // should not occur, but typing allow that
+  .filter(d => d.periods !== undefined && d.periods.length > 0)
+  .map(d => {
+    d.periods = sortPeriods(d.periods!)
+    return d;
+  })
+  .sort((a, b) => {
+    const p1 = a.periods!.at(0)!;
+    const p2 = b.periods!.at(0)!;
+    if (!p1.start && !p2.start) return -1;
+    if (!p1.start && p2.start) return -1;
+    if (p1.start && !p2.start) return 1;
+    if (!p1.start || !p2.start) return -1;
 
-    if (p1 < p2) return -1;
-    if (p1 > p2) return 1;
+    const d1 = DateTime.fromSQL(p1.start);
+    const d2 = DateTime.fromSQL(p2.start);
+
+    if (d1 < d2) return -1;
+    if (d1 > d2) return 1;
     return 0;
   });
 };
