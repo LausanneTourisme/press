@@ -1,5 +1,5 @@
-import { extractStartEndDate, isSameDays } from "$lib/helpers/date";
-import type { Event, Translatable } from "$types";
+import { extractStartEndDate, findAvailablePeriod, isBetween, isSameDays, sortDates, sortPeriods } from "$lib/helpers/date";
+import type { Event, RawDate, ShortDay, Translatable } from "$types";
 import { DateTime } from "luxon";
 import { beforeEach, describe, expect, it } from "vitest";
 
@@ -63,20 +63,20 @@ describe('Test helper: Date', () => {
                     ],
                     periods: [
                         {
-                            start: "2023-01-01",
-                            end: "2024-12-31"
+                            start: "2027-06-30",
+                            end: "2027-06-30"
                         },
                         {
                             start: "2025-01-01",
                             end: "2025-12-31"
                         },
                         {
-                            start: "2027-01-01",
-                            end: "2027-06-29"
+                            start: "2023-01-01",
+                            end: "2024-12-31"
                         },
                         {
-                            start: "2027-06-30",
-                            end: "2027-06-30"
+                            start: "2027-01-01",
+                            end: "2027-06-29"
                         },
                     ]
                 }
@@ -251,7 +251,7 @@ describe('Test helper: Date', () => {
             expect(isSameDays(event, { start: '2027-06-30', end: undefined })).toBeTruthy()
             expect(isSameDays(event, { start: '2027-06-30', end: '2030-12-31' })).toBeTruthy()
         });
-        
+
         it('is not same day', () => {
             expect(isSameDays(event, { start: '2027-01-01', end: '2027-06-29' })).toBeFalsy()
             expect(isSameDays(event, { start: '2027-06-29', end: '2027-06-29' })).toBeFalsy()
@@ -261,6 +261,276 @@ describe('Test helper: Date', () => {
     });
 
     describe('Test findAvailablePeriod', () => {
+        it('find a period', () => {
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.fromSQL('2022-01-01'), undefined)).toEqual({
+                start: '2023-01-01',
+                end: '2024-12-31',
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.fromSQL('2023-01-01'), DateTime.fromSQL('2024-12-31'))).toEqual({
+                start: '2023-01-01',
+                end: '2024-12-31',
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.fromSQL('2025-01-01'), DateTime.fromSQL('2025-12-31'))).toEqual({
+                start: '2025-01-01',
+                end: '2025-12-31',
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.fromSQL('2027-01-01'), DateTime.fromSQL('2027-06-29'))).toEqual({
+                start: '2027-01-01',
+                end: '2027-06-29',
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.fromSQL('2027-06-30'), DateTime.fromSQL('2027-06-30'))).toEqual({
+                start: '2027-06-30',
+                end: '2027-06-30',
+            });
+        });
 
+        it('find a period based on today', () => {
+            const days = [DateTime.now().toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase()] as ShortDay[];
+
+            event.schedules!.dates = [
+                {
+                    label: 'today land',
+                    every_year: false,
+                    open_days: days,
+                    week: [
+                        {
+                            days,
+                            times: []
+                        }
+                    ],
+                    periods: [{
+                        start: DateTime.now().toSQLDate() as RawDate,
+                        end: DateTime.now().toSQLDate() as RawDate,
+                    }],
+                },
+                ...event.schedules?.dates ?? [],
+            ];
+
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, undefined)).toEqual({
+                start: DateTime.now().toSQLDate() as RawDate,
+                end: DateTime.now().toSQLDate() as RawDate,
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.now(), undefined)).toEqual({
+                start: DateTime.now().toSQLDate() as RawDate,
+                end: DateTime.now().toSQLDate() as RawDate,
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, DateTime.now(), DateTime.now())).toEqual({
+                start: DateTime.now().toSQLDate() as RawDate,
+                end: DateTime.now().toSQLDate() as RawDate,
+            });
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, DateTime.now())).toEqual({
+                start: DateTime.now().toSQLDate() as RawDate,
+                end: DateTime.now().toSQLDate() as RawDate,
+            });
+        });
+
+        it('doesn\'t find a period', () => {
+            const days = [DateTime.now().toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase()] as ShortDay[]
+
+            event.schedules!.dates = [
+                {
+                    label: 'past land',
+                    every_year: false,
+                    open_days: days,
+                    week: [
+                        {
+                            days,
+                            times: []
+                        }
+                    ],
+                    periods: [{
+                        start: "2000-05-20",
+                        end: "2001-10-10",
+                    }],
+                },
+                ...event.schedules?.dates ?? [],
+            ]
+
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, DateTime.fromSQL('1999-06-30'))).toBeNullable();
+            // it test "now"
+            expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, undefined)).toBeNullable();
+            expect(findAvailablePeriod(event.schedules!.dates!.at(1)!, DateTime.fromSQL('2090-06-30'), undefined)).toBeNullable();
+        })
+    });
+
+    it('Test sortPeriods', () => {
+        event.schedules!.dates!.at(0)!.periods = [
+            {
+                start: "2023-01-01",
+                end: undefined,
+            },
+            {
+                start: undefined,
+                end: undefined,
+            },
+            {
+                start: undefined,
+                end: "2090-01-01",
+            },
+            {
+                start: "2024-01-01",
+                end: undefined,
+            },
+            ...event.schedules!.dates!.at(0)!.periods!
+        ];
+
+        expect(sortPeriods(event.schedules!.dates!.at(0)!.periods!)).toEqual([
+            {
+                start: undefined,
+                end: undefined,
+            },
+            {
+                start: undefined,
+                end: "2090-01-01",
+            },
+            {
+                start: "2023-01-01",
+                end: undefined,
+            },
+            {
+                start: "2023-01-01",
+                end: "2024-12-31"
+            },
+            {
+                start: "2024-01-01",
+                end: undefined,
+            },
+            {
+                start: "2025-01-01",
+                end: "2025-12-31"
+            },
+            {
+                start: "2027-01-01",
+                end: "2027-06-29"
+            },
+            {
+                start: "2027-06-30",
+                end: "2027-06-30"
+            },
+        ])
+    });
+
+
+    it('Test sortDates', () => {
+        const todayDay = DateTime.now();
+        const pastDay = DateTime.now().minus({years: 50});
+
+        event.schedules!.dates = [
+            {
+                label: 'past day',
+                every_year: true,
+                open_days: [pastDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                week: [
+                    {
+                        days: [pastDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                        times: []
+                    }
+                ],
+                periods: [{
+                    start: pastDay.toSQLDate() as RawDate,
+                    end: pastDay.toSQLDate() as RawDate,
+                }],
+            },
+            {
+                label: 'today land',
+                every_year: false,
+                open_days: [todayDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                week: [
+                    {
+                        days: [todayDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                        times: []
+                    }
+                ],
+                periods: [{
+                    start: DateTime.now().toSQLDate() as RawDate,
+                    end: DateTime.now().toSQLDate() as RawDate,
+                }],
+            },
+            ...event.schedules?.dates ?? [],
+        ];
+
+        expect(sortDates(event.schedules!.dates)).toEqual([
+            {
+                label: 'past day',
+                every_year: true,
+                open_days: [pastDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                week: [
+                    {
+                        days: [pastDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                        times: []
+                    }
+                ],
+                periods: [{
+                    start: pastDay.toSQLDate() as RawDate,
+                    end: pastDay.toSQLDate() as RawDate,
+                }],
+            },
+            {
+                label: null,
+                every_year: false,
+                open_days: ["su", "mo", "tu", "we", "th", "fr", "sa"],
+                week: [
+                    {
+                        days: ["su", "mo", "tu", "we", "th", "fr", "sa"],
+                        times: []
+                    }
+                ],
+                periods: [
+                    {
+                        start: "2023-01-01",
+                        end: "2024-12-31"
+                    },
+                    {
+                        start: "2025-01-01",
+                        end: "2025-12-31"
+                    },
+                    {
+                        start: "2027-01-01",
+                        end: "2027-06-29"
+                    },
+                    {
+                        start: "2027-06-30",
+                        end: "2027-06-30"
+                    },
+                ]
+            },
+            {
+                label: 'today land',
+                every_year: false,
+                open_days: [todayDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                week: [
+                    {
+                        days: [todayDay.toLocaleString({ weekday: 'short' }, { locale: 'en' }).substring(0, 2).toLocaleLowerCase() as ShortDay],
+                        times: []
+                    }
+                ],
+                periods: [{
+                    start: DateTime.now().toSQLDate() as RawDate,
+                    end: DateTime.now().toSQLDate() as RawDate,
+                }],
+            },
+        ],)
+
+    });
+
+    describe('Test isBetween', () => {
+        it('is not between', () => {
+            expect(isBetween({start: undefined, end: "2010-01-01"}, undefined, undefined)).toBeFalsy();
+            expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.fromSQL("2010-01-02"), undefined)).toBeFalsy();
+            expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.now(), undefined)).toBeFalsy();
+            expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2009-01-01"), undefined)).toBeFalsy();
+            expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2009-12-31"), undefined)).toBeFalsy();
+            expect(isBetween({start: "2010-01-01", end: "2015-01-01"}, DateTime.fromSQL("2009-12-31"), undefined)).toBeFalsy();
+        });
+        it('is between', () => {
+            expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.fromSQL("2009-01-01"), undefined)).toBeTruthy();
+            expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.fromSQL("2010-01-01"), undefined)).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2010-01-01"), undefined)).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2010-01-02"), undefined)).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.now(), undefined)).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: "2015-01-01"}, DateTime.fromSQL("2010-12-31"), undefined)).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: "2015-01-01"}, DateTime.fromSQL("2009-12-31"), DateTime.fromSQL("2010-12-31"))).toBeTruthy();
+            expect(isBetween({start: "2010-01-01", end: "2015-01-01"}, DateTime.fromSQL("2009-12-31"), DateTime.fromSQL("2016-12-31"))).toBeTruthy();
+        });
     });
 })
