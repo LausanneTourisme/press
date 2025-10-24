@@ -40,7 +40,7 @@ export const isSameDays = <T extends string | Translatable>(
 ): boolean => {
   const period = extractStartEndDate(event, selectedDates);
   
-  if(!period) return false;
+  if (!period) return false;
 
   return period.start.toSQLDate() === period.end.toSQLDate();
 };
