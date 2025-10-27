@@ -141,25 +141,26 @@
       title="Port de Pully"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
       localSrc="/pages/home/mobile.jpg"
-      transform={{ gravity: 'west', crop: 'crop', width: 1280 }}
+      src="/pages/home/mobile"
+      transform={{ gravity: 'west', crop: 'auto', width: 1280 }}
       srcset={[
         {
           size: 768,
           transform: { gravity: 'west', crop: 'auto', width: 1280 },
-          src: '/pages/home/ipad.jpg',
-          isLocal: true
+          src: '/pages/home/ipad',
+          usePreset: true,
         },
         {
           size: 1280,
           transform: { gravity: 'west', crop: 'auto', width: 1920 },
-          src: '/pages/home/fhd.jpg',
-          isLocal: true
+          src: '/pages/home/fhd',
+          usePreset: true,
         },
         {
           size: 2560,
           transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
-          src: '/pages/home/4k.jpg',
-          isLocal: true
+          src: '/pages/home/4k',
+          usePreset: true,
         }
       ]}
     />
