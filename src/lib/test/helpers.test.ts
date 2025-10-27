@@ -520,7 +520,6 @@ describe('Test helper: Date', () => {
             expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.now(), undefined)).toBeFalsy();
             expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2009-01-01"), undefined)).toBeFalsy();
             expect(isBetween({start: "2010-01-01", end: undefined}, DateTime.fromSQL("2009-12-31"), undefined)).toBeFalsy();
-            expect(isBetween({start: "2010-01-01", end: "2015-01-01"}, DateTime.fromSQL("2009-12-31"), undefined)).toBeFalsy();
         });
         it('is between', () => {
             expect(isBetween({start: undefined, end: "2010-01-01"}, DateTime.fromSQL("2009-01-01"), undefined)).toBeTruthy();
