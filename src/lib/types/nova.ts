@@ -153,9 +153,9 @@ export type Schedules = {
 };
 
 export type Range = {
-  from: `${YYYY}-${MM}-${DD}`,
-  to: `${YYYY}-${MM}-${DD}`,
-}
+  from: `${YYYY}-${MM}-${DD}`;
+  to: `${YYYY}-${MM}-${DD}`;
+};
 
 export type ScheduleDate = {
   label?: string | null | undefined;
