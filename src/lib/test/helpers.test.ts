@@ -3,10 +3,11 @@ import {
   findAvailablePeriod,
   isBetween,
   isSameDays,
+  sortByYears,
   sortDates,
   sortPeriods
 } from '$lib/helpers/date';
-import type { Event, RawDate, ShortDay, Translatable } from '$types';
+import type { Event, Post, RawDate, ShortDay, Translatable } from '$types';
 import { DateTime } from 'luxon';
 import { beforeEach, describe, expect, it } from 'vitest';
 
@@ -740,6 +741,89 @@ describe('Test helper: Date', () => {
   });
 
   it('Test posts by year', () => {
+    const posts: Post<string>[] = [
+      {
+        // 2027-05-14
+        published_at: '1810245600'
+      },
+      {
+        // 2027-02-12
+        published_at: '1802386800'
+      },
+      {
+        // 2027-03-31
+        published_at: '1806444000'
+      },
+      {
+        // 2027-05-13
+        published_at: '1810159200'
+      },
+      {
+        // 2021-01-14
+        published_at: '1610578800'
+      },
+      {
+        // 2023-09-20
+        published_at: '1695160800'
+      },
+      {
+        // 2025-03-09
+        published_at: '1741474800'
+      },
+      {
+        // 2025-03-03
+        published_at: '1740956400'
+      },
+      {
+        // 2025-06-18
+        published_at: '1750197600'
+      },
+      {
+        // 2025-08-20
+        published_at: '1755640800'
+      }
+    ];
 
+    const expectedValues = new Map<number, Post<string>[]>();
+    expectedValues.set(2027, [
+      {
+        published_at: '1810245600'
+      },
+      {
+        published_at: '1802386800'
+      },
+      {
+        published_at: '1806444000'
+      },
+      {
+        published_at: '1810159200'
+      }
+    ]);
+    expectedValues.set(2021, [
+      {
+        published_at: '1610578800'
+      }
+    ]);
+    expectedValues.set(2023, [
+      {
+        published_at: '1695160800'
+      }
+    ]);
+    expectedValues.set(2025, [
+      {
+        published_at: '1741474800'
+      },
+      {
+        published_at: '1740956400'
+      },
+      {
+        published_at: '1750197600'
+      },
+      {
+        published_at: '1755640800'
+      }
+    ]);
+
+    expect(sortByYears(posts)).toStrictEqual(expectedValues);
   });
 });
