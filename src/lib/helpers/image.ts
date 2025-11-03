@@ -51,11 +51,21 @@ const clearDuplicatesInTransform = (transform?: Transform) => {
 };
 
 export const selectBestWidth = (width: number) => {
-  return defaultWidths.find((resolution) => width <= resolution) ?? defaultWidth;
+  return (
+    defaultWidths.find((resolution) => width <= resolution) ??
+    (width > defaultWidths[defaultWidths.length - 1]
+      ? defaultWidths[defaultWidths.length - 1]
+      : defaultWidth)
+  );
 };
 
 export const selectBestHeight = (height: number) => {
-  return defaultHeights.find((resolution) => height <= resolution) ?? defaultHeight;
+  return (
+    defaultHeights.find((resolution) => height <= resolution) ??
+    (height > defaultWidths[defaultHeights.length - 1]
+      ? defaultHeights[defaultHeights.length - 1]
+      : defaultHeight)
+  );
 };
 
 export const resizeWithAspectRatio = ({
@@ -87,7 +97,7 @@ export const generateCloudinaryUrl = ({
   if (!src) return `${baseUrl}${transformToString(transform)}/default`;
   let url = src;
   if (usePreset) {
-    url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${url}`;
+    url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${url.startsWith('/') ? url : `/${url}`}`;
   }
 
   return `${baseUrl}${transformToString(clearDuplicatesInTransform(transform), { suffixText: '/' })}${url}`;
