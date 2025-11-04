@@ -18,11 +18,11 @@ export const transformToString = (
   const { prefixText, suffixText } = { prefixText: '', suffixText: '', ...options };
 
   if (transform) {
-    const transformClean = clearDuplicatesInTransform(transform);
+    const transformClean = clearDuplicatesInTransform(transform)!;
 
-    for (const key in transformClean) {
-      // @ts-ignore keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
-      parameters.push(`${key}_${transformClean[key]}`);
+    for (const key  in transformClean) {
+      // keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
+      parameters.push(`${key}_${transformClean[key as keyof Transform]}`);
     }
   }
 
