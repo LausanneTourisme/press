@@ -5,7 +5,6 @@ import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 import { PUBLIC_BASE_URL } from '$env/static/public';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url, ...rest }) => {
   const [{ i18n, translations }, releaseRes] = await Promise.all([

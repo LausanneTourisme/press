@@ -1,10 +1,10 @@
-import { RouteTypes, Themes } from '$enums';
-import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
+import { RouteTypes } from '$enums';
+import { PUBLIC_BASE_URL } from '$env/static/public';
+import { getMediaLibraryRegisterLink } from '$lib/helpers';
 import { menuItems } from '$lib/helpers/menu';
 import { getPosts } from '$lib/helpers/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const GET = async ({ url, params }) => {
   const urlSets = await Promise.all([

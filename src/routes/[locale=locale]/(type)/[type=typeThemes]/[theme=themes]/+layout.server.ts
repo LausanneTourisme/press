@@ -4,7 +4,6 @@ import { loadTranslations, supportedLocales } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from 'console';
 import { PUBLIC_BASE_URL } from '$env/static/public';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url, ...rest }) => {
   const { i18n, translations, locale, type } = await parent();

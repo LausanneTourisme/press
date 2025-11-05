@@ -1,7 +1,7 @@
 import { RouteTypes } from '$enums';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
-import { PUBLIC_BASE_URL } from '$env/static/public';
+
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ url, params, parent }) => {
