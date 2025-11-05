@@ -4,6 +4,7 @@ import { getAgendaEvents, getGroup, getPosts } from '$lib/helpers/requests.serve
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { News, SeoHeader } from '$types';
 import { PUBLIC_BASE_URL } from '$env/static/public';
+import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ url, params, parent }) => {
   const { i18n, translations } = await parent();

@@ -29,6 +29,7 @@
         .map(
           (alternate) =>
             `<link rel="alternate" hreflang="${alternate.hreflang}" href="${PUBLIC_BASE_URL}${alternate.href}" />`
+            `<link rel="alternate" hreflang="${alternate.hreflang}" href="${PUBLIC_BASE_URL}${alternate.href}" />`
         )
         .join('\n'),
       image: pageData.seo.image
@@ -97,6 +98,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": "https://www.lausanne-tourisme.ch",
+      "logo": "${PUBLIC_BASE_URL}/logo/LT_Logo.png",
       "logo": "${PUBLIC_BASE_URL}/logo/LT_Logo.png",
       "name": "Lausanne Tourisme",
       "email": "info@lausanne-tourisme.ch",
