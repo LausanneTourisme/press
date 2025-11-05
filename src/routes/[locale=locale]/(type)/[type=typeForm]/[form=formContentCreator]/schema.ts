@@ -5,7 +5,7 @@ import { z } from 'zod/v4';
 const socialNetworkEnum = z.enum(getValues(SocialNetworks));
 const socialNetworkTypes = z
   .array(socialNetworkEnum)
-  .min(1, `${RouteTypes.Form}.validations.non-empty-array`);
+  .min(1, `${RouteTypes.Forms}.validations.non-empty-array`);
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 const allowedMimeTypes = [
   // Image types
@@ -18,11 +18,11 @@ const allowedMimeTypes = [
 ];
 const fileSchema = z
   .instanceof(File)
-  .refine((file) => file.size > 0, `${RouteTypes.Form}.validations.file-size`)
-  .refine((file) => file.size <= 10 * 1024 * 1024, `${RouteTypes.Form}.validations.file-size`)
+  .refine((file) => file.size > 0, `${RouteTypes.Forms}.validations.file-size`)
+  .refine((file) => file.size <= 10 * 1024 * 1024, `${RouteTypes.Forms}.validations.file-size`)
   .refine(
     (file) => allowedMimeTypes.includes(file.type),
-    `${RouteTypes.Form}.validations.file-invalid-type`
+    `${RouteTypes.Forms}.validations.file-invalid-type`
   );
 
 export const schemaStep1 = z
@@ -217,16 +217,16 @@ export const schemaStep4 = schemaStep3
     passportValidity: z.string().nullish().nullable(),
 
     emergencyContactNames: z.array(zodRequiredString()).min(1, {
-      error: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.name`
+      error: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.name`
     }),
     emergencyContactPhones: z.array(zodRequiredString()).min(1, {
-      error: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
+      error: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
     }),
 
     travelInsuranceCoveringSwitzerland: z.boolean(),
     remarks: z.string().nullish(),
     readTermsOfAcceptance: z.boolean({
-      error: `${RouteTypes.Form}.validations.read-terms-of-acceptance`
+      error: `${RouteTypes.Forms}.validations.read-terms-of-acceptance`
     }),
     newsletter: z.boolean().default(true)
   })
@@ -244,7 +244,7 @@ export const schemaStep4 = schemaStep3
       ctx.addIssue({
         code: 'custom',
         path: ['personalInformationPassport'],
-        message: `${RouteTypes.Form}.${Forms.ContentCreator}.validations.personal-information.passport`
+        message: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.personal-information.passport`
       });
     }
 
@@ -283,7 +283,7 @@ export const schemaStep4 = schemaStep3
       ctx.addIssue({
         code: 'custom',
         path: ['readTermsOfAcceptance'],
-        message: `${RouteTypes.Form}.validations.terms-of-acceptance`
+        message: `${RouteTypes.Forms}.validations.terms-of-acceptance`
       });
     }
   });

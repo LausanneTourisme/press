@@ -72,7 +72,7 @@
         "montlhy-page-views": "Nombre de page vues par mois"
       }
     },
-    "coverage": {
+    "coverages": {
       "title": "Information sur le résultat médiatique",
       "print": {
         "title": "Couverture médiatique print",

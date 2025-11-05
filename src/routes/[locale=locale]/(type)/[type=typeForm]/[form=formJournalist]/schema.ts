@@ -5,7 +5,7 @@ import { z } from 'zod/v4';
 const mediaEnum = z.enum(getValues(MediaTypes));
 const travelReductionsEnum = z.enum(getValues(TravelReductions));
 
-const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Form}.validations.non-empty-array`);
+const mediaTypes = z.array(mediaEnum).min(1, `${RouteTypes.Forms}.validations.non-empty-array`);
 
 // required when media type is "print" (via superRefine)
 export const printMediaStatistics = z
@@ -13,7 +13,7 @@ export const printMediaStatistics = z
     copies: z.number().positive().default(0),
     readers: z.number().positive().default(0),
     broadcastLocation: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.broadcast-location`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.broadcast-location`
     }).default('')
   })
   .refine(
@@ -31,7 +31,7 @@ export const printMediaStatistics = z
     },
     {
       path: ['printMediaStatistics'],
-      message: `${RouteTypes.Form}.${Forms.Journalist}.validations.print-media-statistics`
+      message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.print-media-statistics`
     }
   )
   .nullable();
@@ -40,7 +40,7 @@ export const printMediaStatistics = z
 export const radioAndTVMediaStatistics = z
   .object({
     emissionName: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emission-name`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.emission-name`
     }).default(''),
     viewers: z.number().positive().min(1).default(0)
   })
@@ -53,7 +53,7 @@ export const onlineMediaStatistics = z
     monthlyUniqueVisitors: z
       .number()
       .positive()
-      .min(1, { error: `${RouteTypes.Form}.validations.number-min-1` })
+      .min(1, { error: `${RouteTypes.Forms}.validations.number-min-1` })
       .default(0),
     montlhyPageViews: z.number().positive().default(0).nullable()
   })
@@ -64,7 +64,7 @@ export const mediaCoveragePrint = z
   .object({
     totalPages: z.number().positive().min(1).default(0),
     articleLength: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.article-length`
     }).default(''),
     publishDate: zodRequiredString({ min: 10 })
   })
@@ -74,10 +74,10 @@ export const mediaCoveragePrint = z
 export const mediaCoverageOnline = z
   .object({
     articleLength: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-length`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.article-length`
     }).default(''),
     articleThematic: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.article-themactic`
     }).default(''),
     publishDate: zodRequiredString({ min: 10 }) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
   })
@@ -87,7 +87,7 @@ export const mediaCoverageOnline = z
 export const mediaCoverageTvOrRadio = z
   .object({
     articleThematic: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.article-themactic`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.article-themactic`
     }),
     publishDate: zodRequiredString({ min: 10 }) // faire si possible que choix année / mois, si date précise ils peuvent la mettre
   })
@@ -97,10 +97,10 @@ export const travelInformation = z
   .object({
     departurePoint: z.object({
       city: zodRequiredString({
-        error: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.city`
+        error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.travel-information.city`
       }),
       country: zodRequiredString({
-        error: `${RouteTypes.Form}.${Forms.Journalist}.validations.travel-information.country`
+        error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.travel-information.country`
       }),
       outwardJourney: z.string().max(300).nullable()
     }),
@@ -114,36 +114,36 @@ export const personalInformation = z
   .object({
     title: z.enum(getValues(Titles)).default(Titles.They),
     firstName: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.first-name`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.first-name`
     }),
     lastName: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.last-name`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.last-name`
     }),
     birthday: zodRequiredString({ min: 10 }),
     phoneNumber: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.phone-number`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.phone-number`
     }),
     email: z.email().nonempty(),
     allergies: z.string().default(''),
     address: z
       .object({
         streetAddress: zodRequiredString({
-          error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.address`
+          error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.adress.address`
         }),
         city: zodRequiredString({
-          error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.city`
+          error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.adress.city`
         }),
         postalcode: zodRequiredString({
-          error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.country`
+          error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.adress.country`
         }),
         country: zodRequiredString({
-          error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.adress.postal-code`
+          error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.adress.postal-code`
         })
       })
       .required(),
     freelance: z.boolean(),
     spokenLanguages: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.spoken-languages`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.spoken-languages`
     }),
     medicalAndPhysicalCondition: z.string().nullish(),
     passport: z
@@ -160,7 +160,7 @@ export const personalInformation = z
           ctx.addIssue({
             code: 'custom',
             path: ['personalInformationPassport'],
-            message: `${RouteTypes.Form}.${Forms.Journalist}.validations.personal-information.passport`
+            message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.passport`
           });
         }
       }),
@@ -168,15 +168,15 @@ export const personalInformation = z
       .array(
         z.object({
           name: zodRequiredString({
-            error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.name`
+            error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.emergency-contacts.name`
           }),
           phoneNumber: zodRequiredString({
-            error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.phone-number`
+            error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.emergency-contacts.phone-number`
           })
         })
       )
       .min(1, {
-        error: `${RouteTypes.Form}.${Forms.Journalist}.validations.emergency-contacts.minimum`
+        error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.emergency-contacts.minimum`
       })
       .default([
         {
@@ -190,13 +190,13 @@ export const personalInformation = z
 export const schemaStep1 = z
   .object({
     mediaName: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-name`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-name`
     }),
     thematic: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.thematic`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.thematic`
     }),
     audienceProfile: zodRequiredString({
-      error: `${RouteTypes.Form}.${Forms.Journalist}.validations.audience-profile`
+      error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.audience-profile`
     }),
     mediaTypes: mediaTypes,
     printMediaStatistics: printMediaStatistics,
@@ -210,7 +210,7 @@ export const schemaStep1 = z
       ctx.addIssue({
         code: 'custom',
         path: ['printMediaStatistics'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
 
@@ -223,7 +223,7 @@ export const schemaStep1 = z
       ctx.addIssue({
         code: 'custom',
         path: ['radioAndTVMediaStatistics'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
 
@@ -231,7 +231,7 @@ export const schemaStep1 = z
       ctx.addIssue({
         code: 'custom',
         path: ['onlineMediaStatistics'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
   });
@@ -248,7 +248,7 @@ export const schemaStep2 = schemaStep1
       ctx.addIssue({
         code: 'custom',
         path: ['mediaCoveragePrint'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
 
@@ -261,7 +261,7 @@ export const schemaStep2 = schemaStep1
       ctx.addIssue({
         code: 'custom',
         path: ['mediaCoverageTvOrRadio'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
 
@@ -269,7 +269,7 @@ export const schemaStep2 = schemaStep1
       ctx.addIssue({
         code: 'custom',
         path: ['mediaCoverageOnline'],
-        message: `${RouteTypes.Form}.${Forms.Journalist}.validations.media-statistics`
+        message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.media-statistics`
       });
     }
   });
@@ -284,7 +284,7 @@ export const schemaStep4 = schemaStep3
     travelInsuranceCoveringSwitzerland: z.boolean(),
     remarks: z.string().nullish(),
     readTermsOfAcceptance: z.boolean({
-      error: `${RouteTypes.Form}.validations.read-terms-of-acceptance`
+      error: `${RouteTypes.Forms}.validations.read-terms-of-acceptance`
     }),
     newsletter: z.boolean().default(true)
   })
@@ -293,7 +293,7 @@ export const schemaStep4 = schemaStep3
       ctx.addIssue({
         code: 'custom',
         path: ['readTermsOfAcceptance'],
-        message: `${RouteTypes.Form}.validations.terms-of-acceptance`
+        message: `${RouteTypes.Forms}.validations.terms-of-acceptance`
       });
     }
   });

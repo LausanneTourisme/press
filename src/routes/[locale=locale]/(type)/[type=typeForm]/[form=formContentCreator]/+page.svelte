@@ -120,14 +120,14 @@
   <form method="POST" class="w-full" enctype="multipart/form-data" use:enhance>
     <section class="step1 about-media w-full" class:hidden={step !== 1}>
       <Heading tag="h2" class="mt-6 mb-2 text-lg md:text-2xl">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.title`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.title`)}
       </Heading>
 
       <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
         <!-- Content Positioning -->
         <label for="contentPositioning" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.content-positioning`)}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.content-positioning`)}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <input
           type="text"
@@ -140,9 +140,9 @@
 
         <!-- Target Audience -->
         <label for="targetAudience" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.target-audience`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.target-audience`)}
           {#if $constraints.targetAudience?.required}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <input
@@ -157,8 +157,8 @@
         <!-- Online Presence -->
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.title`)}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.online-presence.title`)}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
           {#each Object.values(SocialNetworks) as socialNetwork}
@@ -189,15 +189,15 @@
                 }}
               />
               {@html $t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${socialNetwork}`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.online-presence.${socialNetwork}`
               )}
             </label>
           {/each}
         </div>
 
         <label for="object-request" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.object-request`)}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.object-request`)}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <textarea
           id="object-request"
@@ -213,7 +213,7 @@
       {#if ($form.onlinePresence as SocialNetwork[]).includes(SocialNetworks.Instagram)}
         <Heading tag="h3" class="mb-4 text-lg">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.title`
           )}
         </Heading>
         <fieldset
@@ -222,9 +222,9 @@
           <!-- Instagram Profile URL -->
           <label for="instagramProfileURL" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.profile-url`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.profile-url`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="url"
@@ -239,9 +239,9 @@
           <!-- Instagram Subscriber Screenshots -->
           <label for="instagramSubscriberScreenshots" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.subscriber-statistics-screenshots.title`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.subscriber-statistics-screenshots.title`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="file"
@@ -284,9 +284,9 @@
           <!-- Instagram Accounts Screenshots -->
           <label for="instagramAccountsScreenshots" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.accounts-that-responded-screenshots.title`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Instagram}.accounts-that-responded-screenshots.title`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="file"
@@ -332,7 +332,7 @@
       {#if ($form.onlinePresence as SocialNetwork[]).includes(SocialNetworks.TikTok)}
         <Heading tag="h3" class="mb-4 text-lg">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.title`
           )}
         </Heading>
         <fieldset
@@ -340,9 +340,9 @@
         >
           <label for="tiktokProfileURL" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.profile-url`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.profile-url`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="url"
@@ -355,9 +355,9 @@
 
           <label for="tiktokSubscriberScreenshots" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.subscriber-statistics-screenshots.title`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.TikTok}.subscriber-statistics-screenshots.title`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="file"
@@ -403,7 +403,7 @@
       {#if ($form.onlinePresence as SocialNetwork[]).includes(SocialNetworks.YouTube)}
         <Heading tag="h3" class="mb-4 text-lg">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.title`
           )}
         </Heading>
         <fieldset
@@ -411,9 +411,9 @@
         >
           <label for="youtubeProfileURL" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.profile-url`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.profile-url`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="url"
@@ -426,9 +426,9 @@
 
           <label for="youtubeSubscriberScreenshots" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.subscriber-statistics-screenshots.title`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.YouTube}.subscriber-statistics-screenshots.title`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="file"
@@ -474,7 +474,7 @@
       {#if ($form.onlinePresence as SocialNetwork[]).includes(SocialNetworks.Blog)}
         <Heading tag="h3" class="mb-4 text-lg">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.title`
           )}
         </Heading>
         <fieldset
@@ -482,9 +482,9 @@
         >
           <label for="blogURL" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.url`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.url`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="url"
@@ -497,9 +497,9 @@
 
           <label for="blogAudienceProfile" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.audience-profile.title`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.audience-profile.title`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <textarea
             id="blogAudienceProfile"
@@ -510,9 +510,9 @@
 
           <label for="blogMonthlyUniqueVisitors" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.monthly-unique-visitors`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.monthly-unique-visitors`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="number"
@@ -524,9 +524,9 @@
 
           <label for="blogMonthlyPageViews" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.montlhy-page-views`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.${SocialNetworks.Blog}.performances.montlhy-page-views`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </label>
           <input
             type="number"
@@ -541,15 +541,15 @@
 
     <section class="step2 coverage w-full" class:hidden={step !== 2}>
       <Heading tag="h2" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.title`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.title`)}
       </Heading>
 
       <fieldset class="fieldset coverage bg-base-200/50 border-base-300 rounded-box border p-4">
         <label for="coveragePublicationAngle" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.publication-angle.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.publication-angle.title`
           )}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <input
           type="text"
@@ -561,9 +561,9 @@
 
         <label for="coverageSubjectsOfInterest" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.subjects-of-interest`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.subjects-of-interest`
           )}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <input
           type="text"
@@ -577,9 +577,9 @@
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.publication-channels`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.publication-channels`
             )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
           {#each Object.values(SocialNetworks) as socialNetwork}
@@ -612,7 +612,7 @@
                 }}
               />
               {@html $t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.online-presence.${socialNetwork}`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.online-presence.${socialNetwork}`
               )}
             </label>
           {/each}
@@ -620,9 +620,9 @@
 
         <label for="coverageProposedMediaCoverage" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.proposed-media-coverage.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.proposed-media-coverage.title`
           )}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <textarea
           id="coverageProposedMediaCoverage"
@@ -633,9 +633,9 @@
 
         <label for="coverageTimingAndPublicationDates" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.coverage.timing-and-publication-Dates.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.coverages.timing-and-publication-Dates.title`
           )}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <textarea
           id="coverageTimingAndPublicationDates"
@@ -650,12 +650,12 @@
 
     <section class="step3 travel-information" class:hidden={step !== 3}>
       <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.title`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.title`)}
       </Heading>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
         {@html $t(
-          `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.title`
+          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.title`
         )}
       </Heading>
       <fieldset
@@ -663,10 +663,10 @@
       >
         <label for="travel-departure-city" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.city`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -675,7 +675,7 @@
           name="travelDepartureCity"
           class="input w-full {$errors.travelDepartureCity ? 'input-error' : ''}"
           placeholder={$t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.city-placeholder`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.city-placeholder`
           )}
           bind:value={$form.travelDepartureCity}
           aria-invalid={$errors.travelDepartureCity ? 'true' : undefined}
@@ -683,10 +683,10 @@
 
         <label for="travel-departure-country" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <select
@@ -698,7 +698,7 @@
         >
           <option disabled selected value={undefined}>
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.country-placeholder`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country-placeholder`
             )}
           </option>
           {#each countries as country}
@@ -708,12 +708,12 @@
 
         <label for="travel-outward-journey" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`
           )}
         </label>
         <p class="departure-point-outward-journey information">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.information`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.information`
           )}
         </p>
         <textarea
@@ -731,12 +731,12 @@
       >
         <label for="travel-return-journey" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.return-journey.title`
           )}
         </label>
         <p class="travel-information-return-journey information">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.return-journey.information`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.return-journey.information`
           )}
         </p>
         <textarea
@@ -750,7 +750,7 @@
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
         {@html $t(
-          `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`
+          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.travel-reduction.title`
         )}
       </Heading>
       <fieldset
@@ -758,7 +758,7 @@
       >
         <label for="travel-travel-reduction" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.please-tick`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.travel-reduction.please-tick`
           )}
         </label>
         <div id="travel-travel-reduction" class="join join-vertical">
@@ -787,11 +787,11 @@
                   }
                 }}
                 aria-label={$t(
-                  `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${travelReduction}`
+                  `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${travelReduction}`
                 )}
               />
               {@html $t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${travelReduction}`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.travel-reduction.${travelReduction}`
               )}
             </label>
           {/each}
@@ -803,7 +803,7 @@
       >
         <label for="travel-last-journey" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.travel-information.last-visit`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.last-visit`
           )}
         </label>
         <input
@@ -819,7 +819,7 @@
 
     <section class="step4 personal-information" class:hidden={step !== 4}>
       <Heading tag="h2" class="mt-6 mb-2 text-xl md:text-xl">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.title`)}
       </Heading>
 
       <fieldset
@@ -827,10 +827,10 @@
       >
         <p class="label mb-1 text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.titles.title`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </p>
         {#each Object.values(Titles) as title}
@@ -850,22 +850,22 @@
                 }
               }}
               aria-label={$t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${title}`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.titles.${title}`
               )}
             />
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.titles.${title}`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.titles.${title}`
             )}
           </label>
         {/each}
 
         <label for="personal-information-first-name" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.first-name`
           )}
 
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -874,7 +874,7 @@
           class="input w-full {$errors.personalFirstName ? 'input-error' : ''}"
           name="personalFirstName"
           placeholder={$t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.first-name-placeholder`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.first-name-placeholder`
           )}
           bind:value={$form.personalFirstName}
           aria-invalid={$errors.personalFirstName ? 'true' : undefined}
@@ -882,10 +882,10 @@
 
         <label for="personal-information-last-name">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.last-name`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -893,7 +893,7 @@
           id="personal-information-last-name"
           class="input w-full {$errors.personalLastName ? 'input-error' : ''}"
           placeholder={$t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.last-name-placeholder`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.last-name-placeholder`
           )}
           name="personalLastName"
           bind:value={$form.personalLastName}
@@ -902,10 +902,10 @@
 
         <label for="personal-information-spoken-languages" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.spoken-languages.title`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -913,7 +913,7 @@
           id="personal-information-spoken-languages"
           class="input w-full {$errors.personalSpokenLanguages ? 'input-error' : ''}"
           placeholder={$t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.spoken-languages.placeholder`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.spoken-languages.placeholder`
           )}
           name="personalSpokenLanguages"
           bind:value={$form.personalSpokenLanguages}
@@ -922,10 +922,10 @@
 
         <label for="personal-information-birthdate" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.birth-date`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.birth-date`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -939,7 +939,7 @@
 
         <label for="personal-information-allergies" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.allergies`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.allergies`
           )}
         </label>
         <input
@@ -956,7 +956,7 @@
           class="label text-wrap break-words"
         >
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.medical-and-physical-condition`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.medical-and-physical-condition`
           )}
         </label>
         <input
@@ -971,13 +971,13 @@
 
       <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
         {@html $t(
-          `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.title`
+          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.title`
         )}
       </Heading>
       <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
         <label for="personal-information-passport-number" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.number`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.number`
           )}
         </label>
         <input
@@ -991,7 +991,7 @@
 
         <label for="personal-information-passport-validity" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.passport.validity`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.validity`
           )}
         </label>
         <input
@@ -1005,7 +1005,7 @@
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.title`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.title`)}
       </Heading>
       <fieldset class="fieldset address bg-base-200/50 border-base-300 rounded-box border p-4">
         <label
@@ -1013,10 +1013,10 @@
           class="label text-wrap break-words"
         >
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.street-address`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.street-address`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -1030,10 +1030,10 @@
 
         <label for="personal-information-address-city" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.city`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.city`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -1047,10 +1047,10 @@
 
         <label for="personal-information-address-zip" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.postal-code`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.postal-code`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -1064,10 +1064,10 @@
 
         <label for="personal-information-address-country" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.country`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <select
@@ -1079,7 +1079,7 @@
         >
           <option disabled selected value={undefined}>
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.address.country-placeholder`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country-placeholder`
             )}
           </option>
           {#each countries as country}
@@ -1089,10 +1089,10 @@
 
         <label for="personal-information-phone-number" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.phone-number`
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.phone-number`
           )}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -1105,9 +1105,9 @@
         />
 
         <label for="personal-information-email" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.email`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.email`)}
           <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Form}.required`)}
+            {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
         <input
@@ -1122,10 +1122,10 @@
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
         {@html $t(
-          `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.title`
+          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.title`
         )}
         <span class="text-brand-600 italic">
-          {@html $t(`${RouteTypes.Form}.required`)}
+          {@html $t(`${RouteTypes.Forms}.required`)}
         </span>
       </Heading>
       <fieldset
@@ -1134,12 +1134,12 @@
         <div class="hidden md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4">
           <p class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
             )}
           </p>
           <p class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
+              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
             )}
           </p>
         </div>
@@ -1150,20 +1150,20 @@
             <div
               class="p-1 before:content-[attr(data-label)] md:flex md:flex-col md:justify-end md:p-0 md:before:content-none"
               data-label={$t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
               )}
             >
               {#if ($errors?.[`emergencyContactNames_${i}`] as string | undefined) !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
-                    `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.name`
+                    `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.name`
                   )}
                 </p>
               {/if}
               <input
                 type="text"
                 aria-label={$t(
-                  `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
+                  `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
                 )}
                 class="personal-information-emergency-contact-name input w-full {$errors?.[
                   `emergencyContactNames_${i}`
@@ -1180,20 +1180,20 @@
             <div
               class="p-1 before:content-[attr(data-label)] md:flex md:flex-col md:justify-end md:p-0 md:before:content-none"
               data-label={$t(
-                `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
+                `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
               )}
             >
               {#if ($errors?.[`emergencyContactPhones_${i}`] as string | undefined) !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
-                    `${RouteTypes.Form}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
+                    `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
                   )}
                 </p>
               {/if}
               <input
                 type="text"
                 aria-label={$t(
-                  `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
+                  `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
                 )}
                 class="personal-information-emergency-contact-phone-number input w-full {$errors?.[
                   `emergencyContactPhones_${i}`
@@ -1254,7 +1254,7 @@
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
         {@html $t(
-          `${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.travel-insurance`
+          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.travel-insurance`
         )}
       </Heading>
       <fieldset
@@ -1271,10 +1271,10 @@
             class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
             checked={$form.travelInsuranceCoveringSwitzerland === false}
             onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
-            aria-label={$t(`${RouteTypes.Form}.no`)}
+            aria-label={$t(`${RouteTypes.Forms}.no`)}
             required
           />
-          {@html $t(`${RouteTypes.Form}.no`)}
+          {@html $t(`${RouteTypes.Forms}.no`)}
         </label>
         <label class="label text-wrap break-words">
           <input
@@ -1284,20 +1284,20 @@
             class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
             checked={$form.travelInsuranceCoveringSwitzerland === true}
             onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
-            aria-label={$t(`${RouteTypes.Form}.yes`)}
+            aria-label={$t(`${RouteTypes.Forms}.yes`)}
           />
-          {@html $t(`${RouteTypes.Form}.yes`)}
+          {@html $t(`${RouteTypes.Forms}.yes`)}
         </label>
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.remarks`)}
+        {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.remarks`)}
       </Heading>
       <fieldset
         class="fieldset personal-information-remarks bg-base-200/50 border-base-300 rounded-box border p-4"
       >
         <label for="personal-information-remarks" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.ContentCreator}.form.personal-information.remarks`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.remarks`)}
         </label>
         <textarea
           id="personal-information-remarks"
@@ -1309,16 +1309,16 @@
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Form}.terms-of-acceptance.title`)}
+        {@html $t(`${RouteTypes.Forms}.terms-of-acceptance.title`)}
         <span class="text-brand-600 italic">
-          {@html $t(`${RouteTypes.Form}.required`)}
+          {@html $t(`${RouteTypes.Forms}.required`)}
         </span>
       </Heading>
       <fieldset
         class="fieldset terms-of-acceptance bg-base-200/50 border-base-300 rounded-box border p-4"
       >
         <p class="text-wrap">
-          {@html $t(`${RouteTypes.Form}.terms-of-acceptance.content`)}
+          {@html $t(`${RouteTypes.Forms}.terms-of-acceptance.content`)}
         </p>
 
         <label class="label text-wrap break-words">
@@ -1334,16 +1334,16 @@
             }}
             aria-invalid={$errors.readTermsOfAcceptance ? 'true' : undefined}
           />
-          {@html $t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
+          {@html $t(`${RouteTypes.Forms}.terms-of-acceptance.accept-terms`)}
         </label>
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Form}.newsletter.title`)}
+        {@html $t(`${RouteTypes.Forms}.newsletter.title`)}
       </Heading>
       <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
         <p class="">
-          {@html $t(`${RouteTypes.Form}.newsletter.paragraph`)}
+          {@html $t(`${RouteTypes.Forms}.newsletter.paragraph`)}
         </p>
 
         <label
@@ -1357,10 +1357,10 @@
             class="radio {$errors.newsletter ? 'radio-error' : ''}"
             checked={$form.newsletter === false}
             onchange={(e) => ($form.newsletter = false)}
-            aria-label={$t(`${RouteTypes.Form}.no`)}
+            aria-label={$t(`${RouteTypes.Forms}.no`)}
             required
           />
-          {@html $t(`${RouteTypes.Form}.no`)}
+          {@html $t(`${RouteTypes.Forms}.no`)}
         </label>
 
         <label
@@ -1374,9 +1374,9 @@
             class="radio {$errors.newsletter ? 'radio-error' : ''}"
             checked={$form.newsletter === true}
             onchange={(e) => ($form.newsletter = true)}
-            aria-label={$t(`${RouteTypes.Form}.yes`)}
+            aria-label={$t(`${RouteTypes.Forms}.yes`)}
           />
-          {@html $t(`${RouteTypes.Form}.yes`)}
+          {@html $t(`${RouteTypes.Forms}.yes`)}
         </label>
       </fieldset>
     </section>
@@ -1390,14 +1390,14 @@
         }}
         disabled={isSubmitting}
       >
-        {@html $t(`${RouteTypes.Form}.previous`)}
+        {@html $t(`${RouteTypes.Forms}.previous`)}
       </button>
       <button class="btn" disabled={isSubmitting}>
         <span class={isSubmitting ? '' : 'hidden'}>
           <Loading />
         </span>
         <span class={!isSubmitting ? '' : 'hidden'}>
-          {step < steps.length ? $t(`${RouteTypes.Form}.next`) : $t(`${RouteTypes.Form}.submit`)}
+          {step < steps.length ? $t(`${RouteTypes.Forms}.next`) : $t(`${RouteTypes.Forms}.submit`)}
         </span>
       </button>
     </div>

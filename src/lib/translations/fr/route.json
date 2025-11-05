@@ -2,12 +2,12 @@
   "home.slug": "",
   "contact.slug": "contact",
   "articles.slug": "articles",
-  "coverage.slug": "parutions",
-  "press-release.slug": "communiques-de-presse",
-  "press-kit.slug": "dossier-de-presse",
+  "coverages.slug": "parutions",
+  "press-releases.slug": "communiques-de-presse",
+  "press-kits.slug": "dossiers-de-presse",
   "highlights.slug": "immanquables",
-  "press-releases-and-press-kits.slug": "communiques-de-presse-et-dossier-de-presse",
-  "form.slug": "formulaire",
+  "press-releases-and-press-kits.slug": "communiques-de-presse-et-dossiers-de-presse",
+  "forms.slug": "formulaires",
 
   "themes.slug": "themes",
   "themes.architecture.slug": "architecture-design",
@@ -22,8 +22,8 @@
   "themes.unusual.slug": "insolite",
   "themes.wellness.slug": "bien-etre",
 
-  "form.media-coverage.slug": "retombees-mediatiques",
-  "form.content-creator.slug": "createur-de-contenu",
-  "form.journalist.slug": "journaliste",
-  "form.thanks.slug": "merci"
+  "forms.media-coverage.slug": "retombees-mediatiques",
+  "forms.content-creator.slug": "createur-de-contenu",
+  "forms.journalist.slug": "journaliste",
+  "forms.thanks.slug": "merci"
 }

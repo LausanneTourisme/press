@@ -47,8 +47,8 @@
     }
   },
   "route-titles": {
-    "press-release": "Communiqué de presse",
-    "press-kit": "Dossier de presse",
+    "press-releases": "Communiqués de presse",
+    "press-kits": "Dossiers de presse",
     "articles": "Article"
   },
   "error": {

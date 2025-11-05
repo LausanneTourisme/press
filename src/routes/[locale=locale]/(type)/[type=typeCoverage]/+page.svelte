@@ -16,10 +16,10 @@
 <Container width="small">
   <div class="py-6 text-center">
     <Heading tag="h1">
-      {@html $t('coverage.title')}
+      {@html $t('coverages.title')}
     </Heading>
     <Paragraph>
-      {@html $t('coverage.description')}
+      {@html $t('coverages.description')}
     </Paragraph>
   </div>
 </Container>
@@ -29,7 +29,7 @@
   </div>
   <iframe
     class:hidden={loading}
-    title={$t('coverage.title')}
+    title={$t('coverages.title')}
     src="https://elink.io/embed/945185f"
     allowfullscreen
     width="100%"

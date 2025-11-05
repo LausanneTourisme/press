@@ -17,9 +17,9 @@ export const load = async ({ params, parent, url, ...rest }) => {
 
   const lang = params.locale as Locale;
   const type =
-    translations[lang][`route.${RouteTypes.Presskit}.slug`] === params.type
-      ? RouteTypes.Presskit
-      : RouteTypes.Pressrelease;
+    translations[lang][`route.${RouteTypes.Presskits}.slug`] === params.type
+      ? RouteTypes.Presskits
+      : RouteTypes.Pressreleases;
 
   const seo: SeoHeader = {
     canonical: `${PUBLIC_BASE_URL}${url.pathname}`,

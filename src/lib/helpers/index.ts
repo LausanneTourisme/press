@@ -1,4 +1,4 @@
-import { RouteTypes, type RouteType, type Theme } from '$enums';
+import { RouteTypes, type Form, type RouteType, type Theme } from '$enums';
 import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
 import { defaultLocale, locale, translations, type Locale } from '$lib/translations';
 import type { PostType, Translatable } from '$lib/types';
@@ -39,9 +39,10 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 
 export const route = (
   type: RouteType,
-  options: { forceLocale?: Locale | undefined; theme?: Theme; suffix?: string } = {
+  options: { forceLocale?: Locale | undefined; theme?: Theme; form?: Form; suffix?: string } = {
     forceLocale: undefined,
-    theme: undefined
+    theme: undefined,
+    form: undefined,
   }
 ): string => {
   const lang = options.forceLocale ?? (locale.get() as Locale) ?? defaultLocale;
@@ -56,7 +57,17 @@ export const route = (
       : null;
 
     if (!themeSlug) return `/${lang}/${slug}`;
-    return `/${lang}/${slug}/${themeSlug}/`;
+    return `/${lang}/${slug}/${themeSlug}`;
+  }
+
+  if (type === RouteTypes.Forms) {
+    const form = options.form;
+    const formSlug = form
+      ? translations.get()[lang][`route.${RouteTypes.Forms}.${form}.slug`]
+      : null;
+
+    if (!formSlug) return `/${lang}/${slug}`;
+    return `/${lang}/${slug}/${formSlug}`;
   }
 
   if (!slug) return `/${lang}`;

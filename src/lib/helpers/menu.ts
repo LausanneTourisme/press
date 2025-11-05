@@ -21,8 +21,8 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) => [
         link: route(RouteTypes.PressreleasesAndPresskits, { forceLocale: locale })
       },
       {
-        title: t.get('menu.ressources.coverage'),
-        link: route(RouteTypes.Coverage, { forceLocale: locale })
+        title: t.get('menu.ressources.coverages'),
+        link: route(RouteTypes.Coverages, { forceLocale: locale })
       },
       {
         title: t.get('menu.ressources.themes'),

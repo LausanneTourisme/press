@@ -98,7 +98,7 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale
     if (!languages.includes(locale)) continue;
 
     const seo = release.seo!;
-    const type = release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease;
+    const type = release.type === 'press_kit' ? RouteTypes.Presskits : RouteTypes.Pressreleases;
     const alternates: string[] = [];
 
     languages.forEach((l) => {

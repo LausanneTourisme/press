@@ -72,7 +72,7 @@
         "montlhy-page-views": "Monatliche Seitenaufrufe"
       }
     },
-    "coverage": {
+    "coverages": {
       "title": "Information über das Medienergebnis",
       "print": {
         "title": "Medienberichterstattung (Print)",

@@ -84,13 +84,13 @@ describe('get values from enums', () => {
       'home',
       'articles',
       'contact',
-      'coverage',
+      'coverages',
       'highlights',
       'themes',
-      'press-release',
-      'press-kit',
+      'press-releases',
+      'press-kits',
       'press-releases-and-press-kits',
-      'form'
+      'forms'
     ]);
   });
   it('Theme', () => {

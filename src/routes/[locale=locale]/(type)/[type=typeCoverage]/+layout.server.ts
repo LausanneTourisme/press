@@ -11,12 +11,12 @@ export const load = async ({ url, params, parent }) => {
 
   const seo: SeoHeader = {
     canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
-    title: translations[lang][`${RouteTypes.Coverage}.title`],
-    description: translations[lang][`${RouteTypes.Coverage}.meta-description`],
+    title: translations[lang][`${RouteTypes.Coverages}.title`],
+    description: translations[lang][`${RouteTypes.Coverages}.meta-description`],
     image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
     alternate: supportedLocales.map((locale) => ({
       hreflang: locale,
-      href: `/${locale}/${translations[locale][`route.${RouteTypes.Coverage}.slug`]}`
+      href: `/${locale}/${translations[locale][`route.${RouteTypes.Coverages}.slug`]}`
     }))
   };
 
@@ -25,6 +25,6 @@ export const load = async ({ url, params, parent }) => {
     translations,
     seo,
     locale: lang,
-    type: RouteTypes.Coverage
+    type: RouteTypes.Coverages
   };
 };

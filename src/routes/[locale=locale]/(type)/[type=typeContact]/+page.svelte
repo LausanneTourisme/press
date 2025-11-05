@@ -164,9 +164,9 @@
         </Heading>
         <div class="flex w-full flex-col items-center justify-center space-y-4">
           <a
-            href={route(RouteTypes.Form, {
+            href={route(RouteTypes.Forms, {
               forceLocale: $locale as Locale,
-              suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
+              suffix: $t(`route.${RouteTypes.Forms}.${Forms.Journalist}.slug`)
             })}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           >
@@ -174,9 +174,9 @@
             {@html $t('contact.form.select-section.visit-media.button.journalist')}
           </a>
           <a
-            href={route(RouteTypes.Form, {
+            href={route(RouteTypes.Forms, {
               forceLocale: $locale as Locale,
-              suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
+              suffix: $t(`route.${RouteTypes.Forms}.${Forms.ContentCreator}.slug`)
             })}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
           >

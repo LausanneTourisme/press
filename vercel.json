@@ -4,6 +4,46 @@
       "source": "/:lang(fr|en|de)/:section(articles|artikeln)/:id(\\d+)/:slug",
       "destination": "/:lang/:section/:slug",
       "permanent": false
+    },
+    {
+      "source": "/:lang(fr|en|de)/form/:path*",
+      "destination": "/:lang/forms/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/formulaire/:path*",
+      "destination": "/:lang/formulaires/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/formular/:path*",
+      "destination": "/:lang/formulare/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/coverage/:path*",
+      "destination": "/:lang/coverages/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/press-kit/:path*",
+      "destination": "/:lang/press-kits/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/pressedossier/:path*",
+      "destination": "/:lang/pressedossiers/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/dossier-de-presse/:path*",
+      "destination": "/:lang/dossiers-de-presse/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(fr|en|de)/press-release/:path*",
+      "destination": "/:lang/press-releases/:path*",
+      "permanent": true
     }
   ]
 }

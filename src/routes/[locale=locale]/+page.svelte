@@ -313,7 +313,7 @@
         {@html $t('page.pressRelease.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Pressrelease)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Pressreleases)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>
@@ -352,7 +352,7 @@
         {@html $t('page.mediaCoverage.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Coverage)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Coverages)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>
