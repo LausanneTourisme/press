@@ -1,6 +1,19 @@
 import { Forms, RouteTypes, Themes } from '$enums';
-import { blankable, filename, getMediaLibraryRegisterLink, route } from '$lib/helpers';
-import { describe, expect, it, vi } from 'vitest';
+import {
+  blankable,
+  chunkify,
+  filename,
+  filterByTag,
+  getMediaLibraryRegisterLink,
+  getTailwindColor,
+  humanFileSize,
+  normalize,
+  route,
+  shuffle,
+  ucfirst
+} from '$lib/helpers';
+import type { Post } from '$types';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 //assuming during this test 'defaultLocale' is in "fr"
 describe('Test helper: Index', () => {
   describe('Test blankable', () => {
@@ -628,5 +641,451 @@ describe('Test helper: Index', () => {
         });
       });
     });
+  });
+
+  describe('Test chunkify', () => {
+    it('splits correctly in 2 chunks', () => {
+      expect(chunkify([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)).toStrictEqual([
+        [1, 2, 3, 4, 5],
+        [6, 7, 8, 9, 10]
+      ]);
+      expect(chunkify([1, 2, 3, 4, 5, 6, 7])).toStrictEqual([
+        [1, 2, 3, 4],
+        [5, 6, 7]
+      ]);
+    });
+
+    it('splits correctly in 4 chunks', () => {
+      expect(chunkify([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)).toStrictEqual([
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [10]
+      ]);
+      expect(chunkify([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])).toStrictEqual([
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15]
+      ]);
+    });
+
+    it('splits correctly in 1 chunk', () => {
+      expect(chunkify([1, 2, 3], 3)).toStrictEqual([[1, 2, 3]]);
+      expect(chunkify([1, 2, 3, 4])).toStrictEqual([[1, 2, 3, 4]]);
+    });
+  });
+
+  describe('Test ucfirst', () => {
+    it('returns first letter upscaled', () => {
+      expect(ucfirst('it is a test?')).toBe('It is a test?');
+      expect(ucfirst('UPSCALED')).toBe('UPSCALED');
+    });
+  });
+
+  describe('Test normalize', () => {
+    it('convert special chars to simple chars', () => {
+      expect(normalize('àâçéèêëïîôùûüÿÀÂÇÉÈÊËÏÎÔÙÛÜŸäöüÄÖÜ')).toBe(
+        'aaceeeeiiouuuyAACEEEEIIOUUUYaouAOU'
+      );
+    });
+  });
+
+  describe('Test filterByTag', () => {
+    let posts: Post<string>[] = [];
+    beforeEach(() => {
+      posts = [
+        {
+          id: 1,
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        },
+        {
+          id: 2,
+          tags: [
+            {
+              name: 'c',
+              public_name: 'cc'
+            }
+          ]
+        },
+        {
+          id: 3,
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            }
+          ]
+        },
+        {
+          id: 4,
+          tags: [
+            {
+              name: 'e',
+              public_name: 'ee'
+            }
+          ]
+        },
+        {
+          id: 5,
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'g',
+              public_name: 'gg'
+            }
+          ]
+        }
+      ];
+    });
+
+    it('returns all posts with tag "a"', () => {
+      expect(filterByTag(posts, 'a')).toStrictEqual([
+        {
+          id: 1,
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        }
+      ]);
+    });
+    it('returns all posts with tag "c"', () => {
+      expect(filterByTag(posts, 'c')).toStrictEqual([
+        {
+          id: 1,
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        },
+        {
+          id: 2,
+          tags: [
+            {
+              name: 'c',
+              public_name: 'cc'
+            }
+          ]
+        }
+      ]);
+    });
+    it('returns all posts with tag "d"', () => {
+      expect(filterByTag(posts, 'd')).toStrictEqual([
+        {
+          id: 1,
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        },
+        {
+          id: 3,
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            }
+          ]
+        },
+        {
+          id: 5,
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'g',
+              public_name: 'gg'
+            }
+          ]
+        }
+      ]);
+    });
+    it('returns all posts with tag "e"', () => {
+      expect(filterByTag(posts, 'e')).toStrictEqual([
+        {
+          id: 1,
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        },
+        {
+          id: 4,
+          tags: [
+            {
+              name: 'e',
+              public_name: 'ee'
+            }
+          ]
+        }
+      ]);
+    });
+    it('returns all posts with tag "d"', () => {
+      expect(filterByTag(posts, 'g')).toStrictEqual([
+        {
+          id: 5,
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'g',
+              public_name: 'gg'
+            }
+          ]
+        }
+      ]);
+    });
+
+    it('sorts when published dates exists', () => {
+      posts[0].published_at = '1570572000';
+      posts[1].published_at = '1722356572';
+      posts[2].published_at = '1731376991';
+      posts[3].published_at = '1617573600';
+      posts[4].published_at = '1743413600';
+
+      expect(filterByTag(posts, 'd')).toStrictEqual([
+        {
+          id: 5,
+          published_at: '1743413600',
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'g',
+              public_name: 'gg'
+            }
+          ]
+        },
+        {
+          id: 3,
+          published_at: '1731376991',
+          tags: [
+            {
+              name: 'd',
+              public_name: 'dd'
+            }
+          ]
+        },
+        {
+          id: 1,
+          published_at: '1570572000',
+          tags: [
+            {
+              name: 'a',
+              public_name: 'aa'
+            },
+            {
+              name: 'b',
+              public_name: 'bb'
+            },
+            {
+              name: 'c',
+              public_name: 'cc'
+            },
+            {
+              name: 'd',
+              public_name: 'dd'
+            },
+            {
+              name: 'e',
+              public_name: 'ee'
+            },
+            {
+              name: 'f',
+              public_name: 'ff'
+            }
+          ]
+        }
+      ]);
+    });
+  });
+
+  describe('Test getTailwindColor', () => {
+    const style = document.createElement('style');
+    // mock tailwind style
+    style.textContent = `
+      .bg-red-500 { background-color: rgb(239, 68, 68); }
+      .bg-blue-500 { background-color: rgb(59, 130, 246); }
+      .bg-green-500 { background-color: rgb(34, 197, 94); }
+    `;
+    document.head.appendChild(style);
+
+    it('get rgb values from class name', () => {
+      expect(getTailwindColor('bg-red-500')).toBe('rgb(239, 68, 68)');
+      expect(getTailwindColor('bg-blue-500')).toBe('rgb(59, 130, 246)');
+      expect(getTailwindColor('bg-green-500')).toBe('rgb(34, 197, 94)');
+    });
+
+    it('also returns values for classes not found', () => {
+      expect(getTailwindColor('bg-yellow-500')).toBe('rgba(0, 0, 0, 0)');
+    });
+  });
+
+  describe('Test shuffle', () => {
+    it('should not return the same array order', () => {
+      const randomSpy = vi.spyOn(Math, 'random').mockReturnValue(0.5);
+
+      expect(shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).not.toStrictEqual([
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+      ]);
+
+      randomSpy.mockRestore();
+    });
+
+    it('should not mutate the original array', () => {
+      const original = [1, 2, 3, 4, 5];
+      const copy = [...original];
+
+      shuffle(original);
+
+      expect(original).toEqual(copy);
+    });
+  });
+
+  describe('Test humanFileSize', () => {
+    it('returns octet', () => {
+      expect(humanFileSize(0)).toBe('0 o');
+      expect(humanFileSize(1)).toBe('1 o');
+      expect(humanFileSize(1000)).toBe('1000 o');
+    })
+    it('returns kilooctet', () => {
+      expect(humanFileSize(1024)).toBe('1 ko');
+    })
+    it('returns megaoctet', () => {
+      expect(humanFileSize(1_048_576)).toBe('1 Mo');
+    })
+    it('returns gigaoctet', () => {
+      expect(humanFileSize(1_073_741_824)).toBe('1 Go');
+    })
+    it('returns teraoctet', () => {
+      expect(humanFileSize(1_099_511_627_776)).toBe('1 To');
+    })
+    it('returns teraoctet', () => {
+      console.log(humanFileSize( 1_125_899_906_842_624))
+      expect(humanFileSize( 1_125_899_906_842_624)).toBe('1024 To');
+    })
   });
 });
