@@ -246,7 +246,7 @@
           <div class="absolute bottom-0 left-0">
             <Heading
               tag="h3"
-              class="my-4 px-4 text-clip whitespace-break-spaces !text-white text-shadow-lg md:text-3xl"
+              class="my-4 px-4 text-clip whitespace-break-spaces text-white! text-shadow-lg md:text-3xl"
               title={$t(`themes.${theme}.title`)}
             >
               {@html $t(`themes.${theme}.title`)}
