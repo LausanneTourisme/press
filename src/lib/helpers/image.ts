@@ -20,7 +20,7 @@ export const transformToString = (
   if (transform) {
     const transformClean = clearDuplicatesInTransform(transform)!;
 
-    for (const key  in transformClean) {
+    for (const key in transformClean) {
       // keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
       parameters.push(`${key}_${transformClean[key as keyof Transform]}`);
     }
