@@ -65,6 +65,7 @@ function invert<T extends Record<string, string>>(obj: T) {
   ) as { [K in keyof T as T[K]]: K };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getValues<T extends Record<string, any>>(obj: T) {
   return Object.values(obj) as [(typeof obj)[keyof T]]
 }
