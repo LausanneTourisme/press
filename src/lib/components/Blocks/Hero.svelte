@@ -23,7 +23,7 @@
   };
   const transform: Transform = $state({width:1920, height:1280});
 
-  const style: string = twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass);
+  const style: string = $derived(twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass));
 
   onMount(() => {
     updateSize();

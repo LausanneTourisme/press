@@ -29,7 +29,7 @@
   const removeBackground = () => {
     figure?.classList.remove('bg-loading', 'animate-pulse');
   };
-  let style = twMerge('bg-loading animate-pulse', additionalClass);
+  let style = $derived(twMerge('bg-loading animate-pulse', additionalClass));
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->

@@ -62,7 +62,7 @@
     parallaxWidth = window.innerWidth ? window.innerWidth : 1920;
   };
 
-  const style = twMerge('min-h-96', additionalClass);
+  const style = $derived(twMerge('min-h-96', additionalClass));
   const imgFormat: 'vertical' | 'horizontal' | 'square' = $derived(
     metadata ? getImgType(metadata?.width, metadata?.height) : 'horizontal'
   );
