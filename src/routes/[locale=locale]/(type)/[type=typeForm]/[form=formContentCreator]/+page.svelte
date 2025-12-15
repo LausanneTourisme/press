@@ -17,14 +17,14 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus, Trash2 } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4Client } from 'sveltekit-superforms/adapters';
+  import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import { humanFileSize } from '$lib/helpers';
   import { dev } from '$app/environment';
 
-  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
+  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   const countries = $derived(Object.values((page.data as PageData).countries));
   let step = $state(1);
   let emergencyContacts = $state([{ name: '', phonenunmber: '' }]);

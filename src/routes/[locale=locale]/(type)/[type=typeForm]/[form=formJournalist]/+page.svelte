@@ -8,7 +8,7 @@
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
-  import { zod4Client } from 'sveltekit-superforms/adapters';
+  import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
@@ -16,7 +16,7 @@
   import { dev } from '$app/environment';
 
   const countries = $derived(Object.values((page.data as PageData).countries));
-  const steps = [zod4Client(schemaStep1), zod4Client(schemaStep2), zod4Client(schemaStep3), zod4Client(schemaStep4)];
+  const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
