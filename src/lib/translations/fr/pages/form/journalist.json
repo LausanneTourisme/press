@@ -69,7 +69,7 @@
                 "website": "Site web",
                 "website-placeholder": "https://",
                 "monthly-unique-visitors": "Reach/visiteurs uniques par mois",
-                "montlhy-page-views": "Nombre de page vues par mois"
+                "monthly-page-views": "Nombre de page vues par mois"
             }
         },
         "coverage": {

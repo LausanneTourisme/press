@@ -38,7 +38,7 @@ export const radioAndTVMediaStatistics = z.object({
 export const onlineMediaStatistics = z.object({
     website: z.url(),
     monthlyUniqueVisitors: z.number().positive().min(1, { error: `${RouteTypes.Form}.validations.number-min-1` }).default(0),
-    montlhyPageViews: z.number().positive().default(0).nullable(),
+    monthlyPageViews: z.number().positive().default(0).nullable(),
 }).nullable();
 
 //required when media type is "print" (via superRefine)

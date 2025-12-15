@@ -375,7 +375,7 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
               class="label text-wrap break-words"
             >
-              {@html $t(
+       monthlyPageViews(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
               )}
               {#if Number($constraints.radioAndTVMediaStatistics?.emissionName?.minlength) > 0}
@@ -400,7 +400,7 @@
                 if (value.trim().length) {
                   $form.radioAndTVMediaStatistics = {
                     viewers: 0,
-                    ...$form.radioAndTVMediaStatistics,
+       monthlyPageViews$form.radioAndTVMediaStatistics,
                     emissionName: value
                   };
                 }
@@ -422,16 +422,14 @@
               {/if}
             </label>
             <input
-              type="number"
+              type="number"monthlyPageViews
               id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
               class="input w-full {$errors.radioAndTVMediaStatistics?.viewers ||
-              $errors.radioAndTVMediaStatistics?._errors
-                ? 'input-error'
+              $errors.radioAndTVMediaStatistics?._errorsmonthlyPageViews  ? 'input-error'
                 : ''}"
               defaultValue={$form.radioAndTVMediaStatistics?.viewers ?? 0}
               onchange={(e) => {
-                const value = e.currentTarget.valueAsNumber;
-                if (!Number.isNaN(value)) {
+                constmonthlyPageViews            if (!Number.isNaN(value)) {
                   $form.radioAndTVMediaStatistics = {
                     emissionName: '',
                     ...$form.radioAndTVMediaStatistics,
@@ -476,7 +474,7 @@
                 if (value.trim().length) {
                   $form.onlineMediaStatistics = {
                     monthlyUniqueVisitors: 0,
-                    montlhyPageViews: 0,
+                    monthlyPageViews: 0,
                     ...$form.onlineMediaStatistics,
                     website: value
                   };
@@ -517,7 +515,7 @@
                 const value = e.currentTarget.valueAsNumber;
                 if (!Number.isNaN(value)) {
                   $form.onlineMediaStatistics = {
-                    montlhyPageViews: 0,
+                    monthlyPageViews: 0,
                     website: '',
                     ...$form.onlineMediaStatistics,
                     monthlyUniqueVisitors: value
@@ -529,11 +527,11 @@
                 : undefined}
             />
 
-            <label for="online-statistics-montlhy-page-views" class="label text-wrap break-words">
+            <label for="online-statistics-monthhy-page-views" class="label text-wrap break-words">
               {@html $t(
-                `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.montlhy-page-views`
+                `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.monthly-page-views`
               )}
-              {#if $constraints.onlineMediaStatistics?.montlhyPageViews?.required}<span
+              {#if $constraints.onlineMediaStatistics?.monthlyPageViews?.required}<span
                   class="text-brand-600 italic"
                 >
                   {@html $t(`${RouteTypes.Form}.required`)}
@@ -541,12 +539,12 @@
             </label>
             <input
               type="number"
-              id="online-statistics-montlhy-page-views"
-              class="input w-full {$errors.onlineMediaStatistics?.montlhyPageViews ||
+              id="online-statistics-monthly-page-views"
+              class="input w-full {$errors.onlineMediaStatistics?.monthlyPageViews ||
               $errors.onlineMediaStatistics?._errors
                 ? 'input-error'
                 : ''}"
-              defaultValue={$form.onlineMediaStatistics?.montlhyPageViews ?? 0}
+              defaultValue={$form.onlineMediaStatistics?.monthlyPageViews ?? 0}
               onchange={(e) => {
                 const value = e.currentTarget.valueAsNumber;
                 if (!Number.isNaN(value)) {
@@ -554,18 +552,18 @@
                     monthlyUniqueVisitors: 0,
                     website: '',
                     ...$form.onlineMediaStatistics,
-                    montlhyPageViews: value
+                    monthlyPageViews: value
                   };
                 } else {
                   $form.onlineMediaStatistics = {
                     monthlyUniqueVisitors: 0,
                     website: '',
-                    montlhyPageViews: 0,
+                    monthlyPageViews: 0,
                     ...$form.onlineMediaStatistics
                   };
                 }
               }}
-              aria-invalid={$errors.onlineMediaStatistics?.montlhyPageViews ? 'true' : undefined}
+              aria-invalid={$errors.onlineMediaStatistics?.monthlyPageViews ? 'true' : undefined}
             />
           </fieldset>
         {/if}
