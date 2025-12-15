@@ -7,7 +7,7 @@
   };
 
   const { class: additionalClass }: Props = $props();
-  const style = twMerge('loading loading-ring loading-lg', additionalClass);
+  const style = $derived(twMerge('loading loading-ring loading-lg', additionalClass));
 </script>
 
 <span class={style} out:fade></span>

@@ -16,7 +16,7 @@
 
   const { class: additionalClass }: Props = $props();
 
-  const style = twMerge('flex h-full items-center justify-between', additionalClass);
+  const style = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
 </script>
 
 <nav class={style} aria-labelledby="desktop-navigation">

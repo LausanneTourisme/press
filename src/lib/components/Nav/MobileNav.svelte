@@ -21,7 +21,7 @@
 
   const { class: additionalClass, maxWidth = maxMobileWidth }: Props = $props();
   const pageSeo: SeoHeader = $derived(page.data.seo);
-  const style: string = twMerge('flex h-full items-center justify-between', additionalClass);
+  const style: string = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
 
   let open = $state(false);
   let openShelfIndex: number | null = $state(null); // Stores which shelf is open

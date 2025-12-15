@@ -20,7 +20,7 @@
 
   const { class: additionalClass, isMobile = false, values }: Props = $props();
 
-  const style = twMerge('md:mx-auto gap-8 p-4', 'flex', additionalClass);
+  const style = $derived(twMerge('md:mx-auto gap-8 p-4', 'flex', additionalClass));
 </script>
 
 {#key isMobile}

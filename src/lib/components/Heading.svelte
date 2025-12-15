@@ -11,26 +11,22 @@
 
   const { class: additionalClass = '', tag = 'h2', title = '', children }: HeadingProps = $props();
 
-  let tagStyle: string;
+  let tagStyle: string = $derived.by(() => {
+    switch (tag) {
+      case 'h1':
+        return 'text-3xl md:text-[2.4rem] leading-tight tracking-[.45px] py-3';
+      case 'h2':
+        return 'text-2xl md:text-[2.4rem] md:leading-tight tracking-[.45px] py-1';
+      case 'h3':
+        return 'text-xl md:text-2xl leading-snug tracking-tight font-semibold -mb-2 mt-4';
+      case 'h4':
+        return 'text-lg md:text-xl leading-snug tracking-tight font-medium -mb-2 mt-4';
+      default:
+        return ' text-lg';
+    }
+  });
 
-  switch (tag) {
-    case 'h1':
-      tagStyle = 'text-3xl md:text-[2.4rem] leading-tight tracking-[.45px] py-3';
-      break;
-    case 'h2':
-      tagStyle = 'text-2xl md:text-[2.4rem] md:leading-tight tracking-[.45px] py-1';
-      break;
-    case 'h3':
-      tagStyle = 'text-xl md:text-2xl leading-snug tracking-tight font-semibold -mb-2 mt-4';
-      break;
-    case 'h4':
-      tagStyle = 'text-lg md:text-xl leading-snug tracking-tight font-medium -mb-2 mt-4';
-      break;
-    default:
-      tagStyle = ' text-lg';
-  }
-
-  const style = twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass);
+  const style = $derived(twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass));
 </script>
 
 <svelte:element this={tag} class={style} {title}>

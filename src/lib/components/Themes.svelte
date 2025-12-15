@@ -24,6 +24,8 @@
   }: Props = $props();
 
   const chunks = chunkify(Object.values(Themes));
+  // should be trigger by user interaction
+  // svelte-ignore state_referenced_locally
   let showMore: boolean = $state(expanded);
 
   const displayMore = () => {

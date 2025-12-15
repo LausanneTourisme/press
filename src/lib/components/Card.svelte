@@ -32,7 +32,7 @@
     nofx = false
   }: Props = $props();
 
-  const cardStyle = twMerge(
+  const cardStyle = $derived(twMerge(
     'relative',
     'min-w-[220px] xs:min-w-[300px] md:min-w-[375px] w-full',
     'h-[460px]',
@@ -40,7 +40,7 @@
     negative ? 'text-zinc-950' : 'text-white',
     background,
     additionalClass
-  );
+  ));
   const paragraphStyle = twMerge(
     'relative drop-shadow-md',
     '[text-shadow:_0_0_7px_var(--tw-shadow-color)] shadow-zinc-950/80',

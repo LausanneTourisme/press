@@ -29,15 +29,15 @@
     icon,
     onclick,
   }: LinkProps = $props();
-  const target: string | undefined = blankable(href);
+  const target: string | undefined = $derived(blankable(href));
 
-  const style = twMerge(
+  const style = $derived.by(() => twMerge(
     withFlex ? 'flex justify-center items-center' : '',
     'text-center transition-all font-medium',
     'hover:opacity-75',
     additionalClass
-  );
-  const iconStyle = twMerge('h-4 w-4 inline ml-2 ', classIcon);
+  ));
+  const iconStyle = $derived(twMerge('h-4 w-4 inline ml-2 ', classIcon));
 </script>
 
 <a {href} {target} class={style} data-sveltekit-noscroll={noscroll} data-sveltekit-preload-data={preload} {onclick}>

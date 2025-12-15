@@ -31,7 +31,7 @@
   let swiperNextEl: HTMLElement | undefined;
   let swiperPreviousEl: HTMLElement | undefined;
   let swiperPaginationEl: HTMLElement | undefined;
-  const style = twMerge('relative', additionalClass);
+  const style = $derived(twMerge('relative', additionalClass));
 
   let swiper: Swiper | undefined;
   onMount(() => {

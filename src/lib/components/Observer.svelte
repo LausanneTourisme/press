@@ -21,6 +21,8 @@
     onIntersecting = () => {}
   }: Props = $props();
 
+  // We want to keep isIntersecting in state to trigger reactivity
+  // svelte-ignore state_referenced_locally
   let isIntersecting = $state(intersecting);
   let div: HTMLElement;
   let observer: IntersectionObserver | null = null;
