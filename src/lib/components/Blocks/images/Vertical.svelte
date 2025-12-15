@@ -22,6 +22,8 @@
     focus = 'auto'
   }: Props = $props();
   let transform: Transform = $state({
+    // default values, reactivity will update them
+    // svelte-ignore state_referenced_locally
     gravity: focus,
     crop: 'auto'
   });
