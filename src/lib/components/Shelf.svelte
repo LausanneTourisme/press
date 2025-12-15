@@ -15,12 +15,13 @@
   };
 
   const { class: additionalClass, children, title, titleClass, childClass, isOpen, onToggle }: Props = $props();
-  const style = twMerge(additionalClass);
+  const style = $derived(twMerge(additionalClass));
+  const btnClass = $derived(twMerge('flex w-full cursor-pointer justify-between pr-1 font-semibold', titleClass));
 </script>
 
 <div class={style}>
   <button
-    class={twMerge('flex w-full cursor-pointer justify-between pr-1 font-semibold', titleClass)}
+    class={btnClass}
     onclick={onToggle}
   >
     {#if typeof title === 'function'}

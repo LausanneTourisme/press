@@ -26,7 +26,8 @@
   let playing: boolean = $state(false);
   let animatedResult: number = $state(0);
   let done = $state(false);
-  let timing: number = duration / value / 1000;
+  let timing: number = $derived(duration / value / 1000);
+  const style = $derived(twMerge('stat place-items-center border-none xl:px-2 !border-none', additionalClass));
 
   const formatNumber = (input: number, format: boolean = true) => {
     if (format) {
@@ -62,7 +63,6 @@
   $effect(() => {
     if (animate) play();
   });
-  const style = twMerge('stat place-items-center border-none xl:px-2 !border-none', additionalClass);
 </script>
 
 <div class={style}>

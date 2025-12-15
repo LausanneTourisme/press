@@ -81,7 +81,7 @@
     muted = !muted;
   };
 
-  const style = twMerge('w-full h-full relative z-0', additionalClass);
+  const style = $derived(twMerge('w-full h-full relative z-0', additionalClass));
 </script>
 
 <div class="relative h-full w-full">

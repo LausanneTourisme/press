@@ -37,8 +37,8 @@
     suffix = undefined
   }: ButtonProps = $props();
 
-  let target: string | undefined = blankable(href);
-  let style: string = twMerge(
+  let target: string | undefined = $derived(blankable(href));
+  let style: string = $derived.by(() => twMerge(
     'shadow-none hover:shadow-gray-400 group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded-sm text-base-content',
     !border ? 'border-0' : 'border-2',
     !inline ? 'inline-block' : 'inline',
@@ -52,7 +52,7 @@
       ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-sm'
       : 'px-0 hover:opacity-75',
     additionalClass
-  );
+  ));
 
   // If href is provided, the default behavior (navigation) should be preserved
   const handleClick = (event: Event) => {

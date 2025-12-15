@@ -23,13 +23,13 @@
     children,
     onclick
   }: Props = $props();
-  let target: string | undefined = blankable(href);
+  let target: string | undefined = $derived(blankable(href));
 
-  let style = twMerge(
+  let style = $derived(twMerge(
     'block group/clickable cursor-pointer',
     !overflow ? 'overflow-hidden' : '',
     additionalClass
-  );
+  ));
 </script>
 
 <a {href} {target} class={style} data-sveltekit-preload-data={preload} {title} {onclick} transition:fade>

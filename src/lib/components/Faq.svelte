@@ -29,7 +29,7 @@
   //   if (!FAQindex || isNaN(parseInt(FAQindex as string))) openShelfIndex = null;
   //   else openShelfIndex = parseInt(FAQindex as string);
   // });
-  const style = twMerge('h-full', additionalClass);
+  const style = $derived( twMerge('h-full', additionalClass));
 </script>
 
 <div class={style}>

@@ -27,8 +27,8 @@
     length = 4
   }: Props = $props();
 
-  const themeInformation = ThemeDetails[ThemeKeys[theme]];
-  const gridPosition: Array<string> = !inverted
+  const themeInformation = $derived(ThemeDetails[ThemeKeys[theme]]);
+  const gridPosition: Array<string> = $derived.by(() => !inverted
     ? [
         'md:col-span-2 md:row-span-4',
         'md:row-span-8 md:col-start-3',
@@ -42,7 +42,7 @@
         'md:col-span-2 md:row-span-4',
         'md:row-span-4 md:col-start-2 md:row-start-5',
         'md:row-span-4 md:col-start-3 md:row-start-5'
-      ];
+      ]);
 
   const imageSizes = () => {
     if (length === 4) {
@@ -73,12 +73,12 @@
 
     return { height: 360, width: 360 };
   };
-  const style = twMerge(
+  const style = $derived(twMerge(
     'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
     gridPosition[gridIndex],
     additionalClass,
     `grind_index=${gridIndex}-${length}`
-  );
+  ));
 </script>
 
 <article class={style} in:blur={{ delay: 150 * gridIndex, opacity: 0.2 }}>

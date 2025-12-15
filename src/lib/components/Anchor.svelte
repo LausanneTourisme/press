@@ -7,7 +7,7 @@
   };
 
   const { class: additionalClass, name }: Props = $props();
-  const style = twMerge('relative -top-14 md:-top-32', additionalClass);
+  const style = $derived(twMerge('relative -top-14 md:-top-32', additionalClass));
 </script>
 
 <div class={style}>
