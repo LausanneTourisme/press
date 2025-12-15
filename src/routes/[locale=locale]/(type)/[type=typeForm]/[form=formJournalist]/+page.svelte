@@ -375,7 +375,7 @@
               for="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-emission-name"
               class="label text-wrap break-words"
             >
-       monthlyPageViews(
+              {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Radio}-and-${MediaTypes.Tv}.emission-name`
               )}
               {#if Number($constraints.radioAndTVMediaStatistics?.emissionName?.minlength) > 0}
@@ -400,7 +400,7 @@
                 if (value.trim().length) {
                   $form.radioAndTVMediaStatistics = {
                     viewers: 0,
-       monthlyPageViews$form.radioAndTVMediaStatistics,
+                    ...$form.radioAndTVMediaStatistics,
                     emissionName: value
                   };
                 }
@@ -422,14 +422,16 @@
               {/if}
             </label>
             <input
-              type="number"monthlyPageViews
+              type="number"
               id="{MediaTypes.Radio}-and-{MediaTypes.Tv}-statistics-viewers"
               class="input w-full {$errors.radioAndTVMediaStatistics?.viewers ||
-              $errors.radioAndTVMediaStatistics?._errorsmonthlyPageViews  ? 'input-error'
+              $errors.radioAndTVMediaStatistics?._errors
+                ? 'input-error'
                 : ''}"
               defaultValue={$form.radioAndTVMediaStatistics?.viewers ?? 0}
               onchange={(e) => {
-                constmonthlyPageViews            if (!Number.isNaN(value)) {
+                const value = e.currentTarget.valueAsNumber;
+                if (!Number.isNaN(value)) {
                   $form.radioAndTVMediaStatistics = {
                     emissionName: '',
                     ...$form.radioAndTVMediaStatistics,
@@ -527,7 +529,7 @@
                 : undefined}
             />
 
-            <label for="online-statistics-monthhy-page-views" class="label text-wrap break-words">
+            <label for="online-statistics-monthly-page-views" class="label text-wrap break-words">
               {@html $t(
                 `${RouteTypes.Form}.${Forms.Journalist}.form.statistics.${MediaTypes.Online}.monthly-page-views`
               )}
@@ -1588,6 +1590,7 @@
               onchange={(e) => {
                 $form.readTermsOfAcceptance = e.currentTarget.checked;
               }}
+              data-invalid={$errors.readTermsOfAcceptance ? true : undefined}
               aria-invalid={$errors.readTermsOfAcceptance ? 'true' : undefined}
             />
             {@html $t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
