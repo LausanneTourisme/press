@@ -18,7 +18,7 @@ export type MediaProfileJournalist = {
     onlineMediaStatistics: {
         website?: string,
         monthlyUniqueVisitors?: number,
-        montlhyPageViews?: number
+        monthlyPageViews?: number
     },
     mediaCoveragePrint: {
         totalPages?: number,

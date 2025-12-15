@@ -378,7 +378,7 @@ const generateMailContent = ({
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.url`)} :</span> <span>${data.blogURL ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.audience-profile.title`)} :</span> <span>${data.blogAudienceProfile ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-unique-visitors`)} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.montlhy-page-views`)} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-page-views`)} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
   </section>
 `
   }

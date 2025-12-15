@@ -167,7 +167,7 @@ const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: L
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.website`)} :</span> <span>${data.onlineMediaStatistics?.website ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-unique-visitors`)} :</span> <span>${data.onlineMediaStatistics?.monthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-page-views`)} :</span> <span>${data.onlineMediaStatistics?.montlhyPageViews ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-page-views`)} :</span> <span>${data.onlineMediaStatistics?.monthlyPageViews ?? ''}</span></div>
   </section>
         `;
   }

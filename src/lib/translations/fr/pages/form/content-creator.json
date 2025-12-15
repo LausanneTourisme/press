@@ -62,7 +62,7 @@
                 "performances": {
                     "title": "Performances du blog",
                     "monthly-unique-visitors": "Reach/Visiteurs uniques par mois",
-                    "montlhy-page-views": "Nombre de pages vues par mois"
+                    "monthly-page-views": "Nombre de pages vues par mois"
                 }
             }
         },
