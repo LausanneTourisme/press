@@ -1332,6 +1332,7 @@
             onchange={(e) => {
               $form.readTermsOfAcceptance = e.currentTarget.checked;
             }}
+            data-invalid={$errors.readTermsOfAcceptance ? true : undefined}
             aria-invalid={$errors.readTermsOfAcceptance ? 'true' : undefined}
           />
           {@html $t(`${RouteTypes.Form}.terms-of-acceptance.accept-terms`)}
