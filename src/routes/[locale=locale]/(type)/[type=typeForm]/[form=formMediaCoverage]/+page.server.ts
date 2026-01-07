@@ -237,14 +237,14 @@ const generateMailContent = ({
   </section>
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.username`)} :</span> <span>${data.username ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.username`)} :</span> <span style="word-break: break-all;">${data.username ?? ''}</span></div>
   </section>
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)} :</span> <span>${data.blogPostURL ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`)} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`)} :</span> <span>${data.numberOfPosts ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`)} :</span> <span>${data.numberOfClicks ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)} :</span> <span style="word-break: break-all;">${data.blogPostURL ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`)} :</span> <span style="word-break: break-all;">${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`)} :</span> <span style="word-break: break-all;">${data.numberOfPosts ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`)} :</span> <span style="word-break: break-all;">${data.numberOfClicks ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.scope-of-posts`)} :</span>
     ${images
       .filter(i => i.filterName === "scopeOfPosts")
@@ -297,7 +297,7 @@ const generateMailContent = ({
 
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.remarks.title`)} :</span> <span>${data.remarks ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.remarks.title`)} :</span> <span style="word-break: break-all;">${data.remarks ?? ''}</span></div>
   </section>
 </body>
 </html>`;
