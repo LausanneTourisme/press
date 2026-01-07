@@ -21,9 +21,11 @@
   const { class: additionalClass, favorite, lausanner, poi, onclick }: Props = $props();
 
   const defaultImage = '/pages/themes/user_not_found.png';
-  const lausannerImage = $derived.by(() => isOfflineMode
-    ? '/pages/themes/user_not_found.png'
-    : lausanner?.medias?.find(() => true)?.cloudinary_id);
+  const lausannerImage = $derived.by(() =>
+    isOfflineMode
+      ? '/pages/themes/user_not_found.png'
+      : lausanner?.medias?.find(() => true)?.cloudinary_id
+  );
 </script>
 
 <button

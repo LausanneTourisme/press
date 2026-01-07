@@ -68,7 +68,7 @@
         if (s.isLocal) {
           return { size: s.size, src: `${s.src}` }; // ${s.size}
         }
-        return { size: s.size, src: generateCloudinaryUrl(s)};
+        return { size: s.size, src: generateCloudinaryUrl(s) };
       });
     }
 
@@ -76,7 +76,7 @@
   });
 
   const style = $derived(twMerge('flex object-cover h-full w-full', additionalClass));
-  const imgClass = $derived(twMerge("w-full h-auto object-cover", imgStyle));
+  const imgClass = $derived(twMerge('w-full h-auto object-cover', imgStyle));
 </script>
 
 <!-- <img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} /> -->

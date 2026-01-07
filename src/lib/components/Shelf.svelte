@@ -14,23 +14,30 @@
     title: string | Snippet;
   };
 
-  const { class: additionalClass, children, title, titleClass, childClass, isOpen, onToggle }: Props = $props();
+  const {
+    class: additionalClass,
+    children,
+    title,
+    titleClass,
+    childClass,
+    isOpen,
+    onToggle
+  }: Props = $props();
   const style = $derived(twMerge(additionalClass));
-  const btnClass = $derived(twMerge('flex w-full cursor-pointer justify-between pr-1 font-semibold', titleClass));
+  const btnClass = $derived(
+    twMerge('flex w-full cursor-pointer justify-between pr-1 font-semibold', titleClass)
+  );
 </script>
 
 <div class={style}>
-  <button
-    class={btnClass}
-    onclick={onToggle}
-  >
+  <button class={btnClass} onclick={onToggle}>
     {#if typeof title === 'function'}
       {@render title()}
     {:else}
       <span>{title}</span>
     {/if}
     <span
-      class="inline-flex items-center justify-center transition-transform duration-300 ml-2.5"
+      class="ml-2.5 inline-flex items-center justify-center transition-transform duration-300"
       class:rotate-180={isOpen}
     >
       <ChevronDown strokeWidth={3} class="inline h-4 w-4" />
@@ -38,7 +45,7 @@
   </button>
 
   {#if isOpen}
-    <div transition:slide class={twMerge("space-y-2", childClass)}>
+    <div transition:slide class={twMerge('space-y-2', childClass)}>
       {@render children()}
     </div>
   {/if}

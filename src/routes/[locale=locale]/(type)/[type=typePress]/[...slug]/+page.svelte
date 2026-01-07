@@ -20,7 +20,7 @@
 
 <Container fullscreen class="articles pt-5">
   <article data-id={release.id} transition:fade>
-    <Container width="medium" class='pb-0'>
+    <Container width="medium" class="pb-0">
       <p>
         {ucfirst($t(`common.route-titles.${type}`))}
         &mdash; {DateTime.fromSeconds(parseInt(release.published_at ?? '0'))
@@ -32,7 +32,8 @@
           {#each release.tags as tag}
             {@const theme = getThemeByTagName(tag.name)}
             {@const name = tag.public_name?.[$locale as Locale]}
-            <span class="badge rounded-full bg-shakespeare-400 mr-2 border-0 py-3 text-white outline-0"
+            <span
+              class="badge bg-shakespeare-400 mr-2 rounded-full border-0 py-3 text-white outline-0"
               >#&nbsp;{name}</span
             >
           {/each}

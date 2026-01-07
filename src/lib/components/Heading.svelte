@@ -26,7 +26,9 @@
     }
   });
 
-  const style = $derived(twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass));
+  const style = $derived(
+    twMerge('dark:text-white text-black font-bold', tagStyle, additionalClass)
+  );
 </script>
 
 <svelte:element this={tag} class={style} {title}>

@@ -4,27 +4,27 @@ import type { SeoHeader } from '$types';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ url, params, parent }) => {
-    const lang = params.locale as Locale;
-    const [{ i18n, translations }] = await Promise.all([
-        parent(),
-        loadTranslations(lang, url.pathname)
-    ]);
-    const seo: SeoHeader = {
-        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
-        title: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.title`],
-        description: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.meta-description`],
-        image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
-        alternate: supportedLocales.map(locale => ({
-            hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.${RouteTypes.PressreleasesAndPresskits}.slug`]}`
-        })),
-    }
+  const lang = params.locale as Locale;
+  const [{ i18n, translations }] = await Promise.all([
+    parent(),
+    loadTranslations(lang, url.pathname)
+  ]);
+  const seo: SeoHeader = {
+    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    title: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.title`],
+    description: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.meta-description`],
+    image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
+    alternate: supportedLocales.map((locale) => ({
+      hreflang: locale,
+      href: `/${locale}/${translations[locale][`route.${RouteTypes.PressreleasesAndPresskits}.slug`]}`
+    }))
+  };
 
-    return {
-        i18n,
-        translations,
-        seo,
-        locale: lang,
-        type: RouteTypes.PressreleasesAndPresskits,
-    };
+  return {
+    i18n,
+    translations,
+    seo,
+    locale: lang,
+    type: RouteTypes.PressreleasesAndPresskits
+  };
 };

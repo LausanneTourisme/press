@@ -194,7 +194,9 @@
           name="blogMonthlyUniqueVisitors"
           bind:value={$form.blogMonthlyUniqueVisitors}
           aria-invalid={$errors.blogMonthlyUniqueVisitors ? 'true' : undefined}
-          class="input w-full {$errors.blogMonthlyUniqueVisitors !== undefined ? 'input-error' : ''}"
+          class="input w-full {$errors.blogMonthlyUniqueVisitors !== undefined
+            ? 'input-error'
+            : ''}"
           class:hidden={!$form.socialNetworks?.includes(SocialNetworks.Blog)}
         />
 

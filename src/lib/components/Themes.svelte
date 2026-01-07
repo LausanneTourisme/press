@@ -34,8 +34,8 @@
   };
 
   $effect(() => {
-    showMore = expanded
-  })
+    showMore = expanded;
+  });
 </script>
 
 <div class="p-6 md:pt-16">

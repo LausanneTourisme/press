@@ -16,6 +16,7 @@ Then, the `package.json` file handles automatic node version.
 ### Bun
 
 This project uses [`bun`](https://bun.sh/), simply because it's super fast. Install it with:
+
 ```bash
 curl -fsSL https://bun.sh/install | bash
 # or
@@ -31,6 +32,7 @@ This project stores secrets in `doppler`, but doesn't require a login. Instead, 
 ## Deploy
 
 Run:
+
 ```bash
 bun run deploy
 ```
@@ -38,10 +40,13 @@ bun run deploy
 And answer the prompts.
 
 Alternatively, you may run:
+
 ```bash
 bun run deploy --staging # to directly create a staging release
 ```
+
 then
+
 ```bash
 bun run deploy --main # to directly deploy to main
 ```
@@ -49,9 +54,11 @@ bun run deploy --main # to directly deploy to main
 > Please allow a deploy time of 5 minutes. Vercel usually wants to build the <develop> branch but the `vercel-deploy.sh` script in this project prevents the build.
 
 ### Production environment
+
 The following URL points to the `main` branch: [https://press.lausanne-tourisme.ch](https://press.lausanne-tourisme.ch)
 
 ### Staging environment
+
 The following URL points to the `staging` branch: [https://press.stage.lausanne-tourisme.ch](https://press.stage.lausanne-tourisme.ch)
 
 ## Install
@@ -69,6 +76,7 @@ bun i
 ```
 
 Run the project using:
+
 ```bash
 bun run dev
 ```

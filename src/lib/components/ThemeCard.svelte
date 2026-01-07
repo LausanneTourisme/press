@@ -28,21 +28,23 @@
   }: Props = $props();
 
   const themeInformation = $derived(ThemeDetails[ThemeKeys[theme]]);
-  const gridPosition: Array<string> = $derived.by(() => !inverted
-    ? [
-        'md:col-span-2 md:row-span-4',
-        'md:row-span-8 md:col-start-3',
-        length === 3
-          ? 'md:col-span-2 md:row-span-4 md:row-start-5'
-          : 'md:row-span-4 md:row-start-5',
-        'md:row-span-4 md:row-start-5'
-      ]
-    : [
-        'md:row-span-8',
-        'md:col-span-2 md:row-span-4',
-        'md:row-span-4 md:col-start-2 md:row-start-5',
-        'md:row-span-4 md:col-start-3 md:row-start-5'
-      ]);
+  const gridPosition: Array<string> = $derived.by(() =>
+    !inverted
+      ? [
+          'md:col-span-2 md:row-span-4',
+          'md:row-span-8 md:col-start-3',
+          length === 3
+            ? 'md:col-span-2 md:row-span-4 md:row-start-5'
+            : 'md:row-span-4 md:row-start-5',
+          'md:row-span-4 md:row-start-5'
+        ]
+      : [
+          'md:row-span-8',
+          'md:col-span-2 md:row-span-4',
+          'md:row-span-4 md:col-start-2 md:row-start-5',
+          'md:row-span-4 md:col-start-3 md:row-start-5'
+        ]
+  );
 
   const imageSizes = () => {
     if (length === 4) {
@@ -62,23 +64,25 @@
         }
       }
     } else if (length === 3) {
-        switch (gridIndex) {
-          case 0:
-          case 2:
-            return { height: 480, width: 960 };
-          case 1:
-            return { height: 960, width: 480 };
-        }
+      switch (gridIndex) {
+        case 0:
+        case 2:
+          return { height: 480, width: 960 };
+        case 1:
+          return { height: 960, width: 480 };
+      }
     }
 
     return { height: 360, width: 360 };
   };
-  const style = $derived(twMerge(
-    'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
-    gridPosition[gridIndex],
-    additionalClass,
-    `grind_index=${gridIndex}-${length}`
-  ));
+  const style = $derived(
+    twMerge(
+      'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
+      gridPosition[gridIndex],
+      additionalClass,
+      `grind_index=${gridIndex}-${length}`
+    )
+  );
 </script>
 
 <article class={style} in:blur={{ delay: 150 * gridIndex, opacity: 0.2 }}>
@@ -120,7 +124,7 @@
         crop: 'auto',
         gravity: 'south',
         ...themeInformation.transform,
-        ...imageSizes(),
+        ...imageSizes()
       }}
     />
   </div>

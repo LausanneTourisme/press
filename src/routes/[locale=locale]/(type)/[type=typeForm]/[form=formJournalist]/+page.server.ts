@@ -1,43 +1,39 @@
-import { Forms, MediaTypes, RouteTypes } from "$enums";
-import { API_HTML_TO_PDF, MAIL_FROM } from "$env/static/private";
-import { verifyIfHuman } from "$lib/helpers/index.server";
-import { sendEmail } from "$lib/helpers/mails.server";
-import { supportedLocales, t, type Locale } from "$lib/translations";
-import type Mailchimp from "@mailchimp/mailchimp_transactional";
+import { Forms, MediaTypes, RouteTypes } from '$enums';
+import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
+import { verifyIfHuman } from '$lib/helpers/index.server';
+import { sendEmail } from '$lib/helpers/mails.server';
+import { supportedLocales, t, type Locale } from '$lib/translations';
+import type Mailchimp from '@mailchimp/mailchimp_transactional';
 import { fail, redirect } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
-import de from "i18n-iso-countries/langs/de.json";
-import en from "i18n-iso-countries/langs/en.json";
-import fr from "i18n-iso-countries/langs/fr.json";
-import { DateTime } from "luxon";
+import de from 'i18n-iso-countries/langs/de.json';
+import en from 'i18n-iso-countries/langs/en.json';
+import fr from 'i18n-iso-countries/langs/fr.json';
+import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
-import type { EntryGenerator } from "./$types";
-import { schemaStep4, type Schema } from "./schema";
+import type { EntryGenerator } from './$types';
+import { schemaStep4, type Schema } from './schema';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
 const lastStep = zod4(schemaStep4);
 
 export const load = async ({ parent }) => {
-  const [{ locale }, form] = await Promise.all([
-    parent(),
-    superValidate(lastStep)
-  ]);
+  const [{ locale }, form] = await Promise.all([parent(), superValidate(lastStep)]);
 
   countries.registerLocale(countriesByLocale[locale]);
 
   return {
-    countries: Object.values<string>(countries.getNames(locale, { select: "official" })).sort(),
-    form,
-  }
-}
-
+    countries: Object.values<string>(countries.getNames(locale, { select: 'official' })).sort(),
+    form
+  };
+};
 
 export const actions = {
-  default: async ({ request, params, cookies },) => {
-    const formdata = await request.formData()
+  default: async ({ request, params, cookies }) => {
+    const formdata = await request.formData();
     await verifyIfHuman(formdata);
 
     const form = await superValidate(formdata, lastStep);
@@ -50,20 +46,25 @@ export const actions = {
     });
 
     if (sendWithSuccess) {
-      return redirect(303, `/${params.locale}/${t.get(`route.${RouteTypes.Form}.slug`)}/${t.get(`route.${RouteTypes.Form}.${Forms.Thanks}.slug`)}`)
+      return redirect(
+        303,
+        `/${params.locale}/${t.get(`route.${RouteTypes.Form}.slug`)}/${t.get(`route.${RouteTypes.Form}.${Forms.Thanks}.slug`)}`
+      );
     }
 
-    setFlash({
-      type: 'error',
-      message: t.get(`${RouteTypes.Form}.error-on-sending`),
-    }, cookies)
-    return fail(500, { form, message: "Please retry later." });
+    setFlash(
+      {
+        type: 'error',
+        message: t.get(`${RouteTypes.Form}.error-on-sending`)
+      },
+      cookies
+    );
+    return fail(500, { form, message: 'Please retry later.' });
   }
-}
+};
 
 export const entries: EntryGenerator = () => {
-
-  return supportedLocales.flatMap(locale => {
+  return supportedLocales.flatMap((locale) => {
     return {
       locale,
       type: t.get(`route.${RouteTypes.Form}.slug`),
@@ -74,23 +75,24 @@ export const entries: EntryGenerator = () => {
 
 const sendFormByEmail = async ({
   mediaProfileJournalist,
-  locale,
+  locale
 }: {
-  mediaProfileJournalist: Schema, locale: Locale
+  mediaProfileJournalist: Schema;
+  locale: Locale;
 }) => {
   const attachments: Mailchimp.MessageAttachment[] = [];
   const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale });
 
   const pdfResponse = await fetch(API_HTML_TO_PDF, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Cache-Control": "no-cache",
-      "Content-Type": "application/json"
+      'Cache-Control': 'no-cache',
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       html,
-      filename: "[Formulaire] - Journaliste",
-    }),
+      filename: '[Formulaire] - Journaliste'
+    })
   });
 
   if (pdfResponse.ok) {
@@ -101,35 +103,44 @@ const sendFormByEmail = async ({
     const pdf = {
       name: '[Formulaire] - Journaliste.pdf',
       type: 'application/pdf',
-      content: pdfBase64,
-    }
+      content: pdfBase64
+    };
 
     attachments.push(pdf);
   }
 
   const { internal_reponse, external_response } = await sendEmail({
     intern_mail: {
-      from_name: "No Reply - Press",
-      subject: "[Formulaire] - Journaliste",
+      from_name: 'No Reply - Press',
+      subject: '[Formulaire] - Journaliste',
       html,
-      attachments,
+      attachments
     },
-    external_mail: mediaProfileJournalist.personalInformation?.email ? {
-      from_email: MAIL_FROM,
-      from_name: t.get(`${RouteTypes.Form}.email.from-name`),
-      subject: t.get(`${RouteTypes.Form}.email.subject`, { form: t.get(`${RouteTypes.Form}.${Forms.Journalist}.title`) }),
-      html: `<p>${t.get(`${RouteTypes.Form}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Form}.email.automatic-mail-disclaimer`)}</i></p>`,
-      to: [{
-        email: mediaProfileJournalist.personalInformation.email,
-        type: "to",
-      }]
-    } : undefined,
+    external_mail: mediaProfileJournalist.personalInformation?.email
+      ? {
+          from_email: MAIL_FROM,
+          from_name: t.get(`${RouteTypes.Form}.email.from-name`),
+          subject: t.get(`${RouteTypes.Form}.email.subject`, {
+            form: t.get(`${RouteTypes.Form}.${Forms.Journalist}.title`)
+          }),
+          html: `<p>${t.get(`${RouteTypes.Form}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Form}.email.automatic-mail-disclaimer`)}</i></p>`,
+          to: [
+            {
+              email: mediaProfileJournalist.personalInformation.email,
+              type: 'to'
+            }
+          ]
+        }
+      : undefined
   });
 
-  return internal_reponse.every(x => x.status === 'sent' || x.status === 'queued') && (external_response?.every(x => x.status === 'sent' || x.status === 'queued') ?? true)
-}
+  return (
+    internal_reponse.every((x) => x.status === 'sent' || x.status === 'queued') &&
+    (external_response?.every((x) => x.status === 'sent' || x.status === 'queued') ?? true)
+  );
+};
 
-const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: Locale }) => {
+const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: Locale }) => {
   let html = `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -277,14 +288,18 @@ const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: L
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
-        ${data.personalInformation?.emergencyContacts?.map(x => `
+        ${
+          data.personalInformation?.emergencyContacts?.map(
+            (x) => `
           <li>
             <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`)} :</span> <span style="word-break: break-all;">${x.name}</span>
           </li>
           <li>
             <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`)} :</span> <span style="word-break: break-all;">${x.phoneNumber}</span>
           </li>
-        `) ?? ''}
+        `
+          ) ?? ''
+        }
       </ul>
     </div>
   </section>
@@ -303,4 +318,4 @@ const generateMailContent = ({ data, userLocale }: { data: Schema, userLocale: L
 `;
 
   return html;
-}
+};

@@ -21,7 +21,9 @@
 
   const { class: additionalClass, maxWidth = maxMobileWidth }: Props = $props();
   const pageSeo: SeoHeader = $derived(page.data.seo);
-  const style: string = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
+  const style: string = $derived(
+    twMerge('flex h-full items-center justify-between', additionalClass)
+  );
 
   let open = $state(false);
   let openShelfIndex: number | null = $state(null); // Stores which shelf is open
@@ -55,7 +57,7 @@
 
     mediaQuery.addEventListener('change', handleResize);
 
-    return () =>  mediaQuery.removeEventListener('change', handleResize);
+    return () => mediaQuery.removeEventListener('change', handleResize);
   });
 </script>
 
@@ -111,7 +113,10 @@
   >
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
-      <a href={route(RouteTypes.Home, {forceLocale: $locale as Locale})} class="flex max-w-[230px] cursor-pointer">
+      <a
+        href={route(RouteTypes.Home, { forceLocale: $locale as Locale })}
+        class="flex max-w-[230px] cursor-pointer"
+      >
         <Logo />
       </a>
       <div class="flex">

@@ -11,7 +11,7 @@
 
   const { class: additionalClass = '', tag = 'h2', title = '', children }: HeadingProps = $props();
 
-  let tagStyle = $derived.by( () => {
+  let tagStyle = $derived.by(() => {
     switch (tag) {
       case 'h1':
         return 'text-5xl font-bold py-3';
@@ -27,7 +27,6 @@
         return 'mb-6';
     }
   });
-
 
   const style = $derived(twMerge('dark:text-white text-black', tagStyle, additionalClass));
 </script>

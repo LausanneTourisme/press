@@ -5,8 +5,8 @@
 
   type ButtonProps = {
     tag?: 'a' | 'button';
-    preload?: true | '' | 'hover' | 'tap' | 'off',
-    type?: string,
+    preload?: true | '' | 'hover' | 'tap' | 'off';
+    type?: string;
     negative?: boolean;
     inline?: boolean;
     disabled?: boolean;
@@ -22,7 +22,7 @@
 
   let {
     tag = 'button',
-    preload = "tap",
+    preload = 'tap',
     negative = false,
     inline = false,
     disabled = false,
@@ -38,21 +38,23 @@
   }: ButtonProps = $props();
 
   let target: string | undefined = $derived(blankable(href));
-  let style: string = $derived.by(() => twMerge(
-    'shadow-none hover:shadow-gray-400 group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded-sm text-base-content',
-    !border ? 'border-0' : 'border-2',
-    !inline ? 'inline-block' : 'inline',
-    !negative ? 'border-gray-700 text-black' : 'text-white border-gray-200',
-    !nofx
-      ? !negative
-        ? 'hover:bg-neutral dark:hover:bg-zinc-700 hover:text-white shadow-base-100'
-        : 'hover:bg-white hover:text-black '
-      : '',
-    !nofx
-      ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-sm'
-      : 'px-0 hover:opacity-75',
-    additionalClass
-  ));
+  let style: string = $derived.by(() =>
+    twMerge(
+      'shadow-none hover:shadow-gray-400 group cursor-pointer py-2 my-2 transition-all text-center font-medium overflow-hidden rounded-sm text-base-content',
+      !border ? 'border-0' : 'border-2',
+      !inline ? 'inline-block' : 'inline',
+      !negative ? 'border-gray-700 text-black' : 'text-white border-gray-200',
+      !nofx
+        ? !negative
+          ? 'hover:bg-neutral dark:hover:bg-zinc-700 hover:text-white shadow-base-100'
+          : 'hover:bg-white hover:text-black '
+        : '',
+      !nofx
+        ? 'px-8 hover:rounded-sm hover:border-transparent hover:shadow-sm'
+        : 'px-0 hover:opacity-75',
+      additionalClass
+    )
+  );
 
   // If href is provided, the default behavior (navigation) should be preserved
   const handleClick = (event: Event) => {
@@ -64,7 +66,16 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<svelte:element this={tag} class={style} {href} {target} {disabled} onclick={handleClick} {type} data-sveltekit-preload-data={preload}>
+<svelte:element
+  this={tag}
+  class={style}
+  {href}
+  {target}
+  {disabled}
+  onclick={handleClick}
+  {type}
+  data-sveltekit-preload-data={preload}
+>
   {@render prefix?.()}
   {@render children()}
   {@render suffix?.()}

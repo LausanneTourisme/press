@@ -32,7 +32,10 @@
   });
 </script>
 
-<Container width={size === 'large' ? 'medium' : 'small'} class={twMerge("flex justify-center", additionalClass)}>
+<Container
+  width={size === 'large' ? 'medium' : 'small'}
+  class={twMerge('flex justify-center', additionalClass)}
+>
   {#if size === 'small'}
     <Figure
       useCloudinaryPreset={false}

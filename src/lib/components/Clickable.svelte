@@ -6,7 +6,7 @@
 
   interface Props {
     href: string;
-    title?: string,
+    title?: string;
     preload?: true | '' | 'hover' | 'tap' | 'off';
     overflow?: boolean;
     class?: string;
@@ -25,13 +25,23 @@
   }: Props = $props();
   let target: string | undefined = $derived(blankable(href));
 
-  let style = $derived(twMerge(
-    'block group/clickable cursor-pointer',
-    !overflow ? 'overflow-hidden' : '',
-    additionalClass
-  ));
+  let style = $derived(
+    twMerge(
+      'block group/clickable cursor-pointer',
+      !overflow ? 'overflow-hidden' : '',
+      additionalClass
+    )
+  );
 </script>
 
-<a {href} {target} class={style} data-sveltekit-preload-data={preload} {title} {onclick} transition:fade>
+<a
+  {href}
+  {target}
+  class={style}
+  data-sveltekit-preload-data={preload}
+  {title}
+  {onclick}
+  transition:fade
+>
   {@render children()}
 </a>

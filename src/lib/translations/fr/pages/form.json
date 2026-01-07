@@ -1,32 +1,32 @@
 {
-    "title": "formulaire",
-    "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
-    "validations": {
-        "non-empty-array": "Veuillez sélectionner au moins une valeur",
-        "number-min-1": "Le nombre doit être plus grand ou égal à 1",
-        "file-size": "Votre fichier doit faire moins de 10 MB",
-        "file-invalid-type": "Veuillez choisir un format valide"
-    },
-    "required": "(Obligatoire)",
-    "newsletter": {
-        "title": "Newsletter",
-        "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
-    },
-    "terms-of-acceptance": {
-        "title": "Protection & Gestion des données",
-        "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
-        "accept-terms": "J'ai pris connaissance et accepte les conditions"
-    },
-    "email": {
-        "from-name": "Presse - Lausanne Tourisme",
-        "subject": "Confirmation de reception pour le formulaire : {{form}}",
-        "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre formulaire a bien été transmis. Nous vous répondrons dans les plus brefs délais.",
-        "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
-    },
-    "yes": "Oui",
-    "no": "Non",
-    "next": "Suivant",
-    "previous": "Précédent",
-    "submit": "Envoyer",
-    "error-on-sending": "Une erreur est survenue lors de l'envoie, veuillez réessayer plus tard."
+  "title": "formulaire",
+  "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
+  "validations": {
+    "non-empty-array": "Veuillez sélectionner au moins une valeur",
+    "number-min-1": "Le nombre doit être plus grand ou égal à 1",
+    "file-size": "Votre fichier doit faire moins de 10 MB",
+    "file-invalid-type": "Veuillez choisir un format valide"
+  },
+  "required": "(Obligatoire)",
+  "newsletter": {
+    "title": "Newsletter",
+    "paragraph": "Je souhaite être tenu.e au courant des actualités touristiques de Lausanne Tourisme (invitations, newsletters, communiqués de presse, …)"
+  },
+  "terms-of-acceptance": {
+    "title": "Protection & Gestion des données",
+    "content": "J'ai lu ce paragraphe concernant la protection et la gestion de mes données personnelles. J'accepte que Lausanne Tourisme, Av. De Rhodanie 2, 1001 Lausanne, utilise les informations récoltées dans ce formulaire dans le cadre du séjour en question. J'accepte que Lausanne Tourisme partage ces données avec des tierces parties (par ex. des agences de voyage, d'autres offices de tourisme, des hôtels, des restaurants, des lieux événementiels et tout autre acteur touristique) pour l'organisation de mon séjour.",
+    "accept-terms": "J'ai pris connaissance et accepte les conditions"
+  },
+  "email": {
+    "from-name": "Presse - Lausanne Tourisme",
+    "subject": "Confirmation de reception pour le formulaire : {{form}}",
+    "content": "Bonjour {{name}}, merci de nous avoir contacté.<br>Ce message automatique vous confirme que votre formulaire a bien été transmis. Nous vous répondrons dans les plus brefs délais.",
+    "automatic-mail-disclaimer": "Cet email a été envoyé automatiquement, merci de ne pas y répondre."
+  },
+  "yes": "Oui",
+  "no": "Non",
+  "next": "Suivant",
+  "previous": "Précédent",
+  "submit": "Envoyer",
+  "error-on-sending": "Une erreur est survenue lors de l'envoie, veuillez réessayer plus tard."
 }

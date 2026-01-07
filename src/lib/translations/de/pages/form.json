@@ -1,32 +1,32 @@
 {
-    "title": "Formular",
-    "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
-    "validations": {
-        "non-empty-array": "Wählen Sie mindestens eine Option aus",
-        "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren",
-        "file-size": "Ihre Datei muss kleiner als 10 MB sein",
-        "file-invalid-type": "Bitte wählen Sie ein gültiges Format"
-    },
-    "required": "(Erforderlich)",
-    "newsletter": {
-        "title": "Newsletter",
-        "paragraph": "Bitte senden Sie mir aktuelle, touristische Informationen von Lausanne Tourismus (Event-Einladungen, Newsletters, Pressemitteilungen, …)"
-    },
-    "terms-of-acceptance": {
-        "title": "Datenschutz & -verwaltung",
-        "content": "Ich habe über die Datenschutzrichtlinien und deren Nutzung Kenntnis genommen. Lausanne Tourisme, Av. de Rhodanie 2, 1001 Lausanne hat meine Zustimmung, meine Daten aus dem vorliegenden Forumlar zu nutzen.\nIch erlaube Lausanne Tourisme meine Daten an Dritte (z.B. Reisebüros für meine Reiseplanung, Destinationen, Agenturen, Hotels für meine Übernachtungen, Restaurants für Reservationen, Eventlokale und andere touristische Anbieter) weiterzugeben, damit Letztere mir direkt per Email Vorschläge, Informationen, Offerten über meine Reise und/oder den Event zukommenlassen können.",
-        "accept-terms": "Ich habe die Bedingungen zur Kenntnis genommen und akzeptiere sie"
-    },
-    "email": {
-        "from-name": "Press – Lausanne Tourisme",
-        "subject": "Empfangsbestätigung für das Formular: {{form}}",
-        "content": "Guten Tag {{name}}! Vielen Dank, dass Sie mit uns Kontakt aufgenommen haben.<br>Diese automatische Nachricht ist eine Bestätigung, dass Ihre Anfrage übermittelt wurde. Wir werden uns so schnell wie möglich bei Ihnen melden.",
-        "automatic-mail-disclaimer": "Dies ist eine automatisch generierte E-Mail, bitte antworten Sie nicht."
-    },
-    "yes": "Ja",
-    "no": "Nein",
-    "next": "Nächste",
-    "previous": "Vorherige",
-    "submit": "Einsenden",
-    "error-on-sending": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal."
+  "title": "Formular",
+  "meta-description": "Entdecken Sie Lausanne und seine Vielfalt durch inspirierende Artikel und wertvolle Ratschläge der Einheimischen für ein einzigartiges Stadterlebnis.",
+  "validations": {
+    "non-empty-array": "Wählen Sie mindestens eine Option aus",
+    "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren",
+    "file-size": "Ihre Datei muss kleiner als 10 MB sein",
+    "file-invalid-type": "Bitte wählen Sie ein gültiges Format"
+  },
+  "required": "(Erforderlich)",
+  "newsletter": {
+    "title": "Newsletter",
+    "paragraph": "Bitte senden Sie mir aktuelle, touristische Informationen von Lausanne Tourismus (Event-Einladungen, Newsletters, Pressemitteilungen, …)"
+  },
+  "terms-of-acceptance": {
+    "title": "Datenschutz & -verwaltung",
+    "content": "Ich habe über die Datenschutzrichtlinien und deren Nutzung Kenntnis genommen. Lausanne Tourisme, Av. de Rhodanie 2, 1001 Lausanne hat meine Zustimmung, meine Daten aus dem vorliegenden Forumlar zu nutzen.\nIch erlaube Lausanne Tourisme meine Daten an Dritte (z.B. Reisebüros für meine Reiseplanung, Destinationen, Agenturen, Hotels für meine Übernachtungen, Restaurants für Reservationen, Eventlokale und andere touristische Anbieter) weiterzugeben, damit Letztere mir direkt per Email Vorschläge, Informationen, Offerten über meine Reise und/oder den Event zukommenlassen können.",
+    "accept-terms": "Ich habe die Bedingungen zur Kenntnis genommen und akzeptiere sie"
+  },
+  "email": {
+    "from-name": "Press – Lausanne Tourisme",
+    "subject": "Empfangsbestätigung für das Formular: {{form}}",
+    "content": "Guten Tag {{name}}! Vielen Dank, dass Sie mit uns Kontakt aufgenommen haben.<br>Diese automatische Nachricht ist eine Bestätigung, dass Ihre Anfrage übermittelt wurde. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "automatic-mail-disclaimer": "Dies ist eine automatisch generierte E-Mail, bitte antworten Sie nicht."
+  },
+  "yes": "Ja",
+  "no": "Nein",
+  "next": "Nächste",
+  "previous": "Vorherige",
+  "submit": "Einsenden",
+  "error-on-sending": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal."
 }

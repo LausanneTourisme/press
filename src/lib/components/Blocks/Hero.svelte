@@ -21,9 +21,11 @@
   const updateSize = () => {
     isMobile = window.innerWidth < maxMobileWidth;
   };
-  const transform: Transform = $state({width:1920, height:1280});
+  const transform: Transform = $state({ width: 1920, height: 1280 });
 
-  const style: string = $derived(twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass));
+  const style: string = $derived(
+    twMerge('flex items-center md:min-h-[650px] min-h-auto py-6', additionalClass)
+  );
 
   onMount(() => {
     updateSize();
@@ -66,9 +68,11 @@
       {hero.value[$locale as Locale]}
     </Heading>
     {#if hero.lead?.[$locale as Locale]}
-      <Paragraph class={hero.color === 'white'
-      ? 'text-white drop-shadow-lg drop-shadow-black text-xl'
-      : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}>
+      <Paragraph
+        class={hero.color === 'white'
+          ? 'text-xl text-white drop-shadow-lg drop-shadow-black'
+          : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}
+      >
         {hero.lead[$locale as Locale]}
       </Paragraph>
     {/if}

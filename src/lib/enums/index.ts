@@ -1,24 +1,24 @@
-export type RouteType = typeof RouteTypes[keyof typeof RouteTypes]
-export type Theme = typeof Themes[keyof typeof Themes]
-export type Form = typeof Forms[keyof typeof Forms]
-export type MediaType = typeof MediaTypes[keyof typeof MediaTypes]
-export type TravelReduction = typeof TravelReductions[keyof typeof TravelReductions]
-export type Title = typeof Titles[keyof typeof Titles]
-export type SocialNetwork = typeof SocialNetworks[keyof typeof SocialNetworks]
+export type RouteType = (typeof RouteTypes)[keyof typeof RouteTypes];
+export type Theme = (typeof Themes)[keyof typeof Themes];
+export type Form = (typeof Forms)[keyof typeof Forms];
+export type MediaType = (typeof MediaTypes)[keyof typeof MediaTypes];
+export type TravelReduction = (typeof TravelReductions)[keyof typeof TravelReductions];
+export type Title = (typeof Titles)[keyof typeof Titles];
+export type SocialNetwork = (typeof SocialNetworks)[keyof typeof SocialNetworks];
 
 //ThemeKeys available under 😉 needs reference of Themes
 
 export const RouteTypes = {
-  Home: "home",
-  Articles: "articles",
-  Contact: "contact",
-  Coverage: "coverage",
-  Highlights: "highlights",
+  Home: 'home',
+  Articles: 'articles',
+  Contact: 'contact',
+  Coverage: 'coverage',
+  Highlights: 'highlights',
   Themes: 'themes',
-  Pressrelease: "press-release",
-  Presskit: "press-kit",
-  PressreleasesAndPresskits: "press-releases-and-press-kits",
-  Form: "form",
+  Pressrelease: 'press-release',
+  Presskit: 'press-kit',
+  PressreleasesAndPresskits: 'press-releases-and-press-kits',
+  Form: 'form'
 } as const;
 
 export const Themes = {
@@ -32,7 +32,7 @@ export const Themes = {
   Architecture: 'architecture',
   Lacustrine: 'lacustrine',
   Wellness: 'wellness',
-  Unusual: 'unusual',
+  Unusual: 'unusual'
 } as const;
 
 export const Forms = {
@@ -46,38 +46,38 @@ export const MediaTypes = {
   Print: 'print',
   Online: 'online',
   Tv: 'tv',
-  Radio: 'radio',
+  Radio: 'radio'
 } as const;
 
 export const TravelReductions = {
   PointToPointTravelcard: 'point-to-point-travelcard',
   HalfFare: 'half-fare',
-  SwissGATravelCard: 'swiss-ga-travelcard',
+  SwissGATravelCard: 'swiss-ga-travelcard'
 } as const;
 
 export const Titles = {
   Mrs: 'mrs',
   Mr: 'mr',
-  They: 'they',
+  They: 'they'
 } as const;
 
 export const SocialNetworks = {
-  Instagram: "instagram",
-  TikTok: "tiktok",
-  YouTube: "youtube",
-  Blog: "blog",
-} as const
+  Instagram: 'instagram',
+  TikTok: 'tiktok',
+  YouTube: 'youtube',
+  Blog: 'blog'
+} as const;
 
 // generic helper
 function invert<T extends Record<string, string>>(obj: T) {
-  return Object.fromEntries(
-    Object.entries(obj).map(([k, v]) => [v, k])
-  ) as { [K in keyof T as T[K]]: K };
+  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [v, k])) as {
+    [K in keyof T as T[K]]: K;
+  };
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getValues<T extends Record<string, any>>(obj: T) {
-  return Object.values(obj) as [(typeof obj)[keyof T]]
+  return Object.values(obj) as [(typeof obj)[keyof T]];
 }
 
 // usage

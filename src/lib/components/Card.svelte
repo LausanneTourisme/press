@@ -32,15 +32,17 @@
     nofx = false
   }: Props = $props();
 
-  const cardStyle = $derived(twMerge(
-    'relative',
-    'min-w-[220px] xs:min-w-[300px] md:min-w-[375px] w-full',
-    'h-[460px]',
-    'md:ml-0 group transition-all',
-    negative ? 'text-zinc-950' : 'text-white',
-    background,
-    additionalClass
-  ));
+  const cardStyle = $derived(
+    twMerge(
+      'relative',
+      'min-w-[220px] xs:min-w-[300px] md:min-w-[375px] w-full',
+      'h-[460px]',
+      'md:ml-0 group transition-all',
+      negative ? 'text-zinc-950' : 'text-white',
+      background,
+      additionalClass
+    )
+  );
   const paragraphStyle = twMerge(
     'relative drop-shadow-md',
     '[text-shadow:_0_0_7px_var(--tw-shadow-color)] shadow-zinc-950/80',

@@ -66,7 +66,10 @@
               publishDate: '',
               ...$form.mediaCoverageTvOrRadio
             };
+          } else {
+            $form.mediaCoverageTvOrRadio = null;
           }
+
           if ($form.mediaTypes.includes(MediaTypes.Online)) {
             $form.mediaCoverageOnline = {
               articleLength: '',
@@ -74,7 +77,10 @@
               publishDate: '',
               ...$form.mediaCoverageOnline
             };
+          } else {
+            $form.mediaCoverageOnline = null;
           }
+
           if ($form.mediaTypes.includes(MediaTypes.Print)) {
             $form.mediaCoveragePrint = {
               totalPages: 0,
@@ -82,6 +88,8 @@
               publishDate: '',
               ...$form.mediaCoveragePrint
             };
+          } else {
+            $form.mediaCoveragePrint = null;
           }
         }
 
@@ -341,7 +349,7 @@
             <input
               id="print-statistics-readers"
               type="number"
-              class="input w-full {$errors.printMediaStatistics?.printMediaStatistics !== undefined
+              class="input w-full {$errors.printMediaStatistics?.readers !== undefined
                 ? 'input-error'
                 : ''}"
               defaultValue={$form.printMediaStatistics?.readers ?? 0}
@@ -356,7 +364,7 @@
                   };
                 }
               }}
-              aria-invalid={$errors.printMediaStatistics?.printMediaStatistics !== undefined
+              aria-invalid={$errors.printMediaStatistics?.readers !== undefined
                 ? 'true'
                 : undefined}
             />

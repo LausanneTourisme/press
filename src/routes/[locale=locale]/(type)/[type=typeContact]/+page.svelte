@@ -210,72 +210,72 @@
             {@html $t('contact.form.mail-section.form.gender-section.title')}
             <span class="text-brand-600">*</span>
           </p>
-          <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 lg:h-14">
+          <div class="flex flex-wrap items-center justify-center gap-4 lg:h-14 lg:flex-nowrap">
             <input
-                  type="radio"
-                  id="title-0"
-                  name="title"
-                  value={$t('contact.form.mail-section.form.gender-section.madam')}
-                  class="peer hidden"
-                  onchange={() => (titleSectionFailed = false)}
-                />
-                <label
-                  for="title-0"
-                  class={twMerge(
-                    'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700  dark:hover:text-gray-300',
-                    pageForm?.fields?.title?.incorrect || titleSectionFailed
-                      ? 'border border-red-500 text-red-500 ring-1 ring-red-500'
-                      : ''
-                  )}
-                >
-                  <span class="block w-full text-center">
-                    {@html $t('contact.form.mail-section.form.gender-section.madam')}
-                  </span>
-                </label>
+              type="radio"
+              id="title-0"
+              name="title"
+              value={$t('contact.form.mail-section.form.gender-section.madam')}
+              class="peer hidden"
+              onchange={() => (titleSectionFailed = false)}
+            />
+            <label
+              for="title-0"
+              class={twMerge(
+                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700  dark:hover:text-gray-300',
+                pageForm?.fields?.title?.incorrect || titleSectionFailed
+                  ? 'border border-red-500 text-red-500 ring-1 ring-red-500'
+                  : ''
+              )}
+            >
+              <span class="block w-full text-center">
+                {@html $t('contact.form.mail-section.form.gender-section.madam')}
+              </span>
+            </label>
 
-                <input
-                  type="radio"
-                  id="title-1"
-                  name="title"
-                  value={$t('contact.form.mail-section.form.gender-section.sir')}
-                  class="peer hidden"
-                  onchange={() => (titleSectionFailed = false)}
-                />
-                <label
-                  for="title-1"
-                  class={twMerge(
-                    ' inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
-                    pageForm?.fields?.title?.incorrect || titleSectionFailed
-                      ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
-                      : ''
-                  )}
-                >
-                  <span class="block w-full text-center">
-                    {@html $t('contact.form.mail-section.form.gender-section.sir')}
-                  </span>
-                </label>
+            <input
+              type="radio"
+              id="title-1"
+              name="title"
+              value={$t('contact.form.mail-section.form.gender-section.sir')}
+              class="peer hidden"
+              onchange={() => (titleSectionFailed = false)}
+            />
+            <label
+              for="title-1"
+              class={twMerge(
+                ' inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                pageForm?.fields?.title?.incorrect || titleSectionFailed
+                  ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
+                  : ''
+              )}
+            >
+              <span class="block w-full text-center">
+                {@html $t('contact.form.mail-section.form.gender-section.sir')}
+              </span>
+            </label>
 
-                <input
-                  type="radio"
-                  id="title-2"
-                  name="title"
-                  value={$t('contact.form.mail-section.form.gender-section.they')}
-                  class="peer hidden"
-                  onchange={() => (titleSectionFailed = false)}
-                />
-                <label
-                  for="title-2"
-                  class={twMerge(
-                    'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
-                    pageForm?.fields?.title?.incorrect || titleSectionFailed
-                      ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
-                      : ''
-                  )}
-                >
-                  <span class="block w-full text-center">
-                    {@html $t('contact.form.mail-section.form.gender-section.they')}
-                  </span>
-                </label>
+            <input
+              type="radio"
+              id="title-2"
+              name="title"
+              value={$t('contact.form.mail-section.form.gender-section.they')}
+              class="peer hidden"
+              onchange={() => (titleSectionFailed = false)}
+            />
+            <label
+              for="title-2"
+              class={twMerge(
+                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                pageForm?.fields?.title?.incorrect || titleSectionFailed
+                  ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
+                  : ''
+              )}
+            >
+              <span class="block w-full text-center">
+                {@html $t('contact.form.mail-section.form.gender-section.they')}
+              </span>
+            </label>
             <!-- <ul class="flex flex-wrap lg:flex-nowrap h-20 items-center justify-center gap-4 lg:h-14">
               <li class="h-full w-full">
 
@@ -429,7 +429,7 @@
       </Paragraph>
       <a
         href="tel:0041216137373"
-        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg p-4"
+        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 p-4 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
       >
         <Phone strokeWidth={2.5} class="aspect-square h-5" />
         +41 21 613 73 73
