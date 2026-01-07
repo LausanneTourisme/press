@@ -1,0 +1,167 @@
+{
+  "title": "Journaliste",
+  "meta-description": "Mettez le cap sur Lausanne et explorez toute sa richesse à travers des articles inspirants et les conseils avisés des Lausannois pour vivre la ville autrement.",
+  "validations": {
+    "media-name": "Veuillez indiquer le nom de votre média",
+    "thematic": "Sur quelle thématique est votre média ? (générale, voyage, culture, lifestyle, ...)",
+    "audience-profile": "Veuillez indiquer le profil de l'audience (âge, niveau d'éducation, sexe lieu de résidence, intérêts, ...)",
+    "print-media-statistics": "Veuillez remplir au moins une des deux statistiques",
+    "media-statistics": "Au moins une des statistiques sur les médias sont requises",
+    "broadcast-location": "Sur quel lieu diffusez-vous l'information ? (Kiosk, Hôtel, Abonnement payant, etc.)",
+    "emission-name": "Veuillez indiquer sur quelle émission vous allez diffuser",
+    "article-length": "De combien de mots/charactères sera votre article ?",
+    "article-thematic": "La thématique de l'article ne peut pas être vide",
+    "travel-information": {
+      "city": "Veuillez indiquer la ville de départ",
+      "country": "Veuillez indiquer le pays de départ"
+    },
+    "personal-information": {
+      "first-name": "Prénom requis",
+      "last-name": "Nom requis",
+      "phone-number": "Veuillez indiquer votre numméro de téléphone",
+      "spoken-languages": "Quelles langues savez-vous parler ? (français, anglais, allemand, italien, ...)",
+      "address": {
+        "address": "Veuillez indiquer votre adresse de domicile",
+        "city": "Veuillez indiquer votre ville de domicile",
+        "country": "Veuillez indiquer votre pays de domicile",
+        "postal-code": "Veuillez indiquer votre code postal"
+      },
+      "passport": "Veuillez indiquer toutes les informations"
+    },
+    "emergency-contacts": {
+      "name": "Veuillez indiquer le nom de votre contact d'urgence",
+      "phone-number": "Veuillez indiquer le numéro de votre contact d'urgence",
+      "minimum": "Veuillez au moins un contact d'urgence"
+    }
+  },
+  "form": {
+    "media-name": "Nom du média",
+    "media-name-placeholder": "",
+    "media-thematic": "Thématique du média",
+    "media-thematic-placeholder": "",
+    "audience-profile": "Profil de l'audience",
+    "audience-profile-placeholder": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ...",
+    "object-request": "Objet de la demande",
+    "types": {
+      "title": "Type de média",
+      "print": "Print",
+      "online": "Online",
+      "tv": "TV",
+      "radio": "Radio"
+    },
+    "statistics": {
+      "title": "Information sur le média",
+      "print": {
+        "title": "Statistiques du média print",
+        "copies": "Circulation/nombre d'exemplaires",
+        "readers": "Couverture/nombre de lecteurs",
+        "broadcast-location": "Lieux de diffusion",
+        "broadcast-location-placeholder": "kiosk, hôtel, abonnement, etc."
+      },
+      "radio-and-tv": {
+        "title": "Statistique du média radio/TV",
+        "emission-name": "Nom de l'émission",
+        "emission-name-placeholder": "Lausanne et l'eau",
+        "viewers": "Nombre d'auditeurs"
+      },
+      "online": {
+        "title": "Statistiques du média online (site web)",
+        "website": "Site web",
+        "website-placeholder": "https://",
+        "monthly-unique-visitors": "Reach/visiteurs uniques par mois",
+        "monthly-page-views": "Nombre de page vues par mois"
+      }
+    },
+    "coverage": {
+      "title": "Information sur le résultat médiatique",
+      "print": {
+        "title": "Couverture médiatique print",
+        "total-pages": "Nombre de pages",
+        "article-length": "Longueur de l'article",
+        "publish-date": "Date de sortie de l'article"
+      },
+      "radio-and-tv": {
+        "title": "Couverture médiatique radio/TV",
+        "article-thematic": "Thématique de l'émission",
+        "article-thematic-placeholder": "",
+        "publish-date": "Date de sortie de l'émission"
+      },
+      "online": {
+        "title": "Couverture médiatique online (site web)",
+        "article-length": "Longueur de l'article",
+        "article-thematic": "Thématique de l'article",
+        "article-thematic-placeholder": "",
+        "publish-date": "Date de sortie de l'article"
+      }
+    },
+    "travel-information": {
+      "title": "Information de voyage",
+      "departure-point": {
+        "title": "Lieu de départ",
+        "city": "Ville",
+        "city-placeholder": "Lausanne",
+        "country": "Pays",
+        "country-placeholder": "Veuillez choisir une ville...",
+        "outward-journey": {
+          "title": "Trajet aller",
+          "information": "Merci de préciser la date, l'heure, le numéro de vol/train et la gare/aéroport à l'arrivée"
+        }
+      },
+      "return-journey": {
+        "title": "Trajet retour",
+        "information": "Merci de préciser la date, l'heure, le numéro de vol/train et la gare/aéroport au départ"
+      },
+      "travel-reduction": {
+        "title": "Réduction sur les transports suisses",
+        "please-tick": "Merci de cocher ce qui correspond",
+        "point-to-point-travelcard": "Abonnement Général",
+        "half-fare": "Demi-Tarif",
+        "swiss-ga-travelcard": "Abonnement de parcours"
+      },
+      "last-visit": "Dernière date de visite à Lausanne/en Suisse"
+    },
+    "personal-information": {
+      "title": "Informations personelles",
+      "titles": {
+        "title": "Titre",
+        "mrs": "Madame",
+        "mr": "Monsieur",
+        "they": "Ne pas spécifier"
+      },
+      "first-name": "Prénom",
+      "first-name-placeholder": "Anne",
+      "last-name": "Nom",
+      "last-name-placeholder": "Tique",
+      "freelance": "Êtes-vous freelance ?",
+      "spoken-languages": {
+        "title": "Langue(s) parlée(s)",
+        "placeholder": "français, anglais, allemand, italien, ..."
+      },
+      "passport": {
+        "title": "Numéro et validité du passport",
+        "number": "Numéro",
+        "validity": "Validité"
+      },
+      "birth-date": "Date de naissance",
+      "address": {
+        "title": "Adresse",
+        "street-address": "Adresse",
+        "city": "Ville",
+        "country": "Pays",
+        "country-placeholder": "Pays de résidence...",
+        "postal-code": "ZIP"
+      },
+      "phone-number": "Numéro de téléphone portable (avec indicatif)",
+      "email": "Email",
+      "allergies": "Allergies alimentaires ou restrictions",
+      "medical-and-physical-condition": "Conditions médicales et forme physique",
+      "emergency-contacts": {
+        "title": "Contacts d'urgence",
+        "name": "Nom",
+        "phone-number": "Numéro de téléphone (avec indicatif)"
+      },
+      "travel-insurance": "Assurance de voyage couvrant la Suisse ?",
+      "remarks": "Remarques"
+    }
+  }
+}

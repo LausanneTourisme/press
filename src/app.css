@@ -1,6 +1,14 @@
 @import 'tailwindcss';
 
-@plugin "daisyui";
+@plugin 'daisyui';
+
+@theme "daisyui/theme" {
+  --color-base-placeholder: color-mix(in oklab, currentColor 50%, transparent);
+}
+::placeholder {
+  color: var(--color-base-placeholder);
+}
+
 @theme {
   --breakpoint-xs: 28rem;
   --breakpoint-2xl: 100rem;
@@ -12,7 +20,7 @@
 
   --color-loading: #7d7d7d21;
   --color-base-dark: rgb(43, 49, 58);
-  --color-base-dark-hover: rgb(55,63,74);
+  --color-base-dark-hover: rgb(55, 63, 74);
 
   --color-brand-50: #fff1f1;
   --color-brand-100: #ffe1e1;
@@ -135,13 +143,15 @@
 }
 
 html {
-  @apply bg-base-100 dark:bg-base-dark
+  @apply bg-base-100 dark:bg-base-dark;
 }
 
 /* FIREFOX */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+
+  --color-error: #e7302f !important;
 }
 
 /* CHROME */
@@ -172,19 +182,19 @@ img {
 }
 
 .articles .content p {
-  @apply leading-relaxed mb-6
+  @apply mb-6 leading-relaxed;
 }
 
 .articles .content .paragraph a {
-  @apply !text-brand-500 !font-bold
+  @apply !text-brand-500 !font-bold;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  @apply !bg-brand-500
+  @apply !bg-brand-500;
 }
 
 .swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
-  @apply !bg-brand-500 opacity-45
+  @apply !bg-brand-500 opacity-45;
 }
 
 .cookieConsentWrapper .cookieConsent__Button[type='submit'] {
@@ -202,7 +212,7 @@ img {
   margin: auto;
 }
 .cookieConsentWrapper .cookieConsent__Left {
-  flex: 1
+  flex: 1;
 }
 .cookieConsentWrapper .cookieConsent__Button {
   margin: 3px;

@@ -6,42 +6,42 @@ import type { News, SeoHeader } from '$types';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ url, params, parent }) => {
-    const { i18n, translations } = await parent();
+  const { i18n, translations } = await parent();
 
-    const lang = params.locale as Locale;
+  const lang = params.locale as Locale;
 
-    const [eventsRes, groupRes, newsRes] = await Promise.all([
-        getAgendaEvents(),
-        getGroup<string>({ locale: lang, id: Number(GROUP_ID_PAGE_HIGHLIGHTS) }),
-        getPosts<News<string>>({ type: 'news', locale: lang }),
-        loadTranslations(lang, url.pathname)
-    ]);
+  const [eventsRes, groupRes, newsRes] = await Promise.all([
+    getAgendaEvents(),
+    getGroup<string>({ locale: lang, id: Number(GROUP_ID_PAGE_HIGHLIGHTS) }),
+    getPosts<News<string>>({ type: 'news', locale: lang }),
+    loadTranslations(lang, url.pathname)
+  ]);
 
-    const seo: SeoHeader = {
-        canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
-        title: translations[lang][`${RouteTypes.Highlights}.title`],
-        description: translations[lang][`${RouteTypes.Highlights}.meta-description`],
-        image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
-        alternate: supportedLocales.map(locale => ({
-            hreflang: locale,
-            href: `/${locale}/${translations[locale][`route.${RouteTypes.Highlights}.slug`]}`
-        })),
-    }
+  const seo: SeoHeader = {
+    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    title: translations[lang][`${RouteTypes.Highlights}.title`],
+    description: translations[lang][`${RouteTypes.Highlights}.meta-description`],
+    image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
+    alternate: supportedLocales.map((locale) => ({
+      hreflang: locale,
+      href: `/${locale}/${translations[locale][`route.${RouteTypes.Highlights}.slug`]}`
+    }))
+  };
 
-    const news = newsRes.data?.items?.data ?? [];
-    news.sort((a, b) => {
-        if (a.published_at! < b.published_at!) return 1;
-        if (a.published_at! > b.published_at!) return -1;
-        return 0;
-    })
-    return {
-        i18n,
-        translations,
-        seo,
-        locale: lang,
-        type: RouteTypes.Highlights,
-        events: eventsRes.data?.items?.data ?? [],
-        group: groupRes.data?.item,
-        news: news,
-    };
+  const news = newsRes.data?.items?.data ?? [];
+  news.sort((a, b) => {
+    if (a.published_at! < b.published_at!) return 1;
+    if (a.published_at! > b.published_at!) return -1;
+    return 0;
+  });
+  return {
+    i18n,
+    translations,
+    seo,
+    locale: lang,
+    type: RouteTypes.Highlights,
+    events: eventsRes.data?.items?.data ?? [],
+    group: groupRes.data?.item,
+    news: news
+  };
 };

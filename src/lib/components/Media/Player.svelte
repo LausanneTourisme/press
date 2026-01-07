@@ -45,7 +45,7 @@
     }
   };
 
-  const style = twMerge('group relative h-full w-full overflow-hidden', additionalClass);
+  const style = $derived(twMerge('group relative h-full w-full overflow-hidden', additionalClass));
 </script>
 
 <article class={style} transition:fade={{ delay: 330 }}>

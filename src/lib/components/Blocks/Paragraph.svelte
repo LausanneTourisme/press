@@ -10,10 +10,7 @@
 
   const { class: additionalClass = '', children }: HeadingProps = $props();
 
-  const style = twMerge(
-    'paragraph leading-8 tracking-[0.45px]',
-    additionalClass
-  );
+  const style = $derived(twMerge('paragraph leading-8 tracking-[0.45px]', additionalClass));
 </script>
 
 <p class={style}>

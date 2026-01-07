@@ -120,17 +120,17 @@
   >
     <Heading tag="h1" class="w-full text-white">
       <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]">
-        {$t('page.hero.title').toUpperCase()}
+        {@html $t('page.hero.title').toUpperCase()}
       </span>
       <br />
       <span class="inline-block tracking-tight">{@html $t('page.hero.subtitle')}</span>
     </Heading>
     <Paragraph class="w-full text-justify text-white xl:tracking-wide 2xl:tracking-normal">
-      {$t('page.hero.paragraph')}
+      {@html $t('page.hero.paragraph')}
     </Paragraph>
 
     <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true} tag="a">
-      {$t('common.contact-us')}
+      {@html $t('common.contact-us')}
     </Button>
   </div>
   <div
@@ -140,27 +140,27 @@
       alt="Port de Pully"
       title="Port de Pully"
       class="object-center xl:scale-[84%] xl:object-left 2xl:scale-100"
-      localSrc="/pages/home/port-de-pully.jpg"
-      src="/pages/home/port-de-pully"
-      transform={{ gravity: 'west', crop: 'crop', width: 1280 }}
+      localSrc="/pages/home/mobile.jpg"
+      src="/pages/home/mobile"
+      transform={{ gravity: 'west', crop: 'auto', width: 1280 }}
       srcset={[
         {
           size: 768,
           transform: { gravity: 'west', crop: 'auto', width: 1280 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/ipad',
+          usePreset: true
         },
         {
           size: 1280,
           transform: { gravity: 'west', crop: 'auto', width: 1920 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/fhd',
+          usePreset: true
         },
         {
           size: 2560,
           transform: { gravity: 'west', crop: 'auto', height: 500, width: 2560 },
-          src: '/pages/home/port-de-pully.jpg',
-          usePreset: true,
+          src: '/pages/home/4k',
+          usePreset: true
         }
       ]}
     />
@@ -201,14 +201,14 @@
       class="bg-shakespeare-100 dark:bg-shakespeare-400 flex flex-col justify-center p-6 py-12 md:w-1/2 md:p-16"
     >
       <Heading class="dark:text-white">
-        {$t('page.video&images.title')}
+        {@html $t('page.video&images.title')}
       </Heading>
       <Paragraph class="dark:text-white">
-        {$t('page.video&images.paragraph')}
+        {@html $t('page.video&images.paragraph')}
       </Paragraph>
       <div>
         <Button href={getMediaLibraryRegisterLink($locale as Locale)} tag="a">
-          {$t('page.goToMediaLibrary')}
+          {@html $t('page.goToMediaLibrary')}
         </Button>
       </div>
     </article>
@@ -269,14 +269,14 @@
       class="bg-shakespeare-400 flex flex-col justify-center p-6 py-12 text-white md:w-1/2 md:p-16"
     >
       <Heading class="text-white">
-        {$t('page.whatIsNew.title')}
+        {@html $t('page.whatIsNew.title')}
       </Heading>
       <Paragraph class="text-white">
-        {$t('page.whatIsNew.paragraph')}
+        {@html $t('page.whatIsNew.paragraph')}
       </Paragraph>
       <div>
         <Button negative={true} href={route(RouteTypes.Highlights)} tag="a">
-          {$t('common.btn.learnMore')}
+          {@html $t('common.btn.learnMore')}
         </Button>
       </div>
     </article>
@@ -308,14 +308,14 @@
       class="bg-shakespeare-400 flex flex-col justify-center p-6 py-12 text-white md:w-1/2 md:p-16"
     >
       <Heading class="text-white">
-        {$t('page.pressRelease.title')}
+        {@html $t('page.pressRelease.title')}
       </Heading>
       <Paragraph class="text-white">
-        {$t('page.pressRelease.paragraph')}
+        {@html $t('page.pressRelease.paragraph')}
       </Paragraph>
       <div>
         <Button negative={true} href={route(RouteTypes.Pressrelease)} tag="a">
-          {$t('common.btn.learnMore')}
+          {@html $t('common.btn.learnMore')}
         </Button>
       </div>
     </article>
@@ -347,14 +347,14 @@
       class="bg-shakespeare-400 flex flex-col justify-center p-6 py-12 text-white md:w-1/2 md:p-16"
     >
       <Heading class="text-white">
-        {$t('page.mediaCoverage.title')}
+        {@html $t('page.mediaCoverage.title')}
       </Heading>
       <Paragraph class="text-white">
-        {$t('page.mediaCoverage.paragraph')}
+        {@html $t('page.mediaCoverage.paragraph')}
       </Paragraph>
       <div>
         <Button negative={true} href={route(RouteTypes.Coverage)} tag="a">
-          {$t('common.btn.learnMore')}
+          {@html $t('common.btn.learnMore')}
         </Button>
       </div>
     </article>
@@ -408,7 +408,7 @@
 <Anchor name="numbers" />
 <Container fullscreen={true} class="bg-shakespeare-100 dark:bg-shakespeare-400 md:px-16">
   <Heading class="pt-5 text-center">
-    {$t('page.numbers')}
+    {@html $t('page.numbers')}
   </Heading>
   <Observer
     threshold={isMobile ? 0.5 : 0.75}
@@ -461,10 +461,10 @@
 <Anchor name="distinctions" />
 <Container fullscreen={true} class="pt-16">
   <Heading class="mb-4 text-center">
-    {$t('page.distinctions.title')}
+    {@html $t('page.distinctions.title')}
   </Heading>
   <Paragraph centered class="p-6">
-    {$t('page.distinctions.paragraph')}
+    {@html $t('page.distinctions.paragraph')}
   </Paragraph>
 
   <!-- TROPHIES -->
@@ -483,7 +483,7 @@
   -->
 <Container>
   <Heading class="text-center">
-    {$t('page.contact.title')}
+    {@html $t('page.contact.title')}
   </Heading>
 
   <Paragraph centered>
@@ -527,7 +527,7 @@
   </div>
   <Paragraph class="text-center">
     <Button href={route(RouteTypes.Contact)} class="px-3 dark:text-white" tag="a">
-      {$t('common.contact-us')}
+      {@html $t('common.contact-us')}
     </Button>
   </Paragraph>
 </Container>
@@ -543,7 +543,7 @@
 <Anchor name="faq" />
 <Container class="mb-16">
   <Heading class="my-8 text-center">
-    {$t('common.faq.title')}
+    {@html $t('common.faq.title')}
   </Heading>
   <Faq />
 </Container>

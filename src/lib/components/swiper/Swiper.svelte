@@ -31,7 +31,7 @@
   let swiperNextEl: HTMLElement | undefined;
   let swiperPreviousEl: HTMLElement | undefined;
   let swiperPaginationEl: HTMLElement | undefined;
-  const style = twMerge('relative', additionalClass);
+  const style = $derived(twMerge('relative', additionalClass));
 
   let swiper: Swiper | undefined;
   onMount(() => {
@@ -83,15 +83,15 @@
       {@render children({ class: 'swiper-slide' })}
     </div>
 
-    <div bind:this={swiperPaginationEl} class={twMerge(
-      "swiper-pagination !relative !-bottom-1",
-      showPagination ? '' : 'hidden'
-    )}></div>
+    <div
+      bind:this={swiperPaginationEl}
+      class={twMerge('swiper-pagination !relative !-bottom-1', showPagination ? '' : 'hidden')}
+    ></div>
   </div>
   <div
     bind:this={swiperNextEl}
     class={twMerge(
-      'swiper-button-next absolute top-2/5 -right-5 z-10 flex aspect-square h-10 w-10  sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-right-10',
+      'swiper-button-next absolute top-2/5 -right-5 z-10 flex aspect-square h-10 w-10  items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-right-10 sm:h-16 sm:w-16',
       showNavigationButtons ? '' : 'hidden'
     )}
   >
@@ -100,7 +100,7 @@
   <div
     bind:this={swiperPreviousEl}
     class={twMerge(
-      'swiper-button-prev absolute top-2/5 -left-5 z-10 flex aspect-square h-10 w-10  sm:h-16 sm:w-16 items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-left-10',
+      'swiper-button-prev absolute top-2/5 -left-5 z-10 flex aspect-square h-10 w-10  items-center justify-center rounded-full bg-red-600/60 text-white transition-[background] hover:cursor-pointer hover:bg-red-600 sm:-left-10 sm:h-16 sm:w-16',
       showNavigationButtons ? '' : 'hidden'
     )}
   >

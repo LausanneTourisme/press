@@ -15,6 +15,7 @@
   import { type PageData } from './[locale=locale]/$types';
   import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
   import { PUBLIC_BASE_URL } from '$env/static/public';
+  import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
   let translations = $derived((page.data as PageData).translations[locale.get()]);
@@ -33,10 +34,16 @@
       image: pageData.seo.image
     };
   });
+  const flash = $derived.by(() =>
+    getFlash(page, {
+      clearAfterMs: 7000,
+      clearOnNavigate: true
+    })
+  );
 
   afterNavigate((navigate) => {
     // return back in navigation doesn't re-trigger scroll to anchor
-    if(navigate.type === "popstate") return;
+    if (navigate.type === 'popstate') return;
 
     /*
      * Go to Anchor tags !
@@ -135,10 +142,10 @@
   <!-- End Google Tag Manager -->
 </svelte:head>
 
-<div class="app">
+<div class="app flex min-h-screen flex-col">
   <Nav />
 
-  <main>
+  <main class="flex-1">
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
@@ -149,6 +156,23 @@
         style="display:none;visibility:hidden"
       ></iframe>
     </noscript>
+    {#if $flash}
+      <div
+        class={twMerge(
+          'flash',
+          $flash.type == 'success' ? 'bg-apple-300' : 'bg-red-300',
+          'fixed',
+          'top-[60px] left-0 md:top-[120px]',
+          'w-full',
+          'z-11',
+          'text-center font-bold',
+          'p-3'
+        )}
+      >
+        {$flash.message}
+      </div>
+    {/if}
+
     <!-- End Google Tag Manager (noscript) -->
     {@render children()}
   </main>
@@ -156,13 +180,13 @@
   <footer class="bg-metallic-800 relative z-10 leading-[1.7] tracking-wider text-white">
     <section class="mx-auto flex max-w-[1270px] flex-col justify-center p-[15px] text-center">
       <Heading class="tracking-normal text-white md:pb-5 md:text-3xl ">
-        {$t('footer.follow-us')}
+        {@html $t('footer.follow-us')}
       </Heading>
       <nav class="flex w-full items-center justify-center md:mb-5">
         <SocialNetworks />
       </nav>
       <Heading class="tracking-normal text-white md:mb-2 md:text-3xl ">
-        {$t('footer.newsletter')}
+        {@html $t('footer.newsletter')}
       </Heading>
       <div>
         <Button
@@ -171,12 +195,12 @@
           href={$t('footer.subscribe.url')}
           class="invertable inline-flex flex-row-reverse items-center justify-between rounded-none text-lg font-normal dark:text-white "
         >
-          {$t('footer.subscribe.text')}
+          {@html $t('footer.subscribe.text')}
           <Send class="mx-2 h-5 w-5" />
         </Button>
       </div>
       <Heading class="py-3 tracking-normal text-white md:text-3xl ">
-        {$t('footer.partners')}
+        {@html $t('footer.partners')}
       </Heading>
       <div
         class="partners grid h-32 w-full grid-cols-3 place-content-center gap-4 md:h-[81px] md:grid-cols-6 md:gap-1"
@@ -252,7 +276,7 @@
       <div class="grid w-full grid-cols-1 gap-8 md:grid-cols-[1.5fr_2.5fr_1.5fr]">
         <div class="footer-contact max-w-[400px]">
           <Heading class="mt-4 mb-2 text-base text-white md:text-base ">
-            {$t('footer.contact')}
+            {@html $t('footer.contact')}
           </Heading>
           <p>
             <b>Lausanne Tourisme – administration</b><br />
@@ -262,7 +286,7 @@
             <a href="tel:+41216137373">+41 21 613 73 73</a>
           </p>
           <Button negative={true} href={translations['footer.where.url']}>
-            {$t('footer.where.text')}
+            {@html $t('footer.where.text')}
           </Button>
         </div>
         <nav class="footer-infos w-full">
@@ -271,7 +295,7 @@
               <Heading
                 class="mb-1 text-base font-bold tracking-normal text-white md:text-base xl:mt-4 "
               >
-                {$t('footer.infos.corporate.title')}
+                {@html $t('footer.infos.corporate.title')}
               </Heading>
               <ul>
                 <li class="list-none">
@@ -281,7 +305,7 @@
                     withIcon={false}
                     href={translations['footer.infos.corporate.about-us.url']}
                   >
-                    {$t('footer.infos.corporate.about-us.text')}
+                    {@html $t('footer.infos.corporate.about-us.text')}
                   </Link>
                 </li>
                 <li class={twMerge('list-none', $locale !== 'fr' ? 'hidden' : '')}>
@@ -291,7 +315,7 @@
                     withIcon={false}
                     href={translations['footer.infos.corporate.member-space.url']}
                   >
-                    {$t('footer.infos.corporate.member-space.text')}
+                    {@html $t('footer.infos.corporate.member-space.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -301,7 +325,7 @@
                     withIcon={false}
                     href={translations['footer.infos.corporate.jobs.url']}
                   >
-                    {$t('footer.infos.corporate.jobs.text')}
+                    {@html $t('footer.infos.corporate.jobs.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -311,7 +335,7 @@
                     withIcon={false}
                     href={translations['footer.infos.corporate.general-terms.url']}
                   >
-                    {$t('footer.infos.corporate.general-terms.text')}
+                    {@html $t('footer.infos.corporate.general-terms.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -321,7 +345,7 @@
                     withIcon={false}
                     href={translations['footer.infos.corporate.privacy.url']}
                   >
-                    {$t('footer.infos.corporate.privacy.text')}
+                    {@html $t('footer.infos.corporate.privacy.text')}
                   </Link>
                 </li>
               </ul>
@@ -330,7 +354,7 @@
               <Heading
                 class="mb-1 text-base font-bold tracking-normal text-white md:text-base xl:mt-4 "
               >
-                {$t('footer.infos.more.title')}
+                {@html $t('footer.infos.more.title')}
               </Heading>
               <ul>
                 <li class="list-none">
@@ -340,7 +364,7 @@
                     withIcon={false}
                     href={translations['footer.infos.more.meeting.url']}
                   >
-                    {$t('footer.infos.more.meeting.text')}
+                    {@html $t('footer.infos.more.meeting.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -350,7 +374,7 @@
                     withIcon={false}
                     href={translations['footer.infos.more.congress.url']}
                   >
-                    {$t('footer.infos.more.congress.text')}
+                    {@html $t('footer.infos.more.congress.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -360,7 +384,7 @@
                     withIcon={false}
                     href={translations['footer.infos.more.trade.url']}
                   >
-                    {$t('footer.infos.more.trade.text')}
+                    {@html $t('footer.infos.more.trade.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -370,7 +394,7 @@
                     withIcon={false}
                     href={translations['footer.infos.more.press.url']}
                   >
-                    {$t('footer.infos.more.press.text')}
+                    {@html $t('footer.infos.more.press.text')}
                   </Link>
                 </li>
                 <li class="list-none">
@@ -380,7 +404,7 @@
                     withIcon={false}
                     href={translations['footer.infos.more.brochures.url']}
                   >
-                    {$t('footer.infos.more.brochures.text')}
+                    {@html $t('footer.infos.more.brochures.text')}
                   </Link>
                 </li>
               </ul>

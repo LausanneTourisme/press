@@ -84,7 +84,6 @@
     }
 
     return async ({ result }) => {
-      console.log({ result });
       if (result.type === 'success') {
         onSuccess?.();
         incorrectData = false;
@@ -114,16 +113,16 @@
       class="bg-apple-300 text-apple-950 mb-4 inline-flex w-full justify-center rounded p-6 text-xl font-semibold"
     >
       <Send class="mr-2 h-6 w-6 rotate-45" />
-      {$t(`${RouteTypes.Contact}.form.confirmation-section.success.title`)}
+      {@html $t(`${RouteTypes.Contact}.form.confirmation-section.success.title`)}
     </p>
-    {$t(`${RouteTypes.Contact}.form.confirmation-section.success.message`)}
+    {@html $t(`${RouteTypes.Contact}.form.confirmation-section.success.message`)}
   </div>
 </Container>
 <!-- FAIL -->
 <Container width="medium" class={incorrectData && !sendWithSuccess ? '' : 'hidden'}>
   <div class="rounded bg-red-300 p-4">
     <p class="text-xl font-semibold text-red-950">
-      {$t(`${RouteTypes.Contact}.form.confirmation-section.invalid.title`)}
+      {@html $t(`${RouteTypes.Contact}.form.confirmation-section.invalid.title`)}
     </p>
   </div>
 </Container>
@@ -148,7 +147,7 @@
         <Loading />
       </span>
 
-      {$t(`${RouteTypes.Contact}.form.mail-section.form.send`)}
+      {@html $t(`${RouteTypes.Contact}.form.mail-section.form.send`)}
     </Button>
   </div>
 </form>

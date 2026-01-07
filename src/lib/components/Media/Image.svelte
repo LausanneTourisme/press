@@ -26,7 +26,7 @@
 
   const {
     class: additionalClass = '',
-    imgClass,
+    imgClass: imgStyle,
     srcset,
     transform,
     useCloudinaryPreset = true,
@@ -68,14 +68,15 @@
         if (s.isLocal) {
           return { size: s.size, src: `${s.src}` }; // ${s.size}
         }
-        return { size: s.size, src: generateCloudinaryUrl(s)};
+        return { size: s.size, src: generateCloudinaryUrl(s) };
       });
     }
 
     return [];
   });
 
-  const style = twMerge('flex object-cover h-full w-full', additionalClass);
+  const style = $derived(twMerge('flex object-cover h-full w-full', additionalClass));
+  const imgClass = $derived(twMerge('w-full h-auto object-cover', imgStyle));
 </script>
 
 <!-- <img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} /> -->
@@ -83,5 +84,5 @@
   {#each srcSetFinal.reverse() as srcSet}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
-  <img class={twMerge("w-full h-auto object-cover", imgClass)} src={srcFinal} {alt} {title} {onload} />
+  <img class={imgClass} src={srcFinal} {alt} {title} {onload} />
 </picture>

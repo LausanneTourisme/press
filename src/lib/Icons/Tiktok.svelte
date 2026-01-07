@@ -4,7 +4,7 @@
     class?: string;
   };
   const { class: additionalClass }: Props = $props();
-  let style: string = twMerge('w-16 h-16', additionalClass);
+  let style: string = $derived(twMerge('w-16 h-16', additionalClass));
 </script>
 
 <svg

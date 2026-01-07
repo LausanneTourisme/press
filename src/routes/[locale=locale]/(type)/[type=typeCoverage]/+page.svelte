@@ -16,7 +16,7 @@
 <Container width="small">
   <div class="py-6 text-center">
     <Heading tag="h1">
-      {$t('coverage.title')}
+      {@html $t('coverage.title')}
     </Heading>
     <Paragraph>
       {@html $t('coverage.description')}

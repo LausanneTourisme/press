@@ -43,10 +43,10 @@
         crop: 'fill'
       }
     });
-  }
+  };
 
   let url = $derived.by(updateUrl);
-  
+
   const update = () => {
     url = updateUrl();
   };

@@ -1,44 +1,55 @@
-import { RouteTypes, Themes } from "$enums";
-import { getMediaLibraryRegisterLink, route } from "$lib/helpers";
-import { menuItems } from "$lib/helpers/menu";
-import { getPosts } from "$lib/helpers/requests.server";
-import { type Locale, supportedLocales, translations } from "$lib/translations";
-import type { Release, Translatable } from "$types";
+import { RouteTypes, Themes } from '$enums';
+import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
+import { menuItems } from '$lib/helpers/menu';
+import { getPosts } from '$lib/helpers/requests.server';
+import { type Locale, supportedLocales, translations } from '$lib/translations';
+import type { Release, Translatable } from '$types';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const GET = async ({ url, params }) => {
-  const urlSets = await Promise.all([generateUrlSets(PUBLIC_BASE_URL, params.locale as Locale), generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL, params.locale as Locale)]);
+  const urlSets = await Promise.all([
+    generateUrlSets(PUBLIC_BASE_URL, params.locale as Locale),
+    generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL, params.locale as Locale)
+  ]);
 
-  return new Response(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`, {
-    headers: {
-      'Content-Type': 'application/xml',
-    },
-  });
+  return new Response(
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlSets.flat().join('\n')}\n</urlset>`,
+    {
+      headers: {
+        'Content-Type': 'application/xml'
+      }
+    }
+  );
 };
 
 // CODE duplicate and adapted from /src/routes/sitemap.xml/+server.ts to return only current locale
 
 const generateUrlSets = async (urlOrigin: string, locale: Locale) => {
-  const urlSets: string[] = [generateAlternateUrlBlocks(urlOrigin, supportedLocales.map(x => `/${x}`), locale)];
+  const urlSets: string[] = [
+    generateAlternateUrlBlocks(
+      urlOrigin,
+      supportedLocales.map((x) => `/${x}`),
+      locale
+    )
+  ];
   const links = new Map<Locale, Map<string, string>>();
 
   supportedLocales.forEach((locale) => {
     links.set(locale, getLinksByLocale(locale));
   });
 
-  const keys = Array.from(links.get(locale)!.keys()).map(x => x.substring(3));
+  const keys = Array.from(links.get(locale)!.keys()).map((x) => x.substring(3));
 
   keys.forEach((key) => {
     const alternates: string[] = [];
     supportedLocales.forEach((locale) => {
-      alternates.push(links.get(locale)!.get(`${locale}.${key}`)!)
+      alternates.push(links.get(locale)!.get(`${locale}.${key}`)!);
     });
     urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates, locale));
   });
 
   return urlSets;
-}
-
+};
 
 const getLinksByLocale = (locale: Locale) => {
   const list = menuItems(locale);
@@ -53,20 +64,15 @@ const getLinksByLocale = (locale: Locale) => {
         if (menuItem.link === getMediaLibraryRegisterLink(locale)) return;
 
         links.set(`${locale}.${menuIndex}.${menuItemIndex}`, menuItem.link);
-      })
+      });
     }
   });
 
   return links;
-}
+};
 
-const generateAlternateUrlBlocks = (
-  urlOrigin: string,
-  paths: string[],
-  canonLocale: Locale
-) => {
-  const canonicalUrl =
-    paths.find((p) => p.split('/')[1] === canonLocale) ?? paths[0];
+const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[], canonLocale: Locale) => {
+  const canonicalUrl = paths.find((p) => p.split('/')[1] === canonLocale) ?? paths[0];
 
   const alternates = paths
     .map((alt) => {
@@ -100,10 +106,10 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale
       if (slugsAlreadyCreated.includes(slug)) return;
 
       slugsAlreadyCreated.push(slug);
-      alternates.push(`/${l}/${translations.get()[l][`route.${type}.slug`]}/${slug}`)
+      alternates.push(`/${l}/${translations.get()[l][`route.${type}.slug`]}/${slug}`);
     });
     urlSets.push(generateAlternateUrlBlocks(urlOrigin, alternates, locale));
   }
 
   return urlSets;
-}
+};

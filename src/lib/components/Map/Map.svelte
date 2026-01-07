@@ -156,21 +156,24 @@
   {#if markers.length}
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       {#key markers}
-      <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-        {#each markers as marker}
-          <LausannerCard
-            favorite={marker.favorite}
-            poi={marker.poi}
-            lausanner={marker.lausanner}
-            class={listBorderColor}
-            onclick={handleLausannerClick}
-          />
-        {/each}
-      </div>
+        <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
+          {#each markers as marker}
+            <LausannerCard
+              favorite={marker.favorite}
+              poi={marker.poi}
+              lausanner={marker.lausanner}
+              class={listBorderColor}
+              onclick={handleLausannerClick}
+            />
+          {/each}
+        </div>
       {/key}
       <div
         bind:this={asideElement}
-        class={twMerge('aside-popup flex flex-col h-full overflow-y-scroll p-4', !aside.show ? 'hidden' : '')}
+        class={twMerge(
+          'aside-popup flex h-full flex-col overflow-y-scroll p-4',
+          !aside.show ? 'hidden' : ''
+        )}
         transition:fade
       >
         <div class="relative flex-auto">
@@ -235,7 +238,7 @@
               class="inline-flex items-center py-2 hover:cursor-pointer hover:opacity-80"
               onclick={closeAside}
             >
-              {$t('common.other-tips')}
+              {@html $t('common.other-tips')}
               <ArrowRight class="ml-1 h-4 w-4" />
             </button>
           </div>

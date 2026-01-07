@@ -24,6 +24,8 @@
   }: Props = $props();
 
   const chunks = chunkify(Object.values(Themes));
+  // should be trigger by user interaction
+  // svelte-ignore state_referenced_locally
   let showMore: boolean = $state(expanded);
 
   const displayMore = () => {
@@ -32,16 +34,16 @@
   };
 
   $effect(() => {
-    showMore = expanded
-  })
+    showMore = expanded;
+  });
 </script>
 
 <div class="p-6 md:pt-16">
   <Heading class="text-center ">
-    {title}
+    {@html title}
   </Heading>
   <Paragraph centered>
-    {paragraph}
+    {@html paragraph}
   </Paragraph>
 </div>
 
@@ -70,5 +72,5 @@
   {/each}
 </Container>
 <div class="mt-8 flex justify-center {showMore ? 'hidden' : ''}">
-  <Button onclick={displayMore}>{$t(`common.btn.showMoreThemes`)}</Button>
+  <Button onclick={displayMore}>{@html $t(`common.btn.showMoreThemes`)}</Button>
 </div>

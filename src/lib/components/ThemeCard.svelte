@@ -27,22 +27,24 @@
     length = 4
   }: Props = $props();
 
-  const themeInformation = ThemeDetails[ThemeKeys[theme]];
-  const gridPosition: Array<string> = !inverted
-    ? [
-        'md:col-span-2 md:row-span-4',
-        'md:row-span-8 md:col-start-3',
-        length === 3
-          ? 'md:col-span-2 md:row-span-4 md:row-start-5'
-          : 'md:row-span-4 md:row-start-5',
-        'md:row-span-4 md:row-start-5'
-      ]
-    : [
-        'md:row-span-8',
-        'md:col-span-2 md:row-span-4',
-        'md:row-span-4 md:col-start-2 md:row-start-5',
-        'md:row-span-4 md:col-start-3 md:row-start-5'
-      ];
+  const themeInformation = $derived(ThemeDetails[ThemeKeys[theme]]);
+  const gridPosition: Array<string> = $derived.by(() =>
+    !inverted
+      ? [
+          'md:col-span-2 md:row-span-4',
+          'md:row-span-8 md:col-start-3',
+          length === 3
+            ? 'md:col-span-2 md:row-span-4 md:row-start-5'
+            : 'md:row-span-4 md:row-start-5',
+          'md:row-span-4 md:row-start-5'
+        ]
+      : [
+          'md:row-span-8',
+          'md:col-span-2 md:row-span-4',
+          'md:row-span-4 md:col-start-2 md:row-start-5',
+          'md:row-span-4 md:col-start-3 md:row-start-5'
+        ]
+  );
 
   const imageSizes = () => {
     if (length === 4) {
@@ -62,22 +64,24 @@
         }
       }
     } else if (length === 3) {
-        switch (gridIndex) {
-          case 0:
-          case 2:
-            return { height: 480, width: 960 };
-          case 1:
-            return { height: 960, width: 480 };
-        }
+      switch (gridIndex) {
+        case 0:
+        case 2:
+          return { height: 480, width: 960 };
+        case 1:
+          return { height: 960, width: 480 };
+      }
     }
 
     return { height: 360, width: 360 };
   };
-  const style = twMerge(
-    'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
-    gridPosition[gridIndex],
-    additionalClass,
-    `grind_index=${gridIndex}-${length}`
+  const style = $derived(
+    twMerge(
+      'group flex items-end text-white relative min-h-64 h-full p-1 md:p-4 overflow-hidden transition-[filter]',
+      gridPosition[gridIndex],
+      additionalClass,
+      `grind_index=${gridIndex}-${length}`
+    )
   );
 </script>
 
@@ -87,7 +91,7 @@
       tag="h3"
       class="translate-y-0 p-2 text-white opacity-100 shadow-gray-950 transition-transform [text-shadow:_0_0_10px_var(--tw-shadow-color)] group-hover:translate-y-72 group-hover:opacity-0 md:p-4"
     >
-      {$t(`themes.${theme}.title`)}
+      {@html $t(`themes.${theme}.title`)}
     </Heading>
     <div
       class={twMerge(
@@ -104,7 +108,7 @@
           class="aspect-square max-h-24"
         />
         <Paragraph class="w-full px-2 text-center text-base font-medium text-gray-950">
-          {$t(`themes.${theme}.themecard.more`)}
+          {@html $t(`themes.${theme}.themecard.more`)}
         </Paragraph>
       </div>
     </div>
@@ -120,7 +124,7 @@
         crop: 'auto',
         gravity: 'south',
         ...themeInformation.transform,
-        ...imageSizes(),
+        ...imageSizes()
       }}
     />
   </div>

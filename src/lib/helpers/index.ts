@@ -1,22 +1,23 @@
-import { RouteTypes, type RouteType, type Theme } from "$enums";
-import { PUBLIC_ENABLE_OFFLINE_MODE } from "$env/static/public";
-import { defaultLocale, locale, translations, type Locale } from "$lib/translations";
+import { RouteTypes, type RouteType, type Theme } from '$enums';
+import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
+import { defaultLocale, locale, translations, type Locale } from '$lib/translations';
 import type { PostType, Translatable } from '$lib/types';
 
-export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === "true"
+export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === 'true';
 export const maxMobileWidth = 1280;
-export const blankable = (href: string | undefined): string | undefined => href && href.includes('http') ? '_blank' : undefined;
+export const blankable = (href: string | undefined): string | undefined =>
+  href && href.includes('http') ? '_blank' : undefined;
 
 /**
  * get filename from a path
  */
 export const filename = (path: string, withExtension: boolean = true): string => {
-   if (withExtension) {
+  if (withExtension) {
     return path;
   }
 
   return <string>path.split('.').shift();
-}
+};
 
 export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   let lang = 'lang=';
@@ -34,27 +35,34 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
   }
 
   return `https://medialibrary.lausanne-tourisme.ch?registration&${lang}`;
-}
+};
 
-export const route = (type: RouteType, options: { forceLocale?: Locale | undefined, theme?: Theme, suffix?: string } = { forceLocale: undefined, theme: undefined }): string => {
-  const lang = options.forceLocale ?? locale.get() as Locale ?? defaultLocale;
+export const route = (
+  type: RouteType,
+  options: { forceLocale?: Locale | undefined; theme?: Theme; suffix?: string } = {
+    forceLocale: undefined,
+    theme: undefined
+  }
+): string => {
+  const lang = options.forceLocale ?? (locale.get() as Locale) ?? defaultLocale;
   const slug: string | undefined = translations.get()[lang][`route.${type}.slug`];
 
   if (!slug) return `/${lang}`;
 
   if (type === RouteTypes.Themes) {
     const theme = options.theme;
-    const themeSlug = theme ? translations.get()[lang][`route.${RouteTypes.Themes}.${theme}.slug`] : null;
+    const themeSlug = theme
+      ? translations.get()[lang][`route.${RouteTypes.Themes}.${theme}.slug`]
+      : null;
 
     if (!themeSlug) return `/${lang}/${slug}`;
     return `/${lang}/${slug}/${themeSlug}/`;
   }
 
-
   if (!slug) return `/${lang}`;
   if (options.suffix) return `/${lang}/${slug}/${options.suffix}`;
   return `/${lang}/${slug}`;
-}
+};
 
 /**
  * Split `data` into small chunks
@@ -86,24 +94,27 @@ export function intersect<Type>(a: Type[], b: Type[]): Type[] {
 }
 
 export function normalize(string: string): string {
-  return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
-export const filterByTag = <T extends PostType<Translatable | string>>(data: T[], tags: string | string[]) => {
-
+export const filterByTag = <T extends PostType<Translatable | string>>(
+  data: T[],
+  tags: string | string[]
+) => {
   if (typeof tags === 'string') {
-    tags = [tags] // Will convert to array anyway
+    tags = [tags]; // Will convert to array anyway
   }
 
-  return data.filter((post: T) => {
-    if (!post?.tags?.length) {
-      return false;
-    }
-    return tags.some(tag => post.tags?.map(x => x.name).includes(tag))
-  })
+  return data
+    .filter((post: T) => {
+      if (!post?.tags?.length) {
+        return false;
+      }
+      return tags.some((tag) => post.tags?.map((x) => x.name).includes(tag));
+    })
     .sort((a: T, b: T): number => {
-      if ((Number)(a.published_at) < (Number)(b.published_at)) return 1;
-      if ((Number)(a.published_at) > (Number)(b.published_at)) return -1;
+      if (Number(a.published_at) < Number(b.published_at)) return 1;
+      if (Number(a.published_at) > Number(b.published_at)) return -1;
       return 0;
     });
 };
@@ -119,10 +130,15 @@ export function getTailwindColor(tailwindClass: string) {
 }
 
 export const shuffle = <T>(array: T[]) => {
-  const newArray = array.slice()
+  const newArray = array.slice();
   for (let i = newArray.length - 1; i > 0; i--) {
     const rand = Math.floor(Math.random() * (i + 1));
     [newArray[i], newArray[rand]] = [newArray[rand], newArray[i]];
   }
-  return newArray
+  return newArray;
+};
+
+export const humanFileSize = (size: number) => {
+  const i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
+  return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
 };
