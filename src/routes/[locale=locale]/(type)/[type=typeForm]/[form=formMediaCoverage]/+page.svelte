@@ -471,7 +471,7 @@
         />
         {#if $form.interactionWithStories?.length}
           <ul class="mt-2 space-y-1">
-            {#each $form.interactionWithPosts as File[] as file, index}
+            {#each $form.interactionWithStories as File[] as file, index}
               <li class="flex items-center">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
