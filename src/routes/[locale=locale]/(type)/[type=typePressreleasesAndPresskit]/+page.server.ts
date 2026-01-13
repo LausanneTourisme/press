@@ -8,13 +8,14 @@ import { RouteTypes } from '$enums';
 import { supportedLocales, translations } from '$lib/translations';
 import type { EntryGenerator } from './$types';
 
-export const load = async ({ parent }) => {
+export const load = async ({ parent, depends }) => {
   if (dev && isOfflineMode) {
     //MOCK fetch requests
     server.listen();
   }
 
   const { locale } = await parent();
+  depends(`locale:${locale}`)
 
   const releasesRes = await getPosts<Release<string>>({ type: 'press_release', locale });
 
