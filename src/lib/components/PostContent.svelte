@@ -9,7 +9,7 @@
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import {  type Locale } from '$lib/translations';
+  import { locale, type Locale } from '$lib/translations';
   import type { PostType, Translatable } from '$types';
   import type { Hero } from '$types/releaseContents';
 
@@ -17,23 +17,22 @@
     class?: string;
     hero?: Hero;
     post: PostType<Translatable>;
-    locale: Locale;
   };
 
-  const { class: additionalClass, hero, post, locale }: Props = $props();
+  const { class: additionalClass, hero, post }: Props = $props();
 </script>
 
 <div class="content">
   {#if hero}
-    <HeroBlock {hero} class="pt-0" {locale} />
+    <HeroBlock {hero} class="pt-0" />
   {:else}
     <Container width="medium" class="py-0">
       <Heading tag="h1">
-        {@html post?.name?.[locale]}
+        {@html post?.name?.[$locale as Locale]}
       </Heading>
       <Paragraph class="leading-6 tracking-[0.45px]">
         <strong>
-          {@html post?.summary?.[locale]}
+          {@html post?.summary?.[$locale as Locale]}
         </strong>
       </Paragraph>
     </Container>
@@ -53,13 +52,13 @@
       {#if block.type === 'heading'}
         <Container width="medium">
           <HeadingBlock tag={block.tag}>
-            {@html block.value[locale]}
+            {@html block.value[$locale as Locale]}
           </HeadingBlock>
         </Container>
       {:else if block.type === 'paragraph'}
         <Container width="medium" class="py-0 md:py-0">
           <ParagraphBlock>
-            {@html block.value[locale]}
+            {@html block.value[$locale as Locale]}
           </ParagraphBlock>
         </Container>
       {:else if block.type === 'image'}
@@ -76,7 +75,7 @@
         </Container>
       {:else if block.type === 'gallery'}
         <Container width="medium" class="py-0 md:py-0">
-          <GalleryBlock images={block.value} {locale} />
+          <GalleryBlock images={block.value} />
         </Container>
       {:else if block.type === 'youtube'}
         <Container width="medium" class="">

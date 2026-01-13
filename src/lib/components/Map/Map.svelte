@@ -6,7 +6,7 @@
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { getTailwindColor, isOfflineMode } from '$lib/helpers';
-  import { defaultLocale, t, type Locale } from '$lib/translations';
+  import { defaultLocale, locale, t, type Locale } from '$lib/translations';
   import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
   import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
   import maplibregl from 'maplibre-gl';
@@ -20,7 +20,6 @@
     themeColor?: string;
     listBorderColor?: string;
     favorites: Favorite<string>[];
-    locale: Locale;
     onclose?: () => void;
   };
 
@@ -29,7 +28,6 @@
     themeColor,
     listBorderColor,
     favorites,
-    locale,
     onclose
   }: Props = $props();
 
@@ -225,7 +223,7 @@
                 withIcon={true}
                 href={getLausannerUrl({
                   lausanner: aside.lausanner,
-                  locale: locale
+                  locale: ($locale as Locale) ?? defaultLocale
                 })}
                 class="text-left lg:text-center"
               >
@@ -253,6 +251,7 @@
     style={PUBLIC_MAPTILER_URL}
     zoom={initialState.zoom}
     center={initialState}
+    locale={$locale}
     pitchWithRotate={false}
     cooperativeGestures={true}
     bind:map

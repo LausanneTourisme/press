@@ -3,7 +3,7 @@
   import Instagram from '$lib/Icons/Instagram.svelte';
   import LinkedIn from '$lib/Icons/LinkedIn.svelte';
   import Youtube from '$lib/Icons/Youtube.svelte';
-  import { t, type Locale } from '$lib/translations';
+  import { locale, t } from '$lib/translations';
   import { ChevronRight } from 'lucide-svelte';
   import { twMerge } from 'tailwind-merge';
   import Heading from './Heading.svelte';
@@ -13,10 +13,9 @@
 
   type Props = {
     class?: string;
-    locale: Locale
   };
 
-  const { class: additionalClass, locale}: Props = $props();
+  const { class: additionalClass }: Props = $props();
   let openShelfIndex: number | null = $state(null); // Stores which shelf is open
 
   const toggleShelf: (index: number) => void = (index) => {
@@ -134,7 +133,7 @@
         {@html $t('common.faq.access.paragraph1')}
         &nbsp;
         <a
-          href="https://www.lausanne-tourisme.ch/{locale}/{$t(
+          href="https://www.lausanne-tourisme.ch/{$locale}/{$t(
             'common.faq.access.paragraph1.slug'
           )}/"
           class="inline-flex items-center border-b border-b-blue-500 text-blue-500"

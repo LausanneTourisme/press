@@ -1,6 +1,5 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
-  import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Button from '$lib/components/Button.svelte';
@@ -16,14 +15,13 @@
   import Trophies, { type Trophy } from '$lib/components/Trophies.svelte';
   import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';
   import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
-  import { t, type Locale } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
 
-  const locale = $derived(page.params.locale as Locale);
   let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
-  let videoUrl = $derived.by(() => `/pages/home/welcome_card_${locale}.mp4`);
+  let videoUrl = $state(`/pages/home/welcome_card_${$locale}.mp4`);
 
   const trophies: Trophy[] = [
     {
@@ -97,6 +95,10 @@
         .matchMedia('(prefers-color-scheme: dark)')
         .removeEventListener('change', updateDarkMode);
     };
+  });
+
+  $effect(() => {
+    videoUrl = `/pages/home/welcome_card_${$locale}.mp4`;
   });
 </script>
 
@@ -205,7 +207,7 @@
         {@html $t('page.video&images.paragraph')}
       </Paragraph>
       <div>
-        <Button href={getMediaLibraryRegisterLink(locale)} tag="a">
+        <Button href={getMediaLibraryRegisterLink($locale as Locale)} tag="a">
           {@html $t('page.goToMediaLibrary')}
         </Button>
       </div>
@@ -392,7 +394,6 @@
     paragraph={$t('themes.description')}
     expanded={displayAllThemes}
     onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
-    {locale}
   />
 </Container>
 <!--
@@ -544,5 +545,5 @@
   <Heading class="my-8 text-center">
     {@html $t('common.faq.title')}
   </Heading>
-  <Faq {locale}/>
+  <Faq />
 </Container>

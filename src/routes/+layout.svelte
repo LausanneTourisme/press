@@ -7,7 +7,7 @@
   import Image from '$lib/components/Media/Image.svelte';
   import Nav from '$lib/components/Nav/Nav.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
-  import { defaultLocale, t, type Locale } from '$lib/translations';
+  import { locale, t } from '$lib/translations';
   import { Send } from 'lucide-svelte';
   import { type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
@@ -18,8 +18,7 @@
   import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
-  const locale = $derived((page.params.locale ?? defaultLocale) as Locale);
-  let translations = $derived.by(() =>(page.data as PageData).translations[locale]);
+  let translations = $derived((page.data as PageData).translations[locale.get()]);
   let seo = $derived.by(() => {
     const pageData = page.data as PageData;
     return {
@@ -144,7 +143,7 @@
 </svelte:head>
 
 <div class="app flex min-h-screen flex-col">
-  <Nav {locale}/>
+  <Nav />
 
   <main class="flex-1">
     <!-- Google Tag Manager (noscript) -->
@@ -309,7 +308,7 @@
                     {@html $t('footer.infos.corporate.about-us.text')}
                   </Link>
                 </li>
-                <li class={twMerge('list-none', locale !== 'fr' ? 'hidden' : '')}>
+                <li class={twMerge('list-none', $locale !== 'fr' ? 'hidden' : '')}>
                   <Link
                     class="text-left font-normal text-white"
                     withFlex={false}

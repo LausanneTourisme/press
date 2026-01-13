@@ -3,7 +3,7 @@
   import { RouteTypes } from '$enums';
   import { maxMobileWidth, route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
-  import { t, type Locale } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import { ChevronDown, Menu, X } from 'lucide-svelte';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
@@ -17,10 +17,9 @@
   type Props = {
     class?: string;
     maxWidth?: number; //max width to trigger the auto close of the menu on window size change
-    locale: Locale;
   };
 
-  const { class: additionalClass, maxWidth = maxMobileWidth, locale }: Props = $props();
+  const { class: additionalClass, maxWidth = maxMobileWidth }: Props = $props();
   const pageSeo: SeoHeader = $derived(page.data.seo);
   const style: string = $derived(
     twMerge('flex h-full items-center justify-between', additionalClass)
@@ -64,17 +63,17 @@
 
 <nav class={style} aria-labelledby="mobile-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={route(RouteTypes.Home, { forceLocale: $locale as Locale })}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
   >
-    <Logo {locale} />
+    <Logo />
   </a>
   <div class="flex h-full items-center px-6">
     <!-- locales selector -->
     <div class="dropdown dropdown-hover group">
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
         <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
-          <span>{locale.toUpperCase()}</span>
+          <span>{$locale.toUpperCase()}</span>
           {#if pageSeo.alternate.length > 1}
             <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
           {/if}
@@ -89,7 +88,7 @@
               {#each pageSeo.alternate as alternate}
                 <li>
                   <Link
-                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === locale ? 'hidden' : ''}`}
+                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
                     href={alternate.href}
                     preload="tap"
                     withIcon={false}
@@ -115,17 +114,17 @@
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
       <a
-        href={route(RouteTypes.Home, { forceLocale: locale })}
+        href={route(RouteTypes.Home, { forceLocale: $locale as Locale })}
         class="flex max-w-[230px] cursor-pointer"
       >
-        <Logo {locale} />
+        <Logo />
       </a>
       <div class="flex">
         <!-- locales selector -->
         <div class="dropdown dropdown-hover group">
           <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
             <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
-              <span>{locale.toUpperCase()}</span>
+              <span>{$locale.toUpperCase()}</span>
               {#if pageSeo.alternate.length > 1}
                 <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
               {/if}
@@ -140,7 +139,7 @@
                   {#each pageSeo.alternate as alternate}
                     <li>
                       <Link
-                        class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === locale ? 'hidden' : ''}`}
+                        class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
                         href={alternate.href}
                         preload="tap"
                         withIcon={false}
@@ -163,7 +162,7 @@
     <!-- BODY -->
     <div class="flex-grow overflow-auto p-4">
       <div class="flex flex-col gap-2">
-        {#each menuItems(locale) as item, index}
+        {#each menuItems($locale as Locale) as item, index}
           {#if item.link}
             <Link
               class="flex justify-between rounded-md p-4 text-left font-semibold hover:bg-slate-100 dark:hover:bg-slate-600"

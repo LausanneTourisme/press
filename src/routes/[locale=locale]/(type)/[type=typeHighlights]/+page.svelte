@@ -10,7 +10,7 @@
   import { Slide, Swiper } from '$lib/components/swiper';
   import { chunkify, maxMobileWidth } from '$lib/helpers';
   import { extractStartEndDate, isSameDays } from '$lib/helpers/date';
-  import { t, type Locale } from '$lib/translations';
+  import { locale, t, type Locale } from '$lib/translations';
   import type { Poi } from '$types';
   import { Calendar } from 'lucide-svelte';
   import { DateTime } from 'luxon';
@@ -19,7 +19,6 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
-  const locale = $derived(page.params.locale as Locale);
   const events = $derived((page.data as PageData).events);
   const news = $derived((page.data as PageData).news);
   const groupPois = $derived.by(() => {
@@ -98,7 +97,7 @@
             <p>
               <small>
                 {@html $t('common.published-at')}&nbsp;{DateTime.fromSeconds(Number(n.published_at))
-                  .setLocale(locale)
+                  .setLocale($locale)
                   .toFormat('dd/MM/yyyy')}
               </small>
             </p>
@@ -217,7 +216,7 @@
       })}
       {@const sameDate = isSameDays(event, { start: DateTime.now().toSQLDate(), end: undefined })}
       {@const media = event.medias?.find((x) => x.is_cover)}
-      {@const slug = event.seo?.hreflang?.[locale as Locale]}
+      {@const slug = event.seo?.hreflang?.[$locale as Locale]}
       {#if slug}
         <Slide>
           <Clickable
@@ -239,9 +238,9 @@
                 <Heading
                   tag="h3"
                   class="lt-agenda-title my-2 mb-2 line-clamp-2 h-16 max-h-16 text-2xl leading-snug font-semibold tracking-tight text-clip"
-                  title={event.name?.[locale as Locale]}
+                  title={event.name?.[$locale as Locale]}
                 >
-                  {event.name?.[locale as Locale]}
+                  {event.name?.[$locale as Locale]}
                 </Heading>
                 <div class="lt-agenda-highlight-dates flex items-center">
                   <div class="mr-2 mb-1">

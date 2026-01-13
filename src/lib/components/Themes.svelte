@@ -4,7 +4,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { chunkify } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
+  import { t } from '$lib/translations';
   import Button from './Button.svelte';
   import ThemeCard from './ThemeCard.svelte';
   type Props = {
@@ -12,7 +12,6 @@
     expanded?: boolean;
     title: string;
     paragraph: string;
-    locale: Locale;
     onShowMore?: () => void;
   };
 
@@ -20,7 +19,6 @@
     class: additionalClass,
     title,
     paragraph,
-    locale,
     onShowMore = () => {},
     expanded = false
   }: Props = $props();
@@ -55,7 +53,7 @@
     {#if chunckIndex === 0}
       <section class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8">
         {#each chunk as theme, index}
-          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {locale} />
+          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} />
         {/each}
       </section>
     {/if}
@@ -67,7 +65,7 @@
           : ''}"
       >
         {#each chunk as theme, index}
-          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {length} {locale} />
+          <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {length} />
         {/each}
       </section>
     {/if}

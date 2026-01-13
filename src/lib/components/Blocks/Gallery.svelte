@@ -1,6 +1,6 @@
 <script lang="ts">
   import { maxMobileWidth } from '$lib/helpers';
-  import { type Locale } from '$lib/translations';
+  import { locale, type Locale } from '$lib/translations';
   import type { Media, Translatable } from '$types';
   import { onMount } from 'svelte';
   import Figure from '../Figure.svelte';
@@ -8,10 +8,9 @@
   type HeadingProps = {
     class?: string;
     images: Media<Translatable>[];
-    locale: Locale;
   };
 
-  const { class: additionalClass = '', images, locale }: HeadingProps = $props();
+  const { class: additionalClass = '', images }: HeadingProps = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
@@ -44,7 +43,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${image?.public_name?.[locale]} - ${image?.copyright}`}
+        alt={`${image?.public_name?.[$locale as Locale]} - ${image?.copyright}`}
       />
     {/each}
   </section>
@@ -60,7 +59,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[0]?.public_name?.[locale]} - ${images[0]?.copyright}`}
+        alt={`${images[0]?.public_name?.[$locale as Locale]} - ${images[0]?.copyright}`}
       />
     </div>
     <div>
@@ -73,7 +72,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[1]?.public_name?.[locale]} - ${images[1]?.copyright}`}
+        alt={`${images[1]?.public_name?.[$locale as Locale]} - ${images[1]?.copyright}`}
       />
     </div>
     <div class="col-start-2 row-start-2">
@@ -86,7 +85,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[2]?.public_name?.[locale]} - ${images[2]?.copyright}`}
+        alt={`${images[2]?.public_name?.[$locale as Locale]} - ${images[2]?.copyright}`}
       />
     </div>
   </section>
