@@ -39,7 +39,7 @@
 
           <section class="mb-6" transition:fade={{ delay: 150 }}>
             <Swiper showPagination={false}>
-              {#each releases as release}
+              {#each releases as release (`${release.id} - ${$locale}`)}
                 {#if release?.seo?.slug}
                   <Slide>
                     {@const routeType =
