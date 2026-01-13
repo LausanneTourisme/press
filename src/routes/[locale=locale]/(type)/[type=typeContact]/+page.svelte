@@ -6,7 +6,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import { locale, t, type Locale } from '$lib/translations';
+  import {  t, type Locale } from '$lib/translations';
   import { ArrowLeft, Camera, Mail, Newspaper, Phone } from 'lucide-svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -16,6 +16,8 @@
   import { Forms, RouteTypes } from '$enums';
 
   const pageForm = $derived(page.form as ActionData);
+  const locale = $derived(page.params.locale as Locale);
+
   let displayForm: boolean = $state(false);
   let formSended: boolean = $state(false);
   let displayPhone: boolean = $state(false);
@@ -165,7 +167,7 @@
         <div class="flex w-full flex-col items-center justify-center space-y-4">
           <a
             href={route(RouteTypes.Form, {
-              forceLocale: $locale as Locale,
+              forceLocale: locale,
               suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
             })}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
@@ -175,7 +177,7 @@
           </a>
           <a
             href={route(RouteTypes.Form, {
-              forceLocale: $locale as Locale,
+              forceLocale: locale,
               suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
             })}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
@@ -198,7 +200,7 @@
         {@html $t('contact.form.mail-section.title')}
       </Heading>
       <Form
-        action="/{$locale}/contact"
+        action="/{locale}/contact"
         {onSuccess}
         {onFailure}
         validation={validateFields}
