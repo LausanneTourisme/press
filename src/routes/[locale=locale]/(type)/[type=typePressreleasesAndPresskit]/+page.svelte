@@ -13,7 +13,12 @@
   import { fade } from 'svelte/transition';
   import type { PageData } from './$types';
 
-  const releasesByDates = $derived((page.data as PageData).payload.releasesByDates);
+  // Include locale in derived to force recomputation on locale change
+  const releasesByDates = $derived.by(() => {
+    // Access locale to create dependency
+    const _ = $locale;
+    return (page.data as PageData).payload.releasesByDates;
+  });
 
   const truncate = (string: string, limit: number) => {
     return string.length > limit ? `${string.substring(0, limit)}...` : string;
@@ -31,14 +36,15 @@
     {#if releasesByDates.size === 0}
       {@html $t('press-releases-and-press-kits.no-releases')}
     {:else}
-        {#each releasesByDates as [year, releases] (`${year}${$locale}`)}
+      {#key $locale}
+        {#each releasesByDates as [year, releases]}
           <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
             {year}
           </Heading>
 
           <section class="mb-6" transition:fade={{ delay: 150 }}>
             <Swiper showPagination={false}>
-              {#each releases as release}
+              {#each releases as release (`${release.id} ${$locale}`)}
                 {#if release?.seo?.slug}
                   <Slide>
                     {@const routeType =
@@ -80,6 +86,7 @@
             </Swiper>
           </section>
         {/each}
+      {/key}
     {/if}
   </Container>
 </Container>
