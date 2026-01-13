@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, type Snippet } from 'svelte';
+  import { onDestroy, onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   // core version + navigation, pagination modules :
   import Swiper from 'swiper';
@@ -34,7 +34,7 @@
   const style = $derived(twMerge('relative', additionalClass));
 
   let swiper: Swiper | undefined;
-  onMount(() => {
+  $effect(() => {
     swiper = new Swiper(swiperEl!, {
       breakpoints: {
         720: {
@@ -49,6 +49,9 @@
       freeMode: true,
       centeredSlides,
       mousewheel: false,
+      observer: true,
+      observeParents: true,
+      observeSlideChildren: true,
       navigation: {
         disabledClass: '!hidden',
         nextEl: swiperNextEl,
@@ -74,6 +77,10 @@
         }
       }
     });
+  });
+
+  onDestroy(() => {
+    swiper?.destroy();
   });
 </script>
 
