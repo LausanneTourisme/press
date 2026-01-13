@@ -4,7 +4,7 @@
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Image from './Image.svelte';
-  import { locale, type Locale } from '$lib/translations';
+  import {  type Locale } from '$lib/translations';
   import Container from '../Container.svelte';
   import Heading from '../Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
@@ -13,9 +13,10 @@
   type Props = {
     class?: string;
     hero: Hero;
+    locale: Locale;
   };
 
-  const { class: additionalClass = '', hero }: Props = $props();
+  const { class: additionalClass = '', hero, locale}: Props = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
@@ -53,7 +54,7 @@
   fixed={false}
   focus="auto"
   cloudinaryId={hero.image.cloudinary_id ?? 'default'}
-  alt="{hero.image.public_name?.[$locale as Locale]} - {hero.image.copyright}"
+  alt="{hero.image.public_name?.[locale]} - {hero.image.copyright}"
 >
   <Container
     width="small"
@@ -65,15 +66,15 @@
         ? 'text-white shadow-gray-950 drop-shadow-lg'
         : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}
     >
-      {hero.value[$locale as Locale]}
+      {hero.value[locale]}
     </Heading>
-    {#if hero.lead?.[$locale as Locale]}
+    {#if hero.lead?.[locale]}
       <Paragraph
         class={hero.color === 'white'
           ? 'text-xl text-white drop-shadow-lg drop-shadow-black'
           : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}
       >
-        {hero.lead[$locale as Locale]}
+        {hero.lead[locale]}
       </Paragraph>
     {/if}
   </Container>

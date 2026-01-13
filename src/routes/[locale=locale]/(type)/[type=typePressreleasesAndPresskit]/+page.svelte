@@ -8,11 +8,12 @@
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { Slide, Swiper } from '$lib/components/swiper';
   import { route } from '$lib/helpers';
-  import { locale, t, type Locale } from '$lib/translations';
+  import { t, type Locale } from '$lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import type { PageData } from './$types';
 
+  const locale = $derived(page.params.locale as Locale);
   const releasesByDates = $derived((page.data as PageData).payload.releasesByDates);
 
   const truncate = (string: string, limit: number) => {
@@ -31,7 +32,7 @@
     {#if releasesByDates.size === 0}
       {@html $t('press-releases-and-press-kits.no-releases')}
     {:else}
-      {#key $locale}
+      {#key locale}
         {#each releasesByDates as [year, releases]}
           <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
             {year}
@@ -39,7 +40,7 @@
 
           <section class="mb-6" transition:fade={{ delay: 150 }}>
             <Swiper showPagination={false}>
-              {#each releases as release (`${release.id} - ${$locale}`)}
+              {#each releases as release (`${release.id} - ${locale}`)}
                 {#if release?.seo?.slug}
                   <Slide>
                     {@const routeType =
@@ -47,7 +48,7 @@
                     <div class="block px-1 md:flex">
                       <Clickable
                         overflow={false}
-                        href={`${route(routeType, { forceLocale: $locale as Locale })}/${release.seo?.slug}`}
+                        href={`${route(routeType, { forceLocale: locale })}/${release.seo?.slug}`}
                         title={release.name}
                       >
                         <Card
@@ -62,7 +63,7 @@
                             <small>
                               {@html $t('common.published-at')}
                               &nbsp;{DateTime.fromSeconds(parseInt(release.published_at ?? ''))
-                                .setLocale($locale)
+                                .setLocale(locale)
                                 .toFormat('dd/MM/yyyy')}
                             </small>
                           </p>

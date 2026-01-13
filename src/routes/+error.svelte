@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { defaultLocale, locale, t } from '$lib/translations';
+  import { defaultLocale, locale, t, type Locale } from '$lib/translations';
   import { onMount } from 'svelte';
   import type { PageData } from './$types';
   import Heading from '$lib/components/Heading.svelte';
@@ -11,7 +11,9 @@
   import { getRandomTheme, ThemeDetails } from '$lib/helpers/themes';
   import { ThemeKeys } from '$enums';
 
-  const url = $locale ? `/${$locale}` : `/${defaultLocale}`;
+  const currentLocale = $derived(page.params.locale ?? $locale);
+
+  const url = $derived.by(() => currentLocale ? `/${currentLocale}` : `/${defaultLocale}`);
   const status = $derived(page.status);
 
   const error = $derived.by(() => {
@@ -47,7 +49,7 @@
         {error.description}
       </Paragraph>
 
-      <Button href="/{$locale}/" tag="a">
+      <Button href="/{currentLocale}/" tag="a">
         {error.buttonText}
       </Button>
     </div>

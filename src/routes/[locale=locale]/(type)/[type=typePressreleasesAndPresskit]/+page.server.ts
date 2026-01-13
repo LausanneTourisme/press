@@ -15,7 +15,6 @@ export const load = async ({ parent, depends }) => {
   }
 
   const { locale } = await parent();
-  depends(`locale:${locale}`)
 
   const releasesRes = await getPosts<Release<string>>({ type: 'press_release', locale });
 

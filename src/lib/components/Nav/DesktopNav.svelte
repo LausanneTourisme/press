@@ -3,7 +3,7 @@
   import { RouteTypes } from '$enums';
   import { route } from '$lib/helpers';
   import { menuItems } from '$lib/helpers/menu';
-  import { locale, t, type Locale } from '$lib/translations';
+  import { t, type Locale } from '$lib/translations';
   import { ChevronDown } from 'lucide-svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
@@ -12,23 +12,25 @@
 
   type Props = {
     class?: string;
+    locale: Locale;
   };
 
-  const { class: additionalClass }: Props = $props();
+  const { class: additionalClass, locale }: Props = $props();
 
   const style = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
+
 </script>
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: $locale as Locale })}
+    href={route(RouteTypes.Home, { forceLocale: locale })}
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
-    <Logo />
+    <Logo {locale} />
   </a>
   <div class="ml-6 flex h-full grow items-center justify-start">
     <!-- Desktop menu -->
-    {#each menuItems($locale as Locale) as item}
+    {#each menuItems(locale) as item}
       {#if !item.link}
         <div class="dropdown dropdown-hover group rounded-none">
           <div tabindex="0" role="button" class="menu-item m-3">
@@ -79,7 +81,7 @@
   <!-- End desktop menu -->
   <div class="flex h-full items-center justify-between px-6">
     <Button
-      href={route(RouteTypes.Contact, { forceLocale: $locale as Locale })}
+      href={route(RouteTypes.Contact, { forceLocale: locale })}
       class="invertable block px-3 dark:text-white"
       tag="a"
       preload="off"
@@ -91,7 +93,7 @@
     <div class="dropdown dropdown-hover group">
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
         <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
-          <span>{$locale.toUpperCase()}</span>
+          <span>{locale.toUpperCase()}</span>
           {#if page.data.seo.alternate.length > 1}
             <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
           {/if}
@@ -106,7 +108,7 @@
               {#each page.data.seo.alternate as alternate}
                 <li>
                   <Link
-                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 dark:hover:bg-slate-600 ${alternate.hreflang === $locale ? 'hidden' : ''}`}
+                    class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 dark:hover:bg-slate-600 ${alternate.hreflang === locale ? 'hidden' : ''}`}
                     href={alternate.href}
                     preload="tap"
                     withIcon={false}
