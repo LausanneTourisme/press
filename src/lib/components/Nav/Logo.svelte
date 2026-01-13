@@ -1,13 +1,14 @@
 <script lang="ts">
-  import { locale } from '$lib/translations';
+  import {  type Locale } from '$lib/translations';
   import { twMerge } from 'tailwind-merge';
   import Image from '$lib/components/Media/Image.svelte';
 
   type Props = {
     class?: string;
+    locale: string;
   };
 
-  const { class: additionalClass }: Props = $props();
+  const { class: additionalClass, locale}: Props = $props();
 
   const style = $derived(
     twMerge(
@@ -15,10 +16,10 @@
       additionalClass
     )
   );
-  const src = $derived(`/logo/logo_${$locale === 'fr' ? 'fr' : 'en'}.svg`);
+  const src = $derived.by(() =>`/logo/logo_${locale === 'fr' ? 'fr' : 'en'}.svg`);
 </script>
 
-{#key $locale}
+{#key locale}
   <Image
     class={style}
     alt="Lausanne Capitale Olympique"

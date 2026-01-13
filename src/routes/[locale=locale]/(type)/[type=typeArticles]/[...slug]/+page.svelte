@@ -13,13 +13,14 @@
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { ucfirst } from '$lib/helpers';
   import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
-  import { locale, t, type Locale } from '$lib/translations';
+  import { t, type Locale } from '$lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import PostContent from '$lib/components/PostContent.svelte';
 
+  const locale = $derived(page.params.locale as Locale);
   const article = $derived((page.data as PageData).article);
   const type = $derived((page.data as PageData).type);
   const hero = $derived(
@@ -33,14 +34,14 @@
       <p>
         {ucfirst($t(`common.route-titles.${type}`))}
         &mdash; {DateTime.fromSeconds(parseInt(article.published_at ?? '0'))
-          .setLocale($locale)
+          .setLocale(locale)
           .toFormat('dd MMMM, yyyy')}
       </p>
       {#if article.tags?.length}
         <p class="pt-2">
           {#each article.tags as tag}
             {@const theme = getThemeByTagName(tag.name)}
-            {@const name = tag.public_name?.[$locale as Locale]}
+            {@const name = tag.public_name?.[locale]}
             {#if theme && name}
               <span
                 class={twMerge(
@@ -54,6 +55,6 @@
       {/if}
       <hr class="mt-4 border border-gray-300" />
     </Container>
-    <PostContent {hero} post={article} />
+    <PostContent {hero} post={article} {locale} />
   </article>
 </Container>

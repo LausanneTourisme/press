@@ -13,7 +13,7 @@
   import { Slide, Swiper } from '$lib/components/swiper';
   import { filename, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
-  import { locale, t, type Locale } from '$lib/translations';
+  import {  t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
@@ -21,6 +21,7 @@
   import type { PageData } from './$types';
   import { generateCloudinaryUrl } from '$lib/helpers/image';
 
+  const locale = $derived(page.params.locale as Locale);
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
   const articles = $derived((page.data as PageData).payload.articles);
@@ -101,10 +102,10 @@
             {@const media = article.medias?.find(() => true)}
             {@const publishedAt = DateTime.fromSeconds(
               parseInt(article?.published_at ?? '')
-            ).setLocale($locale)}
+            ).setLocale(locale)}
             <Slide>
               <Clickable
-                href={`${route(RouteTypes.Articles, { forceLocale: $locale as Locale })}/${article.seo.slug}`}
+                href={`${route(RouteTypes.Articles, { forceLocale: locale as Locale })}/${article.seo.slug}`}
                 overflow={true}
                 class="card group bg-base-100 relative max-w-[290px] min-w-[220px] rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
               >
@@ -165,7 +166,7 @@
       <Paragraph>
         {@html $t('themes.lausanners.paragraph2', { value: $t(`themes.${theme}.title`) })}
       </Paragraph>
-      <Button href="https://www.lausanne-tourisme.ch/{$locale}/the-lausanner/" tag="a">
+      <Button href="https://www.lausanne-tourisme.ch/{locale}/the-lausanner/" tag="a">
         {@html $t('themes.lausanners.button')}
       </Button>
     </div>
@@ -220,7 +221,7 @@
       {@const selectedTheme = ThemeDetails[ThemeKeys[theme]]}
       <Slide class="xs:w-min! w-max">
         <Clickable
-          href={route(RouteTypes.Themes, { theme, forceLocale: $locale as Locale })}
+          href={route(RouteTypes.Themes, { theme, forceLocale: locale as Locale })}
           overflow={true}
           class="card group xs:w-80 relative h-[360px] w-full min-w-[220px] rounded-none shadow-none md:ml-0 md:h-[460px] md:w-[375px]"
         >

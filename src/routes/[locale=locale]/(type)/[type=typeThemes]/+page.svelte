@@ -2,6 +2,7 @@
   import { page } from '$app/state';
   import Container from '$lib/components/Container.svelte';
   import Themes from '$lib/components/Themes.svelte';
+  import {  type Locale } from '$lib/translations';
   import type { PageData } from './$types';
 
   const title = $derived(
@@ -10,8 +11,9 @@
   const description = $derived(
     (page.data as PageData).translations[(page.data as PageData).i18n.locale]['themes.description']
   );
+  const locale = $derived(page.params.locale as Locale);
 </script>
 
 <Container fullscreen={true} class="mb-12">
-  <Themes expanded={true} {title} paragraph={description} />
+  <Themes expanded={true} {title} paragraph={description} {locale} />
 </Container>
