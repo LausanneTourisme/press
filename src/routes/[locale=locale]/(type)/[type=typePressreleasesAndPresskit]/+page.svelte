@@ -31,13 +31,12 @@
     {#if releasesByDates.size === 0}
       {@html $t('press-releases-and-press-kits.no-releases')}
     {:else}
-      {#each releasesByDates as [year, releases]}
-        <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
-          {year}
-        </Heading>
+        {#each releasesByDates as [year, releases] (`${year}${$locale}`)}
+          <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
+            {year}
+          </Heading>
 
-        <section class="mb-6" transition:fade={{ delay: 150 }}>
-          {#key $locale}
+          <section class="mb-6" transition:fade={{ delay: 150 }}>
             <Swiper showPagination={false}>
               {#each releases as release}
                 {#if release?.seo?.slug}
@@ -79,9 +78,8 @@
                 {/if}
               {/each}
             </Swiper>
-          {/key}
-        </section>
-      {/each}
+          </section>
+        {/each}
     {/if}
   </Container>
 </Container>
