@@ -37,47 +37,49 @@
         </Heading>
 
         <section class="mb-6" transition:fade={{ delay: 150 }}>
-          <Swiper showPagination={false}>
-            {#each releases as release}
-              {#if release?.seo?.slug}
-                <Slide>
-                  {@const routeType =
-                    release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease}
-                  <div class="block px-1 md:flex">
-                    <Clickable
-                      overflow={false}
-                      href={`${route(routeType, { forceLocale: $locale as Locale })}/${release.seo?.slug}`}
-                      title={release.name}
-                    >
-                      <Card
-                        src={release.medias?.at(0)?.cloudinary_id ?? 'default'}
-                        useCloudinaryPreset={false}
-                        transform={{ height: 600 }}
-                        alt={`${release.medias?.at(0)?.public_name} - ${release.medias?.at(0)?.copyright}`}
-                        background="bg-shakespeare-700"
-                        class="carousel-item w-auto"
+          {#key $locale}
+            <Swiper showPagination={false}>
+              {#each releases as release}
+                {#if release?.seo?.slug}
+                  <Slide>
+                    {@const routeType =
+                      release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease}
+                    <div class="block px-1 md:flex">
+                      <Clickable
+                        overflow={false}
+                        href={`${route(routeType, { forceLocale: $locale as Locale })}/${release.seo?.slug}`}
+                        title={release.name}
                       >
-                        <p>
-                          <small>
-                            {@html $t('common.published-at')}
-                            &nbsp;{DateTime.fromSeconds(parseInt(release.published_at ?? ''))
-                              .setLocale($locale)
-                              .toFormat('dd/MM/yyyy')}
-                          </small>
-                        </p>
-                        <Heading tag="h3" class="text-white">
-                          {release.name}
-                        </Heading>
-                        <Paragraph class="text-white" title={release.lead}>
-                          {truncate(release.lead ?? '', 100)}
-                        </Paragraph>
-                      </Card>
-                    </Clickable>
-                  </div>
-                </Slide>
-              {/if}
-            {/each}
-          </Swiper>
+                        <Card
+                          src={release.medias?.at(0)?.cloudinary_id ?? 'default'}
+                          useCloudinaryPreset={false}
+                          transform={{ height: 600 }}
+                          alt={`${release.medias?.at(0)?.public_name} - ${release.medias?.at(0)?.copyright}`}
+                          background="bg-shakespeare-700"
+                          class="carousel-item w-auto"
+                        >
+                          <p>
+                            <small>
+                              {@html $t('common.published-at')}
+                              &nbsp;{DateTime.fromSeconds(parseInt(release.published_at ?? ''))
+                                .setLocale($locale)
+                                .toFormat('dd/MM/yyyy')}
+                            </small>
+                          </p>
+                          <Heading tag="h3" class="text-white">
+                            {release.name}
+                          </Heading>
+                          <Paragraph class="text-white" title={release.lead}>
+                            {truncate(release.lead ?? '', 100)}
+                          </Paragraph>
+                        </Card>
+                      </Clickable>
+                    </div>
+                  </Slide>
+                {/if}
+              {/each}
+            </Swiper>
+          {/key}
         </section>
       {/each}
     {/if}
