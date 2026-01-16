@@ -19,7 +19,7 @@
 
   let { children } = $props<{ children: Snippet }>();
   const locale = $derived((page.params.locale ?? defaultLocale) as Locale);
-  let translations = $derived.by(() =>(page.data as PageData).translations[locale]);
+  let translations = $derived.by(() => (page.data as PageData).translations[locale]);
   let seo = $derived.by(() => {
     const pageData = page.data as PageData;
     return {
@@ -144,7 +144,7 @@
 </svelte:head>
 
 <div class="app flex min-h-screen flex-col">
-  <Nav {locale}/>
+  <Nav {locale} />
 
   <main class="flex-1">
     <!-- Google Tag Manager (noscript) -->

@@ -161,8 +161,8 @@
   // on locale change, close aside
   $effect(() => {
     locale;
-    closeAside()
-  })
+    closeAside();
+  });
 </script>
 
 <div class="relative flex h-[550px] flex-col-reverse lg:flex-row 2xl:h-[768px]">

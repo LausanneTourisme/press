@@ -9,7 +9,7 @@
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import {  type Locale } from '$lib/translations';
+  import { type Locale } from '$lib/translations';
   import type { PostType, Translatable } from '$types';
   import type { Hero } from '$types/releaseContents';
 

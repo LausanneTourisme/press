@@ -302,8 +302,7 @@
             />
 
             {#if $errors.printMediaStatistics?.printMediaStatistics !== undefined}
-              {@const printErrors =
-                $errors.printMediaStatistics?.printMediaStatistics}
+              {@const printErrors = $errors.printMediaStatistics?.printMediaStatistics}
               <p id="media-types-error" class="text-error error">
                 {#each printErrors as error}
                   {@html $t(error)}<br />

@@ -2,7 +2,7 @@
   import { page } from '$app/state';
   import Container from '$lib/components/Container.svelte';
   import Themes from '$lib/components/Themes.svelte';
-  import {  type Locale } from '$lib/translations';
+  import { type Locale } from '$lib/translations';
   import type { PageData } from './$types';
 
   const title = $derived(

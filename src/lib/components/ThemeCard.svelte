@@ -3,7 +3,7 @@
   import Figure from '$lib/components/Figure.svelte';
   import { filename, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
-  import {  t, type Locale } from '$lib/translations';
+  import { t, type Locale } from '$lib/translations';
   import { blur } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import Clickable from './Clickable.svelte';
