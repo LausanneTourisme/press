@@ -194,6 +194,7 @@
 <Container width="padded" class="md:pt-0">
   {#key themeInformation}
     <Map
+      {locale}
       {favorites}
       themeColor={themeInformation.color}
       listBorderColor={themeInformation.borderColor}
