@@ -33,7 +33,29 @@
     onclose
   }: Props = $props();
 
-  const markers: MarkerType<string>[] = $state([]);
+  const markers: MarkerType<string>[] = $derived.by(() => {
+    let markers: MarkerType<string>[] = [];
+    favorites.forEach((favorite: Favorite<string>) => {
+      const { pois, lausanner } = favorite;
+
+      pois?.forEach((poi: Poi<string>) => {
+        poi.geolocations?.forEach((geolocation: Geolocation) => {
+          markers.push({
+            favorite,
+            poi,
+            lausanner,
+            coordinates: {
+              lat: Number(geolocation.latitude),
+              lng: Number(geolocation.longitude)
+            }
+          });
+        });
+      });
+    });
+
+    return markers;
+  });
+
   let markerIndex: string | undefined = $state();
   let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
@@ -125,23 +147,6 @@
   };
 
   onMount(() => {
-    favorites.forEach((favorite: Favorite<string>) => {
-      const { pois, lausanner } = favorite;
-
-      pois?.forEach((poi: Poi<string>) => {
-        poi.geolocations?.forEach((geolocation: Geolocation) => {
-          markers.push({
-            favorite,
-            poi,
-            lausanner,
-            coordinates: {
-              lat: Number(geolocation.latitude),
-              lng: Number(geolocation.longitude)
-            }
-          });
-        });
-      });
-    });
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
     window.addEventListener('keyup', (e) => {
       if (e.key === 'Escape' && aside.show) {
@@ -152,6 +157,12 @@
       map?.remove();
     };
   });
+
+  // on locale change, close aside
+  $effect(() => {
+    locale;
+    closeAside()
+  })
 </script>
 
 <div class="relative flex h-[550px] flex-col-reverse lg:flex-row 2xl:h-[768px]">

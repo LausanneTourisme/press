@@ -461,5 +461,5 @@
   <Heading class="my-8 text-center">
     {@html $t('common.faq.title')}
   </Heading>
-  <Faq />
+  <Faq {locale} />
 </Container>
