@@ -14,6 +14,7 @@ const config = {
     version: {
       name: `Presskit v${pkg.version}`
     },
+    trailingSlash: 'never',
     adapter: process.env.ENVIRONMENT === 'node' ? node() : vercel(),
     alias: {
       $enums: path.resolve('./src/lib/enums'),
