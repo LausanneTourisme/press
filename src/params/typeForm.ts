@@ -1,4 +1,4 @@
-import { Forms, RouteTypes } from '$enums';
+import { RouteTypes } from '$enums';
 import { supportedLocales, translations } from '$lib/translations';
 import type { ParamMatcher } from '@sveltejs/kit';
 
