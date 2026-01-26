@@ -5,4 +5,3 @@ export const config = {
     expiration: 86400
   }
 };
-
