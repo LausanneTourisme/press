@@ -5,7 +5,7 @@ import type { SeoHeader } from '$types';
 import { error } from 'console';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
-export const load = async ({ params, parent, url, ...rest }) => {
+export const load = async ({ params, parent, url }) => {
   const { i18n, translations, locale, type } = await parent();
   const currentThemeType: Theme | undefined = Object.values(Themes).find(
     (theme) => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme

@@ -8,7 +8,13 @@ import { RouteTypes } from '$enums';
 import { supportedLocales, translations } from '$lib/translations';
 import type { EntryGenerator } from './$types';
 
-export const load = async ({ parent, depends }) => {
+export const config = {
+  isr: {
+    expiration: 86400
+  }
+};
+
+export const load = async ({ parent }) => {
   if (dev && isOfflineMode) {
     //MOCK fetch requests
     server.listen();
