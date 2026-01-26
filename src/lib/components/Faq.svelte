@@ -13,10 +13,10 @@
 
   type Props = {
     class?: string;
-    locale: Locale
+    locale: Locale;
   };
 
-  const { class: additionalClass, locale}: Props = $props();
+  const { class: additionalClass, locale }: Props = $props();
   let openShelfIndex: number | null = $state(null); // Stores which shelf is open
 
   const toggleShelf: (index: number) => void = (index) => {

@@ -6,7 +6,7 @@ import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 import { PUBLIC_BASE_URL } from '$env/static/public';
 
-export const load = async ({ params, parent, url, ...rest }) => {
+export const load = async ({ params, parent, url }) => {
   const [{ i18n, translations }, releaseRes] = await Promise.all([
     parent(),
     getPost(params.slug ?? '')

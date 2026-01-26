@@ -4,7 +4,7 @@
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Image from './Image.svelte';
-  import {  type Locale } from '$lib/translations';
+  import { type Locale } from '$lib/translations';
   import Container from '../Container.svelte';
   import Heading from '../Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
@@ -16,7 +16,7 @@
     locale: Locale;
   };
 
-  const { class: additionalClass = '', hero, locale}: Props = $props();
+  const { class: additionalClass = '', hero, locale }: Props = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {

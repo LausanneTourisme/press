@@ -13,7 +13,7 @@
 
   const currentLocale = $derived(page.params.locale ?? $locale);
 
-  const url = $derived.by(() => currentLocale ? `/${currentLocale}` : `/${defaultLocale}`);
+  const url = $derived.by(() => (currentLocale ? `/${currentLocale}` : `/${defaultLocale}`));
   const status = $derived(page.status);
 
   const error = $derived.by(() => {

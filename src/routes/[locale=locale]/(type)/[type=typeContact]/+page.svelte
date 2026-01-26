@@ -6,7 +6,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import {  t, type Locale } from '$lib/translations';
+  import { t, type Locale } from '$lib/translations';
   import { ArrowLeft, Camera, Mail, Newspaper, Phone } from 'lucide-svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
