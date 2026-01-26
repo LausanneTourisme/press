@@ -1,4 +1,5 @@
 {
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/:lang(fr|en|de)/:section(articles|artikeln)/:id(\\d+)/:slug",
