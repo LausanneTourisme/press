@@ -64,5 +64,6 @@
       "description": "Merci de nous contacter si le problème persiste.",
       "button-text": "Retourner à la page d'accueil ?"
     }
-  }
+  },
+  "webgl-not-supported": "Votre navigateur ne supporte pas WebGL, qui est nécessaire pour afficher la carte."
 }

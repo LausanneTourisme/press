@@ -3,7 +3,6 @@ import { RouteTypes } from '$enums';
 import { isOfflineMode } from '$lib/helpers';
 import { generateCloudinaryUrl } from '$lib/helpers/image.js';
 import { getPost } from '$lib/helpers/requests.server';
-import { server } from '$lib/mocks/handler';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
@@ -11,7 +10,7 @@ import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url }) => {
   if (dev && isOfflineMode) {
-    //MOCK fetch requests
+    const { server } = await import('$lib/mocks/handler');
     server.listen();
   }
 

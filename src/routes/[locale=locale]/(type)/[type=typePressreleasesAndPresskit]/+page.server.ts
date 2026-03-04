@@ -2,7 +2,6 @@ import { dev } from '$app/environment';
 import { isOfflineMode } from '$lib/helpers';
 import { sortByYears } from '$lib/helpers/date';
 import { getPosts } from '$lib/helpers/requests.server';
-import { server } from '$lib/mocks/handler';
 import type { Release } from '$types';
 import { RouteTypes } from '$enums';
 import { supportedLocales, translations } from '$lib/translations';
@@ -16,7 +15,7 @@ export const config = {
 
 export const load = async ({ parent }) => {
   if (dev && isOfflineMode) {
-    //MOCK fetch requests
+    const { server } = await import('$lib/mocks/handler');
     server.listen();
   }
 
