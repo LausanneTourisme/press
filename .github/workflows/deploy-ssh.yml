@@ -1,0 +1,25 @@
+name: Deploy via SSH
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: SSH Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ vars.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd ${{ vars.SSH_PROJECT_PATH }}
+            git pull
+            NODE_ENV=production npm install && 
+            ENVIRONMENT=node NODE_OPTIONS=--max-old-space-size=4096 npm run build
