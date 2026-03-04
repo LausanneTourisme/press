@@ -1,7 +1,7 @@
 {
   "name": "press",
   "private": true,
-  "version": "2.6.7",
+  "version": "2.6.8",
   "type": "module",
   "scripts": {
     "preinstall": "([ -e $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh && nvm install && nvm use) || true",
@@ -56,6 +56,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.0",
     "vite": "^7.3.1",
+    "valibot": "^1.2.0",
     "zod": "^4.3.5"
   },
   "dependencies": {
