@@ -1,6 +1,5 @@
 import { dev } from '$app/environment';
 import { RouteTypes, Themes } from '$enums';
-import { LANG } from '$env/static/private';
 import { filterByTag, isOfflineMode } from '$lib/helpers';
 import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
 import { server } from '$lib/mocks/handler';
