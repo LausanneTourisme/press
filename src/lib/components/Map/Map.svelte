@@ -60,6 +60,7 @@
   let map: maplibregl.Map | undefined = $state();
   const initialState = { lat: 46.5197163, lng: 6.6309901, zoom: 13 };
   let asideElement: HTMLDivElement | undefined = $state();
+  let webglSupported: boolean = $state(false);
 
   let aside: {
     show: boolean;
@@ -146,7 +147,30 @@
     });
   };
 
+  const isWebglSupported = () => {
+        // From https://maplibre.org/maplibre-gl-js/docs/examples/check-if-webgl-is-supported/
+        if (window.WebGLRenderingContext) {
+            const canvas = document.createElement('canvas');
+            try {
+                // Note that { failIfMajorPerformanceCaveat: true } can be passed as a second argument
+                // to canvas.getContext(), causing the check to fail if hardware rendering is not available. See
+                // https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
+                // for more details.
+                const context = canvas.getContext('webgl2') || canvas.getContext('webgl');
+                if (context && typeof context.getParameter == 'function') {
+                    return true;
+                }
+            } catch (e) {
+                // WebGL is supported, but disabled
+            }
+            return false;
+        }
+        // WebGL not supported
+        return false;
+    }
+
   onMount(() => {
+    webglSupported = isWebglSupported();
     document.documentElement.style.setProperty('--popup-color', getTailwindColor(themeColor ?? ''));
     window.addEventListener('keyup', (e) => {
       if (e.key === 'Escape' && aside.show) {
@@ -259,47 +283,55 @@
       </div>
     </section>
   {/if}
-  <MapLibre
-    class="h-full w-full"
-    style={PUBLIC_MAPTILER_URL}
-    zoom={initialState.zoom}
-    center={initialState}
-    pitchWithRotate={false}
-    cooperativeGestures={true}
-    bind:map
-  >
-    <NavigationControl position={'top-right'} />
-    {#each markers as marker}
-      <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
-        {#snippet content()}
-          <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
-        {/snippet}
-        <Popup
-          open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
-          onopen={() => {
-            setTimeout(
-              () => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }),
-              50
-            );
-          }}
-          onclose={closeAside}
-          offset={{
-            top: [0, 12],
-            bottom: [0, -12],
-            left: [12, 0],
-            right: [-12, 0],
-            center: [0, 0],
-            'top-left': [0, 12],
-            'top-right': [0, 12],
-            'bottom-left': [0, -12],
-            'bottom-right': [0, -12]
-          }}
-        >
-          <span class="p-2 text-base text-white">{marker.poi.name}</span>
-        </Popup>
-      </Marker>
-    {/each}
-  </MapLibre>
+  {#if !webglSupported}
+    <div class="flex h-full w-full items-center justify-center bg-gray-100">
+      <p class="text-center text-black">
+        {$t('common.webgl-not-supported')}
+      </p>
+    </div>
+  {:else}
+    <MapLibre
+      class="h-full w-full"
+      style={PUBLIC_MAPTILER_URL}
+      zoom={initialState.zoom}
+      center={initialState}
+      pitchWithRotate={false}
+      cooperativeGestures={true}
+      bind:map
+    >
+      <NavigationControl position={'top-right'} />
+      {#each markers as marker}
+        <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
+          {#snippet content()}
+            <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
+          {/snippet}
+          <Popup
+            open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
+            onopen={() => {
+              setTimeout(
+                () => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }),
+                50
+              );
+            }}
+            onclose={closeAside}
+            offset={{
+              top: [0, 12],
+              bottom: [0, -12],
+              left: [12, 0],
+              right: [-12, 0],
+              center: [0, 0],
+              'top-left': [0, 12],
+              'top-right': [0, 12],
+              'bottom-left': [0, -12],
+              'bottom-right': [0, -12]
+            }}
+          >
+            <span class="p-2 text-base text-white">{marker.poi.name}</span>
+          </Popup>
+        </Marker>
+      {/each}
+    </MapLibre>
+  {/if}
 </div>
 
 <style>
