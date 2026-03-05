@@ -41,6 +41,10 @@ jobs:
     needs: resolve-env
     environment: ${{ needs.resolve-env.outputs.environment }}
     steps:
+      - name: Show environment
+        run: |
+          echo "Deploying to environment: ${{ needs.resolve-env.outputs.environment }}"
+
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
