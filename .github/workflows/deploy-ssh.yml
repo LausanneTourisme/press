@@ -45,15 +45,32 @@ jobs:
         run: |
           echo "Deploying to environment: ${{ needs.resolve-env.outputs.environment }}"
 
-      - name: Install sshpass
-        run: |
-          sudo apt-get install -y sshpass
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Testing to establish SSH connection server
-        run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "true"
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '${{ vars.NODE_VERSION }}'
+          cache: 'npm'
 
-      - name: Deploy to server via SSH
+      - name: Install dependencies
+        env:
+          NODE_ENV: production
+        run: npm ci
+
+      - name: Build
+        env:
+          ENVIRONMENT: node
+        run: npm run build
+
+      - name: Install sshpass & rsync
+        run: sudo apt-get install -y sshpass rsync
+
+      - name: Deploy build via rsync
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=20 ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "bash -l ~/.scripts/build.sh '${{ secrets.SSH_PROJECT_PATH }}'"
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            ./build/ \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/build/
 
