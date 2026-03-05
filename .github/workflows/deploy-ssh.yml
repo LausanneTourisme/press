@@ -55,5 +55,5 @@ jobs:
 
       - name: Deploy to server via SSH
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=20 ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "~/.scripts/build.sh '${{ secrets.SSH_PROJECT_PATH }}'"
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=20 ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "bash -l ~/.scripts/build.sh '${{ secrets.SSH_PROJECT_PATH }}'"
 
