@@ -55,9 +55,10 @@ jobs:
 
       - name: Deploy to server via SSH
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} <<'ENDSSH'
-          cd ${{ secrets.SSH_PROJECT_PATH }} &&
-          git pull &&
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} <<'ENDSSH'
+          . ~/.bash_profile
+          cd ${{ secrets.SSH_PROJECT_PATH }}
+          git pull
           NODE_ENV=production npm install &&
           ENVIRONMENT=node NODE_OPTIONS=--max-old-space-size=4096 npm run build
           ENDSSH
