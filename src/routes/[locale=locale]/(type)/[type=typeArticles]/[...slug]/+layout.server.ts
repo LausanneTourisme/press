@@ -6,7 +6,6 @@ import { getPost } from '$lib/helpers/requests.server';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url }) => {
   if (dev && isOfflineMode) {
@@ -26,7 +25,7 @@ export const load = async ({ params, parent, url }) => {
   await loadTranslations(locale, url.pathname);
 
   const seo: SeoHeader = {
-    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    canonical: `${url.origin}${url.pathname}`,
     title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
     description:
       article.lead?.[locale as Locale] ??

@@ -1,7 +1,6 @@
 import { RouteTypes } from '$enums';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ url, params, parent }) => {
   const lang = params.locale as Locale;
@@ -10,10 +9,10 @@ export const load = async ({ url, params, parent }) => {
     loadTranslations(lang, url.pathname)
   ]);
   const seo: SeoHeader = {
-    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    canonical: `${url.origin}${url.pathname}`,
     title: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.title`],
     description: translations[lang][`${RouteTypes.PressreleasesAndPresskits}.meta-description`],
-    image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
+    image: `${url.origin}/seo/poster-home.png`,
     alternate: supportedLocales.map((locale) => ({
       hreflang: locale,
       href: `/${locale}/${translations[locale][`route.${RouteTypes.PressreleasesAndPresskits}.slug`]}`

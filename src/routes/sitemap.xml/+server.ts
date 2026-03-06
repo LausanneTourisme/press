@@ -5,12 +5,10 @@ import { getPosts } from '$lib/helpers/requests.server';
 import { defaultLocale, type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
 import type { RequestHandler } from '@sveltejs/kit';
-import { PUBLIC_BASE_URL } from '$env/static/public';
-
 export const GET: RequestHandler = async ({ url }) => {
   const urlSets = await Promise.all([
-    generateUrlSets(PUBLIC_BASE_URL),
-    generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL)
+    generateUrlSets(url.origin),
+    generatePresskitAndPressReleasesUrlSets(url.origin)
   ]);
 
   return new Response(

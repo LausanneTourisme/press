@@ -4,12 +4,10 @@ import { menuItems } from '$lib/helpers/menu';
 import { getPosts } from '$lib/helpers/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
-import { PUBLIC_BASE_URL } from '$env/static/public';
-
 export const GET = async ({ url, params }) => {
   const urlSets = await Promise.all([
-    generateUrlSets(PUBLIC_BASE_URL, params.locale as Locale),
-    generatePresskitAndPressReleasesUrlSets(PUBLIC_BASE_URL, params.locale as Locale)
+    generateUrlSets(url.origin, params.locale as Locale),
+    generatePresskitAndPressReleasesUrlSets(url.origin, params.locale as Locale)
   ]);
 
   return new Response(
