@@ -94,7 +94,10 @@ jobs:
   clear-cache:
     name: Clear Cloudflare cache
     runs-on: ubuntu-latest
-    needs: deploy
+    needs:
+      - deploy
+      - resolve-env
+    environment: ${{ needs.resolve-env.outputs.environment }}
     steps:
       - name: Clear Cloudflare cache
         run: |
