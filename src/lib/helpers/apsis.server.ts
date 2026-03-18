@@ -12,9 +12,9 @@ import { SubscriberTypes, type SubscriberType } from '$enums';
 
 const baseUrl = 'https://api.apsis.one';
 
-let cachedToken: { token: string; expires: number } | null = null;
+let cachedToken: { token: string; expires: number } | undefined;
 
-export const getApsisToken = async (): Promise<string> => {
+const getApsisToken = async (): Promise<string> => {
   const clientID = APSIS_CLIENT_ID;
   const clientSecret = APSIS_CLIENT_SECRET;
 
@@ -74,14 +74,13 @@ export const createProfile = async (email: string): Promise<boolean> => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Bearer: cachedToken?.token || (await getApsisToken())
+        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
       },
       body: JSON.stringify({
         profile_key: email
       })
     }
   );
-
   return response.status === 201 || response.status === 409;
 };
 
@@ -90,24 +89,30 @@ export const updateProfileAttributes = async ({
   attributes
 }: {
   email: string;
-  attributes: Record<string, string|number|boolean>;
+  attributes: Record<string, string | number | boolean | undefined>;
 }): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
+    `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
     {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/merge-patch+json',
-        Bearer: cachedToken?.token || (await getApsisToken())
+        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
       },
-      body: JSON.stringify({
-        '1622491': 'Firstname',
-        '1622493': 'Name',
-        '1622494': email,
-        '1622496': '1990-05-15'
-      })
+      body: JSON.stringify(attributes)
     }
   );
+  console.log({
+    request: {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/merge-patch+json',
+        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+      },
+      body: JSON.stringify(attributes)
+    },
+    response: await response.json()
+  });
 
   return response.status === 204;
 };
@@ -125,7 +130,7 @@ export const addProfileToMailConsents = async ({
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Bearer: cachedToken?.token || (await getApsisToken())
+        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
       },
       body: JSON.stringify({
         topic_discriminator:
