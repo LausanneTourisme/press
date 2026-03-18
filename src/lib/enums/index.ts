@@ -1,6 +1,7 @@
 export type RouteType = (typeof RouteTypes)[keyof typeof RouteTypes];
 export type Theme = (typeof Themes)[keyof typeof Themes];
 export type Form = (typeof Forms)[keyof typeof Forms];
+export type SubscriberType = (typeof SubscriberTypes)[keyof typeof SubscriberTypes];
 export type MediaType = (typeof MediaTypes)[keyof typeof MediaTypes];
 export type TravelReduction = (typeof TravelReductions)[keyof typeof TravelReductions];
 export type Title = (typeof Titles)[keyof typeof Titles];
@@ -41,6 +42,11 @@ export const Forms = {
   MediaCoverage: 'media-coverage',
   Thanks: 'thanks'
 } as const;
+
+export const SubscriberTypes = {
+  Journalist: 'journalist',
+  ContentCreator: 'content-creator',
+} as const
 
 export const MediaTypes = {
   Print: 'print',
@@ -83,6 +89,7 @@ export function getValues<T extends Record<string, any>>(obj: T) {
 // usage
 export const ThemeKeys = invert(Themes);
 export const FormsKeys = invert(Forms);
+export const SubscriberTypesKeys = invert(SubscriberTypes);
 export const MediaTypesKeys = invert(MediaTypes);
 export const TravelReductionsKeys = invert(TravelReductions);
 export const TitlesKeys = invert(Titles);
