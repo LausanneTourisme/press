@@ -1,3 +1,4 @@
+import { SubscriberTypes, type SubscriberType } from '$enums';
 import {
   APSIS_CLIENT_ID,
   APSIS_CLIENT_SECRET,
@@ -6,9 +7,8 @@ import {
   APSIS_KEYSPACE_DISCRIMINATOR,
   APSIS_SECTION_DISCRIMINATOR
 } from '$env/static/private';
-import MissingCredentialsError from '$lib/exceptions/MissingCredentialsError';
 import AuthenticationError from '$lib/exceptions/AuthenticationError';
-import { SubscriberTypes, type SubscriberType } from '$enums';
+import MissingCredentialsError from '$lib/exceptions/MissingCredentialsError';
 
 const baseUrl = 'https://api.apsis.one';
 

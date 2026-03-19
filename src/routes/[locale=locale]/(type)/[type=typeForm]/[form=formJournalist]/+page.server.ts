@@ -1,7 +1,7 @@
 import { Forms, MediaTypes, RouteTypes } from '$enums';
 import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
-import { sendEmail } from '$lib/helpers/mails.server';
+import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type Mailchimp from '@mailchimp/mailchimp_transactional';
 import { fail, redirect } from '@sveltejs/kit';

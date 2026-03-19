@@ -1,10 +1,10 @@
 import { dev } from '$app/environment';
+import { RouteTypes } from '$enums';
 import { isOfflineMode } from '$lib/helpers';
 import { sortByYears } from '$lib/helpers/date';
-import { getPosts } from '$lib/helpers/requests.server';
-import type { Release } from '$types';
-import { RouteTypes } from '$enums';
+import { getPosts } from '$lib/services/requests.server';
 import { supportedLocales, translations } from '$lib/translations';
+import type { Release } from '$types';
 import type { EntryGenerator } from './$types';
 
 export const config = {

@@ -1,7 +1,7 @@
 import { RouteTypes } from '$enums';
 import { MAIL_FROM } from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
-import { sendEmail } from '$lib/helpers/mails.server';
+import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, translations } from '$lib/translations';
 import { fail } from '@sveltejs/kit';
 import type { Actions, EntryGenerator } from './$types';

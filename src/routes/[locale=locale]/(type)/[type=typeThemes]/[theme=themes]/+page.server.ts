@@ -1,7 +1,7 @@
 import { dev } from '$app/environment';
 import { RouteTypes, Themes } from '$enums';
 import { filterByTag, isOfflineMode } from '$lib/helpers';
-import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
+import { getFavorites, getPosts, getTag } from '$lib/services/requests.server';
 import { supportedLocales, translations } from '$lib/translations';
 import type { Post } from '$types';
 import type { EntryGenerator } from './$types';
