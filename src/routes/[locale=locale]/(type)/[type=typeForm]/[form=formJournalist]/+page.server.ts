@@ -1,4 +1,4 @@
-import { Forms, MediaTypes, RouteTypes } from '$enums';
+import { Forms, MediaTypes, RouteTypes, ConsentsTypes, type ConsentType } from '$enums';
 import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
@@ -189,7 +189,44 @@ export const actions = {
         'usercreated.attributes.press_-_newsletter-omm8pihlcr': form.data.newsletter,
         // PRESS - info personelles - remarques
         'usercreated.attributes.press_-_info_personelles_-_remarques-5lrlrl21ta':
-          form.data.remarks ?? ''
+          form.data.remarks ?? '',
+
+        // -------------------------------------- ATTRIBUTES FOR APSIS & CRM --------------------------------------
+
+        // Birthdate (YYYY-MM-DD)
+        'com.apsis1.attributes.birthdate': form.data.personalInformation.birthday,
+        // Profile First Name
+        'com.apsis1.attributes.firstname': form.data.personalInformation.firstName,
+        // Last Name of profile
+        'com.apsis1.attributes.lastname': form.data.personalInformation.lastName,
+        // Primary mobile phone number
+        'com.apsis1.attributes.mobile': form.data.personalInformation.phoneNumber,
+        // Primary e-mail address
+        'com.apsis1.attributes.email': form.data.personalInformation.email,
+        // CRM - Field - Language
+        'usercreated.attributes.langue_crm-98h3ud5p4v': (() => {
+          switch (params.locale) {
+            case 'fr':
+              return 2;
+            case 'de':
+              return 4;
+            case 'en':
+            default:
+              return 1;
+          }
+        })(),
+        // CRM - Field - Title
+        "usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk": ,
+        // CRM - Field - Full Title
+        "usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn": ,
+        // CRM - Field - Account Manager
+        "usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk": 213,
+        // CRM - Field - Country
+        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh": ,
+        // CRM - Field - Media Sub-Type
+         "usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw": ,
+        // CRM - Field - Type
+          // tjr mettre média
       }
     });
 
