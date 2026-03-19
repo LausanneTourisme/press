@@ -1,9 +1,11 @@
-import { SubscriberTypes, type SubscriberType } from '$enums';
+import { dev } from '$app/environment';
+import { ConsentsTypes, type ConsentType } from '$enums';
 import {
   APSIS_CLIENT_ID,
   APSIS_CLIENT_SECRET,
-  APSIS_CONSENTS_CONTENT_CREATOR_DISCRIMINATOR,
-  APSIS_CONSENTS_PRESS_DISCRIMINATOR,
+  APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR,
+  APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR,
+  APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR,
   APSIS_KEYSPACE_DISCRIMINATOR,
   APSIS_SECTION_DISCRIMINATOR
 } from '$env/static/private';
@@ -102,27 +104,32 @@ export const updateProfileAttributes = async ({
       body: JSON.stringify(attributes)
     }
   );
-  console.log({
-    request: {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/merge-patch+json',
-        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+
+  if (dev) {
+    const text = await response.text();
+    console.log({
+      request: {
+        method: 'PATCH',
+        url: `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
+        headers: {
+          'Content-Type': 'application/merge-patch+json',
+          Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+        },
+        body: JSON.stringify(attributes)
       },
-      body: JSON.stringify(attributes)
-    },
-    response: await response.json()
-  });
+      response: text ? JSON.parse(text) : null
+    });
+  }
 
   return response.status === 204;
 };
 
 export const addProfileToMailConsents = async ({
   email,
-  subscriberType
+  consentType
 }: {
   email: string;
-  subscriberType: SubscriberType;
+  consentType: ConsentType;
 }): Promise<boolean> => {
   const response = await fetch(
     `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/consents`,
@@ -133,16 +140,52 @@ export const addProfileToMailConsents = async ({
         Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
       },
       body: JSON.stringify({
-        topic_discriminator:
-          subscriberType === SubscriberTypes.Journalist
-            ? APSIS_CONSENTS_PRESS_DISCRIMINATOR
-            : APSIS_CONSENTS_CONTENT_CREATOR_DISCRIMINATOR,
+        topic_discriminator: (() => {
+          switch (consentType) {
+            case ConsentsTypes.MeidaPress:
+              return APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR;
+            case ConsentsTypes.MediaContentCreator:
+              return APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR;
+            case ConsentsTypes.NewsletterPress:
+              return APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR;
+          }
+        })(),
         channel_discriminator: 'com.apsis1.channels.email',
         type: 'opt-in',
-        reason: 'Inscription via formulaire web'
+        reason: 'Inscription via formulaire de la presse'
       })
     }
   );
+
+  if (dev) {
+    const text = await response.text();
+    console.log({
+      request: {
+        method: 'PATCH',
+        url: `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/consents`,
+        headers: {
+          'Content-Type': 'application/merge-patch+json',
+          Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+        },
+        body: {
+          topic_discriminator: (() => {
+            switch (consentType) {
+              case ConsentsTypes.MeidaPress:
+                return APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR;
+              case ConsentsTypes.MediaContentCreator:
+                return APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR;
+              case ConsentsTypes.NewsletterPress:
+                return APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR;
+            }
+          })(),
+          channel_discriminator: 'com.apsis1.channels.email',
+          type: 'opt-in',
+          reason: 'Inscription via formulaire de la presse'
+        }
+      },
+      response: text,
+    });
+  }
 
   return response.status === 201 || response.status === 204 || response.status === 409;
 };

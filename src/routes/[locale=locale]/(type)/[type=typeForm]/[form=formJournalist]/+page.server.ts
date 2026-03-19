@@ -15,7 +15,7 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
-import * as apsis from '$lib/helpers/apsis.server';
+import * as apsis from '$lib/services/apsis.server';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -198,7 +198,21 @@ export const actions = {
       return fail(400, { form });
     }
 
-    // TODO consents
+    const consents: ConsentType[] = form.data.newsletter
+      ? [ConsentsTypes.MeidaPress, ConsentsTypes.NewsletterPress]
+      : [ConsentsTypes.MeidaPress];
+
+    consents.forEach(async (consentType) => {
+      const consentAdded = await apsis.addProfileToMailConsents({
+        email: form.data.personalInformation.email,
+        consentType
+      });
+
+      if (!consentAdded) {
+        console.error(`Form can't add consents to the profile in Apsis`);
+        return fail(400, { form });
+      }
+    });
 
     const sendWithSuccess = await sendFormByEmail({
       locale: params.locale as Locale,
