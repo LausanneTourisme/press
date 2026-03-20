@@ -16,6 +16,7 @@ import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
 import * as apsis from '$lib/services/apsis.server';
+import { selectCountryId } from '$lib/helpers/apsis';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -49,7 +50,7 @@ export const actions = {
       console.error(`Form can't create an Apsis profile`);
       return fail(400, { form });
     }
-
+    
     const attributesUpdated = await apsis.updateProfileAttributes({
       email: form.data.personalInformation.email,
       attributes: {
@@ -200,7 +201,7 @@ export const actions = {
         // Last Name of profile
         'com.apsis1.attributes.lastname': form.data.personalInformation.lastName,
         // Primary mobile phone number
-        'com.apsis1.attributes.mobile': form.data.personalInformation.phoneNumber,
+        'com.apsis1.attributes.mobile': Number(form.data.personalInformation.phoneNumber.replaceAll('+','00').replaceAll(' ', '')),
         // Primary e-mail address
         'com.apsis1.attributes.email': form.data.personalInformation.email,
         // CRM - Field - Language
@@ -270,7 +271,7 @@ export const actions = {
 
         //// ADRESSE
         // CRM - Fields - Country 
-        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  countries.getName(form.data.travelInformation.departurePoint.country, 'fr'),
+        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  selectCountryId(countries.getName(form.data.personalInformation.address.country, 'en')),
         // CRM - Fields - Post code
         "usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6": form.data.personalInformation.address.postalcode,
         // CRM - Fields - Street
