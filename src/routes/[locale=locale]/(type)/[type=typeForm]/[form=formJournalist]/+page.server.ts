@@ -215,18 +215,68 @@ export const actions = {
               return 1;
           }
         })(),
-        // CRM - Field - Title
-        "usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk": ,
-        // CRM - Field - Full Title
-        "usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn": ,
-        // CRM - Field - Account Manager
+        // CRM - Fields - Title
+        "usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk": (() => {
+          switch (form.data.personalInformation.title) {
+            case 'mr':
+              return {
+                fr: "M.",
+                en: "Mr.",
+                de: "Herr",
+              }[params.locale];
+            case 'mrs':
+              return {
+                fr: "Mme",
+                en: "Mrs.",
+                de: "Frau",
+              }[params.locale];
+            case 'they':
+              return {
+                fr: "-",
+                en: "-",
+                de: "-",
+              }[params.locale];
+          }
+        })(),
+        // CRM - Fields - Full Title
+        "usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn": (() => {
+          switch (form.data.personalInformation.title) {
+            case 'mr':
+              return {
+                fr: "Monsieur",
+                en: "Mister",
+                de: "Herr",
+              }[params.locale];
+            case 'mrs':
+              return {
+                fr: "Madame",
+                en: "Mistress",
+                de: "Frau",
+              }[params.locale];
+            case 'they':
+              return {
+                fr: "-",
+                en: "-",
+                de: "-",
+              }[params.locale];
+          }
+        })(),
+        // CRM - Fields - Account Manager
         "usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk": 213,
-        // CRM - Field - Country
-        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh": ,
-        // CRM - Field - Media Sub-Type
-         "usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw": ,
-        // CRM - Field - Type
-          // tjr mettre média
+        // CRM - Fields - Media Sub-Type
+        "usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw": form.data.personalInformation.freelance ? 2 : 1,
+        // CRM - Fields - Type
+        "usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv": 1,// Média
+
+        //// ADRESSE
+        // CRM - Fields - Country 
+        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  form.data.personalInformation.address.country,
+        // CRM - Fields - Post code
+        "usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6": form.data.personalInformation.address.postalcode,
+        // CRM - Fields - Street
+        "usercreated.attributes.crm_-_fields_-_street-ym828bzua3": form.data.personalInformation.address.streetAddress,
+        // CRM - Fields - Town/City 
+        "usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd": form.data.personalInformation.address.city,
       }
     });
 
