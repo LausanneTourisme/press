@@ -27,7 +27,7 @@ export const load = async ({ parent }) => {
   countries.registerLocale(countriesByLocale[locale]);
 
   return {
-    countries: Object.values<string>(countries.getNames(locale, { select: 'official' })).sort(),
+    countries: countries.getNames(locale, { select: 'official' }),
     form
   };
 };
@@ -113,7 +113,7 @@ export const actions = {
           form.data.mediaCoverageOnline?.articleLength,
         // PRESS - info voyage - pays départ
         'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g':
-          form.data.travelInformation.departurePoint.country,
+         countries.getName(form.data.travelInformation.departurePoint.country, params.locale),
         // PRESS - info voyage - trajet aller
         'usercreated.attributes.press_-_info_voyage_-_trajet_aller-2jsn1a11d1':
           form.data.travelInformation.departurePoint.outwardJourney ?? '',
@@ -270,7 +270,7 @@ export const actions = {
 
         //// ADRESSE
         // CRM - Fields - Country 
-        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  form.data.personalInformation.address.country,
+        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  countries.getName(form.data.travelInformation.departurePoint.country, 'fr'),
         // CRM - Fields - Post code
         "usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6": form.data.personalInformation.address.postalcode,
         // CRM - Fields - Street
@@ -493,7 +493,7 @@ const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: L
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.city ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.country ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${countries.getName(data.travelInformation.departurePoint.country, userLocale)}</span>
         </li>
         <li>
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
