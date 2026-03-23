@@ -42,10 +42,10 @@ jobs:
     environment: ${{ needs.resolve-env.outputs.environment }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '${{ vars.NODE_VERSION }}'
           cache: 'npm'
@@ -120,7 +120,7 @@ jobs:
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "cd ${{ secrets.SSH_PROJECT_PATH }} && $HOME/.nvm/nvm-exec npm ci --omit=dev"
+            "/bin/bash -c 'cd ${{ secrets.SSH_PROJECT_PATH }} && exec \$HOME/.nvm/nvm-exec npm ci --omit=dev'"
 
       - name: Restart service
         run: |
