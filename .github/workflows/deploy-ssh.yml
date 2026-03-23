@@ -84,7 +84,25 @@ jobs:
       - name: Install sshpass & rsync
         run: sudo apt-get install -y sshpass rsync
 
-      - name: Deploy build via rsync
+      - name: Deploy .env
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
+          CLOUDINARY_API_KEY=${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET=${{ secrets.CLOUDINARY_API_SECRET }}
+          GRAPHQL_URL=${{ secrets.GRAPHQL_URL }}
+          GRAPHQL_TOKEN=${{ secrets.GRAPHQL_TOKEN }}
+          GRAPHQL_AGENDA_TOKEN=${{ secrets.GRAPHQL_AGENDA_TOKEN }}
+          GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
+          BOTPOISON_SKEY=${{ secrets.BOTPOISON_SKEY }}
+          MAIL_FROM=${{ secrets.MAIL_FROM }}
+          MAIL_TO=${{ secrets.MAIL_TO }}
+          MAIL_DEFAULT_RECIPIENTS=${{ secrets.MAIL_DEFAULT_RECIPIENTS }}
+          API_HTML_TO_PDF=${{ secrets.API_HTML_TO_PDF }}
+          EOF"
+
+      - name: Deploy build
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
