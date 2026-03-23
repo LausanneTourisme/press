@@ -1,4 +1,3 @@
-import { PUBLIC_BASE_URL } from '$env/static/public';
 import {
   defaultLocale,
   isValidLocale,
@@ -12,7 +11,7 @@ import type { SeoHeader } from '$types';
 import { loadFlash } from 'sveltekit-flash-message/server';
 
 const getUrlLocale = (pathname: string): undefined | Locale => {
-  let match = pathname.match(/^\/[a-z]{2}/i);
+  const match = pathname.match(/^\/[a-z]{2}/i);
   if (!match) return undefined;
 
   return isValidLocale(match[0].replace('/', ''))
@@ -31,10 +30,10 @@ export const load = loadFlash(async ({ url, cookies, request, locals, route, ...
   const translationsLoaded = translations.get();
 
   const seo: SeoHeader = {
-    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    canonical: `${url.origin}${url.pathname}`,
     title: translationsLoaded[lang]['common.error.default.title'],
     description: translationsLoaded[lang]['common.error.default.subtitle'],
-    image: `${PUBLIC_BASE_URL}/seo/poster-home.png`,
+    image: `${url.origin}/seo/poster-home.png`,
     alternate: supportedLocales.map((locale) => ({
       hreflang: locale,
       href: `/${locale}`

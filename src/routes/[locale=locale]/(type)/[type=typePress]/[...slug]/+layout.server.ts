@@ -4,7 +4,6 @@ import { getPost } from '$lib/helpers/requests.server.js';
 import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
-import { PUBLIC_BASE_URL } from '$env/static/public';
 
 export const load = async ({ params, parent, url }) => {
   const [{ i18n, translations }, releaseRes] = await Promise.all([
@@ -22,7 +21,7 @@ export const load = async ({ params, parent, url }) => {
       : RouteTypes.Pressrelease;
 
   const seo: SeoHeader = {
-    canonical: `${PUBLIC_BASE_URL}${url.pathname}`,
+    canonical: `${url.origin}${url.pathname}`,
     title: release.name?.[lang as Locale] ?? translations[lang][`${type}.title`],
     description: release.lead?.[lang as Locale] ?? translations[lang][`${type}.meta-description`],
     image: generateCloudinaryUrl({

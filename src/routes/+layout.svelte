@@ -14,7 +14,6 @@
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
   import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
-  import { PUBLIC_BASE_URL } from '$env/static/public';
   import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
@@ -29,7 +28,7 @@
       alternates: pageData.seo.alternate
         .map(
           (alternate) =>
-            `<link rel="alternate" hreflang="${alternate.hreflang}" href="${PUBLIC_BASE_URL}${alternate.href}" />`
+            `<link rel="alternate" hreflang="${alternate.hreflang}" href="${page.url.origin}${alternate.href}" />`
         )
         .join('\n'),
       image: pageData.seo.image
@@ -98,7 +97,7 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": "https://www.lausanne-tourisme.ch",
-      "logo": "${PUBLIC_BASE_URL}/logo/LT_Logo.png",
+      "logo": "${page.url.origin}/logo/LT_Logo.png",
       "name": "Lausanne Tourisme",
       "email": "info@lausanne-tourisme.ch",
       "telephone": "+41 21 613 73 73",
