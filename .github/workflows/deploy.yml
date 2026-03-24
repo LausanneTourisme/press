@@ -107,13 +107,39 @@ jobs:
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node npm run build'"
+            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node BUILD_DIR=build-next npm run build'"
 
-      - name: Restart service
+      - name: Swap builds
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ secrets.SSH_PROJECT_PATH }} && \
+             mv build build-old 2>/dev/null || true && \
+             mv build-next build"
+
+      - name: Restart
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "systemctl --user restart ${{ secrets.SERVICE_NAME }}"
+
+      # Wait a bit and check if the service is active, if not, rollback to the old build and restart again
+      - name: Verify
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "sleep 3 && \
+             systemctl --user is-active ${{ secrets.SERVICE_NAME }} || \
+             (rm -rf ${{ secrets.SSH_PROJECT_PATH }}/build && \
+              mv ${{ secrets.SSH_PROJECT_PATH }}/build-old ${{ secrets.SSH_PROJECT_PATH }}/build && \
+              systemctl --user restart ${{ secrets.SERVICE_NAME }} && \
+              exit 1)"
+
+      - name: Cleanup old build
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "rm -rf ${{ secrets.SSH_PROJECT_PATH }}/build-old"
 
   clear-cache:
     name: Clear Cloudflare cache
