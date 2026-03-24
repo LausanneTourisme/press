@@ -1,10 +1,11 @@
-name: Deploy via SSH
+name: Deploy project !
 
 on:
   push:
     branches:
-      - develop
       - main
+      - develop
+
   workflow_dispatch:
     inputs:
       environment:
@@ -13,8 +14,8 @@ on:
         default: 'stage'
         type: choice
         options:
-          - stage
-          - production
+          - Stage
+          - Production
 
 jobs:
   resolve-env:
@@ -30,9 +31,9 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "environment=${{ github.event.inputs.environment }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.ref_name }}" = "main" ]; then
-            echo "environment=production" >> $GITHUB_OUTPUT
+            echo "environment=Production" >> $GITHUB_OUTPUT
           else
-            echo "environment=stage" >> $GITHUB_OUTPUT
+            echo "environment=Stage" >> $GITHUB_OUTPUT
           fi
 
   deploy:
@@ -42,10 +43,10 @@ jobs:
     environment: ${{ needs.resolve-env.outputs.environment }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '${{ vars.NODE_VERSION }}'
           cache: 'npm'
@@ -76,7 +77,6 @@ jobs:
           MAIL_FROM: ${{secrets.MAIL_FROM}}
           MAIL_TO: ${{secrets.MAIL_TO}}
           API_HTML_TO_PDF: ${{secrets.API_HTML_TO_PDF}}
-          PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN: ${{secrets.PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN}}
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN: ${{secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}}
           ENVIRONMENT: node
         run: npm run build
@@ -84,12 +84,43 @@ jobs:
       - name: Install sshpass & rsync
         run: sudo apt-get install -y sshpass rsync
 
-      - name: Deploy build via rsync
+      - name: Deploy .env
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
+          CLOUDINARY_API_KEY=\"${{ secrets.CLOUDINARY_API_KEY }}\"
+          CLOUDINARY_API_SECRET=\"${{ secrets.CLOUDINARY_API_SECRET }}\"
+          GRAPHQL_URL=\"${{ secrets.GRAPHQL_URL }}\"
+          GRAPHQL_TOKEN=\"${{ secrets.GRAPHQL_TOKEN }}\"
+          GRAPHQL_AGENDA_TOKEN=\"${{ secrets.GRAPHQL_AGENDA_TOKEN }}\"
+          GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
+          BOTPOISON_SKEY=\"${{ secrets.BOTPOISON_SKEY }}\"
+          MAIL_FROM=\"${{ secrets.MAIL_FROM }}\"
+          MAIL_TO=\"${{ secrets.MAIL_TO }}\"
+          MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
+          API_HTML_TO_PDF=\"${{ secrets.API_HTML_TO_PDF }}\"
+          EOF"
+
+      - name: Deploy build
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
             ./build/ \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/build/
+
+      - name: Deploy package files
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            ./package.json ./package-lock.json \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/
+
+      - name: Install production dependencies
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "/bin/bash -c 'cd ${{ secrets.SSH_PROJECT_PATH }} && exec env NODE_VERSION=${{ vars.NODE_VERSION }} \$HOME/.nvm/nvm-exec npm ci --omit=dev'"
 
       - name: Restart service
         run: |
