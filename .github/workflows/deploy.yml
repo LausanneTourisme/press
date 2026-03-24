@@ -107,7 +107,7 @@ jobs:
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node npm run build'"
+            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node BUILD_DIR=build-next npm run build'"
 
       - name: Swap builds
         run: |
