@@ -45,42 +45,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: '${{ vars.NODE_VERSION }}'
-          cache: 'npm'
-
-      - name: Install dependencies
-        env:
-          NODE_ENV: production
-        run: npm ci
-
-      - name: Build
-        env:
-          PUBLIC_ENABLE_OFFLINE_MODE: ${{secrets.PUBLIC_ENABLE_OFFLINE_MODE}}
-          PUBLIC_BASE_URL: ${{secrets.PUBLIC_BASE_URL}}
-          CLOUDINARY_API_KEY: ${{secrets.CLOUDINARY_API_KEY}}
-          CLOUDINARY_API_SECRET: ${{secrets.CLOUDINARY_API_SECRET}}
-          PUBLIC_CLOUDINARY_CLOUD_NAME: ${{secrets.PUBLIC_CLOUDINARY_CLOUD_NAME}}
-          PUBLIC_CLOUDINARY_CNAME: ${{secrets.PUBLIC_CLOUDINARY_CNAME}}
-          PUBLIC_CLOUDINARY_UPLOAD_PRESET: ${{secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET}}
-          GRAPHQL_URL: ${{secrets.GRAPHQL_URL}}
-          GRAPHQL_TOKEN: ${{secrets.GRAPHQL_TOKEN}}
-          GRAPHQL_AGENDA_TOKEN: ${{secrets.GRAPHQL_AGENDA_TOKEN}}
-          GROUP_ID_PAGE_HIGHLIGHTS: ${{secrets.GROUP_ID_PAGE_HIGHLIGHTS}}
-          PUBLIC_MAPTILER_URL: ${{secrets.PUBLIC_MAPTILER_URL}}
-          BOTPOISON_SKEY: ${{secrets.BOTPOISON_SKEY}}
-          PUBLIC_BOTPOISON_PUBLICKEY: ${{secrets.PUBLIC_BOTPOISON_PUBLICKEY}}
-          PUBLIC_MANDRILL_API_KEY: ${{secrets.PUBLIC_MANDRILL_API_KEY}}
-          MAIL_DEFAULT_RECIPIENTS: ${{secrets.MAIL_DEFAULT_RECIPIENTS}}
-          MAIL_FROM: ${{secrets.MAIL_FROM}}
-          MAIL_TO: ${{secrets.MAIL_TO}}
-          API_HTML_TO_PDF: ${{secrets.API_HTML_TO_PDF}}
-          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN: ${{secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}}
-          ENVIRONMENT: node
-        run: npm run build
-
       - name: Install sshpass & rsync
         run: sudo apt-get install -y sshpass rsync
 
@@ -89,38 +53,57 @@ jobs:
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
-          CLOUDINARY_API_KEY=\"${{ secrets.CLOUDINARY_API_KEY }}\"
-          CLOUDINARY_API_SECRET=\"${{ secrets.CLOUDINARY_API_SECRET }}\"
+          PUBLIC_ENABLE_OFFLINE_MODE=\"${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}\"
+          PUBLIC_CLOUDINARY_CLOUD_NAME=\"${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}\"
+          PUBLIC_CLOUDINARY_CNAME=\"${{ secrets.PUBLIC_CLOUDINARY_CNAME }}\"
+          PUBLIC_CLOUDINARY_UPLOAD_PRESET=\"${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}\"
           GRAPHQL_URL=\"${{ secrets.GRAPHQL_URL }}\"
           GRAPHQL_TOKEN=\"${{ secrets.GRAPHQL_TOKEN }}\"
           GRAPHQL_AGENDA_TOKEN=\"${{ secrets.GRAPHQL_AGENDA_TOKEN }}\"
           GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
+          PUBLIC_MAPTILER_URL=\"${{ secrets.PUBLIC_MAPTILER_URL }}\"
           BOTPOISON_SKEY=\"${{ secrets.BOTPOISON_SKEY }}\"
+          PUBLIC_BOTPOISON_PUBLICKEY=\"${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}\"
+          PUBLIC_MANDRILL_API_KEY=\"${{ secrets.PUBLIC_MANDRILL_API_KEY }}\"
+          MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
           MAIL_FROM=\"${{ secrets.MAIL_FROM }}\"
           MAIL_TO=\"${{ secrets.MAIL_TO }}\"
-          MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
           API_HTML_TO_PDF=\"${{ secrets.API_HTML_TO_PDF }}\"
+          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN=\"${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}\"
+          ENVIRONMENT=node
           EOF"
 
-      - name: Deploy build
+      - name: Sync src files
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./build/ \
-            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/build/
+            ./src/ \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/src/
 
-      - name: Deploy package files
+      - name: Sync static files
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            ./static/ \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/static/
+
+      - name: Sync build files
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./package.json ./package-lock.json \
+            ./package.json \
+            ./package-lock.json \
+            ./.nvmrc \
+            ./svelte.config.js \
+            ./vite.config.ts \
+            ./tsconfig.json \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/
 
-      - name: Install production dependencies
+      - name: Install dependencies & build
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "/bin/bash -c 'cd ${{ secrets.SSH_PROJECT_PATH }} && exec env NODE_VERSION=${{ vars.NODE_VERSION }} \$HOME/.nvm/nvm-exec npm ci --omit=dev'"
+            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && npm run build'"
 
       - name: Restart service
         run: |
