@@ -441,9 +441,7 @@ describe('Test helper: Date', () => {
         )
       ).toBeNull();
       // it test "now"
-      expect(
-        findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, undefined)
-      ).toBeNull();
+      expect(findAvailablePeriod(event.schedules!.dates!.at(0)!, undefined, undefined)).toBeNull();
       expect(
         findAvailablePeriod(
           event.schedules!.dates!.at(1)!,

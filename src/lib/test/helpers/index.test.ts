@@ -1070,22 +1070,22 @@ describe('Test helper: Index', () => {
       expect(humanFileSize(0)).toBe('0 o');
       expect(humanFileSize(1)).toBe('1 o');
       expect(humanFileSize(1000)).toBe('1000 o');
-    })
+    });
     it('returns kilooctet', () => {
       expect(humanFileSize(1024)).toBe('1 ko');
-    })
+    });
     it('returns megaoctet', () => {
       expect(humanFileSize(1_048_576)).toBe('1 Mo');
-    })
+    });
     it('returns gigaoctet', () => {
       expect(humanFileSize(1_073_741_824)).toBe('1 Go');
-    })
+    });
     it('returns teraoctet', () => {
       expect(humanFileSize(1_099_511_627_776)).toBe('1 To');
-    })
+    });
     it('returns teraoctet', () => {
-      console.log(humanFileSize( 1_125_899_906_842_624))
-      expect(humanFileSize( 1_125_899_906_842_624)).toBe('1024 To');
-    })
+      console.log(humanFileSize(1_125_899_906_842_624));
+      expect(humanFileSize(1_125_899_906_842_624)).toBe('1024 To');
+    });
   });
 });
