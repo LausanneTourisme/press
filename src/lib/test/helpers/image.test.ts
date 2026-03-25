@@ -5,7 +5,7 @@ import {
   selectBestWidth,
   transformToString
 } from '$lib/helpers/image';
-import {  describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 // Mock the env module
 vi.mock('$env/static/public', () => ({
   PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
@@ -164,33 +164,39 @@ describe('Test helper: Image', () => {
     });
 
     it('fails to return image with preset', () => {
-      expect(generateCloudinaryUrl({usePreset: true})).toBe(
+      expect(generateCloudinaryUrl({ usePreset: true })).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto/default`
       );
     });
 
     it('returns image without preset', () => {
-      expect(generateCloudinaryUrl({src: 'sjkdfsjdhfb'})).toBe(
+      expect(generateCloudinaryUrl({ src: 'sjkdfsjdhfb' })).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto/sjkdfsjdhfb`
       );
     });
 
     it('returns image with preset and src', () => {
-      expect(generateCloudinaryUrl({usePreset: true, src:'dev_test'})).toBe(
+      expect(generateCloudinaryUrl({ usePreset: true, src: 'dev_test' })).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto/test_preset/dev_test`
       );
-      expect(generateCloudinaryUrl({usePreset: true, src:'/destination/dev_test'})).toBe(
+      expect(generateCloudinaryUrl({ usePreset: true, src: '/destination/dev_test' })).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto/test_preset/destination/dev_test`
       );
     });
 
-    it("returns image with transformation", () => {
-      expect(generateCloudinaryUrl({usePreset: true, src:'/destination/dev_test',transform:{
-        w:500,
-        c: 'fill'
-      }})).toBe(
+    it('returns image with transformation', () => {
+      expect(
+        generateCloudinaryUrl({
+          usePreset: true,
+          src: '/destination/dev_test',
+          transform: {
+            w: 500,
+            c: 'fill'
+          }
+        })
+      ).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto,w_500,c_fill/test_preset/destination/dev_test`
       );
-    })
+    });
   });
 });
