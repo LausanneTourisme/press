@@ -3,6 +3,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import Loading from '$lib/components/Loading.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
+  import { RouteTypes } from '$enums';
   import { t } from '$lib/translations';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -16,10 +17,10 @@
 <Container width="small">
   <div class="py-6 text-center">
     <Heading tag="h1">
-      {@html $t('coverage.title')}
+      {@html $t(`${RouteTypes.Coverages}.title`)}
     </Heading>
     <Paragraph>
-      {@html $t('coverage.description')}
+      {@html $t(`${RouteTypes.Coverages}.description`)}
     </Paragraph>
   </div>
 </Container>
@@ -29,7 +30,7 @@
   </div>
   <iframe
     class:hidden={loading}
-    title={$t('coverage.title')}
+    title={$t(`${RouteTypes.Coverages}.title`)}
     src="https://elink.io/embed/945185f"
     allowfullscreen
     width="100%"
