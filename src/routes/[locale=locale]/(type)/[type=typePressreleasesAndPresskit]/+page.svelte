@@ -44,7 +44,9 @@
                 {#if release?.seo?.slug}
                   <Slide>
                     {@const routeType =
-                      release.type === 'press_kit' ? RouteTypes.Presskits : RouteTypes.Pressreleases}
+                      release.type === 'press_kit'
+                        ? RouteTypes.Presskits
+                        : RouteTypes.Pressreleases}
                     <div class="block px-1 md:flex">
                       <Clickable
                         overflow={false}

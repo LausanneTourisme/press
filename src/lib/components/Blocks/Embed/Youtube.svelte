@@ -3,7 +3,7 @@
     class?: string;
     src: string;
   };
-  const { class: additionalClass = '', src }: HeadingProps = $props();
+  const { src }: HeadingProps = $props();
   let youtubeUrl = $derived(src.replace('watch?v=', 'embed/'));
 </script>
 

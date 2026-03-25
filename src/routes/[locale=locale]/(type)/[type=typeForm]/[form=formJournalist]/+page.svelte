@@ -277,7 +277,8 @@
             <input
               id="print-statistics-broadcastLocation"
               type="text"
-              class="input w-full {$errors.printMediaStatistics?.broadcastLocation || $errors.printMediaStatistics?._errors
+              class="input w-full {$errors.printMediaStatistics?.broadcastLocation ||
+              $errors.printMediaStatistics?._errors
                 ? 'input-error'
                 : ''}"
               placeholder={$t(
@@ -296,7 +297,10 @@
               aria-label={$t(
                 `${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location`
               )}
-              aria-invalid={$errors.printMediaStatistics?.broadcastLocation || $errors.printMediaStatistics?._errors ? 'true' : undefined}
+              aria-invalid={$errors.printMediaStatistics?.broadcastLocation ||
+              $errors.printMediaStatistics?._errors
+                ? 'true'
+                : undefined}
             />
 
             {#if $errors.printMediaStatistics?._errors?.length}
@@ -314,7 +318,8 @@
             <input
               id="print-statistics-copies"
               type="number"
-              class="input w-full {$errors.printMediaStatistics?.copies !== undefined || $errors.printMediaStatistics?._errors
+              class="input w-full {$errors.printMediaStatistics?.copies !== undefined ||
+              $errors.printMediaStatistics?._errors
                 ? 'input-error'
                 : ''}"
               defaultValue={$form.printMediaStatistics?.copies ?? 0}
@@ -332,7 +337,10 @@
               aria-label={$t(
                 `${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.copies`
               )}
-              aria-invalid={$errors.printMediaStatistics?.copies !== undefined || $errors.printMediaStatistics?._errors ? 'true' : undefined}
+              aria-invalid={$errors.printMediaStatistics?.copies !== undefined ||
+              $errors.printMediaStatistics?._errors
+                ? 'true'
+                : undefined}
             />
 
             <label for="print-statistics-readers" class="label text-wrap break-words">
@@ -1056,7 +1064,9 @@
           />
 
           <label for="personal-information-last-name">
-            {@html $t(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.last-name`)}
+            {@html $t(
+              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.last-name`
+            )}
             {#if $constraints.personalInformation?.lastName?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Forms}.required`)}
@@ -1075,7 +1085,9 @@
           />
 
           <p class="label mb-1 text-wrap break-words">
-            {@html $t(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.freelance`)}
+            {@html $t(
+              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.freelance`
+            )}
             {#if $constraints.personalInformation?.freelance?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Forms}.required`)}
@@ -1153,7 +1165,9 @@
           />
 
           <label for="personal-information-allergies" class="label text-wrap break-words">
-            {@html $t(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.allergies`)}
+            {@html $t(
+              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.allergies`
+            )}
             {#if $constraints.personalInformation?.allergies?.required}
               <span class="text-brand-600 italic">
                 {@html $t(`${RouteTypes.Forms}.required`)}
@@ -1224,9 +1238,7 @@
               ? 'input-error'
               : ''}"
             bind:value={$form.personalInformation.passport.number}
-            aria-invalid={$errors.personalInformation?.passport?._errors
-              ? 'true'
-              : undefined}
+            aria-invalid={$errors.personalInformation?.passport?._errors ? 'true' : undefined}
           />
 
           <label for="personal-information-passport-validity" class="label text-wrap break-words">
@@ -1237,15 +1249,11 @@
           <input
             type="date"
             id="personal-information-passport-validity"
-            class="input w-full {
-            $errors.personalInformation?.passport?._errors
+            class="input w-full {$errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
             bind:value={$form.personalInformation.passport.validity}
-            aria-invalid={
-            $errors.personalInformation?.passport?._errors
-              ? 'true'
-              : undefined}
+            aria-invalid={$errors.personalInformation?.passport?._errors ? 'true' : undefined}
           />
         </fieldset>
 

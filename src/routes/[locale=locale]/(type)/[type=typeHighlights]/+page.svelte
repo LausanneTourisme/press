@@ -93,7 +93,6 @@
             alt={n.medias?.at(0)?.public_name}
             background="bg-glacier-300"
             class="carousel-item"
-            nofx={true}
           >
             <p>
               <small>

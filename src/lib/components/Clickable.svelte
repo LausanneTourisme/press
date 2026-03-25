@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
   import { blankable } from '$lib/helpers';
   import type { Snippet } from 'svelte';
   import { fade } from 'svelte/transition';
@@ -11,7 +12,7 @@
     overflow?: boolean;
     class?: string;
     children: Snippet;
-    onclick?: (this: Window, ev: MouseEvent) => any;
+    onclick?: (this: Window, ev: MouseEvent) => unknown;
   }
 
   const {
@@ -35,7 +36,7 @@
 </script>
 
 <a
-  {href}
+  href={resolve(href)}
   {target}
   class={style}
   data-sveltekit-preload-data={preload}

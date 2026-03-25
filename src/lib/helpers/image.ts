@@ -1,5 +1,5 @@
 import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-import type { ImageDimensions, Transform } from '$types';
+import type { ImageDimensions, Transform, TransformKeys } from '$types';
 
 export const defaultWidth: number = 1280;
 export const defaultHeight: number = 720;
@@ -21,8 +21,8 @@ export const transformToString = (
     const transformClean = clearDuplicatesInTransform(transform);
 
     for (const key in transformClean) {
-      // @ts-ignore keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
-      parameters.push(`${key}_${transformClean[key]}`);
+      // keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
+      parameters.push(`${key}_${transformClean[key as TransformKeys]}`);
     }
   }
 
@@ -46,7 +46,7 @@ const clearDuplicatesInTransform = (transform?: Transform) => {
   };
 
   return Object.fromEntries(
-    Object.entries(result).filter(([_, value]) => value !== undefined)
+    Object.entries(result).filter(([, value]) => value !== undefined)
   ) as Transform;
 };
 

@@ -20,12 +20,12 @@
 
   const { class: additionalClass, isMobile = false, values }: Props = $props();
 
-  const style = $derived(twMerge('md:mx-auto gap-8 p-4', 'flex', additionalClass));
+  const style = $derived(additionalClass);
 </script>
 
 {#key isMobile}
-  <Swiper>
-    {#each values as article, k}
+  <Swiper class={style}>
+    {#each values as article, k (k)}
       <Slide>
         <Clickable href={article.link}>
           <Card src={article.image} alt={article.name} background="bg-glacier-300" nofx={true}>

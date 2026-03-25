@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { type Locale } from '$lib/translations';
   import { twMerge } from 'tailwind-merge';
   import Image from '$lib/components/Media/Image.svelte';
 

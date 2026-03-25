@@ -29,7 +29,7 @@ const getUploadedFiles = (path) => {
       const data = fs.readFileSync(path, 'utf8');
       return data.split('\n').filter((x) => x?.length > 0);
     }
-  } catch (err) {
+  } catch {
     throw new Error(`Failed to read "${path}"`);
   }
 };
