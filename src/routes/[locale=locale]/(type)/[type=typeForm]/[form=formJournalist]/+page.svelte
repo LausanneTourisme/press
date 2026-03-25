@@ -1202,9 +1202,9 @@
           )}
         </Heading>
         <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
-          {#if $errors.personalInformation?.passport}
+          {#if $errors.personalInformation?.passport?._errors?.length}
             <p class="text-brand-600">
-              {@html $t($errors.personalInformation?.passport?.personalInformationPassport?.[0])}
+              {@html $t($errors.personalInformation.passport._errors[0])}
             </p>
           {/if}
           <label for="personal-information-passport-number" class="label text-wrap break-words">
@@ -1220,13 +1220,11 @@
           <input
             type="text"
             id="personal-information-passport-number"
-            class="input w-full {$errors.personalInformation?.passport ||
-            $errors.personalInformation?.passport?._errors
+            class="input w-full {$errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
             bind:value={$form.personalInformation.passport.number}
-            aria-invalid={$errors.personalInformation?.passport ||
-            $errors.personalInformation?.passport?._errors
+            aria-invalid={$errors.personalInformation?.passport?._errors
               ? 'true'
               : undefined}
           />
@@ -1239,12 +1237,12 @@
           <input
             type="date"
             id="personal-information-passport-validity"
-            class="input w-full {$errors.personalInformation?.passport ||
+            class="input w-full {
             $errors.personalInformation?.passport?._errors
               ? 'input-error'
               : ''}"
             bind:value={$form.personalInformation.passport.validity}
-            aria-invalid={$errors.personalInformation?.passport ||
+            aria-invalid={
             $errors.personalInformation?.passport?._errors
               ? 'true'
               : undefined}
