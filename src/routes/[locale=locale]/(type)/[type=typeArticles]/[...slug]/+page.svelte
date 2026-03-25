@@ -1,16 +1,8 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { ThemeKeys } from '$enums';
-  import InstagramBlock from '$lib/components/Blocks/Embed/Instagram.svelte';
-  import YoutubeBlock from '$lib/components/Blocks/Embed/Youtube.svelte';
-  import GalleryBlock from '$lib/components/Blocks/Gallery.svelte';
-  import HeadingBlock from '$lib/components/Blocks/Heading.svelte';
-  import HeroBlock from '$lib/components/Blocks/Hero.svelte';
-  import ImageBlock from '$lib/components/Blocks/Image.svelte';
-  import ParagraphBlock from '$lib/components/Blocks/Paragraph.svelte';
   import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
+  import PostContent from '$lib/components/PostContent.svelte';
   import { ucfirst } from '$lib/helpers';
   import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
   import { t, type Locale } from '$lib/translations';
@@ -18,7 +10,6 @@
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
-  import PostContent from '$lib/components/PostContent.svelte';
 
   const locale = $derived(page.params.locale as Locale);
   const article = $derived((page.data as PageData).article);

@@ -19,7 +19,7 @@ const getNavLocale = (request: Request) => {
   return defaultLocale;
 };
 
-export const load = async ({ url, request }) => {
+export const load = async ({ request }) => {
   const locale = getNavLocale(request);
   throw redirect(302, `/${locale}`);
 };

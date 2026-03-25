@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
   import { blankable } from '$lib/helpers';
   import { ChevronRight } from 'lucide-svelte';
   import type { Snippet } from 'svelte';
@@ -14,7 +15,7 @@
     withFlex?: boolean;
     children: Snippet;
     icon?: Snippet;
-    onclick?: (this: Window, ev: MouseEvent) => any;
+    onclick?: (this: Window, ev: MouseEvent) => unknown;
   }
 
   const {
@@ -43,7 +44,7 @@
 </script>
 
 <a
-  {href}
+  href={resolve(href)}
   {target}
   class={style}
   data-sveltekit-noscroll={noscroll}

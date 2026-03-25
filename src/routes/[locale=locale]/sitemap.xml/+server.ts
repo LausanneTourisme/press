@@ -1,5 +1,5 @@
-import { RouteTypes, Themes } from '$enums';
-import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
+import { RouteTypes } from '$enums';
+import { getMediaLibraryRegisterLink } from '$lib/helpers';
 import { menuItems } from '$lib/helpers/menu';
 import { getPosts } from '$lib/helpers/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';

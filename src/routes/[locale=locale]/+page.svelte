@@ -20,7 +20,6 @@
   import { onMount } from 'svelte';
 
   const locale = $derived(page.params.locale as Locale);
-  let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
   let videoUrl = $derived.by(() => `/pages/home/welcome_card_${locale}.mp4`);
@@ -55,10 +54,6 @@
   const updateSize = () => {
     isMobile = window.innerWidth < maxMobileWidth;
   };
-  // Listen for changes
-  const updateDarkMode = () => {
-    isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  };
 
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
@@ -71,9 +66,8 @@
 
   onMount(() => {
     updateSize();
-    updateDarkMode();
 
-    afterNavigate(({ to, from, type }) => {
+    afterNavigate(({ type }) => {
       // If user used back/forward, we keep themes state
       if (type === 'popstate') {
         displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
@@ -85,7 +79,6 @@
     /*
      *  Event listeners
      */
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateDarkMode);
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);
 
@@ -93,9 +86,6 @@
     return () => {
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', updateDarkMode);
     };
   });
 </script>

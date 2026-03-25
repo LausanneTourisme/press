@@ -5,8 +5,8 @@
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import { getTailwindColor, isOfflineMode } from '$lib/helpers';
-  import { defaultLocale, t, type Locale } from '$lib/translations';
+  import { getTailwindColor } from '$lib/helpers';
+  import { t, type Locale } from '$lib/translations';
   import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
   import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
   import maplibregl from 'maplibre-gl';
@@ -25,7 +25,6 @@
   };
 
   const {
-    class: additionalClass,
     themeColor,
     listBorderColor,
     favorites,
@@ -160,7 +159,7 @@
         if (context && typeof context.getParameter == 'function') {
           return true;
         }
-      } catch (e) {
+      } catch {
         // WebGL is supported, but disabled
       }
       return false;
@@ -184,7 +183,7 @@
 
   // on locale change, close aside
   $effect(() => {
-    locale;
+    void locale;
     closeAside();
   });
 </script>
@@ -194,7 +193,7 @@
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       {#key markers}
         <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-          {#each markers as marker}
+          {#each markers as marker (`poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
             <LausannerCard
               favorite={marker.favorite}
               poi={marker.poi}
@@ -242,7 +241,7 @@
             class="h-12 w-12 items-center rounded-full"
             alt={aside.lausanner?.name ?? ''}
             useCloudinaryPreset={aside.lausanner?.medias?.at(0)?.cloudinary_id ? false : true}
-            localSrc={'/pages/themes/user_not_found.png'}
+            localSrc="/pages/themes/user_not_found.png"
             src={aside.lausanner?.medias?.at(0)?.cloudinary_id ??
               '/pages/themes/user_not_found.png'}
             transform={{
@@ -299,8 +298,8 @@
       cooperativeGestures={true}
       bind:map
     >
-      <NavigationControl position={'top-right'} />
-      {#each markers as marker}
+      <NavigationControl position="top-right" />
+      {#each markers as marker (`poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
         <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
           {#snippet content()}
             <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
