@@ -1,4 +1,4 @@
-import { RouteTypes, type RouteType, type Theme } from '$enums';
+import { RouteTypes, type Form, type RouteType, type Theme } from '$enums';
 import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
 import { defaultLocale, locale, translations, type Locale } from '$lib/translations';
 import type { PostType, Translatable } from '$lib/types';
@@ -39,7 +39,7 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 
 export const route = (
   type: RouteType,
-  options: { forceLocale?: Locale | undefined; theme?: Theme; suffix?: string } = {
+  options: { forceLocale?: Locale | undefined; theme?: Theme; suffix?: string; form?: Form } = {
     forceLocale: undefined,
     theme: undefined
   }
@@ -56,7 +56,16 @@ export const route = (
       : null;
 
     if (!themeSlug) return `/${lang}/${slug}`;
-    return `/${lang}/${slug}/${themeSlug}/`;
+    return `/${lang}/${slug}/${themeSlug}`;
+  }
+
+  if (type === RouteTypes.Forms) {
+    const form = options.form;
+    const formSlug = form
+      ? translations.get()[lang][`route.${RouteTypes.Forms}.${form}.slug`]
+      : null;
+    if (!formSlug) return `/${lang}/${slug}`;
+    return `/${lang}/${slug}/${formSlug}`;
   }
 
   if (!slug) return `/${lang}`;
@@ -139,6 +148,9 @@ export const shuffle = <T>(array: T[]) => {
 };
 
 export const humanFileSize = (size: number) => {
-  const i = size == 0 ? 0 : Math.floor(Math.log(size) / Math.log(1024));
-  return +(size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][i];
+  if (size === 0) return '0 o';
+
+  const i = Math.floor(Math.log(size) / Math.log(1024));
+  const index = Math.min(i, 4); // Cap at index 4 (To)
+  return +(size / Math.pow(1024, index)).toFixed(2) + ' ' + ['o', 'ko', 'Mo', 'Go', 'To'][index];
 };
