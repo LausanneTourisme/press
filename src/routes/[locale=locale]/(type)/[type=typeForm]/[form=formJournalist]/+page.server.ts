@@ -48,14 +48,14 @@ export const actions = {
     if (sendWithSuccess) {
       return redirect(
         303,
-        `/${params.locale}/${t.get(`route.${RouteTypes.Form}.slug`)}/${t.get(`route.${RouteTypes.Form}.${Forms.Thanks}.slug`)}`
+        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
       );
     }
 
     setFlash(
       {
         type: 'error',
-        message: t.get(`${RouteTypes.Form}.error-on-sending`)
+        message: t.get(`${RouteTypes.Forms}.error-on-sending`)
       },
       cookies
     );
@@ -67,8 +67,8 @@ export const entries: EntryGenerator = () => {
   return supportedLocales.flatMap((locale) => {
     return {
       locale,
-      type: t.get(`route.${RouteTypes.Form}.slug`),
-      form: t.get(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
+      type: t.get(`route.${RouteTypes.Forms}.slug`),
+      form: t.get(`route.${RouteTypes.Forms}.${Forms.Journalist}.slug`)
     };
   });
 };
@@ -119,11 +119,11 @@ const sendFormByEmail = async ({
     external_mail: mediaProfileJournalist.personalInformation?.email
       ? {
           from_email: MAIL_FROM,
-          from_name: t.get(`${RouteTypes.Form}.email.from-name`),
-          subject: t.get(`${RouteTypes.Form}.email.subject`, {
-            form: t.get(`${RouteTypes.Form}.${Forms.Journalist}.title`)
+          from_name: t.get(`${RouteTypes.Forms}.email.from-name`),
+          subject: t.get(`${RouteTypes.Forms}.email.subject`, {
+            form: t.get(`${RouteTypes.Forms}.${Forms.Journalist}.title`)
           }),
-          html: `<p>${t.get(`${RouteTypes.Form}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Form}.email.automatic-mail-disclaimer`)}</i></p>`,
+          html: `<p>${t.get(`${RouteTypes.Forms}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Forms}.email.automatic-mail-disclaimer`)}</i></p>`,
           to: [
             {
               email: mediaProfileJournalist.personalInformation.email,
@@ -154,40 +154,40 @@ const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: L
   <!-- Médias -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">Média</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.media-name`)} :</span> <span style="word-break: break-all;">${data.mediaName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.media-thematic`)} :</span> <span style="word-break: break-all;">${data.thematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.audience-profile`)} :</span> <span style="word-break: break-all;">${data.audienceProfile ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.types.title`)} :</span> <span>${data.mediaTypes?.map((x) => t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.types.${x}`)).join(', ') ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.object-request`)} :</span> <span style="word-break: break-all;">${data.objectRequest ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.media-name`)} :</span> <span style="word-break: break-all;">${data.mediaName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.media-thematic`)} :</span> <span style="word-break: break-all;">${data.thematic ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.audience-profile`)} :</span> <span style="word-break: break-all;">${data.audienceProfile ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.types.title`)} :</span> <span>${data.mediaTypes?.map((x) => t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.types.${x}`)).join(', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.object-request`)} :</span> <span style="word-break: break-all;">${data.objectRequest ?? ''}</span></div>
   </section>
 `;
   // statistics of the media
   if (data.mediaTypes?.includes(MediaTypes.Print)) {
     html += `<!-- Statistiques Print -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.broadcast-location`)} :</span> <span style="word-break: break-all;">${data.printMediaStatistics?.broadcastLocation ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.copies`)} :</span> <span>${data.printMediaStatistics?.copies ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.print.readers`)} :</span> <span>${data.printMediaStatistics?.readers ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.print.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.print.broadcast-location`)} :</span> <span style="word-break: break-all;">${data.printMediaStatistics?.broadcastLocation ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.print.copies`)} :</span> <span>${data.printMediaStatistics?.copies ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.print.readers`)} :</span> <span>${data.printMediaStatistics?.readers ?? ''}</span></div>
   </section>
         `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Online)) {
     html += `<!-- Statistiques Online -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.website`)} :</span> <span style="word-break: break-all;">${data.onlineMediaStatistics?.website ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-unique-visitors`)} :</span> <span>${data.onlineMediaStatistics?.monthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.online.monthly-page-views`)} :</span> <span>${data.onlineMediaStatistics?.monthlyPageViews ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.online.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.online.website`)} :</span> <span style="word-break: break-all;">${data.onlineMediaStatistics?.website ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.online.monthly-unique-visitors`)} :</span> <span>${data.onlineMediaStatistics?.monthlyUniqueVisitors ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.online.monthly-page-views`)} :</span> <span>${data.onlineMediaStatistics?.monthlyPageViews ?? ''}</span></div>
   </section>
         `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Tv) || data.mediaTypes?.includes(MediaTypes.Radio)) {
     html += `<!-- Statistiques TV/Radio -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.radio-and-tv.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.radio-and-tv.emission-name`)} :</span> <span style="word-break: break-all;">${data.radioAndTVMediaStatistics?.emissionName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.statistics.radio-and-tv.viewers`)} :</span> <span style="word-break: break-all;">${data.radioAndTVMediaStatistics?.viewers ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.radio-and-tv.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.radio-and-tv.emission-name`)} :</span> <span style="word-break: break-all;">${data.radioAndTVMediaStatistics?.emissionName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.radio-and-tv.viewers`)} :</span> <span style="word-break: break-all;">${data.radioAndTVMediaStatistics?.viewers ?? ''}</span></div>
   </section>
         `;
   }
@@ -195,107 +195,107 @@ const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: L
   if (data.mediaTypes?.includes(MediaTypes.Print)) {
     html += `<!-- Couverture Print -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.total-pages`)} :</span> <span style="word-break: break-all;">${data.mediaCoveragePrint?.totalPages ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.article-length`)} :</span> <span style="word-break: break-all;">${data.mediaCoveragePrint?.articleLength ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.print.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.print.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.print.total-pages`)} :</span> <span style="word-break: break-all;">${data.mediaCoveragePrint?.totalPages ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.print.article-length`)} :</span> <span style="word-break: break-all;">${data.mediaCoveragePrint?.articleLength ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.print.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoveragePrint!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Online)) {
     html += `<!-- Couverture Online -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-length`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageOnline?.articleLength ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.article-thematic`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageOnline?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.online.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.online.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.online.article-length`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageOnline?.articleLength ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.online.article-thematic`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageOnline?.articleThematic ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.online.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageOnline!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
   if (data.mediaTypes?.includes(MediaTypes.Tv) || data.mediaTypes?.includes(MediaTypes.Radio)) {
     html += `<!-- Couverture TV/Radio -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.article-thematic`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageTvOrRadio?.articleThematic ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.radio-and-tv.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.radio-and-tv.article-thematic`)} :</span> <span style="word-break: break-all;">${data.mediaCoverageTvOrRadio?.articleThematic ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.coverage.radio-and-tv.publish-date`)} :</span> <span>${DateTime.fromSQL(data.mediaCoverageTvOrRadio!.publishDate!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
   </section>
         `;
   }
 
   html += `<!-- Informations de voyage -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.title`)}</h2>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.title`)} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.city`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.city ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.city`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.city ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.country ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.country ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
         </li>
       </ul>
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.return-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.returnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.title`)} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map((x) => `<li>${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.travel-reduction.${x}`)}</li>`).join('')}</ul></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.travel-information.last-visit`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.return-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.returnJourney?.replaceAll('\n', ', ') ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.travel-reduction.title`)} :</span> <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">${data.travelInformation?.travelReductions?.map((x) => `<li>${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.travel-reduction.${x}`)}</li>`).join('')}</ul></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.last-visit`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.lastVisit ? DateTime.fromSQL(data.travelInformation.lastVisit).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span></div>
   </section>
 `;
 
   html += `<!-- Informations personnelles -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.title`)}</h2>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.title`)} :</span> <span>${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.titles.${data.personalInformation.title}`)}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.first-name`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.firstName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.last-name`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.lastName ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.birth-date`)} :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.phone-number`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.phoneNumber ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.email`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.email ?? ''}</span></div>
+    <h2 style="font-weight: 800;width: 100%;text-align: left;margin: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.title`)}</h2>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.titles.title`)} :</span> <span>${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.titles.${data.personalInformation.title}`)}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.first-name`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.firstName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.last-name`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.lastName ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.birth-date`)} :</span> <span>${DateTime.fromSQL(data.personalInformation.birthday!).setLocale('fr').toFormat('dd MMMM yyyy')}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.phone-number`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.phoneNumber ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.email`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.email ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.title`)} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.street-address`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.streetAddress}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.street-address`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.streetAddress}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.city}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.city}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.postal-code`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.postalcode}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.postal-code`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.postalcode}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.country}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.country}</span>
         </li>
       </ul>
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.spoken-languages.title`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.spokenLanguages ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.freelance`)} :</span> <span>${data.personalInformation.freelance ? 'Oui' : 'Non'}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.spoken-languages.title`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.spokenLanguages ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.freelance`)} :</span> <span>${data.personalInformation.freelance ? 'Oui' : 'Non'}</span></div>
 
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.title`)} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.number`)} :</span> <span style="word-break: break-all;">${data.personalInformation.passport.number ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.number`)} :</span> <span style="word-break: break-all;">${data.personalInformation.passport.number ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.passport.validity`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.validity`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
         </li>
       </ul>
     </div>
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`)} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         ${
           data.personalInformation?.emergencyContacts?.map(
             (x) => `
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`)} :</span> <span style="word-break: break-all;">${x.name}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.emergency-contacts.name`)} :</span> <span style="word-break: break-all;">${x.name}</span>
           </li>
           <li>
-            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`)} :</span> <span style="word-break: break-all;">${x.phoneNumber}</span>
+            <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.emergency-contacts.phone-number`)} :</span> <span style="word-break: break-all;">${x.phoneNumber}</span>
           </li>
         `
           ) ?? ''

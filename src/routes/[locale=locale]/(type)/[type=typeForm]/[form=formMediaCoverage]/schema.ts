@@ -5,7 +5,7 @@ import { z } from 'zod/v4';
 const socialNetworkEnum = z.enum(getValues(SocialNetworks));
 const socialNetworkTypes = z
   .array(socialNetworkEnum)
-  .min(1, `${RouteTypes.Form}.validations.non-empty-array`);
+  .min(1, `${RouteTypes.Forms}.validations.non-empty-array`);
 const socialNetworksRequirements = getValues(SocialNetworks).filter((x) => x !== 'blog');
 
 const allowedMimeTypes = [
@@ -19,11 +19,11 @@ const allowedMimeTypes = [
 ];
 const fileSchema = z
   .instanceof(File)
-  .refine((file) => file.size > 0, `${RouteTypes.Form}.validations.file-size`)
-  .refine((file) => file.size <= 10 * 1024 * 1024, `${RouteTypes.Form}.validations.file-size`)
+  .refine((file) => file.size > 0, `${RouteTypes.Forms}.validations.file-size`)
+  .refine((file) => file.size <= 10 * 1024 * 1024, `${RouteTypes.Forms}.validations.file-size`)
   .refine(
     (file) => allowedMimeTypes.includes(file.type),
-    `${RouteTypes.Form}.validations.file-invalid-type`
+    `${RouteTypes.Forms}.validations.file-invalid-type`
   );
 
 export const schema = z

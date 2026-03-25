@@ -88,15 +88,15 @@
 <Container width="small">
   <form method="POST" class="w-full" enctype="multipart/form-data" use:enhance>
     <Heading tag="h1" class="mt-6 mb-2 text-lg md:text-2xl">
-      {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.title`)}
+      {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.title`)}
     </Heading>
     <section class="w-full">
       <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
         <!-- Social Network -->
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">
-            {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.social-networks.title`)}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.social-networks.title`)}
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
           {#each Object.values(SocialNetworks) as socialNetwork}
@@ -125,7 +125,7 @@
                 }}
               />
               {@html $t(
-                `${RouteTypes.Form}.${Forms.MediaCoverage}.form.social-networks.${socialNetwork}`
+                `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.social-networks.${socialNetwork}`
               )}
             </label>
           {/each}
@@ -140,9 +140,9 @@
       >
         <!-- Username -->
         <label for="posts-section-username" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.username`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.username`)}
           {#if $form.socialNetworks?.some( (x: SocialNetwork) => (socialNetworksRequirements as string[]).includes(x) )}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <input
@@ -162,9 +162,9 @@
           class="label text-wrap break-words"
           class:hidden={!$form.socialNetworks?.includes(SocialNetworks.Blog)}
         >
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)}
           {#if $form.socialNetworks?.includes(SocialNetworks.Blog)}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <input
@@ -184,9 +184,9 @@
           class="label text-wrap break-words"
         >
           {@html $t(
-            `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`
+            `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`
           )}
-          <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
         </label>
         <input
           type="number"
@@ -209,10 +209,10 @@
           <!-- Number of posts -->
           <label for="posts-section-number-of-posts" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`
+              `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`
             )}
             {#if $form.socialNetworks?.some( (x: SocialNetwork) => getValues(SocialNetworks).includes(x) )}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+              <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
             {/if}
           </label>
           <input
@@ -227,7 +227,7 @@
           <!-- Number of clicks -->
           <label for="posts-section-number-of-clicks" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`
+              `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`
             )}
           </label>
           <input
@@ -242,14 +242,14 @@
           <!-- Scope of posts -->
           <label for="posts-section-scope-of-posts" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.scope-of-posts`
+              `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.scope-of-posts`
             )}
             {#if $form.socialNetworks?.some( (x: SocialNetwork) => getValues(SocialNetworks).includes(x) )}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+              <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
             {/if}
           </label>
           <p class={$errors.scopeOfPosts?._errors !== undefined ? 'text-brand-600' : ''}>
-            {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.upload-files`)}
+            {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
           </p>
           {#if $errors.scopeOfPosts?.[0]}
             <p class="text-brand-600">
@@ -298,14 +298,14 @@
           <!-- Interaction with posts -->
           <label for="posts-section-interaction-with-posts" class="label text-wrap break-words">
             {@html $t(
-              `${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.interaction-with-posts`
+              `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.interaction-with-posts`
             )}
             {#if $form.socialNetworks?.some( (x: SocialNetwork) => getValues(SocialNetworks).includes(x) )}
-              <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+              <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
             {/if}
           </label>
           <p class={$errors.interactionWithPosts?._errors !== undefined ? 'text-brand-600' : ''}>
-            {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.upload-files`)}
+            {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
           </p>
           {#if $errors.interactionWithPosts?.[0]}
             <p class="text-brand-600">
@@ -362,10 +362,10 @@
         <!-- Number of stories -->
         <label for="stories-section-number-of-stories" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.number-of-stories`
+            `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.number-of-stories`
           )}
           {#if $form.socialNetworks?.includes('instagram')}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <input
@@ -380,14 +380,14 @@
         <!-- Average story reach -->
         <label for="stories-section-average-story-reach" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.average-story-reach`
+            `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.average-story-reach`
           )}
           {#if $form.socialNetworks?.includes('instagram')}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <p class={$errors.averageStoryReach?._errors !== undefined ? 'text-brand-600' : ''}>
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.upload-files`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
         </p>
         {#if $errors.averageStoryReach?.[0]}
           <p class="text-brand-600">
@@ -436,14 +436,14 @@
         <!-- Interaction with stories -->
         <label for="stories-section-interaction-with-stories" class="label text-wrap break-words">
           {@html $t(
-            `${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.interaction-with-stories`
+            `${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.interaction-with-stories`
           )}
           {#if $form.socialNetworks?.includes('instagram')}
-            <span class="text-brand-600 italic">{$t(`${RouteTypes.Form}.required`)}</span>
+            <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
         <p class={$errors.interactionWithStories?._errors !== undefined ? 'text-brand-600' : ''}>
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.upload-files`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
         </p>
         {#if $errors.interactionWithStories?.[0]}
           <p class="text-brand-600">
@@ -493,15 +493,15 @@
       <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4">
         <!-- Remarks -->
         <label for="remarks" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.remarks.title`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.remarks.title`)}
           {#if $constraints.remarks?.required}
             <span class="text-brand-600 italic">
-              {@html $t(`${RouteTypes.Form}.required`)}
+              {@html $t(`${RouteTypes.Forms}.required`)}
             </span>
           {/if}
         </label>
         <p class="information">
-          {@html $t(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.remarks.paragraph`)}
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.remarks.paragraph`)}
         </p>
         <textarea
           id="remarks"
@@ -520,7 +520,7 @@
           <Loading />
         </span>
         <span class={!isSubmitting ? '' : 'hidden'}>
-          {$t(`${RouteTypes.Form}.submit`)}
+          {$t(`${RouteTypes.Forms}.submit`)}
         </span>
       </button>
     </div>
