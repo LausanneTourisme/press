@@ -168,7 +168,7 @@
           <a
             href={route(RouteTypes.Forms, {
               forceLocale: locale,
-              suffix: $t(`route.${RouteTypes.Forms}.${Forms.Journalist}.slug`)
+              form: Forms.Journalist
             })}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           >
@@ -178,7 +178,7 @@
           <a
             href={route(RouteTypes.Forms, {
               forceLocale: locale,
-              suffix: $t(`route.${RouteTypes.Forms}.${Forms.ContentCreator}.slug`)
+              form: Forms.ContentCreator
             })}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
           >

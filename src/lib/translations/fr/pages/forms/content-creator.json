@@ -59,7 +59,7 @@
           "title": "Profil de l'audience",
           "description": "âge, niveau d'éducation, sexe, lieu de résidence, intérêts, ..."
         },
-        "performances": {
+        "performance": {
           "title": "Performances du blog",
           "monthly-unique-visitors": "Reach/Visiteurs uniques par mois",
           "monthly-page-views": "Nombre de pages vues par mois"
