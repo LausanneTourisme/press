@@ -11,10 +11,10 @@
 
 <Container width="small">
   <Heading tag="h1">
-    {@html $t(`${RouteTypes.Form}.${Forms.Thanks}.title`)}
+    {@html $t(`${RouteTypes.Forms}.${Forms.Thanks}.title`)}
   </Heading>
 
   <Container width="small">
-    {@html $t(`${RouteTypes.Form}.${Forms.Thanks}.confirmation-mail`)}
+    {@html $t(`${RouteTypes.Forms}.${Forms.Thanks}.confirmation-mail`)}
   </Container>
 </Container>
