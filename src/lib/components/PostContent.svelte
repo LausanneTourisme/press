@@ -12,6 +12,7 @@
   import { type Locale } from '$lib/translations';
   import type { PostType, Translatable } from '$types';
   import type { Hero } from '$types/releaseContents';
+  import { twMerge } from 'tailwind-merge';
 
   type Props = {
     class?: string;
@@ -23,7 +24,7 @@
   const { class: additionalClass, hero, post, locale }: Props = $props();
 </script>
 
-<div class="content">
+<div class={twMerge('content', additionalClass)}>
   {#if hero}
     <HeroBlock {hero} class="pt-0" {locale} />
   {:else}
@@ -49,7 +50,7 @@
 -
 -->
   {#if post.content}
-    {#each post.content as block}
+    {#each post.content as block, index (`${index} ${block.type} ${locale}`)}
       {#if block.type === 'heading'}
         <Container width="medium">
           <HeadingBlock tag={block.tag}>

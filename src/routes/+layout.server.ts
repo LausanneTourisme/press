@@ -19,7 +19,7 @@ const getUrlLocale = (pathname: string): undefined | Locale => {
     : undefined;
 };
 
-export const load = loadFlash(async ({ url, cookies, request, locals, route, ...rest }) => {
+export const load = loadFlash(async ({ url }) => {
   const lang = getUrlLocale(url.pathname) ?? defaultLocale;
   // undefined case covered by src/params/locale.ts
   await Promise.all([

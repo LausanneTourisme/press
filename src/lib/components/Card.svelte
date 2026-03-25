@@ -26,10 +26,8 @@
     localSrc = '/pages/themes/cathedrale_skate.jpg',
     transform,
     alt,
-    border,
     background,
     negative = false,
-    nofx = false
   }: Props = $props();
 
   const cardStyle = $derived(

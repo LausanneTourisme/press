@@ -139,8 +139,10 @@
       </fieldset>
 
       <fieldset
-        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"          
-        class:hidden={!$form.socialNetworks.length || $form.socialNetworks.length === 1 && $form.socialNetworks?.includes(SocialNetworks.Blog)}
+        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        class:hidden={!$form.socialNetworks.length ||
+          ($form.socialNetworks.length === 1 &&
+            $form.socialNetworks?.includes(SocialNetworks.Blog))}
       >
         <!-- Username -->
         <label for="posts-section-username" class="label text-wrap break-words">
@@ -159,7 +161,8 @@
         />
       </fieldset>
 
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+      <fieldset
+        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
         class:hidden={!$form.socialNetworks.length}
       >
         <!-- Blog url -->
@@ -264,7 +267,9 @@
             bind:this={scopeOfPostsInput}
             multiple
             accept="image/*"
-            class="file-input w-full {hasArrayErrors($errors.scopeOfPosts) ? 'file-input-error' : ''}"
+            class="file-input w-full {hasArrayErrors($errors.scopeOfPosts)
+              ? 'file-input-error'
+              : ''}"
             onchange={(e) => {
               $form.scopeOfPosts = [
                 ...($form.scopeOfPosts as File[]),
@@ -276,7 +281,7 @@
           {#if $form.scopeOfPosts?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.scopeOfPosts as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -288,7 +293,9 @@
                       scopeOfPostsInput.files = dt.files;
                     }}
                   />
-                  <span class={$errors.scopeOfPosts?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                  <span class={$errors.scopeOfPosts?.[index]?.length ? 'text-error' : ''}
+                    >{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.scopeOfPosts?.[index]?.length}
                     <span class="text-error text-sm">{$t($errors.scopeOfPosts[index][0])}</span>
                   {/if}
@@ -316,7 +323,9 @@
             bind:this={interactionWithPostsInput}
             multiple
             accept="image/*"
-            class="file-input w-full {hasArrayErrors($errors.interactionWithPosts) ? 'file-input-error' : ''}"
+            class="file-input w-full {hasArrayErrors($errors.interactionWithPosts)
+              ? 'file-input-error'
+              : ''}"
             onchange={(e) => {
               $form.interactionWithPosts = [
                 ...($form.interactionWithPosts as File[]),
@@ -328,7 +337,7 @@
           {#if $form.interactionWithPosts?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.interactionWithPosts as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -340,9 +349,13 @@
                       interactionWithPostsInput.files = dt.files;
                     }}
                   />
-                  <span class={$errors.interactionWithPosts?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                  <span class={$errors.interactionWithPosts?.[index]?.length ? 'text-error' : ''}
+                    >{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.interactionWithPosts?.[index]?.length}
-                    <span class="text-error text-sm">{$t($errors.interactionWithPosts[index][0])}</span>
+                    <span class="text-error text-sm"
+                      >{$t($errors.interactionWithPosts[index][0])}</span
+                    >
                   {/if}
                 </li>
               {/each}
@@ -353,8 +366,8 @@
 
       <fieldset
         class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
-        class:hidden={!$form.socialNetworks.length || $form
-          .socialNetworks.length === 1 && $form.socialNetworks.includes(SocialNetworks.Blog)}
+        class:hidden={!$form.socialNetworks.length ||
+          ($form.socialNetworks.length === 1 && $form.socialNetworks.includes(SocialNetworks.Blog))}
       >
         <!-- Number of stories -->
         <label for="stories-section-number-of-stories" class="label text-wrap break-words">
@@ -393,7 +406,9 @@
           bind:this={averageStoryReachInput}
           multiple
           accept="image/*"
-          class="file-input w-full {hasArrayErrors($errors.averageStoryReach) ? 'file-input-error' : ''}"
+          class="file-input w-full {hasArrayErrors($errors.averageStoryReach)
+            ? 'file-input-error'
+            : ''}"
           onchange={(e) => {
             $form.averageStoryReach = [
               ...($form.averageStoryReach as File[]),
@@ -405,7 +420,7 @@
         {#if $form.averageStoryReach?.length}
           <ul class="mt-2 space-y-1">
             {#each $form.averageStoryReach as File[] as file, index}
-              <li class="flex items-center flex-wrap gap-x-2">
+              <li class="flex flex-wrap items-center gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                   onclick={() => {
@@ -417,7 +432,9 @@
                     averageStoryReachInput.files = dt.files;
                   }}
                 />
-                <span class={$errors.averageStoryReach?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                <span class={$errors.averageStoryReach?.[index]?.length ? 'text-error' : ''}
+                  >{file.name} ({humanFileSize(file.size)})</span
+                >
                 {#if $errors.averageStoryReach?.[index]?.length}
                   <span class="text-error text-sm">{$t($errors.averageStoryReach[index][0])}</span>
                 {/if}
@@ -445,7 +462,9 @@
           bind:this={interactionWithStoriesInput}
           multiple
           accept="image/*"
-          class="file-input w-full {hasArrayErrors($errors.interactionWithStories) ? 'file-input-error' : ''}"
+          class="file-input w-full {hasArrayErrors($errors.interactionWithStories)
+            ? 'file-input-error'
+            : ''}"
           onchange={(e) => {
             $form.interactionWithStories = [
               ...($form.interactionWithStories as File[]),
@@ -457,7 +476,7 @@
         {#if $form.interactionWithStories?.length}
           <ul class="mt-2 space-y-1">
             {#each $form.interactionWithStories as File[] as file, index}
-              <li class="flex items-center flex-wrap gap-x-2">
+              <li class="flex flex-wrap items-center gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                   onclick={() => {
@@ -469,9 +488,13 @@
                     interactionWithStoriesInput.files = dt.files;
                   }}
                 />
-                <span class={$errors.interactionWithStories?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                <span class={$errors.interactionWithStories?.[index]?.length ? 'text-error' : ''}
+                  >{file.name} ({humanFileSize(file.size)})</span
+                >
                 {#if $errors.interactionWithStories?.[index]?.length}
-                  <span class="text-error text-sm">{$t($errors.interactionWithStories[index][0])}</span>
+                  <span class="text-error text-sm"
+                    >{$t($errors.interactionWithStories[index][0])}</span
+                  >
                 {/if}
               </li>
             {/each}
@@ -479,8 +502,9 @@
         {/if}
       </fieldset>
 
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
-       class:hidden={!$form.socialNetworks.length}
+      <fieldset
+        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        class:hidden={!$form.socialNetworks.length}
       >
         <!-- Remarks -->
         <label for="remarks" class="label text-wrap break-words">

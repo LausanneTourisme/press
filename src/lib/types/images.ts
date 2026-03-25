@@ -29,6 +29,7 @@ type gravity =
   | 'south_west';
 type crop = 'auto' | 'crop' | 'fill' | 'scale' | 'thumb';
 
+export type TransformKeys = keyof Transform;
 export type Transform = {
   width?: number;
   w?: number;

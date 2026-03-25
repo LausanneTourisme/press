@@ -278,7 +278,7 @@
           {#if $form.instagramSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.instagramSubscriberScreenshots as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -286,13 +286,21 @@
                         $form.instagramSubscriberScreenshots as File[]
                       ).filter((_, i) => i !== index);
                       const dt = new DataTransfer();
-                      ($form.instagramSubscriberScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      ($form.instagramSubscriberScreenshots as File[]).forEach((f) =>
+                        dt.items.add(f)
+                      );
                       instagramSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
-                  <span class="{$errors.instagramSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
+                  <span
+                    class={$errors.instagramSubscriberScreenshots?.[index]?.length
+                      ? 'text-error text-sm'
+                      : ''}>{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.instagramSubscriberScreenshots?.[index]?.length}
-                    <span class="text-error text-sm">{$t($errors.instagramSubscriberScreenshots[index][0])}</span>
+                    <span class="text-error text-sm"
+                      >{$t($errors.instagramSubscriberScreenshots[index][0])}</span
+                    >
                   {/if}
                 </li>
               {/each}
@@ -322,15 +330,13 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={hasArrayErrors($errors.instagramAccountsScreenshots)
-              ? 'true'
-              : undefined}
+            aria-invalid={hasArrayErrors($errors.instagramAccountsScreenshots) ? 'true' : undefined}
           />
 
           {#if $form.instagramAccountsScreenshots?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.instagramAccountsScreenshots as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -338,13 +344,21 @@
                         $form.instagramAccountsScreenshots as File[]
                       ).filter((_, i) => i !== index);
                       const dt = new DataTransfer();
-                      ($form.instagramAccountsScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      ($form.instagramAccountsScreenshots as File[]).forEach((f) =>
+                        dt.items.add(f)
+                      );
                       instagramAccountsScreenshotsInput.files = dt.files;
                     }}
                   />
-                  <span  class="{$errors.instagramAccountsScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
+                  <span
+                    class={$errors.instagramAccountsScreenshots?.[index]?.length
+                      ? 'text-error text-sm'
+                      : ''}>{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.instagramAccountsScreenshots?.[index]?.length}
-                    <span class="text-error text-sm">{$t($errors.instagramAccountsScreenshots[index][0])}</span>
+                    <span class="text-error text-sm"
+                      >{$t($errors.instagramAccountsScreenshots[index][0])}</span
+                    >
                   {/if}
                 </li>
               {/each}
@@ -400,15 +414,13 @@
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={hasArrayErrors($errors.tiktokSubscriberScreenshots)
-              ? 'true'
-              : undefined}
+            aria-invalid={hasArrayErrors($errors.tiktokSubscriberScreenshots) ? 'true' : undefined}
           />
 
           {#if $form.tiktokSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.tiktokSubscriberScreenshots as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -420,9 +432,15 @@
                       tiktokSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
-                  <span class="{$errors.tiktokSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
+                  <span
+                    class={$errors.tiktokSubscriberScreenshots?.[index]?.length
+                      ? 'text-error text-sm'
+                      : ''}>{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.tiktokSubscriberScreenshots?.[index]?.length}
-                    <span class="text-error text-sm">{$t($errors.tiktokSubscriberScreenshots[index][0])}</span>
+                    <span class="text-error text-sm"
+                      >{$t($errors.tiktokSubscriberScreenshots[index][0])}</span
+                    >
                   {/if}
                 </li>
               {/each}
@@ -472,9 +490,7 @@
             class="file-input w-full {hasArrayErrors($errors.youtubeSubscriberScreenshots)
               ? 'file-input-error'
               : ''}"
-            aria-invalid={hasArrayErrors($errors.youtubeSubscriberScreenshots)
-              ? 'true'
-              : undefined}
+            aria-invalid={hasArrayErrors($errors.youtubeSubscriberScreenshots) ? 'true' : undefined}
             onchange={(e) => {
               $form.youtubeSubscriberScreenshots = [
                 ...($form.youtubeSubscriberScreenshots as File[]),
@@ -486,7 +502,7 @@
           {#if $form.youtubeSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.youtubeSubscriberScreenshots as File[] as file, index}
-                <li class="flex items-center flex-wrap gap-x-2">
+                <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
@@ -494,13 +510,21 @@
                         $form.youtubeSubscriberScreenshots as File[]
                       ).filter((_, i) => i !== index);
                       const dt = new DataTransfer();
-                      ($form.youtubeSubscriberScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      ($form.youtubeSubscriberScreenshots as File[]).forEach((f) =>
+                        dt.items.add(f)
+                      );
                       youtubeSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
-                  <span class="{$errors.youtubeSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
+                  <span
+                    class={$errors.youtubeSubscriberScreenshots?.[index]?.length
+                      ? 'text-error text-sm'
+                      : ''}>{file.name} ({humanFileSize(file.size)})</span
+                  >
                   {#if $errors.youtubeSubscriberScreenshots?.[index]?.length}
-                    <span class="text-error text-sm">{$t($errors.youtubeSubscriberScreenshots[index][0])}</span>
+                    <span class="text-error text-sm"
+                      >{$t($errors.youtubeSubscriberScreenshots[index][0])}</span
+                    >
                   {/if}
                 </li>
               {/each}
@@ -1204,14 +1228,16 @@
                 aria-label={$t(
                   `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
                 )}
-                class="personal-information-emergency-contact-name input w-full {($errors as Record<string, string[] | undefined>)?.[
-                  `emergencyContactNames_${i}`
-                ] !== undefined
+                class="personal-information-emergency-contact-name input w-full {(
+                  $errors as Record<string, string[] | undefined>
+                )?.[`emergencyContactNames_${i}`] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactNames"
                 bind:value={emergencyContacts[i].name}
-                aria-invalid={($errors as Record<string, string[] | undefined>)?.[`emergencyContactNames_${i}`] !== undefined
+                aria-invalid={($errors as Record<string, string[] | undefined>)?.[
+                  `emergencyContactNames_${i}`
+                ] !== undefined
                   ? 'true'
                   : undefined}
               />
@@ -1234,14 +1260,16 @@
                 aria-label={$t(
                   `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
                 )}
-                class="personal-information-emergency-contact-phone-number input w-full {($errors as Record<string, string[] | undefined>)?.[
-                  `emergencyContactPhones_${i}`
-                ] !== undefined
+                class="personal-information-emergency-contact-phone-number input w-full {(
+                  $errors as Record<string, string[] | undefined>
+                )?.[`emergencyContactPhones_${i}`] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactPhones"
                 bind:value={emergencyContacts[i].phonenunmber}
-                aria-invalid={($errors as Record<string, string[] | undefined>)?.[`emergencyContactPhones_${i}`] !== undefined
+                aria-invalid={($errors as Record<string, string[] | undefined>)?.[
+                  `emergencyContactPhones_${i}`
+                ] !== undefined
                   ? 'true'
                   : undefined}
               />
@@ -1336,7 +1364,9 @@
         class="fieldset personal-information-remarks bg-base-200/50 border-base-300 rounded-box border p-4"
       >
         <label for="personal-information-remarks" class="label text-wrap break-words">
-          {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.remarks`)}
+          {@html $t(
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.remarks`
+          )}
         </label>
         <textarea
           id="personal-information-remarks"

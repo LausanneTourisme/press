@@ -1,6 +1,5 @@
 <script lang="ts">
   import Container from '$lib/components/Container.svelte';
-  import Figure from '$lib/components/Figure.svelte';
   import { maxMobileWidth } from '$lib/helpers';
   import { generateCloudinaryUrl, selectBestWidth } from '$lib/helpers/image';
   import { onMount, type Snippet } from 'svelte';
