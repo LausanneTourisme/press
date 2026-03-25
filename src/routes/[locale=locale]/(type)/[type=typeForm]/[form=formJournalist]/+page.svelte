@@ -253,7 +253,6 @@
             aria-required={$errors.objectRequest ? 'true' : undefined}
           ></textarea>
         </fieldset>
-        <!-- svelte-ignore a11y_role_supports_aria_props_implicit -->
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
           <Heading tag="h3" class="mt-6  mb-2 text-lg md:text-lg">
@@ -277,7 +276,7 @@
             <input
               id="print-statistics-broadcastLocation"
               type="text"
-              class="input w-full {$errors.printMediaStatistics?.broadcastLocation
+              class="input w-full {$errors.printMediaStatistics?.broadcastLocation || $errors.printMediaStatistics?._errors
                 ? 'input-error'
                 : ''}"
               placeholder={$t(
@@ -286,25 +285,22 @@
               defaultValue={$form.printMediaStatistics?.broadcastLocation ?? ''}
               onchange={(e) => {
                 const value = e.currentTarget.value;
-                if (value.trim().length) {
-                  $form.printMediaStatistics = {
-                    copies: 0,
-                    readers: 0,
-                    ...$form.printMediaStatistics,
-                    broadcastLocation: value
-                  };
-                }
+                $form.printMediaStatistics = {
+                  copies: 0,
+                  readers: 0,
+                  ...$form.printMediaStatistics,
+                  broadcastLocation: value
+                };
               }}
               aria-label={$t(
                 `${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.broadcast-location`
               )}
-              aria-invalid={$errors.printMediaStatistics?.broadcastLocation ? 'true' : undefined}
+              aria-invalid={$errors.printMediaStatistics?.broadcastLocation || $errors.printMediaStatistics?._errors ? 'true' : undefined}
             />
 
-            {#if $errors.printMediaStatistics?.printMediaStatistics !== undefined}
-              {@const printErrors = $errors.printMediaStatistics?.printMediaStatistics}
+            {#if $errors.printMediaStatistics?._errors?.length}
               <p id="media-types-error" class="text-error error">
-                {#each printErrors as error}
+                {#each $errors.printMediaStatistics._errors as error}
                   {@html $t(error)}<br />
                 {/each}
               </p>
@@ -317,7 +313,7 @@
             <input
               id="print-statistics-copies"
               type="number"
-              class="input w-full {$errors.printMediaStatistics?.printMediaStatistics !== undefined
+              class="input w-full {$errors.printMediaStatistics?.copies !== undefined || $errors.printMediaStatistics?._errors
                 ? 'input-error'
                 : ''}"
               defaultValue={$form.printMediaStatistics?.copies ?? 0}
@@ -335,9 +331,7 @@
               aria-label={$t(
                 `${RouteTypes.Forms}.${Forms.Journalist}.form.statistics.${MediaTypes.Print}.copies`
               )}
-              aria-invalid={$errors.printMediaStatistics?.printMediaStatistics !== undefined
-                ? 'true'
-                : undefined}
+              aria-invalid={$errors.printMediaStatistics?.copies !== undefined || $errors.printMediaStatistics?._errors ? 'true' : undefined}
             />
 
             <label for="print-statistics-readers" class="label text-wrap break-words">
