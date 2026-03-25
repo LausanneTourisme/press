@@ -96,8 +96,13 @@
   // Check if an array field has any errors (per-index or aggregate)
   const hasArrayErrors = (fieldErrors: Record<string | number, unknown> | undefined): boolean => {
     if (!fieldErrors) return false;
-    return Object.keys(fieldErrors).length > 0;
+    return Object.values(fieldErrors).some((v) => Array.isArray(v) && v.length > 0);
   };
+
+  let instagramSubscriberScreenshotsInput: HTMLInputElement = $state()!;
+  let instagramAccountsScreenshotsInput: HTMLInputElement = $state()!;
+  let tiktokSubscriberScreenshotsInput: HTMLInputElement = $state()!;
+  let youtubeSubscriberScreenshotsInput: HTMLInputElement = $state()!;
 
   const addEmergencyContact = () => {
     emergencyContacts.push({ name: '', phonenunmber: '' });
@@ -253,6 +258,7 @@
             type="file"
             id="instagramSubscriberScreenshots"
             name="instagramSubscriberScreenshots"
+            bind:this={instagramSubscriberScreenshotsInput}
             multiple
             accept="image/*"
             class="file-input w-full {hasArrayErrors($errors.instagramSubscriberScreenshots)
@@ -279,6 +285,9 @@
                       $form.instagramSubscriberScreenshots = (
                         $form.instagramSubscriberScreenshots as File[]
                       ).filter((_, i) => i !== index);
+                      const dt = new DataTransfer();
+                      ($form.instagramSubscriberScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      instagramSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
                   <span class="{$errors.instagramSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
@@ -301,6 +310,7 @@
             type="file"
             id="instagramAccountsScreenshots"
             name="instagramAccountsScreenshots"
+            bind:this={instagramAccountsScreenshotsInput}
             multiple
             accept="image/*"
             class="file-input w-full {hasArrayErrors($errors.instagramAccountsScreenshots)
@@ -327,6 +337,9 @@
                       $form.instagramAccountsScreenshots = (
                         $form.instagramAccountsScreenshots as File[]
                       ).filter((_, i) => i !== index);
+                      const dt = new DataTransfer();
+                      ($form.instagramAccountsScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      instagramAccountsScreenshotsInput.files = dt.files;
                     }}
                   />
                   <span  class="{$errors.instagramAccountsScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
@@ -375,6 +388,7 @@
             type="file"
             id="tiktokSubscriberScreenshots"
             name="tiktokSubscriberScreenshots"
+            bind:this={tiktokSubscriberScreenshotsInput}
             multiple
             accept="image/*"
             class="file-input w-full {hasArrayErrors($errors.tiktokSubscriberScreenshots)
@@ -401,6 +415,9 @@
                       $form.tiktokSubscriberScreenshots = (
                         $form.tiktokSubscriberScreenshots as File[]
                       ).filter((_, i) => i !== index);
+                      const dt = new DataTransfer();
+                      ($form.tiktokSubscriberScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      tiktokSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
                   <span class="{$errors.tiktokSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
@@ -449,6 +466,7 @@
             type="file"
             id="youtubeSubscriberScreenshots"
             name="youtubeSubscriberScreenshots"
+            bind:this={youtubeSubscriberScreenshotsInput}
             multiple
             accept="image/*"
             class="file-input w-full {hasArrayErrors($errors.youtubeSubscriberScreenshots)
@@ -475,6 +493,9 @@
                       $form.youtubeSubscriberScreenshots = (
                         $form.youtubeSubscriberScreenshots as File[]
                       ).filter((_, i) => i !== index);
+                      const dt = new DataTransfer();
+                      ($form.youtubeSubscriberScreenshots as File[]).forEach((f) => dt.items.add(f));
+                      youtubeSubscriberScreenshotsInput.files = dt.files;
                     }}
                   />
                   <span class="{$errors.youtubeSubscriberScreenshots?.[index]?.length ? 'text-error text-sm' : ''}">{file.name} ({humanFileSize(file.size)})</span>
@@ -1001,10 +1022,10 @@
         <input
           type="text"
           id="personal-information-passport-number"
-          class="input w-full {$errors.personalInformationPassport ? 'input-error' : ''}"
+          class="input w-full {$errors._errors?.length ? 'input-error' : ''}"
           name="passportNumber"
           bind:value={$form.passportNumber}
-          aria-invalid={$errors.personalInformationPassport ? 'true' : undefined}
+          aria-invalid={$errors._errors?.length ? 'true' : undefined}
         />
 
         <label for="personal-information-passport-validity" class="label text-wrap break-words">
@@ -1015,10 +1036,10 @@
         <input
           type="date"
           id="personal-information-passport-validity"
-          class="input w-full {$errors.personalInformationPassport ? 'input-error' : ''}"
+          class="input w-full {$errors._errors?.length ? 'input-error' : ''}"
           name="passportValidity"
           bind:value={$form.passportValidity}
-          aria-invalid={$errors.personalInformationPassport ? 'true' : undefined}
+          aria-invalid={$errors._errors?.length ? 'true' : undefined}
         />
       </fieldset>
 
@@ -1171,7 +1192,7 @@
                 `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
               )}
             >
-              {#if ($errors?.[`emergencyContactNames_${i}`] as string | undefined) !== undefined}
+              {#if ($errors as Record<string, string[] | undefined>)?.[`emergencyContactNames_${i}`] !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
                     `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.name`
@@ -1183,14 +1204,14 @@
                 aria-label={$t(
                   `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.name`
                 )}
-                class="personal-information-emergency-contact-name input w-full {$errors?.[
+                class="personal-information-emergency-contact-name input w-full {($errors as Record<string, string[] | undefined>)?.[
                   `emergencyContactNames_${i}`
                 ] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactNames"
                 bind:value={emergencyContacts[i].name}
-                aria-invalid={$errors?.[`emergencyContactNames_${i}`] !== undefined
+                aria-invalid={($errors as Record<string, string[] | undefined>)?.[`emergencyContactNames_${i}`] !== undefined
                   ? 'true'
                   : undefined}
               />
@@ -1201,7 +1222,7 @@
                 `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
               )}
             >
-              {#if ($errors?.[`emergencyContactPhones_${i}`] as string | undefined) !== undefined}
+              {#if ($errors as Record<string, string[] | undefined>)?.[`emergencyContactPhones_${i}`] !== undefined}
                 <p class="text-brand-600 my-1">
                   {@html $t(
                     `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.phone-number`
@@ -1213,14 +1234,14 @@
                 aria-label={$t(
                   `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.emergency-contacts.phone-number`
                 )}
-                class="personal-information-emergency-contact-phone-number input w-full {$errors?.[
+                class="personal-information-emergency-contact-phone-number input w-full {($errors as Record<string, string[] | undefined>)?.[
                   `emergencyContactPhones_${i}`
                 ] !== undefined
                   ? 'input-error'
                   : ''}"
                 name="emergencyContactPhones"
                 bind:value={emergencyContacts[i].phonenunmber}
-                aria-invalid={$errors?.[`emergencyContactPhones_${i}`] !== undefined
+                aria-invalid={($errors as Record<string, string[] | undefined>)?.[`emergencyContactPhones_${i}`] !== undefined
                   ? 'true'
                   : undefined}
               />

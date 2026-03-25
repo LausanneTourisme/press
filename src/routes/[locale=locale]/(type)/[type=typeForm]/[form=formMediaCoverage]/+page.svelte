@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import { afterNavigate } from '$app/navigation';
   import {
     Forms,
     getValues,
@@ -73,10 +74,15 @@
     }
   );
 
-  $effect(() => {
-    // force reset step when locale changes
-    page.data.locale;
-  });
+  const hasArrayErrors = (fieldErrors: Record<string | number, unknown> | undefined): boolean => {
+    if (!fieldErrors) return false;
+    return Object.values(fieldErrors).some((v) => Array.isArray(v) && v.length > 0);
+  };
+
+  let scopeOfPostsInput: HTMLInputElement = $state()!;
+  let interactionWithPostsInput: HTMLInputElement = $state()!;
+  let averageStoryReachInput: HTMLInputElement = $state()!;
+  let interactionWithStoriesInput: HTMLInputElement = $state()!;
 
   if (dev) {
     $effect(() => {
@@ -133,10 +139,8 @@
       </fieldset>
 
       <fieldset
-        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4 {$form
-          .socialNetworks.length === 1 && $form.socialNetworks.includes(SocialNetworks.Blog)
-          ? 'hidden'
-          : ''}"
+        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"          
+        class:hidden={!$form.socialNetworks.length || $form.socialNetworks.length === 1 && $form.socialNetworks?.includes(SocialNetworks.Blog)}
       >
         <!-- Username -->
         <label for="posts-section-username" class="label text-wrap break-words">
@@ -155,7 +159,9 @@
         />
       </fieldset>
 
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4">
+      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        class:hidden={!$form.socialNetworks.length}
+      >
         <!-- Blog url -->
         <label
           for="posts-section-blog-post-url"
@@ -248,48 +254,44 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
             {/if}
           </label>
-          <p class={$errors.scopeOfPosts?._errors !== undefined ? 'text-brand-600' : ''}>
+          <p class={hasArrayErrors($errors.scopeOfPosts) ? 'text-brand-600' : ''}>
             {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
           </p>
-          {#if $errors.scopeOfPosts?.[0]}
-            <p class="text-brand-600">
-              {@html $t($errors.scopeOfPosts?.[0])}
-            </p>
-          {/if}
           <input
             type="file"
             id="posts-section-scope-of-posts"
             name="scopeOfPosts"
+            bind:this={scopeOfPostsInput}
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.scopeOfPosts?._errors !== undefined ||
-            $errors.scopeOfPosts?.[0] !== undefined
-              ? 'file-input-error'
-              : ''}"
+            class="file-input w-full {hasArrayErrors($errors.scopeOfPosts) ? 'file-input-error' : ''}"
             onchange={(e) => {
               $form.scopeOfPosts = [
                 ...($form.scopeOfPosts as File[]),
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.scopeOfPosts?._errors !== undefined ||
-            $errors.scopeOfPosts?.[0] !== undefined
-              ? 'true'
-              : undefined}
+            aria-invalid={hasArrayErrors($errors.scopeOfPosts) ? 'true' : undefined}
           />
           {#if $form.scopeOfPosts?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.scopeOfPosts as File[] as file, index}
-                <li class="flex items-center">
+                <li class="flex items-center flex-wrap gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
                       $form.scopeOfPosts = ($form.scopeOfPosts as File[]).filter(
                         (_, i) => i !== index
                       );
+                      const dt = new DataTransfer();
+                      ($form.scopeOfPosts as File[]).forEach((f) => dt.items.add(f));
+                      scopeOfPostsInput.files = dt.files;
                     }}
                   />
-                  <span>{file.name} ({humanFileSize(file.size)})</span>
+                  <span class={$errors.scopeOfPosts?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                  {#if $errors.scopeOfPosts?.[index]?.length}
+                    <span class="text-error text-sm">{$t($errors.scopeOfPosts[index][0])}</span>
+                  {/if}
                 </li>
               {/each}
             </ul>
@@ -304,48 +306,44 @@
               <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
             {/if}
           </label>
-          <p class={$errors.interactionWithPosts?._errors !== undefined ? 'text-brand-600' : ''}>
+          <p class={hasArrayErrors($errors.interactionWithPosts) ? 'text-brand-600' : ''}>
             {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
           </p>
-          {#if $errors.interactionWithPosts?.[0]}
-            <p class="text-brand-600">
-              {@html $t($errors.interactionWithPosts?.[0])}
-            </p>
-          {/if}
           <input
             type="file"
             id="posts-section-interaction-with-posts"
             name="interactionWithPosts"
+            bind:this={interactionWithPostsInput}
             multiple
             accept="image/*"
-            class="file-input w-full {$errors.interactionWithPosts?._errors !== undefined ||
-            $errors.interactionWithPosts?.[0] !== undefined
-              ? 'file-input-error'
-              : ''}"
+            class="file-input w-full {hasArrayErrors($errors.interactionWithPosts) ? 'file-input-error' : ''}"
             onchange={(e) => {
               $form.interactionWithPosts = [
                 ...($form.interactionWithPosts as File[]),
                 ...Array.from(e.currentTarget.files ?? [])
               ];
             }}
-            aria-invalid={$errors.interactionWithPosts?._errors !== undefined ||
-            $errors.interactionWithPosts?.[0] !== undefined
-              ? 'true'
-              : undefined}
+            aria-invalid={hasArrayErrors($errors.interactionWithPosts) ? 'true' : undefined}
           />
           {#if $form.interactionWithPosts?.length}
             <ul class="mt-2 space-y-1">
               {#each $form.interactionWithPosts as File[] as file, index}
-                <li class="flex items-center">
+                <li class="flex items-center flex-wrap gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                     onclick={() => {
                       $form.interactionWithPosts = ($form.interactionWithPosts as File[]).filter(
                         (_, i) => i !== index
                       );
+                      const dt = new DataTransfer();
+                      ($form.interactionWithPosts as File[]).forEach((f) => dt.items.add(f));
+                      interactionWithPostsInput.files = dt.files;
                     }}
                   />
-                  <span>{file.name} ({humanFileSize(file.size)})</span>
+                  <span class={$errors.interactionWithPosts?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                  {#if $errors.interactionWithPosts?.[index]?.length}
+                    <span class="text-error text-sm">{$t($errors.interactionWithPosts[index][0])}</span>
+                  {/if}
                 </li>
               {/each}
             </ul>
@@ -354,10 +352,9 @@
       </fieldset>
 
       <fieldset
-        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4 {$form
-          .socialNetworks.length === 1 && $form.socialNetworks.includes(SocialNetworks.Blog)
-          ? 'hidden'
-          : ''}"
+        class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+        class:hidden={!$form.socialNetworks.length || $form
+          .socialNetworks.length === 1 && $form.socialNetworks.includes(SocialNetworks.Blog)}
       >
         <!-- Number of stories -->
         <label for="stories-section-number-of-stories" class="label text-wrap break-words">
@@ -386,48 +383,44 @@
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
-        <p class={$errors.averageStoryReach?._errors !== undefined ? 'text-brand-600' : ''}>
+        <p class={hasArrayErrors($errors.averageStoryReach) ? 'text-brand-600' : ''}>
           {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
         </p>
-        {#if $errors.averageStoryReach?.[0]}
-          <p class="text-brand-600">
-            {@html $t($errors.averageStoryReach?.[0])}
-          </p>
-        {/if}
         <input
           type="file"
           id="stories-section-average-story-reach"
           name="averageStoryReach"
+          bind:this={averageStoryReachInput}
           multiple
           accept="image/*"
-          class="file-input w-full {$errors.averageStoryReach?._errors !== undefined ||
-          $errors.averageStoryReach?.[0] !== undefined
-            ? 'file-input-error'
-            : ''}"
+          class="file-input w-full {hasArrayErrors($errors.averageStoryReach) ? 'file-input-error' : ''}"
           onchange={(e) => {
             $form.averageStoryReach = [
               ...($form.averageStoryReach as File[]),
               ...Array.from(e.currentTarget.files ?? [])
             ];
           }}
-          aria-invalid={$errors.averageStoryReach?._errors !== undefined ||
-          $errors.averageStoryReach?.[0] !== undefined
-            ? 'true'
-            : undefined}
+          aria-invalid={hasArrayErrors($errors.averageStoryReach) ? 'true' : undefined}
         />
         {#if $form.averageStoryReach?.length}
           <ul class="mt-2 space-y-1">
             {#each $form.averageStoryReach as File[] as file, index}
-              <li class="flex items-center">
+              <li class="flex items-center flex-wrap gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                   onclick={() => {
                     $form.averageStoryReach = ($form.averageStoryReach as File[]).filter(
                       (_, i) => i !== index
                     );
+                    const dt = new DataTransfer();
+                    ($form.averageStoryReach as File[]).forEach((f) => dt.items.add(f));
+                    averageStoryReachInput.files = dt.files;
                   }}
                 />
-                <span>{file.name} ({humanFileSize(file.size)})</span>
+                <span class={$errors.averageStoryReach?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                {#if $errors.averageStoryReach?.[index]?.length}
+                  <span class="text-error text-sm">{$t($errors.averageStoryReach[index][0])}</span>
+                {/if}
               </li>
             {/each}
           </ul>
@@ -442,55 +435,53 @@
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           {/if}
         </label>
-        <p class={$errors.interactionWithStories?._errors !== undefined ? 'text-brand-600' : ''}>
+        <p class={hasArrayErrors($errors.interactionWithStories) ? 'text-brand-600' : ''}>
           {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.upload-files`)}
         </p>
-        {#if $errors.interactionWithStories?.[0]}
-          <p class="text-brand-600">
-            {@html $t($errors.interactionWithStories?.[0])}
-          </p>
-        {/if}
         <input
           type="file"
           id="stories-section-interaction-with-stories"
           name="interactionWithStories"
+          bind:this={interactionWithStoriesInput}
           multiple
           accept="image/*"
-          class="file-input w-full {$errors.interactionWithStories?._errors !== undefined ||
-          $errors.interactionWithStories?.[0] !== undefined
-            ? 'file-input-error'
-            : ''}"
+          class="file-input w-full {hasArrayErrors($errors.interactionWithStories) ? 'file-input-error' : ''}"
           onchange={(e) => {
             $form.interactionWithStories = [
               ...($form.interactionWithStories as File[]),
               ...Array.from(e.currentTarget.files ?? [])
             ];
           }}
-          aria-invalid={$errors.interactionWithStories?._errors !== undefined ||
-          $errors.interactionWithStories?.[0] !== undefined
-            ? 'true'
-            : undefined}
+          aria-invalid={hasArrayErrors($errors.interactionWithStories) ? 'true' : undefined}
         />
         {#if $form.interactionWithStories?.length}
           <ul class="mt-2 space-y-1">
             {#each $form.interactionWithStories as File[] as file, index}
-              <li class="flex items-center">
+              <li class="flex items-center flex-wrap gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
                   onclick={() => {
                     $form.interactionWithStories = ($form.interactionWithStories as File[]).filter(
                       (_, i) => i !== index
                     );
+                    const dt = new DataTransfer();
+                    ($form.interactionWithStories as File[]).forEach((f) => dt.items.add(f));
+                    interactionWithStoriesInput.files = dt.files;
                   }}
                 />
-                <span>{file.name} ({humanFileSize(file.size)})</span>
+                <span class={$errors.interactionWithStories?.[index]?.length ? 'text-error' : ''}>{file.name} ({humanFileSize(file.size)})</span>
+                {#if $errors.interactionWithStories?.[index]?.length}
+                  <span class="text-error text-sm">{$t($errors.interactionWithStories[index][0])}</span>
+                {/if}
               </li>
             {/each}
           </ul>
         {/if}
       </fieldset>
 
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4">
+      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4"
+       class:hidden={!$form.socialNetworks.length}
+      >
         <!-- Remarks -->
         <label for="remarks" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.remarks.title`)}
@@ -508,7 +499,7 @@
           name="remarks"
           class="textarea w-full {$errors.remarks ? 'textarea-error' : ''}"
           bind:value={$form.remarks}
-          maxlength={$constraints.remarks?.maxLength}
+          maxlength={$constraints.remarks?.maxlength}
           aria-invalid={$errors.remarks ? 'true' : undefined}
         ></textarea>
       </fieldset>
