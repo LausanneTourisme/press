@@ -2,12 +2,12 @@
   "home.slug": "",
   "contact.slug": "kontakt",
   "articles.slug": "artikeln",
-  "coverage.slug": "veroeffentlichungen",
-  "press-release.slug": "pressemitteilungen",
-  "press-kit.slug": "pressedossier",
+  "coverages.slug": "veroeffentlichungen",
+  "press-releases.slug": "pressemitteilungen",
+  "press-kits.slug": "pressedossiers",
   "highlights.slug": "highlights",
-  "press-releases-and-press-kits.slug": "pressemitteilungen-und-pressedossier",
-  "form.slug": "formular",
+  "press-releases-and-press-kits.slug": "pressemitteilungen-und-pressedossiers",
+  "forms.slug": "formulare",
 
   "themes.slug": "themen",
   "themes.architecture.slug": "architektur-design",
@@ -22,8 +22,8 @@
   "themes.unusual.slug": "ungewoehnlich",
   "themes.wellness.slug": "wohlbefinden",
 
-  "form.media-coverage.slug": "medienresonanz",
-  "form.content-creator.slug": "inhaltsersteller",
-  "form.journalist.slug": "journalist",
-  "form.thanks.slug": "danke"
+  "forms.media-coverage.slug": "medienresonanz",
+  "forms.content-creator.slug": "inhaltsersteller",
+  "forms.journalist.slug": "journalist",
+  "forms.thanks.slug": "danke"
 }

@@ -20,14 +20,14 @@ export const entries: EntryGenerator = () => {
 
   return [
     ...supportedLocales.flatMap((locale) => {
-      const type = t[locale][`route.${RouteTypes.Presskit}.slug`];
+      const type = t[locale][`route.${RouteTypes.Presskits}.slug`];
       return {
         locale,
         type
       };
     }),
     ...supportedLocales.flatMap((locale) => {
-      const type = t[locale][`route.${RouteTypes.Pressrelease}.slug`];
+      const type = t[locale][`route.${RouteTypes.Pressreleases}.slug`];
       return {
         locale,
         type

@@ -9,12 +9,12 @@ export const load = async ({ url, params, parent }) => {
 
   const seo: SeoHeader = {
     canonical: `${url.origin}${url.pathname}`,
-    title: translations[lang][`${RouteTypes.Form}.${Forms.Thanks}.title`],
-    description: translations[lang][`${RouteTypes.Form}.${Forms.Thanks}.meta-description`],
+    title: translations[lang][`${RouteTypes.Forms}.${Forms.Thanks}.title`],
+    description: translations[lang][`${RouteTypes.Forms}.${Forms.Thanks}.meta-description`],
     image: `${url.origin}/seo/poster-home.png`,
     alternate: supportedLocales.map((locale) => ({
       hreflang: locale,
-      href: `/${locale}/${translations[locale][`route.${RouteTypes.Form}.slug`]}/${translations[locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]}`
+      href: `/${locale}/${translations[locale][`route.${RouteTypes.Forms}.slug`]}/${translations[locale][`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`]}`
     }))
   };
 
@@ -23,7 +23,7 @@ export const load = async ({ url, params, parent }) => {
     translations,
     seo,
     locale: lang,
-    type: RouteTypes.Form,
+    type: RouteTypes.Forms,
     form: Forms.Thanks
   };
 };

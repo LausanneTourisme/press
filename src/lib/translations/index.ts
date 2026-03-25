@@ -84,7 +84,7 @@ export const config: Config<{
 
     //create all routes except HOME/Presskit/Pressrelease, which is a special case
     ...Object.values(RouteTypes)
-      .filter((x) => x !== RouteTypes.Home && x !== RouteTypes.Themes && x !== RouteTypes.Form)
+      .filter((x) => x !== RouteTypes.Home && x !== RouteTypes.Themes && x !== RouteTypes.Forms)
       .flatMap((type) =>
         supportedLocales.map((locale) => {
           const slug = routeTypes[locale][`${type}.slug`];
@@ -129,9 +129,9 @@ export const config: Config<{
     // Form
     ...supportedLocales.map((locale) => ({
       locale,
-      key: RouteTypes.Form,
+      key: RouteTypes.Forms,
       routes: undefined,
-      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Form}.json`)).default
+      loader: async () => (await import(`./${locale}/pages/${RouteTypes.Forms}.json`)).default
     })),
 
     //create all translations for specific form's view
@@ -139,10 +139,10 @@ export const config: Config<{
       supportedLocales.map((locale) => {
         return {
           locale,
-          key: `${RouteTypes.Form}.${form}`,
+          key: `${RouteTypes.Forms}.${form}`,
           routes: undefined,
           loader: async () =>
-            (await import(`./${locale}/pages/${RouteTypes.Form}/${form}.json`)).default
+            (await import(`./${locale}/pages/${RouteTypes.Forms}/${form}.json`)).default
         };
       })
     )

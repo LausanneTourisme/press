@@ -46,14 +46,14 @@ export const actions = {
     if (sendWithSuccess) {
       return redirect(
         303,
-        `/${params.locale}/${t.get(`route.${RouteTypes.Form}.slug`)}/${t.get(`route.${RouteTypes.Form}.${Forms.Thanks}.slug`)}`
+        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
       );
     }
 
     setFlash(
       {
         type: 'error',
-        message: t.get(`${RouteTypes.Form}.error-on-sending`)
+        message: t.get(`${RouteTypes.Forms}.error-on-sending`)
       },
       cookies
     );
@@ -66,8 +66,8 @@ export const entries: EntryGenerator = () => {
   return supportedLocales.flatMap((locale) => {
     return {
       locale,
-      type: t.get(`route.${RouteTypes.Form}.slug`),
-      form: t.get(`route.${RouteTypes.Form}.${Forms.MediaCoverage}.slug`)
+      type: t.get(`route.${RouteTypes.Forms}.slug`),
+      form: t.get(`route.${RouteTypes.Forms}.${Forms.MediaCoverage}.slug`)
     };
   });
 };
@@ -231,13 +231,13 @@ const generateMailContent = ({
   <!-- social networks -->
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
     <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.social-networks.title`)} :</span>
+      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.social-networks.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
         ${
           data.socialNetworks
             ?.map(
               (x) => `<li>
-          <span>${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.social-networks.${x}`)}</span>
+          <span>${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.social-networks.${x}`)}</span>
         </li>`
             )
             .join(', ') ?? ''
@@ -247,15 +247,15 @@ const generateMailContent = ({
   </section>
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.username`)} :</span> <span style="word-break: break-all;">${data.username ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.username`)} :</span> <span style="word-break: break-all;">${data.username ?? ''}</span></div>
   </section>
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)} :</span> <span style="word-break: break-all;">${data.blogPostURL ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`)} :</span> <span style="word-break: break-all;">${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`)} :</span> <span style="word-break: break-all;">${data.numberOfPosts ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`)} :</span> <span style="word-break: break-all;">${data.numberOfClicks ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.scope-of-posts`)} :</span>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.blog-post-url`)} :</span> <span style="word-break: break-all;">${data.blogPostURL ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.blog-monthly-unique-visitors`)} :</span> <span style="word-break: break-all;">${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.number-of-posts`)} :</span> <span style="word-break: break-all;">${data.numberOfPosts ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.number-of-clicks`)} :</span> <span style="word-break: break-all;">${data.numberOfClicks ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.scope-of-posts`)} :</span>
     ${
       images
         .filter((i) => i.filterName === 'scopeOfPosts')
@@ -268,7 +268,7 @@ const generateMailContent = ({
         .join('\n') ?? ''
     }
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.posts-section.interaction-with-posts`)} :</span>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.posts-section.interaction-with-posts`)} :</span>
     ${
       images
         .filter((i) => i.filterName === 'interactionWithPosts')
@@ -284,8 +284,8 @@ const generateMailContent = ({
     </section>
 
     <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.number-of-stories`)} :</span> <span>${data.numberOfStories ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.average-story-reach`)} :</span>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.number-of-stories`)} :</span> <span>${data.numberOfStories ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.average-story-reach`)} :</span>
     ${
       images
         .filter((i) => i.filterName === 'averageStoryReach')
@@ -298,7 +298,7 @@ const generateMailContent = ({
         .join('\n') ?? ''
     }
     </div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.stories-section.interaction-with-stories`)} :</span>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.stories-section.interaction-with-stories`)} :</span>
     ${
       images
         .filter((i) => i.filterName === 'interactionWithStories')
@@ -315,7 +315,7 @@ const generateMailContent = ({
 
 
   <section style="margin: 10px;padding: 16px;border: 1px solid #ddd;border-radius: 8px;">
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Form}.${Forms.MediaCoverage}.form.remarks.title`)} :</span> <span style="word-break: break-all;">${data.remarks ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.remarks.title`)} :</span> <span style="word-break: break-all;">${data.remarks ?? ''}</span></div>
   </section>
 </body>
 </html>`;

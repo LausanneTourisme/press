@@ -5,8 +5,8 @@ import type { ParamMatcher } from '@sveltejs/kit';
 export const match: ParamMatcher = (param: string): boolean => {
   return supportedLocales
     .flatMap((lang) => [
-      translations.get()[lang][`route.${RouteTypes.Presskit}.slug`],
-      translations.get()[lang][`route.${RouteTypes.Pressrelease}.slug`]
+      translations.get()[lang][`route.${RouteTypes.Presskits}.slug`],
+      translations.get()[lang][`route.${RouteTypes.Pressreleases}.slug`]
     ])
     .includes(param);
 };

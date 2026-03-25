@@ -22,7 +22,7 @@ export const menuItems: (locale: Locale) => Menu[] = (locale) => [
       },
       {
         title: t.get('menu.ressources.coverage'),
-        link: route(RouteTypes.Coverage, { forceLocale: locale })
+        link: route(RouteTypes.Coverages, { forceLocale: locale })
       },
       {
         title: t.get('menu.ressources.themes'),

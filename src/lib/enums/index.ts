@@ -13,13 +13,13 @@ export const RouteTypes = {
   Home: 'home',
   Articles: 'articles',
   Contact: 'contact',
-  Coverage: 'coverage',
+  Coverages: 'coverages',
   Highlights: 'highlights',
   Themes: 'themes',
-  Pressrelease: 'press-release',
-  Presskit: 'press-kit',
+  Pressreleases: 'press-releases',
+  Presskits: 'press-kits',
   PressreleasesAndPresskits: 'press-releases-and-press-kits',
-  Form: 'form'
+  Forms: 'forms'
 } as const;
 
 export const Themes = {

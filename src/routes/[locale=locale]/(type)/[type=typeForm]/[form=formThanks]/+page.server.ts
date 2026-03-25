@@ -8,8 +8,8 @@ export const entries: EntryGenerator = () => {
   return supportedLocales.flatMap((locale) => {
     return {
       locale,
-      type: t[locale][`route.${RouteTypes.Form}.slug`],
-      form: t[locale][`route.${RouteTypes.Form}.${Forms.Thanks}.slug`]
+      type: t[locale][`route.${RouteTypes.Forms}.slug`],
+      form: t[locale][`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`]
     };
   });
 };
