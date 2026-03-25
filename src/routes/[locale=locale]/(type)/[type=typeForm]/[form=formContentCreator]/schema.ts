@@ -243,7 +243,7 @@ export const schemaStep4 = schemaStep3
     ) {
       ctx.addIssue({
         code: 'custom',
-        path: ['personalInformationPassport'],
+        path: [],
         message: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.personal-information.passport`
       });
     }
