@@ -159,7 +159,7 @@ export const personalInformation = z
         if (data.number === undefined || data.validity === undefined) {
           ctx.addIssue({
             code: 'custom',
-            path: ['personalInformationPassport'],
+            path: [],
             message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.passport`
           });
         }
