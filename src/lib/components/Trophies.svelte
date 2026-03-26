@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { twMerge } from 'tailwind-merge';
   import Card from './Card.svelte';
   import Clickable from './Clickable.svelte';
   import Heading from './Heading.svelte';

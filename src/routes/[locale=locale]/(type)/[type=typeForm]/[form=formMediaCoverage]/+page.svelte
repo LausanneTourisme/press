@@ -1,27 +1,15 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { afterNavigate } from '$app/navigation';
-  import {
-    Forms,
-    getValues,
-    RouteTypes,
-    SocialNetworks,
-    SocialNetworksKeys,
-    Titles,
-    TravelReductions,
-    type SocialNetwork,
-    type TravelReduction
-  } from '$enums';
+  import { Forms, getValues, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Loading from '$lib/components/Loading.svelte';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
-  import { CircleMinus, CirclePlus, Trash2 } from 'lucide-svelte';
+  import { Trash2 } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
-  import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schema } from './schema';
   import { humanFileSize } from '$lib/helpers';
@@ -31,7 +19,7 @@
   const socialNetworksRequirements = getValues(SocialNetworks).filter(
     (x) => x !== SocialNetworks.Blog
   );
-  const { form, errors, enhance, message, options, validateForm, constraints } = superForm(
+  const { form, errors, enhance, validateForm, constraints } = superForm(
     (page.data as PageData).form,
     {
       errorSelector: '[aria-invalid="true"],[data-invalid]',
@@ -41,7 +29,7 @@
       resetForm: false,
       applyAction: true,
       clearOnSubmit: 'none',
-      onUpdate: async ({ form }) => {
+      onUpdate: async () => {
         isSubmitting = false;
       },
       onSubmit: async ({ cancel, formData }) => {
@@ -105,7 +93,7 @@
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
-          {#each Object.values(SocialNetworks) as socialNetwork}
+          {#each Object.values(SocialNetworks) as socialNetwork (socialNetwork)}
             <label
               class="label my-1 text-wrap break-words {$errors.socialNetworks?._errors
                 ? 'text-error'
@@ -280,7 +268,7 @@
           />
           {#if $form.scopeOfPosts?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.scopeOfPosts as File[] as file, index}
+              {#each $form.scopeOfPosts as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -336,7 +324,7 @@
           />
           {#if $form.interactionWithPosts?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.interactionWithPosts as File[] as file, index}
+              {#each $form.interactionWithPosts as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -419,7 +407,7 @@
         />
         {#if $form.averageStoryReach?.length}
           <ul class="mt-2 space-y-1">
-            {#each $form.averageStoryReach as File[] as file, index}
+            {#each $form.averageStoryReach as File[] as file, index (index)}
               <li class="flex flex-wrap items-center gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -475,7 +463,7 @@
         />
         {#if $form.interactionWithStories?.length}
           <ul class="mt-2 space-y-1">
-            {#each $form.interactionWithStories as File[] as file, index}
+            {#each $form.interactionWithStories as File[] as file, index (index)}
               <li class="flex flex-wrap items-center gap-x-2">
                 <Trash2
                   class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"

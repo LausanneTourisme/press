@@ -27,7 +27,7 @@
     transform,
     alt,
     background,
-    negative = false,
+    negative = false
   }: Props = $props();
 
   const cardStyle = $derived(
