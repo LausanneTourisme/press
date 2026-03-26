@@ -6,20 +6,20 @@ import articleMock from './responses/articles/culture.json';
 const favoritesMocks = import.meta.glob('./responses/favorites/*.json', { eager: true });
 const postsMocks = import.meta.glob('./responses/posts/*.json', { eager: true });
 
-const favoritesMap: Record<string, any> = {};
-const postsMap: Record<string, any> = {};
+const favoritesMap: Record<string, unknown> = {};
+const postsMap: Record<string, unknown> = {};
 
 for (const path in favoritesMocks) {
   const filename = path.split('/').pop()?.replace('.json', ''); // ex: culture.fr
   if (filename) {
-    favoritesMap[filename] = (favoritesMocks[path] as any).default;
+    favoritesMap[filename] = (favoritesMocks[path] as Record<string, unknown>).default;
   }
 }
 
 for (const path in postsMocks) {
   const filename = path.split('/').pop()?.replace('.json', ''); // ex: news.fr
   if (filename) {
-    postsMap[filename] = (postsMocks[path] as any).default;
+    postsMap[filename] = (postsMocks[path] as Record<string, unknown>).default;
   }
 }
 
@@ -66,7 +66,7 @@ export const handlers = [
       });
     }
   }),
-  graphql.query('GetGroup', async ({ variables }) => {
+  graphql.query('GetGroup', async () => {
     console.warn('mock request: GetGroup');
     // TODO
     // return HttpResponse.json(await import(`./responses/groups/posts.${variables.locale}.json`));
@@ -83,7 +83,7 @@ export const handlers = [
     console.warn('mock request: GetAgendaEvents');
     return HttpResponse.json(eventsMock);
   }),
-  graphql.query('GetArticle', async ({ variables }) => {
+  graphql.query('GetArticle', async () => {
     console.warn('mock request: GetArticle');
     return HttpResponse.json(articleMock);
   })

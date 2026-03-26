@@ -39,7 +39,7 @@
   });
 </script>
 
-<div class={twMerge("p-6 md:pt-16", additionalClass)}>
+<div class={twMerge('p-6 md:pt-16', additionalClass)}>
   <Heading class="text-center ">
     {@html title}
   </Heading>
@@ -53,7 +53,7 @@
     {@const length = chunk.length}
     {#if chunckIndex === 0}
       <section class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8">
-        {#each chunk as theme, index(`${theme} ${locale}`)}
+        {#each chunk as theme, index (`${theme} ${locale}`)}
           <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {locale} />
         {/each}
       </section>

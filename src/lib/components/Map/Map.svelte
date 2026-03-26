@@ -24,13 +24,7 @@
     onclose?: () => void;
   };
 
-  const {
-    themeColor,
-    listBorderColor,
-    favorites,
-    locale,
-    onclose
-  }: Props = $props();
+  const { themeColor, listBorderColor, favorites, locale, onclose }: Props = $props();
 
   const markers: MarkerType<string>[] = $derived.by(() => {
     let markers: MarkerType<string>[] = [];

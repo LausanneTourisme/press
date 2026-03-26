@@ -12,11 +12,8 @@
   import Loading from '$lib/components/Loading.svelte';
   import Button from '$lib/components/Button.svelte';
 
-  import { page } from '$app/state';
-  import type { ActionData } from './$types';
   import { RouteTypes } from '$enums';
 
-  const pageForm = $derived(page.form as ActionData);
   type Success = Record<string, unknown> | undefined;
   type Failure = Record<string, unknown> | undefined;
 
@@ -45,14 +42,7 @@
   let sendWithSuccess = $state(false);
   let botpoison: undefined | Botpoison = $state(undefined);
   let isLoading = $state(false);
-  let failedMessage: undefined | string = $state();
-
-  const submit: SubmitFunction<Success, Failure> = async ({
-    formElement,
-    formData,
-    action,
-    cancel
-  }) => {
+  const submit: SubmitFunction<Success, Failure> = async ({ formData, cancel }) => {
     isLoading = true;
 
     if (!botpoison) {
@@ -67,7 +57,6 @@
       const validationState = validation?.(formData);
       if (validationState?.status === 'failed') {
         incorrectData = true;
-        failedMessage = validationState?.message;
         isLoading = false;
         onFailure?.();
         cancel();

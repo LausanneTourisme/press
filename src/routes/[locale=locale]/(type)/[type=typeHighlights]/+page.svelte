@@ -31,7 +31,7 @@
       })) as (Poi<string> & { href: string })[]) ?? []
     );
   });
-  let poisChunks: (Poi<string> & { href: string })[][] = $state([]);
+  const poisChunks = $derived(chunkify(groupPois ?? [], 11));
 
   let isMobile = $state(false);
 
@@ -50,9 +50,6 @@
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
     };
-  });
-  $effect(() => {
-    poisChunks = chunkify(groupPois ?? [], 11);
   });
 </script>
 
@@ -77,7 +74,7 @@
 <!-- NEWS SWIPER -->
 <Container width="large">
   <Swiper>
-    {#each news as n, k (`${n.published_at}-${n.name}`)}
+    {#each news as n (`${n.published_at}-${n.name}`)}
       <Slide>
         <Clickable overflow={true} href={n.link ?? '#'}>
           <Card
@@ -135,11 +132,11 @@
   <Paragraph>
     {@html $t('highlights.highlights.paragraph')}
   </Paragraph>
-  {#each poisChunks as chunk}
+  {#each poisChunks as chunk, ci (ci)}
     <div
       class="pois mt-12 grid grid-flow-row grid-cols-2 grid-rows-1 gap-2 md:grid-cols-4 md:grid-rows-12 md:gap-4"
     >
-      {#each chunk as poi, index}
+      {#each chunk as poi, index (index)}
         <div
           class={twMerge(
             'child',
@@ -209,7 +206,7 @@
     {@html $t('highlights.agenda.title')}
   </Heading>
   <Swiper showPagination={false}>
-    {#each events as event}
+    {#each events as event (event.id)}
       {@const date = extractStartEndDate(event, {
         start: DateTime.now().toSQLDate(),
         end: undefined

@@ -1,14 +1,11 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { ThemeKeys } from '$enums';
   import Container from '$lib/components/Container.svelte';
   import PostContent from '$lib/components/PostContent.svelte';
   import { ucfirst } from '$lib/helpers';
-  import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
   import { t, type Locale } from '$lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
-  import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
   const locale = $derived(page.params.locale as Locale);
@@ -30,8 +27,7 @@
       </p>
       {#if release.tags?.length}
         <p class="pt-2">
-          {#each release.tags as tag}
-            {@const theme = getThemeByTagName(tag.name)}
+          {#each release.tags as tag (tag.name)}
             {@const name = tag.public_name?.[locale as Locale]}
             <span
               class="badge bg-shakespeare-400 mr-2 rounded-full border-0 py-3 text-white outline-0"
