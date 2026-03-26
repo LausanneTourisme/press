@@ -30,7 +30,7 @@
       </p>
       {#if article.tags?.length}
         <p class="pt-2">
-          {#each article.tags as tag}
+          {#each article.tags as tag (tag.name)}
             {@const theme = getThemeByTagName(tag.name)}
             {@const name = tag.public_name?.[locale]}
             {#if theme && name}

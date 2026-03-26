@@ -31,7 +31,7 @@
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
 
-  const { form, errors, enhance, message, options, validateForm, constraints } = superForm(
+  const { form, errors, enhance, options, validateForm, constraints } = superForm(
     (page.data as PageData).form,
     {
       errorSelector: '[aria-invalid="true"],[data-invalid]',
@@ -116,7 +116,7 @@
 
   $effect(() => {
     // force reset step when locale changes
-    page.data.locale;
+    void page.data.locale;
     step = 1;
   });
 
@@ -172,7 +172,7 @@
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
-          {#each Object.values(SocialNetworks) as socialNetwork}
+          {#each Object.values(SocialNetworks) as socialNetwork (socialNetwork)}
             <label
               class="label my-1 text-wrap break-words {$errors.onlinePresence?._errors !== undefined
                 ? 'text-error'
@@ -277,7 +277,7 @@
 
           {#if $form.instagramSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.instagramSubscriberScreenshots as File[] as file, index}
+              {#each $form.instagramSubscriberScreenshots as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -335,7 +335,7 @@
 
           {#if $form.instagramAccountsScreenshots?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.instagramAccountsScreenshots as File[] as file, index}
+              {#each $form.instagramAccountsScreenshots as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -419,7 +419,7 @@
 
           {#if $form.tiktokSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.tiktokSubscriberScreenshots as File[] as file, index}
+              {#each $form.tiktokSubscriberScreenshots as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -501,7 +501,7 @@
 
           {#if $form.youtubeSubscriberScreenshots?.length}
             <ul class="mt-2 space-y-1">
-              {#each $form.youtubeSubscriberScreenshots as File[] as file, index}
+              {#each $form.youtubeSubscriberScreenshots as File[] as file, index (index)}
                 <li class="flex flex-wrap items-center gap-x-2">
                   <Trash2
                     class="text-brand-600 mr-2 h-4 w-4 cursor-pointer"
@@ -645,7 +645,7 @@
             <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
           </p>
 
-          {#each Object.values(SocialNetworks) as socialNetwork}
+          {#each Object.values(SocialNetworks) as socialNetwork (socialNetwork)}
             <label
               class="label my-1 text-wrap break-words {$errors.coveragePublicationChannels?._errors
                 ? 'text-error'
@@ -764,7 +764,7 @@
               `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country-placeholder`
             )}
           </option>
-          {#each countries as country}
+          {#each countries as country (country)}
             <option value={country}>{country}</option>
           {/each}
         </select>
@@ -825,7 +825,7 @@
           )}
         </label>
         <div id="travel-travel-reduction" class="join join-vertical">
-          {#each Object.values(TravelReductions) as travelReduction}
+          {#each Object.values(TravelReductions) as travelReduction (travelReduction)}
             <label
               class="label my-1 text-wrap break-words {$errors.travelReductions
                 ? 'text-error'
@@ -896,7 +896,7 @@
             {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </p>
-        {#each Object.values(Titles) as title}
+        {#each Object.values(Titles) as title (title)}
           <label
             aria-invalid={$errors.personalTitle ? 'true' : undefined}
             class="label text-wrap break-words"
@@ -1145,7 +1145,7 @@
               `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country-placeholder`
             )}
           </option>
-          {#each countries as country}
+          {#each countries as country (country)}
             <option value={country}>{country}</option>
           {/each}
         </select>
@@ -1206,7 +1206,7 @@
             )}
           </p>
         </div>
-        {#each emergencyContacts as _, i}
+        {#each emergencyContacts as contact, i (`${contact.name} ${i}`)}
           <div
             class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
           >
@@ -1337,7 +1337,7 @@
             value={false}
             class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
             checked={$form.travelInsuranceCoveringSwitzerland === false}
-            onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
+            onchange={() => ($form.travelInsuranceCoveringSwitzerland = false)}
             aria-label={$t(`${RouteTypes.Forms}.no`)}
             required
           />
@@ -1350,7 +1350,7 @@
             value={true}
             class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
             checked={$form.travelInsuranceCoveringSwitzerland === true}
-            onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
+            onchange={() => ($form.travelInsuranceCoveringSwitzerland = true)}
             aria-label={$t(`${RouteTypes.Forms}.yes`)}
           />
           {@html $t(`${RouteTypes.Forms}.yes`)}
@@ -1426,7 +1426,7 @@
             value={false}
             class="radio {$errors.newsletter ? 'radio-error' : ''}"
             checked={$form.newsletter === false}
-            onchange={(e) => ($form.newsletter = false)}
+            onchange={() => ($form.newsletter = false)}
             aria-label={$t(`${RouteTypes.Forms}.no`)}
             required
           />
@@ -1443,7 +1443,7 @@
             value={true}
             class="radio {$errors.newsletter ? 'radio-error' : ''}"
             checked={$form.newsletter === true}
-            onchange={(e) => ($form.newsletter = true)}
+            onchange={() => ($form.newsletter = true)}
             aria-label={$t(`${RouteTypes.Forms}.yes`)}
           />
           {@html $t(`${RouteTypes.Forms}.yes`)}
@@ -1455,7 +1455,7 @@
       <button
         type="button"
         class="btn mr-2 {step === 1 ? 'hidden' : ''}"
-        onclick={(e) => {
+        onclick={() => {
           if (step > 1) step = step - 1;
         }}
         disabled={isSubmitting}

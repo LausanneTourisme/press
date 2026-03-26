@@ -1,5 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
   import { blankable } from '$lib/helpers';
   import type { Snippet } from 'svelte';
   import { fade } from 'svelte/transition';
@@ -35,14 +36,30 @@
   );
 </script>
 
-<a
-  href={resolve(href)}
-  {target}
-  class={style}
-  data-sveltekit-preload-data={preload}
-  {title}
-  {onclick}
-  transition:fade
->
-  {@render children()}
-</a>
+{#if target === '_blank'}
+  <a
+    {href}
+    rel="external"
+    {target}
+    class={style}
+    data-sveltekit-preload-data={preload}
+    {title}
+    {onclick}
+    transition:fade
+  >
+    {@render children()}
+  </a>
+{:else}
+  <a
+    href={resolve(href as Pathname)}
+    rel="internal"
+    {target}
+    class={style}
+    data-sveltekit-preload-data={preload}
+    {title}
+    {onclick}
+    transition:fade
+  >
+    {@render children()}
+  </a>
+{/if}

@@ -122,7 +122,7 @@
 
   $effect(() => {
     // force reset step when locale changes
-    page.data.locale;
+    void page.data.locale;
     step = 0;
   });
 
@@ -211,7 +211,7 @@
               {/if}
             </p>
 
-            {#each Object.values(MediaTypes) as mediaType}
+            {#each Object.values(MediaTypes) as mediaType (mediaType)}
               <label
                 class="label my-1 text-wrap break-words {$errors.mediaTypes?._errors !== undefined
                   ? 'text-error'
@@ -305,7 +305,7 @@
 
             {#if $errors.printMediaStatistics?._errors?.length}
               <p id="media-types-error" class="text-error error">
-                {#each $errors.printMediaStatistics._errors as error}
+                {#each $errors.printMediaStatistics._errors as error, i (i)}
                   {@html $t(error)}<br />
                 {/each}
               </p>
@@ -497,7 +497,7 @@
 
             {#if $errors.onlineMediaStatistics?._errors}
               <p id="media-types-error" class="text-error error">
-                {#each $errors.onlineMediaStatistics._errors as error}
+                {#each $errors.onlineMediaStatistics._errors as error, i (i)}
                   {@html $t(error)}<br />
                 {/each}
               </p>
@@ -934,7 +934,7 @@
             {/if}
           </label>
           <div id="travel-information-travel-reduction" class="join join-vertical">
-            {#each Object.values(TravelReductions) as travelReduction}
+            {#each Object.values(TravelReductions) as travelReduction (travelReduction)}
               <label
                 for="travel-reduction-{travelReduction}"
                 class="label my-1 text-wrap break-words {$errors.travelInformation?.travelReductions
@@ -1015,7 +1015,7 @@
               </span>
             {/if}
           </p>
-          {#each Object.values(Titles) as title}
+          {#each Object.values(Titles) as title (title)}
             <label
               aria-invalid={$errors.personalInformation?.title ? 'true' : undefined}
               class="label text-wrap break-words"
@@ -1401,7 +1401,7 @@
               )}
             </p>
           </div>
-          {#each $form.personalInformation.emergencyContacts as _, i}
+          {#each $form.personalInformation.emergencyContacts as contact, i (`${contact.name} ${i}`)}
             <div
               class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >
@@ -1521,7 +1521,7 @@
               name="personal-information-travel-insurance"
               class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
               checked={$form.travelInsuranceCoveringSwitzerland === false}
-              onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = false)}
+              onchange={() => ($form.travelInsuranceCoveringSwitzerland = false)}
               aria-label={$t(`${RouteTypes.Forms}.no`)}
               required
             />
@@ -1533,7 +1533,7 @@
               name="personal-information-travel-insurance"
               class="radio {$errors.travelInsuranceCoveringSwitzerland ? 'radio-error' : ''}"
               checked={$form.travelInsuranceCoveringSwitzerland === true}
-              onchange={(e) => ($form.travelInsuranceCoveringSwitzerland = true)}
+              onchange={() => ($form.travelInsuranceCoveringSwitzerland = true)}
               aria-label={$t(`${RouteTypes.Forms}.yes`)}
             />
             {@html $t(`${RouteTypes.Forms}.yes`)}
@@ -1608,7 +1608,7 @@
               name="personal-information-newsletter"
               class="radio {$errors.newsletter ? 'radio-error' : ''}"
               checked={$form.newsletter === false}
-              onchange={(e) => ($form.newsletter = false)}
+              onchange={() => ($form.newsletter = false)}
               aria-label={$t(`${RouteTypes.Forms}.no`)}
               required
             />
@@ -1624,7 +1624,7 @@
               name="personal-information-newsletter"
               class="radio {$errors.newsletter ? 'radio-error' : ''}"
               checked={$form.newsletter === true}
-              onchange={(e) => ($form.newsletter = true)}
+              onchange={() => ($form.newsletter = true)}
               aria-label={$t(`${RouteTypes.Forms}.yes`)}
             />
             {@html $t(`${RouteTypes.Forms}.yes`)}
@@ -1637,7 +1637,7 @@
       <button
         type="button"
         class="btn mr-2 {step === 0 ? 'hidden' : ''}"
-        onclick={(e) => {
+        onclick={() => {
           step = step - 1;
         }}
         disabled={isSubmitting}

@@ -129,9 +129,7 @@
       {@html $t('common.faq.access.paragraph1')}
       &nbsp;
       <a
-        href="https://www.lausanne-tourisme.ch/{locale}/{$t(
-          'common.faq.access.paragraph1.slug'
-        )}/"
+        href="https://www.lausanne-tourisme.ch/{locale}/{$t('common.faq.access.paragraph1.slug')}/"
         class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
       >
         {@html $t('common.faq.access.paragraph1.more-informations')}
@@ -184,11 +182,7 @@
     <Paragraph>
       {@html $t('common.faq.mention.paragraph1')}
       <span class="font-bold">
-        <Link
-          withIcon={false}
-          href="https://www.lausanne-tourisme.ch"
-          class="m-0 inline-block p-0"
-        >
+        <Link withIcon={false} href="https://www.lausanne-tourisme.ch" class="m-0 inline-block p-0">
           Lausanne Transport Card
           <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
         </Link>
@@ -205,11 +199,7 @@
           <tr class="h-auto border-gray-300 md:h-20">
             <td class="w-16 text-center">
               <div class="flex items-center gap-3">
-                <Link
-                  withIcon={false}
-                  href="https://www.instagram.com/thelausanner/"
-                  class="ml-4"
-                >
+                <Link withIcon={false} href="https://www.instagram.com/thelausanner/" class="ml-4">
                   <Instagram class="h-6 w-6" />
                 </Link>
               </div>
