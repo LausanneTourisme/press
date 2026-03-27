@@ -23,7 +23,7 @@
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={resolve(route(RouteTypes.Home, { forceLocale: locale }))}
+    href={route(RouteTypes.Home, { forceLocale: locale })}
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo {locale} />
