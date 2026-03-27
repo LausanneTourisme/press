@@ -431,7 +431,7 @@
       </Paragraph>
       <a
         href="tel:0041216137373"
-        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 p-4 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
+        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border p-4 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
       >
         <Phone strokeWidth={2.5} class="aspect-square h-5" />
         +41 21 613 73 73
@@ -445,7 +445,7 @@
         : 'hidden'}"
       in:fly
     >
-      <hr class="my-4 w-1/2 rounded-lg border-t-[2px] border-gray-700 shadow-lg" />
+      <hr class="my-4 w-1/2 rounded-lg border-t-2 border-gray-700 shadow-lg" />
       <button
         class=" inline-flex h-12 w-full max-w-64 items-center justify-center rounded-lg border-2 border-gray-700 bg-white text-black transition-colors ease-in-out hover:border-transparent hover:bg-gray-950 hover:text-white hover:shadow-lg"
         onclick={reset}
