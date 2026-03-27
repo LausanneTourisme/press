@@ -21,7 +21,7 @@
     isMobile = false,
     focus = 'auto'
   }: Props = $props();
-  let transform: Transform = $state({
+  let transform: Transform = $derived({
     // default values, reactivity will update them
     gravity: focus,
     crop: 'auto'

@@ -3,23 +3,33 @@ import { setupServer } from 'msw/node';
 
 import eventsMock from './responses/events/all.json';
 import articleMock from './responses/articles/culture.json';
-const favoritesMocks = import.meta.glob('./responses/favorites/*.json', { eager: true });
-const postsMocks = import.meta.glob('./responses/posts/*.json', { eager: true });
+import type { Favorite, Post } from '$types';
 
-const favoritesMap: Record<string, unknown> = {};
-const postsMap: Record<string, unknown> = {};
+type ResponseFavorite = { data: { items: { data: Favorite<string>[] } } };
+type ResponsePost = { data: { items: { data: Post<string>[] } } };
+
+const favoritesMocks = import.meta.glob<{ default: ResponseFavorite }>(
+  './responses/favorites/*.json',
+  { eager: true }
+);
+const postsMocks = import.meta.glob<{ default: ResponsePost }>('./responses/posts/*.json', {
+  eager: true
+});
+
+const favoritesMap: Record<string, ResponseFavorite> = {};
+const postsMap: Record<string, ResponsePost> = {};
 
 for (const path in favoritesMocks) {
   const filename = path.split('/').pop()?.replace('.json', ''); // ex: culture.fr
   if (filename) {
-    favoritesMap[filename] = (favoritesMocks[path] as Record<string, unknown>).default;
+    favoritesMap[filename] = favoritesMocks[path].default;
   }
 }
 
 for (const path in postsMocks) {
   const filename = path.split('/').pop()?.replace('.json', ''); // ex: news.fr
   if (filename) {
-    postsMap[filename] = (postsMocks[path] as Record<string, unknown>).default;
+    postsMap[filename] = postsMocks[path].default;
   }
 }
 
