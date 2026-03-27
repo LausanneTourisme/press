@@ -1,0 +1,475 @@
+{
+    "data": {
+        "item": {
+            "id": "305",
+            "languages": [
+                "fr",
+                "en",
+                "de"
+            ],
+            "name": {
+                "fr": "Lausanne et le sport : \u00e7a match !",
+                "en": "Lausanne and sports: a winning combo",
+                "de": "Lausanne und Sport \u2013 eine perfekte Kombination"
+            },
+            "lead": {
+                "fr": "Vous \u00eates bien \u00e0 Lausanne ! Capitale et ville olympique \u00e9lue destination pr\u00e9f\u00e9r\u00e9e des sportifs de tout poil. Sur terre ou sur l\u2019eau, au sommet ou dans les airs, id\u00e9alement nich\u00e9e entre montagnes et lac, la perle du L\u00e9man se fait tour \u00e0 tour le paradis des sportifs comme des cr\u00e9atifs.",
+                "en": "Of course, we\u2019re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva\u2019s gem is the paradise for both athletes and creators.",
+                "de": "Sie sind in Lausanne, der Waadtl\u00e4nder und Olympia-Hauptstadt und dem beliebtesten Treffpunkt f\u00fcr alle m\u00f6glichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies f\u00fcr Sportliche und kreative K\u00f6pfe."
+            },
+            "summary": {
+                "fr": "V\u00e9ritable joyau du canton de Vaud, elle tr\u00f4ne fi\u00e8rement au bord du L\u00e9man. Les cinq anneaux olympiques ornent le fronton de sa gare ferroviaire, dignement. Bord\u00e9e de part en part de merveilles naturelles, \u00e0 l\u2019instar de ses plages de sable ou du c\u00e9l\u00e8bre vignoble de Lavaux, inscrit \u00e0 l\u2019UNESCO, la belle n\u2019en finit pas de faire parler d\u2019elle. Mais qui est-elle ?\u00a0",
+                "en": "A jewel in the Canton of Vaud, she rises proudly on the shores of Lake Geneva. The five Olympic rings adorn with dignity the gable of its railway station. Surrounded by natural wonders, such as beaches and the famous Lavaux vineyards, listed as a UNESCO site, the beauty never ceases to make headline news. But who is she?",
+                "de": "Stolz thront das Juwel des Kantons Waadt am Genfersee. Die f\u00fcnf olympischen Ringe schm\u00fccken w\u00fcrdevoll den Eingang des Bahnhofs. Mit ihren vielen Natursch\u00f6nheiten wie den feinen Sandstr\u00e4nden oder den ber\u00fchmten, zum UNESCO-Weltkulturerbe geh\u00f6renden Weinbergen von Lavaux macht die Stadt Lausanne immer wieder von sich reden. Doch wer ist sie?"
+            },
+            "content": [
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26185,
+                        "name": "Lausanne, ville nature",
+                        "public_name": {
+                            "fr": "Lausanne, ville nature"
+                        },
+                        "cloudinary_id": "95b220b08d3b9431",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 ",
+                        "metadata": {
+                            "width": 1920,
+                            "height": 2560,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1920\" height=\"2560\"",
+                            "tags": null,
+                            "description": null,
+                            "file_name_from_url": "95b220b08d3b9431.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_01-scaled.jpg"
+                        }
+                    },
+                    "size": "parallax",
+                    "focus": "auto"
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Vous \u00eates bien \u00e0 Lausanne ! Capitale et ville olympique \u00e9lue destination pr\u00e9f\u00e9r\u00e9e des sportifs de tout poil. Sur terre ou sur l\u2019eau, au sommet ou dans les airs, id\u00e9alement nich\u00e9e entre montagnes et lac, la perle du L\u00e9man se fait tour \u00e0 tour le paradis des sportifs comme des cr\u00e9atifs.",
+                        "en": "Of course, we\u2019re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva\u2019s gem is the paradise for both athletes and creators.",
+                        "de": "Sie sind in Lausanne, der Waadtl\u00e4nder und Olympia-Hauptstadt und dem beliebtesten Treffpunkt f\u00fcr alle m\u00f6glichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies f\u00fcr Sportliche und kreative K\u00f6pfe."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h2",
+                    "value": {
+                        "fr": "Un peu d\u2019histoire pour vous mettre en jambe !",
+                        "en": "A little history to get in the swing of things!",
+                        "de": "Ein bisschen Geschichte zum Aufw\u00e4rmen"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "En guise d\u2019\u00e9chauffement, nous vous proposons de remonter le temps. Car oui, les lausannois et le sport, c\u2019est une belle et grande histoire d\u2019amour qui dure depuis plus de cent ans ! C\u2019est bien en 1915 que le Si\u00e8ge du Comit\u00e9 International Olympique (CIO) \u2013 cr\u00e9\u00e9 et pr\u00e9sid\u00e9 par Pierre de Coubertin \u2013 choisit de s\u2019\u00e9tablir \u00e0 Lausanne. Et depuis lors, force est de constater que l\u2019esprit sportif n\u2019a jamais cess\u00e9 d\u2019animer et de faire battre le coeur de la Cit\u00e9.",
+                        "en": "As a warmup, we suggest going back in time, since Lausanners and sports have woven together a long and beautiful love story that has lasted more than 100 years! It was in 1915 that the Headquarters of the International Olympic Committee (IOC) \u2013 created and chaired by Pierre de Coubertin \u2013 were set up in Lausanne. Since then, it has to be said that sportsmanship has constantly enlivened and sparked the City.",
+                        "de": "Als Aufw\u00e4rmprogramm machen wir eine kleine Zeitreise in die Vergangenheit. Lausanne und den Sport verbindet n\u00e4mlich eine grosse Liebesgeschichte, die seit rund 100\u00a0Jahren andauert. Im Jahr 1915 verlegte das Internationale Olympische Komitee (IOK) rund um den Gr\u00fcnder und damaligen Pr\u00e4sidenten Pierre de Coubertin seinen Sitz nach Lausanne. Seither ist der Sportgeist tief in Lausanne verankert und h\u00e4lt die Stadt in Schwung."
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em><strong>\u00ab L\u2019Olympisme trouvera dans l\u2019atmosph\u00e8re ind\u00e9pendante et fi\u00e8re que l\u2019on respire \u00e0 Lausanne, le gage de libert\u00e9 dont il a besoin pour progresser. \u00bb \u2013 Pierre de Coubertin</strong></em>",
+                        "en": "<em><strong>\u201cIn the proud and independent atmosphere of Lausanne, Olympism will find guarantees of the freedom it must enjoy in order to move forward.\u201d \u2013 Pierre de Coubertin</strong></em>",
+                        "de": "<em><strong>\u201eDer Olympismus wird in der unabh\u00e4ngigen und stolzen Atmosph\u00e4re, die man in Lausanne atmet, die Sicherheit der Freiheit finden, die er f\u00fcr seine Entwicklung braucht.\u201c \u2013 Pierre de Coubertin</strong></em>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Quarante ans plus tard, c\u2019est au tour de la premi\u00e8re Maison olympique d\u2019\u00eatre inaugur\u00e9e du c\u00f4t\u00e9 de Vidy, et il faudra attendre 1994 pour que la belle vaudoise se voit officiellement d\u00e9cerner le titre de \u00ab Capitale olympique \u00bb. Une distinction d\u2019exception qui encourage quelque 60 f\u00e9d\u00e9rations et associations sportives internationales \u00e0 y \u00e9lire domicile \u00e0 leur tour, \u00e0 l\u2019instar de la Maison du Sport International. C\u2019est donc au bord du L\u00e9man, au coeur de cet environnement \u00e9blouissant, que celles-ci travaillent collectivement \u00e0 faire rayonner les m\u00e9ritantes valeurs de l\u2019Olympisme et du sport.",
+                        "en": "Forty years later, the first Olympic House was inaugurated in Vidy, yet it was only in 1994 that Lausanne was officially crowned \u201cOlympic Capital\u201d. An exceptional distinction that prompted some 60 international sports federations and associations to take up residence here, for instance in the House of International Sport. It is therefore on the shores of Lake Geneva, in the heart of this glorious setting, that these organisations work together to promote the worthy values of Olympism and sport.",
+                        "de": "40\u00a0Jahre sp\u00e4ter wurde das erste Olympische Haus in Vidy eingeweiht und 1994 wurde Lausanne offiziell zur Olympia-Hauptstadt ernannt. Diese aussergew\u00f6hnliche Auszeichnung bewegte rund 60\u00a0internationale Sportverb\u00e4nde und -organisationen dazu, Lausanne als Hauptsitz auszuw\u00e4hlen, so auch das Haus des internationalen Sports. Am Ufer des Genfersees, inmitten dieser atemberaubenden Umgebung, arbeiten sie alle gemeinsam daran, die verdienstvollen Werte des Olympismus und des Sports zu verbreiten."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "Le sport, un art de vivre lausannois",
+                        "en": "Sport, a Lausanner\u2019s way of life",
+                        "de": "Sport als Lebenskunst in Lausanne"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Aujourd\u2019hui, ce ne sont pas moins de 300 associations et clubs sportifs de haut niveau qui s\u2019\u00e9panouissent \u00e0 Lausanne, \u00e0 l\u2019instar des mythiques Football Club Lausanne-Sport et Stade Lausanne Ouchy, du club de basket-ball Pully Lausanne Foxes ou encore du Lausanne Hockey Club. Fi\u00e8re de ces puissants piliers, la ville ne manque pas d\u2019accueillir et de soutenir chaque ann\u00e9e un grand nombre de rendez-vous sportifs incontournables illustrant les meilleurs athl\u00e8tes internationaux, tels qu\u2019Athletissima, FIBA 3\u00d73 World Tour, le Tour de France ou encore les Ladies Open de tennis. Forte aussi de ses infrastructures sportives dernier cri, \u00e0 l\u2019image du Stade de la Tuili\u00e8re ou de la d\u00e9sormais mythique Vaudoise ar\u00e9na \u2013 qui a accueilli la troisi\u00e8me \u00e9dition des Jeux Olympiques de la Jeunesse en 2020 \u2013 la Ville de Lausanne se donne les moyens d\u2019un soutien \u00e0 toute \u00e9preuve, affichant clairement sa volont\u00e9 de rendre le sport toujours plus accessible et engageant. Cons\u00e9cration s\u2019il en est une : en 2019, Lausanne se classe deux ann\u00e9es de suite au top 10 des villes les plus sportives du monde*. Un vrai score de champion : inspirant non ?<br>\n* Selon le classement de l\u2019agence internationale de communication BCW",
+                        "en": "Today, no less than 300 high-level sports associations and clubs thrive in Lausanne, such as the iconic Lausanne-Sport Football Club and Stade Lausanne Ouchy, Pully Lausanne Foxes Basketball Club and Lausanne Hockey Club. Proud of these powerful pillars, the city also hosts and supports every year a great number of unmissable sports events that showcase the best international athletes, such as Athletissima, FIBA 3\u00d73 World Tour, the Tour de France as well as the Ladies Tennis Open. With its state-of-the-art sports infrastructures, such as the Stade de la Tuili\u00e8re or the now legendary Vaudoise ar\u00e9na \u2013\u00a0that hosted the third edition of the Youth Olympic Games in 2020 \u2013 the City of Lausanne ensures it has the means to provide full support, clearly demonstrating its willingness to keep making sports more accessible and attractive. If ever a consecration was needed, in 2019 Lausanne was ranked two years running one of the top ten sports cities in the world.* A proper champion\u2019s score; inspiring, isn\u2019t it?<br>\n* According to the ranking established by international communication\u2019s agency BCV.",
+                        "de": "Heute sind nicht weniger als 300\u00a0hochkar\u00e4tige Sportverb\u00e4nde und -clubs in Lausanne zu Hause. Dazu z\u00e4hlen die legend\u00e4ren Fussballclubs Lausanne-Sport und Stade Lausanne-Ouchy, der Basketballverein Pully Lausanne Foxes und der Lausanne Hockey Club. Die Stadt ist stolz auf diese m\u00e4chtigen Pfeiler und organisiert und unterst\u00fctzt jedes Jahr zahlreiche unumg\u00e4ngliche Sportevents mit den besten internationalen Athletinnen und Athleten. Die Athletissima, die FIBA 3\u00d73 World Tour, die Tour de France und das Tennisturnier Ladies Open sind nur einige davon. Dank modernster Sportinfrastrukturen wie des Fussballstadions Stade de la Tuili\u00e8re oder der inzwischen ber\u00fchmten Vaudoise Ar\u00e9na \u2013\u00a0sie war Austragungsort der dritten Olympischen Jugendspiele im Jahr 2020\u00a0\u2013 ist die Stadt Lausanne bestens aufgestellt und zeigt damit klar ihren Willen, den Sport immer zug\u00e4nglicher und attraktiver zu machen. Als Kr\u00f6nung schaffte es Lausanne 2019 zwei Jahre in Folge unter die Top\u00a010 der weltweit bedeutendsten Sportst\u00e4dte*. Ein beeindruckender Erfolg. Ist das nicht inspirierend?<br>\n* Gem\u00e4ss Ranking der internationalen Kommunikationsagentur BCW"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 27191,
+                        "name": "Lausanne et le sport : \u00e7a match ! - v\u00e9lo",
+                        "public_name": {
+                            "fr": "Lavaux velo",
+                            "en": "Lavaux velo",
+                            "de": "Lavaux velo",
+                            "es": null
+                        },
+                        "cloudinary_id": "V2zKGyrFbbk3qHLiPBthIYjLOkwlOkA21xBFrO5i",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 Suisse Tourisme",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": "Couple; V\u00e9lo; Sport; Environs; Lavaux; Balade",
+                            "description": null,
+                            "file_name_from_url": "42cc7583b2ee6ab7.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/07/Lavaux-velo.jpg"
+                        }
+                    },
+                    "size": "parallax",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h2",
+                    "value": {
+                        "fr": "\u00c0 vos marques, pr\u00eats\u2026 bougez !",
+                        "en": "On your marks, get set\u2026 Move!",
+                        "de": "Auf die Pl\u00e4tze, fertig, los!"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Lausannois d\u2019un jour ou de toujours, c\u2019est \u00e0 votre tour ! Vous voil\u00e0 bien \u00e9chauff\u00e9s et fins pr\u00eats pour une s\u00e9ance d\u2019entrainement pleine de rebondissements. Car oui, dans la Capitale olympique, l\u2019activit\u00e9 physique et sportive se pratique partout, tout le temps et par tous les temps. Que vous ayez plut\u00f4t le pied \u00ab marin \u00bb, alpin ou bien encore urbain, une large palette de choix s\u2019offre \u00e0 vous, tous plus s\u00e9duisants les uns que les autres.",
+                        "en": "Lausanner for a day or Lausanner forever, it\u2019s your turn! You\u2019re now well warmed up and fully prepared for an action-packed training session. Indeed, in the Olympic Capital, physical and sports activities are practised everywhere, all the time and in all weathers. Whether you prefer to tread water, alpine summits or urban streets, a broad choice is available to you, each more attractive than the last.",
+                        "de": "Egal, ob Sie nur f\u00fcr einen Tag oder f\u00fcr immer in Lausanne sind: Jetzt sind Sie an der Reihe! So, genug aufgew\u00e4rmt. Auf gehts zu einer Trainingseinheit voller \u00dcberraschungen. In der Olympia-Hauptstadt k\u00f6nnen Sie sich n\u00e4mlich \u00fcberall, jederzeit und bei jedem Wetter k\u00f6rperlich und sportlich bet\u00e4tigen. Wasser-, Berg- oder urbane Sportarten \u2013\u00a0bei der breiten Palette an attraktiven Angeboten ist f\u00fcr alle etwas dabei."
+                    }
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "Emport\u00e9 par la foul\u00e9e",
+                        "en": "Getting into your stride",
+                        "de": "Es l\u00e4uft wie von selbst"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Avis \u00e0 tous nos amis joggeurs : existe-t-il un meilleur terrain de jeux que celui qu\u2019offre la Cit\u00e9 lausannoise ? De notre c\u00f4t\u00e9, on a eu beau chercher, on n\u2019a pas trouv\u00e9 ! Alors d\u2019accord, on peut courir partout nous direz-vous, mais le long d\u2019un lac \u00e0 l\u2019eau translucide et au calme l\u00e9gendaire, bord\u00e9 de montagnes aux cimes sublimes, c\u2019est le bonheur, non ? En tout cas, il semblerait, car c\u00f4t\u00e9 lac, \u00e0 Lausanne, marche et footing sont l\u00e9gion le long du tr\u00e8s appr\u00e9ci\u00e9 quai d\u2019Ouchy. Et tout au long de l\u2019ann\u00e9e, les amoureux de footing sont g\u00e2t\u00e9s ! Tour \u00e0 tour, ils se retrouvent aux 20 KM de Lausanne, \u00e0 la Wake up and run ou encore au tr\u00e8s couru Marathon de Lausanne. Alors c\u2019est parti\u202f! Vos baskets pr\u00e9f\u00e9r\u00e9es aux pieds, on d\u00e9marre en petites foul\u00e9es. Direction Pully ou Vidy, selon vos envies.",
+                        "en": "To all our jogger friends: is there a better playground than the one offered by the City of Lausanne? As for us, we\u2019ve tried to find one, without success! Of course, you\u2019ll remind us that we can run everywhere, yet on the shores of a lake with crystal-clear waters and a legendary serenity, surrounded by mountains with sublime peaks, isn\u2019t that just heaven? The many walkers and joggers on the very popular Quai d\u2019Ouchy by the lakeside definitely seem to agree. And all year round, lovers of running are spoiled! They can in turn take part in the 20 KM de Lausanne, the Wake Up and Run, or the very sought-after Lausanne Marathon. So, let\u2019s go! Slip on your favourite trainers, and let\u2019s set off with short strides, heading to Pully or Vidy, depending on your mood.",
+                        "de": "Joggerinnen und Jogger aufgepasst: Gibt es eine bessere Spielwiese als Lausanne? Wir haben bisher jedenfalls keine gefunden! Zugegeben, laufen kann man \u00fcberall, aber an einem ruhigen See mit kristallklarem Wasser und umgeben von \u00fcberw\u00e4ltigenden Berggipfeln ist es doch besonders sch\u00f6n, oder nicht? Die vielen Spazierenden und Joggenden auf dem \u00e4usserst gesch\u00e4tzten Uferweg in Ouchy scheinen uns jedenfalls recht zu geben. Und Lauffans kommen das ganze Jahr \u00fcber auf ihre Kosten, zum Beispiel mit L\u00e4ufen wie dem 20KM von Lausanne, dem Wake up and run oder dem \u00e4usserst beliebten Lausanne Marathon. Na dann, auf gehts! Ziehen Sie Ihre Lieblingslaufschuhe an, wir starten langsam in Richtung Pully oder Vidy, je nach Lust und Laune."
+                    }
+                },
+                {
+                    "type": "gallery",
+                    "value": [
+                        {
+                            "id": 27110,
+                            "name": "Lausanne et le sport : \u00e7a match ! - 20KM Lausanne",
+                            "public_name": {
+                                "fr": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "en": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "de": "20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                                "es": null
+                            },
+                            "cloudinary_id": "waYEMBYOHwRfxR98DFlwEvXfe5SIgK3tE0btNRz0",
+                            "mime_type": "image/jpeg",
+                            "copyright": "\u00a9 20KM de Lausanne 2021 - 10km - walking a Vidy  Bord du lac.",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1067,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1067\"",
+                                "tags": "Sport: Lausanne; Ev\u00e9nement;",
+                                "description": null,
+                                "file_name_from_url": "c53184d44944ab33.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/20km-de-Lausanne-1.jpg"
+                            }
+                        },
+                        {
+                            "id": 27108,
+                            "name": "Lausanne et le sport : \u00e7a match ! - Olympique City",
+                            "public_name": {
+                                "fr": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "en": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "de": "ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                                "es": null
+                            },
+                            "cloudinary_id": "9FnURzZHVBUB2v0kz4KRsAA6W4TgotXXYJGQMykX",
+                            "mime_type": "image/jpeg",
+                            "copyright": "\u00a9 ST_3x2_MMS-Olympic-City-Lausanne_76610",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1067,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1067\"",
+                                "tags": "Sport; Cit\u00e9, Vieille Ville, Couple; Sportif; Lausanne; Cath\u00e9drale",
+                                "description": null,
+                                "file_name_from_url": "66909da3169d176a.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/ST_3x2_MMS-Olympic-City-Lausanne_76610.jpg"
+                            }
+                        },
+                        {
+                            "id": 27109,
+                            "name": "Lausanne et le sport : \u00e7a match ! - Lausanne Marathon",
+                            "public_name": {
+                                "fr": "Marathon de Lausanne",
+                                "en": "Marathon de Lausanne",
+                                "de": "Marathon de Lausanne",
+                                "es": null
+                            },
+                            "cloudinary_id": "Gc5xIujdKCDttlWi0x65AXgkR9TZBttDvIzcTScv",
+                            "mime_type": "image/jpeg",
+                            "copyright": "\u00a9 Marathon de Lausanne",
+                            "metadata": {
+                                "width": 1600,
+                                "height": 1598,
+                                "mimeType": "image/jpeg",
+                                "copyright": null,
+                                "attr": "width=\"1600\" height=\"1598\"",
+                                "tags": "Course; Ev\u00e9nement; Sport;",
+                                "description": null,
+                                "file_name_from_url": "bf215ee52e14fd16.jpg",
+                                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marathon-Lausanne.jpg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #0078d0;\">Des bains et des jeux</span>",
+                        "en": "<span style=\"color: #0078d0;\">Sun and fun on the water</span>",
+                        "de": "<span style=\"color: #0078d0;\">Bade- und Spielspass</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Bravo ! C\u2019est ce que l\u2019on appelle mouiller le maillot\u2026 A pr\u00e9sent, rendez-vous sur l\u2019eau, o\u00f9 stand-up paddle, wakeboard et aviron attendent les adeptes de grandes \u00e9motions. Et si vous pr\u00e9f\u00e9rez vous la couler douce en famille ou en solo, cap sur les paddles et autres p\u00e9dalos. Vous sentez ? Il flotte comme un parfum d\u2019\u00e9t\u00e9 dans l\u2019air\u2026 Pas de doute, vous \u00eates bien \u00e0 Lausanne sur Mer ! A pr\u00e9sent, place \u00e0 la d\u00e9tente : baignade \u00e0 gogo ou exploration subaquatique au club de plong\u00e9e d\u2019Ouchy, si le coeur vous en dit. A ciel ouvert elles aussi, les piscines de Bellerive et Pully-Plage \u2013 dot\u00e9es de bassins olympiques \u2013 feront par ailleurs le bonheur des nageurs de la premi\u00e8re heure.",
+                        "en": "Bravo! That\u2019s what we call pushing yourself\u2026 A now, let\u2019s get ready for some water sports: stand-up paddle and rowing await lovers of adrenaline. Perhaps you prefer a more chilled experience with your family or on your own? Then go for the stand-up paddleboards or pedal boats. Can you sense that feeling of summer in the air? There\u2019s no doubt about it, you are in Lausanne on Sea! And now, it\u2019s time to relax with as much bathing as you like or underwater exploration with the Ouchy Diving Club, if you fancy it. As for outdoor swimming pools, those of Bellerive and Pully-Plage \u2013 both with Olympic-sized pools \u2013 will delight those who love swimming above all.",
+                        "de": "Gut gemacht! Das nennt man schwitzen. Gehen wir nun ans Wasser, wo Wasserskifahren, Wakeboarden und Rudern f\u00fcr einen Adrenalin-Kick sorgen. Und f\u00fcr alle, die ein gem\u00fctlicheres Programm allein oder mit der Familie bevorzugen, heisst es auf zu den Paddles oder Pedalos. Riechen Sie es? Es liegt ein Sommerduft in der Luft\u00a0\u2026 Kein Zweifel, Sie sind in Lausanne sur Mer! Jetzt ist es Zeit zum Entspannen: Baden nach Belieben oder Erkunden der Unterwasserwelt im Tauchclub von Ouchy, wenn Sie Lust dazu haben. In den Freib\u00e4dern Bellerive und Pully-Plage mit olympischem Becken k\u00f6nnen sich Wasserratten ab dem Morgen nach Herzenslust austoben."
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em>Le + : Du c\u00f4t\u00e9 de Bellerive, mais aussi de Vidy, Saint-Sulpice ou encore Lutry, des <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\" target=\"_blank\" rel=\"noopener\">casiers multisports connect\u00e9s</a> mettent d\u00e9sormais \u00e0 disposition de la population du mat\u00e9riel de sport et de loisirs. Pratique, facile et gratuit !</em>",
+                        "en": "<em>The + : In Bellerive, as well as in Vidy, Saint-Sulpice and Lutry, <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\">connected multisport lockers</a> are now available to the general public, offering a wide range of sports and leisure equipment. Convenient, easy and free!</em>",
+                        "de": "<em>Das + : In Bellerive, aber auch in Vidy, Saint-Sulpice und Lutry stehen den B\u00fcrgern jetzt angeschlossene <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/installations-sportives/materiel-sport.html\" target=\"_blank\" rel=\"noopener\">Multisport-Schliessf\u00e4cher</a> zur Verf\u00fcgung, in denen eine breite Palette von Sport- und Freizeitger\u00e4ten angeboten wird. Bequem, einfach und kostenlos!</em>"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 25915,
+                        "name": "Lausanne et le sport : \u00e7a match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : \u00e7a match !"
+                        },
+                        "cloudinary_id": "f86865a3bfa147c0",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 Voile et paddle sur le lac Leman",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": null,
+                            "description": null,
+                            "file_name_from_url": "f86865a3bfa147c0.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Paddle-lac.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #00a651;\">Echapp\u00e9es vertes</span>",
+                        "en": "<span style=\"color: #00a651;\">Green getaways</span>",
+                        "de": "<span style=\"color: #00a651;\">Auszeit im Gr\u00fcnen</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "De leur c\u00f4t\u00e9, les amateurs de bains de for\u00eat ne sont pas moins g\u00e2t\u00e9s. Il faut dire que les lieux arbor\u00e9s \u2013 eux aussi tr\u00e8s pris\u00e9s en \u00e9t\u00e9 \u2013 ne manquent pas \u00e0 Lausanne. Ses quelque 350 hectares de parcs et de jardins font de la ville l\u2019une des plus vertes du monde. Parcs de Milan, de Mon-Repos ou encore du Mus\u00e9e Olympique, vous n\u2019avez plus qu\u2019\u00e0 faire votre choix pour une escapade luxuriante et ressour\u00e7ante. Quant \u00e0 lui, le foisonnant bois de Sauvabelin est parfait pour les familles qui souhaitent allier vir\u00e9e et activit\u00e9s nature gr\u00e2ce \u00e0 son parc animalier, sa place de jeux et sa cantine sur le lac. C\u00f4t\u00e9 for\u00eat, c\u2019est tout pr\u00e8s de Chalet-\u00e0-Gobet que celle du Jorat s\u00e9duira les amateurs de Parcours vita. A pr\u00e9sent que diriez-vous d\u2019une petite partie de Golf pour tester votre l\u00e9gendaire d\u00e9hanch\u00e9 sur le green ? Une chose est sure : au Golf Club de Lausanne, \u00e7a swing dur !",
+                        "en": "Lovers of forest bathing are just as spoilt. It must be said that leafy spots \u2013 also very popular in the summer \u2013 are many in Lausanne. The city\u2019s 350 hectares of parks and gardens make it one of the greenest in the world. Milan, Mon-Repos or the Olympic Museum, simply choose which park will be your destination for a lush and revitalising excursion. Sauvabelin wood is perfect for families who wish to combine an outing with nature activities thanks to its animal park, playground and canteen overlooking the lake. As for forests, it\u2019s near Chalet-\u00e0-Gobet that the Jorat Forest will appeal to lovers of a Parcours vita (a fitness trail). And now, what would you say to a round of golf to show off your legendary hip rotation on the green? One thing is certain: the Lausanne Golf Club is going full swing!",
+                        "de": "Auch alle, die sich im Wald pudelwohl f\u00fchlen, kommen auf ihre Kosten. An bewaldeten Fl\u00e4chen, die gerade im Sommer sehr beliebt sind, fehlt es in der Waadtl\u00e4nder Hauptstadt nicht. Die rund 350\u00a0Hektaren Park- und Gartenanlagen machen Lausanne zu einer der gr\u00fcnsten St\u00e4dte der Welt. Mit dem Milan-Park, dem Park Mon-Repos und dem Park des Olympischen Museums stehen gleich mehrere M\u00f6glichkeiten f\u00fcr eine erholsame Auszeit in einer pr\u00e4chtigen Umgebung zur Auswahl. Und der \u00fcppige Wald von Sauvabelin mit Tierpark, Spielplatz und Bistro mit Seeblick eignet sich perfekt f\u00fcr Familien, die einen Spaziergang und Aktivit\u00e4ten in der Natur miteinander verbinden wollen. Vitaparcours-Fans finden ihr Gl\u00fcck in den W\u00e4ldern des Jorat ganz in der N\u00e4he von Chalet-\u00e0-Gobet. Wie w\u00e4re es nun mit einer kleinen Runde Golf, um Ihren legend\u00e4ren H\u00fcftschwung zu testen? Eines ist sicher: Im Golf Club Lausanne wird geschwungen, was der Rasen h\u00e4lt."
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26000,
+                        "name": "Lausanne et le sport : \u00e7a match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : \u00e7a match !"
+                        },
+                        "cloudinary_id": "28a553399d706fe7",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 Foret et Tour de Sauvabelin",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1067,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1067\"",
+                            "tags": "Ville verte, promenade; Lausanne; tour",
+                            "description": null,
+                            "file_name_from_url": "28a553399d706fe7.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #ffb114;\">L\u2019ar\u00e8ne des glaces</span>",
+                        "en": "<span style=\"color: #ffb114;\">The frozen arena</span>",
+                        "de": "<span style=\"color: #ffb114;\">Die Eisarena</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Alors, vous suivez ? Pas trop essouffl\u00e9s ? Rentrez donc vous rafra\u00eechir les id\u00e9es : \u00ab LHC allez ! \u00bb. Pendant la saison de hockey, les Lausannois ne manquent pas de se retrouver au Centre de glace de la Vaudoise ar\u00e9na pour soutenir leur \u00e9quipe favorite. Trois patinoires y accueillent tour \u00e0 tour entrainements amateurs, championnats r\u00e9gionaux et grandes comp\u00e9titions pour le plus grand plaisir des spectateurs. Et tenez-vous bien, les jours de match, la reine des ar\u00e8nes peut accueillir jusqu\u2019\u00e0 9600 personnes en son sein! Une information qui, nous le savons, ne vous laissera pas de glace\u2026 Allez, en piste : crosse et lames affut\u00e9es, c\u2019est \u00e0 vous de jouer !",
+                        "en": "Are you keeping up? Not too out of breath? To cool down, come and cheer on the Lausanne Hockey Club Ice Centre. During the hockey season, Lausanners don\u2019t miss an opportunity to meet up at the Vaudoise ar\u00e9na to support their favourite team. Amateur practice, local leagues and major competitions take place in turn on the three ice rinks to delight the crowds. Just think that on match days, the main arena can accommodate up to 9,600 spectators! Information that is bound to cut ice with you\u2026 Right, on to the rink with sticks and blades at the ready, it\u2019s your turn!",
+                        "de": "Alles gut? Nicht zu sehr ausser Atem? Weiter geht es in einer k\u00fchleren Umgebung: \u201eLHC allez!\u201d W\u00e4hrend der Hockey-Saison treffen sich die Lausannerinnen und Lausanner in der Eishalle der Vaudoise Ar\u00e9na, um ihr Lieblingsteam anzufeuern. Auf drei Eisbahnen finden Trainings f\u00fcr den Amateursport, regionale Meisterschaften und grosse Sportveranstaltungen, die ein breites Publikum anziehen, statt. Und halten Sie sich fest: An den Wettkampftagen bietet diese zu den gr\u00f6ssten des Landes z\u00e4hlende Arena Platz f\u00fcr bis zu 9600\u00a0Zuschauerinnen und Zuschauer! Eine Information, die Sie bestimmt nicht kalt l\u00e4sst\u00a0\u2026 Also, los gehts: Mit Schl\u00e4ger und geschliffenen Kufen aufs Eis!"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 26084,
+                        "name": "Lausanne et le sport : \u00e7a match !",
+                        "public_name": {
+                            "fr": "Lausanne et le sport : \u00e7a match !"
+                        },
+                        "cloudinary_id": "c4bc65810e6cf288",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 ",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1200,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1200\"",
+                            "tags": "Sport; Hockey; Lausanne; Ambiance",
+                            "description": null,
+                            "file_name_from_url": "c4bc65810e6cf288.jpg",
+                            "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/02/LHC-ambiance-2.jpg"
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                },
+                {
+                    "type": "heading",
+                    "tag": "h3",
+                    "value": {
+                        "fr": "<span style=\"color: #f0282d;\">Sensations b\u00e9ton</span>",
+                        "en": "<span style=\"color: #f0282d;\">Bowled over</span>",
+                        "de": "<span style=\"color: #f0282d;\">Nervenkitzel pur</span>"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "Au skatepark de Vidy, si la planche \u00e0 roulette est reine, le roller et le BMX ne sont pas en reste. Et les lausannois ont du bol, ce \u00ab Bowl \u00bb est aussi l\u2019un des plus grands de Suisse ! Vidy, c\u2019est aussi le paradis des sports d\u2019\u00e9quipe ; sur ses nombreux terrains de jeux urbains, basket, volley ou football la jouent collectif, avec en prime, une vue lac des plus sublimes. Derni\u00e8re passe d\u00e9cisive pour la route et d\u00e9j\u00e0 le coup de sifflet retenti : c\u2019est la fin de l\u2019entrainement ! Toujours parmi nous ? Alors, dites-nous tout, quel a \u00e9t\u00e9 votre terrain de jeu favori ? Ici, pas de jaloux : c\u2019est l\u2019\u00e9galit\u00e9 parfaite. Un partout, balle au centre et place \u00e0 la troisi\u00e8me mi-temps !",
+                        "en": "At the Vidy skatepark, while skateboards reign supreme, rollerblades and BMX aren\u2019t to be outdone. Lausanners are in luck, as this \u201cbowl\u201d is one of the largest in Switzerland! Vidy is also a paradise for team sports, with many urban playgrounds for basketball, volleyball or football, where players also enjoy the most splendid lake views. A last pass to clinch victory and already the whistle signals the end of training time! Are you still with us? Then tell us what your favourite playground is. As for us, we love them all equally. With a score of one all, it\u2019s a draw and time for the third half-time!",
+                        "de": "Im Skatepark Vidy beherrschen die Skateboards das Geschehen, die Inlineskates und BMX-R\u00e4der stehen ihnen aber in nichts nach. Und die Lausannerinnen und Lausanner haben Gl\u00fcck, denn der \u201eBowl\u201c ist einer der gr\u00f6ssten der Schweiz. Vidy ist auch das Paradies f\u00fcr Mannschaftssport. Auf den zahlreichen urbanen Spielpl\u00e4tzen k\u00f6nnen Sie sich gemeinsam mit anderen im Basketball, Beachvolleyball und Fussball messen, und obendrein eine fantastische Aussicht auf den See geniessen. Ein letzter Assist und dann ert\u00f6nt auch schon der Schlusspfiff: Das Training ist zu Ende! Immer noch da? Was hat Ihnen am meisten Spass gemacht? F\u00fcr uns steht es ganz klar unentschieden. Also, Anstoss und auf gehts ins dritte Drittel!"
+                    }
+                },
+                {
+                    "type": "paragraph",
+                    "value": {
+                        "fr": "<em>Le + : Des casiers multisports connect\u00e9s mettent d\u00e9sormais \u00e0 disposition de la population du mat\u00e9riel de sport et de loisirs. Pratique, facile et gratuit !</em>",
+                        "en": "<em>The + : In Bellerive, as well as in Vidy, Saint-Sulpice and Lutry, connected multisport lockers are now available to the general public, offering a wide range of sports and leisure equipment. Convenient, easy and free!</em>",
+                        "de": "<em>Das + : In Bellerive, aber auch in Vidy, Saint-Sulpice und Lutry stehen den B\u00fcrgern jetzt angeschlossene Multisport-Schliessf\u00e4cher zur Verf\u00fcgung, in denen eine breite Palette von Sport- und Freizeitger\u00e4ten angeboten wird. Bequem, einfach und kostenlos!</em>"
+                    }
+                },
+                {
+                    "type": "image",
+                    "value": {
+                        "id": 23359,
+                        "name": "Bowl de Vidy",
+                        "public_name": {
+                            "fr": "Bowl de Vidy",
+                            "en": "Bowl in Vidy",
+                            "de": "Bowl in Vidy",
+                            "es": null
+                        },
+                        "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+                        "mime_type": "image/jpeg",
+                        "copyright": "\u00a9 LT/www.diapo.ch",
+                        "metadata": {
+                            "width": 1600,
+                            "height": 1061,
+                            "mimeType": "image/jpeg",
+                            "copyright": null,
+                            "attr": "width=\"1600\" height=\"1061\"",
+                            "tags": "V\u00e9lo; Activit\u00e9; Bowl; Enfant",
+                            "description": null
+                        }
+                    },
+                    "size": "medium",
+                    "focus": "auto"
+                }
+            ],
+            "medias": [
+                {
+                    "cloudinary_id": "f86865a3bfa147c0",
+                    "copyright": "\u00a9 Voile et paddle sur le lac Leman",
+                    "public_name": {
+                        "fr": "Lausanne et le sport : \u00e7a match !"
+                    }
+                }
+            ],
+            "published_at": "1709517807",
+            "seo": {
+                "description": {
+                    "fr": "Vous \u00eates bien \u00e0 Lausanne ! Capitale et ville olympique \u00e9lue destination pr\u00e9f\u00e9r\u00e9e des sportifs de tout poil. Sur terre ou sur l\u2019eau, au sommet ou dans les airs, id\u00e9alement nich\u00e9e entre montagnes et lac, la perle du L\u00e9man se fait tour \u00e0 tour le paradis des sportifs comme des cr\u00e9atifs.",
+                    "en": "Of course, we\u2019re talking of Lausanne! Olympic Capital and City, voted favourite destination for sports fans of all kinds. On land or on water, on the summits or in the air, ideally nestled between mountains and lake, Lake Geneva\u2019s gem is the paradise for both athletes and creators.",
+                    "de": "Sie sind in Lausanne, der Waadtl\u00e4nder und Olympia-Hauptstadt und dem beliebtesten Treffpunkt f\u00fcr alle m\u00f6glichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies f\u00fcr Sportliche und kreative K\u00f6pfe."
+                },
+                "noindex": false,
+                "slug": {
+                    "fr": "lausanne-et-le-sport-ca-match",
+                    "en": "lausanne-and-sports-a-winning-combo",
+                    "de": "lausanne-und-sport-eine-perfekte-kombination"
+                }
+            },
+            "tags": [
+                {
+                    "name": "lt-sport",
+                    "public_name": {
+                        "fr": "Sport",
+                        "en": "Sport",
+                        "de": "Sport"
+                    }
+                }
+            ]
+        }
+    }
+}

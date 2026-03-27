@@ -1,0 +1,184 @@
+{
+  "data": {
+    "item": {
+      "pois": [
+        {
+          "id": 288,
+          "name": "Plateforme 10",
+          "lead": "PLATEFORME 10, Lausannes Kulturquartier, vereint Museen, Ausstellungen und Begegnungen an einem inspirierenden Ort für Kunst und Kreativität.",
+          "medias": [
+            {
+              "cloudinary_id": "p10-sewsqq",
+              "copyright": "© Khashayar Javanmardi",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "plateforme-10",
+            "hreflang": "/de/entdecken/plateforme-10"
+          }
+        },
+        {
+          "id": 194,
+          "name": "Ouchy",
+          "lead": "Ouchy mit seinen Uferkais, dem Genfersee und sommerlichen Spaziergängen inmitten der Leute verleiht Lausanne einen Hauch von Mittelmeer-Feeling.",
+          "medias": [
+            {
+              "cloudinary_id": "akouddhpza3wodid9fdy",
+              "copyright": "© LT/ Laurent Kaczor",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "ouchy",
+            "hreflang": "/de/entdecken/ouchy"
+          }
+        },
+        {
+          "id": 337,
+          "name": "Das Olympische Museum",
+          "lead": "Das offizielle Museum des IOK am Genfersee ist dem olympischen Gedanken gewidmet und die meistbesuchte Kulturstätte Lausannes.",
+          "medias": [
+            {
+              "cloudinary_id": "q2sv6almukovljqc4qnh",
+              "copyright": "© Le Musée Olympique",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "das-olympische-museum",
+            "hreflang": "/de/entdecken/das-olympische-museum"
+          }
+        },
+        {
+          "id": 329,
+          "name": "La Cité",
+          "lead": "In diesem Quartier sind auch die typischen kleinen Bistrots und zahlreiche Kunsthandwerkgeschäfte zu finden.",
+          "medias": [
+            {
+              "cloudinary_id": "wkwgjd0j64k347su5qbd",
+              "copyright": "© LT/www.diapo.ch",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "la-cite",
+            "hreflang": "/de/entdecken/la-cite"
+          }
+        },
+        {
+          "id": 412,
+          "name": "AQUATIS Aquarium-Vivarium Lausanne",
+          "lead": "AQUATIS Aquarium-Vivarium ist das grösste Süsswasseraquarium in Europa.",
+          "medias": [
+            {
+              "cloudinary_id": "aquatis-aquarium-vivarium-lausanne-1-0mrsiy",
+              "copyright": "© Nuno Acacio",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "aquatis-aquarium-vivarium-lausanne",
+            "hreflang": "/de/entdecken/aquatis-aquarium-vivarium-lausanne"
+          }
+        },
+        {
+          "id": 92,
+          "name": "Der Genfersee",
+          "lead": "Der grösste See in Western Europas, umgeben von seiner malerischen Landschaft, bietet Ihnen zahlreiche Möglichkeiten.",
+          "medias": [
+            {
+              "cloudinary_id": "wa4bqpi0ao0rbfomct6g",
+              "copyright": "© LT/www.diapo.ch",
+              "public_name": "Lausanne"
+            }
+          ],
+          "seo": {
+            "slug": "der-genfersee",
+            "hreflang": "/de/entdecken/der-genfersee"
+          }
+        },
+        {
+          "id": 332,
+          "name": "Collection de l'Art Brut",
+          "lead": "Die Collection de l'Art Brut in Lausanne: ein fesselndes Museum voller unkonventioneller, roher und bewegender Kreativität",
+          "medias": [
+            {
+              "cloudinary_id": "rfcbqzis2zidtplkvmov",
+              "copyright": "© Caroline Smyrliadis",
+              "public_name": "Collection de l'Art Brut"
+            }
+          ],
+          "seo": {
+            "slug": "collection-de-lart-brut",
+            "hreflang": "/de/entdecken/collection-de-lart-brut"
+          }
+        },
+        {
+          "id": 372,
+          "name": "Kathedrale von Lausanne",
+          "lead": "Die Kathedrale von Lausanne: gotisch, beeindruckend und mit Top-Ausblick auf Stadt, See und Alpen - ein Muss beim Stadtbesuch.",
+          "medias": [
+            {
+              "cloudinary_id": "6yLenM0MZJ1YD3n1Gog3woVeV5M6vFA6ROnJ6qgj",
+              "copyright": "© Régis Colombo",
+              "public_name": "Cathédrale de Lausanne"
+            }
+          ],
+          "seo": {
+            "slug": "kathedrale-von-lausanne",
+            "hreflang": "/de/entdecken/kathedrale-von-lausanne"
+          }
+        },
+        {
+          "id": 90,
+          "name": "Das Rolex Learning Center",
+          "lead": "Das Rolex Learning Center dient einerseits als Ausbildungslabor, als Bibliothek mit über 500'000 Werken und auch als Kulturzentrum.",
+          "medias": [
+            {
+              "cloudinary_id": "k4ShvEwbw3EsR2Mj6AtxmN7I3cdy0X6ZDkXaBGUR",
+              "copyright": "© Régis Colombo",
+              "public_name": "Rolex Learning Center"
+            }
+          ],
+          "seo": {
+            "slug": "das-rolex-learning-center",
+            "hreflang": "/de/entdecken/das-rolex-learning-center"
+          }
+        },
+        {
+          "id": 55,
+          "name": "Palud Platz",
+          "lead": "Dieser Platz liegt mitten in der Fußgängerzone und gehört damit zu den zentralen Standorten der Stadt.",
+          "medias": [
+            {
+              "cloudinary_id": "kihf1x0iy9siryfhzp1u",
+              "copyright": "© LT/Laurent Kaczor",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "palud-platz",
+            "hreflang": "/de/entdecken/palud-platz"
+          }
+        },
+        {
+          "id": 89,
+          "name": "Flon",
+          "lead": "Das Flon-Viertel im Herzen von Lausanne! Ein modernes und innovatives Stadtviertel, das gleichermaßen am Tag und in der Nacht pulsiert.",
+          "medias": [
+            {
+              "cloudinary_id": "5d7e637ca4e09021",
+              "copyright": "© Place de l",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "slug": "flon-im-herzen-der-stadt-lausanne",
+            "hreflang": "/de/entdecken/flon-im-herzen-der-stadt-lausanne"
+          }
+        }
+      ]
+    }
+  }
+}
