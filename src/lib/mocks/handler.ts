@@ -16,10 +16,6 @@ const groupsMocks = import.meta.glob<{ default: GraphQLResponse<Group<string>> }
   './responses/groups/*.json',
   { eager: true }
 );
-const articlesMocks = import.meta.glob<{ default: GraphQLResponse<Post<string>> }>(
-  './responses/articles/*.json',
-  { eager: true }
-);
 
 const favoritesMap: Record<string, GraphQLResponse<Favorite<string>>> = {};
 const postsMap: Record<string, GraphQLResponse<PostType<string>>> = {};
@@ -44,13 +40,6 @@ for (const path in groupsMocks) {
   const filename = path.split('/').pop()?.replace('.json', ''); // ex: fr
   if (filename) {
     groupsMap[filename] = groupsMocks[path].default;
-  }
-}
-
-for (const path in articlesMocks) {
-  const filename = path.split('/').pop()?.replace('.json', ''); // ex: lausanne-et-le-sport-ca-match
-  if (filename) {
-    articlesMap[filename] = articlesMocks[path].default;
   }
 }
 
@@ -114,11 +103,43 @@ export const handlers = [
     console.warn('mock request: GetAgendaEvents');
     return HttpResponse.json(eventsMock);
   }),
-  graphql.query('GetArticle', async ({ variables }) => {
+  graphql.query('GetArticle', async ({ variables, ...rest }) => {
     console.warn('mock request: GetArticle');
-    const mock = articlesMap[variables.slug];
+    console.log({ variables });
 
-    return HttpResponse.json(mock);
+    for (const type of ['press_kit', 'news', 'posts', 'posts.highlighted']) {
+      for (const locale of ['fr', 'de', 'en']) {
+        const response = postsMap[`${type}.${locale}`];
+        for (const post of response.data.items?.data) {
+          if (post.seo?.slug === variables.slug) {
+            console.log(post);
+            return HttpResponse.json({
+              data: {
+                item: post
+              }
+            });
+          }
+        }
+      }
+    }
+
+    return HttpResponse.json({
+      errors: [
+        {
+          message: 'Internal server error',
+          locations: [
+            {
+              line: 2,
+              column: 5
+            }
+          ],
+          path: ['item']
+        }
+      ],
+      data: {
+        item: null
+      }
+    });
   })
 ];
 

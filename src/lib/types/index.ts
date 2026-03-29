@@ -54,5 +54,12 @@ export type GraphQLResponse<T> = {
     };
     item?: T;
   };
-  errors?: unknown[];
+  errors?:
+    | readonly {
+        message?: string;
+        locations?: unknown[];
+        path?: unknown[];
+        extensions?: Record<string, unknown>;
+      }[]
+    | null;
 };
