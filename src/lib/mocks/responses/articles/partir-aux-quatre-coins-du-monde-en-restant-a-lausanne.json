@@ -1,0 +1,798 @@
+{
+  "data": {
+    "item": {
+      "id": "314",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "Partir aux quatre coins du monde… en restant à Lausanne !",
+        "en": "Travel to the four corners of the world… without leaving Lausanne!",
+        "de": "In die ganze Welt aufbrechen – ohne dabei Lausanne verlassen zu müssen!"
+      },
+      "lead": {
+        "fr": "Lausanne regorge de magnifiques lieux avec des airs de vacances, et qui ressemblent étrangement à des paysages qui nous font penser à des destinations lointaines. Qui a dit qu’on devait absolument partir loin pour être dépaysé ?",
+        "en": "Lausanne is full of magnificent places with a holiday feel, that are uncannily similar to landscapes that evoke faraway locations. Who says you have to travel a long way to get a change of scene?",
+        "de": "Lausanne hat viele wunderbare Orte mit Ferienstimmung aufzuweisen, die obendrein auch noch oft das exotische Flair ferner Ziele bieten können. Wer hat eigentlich gesagt, dass man ans andere Ende der Welt fahren muss, um sich zu erholen?"
+      },
+      "summary": {
+        "fr": "Lausanne regorge de magnifiques lieux avec des airs de vacances, et qui ressemblent étrangement à des paysages qui nous font penser à des destinations lointaines. Qui a dit qu’on devait absolument partir loin pour être dépaysé ?",
+        "en": "Lausanne is full of magnificent places with a holiday feel, that are uncannily similar to landscapes that evoke faraway locations. Who says you have to travel a long way to get a change of scene?",
+        "de": "Lausanne hat viele wunderbare Orte mit Ferienstimmung aufzuweisen, die obendrein auch noch oft das exotische Flair ferner Ziele bieten können. Wer hat eigentlich gesagt, dass man ans andere Ende der Welt fahren muss, um sich zu erholen?"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>1. <a href=\"https://www.lausanne-tourisme.ch/fr/P23814/quartier-du-rotillon\">Le Rôtillon</a> : des airs des Cinque Terre en Italie ! </strong>",
+            "en": "<strong>1. <a href=\"https://www.lausanne-tourisme.ch/en/explore/rotillon-quarter/\">Rôtillon quarter</a>: with the feel of Cinque Terre in Italy! </strong>",
+            "de": "<strong>1. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-rotillon-quartier/\">Das Rôtillon</a>: ein Flair wie im italienischen Cinque Terre! </strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avec ses petites maisons colorées, et ses ruelles étroites dans lesquelles se perdre une glace à la main, le Rôtillon nous fait penser aux Cinque Terre, ces superbes villages situés au Nord-Est de l’Italie. Le Rôtillon est l’un des plus anciens quartiers de Lausanne, et est connu pour ses passages et ses chemins en pente. Et puis, s’il y a bien un endroit où vous risquez de dénicher des pépites, c’est ici, grâce aux créateurs locaux installés un peu partout dans le quartier !",
+            "en": "With its little colourful houses, and its narrow alleyways where you can lose yourself with an ice cream in your hand, le Rôtillon reminds us of Cinque Terre, the superb villages in the north-east of Italy. Le Rôtillon is one of the oldest quarters of Lausanne, and it is known for its passages and its sloping roads. Then if you’d like to find a nice bargain, this is the place, with so many local designers around the area!",
+            "de": "Mit seinen kleinen farbigen Häusern und seinen engen Gassen, wo man mit einem Eis in der Hand flanieren kann, lässt uns das Rôtillon an Cinque Terre denken, diese phantastischen Dörfer in Nordwest-Italien. Das Rôtillon, eines der ältesten Stadtviertel Lausannes, ist bekannt für seine Durchgänge und seine am Hang liegenden Wege. Und wenn sich irgendwo kleine Schätze finden lassen, dann hier, bei den vielen, überall im Viertel ansässigen Kunsthandwerker!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/ByStJADi454/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25955,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "0b75d303c2f8da50",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1920,
+              "height": 1090,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"1090\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "0b75d303c2f8da50.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/italy-2347402_1920.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Cinque Terre, Italie",
+            "en": "Cinque Terre, Italie",
+            "de": "Cinque Terre, Italie",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>2. <a href=\"https://www.lausanne-tourisme.ch/decouvrir/les-terrasses-de-lavaux-unesco/\">Lavaux</a> : des airs des vignes de Rio Douro au Portugal ! </strong>",
+            "en": "<strong>2. <a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux</a>: with the feel of Alto Douro in Portugal! </strong>",
+            "de": "<strong>2. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\">Lavaux</a>: ein Flair wie im portugiesischen Douro-Tal! </strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ah Lavaux… ses chemins escarpés parfaits pour une balade au soleil, sa vue imprenable sur le lac Léman et, surtout, ses vignes à perte de vue : à peine arrivés en Lavaux, on est instantanément transportés en vacances. Et, attendez : ce paysage, ça nous rappellerait pas la fameuse vallée de Rio Douro au Portugal ?",
+            "en": "Ah Lavaux… its steep roads are perfect for a sunny walk, with its fantastic view of Lake Geneva and, above all, vines as far as the eye can see: as soon as you arrive in Lavaux, you are on holiday. But wait – doesn’t this landscape remind you of the famous valley of Alto Douro in Portugal?",
+            "de": "Lavaux mit seinen steilen Pfaden, die sich wunderbar für sonnige Wanderungen mit atemberaubenden Ausblicken auf den Genfersee eignen. Weinberge soweit das Auge reicht. Kaum ist man in Lavaux angekommen, ist man bereits im Urlaub! Und sagen Sie mal, erinnert Sie diese Landschaft nicht auch an das bekannte obere Douro-Tal in Portugal?",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 18913,
+            "name": "Chexbres",
+            "public_name": {
+              "fr": "Chexbres",
+              "es": null
+            },
+            "cloudinary_id": "LDqF1VcBye81sL2rELyxODcKSsZeLROszkk4OBX3",
+            "mime_type": "image/jpeg",
+            "copyright": "© LT/Laurent Kaczor",
+            "metadata": {
+              "attr": "width=\"1600\" height=\"1063\"",
+              "tags": "Baron Tavernier, Chexbres, lac Léman; panorama; Lavaux; lac; Terrasse",
+              "width": 1600,
+              "height": 1063,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "description": null,
+              "file_name_from_url": "3f52505bce2c4a61.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/12/Chexbres-DSF0083-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lavaux",
+            "en": "Lavaux",
+            "de": "Lavaux",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26120,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "9c37f13870a6adee",
+            "mime_type": "image/jpeg",
+            "copyright": "© Rio Douro",
+            "metadata": {
+              "width": 1920,
+              "height": 1275,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"1275\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "9c37f13870a6adee.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/douro-4768663_1920.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Rio Douro",
+            "en": "Rio Douro",
+            "de": "Rio Douro",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>3. <a href=\"https://www.lausanne-tourisme.ch/decouvrir/un-pavillon-royal-a-lausanne/\">Le pavillon royal</a> : des airs de Bangkok en Thaïlande !</strong>",
+            "en": "<strong>3. <a href=\"https://www.lausanne-tourisme.ch/en/explore/a-royal-pavilion-in-lausanne/\">The Royal Pavilion</a>: with the feel of Bangkok in Thailand!</strong>",
+            "de": "<strong>3. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ein-koniglicher-pavillon-in-lausanne/\">Der königliche Pavillon</a>: ein Flair wie im thailändischen Bangkok!</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour être tout droit transportés en Thaïlande, cap sur le Nord du parc du Denantou, où se trouve le fameux pavillon thaï. Pour la petite histoire, cet édifice a été offert en 2005 à la ville de Lausanne directement par le Roi de Thaïlande (rien que ça !), qui a lui-même vécu à Lausanne pendant presque 20 ans. Pas étonnant donc que son architecture nous rappelle les nombreux temples de Bangkok !",
+            "en": "If you want to be transported to Thailand, head to the north of Denantou Park, where you will find the famous Thai pavilion. To give you a brief history, this building was given directly to the town of Lausanne in 2005 by the King of Thailand (yes really!), who himself lived in Lausanne for nearly 20 years. No wonder then that its architecture brings to mind the many temples in Bangkok!",
+            "de": "Wenn Sie sich direkt nach Thailand entführen lassen wollen, steuern Sie den Nordteil des Denantou Parks an, wo der berühmte Thai-Pavillon steht. Dieses Gebäude erhielt die Stadt Lausanne 2005 von niemand geringerem als dem thailändischen König geschenkt, der in der Stadt fast zwanzig Jahre seines Lebens verbracht hat. Es braucht Sie also nicht zu wundern, wenn Sie sich an die vielen Tempel in Bangkok erinnert fühlen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26187,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "96af37f28f0dedf6",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 513,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"513\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "96af37f28f0dedf6.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/Parc-Denantou-KAZ0663.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pavillon thaï de Lausanne",
+            "en": "Pavillon thaï de Lausanne",
+            "de": "Pavillon thaï de Lausanne",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26254,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "c8a07ba6dede747f",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 512,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"512\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "c8a07ba6dede747f.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/thailand-993856_1920.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Temple de Bangkok",
+            "en": "Temple de Bangkok",
+            "de": "Temple de Bangkok",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>4. <a href=\"https://www.lausanne-tourisme.ch/fr/P10692/plaines-de-vidy\">Vidy</a> : des airs de l’île d’Elbe, en Italie ! </strong>",
+            "en": "<strong>4. <a href=\"https://www.lausanne-tourisme.ch/en/explore/plaines-de-vidy/\">Vidy</a>: with the feel of the island of Elba in Italy! </strong>",
+            "de": "<strong>4. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plaines-de-vidy/\">Vidy</a>: ein Flair wie auf dem italienischen Elba! </strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Un été sans farniente à la plage, c’est comme la Cathédrale sans son guet : impensable ! Et ça tombe bien, parce que grâce au Léman et ses eaux cristallines, on a la chance de pouvoir profiter de longues journées de bronzette sur les rives du lac. Et vue du ciel, la plage de Vidy ressemble étonnamment à celle de l’île d’Elbe en Italie. On vous laisse comparer…",
+            "en": "A summer without lazing on the beach is like Lausanne Cathedral without its famous watchmen: unthinkable! And you’re in luck, because with Lake Geneva and its crystalline waters, you can enjoy long days of sunbathing by the lakeside. In an aerial view, the beach at Vidy looks surprisingly similar to the island of Elba in Italy. Come and compare for yourself…",
+            "de": "Ein Sommer ohne Faulenzen am Strand, das ist so schlecht vorstellbar, wie eine Kirche ohne Glockenturm. Und da haben Sie nun wirklich Glück, denn an den Ufern der kristallklaren Wasser des Genfersees lässt es sich herrlich einen ganzen Tag in der Sonne aalen. Und aus der Vogelperspektive ähnelt der Strand von Vidy ganz auffallend dem Strand der italienischen Insel Elba. Überzeugen Sie sich selbst!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25248,
+            "name": "Vidy plage",
+            "public_name": {
+              "fr": "Vidy",
+              "es": null
+            },
+            "cloudinary_id": "EBYDP6nTTw0uUhlHL3Wl4whtgZV6X98UTiuHwTKV",
+            "mime_type": "image/jpeg",
+            "copyright": "© lausanne tourisme",
+            "metadata": {
+              "width": 575,
+              "height": 719,
+              "mimeType": "image/jpeg",
+              "copyright": "DUCRY Victorine",
+              "attr": "width=\"575\" height=\"719\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "49da4e6d353eaab0.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Vidy_Lausanne-e1590653147868.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Vidy – ©<a href=\"https://www.instagram.com/victormichaud_photo/?hl=fr\">victormichaud_photo</a>",
+            "en": "Vidy – ©<a href=\"https://www.instagram.com/victormichaud_photo/?hl=fr\">victormichaud_photo</a>",
+            "de": "Vidy – ©<a href=\"https://www.instagram.com/victormichaud_photo/?hl=fr\">victormichaud_photo</a>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26360,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "4246fd37bf8e23cf",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 575,
+              "height": 768,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"575\" height=\"768\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "4246fd37bf8e23cf.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/isola-delba-5103591_1920.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ile d’Elbe, Italie",
+            "en": "Ile d’Elbe, Italie",
+            "de": "Ile d’Elbe, Italie",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>5. Le Chemin des Plaines : des airs de Provence !</strong>",
+            "en": "<strong>5. The Chemin des Plaines: with the feel of Provence!</strong>",
+            "de": "<strong>5. Der Chemin des Plaines: ein Flair wie in der Provence!</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "C’est certain, une atmosphère provençale règne dans cette rue proche du <a href=\"https://www.lausanne-tourisme.ch/fr/P954/theatre-de-vidy\">Théâtre de Vidy</a> ! D’ailleurs, les maisons aux volets colorés et les fleurs violettes qui sentent bon l’été y sont certainement pour quelque chose. On entendrait presque les cigales chanter.",
+            "en": "There’s no denying the atmosphere of Provence in this street near the <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Théâtre de Vidy</a>! Its houses with colourful shutters and the violets that smell fantastic in summer are certainly there for a reason. You can almost hear the sound of the crickets!",
+            "de": "In dieser Strasse in der Nähe des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">Vidy-Theater</a> findet sich tatsächlich eine provenzalische Atmosphäre! Das hat sicherlich auch mit den farbigen Fensterläden und den wohlriechenden violetten Blumen zu tun. Man glaubt fast, die Zikaden zu hören!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " ",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CAFApaDgkPX/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26402,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "d3a787b9a8226a63",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 512,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"512\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d3a787b9a8226a63.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/saint-remy-de-provence-4706832_1920.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Saint-Rémy-de-Provence",
+            "en": "Saint-Rémy-de-Provence",
+            "de": "Saint-Rémy-de-Provence",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>6. <a href=\"https://www.lausanne-tourisme.ch/fr/P10662/palais-de-rumine\">Le Palais de Rumine</a> : des airs du Palais de Justice à Vienne, en Autriche ! </strong>",
+            "en": "<strong>6. <a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\">The Palais de Rumine</a>: with the feel of the Vienna Palace of Justice in Austria! </strong>",
+            "de": "<strong>6. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\">Der Palais de Rumine</a>: ein Flair wie im Wiener Justizpalast in Österreich! </strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Bien que les journées ensoleillées ne manquent pas en été à Lausanne, il n’est pas impossible qu’un jour de pluie fasse son apparition. Mais pas le temps de s’ennuyer : qui dit pluie, dit visite d’un des nombreux musées lausannois ! On vous propose une découverte du Palais de Rumine, pour être directement téléporté dans la ville de Mozart. La ressemblance entre ce fameux musée de Lausanne, et le hall d’entrée du Palais de Justice de Vienne est frappante ! On en viendrait presque à les confondre.",
+            "en": "Although there are plenty of sunny days in summer in Lausanne, there is still a chance of the odd rainy day as well. But there is no time to get bored: if it rains, you can visit one of the many museums in town! We recommend that you discover the Palais de Rumine, to teleport right back to the town of Mozart. There is a striking resemblance between this museum in Lausanne and the entrance hall of the Palace of Justice in Vienna! You could almost confuse the two.",
+            "de": "Im Sommer mangelt es in Lausanne wirklich nicht an Sonnentagen, aber es kann natürlich auch einmal einen Tag regnen. Dabei kommt aber keine Langeweile auf, denn bei Regenwetter empfiehlt sich ein Besuch in einem der vielen Museen von Lausanne! Wir empfehlen Ihnen, den Palais de Rumine zu besichtigen, wo man sich in der Mozartstadt Wien wähnen kann. Die Ähnlichkeit zwischen diesem berühmten Lausanner Museum und der Eingangshalle des Wiener Justizpalasts ist frappierend. Verwechselung nicht ausgeschlossen!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " ",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B9HE_LtgoIF/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BwMJ5gxhu8n/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>7. <a href=\"https://www.lausanne-tourisme.ch/fr/P13759/le-pointu\">Le Pointu</a> : des airs du Flatiron de New York !</strong>",
+            "en": "<strong>7. <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-pointu/\">Le Pointu</a>: with the feel of the Flatiron Building in New York!</strong>",
+            "de": "<strong>7. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-pointu/\">Le Pointu</a>: ein Flair wie beim Flatiron in New York!</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Alors bon, on vous l’accorde, le bâtiment n’est pas aussi vertigineux que le Flatiron de New York. Mais selon l’angle de vue, il a quand même de sacrés airs de ressemblance, et il a au moins tout autant de charme (si ce n’est plus, mais on n’est pas très objectifs). En plus, il abrite Le Pointu, un délicieux restaurant, avec des brunches à tomber. Rendez-vous Rue Neuve 2 à Lausanne pour faire la même photo, suivie d’un bon petit repas entre copains !",
+            "en": "Of course, the building is not as tall as the Flatiron Building in New York. But depending on your viewing angle, there is quite a resemblance, and certainly just as much charm (if not more, but we are not very objective). It is also the home of Le Pointu, a fantastic restaurant with brunches to die for. Just head to Rue Neuve 2 in Lausanne to take the same photo, then have a nice meal with friends!",
+            "de": "Wir müssen zugeben, das Gebäude ist nicht ganz so schwindelerregend wie das Flatiron Building in New York. Je nach Blickwinkel gibt es allerdings eine verblüffende Ähnlichkeit und es ist mindestens ebenso interessant (wahrscheinlich interessanter, aber wir sind da nicht ganz unvoreingenommen). Darüber hinaus beherbergt es ein empfehlenswertes Restaurant, wo man einen erstklassigen Brunch serviert bekommt. Wenn Sie das gleiche Foto machen und hinterher mit Freunden gut essen möchten, kommen Sie in die Rue Neuve 2 in Lausanne.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " ",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B6NfOdJAymQ/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26434,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "8357e4c2237e87d4",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 512,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"512\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "8357e4c2237e87d4.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/flat-iron-building-2847320_1920-1.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Flatiron building, New York",
+            "en": "Flatiron building, New York",
+            "de": "Flatiron building, New York",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>8. <a href=\"https://www.lausanne-tourisme.ch/fr/P8838/promenade-de-la-ficelle\">Promenade de la ficelle</a> : des airs de la Highline à New York !</strong>",
+            "en": "<strong>8. <a href=\"https://www.lausanne-tourisme.ch/en/explore/promenade-de-la-ficelle/\">Promenade de la Ficelle</a>: with the feel of the Highline in New York!</strong>",
+            "de": "<strong>8. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/promenade-de-la-ficelle/\">Promenade de la Ficelle</a>: ein Flair wie auf der Highline in New York!</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Outre-Atlantique, ils ont la mythique Highline, qui n’est autre qu’une balade aménagée sur une ancienne ligne de métro new yorkaise. À Lausanne, on a la promenade de la Ficelle : un espace vert construit sur le tracé du M2. On doit son nom à l’ancien train à crémaillère qui reliait Ouchy au Flon, et qu’on appelait – vous l’aurez compris – la « Ficelle ». Direction l’arrêt de métro Délices pour se promener sur la Highline lausannoise.",
+            "en": "Across the Atlantic, they have the legendary Highline, a footpath set up on an old New York subway line. In Lausanne, we have the Promenade de la Ficelle: a green space set up along the route of the M2. It takes its name from the old rack railway that linked Ouchy and Flon, which was known as – you’ve guessed it – “la Ficelle”. If you go to Délices metro station, you can walk along the Highline of Lausanne.",
+            "de": "Auf der anderen Seite des Atlantiks wurde die Highline, ein ehemaliger Hochbahn-Streckenabschnitt der New Yorker U-Bahn, so umgebaut, dass man dort spazierengehen kann. Lausanne kann dagegen mit der Promenade de la Ficelle aufwarten: einer Grünanlage, die dem Streckenverlauf der M2 folgt. Der Name stammt von der ehemaligen Zahnradbahn zwischen Ouchy und dem Flon, der die Einwohner den Spitznamen “Ficelle” (Bändsel) verpasst hatten. Um auf der Lausanner Highline spazieren zu gehen, nehmen Sie die Metro bis zum Halt Délices.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26147,
+            "name": "Lausanne : histoire, architecture et design",
+            "public_name": {
+              "fr": "Lausanne : histoire, architecture et design"
+            },
+            "cloudinary_id": "982f0b07cbdad610",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1200,
+              "height": 801,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"801\"",
+              "tags": "Lausanne; Parc; Soleil;",
+              "description": null,
+              "file_name_from_url": "982f0b07cbdad610.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Promenade-Ficelle-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "La promenade de la Ficelle",
+            "en": "La promenade de la Ficelle",
+            "de": "La promenade de la Ficelle",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BV5fFoEF_lL/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>9. <a href=\"https://www.lausanne-tourisme.ch/fr/P15594/ouchy\">Ouchy</a> : des airs de l’île de Hvar, en Croatie !</strong>",
+            "en": "<strong>9. <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\">Ouchy</a>: with the feel of the island of Hvar in Croatia!</strong>",
+            "de": "<strong>9. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\">Ouchy</a>: ein Flair wie auf der Insel Hvar in Kroatien!</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avec ses jolis bateaux posés le long des quais, Ouchy donne vraiment à Lausanne un air de petite ville portuaire méditerranéenne. Ça nous projette presque sur l’île de Hvar, située au large de Split en Croatie (les palmiers en moins, ok). Rien qu’en regardant les photos, on a envie de faire un plongeon dans le lac. Notre astuce : pour prendre un peu le large il est possible de <a href=\"https://www.lausanne-tourisme.ch/fr/P10505/pedalos-petits-bateaux-ski-nautique\">louer des pédalos</a> directement à Ouchy !",
+            "en": "With beautiful boats along its docks, Ouchy really gives Lausanne the feel of a little Mediterranean port town. It almost transports us to the island of Hvar off Split in Croatia (minus the palm trees, granted). Just looking at the photos makes you want to dive into the lake. Our tip: if you feel like setting sail, you can rent <a href=\"https://www.lausanne-tourisme.ch/en/explore/pedal-boats-small-motor-boats-waterski/\">pedalos</a> right there in Ouchy!",
+            "de": "Dank der schönen Schiffe an den Kaimauern von Ouchy hat Lausanne sogar etwas von einer kleinen Hafenstadt am Mittelmeer. Plötzlich befinden wir uns quasi auf der Split vorgelagerten Insel Hvar in Kroatien (es fehlen nur die Palmen). Schon allein die Fotos machen Lust auf einen Sprung in den See. Kleiner Tipp: wenn Sie ein Stück auf den See fahren möchten, können Sie gleich in Ouchy ein <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/tretboote-kleine-motorboote-wasserski/\">Tretboot</a> mieten.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " ",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B3rF_nHAczE/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26485,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "aa3cc5f7b396023b",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 576,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"576\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "aa3cc5f7b396023b.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/98350661_174185153971836_9216212188933390336_n-scaled-1.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ile de Hvar, Croatie",
+            "en": "Ile de Hvar, Croatie",
+            "de": "Ile de Hvar, Croatie",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "10. <a href=\"https://www.facebook.com/cafedelhoteldevillelausanne/\">Le Café de l’Hôtel de Ville</a> : des airs de Paris !",
+            "en": "10. <a href=\"https://www.facebook.com/cafedelhoteldevillelausanne/\">Le Café de l’Hôtel de Ville</a> : des airs de Paris !",
+            "de": "<span lang=\"DE-CH\">10. <a href=\"https://www.facebook.com/cafedelhoteldevillelausanne/\">Das Café de l’Hôtel de Ville</a>: ein Flair wie in Paris!</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Le Café de l’Hôtel de Ville nous rappelle sans aucun doute ces jolis cafés parisiens au charme unique, avec leurs terrasses sur lesquelles observer les passants en sirotant un petit verre. On adore sa façade toute en bois et son côté authentique !",
+            "en": "Le Café de l’Hôtel de Ville nous rappelle sans aucun doute ces jolis cafés parisiens au charme unique, avec leurs terrasses sur lesquelles observer les passants en sirotant un petit verre. On adore sa façade toute en bois et son côté authentique !",
+            "de": "<span lang=\"DE-CH\">Das Café de l’Hôtel de Ville erinnert uns an diese hübschen Pariser Cafés mit ihrem besonderen Charme, mit ihren Terrassen, auf denen man ein Gläschen trinkt und dabei den vorbeigehenden Leuten zusieht. Uns gefällt die Fassade ganz aus Holz, mit ihrem ursprünglichen Ambiente!</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " ",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B5e-VYiANaq/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26499,
+            "name": "Partir aux quatre coins du monde… en restant à Lausanne !",
+            "public_name": {
+              "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+            },
+            "cloudinary_id": "2bd6261cbfca02b0",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 768,
+              "height": 432,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"768\" height=\"432\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "2bd6261cbfca02b0.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/paris-4694708_1920.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Terrasses parisiennes",
+            "en": "Terrasses parisiennes",
+            "de": "Terrasses parisiennes",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "On vous l’avait bien dit, les paysages lausannois super diversifiés font de Lausanne une ville dans laquelle il est très facile de s’évader et se sentir dépaysé ! Et vous, quels sont les endroits qui vous font totalement déconnecter à Lausanne ?",
+            "en": "We told you so, Lausanne is definitely a city where it’s easy to escape thanks to its super diversified landscapes! And you, what are the places that allow you to disconnect in Lausanne?",
+            "de": "Wie wir es Ihnen gesagt haben: die Landschaften in Lausanne sind so abwechslungsreich, dass es sehr einfach ist, dem Alltag zu entfliehen. Was sind Ihre Orte in Lausanne, an denen Sie komplett abschalten können?",
+            "it": "",
+            "es": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "0b75d303c2f8da50",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Partir aux quatre coins du monde… en restant à Lausanne !"
+          }
+        }
+      ],
+      "published_at": "1617660000",
+      "seo": {
+        "description": {
+          "fr": "Lausanne regorge de magnifiques lieux avec des airs de vacances, et qui ressemblent étrangement à des paysages qui nous font penser à des destinations lointaines. Qui a dit qu’on devait absolument partir loin pour être dépaysé ?",
+          "en": "Lausanne is full of magnificent places with a holiday feel, that are uncannily similar to landscapes that evoke faraway locations. Who says you have to travel a long way to get a change of scene?",
+          "de": "Lausanne hat viele wunderbare Orte mit Ferienstimmung aufzuweisen, die obendrein auch noch oft das exotische Flair ferner Ziele bieten können. Wer hat eigentlich gesagt, dass man ans andere Ende der Welt fahren muss, um sich zu erholen?"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "partir-aux-quatre-coins-du-monde-en-restant-a-lausanne",
+          "en": "travel-to-the-four-corners-of-the-world-without-leaving-lausanne",
+          "de": "in-die-ganze-welt-aufbrechen-ohne-dabei-lausanne-verlassen-zu-mussen"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-insolite",
+          "public_name": {
+            "fr": "Insolite",
+            "en": "Unusual",
+            "de": "Ungewöhnlich"
+          }
+        }
+      ]
+    }
+  }
+}

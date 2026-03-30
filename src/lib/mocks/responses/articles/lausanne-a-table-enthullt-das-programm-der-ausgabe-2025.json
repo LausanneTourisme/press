@@ -1,0 +1,55 @@
+{
+  "data": {
+    "item": {
+      "id": "324",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "Lausanne à Table dévoile son programme de l'édition 2025 !",
+        "en": "Lausanne à Table unveils its 2025 edition program!",
+        "de": "Lausanne à Table enthüllt das Programm der Ausgabe 2025!"
+      },
+      "lead": {
+        "fr": "La 11e édition propose soixante événements culinaires.",
+        "en": "The 11th edition offers sixty culinary events.",
+        "de": "Die 11. Ausgabe bietet sechzig kulinarische Veranstaltungen."
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "NzJ4fioEez9BEfseMI3uQS3mCX5id7nxi513ZegW",
+          "copyright": "© Lausanne à Table",
+          "public_name": {
+            "fr": "MIAM Festival",
+            "en": "MIAM Festival",
+            "de": "MIAM Festival"
+          }
+        }
+      ],
+      "published_at": "1746655200",
+      "seo": {
+        "description": {
+          "fr": "La 11e édition propose soixante événements culinaires.",
+          "en": "The 11th edition offers sixty culinary events.",
+          "de": "Die 11. Ausgabe bietet sechzig kulinarische Veranstaltungen."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-a-table-devoile-son-programme-de-ledition-2025",
+          "en": "lausanne-a-table-unveils-its-2025-edition-program",
+          "de": "lausanne-a-table-enthullt-das-programm-der-ausgabe-2025"
+        }
+      },
+      "tags": []
+    }
+  }
+}
