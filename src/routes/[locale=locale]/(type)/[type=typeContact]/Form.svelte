@@ -1,5 +1,6 @@
 <script lang="ts">
   import { dev } from '$app/environment';
+  import { isOfflineMode } from '$lib/helpers';
   import { applyAction, enhance } from '$app/forms';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import { t } from '$lib/translations';
@@ -45,15 +46,17 @@
   const submit: SubmitFunction<Success, Failure> = async ({ formData, cancel }) => {
     isLoading = true;
 
-    if (!botpoison) {
+    if (!botpoison && !(dev && isOfflineMode)) {
       cancel();
       isLoading = false;
       return;
     }
 
     try {
-      const { solution } = await botpoison.challenge();
-      formData.append('_botpoison', solution);
+      if (!(dev && isOfflineMode)) {
+        const { solution } = await botpoison!.challenge();
+        formData.append('_botpoison', solution);
+      }
       const validationState = validation?.(formData);
       if (validationState?.status === 'failed') {
         incorrectData = true;
