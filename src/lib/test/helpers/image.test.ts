@@ -9,7 +9,8 @@ import { describe, expect, it, vi } from 'vitest';
 // Mock the env module
 vi.mock('$env/static/public', () => ({
   PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
-  PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset'
+  PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
+  PUBLIC_ENABLE_OFFLINE_MODE: 'false'
 }));
 
 describe('Test helper: Image', () => {
