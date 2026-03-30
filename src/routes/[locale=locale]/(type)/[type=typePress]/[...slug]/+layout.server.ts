@@ -8,7 +8,7 @@ import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
 export const load = async ({ params, parent, url }) => {
-   if (dev && isOfflineMode) {
+  if (dev && isOfflineMode) {
     const { server } = await import('$lib/mocks/handler');
     server.listen();
   }
@@ -17,7 +17,7 @@ export const load = async ({ params, parent, url }) => {
     getPost(params.slug ?? '')
   ]);
 
-  const release = releaseRes.data.item;
+  const release = releaseRes.data?.item;
   if (!release || !release.languages?.includes(params.locale)) throw error(404);
 
   const lang = params.locale as Locale;
