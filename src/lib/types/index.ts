@@ -41,7 +41,7 @@ export type SeoAlternate = {
 };
 
 export type GraphQLResponse<T> = {
-  data: {
+  data?: {
     items?: {
       has_more_pages: boolean;
       current_page: number;
@@ -55,11 +55,12 @@ export type GraphQLResponse<T> = {
     item?: T;
   };
   errors?:
-    | readonly {
-        message?: string;
-        locations?: unknown[];
-        path?: unknown[];
-        extensions?: Record<string, unknown>;
-      }[]
+    | readonly Partial<{
+        message: string;
+        locations: readonly { line: number; column: number }[];
+        path: readonly (string | number)[];
+        extensions: Record<string, unknown>;
+      }>[]
     | null;
+  extensions?: Record<string, unknown>;
 };
