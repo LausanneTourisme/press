@@ -18,8 +18,7 @@ export const load = async ({ params, parent, url }) => {
     getPost(params.slug ?? '')
   ]);
 
-  const article = articleRes.data.item;
-
+  const article = articleRes.data?.item;
   if (!article || !article.languages?.includes(locale)) throw error(404);
 
   await loadTranslations(locale, url.pathname);
