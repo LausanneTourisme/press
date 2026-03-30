@@ -15,6 +15,7 @@
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import Loading from '$lib/components/Loading.svelte';
   import { dev } from '$app/environment';
+  import { isOfflineMode } from '$lib/helpers';
 
   const countries = $derived(Object.entries((page.data as PageData).countries));
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
@@ -50,12 +51,11 @@
             );
 
           // antibot
-          const botpoison = new Botpoison({
-            publicKey: PUBLIC_BOTPOISON_PUBLICKEY
-          });
-
-          const { solution } = await botpoison.challenge();
-          formData.append('_botpoison', solution);
+          if (!(dev && isOfflineMode)) {
+            const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+            const { solution } = await botpoison.challenge();
+            formData.append('_botpoison', solution);
+          }
 
           return;
         }

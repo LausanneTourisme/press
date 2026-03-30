@@ -21,7 +21,7 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
-  import { humanFileSize } from '$lib/helpers';
+  import { humanFileSize, isOfflineMode } from '$lib/helpers';
   import { dev } from '$app/environment';
 
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
@@ -49,11 +49,11 @@
         const isLast = steps.length === step;
         options.validators = steps[step - 1];
         // antibot
-        const botpoison = new Botpoison({
-          publicKey: PUBLIC_BOTPOISON_PUBLICKEY
-        });
-        const { solution } = await botpoison.challenge();
-        formData.append('_botpoison', solution);
+        if (!(dev && isOfflineMode)) {
+          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+          const { solution } = await botpoison.challenge();
+          formData.append('_botpoison', solution);
+        }
 
         emergencyContacts.forEach((contact, index) => {
           if ($form.emergencyContactNames === undefined) $form.emergencyContactNames = [];

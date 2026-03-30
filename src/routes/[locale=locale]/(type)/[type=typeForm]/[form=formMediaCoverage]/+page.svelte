@@ -12,7 +12,7 @@
   import { zod4 } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
   import { schema } from './schema';
-  import { humanFileSize } from '$lib/helpers';
+  import { humanFileSize, isOfflineMode } from '$lib/helpers';
   import { dev } from '$app/environment';
 
   let isSubmitting = $state(false);
@@ -36,11 +36,11 @@
         isSubmitting = true;
 
         // antibot
-        const botpoison = new Botpoison({
-          publicKey: PUBLIC_BOTPOISON_PUBLICKEY
-        });
-        const { solution } = await botpoison.challenge();
-        formData.append('_botpoison', solution);
+        if (!(dev && isOfflineMode)) {
+          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+          const { solution } = await botpoison.challenge();
+          formData.append('_botpoison', solution);
+        }
 
         const result = await validateForm({ update: true });
 
