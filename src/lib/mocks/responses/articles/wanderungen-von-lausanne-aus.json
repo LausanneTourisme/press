@@ -1,0 +1,698 @@
+{
+  "data": {
+    "item": {
+      "id": "311",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "Nos randonnées préférées au départ de Lausanne",
+        "en": "Hikes and walks starting from Lausanne",
+        "de": "Wanderungen von Lausanne aus"
+      },
+      "lead": {
+        "fr": "Envie de nature ? De vertes étendues dignes de la petite maison dans la prairie et de vues panoramiques sur le lac et les montagnes ? Grâce à la situation privilégiée de Lausanne, il est très facile de s'éloigner de la ville le temps d'une journée. On a sélectionné pour vous quelques-unes de nos randonnées préférées : de quoi vous faire des mollets en béton et vous en mettre plein la vue ! ",
+        "en": "Are you looking for a real dose of nature, vast expanses of green meadow, and panoramic views of Lake Geneva and the Alps? Thanks to Lausanne's exceptional location, it’s very easy to escape the city for a day of outdoor recreation. We have put together a selection of our favourite hikes, each of which will exercise those leg muscles and treat you to spectacular vistas.",
+        "de": "Sie wollen raus in die Natur, sich an Weiden wie in „Unsere kleine Farm“ erfreuen und den Panoramablick auf See und Berge genießen? Dank der idyllischen Lage von Lausanne reicht schon ein Tagesausflug, um das Stadtleben hinter sich zu lassen. Wir haben für Sie unsere Lieblingswanderungen zusammengestellt, die nicht nur beeindrucken, sondern auch die Waden stärken."
+      },
+      "summary": {
+        "fr": "Envie de nature ? De vertes étendues dignes de la petite maison dans la prairie et de vues panoramiques sur le lac et les montagnes ? Grâce à la situation privilégiée de Lausanne, il est très facile de s’éloigner de la ville le temps d’une journée. On a sélectionné pour vous quelques-unes de nos randonnées préférées : de quoi vous faire des mollets en béton et vous en mettre plein la vue !",
+        "en": "Are you looking for a real dose of nature, vast expanses of green meadow, and panoramic views of Lake Geneva and the Alps? Thanks to Lausanne’s exceptional location, it’s very easy to escape the city for a day of outdoor recreation. We have put together a selection of our favourite hikes, each of which will exercise those leg muscles and treat you to spectacular vistas.",
+        "de": "Sie wollen raus in die Natur, sich an Weiden wie in „Unsere kleine Farm“ erfreuen und den Panoramablick auf See und Berge genießen? Dank der idyllischen Lage von Lausanne reicht schon ein Tagesausflug, um das Stadtleben hinter sich zu lassen. Wir haben für Sie unsere Lieblingswanderungen zusammengestellt, die nicht nur beeindrucken, sondern auch die Waden stärken."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26383,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "9687e60b3c9c8e30",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1920,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1920\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "9687e60b3c9c8e30.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200527_121032-scaled.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\"><strong>1. La Dent de Jaman </strong></a>",
+            "en": "<a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\"><strong>1. La Dent de Jaman </strong></a>",
+            "de": "<a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\"><strong>1. La Dent de Jaman </strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de La Perche</strong>: environ 1h (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from La Perche</strong>: approx. 1 hour (round trip)</em>",
+            "de": "<em>Wanderzeit </em><span class=\"Y2IQFc\" lang=\"de\"><strong>am Anfang La Perche</strong></span><em>: flexibel, mindestens 1 Stunde (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : 4km (aller-retour)</em>",
+            "en": "<em>Distance: 4 km (round trip)</em>",
+            "de": "<em>Strecke: 4 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 1h15, prendre un premier train jusqu’à Montreux, puis le train à crémaillère jusqu’à La Perche</em>",
+            "en": "<em>From Lausanne: 1 hour 15 minutes, take the train to Montreux, then board the cogwheel railway to La Perche (for the shortest route). </em>",
+            "de": "<em>Anreise von Lausanne: 1 Stunde, 15 Minuten. Zunächst mit dem Zug nach Montreux fahren und dann mit der Zahnradbahn bis nach La Perche (für die kürzeste Wanderroute). </em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Rien que <a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\">le petit train</a> pour y accéder est déjà une aventure, tant la vue y est époustouflante ! Bien installé, on découvre la Riviera et le lac Léman tout en hauteur, en gravissant la montagne sans effort. Puis, à partir de l’arrêt « La Perche », une courte marche d’environ 30 minutes nous attend : les premiers mètres sont sans aucune difficulté, mais de bonnes chaussures sont recommandées pour gravir la dernière partie, un peu vertigineuse et dans les rochers. Promis, ça en vaut largement la peine : une fois le sommet de la Dent atteint, une vue à 360° s’offre à nous, ultra photogénique et qui nous en met plein les yeux.",
+            "en": "The breathtaking views on <a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\">the train ride</a> to the starting point will have you in their thrall even before you start hiking. From the comfort of your seat, you will discover the “Swiss Riviera” and Lake Geneva while effortlessly ascending the mountain. Once you disembark at the “La Perche” stop, a short hike of about 30 minutes awaits you. The first part of the route is easy, but sturdy footwear is recommended to climb the last part, which is quite steep and rocky. However, the effort is more than worth it. Once you reach the top of the “Dent” (tooth), a 360° view opens up before you, making for an extremely photogenic resting place where you can soak in the beauty.",
+            "de": "Schon <a href=\"https://www.region-du-leman.ch/fr/P815/train-a-cremaillere-montreux-rochers-de-naye\">die Zugfahrt</a> ist ein echtes Abenteuer, denn die Aussicht ist schlicht atemberaubend. Vom Zug aus lassen sich Riviera und Genfersee komfortabel entdecken und der Berg wird mühelos erklommen. Ab dem Halt in „La Perche“ ist es nur noch ein kurzer Marsch von ca. 30 Minuten. Die ersten Meter sind ohne Schwierigkeiten zu bewältigen. Dennoch empfehlen sich gute Schuhe für den letzten Abschnitt der Wanderung, wo es dann etwas schwindelerregend und felsiger wird. Doch es lohnt sich! Hat man einmal den Gipfel vom Dent de Jaman erreicht, tut sich ein umwerfender Rundumblick auf, der mehr als nur ein Foto wert ist."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : préparer un pique-nique à déguster sur le joli banc posé sur le pic de la Dent, pour comprendre le véritable sens de « lunch with a view ».",
+            "en": "<strong>Our tip</strong>: Bring along a picnic to eat on the charming bench located on the peak of the Dent so you can experience the true meaning of “lunch with a view”.",
+            "de": "<strong>Tipp</strong>: Etwas zum Essen einpacken. Auf der schönen Bank auf dem Gipfel wird dann klar, was mit „Lunch with a view“ gemeint ist."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25911,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "cd2c45bd48ad999d",
+            "mime_type": "image/jpeg",
+            "copyright": "© La Dent de Jaman",
+            "metadata": {
+              "width": 2560,
+              "height": 1920,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1920\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "cd2c45bd48ad999d.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200527_140716-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/reel/CwQABSzs4WM/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/route/gorges-du-nozon-cascades-entre-romainmotier-et-la-sarraz/\"><strong>2. La Tine de Conflens</strong></a>",
+            "en": "<a href=\"https://www.myswitzerland.com/en-ch/experiences/route/nozon-gorge-waterfalls-between-romainmotier-and-la-sarraz/\"><strong>2. La Tine de Conflens</strong></a>",
+            "de": "<a href=\"https://www.myswitzerland.com/de-ch/erlebnisse/route/cascade-du-dard-tine-de-conflens/\"><strong>2. La Tine de Conflens</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de la gare de La Sarraz</strong>: environ 1h30 (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from La Sarraz station</strong>: approx. 1.5 (round trip)</em>",
+            "de": "<em>Wanderzeit </em><span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof Sarraz</strong></span><em>: ca. 1 Stunde, 30 Minuten (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : 6km (aller-retour)</em>",
+            "en": "<em>Distance: 6 km (round trip)</em>",
+            "de": "<em>Strecke: 6 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 24 minutes en train jusqu’à la Sarraz</em>",
+            "en": "<em>From Lausanne: 24-minute train ride to Sarraz</em>",
+            "de": "<em>Anreise von Lausanne: 24 Minuten Zugfahrt bis nach La Sarraz</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Il faut compter environ 30 minutes de balade dans la forêt pour atteindre la Tine de Conflens. Une fois les escaliers descendus sur quelques mètres (attention, ça glisse un peu !), on l’aperçoit déjà : la jolie cascade qui rend ce lieu si charmant. On se croirait transporté dans un pays tropical, ou même au cœur d’un conte de fée (non non, on n’exagère pas). L’eau de la cascade est bien fraîche, mais on vous met au défi de vous y baigner ! Le week-end, l’endroit est assez prisé, on privilégie donc (si possible) un jour de semaine pour s’y rendre.",
+            "en": "<a href=\"https://www.myswitzerland.com/en-ch/experiences/route/nozon-gorge-waterfalls-between-romainmotier-and-la-sarraz/\">The Tine de Conflens</a> can be reached with a 30-minute walk through the forest. Once there, go down the steps (be careful, they can be slippery!) and discover the lovely waterfalls that make this place so stunning. You’ll feel like you have been transported to a tropical country, or even a fairy tale (and no, we’re not exaggerating). The water temperature is not for the faint-hearted, but we dare you to swim beneath the falls! This spot is very popular at the weekend, so we recommend choosing a weekday to visit if possible.",
+            "de": "Eine Wanderung von rund 30 Minuten durch den Wald führt zum Wasserfall <a href=\"https://www.myswitzerland.com/de-ch/erlebnisse/route/cascade-du-dard-tine-de-conflens/\">Tine de Conflens</a>. Dann sind es nur ein paar Treppenstufen nach unten (Achtung: rutschig!) und schon sieht man den wunderschönen Wasserfall, der diesen Ort so zauberhaft macht. Plötzlich glaubt man sich in tropischen Gefilden oder aber in einem Märchen (nein, wir übertreiben nicht). Das frische Wasser lädt zu einem Bad im kühlen Nass ein! Da der Wasserfall ein beliebtes Ziel für Wochenendausflügler ist, empfehlen wir (wenn möglich) den Besuch an einem Tag unter der Woche."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : la découverte de la Tine de Conflens peut facilement être combinée avec la visite de la cascade du Dard. Pour se faire, nous vous conseillons de vous rendre en train jusqu’à la gare de Croy-Romainmôtier (avec un petit crochet par l’abbatiale, qui vaut clairement le détour tant elle est belle !) et de suivre le chemin depuis la cascade du Dard pour rejoindre la Tine de Conflens. Comptez environ 3h pour ce parcours de 11km qui relie Romainmôtier à La Sarraz.",
+            "en": "<strong>Our tip</strong>: A hike to the Tine de Conflens can easily be combined with a visit to the Dard waterfalls. To do this, we advise you to take the train to the Croy-Romainmôtier station (with a short detour to the abbey church, which is clearly worth the stop as it is so beautiful!), and then follow the path from the Dard waterfalls to the Tine de Conflens. This 11-km route from Romainmôtier to La Sarraz takes about 3 hours.",
+            "de": "<strong>Tipp</strong>: Es ist möglich, die Wasserfälle Tine de Conflens und Cascade du Dard an einem Tag zu entdecken. Dazu empfehlen wir zunächst die Anfahrt mit dem Zug bis zum Bahnhof von Croy-Romainmôtier (mit einem kleinen Abstecher zur Klosterkirche, die jeden Umweg wert ist!). Dann dem Weg von der Cascade du Dard bis zum Wasserfall Tine de Conflens folgen. Die rund 11 km lange Route, die von Romainmôtier nach La Sarraz führt, lässt sich in ca. 3 Stunden zurücklegen."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25998,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "b80bf84197e9b56e",
+            "mime_type": "image/jpeg",
+            "copyright": "© La Tine de Conflens",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b80bf84197e9b56e.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200502_140220-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26083,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "9c5f569ec879f4d2",
+            "mime_type": "image/jpeg",
+            "copyright": "© La cascade du Dard",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "9c5f569ec879f4d2.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200502_154545-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\"><strong>3. La Dent de Vaulion</strong></a>",
+            "en": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\"><strong>3. La Dent de Vaulion</strong></a>",
+            "de": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\"><strong>3. La Dent de Vaulion</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche<strong> au départ de la gare du Pont</strong>: environ 3h (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from du Pont station</strong>: approximately 3 hours (round trip)</em>",
+            "de": "<em>Wanderzeit <span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof du Pont</strong></span>: ca. 3 Stunden (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : 12km (aller-retour)</em>",
+            "en": "<em>Distance: 12 km (round trip)</em>",
+            "de": "<em>Strecke: 12 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 58 minutes en train jusqu’au Pont</em>",
+            "en": "<em>From Lausanne: 58-minute train ride to Pont</em>",
+            "de": "<em>Anreise von Lausanne: 58 Minuten Zugfahrt bis nach Le Pont</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\">Cette jolie randonnée</a> vaut vraiment le détour pour son panorama au sommet duquel il est possible d’apercevoir pas moins de 8 lacs : ceux de Neuchâtel, de Bienne, de Morat, du Léman, de Brenet, de Joux, de Ter et des Rousses. À vous de les reconnaître !",
+            "en": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\">This is a very enjoyable hike</a> and really worth the effort once you reach the top and take in the panoramic view that includes no less than eight lakes: Neuchâtel, Biel, Morat, Geneva, Brenet, Joux, Ter, and Rousses. Try to spot them all!",
+            "de": "<a href=\"https://www.myvalleedejoux.ch/fr/P20206/dent-de-vaulion\">Eine schöne Wanderung</a>, die mit ihrem Ausblick vom Gipfel jeden Schweißtropfen wert ist. Denn zu sehen bekommt man bis zu acht Seen: die Seen von Neuenburg, Biel und Murten, den Genfersee sowie den Lac Brenet, Lac de Joux, Lac Ter und den Lac des Rousses. Jetzt müssen Sie sie nur noch richtig zuordnen!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : la vue y est encore plus spectaculaire au moment du coucher du soleil. Prévoyez une veste chaude (même en été) pour éviter de finir frigorifié à 1’482m d’altitude !",
+            "en": "<strong>Our tip</strong>: The view is even more spectacular at sunset. Don’t forget to take a warm jacket with you (even in summer) to avoid getting chilled once you reach the final altitude of 1,482m!",
+            "de": "<strong>Tipp</strong>: Besonders spektakulär ist der Ausblick bei Sonnenuntergang. Nicht vergessen: Auch im Sommer immer eine warme Jacke mitnehmen, denn in 1482 Metern Höhe kommt man leicht ins Frieren."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26152,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "47aefd499eca7b07",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1693,
+              "height": 1128,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1693\" height=\"1128\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "47aefd499eca7b07.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/b8479e62-d597-4214-95d3-fb8e2c670550.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/rochers-de-naye/\"><strong>4. Les Rochers-de-Naye</strong></a>",
+            "en": "<a href=\"https://www.myswitzerland.com/en-ch/experiences/rochers-de-naye/\"><strong>4. Les Rochers-de-Naye</strong></a>",
+            "de": "<a href=\"https://www.myswitzerland.com/de-ch/erlebnisse/rochers-de-naye/\"><strong>4. Les Rochers-de-Naye</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de la gare Haut de Caux</strong>: 4h40 (aller retour)</em>",
+            "en": "<em>Hiking time <strong>departing from Haut de Caux station</strong>: 4 hours, 40 minutes  (round trip)</em>",
+            "de": "<em>Wanderzeit <span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof Haut de Caux</strong></span>: 4 Stunden, 40 Minuten (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : un peu plus de 14km (aller-retour)</em>",
+            "en": "<em>Distance: just over 14 km (round trip)</em>",
+            "de": "<em>Strecke: etwas mehr als 14 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 1h04 en train jusqu’à Haut-de-Caux</em>",
+            "en": "<em>From Lausanne: 64-minute train ride to Haut-de-Caux</em>",
+            "de": "<em>Anreise von Lausanne: 1 Stunde und 4 Minuten Zugfahrt bis Haut-de-Caux</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour se rendre au point de départ, on utilise le fameux petit train à crémaillère depuis Montreux : plus on monte, plus la vue y est splendide ! Arrivés à Haut-de-Caux, on commence notre ascension à pied direction <a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/rochers-de-naye/\">les Rochers-de-Naye</a>. La route est facilement praticable, mais de bonnes chaussures sont nécessaires – il faut dire que la montée est raide (plus de 800m de dénivelé !) et ça se ressent dans les jambes. C’est sportif, mais on ne lâche rien et on garde en tête que cet effort nous fera d’autant plus apprécier l’arrivée au sommet ! D’ailleurs, une fois celui-ci atteint, l’émerveillement est garanti : la vue sur le lac et les montagnes y est unique !",
+            "en": "Take the famous little cogwheel train from Montreux to get to the starting point. The higher you go, the more splendid the view! Once you arrive in Haut-de-Caux, you start the ascent on foot towards <a href=\"https://www.myswitzerland.com/en-ch/experiences/rochers-de-naye/\">the Rochers-de-Naye</a>. The trail is not technically difficult, but good footwear is necessary – and the climb is steep (more than 800 m of altitude difference!), so you might feel it in your calf muscles. Despite the challenge, don’t give up because the effort will make you appreciate the arrival at the top all the more. And once you reach the summit, you are guaranteed to be amazed by the one-of-a-kind view of the lake and the mountains!",
+            "de": "Zum Ausgangspunkt dieser Wanderung gelangt man mit der berühmten Zahnradbahn ab Montreux. Es gilt: Je höher man kommt, desto schöner wird die Aussicht. Angekommen in Haut-de-Caux beginnt der Aufstieg zu Fuß in Richtung <a href=\"https://www.myswitzerland.com/de-ch/erlebnisse/rochers-de-naye/\">Rochers-de-Naye</a>. Der Weg ist leicht zu meistern. Dennoch sind gute Schuhe ein Muss. Immerhin ist der Anstieg bei einem Höhenunterschied von 800 Metern wirklich steil. Das spürt man in den Beinen. Angesichts des sportlichen Einsatzes nicht ans Aufgeben, sondern vielmehr an das tolle Gefühl beim Erklimmen des Gipfels denken. Hat man es einmal bis dorthin geschafft, ist die Freude groß. Denn der Ausblick auf See und Berge ist einzigartig!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : il y a des jours où on est plutôt d’humeur à se laisser transporter et durant lesquels, clairement, on a la flemme (oui oui, on est tous pareils). Alors si on veut profiter de la magnifique vue sans le moindre effort, on s’arrête tout simplement à l’arrêt « Rochers-de-Naye ». À peine le pied posé hors du train, on aperçoit déjà le superbe panorama…",
+            "en": "<strong>Our tip</strong>: We all have those lazy days (yes, it’s a human thing), so if you find yourself in the mood to just go along for the ride, don’t worry. Simply get off at the “Rochers-de-Naye” stop if you want to enjoy the magnificent view without the slightest effort. As soon as you step off the cogwheel train, you will be surrounded by the stunning panorama.",
+            "de": "<strong>Tipp</strong>: Es gibt natürlich Tage, an denen man es lieber weniger aktiv mag oder einfach etwas faul ist (das kennen wir doch alle). Wer nur den malerischen Ausblick ohne die geringste Anstrengung genießen möchte, steigt am Halt „Rochers-de-Naye“ aus. Dann muss man nur noch den Fuß aus dem Zug setzen und schon eröffnet sich das wunderschöne Panorama."
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 27121,
+              "name": "Nos randonnées préférées au départ de Lausanne - Les Rochers-de-Naye",
+              "public_name": {
+                "fr": "Les Rochers-de-Naye",
+                "en": "Les Rochers-de-Naye",
+                "de": "Les Rochers-de-Naye",
+                "es": null
+              },
+              "cloudinary_id": "J0CaS81Drt5YyaFXirafpxxXmtV3WfjJbf2D0qaR",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "57fe5365ae8ace2d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200527_144840-scaled.jpg"
+              }
+            },
+            {
+              "id": 27123,
+              "name": "Nos randonnées préférées au départ de Lausanne - Rochers-de-Naye et fleur",
+              "public_name": {
+                "fr": "Les Rochers-de-Naye",
+                "en": "Les Rochers-de-Naye",
+                "de": "Les Rochers-de-Naye",
+                "es": null
+              },
+              "cloudinary_id": "BcYsHY4tVW4t43kxLelExzbknyD6hq6ZwsD5cS9P",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 2560,
+                "height": 1920,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1920\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bf3ce0f66e4cf29c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200527_145845-scaled.jpg"
+              }
+            },
+            {
+              "id": 27125,
+              "name": "Nos randonnées préférées au départ de Lausanne - Rochers-de-Naye et arbre",
+              "public_name": {
+                "fr": "Les Rochers-de-Naye",
+                "en": "Les Rochers-de-Naye",
+                "de": "Les Rochers-de-Naye",
+                "es": null
+              },
+              "cloudinary_id": "Zfvvxuuc0nnSXuvAHGMzpsmm9wlErW4xDJGAE8Vl",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 2560,
+                "height": 1920,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1920\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "655d6a1a4d3ead11.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200527_150022-scaled.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\"><strong>5. Le Vallon des Vaux</strong></a>",
+            "en": "<a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\"><strong>5. Le Vallon des Vaux</strong></a>",
+            "de": "<a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\"><strong>5. Le Vallon des Vaux</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de la gare d’Yvonand</strong>: environ 4h15 (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from Yvonand station</strong>: 4 hours, 15 minutes (round trip)</em>",
+            "de": "<em>Wanderzeit <span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof Yvonand</strong></span>: ca. 4 Stunden, 15 Minuten (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : 13km (aller-retour)</em>",
+            "en": "<em>Distance: 13 km (round trip)</em>",
+            "de": "<em>Strecke: 13 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 40 minutes en train jusqu’à Yvonand</em>",
+            "en": "<em>From Lausanne: 40-minute train ride to Yvonand</em>",
+            "de": "<em>Anreise von Lausanne: 40 Minuten mit dem Zug bis nach Yvonand</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour nous, <a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\">le Vallon des Vaux</a>, c’est la définition même du havre de paix ! Avec ses plaines à perte de vue (et joliment fleuries en été !), sa vue imprenable sur le lac de Neuchâtel et les oiseaux qui chantent, cette balade invite sans aucun doute à la relaxation et à la détente.",
+            "en": "In our opinion, <a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\">the Vallon des Vaux</a> is the epitome of a haven of peace and tranquillity! With its fields stretching as far as the eye can see (and covered in a carpet of flowers in summer!), a breathtaking view of Lake Neuchâtel, and the accompanying birdsong, this walk is transformed into a relaxing and restful experience.",
+            "de": "Für uns ist <a href=\"https://www.yverdonlesbainsregion.ch/fr/V924/chemin-du-vallon-des-vaux-129\">das Vallon des Vaux</a> der Inbegriff von Idylle! Weite Weiden (die im Sommer wunderschön blühen), der einzigartige Blick auf den Neuenburgersee und singende Vögel sorgen bei dieser Wanderung für echte Entspannung."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : sur le chemin, ne manquez pas l’église elliptique de Chêne-Pâquier construite en 1667 !",
+            "en": "<strong>Our tip</strong>: Along the way, don’t miss out on a quick stop at the elliptical church of Chêne-Pâquier built in 1667!",
+            "de": "<strong>Tipp</strong>: Auf dem Weg unbedingt einen Blick auf die Ovalkirche von Chêne-Pâquier werfen, die 1667 erbaut wurde!"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26221,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "fd36d7b3aa160251",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1920,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1920\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "fd36d7b3aa160251.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200415_114823-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26287,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "c42767c3d9ad057c",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1920,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1920\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "c42767c3d9ad057c.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200415_110858-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong><a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/route/chemin-des-narcisses/\">6. Le Chemin des Narcisses</a> </strong>",
+            "en": "<strong><a href=\"https://www.myswitzerland.com/en-ch/experiences/route/chemin-des-narcisses/\">6. Le Chemin des Narcisses</a> </strong>",
+            "de": "<strong><a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/route/chemin-des-narcisses/\">6. Le Chemin des Narcisses</a> </strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de la gare des Avants</strong>: environ 3h (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from des Avants station</strong>: 3 hours (round trip)</em>",
+            "de": "<em>Wanderzeit <span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof des Avants</strong></span>: ca. 3 Stunden (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : </em><em>11 km (aller-retour)</em>",
+            "en": "<em>Distance: 11 km (round trip)</em>",
+            "de": "<em>Strecke: 11 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 45 minutes en train jusqu’aux Avants</em>",
+            "en": "<em>From Lausanne: 45-minute train ride to Avants</em>",
+            "de": "<em>Anreise von Lausanne: 45 Minuten Zugfahrt bis nach Les Avants</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/route/chemin-des-narcisses/\">Une jolie balade</a> qui offre une vue panoramique sur Montreux, le lac Léman et les montagnes. On se croirait projetés directement dans une carte postale ! Face aux nombreuses prairies, on est presque tentés de produire un remake de Laura Ingalls (vous avez la référence ?). Bien que, – sans prétention aucune – la vue y soit bien plus impressionnante !",
+            "en": "<a href=\"https://www.myswitzerland.com/en-ch/experiences/route/chemin-des-narcisses/\">This pleasant walk</a> offers a panoramic view of Montreux, Lake Geneva and the mountains. It’s like strolling through a postcard! While crossing the numerous expansive meadows, you might feel like bursting into song with Julie Andrews (we’re sure you know who we’re talking about), but the view is so impressive that it might just take your breath away.",
+            "de": "<a href=\"https://www.myswitzerland.com/fr-ch/decouvrir/route/chemin-des-narcisses/\">Diese schöne Wanderung</a> bietet einen Panoramablick über Montreux, den Genfersee und die Berge. Fast kommt man sich vor, als sein man in einer Postkarte gelandet! Angesichts der zahlreichen Weiden will man sich am liebsten an einem Remake von Laura Ingalls Werk versuchen (Sie wissen schon… Unsere kleine Farm). Allerdings – und das ist keineswegs übertrieben – der Ausblick hier ist viel beeindruckender!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : le Chemin des Narcisses ne tient pas son nom de nulle part; au mois de mai, la balade est couverte de narcisses (vous vous en seriez doutés), qui transforment les vertes prairies en chemins blancs comme neige. Ce n’est pas pour rien que l’on appelle cette fleur la neige de mai !",
+            "en": "<strong>Our tip</strong>: The “Chemin des Narcisses”, or Daffodil Trail, is very aptly named. During the month of May, the surrounding green meadows are covered with daffodils (who would have guessed it?), which makes you feel like you’re walking down a snow-covered path. It’s no wonder this flower is known as “May snow”!",
+            "de": "<strong>Tipp</strong>: Dass die Narzissen bereits im Namen des Chemin des Narcisses auftauchen, kommt nicht von ungefähr. Sie haben es sicher längst erraten: Im Mai wandert man durch ein Meer von Narzissen, die dafür sorgen, dass die grünen Weiden schneeweiß aussehen. Deshalb bezeichnet man die Weiße Narzisse auch schon mal als „Mai-Schnee“!"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26336,
+            "name": "Nos randonnées préférées au départ de Lausanne",
+            "public_name": {
+              "fr": "Nos randonnées préférées au départ de Lausanne"
+            },
+            "cloudinary_id": "956181d020771312",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 2207,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"2207\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "956181d020771312.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/07/20200508_195723_574-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"http://www.gourze.ch/acces/a-pied/\"><strong>7. La Tour de Gourze</strong></a>",
+            "en": "<a href=\"http://www.gourze.ch/acces/a-pied/\"><strong>7. La Tour de Gourze</strong></a>",
+            "de": "<a href=\"http://www.gourze.ch/acces/a-pied/\"><strong>7. La Tour de Gourze</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Temps de marche <strong>au départ de la gare de Grandvaux</strong>: environ 2h20 (aller-retour)</em>",
+            "en": "<em>Hiking time <strong>departing from Grandvaux station</strong>: 2 hours, 20 minutes (round trip)</em>",
+            "de": "<em>Wanderzeit <span class=\"Y2IQFc\" lang=\"de\"><strong>Abfahrt vom Bahnhof Grandvaux</strong></span>: ca. 2 Stunden, 20 Minuten (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Distance : un peu plus que 7km (aller-retour)</em>",
+            "en": "<em>Distance: just over 7km (round trip)</em>",
+            "de": "<em>Strecke: etwas mehr als 7 km (hin und zurück)</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Au départ de Lausanne : 8 minutes en train jusqu’à Grandvaux – pour le retour, 15 minutes depuis Puidoux</em>",
+            "en": "<em>From Lausanne: 8-minute train ride to Grandvaux – 15-minute return ride from Puidoux</em>",
+            "de": "<em>Anreise von Lausanne: 8 Minuten mit dem Zug bis nach Grandvaux, für die Rückfahrt 15 Minuten ab Puidoux</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "On y va pour la vue imprenable depuis le haut de<a href=\"http://www.gourze.ch/acces/a-pied/\"> la tour</a> ! Et puis, la balade pour y accéder à partir de Grandvaux permet aussi de découvrir Lavaux, un site exceptionnel classé au patrimoine mondial de l’UNESCO pour son vignoble en terrasse. En plus, le parcours est très bien indiqué grâce aux petits panneaux jaunes, alors aucun risque de se perdre (promis, même pour ceux qui ont un sens de l’orientation proche de 0).",
+            "en": "Don’t miss out on the breathtaking view from the top of <a href=\"http://www.gourze.ch/acces/a-pied/\">the tower</a>! What’s more, the walk to get there from Grandvaux also allows you to discover Lavaux, an exceptional area whose terraced vineyards have earned it a designation as a UNESCO World Heritage Site. And just to be on the safe side, the route is very well marked thanks to small yellow signs, so there is no risk of getting lost (even for those with absolutely no sense of direction).",
+            "de": "Hierher kommt man wegen des unvergleichlichen Ausblicks <a href=\"http://www.gourze.ch/acces/a-pied/\">vom Turm</a>! Gleichzeitig kann man bei der Wanderung ab Grandvaux auch noch Lavaux entdecken, dessen Weinterrassen zum Weltkulturerbe der UNESCO zählen. Außerdem ist der Weg mit kleinen gelben Tafeln sehr gut ausgeschildert. Hier muss sich niemand verirren (wer es doch schafft, dürfte keinerlei Orientierungssinn besitzen)."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>Tips</strong> : Une fois arrivés, on se laisse tenter par une délicieuse fondue, à déguster au restaurant de la Tour de Gourze (le chemin du retour favorisera la digestion !).",
+            "en": "Our tip: Once you arrive, let yourself be tempted by a delicious fondue served at the Tour de Gourze restaurant (the walk back is perfect for digesting your meal!).",
+            "de": "Tipp: Ist man einmal angekommen, gibt es nichts Besseres als ein leckeres Fondue im Restaurant des Aussichtsturms Tour de Gourze. Verdauen kann man es dann auf dem Rückweg!"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BOnH5WWDi2n/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "cd2c45bd48ad999d",
+          "copyright": "© La Dent de Jaman",
+          "public_name": {
+            "fr": "Nos randonnées préférées au départ de Lausanne"
+          }
+        }
+      ],
+      "published_at": "1716253414",
+      "seo": {
+        "description": {
+          "fr": "Envie de nature ? De vertes étendues dignes de la petite maison dans la prairie et de vues panoramiques sur le lac et les montagnes ? Grâce à la situation privilégiée de Lausanne, il est très facile de s'éloigner de la ville le temps d'une journée. On a sélectionné pour vous quelques-unes de nos randonnées préférées : de quoi vous faire des mollets en béton et vous en mettre plein la vue ! ",
+          "en": "Are you looking for a real dose of nature, vast expanses of green meadow, and panoramic views of Lake Geneva and the Alps? Thanks to Lausanne's exceptional location, it’s very easy to escape the city for a day of outdoor recreation. We have put together a selection of our favourite hikes, each of which will exercise those leg muscles and treat you to spectacular vistas.",
+          "de": "Sie wollen raus in die Natur, sich an Weiden wie in „Unsere kleine Farm“ erfreuen und den Panoramablick auf See und Berge genießen? Dank der idyllischen Lage von Lausanne reicht schon ein Tagesausflug, um das Stadtleben hinter sich zu lassen. Wir haben für Sie unsere Lieblingswanderungen zusammengestellt, die nicht nur beeindrucken, sondern auch die Waden stärken."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "nos-randonnees-preferees-au-depart-de-lausanne",
+          "en": "hikes-and-walks-starting-from-lausanne",
+          "de": "wanderungen-von-lausanne-aus"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

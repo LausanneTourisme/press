@@ -1,0 +1,301 @@
+{
+  "data": {
+    "item": {
+      "id": "271",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "Le casse-tête des cadeaux de Noël : les Lausanners viennent à votre rescousse !",
+        "en": "The conundrum of Christmas presents: Lausanners to the rescue!",
+        "de": "Kopfzerbrechen um Weihnachtsgeschenke: Die Lausannerinnen und Lausanner kommen euch zu Hilfe!"
+      },
+      "lead": {
+        "fr": "Noël approche, et le casse-tête des cadeaux commence ! Mais pas cette année, car on va anticiper. Venez trouver les cadeaux idéaux pour vos proches à Lausanne.",
+        "en": "Christmas is here again, and the gift headache begins! But not this year, because we’re planning ahead. Come and find the perfect gift for your loved ones in Lausanne.",
+        "de": "Weihnachten steht vor der Tür, und das Kopfzerbrechen um die Geschenke beginnt! Aber nicht in diesem Jahr, denn wir denken voraus. Finden Sie das perfekte Geschenk für Ihre Liebsten in Lausanne."
+      },
+      "summary": {
+        "fr": "À l’approche de la fin de l’année, les rues lausannoises commencent à scintiller, créant une atmosphère chaleureuse et festive. Les vitrines des commerces arborent leurs plus belles décorations. Et oui, c’est le moment de se plonger dans la magie de Noël et de trouver les cadeaux parfaits pour nos proches. Vous êtes toujours à la recherche de la bonne idée ? Lausanne offre une multitude d’options pour des cadeaux uniques et locaux qui feront leur effet sous le sapin. Retour sur les coups de cœur de nos Lausanners, promo 2023-2024 : découvrez leurs idées clé en main pour viser juste et gâter vos proches !",
+        "en": "As Christmas draws near, the streets of Lausanne are starting to sparkle, creating a warm and festive atmosphere, with shop windows bearing their most beautiful decorations. That means it’s time to immerse ourselves in the magic of Christmas and find the perfect gifts for our loved ones. Lausanne offers a myriad of options for unique, local gifts that will bring oohs and ahs when they’re unwrapped. Here’s a look back at the favourites of our Lausanners, class of 2023-2024: discover their ready-to-use ideas for spoil your nearest and dearest!",
+        "de": "Wenn sich das Jahr dem Ende zuneigt, herrscht in den Strassen von Lausanne eine herzliche und festliche Atmosphäre mit viel Glitzerzauber. Die zahlreichen Geschäfte überbieten sich bei der Dekoration ihrer Schaufenster. Jetzt ist die Zeit gekommen, um in die Magie von Weihnachten einzutauchen und die perfekten Geschenke für unsere Liebsten zu finden. Lausanne bietet unzählige Möglichkeiten für einzigartige und lokale Geschenke, die unter dem Weihnachtsbaum die gewünschte Wirkung garantiert entfalten. Hier ein Rückblick auf die Favoriten unserer Lausanner des Jahrgangs 2023-2024: Entdecken Sie die fertigen Ideen, mit denen Sie Ihre Liebsten verwöhnen können!"
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 27184,
+            "name": "Le casse-tête des cadeaux de Noël : les Lausanners viennent à votre rescousse ! - Place de la Palud",
+            "public_name": {
+              "fr": "Ambiance de Noël avec le sapin à la place de la Palud.",
+              "en": "Ambiance de Noël avec le sapin à la place de la Palud.",
+              "de": "Ambiance de Noël avec le sapin à la place de la Palud.",
+              "es": null
+            },
+            "cloudinary_id": "RHmjKZj80Scf8DER63E8wRpdedWd2YcZ4T7ykgnK",
+            "mime_type": "image/jpeg",
+            "copyright": "© www.regiscolombo.ch",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": "Noël; Lausanne; Nuit",
+              "description": null,
+              "file_name_from_url": "37a2d0ff709c900b.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/11/Bo-Noel-Palud-sapin-2.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Mais qui sont les <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/\">Lausanners ?</a>",
+            "en": "Who are the <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\">Lausanners?</a>",
+            "de": "Aber wer sind sie eigentlich, diese <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/\">Lausannerinnen und Lausanner?</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ce sont les <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/\">meilleurs ambassadeurs de notre ville</a>. Des locaux qui vous racontent leurs expériences et vous partagent leurs bonnes adresses à travers leurs yeux et leurs mots. Chacun a sa passion et ses centres d’intérêt, mais tous ont en commun, leur amour pour Lausanne.",
+            "en": "They are <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\">the best ambassadors of our city</a>. Locals who tell you about their experiences and share their good addresses with you, through their own eyes and their own words. Each has his or her passion and interests, but all have in common their love of Lausanne.",
+            "de": "Sie sind <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/\">die besten Botschafterinnen und Botschafter unserer Stadt</a>. Als Einheimische teilen sie mit euch ihre Geheimtipps und Erfahrungen in ihren Worten und durch ihre Augen. Sie alle haben ihre eigenen Leidenschaften und Interessen, aber ihnen allen ist eines gemeinsam: ihre grosse Liebe zu Lausanne."
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Pour ceux qui ont la bougeotte",
+            "en": "For those who can’t keep still",
+            "de": "Für alle, die kein Sitzleder haben"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lausanne est bien plus qu’une simple ville, c’est un véritable épicentre du sport, ce n’est pas pour rien qu’on l’appelle la Capitale Olympique. Ici, ça monte, ça descend, ça remonte… idéal pour garder des cuisses et des mollets en acier !",
+            "en": "Lausanne is much more than a simple town, it’s a true epicentre of sport and not for nothing is it known as the Olympic Capital! Here, streets go up and down, and up again… Ideal to maintain thighs and calves of steel!",
+            "de": "Lausanne ist viel mehr als einfach nur Stadt. Lausanne ist ein wahres Sportparadies und wird nicht umsonst Olympia-Hauptstadt genannt. Immer wieder geht es nach oben, nach unten und wieder nach oben, was perfekt ist, um stählernen Oberschenkel und Waden zu frönen!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Votre neveu se la joue Michael Jordan et enchaîne les dunks ? Offrez-lui un forfait pour des séances de basket aux <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/halles-sportives-de-beaulieu/\">Halles sportives de Beaulieu</a>. C’est le cadeau parfait pour qu’il se perfectionne avec les meilleurs coachs et qu’il devienne, comme le Lausanner <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/axel-le-speedy-dunker/\">Axel</a>, un vrai pro du ballon orange !",
+            "en": "Does your nephew see himself as Michael Jordan and spend his time practising dunks? Gift him a pass for basketball sessions at the <a href=\"https://www.lausanne-tourisme.ch/en/explore/halles-sportives-de-beaulieu/\">Beaulieu Sports Halls</a>. It’s the perfect present for him to improve with the best coaches and to become, like our Lausanner <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/axel-the-speedy-dunker/\">Axel</a>, a real pro of the orange ball!",
+            "de": "Ihr Neffe macht auf Michael Jordan und versenkt einen Dunk nach dem anderen? Schenken Sie ihm einen Gutschein für sein Basketballtraining in den <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/halles-sportives-de-beaulieu/\">Sporthallen Beaulieu</a>. Dieses Geschenk ist perfekt für ihn, denn dort fördern die besten Trainer sein Talent. Und wer weiss, vielleicht wird er eines Tages ein echter Profi des orangen Balls ‒ wie der Lausanner <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/axel-der-speedy-dunker/\">Axel</a>!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Chaque famille à son cyclo-flash et chez les Lausanners, c’est <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/vincent-le-cyclo-flash/\">Vincent</a> ! Pour braver le froid de l’hiver et pédaler au chaud, rien de mieux qu’une paire de gants de chez <a href=\"https://www.instagram.com/tandemvelo/\">Tandem</a>.",
+            "en": "Every family as its cyclo flash and among the Lausanners, it’s <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/vincent-the-cyclo-flash/\">Vincent</a>! To brave the winter cold and keep warm when cycling, nothing will beat a pair of gloves from <a href=\"https://www.instagram.com/tandemvelo/\">Tandem</a>.",
+            "de": "Jede Familie hat ihren Cycle-Flash. Unter den Lausannern ist es <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/vincent-der-cycle-flash/\">Vincent</a>! Um der Winterkälte zu trotzen und beim Pedalen genügend Wärme zu haben, hilft ein Paar Handschuhe von <a href=\"https://www.instagram.com/tandemvelo/\">Tandem</a>."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CwGRx_eoPdh/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Pour les petits",
+            "en": "For the little’ uns",
+            "de": "Für die Kleinen"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Destination idéale pour les enfants où l’on trouve une multitude d’activités et d’endroits qui leur sont adaptés. Les parcs verdoyants, les musées interactifs et les festivités locales font de Lausanne un endroit parfait pour des aventures en famille.",
+            "en": "The ideal destination for children, where you’ll find many activities and spots that are suited to them. Green parks, interactive museums and local festivities make Lausanne a perfect place for family adventures.",
+            "de": "Mit seinen zahlreichen kinderfreundlichen Aktivitäten und Orten ist Lausanne ideal für Kinder. Grüne Pärke, interaktive Museen und lokale Feste machen Lausanne zu einer perfekten Destination für Familienabenteuer."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Le magasin <a href=\"https://www.instagram.com/ananani_com/\">à NaNaNi</a> est une véritable caverne aux merveilles d’Ali Baba que vous recommande notre classy mommy <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/madina-la-classy-mommy/\">Madina</a>. Ici, les étagères regorgent de jouets créatifs, de livres éducatifs et d’adorables vêtements pour les petits. On vous garantit que vous trouverez de quoi faire briller les yeux de vos enfants !",
+            "en": "The “<a href=\"https://www.instagram.com/ananani_com/\">à NaNaNi</a>” shop is a true Ali Baba’s treasure cave that our classy mommy <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/madina-the-classy-mommy/\">Madina</a> recommends. Here, the shelves are packed with creative toys, educational books and adorable clothes for young kids. We guarantee that you’ll find something to make your children’s eyes sparkle!",
+            "de": "Der Laden <a href=\"https://www.instagram.com/ananani_com/\">à NaNaNi</a> ist wie die Höhle von Ali Baba, eine wahre Schatzkammer für Classy Mommy <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/madina-die-classy-mommy/\">Madina</a>. Hier findet ihr volle Regale mit kreativem Spielzeug, Kinderbücher und entzückenden Kleidern für die Kleinen. Bestimmt ist auch etwas dabei, das die Augen eurer Kinder zum Leuchten bringt!"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CzRntjnoSLb/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Pour les artistes",
+            "en": "For artists",
+            "de": "Für Kunstschaffende"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lausanne, ville aux charmes multiples, offre une inspiration sans fin pour les artistes. Si vous cherchez à combler le cœur créatif de vos proches, voici trois idées de cadeaux qui célèbrent la scène artistique lausannoise.",
+            "en": "Lausanne, a city of many charms, offers endless inspirations for artists. If you’re hunting for the gift that will enchant the creative heart of a loved one, here are three gift ideas that celebrate the Lausanne arts scene.",
+            "de": "Lausanne ist eine reizvolle Stadt, die Kunstschaffende zu endloser Inspiration anregt. Wenn ihr das kreative Herz eurer Liebsten wunschlos glücklich machen möchtet, bieten sich diese drei Geschenkideen aus der Lausanner Kunstszene an."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Les jolies cartes de notre talentueuse Lausanner, <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/amelie-lillustratrice-enchantee/\">Amélie</a>, disponibles dans la boutique <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-gens-boutique-ateliers-de-createurs/\">Les Gens</a>, capturent la diversité et la beauté de la ville sous un angle unique. On a envie de toutes les avoir chez nous !",
+            "en": "Our talented Lausanner <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/amelie-the-enchanted-illustrator/\">Amelie</a>’s pretty cards, available in the boutique “<a href=\"https://www.lausanne-tourisme.ch/en/explore/les-gens-boutique-creators-workshop/\">Les Gens</a>”, capture the beauty and diversity of the city under a unique angle. We’d love to have them all in our home!",
+            "de": "Die hübschen, in der Boutique <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-gens-boutique-und-atelier-fur-kunsthandwerk/\">Les Gens</a> erhältlichen Karten unserer talentierten Lausannerin <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/amelie-die-bezaubernde-illustratorin/\">Amélie</a> fangen die Vielfalt und Schönheit der Stadt aus einem einzigartigen Blickwinkel ein. Man möchte sie am liebsten gleich alle bei sich zu Hause haben!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour les amateurs de photographie, les pellicules argentiques de chez <a href=\"https://www.instagram.com/photovisionlausanne/\">Photovision</a> sont parfaites pour immortaliser la magie des rues lausannoises avec une touche vintage à la manière du Lausanner <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/michael-lesprit-urbain/\">Michaël</a>. On n’est pas très objectifs, mais Lausanne est véritablement un terrain de jeu parfait pour les photographes.",
+            "en": "For photography enthusiasts, the slide films from <a href=\"https://www.instagram.com/photovisionlausanne/\">Photovision</a> are perfect to immortalise the magic of Lausanne streets with a vintage touch, in the manner of Lausanner <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/michael-the-urban-spirit/\">Michaël</a>. We’re not very objective, but Lausanne is the perfect playground for photographers.",
+            "de": "Für alle, die das Fotografieren lieben, sind die Analogfilme von <a href=\"https://www.instagram.com/photovisionlausanne/\">Photovision</a> perfekt, um den Zauber der Lausanner Strassen mit einer Prise Retro im Stil des Lausanners <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/michael-der-urban-spirit/\">Michaël</a> festzuhalten. Natürlich sind wir nicht sehr objektiv, aber klar ist, dass Lausanne ein perfekter Spielplatz zum Fotografieren ist."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ta nièce se rêve petit rat de l’Opéra ? Elle sera émerveillée par notre dancing queen <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/jasmine-la-dancing-queen/\">Jasmine</a> lors d’une représentation du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bejart-ballet-lausanne/\">Béjart Ballet Lausanne</a>. Une occasion rare d’admirer une performance de renommée mondiale dans le berceau de la danse contemporaine.",
+            "en": "Does your niece aspire to be a ballet dancer? She’ll be amazed by our dancing queen <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/jasmine-the-dancing-queen/\">Jasmine</a> during a performance of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/bejart-ballet-lausanne/\">Béjart Ballet Lausanne</a>. It’s a rare occasion to admire a world-renowned show in the birthplace of contemporary dancing.",
+            "de": "Träumt eure Nichte davon, eine kleine Ballettmaus zu sein? Dann wird unsere Dancing Queen <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/autor/jasmine-die-dancing-queen/\">Jasmine</a> sie bei einer Aufführung im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bejart-ballet-lausanne/\">Béjart Ballet Lausanne</a> bestimmt verzaubern. Was für eine einzigartige Gelegenheit, eine weltberühmte Performance in der Wiege des zeitgenössischen Tanzes zu bewundern!"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CyGO60gItGN/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Pour les Coffee Addict",
+            "en": "For coffee addicts",
+            "de": "Für Kaffeefreaks"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "La capitale vaudoise est un véritable paradis pour les amateurs de café. Avec ses adresses chaleureuses et ses artisans passionnés, Lausanne offre une expérience inoubliable pour les aficionados du café.",
+            "en": "The Vaud capital is a true paradise for coffee lovers. With its friendly addresses and passionate artisans, Lausanne offers an unforgettable experience for aficionados of the brew.",
+            "de": "Die Waadtländer Hauptstadt ist ein wahres Paradies für alle, die Kaffee lieben. Mit seinen vielen mit Leidenschaft für Kaffee geführten, gemütlichen Lokalen bietet Lausanne unvergessliche Kaffee-Erlebnisse."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Votre cousin est toujours fatigué ? On vous propose d’ajouter une touche de caféine dans sa vie en lui offrant un cadeau qui réveillera ses sens. Deux idées de cadeaux exceptionnelles incluent le set de café de spécialité ou de matcha de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sleepy-bear/\">Sleepy Bear </a>pour une aventure gustative inédite, ou encore le merchandising de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/coffee-page/\">Coffee Page </a>où ils trouveront des accessoires élégants pour afficher leur amour pour cette boisson réconfortante.",
+            "en": "Is your cousin always tired? We suggest adding a touch of caffeine to her life by offering a gift that will awaken her senses. Two ideas of exceptional presents include the set of speciality coffee or matcha from <a href=\"https://www.lausanne-tourisme.ch/en/explore/sleepy-bear/\">Sleepy Bear</a>, for an unusual taste adventure, or the merchandising of <a href=\"https://www.lausanne-tourisme.ch/en/explore/coffee-page/\">Coffee Page</a>, where she will find elegant accessories to display her love for this comforting beverage.",
+            "de": "Euer Cousin ist dauernd müde? Dann verleiht ihm einen Koffein-Kick mit einem Geschenk, das seine Sinne weckt. Zwei aussergewöhnliche Geschenkideen sind einerseits die Sets mit Spezialitätenkaffee oder Matcha vom <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sleepy-bear/\">Sleepy Bear</a>, die ein völlig neuartiges Geschmacksabenteuer versprechen, und andererseits die eleganten Merchandising-Accessoires vom <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/coffee-page/\">Coffee Page</a>, die stilvoll die Liebe zu diesem herzerwärmenden Getränk demonstrieren."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/Cs-niN3oNBY/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Pour les amoureux de Lausanne",
+            "en": "For lovers of Lausanne",
+            "de": "Für Lausanne-Fans"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<span class=\"ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak\" dir=\"ltr\"><span data-teams=\"true\">Et si l’on affichait Lausanne sur nos murs ? Les irrésistibles créations ‘Sunset in Lausanne’ et ‘Christmas in Lausanne’ de l’illustrateur Marchetti pourraient bien s’avérer être le cadeau parfait pour capturer la beauté de Lausanne et offrir autour de nous un morceau de la ville immortalisé dans un instant magique, au coucher du soleil et pendant les fêtes.</span></span>",
+            "en": "<span data-teams=\"true\"><span class=\"ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak\" dir=\"ltr\">How about displaying Lausanne on our walls? The irresistible creations “Sunset in Lausanne” and “Christmas in Lausanne” by illustrator Marchetti could be the perfect gift to capture the beauty of Lausanne, offering a piece of our city immortalized in a magical moment, both at sunset and during the festive season.</span></span>",
+            "de": "<span data-teams=\"true\"><span class=\"ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak\" dir=\"ltr\">Warum nicht Lausanne an die Wand bringen? Die unwiderstehlichen Kreationen „Sunset in Lausanne“ und „Christmas in Lausanne“ des Illustrators Marchetti könnten das perfekte Geschenk sein, um die Schönheit von Lausanne einzufangen und ein Stück der Stadt in einem magischen Moment, bei Sonnenuntergang und in der festlichen Jahreszeit, zu verschenken.</span></span>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CttSJP6x85y/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/C1HBEo5xJSI/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour allier style et utilité, l’iconique Tote Bag The Lausanner sera parfait aux bras de votre meilleure amie ! Un accessoire au design local et pratique qui célèbre la ville à chaque sortie."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "À Lausanne, on est gourmands ! Tout comme votre oncle n’est-ce pas ?! Le <a href=\"https://www.lausanne-tourisme.ch/fr/offre/lausanne-choco-tour/\">Lausanne Choco Tour</a> est le cadeau qu’il vous faut pour lui faire plaisir. Il se régalera à travers cette activité gourmande qui lui fera parcourir la ville et ses lieux emblématiques tout en découvrant 5 des meilleurs chocolatiers lausannois.",
+            "en": "To combine style and usefulness, the iconic The Lausanner tote bag will look fab on your best friend’s arm! An accessory with a local and practical design that celebrates the city during each outing.",
+            "de": "Die legendäre Tote Bag The Lausanner vereint Stil und Nützlichkeit und wird am Arm eurer besten Freundin perfekt aussehen! Dank lokalem und praktischem Design ist die beliebte Stadt immer mit dabei."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour les amoureux de Lausanne, retrouvez tous nos cadeaux 100% lausannois à l’<a href=\"https://www.lausanne-tourisme.ch/fr/ou-nous-trouver/\">Office du Tourisme</a>.",
+            "en": "In Lausanne, we are foodies! Just like your uncle, wouldn’t you say? The <a href=\"https://www.lausanne-tourisme.ch/en/offer/lausanne-choco-tour/\">Lausanne Choco Tour</a> is the gift you need to delight him. He will thoroughly enjoy this gourmet activity that will take him round the city and its iconic spots while discovering 5 of the best Lausanne chocolatiers.",
+            "de": "Lausanne reimt mit Schlemmen! Euer Onkel auch, oder etwa nicht? Dann ist die <a href=\"https://www.lausanne-tourisme.ch/de/angebot/schoko-tour-lausanne/\">Schoko-Tour Lausanne</a> das perfekte Geschenk für ihn. Mit grosser Freude wird er diese kulinarische Aktivität geniessen, bei der er durch die Stadt mit ihren Highlights geführt und bei fünf der besten Lausanner Chocolatiers Halt machen wird."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CPsU-4pgtMM/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "RHmjKZj80Scf8DER63E8wRpdedWd2YcZ4T7ykgnK",
+          "copyright": "© www.regiscolombo.ch",
+          "public_name": {
+            "fr": "Ambiance de Noël avec le sapin à la place de la Palud.",
+            "en": "Ambiance de Noël avec le sapin à la place de la Palud.",
+            "de": "Ambiance de Noël avec le sapin à la place de la Palud."
+          }
+        }
+      ],
+      "published_at": "1731376991",
+      "seo": {
+        "description": {
+          "fr": "Noël approche, et le casse-tête des cadeaux commence ! Mais pas cette année, car on va anticiper. Venez trouver les cadeaux idéaux pour vos proches à Lausanne.",
+          "en": "Christmas is here again, and the gift headache begins! But not this year, because we’re planning ahead. Come and find the perfect gift for your loved ones in Lausanne.",
+          "de": "Weihnachten steht vor der Tür, und das Kopfzerbrechen um die Geschenke beginnt! Aber nicht in diesem Jahr, denn wir denken voraus. Finden Sie das perfekte Geschenk für Ihre Liebsten in Lausanne."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "le-casse-tete-des-cadeaux-de-noel-les-lausanners-viennent-a-votre-rescousse",
+          "en": "the-conundrum-of-christmas-presents-lausanners-to-the-rescue",
+          "de": "kopfzerbrechen-um-weihnachtsgeschenke-die-lausannerinnen-und-lausanner-kommen-euch-zu-hilfe"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-famille",
+          "public_name": {
+            "fr": "Famille",
+            "en": "Family",
+            "de": "Familie"
+          }
+        }
+      ]
+    }
+  }
+}

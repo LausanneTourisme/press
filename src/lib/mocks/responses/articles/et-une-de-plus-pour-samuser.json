@@ -1,0 +1,53 @@
+{
+  "data": {
+    "item": {
+      "id": "7",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "La Cathédrale de Lausanne",
+        "en": "The Cathedral of Lausanne",
+        "de": "Kathedrale von Lausanne"
+      },
+      "lead": {
+        "fr": "2025: 750 ans de la Cathédrale de Lausanne",
+        "en": "2025: the Cathedral of Lausanne will be 750 years old",
+        "de": "2025: 750 Jahre Kathedrale von Lausanne"
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "brsgda500HgIWQvALuBTQqhHXeEt5QUjsVjRQTlM",
+          "copyright": "© 24heures",
+          "public_name": {
+            "fr": "Cathédrale de Lausanne"
+          }
+        }
+      ],
+      "published_at": "1722895200",
+      "seo": {
+        "description": {
+          "fr": "2025: 750 ans de la Cathédrale de Lausanne",
+          "en": "2025: the Cathedral of Lausanne will be 750 years old",
+          "de": "2025: 750 Jahre Kathedrale von Lausanne"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "et-une-de-plus-pour-samuser",
+          "en": "750-years-of-the-cathedral",
+          "de": "750-jahre-kathedrale"
+        }
+      },
+      "tags": []
+    }
+  }
+}

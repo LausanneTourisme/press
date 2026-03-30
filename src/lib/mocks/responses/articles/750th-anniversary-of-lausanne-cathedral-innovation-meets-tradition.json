@@ -1,0 +1,230 @@
+{
+  "data": {
+    "item": {
+      "id": "320",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "name": {
+        "en": "750th Anniversary of Lausanne Cathedral: Innovation Meets Tradition",
+        "de": "750 Jahre Kathedrale von Lausanne: Wo Geschichte auf Innovation trifft"
+      },
+      "lead": {
+        "en": "In 2025, the iconic Lausanne Cathedral will mark its 750th  anniversary with a series of celebratory events.",
+        "de": "ie Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz."
+      },
+      "summary": {
+        "en": "In 2025, the iconic Lausanne Cathedral will mark its 750th \r\nanniversary with a series of celebratory events, inviting locals and visitors to rediscover this \r\narchitectural marvel. The celebrations will feature the unveiling of cutting-edge lighting \r\ninstallations and pay homage to the cathedral’s historic traditions, ensuring this milestone is \r\nremembered for generations to come.",
+        "de": "<p style=\"text-align: left;\"><span><strong>Die Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz. Im Laufe des Jahres stehen deshalb besondere Höhepunkte an: Am 28. Februar wird die neue Innenbeleuchtung eingeweiht, welche die Architektur der Kathedrale eindrucksvoll in Szene setzt. Am 20. Oktober findet dann die offizielle Jubiläumszeremonie zur Weihe der Kathedrale statt. Auch das Team der Nachtwache wird mit seiner nächtlichen Tradition weiterhin über die Stadt wachen und so das historische Erbe Lausannes lebendig halten.</strong></span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>"
+      },
+      "content": [
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 27613,
+              "name": "Cathedral fresco",
+              "public_name": {
+                "fr": "Cathedral fresco",
+                "es": null
+              },
+              "cloudinary_id": "AYd9oPDdRXH5kUPWpPFkSyAqPFXGH1OTBt9R8bjR",
+              "mime_type": "image/jpeg",
+              "copyright": "© P.Waterton.",
+              "metadata": {
+                "width": 7360,
+                "height": 4912,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"7360\" height=\"4912\"",
+                "tags": "Monument; Lausanne",
+                "description": null
+              }
+            },
+            {
+              "id": 27614,
+              "name": "General view",
+              "public_name": {
+                "fr": "General view",
+                "es": null
+              },
+              "cloudinary_id": "ZQKJRkGZKinthDatv0tDe1gr8OTtyU0GKJi8HUhT",
+              "mime_type": "image/jpeg",
+              "copyright": "© REGIS COLOMBO",
+              "metadata": {
+                "width": 5616,
+                "height": 3741,
+                "mimeType": "image/jpeg",
+                "copyright": "REGIS COLOMBO/diapo.ch",
+                "attr": "width=\"5616\" height=\"3741\"",
+                "tags": "Paysage, Lac, Cité; Cathédrale",
+                "description": null
+              }
+            },
+            {
+              "id": 27615,
+              "name": "Night Watchman from behind",
+              "public_name": {
+                "fr": "Night Watchman from behind",
+                "es": null
+              },
+              "cloudinary_id": "e1MjGZcD0M0RPG5IzHwtLQI74qJvCXmBoPyrkUpW",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent Mivelaz.",
+              "metadata": {
+                "width": 8368,
+                "height": 5584,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"8368\" height=\"5584\"",
+                "tags": "Lausanne, cathédrale, tradition, guet, beffroi",
+                "description": null
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "",
+            "en": "<div>● Lausanne Cathedral’s anniversary ceremony will take place on 20th October 2025<br>● New sustainable, adaptive lighting installation highlights the Cathedral’s architectural splendour while minimising light pollution&nbsp;<br>● A new nightwatchman (and the city’s first ever watchwoman) have joined the city’s traditional night watch, who have kept watch over Lausanne from the Cathedral for over 600 years&nbsp;</div>",
+            "de": "<p style=\"text-align: left;\"><span>Im Herzen der Cité erhebt sich die Lausanner Kathedrale majestätisch über die Stadt. Sie wurde 1275 von Papst Gregor X. geweiht und ist das bedeutendste Bauwerk der frühgotischen Architektur in der Schweiz. Besonders beeindruckend sind die meisterhafte Steinmetzarbeit, die weltweit einzigartige Fisk-Orgel sowie die kunstvollen Buntglasfenster. Die Rosette zählt zu den Meisterwerken der europäischen Kirchenkunst: Ihre Scheiben veranschaulichen die mittelalterliche Weltsicht, in der Gott als Schöpfer im Zentrum stand.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "",
+            "en": "",
+            "de": "Die Nachtwache von Lausanne – eine 600 Jahre alte Tradition "
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "",
+            "en": "<div>&nbsp;<strong>Lausanne, Switzerland </strong>– In 2025, the iconic <a href=\"https://www.cathedrale-lausanne.ch/accueil/\">Lausanne Cathedral</a> will mark its 750th anniversary with a series of celebratory events, inviting locals and visitors to rediscover this architectural marvel. The celebrations will feature the unveiling of cutting-edge lighting installations and pay homage to the cathedral’s historic traditions, ensuring this milestone is remembered for generations to come.&nbsp;</div>",
+            "de": "<p style=\"text-align: left;\"><span>Eine der faszinierendsten Traditionen Lausannes wird auch heute noch gepflegt: Seit 1405 ruft jede Nacht von 22:00 Uhr bis 2:00 Uhr ein Nachtwächter vom Glockenturm aus die Stunde. Alexandre Schmid, der seit dem 1. Januar 2024 das Amt des Nachtwächters innehält, setzt diese 600 Jahre alte Praxis gemeinsam mit einem sechsköpfigen Team fort. In einer Zeit, in der traditionelle Berufe zunehmend rar werden, zählt das Team zu den letzten Nachtwächtern Europas.&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Der leidenschaftliche Historiker Alexandre Schmid liebt die friedliche Ruhe der Nacht. «Die Tradition der Nachtwache fasziniert viele Menschen, sogar meine Freunde! Ich hätte nie gedacht, dass meine Ernennung so viel Begeisterung auslöst», sagt Schmid. «Die Nachtwache ist eine stille Präsenz, eine zeitlose Figur. Für diesen Job braucht es kein besonderes Talent – nur eine tiefe Liebe zu Lausanne.» Seit 2021 wird das Team zudem von Cassandre Berdoz verstärkt, die als erste Nachtwächterin in der Geschichte Lausannes Teil dieser besonderen Tradition ist. Wer die Nachtwachenden bei ihrer Arbeit beobachten möchte, kann sie ab 22 Uhr im Glockenturm besuchen. Reservierungen sind täglich ab 22:15 Uhr telefonisch unter +41 21 312 74 91 möglich.&nbsp;&nbsp;</span></p>"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "",
+            "en": "Innovative Lighting Installations",
+            "de": "Lichtkunst trifft auf Nachhaltigkeit "
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "",
+            "en": "<div>&nbsp;As part of the celebrations, a new exterior lighting plan will be unveiled during the year. Created by the French firm L’Acte Lumière, this modern design highlights the cathedral’s façade with varying hues that shift with the time of day while minimising light pollution. These enhancements aim to both honor the cathedral’s historic significance and embrace contemporary sustainability practices&nbsp;</div>",
+            "de": "<p style=\"text-align: left;\"><span>Die Feierlichkeiten rund um das beeindruckende Bauwerk beginnen am 28. Februar 2025 mit der zeremoniellen Einweihung des innovativen Innenbeleuchtungssystems. Im Laufe des Jahres wird zudem das Konzept für die Aussenbeleuchtung vorgestellt. Das moderne Design&nbsp;der französischen Firma L'Acte Lumière lässt die Kathedrale in wechselnden Farbtönen erstrahlen, die sich im Tagesverlauf ändern. Gleichzeitig wird die Lichtverschmutzung verringert. Die neuen Lichtinstallationen heben nicht nur die historische Bedeutung der Kathedrale hervor, sondern berücksichtigen so auch die modernen Prinzipien der Nachhaltigkeit.&nbsp;</span></p>"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "",
+            "en": "Grand Events to Mark the Milestone",
+            "de": "Weihejubiläum der Kathedrale"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "",
+            "en": "<div>&nbsp;The 750th anniversary celebrations are anchored by two major events. On <strong>28th February</strong>, the festivities will open with the inauguration of a new interior lighting system, designed to enhance the cathedral’s architectural beauty. On <strong>20th October</strong>, the cathedral will commemorate its consecration anniversary with a special ceremony. Both occasions promise to be unforgettable moments for locals and visitors alike.&nbsp;</div>",
+            "de": "<p style=\"text-align: left;\"><span>Am 20. Oktober 2025 wird die Kathedrale von Lausanne schliesslich ihr Weihejubiläum mit einer besonderen Zeremonie feiern. Neben einem festlichen Gottesdienst wird es auch spezielle Ausstellungen geben sowie die Möglichkeit, mehr über die spannende Geschichte des beeindruckenden Bauwerks zu erfahren. Die Feierlichkeiten bieten eine besondere Gelegenheit, die Kathedrale von einer ganz neuen Seite kennenzulernen und gemeinsam auf ihre lange Geschichte zurückzublicken.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Für weitere Informationen zu den Feierlichkeiten und dem Veranstaltungsprogramm besuchen Sie die offizielle </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://www.cathedrale-lausanne.ch/accueil/\" tt-mode=\"url\"><span><u>Website</u></span></a><span> der Kathedrale von Lausanne.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Weitere Informationen zur Stadt Lausanne finden Sie unter: </span><a target=\"_blank\" href=\"https://www.lausanne-tourisme.ch\" tt-mode=\"url\"><span><u>https://www.lausanne-tourisme.ch</u></span></a><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://www.lausanne-tourisme.ch/de/\" tt-mode=\"url\"><span><u>.</u></span></a><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span><span>&nbsp;</span></p><p style=\"text-align: justify;\"><span>Pressebilder finden Sie </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://lausanne-tourisme.syselshare.ch/share/g1iGVToqvVzxAlXIPv35woa3mM1UqL\" tt-mode=\"url\"><span><u>hier</u></span></a><span>.&nbsp;</span></p><p style=\"text-align: justify;\"><span><strong>Medienkontakt Schweiz</strong>&nbsp;</span></p><p style=\"text-align: justify;\"><span>Natalie Zipsin, Tel: 076 289 26 64, E-Mail: </span><a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\"><span><u>natalie@wearepepper.ch</u></span></a><span>&nbsp;&nbsp;</span></p>"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "",
+            "en": "A Tradition Continues with a New Night Watchman",
+            "de": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<div>&nbsp;</div>",
+            "en": "<div>A historic tradition dating back to 1405 is being upheld by Alexandre Schmid, the cathedral’s newest night watchman. Schmid calls the hour from the bell tower every night between 10 p.m. and 2 a.m., connecting Lausanne to its past while offering a living link to the city’s history. The city’s first female night watchman, Cassandre Berdoz, joined in 2021 at just 27 years old.<br><br>&nbsp;“The tradition of the watch fascinates many people, even my friends! I didn’t think that taking up my post would be met with such enthusiasm!” Alexandre Schmidt commented on his appointment. “The watch is a silent presence, a timeless figure. No particular talent is needed for this job - just a deep love for Lausanne.”&nbsp;<br><br>Tourists can join the night watchman or the night watchwoman in the 40m high belfry every night from 10pm onward - call +41 21 312 74 91 from 10:15pm to book your slot.&nbsp;</div>",
+            "de": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "",
+            "en": "A Historic Landmark",
+            "de": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "",
+            "en": "<p style=\"text-align: left;\">Consecrated in 1275 by Pope Gregory X, Lausanne Cathedral has stood as a beacon of Gothic architecture and spiritual significance for 750 years. The largest early Gothic church in Switzerland, the cathedral is known for its intricate craftsmanship, stunning stained glass windows, and magnificent Fisk organ - the first American pipe organ installed in a European cathedral. This five-manual, one hundred-nine stop organ includes 7,313 pipes, and its case - the first one ever to be designed by famous car designer Giorgetto Giugiaro - is an unusual mix of Classical French, Romantic French, Symphonic French, and North German baroque styles. Over the centuries, the Cathedral has become a cherished symbol of Lausanne and a key destination for visitors from around the globe.<br><br>&nbsp;For more information on the celebrations and event schedule, please visit <a target=\"_blank\" href=\"https://www.cathedrale-lausanne.ch/accueil/\" tt-mode=\"url\">Lausanne Cathedral’s official website</a>.&nbsp;<br><br>-ENDS-<br><br>For more information on Lausanne please visit Lausanne Tourism’s website<br>Follow ‘Lausanne, Capitale Olympique’ on LinkedIn, Facebook and ‘The Lausanner’ on Instagram<br>Keep up to date with all the latest content on the blog The Lausanner<br>Images can be downloaded from here<br><br></p>",
+            "de": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "Qy1x31Eak9seo536TSDDjueqvdFvfZ3T2pgvYfcZ",
+          "copyright": "© Blake Production",
+          "public_name": {
+            "fr": "Cathedral"
+          }
+        }
+      ],
+      "published_at": "1739314800",
+      "seo": {
+        "description": {
+          "en": "In 2025, the iconic Lausanne Cathedral will mark its 750th  anniversary with a series of celebratory events.",
+          "de": "ie Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz."
+        },
+        "noindex": false,
+        "slug": {
+          "en": "750th-anniversary-of-lausanne-cathedral-innovation-meets-tradition",
+          "de": "750-jahre-kathedrale-von-lausanne-wo-geschichte-auf-innovation-trifft"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-architecture",
+          "public_name": {
+            "fr": "Architecture",
+            "en": "Architecture",
+            "de": "Architektur"
+          }
+        },
+        {
+          "name": "lt-fete-festival",
+          "public_name": {
+            "fr": "Fête & Festival",
+            "en": "Party & Festival",
+            "de": "Party & Fest"
+          }
+        },
+        {
+          "name": "lt-histoire",
+          "public_name": {
+            "fr": "Histoire",
+            "en": "History",
+            "de": "Geschichte"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "data": {
+    "item": {
+      "id": "285",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "Où admirer le coucher du soleil à Lausanne ?",
+        "en": "The best spots to admire the sunset in Lausanne",
+        "de": "Wo man in Lausanne den Sonnenuntergang bewundern kann"
+      },
+      "lead": {
+        "fr": "Notre façon préférée de terminer la journée en beauté ? En admirant le ciel changer de couleur au moment du coucher du soleil, sans hésiter. Ce genre d’instants rêvés et hors du temps, où tout devient possible, finalement. Alors oui, c’est précisément le cadre parfait pour demander la main de votre dulcinée ou embrasser votre rencard du jour ! Ok, on reconnait que la beauté de ce moment nous rend franchement romantiques, mais à Lausanne, les couchers de soleil sont véritablement époustouflants... Suivez-nous ! On vous embarque vers les meilleurs spots pour assister à ce spectacle qui n'a littéralement pas de prix : oui, oui, c'est gratuit. ",
+        "en": "Our favourite way of ending the day in style? By admiring the sky’s changing colours at sunset. The kind of occasions that inspire dreams and make us feel that everything is possible – like a timeless moment! So yes, of course, it absolutely is THE perfect setting to ask your darling to marry you, hold hands with today’s valentine, or to tell yourself that for sure your love for Leonardo DiCaprio is mutual. OK, we are getting a bit carried away, but the beauty of this moment makes us feel rather romantic. And all the more so since sunsets are stunning in Lausanne. Come on, follow us as we lead you to the best spots to watch the show (and it’s free).",
+        "de": "Am liebsten lassen wir den Tag stilvoll ausklingen, und zwar dann, wenn sich der Himmel bei Sonnenuntergang wunderschön verfärbt. Das sind genau die Momente, die uns wirklich träumen lassen und in denen wir das Gefühl haben, dass alles möglich ist. Wie ein Moment ausserhalb der Zeit! Und so ist es wirklich DER perfekte Rahmen, um Ihrer Liebsten einen Antrag zu machen, um Ihr Rendezvous für diesen Abend bei der Hand zu nehmen oder um sich selbst zu sagen, dass Ihre Liebe zu Leonardo DiCaprio ganz sicher erwidert wird. Zugegeben, wir übertreiben vielleicht etwas, aber die Schönheit dieses Moments macht uns ein wenig romantisch. Zumal die Sonnenuntergänge hier wirklich atemberaubend sind. Kommen Sie mit, wir zeigen Ihnen die besten Orte, um diesem Spektakel beizuwohnen (und dazu ist es noch gratis). "
+      },
+      "summary": {
+        "fr": "Notre façon préférée de terminer la journée en beauté ? En admirant le ciel changer de couleur au moment du coucher du soleil, sans hésiter. Ce genre d’instants rêvés et hors du temps, où tout devient possible, finalement. Alors oui, c’est précisément le cadre parfait pour demander la main de votre dulcinée ou embrasser votre rencard du jour ! Ok, on reconnait que la beauté de ce moment nous rend franchement romantiques, mais à Lausanne, les couchers de soleil sont véritablement époustouflants… Suivez-nous ! On vous embarque vers les meilleurs spots pour assister à ce spectacle qui n’a littéralement pas de prix : oui, oui, c’est gratuit.",
+        "en": "Our favourite way of ending the day in style? By admiring the sky’s changing colours at sunset. The kind of occasions that inspire dreams and make us feel that everything is possible – like a timeless moment! So yes, of course, it absolutely is THE perfect setting to ask your darling to marry you, hold hands with today’s valentine, or to tell yourself that for sure your love for Leonardo DiCaprio is mutual. OK, we are getting a bit carried away, but the beauty of this moment makes us feel rather romantic. And all the more so since sunsets are stunning in Lausanne. Come on, follow us as we lead you to the best spots to watch the show (and it’s free).",
+        "de": "Am liebsten lassen wir den Tag stilvoll ausklingen, und zwar dann, wenn sich der Himmel bei Sonnenuntergang wunderschön verfärbt. Das sind genau die Momente, die uns wirklich träumen lassen und in denen wir das Gefühl haben, dass alles möglich ist. Wie ein Moment ausserhalb der Zeit! Und so ist es wirklich DER perfekte Rahmen, um Ihrer Liebsten einen Antrag zu machen, um Ihr Rendezvous für diesen Abend bei der Hand zu nehmen oder um sich selbst zu sagen, dass Ihre Liebe zu Leonardo DiCaprio ganz sicher erwidert wird. Zugegeben, wir übertreiben vielleicht etwas, aber die Schönheit dieses Moments macht uns ein wenig romantisch. Zumal die Sonnenuntergänge hier wirklich atemberaubend sind. Kommen Sie mit, wir zeigen Ihnen die besten Orte, um diesem Spektakel beizuwohnen (und dazu ist es noch gratis)."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26153,
+            "name": "Où admirer le coucher du soleil à Lausanne ?",
+            "public_name": {
+              "fr": "Où admirer le coucher du soleil à Lausanne ?"
+            },
+            "cloudinary_id": "3dd816b88b6ebf52",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1600,
+              "height": 1200,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1200\"",
+              "tags": "Eté; détente; lac; coucher soleil",
+              "description": null,
+              "file_name_from_url": "2b9c8661cd7a04ac.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/12/Coucher-de-soleil-Vidy_132-8.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ouchy/\"><strong>Ouchy </strong></a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\"><strong>Ouchy </strong></a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\"><strong>Ouchy </strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "On commence par le plus incontournable des couchers de soleil : celui des quais d’Ouchy. En été comme en hiver, vous ne pouvez pas passer à coté d’une balade au bord du Léman lors de votre escapade lausannoise. Alors pourquoi ne pas terminer cette promenade par un moment des plus apaisants, en observant le soleil disparaître lentement derrière le lac ? Vous verrez, le ciel d’Ouchy prend des couleurs magiques et c’est aussi le meilleur moment pour capturer la plus jolie photo de la fameuse sculpture Eole.",
+            "en": "We begin with the most obvious choice: the Ouchy lakeside! In summer as in winter, a walk by Lake Geneva is an essential part of any getaway in Lausanne. So why not end the stroll with an incredibly serene moment watching the sun disappear slowly behind the lake? The sky above Ouchy takes on magical hues and it’s also the best time to take a gorgeous picture of the famous Eole sculpture.",
+            "de": "Wir beginnen mit dem Sonnenuntergang, den man einfach gesehen haben muss: Auf den Quais d’Ouchy! Wer nach Lausanne fährt, der kommt um einen Spaziergang am Ufer des Genfersees einfach nicht herum, ganz egal, zu welcher Jahreszeit. Was spricht also dagegen, den Spaziergang mit einem absolut entspannten Moment abzuschliessen und zu beobachten, wie die Sonne langsam hinter dem See verschwindet?  Der Himmel von Ouchy wird dann in magische Farben getaucht, was zum besten Zeitpunkt führt, um das schönste Bild der berühmten Eole-Skulptur zu machen."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CoxTAWuIlPb/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25916,
+            "name": "Où admirer le coucher du soleil à Lausanne ?",
+            "public_name": {
+              "fr": "Où admirer le coucher du soleil à Lausanne ?"
+            },
+            "cloudinary_id": "d04dbe370fb44692",
+            "mime_type": "image/jpeg",
+            "copyright": "© Coucher de soleil sur le lac Leman",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d04dbe370fb44692.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/01/Ouchy-KAZ-HD_005.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\"><strong>Lavaux</strong></a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\"><strong>Lavaux</strong></a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\"><strong>Lavaux</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Notre crush à nous, c’est Lavaux : à chaque fois qu’on y pense, on a des papillons dans le ventre et on ne sait plus où donner de la tête. Ses vignobles en terrasse, classés au patrimoine mondial de l’UNESCO, semblent plonger avec grâce dans les eaux cristallines du Léman, observées par les montagnes majestueusement dressées en arrière plan. Ça nous rendrait pas un peu poétiques cette histoire ? Au moment où le soleil se couche, c’est encore plus impressionnant : on vous met au défi de ne pas tomber fou amoureux de ce petit paradis.",
+            "en": "Our personal crush is for Lavaux: every time we think of it, our stomach flutters at the idea of its dizzying beauty. Its terraced vineyards, listed as a UNESCO World Heritage Site, seem to plunge gracefully into Lake Geneva’s crystal-clear waters, under the gaze of the mountains rising majestically in the background. It’s so poetic, it would make us wax lyrical. And when the sun sets, it’s even more impressive: we defy you not to fall in love with this small paradise.",
+            "de": "In Lavaux sind wir ein bisschen verliebt: Bei jedem Gedanken daran bekommt man Schmetterlinge im Bauch, und so ganz weiss man nicht, was man davon halten soll. Die als Terrassen angelegten Weinberge, die zum UNESCO-Weltkulturerbe gehören, scheinen anmutig in das kristallklare Wasser des Genfersees einzutauchen, über den die Berge im Hintergrund majestätisch wachen. Da lässt uns diese Aussicht ja fast schon poetisch werden. Wenn die Sonne untergeht, ist dieser Anblick noch beeindruckender: Nehmen Sie unsere Herausforderung an, dass Sie sich nicht auch Hals über Kopf in dieses kleine Paradies verlieben?"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CFxFlv7glnP/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26002,
+            "name": "Où admirer le coucher du soleil à Lausanne ?",
+            "public_name": {
+              "fr": "Où admirer le coucher du soleil à Lausanne ?"
+            },
+            "cloudinary_id": "5d7d13cf241c7121",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1200,
+              "height": 800,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"800\"",
+              "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+              "description": null,
+              "file_name_from_url": "5d7d13cf241c7121.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sur-lesplanade-de-la-cathedrale/\"><strong>L’esplanade de la Cathédrale</strong></a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/on-the-cathedral-esplanade/\"><strong>The Cathedral’s Esplanade</strong></a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\"><strong>Die Esplanade der Kathedrale</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Définitivement l’un des meilleurs endroits pour observer les lumières changer sur la ville. Après avoir gravit les mythiques Escaliers du marché, vous découvrirez ce spot qui plaira à coup sûr aux fanatiques de couchers de soleil (dont nous faisons, vous l’aurez compris, partie). Au programme : une magnifique vue sur la Skyline lausannoise qui ferait presque de la concurrence à celle de New York (ok, on n’est sans doute pas très objectifs).",
+            "en": "Definitely one of the best places from where to watch the changing lights on the city! After climbing the iconic wooden staircase known as the “Escaliers du Marché”, you will discover a spot that is sure to appeal to sunset lovers (to which we belong, of course, as you will probably have gathered). On offer: a magnificent view on the Lausanne skyline that would almost rival New York’s (we’ll admit we’re not quite impartial).",
+            "de": "Definitiv einer der besten Orte, um zu beobachten, wie sich das Licht in der Stadt verändert! Nachdem Sie die mythische Markttreppe erklommen haben, entdecken Sie diesen Ort, der die Herzen von Sonnenuntergangsfanatikern (zu denen wir auch gehören, aber das haben Sie inzwischen schon verstanden) höher schlagen lässt. Auf dem Programm: Ein herrlicher Blick auf die Lausanner Skyline, die es fast mit der New Yorker Skyline aufnehmen kann (okay, vielleicht sind wir da nicht ganz unvoreingenommen)."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26086,
+            "name": "Où admirer le coucher du soleil à Lausanne ?",
+            "public_name": {
+              "fr": "Où admirer le coucher du soleil à Lausanne ?"
+            },
+            "cloudinary_id": "538a8d278021d77a",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue sur la ville et le lac depuis la Cite au coucher du soleil.",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "538a8d278021d77a.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/01/Vue-Lausanne.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/esplanade-de-montbenon/\"><strong>L’esplanade de Montbenon</strong></a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/montbenon-esplanade/\"><strong>The Montbenon</strong> <strong>Esplanade</strong></a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/montbenon-esplanade/\"><strong>Die Esplanade de Montbenon</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "La vue sur le lac y est à couper le souffle et le devient d’autant plus lorsque le ciel se mue en peinture flamboyante. L’avantage du lieu, c’est qu’il est étendu : vous n’aurez donc pas à partager cet instant hyper romantique avec vos voisins et pourrez apprécier ce moment en tête-à-tête avec votre cher et tendre. Et si on était vous, on poursuivrait la soirée avec un délicieux repas à la Brasserie de Montbenon, située à seulement deux pas de l’esplanade.",
+            "en": "The view over Lake Geneva is breathtaking and is all the more so when the sky is ablaze with colour. The advantage of this location is that it is vast: there will be no need to share this uber romantic moment with others and you will therefore be free to appreciate it in a romantic tête-à-tête with your beloved. And if we were in your shoes, we would extend the evening’s enjoyments with a delicious meal at the Brasserie de Montbenon; it is – quite literally – a stone’s throw away from the esplanade.",
+            "de": "Der Blick auf den Genfersee an sich ist atemberaubend, und er wird noch atemberaubender, wenn sich der Himmel in ein Meer aus prächtigen Farben verwandelt. Dieser Ort bietet den grossen Vorteil, dass er sehr weitläufig ist: So müssen Sie diesen unglaublich romantischen Moment nicht mit Leuten teilen, die zufällig neben Ihnen stehen, sondern können ihn von Angesicht zu Angesicht mit Ihrem Herzblatt geniessen. Und an Ihrer Stelle würden wir den Abend mit einem köstlichen Essen in der Brasserie de Montbenon fortsetzen, die (buchstäblich) nur einen Katzensprung von der Esplanade entfernt ist."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B83xRvGBRFu/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tour-de-sauvabelin/\"><strong>La Tour de Sauvabelin </strong></a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\"><strong>The Sauvabelin Tower</strong></a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/en/event/la-tour-de-sauvabelin/\"><strong>Der Turm von Sauvabelin </strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Alors oui, ce spot se mérite un peu : pour l’atteindre, il vous faudra grimper les 151 marches qui mènent au sommet de la Tour de Sauvabelin. Mais croyez-nous, ça en vaut la peine ! Une vue imprenable sur la forêt, le lac et les montagnes vous y attend. Le spectacle est tellement beau, qu’on serait même prêts à gravir l’Everest pour y assister. Alors autant vous dire que les 151 marches sont vite oubliées…",
+            "en": "We do admit it, this spot requires some effort: to reach it, you need to climb the 151 steps that lead to the top of the Sauvabelin Tower. And yet it’s so worth it! A spectacular view over the forest, the lake and the mountains awaits you. The panorama is so stunning that we’d be willing to climb Mount Everest to contemplate it! Believe us when tell you that the 151 steps are soon forgotten.",
+            "de": "Es stimmt, diesen Ort muss man sich verdienen: Um ihn zu erreichen, sind 302 Stufen zu erklimmen, die zur Spitze des Tour de Sauvabelin führen. Aber sie sind es allemal wert! Denn Sie erwartet ein atemberaubender Blick auf den Wald, den See und die Berge. Dieses Naturschauspiel ist so wunderschön, dass wir sogar bereit wären, den Everest zu besteigen, um es zu sehen. So können wir Ihnen auch gleich sagen, dass die 302 Stufen ganz schnell wieder vergessen sind."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CIF8XAuAfbN/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "d04dbe370fb44692",
+          "copyright": "© Coucher de soleil sur le lac Leman",
+          "public_name": {
+            "fr": "Où admirer le coucher du soleil à Lausanne ?"
+          }
+        }
+      ],
+      "published_at": "1705995069",
+      "seo": {
+        "description": {
+          "fr": "Notre façon préférée de terminer la journée en beauté ? En admirant le ciel changer de couleur au moment du coucher du soleil, sans hésiter. Ce genre d’instants rêvés et hors du temps, où tout devient possible, finalement. Alors oui, c’est précisément le cadre parfait pour demander la main de votre dulcinée ou embrasser votre rencard du jour ! Ok, on reconnait que la beauté de ce moment nous rend franchement romantiques, mais à Lausanne, les couchers de soleil sont véritablement époustouflants... Suivez-nous ! On vous embarque vers les meilleurs spots pour assister à ce spectacle qui n'a littéralement pas de prix : oui, oui, c'est gratuit. ",
+          "en": "Our favourite way of ending the day in style? By admiring the sky’s changing colours at sunset. The kind of occasions that inspire dreams and make us feel that everything is possible – like a timeless moment! So yes, of course, it absolutely is THE perfect setting to ask your darling to marry you, hold hands with today’s valentine, or to tell yourself that for sure your love for Leonardo DiCaprio is mutual. OK, we are getting a bit carried away, but the beauty of this moment makes us feel rather romantic. And all the more so since sunsets are stunning in Lausanne. Come on, follow us as we lead you to the best spots to watch the show (and it’s free).",
+          "de": "Am liebsten lassen wir den Tag stilvoll ausklingen, und zwar dann, wenn sich der Himmel bei Sonnenuntergang wunderschön verfärbt. Das sind genau die Momente, die uns wirklich träumen lassen und in denen wir das Gefühl haben, dass alles möglich ist. Wie ein Moment ausserhalb der Zeit! Und so ist es wirklich DER perfekte Rahmen, um Ihrer Liebsten einen Antrag zu machen, um Ihr Rendezvous für diesen Abend bei der Hand zu nehmen oder um sich selbst zu sagen, dass Ihre Liebe zu Leonardo DiCaprio ganz sicher erwidert wird. Zugegeben, wir übertreiben vielleicht etwas, aber die Schönheit dieses Moments macht uns ein wenig romantisch. Zumal die Sonnenuntergänge hier wirklich atemberaubend sind. Kommen Sie mit, wir zeigen Ihnen die besten Orte, um diesem Spektakel beizuwohnen (und dazu ist es noch gratis). "
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "ou-admirer-le-coucher-du-soleil-a-lausanne",
+          "en": "the-best-spots-to-admire-the-sunset-in-lausanne",
+          "de": "wo-man-in-lausanne-den-sonnenuntergang-bewundern-kann"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

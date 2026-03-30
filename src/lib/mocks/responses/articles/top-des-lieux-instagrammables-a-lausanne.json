@@ -1,0 +1,384 @@
+{
+  "data": {
+    "item": {
+      "id": "272",
+      "languages": [
+        "fr",
+        "de",
+        "en"
+      ],
+      "name": {
+        "fr": "Top des lieux instagrammables à Lausanne",
+        "de": "Die besten instagrammierbaren Orte in Lausanne",
+        "en": "Lausanne’s best instagrammable locations"
+      },
+      "lead": {
+        "fr": "Avec ses ruelles pleines de charme et ses lieux emblématiques, Lausanne est un vrai paradis pour parfaire son feed Instagram ! On vous laisse découvrir nos spots favoris pour capturer la ville.",
+        "de": "Mit seinen charmanten Gassen und symbolträchtigen Orten ist Lausanne ein wahres Paradies für die Perfektionierung des eigenen Instagram-Feeds! Wir zeigen Ihnen unsere Lieblingsplätze, um die Stadt zu fotografieren.",
+        "en": "With its charming alleyways and iconic places, Lausanne is a real paradise for upgrading your Instagram feed! We'll reveal our favourite spots to you so you can capture the city in your camera or phone."
+      },
+      "summary": {
+        "fr": "Avec ses ruelles pleines de charme, ses lieux emblématiques et ses bijoux d’architecture, Lausanne est un vrai paradis pour parfaire son feed Instagram ! On vous laisse découvrir nos spots favoris pour capturer la ville.",
+        "de": "Mit seinen charmanten Gassen und symbolträchtigen Orten ist Lausanne ein wahres Paradies für die Perfektionierung des eigenen Instagram-Feeds! Wir zeigen Ihnen unsere Lieblingsplätze, um die Stadt zu fotografieren.",
+        "en": "With its charming alleyways and iconic places, Lausanne is a real paradise for upgrading your Instagram feed! We’ll reveal our favourite spots to you so you can capture the city in your camera or phone."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 25956,
+            "name": "Top des lieux instagrammables à Lausanne",
+            "public_name": {
+              "fr": "Top des lieux instagrammables à Lausanne"
+            },
+            "cloudinary_id": "5693eba304cdf0e1",
+            "mime_type": "image/jpeg",
+            "copyright": "© Dominik Gehl",
+            "metadata": {
+              "width": 2560,
+              "height": 1707,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1707\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "5693eba304cdf0e1.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/DSCF9992-Edit-scaled.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">1. Le Pont Bessières et la Cathédrale</a>",
+            "en": "1. <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\"><strong> The Bessières Bridge and the Cathedral</strong></a>",
+            "de": "1.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\"><strong> Die Bessières-Brücke und die Kathedrale</strong></a>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Un véritable incontournable de Lausanne, à venir immortaliser depuis le début du Pont Bessières. En sortant du métro, on repère le point de vue qui se trouve juste à côté de l’hôtel Swiss Wine. De jour comme de nuit, le panorama sur la mythique Cathédrale de Lausanne y est imprenable ! Et puis, parce qu’on n’en a jamais assez, on profite de grimper sur le beffroi de la Cathédrale : la vue à 360° sur la ville y est tellement jolie qu’on en oublie vite les 224 marches pour arriver jusqu’à la tour.",
+            "en": "A real must-see in Lausanne; immortalize it from the beginning of the Pont Bessières. As you leave the metro, you will see the viewpoint close to the side of the Swiss Wine Hotel. The view of the legendary Lausanne cathedral is breathtaking whether by day or night! And because you can never have enough, don’t miss the climb to the top of the cathedral belfry: the 360° view of the city is so beautiful that you will quickly forget the 224 steps to the top.",
+            "de": "Ein echtes Muss in Lausanne, das vom Zugang zur Bessières-Brücke aus verewigt werden kann. Wenn Sie aus der Metro steigen, sehen Sie den Aussichtspunkt direkt neben dem Hotel Swiss Wine. Das Panorama der bekannten Kathedrale von Lausanne ist Tag und Nacht atemberaubend! Und weil man nie genug kriegen kann, ergreift man danach die Gelegenheit, den Glockenturm der Kathedrale zu erklimmen: Der 360°-Blick über die Stadt ist so schön, dass man schnell die 224 Stufen vergisst, die zum Turm führen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B8QpRXCAOcH/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/escaliers-du-marche/\">2. Les escaliers du marché</a>",
+            "en": "<span lang=\"EN-GB\">2.<a href=\"https://www.lausanne-tourisme.ch/en/explore/escaliers-du-marche/\">The market steps</a></span>",
+            "de": "<span lang=\"DE\">2.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/escaliers-du-marche/\"> Die Markttreppe</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Les escaliers du marché, qui mènent à la Cathédrale depuis la place de la Palud, représentent clairement un spot à ne pas manquer ! Pour atteindre le lieu duquel obtenir l’angle parfait, on gravit les marches du fameux escalier : une fois le sommet atteint, on capture cet endroit emblématique, avec ses petites maisons typiques en arrière-plan.",
+            "en": "<span lang=\"EN-GB\">The market steps which lead up to the Cathedral from the Place de la Palud are clearly a location not to be missed! To reach the spot for the perfect angle, climb the famous steps: once you reach the top you will be rewarded by the opportunity of a photo of this emblematic scene with its typical small houses in the background.</span>",
+            "de": "<span lang=\"DE\">Die Markttreppe, die vom Place de la Palud zur Kathedrale führt, ist eindeutig ein Ort, den man nicht verpassen sollte! Um zu dem Ort zu gelangen, von dem aus man einen perfekten Ausblick hat, steigt man die berühmte Treppe hinauf: Oben angekommen, fotografiert man diesen symbolträchtigen Ort mit seinen typischen Häuschen im Hintergrund.</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CBKmZoBA3vK/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">3. La cathédrale depuis le parc de l’Hermitage</a>",
+            "en": "<span lang=\"EN-GB\">3.<a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\"> The Cathedral from the Parc de l’Hermitage</a></span>",
+            "de": "<span lang=\"DE\">3.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\"> Die Kathedrale vom Hermitage-Park aus</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Encore la Cathédrale, oui, mais sous un tout autre angle cette fois-ci ! Pour pouvoir prendre une photo digne des plus grands instagrammeurs, direction le parc de l’Hermitage, situé au nord de Lausanne. Un véritable havre de paix, à seulement quelques minutes du centre-ville ! Et une fois arrivés, pourquoi ne pas combiner notre shooting à une visite de la fondation de l’Hermitage ?",
+            "en": "<span lang=\"EN-GB\">The Cathedral again, yes, but from a completely different angle this time! If you want a picture worthy of the greatest instagrammers, head off to the Parc de l’Hermitage located north of Lausanne. A true haven of peace, only a few minutes from downtown! And once there, why not combine your photo-shoot with a visit to the Hermitage Foundation?</span>",
+            "de": "<span lang=\"DE\">Erneut die Kathedrale, aber diesmal aus einem ganz anderen Blickwinkel! Um ein Bild zu schiessen, das der grössten Instagrammer würdig ist, begeben Sie sich zum Hermitage-Park im Norden von Lausanne. Ein wahrer Hafen des Friedens, nur wenige Minuten vom Stadtzentrum entfernt! Dort angekommen, sollte man das Shooting mit einem Besuch der Fondation de l’Hermitage kombinieren!</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CCdv2h1A_1p/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/quartier-du-rotillon/\">4. Le quartier du Rôtillon</a>",
+            "en": "<span lang=\"EN-GB\">4.<a href=\"https://www.lausanne-tourisme.ch/en/explore/rotillon-quarter/\"> The Rôtillon district</a></span>",
+            "de": "<span lang=\"DE\">4.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-rotillon-quartier/\"> Das Rôtillon-Quartier</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Grâce à ses maisons colorées qui lui donnent des petits airs de village du sud, le quartier du Rôtillon est, à coup sûr, un lieu à ne pas louper si on souhaite compléter son feed de la meilleure des façons ! Et les petites boutiques de créateurs réparties dans le quartier en font clairement une deuxième bonne raison de s’y rendre.",
+            "en": "<span lang=\"EN-GB\">Thanks to its colourful houses that give it a southern village feel, the Rôtillon district is definitely a place not to be missed if you want an ideal way to complete your feed! And the small designer shops scattered throughout the neighbourhood clearly give you a second good reason to go there.</span>",
+            "de": "<span lang=\"DE\">Dank seiner farbenfrohen Häuser, die ihm ein südländisches Dorfgefühl verleihen, ist das Rôtillon-Quartier definitiv ein Ort, den man nicht verpassen sollte, um seinen Feed optimal zu vervollständigen! Und die kleinen Designerläden, die über die ganze Nachbarschaft verteilt sind, sind eindeutig ein weiterer guter Grund, um dorthin zu gehen.</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/ByStJADi454/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-polytechnique-federale-de-lausanne/\">5. L’EPFL et son architecture</a>",
+            "en": "<span lang=\"EN-GB\">5.<a href=\"https://www.lausanne-tourisme.ch/en/explore/swiss-federal-institute-of-technology-lausanne/\"> EPFL and its architecture</a></span>",
+            "de": "<span lang=\"DE\">5.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/eidgenossische-technische-hochschule-lausanne/\"> Die EPFL und ihre Architektur</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En tant que photographes en herbe, on ne sait plus où donner de la tête à l’EPFL ! Grâce à son architecture exceptionnelle, cette école mondialement connue regorge de spots ultra instragramables. Par exemple, ce magnifique puit de lumière multicolore, à retrouver dans le sous-voie du métro. On est fan !",
+            "en": "<span lang=\"EN-GB\">As budding photographers, we don’t know where to start on this building! Thanks to its exceptional architecture, this world-famous seat of learning is full of ultra-instagrammable possibilities. For example, this magnificent multi-coloured light well in the metro underpass. We’re fans!</span>",
+            "de": "<span lang=\"DE\">Als angehende Fotografen weiss man nicht mehr, wo einem angesichts der EPFL der Kopf steht! Dank ihrer aussergewöhnlichen Architektur ist diese weltberühmte Schule voller besonders instragrammierbarer Spots. Zum Beispiel das prächtige bunte Oblicht, das in der Unterführung der Metro zu finden ist. Wir sind Fans!</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B1ynuATiTnc/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ouchy/\">6. Le lac et Eole depuis Ouchy</a>",
+            "en": "<span lang=\"EN-GB\">6.<a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\"> The lake and Aeolus from Ouchy</a></span>",
+            "de": "<span lang=\"DE\">6.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\"> Der See und die Eole von Ouchy aus</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Aaah, Ouchy, ses mouettes, son vent marin et ses eaux turquoises… Un vrai paradis d’Instagram : il suffit de se balader sur les quais pour avoir envie de mitrailler les montagnes et le lac avec son téléphone. Pour un cliché typiquement lausannois, on s’y rend au moment du coucher du soleil pour photographier Eole, la sculpture emblématique du bord du lac.",
+            "en": "<span lang=\"EN-GB\">Aaah, Ouchy, its seagulls, its sea breeze and its turquoise waters… A true Instagram paradise: you only have to walk along the quayside to feel like filling your phone’s memory with views of the mountains and the lake. For a typical Lausanne photograph, go there at sunset to photograph Aeolus, the iconic sculpture on the lake shore.</span>",
+            "de": "<span lang=\"DE\">Aaah, Ouchy, seine Möwen, seine Seebrise und sein türkisfarbenes Wasser… Ein wahres Instagram-Paradies: Sie müssen nur an der Uferpromenade spazieren gehen, um Lust zu bekommen, die Berge und den See mit Ihrem Handy abzulichten. Um ein typisches Bild von Lausanner aufzunehmen, geht man bei Sonnenuntergang dorthin, um die Eole, die berühmte Skulptur am Seeufer, zu fotografieren.</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B_pBB0MAKV6/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/palais-de-rumine/\">7. Le hall du Palais de Rumine</a>",
+            "en": "<span lang=\"EN-GB\">7.<a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\"> The hall of the Palais de Rumine</a></span>",
+            "de": "7.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\"> Die Halle des Palais de Rumine</a>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lausanne est aussi un haut lieu culturel, et même ses musées sont dignes des plus belles photos Insta… pour notre plus grand bonheur. Rendez-vous dans le hall du Palais de Rumine pour obtenir cette prise de vue super esthétique !",
+            "en": "<span lang=\"EN-GB\">Lausanne is also a cultural mecca, and even its museums are worthy of the most beautiful Instagram pictures… A real treat for us. Go to the hall of the Palais de Rumine to get this super aesthetic shot!</span>",
+            "de": "Lausanne ist auch ein kulturelles Mekka und selbst seine Museen sind der schönsten Instagram-Bilder würdig… zu unserer grossen Freude. Gehen Sie in die Halle des Palais de Rumine, um diese super ästhetische Aufnahme zu machen!<time style=\"font-family: Arial,sans-serif; font-size: 14px; line-height: 17px;\" datetime=\"2019-08-20T11:58:22+00:00\"></time>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B1Yoy1xAS6s/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25956,
+            "name": "Top des lieux instagrammables à Lausanne",
+            "public_name": {
+              "fr": "Top des lieux instagrammables à Lausanne"
+            },
+            "cloudinary_id": "5693eba304cdf0e1",
+            "mime_type": "image/jpeg",
+            "copyright": "© Dominik Gehl",
+            "metadata": {
+              "width": 2560,
+              "height": 1707,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1707\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "5693eba304cdf0e1.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/04/DSCF9992-Edit-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "©Dominik Gehl",
+            "en": "©Dominik Gehl",
+            "de": "©Dominik Gehl",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/pont-chauderon/\">8. La Tour Galfetti</a>",
+            "en": "<span lang=\"EN-GB\">8.<a href=\"https://www.lausanne-tourisme.ch/en/explore/pont-chauderon/\">Tour Galfetti</a></span>",
+            "de": "<span lang=\"DE\">8.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/pont-chauderon/\"> Der Galfetti-Turm</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Mais où se trouve donc cette mystérieuse serrure qui rendra vos fidèles abonnés verts de jalousie ? Il s’agit de la Tour Galfetti, située juste après le Pont Chauderon ! C’est depuis son centre et en levant les yeux vers le ciel qu’on découvre cette fameuse serrure. D’ailleurs ce spot est l’un des préférés du Lausanner <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/auteur/dominik-larchi-photo-fan/\">Dominik, l’archi-photo-fan</a> !",
+            "en": "<span lang=\"EN-GB\">But where is that mysterious keyhole that will make your followers green with envy? It’s the Galfetti Tower, located just after the Chauderon Bridge! The famous keyhole shot reveals itself if you look upwards from the centre of the building. By the way, this spot is one of the favourites of Lausanne’s <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/author/dominik-the-arch-photo-fan/\">Dominik, l’archi-photo-fan</a>!</span>",
+            "de": "<span lang=\"DE\">Aber wo ist dieses mysteriöse Schloss, das Ihre treuen Abonnenten vor Neid erblassen lässt? Gemeint ist der Galfetti-Turm, der sich direkt hinter der Chauderon-Brücke befindet! Von der Mitte aus und mit Blick gen Himmel entdeckt man dieses berühmte Schloss. Dieser Spot ist übrigens einer der Favoriten des Lausanner <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/auteur/dominik-der-arch-photo-fan/\">Dominik, dem Erz-Fotofan</a>!</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BtsUdl1gXTv/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">9. Lavaux</a>",
+            "en": "<span lang=\"EN-GB\">9.<a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\"> Lavaux</a></span>",
+            "de": "<span lang=\"DE\">9.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\"> Lavaux</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Comment parler des meilleurs spots instagrammables sans citer Lavaux et ses vignobles en terrasse ! À chaque fois qu’on s’y rend, l’émerveillement reste le même, tant l’endroit est magnifique. Chaque saison apporte sa particularité au lieu, dont il est impossible de se lasser.",
+            "en": "<span lang=\"EN-GB\">How can we talk about the best instagrammable spots without mentioning Lavaux and its terraced vineyards! The view is so magnificent that however many times you visit these vineyards your sense of wonder remains unchanged. Each season brings its own special feeling. You can never tire of this view.</span>",
+            "de": "<span lang=\"DE\">Wie könnte man das Lavaux und seine Weinbau-Terrassen vergessen, wenn man von den besten instagrammierbaren Orten spricht! Jeder Besuch an diesem Ort versetzt einen aufs Neue in Erstaunen, so schön ist er. Jede Jahreszeit bringt ihre eigene Besonderheit mit sich und man wird ihrer nie müde.</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/By-YQaXCXq5/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-pointu/\">10. Le bâtiment qui abrite le Pointu</a>",
+            "en": "<span lang=\"EN-GB\">10.<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-pointu/\"> The building that houses le Pointu</a></span>",
+            "de": "<span lang=\"DE\">10.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-pointu/\"> Das Gebäude, in dem sich das Pointu befindet</a></span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "New York, New York… Ah non pardon, on est toujours à Lausanne. Mais, entre nous, ce bâtiment à côté de la place de la Riponne nous rappelle vraiment le flat iron de la big apple. Du coup, ça en fait un immeuble parfait pour Instagram – et pour nos papilles, puisqu’il abrite le Pointu, l’un de nos restaus branchés préférés.",
+            "en": "<span lang=\"EN-GB\">New York, New York… Oh no, sorry, we’re still in Lausanne. But between you and me this building next to the Place de la Riponne really reminds us of the Big Apple’s Flatiron building. That makes it the perfect building for Instagram – and for our taste buds, since it’s home to Le Pointu, one of our favourite trendy restaurants.</span>",
+            "de": "<span lang=\"DE\">New York, New York… Oh nein, tut mir leid, wir sind noch in Lausanne. Aber unter uns gesagt, erinnert uns dieses Gebäude neben der Place de la Riponne wirklich an das Flatiron im Big Apple. Das macht es zum perfekten Gebäude für Instagram – und für unsere Geschmacksnerven, denn es beherbergt das Le Pointu, eines unserer beliebtesten Szene-Restaurants.</span>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B4zSF7sAxXy/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour découvrir plein d’autres idées, <a href=\"https://www.instagram.com/thelausanner/?hl=fr\">c’est par ici que ça se passe</a> !",
+            "en": "To discover many more ideas, check this out <a href=\"https://www.instagram.com/thelausanner/?hl=en\">it all happens here</a> !",
+            "de": "<span lang=\"DE\">Um viele weitere Ideen entdecken Sie <a href=\"https://www.instagram.com/thelausanner/?hl=de\">hier</a>!</span>",
+            "it": "",
+            "es": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "5693eba304cdf0e1",
+          "copyright": "© Dominik Gehl",
+          "public_name": {
+            "fr": "Top des lieux instagrammables à Lausanne"
+          }
+        }
+      ],
+      "published_at": "1617573600",
+      "seo": {
+        "description": {
+          "fr": "Avec ses ruelles pleines de charme et ses lieux emblématiques, Lausanne est un vrai paradis pour parfaire son feed Instagram ! On vous laisse découvrir nos spots favoris pour capturer la ville.",
+          "de": "Mit seinen charmanten Gassen und symbolträchtigen Orten ist Lausanne ein wahres Paradies für die Perfektionierung des eigenen Instagram-Feeds! Wir zeigen Ihnen unsere Lieblingsplätze, um die Stadt zu fotografieren.",
+          "en": "With its charming alleyways and iconic places, Lausanne is a real paradise for upgrading your Instagram feed! We'll reveal our favourite spots to you so you can capture the city in your camera or phone."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "top-des-lieux-instagrammables-a-lausanne",
+          "de": "die-besten-instagrammierbaren-orte-in-lausanne",
+          "en": "lausannes-best-instagrammable-locations"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-insolite",
+          "public_name": {
+            "fr": "Insolite",
+            "en": "Unusual",
+            "de": "Ungewöhnlich"
+          }
+        }
+      ]
+    }
+  }
+}
