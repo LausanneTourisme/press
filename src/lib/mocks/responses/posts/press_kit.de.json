@@ -1,644 +1,90 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 4,
       "data": [
         {
-          "id": "21",
-          "author": "Lausanne Tourisme",
-          "name": "Schokoladentour in Lausanne",
-          "lead": "Die süsse Seite der Stadt erkunden: Lausanne lockt mit Schokoladentour und ausgefallener \"Haute Pâtisserie\".",
-          "summary": "Die süsse Seite der Stadt erkunden: Lausanne lockt mit Schokoladentour und ausgefallener «Haute Pâtisserie».",
-          "highlight": false,
-          "link": null,
-          "content": [
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Zürich, 13. März 2024 – In Lausanne können Schokoladenliebhaber/-innen die exquisiten Kreationen von 11 renommierten Chocolatiers auf einer einzigartigen Schokoladentour kosten – unter anderem mit Schokoladenweltmeister Jorge Cardoso. Um die Schweizer Schokoladenkunst in vollen Zügen zu geniessen, ist das Ticket für 72 Stunden gültig. Neben der köstlichen Stadttour sorgen renommierte Konditoreien und Cafés mit erstklassigem Gebäck für weitere kulinarische Highlights.</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": " Ein Spaziergang der genussvollen Art ",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Lausanne, die malerische Stadt am Genfersee, ist nicht nur für ihre atemberaubende Aussicht, sondern auch für ihre reiche kulinarische Tradition bekannt. In Zusammenarbeit mit lokalen Chocolatiers und Fachkundigen hat sich Lausanne zu einem Hotspot für Schokoladenliebende entwickelt, die die Geheimnisse und Geschmacksnuancen dieser köstlichen Leckereien erkunden möchten. Auf einem entspannten Gourmet-Spaziergang haben Teilnehmende die Möglichkeit, fünf von elf renommierten Chocolatiers der Stadt zu besuchen und eine Auswahl ihrer besten Schokoladensorten mit nach Hause zu nehmen. Dank der köstlichen Variationen der sorgfältig ausgewählten, authentischen Chocolatiers erhalten die Gäste auch geschmacklich einen Einblick in die berühmte Geschichte der Schweizer Schokolade, die 1830 in Lausanne mit der Fabrik der Söhne Kohlers begann. Von traditionellen Rezepten bis hin zu innovativen Kreationen - jeder Besuch enthüllt die einzigartige Handwerkskunst und die unvergleichliche Qualität, für die die Schweizer Schokolade weltweit bekannt ist.<br><br>Das Besondere an dieser Gourmet-Aktivität ist, dass die Teilnehmer bei jedem Chocolatier eine kleine, individuell zusammengestellte Schokoladenkreationen erhalten, die sie entweder sofort geniessen oder mit nach Hause nehmen können. Das Ticket für die Tour ist 72 Stunden lang gültig, so dass die Besucher/-innen auch die symbolträchtigen Orte in der Nähe der Chocolatiers entdecken und die Stadt in ihrem eigenen Rhythmus besichtigen können.&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "«Haute Pâtisserie» für alle zugänglich",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 23871,
-                "name": "Miel pop's Camomille Ananas",
-                "public_name": {
-                  "de": "Miel pop's Camomille Ananas",
-                  "es": null
-                },
-                "cloudinary_id": "MIRxehlNQXX6YLgRy77ArxlOJKxWCXbS6WipEwgB",
-                "mime_type": "image/jpeg",
-                "copyright": "© The Sweet Sage",
-                "metadata": {
-                  "width": 1728,
-                  "height": 2592,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "attr": "width=\"1728\" height=\"2592\"",
-                  "tags": null,
-                  "description": null
-                }
-              },
-              "size": "medium",
-              "focus": "auto"
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;Neben der einzigartigen Schokoladentour lädt die renommierte Konditorei «Sweet Sage» alle Geniesser/-innen zu einer einzigartigen kulinarischen Reise ein. Seit Oktober 2023 werden dort süsse Leckereien mit einem gesunden und ausgewogenen Ansatz verkauft. Unter der Leitung von Thibaut Honajzer, dem ehemaligen Konditor des Restaurants Anne-Sophie Pic im BeauRivage Palace in Lausanne, und seiner Partnerin Alix Marin, entstehen aussergewöhnliche Gebäckkreationen auf Niveau einer Sternenküche. Alle Köstlichkeiten werden vor Ort mit Liebe handgefertigt, ohne dabei Kompromisse bei Qualität und Frische einzugehen. Die Verwendung lokaler und nachhaltiger Zutaten ist für den talentierten Meisterkoch der Desserts eine Verpflichtung, um die Umweltauswirkungen zu minimieren und die lokale Wirtschaft zu unterstützen. «Durch die Zusammenarbeit mit Bauern und Produzenten in der Region wird nicht nur die Qualität der Produkte sichergestellt, sondern auch die Unterstützung der lokalen Wirtschaft gefördert.», bestätigt Thibaut Honajzer. Eine besonders raffinierte Idee ist es zudem, dass man zu jeder Pâtisserie einen eigens abgestimmten Tee kaufen kann. Für Weinliebhaber könnte man sogar von «Patisserie Pairing» sprechen. Die Leidenschaft des Paares für die Natur spiegelt sich auch in einer breiten Auswahl gesundheitsfördernder Aufgusspflanzen wider, die vor Ort genossen werden können. Neben exquisiten Tees und besonderen Kaffeesorten ergänzen Spezialitäten wie der köstliche Kurkuma-Gold-Latte und die mit Zimtknospen verzierte Gourmet-Heissschokolade das Angebot und verleihen der Konditorei einen Hauch von feiner Kräuterkunde.<br><br>Ob begeisterte Schokoladenfans oder einfach nur Liebhaber süsser Versuchungen, Lausanne verspricht ein unvergessliches Erlebnis für alle Sinne.<br><br>&nbsp;Weitere empfehlenswerte Cafés, Bäckereien und Chocolatiers in der Lausanner Innenstadt:<br>&nbsp;• <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/acarre/\">Acarré</a>: Gegründet von Antoine Chopin und Arnaud Dousse. Dousse absolvierte seine Ausbildung zum Bäcker und Konditor im Beau-Rivage Palace und arbeitete dann als Konditor im Royal Savoy in Lausanne. Das Duo nahm 2021 am World Pastry Cup in Lyon teil. Arnaud Dousse, der auch Mitglied des Swiss Culinary Nationalteams ist, nahm 2024 an den IKA Culinary Olympics in Stuttgart teil. Das Hauptteam belegte den zweiten Platz in zwei Kochwettbewerben. Arnaud Dousse präsentierte ein Kunstwerk aus Schokolade und Zucker zum Thema Schweiz. Für dieses Kunstwerk erhielt er die Goldmedaille. <br><br>• <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jorge-cardoso-chocolatiers/\">Jorge Cardoso</a>: Der zweifache Weltmeister der Culinary World Cup hat kürzlich sein Schokoladengeschäft in Lausanne eröffnet und beeindruckt mit lebensgrossen Schokoladenstatuen, darunter eine von Roger Federer. Die Lokalität ist auch Teil der Schokoladentour. <br><br>• <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lacademie-cafe-brotherfields-sister/\">L'Académie Café</a>: Ein kulinarischer Geheimtipp und Neuzugang befindet sich versteckt in den Gassen des Viertels Cité. Hier kann man in einem retro-chicen Ambiente heisse Getränke, Säfte, frisches Brot und Gebäck geniessen. <br><br>Weitere Infos zur Schokoladentour finden Sie <a href=\"https://www.lausanne-tourisme.ch/de/angebot/schoko-tour-lausanne/\">hier</a>. <br><a href=\"https://lausanne-tourisme.syselshare.ch/#share/6squy3ar2Tlz4bPLh_pS1NtFIG3qqQ\">Hier</a> geht es zu den Pressebildern. <br><br>Mehr Infos zum Angebot der Stadt Lausanne: <a href=\"https://www.lausanne-tourisme.ch/de/\">https://www.lausanne-tourisme.ch/de/ </a><br><br></div>",
-                "it": "",
-                "es": ""
-              }
-            }
-          ],
-          "type": "press_release",
-          "medias": [
-            {
-              "cloudinary_id": "PujHlyCY3H7h8FCtVstrprIYotQAZ5iCeDkWzvIH",
-              "copyright": "© Jimmy Cotton Avenue",
-              "public_name": "Choco Tour"
-            }
-          ],
-          "published_at": "1710284400",
-          "seo": {
-            "description": "Die süsse Seite der Stadt erkunden: Lausanne lockt mit Schokoladentour und ausgefallener \"Haute Pâtisserie\".",
-            "noindex": false,
-            "slug": "schokoladentour-in-lausanne"
-          },
-          "tags": [
-            {
-              "name": "Gastronomie",
-              "public_name": "Gastronomie"
-            }
-          ]
-        },
-        {
-          "id": "22",
-          "author": "Lausanne Tourisme",
-          "name": "Ein Feuerwerk aus Kultur und Sport: Lausanne feiert 30 Jahre als Olympische Hauptstadt.",
-          "lead": "In diesem Jahr zelebriert Lausanne stolze drei Jahrzehnte als Olympische Hauptstadt mit einem grossartigen Angebot an kulturellen und sportlichen Ereignissen für jeden Geschmack.",
-          "summary": "Hauptstadt Zürich, 24. April 2024 –In diesem Jahr zelebriert Lausanne stolze drei Jahrzehnte als Olympische Hauptstadt mit einem grossartigen Angebot an kulturellen und sportlichen Ereignissen für jeden Geschmack.",
-          "highlight": false,
-          "link": null,
-          "content": [
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "<div><br><br></div>",
-                "en": "",
-                "de": "<div>&nbsp;Die Stadt lädt nicht nur zu vielfältigen Veranstaltungen ein, sondern bietet auch allen Interessierten die Möglichkeit, aktiv daran teilzunehmen. In einer Zeit, in der Sport und Freizeit immer mehr ineinander übergehen, ist Lausanne daher ein unverzichtbares Ziel für alle, die beide Welten lieben.</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 23876,
-                "name": "Sculpture CIO",
-                "public_name": {
-                  "de": "Sculpture CIO",
-                  "es": null
-                },
-                "cloudinary_id": "K7jZE9QQlLNIIniogKdxc9OmEEjdYA2E1LYeHv7B",
-                "mime_type": "image/jpeg",
-                "copyright": "© Marino Trotta",
-                "metadata": {
-                  "width": 3366,
-                  "height": 2235,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "attr": "width=\"3366\" height=\"2235\"",
-                  "tags": "Olympique; Sculpture; Lac; Montange",
-                  "description": null
-                }
-              },
-              "size": "large",
-              "focus": null
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Ein Veranstaltungskalender voller Feierlichkeiten",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Seit 30 Jahren trägt Lausanne, die Hauptstadt des Kantons Waadt, auch den Titel der Olympischen Hauptstadt. Die fünf olympischen Ringe am Bahnhofseingang unterstreichen ihre Beliebtheit als <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-und-sport-eine-perfekte-kombination/\">Treffpunkt für Sportbegeisterte</a> aller Art. Egal ob zu Lande, zu Wasser, auf den Gipfeln oder in der Luft: Die Stadt ist ein wahres Paradies für sportliche und kreative Geister. In diesem besonderen Jubiläumsjahr präsentiert Lausanne einen <a href=\"https://www.lausanne-tourisme.ch/de/olympische-hauptstadt/\">Veranstaltungskalender</a> voller Feierlichkeiten. Die Stadt lädt zu einer Reihe kostenloser, festlicher und sportlicher Veranstaltungen ein, die sowohl Einheimische als auch Besucher und Besucherinnen gleichermassen begeistern werden. Zu den Höhepunkten gehören die Enthüllung des olympischen Feuers, das von den Olympischen Jugendspielen 2020 in Lausanne stammt, sowie die innovative M2 Challenge am 20. Juni 2024, welche in Zusammenarbeit mit den Lausanner Verkehrsbetrieben (TL) organisiert wird. Bei dieser Herausforderung treten die Teilnehmenden auf einer anspruchsvollen 5.6 km langen Strecke mit über 300 Metern Höhenunterschied gegen die U-Bahn an.<br><br></div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 27077,
-                "name": "Lausanne, culturellement vôtre - Musee Olympique",
-                "public_name": {
-                  "fr": "Facade-Musee-Olympique",
-                  "en": "Facade-Musee-Olympique",
-                  "de": "Facade-Musee-Olympique",
-                  "es": null
-                },
-                "cloudinary_id": "J2RCP1gGfeBm38zxrxOKzV2d3iwaX3KElF5P4l3g",
-                "mime_type": "image/jpeg",
-                "copyright": "© CIO/Lydie Nesvadba",
-                "metadata": {
-                  "width": 2500,
-                  "height": 1447,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "attr": "width=\"2500\" height=\"1447\"",
-                  "tags": null,
-                  "description": null,
-                  "file_name_from_url": "df45ee00dd91708a.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Facade-Musee-Olympique.jpg"
-                }
-              },
-              "size": "large",
-              "focus": "auto"
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Vorbereitung auf Paris 2024",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Auch das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Olympische Museum</a> bietet seinen Besucher und Besucherinnen verschiedene Möglichkeiten, den Geist der Spiele zu erleben und in ihre faszinierende Geschichte einzutauchen. So wartet ab dem 25. Mai 2024 bis zum 19. Januar 2025 eine neue kostenlose temporäre Ausstellung namens «Olympic Paris: Eine immersive Reise» mit einer fesselnden und interaktiven Reise durch die drei Olympischen Spiele in Paris (1900, 1924 und 2024). Dabei wird nicht nur die historische Verbindung zwischen Paris und der Olympischen Bewegung erzählt, sondern auch die bevorstehenden Spiele dieses Sommers feierlich zelebriert. Auf einer grossen Leinwand im Aussenbereich des Museums werden zudem die Olympischen Spiele live übertragen. Parallel dazu erstreckt sich über drei Wochenenden hinweg ein umfangreiches Programm mit zahlreichen Aktivitäten wie Sportvorführungen und Workshops. Diese bieten eine perfekte Gelegenheit, die Spiele hautnah mitzuerleben und sich aktiv einzubringen.<br><br></div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Eine Jahrhundert-Verbindung zum Sport",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Lausanne und der Sport teilen eine lange Geschichte der Verbundenheit, die fast 100 Jahre zurückreicht. Im Jahr 1915 verlegte das Internationale Olympische Komitee (IOK) unter der Führung seines Gründers und damaligen Präsidenten Pierre de Coubertin seinen Sitz nach Lausanne. 40 Jahre später wurde das erste Olympische Haus in Vidy eröffnet, und 1994 wurde Lausanne offiziell zur Olympiahauptstadt ernannt. Diese besondere Auszeichnung hat dazu geführt, dass etwa 60 internationale Sportverbände und -organisationen, darunter das Haus des internationalen Sports, Lausanne als ihren Hauptsitz gewählt haben. Am Ufer des Genfersees, inmitten einer atemberaubenden Umgebung, setzen sie sich gemeinsam für die Förderung der wertvollen Prinzipien des Olympismus und des Sports ein. Seitdem ist der Geist des Sports tief in Lausanne verwurzelt und belebt die Stadt unaufhörlich. Neben idealen Bedingungen für Profisportlerinnen und -sportler geniessen auch zahlreiche Hobbysporttreibende die vielfältigen Möglichkeiten der Stadt, sich sportlich zu betätigen. Mit einem umfangreichen Netzwerk aus Fahrradwegen, Joggingrouten und Badegelegenheiten lädt Lausanne alle dazu ein, gemeinsam sportlich aktiv zu werden.<br><br></div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 25915,
-                "name": "Lausanne et le sport : ça match !",
-                "public_name": {
-                  "fr": "Lausanne et le sport : ça match !"
-                },
-                "cloudinary_id": "f86865a3bfa147c0",
-                "mime_type": "image/jpeg",
-                "copyright": "© Voile et paddle sur le lac Leman",
-                "metadata": {
-                  "width": 1600,
-                  "height": 1067,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "attr": "width=\"1600\" height=\"1067\"",
-                  "tags": null,
-                  "description": null,
-                  "file_name_from_url": "f86865a3bfa147c0.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Paddle-lac.jpg"
-                }
-              },
-              "size": "parallax",
-              "focus": "auto"
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Erfahren Sie <a href=\"https://www.lausanne-tourisme.ch/de/lausanne-eine-spielwiese-unter-freiem-himmel/\">hier</a> mehr über das Sportangebot der Stadt.<br><br>Weitere Informationen finden Sie unter: <a href=\"https://lausanne-tourisme.ch/de/\">https://www.lausanne-tourisme.ch.</a><br><br>Pressebilder finden Sie <a href=\"https://lausanne-tourisme.syselshare.ch/#share/QPx6NaZBOJq9MQf8n8VzzGMHL4Dv2W\">hier</a>.&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            }
-          ],
-          "type": "press_release",
-          "medias": [
-            {
-              "cloudinary_id": "ZPX1u9UgBW1cT7jYO6z4qcRBHf1h7twX7mkn4H7H",
-              "copyright": "© Switzerland Tourism, Lorenz Richard",
-              "public_name": "Olympic Museum and Skate"
-            }
-          ],
-          "published_at": "1713909600",
-          "seo": {
-            "description": "In diesem Jahr zelebriert Lausanne stolze drei Jahrzehnte als Olympische Hauptstadt mit einem grossartigen Angebot an kulturellen und sportlichen Ereignissen für jeden Geschmack.",
-            "noindex": false,
-            "slug": "lausanne-als-olympische-hauptstadt"
-          },
-          "tags": [
-            {
-              "name": "Sport",
-              "public_name": "Sport"
-            }
-          ]
-        },
-        {
-          "id": "23",
-          "author": "Lausanne Tourisme",
-          "name": "Von Kunst bis Sport: Lausannes Kulturhighlights 2024 bieten eine grosse Vielfalt",
-          "lead": "Von Kunst bis Sport: Lausannes Kulturhighlights 2024 bieten eine grosse Vielfalt",
-          "summary": "Zürich, 10. Januar 2024 – Lausanne setzt auch 2024 auf ein vielseitiges kulturelles\r\nAngebot, welches sich durch Kunst, Geschichte und Sport auszeichnet. Die Stadt feiert\r\nunter anderem das 100-jährige Jubiläum des Surrealismus in der Plateforme 10 und\r\nwürdigt das 40-jährige Bestehen der Fondation de l'Hermitage mit exklusiven\r\nAusstellungen. Zudem präsentiert sie einzigartige künstlerische Werke in der Collection\r\nde l'Art Brut und verdeutlicht die kulturelle Bedeutung des Marathons und\r\nLangstreckenlaufs im Olympischen Museum. Neben den bereits bekannten\r\nSehenswürdigkeiten der Stadt machen die zahlreichen kulturellen Highlights einen\r\nStädtetrip noch lohnender.",
-          "highlight": false,
-          "link": null,
-          "content": [
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Plateforme 10: Ein Jahrhundert Surrealismus (März - August 2024)",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 20858,
-                "name": "Bâtiment mudac / Photo Elysée, Plateforme 10, Lausanne",
-                "public_name": {
-                  "fr": "Bâtiment mudac / Photo Elysée, Plateforme 10, Lausanne",
-                  "es": null
-                },
-                "cloudinary_id": "psHQ9iMTUEqpcXsg2wBCrTWLiewBpbszzR2hK3xq",
-                "mime_type": "image/jpeg",
-                "copyright": "© Matthieu Gafsou",
-                "metadata": {
-                  "attr": "width=\"2500\" height=\"2000\"",
-                  "tags": null,
-                  "width": 2500,
-                  "height": 2000,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "description": null
-                }
-              },
-              "size": "large",
-              "focus": "auto"
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;In diesem Jahr feiert <a href=\"https://plateforme10.ch/de/\">Plateforme 10</a> das 100-jährige Jubiläum des Surrealismus-Manifests mit einem Programm von Ausstellungen in verschiedenen künstlerischen Disziplinen innerhalb des Kunstviertels. Hierzu zählen Bereiche wie Bildende Kunst, Fotografie und Design: <br>• «<a href=\"https://plateforme10.ch/de/?exhibition_external=surrealismus-le-grand-jeu\">Le Grand Jeu</a>» im MCBA: Eine Erkundung der Faszination der Surrealisten für Spiele (wie Tarot, Würfel und Glücksspiele), die als Mittel zur Befreiung von Gesellschaft und Kunst betrachtet werden.<br><br>• «<a href=\"https://elysee.ch/de/\">Libérer la photographie</a>» im Photo Elysée: Eine Hommage an Man Ray, der mit den Dadaisten und Surrealisten in Verbindung stand und deren bahnbrechende Beiträge zur Fotografie in den Fokus nimmt.<br><br>• «<a href=\"https://designmuseum.org/exhibitions/objects-of-desire-surrealism-and-design-1924-today\">Objets de Désir, Surrealismus und Design (von 1924 bis heute)</a>» und «L'art verrier surréaliste» im mudac: Diese Ausstellungen tauchen in die Welt der surrealen Kunst und Design ein, indem sie eine Mischung aus historischen und zeitgenössischen Werken präsentieren.&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Fondation de l'Hermitage",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 23887,
-                "name": "Hermitage entrée",
-                "public_name": {
-                  "de": "Hermitage entrée",
-                  "es": null
-                },
-                "cloudinary_id": "oAQXmSh0CKkGv7KqEMi7zJV1T6I2yqTn21gLTcSi",
-                "mime_type": "image/jpeg",
-                "copyright": "© Lausanne Tourisme/ Laurent Kaczor",
-                "metadata": {
-                  "width": 5309,
-                  "height": 3543,
-                  "mimeType": "image/jpeg",
-                  "copyright": "Yannic Bartolozzi",
-                  "attr": "width=\"5309\" height=\"3543\"",
-                  "tags": "Hermitage; Lausanne; Musée",
-                  "description": null
-                }
-              },
-              "size": "large",
-              "focus": "auto"
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;2024 gedenkt die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Fondation de l'Hermitage</a> ihrem 40. Jubiläum mit einer beeindruckenden Auswahl an Ausstellungen und Kooperationen. Zwei Höhepunkte sind:&nbsp;<br>• Die grosse Retrospektive zu Ehren von Nicolas de Staël (1914-1955), einer einflussreichen Figur in der Nachkriegskunstszene. Diese Ausstellung, in Zusammenarbeit mit dem Musée d'Art Moderne de Paris / Paris Musées organisiert, präsentiert rund 100 Werke, darunter Gemälde, Zeichnungen und Skizzenbücher aus verschiedenen öffentlichen und privaten Sammlungen in der Schweiz, Europa und international. Die Retrospektive bietet eine frische Perspektive auf das Werk von de Staël, enthüllt weniger bekannte Aspekte seiner Karriere und zeigt bedeutende Werke wie «Parc des Princes» (1952) sowie andere selten oder noch nie zuvor ausgestellte Arbeiten.&nbsp;<br><br>• Die Präsentation der Sammlung des Museums Langmatt. Diese beeindruckende Sammlung, zusammengestellt aus impressionistischen Werken, vorwiegend aus der Periode zwischen 1908 und 1919 und üblicherweise in der Villa Langmatt beheimatet, erfährt erstmalig eine Präsentation ausserhalb ihres gewohnten Standorts in der Hermitage&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Collection de l'Art Brut: Magali Herrera Ausstellung (8. März - 1. September 2024)",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;Die<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/collection-de-lart-brut/\"> Collection de l'Art Brut</a> widmet eine umfassende Retrospektive dem Schaffen der uruguayischen Künstlerin Magalí Herrera (1914 – 1992). Die Ausstellung mit Start am 8. März präsentiert: <br>• Gesamtwerke von <a href=\"https://www.artbrut.ch/en_GB/exhibition/magali-herrera-une-etincelle-de-lumiere-dans-ce-monde\">Magalí Herrera</a>: Die Sammlung umfasst sämtliche Werke von Herrera, die ihre gesamte Schaffensperiode abdecken und Einblicke in ihre künstlerische Entwicklung bieten.&nbsp;<br><br>• Persönliche Archive: persönliche Archive der Autorin und ihre intensive Korrespondenz mit Jean Dubuffet, wodurch ihr bedeutender Beitrag zur Art BrutBewegung hervorgehoben wird.&nbsp;<br><br>• Einzigartiger künstlerischer Werdegang: Herreras Weg als Künstlerin zeichnet sich durch ihre autodidaktische Herangehensweise an verschiedene Kunstformen aus. Ihre Malerei, die um 1952 begann, entwickelte sich in den 1960er Jahren zu einer engagierten Praxis.&nbsp;<br><br>• Kosmogonie von Herreras Vorstellungskraft: Die Ausstellung zeigt ihre Tintenkompositionen auf verschiedenen farbigen Papieren und enthüllt utopische Universen, die durch akribische und subtile Techniken geschaffen wurden.&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Das Olympische Museum",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 20726,
-                "name": "Free to run",
-                "public_name": {
-                  "fr": "Free to run",
-                  "es": null
-                },
-                "cloudinary_id": "hYWbyRxcbqhWSh5wQteQOKlnhyCG1Dq28XJdlJWx",
-                "mime_type": "image/jpeg",
-                "copyright": "© CIO / Catherine Leutenegger",
-                "metadata": {
-                  "attr": "width=\"8256\" height=\"5504\"",
-                  "tags": null,
-                  "width": 8256,
-                  "height": 5504,
-                  "mimeType": "image/jpeg",
-                  "copyright": "Catherine Leutenegger Photography",
-                  "description": null
-                }
-              },
-              "size": "large",
-              "focus": "auto"
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;Die Ausstellung «<a href=\"https://olympics.com/olympisches-museum/besuchen/austellung/vergangene-sonderausstellungen/free-to-run\">Free to Run: On the Road to the Paris 2024 Marathon</a>» läuft bis zum 3. März 2024 im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Olympischen Museum</a>. Diese multimediale Erfahrung taucht in die reiche Geschichte und kulturelle Bedeutung des Marathons und des Langstreckenlaufs ein. Dies erstreckt sich vom Debüt des Marathons bei den Olympischen Spielen 1896 in Athen bis zum bevorstehenden Massenbeteiligungs-Marathon von Paris 2024 und betont den Schnittpunkt von Laufen mit persönlichen und gesellschaftlichen Freiheiten. Kuratiert von Pierre Morath, einem Schweizer Athleten, Sporthistoriker und Dokumentarfilmer, bekannt für seinen Film von 2016 «Free to Run», untersucht die Ausstellung die Entwicklung des Laufens von einem Nischenzeitvertreib zu einer globalen Bewegung. Die Ausstellung ist durch eine blaue Linie geprägt, die an die ikonischen Markierungen der Marathonroute erinnert und die Besucher durch verschiedene thematische Abschnitte führt, darunter Born to Run?, Trailblazers, Revolution, Records und Running for All.&nbsp;<br><br>Diese Ausstellung feiert nicht nur die körperliche und mentale Stärke, die im Marathonlauf innewohnt, sondern betont auch seine Rolle bei der Förderung persönlicher Freiheit und gemeinschaftlichen Geistes, als Vorbote des Paris 2024 Marathon.&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>&nbsp;Weitere Informationen finden Sie unter: <a href=\"https://www.lausanne-tourisme.ch/de/\">https://www.lausanne-tourisme.ch. </a><br><br>Pressebilder finden Sie <a href=\"https://lausanne-tourisme.syselshare.ch/#dl/iMjHOIszCZcaz0E88Wiz3wXoVKRhjv\">hier</a>&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            }
-          ],
-          "type": "press_release",
-          "medias": [
-            {
-              "cloudinary_id": "oAQXmSh0CKkGv7KqEMi7zJV1T6I2yqTn21gLTcSi",
-              "copyright": "© Lausanne Tourisme/ Laurent Kaczor",
-              "public_name": "Hermitage entrée"
-            }
-          ],
-          "published_at": "1704841200",
-          "seo": {
-            "description": "Von Kunst bis Sport: Lausannes Kulturhighlights 2024 bieten eine grosse Vielfalt",
-            "noindex": false,
-            "slug": "von-kunst-bis-sport-lausannes-kulturhighlights-2024-bieten-eine-grosse-vielfalt"
-          },
-          "tags": [
-            {
-              "name": "Culture",
-              "public_name": "Kultur"
-            }
-          ]
-        },
-        {
-          "id": "321",
+          "id": "320",
+          "languages": ["en", "de"],
           "author": "Lausanner",
           "name": "750 Jahre Kathedrale von Lausanne: Wo Geschichte auf Innovation trifft",
-          "lead": "Die Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz.",
-          "summary": "Die Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz. Im Laufe des Jahres stehen deshalb besondere Höhepunkte an: Am 28. Februar wird die neue Innenbeleuchtung eingeweiht, welche die Architektur der Kathedrale eindrucksvoll in Szene setzt.",
-          "highlight": false,
+          "type": "press_release",
+          "lead": "ie Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz.",
+          "summary": "<p style=\"text-align: left;\"><span><strong>Die Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz. Im Laufe des Jahres stehen deshalb besondere Höhepunkte an: Am 28. Februar wird die neue Innenbeleuchtung eingeweiht, welche die Architektur der Kathedrale eindrucksvoll in Szene setzt. Am 20. Oktober findet dann die offizielle Jubiläumszeremonie zur Weihe der Kathedrale statt. Auch das Team der Nachtwache wird mit seiner nächtlichen Tradition weiterhin über die Stadt wachen und so das historische Erbe Lausannes lebendig halten.</strong></span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>",
+          "highlight": true,
+          "published_at": "1739314800",
           "link": null,
           "content": [
             {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div><strong>Am 20. Oktober findet dann die offizielle Jubiläumszeremonie zur Weihe der Kathedrale statt. Auch das Team der Nachtwache wird mit seiner nächtlichen Tradition weiterhin über die Stadt wachen und so das historische Erbe Lausannes lebendig halten.</strong></div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 27626,
-                "name": "Night Watchwoman Cassandre Berdoz",
-                "public_name": {
-                  "fr": "Night Watchwoman Cassandre Berdoz",
-                  "es": null
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 27613,
+                  "name": "Cathedral fresco",
+                  "public_name": {
+                    "fr": "Cathedral fresco",
+                    "es": null
+                  },
+                  "cloudinary_id": "AYd9oPDdRXH5kUPWpPFkSyAqPFXGH1OTBt9R8bjR",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© P.Waterton.",
+                  "metadata": {
+                    "width": 7360,
+                    "height": 4912,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"7360\" height=\"4912\"",
+                    "tags": "Monument; Lausanne",
+                    "description": null
+                  }
                 },
-                "cloudinary_id": "n9Dao2dKddwZgdHFrFBk0LjeOw1eTsSoYCs3fuPg",
-                "mime_type": "image/jpeg",
-                "copyright": "© Noura Gauper",
-                "metadata": {
-                  "width": 3500,
-                  "height": 2335,
-                  "mimeType": "image/jpeg",
-                  "copyright": null,
-                  "attr": "width=\"3500\" height=\"2335\"",
-                  "tags": "Culture; Histoire; Cathédrale; Lausanne",
-                  "description": null
-                }
-              },
-              "size": "medium",
-              "focus": "auto"
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "750 Jahre Geschichte – Ein Wahrzeichen der Schweiz",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Im Herzen der Cité erhebt sich die Lausanner Kathedrale majestätisch über die Stadt. Sie wurde 1275 von Papst Gregor X. geweiht und ist das bedeutendste Bauwerk der frühgotischen Architektur in der Schweiz. Besonders beeindruckend sind die meisterhafte Steinmetzarbeit, die weltweit einzigartige Fisk-Orgel sowie die kunstvollen Buntglasfenster. Die Rosette zählt zu den Meisterwerken der europäischen Kirchenkunst: Ihre Scheiben veranschaulichen die mittelalterliche Weltsicht, in der Gott als Schöpfer im Zentrum stand.<br><br></div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Die Nachtwache von Lausanne – eine 600 Jahre alte Tradition",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "<div>Eine der faszinierendsten Traditionen Lausannes wird auch heute noch gepflegt: Seit 1405 ruft jede Nacht von 22:00 Uhr bis 2:00 Uhr ein Nachtwächter vom Glockenturm aus die Stunde. Alexandre Schmid, der seit dem 1. Januar 2024 das Amt des Nachtwächters innehält, setzt diese 600 Jahre alte Praxis gemeinsam mit einem sechsköpfigen Team fort. In einer Zeit, in der traditionelle Berufe zunehmend rar werden, zählt das Team zu den letzten Nachtwächtern Europas.&nbsp;<br><br></div><div>Der leidenschaftliche Historiker Alexandre Schmid liebt die friedliche Ruhe der Nacht. «Die Tradition der Nachtwache fasziniert viele Menschen, sogar meine Freunde! Ich hätte nie gedacht, dass meine Ernennung so viel Begeisterung auslöst», sagt Schmid. «Die Nachtwache ist eine stille Präsenz, eine zeitlose Figur. Für diesen Job braucht es kein besonderes Talent – nur eine tiefe Liebe zu Lausanne.» Seit 2021 wird das Team zudem von Cassandre Berdoz verstärkt, die als erste Nachtwächterin in der Geschichte Lausannes Teil dieser besonderen Tradition ist. Wer die Nachtwachenden bei ihrer Arbeit beobachten möchte, kann sie ab 22 Uhr im Glockenturm besuchen. Reservierungen sind täglich ab 22:15 Uhr telefonisch unter +41 21 312 74 91 möglich&nbsp;</div>",
-                "it": "",
-                "es": ""
-              }
-            },
-            {
-              "type": "image",
-              "value": {
-                "id": 27627,
-                "name": "Lausanne",
-                "public_name": {
-                  "fr": "Lausanne",
-                  "es": null
+                {
+                  "id": 27614,
+                  "name": "General view",
+                  "public_name": {
+                    "fr": "General view",
+                    "es": null
+                  },
+                  "cloudinary_id": "ZQKJRkGZKinthDatv0tDe1gr8OTtyU0GKJi8HUhT",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© REGIS COLOMBO",
+                  "metadata": {
+                    "width": 5616,
+                    "height": 3741,
+                    "mimeType": "image/jpeg",
+                    "copyright": "REGIS COLOMBO/diapo.ch",
+                    "attr": "width=\"5616\" height=\"3741\"",
+                    "tags": "Paysage, Lac, Cité; Cathédrale",
+                    "description": null
+                  }
                 },
-                "cloudinary_id": "WtpZTtkkyAHV0JUvXA6Xo69NxuckAelckGbEc9T7",
-                "mime_type": "image/jpeg",
-                "copyright": "© REGIS COLOMBO",
-                "metadata": {
-                  "width": 4092,
-                  "height": 2714,
-                  "mimeType": "image/jpeg",
-                  "copyright": "REGIS COLOMBO/diapo.ch",
-                  "attr": "width=\"4092\" height=\"2714\"",
-                  "tags": "Cathédrale; Hiver; Lac; Montagne; Paysage",
-                  "description": null
+                {
+                  "id": 27615,
+                  "name": "Night Watchman from behind",
+                  "public_name": {
+                    "fr": "Night Watchman from behind",
+                    "es": null
+                  },
+                  "cloudinary_id": "e1MjGZcD0M0RPG5IzHwtLQI74qJvCXmBoPyrkUpW",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Vincent Mivelaz.",
+                  "metadata": {
+                    "width": 8368,
+                    "height": 5584,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"8368\" height=\"5584\"",
+                    "tags": "Lausanne, cathédrale, tradition, guet, beffroi",
+                    "description": null
+                  }
                 }
-              },
-              "size": "medium",
-              "focus": "auto"
-            },
-            {
-              "type": "heading",
-              "tag": "h2",
-              "value": {
-                "fr": "",
-                "en": "",
-                "de": "Lichtkunst trifft auf Nachhaltigkeit",
-                "it": "",
-                "es": ""
-              }
+              ]
             },
             {
               "type": "paragraph",
               "value": {
                 "fr": "",
-                "en": "",
-                "de": "<div>Die Feierlichkeiten rund um das beeindruckende Bauwerk beginnen am 28. Februar 2025 mit der zeremoniellen Einweihung des innovativen Innenbeleuchtungssystems. Im Laufe des Jahres wird zudem das Konzept für die Aussenbeleuchtung vorgestellt. Das moderne Design der französischen Firma L'Acte Lumière lässt die Kathedrale in wechselnden Farbtönen erstrahlen, die sich im Tagesverlauf ändern. Gleichzeitig wird die Lichtverschmutzung verringert. Die neuen Lichtinstallationen heben nicht nur die historische Bedeutung der Kathedrale hervor, sondern berücksichtigen so auch die modernen Prinzipien der Nachhaltigkeit.</div>",
-                "it": "",
-                "es": ""
+                "en": "<div>● Lausanne Cathedral’s anniversary ceremony will take place on 20th October 2025<br>● New sustainable, adaptive lighting installation highlights the Cathedral’s architectural splendour while minimising light pollution&nbsp;<br>● A new nightwatchman (and the city’s first ever watchwoman) have joined the city’s traditional night watch, who have kept watch over Lausanne from the Cathedral for over 600 years&nbsp;</div>",
+                "de": "<p style=\"text-align: left;\"><span>Im Herzen der Cité erhebt sich die Lausanner Kathedrale majestätisch über die Stadt. Sie wurde 1275 von Papst Gregor X. geweiht und ist das bedeutendste Bauwerk der frühgotischen Architektur in der Schweiz. Besonders beeindruckend sind die meisterhafte Steinmetzarbeit, die weltweit einzigartige Fisk-Orgel sowie die kunstvollen Buntglasfenster. Die Rosette zählt zu den Meisterwerken der europäischen Kirchenkunst: Ihre Scheiben veranschaulichen die mittelalterliche Weltsicht, in der Gott als Schöpfer im Zentrum stand.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>"
               }
             },
             {
@@ -647,58 +93,86 @@
               "value": {
                 "fr": "",
                 "en": "",
-                "de": "Weihejubiläum der Kathedrale",
-                "it": "",
-                "es": ""
+                "de": "Die Nachtwache von Lausanne – eine 600 Jahre alte Tradition "
               }
             },
             {
               "type": "paragraph",
               "value": {
                 "fr": "",
-                "en": "",
-                "de": "<div>Am 20. Oktober 2025 wird die Kathedrale von Lausanne schliesslich ihr Weihejubiläum mit einer besonderen Zeremonie feiern. Neben einem festlichen Gottesdienst wird es auch spezielle Ausstellungen geben sowie die Möglichkeit, mehr über die spannende Geschichte des beeindruckenden Bauwerks zu erfahren. Die Feierlichkeiten bieten eine besondere Gelegenheit, die Kathedrale von einer ganz neuen Seite kennenzulernen und gemeinsam auf ihre lange Geschichte zurückzublicken.</div>",
-                "it": "",
-                "es": ""
+                "en": "<div>&nbsp;<strong>Lausanne, Switzerland </strong>– In 2025, the iconic <a href=\"https://www.cathedrale-lausanne.ch/accueil/\">Lausanne Cathedral</a> will mark its 750th anniversary with a series of celebratory events, inviting locals and visitors to rediscover this architectural marvel. The celebrations will feature the unveiling of cutting-edge lighting installations and pay homage to the cathedral’s historic traditions, ensuring this milestone is remembered for generations to come.&nbsp;</div>",
+                "de": "<p style=\"text-align: left;\"><span>Eine der faszinierendsten Traditionen Lausannes wird auch heute noch gepflegt: Seit 1405 ruft jede Nacht von 22:00 Uhr bis 2:00 Uhr ein Nachtwächter vom Glockenturm aus die Stunde. Alexandre Schmid, der seit dem 1. Januar 2024 das Amt des Nachtwächters innehält, setzt diese 600 Jahre alte Praxis gemeinsam mit einem sechsköpfigen Team fort. In einer Zeit, in der traditionelle Berufe zunehmend rar werden, zählt das Team zu den letzten Nachtwächtern Europas.&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Der leidenschaftliche Historiker Alexandre Schmid liebt die friedliche Ruhe der Nacht. «Die Tradition der Nachtwache fasziniert viele Menschen, sogar meine Freunde! Ich hätte nie gedacht, dass meine Ernennung so viel Begeisterung auslöst», sagt Schmid. «Die Nachtwache ist eine stille Präsenz, eine zeitlose Figur. Für diesen Job braucht es kein besonderes Talent – nur eine tiefe Liebe zu Lausanne.» Seit 2021 wird das Team zudem von Cassandre Berdoz verstärkt, die als erste Nachtwächterin in der Geschichte Lausannes Teil dieser besonderen Tradition ist. Wer die Nachtwachenden bei ihrer Arbeit beobachten möchte, kann sie ab 22 Uhr im Glockenturm besuchen. Reservierungen sind täglich ab 22:15 Uhr telefonisch unter +41 21 312 74 91 möglich.&nbsp;&nbsp;</span></p>"
               }
             },
             {
-              "type": "image",
+              "type": "heading",
+              "tag": "h2",
               "value": {
-                "id": 27628,
-                "name": "Organ Cathedral",
-                "public_name": {
-                  "fr": "Organ Cathedral",
-                  "es": null
-                },
-                "cloudinary_id": "CedrPNSp0IALGUL4Fu8qKEkm00ZXgCgwdPjIPGA3",
-                "mime_type": "image/jpeg",
-                "copyright": "© Regis Colombo",
-                "metadata": {
-                  "width": 4096,
-                  "height": 6140,
-                  "mimeType": "image/jpeg",
-                  "copyright": "www.regiscolombo.com",
-                  "attr": "width=\"4096\" height=\"6140\"",
-                  "tags": "Cathédrale; Musique",
-                  "description": null
-                }
-              },
-              "size": "large",
-              "focus": "auto"
+                "fr": "",
+                "en": "Innovative Lighting Installations",
+                "de": "Lichtkunst trifft auf Nachhaltigkeit "
+              }
             },
             {
               "type": "paragraph",
               "value": {
                 "fr": "",
-                "en": "",
-                "de": "<div>Für weitere Informationen zu den Feierlichkeiten und dem Veranstaltungsprogramm besuchen Sie die offizielle <a href=\"https://www.cathedrale-lausanne.ch/accueil/\">Website</a> der Kathedrale von Lausanne.<br><br></div><div>Weitere Informationen zur Stadt Lausanne finden Sie unter: <a href=\"https://www.lausanne-tourisme.ch/de/\">https://www.lausanne-tourisme.ch.</a><br><br>Pressebilder finden Sie <a href=\"https://lausanne-tourisme.syselshare.ch/share/g1iGVToqvVzxAlXIPv35woa3mM1UqL\">hier</a>.</div>",
-                "it": "",
-                "es": ""
+                "en": "<div>&nbsp;As part of the celebrations, a new exterior lighting plan will be unveiled during the year. Created by the French firm L’Acte Lumière, this modern design highlights the cathedral’s façade with varying hues that shift with the time of day while minimising light pollution. These enhancements aim to both honor the cathedral’s historic significance and embrace contemporary sustainability practices&nbsp;</div>",
+                "de": "<p style=\"text-align: left;\"><span>Die Feierlichkeiten rund um das beeindruckende Bauwerk beginnen am 28. Februar 2025 mit der zeremoniellen Einweihung des innovativen Innenbeleuchtungssystems. Im Laufe des Jahres wird zudem das Konzept für die Aussenbeleuchtung vorgestellt. Das moderne Design&nbsp;der französischen Firma L'Acte Lumière lässt die Kathedrale in wechselnden Farbtönen erstrahlen, die sich im Tagesverlauf ändern. Gleichzeitig wird die Lichtverschmutzung verringert. Die neuen Lichtinstallationen heben nicht nur die historische Bedeutung der Kathedrale hervor, sondern berücksichtigen so auch die modernen Prinzipien der Nachhaltigkeit.&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Grand Events to Mark the Milestone",
+                "de": "Weihejubiläum der Kathedrale"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>&nbsp;The 750th anniversary celebrations are anchored by two major events. On <strong>28th February</strong>, the festivities will open with the inauguration of a new interior lighting system, designed to enhance the cathedral’s architectural beauty. On <strong>20th October</strong>, the cathedral will commemorate its consecration anniversary with a special ceremony. Both occasions promise to be unforgettable moments for locals and visitors alike.&nbsp;</div>",
+                "de": "<p style=\"text-align: left;\"><span>Am 20. Oktober 2025 wird die Kathedrale von Lausanne schliesslich ihr Weihejubiläum mit einer besonderen Zeremonie feiern. Neben einem festlichen Gottesdienst wird es auch spezielle Ausstellungen geben sowie die Möglichkeit, mehr über die spannende Geschichte des beeindruckenden Bauwerks zu erfahren. Die Feierlichkeiten bieten eine besondere Gelegenheit, die Kathedrale von einer ganz neuen Seite kennenzulernen und gemeinsam auf ihre lange Geschichte zurückzublicken.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Für weitere Informationen zu den Feierlichkeiten und dem Veranstaltungsprogramm besuchen Sie die offizielle </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://www.cathedrale-lausanne.ch/accueil/\" tt-mode=\"url\"><span><u>Website</u></span></a><span> der Kathedrale von Lausanne.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Weitere Informationen zur Stadt Lausanne finden Sie unter: </span><a target=\"_blank\" href=\"https://www.lausanne-tourisme.ch\" tt-mode=\"url\"><span><u>https://www.lausanne-tourisme.ch</u></span></a><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://www.lausanne-tourisme.ch/de/\" tt-mode=\"url\"><span><u>.</u></span></a><span style=\"color: rgb(0, 0, 255);\">&nbsp;</span><span>&nbsp;</span></p><p style=\"text-align: justify;\"><span>Pressebilder finden Sie </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW73604224 BCX0\" href=\"https://lausanne-tourisme.syselshare.ch/share/g1iGVToqvVzxAlXIPv35woa3mM1UqL\" tt-mode=\"url\"><span><u>hier</u></span></a><span>.&nbsp;</span></p><p style=\"text-align: justify;\"><span><strong>Medienkontakt Schweiz</strong>&nbsp;</span></p><p style=\"text-align: justify;\"><span>Natalie Zipsin, Tel: 076 289 26 64, E-Mail: </span><a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\"><span><u>natalie@wearepepper.ch</u></span></a><span>&nbsp;&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "A Tradition Continues with a New Night Watchman",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<div>&nbsp;</div>",
+                "en": "<div>A historic tradition dating back to 1405 is being upheld by Alexandre Schmid, the cathedral’s newest night watchman. Schmid calls the hour from the bell tower every night between 10 p.m. and 2 a.m., connecting Lausanne to its past while offering a living link to the city’s history. The city’s first female night watchman, Cassandre Berdoz, joined in 2021 at just 27 years old.<br><br>&nbsp;“The tradition of the watch fascinates many people, even my friends! I didn’t think that taking up my post would be met with such enthusiasm!” Alexandre Schmidt commented on his appointment. “The watch is a silent presence, a timeless figure. No particular talent is needed for this job - just a deep love for Lausanne.”&nbsp;<br><br>Tourists can join the night watchman or the night watchwoman in the 40m high belfry every night from 10pm onward - call +41 21 312 74 91 from 10:15pm to book your slot.&nbsp;</div>",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "A Historic Landmark",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<p style=\"text-align: left;\">Consecrated in 1275 by Pope Gregory X, Lausanne Cathedral has stood as a beacon of Gothic architecture and spiritual significance for 750 years. The largest early Gothic church in Switzerland, the cathedral is known for its intricate craftsmanship, stunning stained glass windows, and magnificent Fisk organ - the first American pipe organ installed in a European cathedral. This five-manual, one hundred-nine stop organ includes 7,313 pipes, and its case - the first one ever to be designed by famous car designer Giorgetto Giugiaro - is an unusual mix of Classical French, Romantic French, Symphonic French, and North German baroque styles. Over the centuries, the Cathedral has become a cherished symbol of Lausanne and a key destination for visitors from around the globe.<br><br>&nbsp;For more information on the celebrations and event schedule, please visit <a target=\"_blank\" href=\"https://www.cathedrale-lausanne.ch/accueil/\" tt-mode=\"url\">Lausanne Cathedral’s official website</a>.&nbsp;<br><br>-ENDS-<br><br>For more information on Lausanne please visit Lausanne Tourism’s website<br>Follow ‘Lausanne, Capitale Olympique’ on LinkedIn, Facebook and ‘The Lausanner’ on Instagram<br>Keep up to date with all the latest content on the blog The Lausanner<br>Images can be downloaded from here<br><br></p>",
+                "de": ""
               }
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "Qy1x31Eak9seo536TSDDjueqvdFvfZ3T2pgvYfcZ",
@@ -706,20 +180,559 @@
               "public_name": null
             }
           ],
-          "published_at": "1739919600",
           "seo": {
-            "description": "Die Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz.",
+            "description": "ie Kathedrale von Lausanne feiert 2025 ihr 750-jähriges Bestehen – ein bedeutendes Jubiläum für eines der beeindruckendsten gotischen Bauwerke der Schweiz.",
             "noindex": false,
             "slug": "750-jahre-kathedrale-von-lausanne-wo-geschichte-auf-innovation-trifft"
           },
           "tags": [
             {
-              "name": "Architecture",
+              "name": "lt-architecture",
               "public_name": "Architektur"
             },
             {
-              "name": "Histoire",
+              "name": "lt-fete-festival",
+              "public_name": "Party & Fest"
+            },
+            {
+              "name": "lt-histoire",
               "public_name": "Geschichte"
+            }
+          ]
+        },
+        {
+          "id": "335",
+          "languages": ["fr", "en", "de"],
+          "author": "The Lausanner",
+          "name": "Schweizer Art Brut: Von den Ursprüngen der Sammlung bis heute Die Collection de l’Art Brut feiert 50 Jahre mit zwei Ausstellungen in Lausanne",
+          "type": "press_release",
+          "lead": "Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten.",
+          "summary": "<p style=\"text-align: left;\">Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten.</p>",
+          "highlight": true,
+          "published_at": "1769468400",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 31657,
+                  "name": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                  "public_name": {
+                    "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "en": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "de": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "es": null
+                  },
+                  "cloudinary_id": "BEzQx4JSzMj6Ca2awA315eUBMNdbeP0Qk3laUru0",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Hans Krüsi",
+                  "metadata": {
+                    "width": 2126,
+                    "height": 1908,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"2126\" height=\"1908\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31658,
+                  "name": "Archives de la Collection de l’Art Brut",
+                  "public_name": {
+                    "fr": "Archives de la Collection de l’Art Brut",
+                    "en": "Archives de la Collection de l’Art Brut",
+                    "de": "Archives de la Collection de l’Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "FSimkHY50MMM6KmVNZH2IY511HRqYJ8yXb9DdvN8",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Caroline Smyrliadis",
+                  "metadata": {
+                    "width": 1772,
+                    "height": 1323,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1772\" height=\"1323\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31659,
+                  "name": "Collection de l'Art Brut",
+                  "public_name": {
+                    "fr": "Collection de l'Art Brut",
+                    "en": "Collection de l'Art Brut",
+                    "de": "Collection de l'Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Delphine Burtin",
+                  "metadata": {
+                    "width": 9504,
+                    "height": 6336,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"9504\" height=\"6336\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31660,
+                  "name": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                  "public_name": {
+                    "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "en": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "de": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "BZ7oWtq4IZ9xR1kELZHpcGV47HKSdfjeDsPdr24f",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Aloïse Corbaz",
+                  "metadata": {
+                    "width": 1317,
+                    "height": 2126,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1317\" height=\"2126\"",
+                    "tags": null,
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\">Fondé en 1976 pour accueillir la collection donnée par le peintre Jean Dubuffet (1901-1985), le musée fut la première institution publique au monde entièrement dédiée à l’étude, à la conservation et à la présentation de l’Art Brut. Aujourd’hui, il conserve plus de 70 000 œuvres – dessins, peintures, sculptures, photographies et textiles – réalisées par des artistes autodidactes évoluant en dehors des circuits artistiques traditionnels. </p><p style=\"text-align: left;\">Le terme « Art Brut » lui est venu en 1945 lors d’un voyage en Suisse, au cours duquel Jean Dubuffet visita des asiles, des hôpitaux psychiatriques et des prisons. Selon Dubuffet, l’Art Brut se caractérise par « des œuvres créées en dehors de l’influence de l’art traditionnel, faisant appel aux couches les plus profondes de l’être humain ». </p><p style=\"text-align: left;\">Dubuffet considérait la Suisse comme une sorte de « pierre de touche pour les anarchistes anticulturels » et estimait qu’il s’agissait du lieu le plus approprié pour sa collection. En 1971, il fit don de sa collection d’Art Brut à la Ville de Lausanne et, en 1976, la Collection de l’Art Brut fut fondée. </p><p style=\"text-align: left;\">Depuis lors, ce musée municipal n’a cessé de s’enrichir grâce à de nombreuses acquisitions et donations, réunissant un vaste ensemble d’œuvres comprenant dessins, peintures, sculptures, assemblages, photographies et œuvres textiles. </p><p style=\"text-align: left;\">Aujourd’hui, cette institution de renommée internationale est reconnue pour la richesse et la diversité de ses collections, ainsi que pour son importance historique unique. Elle demeure également le premier musée public au monde entièrement consacré à l’étude, à la conservation et à la présentation de l’Art Brut. </p><p style=\"text-align: left;\">En dehors de la Collection de l’Art Brut, celles et ceux qui souhaitent approfondir leur découverte de l’Art Brut sont invités à se rendre à La Ferme des Tilleuls à Renens, à 15 minutes en train de Lausanne. L’artiste autodidacte française Danielle Jacqui (née en 1934) y a légué une œuvre intitulée Colossal d’Art Brut ORGANuGAMME II, une impressionnante pièce en céramique de 14 mètres de haut composée de 4 000 éléments sculpturaux uniques, érigée en structure permanente sur le site en 2022. </p><p style=\"text-align: left;\">Du 12 février au 21 juin 2026, La Ferme des Tilleuls présentera également « Maisons-mères », une exposition invitant à un voyage à la découverte d’architectures alternatives, imaginées, construites et habitées par des individus guidés par leurs idéaux utopiques. </p>",
+                "en": "<p style=\"text-align: left;\"><span>Founded in 1976 to house the collection donated by painter <strong>Jean Dubuffet</strong> (1901–1985), the museum was the first public institution in the world dedicated entirely to the study, conservation and presentation of Art Brut. Today it is home to over 70,000 works, drawings, paintings, sculptures, photographs and textiles, created by self-taught artists working outside the traditional art world.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p><p style=\"text-align: left;\">The term “Art Brut” came to him in 1945 during a trip to Switzerland, where Jean Dubuffet visited asylums, psychiatric hospitals, and prisons. According to Dubuffet, Art Brut is characterised by “works created outside the influence of traditional art, while appealing to the deepest layers of the human being.” </p><p style=\"text-align: left;\">Dubuffet considered Switzerland something of a “touchstone for anti-cultural anarchists” and thought it was the most suitable location for his collection; in 1971, he donated his Art Brut collection to the City of Lausanne and in 1976, the Collection de l’Art Brut was founded.  </p><p style=\"text-align: left;\">Since then, this municipal museum has grown through numerous acquisitions and donations, bringing together a wide range of works, including drawings, paintings, sculptures, assemblages, photographs, and textile works.  </p><p style=\"text-align: left;\">Today, this internationally renowned institution is known for the richness and diversity of its collections as well as its unique historical significance. It was also the first public museum in the world dedicated entirely to the study, conservation, and presentation of Art Brut.  </p><p style=\"text-align: left;\">Outside of the Collection de l’Art Brut, those wanting to expand their Art Brut journey should pay a visit to La Ferme des Tilleuls in Renens, 15 minutes by train from Lausanne. The French self-taught artist Danielle Jacqui (1934) bequeathed a work of art to the art space named Colossal d’Art Brut ORGANuGAMME II, an impressive 14m-high ceramic piece made up of 4,000 unique sculptural elements that were erected into a permanent structure on the site in 2022. From 12th February to 21st June 2026 La Ferme des Tilleuls will also be showing “Maisons-mères”, an exhibition that takes viewers on a journey to discover alternative architectures, imagined, built, and inhabited by individuals guided by their utopian ideals. </p>",
+                "de": "<p style=\"text-align: left;\">Das Museum wurde 1976 gegründet, um die Sammlung des französischen Malers Jean Dubuffet (1901–1985) aufzunehmen. Es war weltweit die erste öffentliche Institution, die sich ausschliesslich der Erforschung, Bewahrung und Präsentation von Art Brut widmete. Heute beherbergt das Haus über 70'000 Werke – darunter Zeichnungen, Gemälde, Skulpturen, Fotografien und Textilarbeiten –, die von autodidaktischen Künstlerinnen und Künstlern geschaffen wurden, die ausserhalb des klassischen Kunstbetriebs arbeiten.</p><p style=\"text-align: left;\">Der Begriff «Art Brut» entstand 1945, als Jean Dubuffet auf einer Reise durch die Schweiz psychiatrische Kliniken, Heime und Gefängnisse besuchte. Für ihn bezeichnete Art Brut Werke, die unabhängig von kulturellen Normen entstehen und die tiefsten Schichten des Menschseins berühren.</p><p style=\"text-align: left;\">Für Dubuffet war die Schweiz der ideale Ort für seine Sammlung – ein «Bezugspunkt für antikulturelle Anarchistinnen und Anarchisten», wie er es ausdrückte. 1971 übergab er seine Werke der Stadt Lausanne, die daraufhin 1976 die Collection de l’Art Brut gründete.</p><p style=\"text-align: left;\">Seither ist das städtische Museum kontinuierlich gewachsen – durch Ankäufe ebenso wie durch bedeutende Schenkungen. Heute umfasst die Sammlung eine beeindruckende Bandbreite künstlerischer Ausdrucksformen: von Zeichnungen, Malerei und Skulpturen bis zu Assemblagen, Fotografien und Textilarbeiten.</p><p style=\"text-align: left;\">Die Collection de l’Art Brut geniesst heute internationale Anerkennung – sowohl für die Vielfalt ihrer Sammlung als auch für ihre historische Bedeutung als Pionierinstitution im Bereich der Art Brut.</p><p style=\"text-align: left;\">Wer Art Brut auch ausserhalb der Collection de l’Art Brut erleben möchte, findet in der Ferme des Tilleuls in Renens eine spannende Ergänzung. Der Ausstellungsort liegt nur 15 Zugminuten von Lausanne entfernt und beherbergt das monumentale Werk «ORGANuGAMME II» der französischen Autodidaktin Danielle Jacqui (Jahrgang 1934). Die 14 Meter hohe Keramikskulptur mit rund 4'000 einzeln gestalteten Elementen wurde 2022 dauerhaft auf dem Gelände installiert. Zwischen dem 12. Februar und dem 21. Juni 2026 zeigt die Ferme des Tilleuls zudem die Ausstellung «Maisons-mères», die sich alternativen Architekturformen widmet, welche von Einzelpersonen entworfen, gebaut und bewohnt wurden – inspiriert von persönlichen Utopien und einer starken gestalterischen Vision.</p>"
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 31661,
+                "name": "La Ferme des Tilleuls",
+                "public_name": {
+                  "fr": "La Ferme des Tilleuls",
+                  "en": "La Ferme des Tilleuls",
+                  "de": "La Ferme des Tilleuls",
+                  "es": null
+                },
+                "cloudinary_id": "4hkTwPdhMfJ9e3IpNVhBd6uqNtDvsbpGHMd93Qvm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Mario Del Curto",
+                "metadata": {
+                  "width": 5964,
+                  "height": 3981,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5964\" height=\"3981\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Célébrités influencées par l’Art Brut ",
+                "en": "Celebrities influenced by Art Brut ",
+                "de": "Art Brut als Inspirationsquelle"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\"><span>La passion brute du mouvement de l’Art Brut a inspiré de nombreuses figures majeures, non seulement dans les arts plastiques, mais aussi dans la musique et la mode. Voici quelques témoignages de personnalités marquées par l’influence du mouvement de Dubuffet sur leur travail artistique :&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>David Bowie</strong>&nbsp;<br>« La Suisse m’a également permis de découvrir l’Art Brut, qui a eu un impact très fort sur ma vie et ma créativité. Je me souviens avoir emmené Brian Eno au musée de Lausanne et y avoir passé des heures à admirer les œuvres, à réfléchir au processus créatif et aux limites qu’un artiste est prêt à franchir dans sa quête… »&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Thom Yorke</strong>&nbsp;<br>« J’attendais avec impatience de venir enfin ici. Cela a dépassé toutes mes attentes. C’est vraiment le meilleur musée que j’aie jamais visité. Merci. »&nbsp;<br><em>Livre d’or, 15.08.2006</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Christian Lacroix</strong>&nbsp;<br>« J’ai toujours été fasciné par l’Art Brut. Je me souviens d’une robe brodée par l’une de ces artistes solitaires, cachée sous son lit. Cela m’impressionne bien davantage que tout ce que l’on peut voir au Louvre. »&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left;\">The raw passion of the Art Brut movement has inspired many seminal figures, not only in art, but in music and fashion as well. Here are quotes from just a few figureheads who felt the impact of Dubuffet’s movement on their artistic works:&nbsp;</p><p style=\"text-align: left;\"><strong>David Bowie</strong>&nbsp;<br>“Switzerland also allowed me to discover Art Brut, which had a very strong impact on my life and my creativity. I remember bringing Brian Eno to the Lausanne museum and spending hours there admiring the works, reflecting on the creative process and on the boundaries an artist is willing to cross in their quest…”&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Thom Yorke</strong>&nbsp;<br>“I was so looking forward to finally coming here. This has surpassed my expectations. It really is the best museum I have ever visited. Thank you.”&nbsp;<br><em>Guestbook, 15.08.2006</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong>&nbsp;<br>“I have always been fascinated by Art Brut. I remember a dress embroidered by one of the solitary artists, hidden under her bed. That impresses me far more than anything in the Louvre.”&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</p>",
+                "de": "<p style=\"text-align: left;\">Die kraftvolle Direktheit der Art Brut hat Künstlerinnen und Künstler weit über die bildende Kunst hinaus beeinflusst – von Musik über Mode bis zur Popkultur. Wie tief Dubuffets Werk nachwirkt, zeigen Aussagen prominenter Wegbegleiterinnen und Bewunderer.</p><p style=\"text-align: left;\"><strong>David Bowie</strong></p><p style=\"text-align: left;\">«Die Schweiz hat mir auch die Art Brut nähergebracht – sie hatte grossen Einfluss auf mein Leben und meine Kreativität. Ich erinnere mich, wie ich Brian Eno ins Museum in Lausanne mitnahm. Wir verbrachten Stunden damit, die Werke zu betrachten und über den kreativen Prozess nachzudenken – und darüber, welche Grenzen ein Kunstschaffender bereit ist zu überschreiten.» (L’Hebdo, 06.06.2002)</p><p style=\"text-align: left;\"><strong>Tom Yorke</strong></p><p style=\"text-align: left;\">«Ich habe mich sehr auf diesen Besuch gefreut – und er hat meine Erwartungen übertroffen. Es ist wirklich das beste Museum, das ich je besucht habe. Danke.» (Gästebuch, 15.08.2006)</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong></p><p style=\"text-align: left;\">«Ich war immer fasziniert von Art Brut. Ich erinnere mich an ein Kleid, das eine einsame Künstlerin bestickt und unter ihrem Bett versteckt hatte. Das beeindruckt mich viel mehr als alles im Louvre.» (Le Temps, 12.07.2008)</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "EXPOSITIONS ANNIVERSAIRE ",
+                "en": "ANNIVERSARY EXHIBITIONS ",
+                "de": "Jubiläumsausstellungen"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\"><span><strong>Février – octobre 2026</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Art Brut en Suisse : des origines de la collection à aujourd’hui</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Sarah Lombardi</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>Cette exposition présentera un large éventail d’œuvres –&nbsp;dessins, peintures, sculptures, broderies et écrits –&nbsp;exclusivement issues de la collection du musée lausannois. Certaines appartiennent au noyau historique de la collection constituée par Jean Dubuffet, tandis que d’autres sont des œuvres contemporaines intégrées entre 1976 et aujourd’hui.&nbsp;</span></p><p style=\"text-align: left;\"><span>Toutes les œuvres auront été réalisées par des auteurs et autrices d’Art Brut suisses ou par des artistes ayant créé en Suisse.&nbsp;</span></p><p style=\"text-align: left;\"><span>Avec la Suisse comme fil conducteur, l’exposition met en lumière les liens forts et durables entre Jean Dubuffet et le pays, qui l’ont conduit à faire don de sa collection à Lausanne afin d’en garantir la conservation et l’accessibilité au public.&nbsp;</span></p><p style=\"text-align: left;\"><span>Des documents d’archives inédits et des extraits de films documentaires, notamment produits par la Radio Télévision Suisse (RTS), viendront compléter le parcours.&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Novembre 2026 – avril 2027</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>L’univers d’Armand Schulthess</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Hans-Ulrich Schlumpf, cinéaste</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>La seconde exposition anniversaire sera consacrée au créateur d’Art Brut suisse alémanique <strong>Armand Schulthess</strong> (1901-1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>Ancien employé de l’administration fédérale suisse à Berne, Schulthess a créé au Tessin un vaste environnement artistique aujourd’hui entièrement disparu. Cette œuvre in situ se composait d’innombrables objets et installations réalisés à partir de plaques métalliques de récupération, gravées d’inscriptions contenant un savoir encyclopédique, notamment dans les domaines de la science et de la philosophie.&nbsp;</span></p><p style=\"text-align: left;\"><span>L’exposition présentera plus de 300 pièces conservées et acquises par le musée en 2024, enrichissant de manière significative ses collections existantes.&nbsp;</span></p><p style=\"text-align: left;\"><span>Ces objets seront exposés aux côtés de photographies de grand format réalisées par Hans-Ulrich Schlumpf, qui a documenté et préservé cette œuvre monumentale avant sa destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>INFORMATIONS PRATIQUES</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span>- Entrée : 12 CHF &nbsp;<br>-&nbsp; Entrée gratuite durant le week-end d’ouverture du 50ᵉ anniversaire de la Collection de l’Art Brut : <strong>du 27 au 29 février 2026</strong>&nbsp;<br>- Ouvert du mardi au dimanche, de 11h à 18h. Également ouvert le lundi (11h–18h) en juillet et août&nbsp;<br>-&nbsp; Entrée gratuite le premier samedi de chaque mois&nbsp;<br>- À 25 minutes à pied de la gare de Lausanne. Arrêts de bus les plus proches : <strong>Jomini</strong> ou <strong>Beaulieu</strong>&nbsp;<br>-&nbsp; Adresse : <strong>Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne</strong>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left;\"><span><strong>February - October 2026:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Swiss Art Brut</em>&nbsp;<br><em>From the Origins of the Collection to the Present </em>&nbsp;<br>Curated by Sarah Lombardi&nbsp;</span></p><p style=\"text-align: left;\"><span>This exhibition will present a wide range of works including drawings, paintings, sculptures, embroidery and writing, exclusively from the Lausanne museum’s collection. Some belong to the historical core collection of Jean Dubuffet, while others are contemporary, added between 1976 and now.&nbsp;</span></p><p style=\"text-align: left;\"><span>All works will have been created by Swiss Art Brut authors or artists who created in Switzerland.&nbsp;</span></p><p style=\"text-align: left;\"><span>With Switzerland as its central theme, the exhibition highlights the strong and lasting ties between Jean Dubuffet and the country, which led him to donate his collection to Lausanne to ensure its preservation and public accessibility.&nbsp;</span></p><p style=\"text-align: left;\"><span>Unpublished archival materials and excerpts from documentaries, including those produced by Radio Télévision Suisse (RTS), will complement the exhibition.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>November 2026 - April 2027:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>The World of Armand Schulthess</em>&nbsp;<br>Curated by Hans-Ulrich Schlumpf, film maker&nbsp;</span></p><p style=\"text-align: left;\"><span>The second anniversary exhibition will focus on the Swiss-German Art Brut creator Armand Schulthess (1901–1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>A former Swiss federal employee in Bern, Schulthess created a vast artistic environment in Ticino, now completely gone. This in-situ work consisted of countless objects and installations made from reclaimed metal plates, engraved with inscriptions containing encyclopedic knowledge, especially related to science and philosophy.&nbsp;</span></p><p style=\"text-align: left;\"><span>The exhibition will present over 300 pieces that were preserved and acquired by the museum in 2024, significantly enriching its existing holdings.&nbsp;</span></p><p style=\"text-align: left;\"><span>These objects will be shown alongside large-format photographs by Hans-Ulrich Schlumpf, who documented and preserved this monumental work before its destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>PRACTICAL INFORMATION</strong></span><span style=\"color: rgb(0, 0, 0);\">&nbsp;</span></p><ul><li><p style=\"text-align: left;\"><span>Entry costs 12 CHF (approx £11)&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry during the opening weekend of the 50th anniversary of the <em>Collection de l'Art Brut:</em> 27th-29th February 2026&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Open Tuesday to Sunday, 11am- 6pm. Also open Mondays (11am-6pm) in July and August&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry on the first Saturday of each month&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>25-minute walk from Lausanne train station. Nearest bus stops: Jomini or Beaulieu.&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Address: Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne&nbsp;</span></p></li></ul><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: center;\"><span><strong>-ENDS-</strong>&nbsp;&nbsp;</span></p><p style=\"text-align: center;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>For more information on Lausanne please visit</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"http://www.lausanne-tourisme.ch/en/\" tt-mode=\"url\"><span> <u>Lausanne Tourism’s website</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Follow ‘Lausanne, Capitale Olympique’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.linkedin.com/company/lausanne-capitale-olympique\" tt-mode=\"url\"><span> <u>LinkedIn</u></span></a><span>,</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.facebook.com/LausanneCapitaleOlympique/\" tt-mode=\"url\"><span> <u>Facebook</u></span></a><span> and ‘The Lausanner’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.instagram.com/thelausanner/\" tt-mode=\"url\"><span> <u>Instagram</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Keep up to date with all the latest content on the</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\" tt-mode=\"url\"><span> <u>blog The Lausanner</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://ace.media/lookbooks/0km7\" tt-mode=\"url\"><span><u>Images can be downloaded from here</u></span></a><span style=\"color: rgb(5, 99, 193);\">&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: left;\"><span>For media enquiries please contact Alexandra Liste, Isabel Turner-Hicks or Jess Cochrane on&nbsp; </span><a target=\"_blank\" href=\"mailto:lausannetourism@lemongrassmarketing.com\" tt-mode=\"url\"><span>lausannetourism@lemongrassmarketing.com</span></a><span> / 01865 237 997&nbsp;&nbsp;&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left;\"><strong>Februar bis Oktober 2026</strong></p><p style=\"text-align: left;\"><strong>Schweizer Art Brut</strong><br><em>Von den Ursprüngen der Sammlung bis heute</em><br>Kuratiert von Sarah Lombardi</p><p style=\"text-align: left;\">Die Ausstellung vereint eine breite Auswahl an Werken aus der Sammlung des Museums, darunter Zeichnungen, Gemälde, Skulpturen, Stickereien und Texte. Gezeigt werden sowohl Werke aus Jean Dubuffets historischer Sammlung als auch zeitgenössische Arbeiten, die zwischen 1976 und heute in die Sammlung aufgenommen wurden.</p><p style=\"text-align: left;\">Alle ausgestellten Werke stammen von Schweizer Kunstschaffenden der Art Brut oder wurden in der Schweiz geschaffen.</p><p style=\"text-align: left;\">Im Zentrum der Ausstellung steht die enge und nachhaltige Beziehung zwischen Jean Dubuffet und der Schweiz – jenem Land, dem er seine Sammlung schenkte, um deren Erhalt und öffentliche Zugänglichkeit langfristig zu sichern.</p><p style=\"text-align: left;\">Unveröffentlichtes Archivmaterial sowie Auszüge aus Dokumentarfilmen, unter anderem von Radio Télévision Suisse (RTS), ergänzen die Ausstellung.</p><p style=\"text-align: left;\"><br><strong>November 2026 bis April 2027</strong></p><p style=\"text-align: left;\"><strong>Die Welt von Armand Schulthess</strong><br>Kuratiert von Hans-Ulrich Schlumpf</p><p style=\"text-align: left;\">Die zweite Jubiläumsausstellung widmet sich dem Schweizer Art-Brut-Künstler Armand Schulthess (1901–1972).</p><p style=\"text-align: left;\">Der ehemalige Bundesbeamte aus Bern schuf in seinem Garten im Tessin ein einzigartiges künstlerisches Universum, das heute vollständig verschwunden ist. Sein Werk bestand aus unzähligen Objekten und Installationen aus wiederverwerteten Metallplatten, in die er enzyklopädisches Wissen eingravierte – mit Themen von Naturwissenschaft bis Philosophie.</p><p style=\"text-align: left;\">Die Ausstellung präsentiert über 300 Objekte, die das Museum 2024 übernehmen konnte und die eine bedeutende Erweiterung der bestehenden Sammlung darstellen.</p><p style=\"text-align: left;\">Ergänzt wird die Präsentation durch grossformatige Fotografien von Hans-Ulrich Schlumpf, der das Werk dokumentierte, bevor es zerstört wurde.</p><p style=\"text-align: left;\"><br><strong>Praktische Informationen</strong></p><p style=\"text-align: left;\">Der Eintritt kostet CHF 12.–. Freier Eintritt gilt am Jubiläumswochenende vom 27. bis 29. Februar 2026.</p><p style=\"text-align: left;\">Die Öffnungszeiten sind Dienstag bis Sonntag von 11 bis 18 Uhr; im Juli und August ist das Museum auch montags geöffnet. Zudem ist der Eintritt am ersten Samstag jedes Monats kostenlos.</p><p style=\"text-align: left;\">Das Museum liegt rund 25 Gehminuten vom Bahnhof Lausanne entfernt; die nächstgelegenen Busstationen sind Jomini und Beaulieu.<br>Adresse: Collection de l’Art Brut, Avenue des Bergières 11, CH–1004 Lausanne.</p><p style=\"text-align: left;\">Weitere Informationen finden Sie unter <a target=\"_blank\" href=\"http://www.lausanne-tourisme.ch\" tt-mode=\"url\">www.lausanne-tourisme.ch</a>.<br>Pressebilder sind online verfügbar.</p><p style=\"text-align: left;\"><strong>Medienkontakt Schweiz</strong><br>Natalie Zipsin<br>Tel.: 076 289 26 64<br>E-Mail: <a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\">natalie@wearepepper.ch</a></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+              "copyright": "© Delphine Burtin",
+              "public_name": "Collection de l'Art Brut"
+            }
+          ],
+          "seo": {
+            "description": "Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten.",
+            "noindex": false,
+            "slug": "schweizer-art-brut-von-den-ursprungen-der-sammlung-bis-heute-die-collection-de-lart-brut-feiert-50-jahre-mit-zwei-ausstellungen-in-lausanne"
+          },
+          "tags": [
+            {
+              "name": "lt-culture",
+              "public_name": "Kultur"
+            },
+            {
+              "name": "lt-exposition",
+              "public_name": "Ausstellung"
+            }
+          ]
+        },
+        {
+          "id": "336",
+          "languages": ["en", "de"],
+          "author": "The Lausanner",
+          "name": "Neue Highlights mit festlicher Magie: Der Weihnachtsmarkt Bô Noël lässt Lausanne zum 11. Mal erstrahlen",
+          "type": "press_release",
+          "lead": "Vom 20. November bis 31. Dezember 2025 verwandelt sich Lausanne erneut in ein leuchtendes Winterwunderland.",
+          "summary": "<p style=\"text-align: left;\"><span><strong>Vom 20. November bis 31. Dezember 2025 verwandelt sich Lausanne erneut in ein leuchtendes Winterwunderland. Die 11. Ausgabe von Bô Noël bringt frischen Wind, neue Ideen und viele Überraschungen in die Stadt. Zwischen Lichterglanz, regionaler Kulinarik und besonderen Erlebnissen bietet der Weihnachtsmarkt ein stimmungsvolles Programm für alle Generationen.&nbsp;</strong></span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>",
+          "highlight": true,
+          "published_at": "1764543600",
+          "link": null,
+          "content": [
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "What’s new for 2025? ",
+                "de": "Bô Noël als Herz der Adventszeit "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<p style=\"text-align: left;\"><span>Exciting highlights for 2025 include:&nbsp;</span></p><p style=\"text-align: left;\"><span>•<strong> </strong></span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW65986863 BCX0\" href=\"https://royalsavoylausanne.com/en/offers/festive-season/bo-noel\" tt-mode=\"url\"><span><u>The Secret Room by Royal Savoy Hotel &amp; Spa</u></span></a><span>: an <strong>exclusive pop-up hotel room</strong> in the heart of Lausanne’s Historical Museum Garden complete with panoramic city views and, new for this year, its own wood-fired sauna.&nbsp;</span></p><p style=\"text-align: left;\"><span>•<strong> A brand new festive space at </strong></span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW65986863 BCX0\" href=\"https://www.lausanne-tourisme.ch/en/explore/les-portes-st-francois/les-portes-st-francois/\" tt-mode=\"url\"><span><strong><u>Portes de Saint-Françoi</u></strong><u>s</u></span></a><span>, featuring two floors of food, drink and celebrations, including the sky-high Hélibar Air Glacier.&nbsp;</span></p><p style=\"text-align: left;\"><span>•<strong> Expanded treasure hunts,</strong> now offering two routes exploring the Cathedral, the Cité and the city centre.&nbsp;</span></p><p style=\"text-align: left;\"><span>• The return of the iconic </span><span style=\"background-color: rgba(85, 85, 85, 0.5);\">11-metre tall </span><span>Christmas Tower, now featuring a <strong>brand-new raclette bar.</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span>Across the city, visitors will also find newly curated food stalls, creative installations, and a refreshed layout offering smoother movement and even more corners to discover.&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left;\"><span>Seit seiner Gründung hat sich Bô Noël als fester Bestandteil der Lausanner Weihnachtszeit etabliert. Das Ereignis verbindet Handwerk, Gastronomie, Kultur und Geselligkeit und belebt die Stadt jedes Jahr aufs Neue. Auch in diesem Winter laden lokale Betriebe, Vereine und Kulturschaffende dazu ein, gemeinsam zu feiern und die Adventszeit zu geniessen.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Ride into a delicious opening banquet ",
+                "de": "Neue Highlights und beliebte Klassiker "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<p style=\"text-align: left;\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW212660279 BCX0\" href=\"https://www.lausanneatable.ch/en/event/banquet-douverture-bo-noel/\" tt-mode=\"url\"><span><u>The Opening Banquet,</u></span></a><span> scheduled for <strong>22nd November</strong>, will kick off the celebrations with a grand Christmas parade on the Enchanted Train, followed by a gourmet feast prepared by Lausanne restaurateurs in collaboration with </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW212660279 BCX0\" href=\"https://www.lausanneatable.ch/en/\" tt-mode=\"url\"><span><u>Lausanne à Table</u></span></a><span>.&nbsp;&nbsp;</span></p><p style=\"text-align: left;\"><span>On 12th and 13th December, visitors will be able to try regional speciality </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW212660279 BCX0\" href=\"https://www.lausanneatable.ch/en/event/la-grande-raisinee/\" tt-mode=\"url\"><span><u>La Grande Raisinée</u></span></a><span>, a sweet reduced fruit pie that takes the winegrowers of Tartegnin 36 hours to prepare.&nbsp;&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left;\"><span>Der Bô Noël 2025 bringt viele Neuheiten mit sich. Zum ersten Mal sind die «Portes de Saint-François» Teil des Marktes und bieten auf zwei Etagen einen neuen festlichen Treffpunkt mit dem Helibar Air Glacier und einem vielfältigen Gastroangebot. Auch die «Secret Room by Royal Savoy», eine temporäre Hotelsuite im Garten des Historischen Museums, sorgt für Aufmerksamkeit: mit gemütlichem Ambiente, Panoramablick über die Stadt und – als grosse Neuheit – einer Holzsauna auf der Terrasse.&nbsp;</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "From Santa Claus to sledding pistes: classic Bô Noël traditions  ",
+                "de": "Ein Programm voller Highlights: Von der Parade bis zur Silent Disco "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<p style=\"text-align: left;\"><span>Bô Noël wouldn’t be complete without its much-loved traditions, all returning for 2025:&nbsp;</span></p><p style=\"text-align: left;\"><span>• <strong>Children’s Village on Cathedral Square</strong>: meet Santa Claus, enjoy pony rides, take part in hands-on workshops and listen to festive stories.&nbsp;</span></p><p style=\"text-align: left;\"><span>• <strong>A Canadian-style winter zone on Rue du Lion d’Or</strong>, with a sledding piste, themed bar and boutique.&nbsp;</span></p><p style=\"text-align: left;\"><span>• <strong>Marché des Papilles on Place des Pionnières</strong>, the beating heart of Bô Noël’s gastronomic scene, with flavours from around the world and a giant Christmas-tree carousel at its centre.&nbsp;</span></p><p style=\"text-align: left;\"><span>• <strong>The Creators’ Boutique,</strong> home to more than 40 local makers inside a two-storey container structure.&nbsp;</span></p><p style=\"text-align: left;\"><span>• <strong>Cœurnotzet under the Grand Pont,</strong> the cosy, iconic restaurant space beloved by returning visitors.&nbsp;</span></p><p style=\"text-align: left;\"><span>And of course, the popular Silent Disco of Bô New Year’s Eve will be back to ring in 2026 — location to be announced soon.&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left;\"><span>Am 22. November fällt mit dem Eröffnungsbankett der Startschuss für Bô Noël: Eine grosse Parade und ein festliches Mahl, zubereitet von Lausanner Gastronominnen und Gastronomen in Zusammenarbeit mit «Lausanne à Table», stimmen auf die Adventszeit ein. Am 12. und 13. Dezember laden die Winzerinnen und Winzer von Tartegnin zur «Grande Raisinée» ein – ein&nbsp;geselliger Anlass rund um eine Waadtländer Spezialität. Die «Samedi en fêtes» bringen an allen Adventssamstagen Musik, Licht und Strassenkunst in die Rue Centrale. Und wer den Jahreswechsel besonders feiern möchte, darf sich auf die Silent Disco zum Bô Neujahr freuen.</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Practical information ",
+                "de": "Acht Standorte, acht Stimmungen "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<p style=\"text-align: left;\">Bô Noël runs from <strong>20th November to 31st December 2025</strong>, with markets, experiences and special events taking place throughout the festive period. Certain areas and attractions will have extended opening hours. Full details available at <a target=\"_blank\" href=\"http://bo-noel.ch\" tt-mode=\"url\"><span style=\"background-color: rgba(85, 85, 85, 0.5);\"><u>bo-noel.ch</u></span></a>.&nbsp;</p><p style=\"text-align: center;\"><strong>-ENDS-</strong>&nbsp;&nbsp;</p><p style=\"text-align: justify;\">For more information on Lausanne please visit<a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"http://www.lausanne-tourisme.ch/en/\" tt-mode=\"url\"> <u>Lausanne Tourism’s website</u></a>&nbsp;&nbsp;</p><p style=\"text-align: justify;\">Follow ‘Lausanne, Capitale Olympique’ on<a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"https://www.linkedin.com/company/lausanne-capitale-olympique\" tt-mode=\"url\"> <u>LinkedIn</u></a>,<a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"https://www.facebook.com/LausanneCapitaleOlympique/\" tt-mode=\"url\"> <u>Facebook</u></a> and ‘The Lausanner’ on<a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"https://www.instagram.com/thelausanner/\" tt-mode=\"url\"> <u>Instagram</u></a>&nbsp;&nbsp;</p><p style=\"text-align: justify;\">Keep up to date with all the latest content on the<a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\" tt-mode=\"url\"> <u>blog The Lausanner</u></a>&nbsp;&nbsp;</p><p style=\"text-align: justify;\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW208776977 BCX0\" href=\"https://ace.media/lookbooks/VGzB\" tt-mode=\"url\"><span style=\"background-color: rgba(85, 85, 85, 0.5);\"><u>Images can be downloaded from here</u></span></a><span style=\"color: rgb(5, 99, 193);\">&nbsp;</span></p><p style=\"text-align: left;\">&nbsp;&nbsp;</p><p style=\"text-align: left;\">For media enquiries please contact Alexandra Liste, Isabel Turner-Hicks or Jess Cochrane on&nbsp; <a target=\"_blank\" href=\"mailto:lausannetourism@lemongrassmarketing.com\" tt-mode=\"url\">lausannetourism@lemongrassmarketing.com</a> / 01865 237 997&nbsp;&nbsp;</p>",
+                "de": "<p style=\"text-align: left;\"><span>Bô Noël Lausanne belebt auch in diesem Jahr acht markante Orte der Innenstadt – jeder mit eigenem Charakter und besonderen Attraktionen.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Auf der «Place de la Cathédrale» erwartet Familien das beliebte Kinderdorf mit Bastelateliers, Geschichtenstunden, Ponyreiten und einer kleinen Lernfarm. Hier starten auch die beliebten Schatzsuchen, die diesmal über zwei Routen führen – durch die Cité und das Stadtzentrum.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Die «Rue du Lion d’Or» verwandelt sich in ein kanadisches Winterdorf mit Schlittelbahn, Bar und thematischem Laden. Auf dem «Place Bel Air» sorgt die Terrasse des Amis mit dem «Belvédère du Mondial de Fondue» für gemütliche Momente, während im Pavillon «Chez Steph – Bar &amp; étage gourmand» feine Küche serviert wird.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Auf der «Place des Pionnières» bildet der «Marché des Papilles» das kulinarische Herz des Marktes. An zahlreichen Ständen gibt es Spezialitäten aus aller Welt, und das grosse Karussell in Tannenbaumform sorgt für Freude bei Familien. Unter dem «Grand Pont» lädt das Restaurant «Cœurnotzet» zum gemütlichen Beisammensein ein, während die «Boutique der&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Kreativen» in einer zweistöckigen Containerstruktur das Schaffen von über 40 lokalen Designerinnen und Designern zeigt.&nbsp;</span><br><br><span>Der «Grand Marché de Saint-François» präsentiert sich in neuem Design: eine zweistöckige Struktur mit Fokus auf Waadtländer Spezialitäten. Im Erdgeschoss befindet sich die festliche «Wunder-bar», im Obergeschoss das beheizte Restaurant «En Terre vaudoise», geführt von Waadtländer Bäuerinnen. Der «Weihnachtsturm» lädt dieses Jahr mit einer neuen Raclette-Bar zum Verweilen ein, während der «Bô Pêcheur» erneut feine Meeresdelikatessen anbietet. Auch die «Esplanade du Flon» wird von den lokalen Geschäften und Restaurants festlich geschmückt. Ein grosser Weihnachtsbaum in der Mitte sorgt für eine warme, einladende Atmosphäre und macht Bô Noël Lausanne zu einem einzigartigen Erlebnis voller Licht, Genuss und Begegnung.</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "Poetischer Spaziergang durch die Stadt "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">Als zusätzliches Highlight lädt ein beleuchteter Rundgang dazu ein, Lausanne in einem ganz neuen Licht zu erleben. Die Industriellen Werke Lausanne (SiL) präsentieren acht Lichtinstallationen von lokalen und internationalen Kunstschaffenden, die bekannte Wahrzeichen wie das Rathaus oder den Bel-Air-Turm in Szene setzen.<strong> </strong>Vom Münster über die Rue de Bourg, den Place de la Louve, die Marché-Treppen bis zur Pont Bessières wird die Stadt zur Bühne für Licht, Traum und Entdeckung. Zahlreiche Strassen und Plätze der Innenstadt sind zudem festlich dekoriert – mit stimmungsvoller Beleuchtung und einer besonderen Atmosphäre. Dieser poetische Spaziergang ergänzt das Adventserlebnis in Lausanne auf bezaubernde Weise.</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": " ",
+                "en": "",
+                "de": "«Ei Nacht längt nid»: Lausannes Hotel Days laden zum Verweilen ein "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\"><span>Wer den winterlichen Zauber Lausannes einmal erlebt hat, möchte meist gar nicht mehr abreisen. Unter dem Motto «Ei Nacht längt nid» – eine liebevolle Einladung im Lausanner Dialekt – laden die </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW150595690 BCX0\" href=\"https://hotel-days.lausanne-tourisme.ch/\" tt-mode=\"url\"><span><u>Lausanne Hotel Days</u></span></a><span> dazu ein, die Stadt ganz entspannt und zu einem exklusiven Vorteilspreis zu entdecken. Gäste erhalten 25 % Rabatt (je nach Verfügbarkeit) ab zwei Übernachtungen in einem der teilnehmenden Hotels.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Im Angebot inbegriffen ist die Lausanne Transport Card, mit der Bus und Metro während des gesamten Aufenthalts kostenlos genutzt werden können. Zudem profitieren Besucherinnen und Besucher von zahlreichen Vergünstigungen bei Museen, Sehenswürdigkeiten und touristischen Partnern.&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Weitere Informationen finden Sie unter: </span><a target=\"_blank\" href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/bo-noel-lausanne-marches-de-noel/\" tt-mode=\"url\"><span><u>https://www.lausanne-tourisme.ch/de/veranstaltung/bo-noel-lausanne-marches-de-noel/</u></span></a><span>.&nbsp;</span></p><p style=\"text-align: justify;\"><span>Pressebilder finden Sie </span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW150595690 BCX0\" href=\"https://lausanne-tourisme.syselshare.ch/share/BpagPf2nialNzWOpleJIdMiR0BE1hh\" tt-mode=\"url\"><span><u>hier</u></span></a><span>.&nbsp;</span></p><p style=\"text-align: justify;\"><span><strong>Medienkontakt Schweiz</strong>&nbsp;</span></p><p style=\"text-align: justify;\"><span>Natalie Zipsin, Tel: 076 289 26 64, E-Mail: </span><a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\"><span><u>natalie@wearepepper.ch</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>&nbsp;</span></p><p style=\"text-align: justify;\"><span>&nbsp;</span></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "pckW4HryQgodUAYbK6IWVTJBIMS5bkMpX5nnOa8a",
+              "copyright": "© Lausanne Tourisme",
+              "public_name": "Bô Noël"
+            }
+          ],
+          "seo": {
+            "description": "Vom 20. November bis 31. Dezember 2025 verwandelt sich Lausanne erneut in ein leuchtendes Winterwunderland.",
+            "noindex": false,
+            "slug": "neue-highlights-mit-festlicher-magie-der-weihnachtsmarkt-bo-noel-lasst-lausanne-zum-11-mal-erstrahlen"
+          },
+          "tags": [
+            {
+              "name": "lt-fete-festival",
+              "public_name": "Party & Fest"
+            },
+            {
+              "name": "lt-famille",
+              "public_name": "Familie"
+            },
+            {
+              "name": "lt-hiver",
+              "public_name": "Winter"
+            },
+            {
+              "name": "lt-marche",
+              "public_name": "Markt"
+            }
+          ]
+        },
+        {
+          "id": "337",
+          "languages": ["de"],
+          "author": "The Lausanner",
+          "name": "Lausanne à Table 2025 – Wo die Stadt zum Festmahl wird",
+          "type": "press_release",
+          "lead": "Wer diesen Sommer eine Reise plant, sollte Lausanne ganz oben auf die Liste setzen.",
+          "summary": "<p style=\"text-align: left;\">Wer diesen Sommer eine Reise plant, sollte Lausanne ganz oben auf die Liste setzen. Die Stadt am Genfersee begeistert mit spektakulärer Lage, kulturellem Reichtum und einer besonders entspannten Atmosphäre und wird einmal mehr zur Hochburg des guten Geschmacks: Bereits zum elften Mal lädt «Lausanne à Table» von Anfang Juni bis Ende Dezember zu einer Vielfalt kulinarischer Entdeckungen ein. Das Motto: Für jeden Geschmack ist etwas dabei.</p>",
+          "highlight": true,
+          "published_at": "1747864800",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 31673,
+                  "name": "Lausanne à table",
+                  "public_name": {
+                    "fr": "Lausanne à table",
+                    "en": "Lausanne à table",
+                    "de": "Lausanne à table",
+                    "es": null
+                  },
+                  "cloudinary_id": "qy1HpmaXRhfjRaZxB0Rgi8rM9bpXeEgFYkwTIkuZ",
+                  "mime_type": "image/png",
+                  "copyright": "© Lausanne à table",
+                  "metadata": {
+                    "width": 3726,
+                    "height": 2795,
+                    "mimeType": "image/png",
+                    "copyright": null,
+                    "attr": "width=\"3726\" height=\"2795\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31674,
+                  "name": "Lausanne à table",
+                  "public_name": {
+                    "fr": "Lausanne à table",
+                    "en": "Lausanne à table",
+                    "de": "Lausanne à table",
+                    "es": null
+                  },
+                  "cloudinary_id": "lLfByMgu9wfwWNXCtXsoRNNR9v3WUvN70uNfkG8Q",
+                  "mime_type": "image/png",
+                  "copyright": "© Lausanne à table",
+                  "metadata": {
+                    "width": 2832,
+                    "height": 3776,
+                    "mimeType": "image/png",
+                    "copyright": null,
+                    "attr": "width=\"2832\" height=\"3776\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31675,
+                  "name": "Lausanne à table",
+                  "public_name": {
+                    "fr": "Lausanne à table",
+                    "en": "Lausanne à table",
+                    "de": "Lausanne à table",
+                    "es": null
+                  },
+                  "cloudinary_id": "yu0PoQ09owBSZ3IsvxNLuEe3rPPUb4wgi8VzTmUa",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Lausanne à table",
+                  "metadata": {
+                    "width": 4730,
+                    "height": 7087,
+                    "mimeType": "image/jpeg",
+                    "copyright": "Elise Heuberger",
+                    "attr": "width=\"4730\" height=\"7087\"",
+                    "tags": "Terrasses; Centre-ville; Déjeuner;",
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "Lausanne erleben – jetzt ist der perfekte Zeitpunkt"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">«Lausanne à Table» zeigt jedes Jahr aufs Neue, wie genussfreudig, kreativ und lebendig Lausanne ist. Die Stadt am Genfersee verbindet mediterranes Flair mit alpiner Frische, ihre Lage ist traumhaft, ihre Atmosphäre ansteckend. Wer diesen Sommer nach kulinarischer Vielfalt, kulturellem Austausch und echter Lebensfreude sucht, wird hier fündig.</p><p style=\"text-align: left;\">Seit über einem Jahrzehnt prägt «Lausanne à Table» das Stadtleben mit einem vielseitigen Programm, das Genuss zum Gemeinschaftserlebnis macht. Was 2012 mit einer kleinen Idee begann, ist heute eine starke Bewegung mit über 300 engagierten Mitgliedern. Für 2025 sind rund 60 Veranstaltungen geplant, die Produzentinnen, Handwerker und Publikum auf genussvolle Weise zusammenbringen – quer durch die Stadt und ihre Umgebung.</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "Neue Highlights und beliebte Klassiker"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">Ein Publikumsmagnet ist die «Randonnée de la Raisinée», eine kulinarische Wanderung durch Lausanne. Dabei degustiert das Publikum eine typische Spezialität aus dem Kanton Waadt und besucht auf dem Weg verschiedene Bäckereien, bevor die persönliche Favoritin oder der Favorit gewählt wird.</p><p style=\"text-align: left;\">Zudem überrascht das diesjährige Programm mit zahlreichen neuen Formaten, die zum Entdecken und Geniessen einladen. Hier einige davon:</p><p style=\"text-align: left;\">• «À Table!» feiert nach fünf Jahren sein Comeback: Überraschende Tafeln tauchen an versteckten Orten wie in Parks oder Altstadtgassen auf – ein Geheimtipp für Entdeckerinnen und Geniesser gleichermassen.</p><p style=\"text-align: left;\">• «Festin d’Époque» bringt 50er-Jahre-Flair in die Rue Grand-Saint-Jean – mit einem nostalgischen Dinner in historischer Kulisse.</p><p style=\"text-align: left;\">• Beim «Dîner à la Bougie» im prachtvollen Palais de Rumine erwartet die Gäste ein persisches Menü im Kerzenschein.</p><p style=\"text-align: left;\">• «Globe-Fritteur» auf der Esplanade der Kathedrale lädt zu einer kulinarischen Reise rund um frittierte Spezialitäten ein – ein Fest für Neugierige und Geniesserinnen.</p><p style=\"text-align: left;\">• Für Familien ist das «Musée des Gloutons» ein Highlight: In fünf Museen von Lausanne und Pully verschmelzen Kulturvermittlung und süsse Pausen auf spielerische Weise.</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "Kulinarisches Erbe im Fokus"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">Zwei neue Veranstaltungen feiern Schweizer und waadtländische Kochtraditionen:</p><p style=\"text-align: left;\">• «Le Grand Banquet Vaudois» am Genferseeufer gibt Einblick in traditionelle, oft vergessene Schweizer Rezepte – gekocht wird im kommunalen Carnotzet.</p><p style=\"text-align: left;\">• «Qu’est-ce qu’on soupe?» lädt in denselben gemütlichen Rahmen und wirft einen Blick auf die Vielfalt der Suppenkultur.</p><p style=\"text-align: left;\">Die beliebten «Tables Éphémères» stehen 2025 ganz im Zeichen des Sports: Regionale Köchinnen und Köche bewirten ihre Gäste an sportlich geprägten Orten in Lausanne und Umgebung – von der Skatehalle bis zum Stadion.</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "Engagierte Mitglieder – kreative Veranstaltungen"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">Die Mitglieder von Lausanne à Table sorgen mit einem bunten Strauss an Formaten für zusätzliche Vielfalt:</p><p style=\"text-align: left;\">• Festivals wie das «Festival des Menus métissés», das «Festival végétal à Chivrageon» oder das «Beerart Festival» in Sauvabelin</p><p style=\"text-align: left;\">• Spaziergänge, Workshops und Degustationen – von Pilzkursen über Museumswanderungen bis hin zu Apérographie-Workshops</p><p style=\"text-align: left;\">• Aussergewöhnliche Erlebnisse wie Kaffee-Menüs, Cine-Dinner, Krimiabende im Château d’Ouchy oder kulinarische Ausflüge nach New York</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "So funktioniert «Lausanne à Table»"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "",
+                "de": "<p style=\"text-align: left;\">Die Teilnahmebedingungen variieren je nach Anlass: Für viele Veranstaltungen, insbesondere kleinere oder exklusive Formate wie die Tables Éphémères, ist eine vorgängige Reservation notwendig. Die Platzzahl ist hier oft begrenzt, weshalb eine frühzeitige Anmeldung empfehlenswert ist. In einzelnen Fällen erfolgt die Platzvergabe sogar per Losverfahren, da die Nachfrage besonders hoch ist.</p><p style=\"text-align: left;\">Andere Veranstaltungen, wie etwa das «Miam Festival» mit zahlreichen Food Trucks und Ständen auf der Zentralstrasse, sind frei zugänglich und richten sich an ein breites Publikum. Auch bei solchen Anlässen können gewisse Angebote kostenpflichtig oder limitiert sein. Grundsätzlich sind alle Events öffentlich und stehen allen Interessierten offen – unabhängig davon, ob man Mitglied des Vereins «Lausanne à Table» ist oder nicht.</p><p style=\"text-align: left;\">Das gesamte Programm mit allen Details zu Anmeldung, Reservation und Teilnahmebedingungen ist auf der offiziellen Website von Lausanne à Table zu finden: <a target=\"_blank\" href=\"http://www.lausanneatable.ch\" tt-mode=\"url\">www.lausanneatable.ch</a></p><p style=\"text-align: left;\">Weitere Informationen über Lausanne gibt es unter <a target=\"_blank\" href=\"https://press.lausanne-tourisme.ch/de\" tt-mode=\"url\">https://press.lausanne-tourisme.ch/de</a></p><p style=\"text-align: left;\">Pressebilder finden Sie hier.</p><p style=\"text-align: left;\">Medienkontakt Schweiz</p><p style=\"text-align: left;\">Natalie Zipsin, Tel: 076 289 26 64, E-Mail: <a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\">natalie@wearepepper.ch</a></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "lLfByMgu9wfwWNXCtXsoRNNR9v3WUvN70uNfkG8Q",
+              "copyright": "© Lausanne à table",
+              "public_name": "Lausanne à table"
+            }
+          ],
+          "seo": {
+            "description": "Wer diesen Sommer eine Reise plant, sollte Lausanne ganz oben auf die Liste setzen.",
+            "noindex": false,
+            "slug": "lausanne-a-table-2025-wo-die-stadt-zum-festmahl-wird"
+          },
+          "tags": [
+            {
+              "name": "lt-fete-festival",
+              "public_name": "Party & Fest"
+            },
+            {
+              "name": "lt-gastronomie",
+              "public_name": "Gastronomie"
             }
           ]
         }
