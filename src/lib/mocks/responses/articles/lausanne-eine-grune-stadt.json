@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "304",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne, ville verte",
         "en": "Lausanne, a green city",

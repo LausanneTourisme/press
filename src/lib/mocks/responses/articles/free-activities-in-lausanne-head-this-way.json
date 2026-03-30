@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "312",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Des activités gratuites à Lausanne ? Par ici !",
         "de": "Kostenlose Unternehmungen in Lausanne? Hier werden Sie fündig!",

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "271",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Le casse-tête des cadeaux de Noël : les Lausanners viennent à votre rescousse !",
         "en": "The conundrum of Christmas presents: Lausanners to the rescue!",

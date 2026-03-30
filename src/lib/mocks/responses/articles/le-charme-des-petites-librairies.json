@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "287",
-      "languages": [
-        "fr",
-        "en"
-      ],
+      "languages": ["fr", "en"],
       "name": {
         "fr": "Le charme des petites librairies",
         "en": "The magic of small bookshops"

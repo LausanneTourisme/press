@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "317",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "7 choses à voir absolument à Lausanne",
         "en": "7 essential things to see in Lausanne",

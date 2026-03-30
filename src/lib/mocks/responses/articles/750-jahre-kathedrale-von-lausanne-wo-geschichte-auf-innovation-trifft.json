@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "320",
-      "languages": [
-        "en",
-        "de"
-      ],
+      "languages": ["en", "de"],
       "name": {
         "en": "750th Anniversary of Lausanne Cathedral: Innovation Meets Tradition",
         "de": "750 Jahre Kathedrale von Lausanne: Wo Geschichte auf Innovation trifft"

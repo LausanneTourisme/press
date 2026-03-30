@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "294",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "À la découverte de la gastronomie lausannoise",
         "en": "Discovering Lausanne’s gastronomy",

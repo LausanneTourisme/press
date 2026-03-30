@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "336",
-      "languages": [
-        "en",
-        "de"
-      ],
+      "languages": ["en", "de"],
       "name": {
         "en": "Lausanne, Switzerland welcomes the 11th edition of Bô Noël Christmas Market",
         "de": "Neue Highlights mit festlicher Magie: Der Weihnachtsmarkt Bô Noël lässt Lausanne zum 11. Mal erstrahlen"

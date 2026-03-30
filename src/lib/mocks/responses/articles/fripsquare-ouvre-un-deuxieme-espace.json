@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "334",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Fripsquare ouvre un deuxième espace",
         "en": "Fripsquare opens a second location",

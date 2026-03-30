@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "305",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne et le sport : ça match !",
         "en": "Lausanne and sports: a winning combo",

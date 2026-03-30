@@ -2,9 +2,7 @@
   "data": {
     "item": {
       "id": "284",
-      "languages": [
-        "fr"
-      ],
+      "languages": ["fr"],
       "name": {
         "fr": "Des parcours à vélo dans et aux alentours de Lausanne"
       },

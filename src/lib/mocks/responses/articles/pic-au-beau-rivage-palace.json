@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "6",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "PIC au Beau-Rivage Palace",
         "en": "PIC at Beau-Rivage Palace",

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "293",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "L’histoire méconnue des galeries lausannoises",
         "en": "The unknown history of Lausanne arcades",

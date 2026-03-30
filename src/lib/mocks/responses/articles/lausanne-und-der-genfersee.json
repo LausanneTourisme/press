@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "300",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne et le Léman",
         "en": "Lausanne and Lake Geneva",

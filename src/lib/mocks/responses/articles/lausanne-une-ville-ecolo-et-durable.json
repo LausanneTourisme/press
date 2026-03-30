@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "281",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne, une ville écolo et durable !",
         "en": "Lausanne, a green and sustainable city",

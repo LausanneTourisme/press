@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "277",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
         "en": "From Lausanne to Lavaux: my electric bike route",

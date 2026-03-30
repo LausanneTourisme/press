@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "313",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne : les activités outdoors de l’été",
         "en": "Lausanne – the summer’s outdoor activities",

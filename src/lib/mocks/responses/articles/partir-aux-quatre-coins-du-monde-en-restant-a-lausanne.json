@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "314",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Partir aux quatre coins du monde… en restant à Lausanne !",
         "en": "Travel to the four corners of the world… without leaving Lausanne!",

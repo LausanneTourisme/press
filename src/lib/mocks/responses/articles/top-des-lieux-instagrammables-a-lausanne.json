@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "272",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Top des lieux instagrammables à Lausanne",
         "de": "Die besten instagrammierbaren Orte in Lausanne",

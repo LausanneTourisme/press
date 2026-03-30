@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "311",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Nos randonnées préférées au départ de Lausanne",
         "en": "Hikes and walks starting from Lausanne",

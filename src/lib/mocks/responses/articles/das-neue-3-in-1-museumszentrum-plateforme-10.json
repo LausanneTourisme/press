@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "319",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
         "en": "Plateforme 10: the new 3 in 1 museum hub",
