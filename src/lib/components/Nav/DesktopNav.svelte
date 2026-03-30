@@ -3,13 +3,14 @@
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import { route } from '$lib/helpers';
-  import { menuItems } from '$lib/helpers/menu';
+  import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
   import { ChevronDown } from 'lucide-svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
   import Logo from './Logo.svelte';
+  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -23,7 +24,8 @@
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+    rel="internal"
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo {locale} />

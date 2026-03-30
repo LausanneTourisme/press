@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { resolve } from '$app/paths';
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import { maxMobileWidth, route } from '$lib/helpers';
-  import { menuItems } from '$lib/helpers/menu';
+  import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
   import { ChevronDown, Menu, X } from 'lucide-svelte';
   import { onMount } from 'svelte';
@@ -14,6 +13,8 @@
   import SocialNetworks from '../SocialNetworks.svelte';
   import Logo from './Logo.svelte';
   import type { SeoHeader } from '$types';
+  import { resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -65,7 +66,7 @@
 
 <nav class={style} aria-labelledby="mobile-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
   >
     <Logo {locale} />
@@ -116,7 +117,7 @@
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
       <a
-        href={route(RouteTypes.Home, { forceLocale: locale })}
+        href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
         class="flex max-w-[230px] cursor-pointer"
       >
         <Logo {locale} />
