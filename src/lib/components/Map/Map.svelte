@@ -187,7 +187,7 @@
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       {#key markers}
         <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-          {#each markers as marker (`poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
+          {#each markers as marker, k (`${k}|${locale}|poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
             <LausannerCard
               favorite={marker.favorite}
               poi={marker.poi}
@@ -293,7 +293,7 @@
       bind:map
     >
       <NavigationControl position="top-right" />
-      {#each markers as marker (`poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
+      {#each markers as marker, k (`${k}poi#${marker.poi.id}|favorite#${marker.favorite.id}|${locale}`)}
         <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
           {#snippet content()}
             <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
