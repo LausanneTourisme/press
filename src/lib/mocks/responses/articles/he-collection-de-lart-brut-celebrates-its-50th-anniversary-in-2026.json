@@ -1,0 +1,53 @@
+{
+  "data": {
+    "item": {
+      "id": "330",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "La Collection de l’Art Brut fête ses 50 ans en 2026 !",
+        "en": "he Collection de l’Art Brut Celebrates Its 50th Anniversary in 2026",
+        "de": "Die Collection de l’Art Brut feiert 2026 ihr 50-jähriges Bestehen"
+      },
+      "lead": {
+        "fr": "Une exposition anniversaire mettra à l'honneur des œuvres phares, dont certaines issues du noyau historique constitué par Jean Dubuffet.",
+        "en": "A special exhibition will showcase key works, including pieces from the original collection assembled by Jean Dubuffet.",
+        "de": "Eine Jubiläumsausstellung zeigt zentrale Werke, darunter Stücke aus dem historischen Kernbestand von Jean Dubuffet."
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "04b7290c7f8e47fc",
+          "copyright": "© Exposition à La Collection de l'Art Brut, Lausanne",
+          "public_name": {
+            "fr": "Lausanne en famille"
+          }
+        }
+      ],
+      "published_at": "1752444000",
+      "seo": {
+        "description": {
+          "fr": "Une exposition anniversaire mettra à l'honneur des œuvres phares, dont certaines issues du noyau historique constitué par Jean Dubuffet.",
+          "en": "A special exhibition will showcase key works, including pieces from the original collection assembled by Jean Dubuffet.",
+          "de": "Eine Jubiläumsausstellung zeigt zentrale Werke, darunter Stücke aus dem historischen Kernbestand von Jean Dubuffet."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "la-collection-de-lart-brut-fete-ses-50-ans-en-2026",
+          "en": "he-collection-de-lart-brut-celebrates-its-50th-anniversary-in-2026",
+          "de": "die-collection-de-lart-brut-feiert-2026-ihr-50-jahriges-bestehen"
+        }
+      },
+      "tags": []
+    }
+  }
+}

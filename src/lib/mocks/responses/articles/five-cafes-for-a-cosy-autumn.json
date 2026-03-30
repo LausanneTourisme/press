@@ -1,0 +1,245 @@
+{
+  "data": {
+    "item": {
+      "id": "270",
+      "languages": [
+        "fr",
+        "en",
+        "de"
+      ],
+      "name": {
+        "fr": "5 cafés pour un automne cosy",
+        "en": "Five cafés for a cosy autumn",
+        "de": "Fünf Cafés für einen gemütlichen Herbst"
+      },
+      "lead": {
+        "fr": "Il est venu le temps des gros pulls en maille, des cols roulés tout doux et des boissons au goût de courge ou de châtaigne (miam !). Et pour changer des soirées canapés, plaids et série, l'automne c’est la saison idéale pour aller retrouver ses amis dans les lieux les plus cosy de la ville. On vous emmène !",
+        "en": "The time has come for warm knitted sweaters, itchy turtleneck jumpers, pumpkin spice drinks and evenings on the sofa snuggled under a plaid watching Netflix. And yet autumn weather is no excuse to stay at home!",
+        "de": "Und wieder ist die Zeit der dicken Strickpullis, der kratzigen Rollkragen und der Pumpkin-Latte gekommen, in der man den Abend auf der Couch mit Decke und Netflix verbringt. Aber der Herbst ist keine Ausrede dafür, die ganze Zeit zu Hause zu bleiben! Vielmehr ist er eine gute Gelegenheit, sich mit den Freunden an einem der gemütlichen Orte in der Stadt zu verabreden, die wir für Sie ausgewählt haben."
+      },
+      "summary": {
+        "fr": "Il est venu le temps des gros pulls en maille, des cols roulés tout doux et des boissons au goût de courge ou de châtaigne (miam !). Et pour changer des soirées canapés, plaids et série, l’automne c’est la saison idéale pour aller retrouver ses amis dans les lieux les plus cosy de la ville. On vous emmène !",
+        "en": "The time has come for warm knitted sweaters, itchy turtleneck jumpers, pumpkin spice drinks and evenings on the sofa snuggled under a plaid watching Netflix. And yet autumn weather is no excuse to stay at home! It’s an opportunity to meet up with friends in one of the cosy places in town we have selected for you.",
+        "de": "Und wieder ist die Zeit der dicken Strickpullis, der kratzigen Rollkragen und der Pumpkin-Latte gekommen, in der man den Abend auf der Couch mit Decke und Netflix verbringt. Aber der Herbst ist keine Ausrede dafür, die ganze Zeit zu Hause zu bleiben! Vielmehr ist er eine gute Gelegenheit, sich mit den Freunden an einem der gemütlichen Orte in der Stadt zu verabreden, die wir für Sie ausgewählt haben."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 25890,
+            "name": "5 cafés pour un automne cosy",
+            "public_name": {
+              "fr": "5 cafés pour un automne cosy"
+            },
+            "cloudinary_id": "6bf6c910e61e165c",
+            "mime_type": "image/jpeg",
+            "copyright": "© Sleepy Bear Coffee. Article \"Day Trip\" du blogueur dans la revue Lausanne Image",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "6bf6c910e61e165c.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Sleepy-Bear-Coffee.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/coffee-page/\">Coffee Page</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/coffee-page/\">Coffee Page</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/coffee-page/\">Coffee Page</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "C’est l’endroit dans lequel on a envie de se réfugier par excellence ! La déco soignée du Coffee Page rend le lieu chaleureux, avec ses meubles en bois, son joli parquet et ses tables en marbre. Le café y est délicieux et local, et puisqu’on a soif de découverte, nous, on se laisse volontiers tenter par le café de la semaine ! Le plus : vous dénicherez peut-être même votre nouveau bouquin préféré dans la bibliothèque de ce café-librairie super tendance. Qui dit mieux ?<br>\n<em>Rue du Midi 20, 1003 Lausanne</em>",
+            "en": "The perfect place to duck in and enjoy a short break! The appealing interior at Coffee Page creates a warm and inviting atmosphere with its unique furniture, beautiful wood flooring and marble tables. The coffee here is delicious and roasted locally, and anyone with a a thirst for adventure will be happily tempted by the coffee of the week. And as a bonus, you might even find your new favourite book on the shelves of this trendy “bookstore café”!<br>\n<em>Rue du Midi 20, 1003 Lausanne</em>",
+            "de": "Der perfekte Ort, wenn man sich mal zurückziehen möchte! Mit den Holzmöbeln, dem schönen Parkett und den Marmortischen sorgt die Einrichtung im Coffee Page für eine behagliche Gemütlichkeit. Der Kaffee schmeckt hier ganz vorzüglich und weil wir immer auf der Suche nach neuen Entdeckungen sind, lassen wir uns gerne vom Kaffee der Woche verführen. Und das Beste daran ist: Vielleicht finden Sie in der Bibliothek dieser angesagten Kombination aus Café und Buchladen sogar Ihr neues Lieblingsbuch!<br>\n<em>Rue du Midi 20, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " "
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/Clstbv2oT0V/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ordinary-man-coffee-food-art/\">Ordinary Man – Coffee, Food and Art</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ordinary-man-coffee-food-art/\">Ordinary Man – Coffee, Food &amp; Art</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ordinary-man-coffee-food-art/\">Ordinary Man – Coffee, Food &amp; Art</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Passez la porte de ce coffee shop et dégustez un excellent café torréfié avec passion par le maître des lieux, juste là, dans l’arrière-boutique. Vous y découvrirez également de chouettes expos photos de jeunes artistes contemporains et locaux. Une jolie façon d’allier gourmandise et culture au creux d’un lieu cosy et au détour d’une jolie journée d’automne.<br>\n<em>Rue du Petit-Chêne 28, 1003 Lausanne</em>",
+            "en": "Step through the door of this coffee shop and savour excellent coffee roasted with passion by the master of the house in the back of his shop. You’ll also discover fine photo exhibitions by young, contemporary and local artists. A really nice way of combining tasty treats and culture in a cosy place, on an autumn day.<br>\n<em>Rue du Petit-Chêne 28, 1003 Lausanne</em>",
+            "de": "Tretet ein in diesen Coffeeshop, um einen ausgezeichneten Kaffee zu geniessen. Mit viel Herzblut röstet der Hausherr die Kaffeebohnen im Hinterzimmer. Hier findet ihr zudem schöne Fotoausstellungen von jungen zeitgenössischen, lokalen Kunstschaffenden. Was für eine schöne Gelegenheit, um an einem Herbsttag Gaumenfreuden und Kultur an einem gemütlichen Ort zu verbinden.<br>\n<em>Rue du Petit-Chêne 28, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " "
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CjpVi8gt74w/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lacademie-cafe-brotherfields-sister/\">L’Académie Café</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lacademie-cafe-brotherfields-sister/\">L’Académie Café</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lacademie-cafe-brotherfields-sister/\">L’Académie Café</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "« <em>J’aime me beurrer la biscotte</em> » ou encore «<em> On avait dit 3 parts Obélix… </em>» : retrouvez ces formules petit-déjeuner pleines d’humour dans ce café atypique et authentique niché au cœur de la Cité. De l’humour, mais pas que ! On y retrouve également des plats sains et gourmands ainsi que des jus frais comme « L’Elixir de la Jungle » ou « Le Popey ». De quoi faire le plein de vitamines pour vous préparer à l’automne !<br>\n<em>Rue de l’Académie 3, 1005 Lausanne</em>",
+            "en": "“J’aime me beurrer la biscotte” (literally “I love to butter my cracker” and figuratively “I love to let loose”), “On avait dit 3 parts Obélix” (“We said 3 portions, Obelix!”). Find these humorous breakfast menus in this unusual and authentic café in the heart of the Cité neighbourhood. There’s more too: healthy and delicious dishes as well as freshly squeezed juices such as “Jungle Elixir” or “Popeye” await you! Just what’s needed to fill up on vitamins and get ready for autumn!<br>\n<em>Rue de l’Académie 3, 1005 Lausanne</em>",
+            "de": "„J’aime me beurrer la biscotte“ oder „On avait dit 3 parts Obélix“ bzw. auf Deutsch in etwa „Wie Butter auf der Zunge zergehen lassen“ oder „Wir sagten doch 3 Obelix-Portionen“: Solch humorvolle Frühstücksoptionen werden euch in diesem atypischen, authentischen Café im Herzen der Altstadt serviert. Aber nicht nur: Auch besonders gesunde und leckere Gerichte sowie frisch gepresste Säfte wie „L’Elixir de la Jungle“ oder „Le Popey“ warten auf euch! Füllt euren Vitaminhaushalt auf, um für den Herbst gewappnet zu sein!<br>\n<em>Rue de l’Académie 3, 1005 Lausanne</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " "
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CxKv0Ieo-uJ/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/limpression-cafe/\">L’Impression Café</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/limpression-cafe/\">L’Impression Café</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/limpression-cafe/\">L’Impression Café</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Installé dans l’ancienne imprimerie de la Nouvelle Revue de Lausanne – d’où son nom -, ce café situé à trois minutes de la gare vous surprendra avec sa carte qui évolue au fil des saison. Mais pas de panique : les classiques du brunch, comme l’avocado toast ou les œufs Bénédicte y sont aussi mis à l’honneur pour régaler vos papilles. Bref, ce lieu est idéal pour un petit-déjeuner healthy… Ou pas… difficile de résister au french toast avec la brioche de l’Hôtel de Ville de Crissier, 3 étoiles au Guide Michelin. Tant de plats qui vous aideront à affronter le froid qui s’installe.<br>\n<em>Avenue Louis-Ruchonet 15, 1003 Lausanne</em>",
+            "en": "Set up in the former printing house of the Nouvelle Revue de Lausanne (which explains the name, meaning both printout and impression), this café just 3 minutes away from the train station has a menu that will surprise you as it changes with the seasons. No worries, however: the brunch classics, such as avocado on toast and eggs benedict are still mainstays that will delight your taste buds. In short, this place is ideal for a healthy breakfast… Or not… as it’s hard to resist the French toast made with brioche baked by the 3-Michelin-starred Restaurant de l’Hôtel de Ville de Crissier. Plenty of dishes that will help you endure the cold now settling in.<br>\n<em>Avenue Louis-Ruchonnet 15, 1003 Lausanne</em>",
+            "de": "Dieses in der ehemaligen Druckerei der Nouvelle Revue de Lausanne ‒ daher der Name ‒ untergebrachte Café liegt drei Minuten vom Bahnhof entfernt und wird euch mit einer saisonal variierenden Speisekarte überraschen. Aber keine Sorge: Die Brunch-Klassiker wie der Avocadotoast oder die Eggs Benedict verwöhnen euren Gaumen jederzeit. Dies ist also der ideale Ort für ein gesundes – oder etwas weniger gesundes – Frühstück. Denn wer kann schon dem French Toast mit der Brioche aus dem mit 3 Michelin-Sternen ausgezeichneten Restaurant Hôtel de Ville in Crissier widerstehen? Alle diese Köstlichkeiten helfen euch bestimmt, der aufkommenden Kälte zu trotzen.<br>\nAvenue Louis-Ruchonnet 15, 1003 Lausanne"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": " "
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CsQsLDpoo7Q/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-barbare/\">Le Barbare</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-barbare/\">Le Barbare</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-barbare/\">Le Barbare</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En automne, on troque les margaritas et les mojitos par des boissons chaudes et réconfortantes. Au sein de cette institution lausannoise, nichée au pied de la Cathédrale, vous pourrez y savourer le plus mythique des chocolats chauds de la région (et au-delà !). On aime aussi s’y rendre à l’heure de l’apéro pour découvrir les planchettes gourmandes accompagnées de bières et vins de chez nous. Tous les produits y sont frais et locaux !<br>\n<em>Escaliers du Marché 27, 1003 Lausanne</em>",
+            "en": "In autumn, we trade margaritas and mojitos for hot, comforting drinks. In this Lausanne institution, nestled at the foot of the Cathedral, you can savour the most legendary hot chocolate in the region (and beyond!) We also love to go there when it’s time for apéro to discover the tasty snack boards together with local beers and wines. All the products are fresh and local!<br>\n<em>Escaliers du Marché 27, 1003 Lausanne</em>",
+            "de": "Im Herbst wird es Zeit, Margaritas und Mojitos gegen warme und herzerwärmende Getränke einzutauschen. Dieses Lausanner Lokal gleich unterhalb der Kathedrale ist eine wahrhafte Institution, um eine heisse Schokolade zu geniessen, die in der ganzen Region und weit darüber hinaus legendär ist. Zur Apérozeit erfreuen Gourmet-Plättli mit Bier und Wein aus der Gegend euren Gaumen. Alle Produkte sind frisch und lokal hergestellt!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "en": " ",
+            "de": "<em>Escaliers du Marché 27, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CXQbzffItNi/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avec ces différentes adresses, vous aurez de quoi vous réchauffer lors de vos sorties à travers notre belle cité. Et vous, quand l’automne s’en vient, quel est votre endroit cosy préféré à Lausanne ?",
+            "en": "With these various addresses, you’ll know where to go to get warm and snug when you’re going out on the town. What’s your favourite cosy café to get comfortable in Lausanne when autumn has settled in?",
+            "de": "<span class=\"ui-provider a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak\" dir=\"ltr\">Mit diesen verschiedenen Adressen weisst du, wo du hingehen kannst, um es warm und gemütlich zu haben, wenn du in der Stadt unterwegs bist. Welches ist dein Lieblingscafé in Lausanne, in dem du es dir gemütlich machen kannst, wenn der Herbst Einzug hält?</span>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/reel/CxqGTKzs5a4/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "6bf6c910e61e165c",
+          "copyright": "© Sleepy Bear Coffee. Article \"Day Trip\" du blogueur dans la revue Lausanne Image",
+          "public_name": {
+            "fr": "5 cafés pour un automne cosy"
+          }
+        }
+      ],
+      "published_at": "1722356572",
+      "seo": {
+        "description": {
+          "fr": "Il est venu le temps des gros pulls en maille, des cols roulés tout doux et des boissons au goût de courge ou de châtaigne (miam !). Et pour changer des soirées canapés, plaids et série, l'automne c’est la saison idéale pour aller retrouver ses amis dans les lieux les plus cosy de la ville. On vous emmène !",
+          "en": "The time has come for warm knitted sweaters, itchy turtleneck jumpers, pumpkin spice drinks and evenings on the sofa snuggled under a plaid watching Netflix. And yet autumn weather is no excuse to stay at home!",
+          "de": "Und wieder ist die Zeit der dicken Strickpullis, der kratzigen Rollkragen und der Pumpkin-Latte gekommen, in der man den Abend auf der Couch mit Decke und Netflix verbringt. Aber der Herbst ist keine Ausrede dafür, die ganze Zeit zu Hause zu bleiben! Vielmehr ist er eine gute Gelegenheit, sich mit den Freunden an einem der gemütlichen Orte in der Stadt zu verabreden, die wir für Sie ausgewählt haben."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "5-cafes-pour-un-automne-cosy",
+          "en": "five-cafes-for-a-cosy-autumn",
+          "de": "funf-cafes-fur-einen-gemutlichen-herbst"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-gastronomie",
+          "public_name": {
+            "fr": "Gastronomie",
+            "en": "Gastronomy",
+            "de": "Gastronomie"
+          }
+        }
+      ]
+    }
+  }
+}

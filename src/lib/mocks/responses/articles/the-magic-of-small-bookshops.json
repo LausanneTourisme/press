@@ -1,0 +1,208 @@
+{
+  "data": {
+    "item": {
+      "id": "287",
+      "languages": [
+        "fr",
+        "en"
+      ],
+      "name": {
+        "fr": "Le charme des petites librairies",
+        "en": "The magic of small bookshops"
+      },
+      "lead": {
+        "fr": "Lausanne compte une quinzaine de librairies indépendantes. Découvrez les adresses préférées de quatre lecteurs !\n\n",
+        "en": "Lausanne is home to around 15 independent bookshops. Four book lovers tell us about their favourites!\n\n"
+      },
+      "summary": {
+        "fr": "Lausanne compte une quinzaine de librairies indépendantes. Découvrez les adresses préférées de quatre lecteurs !",
+        "en": "Lausanne is home to around 15 independent bookshops. Four book lovers tell us about their favourites!"
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 27199,
+            "name": "Le charme des petites librairies - La Louve",
+            "public_name": {
+              "fr": "Vitrine de la librairie de livre d'occasion La Louve",
+              "en": "Vitrine de la librairie de livre d'occasion La Louve",
+              "de": "Vitrine de la librairie de livre d'occasion La Louve",
+              "es": null
+            },
+            "cloudinary_id": "B38sXMiuI2NTur9akEN8045DJH8tBOgWnC2AUPiv",
+            "mime_type": "image/jpeg",
+            "copyright": "© Lausanne Tourisme",
+            "metadata": {
+              "width": 1920,
+              "height": 1092,
+              "mimeType": "image/jpeg",
+              "copyright": "Victorine Ducry",
+              "attr": "width=\"1920\" height=\"1092\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "869a1b84406ec6bf.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Librairie-La-Louve-modif.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Conor Devlin, analyste anglophone, passionné de littérature de fiction des années 1950 à nos jours",
+            "en": "Conor Devlin is an analyst. His first language is English, and he likes fiction from the 1950s and up to the present day"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "« Comme je ne lis pas d’ouvrages en français, <a href=\"https://booksbooksbooks.ch/\">Books Books Books</a> m’est très importante. J’y achète un livre par semaine. Je ne commande rien sur Internet car j’aime pouvoir parler des œuvres avec les vendeurs. Le propriétaire, Matthew Wake, et son équipe, sont de véritables puits de connaissances qui m’ont fait découvrir énormément d’ouvrages. J’apprécie tout particulièrement aussi le fait qu’ils invitent des auteurs à venir dédicacer leurs nouveaux livres et lire des extraits. »<br>\n<em>Books Books Books,</em><br>\n<em>Rue Jean-Louis Gaillard 2, Lausanne</em>",
+            "en": "“I don’t read books in French, so <a href=\"https://booksbooksbooks.ch/\">Books Books Books</a> is really important for me – I buy a book a week there. I don’t buy any books online because I love being able to talk to the shop staff about them. Matthew Wake is the owner and he’s a fount of knowledge, as is his team – they have introduced me to all sorts of books. I especially love the fact that they invite authors to come and do signings of their new books and read extracts.”<br>\n<em>Books Books Books,</em><br>\n<em>Rue Jean-Louis Gaillard 2, Lausanne</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25960,
+            "name": "Le charme des petites librairies",
+            "public_name": {
+              "fr": "Le charme des petites librairies"
+            },
+            "cloudinary_id": "43672bd468f354ae",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 600,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"600\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "43672bd468f354ae.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Books-Books-Books-e1575985350666.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Daniela Bollhalder, webdesigner et passionnée de plantes",
+            "en": "Daniela Bollhalder is a web designer and plant lover"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "« Détenue depuis neuf ans par un trentenaire, <a href=\"http://librairiedelalouve.ch/\">la </a><a href=\"http://librairiedelalouve.ch/\">librairie de la Louve</a> est une référence dans le domaine des livres d’occasion. J’y viens au moins une ou deux fois par mois. Le gérant se souvient toujours des sujets qui vous intéressent, vous conseille et fait des recherches. J’ai trouvé beaucoup de perles rares ici, comme un vieux livre sur les plantes, épuisé et vendu très cher sur Internet. À la Louve, ils me l’ont déniché au prix d’origine. »<br>\n<em>Librairie de la Louve,</em><br>\n<em>Place de la Louve 3, Lausanne</em>",
+            "en": "“A thirty-something has been running the <a href=\"http://librairiedelalouve.ch/\">Librairie de la Louve</a> for the past nine years, and it’s the place to go for second-hand books. I go at least once or twice a month. The manager always remembers what you’re interested in, does research for you and gives you recommendations. I’ve found a lot of rare gems here, like an old book on plants: out of print and selling for a lot of money online, but there they picked it up for me at the original price.”<br>\n<em>Librairie de la Louve,</em><br>\n<em>Place de la Louve 3, Lausanne</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26042,
+            "name": "Le charme des petites librairies",
+            "public_name": {
+              "fr": "Le charme des petites librairies"
+            },
+            "cloudinary_id": "b22dba7e02fc7434",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 1136,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"1136\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b22dba7e02fc7434.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/La-Louve-e1575985554608.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Jean-François Semoroz, employé d’administration, collectionneur de BD et passionné de dessin",
+            "en": "Jean-François Semoroz, a civil servant, collects graphic novels, and loves drawing"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "« J’apprécie particulièrement la librairie <a href=\"http://www.belphegor.ch/\">Belphégor</a> parce que les vendeurs sont toujours de bonne humeur, et qu’elle présente un large choix : du neuf, de l’occasion et des pièces de collection. Je viens au moins une fois par mois, souvent avec une idée précise, mais je me laisse aussi conseiller parce qu’ils connaissent mes goûts. On peut consulter des bandes dessinées sur le web, mais venir les feuilleter en librairie et exposer un bel ouvrage dans sa bibliothèque, c’est une autre dimension. »<br>\n<em>Librairie Belphégor,</em><br>\n<em>Boulevard de Grancy 10, Lausanne</em>",
+            "en": "“<a href=\"http://www.belphegor.ch/\">Belphégor</a> is a particular favourite of mine because the staff are always cheerful and there’s always a wide selection of new, second-hand, and collector’s items to choose from. I come here at least once a month, often with a specific idea in mind, but I also ask the staff for recommendations because they know what I like. You can look at graphic novels online, but coming and flicking through them in a bookshop and unearthing a great read on the bookshelves adds a whole new dimension to the experience.”<br>\n<em>Librairie Belphégor,</em><br>\n<em>Boulevard de Grancy 10, Lausanne</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 24251,
+            "name": "Le charme des petites librairies",
+            "public_name": {
+              "fr": "Le charme des petites librairies"
+            },
+            "cloudinary_id": "7deabea1b4a0ce62",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 600,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"600\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "4f82d077308bdc52.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Belph%C3%A9or-e1575986234523.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "7deabea1b4a0ce62",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Le charme des petites librairies"
+          }
+        }
+      ],
+      "published_at": "1609831645",
+      "seo": {
+        "description": {
+          "fr": "Lausanne compte une quinzaine de librairies indépendantes. Découvrez les adresses préférées de quatre lecteurs !\n\n",
+          "en": "Lausanne is home to around 15 independent bookshops. Four book lovers tell us about their favourites!\n\n"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "le-charme-des-petites-librairies",
+          "en": "the-magic-of-small-bookshops"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-education",
+          "public_name": {
+            "fr": "Éducation",
+            "en": "Education",
+            "de": "Bildung"
+          }
+        }
+      ]
+    }
+  }
+}
