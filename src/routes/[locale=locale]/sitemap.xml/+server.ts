@@ -1,6 +1,6 @@
 import { RouteTypes } from '$enums';
 import { getMediaLibraryRegisterLink } from '$lib/helpers';
-import { menuItems } from '$lib/helpers/menu';
+import { menuItems } from '$lib/config/menu';
 import { getPosts } from '$lib/helpers/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
