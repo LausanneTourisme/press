@@ -2,74 +2,39 @@ import { graphql, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 
 import eventsMock from './responses/events/all.json';
-import type { Favorite, GraphQLResponse, Group, Post, PostType } from '$types';
+import type { Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '$types';
 
+// lazy — files are only loaded when the handler is called
 const favoritesMocks = import.meta.glob<{ default: GraphQLResponse<Favorite<string>> }>(
-  './responses/favorites/*.json',
-  { eager: true }
+  './responses/favorites/*.json'
 );
 const postsMocks = import.meta.glob<{ default: GraphQLResponse<PostType<string>> }>(
-  './responses/posts/*.json',
-  { eager: true }
+  './responses/posts/*.json'
 );
 const groupsMocks = import.meta.glob<{ default: GraphQLResponse<Group<string>> }>(
-  './responses/groups/*.json',
-  { eager: true }
+  './responses/groups/*.json'
 );
-
-const favoritesMap: Record<string, GraphQLResponse<Favorite<string>>> = {};
-const postsMap: Record<string, GraphQLResponse<PostType<string>>> = {};
-const groupsMap: Record<string, GraphQLResponse<Group<string>>> = {};
-const articlesMap: Record<string, GraphQLResponse<Post<string>>> = {};
-
-for (const path in favoritesMocks) {
-  const filename = path.split('/').pop()?.replace('.json', ''); // ex: culture.fr
-  if (filename) {
-    favoritesMap[filename] = favoritesMocks[path].default;
-  }
-}
-
-for (const path in postsMocks) {
-  const filename = path.split('/').pop()?.replace('.json', ''); // ex: news.fr
-  if (filename) {
-    postsMap[filename] = postsMocks[path].default;
-  }
-}
-
-for (const path in groupsMocks) {
-  const filename = path.split('/').pop()?.replace('.json', ''); // ex: fr
-  if (filename) {
-    groupsMap[filename] = groupsMocks[path].default;
-  }
-}
+const articlesMocks = import.meta.glob<{ default: GraphQLResponse<Post<Translatable>> }>(
+  './responses/articles/*.json'
+);
 
 export const handlers = [
   graphql.query('GetPosts', async ({ variables }) => {
+    let key: string;
     if (variables.type === 'press_release, press_kit') {
       console.warn('mock request: GetPosts (press)');
-      const key = `press_kit.${variables.locale}`;
-      const mock = postsMap[key];
-
-      return HttpResponse.json(mock);
+      key = `press_kit.${variables.locale}`;
     } else if (variables.type === 'post') {
       if (variables.highlighted) {
         console.warn('mock request: GetPosts (highlighted posts)');
-        const key = `posts.highlighted.${variables.locale}`;
-        const mock = postsMap[key];
-
-        return HttpResponse.json(mock);
+        key = `posts.highlighted.${variables.locale}`;
+      } else {
+        console.warn('mock request: GetPosts (posts)');
+        key = `posts.${variables.locale}`;
       }
-      console.warn('mock request: GetPosts (posts)');
-      const key = `posts.${variables.locale}`;
-      const mock = postsMap[key];
-
-      return HttpResponse.json(mock);
     } else if (variables.type === 'news') {
       console.warn('mock request: GetPosts (news)');
-      const key = `news.${variables.locale}`;
-      const mock = postsMap[key];
-
-      return HttpResponse.json(mock);
+      key = `news.${variables.locale}`;
     } else {
       console.error('mock request: GetPosts (no idea...)');
       return HttpResponse.json({
@@ -85,61 +50,43 @@ export const handlers = [
         }
       });
     }
+    const path = `./responses/posts/${key}.json`;
+    const mock = await postsMocks[path]();
+    return HttpResponse.json(mock.default);
   }),
   graphql.query('GetGroup', async ({ variables }) => {
     console.warn('mock request: GetGroup');
-    const mock = groupsMap[variables.locale];
-
-    return HttpResponse.json(mock);
+    const path = `./responses/groups/${variables.locale}.json`;
+    const mock = await groupsMocks[path]();
+    return HttpResponse.json(mock.default);
   }),
   graphql.query('GetFavorites', async ({ variables }) => {
     console.warn('mock request: GetFavorites');
-    const key = `${variables.theme}.${variables.locale}`; // ex: "culture.fr"
-    const mock = favoritesMap[key];
-
-    return HttpResponse.json(mock);
+    const path = `./responses/favorites/${variables.theme}.${variables.locale}.json`;
+    const mock = await favoritesMocks[path]();
+    return HttpResponse.json(mock.default);
   }),
   graphql.query('GetAgendaEvents', async () => {
     console.warn('mock request: GetAgendaEvents');
     return HttpResponse.json(eventsMock);
   }),
-  graphql.query('GetArticle', async ({ variables, ...rest }) => {
+  graphql.query('GetArticle', async ({ variables }) => {
     console.warn('mock request: GetArticle');
-    console.log({ variables });
-
-    for (const type of ['press_kit', 'news', 'posts', 'posts.highlighted']) {
-      for (const locale of ['fr', 'de', 'en']) {
-        const response = postsMap[`${type}.${locale}`];
-        for (const post of response.data.items?.data) {
-          if (post.seo?.slug === variables.slug) {
-            console.log(post);
-            return HttpResponse.json({
-              data: {
-                item: post
-              }
-            });
+    const path = `./responses/articles/${variables.slug}.json`;
+    if (!articlesMocks[path]) {
+      return HttpResponse.json({
+        errors: [
+          {
+            message: 'Internal server error',
+            locations: [{ line: 2, column: 5 }],
+            path: ['item']
           }
-        }
-      }
+        ],
+        data: { item: null }
+      });
     }
-
-    return HttpResponse.json({
-      errors: [
-        {
-          message: 'Internal server error',
-          locations: [
-            {
-              line: 2,
-              column: 5
-            }
-          ],
-          path: ['item']
-        }
-      ],
-      data: {
-        item: null
-      }
-    });
+    const article = await articlesMocks[path]();
+    return HttpResponse.json(article.default);
   })
 ];
 
