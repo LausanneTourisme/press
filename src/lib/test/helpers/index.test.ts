@@ -7,6 +7,7 @@ import {
   getMediaLibraryRegisterLink,
   getTailwindColor,
   humanFileSize,
+  intersect,
   normalize,
   route,
   shuffle,
@@ -681,6 +682,13 @@ describe('Test helper: Index', () => {
       expect(ucfirst('it is a test?')).toBe('It is a test?');
       expect(ucfirst('UPSCALED')).toBe('UPSCALED');
     });
+  });
+
+  it('Test intersect', () => {
+    expect(intersect([1, 2, 3], [2, 3, 4])).toStrictEqual([2, 3]);
+    expect(intersect([1, 2, 3], [4, 5, 6])).toStrictEqual([]);
+    expect(intersect([1, 2, 3], [1, 2, 3])).toStrictEqual([1, 2, 3]);
+    expect(intersect([], [1, 2, 3])).toStrictEqual([]);
   });
 
   describe('Test normalize', () => {
