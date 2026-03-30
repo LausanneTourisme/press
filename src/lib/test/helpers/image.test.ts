@@ -6,11 +6,22 @@ import {
   transformToString
 } from '$lib/helpers/image';
 import { describe, expect, it, vi } from 'vitest';
-// Mock the env module
+
+let mockDev = false;
+let mockIsOfflineMode = false;
+
 vi.mock('$env/static/public', () => ({
   PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
   PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
   PUBLIC_ENABLE_OFFLINE_MODE: 'false'
+}));
+
+// Mock the environment variables and modules dynamically
+vi.mock('$app/environment', () => ({
+  get dev() { return mockDev; }
+}));
+vi.mock('$lib/helpers', () => ({
+  get isOfflineMode() { return mockIsOfflineMode; }
 }));
 
 describe('Test helper: Image', () => {
@@ -198,6 +209,16 @@ describe('Test helper: Image', () => {
       ).toBe(
         `https://test-cloudinary.com/image/upload/f_auto,q_auto,w_500,c_fill/test_preset/destination/dev_test`
       );
+    });
+
+    it('returns generic image on offline mode', () => {
+      mockDev = true;
+      mockIsOfflineMode = true;
+      expect(generateCloudinaryUrl({ src: 'dev_test' })).toBe(
+        '/pages/themes/cathedrale_skate.jpg'
+      );
+      mockDev = false;
+      mockIsOfflineMode = false;
     });
   });
 });
