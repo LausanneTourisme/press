@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "303",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne, culturellement vôtre",
         "en": "Lausanne, culturally yours",

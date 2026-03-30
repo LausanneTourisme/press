@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "279",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne : histoire, architecture et design",
         "en": "Lausanne : history, architecture and design",

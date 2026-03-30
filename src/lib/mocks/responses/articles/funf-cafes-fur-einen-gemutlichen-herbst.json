@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "270",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "5 cafés pour un automne cosy",
         "en": "Five cafés for a cosy autumn",

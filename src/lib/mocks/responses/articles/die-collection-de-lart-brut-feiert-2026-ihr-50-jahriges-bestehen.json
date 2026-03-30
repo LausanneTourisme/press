@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "330",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "La Collection de l’Art Brut fête ses 50 ans en 2026 !",
         "en": "he Collection de l’Art Brut Celebrates Its 50th Anniversary in 2026",

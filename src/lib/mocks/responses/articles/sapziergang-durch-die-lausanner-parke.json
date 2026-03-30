@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "292",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Balade dans les parcs lausannois",
         "en": "A walk in Lausanne parks",

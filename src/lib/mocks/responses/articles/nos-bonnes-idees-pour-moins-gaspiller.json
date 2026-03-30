@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "274",
-      "languages": [
-        "fr",
-        "en"
-      ],
+      "languages": ["fr", "en"],
       "name": {
         "fr": "Nos bonnes idées pour moins gaspiller",
         "en": "Our ideas to reduce waste"

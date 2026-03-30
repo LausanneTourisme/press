@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "307",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "L’histoire d’amour entre Lausanne et le cinéma",
         "en": "Lausanne’s love story with cinema",

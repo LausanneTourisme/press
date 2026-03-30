@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "329",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Un nouveau lieu gourmand s’installe à l’édicule du Bois-de-Beaulieu",
         "en": "A New Culinary Spot Opens at the Bois-de-Beaulieu Pavilion",

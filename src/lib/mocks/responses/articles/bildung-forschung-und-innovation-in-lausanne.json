@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "288",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Education, recherche et innovation à Lausanne",
         "en": "Education, research and innovation in Lausanne",

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "278",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne, ville gourmande",
         "en": "Lausanne, a foody city",

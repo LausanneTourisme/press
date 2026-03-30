@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "273",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Nos coups de coeur deuxième main et vintage à Lausanne",
         "en": "Our favourite second-hand and vintage boutiques in Lausanne",

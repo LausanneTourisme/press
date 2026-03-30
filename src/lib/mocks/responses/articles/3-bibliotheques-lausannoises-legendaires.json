@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "302",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "3 bibliothèques lausannoises légendaires",
         "de": "3 legendäre Bibliotheken in Lausanne",

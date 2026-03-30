@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "332",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "L’Appart décroche l’étoile verte",
         "en": "L’Appart is awarded the Green Star for its commitment to sustainable cuisine.",

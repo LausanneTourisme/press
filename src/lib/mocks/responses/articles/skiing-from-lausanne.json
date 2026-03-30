@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "286",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Skier depuis Lausanne",
         "en": "Skiing from Lausanne",

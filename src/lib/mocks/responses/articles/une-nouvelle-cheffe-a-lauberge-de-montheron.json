@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "325",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Une nouvelle cheffe à l'auberge de Montheron!",
         "en": "A New Chef at the Auberge de Montheron !",

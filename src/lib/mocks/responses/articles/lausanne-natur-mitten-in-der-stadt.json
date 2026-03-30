@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "296",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Lausanne, ville nature",
         "de": "Lausanne ‒ Natur mitten in der Stadt",

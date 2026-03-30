@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "295",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Spots de glisse ou de chill, la liste !",
         "en": "Spots to skate or chill, the list!",
