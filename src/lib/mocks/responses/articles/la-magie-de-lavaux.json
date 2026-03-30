@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "306",
-      "languages": [
-        "fr",
-        "en"
-      ],
+      "languages": ["fr", "en"],
       "name": {
         "fr": "La magie de Lavaux",
         "en": "Enchanting Lavaux"

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "285",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Où admirer le coucher du soleil à Lausanne ?",
         "en": "The best spots to admire the sunset in Lausanne",

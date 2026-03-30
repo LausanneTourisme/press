@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "299",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne et la durabilité",
         "en": "Lausanne and sustainability",

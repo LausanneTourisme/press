@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "309",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Mes balades revigorantes préférées à Lausanne",
         "de": "Meine liebsten Spaziergänge in Lausanne, um Energie zu tanken",

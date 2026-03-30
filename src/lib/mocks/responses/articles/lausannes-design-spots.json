@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "282",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Les adresses design de Lausanne",
         "en": "Lausanne’s design spots",

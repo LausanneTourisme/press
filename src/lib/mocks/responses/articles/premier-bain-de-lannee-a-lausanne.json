@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "289",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Premier bain de l’année à Lausanne !",
         "en": "First bath of the year in Lausanne!",

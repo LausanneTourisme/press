@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "290",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Où patiner à Lausanne ?",
         "en": "Where can you skate in Lausanne?",

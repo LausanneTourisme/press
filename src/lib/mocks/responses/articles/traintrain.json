@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "328",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Traintrain",
         "en": "Traintrain",

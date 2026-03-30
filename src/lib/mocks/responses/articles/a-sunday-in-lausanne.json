@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "298",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Que faire un dimanche à Lausanne ?",
         "de": "Was kann man sonntags in Lausanne unternehmen?",

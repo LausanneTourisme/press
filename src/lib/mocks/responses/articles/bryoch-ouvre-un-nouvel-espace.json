@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "333",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Bryo.ch ouvre un nouvel espace",
         "en": "Bryo.ch opens a new brioche space",

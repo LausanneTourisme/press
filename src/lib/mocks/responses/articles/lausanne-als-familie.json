@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "318",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne en famille",
         "en": "Family Lausanne",

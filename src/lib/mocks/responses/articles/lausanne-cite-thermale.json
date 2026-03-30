@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "291",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne, Cité thermale",
         "en": "Lausanne, spa town",

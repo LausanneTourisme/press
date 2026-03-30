@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "275",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "À Lausanne, l’objectif (aussi) s’épanouit : mes meilleurs spots photos",
         "de": "In Lausanne kommt so einiges vor die Linse: meine schönsten Fotospots",

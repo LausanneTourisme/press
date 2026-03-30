@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "324",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne à Table dévoile son programme de l'édition 2025 !",
         "en": "Lausanne à Table unveils its 2025 edition program!",

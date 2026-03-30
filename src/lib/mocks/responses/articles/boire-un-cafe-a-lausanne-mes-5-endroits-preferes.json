@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "280",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Boire un café à Lausanne : mes 5 endroits préférés",
         "en": "Drinking coffee in Lausanne: my 5 favourite places",

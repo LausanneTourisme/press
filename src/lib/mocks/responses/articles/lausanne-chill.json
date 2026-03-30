@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "297",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Lausanne CHILL",
         "en": "Lausanne CHILL",

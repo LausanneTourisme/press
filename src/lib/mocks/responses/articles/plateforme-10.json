@@ -2,10 +2,7 @@
   "data": {
     "item": {
       "id": "243",
-      "languages": [
-        "fr",
-        "en"
-      ],
+      "languages": ["fr", "en"],
       "name": {
         "fr": "Plateforme 10",
         "en": "Plateforme 10"

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "301",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !",
         "en": "No need to leave Lausanne to go to the beach, there is Lake Geneva!",

@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "283",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "Les plus belles salles de spectacle de Lausanne",
         "en": "The most beautiful performance venues in Lausanne",

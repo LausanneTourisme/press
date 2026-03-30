@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "335",
-      "languages": [
-        "fr",
-        "en",
-        "de"
-      ],
+      "languages": ["fr", "en", "de"],
       "name": {
         "fr": "50 ANS D’ART BRUT À LAUSANNE : programme anniversaire annoncé pour 2026-2027",
         "en": "50 YEARS OF ART BRUT IN LAUSANNE:   Anniversary programme announced for 2026-27",

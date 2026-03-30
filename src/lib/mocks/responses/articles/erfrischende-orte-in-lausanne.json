@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "316",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Les endroits où se rafraîchir à Lausanne",
         "de": "Erfrischende Orte in Lausanne",

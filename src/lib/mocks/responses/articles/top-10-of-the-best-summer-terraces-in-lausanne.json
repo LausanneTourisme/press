@@ -2,11 +2,7 @@
   "data": {
     "item": {
       "id": "315",
-      "languages": [
-        "fr",
-        "de",
-        "en"
-      ],
+      "languages": ["fr", "de", "en"],
       "name": {
         "fr": "Top 10 des meilleures terrasses estivales de Lausanne",
         "de": "Top Ten der besten Sommerterrassen in Lausanne",
