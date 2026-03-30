@@ -3,6 +3,953 @@
     "items": {
       "data": [
         {
+          "id": "24",
+          "languages": ["en"],
+          "author": "Lausanne Tourisme",
+          "name": "Discover Lausanne's Sporting Legacy ahead of Paris 2024",
+          "type": "press_release",
+          "lead": "Discover Lausanne's Sporting Legacy ahead of Paris 2024",
+          "summary": "With the Olympic flame burning brightly and a series of engaging events lined up, Lausanne is not just a city to watch but a destination to experience firsthand. In an era where sport and leisure blend seamlessly, Lausanne emerges as a quintessential destination for aficionados of both.\r\n\r\nThe Olympic Capital, with its emblematic scenery – nestled between the serene waters of Lake Geneva and the majestic Swiss Alps – is primed to offer unparalleled sport tourism experiences, especially relevant as the world anticipates the grandeur of the Paris 2024 Olympics.\r\n\r\nAs home to the International Olympic Committee and host to numerous international sport federations, Lausanne's designation as the Olympic Capital is far from ceremonial. This city celebrates Olympic heritage and contemporary athletic fervour, and captivates visitors with its blend of historic gravitas and vibrant sport culture.",
+          "highlight": false,
+          "published_at": "1711494000",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 23888,
+                  "name": "Lausanne",
+                  "public_name": {
+                    "en": "Lausanne",
+                    "es": null
+                  },
+                  "cloudinary_id": "CVuuG8D5GCxymfO8L5Gee4rXXsca6pYpQQdOjSEc",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LT/ www.diapo.ch",
+                  "metadata": {
+                    "width": 1600,
+                    "height": 1061,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1600\" height=\"1061\"",
+                    "tags": "Cathédrale; Hiver; Lac; Montagne; Paysage",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23872,
+                  "name": "Olympic Museum and Skate",
+                  "public_name": {
+                    "fr": "Olympic Museum and Skate",
+                    "de": "Olympic Museum and Skate",
+                    "es": null
+                  },
+                  "cloudinary_id": "ZPX1u9UgBW1cT7jYO6z4qcRBHf1h7twX7mkn4H7H",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Switzerland Tourism, Lorenz Richard",
+                  "metadata": {
+                    "width": 3600,
+                    "height": 2400,
+                    "mimeType": "image/jpeg",
+                    "copyright": "Lorenz Richard",
+                    "attr": "width=\"3600\" height=\"2400\"",
+                    "tags": "Sport; Capitale, Olympique; Musée; Olympique; Culture; Skate",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23889,
+                  "name": "Balade velo",
+                  "public_name": {
+                    "en": "Balade vélo",
+                    "es": null
+                  },
+                  "cloudinary_id": "GBa6c6NNzyXcZhSWeu7K12TqnrjBx4ft3vyNaclv",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Suisse Tourisme",
+                  "metadata": {
+                    "width": 1600,
+                    "height": 1067,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1600\" height=\"1067\"",
+                    "tags": "Couple; Vélo; Sport; Environs; Lavaux; Lac; Montagne",
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "A Calendar Full of Celebrations",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>&nbsp;In 2024, Lausanne celebrates <a href=\"https://www.lausanne.ch/vie-pratique/sport-pour-tous/30-ans-capitale-olympique/programme/evenement-7.html\">the 30th anniversary of its title as Olympic Capital</a>. To mark this milestone, the city has curated a series of free, festive, and sportive events designed to enthral both locals and visitors alike. Key highlights include the unveiling of the Olympic cauldron – a legacy of the Lausanne 2020 Youth Olympic Games – and the innovative M2 Challenge in collaboration with Lausanne Public Transport (TL), where participants race against the metro over a demanding 5.6 km course with over 300 meters of elevation gain.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23892,
+                "name": "Paris 2024 au MO",
+                "public_name": {
+                  "en": "Musée Olympique Paris 2024",
+                  "es": null
+                },
+                "cloudinary_id": "GeHzstydiBuNLnlwFj4OVoe1BuFiPILnpuUJBgQO",
+                "mime_type": "image/jpeg",
+                "copyright": "© Musée Olympique",
+                "metadata": {
+                  "width": 3840,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Christophe Moratal",
+                  "attr": "width=\"3840\" height=\"2560\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Gearing Up for Paris 2024",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>&nbsp;As the world turns its gaze towards the Paris Olympics in the summer of 2024, Lausanne stands out as a pre-eminent hub for Olympic enthusiasts. With <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">The Olympic Museum</a> as a focal point, visitors can immerse themselves in the spirit and history of the Games. This summer, the museum’s outdoor giant screen will broadcast the Olympics, complemented by a full programme of activities over three weekends, including sports demonstrations and workshops, making it the perfect way to enjoy the Games. There will be a new free entry temporary exhibition, ‘Olympic™ Paris: An Immersive Journey’, at The Olympic Museum from the 25th May until the 19th January 2025. Visitors will embark on an immersive and interactive journey through Paris’ three Olympic Games (1900, 1924 and 2024). It will not only look at the historical story behind Paris and the Olympic Movement, but celebrate the upcoming Games this summer.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23893,
+                "name": "Paris Olympique à Lausanne",
+                "public_name": {
+                  "en": "Paris Olympique à Lausanne",
+                  "es": null
+                },
+                "cloudinary_id": "j9uV9o5KeHGvZi5dvywVh9XV3I3AHnOvfUcX36vf",
+                "mime_type": "image/jpeg",
+                "copyright": "© Musée Olympique",
+                "metadata": {
+                  "width": 1920,
+                  "height": 1440,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"1440\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "An Open-Air Playing Field",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>&nbsp;Lausanne's commitment to sport is omnipresent, from the shores of Lake Geneva to the Alpine peaks. Whether it’s sailing, cycling, running, or even urban sports like skateboarding and basketball, Lausanne offers a playground for every type of athlete. The city’s parks and gardens, totalling 350 hectares, not only underscore its status as one of the greenest cities in the world but also provide a lush backdrop for outdoor activities.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23454,
+                "name": "Parc Bourget vélo",
+                "public_name": {
+                  "fr": "Parc Bourget",
+                  "en": "Parc Bourget",
+                  "de": "Parc Bourget",
+                  "es": null
+                },
+                "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT/Laurent Kaczor",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1065,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1065\"",
+                  "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                  "description": null,
+                  "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+                }
+              },
+              "size": "parallax",
+              "focus": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "GeHzstydiBuNLnlwFj4OVoe1BuFiPILnpuUJBgQO",
+              "copyright": "© Musée Olympique",
+              "public_name": "Musée Olympique Paris 2024"
+            }
+          ],
+          "seo": {
+            "description": "Discover Lausanne's Sporting Legacy ahead of Paris 2024",
+            "noindex": false,
+            "slug": "discover-lausannes-sporting-legacy-ahead-of-paris-2024"
+          },
+          "tags": [
+            {
+              "name": "lt-sport",
+              "public_name": "Sport"
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "languages": ["en"],
+          "author": "Lausanne Tourisme",
+          "name": "Lausanne's 'Bô Noël' 2023",
+          "type": "press_release",
+          "lead": "A Revitalised Christmas Tradition with Ethical Elegance",
+          "summary": "This year, from November 21 to December 31, the Swiss city of Lausanne is transforming into a festive wonderland for its 9th edition of Bô Noël, presenting a unique Yuletide market that blends traditional charm with modern ethical principles. This enchanting Christmas market, returning to the Place des Pionnières, promises a captivating experience for visitors of all ages.",
+          "highlight": false,
+          "published_at": "1700521200",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 23949,
+                  "name": "Cathédrale ciel rose",
+                  "public_name": {
+                    "en": "La Cathédrale de Lausanne  en hiver",
+                    "es": null
+                  },
+                  "cloudinary_id": "NS9VEMegJHS2XOEaIZv7E12PrFJNhJglKgsyzccs",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LT/www.diapo.ch, Régis Colombo",
+                  "metadata": {
+                    "width": 1890,
+                    "height": 2035,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1890\" height=\"2035\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23897,
+                  "name": "Cathedrale en hiver",
+                  "public_name": {
+                    "fr": "Cathedrale en hiver",
+                    "en": "Cathedrale en hiver",
+                    "es": null
+                  },
+                  "cloudinary_id": "JMYFc56HplnA2yZ3osvBNha3E2SgBtIgDL8seD9e",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LT/ David Picard",
+                  "metadata": {
+                    "width": 1600,
+                    "height": 1067,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1600\" height=\"1067\"",
+                    "tags": "Cathedrale; Neige; Hiver",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 26587,
+                  "name": "Lausanne en famille",
+                  "public_name": {
+                    "fr": "Lausanne en famille"
+                  },
+                  "cloudinary_id": "83f45f343bb4e215",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© 20221126_Tourisme_Bô Noël",
+                  "metadata": {
+                    "width": 768,
+                    "height": 512,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"768\" height=\"512\"",
+                    "tags": null,
+                    "description": null,
+                    "file_name_from_url": "006b424e6c3ba6f4.jpg",
+                    "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/12/Bo-Noel-5-scaled.jpg"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "What's New? ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>Lausanne's Bô Noël is proud to introduce a fresh ethical market concept at the heart of its festive celebrations. Visitors can discover a curated selection of eco-conscious clothing, artisan home decor, cruelty-free cosmetics, and gourmet vegan delights – perfect for those seeking thoughtful and lasting gifts. The market's commitment to ethical standards has been done without compromising on festive cheer.&nbsp;<br><br></div><div>For families, a novel carousel awaits, crafted in the image of a majestic Christmas tree, while thrill-seekers can delight in the <a href=\"https://bo-noel.ch/points-interet/piste-de-luge/\">20-meter-long toboggan run</a>, fashioned from snow recovered from the Malley Skating Rink. This will be free for those with sleds, otherwise rentals are available from CHF 2.&nbsp;<br><br></div><div>This year there will also be 36 local designer shops, which will be housed in seven recycled containers, that will also feature a rooftop bar. &nbsp;<br><br></div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23899,
+                "name": "Marche de Noel Lausanne",
+                "public_name": {
+                  "en": "Marché de Noel Lausanne",
+                  "es": null
+                },
+                "cloudinary_id": "FemuysI8pMi36kajqpI6Ujp5LVaMqfpOwBpnLSw9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vandy studio",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Evénement; Hiver; Lausanne; Noël; Ambiance;",
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Activities: ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>The pop-up <a href=\"https://bo-noel.ch/points-interet/duplex-room/\">DUPLEX ROOM</a> hotel makes for the perfect romantic couples escape, an ephemeral hotel experience overlooking the Historical Museum of Lausanne's serene gardens. Prices from CHF 295 for two people and includes an overnight stay, fondue vouchers, mulled wine vouchers, breakfast, an aperitif box, and a bottle of wine.&nbsp;<br><br></div><div>Amidst the merry hustle, the Grand Marché de Saint-François unveils its transformation, crowned with a monumental 15-meter tree made of oversized baubles. Just a short walk away, the iconic Place du Château once again hosts the Big Wheel, offering sweeping views of the city's wintry splendour.&nbsp;<br><br></div><div>Mark your calendars for November 25 at 6:00 pm, when the grand opening parade sets off, weaving magic through the streets of Lausanne. The parade is led by Santa Claus and accompanied by the rhythmic beats of 100 drums and the storied tracassets of the Vaudois vineyards.&nbsp;<br><br></div><div>Other highlight activities include the <a href=\"https://bo-noel.ch/points-interet/petit-train-de-morges/\">Petit train Bô Noël</a>, where families are invited to embark on a festive train journey that connects the Flon district to the heart of the city.&nbsp;<br><br></div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23900,
+                "name": "Bo Noel Duplex Room",
+                "public_name": {
+                  "en": "Bo Noel Duplex Room",
+                  "es": null
+                },
+                "cloudinary_id": "peCmnQpZEgEL0g83YqtfkLyZySSyqC8kTxcpZH6P",
+                "mime_type": "image/jpeg",
+                "copyright": "© Photo Intuifilm",
+                "metadata": {
+                  "width": 1200,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"1600\"",
+                  "tags": "Marché, Noël; Lausanne; Ambiance, Hôtel; Hébergement",
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Timings: ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>Open daily: November 21 to December 31, 2023.&nbsp;<br><br></div><div><br></div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "QqYwSNcJeq46WfYEcsRW1V1GXwQDuJGbStmtPy6J",
+              "copyright": "© Bô Noël",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "A Revitalised Christmas Tradition with Ethical Elegance",
+            "noindex": false,
+            "slug": "lausannes-bo-noel-2023"
+          },
+          "tags": [
+            {
+              "name": "lt-hiver",
+              "public_name": "Winter"
+            }
+          ]
+        },
+        {
+          "id": "27",
+          "languages": ["en"],
+          "author": "Lausanne Tourisme",
+          "name": "Surrealism to Sport: Lausanne’s 2024 Cultural Offering",
+          "type": "press_release",
+          "lead": "Surrealism to Sport: Lausanne’s 2024 Cultural Offering",
+          "summary": "In 2024 Lausanne will once again showcase its rich cultural offering – a tapestry of art, history and sport. The city celebrates Surrealism's centenary at Plateforme 10, marks Fondation de l'Hermitage's 40th anniversary with exclusive exhibitions, and showcases profound artistry at the Collection de l'Art Brut. As Lausanne prepares for a year of exceptional cultural events, here are some of our cultural picks for the year ahead.",
+          "highlight": false,
+          "published_at": "1702335600",
+          "link": null,
+          "content": [
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Plateforme 10: A Century of Surrealism (March - August 2024) ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>Next year <a href=\"https://www.lausanne-tourisme.ch/en/explore/plateforme-10/\">Plateforme 10</a> celebrates the <strong>100th anniversary of the Surrealism manifesto</strong> with a programme of exhibitions across various artistic disciplines in its arts district, encompassing fine arts, photography, and design. This is set to include: &nbsp;</div><ul><li><strong>‘</strong><a href=\"https://www.mcba.ch/en/exhibitions/surrealisme-le-grand-jeu/\"><strong>Le Grand Jeu</strong></a><strong>’</strong> at MCBA: An exploration of the Surrealists' fascination with games (such as tarot, dice, and games of chance), seen as means to liberate society and art.&nbsp;</li></ul><div>&nbsp;</div><ul><li><strong>‘Libérer la photographie’</strong> at <a href=\"https://elysee.ch/en/\">Photo Elysée</a>: A tribute to Man Ray, the legendary photographer associated with the Dadaists and Surrealists, focusing on his groundbreaking contributions to photography.&nbsp;</li></ul><div>&nbsp;</div><ul><li><strong>‘</strong><a href=\"https://designmuseum.org/exhibitions/objects-of-desire-surrealism-and-design-1924-today\"><strong>Objects of Desire, Surrealism and Design 1924- today</strong></a><strong>’</strong> and ‘<strong>L’art verrier surréaliste</strong>’ at mudac: These exhibitions delve into the world of Surrealist art and design, showcasing a blend of historical and contemporary works.&nbsp;</li></ul>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23905,
+                "name": "Mudac - Photo Elysee",
+                "public_name": {
+                  "en": "Mudac - Photo Elysee",
+                  "es": null
+                },
+                "cloudinary_id": "pCWNw3GlWGZuPTJ8dmjlXagPiTLxHn0oDN0GhmjN",
+                "mime_type": "image/jpeg",
+                "copyright": "© Matthieu Gafsou",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1280,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1280\"",
+                  "tags": "Culture; Architecture; Lausanne; Musée; Quartier; Arts",
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Fondation de l’Hermitage ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>In 2024, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\">Fondation de l'Hermitage</a> is set to commemorate its 40th anniversary with an exceptional array of exhibitions and collaborations. Two of the key highlights include:&nbsp;</div><ul><li>The grand retrospective dedicated to <strong>Nicolas de Staël</strong> (1914-1955), an influential figure in the post-war art scene. This exhibition, organised in partnership with the Musée d'Art Moderne de Paris / Paris Musées, will feature around 100 works, including paintings, drawings, and sketchbooks sourced from various public and private collections across Switzerland, Europe, and internationally. This retrospective will offer a fresh perspective on de Staël's work, unveiling lesser-known aspects of his career and including prominent pieces like \"Parc des Princes\" (1952) alongside other significant, rarely or never before exhibited works.&nbsp;</li></ul><div>&nbsp;</div><ul><li>The <strong>presentation of the </strong><a href=\"https://www.langmatt.ch/en/collection#:~:text=The%20Museum%20Langmatt%20collection%20was,Pissarro%2C%20Renoir%2C%20and%20Sisley.\"><strong>Museum Langmatt's collection</strong></a>, predominantly consisting of Impressionist works. Gathered mainly between 1908 and 1919, this wonderful collection, usually housed at the Villa Langmatt, will be showcased at the Hermitage in its first-ever exhibition outside its permanent location. This event not only celebrates the 40th anniversary of the Foundation's inaugural exhibition, 'Impressionism in the Romandy Collections', but also marks 150 years of Impressionism, dating back to the first collective exhibition of the movement in 1874.&nbsp;</li></ul>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23903,
+                "name": "Hermitage expo",
+                "public_name": {
+                  "en": "Hermitage exposition",
+                  "es": null
+                },
+                "cloudinary_id": "b43vf3VDQ0p5uraVKDq8EKlxHCDRwMGJAEG2OOUa",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT/ Yannic Bartolozzi",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1068,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1068\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Collection de l'Art Brut: Magali Herrera Exhibition (8 March - 1 September 2024) ",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>The <a href=\"https://www.lausanne-tourisme.ch/en/explore/collection-de-lart-brut/\">Collection de l'Art Brut</a> is dedicating a comprehensive retrospective to the work of Uruguayan creator <a href=\"https://www.artbrut.ch/en_GB/exhibition/magali-herrera-une-etincelle-de-lumiere-dans-ce-monde\"><strong>Magalí Herrera (1914 – 1992)</strong>.</a> The exhibition, opening with a vernissage on March 7, 2024, will showcase:&nbsp;</div><ul><li><strong>Complete Works of Magalí Herrera</strong>: The museum's collection includes all the works of Herrera, spanning her entire creative period, offering insights into her artistic evolution.&nbsp;</li></ul><div>&nbsp;</div><ul><li><strong>Personal Archives and Correspondence</strong>: The exhibit reveals personal archives of the author and her intense correspondence with Jean Dubuffet, highlighting her significant contribution to the Art Brut movement.&nbsp;</li></ul><div>&nbsp;</div><ul><li><strong>Unique Artistic Journey</strong>: Herrera's journey as an artist is characterized by her self-taught approach to various art forms, including dance, theater, photography, and writing. Her painting, initiated around 1952, evolved into a dedicated practice by the 1960s.&nbsp;</li></ul><div>&nbsp;</div><ul><li><strong>Cosmogony of Herrera's Imagination</strong>: The exhibition showcases her ink compositions on various colored papers, revealing utopian universes created through meticulous and subtle techniques.&nbsp;</li></ul><div>Curated by Pascale Jeanneret, the exhibition offers a deep dive into Herrera's creations, illuminated by her letters and the broader context of Art Brut.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 22795,
+                "name": "Magalí Herrera, une étincelle de lumière dans ce monde / Collection de l'Art Brut",
+                "public_name": {
+                  "fr": "Magalí Herrera, une étincelle de lumière dans ce monde / Collection de l'Art Brut"
+                },
+                "cloudinary_id": "magali-herrera-une-etincelle-de-lumiere-dans-ce-monde-collection-de-lart-brut-2u9rem",
+                "mime_type": "image/jpeg",
+                "copyright": "© Droits réservés",
+                "metadata": {
+                  "width": 1646,
+                  "height": 2126,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1646\" height=\"2126\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "The Olympic Museum",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>The ‘<strong>Free to Run: On the Road to the Paris 2024 Marathon</strong>’ exhibition runs at <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">The Olympic Museum</a> until the 3rd March 2024. This multimedia experience delves into the rich history and cultural significance of marathon and long-distance running. This stretches from the marathon's debut at the Athens 1896 Olympics to the upcoming Paris 2024 Mass Participation Marathon, highlighting the intersection of running with personal and societal freedoms.&nbsp;<br><br></div><div>Curated by Pierre Morath, a Swiss athlete, sports historian, and documentary filmmaker known for his 2016 film ‘<strong>Free to Run’</strong>, the exhibition examines the evolution of running from a niche pastime to a global movement. Visitors can immerse themselves in a trilingual (English, French, German) audiovisual presentation, complemented by large-screen projections of archival footage and contemporary images. The exhibition's layout is marked by a blue line, reminiscent of the iconic marathon route markers, guiding visitors through various thematic sections including, born to run?, trailblazers, revolution, records and running for all. &nbsp;<br><br></div><div>This exhibition at The Olympic Museum not only celebrates the physical and mental fortitude inherent in marathon running but also underscores its role in championing personal liberty and communal spirit, paving the way to the Paris 2024 Marathon.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 23893,
+                "name": "Paris Olympique à Lausanne",
+                "public_name": {
+                  "en": "Paris Olympique à Lausanne",
+                  "es": null
+                },
+                "cloudinary_id": "j9uV9o5KeHGvZi5dvywVh9XV3I3AHnOvfUcX36vf",
+                "mime_type": "image/jpeg",
+                "copyright": "© Musée Olympique",
+                "metadata": {
+                  "width": 1920,
+                  "height": 1440,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"1440\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "pCWNw3GlWGZuPTJ8dmjlXagPiTLxHn0oDN0GhmjN",
+              "copyright": "© Matthieu Gafsou",
+              "public_name": "Mudac - Photo Elysee"
+            }
+          ],
+          "seo": {
+            "description": "Surrealism to Sport: Lausanne’s 2024 Cultural Offering",
+            "noindex": false,
+            "slug": "surrealism-to-sport-lausannes-2024-cultural-offering"
+          },
+          "tags": [
+            {
+              "name": "lt-culture",
+              "public_name": "Culture"
+            }
+          ]
+        },
+        {
+          "id": "29",
+          "languages": ["en"],
+          "author": "Lausanne Tourisme",
+          "name": "Lausanne à Table: Switzerland’s largest food event series – new 2023 food programme announced",
+          "type": "press_release",
+          "lead": "Lausanne à Table: Switzerland’s largest food event series – new 2023 food programme announced",
+          "summary": "From now until December 2023, the vibrant city of Lausanne, found on the glistening shores of Lake Geneva, will host Switzerland’s largest foodie event series organised by Lausanne à Table. Whetting the appetite of all food lovers, this gastronomic event programme showcases ‘all-things foodie’, with exceptional quality and culinary experiences at the forefront.",
+          "highlight": false,
+          "published_at": "1679526000",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 23888,
+                  "name": "Lausanne",
+                  "public_name": {
+                    "en": "Lausanne",
+                    "es": null
+                  },
+                  "cloudinary_id": "CVuuG8D5GCxymfO8L5Gee4rXXsca6pYpQQdOjSEc",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LT/ www.diapo.ch",
+                  "metadata": {
+                    "width": 1600,
+                    "height": 1061,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1600\" height=\"1061\"",
+                    "tags": "Cathédrale; Hiver; Lac; Montagne; Paysage",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23907,
+                  "name": "Lausanne  Beer Celebration",
+                  "public_name": {
+                    "en": "Lausanne Beer Celebration",
+                    "es": null
+                  },
+                  "cloudinary_id": "dSyBP9qmuHATg2UfQKaJ8iMCIMbmNEt3HwOmeH6L",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Lausanne Beer Celebration",
+                  "metadata": {
+                    "width": 6000,
+                    "height": 4000,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"6000\" height=\"4000\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23908,
+                  "name": "Panier 1er aout",
+                  "public_name": {
+                    "en": "Panier premier aout",
+                    "es": null
+                  },
+                  "cloudinary_id": "xxj8KcuzlNPipAG6xBB6NO7cAgecQdbgpDeg9a1c",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Lausanne à Table",
+                  "metadata": {
+                    "width": 2048,
+                    "height": 1366,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"2048\" height=\"1366\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 23909,
+                  "name": "Pizz'Cyclabes",
+                  "public_name": {
+                    "fr": "Pizz’cyclables",
+                    "en": "Pizz’cyclables",
+                    "es": null
+                  },
+                  "cloudinary_id": "g15I67DU2mWQSqLkKyBJgJVyqEUQl1uXOjBYAtIP",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Pizz’cyclables",
+                  "metadata": {
+                    "width": 2000,
+                    "height": 1125,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"2000\" height=\"1125\"",
+                    "tags": null,
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>Lausanne à Table celebrates local talent and inspires passion, honouring carefully selected local produce, local dining establishments, and creative flair within the city and surrounding areas. Events range from the Pizz'cycles – pizza cycling events that combine scenic bike rides, a portable pizza and an aperitif, to the Lausanne Beer Celebration in June, where twenty-four exceptional brasseries from all over the world will set up shop in the Sauvabelin canteen to bring the best of Craft Beer to the city.<br><br></div><div>Here are some of the other events to look forward to this year:<br><br></div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "Miam Festival, 27-29 May",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>A highlight of the Lausanne à Table event series for the past five years, the <a href=\"https://www.lausanneatable.ch/evenement/miam-festival/\">Miam Festival</a> (translated to Yum Festival) is a must try for street food fans. Over fifty stands and food trucks from the region descend on the <a href=\"https://www.lausanne-tourisme.ch/en/explore/place-de-la-riponne/\">Place de la Riponne</a> plaza, bringing their food and drink specialties from all over the world. The crème de la crème of artisans of taste, concerts and free entertainment, all in a friendly and festive atmosphere in the heart of Lausanne.<br><br></div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "instagram",
+              "value": "https://www.instagram.com/reel/Ctb5rklIxbW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "The Salée au Sucre Trot, 15 May – 28 June",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>10 bakeries in Lausanne compete in the <a href=\"https://www.lausanneatable.ch/en/la-trotte-de-la-salee-au-sucre/\">Salée au Sucre Trot</a> for the title of best salée au sucre, a creamy dessert which is a true emblem of Vaud’s culinary heritage that has been delighting the region’s inhabitants since the early 20th century. With the Trotte de la Salée au Sucre pass, visitors will be able to stroll from bakery to bakery tasting the salty sugar treat at each of the participating artisans and then vote for their favourite.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 19578,
+                "name": "Boulangerie Chez Séverine & Luca, Lausanne (1)",
+                "public_name": {
+                  "fr": "Boulangerie Chez Séverine & Luca, Lausanne (1)",
+                  "es": null
+                },
+                "cloudinary_id": "hg91wM847eYZbZnQrCMR8vgdTiBLyWBhVQ3UmpVF",
+                "mime_type": "image/jpeg",
+                "copyright": "© Boulangerie Chez Séverine & Luca",
+                "metadata": {
+                  "width": 1024,
+                  "height": 682,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1024\" height=\"682\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "La Fête des Vigneronnes, 9 June",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>This summer, 15 years after women were first accepted into the Confrérie des Vignerons (Brotherhood of Winegrowers), this event celebrates women in the wine industry. From the talented women who work as oenologists to the winegrowers, their great contributions to the nobility of the terroir in Romandy will be celebrated.<br><br></div><div>La <a href=\"https://www.lausanneatable.ch/en/event/la-fete-des-vigneronnes/\">Fête des Vigneronnes</a> at the <a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjh8_-S_qj-AhVCPOwKHdS3BisQFnoECBoQAQ&amp;url=https%3A%2F%2Fwww.cafedegrancy.ch%2F&amp;usg=AOvVaw28HbCzucqeoyGy92zuvdDr\">Café de Grancy</a> invites event goers to meet twelve of the leading women in the local industry and to taste their wines. It is a chance to share in good conversation and sample wines from some of the best winemakers, accompanied by the cuisine of Fanny Sueur and <a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjiw4yh_qj-AhWHGuwKHWQ1AkEQFnoECBAQAQ&amp;url=https%3A%2F%2Fmacheret-fromage.com%2F&amp;usg=AOvVaw2Po2bIUQTGjEQI90USZo__\">Macheret</a> cheeses.</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 20855,
+                "name": "Fête des Vigneronnes",
+                "public_name": {
+                  "fr": "Fête des Vigneronnes",
+                  "es": null
+                },
+                "cloudinary_id": "W0eQnfITx2b6Mbxl5IRCW2l6O4KG9CNd8GYf4b3r",
+                "mime_type": "image/jpeg",
+                "copyright": "© Fête des Vigneronnes",
+                "metadata": {
+                  "attr": "width=\"1536\" height=\"2048\"",
+                  "tags": null,
+                  "width": 1536,
+                  "height": 2048,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "",
+                "en": "The Ephemeral Tables – Lausanne's emblematic places, June - December",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div>Lausanne à Table 2023 welcomes the return of the <a href=\"https://www.lausanneatable.ch/en/event/les-tables-ephemeres-prennent-le-large/\">Tables Ephémères</a>, where seven notable Chefs and seven emblematic locations will result in seven unique and exclusive dining experiences.<br><br></div><div>LEGRAM’s Catalan Chef Alba Farnos Viñals, will cook her fresh and innovative cuisine for four lucky diners at the top of Lausanne’s Cathedral’s belfy. Diners will be welcomed by the Cathedral’s night watch woman, Cassandre Berdoz who will share her experience and enthusiasm for this place through a historical visit.&nbsp;<br><br></div><div>Other dining locations for The Ephemeral Tables include a spot in the middle of the Tuilière stadium, the top floor of the Bel-Air Tower and the 15th century Château Saint-Maire, built for the bishops of Lausanne, which is opening its doors just for the lucky winners. The Chef for the night will be chef Rafaël Rodriguez, who is committed to sustainable gastronomy and was awarded a green star by The Michelin Guide in 2021.<br><br></div><div>&nbsp;<br><br></div><div>There is a great variety of events on offer (some free and others ticketed) which will, without a doubt, ensure that all visitors to this city from now until December will leave with their taste buds well and truly tickled.&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            },
+            {
+              "type": "youtube",
+              "value": "https://www.youtube.com/embed/jKnrmem5-Kk"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "",
+                "en": "<div><strong>The full programme of events is available </strong><a href=\"https://www.lausanneatable.ch/programme/\"><strong>here</strong></a><strong>.</strong>&nbsp;</div>",
+                "de": "",
+                "it": "",
+                "es": ""
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "U76HAU9XxwMRIH74n3IQPKmgwqOkv1dbvjZnYRtw",
+              "copyright": "© Lausanne à Table",
+              "public_name": "Lausanne à table"
+            }
+          ],
+          "seo": {
+            "description": "Lausanne à Table: Switzerland’s largest food event series – new 2023 food programme announced",
+            "noindex": false,
+            "slug": "lausanne-a-table-switzerlands-largest-food-event-series-new-2023-food-programme-announced"
+          },
+          "tags": [
+            {
+              "name": "lt-gastronomie",
+              "public_name": "Gastronomy"
+            }
+          ]
+        },
+        {
           "id": "320",
           "languages": ["en", "de"],
           "author": "Lausanner",
@@ -197,6 +1144,123 @@
             {
               "name": "lt-histoire",
               "public_name": "History"
+            }
+          ]
+        },
+        {
+          "id": "331",
+          "languages": ["fr", "en", "de"],
+          "author": "Presse",
+          "name": "The Delicious Guide: one hundred addresses to discover the culinary gems of Lausanne and the surrounding region!",
+          "type": "press_release",
+          "lead": "October 1 marks the launch of the Delicious Guide, an ambitious project led by the 14 communes of the Lausanne tourist region (FERL) and various partners such as GastroLausanne, the Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion and Lausanne Tourism.",
+          "summary": "<p style=\"text-align: left\"><span><strong>October 1 marks the launch of the Delicious Guide, an ambitious project led by the 14 communes of the Lausanne tourist region (FERL) and various partners such as GastroLausanne, the Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion and Lausanne Tourism. This guide seeks to promote and celebrate our region's gastronomic scene. It also reflects the commitment to strengthening connections and collaboration between the sector’s key players, with the goal of promoting the Lausanne tourism region.</strong></span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+          "highlight": false,
+          "published_at": "1727733600",
+          "link": null,
+          "content": [
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Un guide inédit ",
+                "en": "An original guide ",
+                "de": "Ein ultimativer Guide "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Le Guide Délicieux, disponible en formats imprimé et numérique, est entièrement gratuit. Il se distingue par sa sélection de pépites culinaires, allant des stands de marché aux brasseries, en passant par les restaurants étoilés, épiceries fines, guinguettes, spécialités régionales, caveaux ou encore cafés de spécialité. Une centaine d'établissements ont été méticuleusement choisis par une équipe de neuf journalistes, blogueuses et blogueurs gastronomiques indépendants.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>The Delicious Guide, available in print and digital formats, is completely free. It stands out for its selection of culinary gems, from market stalls to brasseries, starred restaurants, delicatessens, open-air cafés, regional specialities, wine cellars and coffee shops. Around a hundred establishments have been meticulously chosen by a team of nine independent journalists and food bloggers.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Der Schlemmerführer besticht durch seine sorgfältige Auswahl kulinarischer Highlights: von Marktständen über Brasserien und Sternerestaurants bis hin zu Feinkostläden, Bistros, regionalen Spezialitäten, Weinkellern und besonderen Kaffeekulturorten. Ein Team von neun unabhängigen Journalistinnen und Bloggerinnen aus der Gastronomieszene hat die rund 100 empfohlenen Lokale mit viel Fachkenntnis ausgesucht. Der Guide ist sowohl in gedruckter als auch online kostenlos erhältlich.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Une source d’inspiration au quotidien ",
+                "en": "A daily source of inspiration ",
+                "de": "Ein täglicher Begleiter voller kulinarischer Inspiration "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Ce guide est conçu pour être un compagnon idéal tout au long de la journée, offrant des suggestions pour un brunch, un déjeuner ou un apéritif. Chaque adresse est accompagnée de recommandations spéciales, tels que les plats coups de cœur, pour une expérience culinaire inoubliable. Cerise sur le gâteau : une collaboration avec BDFIL a permis à 3 artistes de « croquer » Lausanne avec des illustrations remplies d’anecdotes.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>This guide is designed to be the perfect companion throughout the day, offering suggestions for brunch, lunch, or an aperitif. Each address is accompanied by curated recommendations, such as must-try dishes, ensuring an unforgettable culinary experience. In addition, a collaboration with BDFIL, Lausanne’s iconic comic strip festival, has allowed three artists to \"sketch\" Lausanne with illustrations filled with charming anecdotes.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Dieser Guide soll ein kulinarischer Begleiter durch den Tag sein und bietet Vorschläge für einen Brunch, ein Mittagessen oder einen Aperitif. Jede Empfehlung enthält persönliche Tipps wie zum Beispiel Lieblingsgerichte für ein unvergessliches kulinarisches Erlebnis. In Zusammenarbeit mit dem BDFIL, dem renommierten Lausanner Comic-Festival, konnten drei Kunstschaffende ihre ganz eigenen Illustrationen von Lausanne entwerfen, die die Stadt mit charmanten Anekdoten zum Leben erwecken.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Une vitrine de notre destination gastronomique ",
+                "en": "A showcase for our gastronomic destination ",
+                "de": "Schaufenster einer gastronomischen Destination "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Le Guide Délicieux, également traduit en anglais, s’adresse tant aux habitantes et habitants de la région qu’aux touristes. Il a pour ambition de positionner Lausanne et sa région comme une destination gastronomique incontournable, grâce à la diversité de ses établissements, la richesse de son terroir et le dynamisme de ses événements culinaires.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>The Delicious Guide, translated in English, is aimed at residents and tourists alike. Its purpose is to position Lausanne and the surrounding region as an essential gastronomic destination, thanks to the diversity of its establishments, the richness of its terroir and the dynamism of its culinary events.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Der Schlemmerführer richtet sich sowohl an die Einwohnerinnen und Einwohner der Region als auch an Touristen. Mit der Vielfalt ihrer Lokale, dem Reichtum ihres Terroirs und der Dynamik ihrer kulinarischen Veranstaltungen soll er Lausanne und ihre Region als unumgängliches gastronomisches Reiseziel positionieren.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Un projet évolutif ",
+                "en": "An evolving project ",
+                "de": "Ein fortlaufendes kulinarisches Rezept "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Edité chaque année, le Guide Délicieux verra sa sélection évoluer au fil des ans, avec l’objectif constant de soutenir la scène gastronomique locale et de mettre en lumière ses talents émergents.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>Published annually, the Delicious Guide’s selection will evolve over time, with the constant aim of supporting the local gastronomic scene and highlighting its emerging talents. In this edition, for example, the restaurant L'Appart is featured. Run by young chef Luis Zuzarte, L'Appart has been awarded an extra point in the Gault&amp;Millau 2025, in recognition of its creativity and commitment to responsible, local cuisine.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Geplant ist eine jährliche Ausgabe des Schlemmerführers. Dabei wird die Auswahl regelmässig aktualisiert, um die lokale Gastronomieszene zu unterstützen und neue Talente vorzustellen. So wird in der aktuellen Ausgabe beispielsweise das Restaurant «L'Appart» präsentiert. Unter der Leitung des jungen Küchenchefs Luis Zuzarte erhielt das Restaurant im Gault&amp;Millau 2025 einen zusätzlichen Punkt für seine Kreativität, sein Engagement und die Verwendung lokaler Produkte.&nbsp;</span></p><p style=\"text-align: justify\"><span>&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Contact ",
+                "en": "Contact ",
+                "de": "Kontakt "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Pour plus d'informations, interviews ou pour obtenir des exemplaires du Guide Délicieux, veuillez contacter :&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Responsable gastronomie, Unité développement et promotion de la Ville de Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / 021 315 24 47, 079 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span style=\"color: rgb(5, 99, 193)\">&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW140269131 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Télécharger les photos (utilisation digitale)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW140269131 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Télécharger les photos (utilisation print)</u></span></a><span>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>For more information, interviews or to obtain copies of the Delicious Guide, please contact:&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Head of Gastronomy, Development and Promotion Unit, Ville de Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / +41 21 315 24 47, +41 79 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW35664955 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Download photos (digital use)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW35664955 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Download photos (for print use)</u></span></a><span>&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Für weitere Informationen, Interviews oder um Kopien des Schlemmerführers zu erhalten, wenden Sie sich bitte an:&nbsp;&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Leiterin Gastronomie, Einheit Entwicklung und Förderung der Stadt Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / +41 21 315 24 47, +41 79 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW255753915 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Fotos hochladen (digitale Nutzung)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW255753915 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Fotos herunterladen (Printnutzung)</u></span></a><span>&nbsp;</span></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "WnZwYgsJY0CM5ebBJ9ESLhADCUyokx0DM5ZP0y89",
+              "copyright": "© Guide Délicieux",
+              "public_name": "Guide Délicieux"
+            }
+          ],
+          "seo": {
+            "description": "October 1 marks the launch of the Delicious Guide, an ambitious project led by the 14 communes of the Lausanne tourist region (FERL) and various partners such as GastroLausanne, the Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion and Lausanne Tourism.",
+            "noindex": false,
+            "slug": "the-delicious-guide-one-hundred-addresses-to-discover-the-culinary-gems-of-lausanne-and-the-surrounding-region"
+          },
+          "tags": [
+            {
+              "name": "lt-gastronomie",
+              "public_name": "Gastronomy"
             }
           ]
         },
