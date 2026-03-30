@@ -742,7 +742,7 @@ describe('Test helper: Date', () => {
     });
   });
 
-  it('Test posts by year', () => {
+  it('Test sort posts by year', () => {
     const posts: Post<string>[] = [
       {
         // 2027-05-14
