@@ -3,9 +3,8 @@ import { t, type Locale } from '$lib/translations';
 import type { Menu, MenuItem } from '$types';
 import { Link } from 'lucide-svelte';
 
-import { getMediaLibraryRegisterLink, route } from '.';
+import { getMediaLibraryRegisterLink, route } from '../helpers';
 
-// FIXME it's not an helper but currently i don't know where i've to place it...
 export const menuItems: (locale: Locale) => Menu[] = (locale) => [
   {
     title: t.get('menu.ressources'),
