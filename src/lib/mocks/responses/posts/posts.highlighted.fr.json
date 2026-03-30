@@ -1,19 +1,17 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 11,
       "data": [
         {
           "id": "278",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne, ville gourmande",
+          "type": "post",
           "lead": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais.",
           "summary": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais. Des diners dans des lieux branchés, aux soupers concoctés par des chefs étoilés exprimant leur talent dans des établissements mythiques, en passant par les cafés historiques servant les traditionnels plats du terroir : son offre gastronomique est d’une richesse et d’une diversité rares. Ajoutez à cela une région viticole qui produit des vins d’une grande finesse, et votre expérience épicurienne lausannoise sera aussi complète que parfaite.",
           "highlight": true,
+          "published_at": "1723647343",
           "link": null,
           "content": [
             {
@@ -642,7 +640,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f2179f49073d6be3",
@@ -650,7 +647,6 @@
               "public_name": "Lausanne, ville gourmande"
             }
           ],
-          "published_at": "1723647343",
           "seo": {
             "description": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais.",
             "noindex": false,
@@ -665,11 +661,14 @@
         },
         {
           "id": "279",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne : histoire, architecture et design",
+          "type": "post",
           "lead": "Pour le visiteur qui découvre Lausanne, l’architecture de la ville peut parfois sembler disparate. Pourtant, un œil attentif discerne l’évolution de la ville au fil du temps et des styles.",
           "summary": "Pour le visiteur qui découvre Lausanne, l’architecture de la ville peut parfois sembler disparate. Pourtant, un œil attentif discerne l’évolution de la ville au fil du temps et des styles.",
           "highlight": true,
+          "published_at": "1724075728",
           "link": null,
           "content": [
             {
@@ -1734,7 +1733,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "1c5c0360bf68bf08",
@@ -1742,7 +1740,6 @@
               "public_name": "Lausanne : histoire, architecture et design"
             }
           ],
-          "published_at": "1724075728",
           "seo": {
             "description": "Pour le visiteur qui découvre Lausanne, l’architecture de la ville peut parfois sembler disparate. Pourtant, un œil attentif discerne l’évolution de la ville au fil du temps et des styles.",
             "noindex": false,
@@ -1757,11 +1754,14 @@
         },
         {
           "id": "288",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Education, recherche et innovation à Lausanne",
+          "type": "post",
           "lead": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique.",
           "summary": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique. Aussi, sans doute, le secret de la belle vaudoise réside-t-il dans ce savant mélange qui lui est propre : nature, culture, traditions… mais aussi formation, recherche et innovation.",
           "highlight": true,
+          "published_at": "1723672800",
           "link": null,
           "content": [
             {
@@ -2135,7 +2135,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "c3557bee75dcc886",
@@ -2143,7 +2142,6 @@
               "public_name": "Education, recherche et innovation à Lausanne"
             }
           ],
-          "published_at": "1723672800",
           "seo": {
             "description": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique.",
             "noindex": false,
@@ -2158,11 +2156,14 @@
         },
         {
           "id": "291",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne, Cité thermale",
+          "type": "post",
           "lead": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
           "summary": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
           "highlight": true,
+          "published_at": "1721253600",
           "link": null,
           "content": [
             {
@@ -2437,7 +2438,6 @@
               "value": "https://www.instagram.com/reel/C9SgfexoFFH/?utm_source=ig_embed&utm_campaign=loading"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "b04fd452a5588acd",
@@ -2445,7 +2445,6 @@
               "public_name": "Lausanne, Cité thermale"
             }
           ],
-          "published_at": "1721253600",
           "seo": {
             "description": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
             "noindex": false,
@@ -2460,11 +2459,14 @@
         },
         {
           "id": "299",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne et la durabilité",
+          "type": "post",
           "lead": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.",
           "summary": "Qu’il s’agisse d’un tourisme de loisirs ou d’affaires, les visiteurs apprécient particulièrement la propreté, le respect de la nature, la valorisation des espaces verts ainsi que les politiques d’économie d’énergie et de lutte contre les nuisances mises en place par la ville.",
           "highlight": true,
+          "published_at": "1723586400",
           "link": null,
           "content": [
             {
@@ -2867,7 +2869,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "0a95ceee36580f99",
@@ -2875,7 +2876,6 @@
               "public_name": "Lausanne et la durabilité"
             }
           ],
-          "published_at": "1723586400",
           "seo": {
             "description": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.",
             "noindex": false,
@@ -2890,11 +2890,14 @@
         },
         {
           "id": "300",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne et le Léman",
+          "type": "post",
           "lead": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés - sont parmi les plus convoitées et traversées.",
           "summary": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés – sont parmi les plus convoitées et traversées.",
           "highlight": true,
+          "published_at": "1722290400",
           "link": null,
           "content": [
             {
@@ -3206,7 +3209,6 @@
               "value": "https://www.instagram.com/p/C9zfAA1gq0b/?utm_source=ig_embed&utm_campaign=loading"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "1d3aec888270e9ae",
@@ -3214,7 +3216,6 @@
               "public_name": "Lausanne et le Léman"
             }
           ],
-          "published_at": "1722290400",
           "seo": {
             "description": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés - sont parmi les plus convoitées et traversées.",
             "noindex": false,
@@ -3229,11 +3230,14 @@
         },
         {
           "id": "303",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne, culturellement vôtre",
+          "type": "post",
           "lead": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.  ",
           "summary": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.",
           "highlight": true,
+          "published_at": "1723703326",
           "link": null,
           "content": [
             {
@@ -3815,7 +3819,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "5dfb42860874bfdf",
@@ -3823,7 +3826,6 @@
               "public_name": "Lausanne, culturellement vôtre"
             }
           ],
-          "published_at": "1723703326",
           "seo": {
             "description": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.  ",
             "noindex": false,
@@ -3838,11 +3840,14 @@
         },
         {
           "id": "304",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne, ville verte",
+          "type": "post",
           "lead": "Verte, Lausanne l’est avant tout par nature. Nichée au cœur d’un écrin naturel exceptionnel, entre montagnes et lac, la belle respire et jouit en effet d’un cadre privilégié. ",
           "summary": "Verte, Lausanne l’est avant tout par nature. Nichée au cœur d’un écrin naturel exceptionnel, entre montagnes et lac, la belle respire et jouit en effet d’un cadre privilégié. Bâtie sur trois collines, elle offre une multitude de panoramas époustouflants donnant à voir de sublimes ouvertures sur le lac, les Alpes et le Jura.",
           "highlight": true,
+          "published_at": "1723616915",
           "link": null,
           "content": [
             {
@@ -4187,7 +4192,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f4fe03751a16ebc1",
@@ -4195,7 +4199,6 @@
               "public_name": "Lausanne, ville verte"
             }
           ],
-          "published_at": "1723616915",
           "seo": {
             "description": "Verte, Lausanne l’est avant tout par nature. Nichée au cœur d’un écrin naturel exceptionnel, entre montagnes et lac, la belle respire et jouit en effet d’un cadre privilégié. ",
             "noindex": false,
@@ -4210,11 +4213,14 @@
         },
         {
           "id": "305",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne et le sport : ça match !",
+          "type": "post",
           "lead": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
           "summary": "Véritable joyau du canton de Vaud, elle trône fièrement au bord du Léman. Les cinq anneaux olympiques ornent le fronton de sa gare ferroviaire, dignement. Bordée de part en part de merveilles naturelles, à l’instar de ses plages de sable ou du célèbre vignoble de Lavaux, inscrit à l’UNESCO, la belle n’en finit pas de faire parler d’elle. Mais qui est-elle ? ",
           "highlight": true,
+          "published_at": "1709517807",
           "link": null,
           "content": [
             {
@@ -4236,8 +4242,8 @@
                   "attr": "width=\"1920\" height=\"2560\"",
                   "tags": null,
                   "description": null,
-                  "file_name_from_url": "e98770afc0c845df.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Aviron.jpg"
+                  "file_name_from_url": "95b220b08d3b9431.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_01-scaled.jpg"
                 }
               },
               "size": "parallax",
@@ -4436,7 +4442,7 @@
                     "tags": "Course; Evénement; Sport;",
                     "description": null,
                     "file_name_from_url": "bf215ee52e14fd16.jpg",
-                    "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Marathon-Lausanne.jpg"
+                    "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marathon-Lausanne.jpg"
                   }
                 }
               ]
@@ -4529,7 +4535,7 @@
                   "tags": "Ville verte, promenade; Lausanne; tour",
                   "description": null,
                   "file_name_from_url": "28a553399d706fe7.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Tour-et-foret-de-Sauvabelin.jpg"
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
                 }
               },
               "size": "medium",
@@ -4624,16 +4630,13 @@
                   "copyright": null,
                   "attr": "width=\"1600\" height=\"1061\"",
                   "tags": "Vélo; Activité; Bowl; Enfant",
-                  "description": null,
-                  "file_name_from_url": "21bafda50ef9e559.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Bowl-de-Vidy.jpg"
+                  "description": null
                 }
               },
               "size": "medium",
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f86865a3bfa147c0",
@@ -4641,7 +4644,6 @@
               "public_name": "Lausanne et le sport : ça match !"
             }
           ],
-          "published_at": "1709517807",
           "seo": {
             "description": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
             "noindex": false,
@@ -4656,11 +4658,14 @@
         },
         {
           "id": "310",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+          "type": "post",
           "lead": "Partir à la découverte d’une ville, c’est aussi, parfois, vouloir s’aventurer hors des sentiers battus. Et il faut dire qu’en plus des monuments emblématiques et des balades incontournables de Lausanne, de nombreux lieux insolites valent vraiment le détour.",
           "summary": "Partir à la découverte d’une ville, c’est aussi, parfois, vouloir s’aventurer hors des sentiers battus. Et il faut dire qu’en plus des monuments emblématiques et des balades incontournables de Lausanne, de nombreux lieux insolites valent vraiment le détour. Ni une, ni deux, cap sur les coins à découvrir absolument pour faire de votre visite à Lausanne une expérience inoubliable !",
           "highlight": true,
+          "published_at": "1721858400",
           "link": null,
           "content": [
             {
@@ -4763,11 +4768,12 @@
                 "id": 25991,
                 "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
                 "public_name": {
-                  "fr": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?"
+                  "fr": "Pont Bessières",
+                  "es": null
                 },
                 "cloudinary_id": "ae9bc47b90f84a54",
                 "mime_type": "image/jpeg",
-                "copyright": "© Terrasse des Grandes Roches sous le Pont Bessieres avec vue sur le metro m2. Campagne Suisse Tourisme ete 2022 - ville verte / terrasses.",
+                "copyright": "© Suisse Tourisme",
                 "metadata": {
                   "width": 1600,
                   "height": 1067,
@@ -5162,7 +5168,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "34db8797efb28e8d",
@@ -5170,7 +5175,6 @@
               "public_name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?"
             }
           ],
-          "published_at": "1721858400",
           "seo": {
             "description": "Partir à la découverte d’une ville, c’est aussi, parfois, vouloir s’aventurer hors des sentiers battus. Et il faut dire qu’en plus des monuments emblématiques et des balades incontournables de Lausanne, de nombreux lieux insolites valent vraiment le détour.",
             "noindex": false,
@@ -5185,11 +5189,14 @@
         },
         {
           "id": "318",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne en famille",
+          "type": "post",
           "lead": "Petits et grands explorateurs partirons à la découverte des trésors de la ville à la faveur d’activités interactives et ludiques pour toute la famille.",
           "summary": "Petits et grands explorateurs partirons à la découverte des trésors de la ville à la faveur d’activités interactives et ludiques pour toute la famille. Loisirs nautiques sur le lac, musées pour s’amuser, balades fraicheur au parc, visites guidées insolites, salles de jeux couvertes ou encore sports en tout genre… Lausanne s’impose définitivement comme la destination parfaite pour un séjour avec les enfants !",
           "highlight": true,
+          "published_at": "1723586400",
           "link": null,
           "content": [
             {
@@ -6366,7 +6373,6 @@
               }
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "J2GNaBZzmVeoiseNHHpj6jCGyGyH3vrXhu5MpJpj",
@@ -6374,7 +6380,6 @@
               "public_name": "Lausanne en famille"
             }
           ],
-          "published_at": "1723586400",
           "seo": {
             "description": "Petits et grands explorateurs partirons à la découverte des trésors de la ville à la faveur d’activités interactives et ludiques pour toute la famille.",
             "noindex": false,
