@@ -1,79 +1,17 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 4,
       "data": [
         {
-          "id": "4",
-          "author": "Lausanne Tourisme",
-          "name": "Food Halle 15",
-          "lead": "Eröffnung eines neuen Food-Courts in Lausanne",
-          "summary": null,
-          "highlight": false,
-          "link": "https://foodhalle15.ch/",
-          "content": [
-            {
-              "type": "generic",
-              "empty": null
-            }
-          ],
-          "type": "news",
-          "medias": [
-            {
-              "cloudinary_id": "amjSr0mZLWMpvRuI5Yp9huhLxLYkgz8XZ2pvrGiu",
-              "copyright": "© Food Halle 15",
-              "public_name": null
-            }
-          ],
-          "published_at": "1722549600",
-          "seo": {
-            "description": "Eröffnung eines neuen Food-Courts in Lausanne",
-            "noindex": false,
-            "slug": "food-halle-15"
-          },
-          "tags": []
-        },
-        {
-          "id": "5",
-          "author": "Lausanne Tourisme",
-          "name": "La Bise",
-          "lead": "Eröffnung eines neuen Eiscafés",
-          "summary": null,
-          "highlight": false,
-          "link": "https://www.lausanne-tourisme.ch/de/entdecken/la-bise/",
-          "content": [
-            {
-              "type": "generic",
-              "empty": null
-            }
-          ],
-          "type": "news",
-          "medias": [
-            {
-              "cloudinary_id": "qDkeNRim62CpXYzRuUluEFkK7bSvmOVr9e5iQp5a",
-              "copyright": "© La bise",
-              "public_name": "La bise"
-            }
-          ],
-          "published_at": "1722722400",
-          "seo": {
-            "description": "Eröffnung eines neuen Eiscafés",
-            "noindex": false,
-            "slug": "la-bise"
-          },
-          "tags": []
-        },
-        {
           "id": "6",
+          "languages": ["fr", "en", "de"],
           "author": "Lausanne Tourisme",
           "name": "PIC im Beau-Rivage Palace",
+          "type": "news",
           "lead": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace",
           "summary": null,
           "highlight": false,
+          "published_at": "1722808800",
           "link": "https://www.brp.ch/restaurants-bars/pic-au-beau-rivage-palace/",
           "content": [
             {
@@ -81,7 +19,6 @@
               "empty": null
             }
           ],
-          "type": "news",
           "medias": [
             {
               "cloudinary_id": "eXj9aUhdJyHeJ55izLcSsnn3C0rLbNUJnt71qSzg",
@@ -89,7 +26,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1722808800",
           "seo": {
             "description": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace",
             "noindex": false,
@@ -99,11 +35,14 @@
         },
         {
           "id": "7",
+          "languages": ["fr", "en", "de"],
           "author": "Lausanne Tourisme",
           "name": "Kathedrale von Lausanne",
+          "type": "news",
           "lead": "2025: 750 Jahre Kathedrale von Lausanne",
           "summary": null,
           "highlight": false,
+          "published_at": "1722895200",
           "link": "https://www.24heures.ch/patrimoine-bati-de-lausanne-la-cathedrale-aura-une-illumination-spirituelle-669206510544",
           "content": [
             {
@@ -111,7 +50,6 @@
               "empty": null
             }
           ],
-          "type": "news",
           "medias": [
             {
               "cloudinary_id": "brsgda500HgIWQvALuBTQqhHXeEt5QUjsVjRQTlM",
@@ -119,11 +57,258 @@
               "public_name": null
             }
           ],
-          "published_at": "1722895200",
           "seo": {
             "description": "2025: 750 Jahre Kathedrale von Lausanne",
             "noindex": false,
             "slug": "750-jahre-kathedrale"
+          },
+          "tags": []
+        },
+        {
+          "id": "324",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Lausanne à Table enthüllt das Programm der Ausgabe 2025!",
+          "type": "news",
+          "lead": "Die 11. Ausgabe bietet sechzig kulinarische Veranstaltungen.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1746655200",
+          "link": "https://www.lausanneatable.ch/en/program/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "NzJ4fioEez9BEfseMI3uQS3mCX5id7nxi513ZegW",
+              "copyright": "© Lausanne à Table",
+              "public_name": "MIAM Festival"
+            }
+          ],
+          "seo": {
+            "description": "Die 11. Ausgabe bietet sechzig kulinarische Veranstaltungen.",
+            "noindex": false,
+            "slug": "lausanne-a-table-enthullt-das-programm-der-ausgabe-2025"
+          },
+          "tags": []
+        },
+        {
+          "id": "325",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Neue Chefin in der Auberge de Montheron!",
+          "type": "news",
+          "lead": "Alba Farnos Viñals und Paul Marsden haben im Januar die Auberge de l’Abbaye de Montheron übernommen.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1737327600",
+          "link": "https://montheron.ch/en",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "auberge-de-montheron-nckenn",
+              "copyright": "© Aniket Godobole",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "Alba Farnos Viñals und Paul Marsden haben im Januar die Auberge de l’Abbaye de Montheron übernommen.",
+            "noindex": false,
+            "slug": "neue-chefin-in-der-auberge-de-montheron"
+          },
+          "tags": []
+        },
+        {
+          "id": "328",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Traintrain",
+          "type": "news",
+          "lead": "Ein neues Café-Weinlokal eröffnet im Quartier Sous-Gare, mit lokaler Rösterei und einer Auswahl an Naturweinen.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1745186400",
+          "link": "https://www.lausanne-tourisme.ch/de/entdecken/traintrain/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "porte-traintrain-snlwjy",
+              "copyright": "© TrainTrain",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "Ein neues Café-Weinlokal eröffnet im Quartier Sous-Gare, mit lokaler Rösterei und einer Auswahl an Naturweinen.",
+            "noindex": false,
+            "slug": "traintrain"
+          },
+          "tags": []
+        },
+        {
+          "id": "329",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Neuer Genusstreffpunkt beim Pavillon Bois-de-Beaulieu",
+          "type": "news",
+          "lead": "„La Riguenette“ hat am 27. Mai 2025 eröffnet und bietet eine saisonale Karte mit lokalen Produkten.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1748383200",
+          "link": "https://www.lausanne-tourisme.ch/de/entdecken/la-riguenette/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "cafe-perche-lht8rl",
+              "copyright": "© Raphaël Dupertuis",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "„La Riguenette“ hat am 27. Mai 2025 eröffnet und bietet eine saisonale Karte mit lokalen Produkten.",
+            "noindex": false,
+            "slug": "neuer-genusstreffpunkt-beim-pavillon-bois-de-beaulieu"
+          },
+          "tags": []
+        },
+        {
+          "id": "330",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Die Collection de l’Art Brut feiert 2026 ihr 50-jähriges Bestehen",
+          "type": "news",
+          "lead": "Eine Jubiläumsausstellung zeigt zentrale Werke, darunter Stücke aus dem historischen Kernbestand von Jean Dubuffet.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1752444000",
+          "link": "https://www.lausanne-tourisme.ch/de/entdecken/collection-de-lart-brut/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "04b7290c7f8e47fc",
+              "copyright": "© Exposition à La Collection de l'Art Brut, Lausanne",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "Eine Jubiläumsausstellung zeigt zentrale Werke, darunter Stücke aus dem historischen Kernbestand von Jean Dubuffet.",
+            "noindex": false,
+            "slug": "die-collection-de-lart-brut-feiert-2026-ihr-50-jahriges-bestehen"
+          },
+          "tags": []
+        },
+        {
+          "id": "332",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "L’Appart erhält den Grünen Stern für sein Engagement für nachhaltige Küche.",
+          "type": "news",
+          "lead": "L’Appart erhält den Grünen Stern für sein Engagement für nachhaltige Küche.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1767049200",
+          "link": "https://www.gaultmillau.ch/fr/les-chefs/luis-zuzarte-letoile-montante-890607",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "lappart-smvqag",
+              "copyright": "© Maud Guye-Vuillème",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "L’Appart erhält den Grünen Stern für sein Engagement für nachhaltige Küche.",
+            "noindex": false,
+            "slug": "lappart-erhalt-den-grunen-stern-fur-sein-engagement-fur-nachhaltige-kuche"
+          },
+          "tags": []
+        },
+        {
+          "id": "333",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Bryo.ch eröffnet einen neuen brioche-ort",
+          "type": "news",
+          "lead": "Ein ort, der der welt der brioche gewidmet ist.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1768172400",
+          "link": null,
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "bryo-kknnzy",
+              "copyright": "© Bryo",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "Ein ort, der der welt der brioche gewidmet ist.",
+            "noindex": false,
+            "slug": "bryoch-eroffnet-einen-neuen-brioche-ort"
+          },
+          "tags": []
+        },
+        {
+          "id": "334",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Fripsquare eröffnet einen zweiten standort",
+          "type": "news",
+          "lead": "Ein neuer Fripsquare eröffnet in Saint-François in Lausanne.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1768258800",
+          "link": "https://frip-square.com/pages/about-us?srsltid=AfmBOorll5PHuVICPYjuwycBLVyXxU-LEyKFFQnbh9iqUWVcY1ttfVWa",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "fripsquare-0clzi9",
+              "copyright": "© Maud Guye-Vuillème",
+              "public_name": null
+            }
+          ],
+          "seo": {
+            "description": "Ein neuer Fripsquare eröffnet in Saint-François in Lausanne.",
+            "noindex": false,
+            "slug": "fripsquare-eroffnet-einen-zweiten-standort"
           },
           "tags": []
         }

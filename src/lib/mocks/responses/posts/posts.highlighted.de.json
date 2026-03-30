@@ -1,19 +1,17 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 11,
       "data": [
         {
           "id": "278",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Schlemmerstadt Lausanne",
+          "type": "post",
           "lead": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. ",
           "summary": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. Vom Mittagessen in trendigen Lokalen, bis hin zu Abendessen, die Sterneköchinnen und -köchen in legendären Restaurants zubereiten, über historische Cafés, die traditionelle lokale Gerichte servieren: Das gastronomische Angebot ist von seltener Reichhaltigkeit und Vielfalt. Hinzu kommt eine Weinregion, die feinste Weine hervorbringt, um jedes Feinschmeckererlebnis in Lausanne perfekt abzurunden.",
           "highlight": true,
+          "published_at": "1723647343",
           "link": null,
           "content": [
             {
@@ -642,7 +640,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f2179f49073d6be3",
@@ -650,7 +647,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723647343",
           "seo": {
             "description": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. ",
             "noindex": false,
@@ -658,18 +654,21 @@
           },
           "tags": [
             {
-              "name": "Gastronomie",
+              "name": "lt-gastronomie",
               "public_name": "Gastronomie"
             }
           ]
         },
         {
           "id": "279",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Geschichte, Architektur und Design in Lausanne",
+          "type": "post",
           "lead": "Für Gäste kann die Lausanner Stadtarchitektur manchmal uneinheitlich erscheinen. Mit aufmerksamen Augen lassen sich jedoch die Entwicklung der Stadt im Laufe der Zeit und die verschiedenen Stile erkennen.",
           "summary": "Für Gäste kann die Lausanner Stadtarchitektur manchmal uneinheitlich erscheinen. Mit aufmerksamen Augen lassen sich jedoch die Entwicklung der Stadt im Laufe der Zeit und die verschiedenen Stile erkennen.",
           "highlight": true,
+          "published_at": "1724075728",
           "link": null,
           "content": [
             {
@@ -1734,7 +1733,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "1c5c0360bf68bf08",
@@ -1742,7 +1740,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1724075728",
           "seo": {
             "description": "Für Gäste kann die Lausanner Stadtarchitektur manchmal uneinheitlich erscheinen. Mit aufmerksamen Augen lassen sich jedoch die Entwicklung der Stadt im Laufe der Zeit und die verschiedenen Stile erkennen.",
             "noindex": false,
@@ -1750,18 +1747,21 @@
           },
           "tags": [
             {
-              "name": "Architecture",
+              "name": "lt-architecture",
               "public_name": "Architektur"
             }
           ]
         },
         {
           "id": "288",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Bildung, Forschung und Innovation in Lausanne",
+          "type": "post",
           "lead": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage.",
           "summary": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage. Zweifellos liegt das Geheimnis der schönen Waadtländer Hauptstadt in ihrer einzigartigen Mischung aus Natur, Kultur und Tradition, aus Bildung, Forschung und Innovation.",
           "highlight": true,
+          "published_at": "1723672800",
           "link": null,
           "content": [
             {
@@ -2135,7 +2135,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "c3557bee75dcc886",
@@ -2143,7 +2142,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723672800",
           "seo": {
             "description": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage.",
             "noindex": false,
@@ -2151,18 +2149,21 @@
           },
           "tags": [
             {
-              "name": "Éducation",
+              "name": "lt-education",
               "public_name": "Bildung"
             }
           ]
         },
         {
           "id": "291",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Thermalstadt Lausanne",
+          "type": "post",
           "lead": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase.",
           "summary": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase.",
           "highlight": true,
+          "published_at": "1721253600",
           "link": null,
           "content": [
             {
@@ -2437,7 +2438,6 @@
               "value": "https://www.instagram.com/reel/C9SgfexoFFH/?utm_source=ig_embed&utm_campaign=loading"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "b04fd452a5588acd",
@@ -2445,7 +2445,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1721253600",
           "seo": {
             "description": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase.",
             "noindex": false,
@@ -2453,18 +2452,21 @@
           },
           "tags": [
             {
-              "name": "Bien-être",
+              "name": "lt-bien-etre",
               "public_name": "Wohlbefinden"
             }
           ]
         },
         {
           "id": "299",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne und Nachhaltigkeit",
+          "type": "post",
           "lead": "Ob Freizeit- oder Geschäftstourismus, in Lausanne schätzen die Gäste die Sauberkeit, den respektvollen Umgang mit der Natur, die Aufwertung der Grünflächen und die von der Stadt getroffenen Massnahmen zum Energiesparen und zur Bekämpfung von Lärmbelästigungen.",
           "summary": "Ob Freizeit- oder Geschäftstourismus, in Lausanne schätzen die Gäste die Sauberkeit, den respektvollen Umgang mit der Natur, die Aufwertung der Grünflächen und die von der Stadt getroffenen Massnahmen zum Energiesparen und zur Bekämpfung von Lärmbelästigungen.",
           "highlight": true,
+          "published_at": "1723586400",
           "link": null,
           "content": [
             {
@@ -2867,7 +2869,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "0a95ceee36580f99",
@@ -2875,7 +2876,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723586400",
           "seo": {
             "description": "Ob Freizeit- oder Geschäftstourismus, in Lausanne schätzen die Gäste die Sauberkeit, den respektvollen Umgang mit der Natur, die Aufwertung der Grünflächen und die von der Stadt getroffenen Massnahmen zum Energiesparen und zur Bekämpfung von Lärmbelästigungen.",
             "noindex": false,
@@ -2883,18 +2883,21 @@
           },
           "tags": [
             {
-              "name": "Durabilité",
+              "name": "lt-durabilite",
               "public_name": "Nachhaltigkeit"
             }
           ]
         },
         {
           "id": "300",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne und der Genfersee",
+          "type": "post",
           "lead": "Der Genfer See ist der größte Süßwassersee in Westeuropa. Sein türkisfarbenes, kristallklares Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört zu den begehrtesten und meistbefahrenen Gewässern.",
           "summary": "Der Genfersee ist der grösste Süsswassersee in Westeuropa. Mit seinem türkisfarbenen, kristallklaren Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört er zu den beliebtesten und meistbefahrenen Gewässern.",
           "highlight": true,
+          "published_at": "1722290400",
           "link": null,
           "content": [
             {
@@ -3206,7 +3209,6 @@
               "value": "https://www.instagram.com/p/C9zfAA1gq0b/?utm_source=ig_embed&utm_campaign=loading"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "1d3aec888270e9ae",
@@ -3214,7 +3216,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1722290400",
           "seo": {
             "description": "Der Genfer See ist der größte Süßwassersee in Westeuropa. Sein türkisfarbenes, kristallklares Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört zu den begehrtesten und meistbefahrenen Gewässern.",
             "noindex": false,
@@ -3222,18 +3223,21 @@
           },
           "tags": [
             {
-              "name": "Lacustre",
+              "name": "lt-lacustre",
               "public_name": "Lakustrin"
             }
           ]
         },
         {
           "id": "303",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Kultur ohne Ende in Lausanne",
+          "type": "post",
           "lead": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf. ",
           "summary": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf.",
           "highlight": true,
+          "published_at": "1723703326",
           "link": null,
           "content": [
             {
@@ -3815,7 +3819,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "5dfb42860874bfdf",
@@ -3823,7 +3826,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723703326",
           "seo": {
             "description": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf. ",
             "noindex": false,
@@ -3831,18 +3833,21 @@
           },
           "tags": [
             {
-              "name": "Culture",
+              "name": "lt-culture",
               "public_name": "Kultur"
             }
           ]
         },
         {
           "id": "304",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne, eine grüne Stadt",
+          "type": "post",
           "lead": "Lausanne ist schon von Natur aus in Grün gebettet. Die Stadt liegt vor einer herrlichen Kulisse mitten in einer aussergewöhnlichen Naturlandschaft zwischen Bergen und See. ",
           "summary": "Lausanne ist schon von Natur aus in Grün gebettet. Die Stadt liegt vor einer herrlichen Kulisse mitten in einer aussergewöhnlichen Naturlandschaft zwischen Bergen und See. Sie wurde auf drei Hügeln erbaut und bietet atemberaubende Aussichten auf den Genfersee, die Alpen und den Jura.",
           "highlight": true,
+          "published_at": "1723616915",
           "link": null,
           "content": [
             {
@@ -4187,7 +4192,6 @@
               ]
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f4fe03751a16ebc1",
@@ -4195,7 +4199,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723616915",
           "seo": {
             "description": "Lausanne ist schon von Natur aus in Grün gebettet. Die Stadt liegt vor einer herrlichen Kulisse mitten in einer aussergewöhnlichen Naturlandschaft zwischen Bergen und See. ",
             "noindex": false,
@@ -4203,18 +4206,21 @@
           },
           "tags": [
             {
-              "name": "Nature",
+              "name": "lt-nature",
               "public_name": "Natur"
             }
           ]
         },
         {
           "id": "305",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne und Sport – eine perfekte Kombination",
+          "type": "post",
           "lead": "Sie sind in Lausanne, der Waadtländer und Olympia-Hauptstadt und dem beliebtesten Treffpunkt für alle möglichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies für Sportliche und kreative Köpfe.",
           "summary": "Stolz thront das Juwel des Kantons Waadt am Genfersee. Die fünf olympischen Ringe schmücken würdevoll den Eingang des Bahnhofs. Mit ihren vielen Naturschönheiten wie den feinen Sandstränden oder den berühmten, zum UNESCO-Weltkulturerbe gehörenden Weinbergen von Lavaux macht die Stadt Lausanne immer wieder von sich reden. Doch wer ist sie?",
           "highlight": true,
+          "published_at": "1709517807",
           "link": null,
           "content": [
             {
@@ -4236,8 +4242,8 @@
                   "attr": "width=\"1920\" height=\"2560\"",
                   "tags": null,
                   "description": null,
-                  "file_name_from_url": "e98770afc0c845df.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Aviron.jpg"
+                  "file_name_from_url": "95b220b08d3b9431.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_01-scaled.jpg"
                 }
               },
               "size": "parallax",
@@ -4436,7 +4442,7 @@
                     "tags": "Course; Evénement; Sport;",
                     "description": null,
                     "file_name_from_url": "bf215ee52e14fd16.jpg",
-                    "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Marathon-Lausanne.jpg"
+                    "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marathon-Lausanne.jpg"
                   }
                 }
               ]
@@ -4529,7 +4535,7 @@
                   "tags": "Ville verte, promenade; Lausanne; tour",
                   "description": null,
                   "file_name_from_url": "28a553399d706fe7.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Tour-et-foret-de-Sauvabelin.jpg"
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
                 }
               },
               "size": "medium",
@@ -4624,16 +4630,13 @@
                   "copyright": null,
                   "attr": "width=\"1600\" height=\"1061\"",
                   "tags": "Vélo; Activité; Bowl; Enfant",
-                  "description": null,
-                  "file_name_from_url": "21bafda50ef9e559.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Bowl-de-Vidy.jpg"
+                  "description": null
                 }
               },
               "size": "medium",
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "f86865a3bfa147c0",
@@ -4641,7 +4644,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1709517807",
           "seo": {
             "description": "Sie sind in Lausanne, der Waadtländer und Olympia-Hauptstadt und dem beliebtesten Treffpunkt für alle möglichen Sportbegeisterten. Ob an Land oder auf dem Wasser, auf dem Gipfel oder in der Luft: Die ideal zwischen Bergen und See gelegene Perle der Genferseeregion ist ein Paradies für Sportliche und kreative Köpfe.",
             "noindex": false,
@@ -4649,18 +4651,21 @@
           },
           "tags": [
             {
-              "name": "Sport",
+              "name": "lt-sport",
               "public_name": "Sport"
             }
           ]
         },
         {
           "id": "310",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Ungewöhnliche Erkundung: Kennen Sie diese 10 Funfacts von Lausanne?",
+          "type": "post",
           "lead": "Um eine Stadt zu entdecken, muss man sich manchmal abseits der ausgetretenen Pfade bewegen. Und man muss sagen, dass es neben den emblematischen Monumenten und den obligatorischen Spaziergängen in Lausanne auch viele ungewöhnliche Orte gibt, die einen Abstecher wert sind.",
           "summary": "Es lohnt sich, die Stadt auch abseits der üblichen Touristenpfade zu entdecken. Denn neben den bekannten Sehenswürdigkeiten und Rundgängen bietet Lausanne zahlreiche ausgefallene Orte, die einen Abstecher wert sind. Los geht’s zu den Orten, die ein Muss sind, um die Erkundung von Lausanne zu einem unvergesslichen Erlebnis zu machen!",
           "highlight": true,
+          "published_at": "1721858400",
           "link": null,
           "content": [
             {
@@ -4763,11 +4768,12 @@
                 "id": 25991,
                 "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
                 "public_name": {
-                  "fr": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?"
+                  "fr": "Pont Bessières",
+                  "es": null
                 },
                 "cloudinary_id": "ae9bc47b90f84a54",
                 "mime_type": "image/jpeg",
-                "copyright": "© Terrasse des Grandes Roches sous le Pont Bessieres avec vue sur le metro m2. Campagne Suisse Tourisme ete 2022 - ville verte / terrasses.",
+                "copyright": "© Suisse Tourisme",
                 "metadata": {
                   "width": 1600,
                   "height": 1067,
@@ -5162,7 +5168,6 @@
               "focus": "auto"
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "34db8797efb28e8d",
@@ -5170,7 +5175,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1721858400",
           "seo": {
             "description": "Um eine Stadt zu entdecken, muss man sich manchmal abseits der ausgetretenen Pfade bewegen. Und man muss sagen, dass es neben den emblematischen Monumenten und den obligatorischen Spaziergängen in Lausanne auch viele ungewöhnliche Orte gibt, die einen Abstecher wert sind.",
             "noindex": false,
@@ -5178,18 +5182,21 @@
           },
           "tags": [
             {
-              "name": "Insolite",
+              "name": "lt-insolite",
               "public_name": "Ungewöhnlich"
             }
           ]
         },
         {
           "id": "318",
+          "languages": ["fr", "en", "de"],
           "author": "The Lausanner",
           "name": "Lausanne als Familie",
+          "type": "post",
           "lead": "Jung und Alt erkunden die Schätze der Stadt mit interaktiven und lustigen Aktivitäten für die ganze Familie.",
           "summary": "Jung und Alt erkunden die Schätze der Stadt mit interaktiven und lustigen Aktivitäten für die ganze Familie. Wassersport auf dem See, lustige Museen, coole Spaziergänge im Park, ungewöhnliche Führungen, Indoor-Spielzimmer oder Sportarten aller Art… Lausanne ist definitiv das perfekte Ziel für einen Aufenthalt mit Kindern!",
           "highlight": true,
+          "published_at": "1723586400",
           "link": null,
           "content": [
             {
@@ -6366,7 +6373,6 @@
               }
             }
           ],
-          "type": "post",
           "medias": [
             {
               "cloudinary_id": "J2GNaBZzmVeoiseNHHpj6jCGyGyH3vrXhu5MpJpj",
@@ -6374,7 +6380,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1723586400",
           "seo": {
             "description": "Jung und Alt erkunden die Schätze der Stadt mit interaktiven und lustigen Aktivitäten für die ganze Familie.",
             "noindex": false,
@@ -6382,7 +6387,7 @@
           },
           "tags": [
             {
-              "name": "Famille",
+              "name": "lt-famille",
               "public_name": "Familie"
             }
           ]
