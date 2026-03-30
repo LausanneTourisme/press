@@ -46,7 +46,7 @@
 
     //offline mode and double check for empty src
     if (dev && isOfflineMode) {
-      if (src?.startsWith('http')) {
+      if (src?.startsWith('http') || !src?.startsWith('/')) {
         return '/pages/themes/cathedrale_skate.jpg';
       }
       return localSrc;
