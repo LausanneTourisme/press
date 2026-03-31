@@ -7,8 +7,10 @@ describe('Press releases and press kits page - FR', () => {
     const modules = import.meta.glob<{ default: GraphQLResponse<Release<Translatable>> }>(
       '/src/lib/mocks/responses/posts/press_kit.fr.json',
       { eager: true }
-    );console.log(modules);
-    const releases = modules['/src/lib/mocks/responses/posts/press_kit.fr.json'].default.data!.items!.data!;
+    );
+    console.log(modules);
+    const releases =
+      modules['/src/lib/mocks/responses/posts/press_kit.fr.json'].default.data!.items!.data!;
     const byYear = new Map([...sortByYears(releases)].reverse());
 
     expect(byYear.get(2022)?.length).toBe(3);
