@@ -113,8 +113,10 @@ export const actions = {
         'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_l-nhda9bgdj3':
           form.data.mediaCoverageOnline?.articleLength,
         // PRESS - info voyage - pays départ
-        'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g':
-         countries.getName(form.data.travelInformation.departurePoint.country, params.locale),
+        'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g': countries.getName(
+          form.data.travelInformation.departurePoint.country,
+          params.locale
+        ),
         // PRESS - info voyage - trajet aller
         'usercreated.attributes.press_-_info_voyage_-_trajet_aller-2jsn1a11d1':
           form.data.travelInformation.departurePoint.outwardJourney ?? '',
@@ -201,7 +203,9 @@ export const actions = {
         // Last Name of profile
         'com.apsis1.attributes.lastname': form.data.personalInformation.lastName,
         // Primary mobile phone number
-        'com.apsis1.attributes.mobile': Number(form.data.personalInformation.phoneNumber.replaceAll('+','00').replaceAll(' ', '')),
+        'com.apsis1.attributes.mobile': Number(
+          form.data.personalInformation.phoneNumber.replaceAll('+', '00').replaceAll(' ', '')
+        ),
         // Primary e-mail address
         'com.apsis1.attributes.email': form.data.personalInformation.email,
         // CRM - Field - Language
@@ -217,67 +221,74 @@ export const actions = {
           }
         })(),
         // CRM - Fields - Title
-        "usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk": (() => {
+        'usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk': (() => {
           switch (form.data.personalInformation.title) {
             case 'mr':
               return {
-                fr: "M.",
-                en: "Mr.",
-                de: "Herr",
+                fr: 'M.',
+                en: 'Mr.',
+                de: 'Herr'
               }[params.locale];
             case 'mrs':
               return {
-                fr: "Mme",
-                en: "Mrs.",
-                de: "Frau",
+                fr: 'Mme',
+                en: 'Mrs.',
+                de: 'Frau'
               }[params.locale];
             case 'they':
               return {
-                fr: "-",
-                en: "-",
-                de: "-",
+                fr: '-',
+                en: '-',
+                de: '-'
               }[params.locale];
           }
         })(),
         // CRM - Fields - Full Title
-        "usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn": (() => {
+        'usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn': (() => {
           switch (form.data.personalInformation.title) {
             case 'mr':
               return {
-                fr: "Monsieur",
-                en: "Mister",
-                de: "Herr",
+                fr: 'Monsieur',
+                en: 'Mister',
+                de: 'Herr'
               }[params.locale];
             case 'mrs':
               return {
-                fr: "Madame",
-                en: "Mistress",
-                de: "Frau",
+                fr: 'Madame',
+                en: 'Mistress',
+                de: 'Frau'
               }[params.locale];
             case 'they':
               return {
-                fr: "-",
-                en: "-",
-                de: "-",
+                fr: '-',
+                en: '-',
+                de: '-'
               }[params.locale];
           }
         })(),
         // CRM - Fields - Account Manager
-        "usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk": 213,
+        'usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk': 213,
         // CRM - Fields - Media Sub-Type
-        "usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw": form.data.personalInformation.freelance ? 2 : 1,
+        'usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw': form.data
+          .personalInformation.freelance
+          ? 2
+          : 1,
         // CRM - Fields - Type
-        "usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv": 1,// Média
+        'usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv': 1, // Média
 
         //// ADRESSE
         // CRM - Fields - Country
-        "com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh":  selectCountryId(countries.getName(form.data.personalInformation.address.country, 'en')),
+        'com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh':
+          selectCountryId(countries.getName(form.data.personalInformation.address.country, 'en')),
         // CRM - Fields - Post code
-        "usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6": form.data.personalInformation.address.postalcode,
+        'usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6':
+          form.data.personalInformation.address.postalcode,
         // CRM - Fields - Street
-        "usercreated.attributes.crm_-_fields_-_street-ym828bzua3": form.data.personalInformation.address.streetAddress,
+        'usercreated.attributes.crm_-_fields_-_street-ym828bzua3':
+          form.data.personalInformation.address.streetAddress,
         // CRM - Fields - Town/City
-        "usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd": form.data.personalInformation.address.city,
+        'usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd':
+          form.data.personalInformation.address.city
       }
     });
 

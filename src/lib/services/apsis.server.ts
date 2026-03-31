@@ -183,7 +183,7 @@ export const addProfileToMailConsents = async ({
           reason: 'Inscription via formulaire de la presse'
         }
       },
-      response: text,
+      response: text
     });
   }
 
