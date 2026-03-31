@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  Syntax-check:
     name: Lint & Type check
     runs-on: ubuntu-latest
     steps:
@@ -25,3 +25,22 @@ jobs:
 
       - name: Type check
         run: npm run check
+
+  Tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '${{ vars.NODE_VERSION }}'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test
