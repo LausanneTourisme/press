@@ -168,20 +168,24 @@
         </Heading>
         <div class="flex w-full flex-col items-center justify-center space-y-4">
           <a
-            href={resolve(route(RouteTypes.Forms, {
-              forceLocale: locale,
-              form: Forms.Journalist
-            }) as Pathname)}
+            href={resolve(
+              route(RouteTypes.Forms, {
+                forceLocale: locale,
+                form: Forms.Journalist
+              }) as Pathname
+            )}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           >
             <Newspaper strokeWidth={2.5} class="aspect-square h-5" />
             {@html $t('contact.form.select-section.visit-media.button.journalist')}
           </a>
           <a
-            href={resolve(route(RouteTypes.Forms, {
-              forceLocale: locale,
-              form: Forms.ContentCreator
-            }) as Pathname)}
+            href={resolve(
+              route(RouteTypes.Forms, {
+                forceLocale: locale,
+                form: Forms.ContentCreator
+              }) as Pathname
+            )}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
           >
             <Camera strokeWidth={2.5} class="aspect-square h-5" />
