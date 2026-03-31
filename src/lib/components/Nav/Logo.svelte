@@ -1,10 +1,11 @@
 <script lang="ts">
   import { twMerge } from 'tailwind-merge';
   import Image from '$lib/components/Media/Image.svelte';
+  import type { Locale } from '$lib/translations';
 
   type Props = {
     class?: string;
-    locale: string;
+    locale: Locale;
   };
 
   const { class: additionalClass, locale }: Props = $props();
