@@ -116,7 +116,7 @@
       bind:this={listEl}
       class="rounded-box border-base-300 bg-base-100 absolute z-50 mt-1 max-h-60 w-full overflow-y-auto border shadow-lg"
     >
-      {#each filtered as [code, name], i}
+      {#each filtered as [code, name], i (`${code}-${name}`)}
         <li>
           <button
             type="button"
