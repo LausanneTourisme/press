@@ -15,7 +15,7 @@
   import type { ActionData } from './$types';
   import Form from './Form.svelte';
   import { resolve } from '$app/paths';
-  import { Pathname } from '$app/types';
+  import type { Pathname } from '$app/types';
 
   const pageForm = $derived(page.form as ActionData);
   const locale = $derived(page.params.locale as Locale);
