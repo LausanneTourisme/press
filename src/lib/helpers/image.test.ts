@@ -18,10 +18,14 @@ vi.mock('$env/static/public', () => ({
 
 // Mock the environment variables and modules dynamically
 vi.mock('$app/environment', () => ({
-  get dev() { return mockDev; }
+  get dev() {
+    return mockDev;
+  }
 }));
 vi.mock('$lib/helpers', () => ({
-  get isOfflineMode() { return mockIsOfflineMode; }
+  get isOfflineMode() {
+    return mockIsOfflineMode;
+  }
 }));
 
 describe('Test helper: Image', () => {
@@ -214,9 +218,7 @@ describe('Test helper: Image', () => {
     it('returns generic image on offline mode', () => {
       mockDev = true;
       mockIsOfflineMode = true;
-      expect(generateCloudinaryUrl({ src: 'dev_test' })).toBe(
-        '/pages/themes/cathedrale_skate.jpg'
-      );
+      expect(generateCloudinaryUrl({ src: 'dev_test' })).toBe('/pages/themes/cathedrale_skate.jpg');
       mockDev = false;
       mockIsOfflineMode = false;
     });
