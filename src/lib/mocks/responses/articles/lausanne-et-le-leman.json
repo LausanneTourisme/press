@@ -1,0 +1,366 @@
+{
+  "data": {
+    "item": {
+      "id": "300",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne et le Léman",
+        "en": "Lausanne and Lake Geneva",
+        "de": "Lausanne und der Genfersee"
+      },
+      "lead": {
+        "fr": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés - sont parmi les plus convoitées et traversées.",
+        "en": "Lake Geneva is the largest freshwater lake in Western Europe. Its turquoise, crystalline waters spread over some 582 square kilometres are among the most sought-after and crossed.",
+        "de": "Der Genfer See ist der größte Süßwassersee in Westeuropa. Sein türkisfarbenes, kristallklares Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört zu den begehrtesten und meistbefahrenen Gewässern."
+      },
+      "summary": {
+        "fr": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés – sont parmi les plus convoitées et traversées.",
+        "en": "Lake Geneva is the largest freshwater lake in Western Europe. Its turquoise, crystalline waters – spread over some 582 square kilometres – are among the most sought-after and crossed.",
+        "de": "Der Genfersee ist der grösste Süsswassersee in Westeuropa. Mit seinem türkisfarbenen, kristallklaren Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört er zu den beliebtesten und meistbefahrenen Gewässern."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26064,
+            "name": "Lausanne et le Léman",
+            "public_name": {
+              "fr": "Lausanne et le Léman"
+            },
+            "cloudinary_id": "e6318f763c5c6722",
+            "mime_type": "image/jpeg",
+            "copyright": "© Baignade dans le lac Leman a Saint-Saphorin",
+            "metadata": {
+              "width": 1600,
+              "height": 1063,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1063\"",
+              "tags": "Lac; Envrion; Eté; Détente; Montagne",
+              "description": null,
+              "file_name_from_url": "e6318f763c5c6722.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Saint-Saphorin-couple-2.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Bordé, d’un côté, par les vignobles en terrasses de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\"><strong>Lavaux</strong> </a>et de <strong>La Côte</strong> et, de l’autre, par les <strong>Alpes</strong> majestueuses au manteau de neige éternelle, le lac Léman – également appelé lac de Genève à l’étranger – n’en finit pas d’envoûter. Et il séduit aussi bien les touristes de passage que ses riverains côté suisse ou côté français.",
+            "en": "Bordered on one side by the terraced vineyards of <a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\"><strong>Lavaux</strong></a> and <strong>La Côte</strong>, and on the other by the majestic <strong>Alps</strong> with their snow, Lake Geneva – locally known as “Lac Léman” – never ceases to enchant. And it’s just as attractive to visiting tourists as it is to local residents on the Swiss and French shores.",
+            "de": "Auf der einen Seite wird der Genfersee von den terrassenförmigen Weinbergen<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\"> <strong>Lavaux</strong></a> und <strong>La Côte</strong> und auf der anderen Seite von den majestätischen <strong>Alpen</strong> mit ihrer ewigen Schneedecke umrahmt. Der Genfersee fasziniert immer wieder aufs Neue und begeistert Reisende und Anwohnende auf der schweizerischen und französischen Seite gleichermassen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Nombre de charmantes communes y ont d’ailleurs élus domicile le long de son littoral. C’est le cas des paisibles <strong>Pully</strong> et <strong>Lutry</strong>, mais aussi de <strong>Cully</strong> et ses notes jazzy. En direction de <strong>Morges</strong>, le charmant village médiéval de <strong>Saint-Sulpice</strong> et la belle <strong>Préverenges </strong>tutoient tout aussi fièrement le Léman. Sur la rive d’en face, Thonon et <strong>Evian-les-Bains</strong>, deux villes thermales Belle Epoque, profitent également des multiples richesses offertes par le lac. La <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\"><strong>Compagnie Générale de Navigation</strong></a> (CGN) y fait par ailleurs sillonner quelque huit bateaux à aubes à vapeur, un record.",
+            "en": "A number of charming communes have settled along its coastline. These include peaceful <strong>Pully</strong> and<strong> Lutry</strong>, as well as jazzy <strong>Cully</strong>. On the way to <strong>Morges</strong>, the picturesque medieval village of <strong>Saint-Sulpice</strong> and beautiful<strong> Préverenges</strong> stand just as proudly on the side of Lake Geneva. On the opposite shore, Thonon and <strong>Evian-les-Bains</strong>, two Belle Epoque spa towns, also benefit from the many riches offered by the lake. To cross the expanse of water, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\"><strong>Compagnie Générale de Navigation</strong></a> (CGN)  operates a record eight steam-powered paddle steamers.",
+            "de": "Zahlreiche schöne Dörfer säumen den See, wie die ruhigen Orte <strong>Pully</strong> und <strong>Lutry</strong>, aber auch das lebhafte Dorf <strong>Cully</strong>. In Richtung <strong>Morges</strong> liegen ebenfalls direkt am See das malerische mittelalterliche Dorf <strong>Saint-Sulpice</strong> und <strong>Préverenges</strong>. Am gegenüberliegenden Ufer bereichern die beiden Belle-Époque-Kurorte Thonon und <strong>Evian-les-Bains</strong> das schöne Seeufer. Die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schifffahrten-auf-dem-genfersee-cgn/\"><strong>Genfersee-Schifffahrtsgesellschaft CGN</strong> </a>kreuzt mit einer Rekordzahl von acht Schaufelraddampfern auf dem See.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25888,
+            "name": "Lausanne et le Léman",
+            "public_name": {
+              "fr": "Lausanne et le Léman"
+            },
+            "cloudinary_id": "1d3aec888270e9ae",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue sur la plage de Preverenges et le lac Leman.",
+            "metadata": {
+              "width": 1600,
+              "height": 1063,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1063\"",
+              "tags": "Lac; Environs;",
+              "description": null,
+              "file_name_from_url": "1d3aec888270e9ae.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Vue-aerienne-Preverenges.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Un environnement naturel d’exception</strong>",
+            "en": "An exceptional natural environment",
+            "de": "<strong>Atemberaubende natürliche Umgebung</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Une immense étendue d’eau qui change de couleur au gré des heures, quoi de plus beau ? Il n’est d’ailleurs pas rare de voir le ciel se confondre avec ses eaux… Navigation, paddle, pédalo… Tous les plaisirs aquatiques sont permis sur le Léman. Propice à <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/pas-besoin-de-quitter-lausanne-pour-aller-la-plage-il-y-le-leman/\">la baignade</a>, aux grillades sur la plage, ou encore aux croisières gastronomiques à bord des bateaux historiques qui traversent le lac : autant de joies estivales qui font aussi place à la lumière magique de l’automne et aux douces brumes hivernales. Nombre d’artistes et de personnalités se sont laissés inspirer par ce paysage romantique, et comme on les comprend ! Certains s’y sont même installés définitivement.",
+            "en": "What could be more beautiful than an immense expanse of water that changes colour with the passing hours? In fact, it’s not unusual to see the sky merging with the water… Sailing, paddle-boarding, water-skiing, wakeboarding, pedal-boating… All these nautical pleasures are available on Lake Geneva. <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/no-need-to-leave-lausanne-to-go-to-the-beach-there-is-lake-geneva/\">Swimming</a>, barbecuing on the beach, gourmet cruises aboard the historic boats that criss-cross  the lake: the many summer pleasures then make way for the magical light of autumn and the soft winter mists. Many artists and personalities have been inspired by this romantic landscape, and we can’t blame them! Some have even made their permanent home in the area.",
+            "de": "Was gibt es Schöneres als eine riesige Wasserfläche, deren Farbe sich im Tagesverlauf immer wieder verändert? Nicht selten scheint der Himmel sogar mit dem See zu verschmelzen. Segeln, Stand-up-Paddling, Wasserskifahren, Wakeboarding und Pedalofahren sind nur einige von vielen Möglichkeiten für Wasserspass auf dem Genfersee. Auch <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/fuer-strandfreuden-wir-haben-den-genfersee/\">Schwimmen</a>, Grillieren am Strand und Gourmet-Kreuzfahrten mit den historischen Schiffen sind Sommerfreuden, die später im Jahr vom magischen Licht des Herbstes und sanftem Winternebel abgelöst werden. Zahlreiche Kunstschaffende und Persönlichkeiten haben sich von dieser romantischen Landschaft inspirieren lassen, was absolut nachvollziehbar ist! Einige haben sich sogar für immer am Seeufer niedergelassen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 27063,
+              "name": "Lausanne et le Léman - Bateau",
+              "public_name": {
+                "fr": "Port d'Ouchy Bord du lac et bateau de la CGN",
+                "en": "Port d'Ouchy Bord du lac et bateau de la CGN",
+                "de": "Port d'Ouchy Bord du lac et bateau de la CGN",
+                "es": null
+              },
+              "cloudinary_id": "gM8qFbvVrA8FR70rvXLWDTDAjsnQrlWzVMGyRmox",
+              "mime_type": "image/jpeg",
+              "copyright": "© Port d'Ouchy Bord du lac et bateau de la CGN",
+              "metadata": {
+                "width": 1068,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1068\" height=\"1600\"",
+                "tags": "Bateau, Lac; Eau; Lausanne",
+                "description": null,
+                "file_name_from_url": "4f5af1f5d2726634.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Bateau-lac.jpg"
+              }
+            },
+            {
+              "id": 26032,
+              "name": "Le quartier de la gare et Ouchy",
+              "public_name": {
+                "fr": "Le quartier de la gare et Ouchy"
+              },
+              "cloudinary_id": "73a73c62fd9a0336",
+              "mime_type": "image/jpeg",
+              "copyright": "© Pédalos à Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 978,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"978\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "73a73c62fd9a0336.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Pedalo-Ouchy.jpg"
+              }
+            },
+            {
+              "id": 27065,
+              "name": "Lausanne et le Léman - Paddle",
+              "public_name": {
+                "fr": "Paddle a Lutry sur le lac Leman",
+                "en": "Paddle a Lutry sur le lac Leman",
+                "de": "Paddle a Lutry sur le lac Leman",
+                "es": null
+              },
+              "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
+              "mime_type": "image/jpeg",
+              "copyright": "© Paddle a Lutry sur le lac Leman",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": "JONATHAN VIEY",
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
+                "description": null,
+                "file_name_from_url": "cdca0cbb2c423149.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Un rendez-vous estival</strong>",
+            "en": "A summer rendezvous",
+            "de": "<strong>Sommer-Rendezvous</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avis à celles et ceux qui préfèrent se prélasser au soleil : l’on ne dénombre pas moins d’une cinquantaine de plages sauvages ou aménagées. Dès l’arrivée des beaux jours, couples, familles, solitaires et étudiants se partagent ces bancs de pelouse et de sable jusque tard dans la soirée. En été, plusieurs buvettes prennent place aux abords des rives, proposant une restauration rapide. Le Léman abritant une trentaine d’espèces de poissons, de nombreux restaurants ouvrent également leurs terrasses pour servir filets de perche ou de féra, de brochet et d’omble chevalier, fraîchement pêchés.",
+            "en": "For those who prefer to bask in the sun, there are no fewer than fifty beaches, both wild and developed. As soon as the fine weather arrives, couples, families, solo individuals and students share these grassy and sandy strips until late in the evening. In summer, a number of refreshment stands are set up along the shores, offering snacks. As Lake Geneva is home to around thirty species of fish, many restaurants to serve freshly caught perch or féra fillets, pike and arctic char on their terrasses.",
+            "de": "Für alle Sonnenhungrigen stehen nicht weniger als fünfzig naturbelassene und angelegte Strände zur Auswahl. Sobald der Sommer Einzug gehalten hat, teilen sich Paare, Familien, Einzelgänger und Studierende bis spät abends die grossen Rasenflächen und Sandstrände. Im Sommer sorgen am Seeufer zudem zahlreiche Imbissbuden für rasche Verpflegung. Der Genfersee beheimatet rund dreissig Fischsorten. So lassen sich auf vielen Restaurantterrassen frische Egli-, Felchen-, Hecht- und Saibling-Filets geniessen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 26353,
+              "name": "Mes balades revigorantes préférées à Lausanne",
+              "public_name": {
+                "fr": "Mes balades revigorantes préférées à Lausanne"
+              },
+              "cloudinary_id": "1da5c7bb6f4e3992",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1440,
+                "height": 1800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1440\" height=\"1800\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1da5c7bb6f4e3992.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Vidy.jpg"
+              }
+            },
+            {
+              "id": 26082,
+              "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !",
+              "public_name": {
+                "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !"
+              },
+              "cloudinary_id": "82a01c1315156a89",
+              "mime_type": "image/jpeg",
+              "copyright": "© Detente au bord du lac Leman",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent Kaczor",
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": "été; lac;",
+                "description": null,
+                "file_name_from_url": "82a01c1315156a89.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-KAZ-HD_053-scaled.jpg"
+              }
+            },
+            {
+              "id": 26445,
+              "name": "Lausanne et le Léman",
+              "public_name": {
+                "fr": "Lausanne et le Léman"
+              },
+              "cloudinary_id": "dacb34f2c8487d06",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur le lac et la Jetee de la Compagnie a Vidy.",
+              "metadata": {
+                "width": 768,
+                "height": 547,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"547\"",
+                "tags": "Lac; Jetée; Vue aérienne; Lausanne; Plage",
+                "description": null,
+                "file_name_from_url": "b759148a4f8e8404.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Panorama-Vidy-drone-1.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Un lieu de compétitions sportives</strong>",
+            "en": "A venue for sporting competitions",
+            "de": "<strong>Ort der Sportwettkämpfe</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Tout au long de l’année, de nombreuses régates se disputent à divers endroits du lac, dont certaines attirent le gratin de la voile mondiale. Les «5 jours du Léman», au mois d’août, représentent la plus longue course d’endurance d’Europe sur lacs. La Translémanique en solitaire a lieu trois semaines plus tard. C’est également sur le lac Léman qu’est organisée chaque année la plus longue course d’aviron au monde (160 km en une seul étape) par la <strong>Société Nautique de Genève</strong>. Mais le tour du lac peut aussi se faire à vélo lors du <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/cyclotour-du-leman/\"><strong>Cyclotour du Léman</strong></a> (180 km) où l’objectif n’est pas la performance, mais bien le plaisir !",
+            "en": "Throughout the year, numerous regattas are held at various locations on the lake, some of which attract the world’s top sailors. In August, the “5 jours du Léman” is Europe’s longest endurance race on lakes. The Translémanique solo race takes place three weeks later. Every year, the <strong>Société Nautique de Genève</strong> organises the longest rowing race in the world (160km in a single leg) on Lake Geneva. But you can also cycle around the lake with the <a href=\"https://www.lausanne-tourisme.ch/en/event/cyclotour-du-leman/\"><strong>Cyclotour du Léman</strong></a> (180 km), where the aim is not performance but pleasure!",
+            "de": "Das ganze Jahr über werden an verschiedenen Orten auf dem See Regatten ausgetragen, die regelmässig die Weltspitze des Segelsports anziehen. Im August findet mit den „5 jours du Léman“ die längste Langstrecken-Seeregatta Europas und drei Wochen später die Soloregatta Translémanique statt. Ebenfalls auf dem Genfersee wird jedes Jahr das weltweit längste Ruderrennen (160 km in einer einzigen Etappe) von der <strong>Société Nautique de Genève </strong>organisiert. An der<a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/cyclotour-du-leman/\"> <strong>Cyclotour du Léman</strong></a> (180 km) kann der See auch mit dem Fahrrad umrundet werden. Dabei steht nicht die sportliche Leistung, sondern das Vergnügen im Vordergrund.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25251,
+            "name": "Ouchy Lausanne",
+            "public_name": {
+              "fr": "Ouchy Lausanne",
+              "es": null
+            },
+            "cloudinary_id": "K3frW1zHQGnWgV5zNNjxxEQVsOJw80JAgGWx4O3O",
+            "mime_type": "image/jpeg",
+            "copyright": "© BLAKE PRODUCTION",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": "Lausanne, Aviron; Lac; Soleil; Bateau Automne",
+              "description": null,
+              "file_name_from_url": "637fd63e6fb7a3cd.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Ouchy-Lausanne-aviron.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/C9zfAA1gq0b/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "1d3aec888270e9ae",
+          "copyright": "© Vue sur la plage de Preverenges et le lac Leman.",
+          "public_name": {
+            "fr": "Lausanne et le Léman"
+          }
+        }
+      ],
+      "published_at": "1722290400",
+      "seo": {
+        "description": {
+          "fr": "Le Léman est le plus grand lac d’eau douce d’Europe occidentale. Ses eaux turquoises et crystallines – étendues sur quelque 582 kilomètres carrés - sont parmi les plus convoitées et traversées.",
+          "en": "Lake Geneva is the largest freshwater lake in Western Europe. Its turquoise, crystalline waters spread over some 582 square kilometres are among the most sought-after and crossed.",
+          "de": "Der Genfer See ist der größte Süßwassersee in Westeuropa. Sein türkisfarbenes, kristallklares Wasser, das sich über eine Fläche von 582 Quadratmetern erstreckt, gehört zu den begehrtesten und meistbefahrenen Gewässern."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-et-le-leman",
+          "en": "lausanne-and-lake-geneva",
+          "de": "lausanne-und-der-genfersee"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-lacustre",
+          "public_name": {
+            "fr": "Lacustre",
+            "en": "Lacustrine",
+            "de": "Lakustrin"
+          }
+        }
+      ]
+    }
+  }
+}

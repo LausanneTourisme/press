@@ -1,0 +1,49 @@
+{
+  "data": {
+    "item": {
+      "id": "6",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "PIC au Beau-Rivage Palace",
+        "en": "PIC at Beau-Rivage Palace",
+        "de": "PIC im Beau-Rivage Palace"
+      },
+      "lead": {
+        "fr": "Réouverture du restaurant Pic au Beau-Rivage Palace",
+        "en": "Restaurant Pic reopening at the Beau-Rivage Palace",
+        "de": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace"
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "eXj9aUhdJyHeJ55izLcSsnn3C0rLbNUJnt71qSzg",
+          "copyright": "© Beau Rivage Palace",
+          "public_name": {
+            "fr": "Pic au Beau Rivage Palace"
+          }
+        }
+      ],
+      "published_at": "1722808800",
+      "seo": {
+        "description": {
+          "fr": "Réouverture du restaurant Pic au Beau-Rivage Palace",
+          "en": "Restaurant Pic reopening at the Beau-Rivage Palace",
+          "de": "Wiedereröffnung des Pic-Restaurants im Beau Rivage Palace"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "superbe",
+          "en": "reouverture-du-restaurant-pic-au-beau-rivage-palace",
+          "de": "pic-au-beau-rivage-palace"
+        }
+      },
+      "tags": []
+    }
+  }
+}

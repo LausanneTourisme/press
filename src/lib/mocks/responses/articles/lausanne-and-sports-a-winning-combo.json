@@ -426,9 +426,7 @@
               "copyright": null,
               "attr": "width=\"1600\" height=\"1061\"",
               "tags": "Vélo; Activité; Bowl; Enfant",
-              "description": null,
-              "file_name_from_url": "21bafda50ef9e559.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Bowl-de-Vidy.jpg"
+              "description": null
             }
           },
           "size": "medium",
@@ -444,7 +442,7 @@
           }
         }
       ],
-      "published_at": "1709517839",
+      "published_at": "1709517807",
       "seo": {
         "description": {
           "fr": "Vous êtes bien à Lausanne ! Capitale et ville olympique élue destination préférée des sportifs de tout poil. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, la perle du Léman se fait tour à tour le paradis des sportifs comme des créatifs.",
@@ -456,13 +454,18 @@
           "fr": "lausanne-et-le-sport-ca-match",
           "en": "lausanne-and-sports-a-winning-combo",
           "de": "lausanne-und-sport-eine-perfekte-kombination"
-        },
-        "name": {
-          "fr": "Lausanne et le sport : ça match !",
-          "en": "Lausanne and sports: a winning combo",
-          "de": "Lausanne und Sport – eine perfekte Kombination"
         }
-      }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
     }
   }
 }

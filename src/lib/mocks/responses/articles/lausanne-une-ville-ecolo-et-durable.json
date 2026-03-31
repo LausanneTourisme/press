@@ -1,0 +1,765 @@
+{
+  "data": {
+    "item": {
+      "id": "281",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne, une ville écolo et durable !",
+        "en": "Lausanne, a green and sustainable city",
+        "de": "Lausanne – umweltbewusst und nachhaltig!"
+      },
+      "lead": {
+        "fr": "De passage à Lausanne, vous pourrez constater que la ville est résolument axée sur le développement durable. A part les transports en communs, voici quelques expériences écolos à vivre ou à voir à Lausanne. On prend son vélo et on y va !",
+        "en": "On visiting Lausanne you can see for yourself that the city is unwavering in its insistence on becoming a sustainable place to live. Quite apart from public transport, here are some environmentally friendly things to do and see in Lausanne. Take your bike and off we go!",
+        "de": "Wer Lausanne besucht, wird schnell feststellen, dass die nachhaltige Entwicklung ein wichtiger Schwerpunkt der Stadt ist. Nebst den öffentlichen Verkehrsmitteln hält Lausanne einige umweltfreundliche Angebote und Veranstaltungen bereit. Ab auf's Fahrrad und los geht's!"
+      },
+      "summary": {
+        "fr": "De passage à Lausanne, vous pourrez constater que la ville est résolument axée sur le développement durable. A part les transports en communs, voici quelques expériences écolos à vivre ou à voir à Lausanne. On prend son vélo et on y va !",
+        "en": "On visiting Lausanne you can see for yourself that the city is unwavering in its insistence on becoming a sustainable place to live. Quite apart from public transport, here are some environmentally friendly things to do and see in Lausanne. Take your bike and off we go!",
+        "de": "Wer Lausanne besucht, wird schnell feststellen, dass die nachhaltige Entwicklung ein wichtiger Schwerpunkt der Stadt ist. Nebst den öffentlichen Verkehrsmitteln hält Lausanne einige umweltfreundliche Angebote und Veranstaltungen bereit. Ab auf’s Fahrrad und los geht’s!"
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26508,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "e5ec5fb429fe3b8c",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1600,
+              "height": 1066,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1066\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "e5ec5fb429fe3b8c.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/07/Vue-par-Denantou.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Se régaler avec les produits 100% locaux des nouveaux pop-up stores",
+            "en": "Treating yourself to 100% local products of the new pop-up stores",
+            "de": "Mit den 100 % lokalen Produkten der neuen Pop-up-Geschäfte ist es einfach, Freude zu bereiten",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h3",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-local-pop-up/\">Le Local pop-up</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-local-pop-up/\">Le Local Pop-Up</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-local-pop-up/\">Le Local Pop-up</a>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avec cette toute nouvelle épicerie, la Ville de Lausanne offre la possibilité aux producteurs régionaux d’exposer leurs délicieux produits. Et on peut vous dire que nous, on en profite ! Vins, bières de Lausanne, miel, jus de pomme ou de raisin, de quoi se régaler à coup sûr.",
+            "en": "With this brand new grocery store, the City of Lausanne gives local producers the opportunity to display their delicious products. Believe us, we’re making the most of it! Lausanne wines and beers, honey, apple or grape juice, a real treat for your taste buds!",
+            "de": "In diesem brandneuen Lebensmittelgeschäft bietet die Stadt Lausanne den regionalen Produzenten die Möglichkeit, ihre Köstlichkeiten zu präsentieren. Und das lassen wir uns auf keinen Fall entgehen! Ob Wein, Lausanner Bier, Honig, Apfel- oder Traubensaft, höchster Genuss ist garantiert.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Escaliers du Marché 2, 1003 Lausanne</em>",
+            "en": "<em>Escaliers du Marché 2, 1003 Lausanne</em>",
+            "de": "<em>Escaliers du Marché 2, 1003 Lausanne</em>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25932,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "d9dfd69ee1e08a18",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1440,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1440\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d9dfd69ee1e08a18.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/11/Local-pop-up-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne.ch/vie-pratique/quartiers/parcs-et-sports/jardins-familiaux.html\"><strong>Planter des tomates en pleine ville</strong></a>",
+            "en": "<a href=\"https://www.lausanne.ch/vie-pratique/quartiers/parcs-et-sports/jardins-familiaux.html\"><strong>Planting tomatoes in the middle of the city</strong></a>",
+            "de": "<a href=\"https://www.lausanne.ch/vie-pratique/quartiers/parcs-et-sports/jardins-familiaux.html\"><strong>Tomaten mitten in der Stadt</strong></a>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Difficile de cultiver ses propres fruits et légumes quand on habite en ville. Difficile, mais pas impossible. La preuve avec les jardins familiaux et plantages communautaires lausannois, répartis dans toute la ville. Une occasion de se rapprocher de la nature, mais aussi de ses voisins. La plupart de ces potagers seront déplacés dans les années à venir, mais leur surface totale va être augmentée d’un tiers.",
+            "en": "It’s difficult to grow your own fruit and vegetables if you live in a city. Difficult but not impossible. The proof is the kitchen gardens and allotments which can be seen every in Lausanne. An opportunity to get closer to nature and also to your neighbours. The majority of these vegetable gardens will be moved in the years to come but their total area will be increased by a third.",
+            "de": "Wer in der Stadt wohnt, hat es schwer, sein eigenes Obst und Gemüse anzubauen. Schwer bedeutet aber noch lange nicht unmöglich. Davon zeugen die Familien- und Schrebergärten, die über die ganze Stadt verteilt sind. Hier kommt man der Natur näher, ebenso wie den Nachbarn. Die meisten Gärten werden in den kommenden Jahren an neue Standorte verlagert doch ihre Gesamtfläche wird um ein Drittel wachsen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 27177,
+              "name": "Lausanne, une ville écolo et durable ! - Panneau Jardin Montriond",
+              "public_name": {
+                "fr": "LT_BIO_27",
+                "en": "LT_BIO_27",
+                "de": "LT_BIO_27",
+                "es": null
+              },
+              "cloudinary_id": "n8iQlVm6XxLRr786vOqh2et8xG9nQZWFeBYoWJC7",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT_BIO_27",
+              "metadata": {
+                "width": 1920,
+                "height": 1440,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1440\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "552e7d9d95b96eae.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_27.jpg"
+              }
+            },
+            {
+              "id": 27178,
+              "name": "Lausanne, une ville écolo et durable ! - Jardin (1)",
+              "public_name": {
+                "fr": "LT_BIO_25",
+                "en": "LT_BIO_25",
+                "de": "LT_BIO_25",
+                "es": null
+              },
+              "cloudinary_id": "8r8WrOXStAIGaRY5oaCsNJjqKdv5jDEqBC971lA8",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT_BIO_25",
+              "metadata": {
+                "width": 1920,
+                "height": 1440,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1440\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e8f5c33cec810ce6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_25.jpg"
+              }
+            },
+            {
+              "id": 27179,
+              "name": "Lausanne, une ville écolo et durable ! - Jardin (2)",
+              "public_name": {
+                "fr": "LT_BIO_33",
+                "en": "LT_BIO_33",
+                "de": "LT_BIO_33",
+                "es": null
+              },
+              "cloudinary_id": "LHOyZlo7joYgqWTTGAaKS4xP6kaIfObNBY9xEDgx",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT_BIO_33",
+              "metadata": {
+                "width": 1920,
+                "height": 1440,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1440\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4d03ac8d3b0ff8d6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_33.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Acheter ses habits en seconde main",
+            "en": "<strong>Buying second-hand clothes</strong>",
+            "de": "<strong>Secondhand-Kleidung kaufen</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Etre hyper stylé tout en donnant une deuxième vie aux vêtements et accessoires, c’est de plus en plus facile à Lausanne. De <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/nos-coups-de-coeur-deuxieme-main-et-vintage-a-lausanne/\">nombreuses boutiques vintages et second-hand</a> sont dispos, dans lesquelles vous êtes certains de dénicher des pépites uniques et super tendances. L’expression joindre l’utile à l’agréable prend alors tout son sens !",
+            "en": "Being hyper-stylish while giving a second life to clothes and accessories is getting ever easier in Lausanne. Many <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/our-favourite-second-hand-and-vintage-boutiques-in-lausanne/\">second-hand and vintage boutiques</a> are available, in which you’re sure to unearth unique and trendsetting gems. With that, combining the useful and the pleasurable acquires real meaning!",
+            "de": "Kleidern und Accessoires ein zweites Leben zu geben und gleichzeitig superstylish zu sein, wird in Lausanne immer einfacher. Schauen Sie in den <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/unsere-lieblingsboutiquen-fuer-secondhand-und-vintage-artikel/\">zahlreichen Vintage- und Secondhand-Boutiquen</a> vorbei und stöbern Sie einzigartige und trendige Stücke auf! So können Sie das Nützliche mit dem Angenehmen verbinden.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26016,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "6ffaa408a2d539a2",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1440,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1440\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "6ffaa408a2d539a2.jpeg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/Boutique-Chabada-Vintage-Lausanne-scaled.jpeg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Faire du shopping avec l’upcycling</strong>",
+            "en": "<strong>Go shopping by upcycling</strong>",
+            "de": "<strong>Shoppen mit Upcycling</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Vous ne connaissez peut-être pas l’<em>upcycling</em>. Contrairement au <em>recycling</em>, avec l’<em>upcycling </em> on réutilise un matériau au lieu de le détruire. Matériel électronique, vélos, vêtements, accessoires, mobilier… à Lausanne, vous trouverez facilement des <a href=\"http://www.lausanne-repare.ch/\">lieux d’<em>upcycling</em></a> à proximité. Des brocantes et reventes de disques sont également régulièrement organisées, en plus des magasins spécialisés dans la seconde-main. Il y même <a href=\"http://www.pro-velo-lausanne.ch/association/prestations/foires-aux-velos/\">des foires aux vélos </a>!",
+            "en": "Perhaps you are not aware of <em>upcycling</em>. Unlike <em>recycling</em>, <em>upcycling</em> consists of the re-use rather than the destruction of a material. Electronic items bikes, clothes, accessories, furniture….in Lausanne you will easily find <a href=\"http://www.lausanne-repare.ch/\"><em>upcycling</em> depots</a> close at hand. Flea markets and second-hand sales of discs are also regularly organised, and there are also plenty of specialist second-hand shops. There are even <a href=\"http://www.pro-velo-lausanne.ch/association/prestations/foires-aux-velos/\">bike markets</a>!",
+            "de": "Habt ihr schon einmal vom<em> Upcycling</em> gehört? Im Gegensatz zum <em>Recycling</em> wird beim <em>Upcycling</em> ein Material nicht zerstört, sondern wiederverwendet. Elektronische Geräte, Fahrräder, Kleidung, Zubehörteile, Möbel … in Lausanne findet ihr ohne Probleme <a href=\"http://www.lausanne-repare.ch/\"><em>Upcycling-Orte</em></a> in eurer Nähe. Auch Flohmärkte und Platten-Börsen finden regelmässig statt, mal ganz abgesehen von den spezialisierten Brockenhäusern. Und nicht zuletzt gibt es auch <a href=\"http://www.pro-velo-lausanne.ch/association/prestations/foires-aux-velos/\"> Fahrradbörsen</a>!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour les amateurs de livres, <a href=\"http://www.lanuitdelalecture.ch/les-boites-agrave-livres.html\">des cabines téléphoniques et des caissettes de journaux</a> ont été réaménagées spécialement pour que les habitants puissent s’échanger des livres. Un bon moyen d’acheter moins, tout en lisant plus.",
+            "en": "For book-lovers, <a href=\"http://www.lanuitdelalecture.ch/les-boites-agrave-livres.html\">phone boxes and newspaper boxes</a> have been transformed into book exchanges. A good way of buying less and reading more.",
+            "de": "Leseratten kommen an den zu Bücherschränken umfunktionierten <a href=\"http://www.lanuitdelalecture.ch/les-boites-agrave-livres.html\">Telefonzellen und Zeitungskisten</a> auf ihre Kosten. Eine tolle Sache um weniger zu kaufen und trotzdem mehr zu lesen.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26101,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "a4020864f3927830",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 4032,
+              "height": 3024,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"4032\" height=\"3024\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "a4020864f3927830.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_59.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26168,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "ab4bb7eb2be3be6e",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 4032,
+              "height": 3024,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"4032\" height=\"3024\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "ab4bb7eb2be3be6e.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_57.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Manger local et bio</strong>",
+            "en": "<strong>Eat local, eat organic</strong>",
+            "de": "<strong>Regionale Bio-Lebensmittel</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "A Lausanne, il y a énormément de produits régionaux à goûter. Le plus simple est de se rapprocher du producteur <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/marche-du-centre-ville/\">en vous baladant dans les marchés lausannois</a>. C’est aussi un bon moyen de consommer des produits de saison !",
+            "en": "There is a huge amount of local products to sample in Lausanne. The simplest way is get close to the producer <a href=\"https://www.lausanne-tourisme.ch/en/explore/city-centre-market/\">by taking a stroll through Lausanne’s markets</a>. It’s also a good way to eat seasonal produce.",
+            "de": "In Lausanne kann man sich so einige regionale Produkte schmecken lassen. Für einen direkten Kontakt mit den Produzenten empfiehlt sich <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/markt-in-der-innenstadt/\">ein Besuch der Märkte Lausannes</a>. So kommt man gleichzeitig in den Genuss saisonaler Produkte!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Tout au long de l’année, <a href=\"https://www.lausanneatable.ch/\">Lausanne à table</a> organise également une série d’événements autour de la gastronomie locale : Yoga-Brunch, ateliers de pâtisserie pour les enfants, pique-niques… il y en a pour tous les goûts.",
+            "en": "And throughout the year <a href=\"https://www.lausanneatable.ch/en/\">Lausanne à table</a> organises a series of events featuring the local food scene: yoga-brunch, pastry workshops for children, picnics… There’s something for every taste.",
+            "de": "Das ganze Jahr über lädt <a href=\"https://www.lausanneatable.ch/\">Lausanne à Table</a> zu verschiedenen Veranstaltungen mit Bezug zur lokalen Gastronomie ein: Yoga-Brunch, Backwerkstätte für Kinder, Picknicks … Hier ist für jeden Geschmack etwas dabei.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26233,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "4a7536db650d94b4",
+            "mime_type": "image/jpeg",
+            "copyright": "© Digitalflow/Lausanne à Table",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "4a7536db650d94b4.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/07/LAT-dejeuner-herbe.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Oui, parce que la <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/decouverte-gastronomie-lausannoise/\">gastronomie régionale</a> est riche et souvent élaborée à base de produits qui n’ont pas été transportés en camion à travers le monde entier. Pour accompagner des filets de perche ou du papet, préférez un verre de vin de la région, ou une bière artisanale : <a href=\"https://www.lausanne-tourisme.ch/fr/guide/les-brasseries-de-lausanne/\">il y a l’embarras du choix.</a> Pour le petit-déjeuner ou les desserts, il y a même <a href=\"https://www.lausanne.ch/vie-pratique/nature/produits-ville/gourmand-et-local/miel-de-la-ville.html\">le miel de la Ville de Lausanne</a>. Depuis 2011, le Service des parcs et domaines a aménagé 12 ruches sur des toits ou dans des parcs lausannois. Le résultat est si bon que tout le monde s’arrache les quelques pots produits. A déguster en automne, donc !",
+            "en": "Yes, because the <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/discovering-lausanne-gastronomy/\">local food scene</a> is very diverse and is often based on products which have not been transported by truck (or plane!) from one side of the world to the other. Choose a glass of local wine or craft beer to go with fillets of perch or our regional “papet” dish: <a href=\"https://www.lausanne-tourisme.ch/en/guide/the-breweries-of-lausanne/\">Spoilt for choice.</a> Try <a href=\"https://www.lausanne.ch/vie-pratique/nature/produits-ville/gourmand-et-local/miel-de-la-ville.html\">honey from hives in the city of Lausanne</a> for your breakfast or dessert. Starting in 2011 the Parks Department (<em>Service des parcs et domaines</em>) has kept 12 hives on roofs or in Lausanne’s parks. The honey is so good that people snap up the few jars of honey which the bees produce. An autumn treat!",
+            "de": "Ganz genau. Denn <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/auf-entdeckungsreise-durch-lausanner-gastronomie/\">die regionale Gastronomie</a> ist nicht nur vielfältig, sondern häufig auch anspruchsvoll. Grundlage sind stets Produkte, die nicht im LKW durch die ganze Welt gefahren sind. Geniesst zu eurem Barschfilet oder Lauchgemüse ein Glas Wein aus der Region oder <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/die-brauereien-in-lausanne/\">ein Craftbier</a>: die Auswahl ist gross. Zum Frühstück oder für Desserts empfiehlt sich übrigens <a href=\"https://www.lausanne.ch/vie-pratique/nature/produits-ville/gourmand-et-local/miel-de-la-ville.html\">der Honig der Stadt Lausanne</a>. Seit 2011 hat die Stadtgärtnerei zwölf Bienenstöcke auf den Dächern oder in den Parks von Lausanne aufgestellt. Das Ergebnis ist so lecker, dass sich alle Welt um die produzierten Gläser reisst. Nächste Kostprobe gibts im Herbst!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26299,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "c59f4f6f1455598d",
+            "mime_type": "image/jpeg",
+            "copyright": "© Pots de miel de la Ville de Lausanne",
+            "metadata": {
+              "width": 1200,
+              "height": 702,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"702\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "c59f4f6f1455598d._Ville-de-Lausanne-e1583486741865",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Miel._Ville-de-Lausanne-e1583486741865.jpeg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour finir, LE magasin spécialisé dans le bio, c’est <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-topinambour/\">Le Topinambour</a>. Cette petite boutique sous-gare est la première à avoir vendu des produits bios à Lausanne. Elle est facilement reconnaissable, avec sa jolie façade jaune, le petit banc de bois devant sa vitrine et surtout sa grande baignoire remplie de plantes. En plus, à l’intérieur, tout a l’air délicieux !",
+            "en": "And finally THE shop specialising in organic produce is <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-topinambour/\">Le Topinambour</a>. This small shop located in the Sous-Gare district was the first to sell organic produce in Lausanne. You will easily recognise it by its attractive yellow façade, the small white wooden bench in front of the window and particularly its large, plant-filled bath-tub. In addition, everything inside looks delicious!",
+            "de": "Und schliesslich wäre da noch DAS auf Bio-Lebensmittel spezialisierte Geschäft <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-topinambour/\">Le Topinambour</a>. Dieser kleine Laden unterhalb des Bahnhofs war das erste Geschäft in Lausanne, das Bio-Produkte anbot. Mit seiner hübschen gelben Fassade, der kleinen Holzbank vor dem Fenster und vor allem aber der grossen Badewanne voller Pflanzen ist es nicht zu verfehlen. Und das Angebot im Geschäft sieht einfach köstlich aus!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26347,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "a0a668432c21a3c7",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 4032,
+              "height": 3024,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"4032\" height=\"3024\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "a0a668432c21a3c7.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_40.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26392,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "6d1a3b37a1d470b4",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 4032,
+              "height": 3024,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"4032\" height=\"3024\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "6d1a3b37a1d470b4.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/LT_BIO_45.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Voir des animaux protégés de la région</strong>",
+            "en": "<strong>See the region’s protected animals</strong>",
+            "de": "<strong>Geschützte Tiere aus der Region</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Voilà une autre démarche durable très sympa de la Ville de Lausanne : la création d’un espace où des animaux menacés de la région sont protégés. Porcs laineux, chèvres bottées et plein d’autres espèces vous attendent <a href=\"https://www.lausanne-tourisme.ch/fr/P14488/le-site-de-sauvabelin\">sur les bords du lac de Sauvabelin</a>. Le cadre est magnifique et l’activité est parfaite pour les enfants. Une fois monté dans le bois, la <a href=\"https://www.lausanne-tourisme.ch/fr/P10611/tour-de-sauvabelin\">Tour de Sauvabelin</a> offre un point de vue magnifique, tout en prouvant que l’ingénierie du bois peut faire de grandes choses, avec un matériau local. Oui, car la tour a été entièrement faite à partir de bois lausannois.",
+            "en": "Another and attractive step towards sustainability has been taken by Lausanne, this time in the form of an area where the endangered animals of the region are protected. Woolly pigs, booted goats and many other species are waiting for you <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-sauvabelin-site/\">on the shores of the Sauvabelin Lake</a>. The setting is wonderful and perfect for children. Once you have climbed through the woods, <a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\">Sauvabelin Tower</a> provides a magnificent view while at the same time demonstrating that wood, a local material, is capable of making large structures. Yes indeed, as the tower is constructed entirely of wood sourced close to the city.",
+            "de": "Und hier ein weiteres tolles Projekt der Stadt Lausanne das ganz im Sinne der Nachhaltigkeit ist: das für gefährdete Tiere der Region eingerichtete Schutzgebiet. Wollschweine, Stiefelgeissen und viele andere Tierarten bekommen Sie <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ausflugsziel-sauvabelin/\">am Ufer des Lac de Sauvabelin</a> zu sehen. Die Umgebung ist wunderschön und die Aktivität perfekt für Kinder. Wer im Wald den <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\">Sauvabelin-Turm</a> erklimmt, kann einen atemberaubenden Ausblick geniessen. Gleichzeitig liefert dieses Bauwerk den Beweis, dass der Holzbau mit einem heimischen Werkstoff Grosses leisten kann. Denn schliesslich wurde der ganze Turm mit aus Lausanne stammendem Holz gebaut.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 15235,
+            "name": "Sauvabelin Haut",
+            "public_name": {
+              "fr": "Sauvabelin",
+              "es": null
+            },
+            "cloudinary_id": "aqkgloqbeinbudbewwy3",
+            "mime_type": "image/jpeg",
+            "copyright": "© F. Beaud Cedotec",
+            "metadata": {
+              "attr": "width=\"2560\" height=\"1920\"",
+              "tags": "Sauvabelin; Vue; Famille",
+              "width": 2560,
+              "height": 1920,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "description": null,
+              "file_name_from_url": "edc173112e35e93b.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Tour-Sauvabelin-4-8.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26460,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "5093da10d4807aac",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "5093da10d4807aac.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/07/Sauvabelin-Parcs-20180816-65.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Abandonner les emballages</strong>",
+            "en": "<strong>No more packaging</strong>",
+            "de": "<strong>Verzicht auf Verpackungen</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Depuis quelques années, certaines épiceries proposent uniquement leurs produits en vrac. Le spécialiste du sans emballages à Lausanne s’appelle <a href=\"http://labrouette.ch/\">La Brouette</a>. Cette dernière avait d’ailleurs enchanté les habitants, avec son crowdfunding qui avait cartonné. Cette boutique vous permettra d’acheter de tout, même des produits cosmétiques ou d’entretien de la maison.",
+            "en": "For several years a number of grocery stores have been selling their products without packaging. The specialist in packaging-free goods in Lausanne is <a href=\"http://labrouette.ch/\">La Brouette</a>. The latter delighted locals with its crowd-funding which proved to be a smash-hit! You can buy everything from this shop, even cosmetics and home care products.",
+            "de": "Seit einigen Jahren bieten manche Lebensmittelgeschäfte ihre Produkte nur noch unverpackt an. Das Geschäft in Lausanne, die ohne Verpackung auskommen, heisst <a href=\"http://labrouette.ch/\">La Brouette</a>. Letzteres begeisterte die Lausanner mit einem erfolgreichen Crowdfunding-Projekt. In diesem Geschäft könnt ihr auch Kosmetikartikel oder Haushaltsprodukte einkaufen",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BUjDiJQB3Pj/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CfMTRM7D8JZ/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Participer à des événements écolos</strong>",
+            "en": "<strong>Get involved in green events</strong>",
+            "de": "<strong>Teilnahme an ökologischen Veranstaltungen</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Parmi les nombreuses manifestations qui intègrent des thématiques durables et écologiques, on retrouve le <a href=\"https://objectifterre.ch/\">Festival Objectif Terre</a>. Il se déroule du au mois de juin à l’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/esplanade-de-montbenon/\">Esplanade de Montbenon.</a> Une belle occasion de découvrir ce qu’il se fait à Lausanne en matière d’écologie.",
+            "en": "The <a href=\"https://objectifterre.ch/\">Festival Objectif Terre</a> is one of the many events which combine the themes of sustainability and eco-friendliness. It takes place in June on the <a href=\"https://www.lausanne-tourisme.ch/en/explore/montbenon-esplanade/\">Esplanade de Montbenon</a>. A great occasion to discover what is going on in Lausanne with regard to eco-friendliness.",
+            "de": "Eine der zahlreichen Veranstaltungen rund um das Thema Nachhaltigkeit und Umweltschutz ist das <a href=\"https://objectifterre.ch/\">Festival Objectif Terre</a>. Es findet in Juni auf der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/montbenon-esplanade/\">Esplanade de Montbenon</a> statt. Eine gute Gelegenheit, um herauszufinden, welche ökologischen Angebote es alles in Lausanne gibt.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26481,
+            "name": "Lausanne, une ville écolo et durable !",
+            "public_name": {
+              "fr": "Lausanne, une ville écolo et durable !"
+            },
+            "cloudinary_id": "df43badc04d6c066",
+            "mime_type": "image/jpeg",
+            "copyright": "© @Festival Objectif Terre",
+            "metadata": {
+              "width": 1536,
+              "height": 852,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1536\" height=\"852\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "df43badc04d6c066.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/07/OT-ImgWeb-Drone-Festival-Montbenon-1536x852-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour les amoureux de la nature, il y a aussi la <a href=\"http://www.arbracadabra.ch/CMS/\">Fête de la Forêt</a>. Chaque année à <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-site-de-sauvabelin/\">Sauvabelin</a>, cette rencontre permet d’en savoir plus sur l’importance d’une flore riche, au travers d’activités et ateliers, notamment pour les enfants.",
+            "en": "For nature-lovers there is also the <a href=\"http://www.arbracadabra.ch/CMS/\">Forest Festival</a>. Held every year at <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-sauvabelin-site/\">Sauvabelin</a>, this gathering tells us more about the importance of an abundant flora by means of various activities and workshops, particularly aimed at children.",
+            "de": "Naturfreunden empfiehlt sich der Besuch des <a href=\"http://www.arbracadabra.ch/CMS/\">Fête de la Forêt</a>. Es findet jedes Jahr in <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-sauvabelin-site/\">Sauvabelin</a> statt. Die angebotenen Workshops und Aktivitäten lassen die Besucher (auch sehr geeignet für Kinder) mehr über die Bedeutung einer vielfältigen Flora erfahren.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Se déplacer en polluant moins</strong>",
+            "en": "<strong>Travel with less pollution</strong>",
+            "de": "<strong>Umweltfreundlich unterwegs</strong>",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Oui, Lausanne est pentue et ce n’est pas toujours pratique à pied ou en vélo. Mais les distances sont courtes, et tous les trajets en ville peuvent se faire très facilement, grâce à la mobilité douce. Pour le plus grand plaisir des jambes, qui risquent de devenir aussi belles que celles des habitants. <a href=\"https://www.lausanne-tourisme.ch/fr/P20161/location-pret-de-velos\">De nombreuses bornes à vélos</a> sont installées en ville, permettant de prendre et de déposer le vélo où on le souhaite.",
+            "en": "Yes, Lausanne is hilly and it’s not always practical to move around on foot or by bike. But distances are short and moving from one part of the city to another is very easy thanks to “soft mobility”. It’s best to use your legs which might well become as attractive as those of the city’s inhabitants. <a href=\"https://www.lausanne-tourisme.ch/en/explore/hire-bicycle-loan/\">Many cycle docking stations</a> are located around the city where you can pick up and deposit a bike wherever you want.",
+            "de": "Es stimmt, mit seinen mitunter steilen Hängen stellt Lausanne Fussgänger und Radfahrer vor so manche Herausforderung. Doch die Wege sind kurz und dank des Langsamverkehrs lassen sich die Strecken schnell zurücklegen. Sehr zur Freude der Beine. Vielleicht werden sie gar so schön wie die der Lausanner. In der Stadt sind <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/velo-mieteverleih/\">zahlreiche Velo-Mietstationen</a> zu finden, sodass man ein ausgeliehenes Fahrrad unkompliziert und wo man will abgeben kann.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 23454,
+            "name": "Parc Bourget vélo",
+            "public_name": {
+              "fr": "Parc Bourget",
+              "en": "Parc Bourget",
+              "de": "Parc Bourget",
+              "es": null
+            },
+            "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+            "mime_type": "image/jpeg",
+            "copyright": "© LT/Laurent Kaczor",
+            "metadata": {
+              "width": 1600,
+              "height": 1065,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1065\"",
+              "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+              "description": null,
+              "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour ceux qui n’aiment pas pédaler ni marcher, il reste une alternative à la voiture : Les transports en communs qui vont partout et qui sont surtout très peu polluants. Si vous empruntez le métro, vous aurez d’ailleurs l’honneur de circuler avec <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/fun-facts-sur-le-metro-lausannois/\">le seul système de métro en Suisse</a> ! Si vous séjournez dans un hôtel de la ville, les transports publics sont mêmes gratuits, grâce à <a href=\"https://www.lausanne-tourisme.ch/fr/lausanne-transport-card-and-more/\">la Lausanne Transport Card</a>.",
+            "en": "For those who don’t like pedalling or walking, there is still an alternative to the car: public transport which goes everywhere and, more importantly, generates minimum pollution. If you take the metro you will have the honour of travelling on <a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/fun-facts-about-the-lausanne-metro/\">Switzerland’s only metro system</a>! And if you are staying in one of the city’s hotels, public transport is free as the <a href=\"https://www.lausanne-tourisme.ch/en/lausanne-transport-card-and-more/\">Lausanne Transport Card</a> gives you free travel in the city.",
+            "de": "Wer weder gerne läuft noch Fahrrad fährt, dem bleibt eine weitere Alternative zum Auto: Das Netz des öffentlichen Verkehrs deckt die ganze Stadt ab und ist umweltfreundlich. Wenn ihr die Metro nehmt, seid ihr übrigens im <a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/fun-facts-rund-um-die-metro-in-lausanne/\">einzigen Metro-System der Schweiz</a> unterwegs! Wohnt ihr in einem Hotel in der Stadt, ist die Nutzung des öffentlichen Verkehrs für euch dank der <a href=\"https://www.lausanne-tourisme.ch/de/lausanne-transport-card-and-more/\">Lausanne Transport Card</a> sogar kostenlos.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Et pour venir à Lausanne ou en sortir, le train est encore le meilleur moyen, puisque vous arrivez au centre-ville à l’heure, grâce à la ponctualité suisse.",
+            "en": "The best way to travel to and from Lausanne is to take the train as you will arrive in the city centre on time, thanks to Swiss punctuality!",
+            "de": "Der Zug ist das ideale Transportmittel um nach Lausanne, oder weg von der Stadt, zu kommen. Denn dank der Schweizer Pünktlichkeit kommt ihr auf die Minute genau mitten im Stadtzentrum an.",
+            "it": "",
+            "es": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "d9dfd69ee1e08a18",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Lausanne, une ville écolo et durable !"
+          }
+        }
+      ],
+      "published_at": "1688508000",
+      "seo": {
+        "description": {
+          "fr": "De passage à Lausanne, vous pourrez constater que la ville est résolument axée sur le développement durable. A part les transports en communs, voici quelques expériences écolos à vivre ou à voir à Lausanne. On prend son vélo et on y va !",
+          "en": "On visiting Lausanne you can see for yourself that the city is unwavering in its insistence on becoming a sustainable place to live. Quite apart from public transport, here are some environmentally friendly things to do and see in Lausanne. Take your bike and off we go!",
+          "de": "Wer Lausanne besucht, wird schnell feststellen, dass die nachhaltige Entwicklung ein wichtiger Schwerpunkt der Stadt ist. Nebst den öffentlichen Verkehrsmitteln hält Lausanne einige umweltfreundliche Angebote und Veranstaltungen bereit. Ab auf's Fahrrad und los geht's!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-une-ville-ecolo-et-durable",
+          "en": "lausanne-a-green-and-sustainable-city",
+          "de": "lausanne-umweltbewusst-und-nachhaltig"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-durabilite",
+          "public_name": {
+            "fr": "Durabilité",
+            "en": "Sustainability",
+            "de": "Nachhaltigkeit"
+          }
+        }
+      ]
+    }
+  }
+}

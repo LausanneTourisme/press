@@ -1,0 +1,407 @@
+{
+  "data": {
+    "item": {
+      "id": "274",
+      "languages": ["fr", "en"],
+      "name": {
+        "fr": "Nos bonnes idées pour moins gaspiller",
+        "en": "Our ideas to reduce waste"
+      },
+      "lead": {
+        "fr": "S'il y a une bonne résolution à prendre, c’est bien celle de faire en sorte de moins gaspiller. En effet, à l’heure où la planète crie à l’aide, il est plus que temps de mettre la main à la pâte : ni une, ni deux, découvrez nos bonnes idées pour moins dépenser et mieux consommer !",
+        "en": "If there is one New Year resolution to take, it’s got to be finding ways to waste less. At a time when the planet is crying out for help, we need to act!"
+      },
+      "summary": {
+        "fr": "S’il y a une bonne résolution à prendre, c’est bien celle de faire en sorte de moins gaspiller. En effet, à l’heure où la planète crie à l’aide, il est plus que temps de mettre la main à la pâte : ni une, ni deux, découvrez nos bonnes idées pour moins dépenser et mieux consommer !",
+        "en": "If there is one New Year resolution to take, it’s got to be finding ways to waste less. At a time when the planet is crying out for help, we need to act!"
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 27201,
+            "name": "Nos bonnes idées pour moins gaspiller - Forêt",
+            "public_name": {
+              "fr": "Les bois dans la forêt de Sauvablin",
+              "en": "Les bois dans la forêt de Sauvablin",
+              "de": "Les bois dans la forêt de Sauvablin",
+              "es": null
+            },
+            "cloudinary_id": "rBRSZTF0g3gM5xRQrPNICGcyF1SHiG69Jorg60z8",
+            "mime_type": "image/jpeg",
+            "copyright": "© Sébastien Closuit",
+            "metadata": {
+              "width": 2560,
+              "height": 1707,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1707\"",
+              "tags": "Arbre; Ville verte; Lausanne; Forêt;",
+              "description": null,
+              "file_name_from_url": "0e4874521af1086e.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Le-bois-de-Sauvabelin-2.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Contrairement à ce que l’on peut penser, ce n’est ni compliqué, ni contraignant. Voici déjà quelques pistes !",
+            "en": "And contrary to popular belief, that’s neither complicated nor burdensome. Here are some guidelines to get off to a good start the year by wasting less.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Association La Rustine &amp; ReCYCLO</b>",
+            "en": "<strong>La Rustine and ReCYCLO</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Au 96 de l’Avenue d’Echallens, deux associations partagent un même atelier. La première, le collectif de <a href=\"http://www.larustine.bike/\"><b>La Rustine</b></a>, met à disposition un atelier autogéré : ainsi, tous les mercredis de 16h à 20h, vous pouvez en profiter pour venir faire le service vous-même de votre vélo. Des outils et des pièces de récupérations y sont aussi mis à disposition, le tout est totalement gratuit, mais un passage à la caisse libre sera très apprécié !",
+            "en": "At Avenue d’Echallens 96, two organisations share a workshop. The first one, the collective <a href=\"http://www.larustine.bike/\"><strong>La Rustine</strong></a>, provides a self-managed workshop. Every Wednesday from 4 to 8 pm, you can use the workshop to service your bike. Tools and spare parts recovered from old bikes are available. It’s all free, but donations are welcome.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Sur place, on retrouve aussi l’association <a href=\"http://www.recyclo.bike/\"><b>ReCYCLO</b></a> : née du constat que beaucoup de vélos étaient abandonnés à Lausanne, générant un très grand gaspillage. ReCYCLO a donc pour mission de récupérer les vélos lausannois orphelins, de les retaper afin de leur donner une seconde jeunesse et de les proposer à la location à moyen / long terme (la durée de la location allant d’1 mois à « toujours »). Parfait pour essayer différents types de vélo avant d’en adopter un pour la vie !",
+            "en": "<a href=\"http://www.recyclo.bike/\"><strong>ReCYCLO</strong></a> is also there: this organisation grew out of the realisation that many bikes are abandoned in Lausanne, which generates a huge waste. ReCYCLO therefore aims to salvage orphan Lausanne bikes and fix them to give them a new lease of life and offer them for mid- to long-term rentals (duration of rental is from one month to for ever). Perfect to try various types of bikes before adopting one for life!",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<i>Avenue d’Echallens 96, Lausanne</i>",
+            "en": "<i>Avenue d’Echallens 96, Lausanne</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BudfVuRlGzY/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Too Good To Go</b>",
+            "en": "<strong>Too Good To Go</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "C’est l’appli anti-gaspi par excellence ! Il faut rappeler qu’en Suisse, pas moins de 2 millions de tonnes de nourriture sont gaspillées chaque année. La restauration ne représente que 5% mais c’est déjà un début. Le but de <a href=\"https://toogoodtogo.ch/fr-ch\"><b>Too Good to Go</b></a> est de proposer une solution du type gagnant-gagnant. Elle permet aux restaurateurs de proposer à petit prix leurs invendus du jour, et aux acheteurs de profiter d’un bon repas à moindre coût et en variant les plaisirs !",
+            "en": "It’s the no-waste app <em>par excellence</em>! It should be recalled that no less than two million tons of food are wasted every year in Switzerland. The catering business only accounts for 5% of that, but it’s a start. <a href=\"https://toogoodtogo.ch/fr-ch\"><strong>Too Good to Go’s</strong></a> aim is to provide a win-win solution. It enables restaurant owners to offer their unsold goods of the day cheaply, and buyers to enjoy a good meal at a lower price.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B394Ekygvsv/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Äss-bar</b>",
+            "en": "<b>Äss-bar</b>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.aess-bar.ch/index.php?lang=fr\">Äss-bar</a> (qui veut dire “mangeable” en allemand) est un concept tout droit venu de Suisse Alémanique. Le but de cette boulangerie d’un nouveau genre est de lutter contre le gaspillage alimentaire. Comment ? En collectant les invendus de différentes boulangeries artisanales partenaires de leur concept afin de leur donner une seconde chance. C’est donc avec le label “frais de la veille” que sandwichs, croissants, pâtisseries et autres pains sont remis à la vente à prix fortement réduits.",
+            "en": "Äss-bar (meaning “edible” in German) is a concept that comes straight from German-speaking Switzerland. The aim of this new kind of bakery is to fight food waste. <a href=\"https://www.aess-bar.ch/\"><strong>Äss-bar’s </strong></a>idea is simple! To collect unsold goods from various artisan bakeries that are partners of their concept and give them a second chance. Sandwiches, croissants, pastries and breads with the label “frais de la veille” (“fresh from the day before”) are put up for sale again at very reduced prices.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<i>Rue du Petit-Chêne 28 bis, Lausanne<br>\nlundi 11h00-19h00, mardi-vendredi 9h00-19h00, et samedi 9h00-18h00</i>",
+            "en": "<i>Rue du Petit-Chêne 28 bis, Lausanne<br>\n<em>Monday 11 am to 7pm, Tuesday-Friday 9 am to 7 pm, Saturday 9 am to 7 pm</em></i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25885,
+            "name": "Nos bonnes idées pour moins gaspiller",
+            "public_name": {
+              "fr": "Nos bonnes idées pour moins gaspiller"
+            },
+            "cloudinary_id": "ca8c718c498a1894",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 636,
+              "height": 500,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"636\" height=\"500\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "ca8c718c498a1894.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Sans-titre-1-e1583312399576.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>La Manivelle</b>",
+            "en": "<b>La Manivelle</b>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://lausanne.manivelle.ch/\"><b>La Manivelle</b></a>, c’est un peu comme une bibliothèque, sauf qu’ici, ce ne sont pas des livres que l’on emprunte, mais des objets de toutes sortes ! L’idée étant de mettre en commun des outils et autre matériel utile dont on ne se sert que de temps en temps. Différents types d’abonnements mensuels ou annuels sont proposés. Ainsi, on fait de la place dans nos appartements et on évite d’acheter et d’entretenir des outils inutilement (tireuse à bières, tondeuse, matériel de camping, scies…) : en somme, on économise tout en préservant la planète ! En plus, le concept de La Manivelle permet aussi de créer du lien social tout en renforçant la solidarité entre les gens. Malin, non ?",
+            "en": "<a href=\"https://lausanne.manivelle.ch/\"><strong>La Manivelle </strong></a>is a bit like a library, except you don’t go there to borrow books, but all kinds of objects! The idea is to pool tools and other useful objects that are only needed from time to time; that way, everyone saves money while preserving the planet! What’s more, La Manivelle also leads to the creation of social ties and mutual support between people. In this way, we make room in our homes, and avoid buying and maintaining tools that we only use a few times a year (beer pumps, lawnmowers, camping gear, saws, etc.). La Manivelle offers a variety of monthly or annual subscriptions.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<i>Rue du simplon 26, 1006 Lausanne</i>",
+            "en": "<i>Rue du simplon 26, 1006 Lausanne</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B4NnvPJjXtL/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Les boîtes à livres</b>",
+            "en": "<b>Books boxes</b>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "C’est en 2015 qu’est née la première <b>boîte à livres</b> suisse, au sein d’une ancienne cabine téléphonique. Depuis, force est de constater que ces dernières fleurissent un peu partout en ville. Un plan de leurs emplacements a même été crée, à retrouver <a href=\"https://www.lanuitdelalecture.ch/les-boites-agrave-livres.html#\">ici</a>. L’idée derrière la boîte à livres est simple : on y dépose des livres que l’on a lu et qui ne nous servent plus; en échange, on se sert des livres qui nous plaisent ! Dans une autre démarche, il est également possible de faire dons des livres qui ne nous sont plus utiles à plusieurs associations, librairies et institutions de la ville de Lausanne. Une liste non exhaustive se trouve <a href=\"https://www.frc.ch/wp-content/uploads/2009/03/406.pdf\">ici</a>; pensez à les appeler avant pour vous assurer qu’ils ont la place d’accueillir vos ouvrages.",
+            "en": "The first Swiss <strong>book box</strong> appeared in 2015 in a former phone booth. Since then, they are blossoming all over town. You can see a map of their locations <a href=\"https://www.lanuitdelalecture.ch/les-boites-agrave-livres.html#\">here</a>. The idea behind a book box is simple: you deposit books that you have read and don’t need any more; in exchange, you help yourself to books that you like! Another possibility is to donate the books you no longer need to various organisations, bookshops and institutions of the City of Lausanne. A non-exhaustive list can be found <a href=\"https://www.frc.ch/wp-content/uploads/2009/03/406.pdf\">here</a>; do remember to call ahead to check there is still room for your books.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25980,
+            "name": "Nos bonnes idées pour moins gaspiller",
+            "public_name": {
+              "fr": "Nos bonnes idées pour moins gaspiller"
+            },
+            "cloudinary_id": "553139610f5e29c4",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 600,
+              "height": 463,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"600\" height=\"463\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "553139610f5e29c4.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/livres-e1577089791885.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Acheter en vrac</b>",
+            "en": "<strong>Bulk buying</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Acheter en vrac permet de minimiser notre impact sur l’environnement en disant au revoir aux emballages superflus. Cette tendance à consommer différemment en réduisant ses déchets, on en parle depuis déjà un moment et ce n’est pas prêt de s’arrêter : notre planète nous en remercie ! Les épiceries en vrac ont débarqué à Lausanne, voici une sélection aux petits oignons pour aller remplir vos bocaux !",
+            "en": "Bulk buying reduces our impact on the environment by waving goodbye to unnecessary packaging. This trend to consume differently by reducing waste has been a hot topic for a while now and isn’t about to slow down. All the better for our planet! Bulk grocery stores have arrived in Lausanne, so here is a wee selection to fill your jars!",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong><a href=\"http://labrouette.ch/\">La Brouette</a></strong><i>, Avenue d’Echallens 79</i><i><br>\n</i>",
+            "en": "<strong><a href=\"http://labrouette.ch/\">La Brouette</a></strong><i>, Avenue d’Echallens 79</i><i><br>\n</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://topinambour.ch/\"><strong>Le Topinambour</strong></a><i>, </i><i>9 Avenue William-Fraisse</i>",
+            "en": "<a href=\"https://lausanne-envrac.ch/le-topinambour-topi-pour-les-intimes/\"><strong>Le Topinambour</strong></a><i>, </i><i>9 Avenue William-Fraisse</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.kisstheground.ch/\"><strong>Kiss the ground</strong></a><i>, Boulevard de Grancy 8</i>",
+            "en": "<a href=\"https://www.kisstheground.ch/\"><strong>Kiss the ground</strong></a><i>, Boulevard de Grancy 8</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.saveursenvrac.ch/\"><strong>Saveurs en Vrac</strong></a><i>, Rue Pré-du-Marché 6</i>",
+            "en": "<a href=\"https://www.saveursenvrac.ch/\"><strong>Saveurs en Vrac</strong></a><i>, Rue Pré-du-Marché 6</i>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/BZn_8pIBxbi/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<b>Les doggy-Bags</b>",
+            "en": "<b>Doggy bag</b>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lors d’une sortie au restaurant, l’une des façons les plus simples d’éviter le gaspillage reste encore de demander un doggy-bag et ainsi d’emporter les restes de son repas avec soi ! C’est un combo-gagnant : on évite de jeter de la nourriture qui peut encore être mangée et on a déjà un repas prêt pour le lendemain (le fameux tup’ du lundi) : on gagne donc du temps et de l’argent, qui dit mieux ?",
+            "en": "One of the easiest ways of reducing waste is to ask restaurants for a doggy bag to take away meal leftovers. It’s a winning combo: we avoid throwing away food that is still edible and we have a meal ready for the next day, therefore saving time and money. It’s all good!",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Alors, vous voyez ? Il semblerait bien que moins gaspiller soit vraiment à la portée de tous.",
+            "en": " ",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Et vous, qu’en pensez-vous ? Et quels sont vos tips à vous pour mieux consommer ?",
+            "en": "Reducing waste is within everyone’s reach! What do you think? What are your tips to consume less?",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "ca8c718c498a1894",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Nos bonnes idées pour moins gaspiller"
+          }
+        }
+      ],
+      "published_at": "1723413600",
+      "seo": {
+        "description": {
+          "fr": "S'il y a une bonne résolution à prendre, c’est bien celle de faire en sorte de moins gaspiller. En effet, à l’heure où la planète crie à l’aide, il est plus que temps de mettre la main à la pâte : ni une, ni deux, découvrez nos bonnes idées pour moins dépenser et mieux consommer !",
+          "en": "If there is one New Year resolution to take, it’s got to be finding ways to waste less. At a time when the planet is crying out for help, we need to act!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "nos-bonnes-idees-pour-moins-gaspiller",
+          "en": "our-ideas-to-reduce-waste"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-durabilite",
+          "public_name": {
+            "fr": "Durabilité",
+            "en": "Sustainability",
+            "de": "Nachhaltigkeit"
+          }
+        }
+      ]
+    }
+  }
+}

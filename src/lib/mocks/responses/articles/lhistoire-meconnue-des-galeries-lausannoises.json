@@ -1,0 +1,304 @@
+{
+  "data": {
+    "item": {
+      "id": "293",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "L’histoire méconnue des galeries lausannoises",
+        "en": "The unknown history of Lausanne arcades",
+        "de": "Die unbekannte Geschichte der Lausanner Passagen"
+      },
+      "lead": {
+        "fr": "On trouve à Lausanne des galeries à l’architecture remarquable, mais dont l’histoire n’est pas très connue. Croyez-moi, vous ne repasserez plus jamais dans ces endroits sans lever les yeux pour admirer leur décor.",
+        "en": "In Lausanne, there are arcades (“galeries” in French) with remarkable architectures, but their history isn’t well known. Believe me, you’ll never walk through those passageways again without looking upwards to admire their décor. ",
+        "de": "In Lausanne gibt es Passagen mit bemerkenswerter Architektur, deren Geschichte jedoch nicht sehr bekannt ist. Glaubt mir, ihr werdet nie wieder durch diese Galerien gehen, ohne aufzublicken und ihre Kulisse zu bewundern."
+      },
+      "summary": {
+        "fr": "On trouve à Lausanne des galeries à l’architecture remarquable, mais dont l’histoire n’est pas très connue. Croyez-moi, vous ne repasserez plus jamais dans ces endroits sans lever les yeux pour admirer leur décor.",
+        "en": "In Lausanne, there are arcades (“galeries” in French) with remarkable architectures, but their history isn’t well known. Believe me, you’ll never walk through those passageways again without looking upwards to admire their décor.",
+        "de": "In Lausanne gibt es Passagen mit bemerkenswerter Architektur, deren Geschichte jedoch nicht sehr bekannt ist. Glaubt mir, ihr werdet nie wieder durch diese Galerien gehen, ohne aufzublicken und ihre Kulisse zu bewundern."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26227,
+            "name": "L’histoire méconnue des galeries lausannoises",
+            "public_name": {
+              "fr": "L’histoire méconnue des galeries lausannoises"
+            },
+            "cloudinary_id": "2702b6eb92ddca27",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2000,
+              "height": 1300,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2000\" height=\"1300\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "2702b6eb92ddca27.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/04/DSC_3321_2000.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Les galeries Saint-François",
+            "en": "Galerie Saint-François",
+            "de": "Galerie Saint-François"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Je ne manque pas une occasion de traverser les galeries Saint-François, et pour cause : les détails en marbre vert ou en laiton, les corniches moulurées, les stucs de la voûte, mais surtout une verrière spectaculaire au-dessus de ma tête, qui a la particularité de se terminer par des courbes aux extrémités, véritable prouesse technique ! Construites entre 1907 et 1909 par les architectes Georges Epitaux et Joseph Austermayer, elles sont riches en contrastes. Côté rue de Bourg, une façade plus traditionnelle, de style néobaroque, qui se fond dans son environnement. Côté Saint-François, l’architecture est infiniment plus moderne et audacieuse, de type Art Nouveau, avec son balcon aux lignes sinueuses, l’association du métal et de la pierre.",
+            "en": "I never miss an opportunity to walk through the Galerie Saint-François, and with good reason: there are the green marble or brass details, the moulded cornice, the stucco work of the vaulted ceiling, and most of all the spectacular glass roof above my head, characterised by its curved extremities, a true technical feat! Built between 1907 and 1909 by architects Georges Epitaux and Joseph Austermayer, it is rich in contrasts. On the Rue de Bourg side, its more traditional Neo-Baroque façade blends into its environment. On the Place Saint-François side, its architecture in the Art Nouveau style is infinitely more modern and audacious, with the curvy lines of its balcony and its combination of metal and stone.",
+            "de": "Ich verpasse keine Gelegenheit, durch die Galerie Saint-François zu gehen, und das aus gutem Grund: die Details aus grünem Marmor und Messing, die geformten Simse, die Stuckarbeiten an den Gewölben und vor allem das spektakuläre Glasdach über meinem Kopf, dessen Verlauf in Kurven endet ‒ was für eine technische Meisterleistung! Die Galerie wurde zwischen 1907 und 1909 von den Architekten Georges Epitaux und Joseph Austermayer gebaut und ist unglaublich kontrastreich. Die eher traditionelle Fassade im neobarocken Stil auf der Seite der Rue de Bourg fügt sich nahtlos in die Umgebung ein. Die Jugendstil-Architektur auf der Seite von Saint-François ist viel moderner und gewagter, mit einem Balkon mit geschwungenen Linien und der Verbindung von Metall und Stein."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CZexj5PKEWJ/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "La galerie Benjamin-Constant",
+            "en": "Galerie Benjamin-Constant",
+            "de": "Galerie Benjamin-Constant"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Si je sors du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-st-pierre/\">Café Saint-Pierre</a>, je fais un tour à la galerie Benjamin-Constant. Son entrée est plutôt discrète, signalée par une inscription en lettres dorées à la rue Saint-Pierre 4.",
+            "en": "When I’m coming out of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-st-pierre/\">Café Saint-Pierre</a>, I walk through the Galerie Benjamin-Constant. Its entrance is rather discreet, indicated by an inscription in golden letters at Rue Saint-Pierre 4.",
+            "de": "Wenn ich das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-st-pierre/\">Café Saint-Pierre</a> verlasse, mache ich einen Abstecher in die Galerie Benjamin-Constant. Der Eingang ist eher unauffällig und durch einen Schriftzug in goldenen Buchstaben an der Rue Saint-Pierre 4 gekennzeichnet."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25926,
+            "name": "L’histoire méconnue des galeries lausannoises",
+            "public_name": {
+              "fr": "L’histoire méconnue des galeries lausannoises"
+            },
+            "cloudinary_id": "5022bab5bf48c5ab",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1536,
+              "height": 2048,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1536\" height=\"2048\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "5022bab5bf48c5ab.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/04/Benj-Constant-2.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En descendant l’escalier, on est éclairé par un imposant puits de lumière circulaire avec briques de verre. Le décor est sobre mais très soigné : marbre vert et marbre blanc, éléments de serrurerie harmonisés à l’ensemble du décor. Les architectes Marcel Mayor et Robert Baehler, qui ont construit cet ensemble entre 1950 et 1952, ont même poussé l’attention du détail jusqu’aux grilles d’aération de l’escalier nord, qui reprennent le même langage ! Cette galerie s’inscrit dans un vaste projet de son époque, visant à redynamiser le commerce dans ce quartier.",
+            "en": "An impressive circular skylight with glass blocks brings natural light to illuminate the stairwell. The décor is sober yet very refined: green marble and white marble, iron pieces harmonised with the whole décor. Architects Marcel Mayor and Robert Baehler, who built this ensemble between 1950 and 1952, showed a high level of attention to detail by applying the same style to the north stairway’s ventilation grilles! This arcade is part of a larger scheme of its era that aimed at reinvigorating commerce in that neighbourhood.",
+            "de": "Sobald man die Treppe hinuntergeht, durchflutet ein imposanter kreisförmiger Lichtschacht mit Glasbausteinen die Passage. Das Dekor ist schlicht, aber sehr gepflegt: grüner und weisser Marmor sowie geschmiedete Elemente, die im Gesamtbild hervorragend harmonieren. Die Liebe zum Detail der Architekten Marcel Mayor und Robert Baehler, die dieses Bauwerk zwischen 1950 und 1952 bauten, lässt sich bis zu den Lüftungsgittern bei der Nordtreppe erkennen, die im gleichen Stil gehalten sind. Diese Galerie ist Teil eines Grossprojekts von damals, um die Geschäfte in diesem Stadtviertel wiederzubeleben."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26010,
+            "name": "L’histoire méconnue des galeries lausannoises",
+            "public_name": {
+              "fr": "L’histoire méconnue des galeries lausannoises"
+            },
+            "cloudinary_id": "3c0eadba032d7a3b",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2048,
+              "height": 1536,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2048\" height=\"1536\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "3c0eadba032d7a3b.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/04/Benj-Constant-3.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "La galerie du Grand-Pont",
+            "en": "Galerie du Grand-Pont",
+            "de": "Galerie du Grand-Pont"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "De nombreux Lausannois ignorent son existence ! La galerie du Grand-Pont est construite entre 1953 et 1955 par une figure de proue du mouvement moderne en Suisse, l’architecte Henri-Robert Von der Mühll. A la rue du Grand-Saint-Jean, un élégant escalier interrompt la linéarité de la façade. En l’empruntant, on pénètre au cœur du bâtiment commercial, et on arrive en haut au niveau de la rue du Grand-Pont. Je n’oublie pas de pousser la porte située sur la gauche, pour avoir l’occasion de revoir cette cage d’escalier extrêmement graphique, abritée derrière une paroi de briques de verre qui débouche en bas sur la place Centrale. L’architecture du bâtiment à proprement parler renvoie au classicisme structurel, dans la lignée des travaux d’Auguste Perret, avec ses façades en béton armée rectilignes. Ceux qui ne connaissent pas cet endroit seront surpris !",
+            "en": "Many Lausanners ignore its very existence! The Galerie du Grand-Pont was built between 1953 and 1955 by a leading figure of the Swiss modern movement, architect Henri-Robert Von der Mühll. At the Rue Grand-Saint-Jean, an elegant staircase interrupts the linearity of the façade. By taking those stairs, you enter the heart of the commercial building to arrive at the top at the level of the Rue du Grand-Pont. I then push the door on the left for another opportunity to see this extremely graphic stairwell, hidden behind a wall of glass blocks, that leads down to the Place Centrale. The architecture of the building itself is based on structural classicism, in the line of Auguste Perret’s works, with his straight-line façades made of reinforced concrete. Those who aren’t familiar with this spot will be surprised!",
+            "de": "Viele Lausanner wissen nicht, dass es die Galerie du Grand-Pont gibt. Sie wurde zwischen 1953 und 1955 vom Architekten Henri-Robert Von der Mühll, einer führenden Figur der modernen Bewegung in der Schweiz, gebaut. An der Rue du Grand-Saint-Jean unterbricht eine elegante Treppe die Fassadenfläche. Durch sie gelangt man in die Mitte des Geschäftsgebäudes und auf der Höhe der Rue du Grand-Pont wieder hinaus. Ich vergesse nie, die Tür auf der linken Seite aufzustossen, um einen Blick auf das extrem grafische Treppenhaus hinter der Wand aus Glasbausteinen zu erhaschen, das zum Place Centrale hinunterführt. Die Architektur des Gebäudes selbst ist im strukturellen Klassizismus in der Tradition von Auguste Perret mit seinen betont geradlinigen Fassaden aus Stahlbeton gehalten. Wer diesen Ort nicht kennt, wird überrascht sein!"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/B6sJbsmAdn5/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Les galeries du Commerce",
+            "en": "Galeries du Commerce",
+            "de": "Galeries du Commerce"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Derrière la Poste de Saint-François se cachent les galeries du Commerce. Construites entre 1908 et 1909 par Paul Rosset, Otto Schmid, René Froidevaux et Jacques Lonchamp, elles ont été transformées dans les années 1980 en vue d’y accueillir le conservatoire. De nombreux éléments d’origine ont été toutefois conservés, à commencer par le très théâtral escalier central avec ses garde-corps de ferronnerie.",
+            "en": "Behind the Saint-François Post Office building are hidden the Galeries du Commerce. Built between 1908 and 1909 by Paul Rosset, Otto Schmid, René Froidevaux and Jacques Lonchamp, there were transformed in the 1980s in order to house the Music Conservatory. Many of the original elements were preserved, in particular the very dramatic central staircase with its ironwork handrails.",
+            "de": "Hinter der Postfiliale Saint-François befinden sich die <strong>Galeries du Commerce</strong>. Sie wurden zwischen 1908 und 1909 von Paul Rosset, Otto Schmid, René Froidevaux und Jacques Lonchamp gebaut. In den 1980er-Jahren wurden sie umgebaut, um das Konservatorium darin unterzubringen. Viele der ursprünglichen Elemente blieben jedoch erhalten, so auch die eindrucksvolle Treppe in der Mitte mit ihren Eisengeländern."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26096,
+            "name": "L’histoire méconnue des galeries lausannoises",
+            "public_name": {
+              "fr": "L’histoire méconnue des galeries lausannoises"
+            },
+            "cloudinary_id": "1b6951624cb44cd3",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1536,
+              "height": 2048,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1536\" height=\"2048\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "1b6951624cb44cd3.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/04/Commerce-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26162,
+            "name": "L’histoire méconnue des galeries lausannoises",
+            "public_name": {
+              "fr": "L’histoire méconnue des galeries lausannoises"
+            },
+            "cloudinary_id": "f5762e6ffcd2843c",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1536,
+              "height": 2048,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1536\" height=\"2048\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "f5762e6ffcd2843c.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/04/Commerce-3.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Autres points remarquables : le vitrail de la coupole réalisé par l’atelier Pierre Chiara sur un dessin d’Ernest Correvon, et les panneaux muraux de l’artiste Pietro Sarto.",
+            "en": "Other remarkable pieces are the dome’s stained-glass windows created by Pierre Chiara’s workshop following Ernest Correvon’s design, as well as artist Pietro Sarto’s wall panels.",
+            "de": "Weitere bemerkenswerte Elemente sind das Glasfenster der Kuppel, das vom Atelier Pierre Chiara nach einem Entwurf von Ernest Correvon angefertigt wurde, und die Wandverkleidung des Künstlers Pietro Sarto."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CQT7-xyHxXz/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CQWjRxdnXuG/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour en savoir plus, je vous conseille le guide <em>Architecture de poche : Lausanne : Banques bureaux et Commerces</em> édité par la SHAS en 2021.",
+            "en": "To find out more, I recommend reading the guide <em>Architecture de poche: Lausanne: Banques, Bureaux et Commerces </em>(in French), published by SHAS in 2021.",
+            "de": "Um mehr über die Lausanner Passagen zu erfahren, empfehle ich euch den Führer <em>Architecture de poche: Lausanne: Banques bureaux et Commerces</em>, der 2021 von der GSK herausgeben wurde."
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "5022bab5bf48c5ab",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "L’histoire méconnue des galeries lausannoises"
+          }
+        }
+      ],
+      "published_at": "1651107883",
+      "seo": {
+        "description": {
+          "fr": "On trouve à Lausanne des galeries à l’architecture remarquable, mais dont l’histoire n’est pas très connue. Croyez-moi, vous ne repasserez plus jamais dans ces endroits sans lever les yeux pour admirer leur décor.",
+          "en": "In Lausanne, there are arcades (“galeries” in French) with remarkable architectures, but their history isn’t well known. Believe me, you’ll never walk through those passageways again without looking upwards to admire their décor. ",
+          "de": "In Lausanne gibt es Passagen mit bemerkenswerter Architektur, deren Geschichte jedoch nicht sehr bekannt ist. Glaubt mir, ihr werdet nie wieder durch diese Galerien gehen, ohne aufzublicken und ihre Kulisse zu bewundern."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lhistoire-meconnue-des-galeries-lausannoises",
+          "en": "the-unknown-history-of-lausanne-arcades",
+          "de": "die-unbekannte-geschichte-der-lausanner-passagen"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-architecture",
+          "public_name": {
+            "fr": "Architecture",
+            "en": "Architecture",
+            "de": "Architektur"
+          }
+        },
+        {
+          "name": "lt-design",
+          "public_name": {
+            "fr": "Design",
+            "en": "Design",
+            "de": "Gestaltung"
+          }
+        }
+      ]
+    }
+  }
+}

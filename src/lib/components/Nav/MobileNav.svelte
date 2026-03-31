@@ -2,7 +2,7 @@
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import { maxMobileWidth, route } from '$lib/helpers';
-  import { menuItems } from '$lib/helpers/menu';
+  import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
   import { ChevronDown, Menu, X } from 'lucide-svelte';
   import { onMount } from 'svelte';
@@ -13,6 +13,8 @@
   import SocialNetworks from '../SocialNetworks.svelte';
   import Logo from './Logo.svelte';
   import type { SeoHeader } from '$types';
+  import { resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -64,7 +66,7 @@
 
 <nav class={style} aria-labelledby="mobile-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
   >
     <Logo {locale} />
@@ -86,7 +88,7 @@
             class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
           >
             {#key pageSeo.alternate}
-              {#each pageSeo.alternate as alternate}
+              {#each pageSeo.alternate as alternate (alternate.hreflang)}
                 <li>
                   <Link
                     class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === locale ? 'hidden' : ''}`}
@@ -115,7 +117,7 @@
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
       <a
-        href={route(RouteTypes.Home, { forceLocale: locale })}
+        href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
         class="flex max-w-[230px] cursor-pointer"
       >
         <Logo {locale} />
@@ -137,7 +139,7 @@
                 class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
               >
                 {#key pageSeo.alternate}
-                  {#each pageSeo.alternate as alternate}
+                  {#each pageSeo.alternate as alternate (alternate.hreflang)}
                     <li>
                       <Link
                         class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 ${alternate.hreflang === locale ? 'hidden' : ''}`}
@@ -163,7 +165,7 @@
     <!-- BODY -->
     <div class="flex-grow overflow-auto p-4">
       <div class="flex flex-col gap-2">
-        {#each menuItems(locale) as item, index}
+        {#each menuItems(locale) as item, index (item.title)}
           {#if item.link}
             <Link
               class="flex justify-between rounded-md p-4 text-left font-semibold hover:bg-slate-100 dark:hover:bg-slate-600"
@@ -183,7 +185,7 @@
               titleClass="hover:opacity-75 rounded-md p-3 pr-4 hover:bg-slate-100 dark:hover:bg-slate-600"
               title={item.title}
             >
-              {#each subItems as subItem}
+              {#each subItems as subItem (subItem.title)}
                 {#snippet icon()}
                   {#if subItem.icon}
                     {@const Component = subItem.icon}
@@ -198,7 +200,7 @@
                   href={subItem.link}
                   preload="tap"
                   icon={subItem.icon ? icon : undefined}
-                  classIcon={'mr-4'}
+                  classIcon="mr-4"
                   onclick={closeMenu}
                 >
                   <span class="pl-4">{subItem.title}</span>

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
   import { blankable } from '$lib/helpers';
   import { ChevronRight } from 'lucide-svelte';
   import type { Snippet } from 'svelte';
@@ -14,7 +16,7 @@
     withFlex?: boolean;
     children: Snippet;
     icon?: Snippet;
-    onclick?: (this: Window, ev: MouseEvent) => any;
+    onclick?: (this: Window, ev: MouseEvent) => unknown;
   }
 
   const {
@@ -42,20 +44,42 @@
   const iconStyle = $derived(twMerge('h-4 w-4 inline ml-2 ', classIcon));
 </script>
 
-<a
-  {href}
-  {target}
-  class={style}
-  data-sveltekit-noscroll={noscroll}
-  data-sveltekit-preload-data={preload}
-  {onclick}
->
-  {@render children()}
-  {#if withIcon}
-    {#if !icon}
-      <ChevronRight strokeWidth={3} class={iconStyle} />
-    {:else}
-      {@render icon()}
+{#if target === '_blank'}
+  <a
+    {href}
+    rel="external"
+    {target}
+    class={style}
+    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-preload-data={preload}
+    {onclick}
+  >
+    {@render children()}
+    {#if withIcon}
+      {#if !icon}
+        <ChevronRight strokeWidth={3} class={iconStyle} />
+      {:else}
+        {@render icon()}
+      {/if}
     {/if}
-  {/if}
-</a>
+  </a>
+{:else}
+  <a
+    href={resolve(href as Pathname)}
+    rel="internal"
+    {target}
+    class={style}
+    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-preload-data={preload}
+    {onclick}
+  >
+    {@render children()}
+    {#if withIcon}
+      {#if !icon}
+        <ChevronRight strokeWidth={3} class={iconStyle} />
+      {:else}
+        {@render icon()}
+      {/if}
+    {/if}
+  </a>
+{/if}

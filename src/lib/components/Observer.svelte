@@ -29,7 +29,7 @@
 
   $effect(() => {
     observer = new IntersectionObserver(
-      (entries, observer) => {
+      (entries) => {
         isIntersecting = entries[0].isIntersecting;
         onIntersecting(isIntersecting);
       },

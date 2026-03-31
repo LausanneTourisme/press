@@ -1,19 +1,21 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import { Forms, RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
   import Container from '$lib/components/Container.svelte';
   import Faq from '$lib/components/Faq.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
+  import { route } from '$lib/helpers';
   import { t, type Locale } from '$lib/translations';
   import { ArrowLeft, Camera, Mail, Newspaper, Phone } from 'lucide-svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { ActionData } from './$types';
   import Form from './Form.svelte';
-  import { route } from '$lib/helpers';
-  import { Forms, RouteTypes } from '$enums';
+  import { resolve } from '$app/paths';
+  import type { Pathname } from '$app/types';
 
   const pageForm = $derived(page.form as ActionData);
   const locale = $derived(page.params.locale as Locale);
@@ -166,20 +168,24 @@
         </Heading>
         <div class="flex w-full flex-col items-center justify-center space-y-4">
           <a
-            href={route(RouteTypes.Form, {
-              forceLocale: locale,
-              suffix: $t(`route.${RouteTypes.Form}.${Forms.Journalist}.slug`)
-            })}
+            href={resolve(
+              route(RouteTypes.Forms, {
+                forceLocale: locale,
+                form: Forms.Journalist
+              }) as Pathname
+            )}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           >
             <Newspaper strokeWidth={2.5} class="aspect-square h-5" />
             {@html $t('contact.form.select-section.visit-media.button.journalist')}
           </a>
           <a
-            href={route(RouteTypes.Form, {
-              forceLocale: locale,
-              suffix: $t(`route.${RouteTypes.Form}.${Forms.ContentCreator}.slug`)
-            })}
+            href={resolve(
+              route(RouteTypes.Forms, {
+                forceLocale: locale,
+                form: Forms.ContentCreator
+              }) as Pathname
+            )}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
           >
             <Camera strokeWidth={2.5} class="aspect-square h-5" />
@@ -431,7 +437,7 @@
       </Paragraph>
       <a
         href="tel:0041216137373"
-        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border-1 p-4 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
+        class="bg-shakespeare-600 broder-white hover:bg-shakespeare-800 inline-flex h-20 w-full max-w-64 items-center justify-center rounded-lg border p-4 text-center text-white shadow transition-colors ease-in-out hover:border-transparent hover:shadow-lg"
       >
         <Phone strokeWidth={2.5} class="aspect-square h-5" />
         +41 21 613 73 73
@@ -445,7 +451,7 @@
         : 'hidden'}"
       in:fly
     >
-      <hr class="my-4 w-1/2 rounded-lg border-t-[2px] border-gray-700 shadow-lg" />
+      <hr class="my-4 w-1/2 rounded-lg border-t-2 border-gray-700 shadow-lg" />
       <button
         class=" inline-flex h-12 w-full max-w-64 items-center justify-center rounded-lg border-2 border-gray-700 bg-white text-black transition-colors ease-in-out hover:border-transparent hover:bg-gray-950 hover:text-white hover:shadow-lg"
         onclick={reset}

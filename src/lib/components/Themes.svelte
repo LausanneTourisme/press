@@ -5,6 +5,7 @@
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { chunkify } from '$lib/helpers';
   import { t, type Locale } from '$lib/translations';
+  import { twMerge } from 'tailwind-merge';
   import Button from './Button.svelte';
   import ThemeCard from './ThemeCard.svelte';
   type Props = {
@@ -26,9 +27,7 @@
   }: Props = $props();
 
   const chunks = chunkify(Object.values(Themes));
-  // should be trigger by user interaction
-  // svelte-ignore state_referenced_locally
-  let showMore: boolean = $state(expanded);
+  let showMore: boolean = $derived(expanded);
 
   const displayMore = () => {
     showMore = true;
@@ -40,7 +39,7 @@
   });
 </script>
 
-<div class="p-6 md:pt-16">
+<div class={twMerge('p-6 md:pt-16', additionalClass)}>
   <Heading class="text-center ">
     {@html title}
   </Heading>
@@ -50,11 +49,11 @@
 </div>
 
 <Container width="medium">
-  {#each chunks as chunk, chunckIndex}
+  {#each chunks as chunk, chunckIndex (`${chunckIndex} ${locale}`)}
     {@const length = chunk.length}
     {#if chunckIndex === 0}
       <section class="mb-4 grid grid-cols-2 gap-4 md:grid-cols-3 md:grid-rows-8">
-        {#each chunk as theme, index}
+        {#each chunk as theme, index (`${theme} ${locale}`)}
           <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {locale} />
         {/each}
       </section>
@@ -66,7 +65,7 @@
           ? 'hidden'
           : ''}"
       >
-        {#each chunk as theme, index}
+        {#each chunk as theme, index (`${theme} ${locale}`)}
           <ThemeCard {theme} gridIndex={index} inverted={!!(chunckIndex % 2)} {length} {locale} />
         {/each}
       </section>

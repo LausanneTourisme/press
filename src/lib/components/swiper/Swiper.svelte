@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onDestroy, onMount, type Snippet } from 'svelte';
+  import { onDestroy, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   // core version + navigation, pagination modules :
   import Swiper from 'swiper';

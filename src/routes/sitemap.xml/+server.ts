@@ -1,6 +1,6 @@
-import { RouteTypes, Themes } from '$enums';
-import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
-import { menuItems } from '$lib/helpers/menu';
+import { RouteTypes } from '$enums';
+import { getMediaLibraryRegisterLink } from '$lib/helpers';
+import { menuItems } from '$lib/config/menu';
 import { getPosts } from '$lib/helpers/requests.server';
 import { defaultLocale, type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
@@ -92,7 +92,7 @@ const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
   for (const release of releases) {
     const languages = release.languages!;
     const seo = release.seo!;
-    const type = release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease;
+    const type = release.type === 'press_kit' ? RouteTypes.Presskits : RouteTypes.Pressreleases;
     const alternates: string[] = [];
 
     languages.forEach((l) => {

@@ -1,0 +1,329 @@
+{
+  "data": {
+    "item": {
+      "id": "291",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne, Cité thermale",
+        "en": "Lausanne, spa town",
+        "de": "Thermalstadt Lausanne"
+      },
+      "lead": {
+        "fr": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
+        "en": "In Lausanne, visitors as well as residents can breathe in the pure mountain air while contemplating the divine expanse of the lake. The pleasant climate and sublime natural environment make it a true haven of well-being.",
+        "de": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase."
+      },
+      "summary": {
+        "fr": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
+        "en": "In Lausanne, visitors as well as residents can breathe in the pure mountain air while contemplating the divine expanse of the lake. The pleasant climate and sublime natural environment make it a true haven of well-being.",
+        "de": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 27227,
+            "name": "Lausanne, Cité thermale - vue d'ensemble sur Lausanne",
+            "public_name": {
+              "fr": "Vue sur Lausanne; la Cathedrale; le lac Leman et les montagnes",
+              "en": "Vue sur Lausanne; la Cathedrale; le lac Leman et les montagnes",
+              "de": "Vue sur Lausanne; la Cathedrale; le lac Leman et les montagnes",
+              "es": null
+            },
+            "cloudinary_id": "x6uuJaBWhSM1mO0mHmFDGANkinLclNdq8U0WbZ3D",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue sur Lausanne; la Cathedrale; le lac Leman et les montagnes",
+            "metadata": {
+              "width": 1600,
+              "height": 1066,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1066\"",
+              "tags": "Lausanne; ville verte; Cathédrale, lac, parc; Montagne",
+              "description": null,
+              "file_name_from_url": "bfeb62c5e48c0c15.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Vue-generale.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Un cadre exceptionnel",
+            "en": "An exceptional setting",
+            "de": "Aussergewöhnliche Umgebung",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Incontestablement, les corps et les esprits en quête de repos et de sérénité trouveront en Lausanne douceur de vivre, calme olympien et paysages naturellement ressourçant. À l’image notamment du plus grand lac d’Europe occidentale, des Alpes grandioses aux sommets enneigés et des vignobles en terrasses de Lavaux classés au Patrimoine mondial de l’UNESCO.",
+            "en": "There’s no doubt that bodies and minds in search of rest and serenity will find an easy-going lifestyle, Olympian calm and naturally rejuvenating landscapes in Lausanne. These include the largest lake in Western Europe, the grandiose Alps with their snow-capped peaks, and the terraced vineyards of Lavaux, a UNESCO World Heritage Site.",
+            "de": "Auf der Suche nach Ruhe und Gelassenheit finden Körper und Geist in Lausanne eine sanfte Lebensart, olympische Ruhe und erholsame Landschaften. Zu Letzteren zählen der grösste See Westeuropas, die grandiosen Alpen mit ihren schneebedeckten Gipfeln und die terrassenförmig angelegten Weinberge des Lavaux, die zum UNESCO-Welterbe gehören.",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25903,
+            "name": "Lausanne, Cité thermale",
+            "public_name": {
+              "fr": "Lausanne, Cité thermale"
+            },
+            "cloudinary_id": "b04fd452a5588acd",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 533,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"533\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b04fd452a5588acd.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/a2db2196-3415-4aec-9ad4-a4a6740c009e.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Le lac et ses vertus",
+            "en": "<strong>The lake and its virtues</strong>",
+            "de": "Der See und seine Wohltaten",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avez-vous entendu parler des bienfaits insoupçonnés de la vue de l’eau sur notre bien-être mental ? En effet, selon les neuroscientifiques, passer du temps près d’un point d’eau – face au lac c’est encore mieux – aide notamment à lutter contre l’anxiété, la fatigue et le stress. On aurait tort de s’en priver !",
+            "en": "Have you heard about the unsuspected benefits the sight of water has on our mental well-being? According to neuroscientists, spending time near a body of water – or even better, a lake – helps to combat anxiety, fatigue and stress. We’d be wrong to deprive ourselves!",
+            "de": "Wer hat nicht schon von der ungeahnten wohltuenden Wirkung auf das geistige Wohlbefinden beim Anblick von Wasser gehört? Gegen Angst, Müdigkeit und Stress empfehlen Neurowissenschaftlerinnen und -wissenschaftler deshalb einen Aufenthalt in der Nähe eines Gewässers, oder noch besser eines Sees. Das sollte man sich nicht zweimal sagen lassen!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Et puis dans le Léman, en hiver, il n’est pas rare de croiser des adeptes de la baignade en eau froide. Sans doute parce que ces nageurs téméraires ne connaissent que trop bien les vertus des bains givrés sur la santé ! Si ceux-ci favoriseraient en effet la récupération et la relaxation, ils amélioreraient aussi la circulation et la qualité du sommeil, tout en renforçant notre système immunitaire. Alors, vaincus ou convaincus ?",
+            "en": "And in winter, it’s not unusual to come across cold-water swimmers in Lake Geneva. No doubt because these valiant bathers know all too well the health benefits of ice baths! Not only do they promote recovery and relaxation, they also improve circulation and sleep quality, while boosting our immune system. So, are you won over or unswayed?",
+            "de": "Sogar im Winter ist es nicht selten, jemanden beim Kaltbaden im Genfersee anzutreffen. Zweifellos kennen diese wagemutigen Schwimmerinnen und Schwimmer die gesundheitlichen Vorteile des Eisbadens nur zu gut! Es soll die Erholung und die Entspannung fördern, aber auch den Kreislauf in Schwung bringen, die Schlafqualität verbessern und unser Immunsystem stärken. Überredet oder überzeugt?",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Après tout cela, pour oublier le stress et prendre soin de soi au quotidien, que diriez-vous de vous offrir un cours de yoga inédit sur un deck, face au lac ? A la belle saison, c’est à la <a href=\"http://www.jeteedelacompagnie.ch/\">Jetée de la Compagnie</a> que ça se passe, avec de nombreuses sessions proposées toute la journée, par tous les temps et à prix libre !",
+            "en": "After all that, to forget about stress and take care of yourself on a daily basis, how about treating yourself to a unique yoga class on a deck facing the lake? In the summer months, the <a href=\"http://www.jeteedelacompagnie.ch/\">Jetée de la Compagnie</a> is the place to be, with sessions on offer all day long, in all weathers and on a “pay what you want” basis!",
+            "de": "Um die Alltagshektik definitiv zu vergessen und in sich zu kehren, ist eine einzigartige Yogastunde auf einem Holzdeck mit Blick auf den See perfekt. In den warmen Monaten ist die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> der ideale Ort dafür, denn über den ganzen Tag verteilt und bei jedem Wetter finden dort kostenlose Yogastunden statt!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25992,
+            "name": "Lausanne, Cité thermale",
+            "public_name": {
+              "fr": "Lausanne, Cité thermale"
+            },
+            "cloudinary_id": "48b4b1421d99ec67",
+            "mime_type": "image/jpeg",
+            "copyright": "© Apero a la Jetee de la Compagnie au bord du lac Leman.  Terrasse ephemere.",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "48b4b1421d99ec67.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Jetee-de-la-Compagnie-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "video",
+          "value": {
+            "id": 39,
+            "name": "Rush jetee compagnie drone",
+            "public_name": {
+              "fr": "Rush Jetee compagnie Drone",
+              "en": "Rush Jetee compagnie Drone",
+              "de": "Rush Jetee compagnie Drone",
+              "es": null
+            },
+            "type": "native",
+            "url": null,
+            "media_id": 26986,
+            "video": "https://static2.lausanne-tourisme.ch/videos/kKV03Rj6weCQ34QF.mp4",
+            "poster": {
+              "id": 26986,
+              "name": "Jetee de la Compagnie en drone",
+              "public_name": {
+                "fr": "Jetee de la Compagnie en drone",
+                "en": "Jetee de la Compagnie en drone",
+                "de": "Jetee de la Compagnie en drone",
+                "es": null
+              },
+              "cloudinary_id": "qNlTGU4qQBehH30Up6F0Lk4QuVDG73yMJaStzbIU",
+              "mime_type": "image/bmp",
+              "copyright": "© LT/Blake production"
+            }
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Au cœur du luxe, les spas",
+            "en": "Spas, at the heart of luxury",
+            "de": "Luxus pur in den Spas",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avis aux hôtes de passage à Lausanne qui souhaiteraient s’offrir un moment de plénitude et de respiration : quoi de plus délicieux que de se retirer quelques heures dans l’antre d’un spa ? Au cœur de ces écrins de luxe et de confort suprême que sont les hôtels cinq étoiles de la ville – Lausanne en compte trois, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/beau-rivage-palace/\">Beau-Rivage Palace</a>, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lausanne-palace/\">Lausanne Palace</a> et le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/hotel-royal-savoy/\">Royal Savoy</a> -, ces temples du bien-être déroulent hammams, saunas, piscines, jacuzzi, salles de fitness, espaces de beauté et de repos, mais aussi massages aromatiques, bain japonais d’arômes et de fleurs, soins esthétiques régénérants ou encore pluie tropicale dans les vestiaires… De quoi envelopper les hôtes dans un cocon de luxe, de calme et de volupté !",
+            "en": "A word of warning to guests visiting Lausanne who wish to savour a moment of plenitude and unwinding: what could be more delightful than retreating for a few hours to the haven of a spa? In the heart of the city’s five-star hotels – of which there are three, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/beau-rivage-palace/\">Beau-Rivage Palace</a>, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-palace/\">Lausanne Palace</a> and The <a href=\"https://www.lausanne-tourisme.ch/en/explore/hotel-royal-savoy/\">Royal Sovoy</a> –, these temples of well-being offer hammams, saunas, swimming pools, jacuzzis, gyms, beauty and relaxation areas, as well as aromatic massages, Japanese aroma and flower baths, rejuvenating beauty treatments and a tropical rain walk in the changing rooms… Plenty to envelop guests in a cocoon of luxury, calm and pleasure!",
+            "de": "Wer in Lausanne weilt und sich einen Moment des Wohlfühlens und der Entspannung gönnen möchte, kann sich für ein paar wundervolle Stunden in ein Spa zurückzuziehen. Die drei Fünf-Sterne-Hotels der Stadt ( <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/beau-rivage-palace/\">Beau-Rivage Palace</a>,<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lausanne-palace/\"> Lausanne Palace</a> und<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hotel-royal-savoy/\"> Royal Savoy</a>), in denen sich Luxus und Komfort überbieten, sind auch Wellness-Tempel. Hammams, Saunen, Schwimmbäder, Whirlpools, Fitnessräume, Schönheits- und Ruhebereiche, Aromamassagen, japanische Aroma- und Blumenbäder, regenerierende Schönheitsbehandlungen und tropischer Regen in den Umkleidekabinen sorgen dafür, dass die Gäste in luxuriöser Umgebung einfach nur Ruhe und Geborgenheit geniessen!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26076,
+            "name": "Lausanne, Cité thermale",
+            "public_name": {
+              "fr": "Lausanne, Cité thermale"
+            },
+            "cloudinary_id": "8188fbd6f55b2ffe",
+            "mime_type": "image/jpeg",
+            "copyright": "© Spa Cinq Mondes du Beau-Rivage Palace. Piscine exterieure",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": "Spa, Bien-être; Palace; Hébergement; piscine",
+              "description": null,
+              "file_name_from_url": "8188fbd6f55b2ffe.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/BRP-Spa-5-Mondes-Outdoor-swimming-pool_cFRambert_HD-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Non loin… les bains",
+            "en": "Not far… the baths",
+            "de": "Katzensprung zu den Thermalbädern",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En Suisse, la tradition des bains thermaux n’est plus à faire. Dans le canton de Vaud, les plus courus restent <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-bains-de-lavey/\">Les Bains de Lavey</a> situés aux pieds des Alpes ; ils peuvent d’ailleurs se targuer d’être alimentés par la source naturelle d’eau la plus chaude de Suisse (entre 33 et 36° quand même !). Ceux d’Yverdon-les-Bains et de Villars-sur-Ollon ne désemplissent pas, eux non plus. On y vient en couple ou en famille pour se détendre et profiter des installations aquatiques intérieurs et extérieures. Le bonheur !",
+            "en": "Switzerland has a long tradition of thermal baths. In the canton of Vaud, the most popular are the <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-bains-de-lavey/\">Lavey thermal baths</a> at the foot of the Alps, which boast the hottest natural spring in Switzerland (between 33 and 36°C!). The resorts of Yverdon-les-Bains and Villars-sur-Ollon are also much sought-after. Couples and families go there to relax and enjoy the indoor and outdoor pools. Fabulous!",
+            "de": "In der Schweiz haben Thermalbäder eine lange Tradition. Das äusserst beliebte Waadtländer Thermalbad <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-bains-de-lavey/\">Les Bains de Lavey</a> am Fuss der Alpen verfügt über die wärmste natürliche Wasserquelle der Schweiz (zwischen 33 und 36 °C!). Auch die Thermalbäder in Yverdon-les-Bains und Villars-sur-Ollon sind immer gut besucht. Paare und Familien kommen hierher, um sich zu entspannen und die Badeanlagen im Innern und im Freien zu geniessen. Was für ein Glücksmoment!",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26141,
+            "name": "Premier bain de l’année à Lausanne !",
+            "public_name": {
+              "fr": "Premier bain de l’année à Lausanne !"
+            },
+            "cloudinary_id": "d015093e19df9b4c",
+            "mime_type": "image/jpeg",
+            "copyright": "© @A. BASCHENIS",
+            "metadata": {
+              "width": 1299,
+              "height": 723,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1299\" height=\"723\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d015093e19df9b4c.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lavey_Alain-Baschenis.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/reel/C9SgfexoFFH/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "b04fd452a5588acd",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Lausanne, Cité thermale"
+          }
+        }
+      ],
+      "published_at": "1721253600",
+      "seo": {
+        "description": {
+          "fr": "À Lausanne, les visiteurs d’un jour ou de toujours respirent avec bonheur l’air pur des montagnes tout en contemplant la divine étendue du lac. Un climat agréable et un environnement naturel sublime qui en font un véritable havre de bien-être.",
+          "en": "In Lausanne, visitors as well as residents can breathe in the pure mountain air while contemplating the divine expanse of the lake. The pleasant climate and sublime natural environment make it a true haven of well-being.",
+          "de": "In Lausanne atmen Tages- und Dauergäste reine Bergluft und geniessen den Anblick der überwältigenden Weite des Sees. Das angenehme Klima und die wunderbare natürliche Umgebung machen die Stadt zu einer Wohlfühloase."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-cite-thermale",
+          "en": "lausanne-spa-town",
+          "de": "thermalstadt-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-bien-etre",
+          "public_name": {
+            "fr": "Bien-être",
+            "en": "Wellness",
+            "de": "Wohlbefinden"
+          }
+        }
+      ]
+    }
+  }
+}

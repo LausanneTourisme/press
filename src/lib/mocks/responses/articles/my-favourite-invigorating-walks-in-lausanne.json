@@ -1,0 +1,449 @@
+{
+  "data": {
+    "item": {
+      "id": "309",
+      "languages": ["fr", "de", "en"],
+      "name": {
+        "fr": "Mes balades revigorantes préférées à Lausanne",
+        "de": "Meine liebsten Spaziergänge in Lausanne, um Energie zu tanken",
+        "en": "My favourite invigorating walks in Lausanne"
+      },
+      "lead": {
+        "fr": "Ce n’est pas pour rien que je me fais appeler « l’Homme qui marche » : dès qu’un rayon de soleil fait son apparition, j’aime partir en promenade à la (re)découverte de ma ville. Mais parfois, difficile de s’y retrouver tant les options sont nombreuses. Alors si vous manquez d’idée et vous ne savez pas par où commencer, vous êtes au bon endroit. Je partage avec vous mes 3 balades préférées pour profiter de la nature en pleine ville. On y va !",
+        "de": "Es kommt nicht von ungefähr, dass ich mich selbst den „gehenden Mann“ nenne: Sobald sich ein Sonnenstrahl zeigt, ziehe ich los, um meine Stadt spazierend (neu) zu entdecken. Manchmal ist es schwierig, den Überblick zu behalten, denn die Möglichkeiten sind schier grenzenlos. Wenn euch die Ideen fehlen und ihr nicht wisst wo beginnen, dann seid ihr bei mir richtig. Gerne teile ich mit euch meine drei Lieblingsspaziergänge, um die Natur mitten in der Stadt zu geniessen. Los geht’s!",
+        "en": "Not for nothing am I known as “the Walking Man”: as soon as a ray of sunlight appears, I love going out on a walk to (re)discover my town. However, it can be difficult sometimes as there are so many options. So if you’re short of ideas and don’t know where to start, you’re in the right place. I’m sharing with you my 3 favourite walks to enjoy nature in the middle of town. Let’s go!"
+      },
+      "summary": {
+        "fr": "Ce n’est pas pour rien que je me fais appeler « l’Homme qui marche » : dès qu’un rayon de soleil fait son apparition, j’aime partir en promenade à la (re)découverte de ma ville. Mais parfois, difficile de s’y retrouver tant les options sont nombreuses. Alors si vous manquez d’idée et vous ne savez pas par où commencer, vous êtes au bon endroit. Je partage avec vous mes 3 balades préférées pour profiter de la nature en pleine ville. On y va !",
+        "de": "Es kommt nicht von ungefähr, dass ich mich selbst den „gehenden Mann“ nenne: Sobald sich ein Sonnenstrahl zeigt, ziehe ich los, um meine Stadt spazierend (neu) zu entdecken. Manchmal ist es schwierig, den Überblick zu behalten, denn die Möglichkeiten sind schier grenzenlos. Wenn euch die Ideen fehlen und ihr nicht wisst wo beginnen, dann seid ihr bei mir richtig. Gerne teile ich mit euch meine drei Lieblingsspaziergänge, um die Natur mitten in der Stadt zu geniessen. Los geht’s!",
+        "en": "Not for nothing am I known as “the Walking Man”: as soon as a ray of sunlight appears, I love going out on a walk to (re)discover my town. However, it can be difficult sometimes as there are so many options. So if you’re short of ideas and don’t know where to start, you’re in the right place. I’m sharing with you my 3 favourite walks to enjoy nature in the middle of town. Let’s go!"
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26153,
+            "name": "Où admirer le coucher du soleil à Lausanne ?",
+            "public_name": {
+              "fr": "Où admirer le coucher du soleil à Lausanne ?"
+            },
+            "cloudinary_id": "3dd816b88b6ebf52",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1600,
+              "height": 1200,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1200\"",
+              "tags": "Eté; détente; lac; coucher soleil",
+              "description": null,
+              "file_name_from_url": "2b9c8661cd7a04ac.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/12/Coucher-de-soleil-Vidy_132-8.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Du Parc de Milan à Lutry</strong>",
+            "de": "<strong>Vom Milan-Park bis nach Lutry</strong>",
+            "en": "<strong>From Milan Park to Lutry</strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Mise à part <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ouchy/\">Ouchy</a>, qui reste un endroit touristique, il est relativement rare de se rendre sous-gare hormis pour ceux qui y vivent. Pourtant, de nombreux endroits sont propices à la balade. Avant toute chose, je vous propose de commencer par un café chez <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ca-passe-creme/\">Ça passe Crème</a>, un coffee shop tenu par deux passionnés. Ils se feront une joie de vous préparer un café délicieux en vous expliquant bien les raisons qui font qu’il est si particulier.",
+            "de": "Abgesehen von <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\">Ouchy</a>, einem bei Touristinnen und Touristen beliebten Ort, ist es eher selten, dass man sich nach Sous-Gare verliert, ausser man wohnt dort. Dennoch gibt es auch in diesem Stadtteil zahlreiche Spaziermöglichkeiten. Aber zuerst schlage ich euch vor, im Coffeeshop <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ca-passe-creme/\">Ça passe Crème</a> einen Kaffee zu trinken. Mit Herzblut bereiten die beiden Gastgeberinnen euch einen köstlichen Kaffee zu und erklären euch auch gleich, weshalb er so besonders ist.",
+            "en": "Apart from <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\">Ouchy</a>, that remains a touristic attraction, it’s quite rare to venture in the area below the train station, except for those who live there. And yet, many places there are well suited to walking. First of all, I suggest we start with a coffee at <a href=\"https://www.lausanne-tourisme.ch/en/explore/ca-passe-creme/\">Ça passe Crème</a>, a coffee shop run by two enthusiasts. They’ll be delighted to prepare a delicious coffee for you as they explain all the reasons why it’s so special."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25939,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "900c501ee05b514f",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1200,
+              "height": 1497,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"1497\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "900c501ee05b514f.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Milan.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Après avoir fait le plein d’énergie, direction le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-milan/\">Parc de Milan</a>, une cinquantaine de mètres plus bas. Pour une immersion en forêt, je vous conseille de gravir le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">Crêt de Montriond</a> et profiter de la magnifique vue qui surplombe la ville. Vous pouvez aussi simplement longer la colline avant d’entrer directement dans le parc, en passant par le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-et-jardin-botanique-de-lausanne/\">jardin botanique</a> qui, malgré sa petite taille, donne une impression de balade en montagne.",
+            "de": "Voll Energie geht es dann in Richtung <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/milan-park/\">Milan-Park</a>, der etwa 50 Meter weiter unten liegt. Wenn ihr gerne im Wald spaziert, dann empfehle ich, auf den <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">Montriond-Hügel</a> zu steigen und die herrliche Aussicht über die Stadt zu geniessen. Anstatt sofort in den Park einzutreten, könnt ihr zuerst am Fuss des Hügels entlanggehen und den <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/botanische-garten-und-museum-von-lausanne/\">botanischen Garten</a> durchqueren, der trotz seiner geringen Grösse das Gefühl einer Bergwanderung vermittelt.",
+            "en": "After restoring our energy, let’s head to <a href=\"https://www.lausanne-tourisme.ch/en/explore/milan-park/\">Milan Park</a>, about fifty metres downhill. For an immersion in the forest, I recommend climbing the <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\">Crêt de Montriond</a> and enjoying the superb view over the city. You can also simply follow the foot of the hill before entering the park through the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-botanical-museum-and-garden/\">botanical garden</a> that, despite its small size, gives the feeling of a walk in the mountains."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26025,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "5b1bfa31e93fe66d",
+            "mime_type": "image/jpeg",
+            "copyright": "© Le Cret de Montriond Lausanne",
+            "metadata": {
+              "width": 1200,
+              "height": 801,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"801\"",
+              "tags": "Vue; Lac; Parc;",
+              "description": null,
+              "file_name_from_url": "5b1bfa31e93fe66d.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/CRET-MONTRIOND-automne.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Puis, en suivant l’Avenue de Cour à l’est durant une dizaine de minutes, le magnifique <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-olympique/\">parc du Musée Olympique</a> s’offre à vous. Vous vous retrouvez ensuite sur les fameux <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/quais-douchy/\">quais d’Ouchy</a> et il ne vous reste plus qu’à longer le lac, faire une petite halte au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-du-denantou/\">parc du Denantou</a>, et poursuivre jusqu’au Sentier des Rives du Lac.",
+            "de": "Folgt danach während rund zehn Minuten der Avenue de Cours in östlicher Richtung bis zum prächtigen Park des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-des-olympischen-museums/\">Olympischen Museums</a>. Und schon befindet ihr euch am berühmten <a href=\"https://www.lausanne-tourisme.ch/en/explore/quais-douchy/\">Uferweg in Ouch</a>y. Spaziert den See entlang, legt einen kurzen Halt im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/denantou-park/\">Denantou-Park</a> ein und geht weiter bis zum Sentier des Rives du Lac.",
+            "en": "Then, strolling along the Avenue de Cour towards the east for ten minutes or so, you’ll come upon the magnificent <a href=\"https://www.lausanne-tourisme.ch/en/explore/olympic-park/\">Olympic Museum</a>. You’re then on the popular <a href=\"https://www.lausanne-tourisme.ch/en/explore/quais-douchy/\">Ouchy Quays</a>, so carry on alongside the lake, enjoy a brief stop in <a href=\"https://www.lausanne-tourisme.ch/en/explore/denantou-park/\">Denantou Park</a> and continue to the Sentier des Rives du Lac."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26108,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "ef713fce958733f6",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1416,
+              "height": 1768,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"1416\" height=\"1768\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "ef713fce958733f6.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Les-Sentiers-des-Rives-du-Lac.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ce joli chemin démarre à la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-tour-haldimand/\">Tour Haldimand</a>, une ruine finalement pas si vieille que ça, puisqu’elle date du 19ème siècle. Le sentier est facile, au bord de l’eau. Il est fort probable que vous croisiez des cygnes qui font leur nid !",
+            "de": "Dieser schöne Weg beginnt beim <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-tour-haldimand-haldimand-turm/\">Tour Haldimand</a>, einer Ruine, die aber gar nicht so alt ist, denn sie stammt aus dem 19. Jahrhundert. Der gemütliche Weg führt am Ufer entlang. Nicht selten sieht man Schwäne beim Nestbau.",
+            "en": "This pretty path starts at <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-haldimand-tower/\">Haldimand Tower</a>, a ruin that’s actually not as old as all that, since it dates back to the 19<sup>th</sup> century. The footpath is easy, right by the lakeside. There’s a good chance you’ll meet swans building their nest!"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "La promenade vous emmène devant la demeure du général Guisan, et vous pouvez marcher ainsi jusqu’à Lutry. Un superbe village avec ses rues pittoresques, son héritage viticole omniprésent et ses excellentes pâtisseries si vous passez chez Vincent. Et pour les plus persévérants, le Chemin des Vignes s’ouvre à vous et vous conduit droit vers <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">Lavaux</a> !",
+            "de": "Der Spaziergang führt euch am Haus von General Guisan vorbei. Ihr könnt bis nach Lutry weitergehen. Dort erwarten euch ein vom Weinbau geprägtes Dorf mit malerischen Gassen sowie Patisserie-Köstlichkeiten, wenn ihr bei Vincent vorbeischaut. Jene mit viel Ausdauer schlagen in Lutry den Chemin des Vignes ein und gelangen direkt in das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\">Lavaux-Weingebiet</a>!",
+            "en": "The walk takes you by the house of General Guisan, and you can carry on right up to Lutry. A gorgeous village with picturesque streets, a pervasive winegrowing heritage and excellent pastries if you stop by Vincent’s bakery. For the more persevering, the Chemin des Vignes awaits you to take you right to <a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux</a>!"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26174,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "958888a9b253a7ef",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue sur le lac et les montagnes",
+            "metadata": {
+              "width": 1200,
+              "height": 795,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"795\"",
+              "tags": "Lavaux, Eau, Environs, Unesco, Nature",
+              "description": null,
+              "file_name_from_url": "958888a9b253a7ef.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Vignoble-18.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Le cimetière de Bois-de-Vaux</strong>",
+            "de": "<strong>Friedhof Bois-de-Vaux</strong>",
+            "en": "<strong>The Bois de Vaux cemetery</strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Une balade dans un cimetière, étrange idée, n’est-ce pas ? Et bien, pas tant que ça, finalement ! Si le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cimetiere-du-bois-de-vaux/\">cimetière du Bois-de-Vaux</a> a bien quelque chose de subtil qui va au-delà de sa fonction première, c’est qu’il a été pensé par son architecte Alphonse Laverrière comme un parc public.",
+            "de": "Spazieren auf dem Friedhof? Eher eine seltsame Idee … Aber warum eigentlich nicht? Der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/friedhof-bois-de-vaux/\">Friedhof Bois-de-Vaux</a> vermittelt etwas, das über seine eigentliche Funktion hinausgeht, denn ursprünglich wurde er vom Architekten Alphonse Laverrière als öffentlicher Park konzipiert.",
+            "en": "A walk in a cemetery, isn’t that strange? Well, maybe not that much, actually! The <a href=\"https://www.lausanne-tourisme.ch/en/explore/bois-de-vaux-cemetery/\">Bois de Vaux cemetery</a> possesses a very subtle quality that goes well beyond its main purpose, since its architect Alphonse Laverrière designed it as a public park."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "L’occasion de traverser ses immenses allées bordées de tilleuls, et de s’arrêter sur l’un des bancs qui bordent les bassins, dans lesquels se baignent des statues gréco-romaines et des nénuphars. C’est aussi l’occasion de rendre visite à Coco Chanel qui repose sous un parterre de fleurs toujours blanches.",
+            "de": "Nutzt die Gelegenheit, durch die riesigen Lindenalleen zu schlendern und auf einem der Bänke am Rand der Becken zu verweilen, die griechisch-römische Statuen und Seerosen schmücken. Besucht Coco Chanel, die unter einem stets weissen Blumenteppich ruht.",
+            "en": "You can take the opportunity to walk along its alleys lined with linden trees and to sit on one of the benches by the ponds in which Greco-Roman statues stand next to the water lilies. It’s also the chance to visit Coco Chanel, who lies under a bed of permanently white flowers."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26241,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "246491c4b5f2648f",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1200,
+              "height": 1500,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"1500\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "246491c4b5f2648f.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/BoisDeVaux.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En sortant, c’est le moment de choisir entre 2 options : pour la première, je vous propose de remonter par la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/vallee-de-la-jeunesse/\">Vallée de la Jeunesse</a>. Héritage de l’exposition nationale de 1964 dont le chemin débute par la coupole de l’Espace des Inventions. Vous pouvez ensuite remonter la pente sinueuse qui traverse le parc où se trouvent d’ailleurs une Roseraie et des arbres majestueux.",
+            "de": "Beim Verlassen des Friedhofs habt ihr zwei Möglichkeiten. Über die Parkanlage <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vallee-de-la-jeunesse/\">Vallée de la Jeunesse</a>, einem Überbleibsel der Landesausstellung von 1964, gelangt ihr wieder nach oben. Der Weg beginnt bei der Kuppel des Erfinderraums Espace des Inventions und führt über eine kurvenreiche Steigung durch den Park, in dem sich auch ein Rosengarten und prächtige Bäume befinden.",
+            "en": "As you leave, you can choose between 2 options. For the first, I suggest you go back up through the <a href=\"https://www.lausanne-tourisme.ch/en/explore/vallee-de-la-jeunesse/\">Vallée de la Jeunesse</a>. A legacy of the 1964 national exhibition, its path begins at the dome of the Espace des Inventions. You can then walk up the meandering path through the park, where there also is a rose garden and majestic trees."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26303,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "d928a4d5db7dd2de",
+            "mime_type": "image/jpeg",
+            "copyright": "© Balade dans la vallee de la Jeunesse",
+            "metadata": {
+              "width": 1200,
+              "height": 797,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"797\"",
+              "tags": "Parc; Fleurs; Détente; Balade",
+              "description": null,
+              "file_name_from_url": "d928a4d5db7dd2de.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Vallee-Jeunesse-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Si vous décidez d’opter pour l’option n°2, descendez simplement en direction du lac et profitez de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plaines-de-vidy/\">promenade de Vidy</a> en passant par les ruines romaines. Vous atteignez ensuite la piste de jogging la plus célèbre de la ville ! En longeant le lac direction l’Université de Lausanne, vous arrivez sur la seule et véritable plage de Lausanne, où vous pourrez vous adonner à cette merveilleuse discipline qu’est le tir à ricochet.",
+            "de": "Als zweite Möglichkeit geht ihr einfach weiter nach unten in Richtung See, bei den römischen Ruinen vorbei, bis zur <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plaines-de-vidy/\">Vidy-Uferpromenade</a>. Schliesslich gelangt ihr zur berühmtesten Joggingstrecke der Stadt. Weiter in Richtung Universität kommt ihr zum einzigen echten Strand von Lausanne, wo ihr euch damit vergnügen könnt, Steine über dem Wasser tanzen zu lassen.",
+            "en": "If you decide on option number 2, simply walk down towards the lake and enjoy the walk in <a href=\"https://www.lausanne-tourisme.ch/en/explore/plaines-de-vidy/\">Vidy</a>, going by the Roman ruins. You then reach the town’s most popular jogging track! By following the lakeside towards Lausanne University, you’ll reach the only proper beach in Lausanne, where you can devote a few minutes to the marvellous pastime of stone skimming."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26081,
+            "name": "Les endroits où se rafraîchir à Lausanne",
+            "public_name": {
+              "fr": "Les endroits où se rafraîchir à Lausanne"
+            },
+            "cloudinary_id": "1da5c7bb6f4e3992",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 799,
+              "height": 1200,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"799\" height=\"1200\"",
+              "tags": "Lac; Montagne; Été;",
+              "description": null,
+              "file_name_from_url": "594dd0443bd307db.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>De la Cathédrale à Sauvabelin </strong>",
+            "de": "<strong>Von der Kathedrale nach Sauvabelin </strong>",
+            "en": "<strong>From the Cathedral to Sauvabelin </strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour commencer, la meilleure façon de découvrir <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cite/\">la Cité</a> est de se perdre dans ses ruelles pittoresques, à la découverte de petits jardins cachés et de commerces d’artisans. Si vous traversez la vieille ville en direction de la rue de la Barre et du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/restaurant-la-sardine/\">restaurant Sardine</a> (où l’on mange très bien d’ailleurs), vous apercevez près de la fontaine un petit chemin qui monte dans les bois. Ce chemin vous mène au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">parc de l’Hermitage</a>, l’un des plus beaux jardins de Lausanne selon moi, où règne aujourd’hui une villa de maître devenue un <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/fondation-de-lhermitage/\">musée d’art</a>.",
+            "de": "Die beste Art, das Stadtviertel <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-cite/\">Cité</a> zu erkunden ist, sich in den malerischen Gässchen zu verlieren und versteckte Gärten und Handwerksläden ausfindig zu machen. Durchquert die Altstadt in Richtung Rue de la Barre und <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/restaurant-la-sardine/\">Restaurant Sardine</a> – wo man übrigens sehr gut isst. Beim Brunnen führt ein kleiner Weg in den Wald hinauf. Er führt euch zum <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\">Hermitage-Park</a>, der meiner Meinung nach einer der schönsten Gärten in Lausanne ist. Dessen herrschaftliche Villa ist heute ein <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Kunstmuseum</a>.",
+            "en": "To begin with, the best way to discover <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-cite/\">the Cité</a> is to get lost in its picturesque alleys, in search of hidden gardens and artisan boutiques. If you walk through the old city heading towards the Rue de la Barre and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/restaurant-la-sardine/\">restaurant Sardine</a> (that serves very good food, BTW), you’ll catch a glimpse, close to the fountain, of a small path that climbs through the woods. This leads you to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\">Hermitage Park</a>, one of the most beautiful gardens in Lausanne according to me, watched over by a mansion that has become an <a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\">art museum</a>."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26395,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "b630fd0e9199834a",
+            "mime_type": "image/png",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1420,
+              "height": 1772,
+              "mimeType": "image/png",
+              "copyright": null,
+              "attr": "width=\"1420\" height=\"1772\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b630fd0e9199834a.png",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Hermitage.png"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Si vous êtes d’humeur sportive, continuez à grimper dans la forêt pour découvrir les chutes du Flon et le point de vue majestueux du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/au-signal-de-sauvabelin/\">Signal</a>, une petite esplanade près du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-chalet-suisse/\">Chalet Suisse</a> (qui font des raclettes à gogo, SI SI). Vous atteindrez aussi le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lac-de-sauvabelin/\">lac de Sauvabelin</a>, ses porcs laineux, sa tour et sa buvette. Une oasis forestière à deux pas de la ville et un chemin parfait pour se muscler les mollets.",
+            "de": "Sportliche gehen weiter hinauf durch den Wald, bis zu den Flon-Wasserfällen. Belohnt werden sie mit dem herrlichen Aussichtspunkt <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/am-signal-de-sauvabelin/\">Signal</a>, einer Esplanade in der Nähe des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-chalet-suisse/\">Chalet Suisse</a> (dort gibt es Raclette à discrétion, oh ja!). Weiter erblickt ihr dort auch den <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sauvabelin-see/\">Sauvabelin-See</a> mit Wollschweinen, einem Turm und einem Bistro. Diese Waldoase ist nur einen Steinwurf von der Stadt entfernt und perfekt für straffe Waden.",
+            "en": "If you’re feeling sporty, continue climbing in the forest to discover the Flon waterfalls and the marvellous vantage point of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/at-the-signal-de-sauvabelin/\">Signal</a>, a small esplanade close to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-chalet-suisse/\">Chalet Suisse</a> (that serves as much raclette as you can eat, believe it or not). You’ll also reach <a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-lake/\">Sauvabelin Lake</a>, its woolly pigs, tower and café. An oasis in the forest a stone’s throw from the city and the perfect walk to strengthen your calf muscles."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26431,
+            "name": "Mes balades revigorantes préférées à Lausanne",
+            "public_name": {
+              "fr": "Mes balades revigorantes préférées à Lausanne"
+            },
+            "cloudinary_id": "54453cd40920ae13",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue sur la Pinte depuis le lac de Sauvabelin",
+            "metadata": {
+              "width": 1200,
+              "height": 801,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1200\" height=\"801\"",
+              "tags": "Sauvabelin, Lac; Terrasse; Restaurant; Table",
+              "description": null,
+              "file_name_from_url": "54453cd40920ae13.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/Lac-de-Sauvabelin-et-la-Pinte_0820.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Vous l’aurez compris, les possibilités de balades sont nombreuses à Lausanne. Et c’est probablement en marchant que vous avez le plus de chances de découvrir des recoins cachés et pas toujours connus de tous. Enfilez vos chaussures et c’est parti : à vous les secrets spots !",
+            "de": "Ihr seht, in Lausanne gibt es zahlreiche Wege unter die Füsse zu nehmen. Auf diese Weise habt ihr auch die besten Chancen, verborgene Winkel zu entdecken, die nicht alle kennen. Zieht die Schuhe an und los geht‘s zu den Insider-Highlights.",
+            "en": "As you can tell, the possibilities for walks in Lausanne are many. And it’s probably when walking that you have the most chance of discovering hidden corners, not always known by all. Pull on your shoes and off you go; the secret spots will be all yours!"
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "900c501ee05b514f",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Mes balades revigorantes préférées à Lausanne"
+          }
+        }
+      ],
+      "published_at": "1666055107",
+      "seo": {
+        "description": {
+          "fr": "Ce n’est pas pour rien que je me fais appeler « l’Homme qui marche » : dès qu’un rayon de soleil fait son apparition, j’aime partir en promenade à la (re)découverte de ma ville. Mais parfois, difficile de s’y retrouver tant les options sont nombreuses. Alors si vous manquez d’idée et vous ne savez pas par où commencer, vous êtes au bon endroit. Je partage avec vous mes 3 balades préférées pour profiter de la nature en pleine ville. On y va !",
+          "de": "Es kommt nicht von ungefähr, dass ich mich selbst den „gehenden Mann“ nenne: Sobald sich ein Sonnenstrahl zeigt, ziehe ich los, um meine Stadt spazierend (neu) zu entdecken. Manchmal ist es schwierig, den Überblick zu behalten, denn die Möglichkeiten sind schier grenzenlos. Wenn euch die Ideen fehlen und ihr nicht wisst wo beginnen, dann seid ihr bei mir richtig. Gerne teile ich mit euch meine drei Lieblingsspaziergänge, um die Natur mitten in der Stadt zu geniessen. Los geht’s!",
+          "en": "Not for nothing am I known as “the Walking Man”: as soon as a ray of sunlight appears, I love going out on a walk to (re)discover my town. However, it can be difficult sometimes as there are so many options. So if you’re short of ideas and don’t know where to start, you’re in the right place. I’m sharing with you my 3 favourite walks to enjoy nature in the middle of town. Let’s go!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "mes-balades-revigorantes-preferees-a-lausanne",
+          "de": "meine-liebsten-spaziergange-in-lausanne-um-energie-zu-tanken",
+          "en": "my-favourite-invigorating-walks-in-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-bien-etre",
+          "public_name": {
+            "fr": "Bien-être",
+            "en": "Wellness",
+            "de": "Wohlbefinden"
+          }
+        },
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

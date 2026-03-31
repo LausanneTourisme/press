@@ -1,0 +1,49 @@
+{
+  "data": {
+    "item": {
+      "id": "325",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Une nouvelle cheffe à l'auberge de Montheron!",
+        "en": "A New Chef at the Auberge de Montheron !",
+        "de": "Neue Chefin in der Auberge de Montheron!"
+      },
+      "lead": {
+        "fr": "Alba Farnos Viñals et Paul Marsden ont repris l’Auberge de l’Abbaye de Montheron en janvier.",
+        "en": "Alba Farnos Viñals and Paul Marsden took over the Auberge de l’Abbaye de Montheron in January.",
+        "de": "Alba Farnos Viñals und Paul Marsden haben im Januar die Auberge de l’Abbaye de Montheron übernommen."
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "auberge-de-montheron-nckenn",
+          "copyright": "© Aniket Godobole",
+          "public_name": {
+            "fr": "Auberge de Montheron"
+          }
+        }
+      ],
+      "published_at": "1737327600",
+      "seo": {
+        "description": {
+          "fr": "Alba Farnos Viñals et Paul Marsden ont repris l’Auberge de l’Abbaye de Montheron en janvier.",
+          "en": "Alba Farnos Viñals and Paul Marsden took over the Auberge de l’Abbaye de Montheron in January.",
+          "de": "Alba Farnos Viñals und Paul Marsden haben im Januar die Auberge de l’Abbaye de Montheron übernommen."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "une-nouvelle-cheffe-a-lauberge-de-montheron",
+          "en": "a-new-chef-at-the-auberge-de-montheron",
+          "de": "neue-chefin-in-der-auberge-de-montheron"
+        }
+      },
+      "tags": []
+    }
+  }
+}

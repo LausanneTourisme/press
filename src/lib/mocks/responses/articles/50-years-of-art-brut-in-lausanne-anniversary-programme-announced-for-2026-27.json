@@ -1,0 +1,230 @@
+{
+  "data": {
+    "item": {
+      "id": "335",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "50 ANS D’ART BRUT À LAUSANNE : programme anniversaire annoncé pour 2026-2027",
+        "en": "50 YEARS OF ART BRUT IN LAUSANNE:   Anniversary programme announced for 2026-27",
+        "de": "Schweizer Art Brut: Von den Ursprüngen der Sammlung bis heute Die Collection de l’Art Brut feiert 50 Jahre mit zwei Ausstellungen in Lausanne"
+      },
+      "lead": {
+        "fr": "Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027.",
+        "en": "October 2025 - Lausanne’s Collection de l’Art Brut will mark its 50th anniversary in  February 2026 with a year-long programme anchored by two anniversary exhibitions running from February 2026 to April 2027",
+        "de": "Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten."
+      },
+      "summary": {
+        "fr": "<p style=\"text-align: left;\">Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027. </p>",
+        "en": "<p style=\"text-align: left;\">October 2025 - Lausanne’s Collection de l’Art Brut will mark its 50th anniversary in  February 2026 with a year-long programme anchored by two anniversary exhibitions running from February 2026 to April 2027</p>",
+        "de": "<p style=\"text-align: left;\">Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten.</p>"
+      },
+      "content": [
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 31657,
+              "name": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+              "public_name": {
+                "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                "en": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                "de": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                "es": null
+              },
+              "cloudinary_id": "BEzQx4JSzMj6Ca2awA315eUBMNdbeP0Qk3laUru0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Hans Krüsi",
+              "metadata": {
+                "width": 2126,
+                "height": 1908,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2126\" height=\"1908\"",
+                "tags": null,
+                "description": null
+              }
+            },
+            {
+              "id": 31658,
+              "name": "Archives de la Collection de l’Art Brut",
+              "public_name": {
+                "fr": "Archives de la Collection de l’Art Brut",
+                "en": "Archives de la Collection de l’Art Brut",
+                "de": "Archives de la Collection de l’Art Brut",
+                "es": null
+              },
+              "cloudinary_id": "FSimkHY50MMM6KmVNZH2IY511HRqYJ8yXb9DdvN8",
+              "mime_type": "image/jpeg",
+              "copyright": "© Caroline Smyrliadis",
+              "metadata": {
+                "width": 1772,
+                "height": 1323,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1772\" height=\"1323\"",
+                "tags": null,
+                "description": null
+              }
+            },
+            {
+              "id": 31659,
+              "name": "Collection de l'Art Brut",
+              "public_name": {
+                "fr": "Collection de l'Art Brut",
+                "en": "Collection de l'Art Brut",
+                "de": "Collection de l'Art Brut",
+                "es": null
+              },
+              "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+              "mime_type": "image/jpeg",
+              "copyright": "© Delphine Burtin",
+              "metadata": {
+                "width": 9504,
+                "height": 6336,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"9504\" height=\"6336\"",
+                "tags": null,
+                "description": null
+              }
+            },
+            {
+              "id": 31660,
+              "name": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+              "public_name": {
+                "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                "en": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                "de": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                "es": null
+              },
+              "cloudinary_id": "BZ7oWtq4IZ9xR1kELZHpcGV47HKSdfjeDsPdr24f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Aloïse Corbaz",
+              "metadata": {
+                "width": 1317,
+                "height": 2126,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1317\" height=\"2126\"",
+                "tags": null,
+                "description": null
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<p style=\"text-align: left;\">Fondé en 1976 pour accueillir la collection donnée par le peintre Jean Dubuffet (1901-1985), le musée fut la première institution publique au monde entièrement dédiée à l’étude, à la conservation et à la présentation de l’Art Brut. Aujourd’hui, il conserve plus de 70 000 œuvres – dessins, peintures, sculptures, photographies et textiles – réalisées par des artistes autodidactes évoluant en dehors des circuits artistiques traditionnels. </p><p style=\"text-align: left;\">Le terme « Art Brut » lui est venu en 1945 lors d’un voyage en Suisse, au cours duquel Jean Dubuffet visita des asiles, des hôpitaux psychiatriques et des prisons. Selon Dubuffet, l’Art Brut se caractérise par « des œuvres créées en dehors de l’influence de l’art traditionnel, faisant appel aux couches les plus profondes de l’être humain ». </p><p style=\"text-align: left;\">Dubuffet considérait la Suisse comme une sorte de « pierre de touche pour les anarchistes anticulturels » et estimait qu’il s’agissait du lieu le plus approprié pour sa collection. En 1971, il fit don de sa collection d’Art Brut à la Ville de Lausanne et, en 1976, la Collection de l’Art Brut fut fondée. </p><p style=\"text-align: left;\">Depuis lors, ce musée municipal n’a cessé de s’enrichir grâce à de nombreuses acquisitions et donations, réunissant un vaste ensemble d’œuvres comprenant dessins, peintures, sculptures, assemblages, photographies et œuvres textiles. </p><p style=\"text-align: left;\">Aujourd’hui, cette institution de renommée internationale est reconnue pour la richesse et la diversité de ses collections, ainsi que pour son importance historique unique. Elle demeure également le premier musée public au monde entièrement consacré à l’étude, à la conservation et à la présentation de l’Art Brut. </p><p style=\"text-align: left;\">En dehors de la Collection de l’Art Brut, celles et ceux qui souhaitent approfondir leur découverte de l’Art Brut sont invités à se rendre à La Ferme des Tilleuls à Renens, à 15 minutes en train de Lausanne. L’artiste autodidacte française Danielle Jacqui (née en 1934) y a légué une œuvre intitulée Colossal d’Art Brut ORGANuGAMME II, une impressionnante pièce en céramique de 14 mètres de haut composée de 4 000 éléments sculpturaux uniques, érigée en structure permanente sur le site en 2022. </p><p style=\"text-align: left;\">Du 12 février au 21 juin 2026, La Ferme des Tilleuls présentera également « Maisons-mères », une exposition invitant à un voyage à la découverte d’architectures alternatives, imaginées, construites et habitées par des individus guidés par leurs idéaux utopiques. </p>",
+            "en": "<p style=\"text-align: left;\"><span>Founded in 1976 to house the collection donated by painter <strong>Jean Dubuffet</strong> (1901–1985), the museum was the first public institution in the world dedicated entirely to the study, conservation and presentation of Art Brut. Today it is home to over 70,000 works, drawings, paintings, sculptures, photographs and textiles, created by self-taught artists working outside the traditional art world.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p><p style=\"text-align: left;\">The term “Art Brut” came to him in 1945 during a trip to Switzerland, where Jean Dubuffet visited asylums, psychiatric hospitals, and prisons. According to Dubuffet, Art Brut is characterised by “works created outside the influence of traditional art, while appealing to the deepest layers of the human being.” </p><p style=\"text-align: left;\">Dubuffet considered Switzerland something of a “touchstone for anti-cultural anarchists” and thought it was the most suitable location for his collection; in 1971, he donated his Art Brut collection to the City of Lausanne and in 1976, the Collection de l’Art Brut was founded.  </p><p style=\"text-align: left;\">Since then, this municipal museum has grown through numerous acquisitions and donations, bringing together a wide range of works, including drawings, paintings, sculptures, assemblages, photographs, and textile works.  </p><p style=\"text-align: left;\">Today, this internationally renowned institution is known for the richness and diversity of its collections as well as its unique historical significance. It was also the first public museum in the world dedicated entirely to the study, conservation, and presentation of Art Brut.  </p><p style=\"text-align: left;\">Outside of the Collection de l’Art Brut, those wanting to expand their Art Brut journey should pay a visit to La Ferme des Tilleuls in Renens, 15 minutes by train from Lausanne. The French self-taught artist Danielle Jacqui (1934) bequeathed a work of art to the art space named Colossal d’Art Brut ORGANuGAMME II, an impressive 14m-high ceramic piece made up of 4,000 unique sculptural elements that were erected into a permanent structure on the site in 2022. From 12th February to 21st June 2026 La Ferme des Tilleuls will also be showing “Maisons-mères”, an exhibition that takes viewers on a journey to discover alternative architectures, imagined, built, and inhabited by individuals guided by their utopian ideals. </p>",
+            "de": "<p style=\"text-align: left;\">Das Museum wurde 1976 gegründet, um die Sammlung des französischen Malers Jean Dubuffet (1901–1985) aufzunehmen. Es war weltweit die erste öffentliche Institution, die sich ausschliesslich der Erforschung, Bewahrung und Präsentation von Art Brut widmete. Heute beherbergt das Haus über 70'000 Werke – darunter Zeichnungen, Gemälde, Skulpturen, Fotografien und Textilarbeiten –, die von autodidaktischen Künstlerinnen und Künstlern geschaffen wurden, die ausserhalb des klassischen Kunstbetriebs arbeiten.</p><p style=\"text-align: left;\">Der Begriff «Art Brut» entstand 1945, als Jean Dubuffet auf einer Reise durch die Schweiz psychiatrische Kliniken, Heime und Gefängnisse besuchte. Für ihn bezeichnete Art Brut Werke, die unabhängig von kulturellen Normen entstehen und die tiefsten Schichten des Menschseins berühren.</p><p style=\"text-align: left;\">Für Dubuffet war die Schweiz der ideale Ort für seine Sammlung – ein «Bezugspunkt für antikulturelle Anarchistinnen und Anarchisten», wie er es ausdrückte. 1971 übergab er seine Werke der Stadt Lausanne, die daraufhin 1976 die Collection de l’Art Brut gründete.</p><p style=\"text-align: left;\">Seither ist das städtische Museum kontinuierlich gewachsen – durch Ankäufe ebenso wie durch bedeutende Schenkungen. Heute umfasst die Sammlung eine beeindruckende Bandbreite künstlerischer Ausdrucksformen: von Zeichnungen, Malerei und Skulpturen bis zu Assemblagen, Fotografien und Textilarbeiten.</p><p style=\"text-align: left;\">Die Collection de l’Art Brut geniesst heute internationale Anerkennung – sowohl für die Vielfalt ihrer Sammlung als auch für ihre historische Bedeutung als Pionierinstitution im Bereich der Art Brut.</p><p style=\"text-align: left;\">Wer Art Brut auch ausserhalb der Collection de l’Art Brut erleben möchte, findet in der Ferme des Tilleuls in Renens eine spannende Ergänzung. Der Ausstellungsort liegt nur 15 Zugminuten von Lausanne entfernt und beherbergt das monumentale Werk «ORGANuGAMME II» der französischen Autodidaktin Danielle Jacqui (Jahrgang 1934). Die 14 Meter hohe Keramikskulptur mit rund 4'000 einzeln gestalteten Elementen wurde 2022 dauerhaft auf dem Gelände installiert. Zwischen dem 12. Februar und dem 21. Juni 2026 zeigt die Ferme des Tilleuls zudem die Ausstellung «Maisons-mères», die sich alternativen Architekturformen widmet, welche von Einzelpersonen entworfen, gebaut und bewohnt wurden – inspiriert von persönlichen Utopien und einer starken gestalterischen Vision.</p>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 31661,
+            "name": "La Ferme des Tilleuls",
+            "public_name": {
+              "fr": "La Ferme des Tilleuls",
+              "en": "La Ferme des Tilleuls",
+              "de": "La Ferme des Tilleuls",
+              "es": null
+            },
+            "cloudinary_id": "4hkTwPdhMfJ9e3IpNVhBd6uqNtDvsbpGHMd93Qvm",
+            "mime_type": "image/jpeg",
+            "copyright": "© Mario Del Curto",
+            "metadata": {
+              "width": 5964,
+              "height": 3981,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"5964\" height=\"3981\"",
+              "tags": null,
+              "description": null
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "Célébrités influencées par l’Art Brut ",
+            "en": "Celebrities influenced by Art Brut ",
+            "de": "Art Brut als Inspirationsquelle"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<p style=\"text-align: left;\"><span>La passion brute du mouvement de l’Art Brut a inspiré de nombreuses figures majeures, non seulement dans les arts plastiques, mais aussi dans la musique et la mode. Voici quelques témoignages de personnalités marquées par l’influence du mouvement de Dubuffet sur leur travail artistique :&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>David Bowie</strong>&nbsp;<br>« La Suisse m’a également permis de découvrir l’Art Brut, qui a eu un impact très fort sur ma vie et ma créativité. Je me souviens avoir emmené Brian Eno au musée de Lausanne et y avoir passé des heures à admirer les œuvres, à réfléchir au processus créatif et aux limites qu’un artiste est prêt à franchir dans sa quête… »&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Thom Yorke</strong>&nbsp;<br>« J’attendais avec impatience de venir enfin ici. Cela a dépassé toutes mes attentes. C’est vraiment le meilleur musée que j’aie jamais visité. Merci. »&nbsp;<br><em>Livre d’or, 15.08.2006</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Christian Lacroix</strong>&nbsp;<br>« J’ai toujours été fasciné par l’Art Brut. Je me souviens d’une robe brodée par l’une de ces artistes solitaires, cachée sous son lit. Cela m’impressionne bien davantage que tout ce que l’on peut voir au Louvre. »&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</span></p>",
+            "en": "<p style=\"text-align: left;\">The raw passion of the Art Brut movement has inspired many seminal figures, not only in art, but in music and fashion as well. Here are quotes from just a few figureheads who felt the impact of Dubuffet’s movement on their artistic works:&nbsp;</p><p style=\"text-align: left;\"><strong>David Bowie</strong>&nbsp;<br>“Switzerland also allowed me to discover Art Brut, which had a very strong impact on my life and my creativity. I remember bringing Brian Eno to the Lausanne museum and spending hours there admiring the works, reflecting on the creative process and on the boundaries an artist is willing to cross in their quest…”&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Thom Yorke</strong>&nbsp;<br>“I was so looking forward to finally coming here. This has surpassed my expectations. It really is the best museum I have ever visited. Thank you.”&nbsp;<br><em>Guestbook, 15.08.2006</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong>&nbsp;<br>“I have always been fascinated by Art Brut. I remember a dress embroidered by one of the solitary artists, hidden under her bed. That impresses me far more than anything in the Louvre.”&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</p>",
+            "de": "<p style=\"text-align: left;\">Die kraftvolle Direktheit der Art Brut hat Künstlerinnen und Künstler weit über die bildende Kunst hinaus beeinflusst – von Musik über Mode bis zur Popkultur. Wie tief Dubuffets Werk nachwirkt, zeigen Aussagen prominenter Wegbegleiterinnen und Bewunderer.</p><p style=\"text-align: left;\"><strong>David Bowie</strong></p><p style=\"text-align: left;\">«Die Schweiz hat mir auch die Art Brut nähergebracht – sie hatte grossen Einfluss auf mein Leben und meine Kreativität. Ich erinnere mich, wie ich Brian Eno ins Museum in Lausanne mitnahm. Wir verbrachten Stunden damit, die Werke zu betrachten und über den kreativen Prozess nachzudenken – und darüber, welche Grenzen ein Kunstschaffender bereit ist zu überschreiten.» (L’Hebdo, 06.06.2002)</p><p style=\"text-align: left;\"><strong>Tom Yorke</strong></p><p style=\"text-align: left;\">«Ich habe mich sehr auf diesen Besuch gefreut – und er hat meine Erwartungen übertroffen. Es ist wirklich das beste Museum, das ich je besucht habe. Danke.» (Gästebuch, 15.08.2006)</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong></p><p style=\"text-align: left;\">«Ich war immer fasziniert von Art Brut. Ich erinnere mich an ein Kleid, das eine einsame Künstlerin bestickt und unter ihrem Bett versteckt hatte. Das beeindruckt mich viel mehr als alles im Louvre.» (Le Temps, 12.07.2008)</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "EXPOSITIONS ANNIVERSAIRE ",
+            "en": "ANNIVERSARY EXHIBITIONS ",
+            "de": "Jubiläumsausstellungen"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<p style=\"text-align: left;\"><span><strong>Février – octobre 2026</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Art Brut en Suisse : des origines de la collection à aujourd’hui</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Sarah Lombardi</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>Cette exposition présentera un large éventail d’œuvres –&nbsp;dessins, peintures, sculptures, broderies et écrits –&nbsp;exclusivement issues de la collection du musée lausannois. Certaines appartiennent au noyau historique de la collection constituée par Jean Dubuffet, tandis que d’autres sont des œuvres contemporaines intégrées entre 1976 et aujourd’hui.&nbsp;</span></p><p style=\"text-align: left;\"><span>Toutes les œuvres auront été réalisées par des auteurs et autrices d’Art Brut suisses ou par des artistes ayant créé en Suisse.&nbsp;</span></p><p style=\"text-align: left;\"><span>Avec la Suisse comme fil conducteur, l’exposition met en lumière les liens forts et durables entre Jean Dubuffet et le pays, qui l’ont conduit à faire don de sa collection à Lausanne afin d’en garantir la conservation et l’accessibilité au public.&nbsp;</span></p><p style=\"text-align: left;\"><span>Des documents d’archives inédits et des extraits de films documentaires, notamment produits par la Radio Télévision Suisse (RTS), viendront compléter le parcours.&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Novembre 2026 – avril 2027</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>L’univers d’Armand Schulthess</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Hans-Ulrich Schlumpf, cinéaste</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>La seconde exposition anniversaire sera consacrée au créateur d’Art Brut suisse alémanique <strong>Armand Schulthess</strong> (1901-1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>Ancien employé de l’administration fédérale suisse à Berne, Schulthess a créé au Tessin un vaste environnement artistique aujourd’hui entièrement disparu. Cette œuvre in situ se composait d’innombrables objets et installations réalisés à partir de plaques métalliques de récupération, gravées d’inscriptions contenant un savoir encyclopédique, notamment dans les domaines de la science et de la philosophie.&nbsp;</span></p><p style=\"text-align: left;\"><span>L’exposition présentera plus de 300 pièces conservées et acquises par le musée en 2024, enrichissant de manière significative ses collections existantes.&nbsp;</span></p><p style=\"text-align: left;\"><span>Ces objets seront exposés aux côtés de photographies de grand format réalisées par Hans-Ulrich Schlumpf, qui a documenté et préservé cette œuvre monumentale avant sa destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>INFORMATIONS PRATIQUES</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span>- Entrée : 12 CHF &nbsp;<br>-&nbsp; Entrée gratuite durant le week-end d’ouverture du 50ᵉ anniversaire de la Collection de l’Art Brut : <strong>du 27 au 29 février 2026</strong>&nbsp;<br>- Ouvert du mardi au dimanche, de 11h à 18h. Également ouvert le lundi (11h–18h) en juillet et août&nbsp;<br>-&nbsp; Entrée gratuite le premier samedi de chaque mois&nbsp;<br>- À 25 minutes à pied de la gare de Lausanne. Arrêts de bus les plus proches : <strong>Jomini</strong> ou <strong>Beaulieu</strong>&nbsp;<br>-&nbsp; Adresse : <strong>Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne</strong>&nbsp;</span></p>",
+            "en": "<p style=\"text-align: left;\"><span><strong>February - October 2026:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Swiss Art Brut</em>&nbsp;<br><em>From the Origins of the Collection to the Present </em>&nbsp;<br>Curated by Sarah Lombardi&nbsp;</span></p><p style=\"text-align: left;\"><span>This exhibition will present a wide range of works including drawings, paintings, sculptures, embroidery and writing, exclusively from the Lausanne museum’s collection. Some belong to the historical core collection of Jean Dubuffet, while others are contemporary, added between 1976 and now.&nbsp;</span></p><p style=\"text-align: left;\"><span>All works will have been created by Swiss Art Brut authors or artists who created in Switzerland.&nbsp;</span></p><p style=\"text-align: left;\"><span>With Switzerland as its central theme, the exhibition highlights the strong and lasting ties between Jean Dubuffet and the country, which led him to donate his collection to Lausanne to ensure its preservation and public accessibility.&nbsp;</span></p><p style=\"text-align: left;\"><span>Unpublished archival materials and excerpts from documentaries, including those produced by Radio Télévision Suisse (RTS), will complement the exhibition.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>November 2026 - April 2027:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>The World of Armand Schulthess</em>&nbsp;<br>Curated by Hans-Ulrich Schlumpf, film maker&nbsp;</span></p><p style=\"text-align: left;\"><span>The second anniversary exhibition will focus on the Swiss-German Art Brut creator Armand Schulthess (1901–1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>A former Swiss federal employee in Bern, Schulthess created a vast artistic environment in Ticino, now completely gone. This in-situ work consisted of countless objects and installations made from reclaimed metal plates, engraved with inscriptions containing encyclopedic knowledge, especially related to science and philosophy.&nbsp;</span></p><p style=\"text-align: left;\"><span>The exhibition will present over 300 pieces that were preserved and acquired by the museum in 2024, significantly enriching its existing holdings.&nbsp;</span></p><p style=\"text-align: left;\"><span>These objects will be shown alongside large-format photographs by Hans-Ulrich Schlumpf, who documented and preserved this monumental work before its destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>PRACTICAL INFORMATION</strong></span><span style=\"color: rgb(0, 0, 0);\">&nbsp;</span></p><ul><li><p style=\"text-align: left;\"><span>Entry costs 12 CHF (approx £11)&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry during the opening weekend of the 50th anniversary of the <em>Collection de l'Art Brut:</em> 27th-29th February 2026&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Open Tuesday to Sunday, 11am- 6pm. Also open Mondays (11am-6pm) in July and August&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry on the first Saturday of each month&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>25-minute walk from Lausanne train station. Nearest bus stops: Jomini or Beaulieu.&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Address: Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne&nbsp;</span></p></li></ul><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: center;\"><span><strong>-ENDS-</strong>&nbsp;&nbsp;</span></p><p style=\"text-align: center;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>For more information on Lausanne please visit</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"http://www.lausanne-tourisme.ch/en/\" tt-mode=\"url\"><span> <u>Lausanne Tourism’s website</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Follow ‘Lausanne, Capitale Olympique’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.linkedin.com/company/lausanne-capitale-olympique\" tt-mode=\"url\"><span> <u>LinkedIn</u></span></a><span>,</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.facebook.com/LausanneCapitaleOlympique/\" tt-mode=\"url\"><span> <u>Facebook</u></span></a><span> and ‘The Lausanner’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.instagram.com/thelausanner/\" tt-mode=\"url\"><span> <u>Instagram</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Keep up to date with all the latest content on the</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\" tt-mode=\"url\"><span> <u>blog The Lausanner</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://ace.media/lookbooks/0km7\" tt-mode=\"url\"><span><u>Images can be downloaded from here</u></span></a><span style=\"color: rgb(5, 99, 193);\">&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: left;\"><span>For media enquiries please contact Alexandra Liste, Isabel Turner-Hicks or Jess Cochrane on&nbsp; </span><a target=\"_blank\" href=\"mailto:lausannetourism@lemongrassmarketing.com\" tt-mode=\"url\"><span>lausannetourism@lemongrassmarketing.com</span></a><span> / 01865 237 997&nbsp;&nbsp;&nbsp;</span></p>",
+            "de": "<p style=\"text-align: left;\"><strong>Februar bis Oktober 2026</strong></p><p style=\"text-align: left;\"><strong>Schweizer Art Brut</strong><br><em>Von den Ursprüngen der Sammlung bis heute</em><br>Kuratiert von Sarah Lombardi</p><p style=\"text-align: left;\">Die Ausstellung vereint eine breite Auswahl an Werken aus der Sammlung des Museums, darunter Zeichnungen, Gemälde, Skulpturen, Stickereien und Texte. Gezeigt werden sowohl Werke aus Jean Dubuffets historischer Sammlung als auch zeitgenössische Arbeiten, die zwischen 1976 und heute in die Sammlung aufgenommen wurden.</p><p style=\"text-align: left;\">Alle ausgestellten Werke stammen von Schweizer Kunstschaffenden der Art Brut oder wurden in der Schweiz geschaffen.</p><p style=\"text-align: left;\">Im Zentrum der Ausstellung steht die enge und nachhaltige Beziehung zwischen Jean Dubuffet und der Schweiz – jenem Land, dem er seine Sammlung schenkte, um deren Erhalt und öffentliche Zugänglichkeit langfristig zu sichern.</p><p style=\"text-align: left;\">Unveröffentlichtes Archivmaterial sowie Auszüge aus Dokumentarfilmen, unter anderem von Radio Télévision Suisse (RTS), ergänzen die Ausstellung.</p><p style=\"text-align: left;\"><br><strong>November 2026 bis April 2027</strong></p><p style=\"text-align: left;\"><strong>Die Welt von Armand Schulthess</strong><br>Kuratiert von Hans-Ulrich Schlumpf</p><p style=\"text-align: left;\">Die zweite Jubiläumsausstellung widmet sich dem Schweizer Art-Brut-Künstler Armand Schulthess (1901–1972).</p><p style=\"text-align: left;\">Der ehemalige Bundesbeamte aus Bern schuf in seinem Garten im Tessin ein einzigartiges künstlerisches Universum, das heute vollständig verschwunden ist. Sein Werk bestand aus unzähligen Objekten und Installationen aus wiederverwerteten Metallplatten, in die er enzyklopädisches Wissen eingravierte – mit Themen von Naturwissenschaft bis Philosophie.</p><p style=\"text-align: left;\">Die Ausstellung präsentiert über 300 Objekte, die das Museum 2024 übernehmen konnte und die eine bedeutende Erweiterung der bestehenden Sammlung darstellen.</p><p style=\"text-align: left;\">Ergänzt wird die Präsentation durch grossformatige Fotografien von Hans-Ulrich Schlumpf, der das Werk dokumentierte, bevor es zerstört wurde.</p><p style=\"text-align: left;\"><br><strong>Praktische Informationen</strong></p><p style=\"text-align: left;\">Der Eintritt kostet CHF 12.–. Freier Eintritt gilt am Jubiläumswochenende vom 27. bis 29. Februar 2026.</p><p style=\"text-align: left;\">Die Öffnungszeiten sind Dienstag bis Sonntag von 11 bis 18 Uhr; im Juli und August ist das Museum auch montags geöffnet. Zudem ist der Eintritt am ersten Samstag jedes Monats kostenlos.</p><p style=\"text-align: left;\">Das Museum liegt rund 25 Gehminuten vom Bahnhof Lausanne entfernt; die nächstgelegenen Busstationen sind Jomini und Beaulieu.<br>Adresse: Collection de l’Art Brut, Avenue des Bergières 11, CH–1004 Lausanne.</p><p style=\"text-align: left;\">Weitere Informationen finden Sie unter <a target=\"_blank\" href=\"http://www.lausanne-tourisme.ch\" tt-mode=\"url\">www.lausanne-tourisme.ch</a>.<br>Pressebilder sind online verfügbar.</p><p style=\"text-align: left;\"><strong>Medienkontakt Schweiz</strong><br>Natalie Zipsin<br>Tel.: 076 289 26 64<br>E-Mail: <a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\">natalie@wearepepper.ch</a></p>"
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+          "copyright": "© Delphine Burtin",
+          "public_name": {
+            "fr": "Collection de l'Art Brut",
+            "en": "Collection de l'Art Brut",
+            "de": "Collection de l'Art Brut"
+          }
+        }
+      ],
+      "published_at": "1769468400",
+      "seo": {
+        "description": {
+          "fr": "Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027.",
+          "en": "October 2025 - Lausanne’s Collection de l’Art Brut will mark its 50th anniversary in  February 2026 with a year-long programme anchored by two anniversary exhibitions running from February 2026 to April 2027",
+          "de": "Zürich, 22. Januar 2026 – Die Collection de l’Art Brut Lausanne feiert im Februar 2026 ihr  50-jähriges Bestehen. Zum Jubiläum präsentiert das Museum ein vielfältiges Jahresprogramm mit zwei grossen Ausstellungen. Gezeigt werden sowohl bedeutende Werke aus der ursprünglichen Sammlung von Jean Dubuffet als auch neue Entdeckungen aus den letzten Jahrzehnten."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "50-ans-dart-brut-a-lausanne-programme-anniversaire-annonce-pour-2026-2027",
+          "en": "50-years-of-art-brut-in-lausanne-anniversary-programme-announced-for-2026-27",
+          "de": "schweizer-art-brut-von-den-ursprungen-der-sammlung-bis-heute-die-collection-de-lart-brut-feiert-50-jahre-mit-zwei-ausstellungen-in-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-culture",
+          "public_name": {
+            "fr": "Culture",
+            "en": "Culture",
+            "de": "Kultur"
+          }
+        },
+        {
+          "name": "lt-exposition",
+          "public_name": {
+            "fr": "Exposition",
+            "en": "Exhibition",
+            "de": "Ausstellung"
+          }
+        }
+      ]
+    }
+  }
+}

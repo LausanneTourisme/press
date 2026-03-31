@@ -1,0 +1,602 @@
+{
+  "data": {
+    "item": {
+      "id": "243",
+      "languages": ["fr", "en"],
+      "name": {
+        "fr": "Plateforme 10",
+        "en": "Plateforme 10"
+      },
+      "lead": {
+        "fr": "Plateforme 10, c’est le nouveau quartier des arts situé juste à côté de la gare de Lausanne.",
+        "en": "Plateforme 10 is the new arts district located right next to the Lausanne train station."
+      },
+      "summary": {
+        "fr": "Plateforme 10, c’est le nouveau quartier des arts situé juste à côté de la gare de Lausanne.",
+        "en": "Plateforme 10 is the new arts district located right next to the Lausanne train station."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 25157,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10",
+              "es": null
+            },
+            "cloudinary_id": "jHhYuozkzrZPpjlb54C1gy4vykc6oWTmA55szWG9",
+            "mime_type": "image/jpeg",
+            "copyright": "© William Gammuto",
+            "metadata": {
+              "width": 3000,
+              "height": 2000,
+              "mimeType": "image/jpeg",
+              "copyright": "William Gammuto",
+              "attr": "width=\"3000\" height=\"2000\"",
+              "tags": "Culture; Musée; Visite; Lausanne",
+              "description": null,
+              "file_name_from_url": "d24d9e5bd04618a0.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/12/Plateforme-10-visite-scaled.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Plateforme 10</strong>",
+            "en": "<strong>Plateforme 10</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Cette nouvelle plateforme culturelle réunira d’ici à 2021 le Musée Cantonal des Beaux-Arts, le Musée de l’Elysée, le MUDAC ainsi que les Fondations Toms Pauli et Félix Vallotton. On retrouvera donc dans un même pôle muséal : photographie, Beaux-Arts, arts textiles et design. Plateforme 10 se veut être un véritable lieu de vie. En effet, 14 arcades extérieures invitent à la découverte sans même entrer dans l’un des musées. Le mobilier urbain permet de venir se détendre, que cela soit pour bouquiner ou admirer l’architecture des bâtiments.",
+            "en": "This new cultural platform will bring together by 2021 the Cantonal Museum of Fine Arts, the Musée de l’Elysée, the MUDAC, as well as the Toms Pauli and Félix Vallotton Foundations. In other words, you will find in the same museum hub photography, fine arts, fibre arts and design. Plateforme 10 is intended to be a genuine living area. Fourteen outside arcades invite to discovery even without entering one of the museums. The street furniture allows people to come and relax, whether to read a book or admire the buildings’ architecture.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Mais pourquoi Plateforme 10 ?</strong>",
+            "en": "<strong>Why Plateforme 10?</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Tout a toujours une explication. Le nom Plateforme 10 n’a pas été choisi au hasard. Le terme de plateforme fait référence à la proximité de la gare ainsi qu’à l’idée d’avoir plusieurs disciplines artistiques réunies au sein d’un même endroit. Le numéro 10 quant à lui, vient compléter le nombre de quai de la gare qui en compte en réalité 9. Si vous regardez le logo, vous pourrez aussi remarquer le zéro barré qui image la plaque tournante qui distribuait les locomotives et que l’on retrouve devant le MCBA.",
+            "en": "There’s always an explication to everything. The name Plateforme 10 wasn’t chosen by chance. The word “Plateforme” refers to the proximity of the station, as well as the idea of bringing together several artistic disciplines in the same location. Number 10 completes the nine platforms the train station actually has. And if you look at the logo closely, you’ll see that the zero has a slash across it, representing the turntable that rotated the locomotives in the desired direction and that we can see in front of the MCBA.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25946,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10"
+            },
+            "cloudinary_id": "b048470911b21208",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 494,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"494\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b048470911b21208.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/75d9f571-45f3-4f3c-a723-e10e78bedc29-1-1-e1583422129807.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Musée Cantonal des Beaux-Arts de Lausanne</strong>",
+            "en": "<strong>Lausanne Cantonal Museum of Fine Arts</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ca y est ! Le premier musée de ce nouveau quartier des arts est ouvert ! L’exposition inaugurale du MCBA, comprenez Musée Cantonal des Beaux-Arts de Lausanne, est installée dans son bâtiment flambant neuf de Plateforme 10 et a accueilli ses premiers visiteurs.",
+            "en": "It’s happening! The first museum of this new arts quarter is open! The inaugural exhibition of the MCBA (aka the Lausanne Cantonal Museum of Fine Arts) is set up in the Plateforme 10 brand-new building and has welcomed its first visitors.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Le bâtiment en lui-même est une oeuvre à part entière. Des lignes droites parfois entrecoupées d’arrondis, un mélange de textures et une luminosité parfaite ! On aime le hall d’accueil, qui conserve le souvenir historique de l’ancienne halle des chemins de fer.",
+            "en": "The building itself is a work of art in its own right. Straight lines sometimes intersected by curved ones, a blend of textures and perfect brightness! We love the lobby that reflects the historical presence of the former locomotive shed.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26030,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10"
+            },
+            "cloudinary_id": "058259be5ca8970b",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 1101,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"1101\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "058259be5ca8970b.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/83540a06-916d-49be-8c87-4115d57ce81c-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Plateforme 10 est inaugurée avec le Musée des Beaux-Arts et son exposition “Atlas. Cartographie du don“. Sur 3’200m2, trois étages et 14 salles, ce sont près de 400 oeuvres qui sont exposées, provenant en grande partie directement de la collection appartenant au MCBA.",
+            "en": "Plateforme 10 is inaugurated with the Museum of Fine Arts and its exhibition “Atlas. A Cartography of Donations”. Across 3,200 square metres, three levels and 14 rooms, close to 400 works are displayed, largely from the MCBA’s own collection.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26113,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10"
+            },
+            "cloudinary_id": "8bb32f71b7a85d58",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 533,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"533\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "8bb32f71b7a85d58.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/my-lausanne-plateforme-10-mcba-2-e1570441041515-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "A la place des traditionnelles expositions chronologiques, le MCBA de Lausanne, a décidé d’articuler “Atlas. Cartographie du don” autour de 11 thèmes. Pour chacun des thèmes, des oeuvres contemporaines côtoient des classiques. On peut par exemple retrouver dans une même pièce des tableaux qui font face à des installations, des sculptures ou bien des vidéos. Une confrontation audacieuse et surprenante entre oeuvres d’art anciennes et modernes. Dans les différents thèmes qui forment l’exposition, on retrouve par exemple la douleur, mappemondes, musique ou encore flux.",
+            "en": "Instead of the traditional chronological exhibition, the Lausanne MCBA decided to structure “Atlas. A Cartography of Donations” around ten themes. For each theme, contemporary works flirt with classical ones, so that you can see in the same room paintings placed opposite installations, sculptures or videos. It’s an audacious and surprising confrontation of ancient and modern works of art. Among the various themes that make up the exhibition, there is pain, world map, music and flux, to name a few.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 26398,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "0aaecf88fa36be72",
+              "mime_type": "image/jpeg",
+              "copyright": "© a987c6b6-8768-41cc-b09d-fc3bd39bf677",
+              "metadata": {
+                "width": 683,
+                "height": 768,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"683\" height=\"768\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "75e0fa393a72f206.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/a987c6b6-8768-41cc-b09d-fc3bd39bf677.jpg"
+              }
+            },
+            {
+              "id": 26432,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "20b4ea9d084ad105",
+              "mime_type": "image/jpeg",
+              "copyright": "© fd17966c-b7f9-4177-b6f3-48f94017c392",
+              "metadata": {
+                "width": 614,
+                "height": 768,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"614\" height=\"768\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f380a214c6fac2c3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/fd17966c-b7f9-4177-b6f3-48f94017c392.jpg"
+              }
+            },
+            {
+              "id": 26463,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "12f8ce1d5ff3f440",
+              "mime_type": "image/jpeg",
+              "copyright": "© 47037640-9f67-4d40-a1c4-a3c603d10e4f",
+              "metadata": {
+                "width": 614,
+                "height": 768,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"614\" height=\"768\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4f8d2bee00ff91cc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/47037640-9f67-4d40-a1c4-a3c603d10e4f.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Cet accrochage dynamique rend vraiment l’exposition intéressante. On ne se lasse pas ! On a hâte de voir ce que le prochain thème, la prochaine pièce, nous réserve !",
+            "en": "This dynamic hanging really makes the exhibition interesting. We just don’t tire of it! We’re eager to see what the next theme, the next room has in store!",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Du côté des oeuvres en elles-mêmes, l’exposition fait autant la part belle aux artistes internationaux (Zao Wou Ki, Soulages, Kiefer, Dubuffet, Balthus…) qu’aux artistes du cru (Calame, Vallotton, Alice Bailly, Maya Rochat…). Un beau mélange qui montre bien l’importance et la diversité de la collection du MCBA.",
+            "en": "As for the works themselves, the exhibition embraces just as many international artists (Zao Wou Ki, Soulages, Kiefer, Dubuffet, Balthus…) as local ones (Calame, Vallotton, Alice Bailly, Maya Rochat…). A noble mix that highlights the magnitude and diversity of the MCBA’s collection.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 26483,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "12ed0fc681a4aeff",
+              "mime_type": "image/jpeg",
+              "copyright": "© edfacedb-e668-4a17-90f6-d267a126a451-e1570439972433",
+              "metadata": {
+                "width": 768,
+                "height": 763,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"763\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "25d42c50cb4909c1.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/edfacedb-e668-4a17-90f6-d267a126a451-e1570439972433.jpg"
+              }
+            },
+            {
+              "id": 26497,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "2b0df3a918b21075",
+              "mime_type": "image/jpeg",
+              "copyright": "© my-lausanne-plateforme-10-mcba-soulages-e1570438759277",
+              "metadata": {
+                "width": 768,
+                "height": 512,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"512\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "89afe66dc5f6beb3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/my-lausanne-plateforme-10-mcba-soulages-e1570438759277.jpg"
+              }
+            },
+            {
+              "id": 26511,
+              "name": "Plateforme 10",
+              "public_name": {
+                "fr": "Plateforme 10"
+              },
+              "cloudinary_id": "b4b83c54e67cbe74",
+              "mime_type": "image/jpeg",
+              "copyright": "© my-lausanne-plateforme-10-mcba-maya-rochat-e1570437647320",
+              "metadata": {
+                "width": 768,
+                "height": 512,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"512\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "35a7c88a06467cb6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/my-lausanne-plateforme-10-mcba-maya-rochat-e1570437647320.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ce melting pot artistique rend l’exposition attrayante pour tous. Il y aura de toute façon une oeuvre qui vous parlera et qui vous touchera particulièrement. De notre côté, gros coup de coeur pour l’oeuvre d’Alice Bailly et de Vallotton et la librairie qui regorgent de magnifiques ouvrages et d’objets souvenirs pour tous. Et pour vous ?",
+            "en": "This artistic melting pot makes the exhibition attractive to all. You’re bound to find a work that speaks to you and moves you particularly. As for us, we fell in love for the works of Alice Bailly and Vallotton, and the bookshop, packed with beautiful books. What do you particularly like?",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26180,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10"
+            },
+            "cloudinary_id": "9e37a580aa7d8f16",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 533,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"533\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "9e37a580aa7d8f16.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/my-lausanne-plateforme-10-mcba-vallotton-e1570437392915.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>2020 et ensuite ?</strong>",
+            "en": "<strong>2020, and what next?</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "De prochaines expositions sont d’ores et déjà agendées au MCBA. En février, on retrouvera <strong>“À fleur de peau”</strong>, une exposition se concentrant sur les artistes viennois du début du XXème siècle (<em>Vienne 1900, de Klimt à Schiele et Kokoschka, du 14.02.20 au 24.05.20).</em>",
+            "en": "The upcoming exhibitions are already planned at the MCBA. In February, we can visit <strong>“Under the skin”</strong>, an exhibition that focuses on Viennese artists from the dawn of the twentieth century (<em>14.02.20  – 24.05.20: Vienna 1900, from Klimt to Schiele and Kokoschka).</em>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "L’ouverture du MCBA de Lausanne et son exposition “Atlas, cartographique du don” ne sont que le début d’une belle aventure pour Plateforme 10. En effet, courant 2021, ce sont les Musées de l’Elysée et du MUDAC qui rejoindront à leur tour le pôle muséal.",
+            "en": "The opening of the Lausanne MCBA and its exhibition “Atlas. A Cartography of Donations” are but the beginning of a beautiful adventure for Plateforme 10, as the Musée de l’Elysée and the MUDAC will join the museum hub in 2021.",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26247,
+            "name": "Plateforme 10",
+            "public_name": {
+              "fr": "Plateforme 10"
+            },
+            "cloudinary_id": "b007f4c641f12296",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 501,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"501\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "b007f4c641f12296.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/f32467fb-8098-4d93-83a4-03d2aacf1039.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>Infos pratiques</strong>",
+            "en": "<strong>Practical information</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h4",
+          "value": {
+            "fr": "<strong>Tarifs:</strong>",
+            "en": "<strong>Prices:</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "L’entrée à l’exposition “Atlas. Cartographie du don” est entièrement gratuite. Il est cependant nécessaire d’être en possession d’un billet d’entrée (vous pouvez vous le procurer sur place ou en ligne <a href=\"https://www.mcba.ch/billetterie\">https://www.mcba.ch/billetterie</a>).",
+            "en": "Entrance to the exhibition “Atlas. A Cartography of Donations” is completely free. However, a ticket is required before entering (you can get it either at the museum or online at <a href=\"https://www.mcba.ch/en/ticketing/\">https://www.mcba.ch/en/ticketing/</a>).",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h4",
+          "value": {
+            "fr": "<strong>Horaires:</strong>",
+            "en": "<strong>Opening hours:</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Lundi: fermé",
+            "en": "Monday: closed",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Mardi–dimanche: 10h–18h",
+            "en": "Tuesday–Sunday: 10 am–6 pm",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Jeudi: 10h–20h",
+            "en": "Thursday: 10 am–8 pm",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h4",
+          "value": {
+            "fr": "<strong>Contact</strong><strong><br>\n</strong>",
+            "en": "<strong>Contact</strong><strong><br>\n</strong>",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "PLATEFORME 10<br>\n<a href=\"https://www.mcba.ch/\">Musée cantonal des Beaux-Arts </a><br>\nPlace de la Gare 16<br>\n1003 Lausanne",
+            "en": "PLATEFORME 10<br>\n<a href=\"https://www.mcba.ch/\">Musée cantonal des Beaux-Arts </a><br>\nPlace de la Gare 16<br>\n1003 Lausanne",
+            "de": "",
+            "it": "",
+            "es": ""
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "fysPfH4xGbZe5yaip3CPPFWp7Zexm8kQFpO56BCn",
+          "copyright": "© Plateforme 10 visite",
+          "public_name": {
+            "fr": "Plateforme 10 visite"
+          }
+        }
+      ],
+      "published_at": "1570572000",
+      "seo": {
+        "description": {
+          "fr": "Plateforme 10, c’est le nouveau quartier des arts situé juste à côté de la gare de Lausanne.",
+          "en": "Plateforme 10 is the new arts district located right next to the Lausanne train station."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "plateforme-10",
+          "en": "plateforme-10"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-architecture",
+          "public_name": {
+            "fr": "Architecture",
+            "en": "Architecture",
+            "de": "Architektur"
+          }
+        },
+        {
+          "name": "lt-design",
+          "public_name": {
+            "fr": "Design",
+            "en": "Design",
+            "de": "Gestaltung"
+          }
+        }
+      ]
+    }
+  }
+}

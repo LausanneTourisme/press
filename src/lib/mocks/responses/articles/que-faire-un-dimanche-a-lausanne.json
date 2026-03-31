@@ -1,0 +1,481 @@
+{
+  "data": {
+    "item": {
+      "id": "298",
+      "languages": ["fr", "de", "en"],
+      "name": {
+        "fr": "Que faire un dimanche à Lausanne ?",
+        "de": "Was kann man sonntags in Lausanne unternehmen?",
+        "en": "A Sunday in Lausanne"
+      },
+      "lead": {
+        "fr": "Pour les habitants comme pour les touristes, le dimanche à Lausanne peut être une épreuve difficile, entre envie de traîner au lit parce qu’il fait froid et volonté de quand même faire quelque chose de la journée. Rassurez-vous, MyLausanne a quelques idées pour vous.",
+        "de": "Sonntags steht man oft vor der Qual der Wahl: im Bett bleiben oder doch den Tag nutzen, um etwas zu unternehmen?! MyLausanne hat einige Ideen für Sie parat.",
+        "en": "For Lausanne inhabitants as for tourists, Sunday in Lausanne can be a difficult ordeal, between the desire to stay in bed because it’s cold and the wish to have some kind of activity during the day. Rest assured, MyLausanne has a few ideas to share with you."
+      },
+      "summary": {
+        "fr": "Pour les habitants comme pour les touristes, le dimanche à Lausanne peut être une épreuve difficile, entre envie de traîner au lit parce qu’il fait froid et volonté de quand même faire quelque chose de la journée. Rassurez-vous, The Lausanner a quelques idées pour vous.",
+        "de": "Der Sonntag stellt Einheimische und Touristen gleichermassen vor eine schwierige Wahl: Soll ich bei der Kälte draussen lieber im Bett bleiben oder doch den Tag nutzen, um etwas zu unternehmen?! Zum Glück hat The Lausanner einige Ideen für Sie parat.",
+        "en": "For Lausanne inhabitants as for tourists, Sunday in Lausanne can be a difficult ordeal, between the desire to stay in bed because it’s cold and the wish to have some kind of activity during the day. Rest assured, The Lausanner has a few ideas to share with you."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26397,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "81e42cd6e78e440d",
+            "mime_type": "image/jpeg",
+            "copyright": "© Lausanne, 21 octobre  2017 Ouverture du Vivarium Aquarium Aquatis,   sedrik nemeth",
+            "metadata": {
+              "width": 1920,
+              "height": 1278,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"1278\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "81e42cd6e78e440d.jpeg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/AQUATIS-Evolution-Tunnel.jpeg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "11h-12h30 : Bruncher <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-java/\">au Java</a>",
+            "de": "11–12:30 Uhr: Brunch <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-java/\">im Java</a>",
+            "en": "11-12.30 am: Brunching at <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-java/\">the Java</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Invention incroyable que ce repas “remonte-moral”. C’est vrai, qu’y a-t-il de plus jouissif qu’un petit-déjeuner où l’on peut manger du saumon et juste après une tartine de confiture sans se sentir jugé ? Pour en profiter un maximum, il est essentiel de ne pas sortir trop tôt et de profiter de sa grasse-matinée.",
+            "de": "Unglaublich, was leckeres Essen doch alles bewirken kann! Was könnte es Grossartigeres geben, als im Anschluss an ein Stück Lachs nach einem Marmeladenbrötchen zu greifen, ohne sich schuldig fühlen zu müssen? Und das Beste daran: Um optimal von dieser Gaumenfreude zu profitieren, braucht man gar nicht früh aufstehen, sondern darf gern so lange man will im Bett liegen bleiben.",
+            "en": "What an incredible invention this “morale-boosting” meal is! Indeed, it’s just pure pleasure to enjoy a breakfast during which you can eat salmon, immediately followed by bread and jam without feeling judged. To get the most out of it, it’s essential to enjoy a good sleep in and not go out too soon."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Direction le Java pour une carte des brunchs aussi variée que bonne : salé, sucré, salades, tartares… Vous aurez de quoi faire. La déco cosy et détendue permet de se sentir comme à la maison, pour une transition en douceur entre le lit et la suite du dimanche.",
+            "de": "Das Java erwartet Sie mit einer Brunch-Karte, die ebenso vielfältig wie gut ist: ob herzhaft oder süss, ob Salat oder köstliches Tartar … Sie haben die Qual der Wahl! Die gemütliche und entspannte Deko sorgt dafür, dass man sich hier ganz wie zu Hause fühlt – der perfekte Übergang zwischen einem Morgen im Bett und den folgenden Sonntagsunternehmungen.",
+            "en": "Let’s head to the Java for a brunch menu that’s as varied as it is delicious: savoury, sweet, salads, tartars… you’ll find much to taste. The cosy and relaxed décor lets you feel at home for a gentle transition between your bed and the rest of your Sunday."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/les-brunchs-du-weekend/\">D’autres idées de brunches par ici !</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/brunch-am-wochenende/\">Für weitere Brunchideen geht’s hier lang!</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/weekend-brunches/\">More brunches ideas here!</a>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25941,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "23343f3e7a6e1c7a",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 444,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"444\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "23343f3e7a6e1c7a.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/java1-e1572345818212.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26027,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "d2bad6c0eeccffed",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 533,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"533\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d2bad6c0eeccffed.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/java-e1572345853939.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>13h-15h : Se plonger dans les eaux douces </strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/aquatis-aquarium-vivarium-lausanne/\"><strong>d’Aquatis</strong></a>",
+            "de": "<strong>13–15 Uhr: Ein Sprung ins klare Wasser des </strong><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/aquatis-aquarium-vivarium-lausanne/\"><strong>Aquatis</strong></a>",
+            "en": "<strong>1-3 pm: Diving into </strong><a href=\"https://www.lausanne-tourisme.ch/en/explore/aquatis-aquarium-vivarium-lausanne/\"><strong>Aquatis’s</strong></a><strong> fresh waters</strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Bon, on ne parle pas ici d’une session « bains thermaux », mais bien du plus grand aquarium d’eau douce d’Europe. Et il est à Lausanne, TADAAA (confettis, paillettes et chanson de fête) ! Tout au long de l’exposition, vous allez remonter le temps puis le cours du Rhône depuis le Léman à la rencontre d’espèces venues des 5 continents.",
+            "de": "Die Rede ist hier nicht von einem Thermalbad-Besuch, sondern vom sage und schreibe grössten Süsswasseraquarium Europas! Denn das befindet sich in Lausanne, TADAAA (Konfetti, Glitzer und Partymusik)! Die Ausstellung gibt Ihnen die Gelegenheit, in der Zeit zu reisen und dem Lauf der Rhône vom Genfersee aus zu folgen, um verschiedenste Arten aus fünf Kontinenten zu treffen.",
+            "en": "Well, we don’t actually mean dipping in a thermal bath, but visiting the largest freshwater aquarium in Europe. It’s in Lausanne, TADAAA (confetti, glitter and festive song)! Throughout the exhibition, you’ll go back in time, then follow the course of the Rhone from Lake Geneva to see species from the five continents."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Entre des bassins spectaculaires (8m40 de haut et 1 million de litres d’eau pour le plus grand !), et de grands terrariums vous allez voir des poissons semblant venus du temps des dinosaures, mais aussi des reptiles impressionnants. Même si le varan de komodo est peut-être en train de faire la sieste, vous, vous n’allez pas regretter de vous être levés. C’est passionnant, très immersif et pédagogique à la fois : en gros, Aquatis est là pour que votre dimanche ne ressemble pas à la journée d’un poisson rouge dans un bocal.",
+            "de": "In den spektakulären Becken (das grösste ist 8,40 Meter hoch und fasst 1 Million Liter Wasser!) und riesigen Terrarien erwarten Sie Fische, die aus der Zeit der Dinosaurier zu stammen scheinen, sowie beeindruckende Reptilien. Auch wenn der Komodowaran vielleicht gerade ein Nickerchen macht, werden Sie Ihren Besuch keinesfalls bereuen. Das Aquatis begeistert und lädt zu immersiven und informativen Entdeckungen ein: Kurz gesagt sorgt es dafür, dass Ihr Sonntag um Einiges spannender wird als das, was der Goldfisch in seinem Glas erlebt!",
+            "en": "Between spectacular aquariums (8.40 m high and 1 million litres of water for the largest!) and imposing terrariums, you will see fish that seem to belong to the age of dinosaurs, as well as impressive reptiles. Even if the Komodo dragon is snoozing, you won’t regret getting out of bed. It’s at the same time fascinating, highly immersive and educational; to put it in a few words: Aquatis is there so that your Sunday doesn’t feel as exciting as the day of a goldfish in a bowl."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 27182,
+            "name": "Lausanne en famille - Aquarium",
+            "public_name": {
+              "fr": "Visite d'Aquatis par des enfants",
+              "en": "Visite d'Aquatis par des enfants",
+              "de": "Visite d'Aquatis par des enfants",
+              "es": null
+            },
+            "cloudinary_id": "CQqBPqVasxwnoZmqfhHclTLpEj76eU6UZLP0JwkN",
+            "mime_type": "image/jpeg",
+            "copyright": "© Nuno Acácio",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": "Enfant; Culture; Lausanne; Visite",
+              "description": null,
+              "file_name_from_url": "d7e416ca42daaa62.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Aquatis-Aquarium-Vivarium-enfants.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26176,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "bbd5001478802ab1",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1600,
+              "height": 1066,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1066\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "bbd5001478802ab1.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Aquatis-Aquarium-Vivarium-1.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>15h30-16h30 : Faire une pause à <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/limpression-cafe/\">L’impression Café</a></strong>",
+            "de": "<strong>16:30 Uhr: Eine Pause im </strong><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/limpression-cafe/\"><strong>L’impression Café</strong></a>",
+            "en": "<strong>3.30-4.30 pm: Take a break at the <a href=\"https://www.lausanne-tourisme.ch/en/explore/limpression-cafe/\">Impression Café</a></strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "On file à L’impression Café, à 2 minutes de la gare, pour se requinquer. On adore le fait que les boissons de L’impression Café soient 100% suisses ; le café est par exemple torréfié à Bienne ! En plus de respecter l’environnement, l’endroit est stylé, dans une décor scandinave comme on aime. Cerise sur le gâteau : l’accueil chaleureux saura éclairer votre dimanche après-midi ! D’ailleurs, si le soleil pointe le bout de son nez en ce dimanche, une jolie terrasse vous attend pour déguster votre café.<br>\n<em>Avenue Louis-Ruchonnet 15, 1003 Lausanne</em>",
+            "de": "Auf ins zwei Minuten vom Bahnhof entfernte L’impression Café, um neue Energie zu tanken. Wir finden es fantastisch, dass alle hier servierten Getränke zu 100 % Schweizer Produkte sind; der Kaffee wird zum Beispiel in Biel geröstet! Das Lokal respektiert nicht nur die Umwelt, sondern präsentiert sich zudem stilvoll in einem skandinavischen Dekor, das wir besonders mögen. Das Tüpfelchen auf dem i: der herzliche Empfang, der Ihren Sonntagnachmittag auf jeden Fall versüsst! Und falls die Sonne doch noch einmal ihre Nasenspitze zeigt, können Sie Ihren Kaffee auch auf der schönen Terrasse geniessen.<br>\n<em>Avenue Louis-Ruchonnet 15, 1003 Lausanne</em>",
+            "en": "We make a beeline for L’impression Café, two minutes from the train station, to reboot. We love the fact that the drinks at L’impression Café are 100% Swiss: the coffee, for example, is roasted in Bienne! As well as respecting the environment, the café has a stylish Scandinavian look that we adore. The icing on the cake: the warm welcome will light up your Sunday afternoon! Furthermore, if the sun deigns to make an appearance this Sunday, you can enjoy your coffee on a pretty terrace.<br>\n<em>Avenue Louis-Ruchonnet 15, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26243,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "1aa89b4bb3325f54",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1440,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1440\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "1aa89b4bb3325f54.jpeg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Limpression-cafe-scaled.jpeg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>16h35-18h : Se cultiver en découvrant <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">Plateforme 10</a></strong>",
+            "de": "<strong>16:35–18 Uhr: Kulturelle Entdeckungen in </strong><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plateforme-10/\"><strong>Plateforme 10</strong></a>",
+            "en": "<strong>4.35-6 pm: Cultivating ourselves by discovering <a href=\"https://www.lausanne-tourisme.ch/en/explore/plateforme-10/\">Plateforme 10</a></strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Après une petite pause bien méritée à L’impression Café, on en profite pour aller découvrir Plateforme 10, le nouveau quartier des Beaux-Arts. L’avantage, c’est que c’est juste à côté ! Eh oui, c’est en raison de sa proximité avec la gare que le terme Plateforme a été choisi ; le numéro 10 vient quant à lui compléter le nombre de quais de la gare de Lausanne. Pas d’excuse donc, en 5 minutes à pied, on passe du paradis du café à celui des musées ! On en profite pour visiter l’exposition actuelle du Musée Cantonal des Beaux-Arts, qui habite les lieux depuis le 5 octobre 2019.",
+            "de": "Nach einer wohlverdienten Pause im L’impression Café nutzen wir die Gelegenheit, das neue Viertel der schönen Künste namens «Plateforme 10» zu entdecken. Der Vorteil ist, dass es gleich nebenan liegt! Klar, denn der Begriff «Plattform» wurde aufgrund seiner Nähe zum Bahnhof gewählt; die Zahl 10 wiederum verweist auf die Anzahl der Bahnsteige in Lausanne. Sie haben also keine Ausrede, denn in fünf Minuten zu Fuss gelangen Sie aus einem paradiesischen Café ins Paradies der Museen! Nutzen Sie die Gelegenheit, die aktuelle Ausstellung des Kantonalen Museums der schönen Künste zu besuchen, das sich seit dem 5. Oktober 2019 in den Räumlichkeiten befindet.",
+            "en": "After a well-earned break at L’impression Café, we head off to discover Plateforme 10, a new arts district. It has the advantage of being just next door! In fact, it is due to its proximity to the train station that the word, ‘Plateforme’ was chosen, while the number (10) rounds off the number of platforms at Lausanne train station. There’s no excuse: take a five-minute walk to move from a great café to some great museums! We make the most of our visit to see the current exhibition at the fine arts museum, Musée Cantonal des Beaux-Arts, which opened its doors on 5 October 2019."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26237,
+            "name": "Les phrases les plus entendues à Lausanne",
+            "public_name": {
+              "fr": "Les phrases les plus entendues à Lausanne",
+              "es": null
+            },
+            "cloudinary_id": "7adfa48dd230ca74",
+            "mime_type": "image/jpeg",
+            "copyright": "© Lorenz Richard",
+            "metadata": {
+              "width": 1600,
+              "height": 1067,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1067\"",
+              "tags": "Culture; Musée; Lausanne; Design",
+              "description": null
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>18h30-21h : Manger une fondue </strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-chalet-suisse/\"><strong>au Chalet Suisse</strong></a>",
+            "de": "<strong>18:30–21 Uhr: Eine leckere Fondue im </strong><a href=\"http://www.chaletsuisse.ch/\"><strong>Chalet Suisse</strong></a>",
+            "en": "<strong>6.30-9 pm: Eating a fondue at the </strong><a href=\"https://www.lausanne-tourisme.ch/en/explore/le-chalet-suisse/\"><strong>Chalet Suisse</strong></a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Oui, l’hiver c’est la saison du fromage chaud. L’angoisse de la silhouette maillot de bain est derrière (il faut bien que l’hiver ait des avantages) et personne ne la verra cette fondue gourmande, sous votre grosse veste. Allez, on prend de la hauteur jusqu’à Sauvabelin et on file le lundi qui arrive à grands pas avec un caquelon, du pain, et de la bonne compagnie.",
+            "de": "Ja, der Winter ist genau die richtige Jahreszeit für heissen Käse. Die Zeit der Bikinifigur liegt hinter uns (der Winter muss schliesslich auch seine Vorteile haben!), und unter Ihrer grossen Jacke wird Ihnen niemand dieses Gourmet-Fondue ansehen. Gehen Sie also rauf nach Sauvabelin und rücken Sie Ihre Gedanken an den nahenden Montag mit einem Fonduetopf, etwas Brot und guter Gesellschaft noch einmal in weite Ferne.",
+            "en": "Yes, winter is the season of melted cheese. Any anxiety about a swimsuit silhouette is far away (winter has got to have some advantages) and no one will see the effects of that gorgeous fondue under your thick coat. Let’s take some altitude up to Sauvabelin and head towards the fast-approaching Monday with a fondue pot, bread and good company."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": " ",
+            "de": "<strong><br>\nIdeen weiterer Restaurants, die sonntags geöffnet haben:</strong>",
+            "en": " "
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<strong>D’autres idées de restaurants ouverts le dimanche :</strong>",
+            "de": "In der Stadt:",
+            "en": "<strong>Other ideas for restaurants open on Sundays:</strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "En ville :",
+            "de": "– <a href=\"https://www.leveche.ch/\">Le Café de l’Evêché</a>, <em>Rue Louis-Auguste Curtat 4</em>",
+            "en": "In town:"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-de-leveche/\">Le Café de l’Evêché</a>, <em>Rue Louis-Auguste Curtat 4</em>",
+            "de": "– <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/brasserie-de-montbenon/\">La Brasserie de Montbenon</a>, <em>Allée Ernest-Ansermet 3</em>",
+            "en": "– <a href=\"https://www.leveche.ch/\">Le Café de l’Evêché</a>, <em>Rue Louis-Auguste Curtat 4</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-brasserie-de-montbenon/\">La Brasserie de Montbenon</a>, <em>Allée Ernest-Ansermet 3</em>",
+            "de": "– <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lauberge-de-beaulieu/\">L’Auberge de Beaulieu</a>, <em>Avenue des Bergières 15</em>",
+            "en": "– <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-brasserie-de-montbenon/\">La Brasserie de Montbenon</a>, <em>Allée Ernest-Ansermet 3</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lauberge-de-beaulieu/\">L’Auberge de Beaulieu</a>, <em>Avenue des Bergières 15</em>",
+            "de": "– <a href=\"https://www.loxton.ch/\">Le Loxton</a>, <em>Place de la Gare 9</em>",
+            "en": "– <a href=\"https://www.lausanne-tourisme.ch/en/explore/lauberge-de-beaulieu/\">L’Auberge de Beaulieu</a>, <em>Avenue des Bergières 15</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/loxton/\">Le Loxton</a>, <em>Place de la Gare 9</em>",
+            "de": "– <a href=\"https://www.tartaresandco.ch/reservation/lausanne-flon/\">Tartare and co</a>, <em>Rue de Genève 7<br>\n</em>",
+            "en": "– <a href=\"https://www.loxton.ch/\">Le Loxton</a>, <em>Place de la Gare 9</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tartares-and-co/\">Tartare and co</a>, <em>Rue de Genève 7<br>\n</em>",
+            "de": "Am See:",
+            "en": "– <a href=\"https://www.tartaresandco.ch/reservation/lausanne-flon/\">Tartare and co</a>, <em>Rue de Genève 7<br>\n</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Au bord du lac :",
+            "de": "– <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">Le Lacustre</a>, <em>Quai Jean-Pascal Delamuraz 1</em>",
+            "en": "By the lake:"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lacustre/\">Le Lacustre</a>, <em>Quai Jean-Pascal Delamuraz 1</em>",
+            "de": "– <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-du-vieil-ouchy/\">Le Vieil Ouchy</a>, <em>Place du Port 3</em>",
+            "en": "– <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-lacustre/\">Le Lacustre</a>, <em>Quai Jean-Pascal Delamuraz 1</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-du-vieil-ouchy/\">Le Vieil Ouchy</a>, <em>Place du Port 3</em>",
+            "de": "– <a href=\"https://www.boccalino.ch/\">Le Boccalino</a>, <em>Avenue d’Ouchy 76</em>",
+            "en": "– <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-du-vieil-ouchy/\">Le Vieil Ouchy</a>, <em>Place du Port 3</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "– <a href=\"https://www.ouchycrep.ch/\">La Crêperie d’Ouchy</a>, <em>Place du Port 7</em>",
+            "de": "– <a href=\"https://www.ouchycrep.ch/\">La Crêperie d’Ouchy</a>, <em>Place du Port 7</em>",
+            "en": "– <a href=\"https://www.boccalino.ch/\">Le Boccalino</a>, <em>Avenue d’Ouchy 76</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26355,
+            "name": "Que faire un dimanche à Lausanne ?",
+            "public_name": {
+              "fr": "Que faire un dimanche à Lausanne ?"
+            },
+            "cloudinary_id": "8c8dd6f3f1e08937",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 800,
+              "height": 1198,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"800\" height=\"1198\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "8c8dd6f3f1e08937.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/fondue-min-e1572346128862.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Reste encore l’étape du coucher et la nuit de sommeil vers le lundi matin. Oui, ce week-end était beau, oui il est fini. Mais que voulez-vous, il faut bien qu’une nouvelle semaine commence, pour qu’il y ait un nouveau week-end.",
+            "de": "Anschliessend erwartet Sie noch der wohlverdiente Nachtschlaf bis zum Montagmorgen. Ja, das war ein schönes Wochenende. Und ja, es ist vorbei. Aber schliesslich muss erstmal eine neue Woche beginnen, damit es bald wieder ein neues Wochenende gibt!",
+            "en": "And now there’s only bedtime and a night’s sleep before Monday morning. Yes, that weekend was good and yes, it’s over. But there you go; a new week must begin for there to be a new weekend."
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "23343f3e7a6e1c7a",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Que faire un dimanche à Lausanne ?"
+          }
+        }
+      ],
+      "published_at": "1601792961",
+      "seo": {
+        "description": {
+          "fr": "Pour les habitants comme pour les touristes, le dimanche à Lausanne peut être une épreuve difficile, entre envie de traîner au lit parce qu’il fait froid et volonté de quand même faire quelque chose de la journée. Rassurez-vous, MyLausanne a quelques idées pour vous.",
+          "de": "Sonntags steht man oft vor der Qual der Wahl: im Bett bleiben oder doch den Tag nutzen, um etwas zu unternehmen?! MyLausanne hat einige Ideen für Sie parat.",
+          "en": "For Lausanne inhabitants as for tourists, Sunday in Lausanne can be a difficult ordeal, between the desire to stay in bed because it’s cold and the wish to have some kind of activity during the day. Rest assured, MyLausanne has a few ideas to share with you."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "que-faire-un-dimanche-a-lausanne",
+          "de": "was-kann-man-sonntags-in-lausanne-unternehmen",
+          "en": "a-sunday-in-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-famille",
+          "public_name": {
+            "fr": "Famille",
+            "en": "Family",
+            "de": "Familie"
+          }
+        }
+      ]
+    }
+  }
+}

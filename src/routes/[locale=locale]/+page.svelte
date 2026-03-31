@@ -20,7 +20,6 @@
   import { onMount } from 'svelte';
 
   const locale = $derived(page.params.locale as Locale);
-  let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
   let videoUrl = $derived.by(() => `/pages/home/welcome_card_${locale}.mp4`);
@@ -55,10 +54,6 @@
   const updateSize = () => {
     isMobile = window.innerWidth < maxMobileWidth;
   };
-  // Listen for changes
-  const updateDarkMode = () => {
-    isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  };
 
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
@@ -71,9 +66,8 @@
 
   onMount(() => {
     updateSize();
-    updateDarkMode();
 
-    afterNavigate(({ to, from, type }) => {
+    afterNavigate(({ type }) => {
       // If user used back/forward, we keep themes state
       if (type === 'popstate') {
         displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
@@ -85,7 +79,6 @@
     /*
      *  Event listeners
      */
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateDarkMode);
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);
 
@@ -93,9 +86,6 @@
     return () => {
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', updateDarkMode);
     };
   });
 </script>
@@ -111,10 +101,10 @@
   -->
 <Container
   fullscreen={true}
-  class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
+  class="relative min-h-125 items-end justify-start overflow-hidden md:flex md:items-center"
 >
   <div
-    class="p-6 text-left shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)] md:w-1/2 md:p-16 lg:w-1/2"
+    class="p-6 text-left shadow-gray-950 [text-shadow:0_0_1px_var(--tw-shadow-color)] md:w-1/2 md:p-16 lg:w-1/2"
   >
     <Heading tag="h1" class="w-full text-white">
       <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]">
@@ -312,7 +302,7 @@
         {@html $t('page.pressRelease.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Pressrelease)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Pressreleases)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>
@@ -351,7 +341,7 @@
         {@html $t('page.mediaCoverage.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Coverage)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Coverages)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>

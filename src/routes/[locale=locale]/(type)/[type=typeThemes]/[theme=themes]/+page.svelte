@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, Themes } from '$enums';
   import Button from '$lib/components/Button.svelte';
@@ -19,7 +18,6 @@
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
-  import { generateCloudinaryUrl } from '$lib/helpers/image';
 
   const locale = $derived(page.params.locale as Locale);
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
@@ -97,7 +95,7 @@
   <Container fullscreen={true} class="bg-gray-100 md:bg-gray-50">
     <Container width="medium">
       <Swiper>
-        {#each articles as article}
+        {#each articles as article (article.id)}
           {#if article.seo}
             {@const media = article.medias?.find(() => true)}
             {@const publishedAt = DateTime.fromSeconds(
@@ -218,7 +216,7 @@
     </Heading>
   </Container>
   <Swiper>
-    {#each Object.values(Themes) as theme}
+    {#each Object.values(Themes) as theme (theme)}
       {@const selectedTheme = ThemeDetails[ThemeKeys[theme]]}
       <Slide class="xs:w-min! w-max">
         <Clickable

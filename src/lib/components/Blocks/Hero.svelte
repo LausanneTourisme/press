@@ -1,7 +1,7 @@
 <script lang="ts">
   import { maxMobileWidth } from '$lib/helpers';
   import type { Hero } from '$types/releaseContents';
-  import { onMount, type Snippet } from 'svelte';
+  import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Image from './Image.svelte';
   import { type Locale } from '$lib/translations';

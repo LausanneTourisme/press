@@ -1,0 +1,291 @@
+{
+  "data": {
+    "item": {
+      "id": "273",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Nos coups de coeur deuxième main et vintage à Lausanne",
+        "en": "Our favourite second-hand and vintage boutiques in Lausanne",
+        "de": "Unsere Lieblingsboutiquen für Secondhand- und Vintage-Artikel"
+      },
+      "lead": {
+        "fr": "Donner une nouvelle vie à des vêtements et accessoires, c’est non seulement une tendance, mais également un style de vie que nous avons adopté depuis des années et dont nous ne nous lasserons pas. En sus de dégoter des pièces originales et uniques, qui amènent de l’audace à nos garde-robes respectives sans pour autant nous ruiner, nous répondons à une préoccupation écologique de plus en plus forte. Nous sommes chanceux(ses) car Lausanne n’a rien à envier aux grandes capitales de la mode en matière de boutiques de seconde-main et vintage, la preuve avec ces quelques adresses que nous fréquentons couramment. En effet, pour ne pas laisser filer des pièces uniques et phares, rien de tel que la régularité. ",
+        "en": "To give new life to clothes and accessories is not only trendy, but also a lifestyle that we have embraced for a number of years and that we never tire of. In addition to unearthing original and unique items that add a touch of daring to our wardrobes without breaking the bank, we are addressing an ever more urgent ecological concern. We are lucky as Lausanne compares very well with the great fashion capitals when it comes to second-hand and vintage boutiques, as the following addresses where we often go will show. For sure, regularity is the key to catch unique and outstanding items.",
+        "de": "Kleidungsstücken und Accessoires ein neues Leben zu geben ist nicht nur ein Trend, sondern auch ein Lebensstil, den wir seit Jahren pflegen und nie satthaben werden. Wir suchen nach originellen und einzigartigen Stücken, die unserer Garderobe das gewisse Etwas verleihen, ohne unser Budget zu sprengen, und tragen dabei auch zu einem grösseren Umweltbewusstsein bei. Und wir haben Glück, denn Lausanne steht den führenden Modehauptstädten in Sachen Secondhand- und Vintage-Boutiquen in nichts nach. Der Beweis dafür sind unsere Lieblingsboutiquen, die wir regelmässig durchstöbern und gerne mit euch teilen. Um einzigartige und trendige Stücke zu ergattern, schaut ihr am besten regelmässig in den Boutiquen vorbei. "
+      },
+      "summary": {
+        "fr": "Donner une nouvelle vie à des vêtements et accessoires, c’est non seulement une tendance, mais également un style de vie que nous avons adopté depuis des années et dont nous ne nous lasserons pas. En sus de dégoter des pièces originales et uniques, qui amènent de l’audace à nos garde-robes respectives sans pour autant nous ruiner, nous répondons à une préoccupation écologique de plus en plus forte. Nous sommes chanceux(ses) car Lausanne n’a rien à envier aux grandes capitales de la mode en matière de boutiques de seconde-main et vintage, la preuve avec ces quelques adresses que nous fréquentons couramment. En effet, pour ne pas laisser filer des pièces uniques et phares, rien de tel que la régularité.",
+        "en": "To give new life to clothes and accessories is not only trendy, but also a lifestyle that we have embraced for a number of years and that we never tire of. In addition to unearthing original and unique items that add a touch of daring to our wardrobes without breaking the bank, we are addressing an ever more urgent ecological concern. We are lucky as Lausanne compares very well with the great fashion capitals when it comes to second-hand and vintage boutiques, as the following addresses where we often go will show. For sure, regularity is the key to catch unique and outstanding items.",
+        "de": "Kleidungsstücken und Accessoires ein neues Leben zu geben ist nicht nur ein Trend, sondern auch ein Lebensstil, den wir seit Jahren pflegen und nie satthaben werden. Wir suchen nach originellen und einzigartigen Stücken, die unserer Garderobe das gewisse Etwas verleihen, ohne unser Budget zu sprengen, und tragen dabei auch zu einem grösseren Umweltbewusstsein bei. Und wir haben Glück, denn Lausanne steht den führenden Modehauptstädten in Sachen Secondhand- und Vintage-Boutiquen in nichts nach. Der Beweis dafür sind unsere Lieblingsboutiquen, die wir regelmässig durchstöbern und gerne mit euch teilen. Um einzigartige und trendige Stücke zu ergattern, schaut ihr am besten regelmässig in den Boutiquen vorbei."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 25949,
+            "name": "Nos coups de coeur deuxième main et vintage à Lausanne",
+            "public_name": {
+              "fr": "Nos coups de coeur deuxième main et vintage à Lausanne"
+            },
+            "cloudinary_id": "d8bdff46a4e69cfa",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 2340,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"2340\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d8bdff46a4e69cfa.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Sisters-Copie-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-dressing/\">Le Dressing</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-dressing/\">Le Dressing</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-dressing/\">Le Dressing</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Hommes, femmes, enfants</em>",
+            "en": "<em>Men, women, children</em>",
+            "de": "<em>Männer, Frauen, Kinder</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Dépôt-vente de luxe, on y trouve beaucoup d’articles de marques, mais aussi des créateurs moins connus. Les articles sont tous soigneusement sélectionnés par Sébastien, avec des arrivages très réguliers et des conseils personnalisés. Toute personne qui aime chiner et dégoter une belle pièce quelle que soit l’occasion, ne peut qu’y trouver son bonheur. Prix de certains articles assez élevés mais en cherchant bien on peut y dégoter des pépites à prix très abordables également. Une adresse à ne pas manquer en cas de passage sur Lausanne.",
+            "en": "A luxury consignment shop, it has many brand pieces, as well as some from lesser-known creators. All items are carefully selected by Sébastien, with very regular arrivals and personalised advice. Anyone who loves to rummage around to find beautiful pieces suiting any occasion is sure to find their heart’s desire. The price of some items is quite high, but by taking the time to search, you can also track down very affordable gems. An address not to be missed if you’re in Lausanne.",
+            "de": "Diese Boutique bietet Luxusartikel von vielen berühmten Marken, aber auch von weniger bekannten Designern an. Die Artikel der regelmässigen Eingänge werden von Sébastien sorgfältig verlesen und seine Beratung ist sehr persönlich. Wer gerne stöbert und ein besonderes Stück für welchen Anlass auch immer ergattern will, kann hier nur fündig werden. Einige Artikel sind ziemlich teuer, aber wenn ihr gut sucht, könnt ihr auch Trouvaillen zu erschwinglichen Preisen aufstöbern. Diese Adresse ist ein Muss bei eurem Besuch in Lausanne."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Av. des Alpes 3, 1006 Lausanne</em>",
+            "en": "<em>Av. des Alpes 3, 1006 Lausanne</em>",
+            "de": "<em>Av. des Alpes 3, 1006 Lausanne</em>"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26033,
+            "name": "Nos coups de coeur deuxième main et vintage à Lausanne",
+            "public_name": {
+              "fr": "Nos coups de coeur deuxième main et vintage à Lausanne"
+            },
+            "cloudinary_id": "aa020b80cd87b252",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 2560,
+              "height": 1765,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1765\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "aa020b80cd87b252.jpeg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/hctugdru2bdcrsflpiad.jpeg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/chabada-vintage/\">Chabada Vintage</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/chabada-vintage/\">Chabada Vintage</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/chabada-vintage/\">Chabada Vintage</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Femmes</em>",
+            "en": "<em>Women</em>",
+            "de": "<em>Frauen</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Magnifique sélection d’articles vintages colorés ou chics (95% des pièces ont plus de 20 ans) de très belle qualité (beaucoup de cousu main) à prix tout à fait corrects, avec en prime les conseils et histoires de Muriel, la gardienne des lieux, amoureuse de looks d’un autre temps.",
+            "en": "A superb selection of colourful or chic vintage items (95% of items are over 20 years old), of lovely quality (many hand sewn) at very decent prices, with as a bonus the advice and stories of Murielle, the guardian of the boutique, who loves looks of another age.",
+            "de": "In dieser Boutique findet ihr eine grossartige Auswahl an hochwertigen farbenfrohen und schicken Vintage-Artikeln (95 % sind über 20 Jahre alt und viele sind handgenäht) zu fairen Preisen, und obendrein kommt ihr in den Genuss der Beratung und der Geschichten von Muriel, der Geschäftsführerin mit einer Vorliebe für Looks aus einer anderen Zeit."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Rue Cheneau-de-Bourg 4, 1003 Lausanne</em>",
+            "en": "<em>Rue Cheneau-de-Bourg 4, 1003 Lausanne</em>",
+            "de": "<em>Rue Cheneau-de-Bourg 4, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CSHXwoqI8Sa/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/throwback-vintage/\">Throwback Vintage</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/throwback-vintage/\">Throwback Vintage</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/throwback-vintage/\">Throwback Vintage</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Hommes, femmes</em>",
+            "en": "<em>Men, women</em>",
+            "de": "<em>Männer, Frauen</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Friperie. Pièces vintage (années 1950 à 2000, beaucoup de 1990) incontournables (jeans et shorts Levi’s, chemises d’homme, sweats, polaires…) pour petits budgets, avec arrivages très réguliers. Les propriétaires parcourent le monde entier pour se fournir en pièces et proposer une sélection originale et pointue.",
+            "en": "Thrift shop. Items that are vintage (dating from the 1950s to 2000, many from the 1990s), unmissable (Levi’s jeans and shorts, men’s shirts, sweatshirts, fleeces, …) for small budgets, with very regular arrivals. The owners travel across the globe to source pieces and offer a selection both original and distinctive.",
+            "de": "Diese Secondhand-Boutique bietet Vintage-Stücke (1950 bis 2000, viele aus den 1990er-Jahren) an – absolute Highlights (Levi’s Jeans und Shorts, Herrenhemden, Sweater, Fleecejacken usw.) für den kleinen Geldbeutel und mit regelmässigen Eingängen. Die Besitzer reisen durch die ganze Welt, um Stücke aufzustöbern und eine originelle und besondere Auswahl anbieten zu können."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Avenue de Beaulieu 7</em>",
+            "en": "<em>Avenue de Beaulieu 7</em>",
+            "de": "<em>Avenue de Beaulieu 7</em>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CUFMK5dAujp/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/finest-vintage/\">Finest Vintage</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/finest-vintage/\">Finest Vintage</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/finest-vintage/\">Finest Vintage</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Hommes, femmes</em>",
+            "en": "<em>Men, women</em>",
+            "de": "<em>Männer, Frauen</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Nous avons rencontré Alberto dans sa première boutique Finest Vintage à Renens, qui a récemment fermé ses portes pour rejoindre le centre de Lausanne à la rue Caroline 5 dès le 4 novembre 2021. Ce professeur d’espagnol, passionné de puces depuis son plus jeune âge, a réalisé son rêve en ouvrant ce shop où nous dégottons de vraies pièces vintage de qualité qu’il a minutieusement chinées et sélectionnées. Chaque quête chez Finest Vintage se vit accompagné d’un fond sonore de vinyle adapté à tout moment de la journée ou à l’humeur du jour de son propriétaire. Bien plus qu’un moment à chiner, une véritable expérience qui nous propulse dans les années 1930 à 1970 selon la pièce que l’on revêtit.",
+            "en": "We met Alberto in his first Finest Vintage boutique in Renens, which recently closed to move to the centre of Lausanne at Rue Caroline 5 as from November 4, 2021. This Spanish teacher, a lover of flea markets since he was a young child, has made a dream come true by opening this shop where we find proper vintage, quality items that he has meticulously hunted for and selected. Each quest at Finest Vintage takes place on a vinyl musical background suited to the time of day or the owner’s mood. Much more than just a hunt for bargains, it’s a true experience that propels us into the years 1930 to 1970, depending on the piece of clothing we’re trying on.",
+            "de": "Wir haben Alberto in seiner ersten Boutique Finest Vintage in Renens kennengelernt, die kürzlich geschlossen wurde und am 4. November 2021 im Stadtzentrum von Lausanne an der Rue Caroline 5 ihre Wiedereröffnung feiert. Der Spanischlehrer, der seit seiner Kindheit gerne auf Flohmärkten unterwegs ist, hat sich mit der Eröffnung dieser Boutique einen Traum erfüllt. Hier findet ihr echte, hochwertige Vintage-Stücke, die er gezielt aufgestöbert und ausgewählt hat. Die Atmosphäre in dieser Boutique wird mit Hintergrundmusik ab Vinylplatten umrahmt, die zur jeweiligen Tageszeit oder Stimmung des Besitzers passt. In dieser Boutique werdet ihr nicht nur stöbern, sondern in den Genuss eines echten Erlebnisses kommen, das euch je nach gewähltem Artikel in die Welt der 1930er- bis 1970er-Jahre zurückversetzt."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Rue Caroline 5, 1003 Lausanne</em>",
+            "en": "<em>Rue Caroline 5, 1003 Lausanne</em>",
+            "de": "<em>Rue Caroline 5, 1003 Lausanne</em>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CV99fubIt6f/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/pret-a-seduire/\">Boutique Prêt à Séduire</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/pret-a-seduire/\">Boutique Prêt à Séduire</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/pret-a-seduire/\">Boutique Prêt à Séduire</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Femmes</em>",
+            "en": "<em>Women</em>",
+            "de": "<em>Frauen</em>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Dépôt-vente de marques de luxe, avec garantie d’authenticité. Arrivages réguliers de pièces originales de qualité.",
+            "en": "Consignment shop for luxury brands, with authenticity guarantee. Regular arrivals of original quality items.",
+            "de": "Diese Secondhand-Boutique bietet Luxusartikel an, die garantiert authentisch sind. Es treffen regelmässig originelle und hochwertige Stücke ein."
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "<em>Rue du Liseron 9, 1006 Lausanne</em>",
+            "en": "<em>Rue du Liseron 9, 1006 Lausanne</em>",
+            "de": "<em>Rue du Liseron 9, 1006 Lausanne</em>"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/p/CL2JkiRh7cO/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "d8bdff46a4e69cfa",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Nos coups de coeur deuxième main et vintage à Lausanne"
+          }
+        }
+      ],
+      "published_at": "1636132976",
+      "seo": {
+        "description": {
+          "fr": "Donner une nouvelle vie à des vêtements et accessoires, c’est non seulement une tendance, mais également un style de vie que nous avons adopté depuis des années et dont nous ne nous lasserons pas. En sus de dégoter des pièces originales et uniques, qui amènent de l’audace à nos garde-robes respectives sans pour autant nous ruiner, nous répondons à une préoccupation écologique de plus en plus forte. Nous sommes chanceux(ses) car Lausanne n’a rien à envier aux grandes capitales de la mode en matière de boutiques de seconde-main et vintage, la preuve avec ces quelques adresses que nous fréquentons couramment. En effet, pour ne pas laisser filer des pièces uniques et phares, rien de tel que la régularité. ",
+          "en": "To give new life to clothes and accessories is not only trendy, but also a lifestyle that we have embraced for a number of years and that we never tire of. In addition to unearthing original and unique items that add a touch of daring to our wardrobes without breaking the bank, we are addressing an ever more urgent ecological concern. We are lucky as Lausanne compares very well with the great fashion capitals when it comes to second-hand and vintage boutiques, as the following addresses where we often go will show. For sure, regularity is the key to catch unique and outstanding items.",
+          "de": "Kleidungsstücken und Accessoires ein neues Leben zu geben ist nicht nur ein Trend, sondern auch ein Lebensstil, den wir seit Jahren pflegen und nie satthaben werden. Wir suchen nach originellen und einzigartigen Stücken, die unserer Garderobe das gewisse Etwas verleihen, ohne unser Budget zu sprengen, und tragen dabei auch zu einem grösseren Umweltbewusstsein bei. Und wir haben Glück, denn Lausanne steht den führenden Modehauptstädten in Sachen Secondhand- und Vintage-Boutiquen in nichts nach. Der Beweis dafür sind unsere Lieblingsboutiquen, die wir regelmässig durchstöbern und gerne mit euch teilen. Um einzigartige und trendige Stücke zu ergattern, schaut ihr am besten regelmässig in den Boutiquen vorbei. "
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "nos-coups-de-coeur-deuxieme-main-et-vintage-a-lausanne",
+          "en": "our-favourite-second-hand-and-vintage-boutiques-in-lausanne",
+          "de": "unsere-lieblingsboutiquen-fur-secondhand-und-vintage-artikel"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-durabilite",
+          "public_name": {
+            "fr": "Durabilité",
+            "en": "Sustainability",
+            "de": "Nachhaltigkeit"
+          }
+        }
+      ]
+    }
+  }
+}

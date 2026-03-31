@@ -1,79 +1,17 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 4,
       "data": [
         {
-          "id": "4",
-          "author": "Lausanne Tourisme",
-          "name": "Food Halle 15",
-          "lead": "Ouverture d'un nouveau food court à Lausanne",
-          "summary": null,
-          "highlight": false,
-          "link": "https://foodhalle15.ch/",
-          "content": [
-            {
-              "type": "generic",
-              "empty": null
-            }
-          ],
-          "type": "news",
-          "medias": [
-            {
-              "cloudinary_id": "amjSr0mZLWMpvRuI5Yp9huhLxLYkgz8XZ2pvrGiu",
-              "copyright": "© Food Halle 15",
-              "public_name": "Food Halle 15"
-            }
-          ],
-          "published_at": "1722549600",
-          "seo": {
-            "description": "Ouverture d'un nouveau food court à Lausanne",
-            "noindex": false,
-            "slug": "lausanne-elue-meilleure-petite-ville-du-monde"
-          },
-          "tags": []
-        },
-        {
-          "id": "5",
-          "author": "Lausanne Tourisme",
-          "name": "La Bise",
-          "lead": "Ouverture d'un nouveau glacier",
-          "summary": null,
-          "highlight": false,
-          "link": "https://www.lausanne-tourisme.ch/fr/decouvrir/la-bise/",
-          "content": [
-            {
-              "type": "generic",
-              "empty": null
-            }
-          ],
-          "type": "news",
-          "medias": [
-            {
-              "cloudinary_id": "qDkeNRim62CpXYzRuUluEFkK7bSvmOVr9e5iQp5a",
-              "copyright": "© La bise",
-              "public_name": "La bise"
-            }
-          ],
-          "published_at": "1722722400",
-          "seo": {
-            "description": "Ouverture d'un nouveau glacier",
-            "noindex": false,
-            "slug": "lausanne-la-plus-belle"
-          },
-          "tags": []
-        },
-        {
           "id": "6",
+          "languages": ["fr", "en", "de"],
           "author": "Lausanne Tourisme",
           "name": "PIC au Beau-Rivage Palace",
+          "type": "news",
           "lead": "Réouverture du restaurant Pic au Beau-Rivage Palace",
           "summary": null,
           "highlight": false,
+          "published_at": "1722808800",
           "link": "https://www.brp.ch/restaurants-bars/pic-au-beau-rivage-palace/",
           "content": [
             {
@@ -81,7 +19,6 @@
               "empty": null
             }
           ],
-          "type": "news",
           "medias": [
             {
               "cloudinary_id": "eXj9aUhdJyHeJ55izLcSsnn3C0rLbNUJnt71qSzg",
@@ -89,7 +26,6 @@
               "public_name": "Pic au Beau Rivage Palace"
             }
           ],
-          "published_at": "1722808800",
           "seo": {
             "description": "Réouverture du restaurant Pic au Beau-Rivage Palace",
             "noindex": false,
@@ -99,11 +35,14 @@
         },
         {
           "id": "7",
+          "languages": ["fr", "en", "de"],
           "author": "Lausanne Tourisme",
           "name": "La Cathédrale de Lausanne",
+          "type": "news",
           "lead": "2025: 750 ans de la Cathédrale de Lausanne",
           "summary": null,
           "highlight": false,
+          "published_at": "1722895200",
           "link": "https://www.24heures.ch/patrimoine-bati-de-lausanne-la-cathedrale-aura-une-illumination-spirituelle-669206510544",
           "content": [
             {
@@ -111,7 +50,6 @@
               "empty": null
             }
           ],
-          "type": "news",
           "medias": [
             {
               "cloudinary_id": "brsgda500HgIWQvALuBTQqhHXeEt5QUjsVjRQTlM",
@@ -119,11 +57,258 @@
               "public_name": "Cathédrale de Lausanne"
             }
           ],
-          "published_at": "1722895200",
           "seo": {
             "description": "2025: 750 ans de la Cathédrale de Lausanne",
             "noindex": false,
             "slug": "et-une-de-plus-pour-samuser"
+          },
+          "tags": []
+        },
+        {
+          "id": "324",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Lausanne à Table dévoile son programme de l'édition 2025 !",
+          "type": "news",
+          "lead": "La 11e édition propose soixante événements culinaires.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1746655200",
+          "link": "https://www.lausanneatable.ch/programme/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "NzJ4fioEez9BEfseMI3uQS3mCX5id7nxi513ZegW",
+              "copyright": "© Lausanne à Table",
+              "public_name": "MIAM Festival"
+            }
+          ],
+          "seo": {
+            "description": "La 11e édition propose soixante événements culinaires.",
+            "noindex": false,
+            "slug": "lausanne-a-table-devoile-son-programme-de-ledition-2025"
+          },
+          "tags": []
+        },
+        {
+          "id": "325",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Une nouvelle cheffe à l'auberge de Montheron!",
+          "type": "news",
+          "lead": "Alba Farnos Viñals et Paul Marsden ont repris l’Auberge de l’Abbaye de Montheron en janvier.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1737327600",
+          "link": "https://montheron.ch/fr",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "auberge-de-montheron-nckenn",
+              "copyright": "© Aniket Godobole",
+              "public_name": "Auberge de Montheron"
+            }
+          ],
+          "seo": {
+            "description": "Alba Farnos Viñals et Paul Marsden ont repris l’Auberge de l’Abbaye de Montheron en janvier.",
+            "noindex": false,
+            "slug": "une-nouvelle-cheffe-a-lauberge-de-montheron"
+          },
+          "tags": []
+        },
+        {
+          "id": "328",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Traintrain",
+          "type": "news",
+          "lead": "Un nouveau café-vin ouvre sous-gare, entre torréfaction locale et sélection de vins nature.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1745186400",
+          "link": "https://www.lausanne-tourisme.ch/fr/decouvrir/traintrain/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "porte-traintrain-snlwjy",
+              "copyright": "© TrainTrain",
+              "public_name": "Porte TrainTrain"
+            }
+          ],
+          "seo": {
+            "description": "Un nouveau café-vin ouvre sous-gare, entre torréfaction locale et sélection de vins nature.",
+            "noindex": false,
+            "slug": "traintrain"
+          },
+          "tags": []
+        },
+        {
+          "id": "329",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Un nouveau lieu gourmand s’installe à l’édicule du Bois-de-Beaulieu",
+          "type": "news",
+          "lead": "« La Riguenette » a ouvert le 27 mai 2025 avec une carte de saison et des produits locaux",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1748383200",
+          "link": "https://www.lausanne-tourisme.ch/fr/decouvrir/la-riguenette/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "cafe-perche-lht8rl",
+              "copyright": "© Raphaël Dupertuis",
+              "public_name": "Café Perché"
+            }
+          ],
+          "seo": {
+            "description": "« La Riguenette » a ouvert le 27 mai 2025 avec une carte de saison et des produits locaux",
+            "noindex": false,
+            "slug": "un-nouveau-lieu-gourmand-sinstalle-a-ledicule-du-bois-de-beaulieu"
+          },
+          "tags": []
+        },
+        {
+          "id": "330",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "La Collection de l’Art Brut fête ses 50 ans en 2026 !",
+          "type": "news",
+          "lead": "Une exposition anniversaire mettra à l'honneur des œuvres phares, dont certaines issues du noyau historique constitué par Jean Dubuffet.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1752444000",
+          "link": "https://www.lausanne-tourisme.ch/fr/decouvrir/collection-de-lart-brut/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "04b7290c7f8e47fc",
+              "copyright": "© Exposition à La Collection de l'Art Brut, Lausanne",
+              "public_name": "Lausanne en famille"
+            }
+          ],
+          "seo": {
+            "description": "Une exposition anniversaire mettra à l'honneur des œuvres phares, dont certaines issues du noyau historique constitué par Jean Dubuffet.",
+            "noindex": false,
+            "slug": "la-collection-de-lart-brut-fete-ses-50-ans-en-2026"
+          },
+          "tags": []
+        },
+        {
+          "id": "332",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "L’Appart décroche l’étoile verte",
+          "type": "news",
+          "lead": "L’Appart est récompensé pour son engagement en faveur d’une cuisine durable.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1767049200",
+          "link": "https://www.gaultmillau.ch/fr/les-chefs/luis-zuzarte-letoile-montante-890607",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "lappart-smvqag",
+              "copyright": "© Maud Guye-Vuillème",
+              "public_name": "L'Appart"
+            }
+          ],
+          "seo": {
+            "description": "L’Appart est récompensé pour son engagement en faveur d’une cuisine durable.",
+            "noindex": false,
+            "slug": "lappart-decroche-letoile-verte"
+          },
+          "tags": []
+        },
+        {
+          "id": "333",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Bryo.ch ouvre un nouvel espace",
+          "type": "news",
+          "lead": "Un lieu dédié à l’univers de la brioche.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1768172400",
+          "link": "https://bryo.ch/",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "bryo-kknnzy",
+              "copyright": "© Bryo",
+              "public_name": "Bryo"
+            }
+          ],
+          "seo": {
+            "description": "Un lieu dédié à l’univers de la brioche.",
+            "noindex": false,
+            "slug": "bryoch-ouvre-un-nouvel-espace"
+          },
+          "tags": []
+        },
+        {
+          "id": "334",
+          "languages": ["fr", "en", "de"],
+          "author": "Lausanne Tourisme",
+          "name": "Fripsquare ouvre un deuxième espace",
+          "type": "news",
+          "lead": "Un nouveau Fripsquare ouvre à Saint-François, à Lausanne.",
+          "summary": null,
+          "highlight": false,
+          "published_at": "1768258800",
+          "link": "https://frip-square.com/pages/about-us?srsltid=AfmBOorll5PHuVICPYjuwycBLVyXxU-LEyKFFQnbh9iqUWVcY1ttfVWa",
+          "content": [
+            {
+              "type": "generic",
+              "empty": null
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "fripsquare-0clzi9",
+              "copyright": "© Maud Guye-Vuillème",
+              "public_name": "Fripsquare"
+            }
+          ],
+          "seo": {
+            "description": "Un nouveau Fripsquare ouvre à Saint-François, à Lausanne.",
+            "noindex": false,
+            "slug": "fripsquare-ouvre-un-deuxieme-espace"
           },
           "tags": []
         }

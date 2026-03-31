@@ -1,0 +1,423 @@
+{
+  "data": {
+    "item": {
+      "id": "301",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !",
+        "en": "No need to leave Lausanne to go to the beach, there is Lake Geneva!",
+        "de": "Für Strandfreuden muss niemand Lausanne verlassen – denn wir haben den Genfersee!"
+      },
+      "lead": {
+        "fr": "En été, on est nombreux à se précipiter en bord de mer pour profiter du combo « sable fin-soleil-eau tempérée ».",
+        "en": "In the summer, many of us rush to the seaside to enjoy the “sandy beaches - sun - warm water” combo. Yet there’s no need to leave Lausanne!",
+        "de": "Im Sommer drängen viele Menschen an die Küste – auf der Suche nach der perfekten Kombination: feiner Sand - Sonne - warmes Wasser. Doch es gibt gar keinen Grund, Lausanne zu verlassen!"
+      },
+      "summary": {
+        "fr": "En été, on est nombreux à se précipiter en bord de mer pour profiter du combo sable fin, soleil et eau tempérée !",
+        "en": "In the summer, many of us rush to the seaside to enjoy the “sandy beaches – sun – warm water” combo.",
+        "de": "Im Sommer drängen viele Menschen an die Küste – auf der Suche nach der perfekten Kombination: feiner Sand – Sonne – warmes Wasser."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 26082,
+            "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !",
+            "public_name": {
+              "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !"
+            },
+            "cloudinary_id": "82a01c1315156a89",
+            "mime_type": "image/jpeg",
+            "copyright": "© Detente au bord du lac Leman",
+            "metadata": {
+              "width": 2560,
+              "height": 1707,
+              "mimeType": "image/jpeg",
+              "copyright": "Laurent Kaczor",
+              "attr": "width=\"2560\" height=\"1707\"",
+              "tags": "été; lac;",
+              "description": null,
+              "file_name_from_url": "82a01c1315156a89.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-KAZ-HD_053-scaled.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-douchy/\">La plage d’Ouchy</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy-beach/\">Ouchy Beach</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-strand-von-ouchy/\">Der Strand von Ouchy</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "On l’a attendue, elle est enfin là, la toute nouvelle <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-douchy/\">plage d’Ouchy</a>, située dans le Vieux-Port ! Une plateforme construite sur l’eau, où on se voit déjà lézarder toute la journée, à alterner entre bronzette et rafraîchissement dans les eaux turquoise du Léman. On ne va pas se faire prier pour en profiter tout l’été ! Et puis, cerise sur le gâteau : à quelques mètres de là, se situe la fameuse <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/glaces-veneta/\">cabane de glaces Veneta</a>, de quoi se ravitailler en délicieuses glaces à tout moment.",
+            "en": "Long awaited, it’s here at last: the brand-new <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy-beach/\">Ouchy Beach</a>, located in the Old Port! A platform that extends over the water, where we can just picture ourselves basking all day, alternating between soaking up the sun and cooling down in the lake’s turquoise waters. We won’t need to be asked twice to enjoy it all summer long! Icing on the cake, the well-known <a href=\"https://www.lausanne-tourisme.ch/en/explore/glaces-veneta/\">Veneta ice cream stand</a> is just a few metres away to refuel with scrumptious ice creams at any time.",
+            "de": "Darauf haben wir gewartet und nun ist es endlich so weit: Der neue <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-strand-von-ouchy/\">Strand von Ouchy</a> im alten Hafen ist bereit! Die auf dem Wasser gebaute Plattform ist ein perfekter Ort, um den ganzen Tag zu faulenzen und abwechselnd in der Sonne zu bräunen und sich im türkisfarbenen Wasser des Genfersees zu erfrischen. Da lassen wir uns nicht zweimal bitten und profitieren den ganzen Sommer über! Und das i-Tüpfelchen: Nur einen Katzensprung vom Strand entfernt befindet sich der berühmte Eisstand Glaces Veneta, wo Sie sich jederzeit ein leckeres Eis gönnen können."
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/reel/COw-WOVgT4l/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-bourget/\"><strong>Les plages près du Bourget</strong></a>",
+            "en": "<strong>Beaches around <a href=\"https://www.lausanne-tourisme.ch/en/P10691/louis-bourget-park\">the Bourget</a></strong>",
+            "de": "<strong><span lang=\"DE-CH\">Die Strände im <a href=\"https://www.lausanne-tourisme.ch/de/P10691/park-louis-bourget\">Park Louis Bourget</a></span></strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "C’est bien simple, une fois passé le port de Vidy (en direction de Genève), plus d’un kilomètre et demi de plage vous attend. Ainsi, vous pouvez vous baigner jusqu’au complexe sportif de l’Université. Vous y trouverez également un loueur de pédalos pour naviguer sur le lac et quelques buvettes pour vous restaurer.",
+            "en": "It’s quite straightforward: beyond Vidy Port (heading towards Geneva), over one and a half kilometres of beaches await you. You can actually bathe right up to the University’s sports grounds. You’ll also find a pedal-boat rental for a spin on the lake and a few refreshment stalls for a snack.",
+            "de": "<span lang=\"DE-CH\">Hinter dem Hafen von Vidy (in Richtung Genf) erwarten Sie mehr als anderthalb Kilometer Strand. Hier können Sie also bis zum Sportkomplex der Universität schwimmen! Zudem gibt es einen Tretbootverleih sowie mehrere Erfrischungsstände.</span>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Certaines de ces plages sont toutes petites, à l’ombre de quelques arbres, au niveau du Bowl de Vidy. Puis, une longue étendue de sable donne un accès direct au lac. Un chemin pédestre permet de longer le lac Léman en toute tranquillité parmi quelques sportifs courageux qui vous dépasseront à vélo ou en roller. De l’autre côté de ce chemin,<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-bourget/\"> le parc du Bourget</a> est l’endroit idéal pour les grillades entre amis. Il n’est pas rare que ces repas estivaux durent jusque tard dans la nuit. L’occasion rêvée, avant de retourner en ville, de courir à l’eau pour un bain de minuit.",
+            "en": "Some of the beaches are tiny, in the shade of a few trees, around the Vidy Bowl. Then a long stretch of sand provides a direct access to the lake. A footpath lets you leisurely follow the lakeside with a few energetic people who will overtake you on a bicycle or rollerblades. On the other side of the path, <a href=\"https://www.lausanne-tourisme.ch/en/P10691/louis-bourget-park\">Bourget Park</a> is the ideal place for barbecues with friends, summer get-togethers that often go on until late into the night. A golden opportunity to dive into the lake for a midnight bathe before heading back into town.",
+            "de": "<span lang=\"DE-CH\">Auf der Höhe des Bowl de Vidy befinden sich einige kleine Strände, an denen Bäume Schatten spenden. Daran schliesst sich ein langer Strandabschnitt an, der direkten Zugang zum See bietet. Auf einem Fussweg kann man gemütlich am Genfersee entlang spazieren; auch Radfahrer und Rollschuhfahrer sind hier unterwegs. Der auf der anderen Seite dieses Weges gelegene<a href=\"https://www.lausanne-tourisme.ch/de/P10691/park-louis-bourget\"> Parc Louis Bourget</a> ist der ideale Ort für das gemeinsame Grillen mit Freunden. Hier verweilt man im Sommer gern bis spät in die Nacht! Lassen Sie sich zudem nicht die Gelegenheit entgehen, vor der Rückkehr in die Stadt für ein Mitternachtsbad ins Wasser zu springen. </span>"
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 26081,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": {
+                "fr": "Les endroits où se rafraîchir à Lausanne"
+              },
+              "cloudinary_id": "1da5c7bb6f4e3992",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": "Lac; Montagne; Été;",
+                "description": null,
+                "file_name_from_url": "594dd0443bd307db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
+              }
+            },
+            {
+              "id": 27070,
+              "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman ! - lac Léman",
+              "public_name": {
+                "fr": "Detente au bord du lac Leman a Vidy.  Sport nautique. Bouee",
+                "en": "Detente au bord du lac Leman a Vidy.  Sport nautique. Bouee",
+                "de": "Detente au bord du lac Leman a Vidy.  Sport nautique. Bouee",
+                "es": null
+              },
+              "cloudinary_id": "y07U6DBWjbV41B8iBbSTPeiHiEkiWahOWlLJxoiM",
+              "mime_type": "image/jpeg",
+              "copyright": "© Detente au bord du lac Leman a Vidy.  Sport nautique. Bouee",
+              "metadata": {
+                "width": 2560,
+                "height": 1861,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1861\"",
+                "tags": "Détente; Lac; Enfant; Famille",
+                "description": null,
+                "file_name_from_url": "1d94049eb3eaae8a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Ambiance-lac-III-scaled.jpg"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "La plage du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Théâtre de Vidy</a>",
+            "en": "<strong><a href=\"https://www.lausanne-tourisme.ch/en/P954/theatre-de-vidy\">Vidy</a> Theater beach</strong>",
+            "de": "<strong><span lang=\"DE-CH\">Der Strand des <a href=\"https://www.lausanne-tourisme.ch/de/P954/vidy-theater\">Théâtre de Vidy</a></span></strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "De l’autre côté du port de Vidy, juste devant le<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\"> théâtre</a>, une charmante petite plage vous attend dans une ambiance tout aussi détendue. Ici, on alterne baignade rafraîchissante et cocktails à savourer dans l’un des restaurant-bars attenants.",
+            "en": "On the other side of the Vidy port, right in front of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Theatre</a>, a charming little beach awaits you in an equally relaxed setting. Here you can alternate between a refreshing swim and cocktails in one of the adjoining restaurant-bars.",
+            "de": "Auf der anderen Seite des Hafens von Vidy, direkt vor dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">Theater</a>, erwartet Sie ein charmanter kleiner Strand in einer ebenso entspannten Umgebung. Hier können Sie abwechselnd ein erfrischendes Bad nehmen und einen Cocktail in einer der angrenzenden Restaurant-Bars genießen."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25910,
+            "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !",
+            "public_name": {
+              "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !"
+            },
+            "cloudinary_id": "bd82b5b11e4a08f4",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue aerienne sur la plage de Vidy-Lausanne devant le theatre de Vidy",
+            "metadata": {
+              "width": 2560,
+              "height": 1699,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"2560\" height=\"1699\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "bd82b5b11e4a08f4.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Vue-aerienne-plage-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>La plage de Lutry</strong>",
+            "en": "<strong>Lutry beach</strong>",
+            "de": "<strong><span lang=\"DE-CH\">Der Strand von Lutry</span></strong>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "À seulement 15 minutes en bus du centre, le village de Lutry possède une plage très appréciée par les locaux. Malgré sa taille modeste (200 mètres environ), il y en a pour tous les âges. Une place de jeux pour les petits, un plongeoir pour les ados et une pelouse pour que les grands se détendent au soleil. Les sportifs, eux, pourront s’initier au Paddle.",
+            "en": "A short 15 minutes away from the town centre, the village of Lutry possesses a beach that’s very popular with the locals. Despite its small size (about 200 metres long), there’s something for people of all ages. A playground for children, a diving board for teenagers and a lawn where adults relax in the sun. The more adventurous can give stand-up paddle boarding a try.",
+            "de": "<span lang=\"DE-CH\">Nur 15 Busminuten vom Zentrum entfernt liegt das Dorf Lutry mit einem Strand, der sich bei den Einheimischen grosser Beliebtheit erfreut. Trotz seiner bescheidenen Grösse (etwa 200 Meter) ist hier für jedes Alter etwas dabei. Es gibt einen Spielplatz für die Kleinen, ein Sprungbrett für Teenager und eine Liegewiese für die Älteren zum Entspannen in der Sonne. Sportliche Badegäste können sich im Stehpaddeln probieren.</span>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Les lieux étant prisés, il se peut que vous n’ayez pas la place d’amener votre propre pique-nique. Heureusement, la buvette de la plage de Lutry est ouverte, offrant un choix varié de boissons et de snacks pour tous les goûts et tous les âges ! L’ambiance y est tout de même plus familiale, et les derniers baigneurs partent aux alentours de 22 heures. Pour ceux qui voudraient profiter du panorama sur le chemin du retour, il est possible de longer le lac jusqu’à Ouchy. Une jolie balade de 5 kilomètres au bord de l’eau.",
+            "en": "As the location is highly popular, you may not have room to bring your own picnic. Fortunately, the Lutry beach buvette is open, offering a wide choice of drinks and snacks for everyone. It’s family-friendly and the last beachgoers leave around 10 pm. For those who would like to enjoy the panorama on the way back, you can walk along the lakeside all the way to Ouchy. A nice 5-kilometre walk on the waterfront.",
+            "de": "<span lang=\"DE-CH\">Da der Ort sehr beliebt ist, haben Sie vielleicht keinen Platz, um Ihr eigenes Picknick mitzubringen. Zum Glück ist die Strandbude von Lutry geöffnet und bietet eine große Auswahl an Getränken und Snacks für alle. Die Atmosphäre ist familienorientiert und die letzten Badegäste gehen gegen 22 Uhr. Wer auf dem Rückweg das Panorama geniessen möchte, kann dem Seeufer bis nach Ouchy folgen: eine schöne Strecke von 5 Kilometern Länge direkt am Wasser!</span>"
+          }
+        },
+        {
+          "type": "gallery",
+          "value": [
+            {
+              "id": 27072,
+              "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman ! - Plongeoir",
+              "public_name": {
+                "fr": "Activite lacustre au bord du lac Leman a Lutry",
+                "en": "Activite lacustre au bord du lac Leman a Lutry",
+                "de": "Activite lacustre au bord du lac Leman a Lutry",
+                "es": null
+              },
+              "cloudinary_id": "GnMroXD88O3KBTo5gpQB0iv0vyK8xIL3bLLHGCCk",
+              "mime_type": "image/jpeg",
+              "copyright": "© Activite lacustre au bord du lac Leman a Lutry",
+              "metadata": {
+                "width": 1706,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1706\" height=\"2560\"",
+                "tags": "Détente; Environ; Lac",
+                "description": null,
+                "file_name_from_url": "8777b5a95613bc1b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Ambiance-Lutry-scaled.jpg"
+              }
+            },
+            {
+              "id": 27074,
+              "name": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman ! - Terrasse Lutry",
+              "public_name": {
+                "fr": "Terrasse de la Buvette de la plage de Lutry",
+                "en": "Terrasse de la Buvette de la plage de Lutry",
+                "de": "Terrasse de la Buvette de la plage de Lutry",
+                "es": null
+              },
+              "cloudinary_id": "dn3uuL05cPbFpiWmqJGNXQeE8SeBZ0e2EcrCLz8C",
+              "mime_type": "image/jpeg",
+              "copyright": "© Terrasse de la Buvette de la plage de Lutry",
+              "metadata": {
+                "width": 1771,
+                "height": 1181,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1771\" height=\"1181\"",
+                "tags": "Terrasse; Environ ; Lavaux; Gastronomie; Lac",
+                "description": null,
+                "file_name_from_url": "0d686462487ab2e3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Buvette-de-la-plage-Lutry.jpg"
+              }
+            },
+            {
+              "id": 27065,
+              "name": "Lausanne et le Léman - Paddle",
+              "public_name": {
+                "fr": "Paddle a Lutry sur le lac Leman",
+                "en": "Paddle a Lutry sur le lac Leman",
+                "de": "Paddle a Lutry sur le lac Leman",
+                "es": null
+              },
+              "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
+              "mime_type": "image/jpeg",
+              "copyright": "© Paddle a Lutry sur le lac Leman",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": "JONATHAN VIEY",
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
+                "description": null,
+                "file_name_from_url": "cdca0cbb2c423149.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<strong>L’alternative mi-plage, mi-piscine</strong>",
+            "en": "The alternative when you can’t choose between the pool and the beach",
+            "de": "Die Alternative, wenn Sie sich nicht zwischen Pool und Strand entscheiden können"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Pour celles et ceux qui aiment le sable sans renoncer au confort d’une piscine, les plages de Bellerive et de Pully offrent le parfait compromis.",
+            "en": "For those who love the sand without giving up the comfort of a swimming pool, the beaches at Bellerive and Pully offer the perfect deal.",
+            "de": "Für diejenigen, die den Sand lieben, ohne auf den Komfort eines Swimmingpools verzichten zu wollen, bieten die Strände von Bellerive und Pully das perfekte Angebot."
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h3",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/piscine-de-bellerive/\">La piscine de Bellerive</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/bellerive-swimming-pool/\">The Bellerive swimming pool</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bellerive-freibad/\">Das Schwimmbad von Bellerive</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Longeant le lac sur près de 400 mètres, le complexe a un accès direct au lac, via une plage de sable. Mais il y a aussi : trois bassins (dont un olympique), quatre plongeoirs (jusqu’à 10 mètres), des terrains de basket, beach volley pétanque et football, des tables de ping-pong, une vaste étendue de pelouse et un restaurant. C’est sûr, il y a de quoi faire à Bellerive.",
+            "en": "Running alongside the lake for almost 400 yards, the complex has direct access to the lake from its own stretch of sand beach. There are also three pools (one of them Olympic), four diving boards (up to 10 metres), basketball, beach volleyball and football pitches, table tennis tables, a large stretch of lawn and a restaurant. There’s plenty to do at Bellerive !",
+            "de": "Das Schwimmbad von Bellerive erstreckt sich fast 400 Meter entlang des Sees und verfügt über einen eigenen Sandstrand mit direktem Zugang zum See. Außerdem gibt es drei Schwimmbecken (eines davon olympisch), vier Sprungbretter (bis zu 10 m), Basketball-, Beachvolleyball- und Fußballplätze, Tischtennisplatten, eine große Rasenfläche und ein Restaurant. In Bellerive gibt es viel zu erleben!"
+          }
+        },
+        {
+          "type": "heading",
+          "tag": "h3",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/piscine-de-pully-plage/\">La piscine de Pully</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/piscine-de-pully-plage/\">Pully swimming pool</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/piscine-de-pully-plage/\">Schwimmbad Pully</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Avec ses trois bassins — dont une pataugeoire idéale pour les tout-petits — la piscine en plein air de Pully, posée au bord du lac Léman, est l’endroit rêvé pour se rafraîchir en famille ou entre amis. Entre deux plongeons, on s’amuse autour d’une partie de ping-pong ou de beach volley, avant de se détendre à la buvette, sur une terrasse pleine de charme. Ambiance estivale garantie !",
+            "en": "With its three pools – including a paddling pool ideal for toddlers – Pully’s open-air swimming pool on the shores of Lake Geneva is the perfect place to cool off with family and friends. Between dips, you can enjoy a game of table tennis or beach volleyball, before relaxing at the refreshment bar on the charming terrace. Summer spirit is guaranteed!",
+            "de": "Das Freibad von Pully am Ufer des Genfer Sees ist mit seinen drei Becken – darunter ein Planschbecken für die Kleinsten – der ideale Ort, um sich mit Familie und Freunden abzukühlen. Zwischendurch können Sie eine Partie Tischtennis oder Beachvolleyball spielen, bevor Sie sich an der Erfrischungsbar auf der schönen Terrasse entspannen. Sommerlaune ist garantiert!"
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25883,
+            "name": "Lausanne en famille",
+            "public_name": {
+              "fr": "Lausanne en famille"
+            },
+            "cloudinary_id": "67f6651d96129b56",
+            "mime_type": "image/jpeg",
+            "copyright": "© Vue panoramique de Lausanne-Bellerive, prises de vues exclusives pour Lausanne Tourisme avec drône, juin 2017",
+            "metadata": {
+              "width": 1600,
+              "height": 1200,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1600\" height=\"1200\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "67f6651d96129b56.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/04/DJI-0382-Lausanne-tiff.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Plus d’inspiration sur @thelausanner",
+            "en": "More inspiration on @thelausanner",
+            "de": "Mehr Inspiration auf @thelausanner"
+          }
+        },
+        {
+          "type": "instagram",
+          "value": "https://www.instagram.com/reel/C-C62Dfg6Zb/?utm_source=ig_embed&utm_campaign=loading"
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "bd82b5b11e4a08f4",
+          "copyright": "© Vue aerienne sur la plage de Vidy-Lausanne devant le theatre de Vidy",
+          "public_name": {
+            "fr": "Pas besoin de quitter Lausanne pour aller à la plage, il y a le Léman !"
+          }
+        }
+      ],
+      "published_at": "1718759048",
+      "seo": {
+        "description": {
+          "fr": "En été, on est nombreux à se précipiter en bord de mer pour profiter du combo « sable fin-soleil-eau tempérée ».",
+          "en": "In the summer, many of us rush to the seaside to enjoy the “sandy beaches - sun - warm water” combo. Yet there’s no need to leave Lausanne!",
+          "de": "Im Sommer drängen viele Menschen an die Küste – auf der Suche nach der perfekten Kombination: feiner Sand - Sonne - warmes Wasser. Doch es gibt gar keinen Grund, Lausanne zu verlassen!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "pas-besoin-de-quitter-lausanne-pour-aller-a-la-plage-il-y-a-le-leman",
+          "en": "no-need-to-leave-lausanne-to-go-to-the-beach-there-is-lake-geneva",
+          "de": "fur-strandfreuden-muss-niemand-lausanne-verlassen-denn-wir-haben-den-genfersee"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        },
+        {
+          "name": "lt-lacustre",
+          "public_name": {
+            "fr": "Lacustre",
+            "en": "Lacustrine",
+            "de": "Lakustrin"
+          }
+        }
+      ]
+    }
+  }
+}

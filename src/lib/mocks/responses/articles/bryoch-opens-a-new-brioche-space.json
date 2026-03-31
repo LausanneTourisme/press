@@ -1,0 +1,49 @@
+{
+  "data": {
+    "item": {
+      "id": "333",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Bryo.ch ouvre un nouvel espace",
+        "en": "Bryo.ch opens a new brioche space",
+        "de": "Bryo.ch eröffnet einen neuen brioche-ort"
+      },
+      "lead": {
+        "fr": "Un lieu dédié à l’univers de la brioche.",
+        "en": "A place dedicated to the world of brioche.",
+        "de": "Ein ort, der der welt der brioche gewidmet ist."
+      },
+      "summary": null,
+      "content": [
+        {
+          "type": "generic",
+          "empty": null
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "bryo-kknnzy",
+          "copyright": "© Bryo",
+          "public_name": {
+            "fr": "Bryo"
+          }
+        }
+      ],
+      "published_at": "1768172400",
+      "seo": {
+        "description": {
+          "fr": "Un lieu dédié à l’univers de la brioche.",
+          "en": "A place dedicated to the world of brioche.",
+          "de": "Ein ort, der der welt der brioche gewidmet ist."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "bryoch-ouvre-un-nouvel-espace",
+          "en": "bryoch-opens-a-new-brioche-space",
+          "de": "bryoch-eroffnet-einen-neuen-brioche-ort"
+        }
+      },
+      "tags": []
+    }
+  }
+}

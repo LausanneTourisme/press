@@ -1,14 +1,16 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import { route } from '$lib/helpers';
-  import { menuItems } from '$lib/helpers/menu';
+  import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
   import { ChevronDown } from 'lucide-svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
   import Logo from './Logo.svelte';
+  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -22,14 +24,15 @@
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+    rel="internal"
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo {locale} />
   </a>
   <div class="ml-6 flex h-full grow items-center justify-start">
     <!-- Desktop menu -->
-    {#each menuItems(locale) as item}
+    {#each menuItems(locale) as item (item.title)}
       {#if !item.link}
         <div class="dropdown dropdown-hover group rounded-none">
           <div tabindex="0" role="button" class="menu-item m-3">
@@ -42,7 +45,7 @@
             <ul
               class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 z-1 w-[450px] border-t p-2 shadow-xs"
             >
-              {#each items as item}
+              {#each items as item (item.title)}
                 {#snippet icon()}
                   {#if item.icon}
                     {@const Component = item.icon}
@@ -104,7 +107,7 @@
             class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
           >
             {#key page.url}
-              {#each page.data.seo.alternate as alternate}
+              {#each page.data.seo.alternate as alternate (alternate.hreflang)}
                 <li>
                   <Link
                     class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 dark:hover:bg-slate-600 ${alternate.hreflang === locale ? 'hidden' : ''}`}

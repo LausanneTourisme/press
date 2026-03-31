@@ -1,0 +1,276 @@
+{
+  "data": {
+    "item": {
+      "id": "296",
+      "languages": ["fr", "de", "en"],
+      "name": {
+        "fr": "Lausanne, ville nature",
+        "de": "Lausanne ‒ Natur mitten in der Stadt",
+        "en": "Lausanne, green city"
+      },
+      "lead": {
+        "fr": "Lausanne a l’énorme avantage d’offrir de nombreux espaces verts à deux pas de l’agitation du centre-ville. Parcs, jardins et plages sont pour moi de véritables havres de paix accessibles gratuitement tout au long de l’année, dans lesquels j’aime me rendre dès que le besoin de nature se fait sentir. ",
+        "de": "Lausanne trumpft mit zahlreichen Grünflächen, die nur einen Katzensprung vom Trubel des Stadtzentrums entfernt sind. Pärke, Gärten und das Seeufer sind für mich wahre Oasen der Ruhe, die das ganze Jahr über frei zugänglich sind und wo ich gerne hingehe, wenn ich das Bedürfnis nach Natur verspüre. ",
+        "en": "Lausanne has the huge advantage of offering many green spaces just a stone’s throw from the bustle of the city centre. Parks, gardens and beaches are for me true havens of peace that are accessible for free all year round, and where I love to go as soon as the need for nature arises."
+      },
+      "summary": {
+        "fr": "Lausanne a l’énorme avantage d’offrir de nombreux espaces verts à deux pas de l’agitation du centre-ville. Parcs, jardins et plages sont pour moi de véritables havres de paix accessibles gratuitement tout au long de l’année, dans lesquels j’aime me rendre dès que le besoin de nature se fait sentir.",
+        "de": "Lausanne trumpft mit zahlreichen Grünflächen, die nur einen Katzensprung vom Trubel des Stadtzentrums entfernt sind. Pärke, Gärten und das Seeufer sind für mich wahre Oasen der Ruhe, die das ganze Jahr über frei zugänglich sind und wo ich gerne hingehe, wenn ich das Bedürfnis nach Natur verspüre.",
+        "en": "Lausanne has the huge advantage of offering many green spaces just a stone’s throw from the bustle of the city centre. Parks, gardens and beaches are for me true havens of peace that are accessible for free all year round, and where I love to go as soon as the need for nature arises."
+      },
+      "content": [
+        {
+          "type": "image",
+          "value": {
+            "id": 27189,
+            "name": "Lausanne, ville verte - Parc Mon Repos",
+            "public_name": {
+              "fr": "Processed with VSCO with a6 preset",
+              "en": "Processed with VSCO with a6 preset",
+              "de": "Processed with VSCO with a6 preset",
+              "es": null
+            },
+            "cloudinary_id": "qt9tO1zQPUG4Z5UE7GXmo5hm5o5gHeVU3pGeygEj",
+            "mime_type": "image/jpeg",
+            "copyright": "© Camille Dea",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "d9d1fc6804eeff56.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Parc-de-Mon-Repos_02-scaled.jpg"
+            }
+          },
+          "size": "parallax",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Le Parc Mon-Repos</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Park Mon-Repos</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "À quelques minutes de la cathédrale, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Parc de Mon-Repos</a>, aménagé sur un coteau, est selon moi l’un des plus beaux de la ville. En plus des possibilités de promenades, les nombreuses curiosités et infrastructures offertes par le parc permettent largement d’y passer la journée. De la piscine couverte aux places de jeux pour enfants, en passant par les volières abritant toutes sortes d’oiseaux, tout le monde y trouve son bonheur. Pour se rafraîchir ou manger un petit bout, direction <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">la Folie Voltaire</a>, buvette aménagée dans un ancien kiosque. Juste à côté, je n’oublie jamais de faire une pause pour admirer <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/villa-mon-repos/\">la belle maison de maître</a> ayant accueilli le siège du Comité international olympique durant plusieurs années. Moins connue peut-être, la partie nord du parc, au-dessus de l’avenue du Tribunal-Fédéral, abrite une inattendue tour néo-gothique surplombant une petite cascade ainsi que le magnifique bâtiment de l’Orangerie, au départ construit pour l’hivernage de plantes et aujourd’hui atelier d’artiste.",
+            "de": "Der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Park Mon-Repos</a> befindet sich nur wenige Minuten von der Kathedrale entfernt, auf einer leichten Anhöhe. Für mich ist er einer der schönsten Pärke der Stadt. Nebst der Möglichkeit zum ausgiebigen Spazieren sind es die vielen Sehenswürdigkeiten und Infrastrukturen, die einen Tagesausflug in den Park zu einem tollen Erlebnis machen. Vom Hallenbad über die Volieren mit verschiedenartigsten Vögeln bis hin zu den Kinderspielplätzen ist für alle etwas dabei. Für eine Erfrischung oder Stärkung bietet sich das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-folie-voltaire/\">Folie Voltaire</a> an, ein in einem alten Pavillon eingerichtetes Café. Gleich nebenan lege ich immer eine kurze Pause ein, um das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/villa-mon-repos/\">wunderschöne Herrenhaus</a> zu bewundern, das viele Jahre lang der Sitz des Internationalen Olympischen Komitees war. Im vielleicht etwas weniger bekannten nördlichen Teil des Parks, oberhalb der Avenue du Tribunal-Fédéral, überrascht ein neugotischer Turm, der über einem kleinen Wasserfall thront. Im prächtigen Gebäude der Orangerie, das ursprünglich für die Überwinterung von Pflanzen gebaut wurde, ist heute ein Künstleratelier untergebracht.",
+            "en": "A few minutes away from the Cathedral, <a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a>, landscaped on a slope, is for me one of the town’s most beautiful parks. In addition to offering lovely walks, there are enough curiosities and amenities in the park to spend a whole day there. From the indoor pool to children’s playgrounds to aviaries with all kinds of birds, there is something for everyone. For refreshment or a snack, head to <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-folie-voltaire/\">the Folie Voltaire</a>, a small café set up in a former kiosk. Right nearby, I never forget to pause to admire the<a href=\"https://www.lausanne-tourisme.ch/en/explore/villa-mon-repos/\"> lovely mansion</a> that housed the International Olympic Committee for several years. Perhaps less widely known, the north part of the park above the Avenue du Tribunal-Fédéral shelters an unexpected neo-Gothic tower overlooking a small cascade as well as the magnificent Orangerie building, initially built to overwinter plants and that is today an artist’s studio."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 25953,
+            "name": "Lausanne, ville nature",
+            "public_name": {
+              "fr": "Lausanne, ville nature"
+            },
+            "cloudinary_id": "207e751bb3aad7a6",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1974,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1974\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "207e751bb3aad7a6.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Parc-de-Mon-Repos_01-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-milan/\">Le Parc de Milan</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/milan-park/\">Milan Park</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/milan-park/\">Milan Park</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Un peu plus bas, dans le quartier sous-gare, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-milan/\">Parc de Milan</a> est l’un des plus connu et des plus prisé des Lausannoises et des Lausannois. Et pour cause. Si vous voulez exercer votre activité sportive préférée, profiter d’un apéro entre ami-e-s, faire des trouvailles dans un vide-greniers ou assister à une projection de films en été, le Parc de Milan est LE lieu de rendez-vous. En plus, depuis le mois d’avril, un nouveau marché alimentaire s’y installe tous les vendredis jusqu’à 19 heures, de quoi faire le plein de délicieux produits frais et locaux. Et puis, comment ne pas citer Le Montriond, installé dans d’anciennes toilettes publiques à l’entrée du parc, qui propose boissons et petite restauration. Mais le parc offre plein d’autres atouts, comme <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-et-jardin-botanique-de-lausanne/\">le Jardin botanique</a>, où le petit musée, les serres et les sentiers aménagés permettent de découvrir des espèces d’arbres ou de plantes. Sans oublier la vue imprenable sur le lac et les montagnes depuis le sommet de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">la colline de Montriond</a> ! Le chemin pour y arriver traverse une petite forêt et permet aussi d’admirer les jardins familiaux, toujours très fleuris, tenus par des habitant-e-s.",
+            "de": "Etwas weiter unten, im Quartier Sous-Gare südlich des Bahnhofs, befindet sich der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/milan-park/\">Milan Park</a>, einer der bei der einheimischen Bevölkerung bekanntesten und beliebtesten Pärke. Und das aus gutem Grund. Der Milan Park ist der unverzichtbare Ort für alle, um den Lieblingssport auszuüben, einen Drink im Freundeskreis zu geniessen, Schätze auf einem Flohmarkt aufzustöbern oder sich im Sommer einen Film anzusehen. Ausserdem ist seit April jeden Freitag bis 19 Uhr Markt, wo ihr euch mit köstlichen frischen und lokalen Produkten eindecken könnt. Unbedingt zu erwähnen ist auch das in ehemaligen öffentlichen Toiletten untergebrachte Le Montriond am Parkeingang, das Getränke und Imbisse serviert. Der Park bietet aber noch viel mehr! Da ist zum Beispiel der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/botanische-garten-und-museum-von-lausanne/\">botanische Garten</a> mit seinem kleinen Museum, den Gewächshäusern und Wegen, die zum Erkunden verschiedener Baum- und Pflanzenarten einladen. Oder die atemberaubende Aussicht, die sich von zuoberst auf <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">dem Montriond-Hügel</a> über den See und die Berge erstreckt! Auf dem Weg nach oben, der durch ein kleines Waldstück führt, lassen sich die immer sehr blumenreichen Schrebergärten bewundern.",
+            "en": "A little further down, in the area under the station, <a href=\"https://www.lausanne-tourisme.ch/en/explore/milan-park/\">Milan Park</a> is one of the best known and best loved of Lausanners. And for good reason. If you wish to practise your favourite sport, share an aperitif with friends, bargain hunt in a yard sale or watch a movie screening in the summer, Milan Park is THE meeting place. In addition, since the month of April, a new farmer’s market sets up there every Friday until 7 pm – perfect to stock up on delicious fresh and local products. And how could I not mention Le Montriond, set up in former public toilets at the park’s entrance and that offers drinks and snacks. But the park also boasts plenty of other assets, such as the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-botanical-museum-and-garden/\">Botanical Garden</a>, in which the small museum, greenhouses and trails lead you on a discovery of tree or plant species. Not forgetting the breathtaking view on the lake and mountains from the top of <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\">Montriond Hill</a>! The path to get there cuts through a small forest and also gives the opportunity to admire allotments, always very flowered, that are looked after by the inhabitants."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26037,
+            "name": "Lausanne, ville nature",
+            "public_name": {
+              "fr": "Lausanne, ville nature"
+            },
+            "cloudinary_id": "925ebff907cce0e3",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "925ebff907cce0e3.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Parc-de-Milan_02-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26118,
+            "name": "Lausanne, ville nature",
+            "public_name": {
+              "fr": "Lausanne, ville nature"
+            },
+            "cloudinary_id": "de726d4f6fdf0532",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "de726d4f6fdf0532.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Parc-de-Milan_01-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "heading",
+          "tag": "h2",
+          "value": {
+            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ouchy/\">Ouchy et le bord du lac</a>",
+            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\">Ouchy und das Seeufer</a>",
+            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\">Ouchy and lakeside</a>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "L’atout majeur de Lausanne est sans aucun doute son bord du lac. Facilement accessible à pied ou en métro, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ouchy/\">Ouchy</a> est probablement l’endroit le plus prisé en été !  Il faut dire que les activités n’y manquent pas : <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\">bateaux effectuant des croisières sur le lac</a>, places de jeux, <a href=\"https://www.lausanne-tourisme.ch/fr/activites-nautiques/\">stands de location de pédalos</a> et depuis peu, vous pouvez accéder directement au lac depuis <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-douchy/\">la nouvelle plage d’Ouchy</a> pour vous baigner. De quoi profiter au maximum des beaux jours à Lausanne… Un peu plus loin, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">la Jetée de la compagnie</a> s’installe dès le mois d’avril dans un container et propose, elle aussi, de quoi boire un petit verre en terrasse et grignoter des snacks entre deux plongeons. Grâce à l’aménagement d’un nouvel accès au lac, allier baignade et apéritif sur le deck en bois de la Jetée est devenu, vous l’aurez compris, un incontournable.",
+            "de": "Der grösste Trumpf von Lausanne ist zweifellos das Seeufer. Das Quartier <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ouchy/\">Ouchy</a> ist bequem zu Fuss oder mit der Metro zu erreichen und im Sommer wahrscheinlich der beliebteste Ort der Stadt! An Aktivitäten mangelt es jedenfalls nicht: <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schifffahrten-auf-dem-genfersee-cgn/\">Schiff- und Bootsfahrten</a>, Spielplätze, <a href=\"https://www.lausanne-tourisme.ch/de/freizeitgestaltung-genfersee/\">Pedalovermietung</a> und eine vor Kurzem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-strand-von-ouchy/\">neu erstellte Holzplattform</a>, die den Zugang zum Schwimmen im See erleichtert. Was braucht es mehr, um die schönen Tage in Lausanne in vollen Zügen zu geniessen? Nur ein paar Schritte weiter liegt das in einem Container untergebrachte Terrassenrestaurant <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\">Jetée de la Compagnie</a>, das sich ab April zum Verweilen bei einem Getränk oder Snack zwischen zwei Sprüngen in den See anbietet. Wie ihr es euch denken könnt, ist seit dem neu erstellten Zugang zum See das Baden mit anschliessendem Aperitif auf dem Holzdeck der Jetée de la Compagnie ein absolutes Muss geworden.",
+            "en": "Lausanne’s major asset is undoubtedly its lakeside. Easily reached on foot or by metro,<a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy/\"> Ouchy</a> is probably the most sought-after place in the summer! It’s got to be said that activities are aplenty: <a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\">boats cruising the lake</a>, playgrounds, <a href=\"https://www.lausanne-tourisme.ch/en/leisure-lake-geneva/\">pedal-boat rentals</a> and, recently, <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy-beach/\">a new platform</a> to make it easier to access for a swim. Everything we need to make the most of the summery days in Lausanne… A bit further along, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> opens shop in a container as from April and offers drinks to enjoy on its terrasse and something to nibble between two dips in the lake. Thanks to the installation of a new access to the lake, combining swimming and an aperitif on the Jetée’s wooden deck has become an absolute must, as you may have gathered."
+          }
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26185,
+            "name": "Lausanne, ville nature",
+            "public_name": {
+              "fr": "Lausanne, ville nature"
+            },
+            "cloudinary_id": "95b220b08d3b9431",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "95b220b08d3b9431.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_01-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "image",
+          "value": {
+            "id": 26252,
+            "name": "Lausanne, ville nature",
+            "public_name": {
+              "fr": "Lausanne, ville nature"
+            },
+            "cloudinary_id": "f56ee54dc7038572",
+            "mime_type": "image/jpeg",
+            "copyright": "© ",
+            "metadata": {
+              "width": 1920,
+              "height": 2560,
+              "mimeType": "image/jpeg",
+              "copyright": null,
+              "attr": "width=\"1920\" height=\"2560\"",
+              "tags": null,
+              "description": null,
+              "file_name_from_url": "f56ee54dc7038572.jpg",
+              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Bord-du-lac_02-scaled.jpg"
+            }
+          },
+          "size": "medium",
+          "focus": "auto"
+        },
+        {
+          "type": "paragraph",
+          "value": {
+            "fr": "Ce n’est pas pour rien que Lausanne est parfois surnommée la petite San Francisco de Suisse, et le bord du lac est l’un des rares endroits où il est possible de se déplacer à plat sur une grande distance. C’est donc ici que je vous recommande de partir pour une <a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/parcours-velo-lausanne/\">virée à vélo</a> ou en rollers, ou tout simplement pour un jogging ou une balade. D’agréables chemins permettent en effet de rallier Lausanne aux jolis villages alentours, parsemés de petites plages pour des haltes baignade dans les eaux claires du Léman.",
+            "de": "Nicht umsonst wird Lausanne gerne „kleines San Francisco“ der Schweiz genannt. Das Seeufer ist einer der wenigen Orte, wo ihr euch länger auf einer flachen Strecke bewegen könnt. Deshalb empfehle ich euch, hier eure Tour mit dem Velo oder den Inlineskates zu starten, oder einfach einen Spaziergang oder eine Joggingrunde zu machen. Angenehme Wege verbinden Lausanne mit den hübschen umliegenden Dörfern und führen an zahlreichen kleinen Strandabschnitten vorbei, die zum Baden im klaren Wasser des Genfersees einladen.",
+            "en": "Not for nothing is Lausanne sometimes nicknamed the small San Francisco of Switzerland, and the lakeside is one of the rare places that are flat over a long distance. So this is where I recommend you go to cycle or rollerblade, or just go for a run or a walk. Pleasant paths let you rejoin the pretty villages in Lausanne’s surroundings, dotted with small beaches for swimming breaks in Lake Geneva’s clear waters."
+          }
+        }
+      ],
+      "medias": [
+        {
+          "cloudinary_id": "207e751bb3aad7a6",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Lausanne, ville nature"
+          }
+        }
+      ],
+      "published_at": "1620608764",
+      "seo": {
+        "description": {
+          "fr": "Lausanne a l’énorme avantage d’offrir de nombreux espaces verts à deux pas de l’agitation du centre-ville. Parcs, jardins et plages sont pour moi de véritables havres de paix accessibles gratuitement tout au long de l’année, dans lesquels j’aime me rendre dès que le besoin de nature se fait sentir. ",
+          "de": "Lausanne trumpft mit zahlreichen Grünflächen, die nur einen Katzensprung vom Trubel des Stadtzentrums entfernt sind. Pärke, Gärten und das Seeufer sind für mich wahre Oasen der Ruhe, die das ganze Jahr über frei zugänglich sind und wo ich gerne hingehe, wenn ich das Bedürfnis nach Natur verspüre. ",
+          "en": "Lausanne has the huge advantage of offering many green spaces just a stone’s throw from the bustle of the city centre. Parks, gardens and beaches are for me true havens of peace that are accessible for free all year round, and where I love to go as soon as the need for nature arises."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-ville-nature",
+          "de": "lausanne-natur-mitten-in-der-stadt",
+          "en": "lausanne-green-city"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

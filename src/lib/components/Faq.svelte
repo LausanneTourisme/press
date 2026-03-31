@@ -47,25 +47,23 @@
       </Heading>
     {/snippet}
 
-    {#snippet children()}
-      <Paragraph class="font-semibold">
-        <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
-        {@html $t('common.faq.authorisation.paragraph1')}
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.authorisation.paragraph2')}
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.authorisation.paragraph3')}
-      </Paragraph>
-      <Paragraph class="font-semibold">
-        <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
-        {@html $t('common.faq.authorisation.paragraph4')}
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.authorisation.paragraph5')}
-      </Paragraph>
-    {/snippet}
+    <Paragraph class="font-semibold">
+      <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
+      {@html $t('common.faq.authorisation.paragraph1')}
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.authorisation.paragraph2')}
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.authorisation.paragraph3')}
+    </Paragraph>
+    <Paragraph class="font-semibold">
+      <ChevronRight strokeWidth={3} class="mb-2 inline h-3 w-3" />
+      {@html $t('common.faq.authorisation.paragraph4')}
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.authorisation.paragraph5')}
+    </Paragraph>
   </Shelf>
 
   <Shelf
@@ -81,39 +79,37 @@
       </Heading>
     {/snippet}
 
-    {#snippet children()}
-      <Paragraph class="font-semibold">
-        <ChevronRight class="mb-2 inline h-2 w-2" />
-        {@html $t('common.faq.drone.paragraph1')}
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.drone.paragraph2.part1')}
-        (
-        <a class="inline text-blue-500" href="mailto:drones@lausanne-airport.ch" target="_blank">
-          drones@lausanne-airport.ch
-        </a>
-        )
-        {@html $t('common.faq.drone.paragraph2.part2')}
-        &nbsp; (
-        <a class="inline text-blue-500" href="mailto:drones@lausanne.ch" target="_blank">
-          drones@lausanne.ch
-        </a>
-        ).
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.drone.paragraph3')}
-        <a
-          class="inline text-blue-500"
-          href="https://www.lausanne.ch/officiel/administration/securite-et-economie/police-de-lausanne/bons-reflexes/autorisation-survol-drone.html"
-          target="_blank"
-        >
-          {@html $t('common.faq.drone.paragraph3.link-text')}
-        </a>.
-      </Paragraph>
-      <Paragraph>
-        {@html $t('common.faq.drone.paragraph4')}
-      </Paragraph>
-    {/snippet}
+    <Paragraph class="font-semibold">
+      <ChevronRight class="mb-2 inline h-2 w-2" />
+      {@html $t('common.faq.drone.paragraph1')}
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.drone.paragraph2.part1')}
+      (
+      <a class="inline text-blue-500" href="mailto:drones@lausanne-airport.ch" target="_blank">
+        drones@lausanne-airport.ch
+      </a>
+      )
+      {@html $t('common.faq.drone.paragraph2.part2')}
+      &nbsp; (
+      <a class="inline text-blue-500" href="mailto:drones@lausanne.ch" target="_blank">
+        drones@lausanne.ch
+      </a>
+      ).
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.drone.paragraph3')}
+      <a
+        class="inline text-blue-500"
+        href="https://www.lausanne.ch/officiel/administration/securite-et-economie/police-de-lausanne/bons-reflexes/autorisation-survol-drone.html"
+        target="_blank"
+      >
+        {@html $t('common.faq.drone.paragraph3.link-text')}
+      </a>.
+    </Paragraph>
+    <Paragraph>
+      {@html $t('common.faq.drone.paragraph4')}
+    </Paragraph>
   </Shelf>
 
   <Shelf
@@ -129,21 +125,17 @@
       </Heading>
     {/snippet}
 
-    {#snippet children()}
-      <Paragraph>
-        {@html $t('common.faq.access.paragraph1')}
-        &nbsp;
-        <a
-          href="https://www.lausanne-tourisme.ch/{locale}/{$t(
-            'common.faq.access.paragraph1.slug'
-          )}/"
-          class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
-        >
-          {@html $t('common.faq.access.paragraph1.more-informations')}
-          <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
-        </a>
-      </Paragraph>
-    {/snippet}
+    <Paragraph>
+      {@html $t('common.faq.access.paragraph1')}
+      &nbsp;
+      <a
+        href="https://www.lausanne-tourisme.ch/{locale}/{$t('common.faq.access.paragraph1.slug')}/"
+        class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
+      >
+        {@html $t('common.faq.access.paragraph1.more-informations')}
+        <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
+      </a>
+    </Paragraph>
   </Shelf>
 
   <Shelf
@@ -159,20 +151,19 @@
       </Heading>
     {/snippet}
 
-    {#snippet children()}
-      <Paragraph>
-        {@html $t('common.faq.travel.paragraph1.part1')}
-        <a
-          href={$t('common.faq.travel.paragraph1.link')}
-          class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
-        >
-          Lausanne Transport Card
-          <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
-        </a>
-        <br />
-        {@html $t('common.faq.travel.paragraph1.part2')}
-      </Paragraph>
-    {/snippet}
+    <Paragraph>
+      {@html $t('common.faq.travel.paragraph1.part1')}
+      <a
+        href={$t('common.faq.travel.paragraph1.link')}
+        rel="external"
+        class="inline-flex items-center border-b border-b-blue-500 text-blue-500"
+      >
+        Lausanne Transport Card
+        <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
+      </a>
+      <br />
+      {@html $t('common.faq.travel.paragraph1.part2')}
+    </Paragraph>
   </Shelf>
 
   <Shelf
@@ -188,81 +179,71 @@
       </Heading>
     {/snippet}
 
-    {#snippet children()}
-      <Paragraph>
-        {@html $t('common.faq.mention.paragraph1')}
-        <span class="font-bold">
-          <Link
-            withIcon={false}
-            href="https://www.lausanne-tourisme.ch"
-            class="m-0 inline-block p-0"
-          >
-            Lausanne Transport Card
-            <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
-          </Link>
-        </span>
+    <Paragraph>
+      {@html $t('common.faq.mention.paragraph1')}
+      <span class="font-bold">
+        <Link withIcon={false} href="https://www.lausanne-tourisme.ch" class="m-0 inline-block p-0">
+          Lausanne Transport Card
+          <ChevronRight class="ml-1 inline h-4 w-4 stroke-3" />
+        </Link>
+      </span>
+    </Paragraph>
+
+    <div class="overflow-x-auto bg-red-50 dark:text-black">
+      <Paragraph class="px-4 font-bold dark:text-black">
+        {@html $t('common.faq.mention.paragraph2.in-social-networks')}
       </Paragraph>
 
-      <div class="overflow-x-auto bg-red-50 dark:text-black">
-        <Paragraph class="px-4 font-bold dark:text-black">
-          {@html $t('common.faq.mention.paragraph2.in-social-networks')}
-        </Paragraph>
+      <table class="table">
+        <tbody>
+          <tr class="h-auto border-gray-300 md:h-20">
+            <td class="w-16 text-center">
+              <div class="flex items-center gap-3">
+                <Link withIcon={false} href="https://www.instagram.com/thelausanner/" class="ml-4">
+                  <Instagram class="h-6 w-6" />
+                </Link>
+              </div>
+            </td>
+            <td>
+              {@html $t('common.faq.mention.paragraph2.instagram')}
+            </td>
+          </tr>
+          <tr class="h-auto md:h-20">
+            <td class="w-16 text-center">
+              <div class="flex items-center gap-3">
+                <Link
+                  withIcon={false}
+                  href="https://www.linkedin.com/company/lausanne-capitale-olympique"
+                  class="ml-4"
+                >
+                  <LinkedIn class="h-6 w-6" />
+                </Link>
+              </div>
+            </td>
+            <td>
+              {@html $t('common.faq.mention.paragraph2.linkedIn')}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <table class="table">
-          <tbody>
-            <tr class="h-auto border-gray-300 md:h-20">
-              <td class="w-16 text-center">
-                <div class="flex items-center gap-3">
-                  <Link
-                    withIcon={false}
-                    href="https://www.instagram.com/thelausanner/"
-                    class="ml-4"
-                  >
-                    <Instagram class="h-6 w-6" />
-                  </Link>
-                </div>
-              </td>
-              <td>
-                {@html $t('common.faq.mention.paragraph2.instagram')}
-              </td>
-            </tr>
-            <tr class="h-auto md:h-20">
-              <td class="w-16 text-center">
-                <div class="flex items-center gap-3">
-                  <Link
-                    withIcon={false}
-                    href="https://www.linkedin.com/company/lausanne-capitale-olympique"
-                    class="ml-4"
-                  >
-                    <LinkedIn class="h-6 w-6" />
-                  </Link>
-                </div>
-              </td>
-              <td>
-                {@html $t('common.faq.mention.paragraph2.linkedIn')}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="mt-1 bg-red-50 p-4 pb-5 dark:text-black">
+      <Paragraph class="font-bold  dark:text-black">
+        {@html $t('common.faq.mention.paragraph3.find-us')}
+      </Paragraph>
+      <div class="inline-flex">
+        <Link
+          withIcon={false}
+          href="https://www.facebook.com/LausanneCapitaleOlympique/"
+          class="mr-6"
+        >
+          <Facebook class="h-5 w-5 md:h-7 md:w-7" />
+        </Link>
+        <Link withIcon={false} href="https://www.youtube.com/LausanneTourisme" class="mr-6">
+          <Youtube class="h-6 w-6 md:h-8 md:w-8" />
+        </Link>
       </div>
-
-      <div class="mt-1 bg-red-50 p-4 pb-5 dark:text-black">
-        <Paragraph class="font-bold  dark:text-black">
-          {@html $t('common.faq.mention.paragraph3.find-us')}
-        </Paragraph>
-        <div class="inline-flex">
-          <Link
-            withIcon={false}
-            href="https://www.facebook.com/LausanneCapitaleOlympique/"
-            class="mr-6"
-          >
-            <Facebook class="h-5 w-5 md:h-7 md:w-7" />
-          </Link>
-          <Link withIcon={false} href="https://www.youtube.com/LausanneTourisme" class="mr-6">
-            <Youtube class="h-6 w-6 md:h-8 md:w-8" />
-          </Link>
-        </div>
-      </div>
-    {/snippet}
+    </div>
   </Shelf>
 </div>

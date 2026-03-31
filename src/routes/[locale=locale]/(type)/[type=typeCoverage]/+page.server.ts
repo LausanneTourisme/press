@@ -6,7 +6,7 @@ export const entries: EntryGenerator = () => {
   const t = translations.get();
 
   return supportedLocales.flatMap((locale) => {
-    const type = t[locale][`route.${RouteTypes.Coverage}.slug`];
+    const type = t[locale][`route.${RouteTypes.Coverages}.slug`];
     return {
       locale,
       type

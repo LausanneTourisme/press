@@ -76,11 +76,10 @@
   <meta property="og:title" content={seo.title} />
   <meta property="og:description" content={seo.description} />
   <meta property="og:url" content={`${seo.canonical}`} />
-  <script type="application/ld+json">
-  </script>
+
   <!-- Structured Data -->
   {@html `
-      <script type="application/ld+json">
+      \u003Cscript type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -89,10 +88,10 @@
         "description": "${seo.description}",
         "url": "${seo.canonical}"
       }
-      </script>
+      \u003C/script>
     `}
   {@html `
-    <script type="application/ld+json">
+    \u003Cscript type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Organization",
@@ -122,11 +121,11 @@
         "https://www.linkedin.com/company/lausanne-capitale-olympique"
       ]
     }
-    </script>
+    \u003C/script>
     `}
   <!-- Google Tag Manager -->
   {@html `
-  <script>
+  \u003Cscript>
     (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -137,7 +136,7 @@
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', '${PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
-  </script>
+  \u003C/script>
   `}
   <!-- End Google Tag Manager -->
 </svelte:head>

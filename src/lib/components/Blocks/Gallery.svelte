@@ -11,7 +11,7 @@
     locale: Locale;
   };
 
-  const { class: additionalClass = '', images, locale }: HeadingProps = $props();
+  const { images, locale }: HeadingProps = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
@@ -34,7 +34,7 @@
 {#if images.length % 2 === 0}
   <!-- Block is even: simple grid-->
   <section class="my-6 grid auto-rows-auto grid-cols-2 gap-4">
-    {#each images as image}
+    {#each images as image (image.cloudinary_id)}
       <Figure
         useCloudinaryPreset={false}
         class="h-64"
