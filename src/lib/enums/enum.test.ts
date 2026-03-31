@@ -1,10 +1,12 @@
 import {
+  ConsentTypesKeys,
   Forms,
   FormsKeys,
   getValues,
   MediaTypes,
   MediaTypesKeys,
   RouteTypes,
+  RouteTypesKeys,
   SocialNetworks,
   SocialNetworksKeys,
   ThemeKeys,
@@ -17,6 +19,21 @@ import {
 import { describe, expect, it } from 'vitest';
 
 describe('get keys from enums', () => {
+  it('RouteTypes', () => {
+    const keys = RouteTypesKeys;
+    expect(keys).toEqual({
+      articles: 'Articles',
+      contact: 'Contact',
+      coverages: 'Coverages',
+      highlights: 'Highlights',
+      home: 'Home',
+      'press-releases': 'Pressreleases',
+      'press-kits': 'Presskits',
+      'press-releases-and-press-kits': 'PressreleasesAndPresskits',
+      themes: 'Themes',
+      forms: 'Forms'
+    });
+  });
   it('Theme', () => {
     const keys = ThemeKeys;
     expect(keys).toEqual({
@@ -40,6 +57,14 @@ describe('get keys from enums', () => {
       journalist: 'Journalist',
       'media-coverage': 'MediaCoverage',
       thanks: 'Thanks'
+    });
+  });
+  it('ConsentTypes', () => {
+    const keys = ConsentTypesKeys;
+    expect(keys).toEqual({
+      'media-content-creator': 'MediaContentCreator',
+      'media-press': 'MeidaPress',
+      'newsletter-press': 'NewsletterPress'
     });
   });
   it('MediaTypes', () => {
