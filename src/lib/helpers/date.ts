@@ -53,7 +53,7 @@ export const findAvailablePeriod = (
   start: DateTime | null | undefined,
   end: DateTime | null | undefined
 ): Period | null => {
-  const today = start ?? DateTime.now();
+  const today = start ?? DateTime.now().startOf('day');
 
   if (end && end < today) return null;
 
