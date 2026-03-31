@@ -20,24 +20,24 @@ jobs:
 
       - name: Deploy .env
         run: |
-          cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
-          PUBLIC_ENABLE_OFFLINE_MODE=\"${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}\"
-          PUBLIC_CLOUDINARY_CLOUD_NAME=\"${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}\"
-          PUBLIC_CLOUDINARY_CNAME=\"${{ secrets.PUBLIC_CLOUDINARY_CNAME }}\"
-          PUBLIC_CLOUDINARY_UPLOAD_PRESET=\"${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}\"
-          GRAPHQL_URL=\"${{ secrets.GRAPHQL_URL }}\"
-          GRAPHQL_TOKEN=\"${{ secrets.GRAPHQL_TOKEN }}\"
-          GRAPHQL_AGENDA_TOKEN=\"${{ secrets.GRAPHQL_AGENDA_TOKEN }}\"
+          cat > .env << 'EOF'
+          PUBLIC_ENABLE_OFFLINE_MODE="${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}"
+          PUBLIC_CLOUDINARY_CLOUD_NAME="${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}"
+          PUBLIC_CLOUDINARY_CNAME="${{ secrets.PUBLIC_CLOUDINARY_CNAME }}"
+          PUBLIC_CLOUDINARY_UPLOAD_PRESET="${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}"
+          GRAPHQL_URL="${{ secrets.GRAPHQL_URL }}"
+          GRAPHQL_TOKEN="${{ secrets.GRAPHQL_TOKEN }}"
+          GRAPHQL_AGENDA_TOKEN="${{ secrets.GRAPHQL_AGENDA_TOKEN }}"
           GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
-          PUBLIC_MAPTILER_URL=\"${{ secrets.PUBLIC_MAPTILER_URL }}\"
-          BOTPOISON_SKEY=\"${{ secrets.BOTPOISON_SKEY }}\"
-          PUBLIC_BOTPOISON_PUBLICKEY=\"${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}\"
-          PUBLIC_MANDRILL_API_KEY=\"${{ secrets.PUBLIC_MANDRILL_API_KEY }}\"
-          MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
-          MAIL_FROM=\"${{ secrets.MAIL_FROM }}\"
-          MAIL_TO=\"${{ secrets.MAIL_TO }}\"
-          API_HTML_TO_PDF=\"${{ secrets.API_HTML_TO_PDF }}\"
-          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN=\"${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}\"
+          PUBLIC_MAPTILER_URL="${{ secrets.PUBLIC_MAPTILER_URL }}"
+          BOTPOISON_SKEY="${{ secrets.BOTPOISON_SKEY }}"
+          PUBLIC_BOTPOISON_PUBLICKEY="${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}"
+          PUBLIC_MANDRILL_API_KEY="${{ secrets.PUBLIC_MANDRILL_API_KEY }}"
+          MAIL_DEFAULT_RECIPIENTS="${{ secrets.MAIL_DEFAULT_RECIPIENTS }}"
+          MAIL_FROM="${{ secrets.MAIL_FROM }}"
+          MAIL_TO="${{ secrets.MAIL_TO }}"
+          API_HTML_TO_PDF="${{ secrets.API_HTML_TO_PDF }}"
+          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN="${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}"
           EOF
 
       - name: Install dependencies
@@ -65,24 +65,24 @@ jobs:
 
       - name: Deploy .env
         run: |
-          cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
-          PUBLIC_ENABLE_OFFLINE_MODE=\"${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}\"
-          PUBLIC_CLOUDINARY_CLOUD_NAME=\"${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}\"
-          PUBLIC_CLOUDINARY_CNAME=\"${{ secrets.PUBLIC_CLOUDINARY_CNAME }}\"
-          PUBLIC_CLOUDINARY_UPLOAD_PRESET=\"${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}\"
-          GRAPHQL_URL=\"${{ secrets.GRAPHQL_URL }}\"
-          GRAPHQL_TOKEN=\"${{ secrets.GRAPHQL_TOKEN }}\"
-          GRAPHQL_AGENDA_TOKEN=\"${{ secrets.GRAPHQL_AGENDA_TOKEN }}\"
+          cat > .env << 'EOF'
+          PUBLIC_ENABLE_OFFLINE_MODE="${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}"
+          PUBLIC_CLOUDINARY_CLOUD_NAME="${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}"
+          PUBLIC_CLOUDINARY_CNAME="${{ secrets.PUBLIC_CLOUDINARY_CNAME }}"
+          PUBLIC_CLOUDINARY_UPLOAD_PRESET="${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}"
+          GRAPHQL_URL="${{ secrets.GRAPHQL_URL }}"
+          GRAPHQL_TOKEN="${{ secrets.GRAPHQL_TOKEN }}"
+          GRAPHQL_AGENDA_TOKEN="${{ secrets.GRAPHQL_AGENDA_TOKEN }}"
           GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
-          PUBLIC_MAPTILER_URL=\"${{ secrets.PUBLIC_MAPTILER_URL }}\"
-          BOTPOISON_SKEY=\"${{ secrets.BOTPOISON_SKEY }}\"
-          PUBLIC_BOTPOISON_PUBLICKEY=\"${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}\"
-          PUBLIC_MANDRILL_API_KEY=\"${{ secrets.PUBLIC_MANDRILL_API_KEY }}\"
-          MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
-          MAIL_FROM=\"${{ secrets.MAIL_FROM }}\"
-          MAIL_TO=\"${{ secrets.MAIL_TO }}\"
-          API_HTML_TO_PDF=\"${{ secrets.API_HTML_TO_PDF }}\"
-          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN=\"${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}\"
+          PUBLIC_MAPTILER_URL="${{ secrets.PUBLIC_MAPTILER_URL }}"
+          BOTPOISON_SKEY="${{ secrets.BOTPOISON_SKEY }}"
+          PUBLIC_BOTPOISON_PUBLICKEY="${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}"
+          PUBLIC_MANDRILL_API_KEY="${{ secrets.PUBLIC_MANDRILL_API_KEY }}"
+          MAIL_DEFAULT_RECIPIENTS="${{ secrets.MAIL_DEFAULT_RECIPIENTS }}"
+          MAIL_FROM="${{ secrets.MAIL_FROM }}"
+          MAIL_TO="${{ secrets.MAIL_TO }}"
+          API_HTML_TO_PDF="${{ secrets.API_HTML_TO_PDF }}"
+          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN="${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}"
           EOF
 
       - name: Install dependencies
