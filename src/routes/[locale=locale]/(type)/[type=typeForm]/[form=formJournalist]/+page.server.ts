@@ -1,4 +1,4 @@
-import { Forms, MediaTypes, RouteTypes, ConsentsTypes, type ConsentType } from '$enums';
+import { Forms, MediaTypes, RouteTypes, ConsentsTypes } from '$enums';
 import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
@@ -16,7 +16,7 @@ import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
 import * as apsis from '$lib/services/apsis.server';
-import { selectCountryId } from '$lib/helpers/apsis';
+import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import type { SuperValidated } from 'sveltekit-superforms/server';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -55,24 +55,24 @@ export const actions = {
       return failError({ form, cookies, message: `Form can't update the Apsis profile` });
     }
 
-    const consents: ConsentType[] = form.data.newsletter
-      ? [ConsentsTypes.MeidaPress, ConsentsTypes.NewsletterPress]
-      : [ConsentsTypes.MeidaPress];
-
-    consents.forEach(async (consentType) => {
-      const consentAdded = await apsis.addProfileToMailConsents({
-        email: form.data.personalInformation.email,
-        consentType
-      });
-
-      if (!consentAdded) {
-        return failError({
-          form,
-          cookies,
-          message: `Form can't add consents to the profile in Apsis`
-        });
+    let message = '';
+    const consentSucessFully = await setConsents({
+      consents: form.data.newsletter
+        ? [ConsentsTypes.MeidaPress, ConsentsTypes.NewsletterPress]
+        : [ConsentsTypes.MeidaPress],
+      email_to: form.data.personalInformation.email,
+      onError: (error) => {
+        message = error;
       }
     });
+
+    if (!consentSucessFully) {
+      failError({
+        form,
+        cookies,
+        message
+      });
+    }
 
     const sendWithSuccess = await sendFormByEmail({
       locale: params.locale as Locale,
@@ -80,6 +80,11 @@ export const actions = {
     });
 
     if (sendWithSuccess) {
+      failError({
+        form,
+        cookies,
+        message
+      });
       return redirect(
         303,
         `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`

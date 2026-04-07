@@ -1,3 +1,6 @@
+import type { ConsentType } from '$enums';
+import * as apsis from '$lib/services/apsis.server';
+
 const countries: Record<string, number> = {
   Switzerland: 210,
   France: 78,
@@ -252,3 +255,26 @@ const countries: Record<string, number> = {
 
 export const selectCountryId = (country: string | undefined): number | undefined =>
   country ? countries[country] : undefined;
+
+export const setConsents = async ({
+  consents,
+  email_to,
+  onError
+}: {
+  consents: ConsentType[];
+  email_to: string;
+  onError?: (error: string) => void;
+}) => {
+  for (const consentType of consents) {
+    const consentAdded = await apsis.addProfileToMailConsents({
+      email: email_to,
+      consentType
+    });
+
+    if (!consentAdded) {
+      onError?.(`Failed to add consent ${consentType} for email ${email_to} in Apsis`);
+      return false;
+    }
+  }
+  return true;
+};
