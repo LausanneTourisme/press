@@ -96,23 +96,6 @@
         <Paragraph>Press & Public Relations Manager</Paragraph>
       </article>
     </div>
-    <div class="mt-12 md:mx-12">
-      <article>
-        <div class="avatar w-full">
-          <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image
-              alt="Laura Ragonese"
-              title="Laura Ragonese"
-              localSrc="/laura.jpg"
-              src="/laura"
-              transform={{ width: 512, aspect_ratio: '1:1' }}
-            />
-          </div>
-        </div>
-        <Heading tag="h3">Laura Ragonese</Heading>
-        <Paragraph>Media & Press Coordinator</Paragraph>
-      </article>
-    </div>
   </div>
 </Container>
 <Anchor name="form" />
