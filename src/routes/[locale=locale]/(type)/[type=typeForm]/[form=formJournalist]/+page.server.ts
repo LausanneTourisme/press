@@ -4,7 +4,7 @@ import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type Mailchimp from '@mailchimp/mailchimp_transactional';
-import { fail, redirect } from '@sveltejs/kit';
+import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
 import en from 'i18n-iso-countries/langs/en.json';
@@ -17,6 +17,7 @@ import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
 import * as apsis from '$lib/services/apsis.server';
 import { selectCountryId } from '$lib/helpers/apsis';
+import type { SuperValidated } from 'sveltekit-superforms/server';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -41,260 +42,17 @@ export const actions = {
     const form = await superValidate(formdata, lastStep);
 
     if (!form.valid) {
-      console.error('Form invalid');
-      return fail(400, { form });
+      return failError({ form, cookies, message: `Form invalid` });
     }
 
     const profileCreated = await apsis.createProfile(form.data.personalInformation.email);
     if (!profileCreated) {
       console.error(`Form can't create an Apsis profile`);
-      return fail(400, { form });
+      return failError({ form, cookies, message: `Form can't create an Apsis profile` });
     }
 
-    const attributesUpdated = await apsis.updateProfileAttributes({
-      email: form.data.personalInformation.email,
-      attributes: {
-        // PRESS - Nom média
-        'usercreated.attributes.press_-_nom_mdia-mnikzmwwgw': form.data.mediaName,
-        // PRESS - Thématique du média
-        'usercreated.attributes.press_-_thmatique_du_mdia-dpju2awz9f': form.data.thematic,
-        // PRESS - Profil de l'audience
-        'usercreated.attributes.press_-_profil_de_laudience-434y7go1r9': form.data.audienceProfile,
-        // PRESS - Type de médias
-        'usercreated.attributes.press_-_type_de_mdias-8iz76e7cqf': form.data.mediaTypes.join(', '),
-        // PRESS - Objet de la demande
-        'usercreated.attributes.press_-_objet_de_la_demande-59ljafr7jf': form.data.objectRequest,
-        // PRESS - stats print - lieux de diffusion
-        'usercreated.attributes.press_-_stats_print_-_lieux_de_diffusion-sny3omfvn4':
-          form.data.printMediaStatistics?.broadcastLocation,
-        // PRESS - stats print - nombre d'exemplaires
-        'usercreated.attributes.press_-_stats_print_-_nombre_dexemplaires-gv56zq433f':
-          form.data.printMediaStatistics?.copies,
-        // PRESS - stats print - nombre de lecteurs
-        'usercreated.attributes.press_-_stats_print_-_nombre_de_lecteurs-1c7lottbnm':
-          form.data.printMediaStatistics?.readers,
-        // PRESS - stats radio/tv - Nom de l'émission
-        'usercreated.attributes.press_-_stats_radiotv_-_nom_de_lmission-pkli1azlc8':
-          form.data.radioAndTVMediaStatistics?.emissionName,
-        // PRESS - stats radio/tv - nombre d'auditeurs
-        'usercreated.attributes.press_-_stats_radiotv_-_nombre_dauditeurs-yglhf6972f':
-          form.data.radioAndTVMediaStatistics?.viewers,
-        // PRESS - stats site web - nombre de pages vues par mois
-        'usercreated.attributes.press_-_stats_site_web_-_nombre_de_pages_-78nx897yjd':
-          form.data.onlineMediaStatistics?.monthlyPageViews ?? undefined,
-        // PRESS - stats site web - url
-        'usercreated.attributes.press_-_stats_site_web_-_url-fpko4in3um':
-          form.data.onlineMediaStatistics?.website,
-        // PRESS - stats site web - visiteurs uniques par mois
-        'usercreated.attributes.press_-_stats_site_web_-_visiteurs_unique-aodjvepkyu':
-          form.data.onlineMediaStatistics?.monthlyUniqueVisitors,
-        // PRESS - couverture médiatique radio/tv - thématique de l'émission
-        'usercreated.attributes.press_-_couverture_mdiatique_radiotv_-_th-vk4cdag1hu':
-          form.data.mediaCoverageTvOrRadio?.articleThematic,
-        // PRESS - couverture médiatique radio/tv - date de sortie de l'émission
-        'usercreated.attributes.press_-_couverture_mdiatique_radiotv_-_da-k4z98wlusn':
-          form.data.mediaCoverageTvOrRadio?.publishDate,
-        // PRESS - couverture médiatique print - nombre de pages
-        'usercreated.attributes.press_-_couverture_mdiatique_print_-_nomb-xxx6c33coz':
-          form.data.mediaCoveragePrint?.totalPages,
-        // PRESS - couverture médiatique print - Longueur de l'article
-        'usercreated.attributes.press_-_couverture_mdiatique_print_-_long-2wgqzpcyws':
-          form.data.mediaCoveragePrint?.articleLength,
-        // PRESS - couverture médiatique print - date de sortie de l'article
-        'usercreated.attributes.press_-_couverture_mdiatique_print_-_date-knfrd93d8l':
-          form.data.mediaCoveragePrint?.publishDate,
-        // PRESS - couverture médiatique site web - thématique de l'article
-        'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_t-2u34gt8m9i':
-          form.data.mediaCoverageOnline?.articleThematic,
-        // PRESS - couverture médiatique site web - date de sortie de l'article
-        'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_d-51ziynjuvl':
-          form.data.mediaCoverageOnline?.publishDate,
-        // PRESS - couverture médiatique site web - longueur de l'article
-        'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_l-nhda9bgdj3':
-          form.data.mediaCoverageOnline?.articleLength,
-        // PRESS - info voyage - pays départ
-        'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g': countries.getName(
-          form.data.travelInformation.departurePoint.country,
-          params.locale
-        ),
-        // PRESS - info voyage - trajet aller
-        'usercreated.attributes.press_-_info_voyage_-_trajet_aller-2jsn1a11d1':
-          form.data.travelInformation.departurePoint.outwardJourney ?? '',
-        // PRESS - info voyage - ville départ
-        'usercreated.attributes.press_-_info_voyage_-_ville_dpart-9vum9j2my2':
-          form.data.travelInformation.departurePoint.city,
-        // PRESS - info voyage - trajet retour
-        'usercreated.attributes.press_-_info_voyage_-_trajet_retour-ow47wl9fsx':
-          form.data.travelInformation.returnJourney ?? '',
-        // PRESS - info voyage - abonnements train
-        'usercreated.attributes.press_-_info_voyage_-_abonnements_train-hil7po868z':
-          form.data.travelInformation.travelReductions.join(', '),
-        // PRESS - info voyage - dernière visite
-        'usercreated.attributes.press_-_info_voyage_-_dernire_visite-vld8zpxgep':
-          form.data.travelInformation.lastVisit ?? '',
-        // PRESS - info personelles - Titre
-        'usercreated.attributes.press_-_info_personelles_-_titre-wkn2jhthui':
-          form.data.personalInformation.title,
-        // PRESS - info personelles - Prénom
-        'usercreated.attributes.press_-_info_personelles_-_prnom-mbqrq9wdyh':
-          form.data.personalInformation.firstName,
-        // PRESS - info personelles - Nom
-        'usercreated.attributes.press_-_info_personelles_-_nom-cxjbhy5hty':
-          form.data.personalInformation.lastName,
-        // PRESS - info personelles - date de naissance
-        'usercreated.attributes.press_-_info_personelles_-_date_de_naissa-24imaurrq5':
-          form.data.personalInformation.birthday,
-        // PRESS - info personelles - Numéro de Téléphone
-        'usercreated.attributes.press_-_info_personelles_-_numro_de_tlpho-al4q3cx5jz':
-          form.data.personalInformation.phoneNumber,
-        // PRESS - info personelles - email
-        'usercreated.attributes.press_-_info_personelles_-_email-8b44zvzpt6':
-          form.data.personalInformation.email,
-        // PRESS - info personelles - langues parlées
-        'usercreated.attributes.press_-_info_personelles_-_langues_parles-ttfydkakad':
-          form.data.personalInformation.spokenLanguages,
-        // PRESS - info personelles - conditions médicales
-        'usercreated.attributes.press_-_info_personelles_-_conditions_mdi-4djm12gpt1':
-          form.data.personalInformation.medicalAndPhysicalCondition ?? '',
-        // PRESS - info personelles - allergies
-        'usercreated.attributes.press_-_info_personelles_-_allergies-8ja4yjsxx4':
-          form.data.personalInformation.allergies,
-        // PRESS - info personelles - freelance
-        'usercreated.attributes.press_-_info_personelles_-_freelance-obp6v6zi8j':
-          form.data.personalInformation.freelance,
-        // PRESS - info personelles - numéro de passport
-        'usercreated.attributes.press_-_info_personelles_-_numro_de_passp-qzpnkyyl64':
-          form.data.personalInformation.passport.number,
-        // PRESS - info personelles - validité du passport
-        'usercreated.attributes.press_-_info_personelles_-_validit_du_pas-63lbaolk83':
-          form.data.personalInformation.passport.validity,
-        // PRESS - info personelles - Adresse
-        'usercreated.attributes.press_-_info_personelles_-_adresse-4j5rjm99hd':
-          form.data.personalInformation.address.streetAddress,
-        // PRESS - info personelles - Ville
-        'usercreated.attributes.press_-_info_personelles_-_ville-xjpq3n6cbi':
-          form.data.personalInformation.address.city,
-        // PRESS - info personelles - Zip
-        'usercreated.attributes.press_-_info_personelles_-_zip-yefz81y17u':
-          form.data.personalInformation.address.postalcode,
-        // PRESS - info personelles - Pays
-        'usercreated.attributes.press_-_info_personelles_-_pays-tdg34z5ltt':
-          form.data.personalInformation.address.country,
-        // PRESS - info personelles - contacts d'urgence
-        'usercreated.attributes.press_-_info_personelles_-_contacts_durge-l9fvrao7bi':
-          form.data.personalInformation.emergencyContacts
-            .map((X) => `${X.name} (${X.phoneNumber})`)
-            .join('; '),
-        // PRESS - info personelles - assurance voyage
-        'usercreated.attributes.press_-_info_personelles_-_assurance_voya-ctvpxedjyw':
-          form.data.travelInsuranceCoveringSwitzerland,
-        // PRESS - newsletter
-        'usercreated.attributes.press_-_newsletter-omm8pihlcr': form.data.newsletter,
-        // PRESS - info personelles - remarques
-        'usercreated.attributes.press_-_info_personelles_-_remarques-5lrlrl21ta':
-          form.data.remarks ?? '',
-
-        // -------------------------------------- ATTRIBUTES FOR APSIS & CRM --------------------------------------
-
-        // Birthdate (YYYY-MM-DD)
-        'com.apsis1.attributes.birthdate': form.data.personalInformation.birthday,
-        // Profile First Name
-        'com.apsis1.attributes.firstname': form.data.personalInformation.firstName,
-        // Last Name of profile
-        'com.apsis1.attributes.lastname': form.data.personalInformation.lastName,
-        // Primary mobile phone number
-        'com.apsis1.attributes.mobile': Number(
-          form.data.personalInformation.phoneNumber.replaceAll('+', '00').replaceAll(' ', '')
-        ),
-        // Primary e-mail address
-        'com.apsis1.attributes.email': form.data.personalInformation.email,
-        // CRM - Field - Language
-        'usercreated.attributes.langue_crm-98h3ud5p4v': (() => {
-          switch (params.locale) {
-            case 'fr':
-              return 2;
-            case 'de':
-              return 4;
-            case 'en':
-            default:
-              return 1;
-          }
-        })(),
-        // CRM - Fields - Title
-        'usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk': (() => {
-          switch (form.data.personalInformation.title) {
-            case 'mr':
-              return {
-                fr: 'M.',
-                en: 'Mr.',
-                de: 'Herr'
-              }[params.locale];
-            case 'mrs':
-              return {
-                fr: 'Mme',
-                en: 'Mrs.',
-                de: 'Frau'
-              }[params.locale];
-            case 'they':
-              return {
-                fr: '-',
-                en: '-',
-                de: '-'
-              }[params.locale];
-          }
-        })(),
-        // CRM - Fields - Full Title
-        'usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn': (() => {
-          switch (form.data.personalInformation.title) {
-            case 'mr':
-              return {
-                fr: 'Monsieur',
-                en: 'Mister',
-                de: 'Herr'
-              }[params.locale];
-            case 'mrs':
-              return {
-                fr: 'Madame',
-                en: 'Mistress',
-                de: 'Frau'
-              }[params.locale];
-            case 'they':
-              return {
-                fr: '-',
-                en: '-',
-                de: '-'
-              }[params.locale];
-          }
-        })(),
-        // CRM - Fields - Account Manager
-        'usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk': 213,
-        // CRM - Fields - Media Sub-Type
-        'usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw': form.data
-          .personalInformation.freelance
-          ? 2
-          : 1,
-        // CRM - Fields - Type
-        'usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv': 1, // Média
-
-        //// ADRESSE
-        // CRM - Fields - Country
-        'com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh':
-          selectCountryId(countries.getName(form.data.personalInformation.address.country, 'en')),
-        // CRM - Fields - Post code
-        'usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6':
-          form.data.personalInformation.address.postalcode,
-        // CRM - Fields - Street
-        'usercreated.attributes.crm_-_fields_-_street-ym828bzua3':
-          form.data.personalInformation.address.streetAddress,
-        // CRM - Fields - Town/City
-        'usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd':
-          form.data.personalInformation.address.city
-      }
-    });
-
-    if (!attributesUpdated) {
-      console.error(`Form can't update Apsis attributes`);
-      return fail(400, { form });
+    if (!(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))) {
+      return failError({ form, cookies, message: `Form can't update the Apsis profile` });
     }
 
     const consents: ConsentType[] = form.data.newsletter
@@ -308,8 +66,11 @@ export const actions = {
       });
 
       if (!consentAdded) {
-        console.error(`Form can't add consents to the profile in Apsis`);
-        return fail(400, { form });
+        return failError({
+          form,
+          cookies,
+          message: `Form can't add consents to the profile in Apsis`
+        });
       }
     });
 
@@ -325,14 +86,7 @@ export const actions = {
       );
     }
 
-    setFlash(
-      {
-        type: 'error',
-        message: t.get(`${RouteTypes.Forms}.error-on-sending`)
-      },
-      cookies
-    );
-    return fail(500, { form, message: 'Please retry later.' });
+    failError({ code: 500, form, cookies });
   }
 };
 
@@ -344,6 +98,283 @@ export const entries: EntryGenerator = () => {
       form: t.get(`route.${RouteTypes.Forms}.${Forms.Journalist}.slug`)
     };
   });
+};
+
+const failError = ({
+  code = 400,
+  form,
+  cookies,
+  message,
+  publicMessage
+}: {
+  form: SuperValidated<Schema>;
+  cookies: Cookies;
+  code?: number;
+  message?: string;
+  publicMessage?: string;
+}) => {
+  setFlash(
+    {
+      type: 'error',
+      message: publicMessage ?? t.get(`${RouteTypes.Forms}.error-on-sending`)
+    },
+    cookies
+  );
+  return fail(code, { form, message: message ?? 'Please retry later.' });
+};
+
+const updateApsisProfileSuccessfully = async ({
+  data,
+  locale
+}: {
+  data: Schema;
+  locale: Locale;
+}) => {
+  const attributesUpdated = await apsis.updateProfileAttributes({
+    email: data.personalInformation.email,
+    attributes: {
+      // PRESS - Nom média
+      'usercreated.attributes.press_-_nom_mdia-mnikzmwwgw': data.mediaName,
+      // PRESS - Thématique du média
+      'usercreated.attributes.press_-_thmatique_du_mdia-dpju2awz9f': data.thematic,
+      // PRESS - Profil de l'audience
+      'usercreated.attributes.press_-_profil_de_laudience-434y7go1r9': data.audienceProfile,
+      // PRESS - Type de médias
+      'usercreated.attributes.press_-_type_de_mdias-8iz76e7cqf': data.mediaTypes.join(', '),
+      // PRESS - Objet de la demande
+      'usercreated.attributes.press_-_objet_de_la_demande-59ljafr7jf': data.objectRequest,
+      // PRESS - stats print - lieux de diffusion
+      'usercreated.attributes.press_-_stats_print_-_lieux_de_diffusion-sny3omfvn4':
+        data.printMediaStatistics?.broadcastLocation,
+      // PRESS - stats print - nombre d'exemplaires
+      'usercreated.attributes.press_-_stats_print_-_nombre_dexemplaires-gv56zq433f':
+        data.printMediaStatistics?.copies,
+      // PRESS - stats print - nombre de lecteurs
+      'usercreated.attributes.press_-_stats_print_-_nombre_de_lecteurs-1c7lottbnm':
+        data.printMediaStatistics?.readers,
+      // PRESS - stats radio/tv - Nom de l'émission
+      'usercreated.attributes.press_-_stats_radiotv_-_nom_de_lmission-pkli1azlc8':
+        data.radioAndTVMediaStatistics?.emissionName,
+      // PRESS - stats radio/tv - nombre d'auditeurs
+      'usercreated.attributes.press_-_stats_radiotv_-_nombre_dauditeurs-yglhf6972f':
+        data.radioAndTVMediaStatistics?.viewers,
+      // PRESS - stats site web - nombre de pages vues par mois
+      'usercreated.attributes.press_-_stats_site_web_-_nombre_de_pages_-78nx897yjd':
+        data.onlineMediaStatistics?.monthlyPageViews ?? undefined,
+      // PRESS - stats site web - url
+      'usercreated.attributes.press_-_stats_site_web_-_url-fpko4in3um':
+        data.onlineMediaStatistics?.website,
+      // PRESS - stats site web - visiteurs uniques par mois
+      'usercreated.attributes.press_-_stats_site_web_-_visiteurs_unique-aodjvepkyu':
+        data.onlineMediaStatistics?.monthlyUniqueVisitors,
+      // PRESS - couverture médiatique radio/tv - thématique de l'émission
+      'usercreated.attributes.press_-_couverture_mdiatique_radiotv_-_th-vk4cdag1hu':
+        data.mediaCoverageTvOrRadio?.articleThematic,
+      // PRESS - couverture médiatique radio/tv - date de sortie de l'émission
+      'usercreated.attributes.press_-_couverture_mdiatique_radiotv_-_da-k4z98wlusn':
+        data.mediaCoverageTvOrRadio?.publishDate,
+      // PRESS - couverture médiatique print - nombre de pages
+      'usercreated.attributes.press_-_couverture_mdiatique_print_-_nomb-xxx6c33coz':
+        data.mediaCoveragePrint?.totalPages,
+      // PRESS - couverture médiatique print - Longueur de l'article
+      'usercreated.attributes.press_-_couverture_mdiatique_print_-_long-2wgqzpcyws':
+        data.mediaCoveragePrint?.articleLength,
+      // PRESS - couverture médiatique print - date de sortie de l'article
+      'usercreated.attributes.press_-_couverture_mdiatique_print_-_date-knfrd93d8l':
+        data.mediaCoveragePrint?.publishDate,
+      // PRESS - couverture médiatique site web - thématique de l'article
+      'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_t-2u34gt8m9i':
+        data.mediaCoverageOnline?.articleThematic,
+      // PRESS - couverture médiatique site web - date de sortie de l'article
+      'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_d-51ziynjuvl':
+        data.mediaCoverageOnline?.publishDate,
+      // PRESS - couverture médiatique site web - longueur de l'article
+      'usercreated.attributes.press_-_couverture_mdiatique_site_web_-_l-nhda9bgdj3':
+        data.mediaCoverageOnline?.articleLength,
+      // PRESS - info voyage - pays départ
+      'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g': countries.getName(
+        data.travelInformation.departurePoint.country,
+        locale
+      ),
+      // PRESS - info voyage - trajet aller
+      'usercreated.attributes.press_-_info_voyage_-_trajet_aller-2jsn1a11d1':
+        data.travelInformation.departurePoint.outwardJourney ?? '',
+      // PRESS - info voyage - ville départ
+      'usercreated.attributes.press_-_info_voyage_-_ville_dpart-9vum9j2my2':
+        data.travelInformation.departurePoint.city,
+      // PRESS - info voyage - trajet retour
+      'usercreated.attributes.press_-_info_voyage_-_trajet_retour-ow47wl9fsx':
+        data.travelInformation.returnJourney ?? '',
+      // PRESS - info voyage - abonnements train
+      'usercreated.attributes.press_-_info_voyage_-_abonnements_train-hil7po868z':
+        data.travelInformation.travelReductions.join(', '),
+      // PRESS - info voyage - dernière visite
+      'usercreated.attributes.press_-_info_voyage_-_dernire_visite-vld8zpxgep':
+        data.travelInformation.lastVisit ?? '',
+      // PRESS - info personelles - Titre
+      'usercreated.attributes.press_-_info_personelles_-_titre-wkn2jhthui':
+        data.personalInformation.title,
+      // PRESS - info personelles - Prénom
+      'usercreated.attributes.press_-_info_personelles_-_prnom-mbqrq9wdyh':
+        data.personalInformation.firstName,
+      // PRESS - info personelles - Nom
+      'usercreated.attributes.press_-_info_personelles_-_nom-cxjbhy5hty':
+        data.personalInformation.lastName,
+      // PRESS - info personelles - date de naissance
+      'usercreated.attributes.press_-_info_personelles_-_date_de_naissa-24imaurrq5':
+        data.personalInformation.birthday,
+      // PRESS - info personelles - Numéro de Téléphone
+      'usercreated.attributes.press_-_info_personelles_-_numro_de_tlpho-al4q3cx5jz':
+        data.personalInformation.phoneNumber,
+      // PRESS - info personelles - email
+      'usercreated.attributes.press_-_info_personelles_-_email-8b44zvzpt6':
+        data.personalInformation.email,
+      // PRESS - info personelles - langues parlées
+      'usercreated.attributes.press_-_info_personelles_-_langues_parles-ttfydkakad':
+        data.personalInformation.spokenLanguages,
+      // PRESS - info personelles - conditions médicales
+      'usercreated.attributes.press_-_info_personelles_-_conditions_mdi-4djm12gpt1':
+        data.personalInformation.medicalAndPhysicalCondition ?? '',
+      // PRESS - info personelles - allergies
+      'usercreated.attributes.press_-_info_personelles_-_allergies-8ja4yjsxx4':
+        data.personalInformation.allergies,
+      // PRESS - info personelles - freelance
+      'usercreated.attributes.press_-_info_personelles_-_freelance-obp6v6zi8j':
+        data.personalInformation.freelance,
+      // PRESS - info personelles - numéro de passport
+      'usercreated.attributes.press_-_info_personelles_-_numro_de_passp-qzpnkyyl64':
+        data.personalInformation.passport.number,
+      // PRESS - info personelles - validité du passport
+      'usercreated.attributes.press_-_info_personelles_-_validit_du_pas-63lbaolk83':
+        data.personalInformation.passport.validity,
+      // PRESS - info personelles - Adresse
+      'usercreated.attributes.press_-_info_personelles_-_adresse-4j5rjm99hd':
+        data.personalInformation.address.streetAddress,
+      // PRESS - info personelles - Ville
+      'usercreated.attributes.press_-_info_personelles_-_ville-xjpq3n6cbi':
+        data.personalInformation.address.city,
+      // PRESS - info personelles - Zip
+      'usercreated.attributes.press_-_info_personelles_-_zip-yefz81y17u':
+        data.personalInformation.address.postalcode,
+      // PRESS - info personelles - Pays
+      'usercreated.attributes.press_-_info_personelles_-_pays-tdg34z5ltt':
+        data.personalInformation.address.country,
+      // PRESS - info personelles - contacts d'urgence
+      'usercreated.attributes.press_-_info_personelles_-_contacts_durge-l9fvrao7bi':
+        data.personalInformation.emergencyContacts
+          .map((X) => `${X.name} (${X.phoneNumber})`)
+          .join('; '),
+      // PRESS - info personelles - assurance voyage
+      'usercreated.attributes.press_-_info_personelles_-_assurance_voya-ctvpxedjyw':
+        data.travelInsuranceCoveringSwitzerland,
+      // PRESS - newsletter
+      'usercreated.attributes.press_-_newsletter-omm8pihlcr': data.newsletter,
+      // PRESS - info personelles - remarques
+      'usercreated.attributes.press_-_info_personelles_-_remarques-5lrlrl21ta': data.remarks ?? '',
+
+      // -------------------------------------- ATTRIBUTES FOR APSIS & CRM --------------------------------------
+
+      // Birthdate (YYYY-MM-DD)
+      'com.apsis1.attributes.birthdate': data.personalInformation.birthday,
+      // Profile First Name
+      'com.apsis1.attributes.firstname': data.personalInformation.firstName,
+      // Last Name of profile
+      'com.apsis1.attributes.lastname': data.personalInformation.lastName,
+      // Primary mobile phone number
+      'com.apsis1.attributes.mobile': Number(
+        data.personalInformation.phoneNumber.replaceAll('+', '00').replaceAll(' ', '')
+      ),
+      // Primary e-mail address
+      'com.apsis1.attributes.email': data.personalInformation.email,
+      // CRM - Field - Language
+      'usercreated.attributes.langue_crm-98h3ud5p4v': (() => {
+        switch (locale) {
+          case 'fr':
+            return 2;
+          case 'de':
+            return 4;
+          case 'en':
+          default:
+            return 1;
+        }
+      })(),
+      // CRM - Fields - Title
+      'usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk': (() => {
+        switch (data.personalInformation.title) {
+          case 'mr':
+            return {
+              fr: 'M.',
+              en: 'Mr.',
+              de: 'Herr'
+            }[locale];
+          case 'mrs':
+            return {
+              fr: 'Mme',
+              en: 'Mrs.',
+              de: 'Frau'
+            }[locale];
+          case 'they':
+            return {
+              fr: '-',
+              en: '-',
+              de: '-'
+            }[locale];
+        }
+      })(),
+      // CRM - Fields - Full Title
+      'usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn': (() => {
+        switch (data.personalInformation.title) {
+          case 'mr':
+            return {
+              fr: 'Monsieur',
+              en: 'Mister',
+              de: 'Herr'
+            }[locale];
+          case 'mrs':
+            return {
+              fr: 'Madame',
+              en: 'Mistress',
+              de: 'Frau'
+            }[locale];
+          case 'they':
+            return {
+              fr: '-',
+              en: '-',
+              de: '-'
+            }[locale];
+        }
+      })(),
+      // CRM - Fields - Account Manager
+      'usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk': 213,
+      // CRM - Fields - Media Sub-Type
+      'usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw': data.personalInformation
+        .freelance
+        ? 2
+        : 1,
+      // CRM - Fields - Type
+      'usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv': 1, // Média
+
+      //// ADRESSE
+      // CRM - Fields - Country
+      'com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh':
+        selectCountryId(countries.getName(data.personalInformation.address.country, 'en')),
+      // CRM - Fields - Post code
+      'usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6':
+        data.personalInformation.address.postalcode,
+      // CRM - Fields - Street
+      'usercreated.attributes.crm_-_fields_-_street-ym828bzua3':
+        data.personalInformation.address.streetAddress,
+      // CRM - Fields - Town/City
+      'usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd':
+        data.personalInformation.address.city
+    }
+  });
+
+  if (!attributesUpdated) {
+    console.error(`Form can't update Apsis attributes`);
+    return false;
+  }
+  return true;
 };
 
 const sendFormByEmail = async ({
