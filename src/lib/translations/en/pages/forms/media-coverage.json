@@ -4,6 +4,7 @@
   "validations": {},
   "form": {
     "title": "Media Coverage",
+    "email": "Email",
     "social-networks": {
       "title": "On Social Media",
       "instagram": "Instagram",

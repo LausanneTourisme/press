@@ -85,7 +85,24 @@
       {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.title`)}
     </Heading>
     <section class="w-full">
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
+      <fieldset
+        class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
+        <!-- Username -->
+        <label for="personal-email" class="label text-wrap break-words">
+          {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.email`)}
+          <span class="text-brand-600 italic">{$t(`${RouteTypes.Forms}.required`)}</span>
+        </label>
+        <input
+          type="text"
+          id="personal-email"
+          name="personalEmail"
+          bind:value={$form.personalEmail}
+          class="input w-full {$errors.personalEmail !== undefined ? 'input-error' : ''}"
+          aria-invalid={$errors.personalEmail !== undefined ? 'true' : undefined}
+        />
+      </fieldset>
+
+      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border mt-6 p-4">
         <!-- Social Network -->
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">

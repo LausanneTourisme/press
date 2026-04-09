@@ -4,6 +4,7 @@
   "validations": {},
   "form": {
     "title": "Retombées médiatiques",
+    "email": "Email",
     "social-networks": {
       "title": "Sur les résaux",
       "instagram": "Instagram",

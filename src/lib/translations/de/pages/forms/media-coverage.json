@@ -4,6 +4,7 @@
   "validations": {},
   "form": {
     "title": "Medienberichterstattung",
+    "email": "E-Mail",
     "social-networks": {
       "title": "In den sozialen Netzwerken",
       "instagram": "Instagram",
