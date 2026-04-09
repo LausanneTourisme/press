@@ -89,7 +89,7 @@ export const actions = {
       !(await sendApsisCustomEvent({
         email: form.data.personalEmail,
         url_source: url.origin,
-        data: form.data,
+        data: form.data
       }))
     ) {
       return failError({ form, cookies, message: `Form can't send Apsis custom event` });
@@ -374,7 +374,7 @@ const updateApsisProfileSuccessfully = async ({
 const sendApsisCustomEvent = async ({
   email,
   url_source,
-  data,
+  data
 }: {
   email: string;
   url_source: string;

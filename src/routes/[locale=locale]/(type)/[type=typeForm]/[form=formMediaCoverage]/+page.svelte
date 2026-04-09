@@ -85,8 +85,7 @@
       {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.title`)}
     </Heading>
     <section class="w-full">
-      <fieldset
-        class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
+      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border p-4">
         <!-- Username -->
         <label for="personal-email" class="label text-wrap break-words">
           {@html $t(`${RouteTypes.Forms}.${Forms.MediaCoverage}.form.email`)}
@@ -102,7 +101,7 @@
         />
       </fieldset>
 
-      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box border mt-6 p-4">
+      <fieldset class="fieldset bg-base-200/50 border-base-300 rounded-box mt-6 border p-4">
         <!-- Social Network -->
         <div class="join join-vertical">
           <p class="label mb-1 text-wrap break-words">

@@ -137,7 +137,7 @@ const failError = ({
   message?: string;
   publicMessage?: string;
 }) => {
-  code = code ?? 400
+  code = code ?? 400;
   console.error(message ?? `Form submission failed with code ${code}`);
   setFlash(
     {

@@ -217,4 +217,4 @@ export const profileExists = async (email: string): Promise<boolean> => {
     return true;
   }
   return false;
-}
+};
