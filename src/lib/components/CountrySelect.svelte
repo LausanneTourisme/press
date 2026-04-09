@@ -1,6 +1,7 @@
 <script lang="ts">
   interface Props {
     id: string;
+    name?: string;
     value: string | undefined;
     countries: [string, string][];
     placeholder: string;
@@ -10,6 +11,7 @@
 
   let {
     id,
+    name,
     value = $bindable(),
     countries,
     placeholder,
@@ -97,6 +99,9 @@
 </script>
 
 <div class="relative w-full">
+  {#if name}
+    <input type="hidden" {name} value={value ?? ''} />
+  {/if}
   <input
     {id}
     type="text"
