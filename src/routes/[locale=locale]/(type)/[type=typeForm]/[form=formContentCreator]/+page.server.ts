@@ -1,10 +1,17 @@
-import { Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
+import { dev } from '$app/environment';
+import { ConsentsTypes, Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
+import {
+  API_HTML_TO_PDF,
+  APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID,
+  MAIL_FROM
+} from '$env/static/private';
+import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { verifyIfHuman } from '$lib/helpers/index.server';
+import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type Mailchimp from '@mailchimp/mailchimp_transactional';
-import { fail, redirect } from '@sveltejs/kit';
+import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
 import en from 'i18n-iso-countries/langs/en.json';
@@ -15,6 +22,7 @@ import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
+import type { SuperValidated } from 'sveltekit-superforms/server';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -34,13 +42,13 @@ export const load = async ({ parent }) => {
   countries.registerLocale(countriesByLocale[locale]);
 
   return {
-    countries: Object.values<string>(countries.getNames(locale, { select: 'official' })).sort(),
+    countries: countries.getNames(locale, { select: 'official' }),
     form
   };
 };
 
 export const actions = {
-  default: async ({ request, params, cookies }) => {
+  default: async ({ request, params, cookies, url }) => {
     const formdata = await request.formData();
 
     await verifyIfHuman(formdata);
@@ -48,7 +56,47 @@ export const actions = {
     const form = await superValidate(formdata, lastStep);
 
     if (!form.valid) {
-      return fail(400, { form });
+      console.error('Form errors:', JSON.stringify(form.errors, null, 2));
+      return failError({ form, cookies, message: `Form invalid` });
+    }
+
+    const profileCreated = await apsis.createProfile(form.data.personalEmail);
+    if (!profileCreated) {
+      console.error(`Form can't create an Apsis profile`);
+      return failError({ form, cookies, message: `Form can't create an Apsis profile` });
+    }
+
+    if (!(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))) {
+      return failError({ form, cookies, message: `Form can't update the Apsis profile` });
+    }
+
+    let message = '';
+    const consentSucessFully = await setConsents({
+      consents: form.data.newsletter
+        ? [ConsentsTypes.MediaContentCreator, ConsentsTypes.NewsletterPress]
+        : [ConsentsTypes.MediaContentCreator],
+      email_to: form.data.personalEmail,
+      onError: (error) => {
+        message = error;
+      }
+    });
+
+    if (!consentSucessFully) {
+      return failError({ form, cookies, message });
+    }
+
+    if (
+      !(await sendApsisCustomEvent({
+        email: form.data.personalEmail,
+        url_source: url.origin,
+        data: form.data,
+      }))
+    ) {
+      return failError({ form, cookies, message: `Form can't send Apsis custom event` });
+    }
+
+    if (dev) {
+      console.log('sending form by email');
     }
 
     const sendWithSuccess = await sendFormByEmail({
@@ -64,15 +112,7 @@ export const actions = {
       );
     }
 
-    setFlash(
-      {
-        type: 'error',
-        message: t.get(`${RouteTypes.Forms}.error-on-sending`)
-      },
-      cookies
-    );
-
-    return fail(500, { form, message: 'Please retry later.' });
+    failError({ code: 500, form, cookies });
   }
 };
 
@@ -83,6 +123,288 @@ export const entries: EntryGenerator = () => {
       type: t.get(`route.${RouteTypes.Forms}.slug`),
       form: t.get(`route.${RouteTypes.Forms}.${Forms.ContentCreator}.slug`)
     };
+  });
+};
+
+const failError = ({
+  code = 400,
+  form,
+  cookies,
+  message,
+  publicMessage
+}: {
+  form: SuperValidated<Schema>;
+  cookies: Cookies;
+  code?: number;
+  message?: string;
+  publicMessage?: string;
+}) => {
+  console.error(message ?? `Form submission failed with code ${code}`);
+  setFlash(
+    {
+      type: 'error',
+      message: publicMessage ?? t.get(`${RouteTypes.Forms}.error-on-sending`)
+    },
+    cookies
+  );
+  // Strip File objects — not serializable by SvelteKit
+  // Force valid: false so onUpdate doesn't set step = 0 and hide the form
+  const serializableForm = {
+    ...form,
+    valid: false,
+    data: {
+      ...form.data,
+      instagramSubscriberScreenshots: [],
+      instagramAccountsScreenshots: [],
+      tiktokSubscriberScreenshots: [],
+      youtubeSubscriberScreenshots: []
+    }
+  };
+  return fail(code, { form: serializableForm, message: message ?? 'Please retry later.' });
+};
+
+const updateApsisProfileSuccessfully = async ({
+  data,
+  locale
+}: {
+  data: Schema;
+  locale: string;
+}) => {
+  const attributesUpdated = await apsis.updateProfileAttributes({
+    email: data.personalEmail,
+    attributes: {
+      // PRESS - Type de formulaire
+      'usercreated.attributes.press_-_type_de_formulaire-n3bz45db2a': `${t.get(`route.${RouteTypes.Forms}.slug`)} ${t.get(`route.${RouteTypes.Forms}.${Forms.ContentCreator}.slug`)}`,
+      // PRESS - Positionnement du contenu
+      'usercreated.attributes.press_-_positionnement_du_contenu-bdqpr9g311':
+        data.contentPositioning ?? '',
+      // PRESS - Profil de l'audience
+      'usercreated.attributes.press_-_profil_de_laudience-434y7go1r9': data.targetAudience ?? '',
+      // PRESS - Présence online
+      'usercreated.attributes.press_-_prsence_online-moij88zwnl': data.onlinePresence.join(', '),
+      // PRESS - Objet de la demande
+      'usercreated.attributes.press_-_objet_de_la_demande-59ljafr7jf': data.objectRequest,
+      // PRESS - Instagram URL
+      'usercreated.attributes.press_-_instagram_url-8sus3gsfgr': data.instagramProfileURL ?? '',
+      // PRESS - TikTok URL
+      'usercreated.attributes.press_-_tiktok_url-pjut8gn2bh': data.tiktokProfileURL ?? '',
+      // PRESS - YouTube URL
+      'usercreated.attributes.press_-_youtube_url-wk57a2hfav': data.youtubeProfileURL ?? '',
+      // PRESS - Blog - URL
+      'usercreated.attributes.press_-_blog_-_url-sa7d43bb21': data.blogURL ?? '',
+      // PRESS - Blog - profil de l'audience
+      'usercreated.attributes.press_-_blog_-_profil_de_laudience-r18vll4wtk':
+        data.blogAudienceProfile ?? '',
+      // PRESS - Blog - Reach/Visiteurs uniques par mois
+      'usercreated.attributes.press_-_blog_-_reachvisiteurs_uniques_par-87s4tfr5cw':
+        data.blogMonthlyUniqueVisitors ?? 0,
+      // PRESS - Blog - Nombre de pages vues par mois
+      'usercreated.attributes.press_-_blog_-_nombre_de_pages_vues_par_m-qj3txcvmb5':
+        data.blogMonthlyPageViews ?? 0,
+      // PRESS - Information sur le résultat médiatique - Angle de la publication
+      'usercreated.attributes.press_-_information_sur_le_rsultat_mdiati-rjo93mq5dp':
+        data.coveragePublicationAngle ?? '',
+      // PRESS - Information sur le résultat médiatique - Sujet(s) d'intérêts
+      'usercreated.attributes.press_-_blog_-_reachvisiteurs_uniques_par-wk9wah8zkq':
+        data.coverageSubjectsOfInterest ?? '',
+      // PRESS - Information sur le résultat médiatique - Canaux de publication
+      'usercreated.attributes.press_-_blog_-_nombre_de_pages_vues_par_m-qro3lxvhwp':
+        data.coveragePublicationChannels?.join(', ') ?? '',
+      // PRESS - Information sur le résultat médiatique - Couverture médiatique proposée
+      'usercreated.attributes.press_-_information_sur_le_rsultat_mdiati-bn4glq9mgt':
+        data.coverageProposedMediaCoverage ?? '',
+      // PRESS - Information sur le résultat médiatique - Timing et dates des publications
+      'usercreated.attributes.press_-_information_sur_le_rsultat_mdiati-mlohqqfnc6':
+        data.coverageTimingAndPublicationDates ?? '',
+
+      // PRESS - info voyage - pays départ
+      'usercreated.attributes.press_-_info_voyage_-_pays_dpart-2qcy4rye1g': countries.getName(
+        data.travelDepartureCountry,
+        locale
+      ),
+      // PRESS - info voyage - trajet aller
+      'usercreated.attributes.press_-_info_voyage_-_trajet_aller-2jsn1a11d1':
+        data.travelOutwardJourney ?? '',
+      // PRESS - info voyage - ville départ
+      'usercreated.attributes.press_-_info_voyage_-_ville_dpart-9vum9j2my2':
+        data.travelDepartureCity,
+      // PRESS - info voyage - trajet retour
+      'usercreated.attributes.press_-_info_voyage_-_trajet_retour-ow47wl9fsx':
+        data.travelReturnJourney ?? '',
+      // PRESS - info voyage - abonnements train
+      'usercreated.attributes.press_-_info_voyage_-_abonnements_train-hil7po868z':
+        data.travelReductions?.join(', ') ?? '',
+      // PRESS - info voyage - dernière visite
+      'usercreated.attributes.press_-_info_voyage_-_dernire_visite-vld8zpxgep':
+        data.travelLastVisit ?? '',
+      // PRESS - info personelles - Titre
+      'usercreated.attributes.press_-_info_personelles_-_titre-wkn2jhthui': data.personalTitle,
+      // PRESS - info personelles - Prénom
+      'usercreated.attributes.press_-_info_personelles_-_prnom-mbqrq9wdyh': data.personalFirstName,
+      // PRESS - info personelles - Nom
+      'usercreated.attributes.press_-_info_personelles_-_nom-cxjbhy5hty': data.personalLastName,
+      // PRESS - info personelles - date de naissance
+      'usercreated.attributes.press_-_info_personelles_-_date_de_naissa-24imaurrq5':
+        data.personalBirthday,
+      // PRESS - info personelles - Numéro de Téléphone
+      'usercreated.attributes.press_-_info_personelles_-_numro_de_tlpho-al4q3cx5jz':
+        data.personalPhoneNumber,
+      // PRESS - info personelles - email
+      'usercreated.attributes.press_-_info_personelles_-_email-8b44zvzpt6': data.personalEmail,
+      // PRESS - info personelles - langues parlées
+      'usercreated.attributes.press_-_info_personelles_-_langues_parles-ttfydkakad':
+        data.personalSpokenLanguages,
+      // PRESS - info personelles - conditions médicales
+      'usercreated.attributes.press_-_info_personelles_-_conditions_mdi-4djm12gpt1':
+        data.personalMedicalCondition ?? '',
+      // PRESS - info personelles - allergies
+      'usercreated.attributes.press_-_info_personelles_-_allergies-8ja4yjsxx4':
+        data.personalAllergies ?? '',
+      // PRESS - info personelles - numéro de passport
+      'usercreated.attributes.press_-_info_personelles_-_numro_de_passp-qzpnkyyl64':
+        data.passportNumber ?? '',
+      // PRESS - info personelles - validité du passport
+      'usercreated.attributes.press_-_info_personelles_-_validit_du_pas-63lbaolk83':
+        data.passportValidity ?? '',
+      // PRESS - info personelles - Adresse
+      'usercreated.attributes.press_-_info_personelles_-_adresse-4j5rjm99hd':
+        data.addressStreetAddress,
+      // PRESS - info personelles - Ville
+      'usercreated.attributes.press_-_info_personelles_-_ville-xjpq3n6cbi': data.addressCity,
+      // PRESS - info personelles - Zip
+      'usercreated.attributes.press_-_info_personelles_-_zip-yefz81y17u': data.addressPostalCode,
+      // PRESS - info personelles - Pays
+      'usercreated.attributes.press_-_info_personelles_-_pays-tdg34z5ltt': data.addressCountry,
+      // PRESS - info personelles - contacts d'urgence
+      'usercreated.attributes.press_-_info_personelles_-_contacts_durge-l9fvrao7bi': (Array.isArray(
+        data.emergencyContactNames
+      )
+        ? data.emergencyContactNames
+        : [data.emergencyContactNames]
+      )
+        .map((name, i) => {
+          const phones = Array.isArray(data.emergencyContactPhones)
+            ? data.emergencyContactPhones
+            : [data.emergencyContactPhones];
+          return `${name} (${phones[i] ?? ''})`;
+        })
+        .join('; '),
+      // PRESS - info personelles - assurance voyage
+      'usercreated.attributes.press_-_info_personelles_-_assurance_voya-ctvpxedjyw':
+        data.travelInsuranceCoveringSwitzerland,
+      // PRESS - newsletter
+      'usercreated.attributes.press_-_newsletter-omm8pihlcr': data.newsletter,
+      // PRESS - info personelles - remarques
+      'usercreated.attributes.press_-_info_personelles_-_remarques-5lrlrl21ta': data.remarks ?? '',
+
+      // -------------------------------------- ATTRIBUTES FOR APSIS & CRM --------------------------------------
+
+      // Birthdate (YYYY-MM-DD)
+      'com.apsis1.attributes.birthdate': data.personalBirthday,
+      // Profile First Name
+      'com.apsis1.attributes.firstname': data.personalFirstName,
+      // Last Name of profile
+      'com.apsis1.attributes.lastname': data.personalLastName,
+      // Primary mobile phone number
+      'com.apsis1.attributes.mobile': Number(
+        data.personalPhoneNumber.replaceAll('+', '00').replaceAll(' ', '')
+      ),
+      // Primary e-mail address
+      'com.apsis1.attributes.email': data.personalEmail,
+      // CRM - Field - Language
+      'usercreated.attributes.langue_crm-98h3ud5p4v': (() => {
+        switch (locale) {
+          case 'fr':
+            return 2;
+          case 'de':
+            return 4;
+          case 'en':
+          default:
+            return 1;
+        }
+      })(),
+      // CRM - Fields - Title
+      'usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk': (() => {
+        switch (data.personalTitle) {
+          case 'mr':
+            return { fr: 'M.', en: 'Mr.', de: 'Herr' }[locale];
+          case 'mrs':
+            return { fr: 'Mme', en: 'Mrs.', de: 'Frau' }[locale];
+          case 'they':
+            return { fr: '-', en: '-', de: '-' }[locale];
+        }
+      })(),
+      // CRM - Fields - Full Title
+      'usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn': (() => {
+        switch (data.personalTitle) {
+          case 'mr':
+            return { fr: 'Monsieur', en: 'Mister', de: 'Herr' }[locale];
+          case 'mrs':
+            return { fr: 'Madame', en: 'Mistress', de: 'Frau' }[locale];
+          case 'they':
+            return { fr: '-', en: '-', de: '-' }[locale];
+        }
+      })(),
+      // CRM - Fields - Account Manager
+      'usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk': 213,
+      // CRM - Fields - Type
+      'usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv': 1, // Média
+
+      //// ADRESSE
+      // CRM - Fields - Country
+      'com.apsis1.integrations.efficy-enterprise-2.attributes.crm_-_pay-ukbzkdg2oh':
+        selectCountryId(countries.getName(data.addressCountry, 'en')),
+      // CRM - Fields - Post code
+      'usercreated.attributes.crm_-_fields_-_post_code-sklez45cs6': data.addressPostalCode,
+      // CRM - Fields - Street
+      'usercreated.attributes.crm_-_fields_-_street-ym828bzua3': data.addressStreetAddress,
+      // CRM - Fields - Town/City
+      'usercreated.attributes.crm_-_fields_-_towncity-c3klcectbd': data.addressCity
+    }
+  });
+
+  if (!attributesUpdated) {
+    console.error(`Form can't update Apsis attributes`);
+    return false;
+  }
+  return true;
+};
+
+const sendApsisCustomEvent = async ({
+  email,
+  url_source,
+  data,
+}: {
+  email: string;
+  url_source: string;
+  data: Schema;
+}) => {
+  return await apsis.customEvent({
+    email,
+    versionId: Number(APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID),
+    attributes: {
+      source: url_source,
+      datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),
+      positionnementDuContenu: data.contentPositioning,
+      profilDeLAudience: data.targetAudience,
+      presenceOnline: data.onlinePresence?.join(', ') ?? '',
+      objetDeLaDemande: data.objectRequest ?? '',
+      instagramURL: data.instagramProfileURL ?? '',
+      tiktokURL: data.tiktokProfileURL ?? '',
+      youtubeURL: data.youtubeProfileURL ?? '',
+      blogURL: data.blogURL ?? '',
+      blogProfilDeLAudience: data.blogAudienceProfile ?? '',
+      blogReachVisiteursUniquesParMois: data.blogMonthlyUniqueVisitors ?? 0,
+      blogNombreDePagesVuesParMois: data.blogMonthlyPageViews ?? 0,
+      informationSurLeResultatMediatiqueAngleDeLaPublication: data.coveragePublicationAngle,
+      informationSurLeResultatMediatiqueSujetsDInterets: data.coverageSubjectsOfInterest,
+      informationSurLeResultatMediatiqueCanauxDePublication:
+        data.coveragePublicationChannels?.join(', ') ?? '',
+      informationSurLeResultatMediatiqueCouvertureMediatiqueProposee:
+        data.coverageProposedMediaCoverage,
+      informationSurLeResultatMediatiqueTimingEtDatesDesPublications:
+        data.coverageTimingAndPublicationDates
+    }
   });
 };
 
@@ -399,8 +721,8 @@ const generateMailContent = ({
     <h2 style="font-weight: 800;width: 100%;text-align: left;margin-top: 8px;margin-bottom: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.title`)}</h2>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.url`)} :</span> <span>${data.blogURL ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.audience-profile.title`)} :</span> <span>${data.blogAudienceProfile ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-unique-visitors`)} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
-    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.performances.monthly-page-views`)} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.performance.monthly-unique-visitors`)} :</span> <span>${data.blogMonthlyUniqueVisitors ?? ''}</span></div>
+    <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.statistics.blog.performance.monthly-page-views`)} :</span> <span>${data.blogMonthlyPageViews ?? ''}</span></div>
   </section>
 `;
   }
