@@ -1,12 +1,14 @@
 import { Forms, RouteTypes } from '$enums';
-import { API_HTML_TO_PDF } from '$env/static/private';
+import { API_HTML_TO_PDF, APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
+import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type Mailchimp from '@mailchimp/mailchimp_transactional';
-import { fail, redirect } from '@sveltejs/kit';
+import { fail, redirect, type Cookies } from '@sveltejs/kit';
+import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
-import { superValidate } from 'sveltekit-superforms';
+import { superValidate, type SuperValidated } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schema, type Schema } from './schema';
@@ -25,7 +27,7 @@ export const load = async () => {
 };
 
 export const actions = {
-  default: async ({ request, params, cookies }) => {
+  default: async ({ request, params, cookies, url }) => {
     const formdata = await request.formData();
 
     await verifyIfHuman(formdata);
@@ -36,6 +38,16 @@ export const actions = {
       console.log('fail!');
       return fail(400, { form });
     }
+    if (await apsis.profileExists(form.data.personalEmail)) {
+      if (
+        !(await sendApsisCustomEvent({
+          email: form.data.personalEmail,
+          url_source: url.origin
+        }))
+      ) {
+        return failError({ form, cookies, message: `Form can't send Apsis custom event` });
+      }
+    }
 
     const sendWithSuccess = await sendFormByEmail({
       formdata,
@@ -43,23 +55,42 @@ export const actions = {
       mediaCoverage: form.data
     });
 
-    if (sendWithSuccess) {
-      return redirect(
-        303,
-        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
-      );
+    if (!sendWithSuccess) {
+      failError({ code: 500, form, cookies });
     }
 
-    setFlash(
-      {
-        type: 'error',
-        message: t.get(`${RouteTypes.Forms}.error-on-sending`)
-      },
-      cookies
+    return redirect(
+      303,
+      `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
     );
-
-    return fail(500, { form, message: 'Please retry later.' });
   }
+};
+
+
+const failError = ({
+  code,
+  form,
+  cookies,
+  message,
+  publicMessage
+}: {
+  form: SuperValidated<Schema>;
+  cookies: Cookies;
+  code?: number;
+  message?: string;
+  publicMessage?: string;
+}) => {
+  code = code ?? 400;
+  console.error(message ?? `Form submission failed with code ${code}`);
+  setFlash(
+    {
+      type: 'error',
+      message: publicMessage ?? t.get(`${RouteTypes.Forms}.error-on-sending`)
+    },
+    cookies
+  );
+
+  return fail(code, { form, message: message ?? 'Please retry later.' });
 };
 
 export const entries: EntryGenerator = () => {
@@ -69,6 +100,23 @@ export const entries: EntryGenerator = () => {
       type: t.get(`route.${RouteTypes.Forms}.slug`),
       form: t.get(`route.${RouteTypes.Forms}.${Forms.MediaCoverage}.slug`)
     };
+  });
+};
+
+const sendApsisCustomEvent = async ({
+  email,
+  url_source
+}: {
+  email: string;
+  url_source: string;
+}) => {
+  return await apsis.customEvent({
+    email,
+    versionId: Number(APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID),
+    attributes: {
+      source: url_source,
+      datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm')
+    }
   });
 };
 
