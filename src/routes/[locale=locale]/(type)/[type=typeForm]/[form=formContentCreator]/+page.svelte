@@ -11,6 +11,7 @@
   } from '$enums';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
+  import CountrySelect from '$lib/components/CountrySelect.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Loading from '$lib/components/Loading.svelte';
   import { t } from '$lib/translations';
@@ -25,7 +26,7 @@
   import { dev } from '$app/environment';
 
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
-  const countries = $derived(Object.values((page.data as PageData).countries));
+  const countries = $derived(Object.entries((page.data as PageData).countries));
   let step = $state(1);
   let emergencyContacts = $state([{ name: '', phonenunmber: '' }]);
   let canDeleteEmergencyContacts = $state(false);
@@ -63,6 +64,10 @@
           ($form.emergencyContactPhones as string[])[index] = contact.phonenunmber;
         });
 
+        if (isLast) {
+          return;
+        }
+
         const result = await validateForm({ update: true });
 
         if (!result.valid) {
@@ -72,16 +77,10 @@
           return;
         }
 
-        if (isLast) {
-          return;
-        }
-
         cancel();
 
-        if (result.valid) {
-          document.querySelector('body')?.scrollIntoView();
-          step = step + 1;
-        }
+        document.querySelector('body')?.scrollIntoView();
+        step = step + 1;
         isSubmitting = false;
       },
       onError: (error) => {
@@ -748,26 +747,23 @@
           {@html $t(
             `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country`
           )}
-          <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Forms}.required`)}
-          </span>
+          {#if $constraints.travelDepartureCountry?.required}
+            <span class="text-brand-600 italic">
+              {@html $t(`${RouteTypes.Forms}.required`)}
+            </span>
+          {/if}
         </label>
-        <select
+        <CountrySelect
           id="travel-departure-country"
           name="travelDepartureCountry"
-          class="select w-full {$errors.travelDepartureCountry ? 'select-error' : ''}"
+          {countries}
           bind:value={$form.travelDepartureCountry}
+          placeholder={$t(
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country-placeholder`
+          )}
+          error={!!$errors.travelDepartureCountry}
           aria-invalid={$errors.travelDepartureCountry ? 'true' : undefined}
-        >
-          <option disabled selected value={undefined}>
-            {@html $t(
-              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country-placeholder`
-            )}
-          </option>
-          {#each countries as country (country)}
-            <option value={country}>{country}</option>
-          {/each}
-        </select>
+        />
 
         <label for="travel-outward-journey" class="label text-wrap break-words">
           {@html $t(
@@ -1129,26 +1125,23 @@
           {@html $t(
             `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country`
           )}
-          <span class="text-brand-600 italic">
-            {@html $t(`${RouteTypes.Forms}.required`)}
-          </span>
+          {#if $constraints.addressCountry?.required}
+            <span class="text-brand-600 italic">
+              {@html $t(`${RouteTypes.Forms}.required`)}
+            </span>
+          {/if}
         </label>
-        <select
+        <CountrySelect
           id="personal-information-address-country"
-          class="select w-full {$errors.addressCountry ? 'select-error' : ''}"
           name="addressCountry"
+          {countries}
           bind:value={$form.addressCountry}
+          placeholder={$t(
+            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country-placeholder`
+          )}
+          error={!!$errors.addressCountry}
           aria-invalid={$errors.addressCountry ? 'true' : undefined}
-        >
-          <option disabled selected value={undefined}>
-            {@html $t(
-              `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country-placeholder`
-            )}
-          </option>
-          {#each countries as country (country)}
-            <option value={country}>{country}</option>
-          {/each}
-        </select>
+        />
 
         <label for="personal-information-phone-number" class="label text-wrap break-words">
           {@html $t(
@@ -1206,7 +1199,7 @@
             )}
           </p>
         </div>
-        {#each emergencyContacts as contact, i (`${contact.name} ${i}`)}
+        {#each emergencyContacts as _, i (i)}
           <div
             class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
           >
