@@ -284,8 +284,10 @@ const updateApsisProfileSuccessfully = async ({
       'usercreated.attributes.press_-_info_personelles_-_zip-yefz81y17u':
         data.personalInformation.address.postalcode,
       // PRESS - info personelles - Pays
-      'usercreated.attributes.press_-_info_personelles_-_pays-tdg34z5ltt':
+      'usercreated.attributes.press_-_info_personelles_-_pays-tdg34z5ltt': countries.getName(
         data.personalInformation.address.country,
+        locale
+      ),
       // PRESS - info personelles - contacts d'urgence
       'usercreated.attributes.press_-_info_personelles_-_contacts_durge-l9fvrao7bi':
         data.personalInformation.emergencyContacts
