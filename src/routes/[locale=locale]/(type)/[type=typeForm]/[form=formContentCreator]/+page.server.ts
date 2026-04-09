@@ -127,7 +127,7 @@ export const entries: EntryGenerator = () => {
 };
 
 const failError = ({
-  code = 400,
+  code,
   form,
   cookies,
   message,
@@ -139,6 +139,7 @@ const failError = ({
   message?: string;
   publicMessage?: string;
 }) => {
+  code = code ?? 400;
   console.error(message ?? `Form submission failed with code ${code}`);
   setFlash(
     {
