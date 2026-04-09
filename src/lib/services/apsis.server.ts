@@ -76,7 +76,7 @@ export const createProfile = async (email: string): Promise<boolean> => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+        Authorization: `Bearer ${await getApsisToken()}`
       },
       body: JSON.stringify({
         profile_key: email
@@ -99,29 +99,22 @@ export const updateProfileAttributes = async ({
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/merge-patch+json',
-        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+        Authorization: `Bearer ${await getApsisToken()}`
       },
       body: JSON.stringify(attributes)
     }
   );
 
+  const ok = response.status === 204;
+
   if (dev) {
-    const text = await response.text();
-    console.log({
-      request: {
-        method: 'PATCH',
-        url: `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
-        headers: {
-          'Content-Type': 'application/merge-patch+json',
-          Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
-        },
-        body: JSON.stringify(attributes)
-      },
-      response: text ? JSON.parse(text) : null
-    });
+    console.log(`Apsis profile attributes update for ${email}`);
+    if (!ok) {
+      console.error({ response: await response.text() });
+    }
   }
 
-  return response.status === 204;
+  return ok;
 };
 
 export const addProfileToMailConsents = async ({
@@ -137,7 +130,7 @@ export const addProfileToMailConsents = async ({
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
+        Authorization: `Bearer ${await getApsisToken()}`
       },
       body: JSON.stringify({
         topic_discriminator: (() => {
@@ -157,35 +150,54 @@ export const addProfileToMailConsents = async ({
     }
   );
 
+  const ok = response.status === 201 || response.status === 204 || response.status === 409;
   if (dev) {
-    const text = await response.text();
-    console.log({
-      request: {
-        method: 'PATCH',
-        url: `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/consents`,
-        headers: {
-          'Content-Type': 'application/merge-patch+json',
-          Authorization: `Bearer ${cachedToken?.token ?? (await getApsisToken())}`
-        },
-        body: {
-          topic_discriminator: (() => {
-            switch (consentType) {
-              case ConsentsTypes.MeidaPress:
-                return APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR;
-              case ConsentsTypes.MediaContentCreator:
-                return APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR;
-              case ConsentsTypes.NewsletterPress:
-                return APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR;
-            }
-          })(),
-          channel_discriminator: 'com.apsis1.channels.email',
-          type: 'opt-in',
-          reason: 'Inscription via formulaire de la presse'
-        }
-      },
-      response: text
-    });
+    console.log(`Apsis consent update for ${email} - ${consentType}`);
+    if (!ok) {
+      console.error({ response: await response.text() });
+    }
   }
 
-  return response.status === 201 || response.status === 204 || response.status === 409;
+  return ok;
+};
+
+export const customEvent = async ({
+  email,
+  versionId,
+  attributes
+}: {
+  email: string;
+  versionId: number;
+  attributes: Record<string, string | number | boolean>;
+}): Promise<boolean> => {
+  const response = await fetch(
+    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/events`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${await getApsisToken()}`
+      },
+      body: JSON.stringify({
+        items: [
+          {
+            event_time: new Date().toISOString(),
+            version_id: versionId,
+            data: attributes
+          }
+        ]
+      })
+    }
+  );
+
+  const ok = response.status === 204;
+
+  if (dev) {
+    console.log(`Apsis custom event triggered for ${email}`);
+    if (!ok) {
+      console.error({ response: await response.text() });
+    }
+  }
+
+  return ok;
 };
