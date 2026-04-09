@@ -201,3 +201,20 @@ export const customEvent = async ({
 
   return ok;
 };
+
+export const profileExists = async (email: string): Promise<boolean> => {
+  const response = await fetch(
+    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
+    {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${await getApsisToken()}`
+      }
+    }
+  );
+
+  if (response.status === 200) {
+    return true;
+  }
+  return false;
+}
