@@ -1401,7 +1401,7 @@
               )}
             </p>
           </div>
-          {#each $form.personalInformation.emergencyContacts as contact, i (`${contact.name} ${i}`)}
+          {#each $form.personalInformation.emergencyContacts as _, i (i)}
             <div
               class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >
