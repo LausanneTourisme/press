@@ -1,5 +1,9 @@
 import { Forms, MediaTypes, RouteTypes, ConsentsTypes } from '$enums';
-import { API_HTML_TO_PDF, MAIL_FROM } from '$env/static/private';
+import {
+  API_HTML_TO_PDF,
+  APSIS_JOURNALIST_FORM_EVENT_VERSION_ID,
+  MAIL_FROM
+} from '$env/static/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
@@ -18,6 +22,7 @@ import { schemaStep4, type Schema } from './schema';
 import * as apsis from '$lib/services/apsis.server';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import type { SuperValidated } from 'sveltekit-superforms/server';
+import { dev } from '$app/environment';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -35,7 +40,7 @@ export const load = async ({ parent }) => {
 };
 
 export const actions = {
-  default: async ({ request, params, cookies }) => {
+  default: async ({ request, params, cookies, url }) => {
     const formdata = await request.formData();
     await verifyIfHuman(formdata);
 
@@ -67,11 +72,30 @@ export const actions = {
     });
 
     if (!consentSucessFully) {
-      failError({
+      return failError({
         form,
         cookies,
         message
       });
+    }
+
+    if (
+      !(await sendApsisCustomEvent({
+        email: form.data.personalInformation.email,
+        url_source: url.origin,
+        data: form.data,
+        locale: params.locale
+      }))
+    ) {
+      return failError({
+        form,
+        cookies,
+        message: `Form can't send Apsis custom event`
+      });
+    }
+
+    if (dev) {
+      console.log('sending form by email');
     }
 
     const sendWithSuccess = await sendFormByEmail({
@@ -80,11 +104,6 @@ export const actions = {
     });
 
     if (sendWithSuccess) {
-      failError({
-        form,
-        cookies,
-        message
-      });
       return redirect(
         303,
         `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
@@ -118,6 +137,7 @@ const failError = ({
   message?: string;
   publicMessage?: string;
 }) => {
+  console.error(message ?? `Form submission failed with code ${code}`);
   setFlash(
     {
       type: 'error',
@@ -138,6 +158,8 @@ const updateApsisProfileSuccessfully = async ({
   const attributesUpdated = await apsis.updateProfileAttributes({
     email: data.personalInformation.email,
     attributes: {
+      // PRESS - Type de formulaire
+      'usercreated.attributes.press_-_type_de_formulaire-n3bz45db2a': `${t.get(`route.${RouteTypes.Forms}.slug`)} ${t.get(`route.${RouteTypes.Forms}.${Forms.Journalist}.slug`)}`,
       // PRESS - Nom média
       'usercreated.attributes.press_-_nom_mdia-mnikzmwwgw': data.mediaName,
       // PRESS - Thématique du média
@@ -380,6 +402,66 @@ const updateApsisProfileSuccessfully = async ({
     return false;
   }
   return true;
+};
+
+const sendApsisCustomEvent = async ({
+  email,
+  url_source,
+  data,
+  locale
+}: {
+  email: string;
+  url_source: string;
+  data: Schema;
+  locale: Locale;
+}) => {
+  return await apsis.customEvent({
+    email,
+    versionId: Number(APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
+    attributes: {
+      source: url_source,
+      datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),
+      nomMedia: data.mediaName,
+      thematiqueDuMedia: data.thematic,
+      profilDeLAudience: data.audienceProfile,
+      typeDeMedias: data.mediaTypes.join(', '),
+      objetDeLaDemande: data.objectRequest,
+      statsPrintLieuxDeDiffusion: data.printMediaStatistics?.broadcastLocation ?? '',
+      statsPrintNombreDExemplaires: Number(data.printMediaStatistics?.copies ?? 0),
+      statsPrintNombreDeLecteurs: Number(data.printMediaStatistics?.readers ?? 0),
+      statsRadioTvNomDeLEmission: data.radioAndTVMediaStatistics?.emissionName ?? '',
+      statsRadioTvNombreDAuditeurs: Number(data.radioAndTVMediaStatistics?.viewers ?? 0),
+      statsSiteWebNombreDePagesVuesParMois: Number(
+        data.onlineMediaStatistics?.monthlyPageViews ?? 0
+      ),
+      statsSiteWebUrl: data.onlineMediaStatistics?.website ?? '',
+      statsSiteWebVisiteursUniquesParMois: Number(
+        data.onlineMediaStatistics?.monthlyUniqueVisitors ?? 0
+      ),
+      couvertureMediatiqueRadioTvThematiqueDeLEmission:
+        data.mediaCoverageTvOrRadio?.articleThematic ?? '',
+      couvertureMediatiqueRadioTvDateDeSortieDeLEmission:
+        data.mediaCoverageTvOrRadio?.publishDate ?? '',
+      couvertureMediatiquePrintNombreDePages: Number(data.mediaCoveragePrint?.totalPages ?? 0),
+      couvertureMediatiquePrintLongueurDeLArticle: data.mediaCoveragePrint?.articleLength ?? '',
+      couvertureMediatiquePrintDateDeSortieDeLArticle: data.mediaCoveragePrint?.publishDate ?? '',
+      couvertureMediatiqueSiteWebThematiqueDeLArticle:
+        data.mediaCoverageOnline?.articleThematic ?? '',
+      couvertureMediatiqueSiteWebDateDeSortieDeLArticle:
+        data.mediaCoverageOnline?.publishDate ?? '',
+      couvertureMediatiqueSiteWebLongueurDeLArticle: data.mediaCoverageOnline?.articleLength ?? '',
+      infoVoyagePaysDepart:
+        countries.getName(data.travelInformation.departurePoint.country, locale) ?? '',
+      infoVoyageTrajetAller: data.travelInformation.departurePoint.outwardJourney ?? '',
+      infoVoyageVilleDepart: data.travelInformation.departurePoint.city,
+      infoVoyageTrajetRetour: data.travelInformation.returnJourney ?? '',
+      infoVoyageAbonnementsTrain: data.travelInformation.travelReductions.join(', '),
+      infoVoyageDerniereVisite: data.travelInformation.lastVisit ?? '',
+      infoPersonellesLanguesParlees: data.personalInformation.spokenLanguages,
+      newsletter: data.newsletter,
+      freelance: data.personalInformation.freelance
+    }
+  });
 };
 
 const sendFormByEmail = async ({
