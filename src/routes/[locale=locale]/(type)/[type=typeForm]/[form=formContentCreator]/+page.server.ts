@@ -1,17 +1,13 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-import {
-  API_HTML_TO_PDF,
-  APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID,
-  MAIL_FROM
-} from '$env/static/private';
+import { API_HTML_TO_PDF, APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID } from '$env/static/private';
 import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
-import type Mailchimp from '@mailchimp/mailchimp_transactional';
+import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
@@ -449,7 +445,7 @@ const sendFormByEmail = async ({
   locale: Locale;
 }) => {
   const images = await getImagesFromForm(formdata);
-  const attachments: Mailchimp.MessageAttachment[] = [];
+  const attachments: MailAttachment[] = [];
   const pdfResponse = await fetch(API_HTML_TO_PDF, {
     method: 'POST',
     headers: {
@@ -487,7 +483,7 @@ const sendFormByEmail = async ({
     attachments.push(pdf);
   }
 
-  const { internal_reponse, external_response } = await sendEmail({
+  return await sendEmail({
     intern_mail: {
       from_name: 'No Reply - Press',
       subject: '[Formulaire] - Createur de contenu',
@@ -497,7 +493,6 @@ const sendFormByEmail = async ({
     },
     external_mail: mediaProfileContentCreator.personalEmail
       ? {
-          from_email: MAIL_FROM,
           from_name: t.get(`${RouteTypes.Forms}.email.from-name`),
           subject: t.get(`${RouteTypes.Forms}.email.subject`, {
             form: t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.title`)
@@ -505,18 +500,12 @@ const sendFormByEmail = async ({
           html: `<p>${t.get(`${RouteTypes.Forms}.email.content`, { name: `${mediaProfileContentCreator.personalFirstName} ${mediaProfileContentCreator.personalLastName}` })}</p><p><i>${t.get(`${RouteTypes.Forms}.email.automatic-mail-disclaimer`)}</i></p>`,
           to: [
             {
-              email: mediaProfileContentCreator.personalEmail,
-              type: 'to'
+              email: mediaProfileContentCreator.personalEmail
             }
           ]
         }
       : undefined
   });
-
-  return (
-    internal_reponse.every((x) => x.status === 'sent' || x.status === 'queued') &&
-    (external_response?.every((x) => x.status === 'sent' || x.status === 'queued') ?? true)
-  );
 };
 
 const getImagesFromForm = async (formdata: FormData) => {

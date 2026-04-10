@@ -11,7 +11,7 @@ import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
-import type Mailchimp from '@mailchimp/mailchimp_transactional';
+import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
@@ -485,7 +485,7 @@ const sendFormByEmail = async ({
   mediaProfileJournalist: Schema;
   locale: Locale;
 }) => {
-  const attachments: Mailchimp.MessageAttachment[] = [];
+  const attachments: MailAttachment[] = [];
   const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale });
 
   const pdfResponse = await fetch(API_HTML_TO_PDF, {
@@ -514,7 +514,7 @@ const sendFormByEmail = async ({
     attachments.push(pdf);
   }
 
-  const { internal_reponse, external_response } = await sendEmail({
+  return await sendEmail({
     intern_mail: {
       from_name: 'No Reply - Press',
       subject: '[Formulaire] - Journaliste',
@@ -531,18 +531,12 @@ const sendFormByEmail = async ({
           html: `<p>${t.get(`${RouteTypes.Forms}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Forms}.email.automatic-mail-disclaimer`)}</i></p>`,
           to: [
             {
-              email: mediaProfileJournalist.personalInformation.email,
-              type: 'to'
+              email: mediaProfileJournalist.personalInformation.email
             }
           ]
         }
       : undefined
   });
-
-  return (
-    internal_reponse.every((x) => x.status === 'sent' || x.status === 'queued') &&
-    (external_response?.every((x) => x.status === 'sent' || x.status === 'queued') ?? true)
-  );
 };
 
 const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: Locale }) => {
