@@ -25,6 +25,7 @@ jobs:
       - name: Deploy .env
         run: |
           cat > .env << 'EOF'
+          ENABLE_CRM="${{secrets.ENABLE_CRM}}"
           APSIS_CLIENT_ID="${{secrets.APSIS_CLIENT_ID}}"
           APSIS_CLIENT_SECRET="${{secrets.APSIS_CLIENT_SECRET}}"
           APSIS_KEYSPACE_DISCRIMINATOR="${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}"
@@ -80,6 +81,7 @@ jobs:
       - name: Deploy .env
         run: |
           cat > .env << 'EOF'
+          ENABLE_CRM="${{secrets.ENABLE_CRM}}"
           APSIS_CLIENT_ID="${{secrets.APSIS_CLIENT_ID}}"
           APSIS_CLIENT_SECRET="${{secrets.APSIS_CLIENT_SECRET}}"
           APSIS_KEYSPACE_DISCRIMINATOR="${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}"

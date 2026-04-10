@@ -58,6 +58,7 @@ jobs:
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
+          ENABLE_CRM=\"${{secrets.ENABLE_CRM}}\"
           APSIS_CLIENT_ID=\"${{secrets.APSIS_CLIENT_ID}}\"
           APSIS_CLIENT_SECRET=\"${{secrets.APSIS_CLIENT_SECRET}}\"
           APSIS_KEYSPACE_DISCRIMINATOR=\"${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}\"
