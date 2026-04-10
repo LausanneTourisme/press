@@ -1,8 +1,10 @@
-import { BOTPOISON_SKEY } from '$env/static/private';
+import { BOTPOISON_SKEY, ENABLE_CRM } from '$env/static/private';
 import Botpoison from '@botpoison/node';
 import { error } from '@sveltejs/kit';
 import { dev } from '$app/environment';
 import { isOfflineMode } from '$lib/helpers';
+
+export const isCRMEnabled = ENABLE_CRM === 'true';
 
 export const verifyIfHuman = async (data: FormData) => {
   if (dev && isOfflineMode) return;
