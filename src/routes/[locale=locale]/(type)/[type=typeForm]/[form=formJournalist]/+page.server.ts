@@ -1,10 +1,14 @@
-import { Forms, MediaTypes, RouteTypes, ConsentsTypes } from '$enums';
+import { dev } from '$app/environment';
+import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '$enums';
 import {
   API_HTML_TO_PDF,
   APSIS_JOURNALIST_FORM_EVENT_VERSION_ID,
   MAIL_FROM
 } from '$env/static/private';
-import { verifyIfHuman } from '$lib/helpers/index.server';
+import { isOfflineMode } from '$lib/helpers';
+import { selectCountryId, setConsents } from '$lib/helpers/apsis';
+import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
+import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type Mailchimp from '@mailchimp/mailchimp_transactional';
@@ -17,12 +21,9 @@ import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
+import type { SuperValidated } from 'sveltekit-superforms/server';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
-import * as apsis from '$lib/services/apsis.server';
-import { selectCountryId, setConsents } from '$lib/helpers/apsis';
-import type { SuperValidated } from 'sveltekit-superforms/server';
-import { dev } from '$app/environment';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -50,50 +51,60 @@ export const actions = {
       return failError({ form, cookies, message: `Form invalid` });
     }
 
-    const profileCreated = await apsis.createProfile(form.data.personalInformation.email);
-    if (!profileCreated) {
+    if (dev && isOfflineMode) {
+      return redirect(
+        303,
+        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
+      );
+    }
+
+    if (isCRMEnabled && !(await apsis.createProfile(form.data.personalInformation.email))) {
       console.error(`Form can't create an Apsis profile`);
       return failError({ form, cookies, message: `Form can't create an Apsis profile` });
     }
 
-    if (!(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))) {
+    if (
+      isCRMEnabled &&
+      !(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))
+    ) {
       return failError({ form, cookies, message: `Form can't update the Apsis profile` });
     }
 
-    let message = '';
-    const consentSucessFully = await setConsents({
-      consents: form.data.newsletter
-        ? [ConsentsTypes.MeidaPress, ConsentsTypes.NewsletterPress]
-        : [ConsentsTypes.MeidaPress],
-      email_to: form.data.personalInformation.email,
-      onError: (error) => {
-        message = error;
+    if (isCRMEnabled) {
+      let message = '';
+      const consentSucessFully = await setConsents({
+        consents: form.data.newsletter
+          ? [ConsentsTypes.MeidaPress, ConsentsTypes.NewsletterPress]
+          : [ConsentsTypes.MeidaPress],
+        email_to: form.data.personalInformation.email,
+        onError: (error) => {
+          message = error;
+        }
+      });
+
+      if (!consentSucessFully) {
+        return failError({
+          form,
+          cookies,
+          message
+        });
       }
-    });
 
-    if (!consentSucessFully) {
-      return failError({
-        form,
-        cookies,
-        message
-      });
+      if (
+        !(await sendApsisCustomEvent({
+          email: form.data.personalInformation.email,
+          url_source: url.origin,
+          data: form.data,
+          locale: params.locale
+        }))
+      ) {
+        return failError({
+          form,
+          cookies,
+          message: `Form can't send Apsis custom event`
+        });
+      }
     }
-
-    if (
-      !(await sendApsisCustomEvent({
-        email: form.data.personalInformation.email,
-        url_source: url.origin,
-        data: form.data,
-        locale: params.locale
-      }))
-    ) {
-      return failError({
-        form,
-        cookies,
-        message: `Form can't send Apsis custom event`
-      });
-    }
-
     if (dev) {
       console.log('sending form by email');
     }

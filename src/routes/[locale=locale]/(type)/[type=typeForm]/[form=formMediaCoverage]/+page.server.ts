@@ -1,6 +1,6 @@
 import { Forms, RouteTypes } from '$enums';
 import { API_HTML_TO_PDF, APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$env/static/private';
-import { verifyIfHuman } from '$lib/helpers/index.server';
+import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
@@ -38,7 +38,7 @@ export const actions = {
       console.log('fail!');
       return fail(400, { form });
     }
-    if (await apsis.profileExists(form.data.personalEmail)) {
+    if (isCRMEnabled && (await apsis.profileExists(form.data.personalEmail))) {
       if (
         !(await sendApsisCustomEvent({
           email: form.data.personalEmail,

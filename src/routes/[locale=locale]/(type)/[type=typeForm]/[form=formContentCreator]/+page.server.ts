@@ -5,8 +5,9 @@ import {
   APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID,
   MAIL_FROM
 } from '$env/static/private';
+import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
-import { verifyIfHuman } from '$lib/helpers/index.server';
+import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
@@ -20,9 +21,9 @@ import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
 import { superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
+import type { SuperValidated } from 'sveltekit-superforms/server';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
-import type { SuperValidated } from 'sveltekit-superforms/server';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
@@ -60,39 +61,50 @@ export const actions = {
       return failError({ form, cookies, message: `Form invalid` });
     }
 
-    const profileCreated = await apsis.createProfile(form.data.personalEmail);
-    if (!profileCreated) {
+    if (dev && isOfflineMode) {
+      return redirect(
+        303,
+        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
+      );
+    }
+
+    if (isCRMEnabled && !(await apsis.createProfile(form.data.personalEmail))) {
       console.error(`Form can't create an Apsis profile`);
       return failError({ form, cookies, message: `Form can't create an Apsis profile` });
     }
 
-    if (!(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))) {
+    if (
+      isCRMEnabled &&
+      !(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))
+    ) {
       return failError({ form, cookies, message: `Form can't update the Apsis profile` });
     }
 
-    let message = '';
-    const consentSucessFully = await setConsents({
-      consents: form.data.newsletter
-        ? [ConsentsTypes.MediaContentCreator, ConsentsTypes.NewsletterPress]
-        : [ConsentsTypes.MediaContentCreator],
-      email_to: form.data.personalEmail,
-      onError: (error) => {
-        message = error;
+    if (isCRMEnabled) {
+      let message = '';
+      const consentSucessFully = await setConsents({
+        consents: form.data.newsletter
+          ? [ConsentsTypes.MediaContentCreator, ConsentsTypes.NewsletterPress]
+          : [ConsentsTypes.MediaContentCreator],
+        email_to: form.data.personalEmail,
+        onError: (error) => {
+          message = error;
+        }
+      });
+
+      if (!consentSucessFully) {
+        return failError({ form, cookies, message });
       }
-    });
 
-    if (!consentSucessFully) {
-      return failError({ form, cookies, message });
-    }
-
-    if (
-      !(await sendApsisCustomEvent({
-        email: form.data.personalEmail,
-        url_source: url.origin,
-        data: form.data
-      }))
-    ) {
-      return failError({ form, cookies, message: `Form can't send Apsis custom event` });
+      if (
+        !(await sendApsisCustomEvent({
+          email: form.data.personalEmail,
+          url_source: url.origin,
+          data: form.data
+        }))
+      ) {
+        return failError({ form, cookies, message: `Form can't send Apsis custom event` });
+      }
     }
 
     if (dev) {
@@ -105,14 +117,14 @@ export const actions = {
       mediaProfileContentCreator: form.data
     });
 
-    if (sendWithSuccess) {
-      return redirect(
-        303,
-        `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
-      );
+    if (!sendWithSuccess) {
+      failError({ code: 500, form, cookies });
     }
 
-    failError({ code: 500, form, cookies });
+    return redirect(
+      303,
+      `/${params.locale}/${t.get(`route.${RouteTypes.Forms}.slug`)}/${t.get(`route.${RouteTypes.Forms}.${Forms.Thanks}.slug`)}`
+    );
   }
 };
 
@@ -437,13 +449,6 @@ const sendFormByEmail = async ({
   locale: Locale;
 }) => {
   const images = await getImagesFromForm(formdata);
-
-  const html = generateMailContent({
-    data: mediaProfileContentCreator,
-    userLocale: locale,
-    images
-  });
-
   const attachments: Mailchimp.MessageAttachment[] = [];
   const pdfResponse = await fetch(API_HTML_TO_PDF, {
     method: 'POST',
@@ -460,6 +465,12 @@ const sendFormByEmail = async ({
       }),
       filename: '[Formulaire] - Createur de contenu.pdf'
     })
+  });
+
+  const html = generateMailContent({
+    data: mediaProfileContentCreator,
+    userLocale: locale,
+    images
   });
 
   if (pdfResponse.ok) {
