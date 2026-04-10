@@ -4,7 +4,7 @@ import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
-import type Mailchimp from '@mailchimp/mailchimp_transactional';
+import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
@@ -154,7 +154,7 @@ const sendFormByEmail = async ({
     images
   });
 
-  const attachments: Mailchimp.MessageAttachment[] = [];
+  const attachments: MailAttachment[] = [];
   const pdfResponse = await fetch(API_HTML_TO_PDF, {
     method: 'POST',
     headers: {
@@ -186,7 +186,7 @@ const sendFormByEmail = async ({
     attachments.push(pdf);
   }
 
-  const { internal_reponse } = await sendEmail({
+  return await sendEmail({
     intern_mail: {
       from_name: 'No Reply - Press',
       subject: '[Formulaire] - Retombées médiatiques',
@@ -195,8 +195,6 @@ const sendFormByEmail = async ({
       attachments
     }
   });
-
-  return internal_reponse.every((x) => x.status === 'sent' || x.status === 'queued');
 };
 
 const getImagesFromForm = async (formdata: FormData) => {
