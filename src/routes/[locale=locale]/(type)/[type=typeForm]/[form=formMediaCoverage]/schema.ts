@@ -30,6 +30,8 @@ export const schema = z
   .object({
     socialNetworks: socialNetworkTypes,
 
+    personalEmail: z.email().nonempty().nonoptional(),
+
     username: zodOptionalString({ min: 2 }),
 
     blogPostURL: z.url().optional(),

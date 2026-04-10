@@ -2,7 +2,7 @@ import { dev } from '$app/environment';
 import { RouteTypes } from '$enums';
 import { isOfflineMode } from '$lib/helpers';
 import { generateCloudinaryUrl } from '$lib/helpers/image.js';
-import { getPost } from '$lib/helpers/requests.server';
+import { getPost } from '$lib/services/requests.server';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';

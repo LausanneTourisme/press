@@ -3,6 +3,7 @@
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, type MediaType } from '$enums';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import Container from '$lib/components/Container.svelte';
+  import CountrySelect from '$lib/components/CountrySelect.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
@@ -16,7 +17,7 @@
   import { dev } from '$app/environment';
   import { isOfflineMode } from '$lib/helpers';
 
-  const countries = $derived(Object.values((page.data as PageData).countries));
+  const countries = $derived(Object.entries((page.data as PageData).countries));
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
@@ -846,23 +847,16 @@
               </span>
             {/if}
           </label>
-          <select
+          <CountrySelect
             id="departure-point-country"
-            class="select w-full {$errors.travelInformation?.departurePoint?.country
-              ? 'select-error'
-              : ''}"
+            {countries}
             bind:value={$form.travelInformation.departurePoint.country}
+            placeholder={$t(
+              `${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
+            )}
+            error={!!$errors.travelInformation?.departurePoint?.country}
             aria-invalid={$errors.travelInformation?.departurePoint?.country ? 'true' : undefined}
-          >
-            <option disabled selected value={undefined}>
-              {@html $t(
-                `${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.country-placeholder`
-              )}
-            </option>
-            {#each countries as country (country)}
-              <option value={country}>{country}</option>
-            {/each}
-          </select>
+          />
 
           <label for="departure-point-outward-journey" class="label text-wrap break-words">
             {@html $t(
@@ -1338,23 +1332,16 @@
               </span>
             {/if}
           </label>
-          <select
+          <CountrySelect
             id="personal-information-address-country"
-            class="select w-full {$errors.personalInformation?.address?.country
-              ? 'select-error'
-              : ''}"
+            {countries}
             bind:value={$form.personalInformation.address.country}
+            placeholder={$t(
+              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
+            )}
+            error={!!$errors.personalInformation?.address?.country}
             aria-invalid={$errors.personalInformation?.address?.country ? 'true' : undefined}
-          >
-            <option hidden disabled selected value={undefined}>
-              {@html $t(
-                `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.country-placeholder`
-              )}
-            </option>
-            {#each countries as country (country)}
-              <option value={country}>{country}</option>
-            {/each}
-          </select>
+          />
 
           <label for="personal-information-phone-number" class="label text-wrap break-words">
             {@html $t(
@@ -1414,7 +1401,7 @@
               )}
             </p>
           </div>
-          {#each $form.personalInformation.emergencyContacts as contact, i (`${contact.name} ${i}`)}
+          {#each $form.personalInformation.emergencyContacts as _, i (i)}
             <div
               class="personal-information-emergency-contact my-1 rounded-sm border border-gray-300 md:my-0 md:grid md:grid-cols-[1fr_1fr_100px] md:gap-4 md:rounded-none md:border-none"
             >

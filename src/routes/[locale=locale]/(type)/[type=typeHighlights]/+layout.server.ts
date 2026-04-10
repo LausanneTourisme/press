@@ -1,6 +1,6 @@
 import { RouteTypes } from '$enums';
 import { GROUP_ID_PAGE_HIGHLIGHTS } from '$env/static/private';
-import { getAgendaEvents, getGroup, getPosts } from '$lib/helpers/requests.server.js';
+import { getAgendaEvents, getGroup, getPosts } from '$lib/services/requests.server';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { News, SeoHeader } from '$types';
 
