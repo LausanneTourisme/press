@@ -13,6 +13,7 @@ export type InternMail = {
 };
 
 export type ExternalMail = {
+  from_email?: string;
   from_name?: string;
   subject: string;
   html: string;
