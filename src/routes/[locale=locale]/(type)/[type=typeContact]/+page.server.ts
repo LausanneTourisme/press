@@ -108,7 +108,7 @@ export const actions: Actions = {
         html: `<p>${t.get(`${RouteTypes.Contact}.form.mail-section.response.content`, { name })}</p><p><i>${t.get(`${RouteTypes.Contact}.form.mail-section.response.automatic-mail-disclaimer`)}</i></p>`,
         to: [
           {
-            email: email as string,
+            email: email as string
           }
         ]
       }
