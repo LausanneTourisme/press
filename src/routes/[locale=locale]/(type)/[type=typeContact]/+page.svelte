@@ -207,13 +207,13 @@
               id="title-0"
               name="title"
               value={$t('contact.form.mail-section.form.gender-section.madam')}
-              class="peer hidden"
+              class="peer/title-0 hidden"
               onchange={() => (titleSectionFailed = false)}
             />
             <label
               for="title-0"
               class={twMerge(
-                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700  dark:hover:text-gray-300',
+                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked/title-0:border-blue-600 peer-checked/title-0:font-semibold peer-checked/title-0:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked/title-0:text-blue-500 dark:hover:bg-gray-700  dark:hover:text-gray-300',
                 pageForm?.fields?.title?.incorrect || titleSectionFailed
                   ? 'border border-red-500 text-red-500 ring-1 ring-red-500'
                   : ''
@@ -229,13 +229,13 @@
               id="title-1"
               name="title"
               value={$t('contact.form.mail-section.form.gender-section.sir')}
-              class="peer hidden"
+              class="peer/title-1 hidden"
               onchange={() => (titleSectionFailed = false)}
             />
             <label
               for="title-1"
               class={twMerge(
-                ' inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                ' inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked/title-1:border-blue-600 peer-checked/title-1:font-semibold peer-checked/title-1:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked/title-1:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
                 pageForm?.fields?.title?.incorrect || titleSectionFailed
                   ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
                   : ''
@@ -251,13 +251,13 @@
               id="title-2"
               name="title"
               value={$t('contact.form.mail-section.form.gender-section.they')}
-              class="peer hidden"
+              class="peer/title-2 hidden"
               onchange={() => (titleSectionFailed = false)}
             />
             <label
               for="title-2"
               class={twMerge(
-                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked:border-blue-600 peer-checked:font-semibold peer-checked:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
+                'inline-flex h-full w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-4 text-center text-gray-500 peer-checked/title-2:border-blue-600 peer-checked/title-2:font-semibold peer-checked/title-2:text-blue-600 hover:bg-gray-100 hover:text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:peer-checked/title-2:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-300',
                 pageForm?.fields?.title?.incorrect || titleSectionFailed
                   ? 'border border-red-500 text-red-500 ring-1  ring-red-500'
                   : ''
