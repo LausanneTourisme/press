@@ -95,7 +95,7 @@ export const actions: Actions = {
             <br><br>
             <a href="mailto:${email}">Répondre</a>`;
 
-    const { internal_reponse, external_response } = await sendEmail({
+    const result = await sendEmail({
       intern_mail: {
         from_name: 'No Reply - Press',
         subject: '[Contact] - nouvelle demande',
@@ -109,17 +109,13 @@ export const actions: Actions = {
         to: [
           {
             email: email as string,
-            type: 'to'
           }
         ]
       }
     });
 
-    if (internal_reponse[0].status === 'sent' && external_response?.[0].status === 'sent') {
+    if (result) {
       return { message: 'Mail sent.' };
-    }
-    if (internal_reponse[0].status === 'sent' && external_response?.[0].status !== 'sent') {
-      return { partial: true, message: 'Mail sent, but fails to sent to recipient...' };
     }
 
     return fail(500, { message: 'Please retry later.' });
