@@ -24,7 +24,7 @@ export const load = async ({ params, parent, url }) => {
   await loadTranslations(locale, url.pathname);
 
   const seo: SeoHeader = {
-    canonical: `${url.origin}${url.pathname}`,
+    canonical: `https://www.lausanne-tourisme.ch/${locale}/the-lausanner/articles/${article.seo?.slug?.[locale]}`,
     title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
     description:
       article.lead?.[locale as Locale] ??
@@ -34,7 +34,7 @@ export const load = async ({ params, parent, url }) => {
       usePreset: false,
       transform: { h: 720, w: 1280 }
     }),
-    alternate: supportedLocales
+    articleAlternate: supportedLocales
       .filter((l) => article.languages?.includes(l))
       .map((locale) => ({
         hreflang: locale,
