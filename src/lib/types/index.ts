@@ -32,7 +32,8 @@ export type SeoHeader = {
   title: string;
   description: string;
   image: string;
-  alternate: SeoAlternate[];
+  alternate?: SeoAlternate[];
+  articleAlternate?: SeoAlternate[];
 };
 
 export type SeoAlternate = {

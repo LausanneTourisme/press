@@ -26,11 +26,11 @@
       description: pageData.seo.description,
       canonical: pageData.seo.canonical,
       alternates: pageData.seo.alternate
-        .map(
+        ?.map(
           (alternate) =>
             `<link rel="alternate" hreflang="${alternate.hreflang}" href="${page.url.origin}${alternate.href}" />`
         )
-        .join('\n'),
+        ?.join('\n'),
       image: pageData.seo.image
     };
   });
