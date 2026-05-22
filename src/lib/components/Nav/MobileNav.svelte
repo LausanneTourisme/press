@@ -23,7 +23,8 @@
 
   const { class: additionalClass, maxWidth = maxMobileWidth, locale }: Props = $props();
   const multiLocale = $derived(
-    page.data.seo.alternate && page.data.seo.alternate.length > 1 || page.data.seo.articleAlternate && page.data.seo.articleAlternate.length > 1
+    (page.data.seo.alternate && page.data.seo.alternate.length > 1) ||
+      (page.data.seo.articleAlternate && page.data.seo.articleAlternate.length > 1)
   );
   const style: string = $derived(
     twMerge('flex h-full items-center justify-between', additionalClass)
@@ -85,7 +86,7 @@
       </div>
       {#if multiLocale}
         {@const alternates = page.data.seo.alternate ?? page.data.seo.articleAlternate}
-      <div>
+        <div>
           <ul
             class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
           >
