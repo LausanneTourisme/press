@@ -21,7 +21,8 @@
 
   const style = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
   const multiLocale = $derived(
-    page.data.seo.alternate && page.data.seo.alternate.length > 1 || page.data.seo.articleAlternate && page.data.seo.articleAlternate.length > 1
+    (page.data.seo.alternate && page.data.seo.alternate.length > 1) ||
+      (page.data.seo.articleAlternate && page.data.seo.articleAlternate.length > 1)
   );
 </script>
 
