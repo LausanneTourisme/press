@@ -61,6 +61,7 @@
                     class="items-list-element hover:text-brand-600 hover:bg-base-100 dark:hover:base-dark-hover justify-between px-6 py-4 text-left text-[20px] font-medium hover:rounded-sm hover:border-none hover:underline hover:opacity-100"
                     href={item.link}
                     preload="tap"
+                    noscroll={item.link?.includes('#')}
                     icon={item.icon ? icon : undefined}
                   >
                     {item.title}
