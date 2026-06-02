@@ -9,6 +9,10 @@ export type Translatable = {
   es?: string;
 };
 
+type TranslatableContentBlock = {
+  [K in keyof Translatable]?: ContentBlock[];
+};
+
 export type Video<T extends Translatable | string> = {
   id?: number;
   type?: 'native' | 'hosted';
@@ -76,7 +80,7 @@ type PostBase<T extends Translatable | string> = {
   seo?: Seo<T>;
   tags?: Tag<T>[];
   highlight?: boolean;
-  content?: ContentBlock[];
+  content?:  T extends string ? ContentBlock[] : TranslatableContentBlock;
 };
 
 export type Release<T extends Translatable | string> = PostBase<T> & {
