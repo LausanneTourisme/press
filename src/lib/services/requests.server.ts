@@ -7,10 +7,12 @@ import { DateTime } from 'luxon';
 
 const itemsLimit = 9999;
 
+type FetchFn = typeof fetch;
+
 const baseHeaders = (typeRequests: 'agenda' | 'normal' = 'normal') => ({
   'Content-Type': 'application/json',
   Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`,
-  ...(dev && { 'cache-control': 'no-cache' })
+  // ...(dev && { 'cache-control': 'no-cache' })
 });
 
 export const getTag = (theme: Theme): string => {
@@ -47,15 +49,17 @@ export const getPosts = async <T extends PostType<string | Translatable>>({
   locale,
   highlighted,
   tags,
-  operator
+  operator,
+  fetchFn = fetch
 }: {
   type: 'press_release' | 'post' | 'news';
   locale?: Locale;
   highlighted?: boolean;
   tags?: string;
   operator?: 'some' | 'all' | 'not';
+  fetchFn?: FetchFn;
 }) => {
-  const result = await fetch(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -80,7 +84,6 @@ export const getPosts = async <T extends PostType<string | Translatable>>({
                         highlight
                         published_at
                         link
-                        content
                         medias(cover:true) {
                             cloudinary_id
                             copyright
@@ -108,12 +111,14 @@ export const getPosts = async <T extends PostType<string | Translatable>>({
  */
 export const getGroup = async <T extends string | Translatable>({
   locale,
-  id
+  id,
+  fetchFn = fetch
 }: {
   locale: Locale;
   id: number;
+  fetchFn?: FetchFn;
 }) => {
-  const result = await fetch(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -146,12 +151,14 @@ export const getGroup = async <T extends string | Translatable>({
 
 export const getFavorites = async <T extends Translatable | string>({
   locale,
-  theme
+  theme,
+  fetchFn = fetch
 }: {
   locale: Locale;
   theme: Theme;
+  fetchFn?: FetchFn;
 }) => {
-  const result = await fetch(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -205,8 +212,8 @@ export const getFavorites = async <T extends Translatable | string>({
   return (await result.json()) as Promise<GraphQLResponse<Favorite<T>>>;
 };
 
-export const getAgendaEvents = async () => {
-  const result = await fetch(`${GRAPHQL_URL}`, {
+export const getAgendaEvents = async ({ fetchFn = fetch }: { fetchFn?: FetchFn } = {}) => {
+  const result = await fetchFn(`${GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders('agenda'),
     body: JSON.stringify({
@@ -284,8 +291,8 @@ export const getAgendaEvents = async () => {
   return (await result.json()) as Promise<GraphQLResponse<Event<Translatable>>>;
 };
 
-export const getPost = async (slug: string) => {
-  const result = await fetch(`${GRAPHQL_URL}`, {
+export const getPost = async (slug: string, fetchFn: FetchFn = fetch) => {
+  const result = await fetchFn(`${GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
