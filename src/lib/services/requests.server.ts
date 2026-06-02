@@ -1,10 +1,18 @@
 import { Themes, type Theme } from '$enums';
 import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_TOKEN, GRAPHQL_URL } from '$env/static/private';
+import { dev } from '$app/environment';
 import type { Locale } from '$lib/translations';
 import type { Event, Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '$types';
 import { DateTime } from 'luxon';
 
 const itemsLimit = 9999;
+
+const baseHeaders = (typeRequests: 'agenda'|'normal' = 'normal') => ({
+  'Content-Type': 'application/json',
+  Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`,
+  ...(dev && { 'cache-control': 'no-cache' })
+});
+
 export const getTag = (theme: Theme): string => {
   switch (theme) {
     case Themes.Architecture:
@@ -37,27 +45,30 @@ export const getTag = (theme: Theme): string => {
 export const getPosts = async <T extends PostType<string | Translatable>>({
   type,
   locale,
-  highlighted
+  highlighted,
+  tags,
+  operator
 }: {
   type: 'press_release' | 'post' | 'news';
   locale?: Locale;
   highlighted?: boolean;
+  tags?: string;
+  operator?: 'some'|'all'|'not'
 }) => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${GRAPHQL_TOKEN}`
-    },
+    headers: baseHeaders(),
     body: JSON.stringify({
       variables: {
         type: type === 'press_release' ? 'press_release, press_kit' : type,
         locale,
         limit: itemsLimit,
-        highlighted
+        highlighted,
+        tags,
+        operator
       },
-      query: `query GetPosts($limit: Int, $locale: String, $type: String, $highlighted: Boolean) {
-                items: posts(limit: $limit, locale: $locale, type: $type, highlighted: $highlighted) {
+      query: `query GetPosts($limit: Int, $locale: String, $type: String, $highlighted: Boolean, $tags: String, $operator: press_tags_operator) {
+                items: posts(limit: $limit, locale: $locale, type: $type, highlighted: $highlighted, tags: $tags, tags_operator: $operator) {
                     data {
                         id
                         languages
@@ -104,10 +115,7 @@ export const getGroup = async <T extends string | Translatable>({
 }) => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${GRAPHQL_TOKEN}`
-    },
+    headers: baseHeaders(),
     body: JSON.stringify({
       variables: {
         id,
@@ -145,10 +153,7 @@ export const getFavorites = async <T extends Translatable | string>({
 }) => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${GRAPHQL_TOKEN}`
-    },
+    headers: baseHeaders(),
     body: JSON.stringify({
       variables: {
         locale,
@@ -203,10 +208,7 @@ export const getFavorites = async <T extends Translatable | string>({
 export const getAgendaEvents = async () => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${GRAPHQL_AGENDA_TOKEN}`
-    },
+    headers: baseHeaders('agenda'),
     body: JSON.stringify({
       variables: {
         from: DateTime.now().toSQLDate(),
@@ -285,10 +287,7 @@ export const getAgendaEvents = async () => {
 export const getPost = async (slug: string) => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${GRAPHQL_TOKEN}`
-    },
+    headers: baseHeaders(),
     body: JSON.stringify({
       variables: {
         slug
