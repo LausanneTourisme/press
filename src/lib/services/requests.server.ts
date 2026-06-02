@@ -7,7 +7,7 @@ import { DateTime } from 'luxon';
 
 const itemsLimit = 9999;
 
-const baseHeaders = (typeRequests: 'agenda'|'normal' = 'normal') => ({
+const baseHeaders = (typeRequests: 'agenda' | 'normal' = 'normal') => ({
   'Content-Type': 'application/json',
   Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`,
   ...(dev && { 'cache-control': 'no-cache' })
@@ -53,7 +53,7 @@ export const getPosts = async <T extends PostType<string | Translatable>>({
   locale?: Locale;
   highlighted?: boolean;
   tags?: string;
-  operator?: 'some'|'all'|'not'
+  operator?: 'some' | 'all' | 'not';
 }) => {
   const result = await fetch(`${GRAPHQL_URL}`, {
     method: 'POST',
