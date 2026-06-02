@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, Themes } from '$enums';
   import Button from '$lib/components/Button.svelte';
@@ -15,11 +16,51 @@
   import { t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
   import { DateTime } from 'luxon';
+  import { onDestroy } from 'svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
   const locale = $derived(page.params.locale as Locale);
+
+  let cancelScrollRestore = () => {};
+
+  beforeNavigate(({ type }) => {
+    cancelScrollRestore();
+    if (type === 'popstate') return;
+    sessionStorage.setItem('themeScrollY', String(window.scrollY));
+    sessionStorage.setItem('themeScrollSlug', page.params.theme ?? '');
+  });
+
+  afterNavigate((navigation) => {
+    const arrivingHere = navigation.to?.url?.pathname === window.location.pathname;
+    if (navigation.type !== 'popstate') {
+      if (arrivingHere) {
+        sessionStorage.removeItem('themeScrollY');
+        sessionStorage.removeItem('themeScrollSlug');
+      }
+      return;
+    }
+    if (!arrivingHere) return;
+    const slug = sessionStorage.getItem('themeScrollSlug');
+    const savedY = Number(sessionStorage.getItem('themeScrollY') ?? 0);
+    if (savedY <= 0 || slug !== page.params.theme) return;
+    let cancelled = false;
+    cancelScrollRestore = () => { cancelled = true; };
+    let lastH = 0, stable = 0;
+    const tryScroll = () => {
+      if (cancelled) return;
+      const h = document.documentElement.scrollHeight;
+      if (h === lastH) stable++;
+      else { stable = 0; lastH = h; }
+      if (stable >= 3) window.scrollTo({ top: savedY, behavior: 'instant' });
+      else requestAnimationFrame(tryScroll);
+    };
+    requestAnimationFrame(tryScroll);
+  });
+
+  onDestroy(() => cancelScrollRestore());
+
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
   const articles = $derived((page.data as PageData).payload.articles);
@@ -105,7 +146,7 @@
               <Clickable
                 href={`${route(RouteTypes.Articles, { forceLocale: locale as Locale })}/${article.seo.slug}`}
                 overflow={true}
-                class="card group bg-base-100 relative max-w-[290px] min-w-[220px] rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
+                class="card group bg-base-100 relative max-w-72.5 min-w-55 rounded-none shadow transition-all hover:shadow-lg sm:min-w-72 md:w-96"
               >
                 <Figure
                   class="h-48 rounded"
@@ -222,7 +263,8 @@
         <Clickable
           href={route(RouteTypes.Themes, { theme, forceLocale: locale as Locale })}
           overflow={true}
-          class="card group xs:w-80 relative h-[360px] w-full min-w-[220px] rounded-none shadow-none md:ml-0 md:h-[460px] md:w-[375px]"
+          preload="hover"
+          class="card group xs:w-80 relative h-90 w-full min-w-55 rounded-none shadow-none md:ml-0 md:h-115 md:w-93.75"
         >
           <figure
             class="pointer-events-none absolute top-0 left-0 -z-20 h-full w-full transition-all group-hover:opacity-80"
@@ -246,7 +288,7 @@
           <div class="absolute bottom-0 left-0">
             <Heading
               tag="h3"
-              class="my-4 px-4 text-clip whitespace-break-spaces !text-white text-shadow-lg md:text-3xl"
+              class="my-4 px-4 text-clip whitespace-break-spaces text-white! text-shadow-lg md:text-3xl"
               title={$t(`themes.${theme}.title`)}
             >
               {@html $t(`themes.${theme}.title`)}

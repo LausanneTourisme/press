@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { afterNavigate } from '$app/navigation';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
@@ -17,11 +17,12 @@
   import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';
   import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
   import { t, type Locale } from '$lib/translations';
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
 
   const locale = $derived(page.params.locale as Locale);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
+  let cancelScrollRestore = () => {};
   let videoUrl = $derived.by(() => `/pages/home/welcome_card_${locale}.mp4`);
 
   const trophies: Trophy[] = [
@@ -58,31 +59,59 @@
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
     if (nav && !isMobile) {
-      nav.classList.toggle('invisible-nav', isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('hidden-nav', isIntersecting);
+      nav.classList.toggle('invisible-nav', isIntersecting);
     }
   };
 
-  onMount(() => {
-    updateSize();
+  beforeNavigate(({ type }) => {
+    cancelScrollRestore();
+    if (type === 'popstate') return;
+    sessionStorage.setItem('homeScrollY', String(window.scrollY));
+    sessionStorage.setItem('homeThemesExpanded', String(displayAllThemes));
+  });
 
-    afterNavigate(({ type }) => {
-      // If user used back/forward, we keep themes state
-      if (type === 'popstate') {
-        displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
-      } else {
-        displayAllThemes = false;
+  afterNavigate((navigation) => {
+    const { type } = navigation;
+    // afterNavigate fires on both the source and destination page during a transition.
+    // Guard so the restore only runs when we're actually arriving at the homepage.
+    const arrivingHere = navigation.to?.url?.pathname === `/${locale}`;
+    if (type === 'popstate') {
+      if (!arrivingHere) return;
+      const savedY = Number(sessionStorage.getItem('homeScrollY') ?? 0);
+      if (savedY > 0) {
+        let cancelled = false;
+        cancelScrollRestore = () => { cancelled = true; };
+        let lastH = 0, stable = 0;
+        const tryScroll = () => {
+          if (cancelled) return;
+          const h = document.documentElement.scrollHeight;
+          if (h === lastH) stable++;
+          else { stable = 0; lastH = h; }
+          if (stable >= 3) window.scrollTo({ top: savedY, behavior: 'instant' });
+          else requestAnimationFrame(tryScroll);
+        };
+        requestAnimationFrame(tryScroll);
       }
-    });
+    } else if (type === 'link' || type === 'goto') {
+      if (arrivingHere) {
+        displayAllThemes = false;
+        sessionStorage.removeItem('homeScrollY');
+        sessionStorage.removeItem('homeThemesExpanded');
+      }
+    }
+  });
 
-    /*
-     *  Event listeners
-     */
+  onDestroy(() => cancelScrollRestore());
+
+  onMount(() => {
+    // Restore themes state synchronously before SvelteKit restores scroll (avoids layout shift)
+    const saved = sessionStorage.getItem('homeThemesExpanded');
+    if (saved !== null) displayAllThemes = saved === 'true';
+
+    updateSize();
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);
 
-    // Cleanup event listener when the component is destroyed
     return () => {
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
