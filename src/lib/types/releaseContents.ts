@@ -3,33 +3,33 @@ import type { Media, Translatable, Video as NovaVideo } from './nova';
 export type Hero = {
   type: 'hero';
   tag: `h${1 | 2 | 3 | 4 | 5 | 6}`;
-  value: Translatable;
-  lead?: Translatable;
+  value: string;
+  lead?: string;
   color: 'white' | 'black';
-  image: Media<Translatable>;
+  image: Media<string>;
 };
 
 export type Heading = {
   type: 'heading';
   tag: `h${1 | 2 | 3 | 4 | 5 | 6}`;
-  value: Translatable;
+  value: string;
 };
 
 export type Paragraphe = {
   type: 'paragraph';
-  value: Translatable;
+  value: string;
 };
 
 export type Gallery = {
   type: 'gallery';
-  value: Media<Translatable>[];
+  value: Media<string>[];
 };
 
 export type Image = {
   type: 'image';
   size: 'parallax' | 'small' | 'medium' | 'large';
   focus: 'auto' | 'face';
-  value: Media<Translatable>;
+  value: Media<string>;
 };
 
 export type Instagram = {
@@ -44,7 +44,7 @@ export type Youtube = {
 
 export type Video = {
   type: 'video';
-  value: NovaVideo<Translatable>;
+  value: NovaVideo<string>;
 };
 
 export type Embed = {
