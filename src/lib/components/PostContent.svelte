@@ -24,7 +24,7 @@
   const { class: additionalClass, hero, post, locale }: Props = $props();
   const name = $derived(post?.name?.[locale]);
   const summary = $derived(post?.summary?.[locale]);
-  const content = $derived(post.content?.[locale])
+  const content = $derived(post.content?.[locale]);
 </script>
 
 <div class={twMerge('content', additionalClass)}>

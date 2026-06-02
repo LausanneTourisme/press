@@ -80,7 +80,7 @@ type PostBase<T extends Translatable | string> = {
   seo?: Seo<T>;
   tags?: Tag<T>[];
   highlight?: boolean;
-  content?:  T extends string ? ContentBlock[] : TranslatableContentBlock;
+  content?: T extends string ? ContentBlock[] : TranslatableContentBlock;
 };
 
 export type Release<T extends Translatable | string> = PostBase<T> & {
