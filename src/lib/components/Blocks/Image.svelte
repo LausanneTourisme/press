@@ -16,7 +16,7 @@
     size: 'small' | 'medium' | 'large' | 'parallax';
     focus?: 'face' | 'auto' | 'null';
     fixed?: boolean;
-    metadata?: Metadata<Translatable>;
+    metadata?: Metadata<string>;
     children?: Snippet;
   };
 

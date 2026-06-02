@@ -54,7 +54,7 @@
   fixed={false}
   focus="auto"
   cloudinaryId={hero.image.cloudinary_id ?? 'default'}
-  alt="{hero.image.public_name?.[locale]} - {hero.image.copyright}"
+  alt="{hero.image.public_name} - {hero.image.copyright}"
 >
   <Container
     width="small"
@@ -66,15 +66,15 @@
         ? 'text-white shadow-gray-950 drop-shadow-lg'
         : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}
     >
-      {hero.value[locale]}
+      {hero.value}
     </Heading>
-    {#if hero.lead?.[locale]}
+    {#if hero.lead}
       <Paragraph
         class={hero.color === 'white'
           ? 'text-xl text-white drop-shadow-lg drop-shadow-black'
           : 'text-gray-950 drop-shadow-lg drop-shadow-gray-100'}
       >
-        {hero.lead[locale]}
+        {hero.lead}
       </Paragraph>
     {/if}
   </Container>
