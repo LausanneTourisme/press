@@ -22,6 +22,9 @@
   };
 
   const { class: additionalClass, hero, post, locale }: Props = $props();
+  const name = $derived(post?.name?.[locale]);
+  const summary = $derived(post?.summary?.[locale]);
+  const content = $derived(post.content?.[locale])
 </script>
 
 <div class={twMerge('content', additionalClass)}>
@@ -30,11 +33,11 @@
   {:else}
     <Container width="medium" class="py-0">
       <Heading tag="h1">
-        {@html post?.name?.[locale]}
+        {@html name}
       </Heading>
       <Paragraph class="leading-6 tracking-[0.45px]">
         <strong>
-          {@html post?.summary?.[locale]}
+          {@html summary}
         </strong>
       </Paragraph>
     </Container>
@@ -49,18 +52,18 @@
 -
 -
 -->
-  {#if post.content}
-    {#each post.content as block, index (`${index} ${block.type} ${locale}`)}
+  {#if content}
+    {#each content as block, index (`${index} ${block.type} ${locale}`)}
       {#if block.type === 'heading'}
         <Container width="medium">
           <HeadingBlock tag={block.tag}>
-            {@html block.value[locale]}
+            {@html block.value}
           </HeadingBlock>
         </Container>
       {:else if block.type === 'paragraph'}
         <Container width="medium" class="py-0 md:py-0">
           <ParagraphBlock>
-            {@html block.value[locale]}
+            {@html block.value}
           </ParagraphBlock>
         </Container>
       {:else if block.type === 'image'}
@@ -69,7 +72,7 @@
           size={block.size}
           focus={block.focus}
           cloudinaryId={block.value.cloudinary_id ?? 'default'}
-          alt={`${block.value?.public_name?.fr ?? ''} - ${block.value?.copyright}`}
+          alt={`${block.value?.public_name ?? ''} - ${block.value?.copyright}`}
         />
       {:else if block.type === 'instagram'}
         <Container width="medium" class="mb-6 flex justify-center py-0 md:py-0">
