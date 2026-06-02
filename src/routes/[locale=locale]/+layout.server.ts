@@ -22,6 +22,6 @@ export const load = async ({ url, params, parent }) => {
     i18n,
     translations,
     seo,
-    locale: params.locale
+    locale: lang
   };
 };
