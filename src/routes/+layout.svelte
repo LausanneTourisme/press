@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { afterNavigate } from '$app/navigation';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import Button from '$lib/components/Button.svelte';
   import Heading from '$lib/components/Heading.svelte';
@@ -17,6 +17,8 @@
   import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
+  let isNavigating = $state(false);
+  let hideBarTimer: ReturnType<typeof setTimeout> | undefined;
   const locale = $derived((page.params.locale ?? defaultLocale) as Locale);
   let translations = $derived.by(() => (page.data as PageData).translations[locale]);
   let seo = $derived.by(() => {
@@ -41,20 +43,66 @@
     })
   );
 
-  afterNavigate((navigate) => {
-    // return back in navigation doesn't re-trigger scroll to anchor
-    if (navigate.type === 'popstate') return;
 
-    /*
-     * Go to Anchor tags !
-     */
-    setTimeout(() => {
-      const { hash } = document.location;
-      if (hash) {
-        const anchor = document.querySelector(hash ?? '');
-        anchor?.scrollIntoView({ behavior: 'smooth' });
-      }
+  beforeNavigate(({ type }) => {
+    if (type === 'leave') return;   // full-page unload, not an SPA transition
+    clearTimeout(hideBarTimer);
+    isNavigating = true;
+  });
+
+  afterNavigate((navigate) => {
+    hideBarTimer = setTimeout(() => {
+      requestAnimationFrame(() => { isNavigating = false; });
     }, 500);
+
+    // For link/goto: scroll to top. Leave refresh ('enter') and
+    // back/forward ('popstate') to the browser's native restoration.
+    // Skip when only the locale prefix changed. 
+    // noscroll={true} on locale links signals the user wants to stay 
+    // at the same scroll position.
+    if (navigate.type === 'link' || navigate.type === 'goto') {
+      const fromStripped = (navigate.from?.url?.pathname ?? '').replace(/^\/[a-z]{2}(\/|$)/, '/');
+      const toStripped = (navigate.to?.url?.pathname ?? '').replace(/^\/[a-z]{2}(\/|$)/, '/');
+      if (fromStripped !== toStripped) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    }
+
+    // Hash-anchor scrolling is only relevant for link/goto navigations.
+    if (navigate.type !== 'link' && navigate.type !== 'goto') return;
+
+    const { hash } = document.location;
+    if (!hash) return;
+
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    let suppressScroll = true;
+    const onScroll = () => {
+      if (suppressScroll) window.scrollTo({ top: 0, behavior: 'instant' });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Wait for layout to stabilise (Swiper collapses the DOM in ~800 ms).
+    // Require both a minimum elapsed time AND consecutive stable frames before
+    // doing the final smooth scroll to the anchor.
+    const start = Date.now();
+    const MIN_WAIT_MS = 1000;
+    let lastH = 0;
+    let stable = 0;
+    const tryHashScroll = () => {
+      const waited = Date.now() - start;
+      const h = document.documentElement.scrollHeight;
+      if (h === lastH) stable++;
+      else { stable = 0; lastH = h; }
+      if (stable >= 3 && waited >= MIN_WAIT_MS) {
+        suppressScroll = false;
+        window.removeEventListener('scroll', onScroll);
+        const anchor = document.querySelector(hash);
+        anchor?.scrollIntoView({ behavior: 'smooth' });
+      } else if (waited < 5000) {
+        requestAnimationFrame(tryHashScroll);
+      }
+    };
+    requestAnimationFrame(tryHashScroll);
   });
 </script>
 
@@ -142,6 +190,9 @@
 </svelte:head>
 
 <div class="app flex min-h-screen flex-col">
+  {#if isNavigating}
+    <div class="progress-bar" aria-hidden="true"></div>
+  {/if}
   <Nav {locale} />
 
   <main class="flex-1">
