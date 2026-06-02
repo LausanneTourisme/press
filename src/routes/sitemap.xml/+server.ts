@@ -5,10 +5,10 @@ import { getPosts } from '$lib/services/requests.server';
 import { defaultLocale, type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
 import type { RequestHandler } from '@sveltejs/kit';
-export const GET: RequestHandler = async ({ url }) => {
+export const GET: RequestHandler = async ({ url, fetch }) => {
   const urlSets = await Promise.all([
     generateUrlSets(url.origin),
-    generatePresskitAndPressReleasesUrlSets(url.origin)
+    generatePresskitAndPressReleasesUrlSets(url.origin, fetch)
   ]);
 
   return new Response(
@@ -82,11 +82,11 @@ const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[]) => {
     .join('\n');
 };
 
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
+const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, fetchFn: typeof fetch) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 
-  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release' });
+  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release', fetchFn });
   const releases = releasesRes.data?.items?.data ?? [];
 
   for (const release of releases) {

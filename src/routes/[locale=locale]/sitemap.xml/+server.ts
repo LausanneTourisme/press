@@ -4,10 +4,10 @@ import { menuItems } from '$lib/config/menu';
 import { getPosts } from '$lib/services/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
-export const GET = async ({ url, params }) => {
+export const GET = async ({ url, params, fetch }) => {
   const urlSets = await Promise.all([
     generateUrlSets(url.origin, params.locale as Locale),
-    generatePresskitAndPressReleasesUrlSets(url.origin, params.locale as Locale)
+    generatePresskitAndPressReleasesUrlSets(url.origin, params.locale as Locale, fetch)
   ]);
 
   return new Response(
@@ -83,11 +83,11 @@ const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[], canonLoc
 };
 
 // adapted to return only posts existing in current local
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale: Locale) => {
+const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale: Locale, fetchFn: typeof fetch) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 
-  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release' });
+  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release', fetchFn });
   const releases = releasesRes.data?.items?.data ?? [];
 
   for (const release of releases) {
