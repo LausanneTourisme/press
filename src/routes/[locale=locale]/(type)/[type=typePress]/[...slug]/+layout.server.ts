@@ -7,14 +7,14 @@ import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
-export const load = async ({ params, parent, url }) => {
+export const load = async ({ params, parent, url, fetch }) => {
   if (dev && isOfflineMode) {
     const { server } = await import('$lib/mocks/handler');
     server.listen();
   }
   const [{ i18n, translations }, releaseRes] = await Promise.all([
     parent(),
-    getPost(params.slug ?? '')
+    getPost(params.slug ?? '', fetch)
   ]);
 
   const release = releaseRes.data?.item;
