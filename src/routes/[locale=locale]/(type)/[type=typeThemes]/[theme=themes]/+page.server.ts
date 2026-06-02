@@ -16,8 +16,8 @@ export const load = async ({ parent }) => {
 
   const tag = getTag(theme);
   const [articlesRes, highlightedArticlesRes, favoritesRes] = await Promise.all([
-    getPosts<Post<string>>({ type: 'post', highlighted: false, locale }),
-    getPosts<Post<string>>({ type: 'post', highlighted: true, locale }),
+    getPosts<Post<string>>({ type: 'post', highlighted: false, locale, tags: tag }),
+    getPosts<Post<string>>({ type: 'post', highlighted: true, locale, tags: tag }),
     getFavorites<string>({ locale, theme })
   ]);
 
@@ -28,8 +28,8 @@ export const load = async ({ parent }) => {
 
   return {
     payload: {
-      articles: filterByTag(articles, tag),
-      highlightedArticle: filterByTag(highlightedArticles, tag)?.at(0),
+      articles: articles,
+      highlightedArticle: highlightedArticles?.at(0),
       favorites
     }
   };
