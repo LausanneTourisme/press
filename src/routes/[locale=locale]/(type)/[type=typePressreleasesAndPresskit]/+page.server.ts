@@ -13,7 +13,7 @@ export const config = {
   }
 };
 
-export const load = async ({ parent }) => {
+export const load = async ({ parent, fetch }) => {
   if (dev && isOfflineMode) {
     const { server } = await import('$lib/mocks/handler');
     server.listen();
@@ -21,7 +21,7 @@ export const load = async ({ parent }) => {
 
   const { locale } = await parent();
 
-  const releasesRes = await getPosts<Release<string>>({ type: 'press_release', locale });
+  const releasesRes = await getPosts<Release<string>>({ type: 'press_release', locale, fetchFn: fetch });
 
   const releases = releasesRes.data?.items?.data ?? [];
 

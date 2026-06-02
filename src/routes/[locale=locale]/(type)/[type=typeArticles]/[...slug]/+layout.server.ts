@@ -7,7 +7,7 @@ import { loadTranslations, supportedLocales, type Locale } from '$lib/translatio
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
-export const load = async ({ params, parent, url }) => {
+export const load = async ({ params, parent, url, fetch }) => {
   if (dev && isOfflineMode) {
     const { server } = await import('$lib/mocks/handler');
     server.listen();
@@ -15,7 +15,7 @@ export const load = async ({ params, parent, url }) => {
 
   const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([
     parent(),
-    getPost(params.slug ?? '')
+    getPost(params.slug ?? '', fetch)
   ]);
 
   const article = articleRes.data?.item;
