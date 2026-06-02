@@ -8,11 +8,11 @@
   import { fade } from 'svelte/transition';
   import type { PageData } from './$types';
 
-  const locale = $derived(page.params.locale as Locale);
+  const locale = $derived(page.params.locale!);
   const release = $derived((page.data as PageData).release);
   const type = $derived((page.data as PageData).type);
   const hero = $derived(
-    (page.data as PageData).release.content?.find((block) => block.type === 'hero')
+    (page.data as PageData).release.content?.[locale]?.find((block) => block.type === 'hero')
   );
 </script>
 

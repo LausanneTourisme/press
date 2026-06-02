@@ -11,11 +11,11 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
-  const locale = $derived(page.params.locale as Locale);
+  const locale = $derived(page.params.locale!);
   const article = $derived((page.data as PageData).article);
   const type = $derived((page.data as PageData).type);
   const hero = $derived(
-    (page.data as PageData).article.content?.find((block) => block.type === 'hero')
+    (page.data as PageData).article.content?.[locale]?.find((block) => block.type === 'hero')
   );
 </script>
 
