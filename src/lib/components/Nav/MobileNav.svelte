@@ -203,6 +203,7 @@
                   class="flex justify-between rounded-md p-3 text-left font-semibold hover:bg-slate-100 dark:hover:bg-slate-600"
                   href={subItem.link}
                   preload="tap"
+                  noscroll={subItem.link?.includes('#')}
                   icon={subItem.icon ? icon : undefined}
                   classIcon="mr-4"
                   onclick={closeMenu}
