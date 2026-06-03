@@ -22,5 +22,8 @@ const resolveLanguage = async ({
 export const handle = sequence(resolveLanguage);
 
 export const handleError: HandleServerError = ({ error, event }) => {
-  console.error(`[${new Date().toISOString()}] Unhandled error on ${event.request.method} ${event.url.pathname}`, error);
+  console.error(
+    `[${new Date().toISOString()}] Unhandled error on ${event.request.method} ${event.url.pathname}`,
+    error
+  );
 };
