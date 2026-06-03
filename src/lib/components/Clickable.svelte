@@ -62,14 +62,7 @@
     {@render children()}
   </a>
 {:else}
-  <a
-    {href}
-    class={style}
-    data-sveltekit-preload-data={preload}
-    {title}
-    {onclick}
-    transition:fade
-  >
+  <a {href} class={style} data-sveltekit-preload-data={preload} {title} {onclick} transition:fade>
     {@render children()}
   </a>
 {/if}
