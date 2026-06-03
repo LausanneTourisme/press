@@ -2,7 +2,7 @@
   import { resolve } from '$app/paths';
   import type { Pathname } from '$app/types';
   import { blankable } from '$lib/helpers';
-  import { ChevronRight } from 'lucide-svelte';
+  import { ChevronRight } from '@lucide/svelte';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 

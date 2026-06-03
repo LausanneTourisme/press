@@ -8,7 +8,7 @@
   import { getTailwindColor } from '$lib/helpers';
   import { t, type Locale } from '$lib/translations';
   import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
-  import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
+  import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from '@lucide/svelte';
   import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
   import { SvelteSet } from 'svelte/reactivity';

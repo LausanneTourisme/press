@@ -5,7 +5,7 @@
   import Swiper from 'swiper';
   import { Navigation, Pagination } from 'swiper/modules';
   // import Swiper and modules styles
-  import { ChevronLeft, ChevronRight } from 'lucide-svelte';
+  import { ChevronLeft, ChevronRight } from '@lucide/svelte';
   import 'swiper/css';
   import 'swiper/css/pagination';
 

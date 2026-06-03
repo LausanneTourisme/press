@@ -6,7 +6,7 @@
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
   import type { SubmitFunction } from '@sveltejs/kit';
-  import { Send } from 'lucide-svelte';
+  import { Send } from '@lucide/svelte';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Container from '$lib/components/Container.svelte';

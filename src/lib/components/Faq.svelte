@@ -4,7 +4,7 @@
   import LinkedIn from '$lib/Icons/LinkedIn.svelte';
   import Youtube from '$lib/Icons/Youtube.svelte';
   import { t, type Locale } from '$lib/translations';
-  import { ChevronRight } from 'lucide-svelte';
+  import { ChevronRight } from '@lucide/svelte';
   import { twMerge } from 'tailwind-merge';
   import Heading from './Heading.svelte';
   import Link from './Link.svelte';

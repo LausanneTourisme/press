@@ -7,7 +7,7 @@
   import Loading from '$lib/components/Loading.svelte';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
-  import { Trash2 } from 'lucide-svelte';
+  import { Trash2 } from '@lucide/svelte';
   import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
