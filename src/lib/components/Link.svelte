@@ -44,7 +44,7 @@
   const iconStyle = $derived(twMerge('h-4 w-4 inline ml-2 ', classIcon));
 </script>
 
-{#if target === '_blank'}
+{#if href === '#' || target === '_blank'}
   <a
     {href}
     rel="external"
