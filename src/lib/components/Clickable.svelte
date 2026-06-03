@@ -1,7 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import type { Pathname } from '$app/types';
-  import { blankable } from '$lib/helpers';
+  import { blankable, isInternalHref } from '$lib/helpers';
   import type { Snippet } from 'svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -36,7 +35,20 @@
   );
 </script>
 
-{#if href === '#' || target === '_blank'}
+{#if isInternalHref(href)}
+  <a
+    href={resolve(href)}
+    rel="internal"
+    {target}
+    class={style}
+    data-sveltekit-preload-data={preload}
+    {title}
+    {onclick}
+    transition:fade
+  >
+    {@render children()}
+  </a>
+{:else if target === '_blank'}
   <a
     {href}
     rel="external"
@@ -51,9 +63,7 @@
   </a>
 {:else}
   <a
-    href={resolve(href as Pathname)}
-    rel="internal"
-    {target}
+    {href}
     class={style}
     data-sveltekit-preload-data={preload}
     {title}

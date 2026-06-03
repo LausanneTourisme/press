@@ -1,7 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import type { Pathname } from '$app/types';
-  import { blankable } from '$lib/helpers';
+  import { blankable, isInternalHref } from '$lib/helpers';
   import { ChevronRight } from '@lucide/svelte';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
@@ -44,7 +43,26 @@
   const iconStyle = $derived(twMerge('h-4 w-4 inline ml-2 ', classIcon));
 </script>
 
-{#if href === '#' || target === '_blank'}
+{#if isInternalHref(href)}
+  <a
+    href={resolve(href)}
+    rel="internal"
+    {target}
+    class={style}
+    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-preload-data={preload}
+    {onclick}
+  >
+    {@render children()}
+    {#if withIcon}
+      {#if !icon}
+        <ChevronRight strokeWidth={3} class={iconStyle} />
+      {:else}
+        {@render icon()}
+      {/if}
+    {/if}
+  </a>
+{:else if target === '_blank'}
   <a
     {href}
     rel="external"
@@ -65,9 +83,7 @@
   </a>
 {:else}
   <a
-    href={resolve(href as Pathname)}
-    rel="internal"
-    {target}
+    {href}
     class={style}
     data-sveltekit-noscroll={noscroll}
     data-sveltekit-preload-data={preload}

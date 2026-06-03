@@ -15,7 +15,6 @@
   import type { ActionData } from './$types';
   import Form from './Form.svelte';
   import { resolve } from '$app/paths';
-  import type { Pathname } from '$app/types';
 
   const pageForm = $derived(page.form as ActionData);
   const locale = $derived(page.params.locale as Locale);
@@ -155,7 +154,7 @@
               route(RouteTypes.Forms, {
                 forceLocale: locale,
                 form: Forms.Journalist
-              }) as Pathname
+              })
             )}
             class="btn bg-shakespeare-600 border-shakespeare-500 hover:bg-shakespeare-800 btn-wide h-16 rounded-lg text-white shadow"
           >
@@ -167,7 +166,7 @@
               route(RouteTypes.Forms, {
                 forceLocale: locale,
                 form: Forms.ContentCreator
-              }) as Pathname
+              })
             )}
             class="btn btn-wide btn-outline bg-shakespeare-900 border-shakespeare-500 h-16 rounded-lg text-white shadow"
           >

@@ -13,7 +13,6 @@
   import SocialNetworks from '../SocialNetworks.svelte';
   import Logo from './Logo.svelte';
   import { resolve } from '$app/paths';
-  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -68,7 +67,7 @@
 
 <nav class={style} aria-labelledby="mobile-navigation">
   <a
-    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }))}
     class="group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px]"
   >
     <Logo {locale} />
@@ -120,7 +119,7 @@
     <!-- HEADER -->
     <div class="bg-base-200 flex h-[60px] w-full items-center justify-between p-4">
       <a
-        href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+        href={resolve(route(RouteTypes.Home, { forceLocale: locale }))}
         class="flex max-w-[230px] cursor-pointer"
       >
         <Logo {locale} />

@@ -10,7 +10,6 @@
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
   import Logo from './Logo.svelte';
-  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -28,7 +27,7 @@
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }))}
     rel="internal"
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
