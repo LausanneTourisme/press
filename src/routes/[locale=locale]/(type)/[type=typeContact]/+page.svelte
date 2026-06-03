@@ -9,7 +9,7 @@
   import Paragraph from '$lib/components/Paragraph.svelte';
   import { route } from '$lib/helpers';
   import { t, type Locale } from '$lib/translations';
-  import { ArrowLeft, Camera, Mail, Newspaper, Phone } from 'lucide-svelte';
+  import { ArrowLeft, Camera, Mail, Newspaper, Phone } from '@lucide/svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { ActionData } from './$types';

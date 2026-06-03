@@ -9,7 +9,7 @@
   import Nav from '$lib/components/Nav/Nav.svelte';
   import SocialNetworks from '$lib/components/SocialNetworks.svelte';
   import { defaultLocale, t, type Locale } from '$lib/translations';
-  import { Send } from 'lucide-svelte';
+  import { Send } from '@lucide/svelte';
   import { type Snippet } from 'svelte';
   import { getFlash } from 'sveltekit-flash-message';
   import { twMerge } from 'tailwind-merge';

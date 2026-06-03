@@ -13,7 +13,7 @@
   import { filename, route } from '$lib/helpers';
   import { ThemeDetails } from '$lib/helpers/themes';
   import { t, type Locale } from '$lib/translations';
-  import { ArrowRight } from 'lucide-svelte';
+  import { ArrowRight } from '@lucide/svelte';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';

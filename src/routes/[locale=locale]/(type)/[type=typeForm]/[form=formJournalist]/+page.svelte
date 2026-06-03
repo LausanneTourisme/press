@@ -7,7 +7,7 @@
   import Heading from '$lib/components/Heading.svelte';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
-  import { CircleMinus, CirclePlus } from 'lucide-svelte';
+  import { CircleMinus, CirclePlus } from '@lucide/svelte';
   import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
   import { twMerge } from 'tailwind-merge';

@@ -1,7 +1,7 @@
 import { RouteTypes } from '$enums';
 import { t, type Locale } from '$lib/translations';
 import type { Menu, MenuItem } from '$types';
-import { Link } from 'lucide-svelte';
+import { Link } from '@lucide/svelte';
 
 import { getMediaLibraryRegisterLink, route } from '../helpers';
 

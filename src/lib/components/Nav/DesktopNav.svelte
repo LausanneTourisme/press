@@ -5,7 +5,7 @@
   import { route } from '$lib/helpers';
   import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
-  import { ChevronDown } from 'lucide-svelte';
+  import { ChevronDown } from '@lucide/svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';

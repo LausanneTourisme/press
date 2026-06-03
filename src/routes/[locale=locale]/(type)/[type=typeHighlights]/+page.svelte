@@ -12,7 +12,7 @@
   import { extractStartEndDate, isSameDays } from '$lib/helpers/date';
   import { t, type Locale } from '$lib/translations';
   import type { Poi } from '$types';
-  import { Calendar } from 'lucide-svelte';
+  import { Calendar } from '@lucide/svelte';
   import { DateTime } from 'luxon';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
