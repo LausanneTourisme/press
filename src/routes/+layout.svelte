@@ -1,6 +1,7 @@
 <script lang="ts">
   import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
+  import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
   import Button from '$lib/components/Button.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
@@ -10,11 +11,10 @@
   import { defaultLocale, t, type Locale } from '$lib/translations';
   import { Send } from 'lucide-svelte';
   import { type Snippet } from 'svelte';
+  import { getFlash } from 'sveltekit-flash-message';
   import { twMerge } from 'tailwind-merge';
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
-  import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
-  import { getFlash } from 'sveltekit-flash-message';
 
   let { children } = $props<{ children: Snippet }>();
   let isNavigating = $state(false);
@@ -43,22 +43,23 @@
     })
   );
 
-
   beforeNavigate(({ type }) => {
-    if (type === 'leave') return;   // full-page unload, not an SPA transition
+    if (type === 'leave') return; // full-page unload, not an SPA transition
     clearTimeout(hideBarTimer);
     isNavigating = true;
   });
 
   afterNavigate((navigate) => {
     hideBarTimer = setTimeout(() => {
-      requestAnimationFrame(() => { isNavigating = false; });
+      requestAnimationFrame(() => {
+        isNavigating = false;
+      });
     }, 500);
 
     // For link/goto: scroll to top. Leave refresh ('enter') and
     // back/forward ('popstate') to the browser's native restoration.
-    // Skip when only the locale prefix changed. 
-    // noscroll={true} on locale links signals the user wants to stay 
+    // Skip when only the locale prefix changed.
+    // noscroll={true} on locale links signals the user wants to stay
     // at the same scroll position.
     if (navigate.type === 'link' || navigate.type === 'goto') {
       const fromStripped = (navigate.from?.url?.pathname ?? '').replace(/^\/[a-z]{2}(\/|$)/, '/');
@@ -92,7 +93,10 @@
       const waited = Date.now() - start;
       const h = document.documentElement.scrollHeight;
       if (h === lastH) stable++;
-      else { stable = 0; lastH = h; }
+      else {
+        stable = 0;
+        lastH = h;
+      }
       if (stable >= 3 && waited >= MIN_WAIT_MS) {
         suppressScroll = false;
         window.removeEventListener('scroll', onScroll);

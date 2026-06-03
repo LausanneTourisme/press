@@ -1,6 +1,5 @@
 import { Themes, type Theme } from '$enums';
 import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_TOKEN, GRAPHQL_URL } from '$env/static/private';
-import { dev } from '$app/environment';
 import type { Locale } from '$lib/translations';
 import type { Event, Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '$types';
 import { DateTime } from 'luxon';
@@ -11,7 +10,7 @@ type FetchFn = typeof fetch;
 
 const baseHeaders = (typeRequests: 'agenda' | 'normal' = 'normal') => ({
   'Content-Type': 'application/json',
-  Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`,
+  Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`
   // ...(dev && { 'cache-control': 'no-cache' })
 });
 

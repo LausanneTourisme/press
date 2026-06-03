@@ -1,6 +1,6 @@
 import { RouteTypes } from '$enums';
-import { getMediaLibraryRegisterLink } from '$lib/helpers';
 import { menuItems } from '$lib/config/menu';
+import { getMediaLibraryRegisterLink } from '$lib/helpers';
 import { getPosts } from '$lib/services/requests.server';
 import { type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
@@ -83,7 +83,11 @@ const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[], canonLoc
 };
 
 // adapted to return only posts existing in current local
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, locale: Locale, fetchFn: typeof fetch) => {
+const generatePresskitAndPressReleasesUrlSets = async (
+  urlOrigin: string,
+  locale: Locale,
+  fetchFn: typeof fetch
+) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 

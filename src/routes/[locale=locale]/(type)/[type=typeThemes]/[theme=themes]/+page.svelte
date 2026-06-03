@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes, ThemeKeys, Themes } from '$enums';
   import Button from '$lib/components/Button.svelte';
@@ -16,13 +15,11 @@
   import { t, type Locale } from '$lib/translations';
   import { ArrowRight } from 'lucide-svelte';
   import { DateTime } from 'luxon';
-  import { onDestroy } from 'svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
 
   const locale = $derived(page.params.locale as Locale);
-
 
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
