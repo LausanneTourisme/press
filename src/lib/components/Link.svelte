@@ -82,6 +82,8 @@
     {/if}
   </a>
 {:else}
+  <!-- Non-route links (`#`, `mailto:`, `tel:`) are used in map or contacts -->
+  <!-- eslint-disable svelte/no-navigation-without-resolve -->
   <a
     {href}
     class={style}
@@ -98,4 +100,5 @@
       {/if}
     {/if}
   </a>
+  <!-- eslint-enable svelte/no-navigation-without-resolve -->
 {/if}
