@@ -23,43 +23,6 @@
 
   const locale = $derived(page.params.locale as Locale);
 
-  let cancelScrollRestore = () => {};
-
-  beforeNavigate(({ type }) => {
-    cancelScrollRestore();
-    if (type === 'popstate') return;
-    sessionStorage.setItem('themeScrollY', String(window.scrollY));
-    sessionStorage.setItem('themeScrollSlug', page.params.theme ?? '');
-  });
-
-  afterNavigate((navigation) => {
-    const arrivingHere = navigation.to?.url?.pathname === window.location.pathname;
-    if (navigation.type !== 'popstate') {
-      if (arrivingHere) {
-        sessionStorage.removeItem('themeScrollY');
-        sessionStorage.removeItem('themeScrollSlug');
-      }
-      return;
-    }
-    if (!arrivingHere) return;
-    const slug = sessionStorage.getItem('themeScrollSlug');
-    const savedY = Number(sessionStorage.getItem('themeScrollY') ?? 0);
-    if (savedY <= 0 || slug !== page.params.theme) return;
-    let cancelled = false;
-    cancelScrollRestore = () => { cancelled = true; };
-    let lastH = 0, stable = 0;
-    const tryScroll = () => {
-      if (cancelled) return;
-      const h = document.documentElement.scrollHeight;
-      if (h === lastH) stable++;
-      else { stable = 0; lastH = h; }
-      if (stable >= 3) window.scrollTo({ top: savedY, behavior: 'instant' });
-      else requestAnimationFrame(tryScroll);
-    };
-    requestAnimationFrame(tryScroll);
-  });
-
-  onDestroy(() => cancelScrollRestore());
 
   const highlightedArticle = $derived((page.data as PageData).payload.highlightedArticle);
   const title = $derived(highlightedArticle?.name ?? (page.data as PageData).seo.title);
