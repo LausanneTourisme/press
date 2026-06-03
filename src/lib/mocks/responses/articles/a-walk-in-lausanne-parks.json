@@ -18,257 +18,593 @@
         "en": "Not by chance is Lausanne considered one of the greenest cities in Europe. With a whole 350 hectares dedicated to green spaces spread across fifteen or so parks, a haven of nature is never far away. Having roamed every green area of this city extensively, I invite you to come with me and stroll together in 5 of these parks…",
         "de": "Es ist kein Zufall, dass Lausanne als eine der grünsten Städte Europas gilt. Bei rund 15 Pärken mit insgesamt 350 Hektaren Grünfläche ist immer ein Stück herrliche Natur in der Nähe. Nachdem ich jede grüne Ecke dieser Stadt erkundet habe, lade ich Sie ein, fünf dieser Pärke gemeinsam zu durchstreifen."
       },
-      "content": [
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lelysee/\">Parc de l’Elysée</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/elysee-park/\">Elysée Park</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/elysee-park/\">Elysée-Park</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Débutons notre parcours dans le parc de l’Elysée, à deux pas du lac et du musée Olympique. Lieu incontournable pour admirer la floraison de la fameuse allée des cerisiers au début du printemps, ce parc offre un panorama grandiose sur le lac et les reliefs haut-savoyards. À l’aube, j’y trouve toujours une sérénité particulière, avant que les touristes du musée Olympique ne commencent à affluer. C’est aussi à cette heure matinale que je croise souvent des renards en balade et admire de nombreuses espèces d’oiseaux.",
-            "en": "Let’s begin our walk in Elysée Park, a stone’s throw from the lake and the Olympic Museum. A must-visit to admire the famous cherry tree alley in full blossom at the beginning of spring, this park offers a grand panorama over the lake and the Haute-Savoie mountains.",
-            "de": "Beginnen wir im Elysée-Park, der nur wenige Schritte vom See und vom Olympischen Museum entfernt liegt. Dieser Park ist ein Muss, um die berühmte Kirschbaumallee zu Beginn des Frühlings in voller Blütenpracht zu bewundern. Zudem bietet er eine grandiose Aussicht auf den See und die Berge der Haute Savoie."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25920,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
-            },
-            "cloudinary_id": "c07c34a9b3062ed8",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1707,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1707\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c07c34a9b3062ed8.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Elysee_1-scaled.jpg"
-            }
+      "content": {
+        "fr": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lelysee/\">Parc de l’Elysée</a>"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Parc de Mon-Repos</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Park Mon-Repos</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Poursuivons notre promenade et admirons ce que je considère comme l’un des plus beaux parcs de la ville. C’est ici que je me ressource, ayant la sensation de déambuler à l’intérieur d’un tableau vivant et coloré. Prenez place dans l’amphithéâtre derrière la villa de Mon-Repos et imaginez les représentations de Zaïre avec Voltaire qui ont eu lieu ici même il y a plus de 250 ans.",
-            "en": "Let’s carry on our walk and admire what is for me one of the most beautiful parks in the city. This is where I recharge my batteries, with the feeling of roaming inside a living and colourful painting. Take a seat in the amphitheatre behind Mon-Repos Villa and imagine the performances of Zaïre with Voltaire that took place in this very spot more than 250 years ago.",
-            "de": "Setzen wir den Spaziergang im Park Mon-Repos fort, der meiner Meinung nach zu den schönsten der Stadt gehört. Hier tanke ich Kraft und habe das Gefühl, durch ein lebendiges, farbenfrohes Gemälde zu spazieren. Nehmen Sie im Amphitheater hinter der Villa Mon-Repos Platz und stellen Sie sich die Aufführungen von Zaïre in Anwesenheit von Voltaire vor, die vor über 250 Jahren genau hier stattfanden."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La beauté de ce parc se révèle tout au long de l’année, mais l’automne demeure pour moi le moment privilégié. C’est à cette époque que j’aime capturer la métamorphose chromatique des arbres, en particulier du ginkgo biloba et de l’érable du Japon.",
-            "en": "The beauty of this park reveals itself all year long, but autumn remains for me the most privileged moment. It’s at this time of the year that I love to capture the chromatic metamorphosis of the trees, particularly the ginkgo biloba and the Japanese maple.",
-            "de": "Dieser Park ist das ganze Jahr über wunderschön, doch der Herbst bleibt für mich der Höhepunkt. In dieser Zeit halte ich gern den farblichen Wandel der Bäume fest, insbesondere des Ginkgo biloba und des Japanischen Ahorns."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26005,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
-            },
-            "cloudinary_id": "5a74827e43c3de67",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "5a74827e43c3de67.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_automne-scaled.jpg"
-            }
+          {
+            "type": "paragraph",
+            "value": "Débutons notre parcours dans le parc de l’Elysée, à deux pas du lac et du musée Olympique. Lieu incontournable pour admirer la floraison de la fameuse allée des cerisiers au début du printemps, ce parc offre un panorama grandiose sur le lac et les reliefs haut-savoyards. À l’aube, j’y trouve toujours une sérénité particulière, avant que les touristes du musée Olympique ne commencent à affluer. C’est aussi à cette heure matinale que je croise souvent des renards en balade et admire de nombreuses espèces d’oiseaux."
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26090,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
+          {
+            "type": "image",
+            "value": {
+              "id": 25920,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "c07c34a9b3062ed8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1707,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1707\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c07c34a9b3062ed8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Elysee_1-scaled.jpg"
+              }
             },
-            "cloudinary_id": "cf0b9980c7b41026",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2075,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2075\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "cf0b9980c7b41026.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_ginkgo-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">Colline de Montriond</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\">Montriond Hill</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">Montriond-Hügel</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "J’affectionne tout particulièrement cette colline, à proximité du parc de Milan et du jardin botanique de Lausanne. Avant d’y accéder, je vous recommande vivement de faire un arrêt chez Loom pour déguster une glace (mention spéciale pour les parfums cacahuète et sésame noir). Votre glace à la main, laissez-vous surprendre par toute cette végétation luxuriante entre ombre et lumière à travers de charmants petits chemins. Au sommet, une esplanade surplombant la ville vous attend, offrant une perspective imprenable sur le lac et les montagnes alentour. Lors de la descente, je vous suggère de longer les jardins familiaux de Montriond.",
-            "en": "I’m particularly fond of this hill, near Milan Park and Lausanne’s botanical garden. Before heading there, I strongly recommend stopping at Loom’s to savour an ice cream (special mention for the peanut and black sesame flavours). Ice cream in hand, let yourself be surprised by the luxuriant vegetation between light and shade as you walk up the charming paths. At the top, an esplanade overlooking the town awaits you, offering a breathtaking perspective on the lake and surrounding mountains. As you head down, I suggest you walk by the Montriond family gardens.",
-            "de": "Diesen Hügel in der Nähe des Milan-Parks und des botanischen Gartens von Lausanne mag ich ganz besonders. Unterwegs empfehle ich wärmstens einen Zwischenstopp bei Loom, um eine Glace zu geniessen (die Geschmacksrichtungen Erdnuss und schwarzer Sesam sind ein besonderes Highlight). Schlendern Sie mit der Glace in der Hand auf den reizvollen kleinen Wegen und bestaunen Sie die üppige Vegetation im Wechselspiel von Licht und Schatten. Zuoberst, hoch über der Stadt, erwartet Sie eine Esplanade mit einem atemberaubenden Blick auf den See und die umliegenden Berge. Für den Abstieg empfehle ich den Weg entlang der Montriond-Schrebergärten."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26157,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Parc de Mon-Repos</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Poursuivons notre promenade et admirons ce que je considère comme l’un des plus beaux parcs de la ville. C’est ici que je me ressource, ayant la sensation de déambuler à l’intérieur d’un tableau vivant et coloré. Prenez place dans l’amphithéâtre derrière la villa de Mon-Repos et imaginez les représentations de Zaïre avec Voltaire qui ont eu lieu ici même il y a plus de 250 ans."
+          },
+          {
+            "type": "paragraph",
+            "value": "La beauté de ce parc se révèle tout au long de l’année, mais l’automne demeure pour moi le moment privilégié. C’est à cette époque que j’aime capturer la métamorphose chromatique des arbres, en particulier du ginkgo biloba et de l’érable du Japon."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26005,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "5a74827e43c3de67",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5a74827e43c3de67.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_automne-scaled.jpg"
+              }
             },
-            "cloudinary_id": "9704c4a0fbf0c97e",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "9704c4a0fbf0c97e.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Montriond-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-valency/\">Parc de Valency</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/valency-park/\">Valency Park</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/valency-park/\">Park Valency</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Continuons notre promenade à l’ouest lausannois, direction le parc de Valency. Je me plais à m’y rendre en automne lorsque les 80 tilleuls de l’allée principale se parent de leurs plus belles couleurs chatoyantes. C’est un parc très inspirant pour la photographie avec une sublime perspective mettant en valeur la statue du poulain en pierre si caractéristique du lieu. Plus loin, en contrebas, le parc s’étend sur une vaste étendue, où vous pouvez admirer plusieurs spécimens d’hêtres pourpres qui méritent une attention particulière.",
-            "en": "Let’s continue our walk in the western part of Lausanne, towards Valency Park. I take pleasure in going there in the autumn, when the 80 linden trees of the main alley take on their most beautiful shimmering colours. It’s a very inspiring park for photography, what with a sublime perspective that highlights the stone statue of the foal that is so characteristic of this place. Further down, the park extends over a vast expanse, where you can admire several specimens of copper beaches that are particularly worth checking out.",
-            "de": "Weiter geht es im Westen von Lausanne zum Park Valency. Diesen Park suche ich gern im Herbst auf, wenn die 80 Linden der Hauptallee in schillernden Farben erstrahlen. Er ist sehr inspirierend zum Fotografieren und bietet eine herrliche Perspektive mit der für diesen Ort so charakteristischen Fohlen-Steinstatue. Weiter unten erstreckt sich der Park über eine weite Fläche mit mehreren wunderschönen Blutbuchen, die mich immer wieder ins Staunen versetzen."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26223,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
+          {
+            "type": "image",
+            "value": {
+              "id": 26090,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "cf0b9980c7b41026",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2075,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2075\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cf0b9980c7b41026.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_ginkgo-scaled.jpg"
+              }
             },
-            "cloudinary_id": "870d4ac4f393735d",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "870d4ac4f393735d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Valency_3-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">Parc de l’Hermitage</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\">Hermitage Park</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\">Hermitage-Park</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Terminons notre balade bucolique pour admirer le coucher de soleil au parc de l’Hermitage. C’est l’endroit où la luminosité de fin de journée me séduit le plus. Idéal pour les amateurs de photographies, j’aime y aller à la fin de l’été jusqu’au début de l’automne lorsque les cosmos et dahlias sont pleinement épanouis. Les derniers rayons de soleil mêlés à une légère brise créent une atmosphère féérique où fleurs et graminées semblent danser entre elles. C’est le lieu idéal pour terminer la journée et partager un pique-nique dans un cadre intimiste.",
-            "en": "Let’s finish our bucolic stroll by admiring the sunset from Hermitage Park, the place where the light at the end of the day appeals to me the most. It’s ideal for photo enthusiasts and I love to go there from the end of summer until the beginning of autumn, when the cosmoses and dahlias are in full bloom. The last sunrays, together with a light breeze, create a fairy-like atmosphere where flower and grasses seem to dance in harmony. It’s the ideal spot to end the day and share a picnic in an intimate setting.",
-            "de": "Zum Abschluss dieses idyllischen Parkspaziergangs schlage ich einen wundervollen Sonnenuntergang im Hermitage-Park vor. Die Lichtverhältnisse am Ende des Tages faszinieren mich hier besonders. Dieser Park ist ideal für alle, die das Fotografieren lieben. Ich suche ihn vor allem von Spätsommer bis Frühherbst auf, wenn die Kosmosblumen und Dahlien blühen. Die letzten Sonnenstrahlen und eine leichte Brise schaffen eine märchenhafte Atmosphäre, in der die Blumen und Gräser miteinander zu tanzen scheinen. Dieser Park ist ideal, um den Tag ausklingen zu lassen und ein Picknick in einer behaglichen Umgebung zu teilen."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26291,
-            "name": "Balade dans les parcs lausannois",
-            "public_name": {
-              "fr": "Balade dans les parcs lausannois"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">Colline de Montriond</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "J’affectionne tout particulièrement cette colline, à proximité du parc de Milan et du jardin botanique de Lausanne. Avant d’y accéder, je vous recommande vivement de faire un arrêt chez Loom pour déguster une glace (mention spéciale pour les parfums cacahuète et sésame noir). Votre glace à la main, laissez-vous surprendre par toute cette végétation luxuriante entre ombre et lumière à travers de charmants petits chemins. Au sommet, une esplanade surplombant la ville vous attend, offrant une perspective imprenable sur le lac et les montagnes alentour. Lors de la descente, je vous suggère de longer les jardins familiaux de Montriond."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26157,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "9704c4a0fbf0c97e",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9704c4a0fbf0c97e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Montriond-scaled.jpg"
+              }
             },
-            "cloudinary_id": "7d8f2b4847cf36ac",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "7d8f2b4847cf36ac.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Hermitage-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        }
-      ],
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-valency/\">Parc de Valency</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Continuons notre promenade à l’ouest lausannois, direction le parc de Valency. Je me plais à m’y rendre en automne lorsque les 80 tilleuls de l’allée principale se parent de leurs plus belles couleurs chatoyantes. C’est un parc très inspirant pour la photographie avec une sublime perspective mettant en valeur la statue du poulain en pierre si caractéristique du lieu. Plus loin, en contrebas, le parc s’étend sur une vaste étendue, où vous pouvez admirer plusieurs spécimens d’hêtres pourpres qui méritent une attention particulière."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26223,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "870d4ac4f393735d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "870d4ac4f393735d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Valency_3-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">Parc de l’Hermitage</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Terminons notre balade bucolique pour admirer le coucher de soleil au parc de l’Hermitage. C’est l’endroit où la luminosité de fin de journée me séduit le plus. Idéal pour les amateurs de photographies, j’aime y aller à la fin de l’été jusqu’au début de l’automne lorsque les cosmos et dahlias sont pleinement épanouis. Les derniers rayons de soleil mêlés à une légère brise créent une atmosphère féérique où fleurs et graminées semblent danser entre elles. C’est le lieu idéal pour terminer la journée et partager un pique-nique dans un cadre intimiste."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26291,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": "Balade dans les parcs lausannois",
+              "cloudinary_id": "7d8f2b4847cf36ac",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7d8f2b4847cf36ac.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Hermitage-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/elysee-park/\">Elysée Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Let’s begin our walk in Elysée Park, a stone’s throw from the lake and the Olympic Museum. A must-visit to admire the famous cherry tree alley in full blossom at the beginning of spring, this park offers a grand panorama over the lake and the Haute-Savoie mountains."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25920,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "c07c34a9b3062ed8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1707,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1707\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c07c34a9b3062ed8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Elysee_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Let’s carry on our walk and admire what is for me one of the most beautiful parks in the city. This is where I recharge my batteries, with the feeling of roaming inside a living and colourful painting. Take a seat in the amphitheatre behind Mon-Repos Villa and imagine the performances of Zaïre with Voltaire that took place in this very spot more than 250 years ago."
+          },
+          {
+            "type": "paragraph",
+            "value": "The beauty of this park reveals itself all year long, but autumn remains for me the most privileged moment. It’s at this time of the year that I love to capture the chromatic metamorphosis of the trees, particularly the ginkgo biloba and the Japanese maple."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26005,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "5a74827e43c3de67",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5a74827e43c3de67.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_automne-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26090,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "cf0b9980c7b41026",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2075,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2075\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cf0b9980c7b41026.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_ginkgo-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\">Montriond Hill</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "I’m particularly fond of this hill, near Milan Park and Lausanne’s botanical garden. Before heading there, I strongly recommend stopping at Loom’s to savour an ice cream (special mention for the peanut and black sesame flavours). Ice cream in hand, let yourself be surprised by the luxuriant vegetation between light and shade as you walk up the charming paths. At the top, an esplanade overlooking the town awaits you, offering a breathtaking perspective on the lake and surrounding mountains. As you head down, I suggest you walk by the Montriond family gardens."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26157,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "9704c4a0fbf0c97e",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9704c4a0fbf0c97e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Montriond-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/valency-park/\">Valency Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Let’s continue our walk in the western part of Lausanne, towards Valency Park. I take pleasure in going there in the autumn, when the 80 linden trees of the main alley take on their most beautiful shimmering colours. It’s a very inspiring park for photography, what with a sublime perspective that highlights the stone statue of the foal that is so characteristic of this place. Further down, the park extends over a vast expanse, where you can admire several specimens of copper beaches that are particularly worth checking out."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26223,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "870d4ac4f393735d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "870d4ac4f393735d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Valency_3-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\">Hermitage Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Let’s finish our bucolic stroll by admiring the sunset from Hermitage Park, the place where the light at the end of the day appeals to me the most. It’s ideal for photo enthusiasts and I love to go there from the end of summer until the beginning of autumn, when the cosmoses and dahlias are in full bloom. The last sunrays, together with a light breeze, create a fairy-like atmosphere where flower and grasses seem to dance in harmony. It’s the ideal spot to end the day and share a picnic in an intimate setting."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26291,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "7d8f2b4847cf36ac",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7d8f2b4847cf36ac.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Hermitage-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/elysee-park/\">Elysée-Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Beginnen wir im Elysée-Park, der nur wenige Schritte vom See und vom Olympischen Museum entfernt liegt. Dieser Park ist ein Muss, um die berühmte Kirschbaumallee zu Beginn des Frühlings in voller Blütenpracht zu bewundern. Zudem bietet er eine grandiose Aussicht auf den See und die Berge der Haute Savoie."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25920,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "c07c34a9b3062ed8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1707,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1707\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c07c34a9b3062ed8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Elysee_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Park Mon-Repos</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Setzen wir den Spaziergang im Park Mon-Repos fort, der meiner Meinung nach zu den schönsten der Stadt gehört. Hier tanke ich Kraft und habe das Gefühl, durch ein lebendiges, farbenfrohes Gemälde zu spazieren. Nehmen Sie im Amphitheater hinter der Villa Mon-Repos Platz und stellen Sie sich die Aufführungen von Zaïre in Anwesenheit von Voltaire vor, die vor über 250 Jahren genau hier stattfanden."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieser Park ist das ganze Jahr über wunderschön, doch der Herbst bleibt für mich der Höhepunkt. In dieser Zeit halte ich gern den farblichen Wandel der Bäume fest, insbesondere des Ginkgo biloba und des Japanischen Ahorns."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26005,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "5a74827e43c3de67",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5a74827e43c3de67.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_automne-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26090,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "cf0b9980c7b41026",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2075,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2075\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cf0b9980c7b41026.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Mon_repos_ginkgo-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">Montriond-Hügel</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Diesen Hügel in der Nähe des Milan-Parks und des botanischen Gartens von Lausanne mag ich ganz besonders. Unterwegs empfehle ich wärmstens einen Zwischenstopp bei Loom, um eine Glace zu geniessen (die Geschmacksrichtungen Erdnuss und schwarzer Sesam sind ein besonderes Highlight). Schlendern Sie mit der Glace in der Hand auf den reizvollen kleinen Wegen und bestaunen Sie die üppige Vegetation im Wechselspiel von Licht und Schatten. Zuoberst, hoch über der Stadt, erwartet Sie eine Esplanade mit einem atemberaubenden Blick auf den See und die umliegenden Berge. Für den Abstieg empfehle ich den Weg entlang der Montriond-Schrebergärten."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26157,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "9704c4a0fbf0c97e",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9704c4a0fbf0c97e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Montriond-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/valency-park/\">Park Valency</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Weiter geht es im Westen von Lausanne zum Park Valency. Diesen Park suche ich gern im Herbst auf, wenn die 80 Linden der Hauptallee in schillernden Farben erstrahlen. Er ist sehr inspirierend zum Fotografieren und bietet eine herrliche Perspektive mit der für diesen Ort so charakteristischen Fohlen-Steinstatue. Weiter unten erstreckt sich der Park über eine weite Fläche mit mehreren wunderschönen Blutbuchen, die mich immer wieder ins Staunen versetzen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26223,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "870d4ac4f393735d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "870d4ac4f393735d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Valency_3-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\">Hermitage-Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Zum Abschluss dieses idyllischen Parkspaziergangs schlage ich einen wundervollen Sonnenuntergang im Hermitage-Park vor. Die Lichtverhältnisse am Ende des Tages faszinieren mich hier besonders. Dieser Park ist ideal für alle, die das Fotografieren lieben. Ich suche ihn vor allem von Spätsommer bis Frühherbst auf, wenn die Kosmosblumen und Dahlien blühen. Die letzten Sonnenstrahlen und eine leichte Brise schaffen eine märchenhafte Atmosphäre, in der die Blumen und Gräser miteinander zu tanzen scheinen. Dieser Park ist ideal, um den Tag ausklingen zu lassen und ein Picknick in einer behaglichen Umgebung zu teilen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26291,
+              "name": "Balade dans les parcs lausannois",
+              "public_name": null,
+              "cloudinary_id": "7d8f2b4847cf36ac",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7d8f2b4847cf36ac.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/09/Hermitage-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "c07c34a9b3062ed8",

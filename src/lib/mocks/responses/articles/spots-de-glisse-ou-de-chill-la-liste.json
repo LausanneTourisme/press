@@ -18,279 +18,593 @@
         "en": "A great lover of nature and having lived in the Lausanne area since I was a young child, I first discovered the town by spending hours walking around it. It’s only in the last few years that my walks have taken on a new twist thanks to my longboard. Roaming around with my board allows me to feel proud, confident and especially to make the most of every flat area in this sloping city! I’ll share with you here my favourite spots to practise longboard dancing as well as the atmosphere you’ll find there. Here goes!",
         "de": "Als grosse Naturliebhaberin und da ich schon seit Kindertagen in der Umgebung von Lausanne wohne, habe ich die Stadt zuerst auf langen Spaziergängen erkundet. Erst vor ein paar Jahren haben meine Streifzüge dank des Longboards eine ganz andere Wendung genommen. Wenn ich mit meinem Longboard unterwegs bin, fühle ich mich stark und selbstbewusst, und vor allem geniesse ich jeden flachen Ort dieser hügeligen Stadt! Gerne teile ich mit euch meine Lieblingsorte fürs Longboard Dancing."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27194,
-            "name": "Spots de glisse ou de chill, la liste ! - entrainement",
-            "public_name": {
-              "fr": "longboard entrainement",
-              "en": "longboard entrainement",
-              "de": "longboard entrainement",
-              "es": null
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
             },
-            "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
-            "mime_type": "image/jpeg",
-            "copyright": "© Charlotte",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>La piste cyclable derrière le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-maison-olympique/\">CIO</a> à Vidy</strong>",
-            "en": "<strong>The cycle path behind the <a href=\"https://www.lausanne-tourisme.ch/en/explore/olympic-house/\">IOC</a> in Vidy</strong>",
-            "de": "<strong>Radweg hinter dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-maison-olympique/\">IOK</a> in Vidy</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "C’est ici que le goudron est le plus parfait avec une petite inclinaison qui permet de glisser avec légèreté et d’enchainer les pas de longboard dancing avec grâce. C’est aussi ici qu’avec les filles du Longboard Girls Crew, nous donnons la plupart de nos initiations ; notamment celles Women Only qui a pour but de favoriser l’empowerment féminin ainsi que d’avoir un moment à nous et entre nous. C’est un endroit plutôt à l’abri des regards, ce qui permet de prendre confiance, tout en se réappropriant l’espace public, afin de pouvoir ensuite faire plus facilement abstraction des regards malveillants et rejoindre avec plus d’assurance les lieux plus fréquentés.",
-            "en": "This is where the asphalt is perfect, with a gentle incline that allows you to flow lightly and gracefully perform a sequence of longboard dancing movements. This is also where we give most of our initiations with the Longboard Girls Crew; in particular the Women Only ones that aim at boosting women empowerment, as well as having time for ourselves, among ourselves. It’s a place that’s rather out of sight, which is good to gain confidence while reappropriating the public space, so that we can then more easily ignore judgemental stares and be more confident when skating in busier places.",
-            "de": "Hier sind der glatte Asphaltboden und das leichte Gefälle perfekt, um in den Flow zu kommen und die Tanzschritte auf dem Longboard elegant miteinander zu verbinden. An diesem Ort geben wir mit den Mädels der Longboard Girls Crew auch die meisten Einführungskurse, zum Beispiel WOMEN ONLY, die zum Ziel haben, das Female Empowerment zu fördern und die Zeit für uns und unter uns zu geniessen. Hier seid ihr vor neugierigen Blicken geschützt, so könnt ihr gleichzeitig Selbstvertrauen aufbauen und euch an das Longboarden im öffentlichen Raum gewöhnen, um später böse Blicke besser ignorieren zu können und selbstsicherer stärker frequentierte Orte aufzusuchen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "instagram",
-          "value": "https://www.instagram.com/reel/CPjWjGZBUF-/?utm_source=ig_embed&utm_campaign=loading"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>La place entre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/stade-juan-antonio-samaranch/\">le stade de foot Samaranch</a> et le carrousel de Vidy</strong>",
-            "en": "<strong>The area between the <a href=\"https://www.lausanne-tourisme.ch/en/explore/juan-antonio-samaranch-stadium/\">Samaranch football stadium</a> and the Carrousel de Vidy</strong>",
-            "de": "<strong>Platz zwischen dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/juan-antonio-samaranch-stadion/\">Fussballstadion Samaranch</a> und dem Restaurant Carrousel de Vidy</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Le lieu incontournable des longboard danceurs.euses à Lausanne. Une piste de dance plate et bétonnée, très fréquentée par les riders et rideuses. C’est aussi ici que les docksessions ont lieus tous les dimanches (rassemblement communautaire de rideur.ses). Une superbe ambiance pour venir côtoyer d’autres personnes, venir essayer d’autres planches (car on se prête nos planches), échanger ses skills, découvrir de nouveaux styles ou tout simplement chiller et cultiver de belles énergies en bonne compagnie.",
-            "en": "The key venue for longboards dancers in Lausanne. A flat dancefloor with a hard surface, very popular with riders. This is also where the dock sessions (community gatherings of riders) take place every Sunday. A wonderful atmosphere to spend time with other people, come and try other boards (we lend each other our boards), trade skills, discover new styles or just chill and foster beautiful energies in good company.",
-            "de": "DER Ort in Lausanne für Longboard Dancing, eine sehr beliebte flache, betonierte Tanzfläche. Hier finden auch jeden Sonntag die Dock Sessions statt (Longboard-Dancing-Event der Community). Eine super Atmosphäre, um mit Leuten in Kontakt zu kommen, andere Boards auszuprobieren (denn wir leihen sie einander aus), neue Skills zu lernen, neue Styles zu entdecken oder einfach um zu Chillen und gute Vibes in guter Gesellschaft zu geniessen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 27194,
-            "name": "Spots de glisse ou de chill, la liste ! - entrainement",
-            "public_name": {
-              "fr": "longboard entrainement",
-              "en": "longboard entrainement",
-              "de": "longboard entrainement",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>La piste cyclable derrière le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-maison-olympique/\">CIO</a> à Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est ici que le goudron est le plus parfait avec une petite inclinaison qui permet de glisser avec légèreté et d’enchainer les pas de longboard dancing avec grâce. C’est aussi ici qu’avec les filles du Longboard Girls Crew, nous donnons la plupart de nos initiations ; notamment celles Women Only qui a pour but de favoriser l’empowerment féminin ainsi que d’avoir un moment à nous et entre nous. C’est un endroit plutôt à l’abri des regards, ce qui permet de prendre confiance, tout en se réappropriant l’espace public, afin de pouvoir ensuite faire plus facilement abstraction des regards malveillants et rejoindre avec plus d’assurance les lieux plus fréquentés."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CPjWjGZBUF-/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>La place entre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/stade-juan-antonio-samaranch/\">le stade de foot Samaranch</a> et le carrousel de Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le lieu incontournable des longboard danceurs.euses à Lausanne. Une piste de dance plate et bétonnée, très fréquentée par les riders et rideuses. C’est aussi ici que les docksessions ont lieus tous les dimanches (rassemblement communautaire de rideur.ses). Une superbe ambiance pour venir côtoyer d’autres personnes, venir essayer d’autres planches (car on se prête nos planches), échanger ses skills, découvrir de nouveaux styles ou tout simplement chiller et cultiver de belles énergies en bonne compagnie."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
             },
-            "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
-            "mime_type": "image/jpeg",
-            "copyright": "© Charlotte",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26011,
-            "name": "Spots de glisse ou de chill, la liste !",
-            "public_name": {
-              "fr": "Spots de glisse ou de chill, la liste !"
+          {
+            "type": "image",
+            "value": {
+              "id": 26011,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": "Spots de glisse ou de chill, la liste !",
+              "cloudinary_id": "3ae13a33116c1fb8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "anne-laure lechat",
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3ae13a33116c1fb8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Bonus-scaled.jpg"
+              }
             },
-            "cloudinary_id": "3ae13a33116c1fb8",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": "anne-laure lechat",
-              "attr": "width=\"1920\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "3ae13a33116c1fb8.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Bonus-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>La cantine de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-site-de-sauvabelin/\">Sauvabelin</a></strong>",
-            "en": "<strong>The <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-sauvabelin-site/\">Sauvabelin</a> canteen</strong>",
-            "de": "<strong>Cantine de <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ausflugsziel-sauvabelin/\">Sauvabelin</a></strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "C’est l’endroit à disposition lorsque le temps est capricieux, un endroit couvert, parfait pour pratiquer même quand il neige (nous avons testé !). Et c’est donc ici que vous retrouverez les plus téméraires, les férus de pratique, qui s’entrainent par tous les temps.",
-            "en": "It’s the place that’s available when the weather is fickle, a covered space that’s perfect to practise even when it’s snowing (we’ve tried it!). And so this is where you’ll find the most intrepid and passionate riders, those who practise whatever the weather.",
-            "de": "Dieser überdachte Ort ist ideal bei unbeständigem Wetter und perfekt zum Trainieren, sogar wenn es schneit (wir haben es getestet!). Hier werdet ihr also die Wagemutigsten und die Eifrigsten finden, jene, die bei jedem Wetter auf dem Longboard sind.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26097,
-            "name": "Spots de glisse ou de chill, la liste !",
-            "public_name": {
-              "fr": "Spots de glisse ou de chill, la liste !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>La cantine de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-site-de-sauvabelin/\">Sauvabelin</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est l’endroit à disposition lorsque le temps est capricieux, un endroit couvert, parfait pour pratiquer même quand il neige (nous avons testé !). Et c’est donc ici que vous retrouverez les plus téméraires, les férus de pratique, qui s’entrainent par tous les temps."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26097,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": "Spots de glisse ou de chill, la liste !",
+              "cloudinary_id": "fb95a7322f5da314",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1536,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1536\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fb95a7322f5da314.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/2.jpg"
+              }
             },
-            "cloudinary_id": "fb95a7322f5da314",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1536,
-              "height": 2048,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1536\" height=\"2048\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "fb95a7322f5da314.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/2.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>La place de l’Europe</strong>",
-            "en": "<strong>The Place de l’Europe</strong>",
-            "de": "<strong>Place de l’Europe</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Entre deux bars, quoi de mieux que de s’y arrêter pour tenter deux trois tricks, entourés des skateurs habitués du coin.",
-            "en": "Between two bars, what could be better than to stop there to try two or three tricks, surrounded by the spot’s regular skaters?",
-            "de": "Was gibt es Schöneres als zwischen zwei Bars einen Halt einzulegen und auf diesem Platz inmitten der Skateboardszene des Quartiers ein paar Tricks zu üben?",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26163,
-            "name": "Spots de glisse ou de chill, la liste !",
-            "public_name": {
-              "fr": "Spots de glisse ou de chill, la liste !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>La place de l’Europe</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Entre deux bars, quoi de mieux que de s’y arrêter pour tenter deux trois tricks, entourés des skateurs habitués du coin."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26163,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": "Spots de glisse ou de chill, la liste !",
+              "cloudinary_id": "2c878f4f00e44911",
+              "mime_type": "image/jpeg",
+              "copyright": "© Place de l'Europe.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Centre-Ville; Lausanne",
+                "description": null,
+                "file_name_from_url": "2c878f4f00e44911.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Balade-Place-de-lEurope.jpg"
+              }
             },
-            "cloudinary_id": "2c878f4f00e44911",
-            "mime_type": "image/jpeg",
-            "copyright": "© Place de l'Europe.",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Centre-Ville; Lausanne",
-              "description": null,
-              "file_name_from_url": "2c878f4f00e44911.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Balade-Place-de-lEurope.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>L’allée devant <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/chateau-douchy/\">le château d’Ouchy</a></strong>",
-            "en": "<strong>The alley in front of <a href=\"https://www.lausanne-tourisme.ch/en/explore/chateau-douchy/\">the Château d’Ouchy</a></strong>",
-            "de": "<strong>Allee vor dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/chateau-douchy/\">Château d’Ouchy</a></strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Une superbe étendue, parmi les plus longues, pour enchainer des mouvements au bord de l’eau. Soyez en conscient, ce n’est pas l’endroit le plus discret et les regards des passants sont bien présents ! C’est cependant un super test pour chacun.e de prendre confiance et s’assumer, qu’importe son niveau ! Et vous aurez sûrement même droit à quelques compliments de la part des passants curieux qui vous regarderont avec admiration.",
-            "en": "A magnificently vast expanse, among the longest, to perform a sequence of movements by the lakeside. Be aware that it’s not the most unobtrusive location and passers-by do stare! However, it’s a great test for everyone to gain confidence and take pride, whatever our level! And you’ll surely even earn some compliments from curious passers-by who look at you admiringly.",
-            "de": "Eine super Fläche, und eine der längsten, für Longboard Dancing am Seeufer. Eines solltet ihr euch allerdings bewusst sein: Es ist nicht gerade der diskreteste Ort, denn hier werdet ihr alle Blicke auf euch ziehen. Das ist jedoch eine wunderbare Gelegenheit für alle, Selbstvertrauen zu gewinnen und zu sich selbst zu stehen, egal welches Niveau man hat! Bestimmt werdet ihr auch Komplimente von neugierigen Passantinnen und Passanten erhalten, die euch bewundernd zuschauen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26228,
-            "name": "Spots de glisse ou de chill, la liste !",
-            "public_name": {
-              "fr": "Spots de glisse ou de chill, la liste !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>L’allée devant <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/chateau-douchy/\">le château d’Ouchy</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Une superbe étendue, parmi les plus longues, pour enchainer des mouvements au bord de l’eau. Soyez en conscient, ce n’est pas l’endroit le plus discret et les regards des passants sont bien présents ! C’est cependant un super test pour chacun.e de prendre confiance et s’assumer, qu’importe son niveau ! Et vous aurez sûrement même droit à quelques compliments de la part des passants curieux qui vous regarderont avec admiration."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26228,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": "Spots de glisse ou de chill, la liste !",
+              "cloudinary_id": "55222c2e2cebc210",
+              "mime_type": "image/jpeg",
+              "copyright": "© Terrasse du Chateau d'Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Hébergement; Lausanne; Détente",
+                "description": null,
+                "file_name_from_url": "55222c2e2cebc210.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Chateau-douchy.jpg"
+              }
             },
-            "cloudinary_id": "55222c2e2cebc210",
-            "mime_type": "image/jpeg",
-            "copyright": "© Terrasse du Chateau d'Ouchy",
-            "metadata": {
-              "width": 1600,
-              "height": 1068,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1068\"",
-              "tags": "Hébergement; Lausanne; Détente",
-              "description": null,
-              "file_name_from_url": "55222c2e2cebc210.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Chateau-douchy.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        }
-      ],
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The cycle path behind the <a href=\"https://www.lausanne-tourisme.ch/en/explore/olympic-house/\">IOC</a> in Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "This is where the asphalt is perfect, with a gentle incline that allows you to flow lightly and gracefully perform a sequence of longboard dancing movements. This is also where we give most of our initiations with the Longboard Girls Crew; in particular the Women Only ones that aim at boosting women empowerment, as well as having time for ourselves, among ourselves. It’s a place that’s rather out of sight, which is good to gain confidence while reappropriating the public space, so that we can then more easily ignore judgemental stares and be more confident when skating in busier places."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CPjWjGZBUF-/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The area between the <a href=\"https://www.lausanne-tourisme.ch/en/explore/juan-antonio-samaranch-stadium/\">Samaranch football stadium</a> and the Carrousel de Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The key venue for longboards dancers in Lausanne. A flat dancefloor with a hard surface, very popular with riders. This is also where the dock sessions (community gatherings of riders) take place every Sunday. A wonderful atmosphere to spend time with other people, come and try other boards (we lend each other our boards), trade skills, discover new styles or just chill and foster beautiful energies in good company."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26011,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "3ae13a33116c1fb8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "anne-laure lechat",
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3ae13a33116c1fb8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Bonus-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-sauvabelin-site/\">Sauvabelin</a> canteen</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s the place that’s available when the weather is fickle, a covered space that’s perfect to practise even when it’s snowing (we’ve tried it!). And so this is where you’ll find the most intrepid and passionate riders, those who practise whatever the weather."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26097,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "fb95a7322f5da314",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1536,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1536\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fb95a7322f5da314.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The Place de l’Europe</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Between two bars, what could be better than to stop there to try two or three tricks, surrounded by the spot’s regular skaters?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26163,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "2c878f4f00e44911",
+              "mime_type": "image/jpeg",
+              "copyright": "© Place de l'Europe.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Centre-Ville; Lausanne",
+                "description": null,
+                "file_name_from_url": "2c878f4f00e44911.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Balade-Place-de-lEurope.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The alley in front of <a href=\"https://www.lausanne-tourisme.ch/en/explore/chateau-douchy/\">the Château d’Ouchy</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A magnificently vast expanse, among the longest, to perform a sequence of movements by the lakeside. Be aware that it’s not the most unobtrusive location and passers-by do stare! However, it’s a great test for everyone to gain confidence and take pride, whatever our level! And you’ll surely even earn some compliments from curious passers-by who look at you admiringly."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26228,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "55222c2e2cebc210",
+              "mime_type": "image/jpeg",
+              "copyright": "© Terrasse du Chateau d'Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Hébergement; Lausanne; Détente",
+                "description": null,
+                "file_name_from_url": "55222c2e2cebc210.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Chateau-douchy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Radweg hinter dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-maison-olympique/\">IOK</a> in Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Hier sind der glatte Asphaltboden und das leichte Gefälle perfekt, um in den Flow zu kommen und die Tanzschritte auf dem Longboard elegant miteinander zu verbinden. An diesem Ort geben wir mit den Mädels der Longboard Girls Crew auch die meisten Einführungskurse, zum Beispiel WOMEN ONLY, die zum Ziel haben, das Female Empowerment zu fördern und die Zeit für uns und unter uns zu geniessen. Hier seid ihr vor neugierigen Blicken geschützt, so könnt ihr gleichzeitig Selbstvertrauen aufbauen und euch an das Longboarden im öffentlichen Raum gewöhnen, um später böse Blicke besser ignorieren zu können und selbstsicherer stärker frequentierte Orte aufzusuchen."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CPjWjGZBUF-/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Platz zwischen dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/juan-antonio-samaranch-stadion/\">Fussballstadion Samaranch</a> und dem Restaurant Carrousel de Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "DER Ort in Lausanne für Longboard Dancing, eine sehr beliebte flache, betonierte Tanzfläche. Hier finden auch jeden Sonntag die Dock Sessions statt (Longboard-Dancing-Event der Community). Eine super Atmosphäre, um mit Leuten in Kontakt zu kommen, andere Boards auszuprobieren (denn wir leihen sie einander aus), neue Skills zu lernen, neue Styles zu entdecken oder einfach um zu Chillen und gute Vibes in guter Gesellschaft zu geniessen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27194,
+              "name": "Spots de glisse ou de chill, la liste ! - entrainement",
+              "public_name": "longboard entrainement",
+              "cloudinary_id": "WbzABABD1g6nwYwatHFzo1FMPwH7NcuSypWCZAW1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Charlotte",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fee9ee6ef8f2e338.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/1-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26011,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "3ae13a33116c1fb8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "anne-laure lechat",
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3ae13a33116c1fb8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Bonus-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Cantine de <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ausflugsziel-sauvabelin/\">Sauvabelin</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieser überdachte Ort ist ideal bei unbeständigem Wetter und perfekt zum Trainieren, sogar wenn es schneit (wir haben es getestet!). Hier werdet ihr also die Wagemutigsten und die Eifrigsten finden, jene, die bei jedem Wetter auf dem Longboard sind."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26097,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "fb95a7322f5da314",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1536,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1536\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fb95a7322f5da314.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Place de l’Europe</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Was gibt es Schöneres als zwischen zwei Bars einen Halt einzulegen und auf diesem Platz inmitten der Skateboardszene des Quartiers ein paar Tricks zu üben?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26163,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "2c878f4f00e44911",
+              "mime_type": "image/jpeg",
+              "copyright": "© Place de l'Europe.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Centre-Ville; Lausanne",
+                "description": null,
+                "file_name_from_url": "2c878f4f00e44911.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Balade-Place-de-lEurope.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Allee vor dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/chateau-douchy/\">Château d’Ouchy</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Eine super Fläche, und eine der längsten, für Longboard Dancing am Seeufer. Eines solltet ihr euch allerdings bewusst sein: Es ist nicht gerade der diskreteste Ort, denn hier werdet ihr alle Blicke auf euch ziehen. Das ist jedoch eine wunderbare Gelegenheit für alle, Selbstvertrauen zu gewinnen und zu sich selbst zu stehen, egal welches Niveau man hat! Bestimmt werdet ihr auch Komplimente von neugierigen Passantinnen und Passanten erhalten, die euch bewundernd zuschauen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26228,
+              "name": "Spots de glisse ou de chill, la liste !",
+              "public_name": null,
+              "cloudinary_id": "55222c2e2cebc210",
+              "mime_type": "image/jpeg",
+              "copyright": "© Terrasse du Chateau d'Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Hébergement; Lausanne; Détente",
+                "description": null,
+                "file_name_from_url": "55222c2e2cebc210.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Chateau-douchy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "3ae13a33116c1fb8",

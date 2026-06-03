@@ -18,571 +18,1214 @@
         "de": "Hier weilt man gern, um etwas zu trinken, zu schmökern, zu plaudern und herzhaft zu lachen. Manchmal umarmt man sich, aber bequem macht man es sich auf jeden Fall … Unter uns gesagt: Gibt es eine schönere Erfindung als die Terrasse? Das Wetter ist gut, der Himmel strahlend blau und wir erklären die Terrassensaison für offiziell eröffnet ‒ wie aufregend! Entdeckt unsere Auswahl der zehn schönsten Terrassen in Lausanne, an denen es sich wunderbar in der Sonne räkeln lässt.",
         "en": "We all love spending time there sipping a drink, reading a good book, chatting and laughing out loud. We sometimes have a refill and always chill… Between you and me, is there a better invention than the terrace? The weather is inviting, the sky is blue and it’s not without emotion that we declare the terrace season officially open! Discover right now our selection of the 10 best spots in Lausanne where it’s simply heavenly to bask in the sun."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 23366,
-            "name": "Côté lac Ouchy",
-            "public_name": {
-              "fr": "Côté lac Ouchy",
-              "en": "Côté lac",
-              "de": "Côté lac",
-              "es": null
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23366,
+              "name": "Côté lac Ouchy",
+              "public_name": "Côté lac Ouchy",
+              "cloudinary_id": "ywK7wThyB6uDt2pzGkIRl7mgn2j43JDvNKq1htiY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Terrasse, Buvette, couple; Apéro, Afterwork",
+                "description": null,
+                "file_name_from_url": "36244706393eac49.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/08/Afterwork-Cote-Ouchy.jpg"
+              }
             },
-            "cloudinary_id": "ywK7wThyB6uDt2pzGkIRl7mgn2j43JDvNKq1htiY",
-            "mime_type": "image/jpeg",
-            "copyright": "© Blake Production",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lac, Terrasse, Buvette, couple; Apéro, Afterwork",
-              "description": null,
-              "file_name_from_url": "36244706393eac49.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/08/Afterwork-Cote-Ouchy.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\"><strong>1 – La Jetée de la Compagnie </strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\"><span lang=\"DE-CH\">1 – La Jetée de la Compagnie </span></a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\"><strong>1 – The “Jetée de la Compagnie”</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Transats, piste de pétanque, cocktails, pieds dans l’eau et bonne compagnie… A <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">la Jetée</a>, c’est ambiance vacances garantie ! Son atmosphère balnéaire et sa terrasse en première ligne du lac en font le lieu idéal pour trinquer entre amis après une longue journée au bureau. Par ici la bronzette !",
-            "de": "Liegestühle, Pétanque, Cocktails, Füsse im Wasser baumeln lassen und gute Gesellschaft: An der<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\"> Jetée de la Compagnie</a> ist Ferienstimmung garantiert! Die Strandatmosphäre und die Terrasse am Seeufer machen diesen Ort perfekt, um nach einem langen Bürotag mit Freunden anzustossen. Los geht’s zum Sonnenbaden!",
-            "en": "Deckchairs, petanque course, cocktails, the water’s edge and great company… At <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">La Jetée</a>, a holiday atmosphere is guaranteed! Its feel of a coastal resort and terrace right on the water’s edge make it the ideal spot to meet up for drinks with friends after a long day at the office. Head this way to catch some sun!"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : dans le prolongement de la Jetée, le Minimum Bar ajoute au charme du lieu en diffusant la même ambiance estivale, façon cabanon de plage.</em>",
-            "de": "<em>Pluspunkt: Die in der Verlängerung der Jetée gelegene Minimum Bar im Strandhüttenstil bietet dieselbe Sommeratmosphäre und trägt ebenfalls zum Charme des Ortes bei.</em>",
-            "en": "<em>The bonus: ss an extension of La Jetée, the Minimum Bar adds to the charm of the place by giving off the same summer vibes, beach-hut style. </em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23368,
-            "name": "Jetée de la Compagnie",
-            "public_name": {
-              "fr": "Jetée de la Compagnie",
-              "en": "Jetée de la Compagnie",
-              "de": "Jetée de la Compagnie",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\"><strong>1 – La Jetée de la Compagnie </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Transats, piste de pétanque, cocktails, pieds dans l’eau et bonne compagnie… A <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">la Jetée</a>, c’est ambiance vacances garantie ! Son atmosphère balnéaire et sa terrasse en première ligne du lac en font le lieu idéal pour trinquer entre amis après une longue journée au bureau. Par ici la bronzette !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : dans le prolongement de la Jetée, le Minimum Bar ajoute au charme du lieu en diffusant la même ambiance estivale, façon cabanon de plage.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23368,
+              "name": "Jetée de la Compagnie",
+              "public_name": "Jetée de la Compagnie",
+              "cloudinary_id": "4rH1z75QAZHWpXNddOrzLRn3tQ16oHzWDsqVEsdW",
+              "mime_type": "image/jpeg",
+              "copyright": "© Philip Waterton",
+              "metadata": {
+                "width": 1600,
+                "height": 870,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"870\"",
+                "tags": "Lac; Détente; Lausanne",
+                "description": null,
+                "file_name_from_url": "6afeaa1d629ee32d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Detente-Jetee-Compagnie.jpg"
+              }
             },
-            "cloudinary_id": "4rH1z75QAZHWpXNddOrzLRn3tQ16oHzWDsqVEsdW",
-            "mime_type": "image/jpeg",
-            "copyright": "© Philip Waterton",
-            "metadata": {
-              "width": 1600,
-              "height": 870,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"870\"",
-              "tags": "Lac; Détente; Lausanne",
-              "description": null,
-              "file_name_from_url": "6afeaa1d629ee32d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Detente-Jetee-Compagnie.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-grandes-roches/\">2 – <strong>Les Grandes Roches </strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-grandes-roches/\">2 –  Les Grandes Roches</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/les-grandes-roches/\"><strong>2 – Les Grandes Roches</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Cachée sous le Pont Bessières,<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-grandes-roches/\"> cette chouette terrasse</a> s’impose comme le rendez-vous préféré des locaux. Des palmiers, des guirlandes lumineuses multicolores, un baby-foot et un billard plantent le décor d’un lieu décontracté où l’on a envie de s’arrêter. After-work, après-midis ensoleillés ou longues soirées d’été : toutes les occasions sont bonnes pour s’y retrouver autour d’une bière artisanale ou d’un sirop maison. Santé !",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-grandes-roches/\">Diese schöne Terrasse</a> unter dem Pont Bessières hat sich als beliebter Treffpunkt für die Einheimischen etabliert. Palmen, bunte Lichterketten, Tischfussball und ein Billardtisch bilden die Kulisse dieses gemütlichen Ortes, an dem man gern verweilt. Ob Feierabenddrink, sonniger Nachmittag oder langer Sommerabend, jede Gelegenheit bietet sich an, um sich auf ein Craft-Bier oder einen hausgemachten Sirup zu treffen. Prost!",
-            "en": "Hidden under Pont Bessières, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-grandes-roches/\">this pleasant terrace</a> stands out as the favourite meeting place for locals. Palm trees, colourful lighted garlands, table football and a snooker table set the stage for a relaxed spot that invites you to take a break. Whether for after-works, sunny afternoons or long summer evenings, we’ll seize any opportunity to meet up and enjoy a craft beer or a homemade cordial. Cheers!"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : son côté insolite et urbain au cœur de Lausanne. </em>",
-            "de": "<em>Pluspunkt: Ihr ebenso ungewöhnlicher wie urbaner Charakter im Herzen von Lausanne.</em>",
-            "en": "<em>The bonus: its unusual, urban character in the heart of Lausanne. </em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25991,
-            "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
-            "public_name": {
-              "fr": "Pont Bessières",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-grandes-roches/\">2 – <strong>Les Grandes Roches </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Cachée sous le Pont Bessières,<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-grandes-roches/\"> cette chouette terrasse</a> s’impose comme le rendez-vous préféré des locaux. Des palmiers, des guirlandes lumineuses multicolores, un baby-foot et un billard plantent le décor d’un lieu décontracté où l’on a envie de s’arrêter. After-work, après-midis ensoleillés ou longues soirées d’été : toutes les occasions sont bonnes pour s’y retrouver autour d’une bière artisanale ou d’un sirop maison. Santé !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : son côté insolite et urbain au cœur de Lausanne. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25991,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": "Pont Bessières",
+              "cloudinary_id": "ae9bc47b90f84a54",
+              "mime_type": "image/jpeg",
+              "copyright": "© Suisse Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Transport; Lausanne; Détente; Afterwork",
+                "description": null,
+                "file_name_from_url": "ae9bc47b90f84a54.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Grandes-Roches.jpg"
+              }
             },
-            "cloudinary_id": "ae9bc47b90f84a54",
-            "mime_type": "image/jpeg",
-            "copyright": "© Suisse Tourisme",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Terrasse, Transport; Lausanne; Détente; Afterwork",
-              "description": null,
-              "file_name_from_url": "ae9bc47b90f84a54.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Grandes-Roches.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\"><strong>3 – La Folie Voltaire</strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-folie-voltaire/\">3 – La Folie Voltaire</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-folie-voltaire/\"><strong>3 – La Folie Voltaire</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Ce <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">charmant écrin</a> de fraicheur est niché non loin du centre-ville, au cœur du Parc de Mon-Repos. A l’ombre des arbres centenaires, on se délecte de délicieux sirops de coing maison et d’une carte de petits encas locaux et de saison. Au menu : salades, crêpes ou glaces à déguster sans modération avec, en prime pour les parents, une vue directe sur la place de jeux pour surveiller leurs précieux. On aime à la folie !",
-            "de": "Diese <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-folie-voltaire/\">schöne Oase</a> unweit des Stadtzentrums im Park Mon-Repos bietet willkommene Abkühlung. Im Schatten der hundertjährigen Bäume kann man herrlichen hausgemachten Quittensirup und lokale, saisonale Snacks geniessen. Auf der Speisekarte stehen Salate, Crêpes und Glacés zum entspannten Schlemmen. Eltern haben zudem einen direkten Blick auf den Spielplatz, um ihre Liebsten im Auge zu behalten. Wir sind begeistert!",
-            "en": "This <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-folie-voltaire/\">charming cool spot</a> is nestled not far from the town centre, in the heart of Mon-Repos Park. In the shade of century-old trees, we delight in the delicious homemade quince cordial and a menu of local, seasonal nibbles. There’s a choice of salads, crêpes and ice creams, to be savoured without moderation and with the added bonus for parents of a direct view over the playground to keep an eye on their offspring. It would be folly not to go!"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : son emplacement au cœur de l’un des parcs les plus charmants de Lausanne. Et la super place de jeux attenante. </em>",
-            "de": "<em>Pluspunkt: Die Lage mitten in einer der schönsten Lausanner Parkanlagen. Und natürlich der tolle Spielplatz gleich nebenan.</em>",
-            "en": "<em>The bonus: its location in the heart of one of the most charming parks in Lausanne. And the great playground right next to it.</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25917,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\"><strong>3 – La Folie Voltaire</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ce <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">charmant écrin</a> de fraicheur est niché non loin du centre-ville, au cœur du Parc de Mon-Repos. A l’ombre des arbres centenaires, on se délecte de délicieux sirops de coing maison et d’une carte de petits encas locaux et de saison. Au menu : salades, crêpes ou glaces à déguster sans modération avec, en prime pour les parents, une vue directe sur la place de jeux pour surveiller leurs précieux. On aime à la folie !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : son emplacement au cœur de l’un des parcs les plus charmants de Lausanne. Et la super place de jeux attenante. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
             },
-            "cloudinary_id": "91744bac907d69cc",
-            "mime_type": "image/jpeg",
-            "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
-            "metadata": {
-              "width": 4288,
-              "height": 2844,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"4288\" height=\"2844\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "61e9919238ff1699.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lacustre/\"><strong>4 – Le Lacustre</strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">4 – The Lacustre</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">4 – The Lacustre</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "À Ouchy, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lacustre/\"><strong data-start=\"198\" data-end=\"213\">Le Lacustre</strong></a> s’impose comme une valeur sûre dès les premiers rayons. Sa grande terrasse en bois, face au Léman et aux Alpes, invite à la détente à toute heure de la journée. On s’y installe pour un café, une pizza ou un cocktail, bercé par l’ambiance lacustre et les reflets dorés du soleil.",
-            "de": "In Ouchy ist <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">The<strong data-start=\"934\" data-end=\"949\"> Lacustre</strong></a> ein echter Sommerklassiker, sobald die Sonne sich zeigt. Die grosse Holzterrasse mit Blick auf den Genfersee und die Alpen lädt zu jeder Tageszeit zum Verweilen ein. Ob Kaffee, Pizza oder Cocktail – die entspannte Atmosphäre und das Lichtspiel auf dem Wasser machen den Ort besonders.",
-            "en": "In Ouchy, <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-lacustre/\"><strong data-start=\"192\" data-end=\"207\">Le Lacustre</strong></a> is a summertime classic as soon as the sun comes out. Its large wooden terrace, overlooking Lake Geneva and the Alps, is the perfect spot for any time of day. Whether for a coffee, pizza or cocktail, the relaxed vibe and golden reflections on the lake make it a must."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : Une vue spectaculaire sur le lac, les pieds (presque) dans l’eau.</em>",
-            "de": "<em>Pluspunkt: Spektakuläre Seesicht – fast direkt mit den Füssen im Wasser.</em>",
-            "en": "<em>The bonus: A stunning lakefront view, with your feet (almost) in the water.</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25088,
-            "name": "Le Lacustre",
-            "public_name": {
-              "fr": "Le Lacustre"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lacustre/\"><strong>4 – Le Lacustre</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "À Ouchy, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lacustre/\"><strong data-start=\"198\" data-end=\"213\">Le Lacustre</strong></a> s’impose comme une valeur sûre dès les premiers rayons. Sa grande terrasse en bois, face au Léman et aux Alpes, invite à la détente à toute heure de la journée. On s’y installe pour un café, une pizza ou un cocktail, bercé par l’ambiance lacustre et les reflets dorés du soleil."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : Une vue spectaculaire sur le lac, les pieds (presque) dans l’eau.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25088,
+              "name": "Le Lacustre",
+              "public_name": "Le Lacustre",
+              "cloudinary_id": "le-lacustre-fojcgz",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maud Guye-Vuillème",
+              "metadata": {
+                "width": 5027,
+                "height": 3351,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5027\" height=\"3351\"",
+                "tags": null,
+                "description": null
+              }
             },
-            "cloudinary_id": "le-lacustre-fojcgz",
-            "mime_type": "image/jpeg",
-            "copyright": "© Maud Guye-Vuillème",
-            "metadata": {
-              "width": 5027,
-              "height": 3351,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"5027\" height=\"3351\"",
-              "tags": null,
-              "description": null
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-terrasse/\">5 – La Terrasse</a> </strong>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-terrasse/\">5 – La Terrasse</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-terrasse/\"><strong>5 – La Terrasse</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-terrasse/\">La Terrasse</a> de Lutry a bel et bien des airs de vacances ! Entre les gravillons, les pins et la vue directe sur les bateaux et le lac, l’endroit fleure bon l’été et les apéros au soleil. De Pâques à mi-octobre, cette terrasse idéale – située à seulement 5 minutes de Lausanne – déroule une carte de mets goûteux : tartare de bœuf, Moussaka ou salade de chèvre chaud, à consommer sans modération !",
-            "de": "Auf der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-terrasse/\">Terrasse</a> in Lutry fühlt es sich an wie in den Ferien! Dafür sorgen Kieselsteine, Pinien und der direkte Blick auf die Schiffe und den See. Es riecht nach Sommer und man sieht sich sofort mit einem Drink in der Sonne. Von Ostern bis Mitte Oktober bietet diese nur gerade fünf Minuten von Lausanne entfernte Terrasse eine Speisekarte mit schmackhaften Gerichten wie Rindstatar, Moussaka oder Salat mit warmem Ziegenkäse ‒ einfach unwiderstehlich!",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-terrasse/\">The Terrasse</a> de Lutry well and truly has a holiday atmosphere! What with the gravel, pine trees and direct view over the boats and lake, the place oozes summertime and apéros in the sun. From Easter to mid-October, this ideal terrace – located a mere 5 minutes from Lausanne – rolls out a menu of tasty dishes: beef tartare, moussaka or warm goat cheese salad, to be eaten without moderation!"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : légèrement en dehors de la ville, cette terrasse offre une délicieuse impression d’évasion…</em>",
-            "de": "<em>Pluspunkt: Diese etwas ausserhalb der Stadt gelegene Terrasse ist ideal, um dem Alltag zu entfliehen.</em>",
-            "en": "<em>The bonus: Just outside the city, this terrace offers a delicious sense of escape…</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26286,
-            "name": "Top 10 des meilleures terrasses estivales de Lausanne",
-            "public_name": {
-              "fr": "Top 10 des meilleures terrasses estivales de Lausanne",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-terrasse/\">5 – La Terrasse</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-terrasse/\">La Terrasse</a> de Lutry a bel et bien des airs de vacances ! Entre les gravillons, les pins et la vue directe sur les bateaux et le lac, l’endroit fleure bon l’été et les apéros au soleil. De Pâques à mi-octobre, cette terrasse idéale – située à seulement 5 minutes de Lausanne – déroule une carte de mets goûteux : tartare de bœuf, Moussaka ou salade de chèvre chaud, à consommer sans modération !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : légèrement en dehors de la ville, cette terrasse offre une délicieuse impression d’évasion…</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26286,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "cloudinary_id": "41c4a166746bfa44",
+              "mime_type": "image/webp",
+              "copyright": "© La Terrasse",
+              "metadata": {
+                "width": 2500,
+                "height": 1409,
+                "mimeType": "image/webp",
+                "copyright": null,
+                "attr": "width=\"2500\" height=\"1409\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "41c4a166746bfa44.webp",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/cxmxqsaiuxx8i2ship7g.webp"
+              }
             },
-            "cloudinary_id": "41c4a166746bfa44",
-            "mime_type": "image/webp",
-            "copyright": "© La Terrasse",
-            "metadata": {
-              "width": 2500,
-              "height": 1409,
-              "mimeType": "image/webp",
-              "copyright": null,
-              "attr": "width=\"2500\" height=\"1409\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "41c4a166746bfa44.webp",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/cxmxqsaiuxx8i2ship7g.webp"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-guinguette-de-vidy/\"><strong>6 – La Guinguette de Vidy</strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">6 – La Guinguette de Vidy</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\"><strong>6 – La Guinguette de Vidy</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Tout près du Bowl de Vidy, la terrasse ombragée de cette <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-guinguette-de-vidy/\">Guinguette</a> insolite jouit d’une vue époustouflante sur le Léman. Ouverte 7 jours sur 7, elle propose des planchettes aux saveurs locales, des hot-dogs, des terrines ou des rillettes, ainsi qu’une sélection de boissons de la maison. Qui dit mieux ?",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">La Guinguette</a> mit ihrer schattenspendenden Terrasse liegt ganz in der Nähe des Skateparks Vidy und bietet einen atemberaubenden Blick auf den Genfersee. Das Strandlokal ist an sieben Tagen die Woche geöffnet und serviert Plättli mit lokalen Produkten, Hotdogs, Terrinen und Rillettes sowie eine Auswahl an hausgemachten Getränken. Was will man mehr?",
-            "en": "Very near the Vidy Bowl, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">shady terrace</a> of this unusual pop-up bar benefits from a spectacular view over the lake. Open 7 days a week, it serves snack boards with local flavours, hot dogs, terrines and rillettes, as well as a selection of house drinks. What more could you want?"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : son emplacement privilégié en première ligne du lac.</em>",
-            "de": "<em>Pluspunkt: Die exklusive Lage direkt am See.</em>",
-            "en": "<em>The bonus: its prime location right on the lakefront. </em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26723,
-            "name": "Guingette  Vidy",
-            "public_name": {
-              "fr": "Guingette  Vidy",
-              "en": "Guingette  Vidy",
-              "de": "Guingette  Vidy",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-guinguette-de-vidy/\"><strong>6 – La Guinguette de Vidy</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Tout près du Bowl de Vidy, la terrasse ombragée de cette <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-guinguette-de-vidy/\">Guinguette</a> insolite jouit d’une vue époustouflante sur le Léman. Ouverte 7 jours sur 7, elle propose des planchettes aux saveurs locales, des hot-dogs, des terrines ou des rillettes, ainsi qu’une sélection de boissons de la maison. Qui dit mieux ?"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : son emplacement privilégié en première ligne du lac.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26723,
+              "name": "Guingette  Vidy",
+              "public_name": "Guingette  Vidy",
+              "cloudinary_id": "VJeUfF4JIVSsMIreNHxEECoyjx6BgQZAHAYYU7jl",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Buvette; Apéro, Afterwork, Vidy; Lac; Léman",
+                "description": null,
+                "file_name_from_url": "5ccf21ee33fde3a0.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/La-Guingette-Vidy.jpg"
+              }
             },
-            "cloudinary_id": "VJeUfF4JIVSsMIreNHxEECoyjx6BgQZAHAYYU7jl",
-            "mime_type": "image/jpeg",
-            "copyright": "© Blake Production",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Terrasse, Buvette; Apéro, Afterwork, Vidy; Lac; Léman",
-              "description": null,
-              "file_name_from_url": "5ccf21ee33fde3a0.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/La-Guingette-Vidy.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">7 – Les Jardins</a> </strong>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-jardins/\">7 – Les Jardins</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/les-jardins/\"><strong>7 – Les Jardins</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Situés au pied de la Cité, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">Les Jardins</a> du Vieux-Lausanne offrent une vue imprenable sur la ville. Cette terrasse bucolique – légèrement en retrait et nichée dans un cadre verdoyant – accueille ses heureux clients dès l’arrivée des beaux jours. L’afterwork de l’été, proposé tous les jours à partir de 17h, est un incontournable. Au menu : musique, finger food et cocktails de la maison, à déguster en toute décontraction.",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-jardins/\">Der Garten</a> des Restaurants Le Vieux-Lausanne gleich unterhalb der Cité bietet eine einmalige Sicht auf die Stadt. Diese idyllische Terrasse liegt etwas zurückversetzt in einer grünen Umgebung und öffnet, sobald die schönen Tage kommen. Zur Freude der Gäste steigt im Sommer täglich ab 17 Uhr die After-Work-Party ‒ ein Muss. Auf der Speisekarte stehen Musik, Fingerfood und hausgemachte Cocktails. Entspannung pur ist garantiert.",
-            "en": "Located at the foot of the Cité, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-jardins/\">Les Jardins</a> du Vieux-Lausanne offer an outstanding view over the town. This bucolic terrace – slightly set back and nestled in a green setting – welcomes its lucky customers as soon as the warmer weather arrives. The summer after-works, every day from 5 pm, are a must, with music, finger food and house cocktails to be savoured in total relaxation."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : son irrésistible charme à la française…</em>",
-            "de": "<em>Pluspunkt: Ihr unwiderstehlicher französischer Charme.</em>",
-            "en": "<em>The bonus: its irresistible French charm…</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23365,
-            "name": "Les Jardins du Vieux-Lausanne",
-            "public_name": {
-              "fr": "Les Jardins du Vieux-Lausanne",
-              "en": "Les Jardins du Vieux-Lausanne",
-              "de": "Les Jardins du Vieux-Lausanne",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">7 – Les Jardins</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Situés au pied de la Cité, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">Les Jardins</a> du Vieux-Lausanne offrent une vue imprenable sur la ville. Cette terrasse bucolique – légèrement en retrait et nichée dans un cadre verdoyant – accueille ses heureux clients dès l’arrivée des beaux jours. L’afterwork de l’été, proposé tous les jours à partir de 17h, est un incontournable. Au menu : musique, finger food et cocktails de la maison, à déguster en toute décontraction."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : son irrésistible charme à la française…</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
             },
-            "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
-            "mime_type": "image/jpeg",
-            "copyright": "© Christian Meixner Fotografie",
-            "metadata": {
-              "width": 1600,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1200\"",
-              "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
-              "description": null,
-              "file_name_from_url": "03ff3da2452b1f66.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cote-lac-lausanne/\">8 – Côté Lac </a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">8 – Côté Lac</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">8 – Côté Lac</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Au cœur du charmant quartier d’Ouchy, l’association <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cote-lac-lausanne/\">Côté Lac</a> ouvre son bar estival éphémère sur le Quai de Belgique. Tout y est pour partager un bon moment dans un cadre idyllique, juste en face de la fontaine du Musée Olympique. Et pourquoi ne pas en profiter pour piquer une tête dans le lac ? La nouvelle zone de baignade d’Ouchy se trouve juste devant le bar. Tous à l’eau !",
-            "de": "Im Herzen des charmanten Stadtviertels Ouchy öffnet der Verein<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\"> Côté Lac</a> seine Sommerbar am Quai de Belgique. Es ist für alles gesorgt, um einen wunderbaren Moment in einer idyllischen Umgebung direkt gegenüber dem Brunnen des Olympischen Museums zu geniessen. Und warum nicht einen Sprung in den See wagen? Der neue Badebereich in Ouchy befindet sich gleich vor der Bar. Ab ins Wasser!",
-            "en": "In the heart of the charming neighbourhood of Ouchy, <a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">Côté Lac</a> association opens its pop-up summer bar on Quai de Belgique. It’s got everything you need to share good times in an idyllic setting, opposite the Olympic Museum’s fountain. Why not seize the opportunity to have a dip in the lake? Ouchy’s new bathing area is right in front of the bar. Let’s all dive in!"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : l’ambiance pieds dans l’eau dont on raffole.</em>",
-            "de": "<em>Pluspunkt: Das Gefühl der im Wasser baumelnden Füsse ist unschlagbar! </em>",
-            "en": "<em>The bonus: The water’s edge atmosphere that we’re crazy about</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23367,
-            "name": "Côté lac",
-            "public_name": {
-              "fr": "Côté lac",
-              "en": "Côté lac",
-              "de": "Côté lac",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cote-lac-lausanne/\">8 – Côté Lac </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Au cœur du charmant quartier d’Ouchy, l’association <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cote-lac-lausanne/\">Côté Lac</a> ouvre son bar estival éphémère sur le Quai de Belgique. Tout y est pour partager un bon moment dans un cadre idyllique, juste en face de la fontaine du Musée Olympique. Et pourquoi ne pas en profiter pour piquer une tête dans le lac ? La nouvelle zone de baignade d’Ouchy se trouve juste devant le bar. Tous à l’eau !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : l’ambiance pieds dans l’eau dont on raffole.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23367,
+              "name": "Côté lac",
+              "public_name": "Côté lac",
+              "cloudinary_id": "vznTtqArSXS9EDYnomwIZJ7NayU9H9WSnmOcPKC0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ville de Lausanne - Mathilde Imesch",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Détente; bar éphémère; Lausanne; Lac; Buvette; Guinguette",
+                "description": null,
+                "file_name_from_url": "53806cf238ebaf0d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Cote-lac-buvette.jpg"
+              }
             },
-            "cloudinary_id": "vznTtqArSXS9EDYnomwIZJ7NayU9H9WSnmOcPKC0",
-            "mime_type": "image/jpeg",
-            "copyright": "© Ville de Lausanne - Mathilde Imesch",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Terrasse, Détente; bar éphémère; Lausanne; Lac; Buvette; Guinguette",
-              "description": null,
-              "file_name_from_url": "53806cf238ebaf0d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Cote-lac-buvette.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-rincette/\" rel=\"noopener\"><strong>9 – La Rincette </strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">9 – La Rincette</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">9 – La Rincette</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Au pied des Pyramides de Vidy, c’est le petit nouveau de la bande ! Dès l’arrivée des beaux jours, rendez-vous face au lac, à l’ombre des pins parasols de l’esplanade des Cantons, pour profiter de cette<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-rincette/\"> terrasse</a> aux doux accents méditerranéens… Alors, on s’y voit ?",
-            "de": "Der Neuling in der Reihe liegt am Fusse der Pyramiden von Vidy. Ab dem 29. März trifft man sich am See auf der Esplanade des Cantons im Schatten der Pinien, um das sanfte mediterrane Feeling dieser<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\"> Terrasse</a> zu geniessen. Also, nichts wie hin!",
-            "en": "At the foot of the Vidy pyramids, it’s the new kid on the block! As from March 29, head to the Esplanade des Cantons, in the shade of the umbrella pines and on the water’s edge, to bask on this <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">terrace</a> reminiscent of the Mediterranean… Shall we meet you there?"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : en été, le très apprécié rendez-vous Lausanne sur mer prend place juste en face ! </em>",
-            "de": "<em>Pluspunkt: Der äusserst beliebte Event Lausanne sur Mer findet gleich gegenüber statt. </em>",
-            "en": "<em>The bonus: In the summer, the much-appreciated event Lausanne sur Mer takes place right opposite!</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26451,
-            "name": "Top 10 des meilleures terrasses estivales de Lausanne",
-            "public_name": {
-              "fr": "Top 10 des meilleures terrasses estivales de Lausanne"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-rincette/\" rel=\"noopener\"><strong>9 – La Rincette </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Au pied des Pyramides de Vidy, c’est le petit nouveau de la bande ! Dès l’arrivée des beaux jours, rendez-vous face au lac, à l’ombre des pins parasols de l’esplanade des Cantons, pour profiter de cette<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-rincette/\"> terrasse</a> aux doux accents méditerranéens… Alors, on s’y voit ?"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : en été, le très apprécié rendez-vous Lausanne sur mer prend place juste en face ! </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26451,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "cloudinary_id": "d56cbeae06b7d03d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d56cbeae06b7d03d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Rincette_Pyramides.jpg"
+              }
             },
-            "cloudinary_id": "d56cbeae06b7d03d",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1600\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "d56cbeae06b7d03d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Rincette_Pyramides.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-generale/\"><strong>10 – La Générale</strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-generale/\">10 – La Générale</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-generale/\">10 – La Générale</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Nichée dans le parc de Pully, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-generale/\"><strong data-start=\"625\" data-end=\"640\">La Générale</strong></a> est une terrasse conviviale et sans chichi, parfaite pour un verre entre ami·e·s ou une pause au vert. On y savoure bières artisanales, limonades maison et petits plats dans une ambiance décontractée.",
-            "de": "Im Park von Pully gelegen, ist <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-generale/\"><strong data-start=\"1364\" data-end=\"1379\">La Générale</strong></a> eine gemütliche und unkomplizierte Terrasse, ideal für einen Drink mit Freunden oder eine entspannte Pause im Grünen. Hausgemachte Limonade, regionale Biere und kleine Gerichte runden das Angebot ab.",
-            "en": "Tucked away in a park in Pully, <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-generale/\"><strong data-start=\"609\" data-end=\"624\">La Générale</strong></a> is a laid-back, friendly terrace ideal for catching up with friends or taking a breather in the shade. Enjoy craft beers, homemade lemonades and simple eats in a green, chilled-out setting."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le + : L’adresse rêvée pour les parents : dans un parc, juste à côté d’une place de jeux.</em>",
-            "de": "<em>Pluspunkt: Der Geheimtipp für Eltern: im Park, direkt neben einem Spielplatz.</em>",
-            "en": "<em>The bonus: A dream spot for parents: in a park, right next to a playground.</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26219,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-generale/\"><strong>10 – La Générale</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nichée dans le parc de Pully, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-generale/\"><strong data-start=\"625\" data-end=\"640\">La Générale</strong></a> est une terrasse conviviale et sans chichi, parfaite pour un verre entre ami·e·s ou une pause au vert. On y savoure bières artisanales, limonades maison et petits plats dans une ambiance décontractée."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le + : L’adresse rêvée pour les parents : dans un parc, juste à côté d’une place de jeux.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
             },
-            "cloudinary_id": "2e85897f753b034f",
-            "mime_type": "image/jpeg",
-            "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
-              "description": null,
-              "file_name_from_url": "2e85897f753b034f.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Plus d’inspiration sur @thelausanner",
-            "de": "Mehr Inspiration auf @thelausanner",
-            "en": "More inspiration on @thelausanner"
+          {
+            "type": "paragraph",
+            "value": "Plus d’inspiration sur @thelausanner"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/C_QaZX5MOi-/?utm_source=ig_embed&utm_campaign=loading"
           }
-        },
-        {
-          "type": "instagram",
-          "value": "https://www.instagram.com/reel/C_QaZX5MOi-/?utm_source=ig_embed&utm_campaign=loading"
-        }
-      ],
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23366,
+              "name": "Côté lac Ouchy",
+              "public_name": "Côté lac",
+              "cloudinary_id": "ywK7wThyB6uDt2pzGkIRl7mgn2j43JDvNKq1htiY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Terrasse, Buvette, couple; Apéro, Afterwork",
+                "description": null,
+                "file_name_from_url": "36244706393eac49.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/08/Afterwork-Cote-Ouchy.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\"><span lang=\"DE-CH\">1 – La Jetée de la Compagnie </span></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Liegestühle, Pétanque, Cocktails, Füsse im Wasser baumeln lassen und gute Gesellschaft: An der<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\"> Jetée de la Compagnie</a> ist Ferienstimmung garantiert! Die Strandatmosphäre und die Terrasse am Seeufer machen diesen Ort perfekt, um nach einem langen Bürotag mit Freunden anzustossen. Los geht’s zum Sonnenbaden!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Die in der Verlängerung der Jetée gelegene Minimum Bar im Strandhüttenstil bietet dieselbe Sommeratmosphäre und trägt ebenfalls zum Charme des Ortes bei.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23368,
+              "name": "Jetée de la Compagnie",
+              "public_name": "Jetée de la Compagnie",
+              "cloudinary_id": "4rH1z75QAZHWpXNddOrzLRn3tQ16oHzWDsqVEsdW",
+              "mime_type": "image/jpeg",
+              "copyright": "© Philip Waterton",
+              "metadata": {
+                "width": 1600,
+                "height": 870,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"870\"",
+                "tags": "Lac; Détente; Lausanne",
+                "description": null,
+                "file_name_from_url": "6afeaa1d629ee32d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Detente-Jetee-Compagnie.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-grandes-roches/\">2 –  Les Grandes Roches</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-grandes-roches/\">Diese schöne Terrasse</a> unter dem Pont Bessières hat sich als beliebter Treffpunkt für die Einheimischen etabliert. Palmen, bunte Lichterketten, Tischfussball und ein Billardtisch bilden die Kulisse dieses gemütlichen Ortes, an dem man gern verweilt. Ob Feierabenddrink, sonniger Nachmittag oder langer Sommerabend, jede Gelegenheit bietet sich an, um sich auf ein Craft-Bier oder einen hausgemachten Sirup zu treffen. Prost!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Ihr ebenso ungewöhnlicher wie urbaner Charakter im Herzen von Lausanne.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25991,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "ae9bc47b90f84a54",
+              "mime_type": "image/jpeg",
+              "copyright": "© Suisse Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Transport; Lausanne; Détente; Afterwork",
+                "description": null,
+                "file_name_from_url": "ae9bc47b90f84a54.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Grandes-Roches.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-folie-voltaire/\">3 – La Folie Voltaire</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Diese <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-folie-voltaire/\">schöne Oase</a> unweit des Stadtzentrums im Park Mon-Repos bietet willkommene Abkühlung. Im Schatten der hundertjährigen Bäume kann man herrlichen hausgemachten Quittensirup und lokale, saisonale Snacks geniessen. Auf der Speisekarte stehen Salate, Crêpes und Glacés zum entspannten Schlemmen. Eltern haben zudem einen direkten Blick auf den Spielplatz, um ihre Liebsten im Auge zu behalten. Wir sind begeistert!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Die Lage mitten in einer der schönsten Lausanner Parkanlagen. Und natürlich der tolle Spielplatz gleich nebenan.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">4 – The Lacustre</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In Ouchy ist <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">The<strong data-start=\"934\" data-end=\"949\"> Lacustre</strong></a> ein echter Sommerklassiker, sobald die Sonne sich zeigt. Die grosse Holzterrasse mit Blick auf den Genfersee und die Alpen lädt zu jeder Tageszeit zum Verweilen ein. Ob Kaffee, Pizza oder Cocktail – die entspannte Atmosphäre und das Lichtspiel auf dem Wasser machen den Ort besonders."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Spektakuläre Seesicht – fast direkt mit den Füssen im Wasser.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25088,
+              "name": "Le Lacustre",
+              "public_name": null,
+              "cloudinary_id": "le-lacustre-fojcgz",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maud Guye-Vuillème",
+              "metadata": {
+                "width": 5027,
+                "height": 3351,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5027\" height=\"3351\"",
+                "tags": null,
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-terrasse/\">5 – La Terrasse</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Auf der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-terrasse/\">Terrasse</a> in Lutry fühlt es sich an wie in den Ferien! Dafür sorgen Kieselsteine, Pinien und der direkte Blick auf die Schiffe und den See. Es riecht nach Sommer und man sieht sich sofort mit einem Drink in der Sonne. Von Ostern bis Mitte Oktober bietet diese nur gerade fünf Minuten von Lausanne entfernte Terrasse eine Speisekarte mit schmackhaften Gerichten wie Rindstatar, Moussaka oder Salat mit warmem Ziegenkäse ‒ einfach unwiderstehlich!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Diese etwas ausserhalb der Stadt gelegene Terrasse ist ideal, um dem Alltag zu entfliehen.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26286,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "41c4a166746bfa44",
+              "mime_type": "image/webp",
+              "copyright": "© La Terrasse",
+              "metadata": {
+                "width": 2500,
+                "height": 1409,
+                "mimeType": "image/webp",
+                "copyright": null,
+                "attr": "width=\"2500\" height=\"1409\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "41c4a166746bfa44.webp",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/cxmxqsaiuxx8i2ship7g.webp"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">6 – La Guinguette de Vidy</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">La Guinguette</a> mit ihrer schattenspendenden Terrasse liegt ganz in der Nähe des Skateparks Vidy und bietet einen atemberaubenden Blick auf den Genfersee. Das Strandlokal ist an sieben Tagen die Woche geöffnet und serviert Plättli mit lokalen Produkten, Hotdogs, Terrinen und Rillettes sowie eine Auswahl an hausgemachten Getränken. Was will man mehr?"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Die exklusive Lage direkt am See.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26723,
+              "name": "Guingette  Vidy",
+              "public_name": "Guingette  Vidy",
+              "cloudinary_id": "VJeUfF4JIVSsMIreNHxEECoyjx6BgQZAHAYYU7jl",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Buvette; Apéro, Afterwork, Vidy; Lac; Léman",
+                "description": null,
+                "file_name_from_url": "5ccf21ee33fde3a0.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/La-Guingette-Vidy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-jardins/\">7 – Les Jardins</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-jardins/\">Der Garten</a> des Restaurants Le Vieux-Lausanne gleich unterhalb der Cité bietet eine einmalige Sicht auf die Stadt. Diese idyllische Terrasse liegt etwas zurückversetzt in einer grünen Umgebung und öffnet, sobald die schönen Tage kommen. Zur Freude der Gäste steigt im Sommer täglich ab 17 Uhr die After-Work-Party ‒ ein Muss. Auf der Speisekarte stehen Musik, Fingerfood und hausgemachte Cocktails. Entspannung pur ist garantiert."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Ihr unwiderstehlicher französischer Charme.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">8 – Côté Lac</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Herzen des charmanten Stadtviertels Ouchy öffnet der Verein<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\"> Côté Lac</a> seine Sommerbar am Quai de Belgique. Es ist für alles gesorgt, um einen wunderbaren Moment in einer idyllischen Umgebung direkt gegenüber dem Brunnen des Olympischen Museums zu geniessen. Und warum nicht einen Sprung in den See wagen? Der neue Badebereich in Ouchy befindet sich gleich vor der Bar. Ab ins Wasser!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Das Gefühl der im Wasser baumelnden Füsse ist unschlagbar! </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23367,
+              "name": "Côté lac",
+              "public_name": "Côté lac",
+              "cloudinary_id": "vznTtqArSXS9EDYnomwIZJ7NayU9H9WSnmOcPKC0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ville de Lausanne - Mathilde Imesch",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Détente; bar éphémère; Lausanne; Lac; Buvette; Guinguette",
+                "description": null,
+                "file_name_from_url": "53806cf238ebaf0d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Cote-lac-buvette.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">9 – La Rincette</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Der Neuling in der Reihe liegt am Fusse der Pyramiden von Vidy. Ab dem 29. März trifft man sich am See auf der Esplanade des Cantons im Schatten der Pinien, um das sanfte mediterrane Feeling dieser<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\"> Terrasse</a> zu geniessen. Also, nichts wie hin!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Der äusserst beliebte Event Lausanne sur Mer findet gleich gegenüber statt. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26451,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d56cbeae06b7d03d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d56cbeae06b7d03d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Rincette_Pyramides.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-generale/\">10 – La Générale</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Park von Pully gelegen, ist <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-generale/\"><strong data-start=\"1364\" data-end=\"1379\">La Générale</strong></a> eine gemütliche und unkomplizierte Terrasse, ideal für einen Drink mit Freunden oder eine entspannte Pause im Grünen. Hausgemachte Limonade, regionale Biere und kleine Gerichte runden das Angebot ab."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pluspunkt: Der Geheimtipp für Eltern: im Park, direkt neben einem Spielplatz.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Mehr Inspiration auf @thelausanner"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/C_QaZX5MOi-/?utm_source=ig_embed&utm_campaign=loading"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23366,
+              "name": "Côté lac Ouchy",
+              "public_name": "Côté lac",
+              "cloudinary_id": "ywK7wThyB6uDt2pzGkIRl7mgn2j43JDvNKq1htiY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Terrasse, Buvette, couple; Apéro, Afterwork",
+                "description": null,
+                "file_name_from_url": "36244706393eac49.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/08/Afterwork-Cote-Ouchy.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\"><strong>1 – The “Jetée de la Compagnie”</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Deckchairs, petanque course, cocktails, the water’s edge and great company… At <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">La Jetée</a>, a holiday atmosphere is guaranteed! Its feel of a coastal resort and terrace right on the water’s edge make it the ideal spot to meet up for drinks with friends after a long day at the office. Head this way to catch some sun!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: ss an extension of La Jetée, the Minimum Bar adds to the charm of the place by giving off the same summer vibes, beach-hut style. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23368,
+              "name": "Jetée de la Compagnie",
+              "public_name": "Jetée de la Compagnie",
+              "cloudinary_id": "4rH1z75QAZHWpXNddOrzLRn3tQ16oHzWDsqVEsdW",
+              "mime_type": "image/jpeg",
+              "copyright": "© Philip Waterton",
+              "metadata": {
+                "width": 1600,
+                "height": 870,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"870\"",
+                "tags": "Lac; Détente; Lausanne",
+                "description": null,
+                "file_name_from_url": "6afeaa1d629ee32d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Detente-Jetee-Compagnie.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/les-grandes-roches/\"><strong>2 – Les Grandes Roches</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Hidden under Pont Bessières, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-grandes-roches/\">this pleasant terrace</a> stands out as the favourite meeting place for locals. Palm trees, colourful lighted garlands, table football and a snooker table set the stage for a relaxed spot that invites you to take a break. Whether for after-works, sunny afternoons or long summer evenings, we’ll seize any opportunity to meet up and enjoy a craft beer or a homemade cordial. Cheers!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: its unusual, urban character in the heart of Lausanne. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25991,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "ae9bc47b90f84a54",
+              "mime_type": "image/jpeg",
+              "copyright": "© Suisse Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Transport; Lausanne; Détente; Afterwork",
+                "description": null,
+                "file_name_from_url": "ae9bc47b90f84a54.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Grandes-Roches.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-folie-voltaire/\"><strong>3 – La Folie Voltaire</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "This <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-folie-voltaire/\">charming cool spot</a> is nestled not far from the town centre, in the heart of Mon-Repos Park. In the shade of century-old trees, we delight in the delicious homemade quince cordial and a menu of local, seasonal nibbles. There’s a choice of salads, crêpes and ice creams, to be savoured without moderation and with the added bonus for parents of a direct view over the playground to keep an eye on their offspring. It would be folly not to go!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: its location in the heart of one of the most charming parks in Lausanne. And the great playground right next to it.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-lacustre/\">4 – The Lacustre</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In Ouchy, <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-lacustre/\"><strong data-start=\"192\" data-end=\"207\">Le Lacustre</strong></a> is a summertime classic as soon as the sun comes out. Its large wooden terrace, overlooking Lake Geneva and the Alps, is the perfect spot for any time of day. Whether for a coffee, pizza or cocktail, the relaxed vibe and golden reflections on the lake make it a must."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: A stunning lakefront view, with your feet (almost) in the water.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25088,
+              "name": "Le Lacustre",
+              "public_name": null,
+              "cloudinary_id": "le-lacustre-fojcgz",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maud Guye-Vuillème",
+              "metadata": {
+                "width": 5027,
+                "height": 3351,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5027\" height=\"3351\"",
+                "tags": null,
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-terrasse/\"><strong>5 – La Terrasse</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-terrasse/\">The Terrasse</a> de Lutry well and truly has a holiday atmosphere! What with the gravel, pine trees and direct view over the boats and lake, the place oozes summertime and apéros in the sun. From Easter to mid-October, this ideal terrace – located a mere 5 minutes from Lausanne – rolls out a menu of tasty dishes: beef tartare, moussaka or warm goat cheese salad, to be eaten without moderation!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: Just outside the city, this terrace offers a delicious sense of escape…</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26286,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "41c4a166746bfa44",
+              "mime_type": "image/webp",
+              "copyright": "© La Terrasse",
+              "metadata": {
+                "width": 2500,
+                "height": 1409,
+                "mimeType": "image/webp",
+                "copyright": null,
+                "attr": "width=\"2500\" height=\"1409\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "41c4a166746bfa44.webp",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/cxmxqsaiuxx8i2ship7g.webp"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\"><strong>6 – La Guinguette de Vidy</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Very near the Vidy Bowl, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-guinguette-de-vidy/\">shady terrace</a> of this unusual pop-up bar benefits from a spectacular view over the lake. Open 7 days a week, it serves snack boards with local flavours, hot dogs, terrines and rillettes, as well as a selection of house drinks. What more could you want?"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: its prime location right on the lakefront. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26723,
+              "name": "Guingette  Vidy",
+              "public_name": "Guingette  Vidy",
+              "cloudinary_id": "VJeUfF4JIVSsMIreNHxEECoyjx6BgQZAHAYYU7jl",
+              "mime_type": "image/jpeg",
+              "copyright": "© Blake Production",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Buvette; Apéro, Afterwork, Vidy; Lac; Léman",
+                "description": null,
+                "file_name_from_url": "5ccf21ee33fde3a0.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/La-Guingette-Vidy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/les-jardins/\"><strong>7 – Les Jardins</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Located at the foot of the Cité, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-jardins/\">Les Jardins</a> du Vieux-Lausanne offer an outstanding view over the town. This bucolic terrace – slightly set back and nestled in a green setting – welcomes its lucky customers as soon as the warmer weather arrives. The summer after-works, every day from 5 pm, are a must, with music, finger food and house cocktails to be savoured in total relaxation."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: its irresistible French charm…</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">8 – Côté Lac</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In the heart of the charming neighbourhood of Ouchy, <a href=\"https://www.lausanne-tourisme.ch/en/explore/cote-lac-lausanne/\">Côté Lac</a> association opens its pop-up summer bar on Quai de Belgique. It’s got everything you need to share good times in an idyllic setting, opposite the Olympic Museum’s fountain. Why not seize the opportunity to have a dip in the lake? Ouchy’s new bathing area is right in front of the bar. Let’s all dive in!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: The water’s edge atmosphere that we’re crazy about</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23367,
+              "name": "Côté lac",
+              "public_name": "Côté lac",
+              "cloudinary_id": "vznTtqArSXS9EDYnomwIZJ7NayU9H9WSnmOcPKC0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ville de Lausanne - Mathilde Imesch",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Terrasse, Détente; bar éphémère; Lausanne; Lac; Buvette; Guinguette",
+                "description": null,
+                "file_name_from_url": "53806cf238ebaf0d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Cote-lac-buvette.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">9 – La Rincette</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "At the foot of the Vidy pyramids, it’s the new kid on the block! As from March 29, head to the Esplanade des Cantons, in the shade of the umbrella pines and on the water’s edge, to bask on this <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-rincette/\">terrace</a> reminiscent of the Mediterranean… Shall we meet you there?"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: In the summer, the much-appreciated event Lausanne sur Mer takes place right opposite!</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26451,
+              "name": "Top 10 des meilleures terrasses estivales de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d56cbeae06b7d03d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d56cbeae06b7d03d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Rincette_Pyramides.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-generale/\">10 – La Générale</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Tucked away in a park in Pully, <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-generale/\"><strong data-start=\"609\" data-end=\"624\">La Générale</strong></a> is a laid-back, friendly terrace ideal for catching up with friends or taking a breather in the shade. Enjoy craft beers, homemade lemonades and simple eats in a green, chilled-out setting."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The bonus: A dream spot for parents: in a park, right next to a playground.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "More inspiration on @thelausanner"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/C_QaZX5MOi-/?utm_source=ig_embed&utm_campaign=loading"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "dd6da6e53ec75df7",

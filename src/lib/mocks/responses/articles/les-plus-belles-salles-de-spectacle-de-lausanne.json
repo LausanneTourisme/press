@@ -18,523 +18,1253 @@
         "en": "In Lausanne, there are no less than 35 performance halls! To my greatest delight, fantastic shows take place there every year. Once the show has ended, though, these venues still hold a lot of interest. Their beauty hasn’t escaped my eye as an arch-photo fan, so I set off to explore the legendary venues with impressive architectural designs that still have a few secrets to reveal. Did you know that an entertainment venue is located in Switzerland’s first skyscraper? That Lausanne possesses the largest cinema theatre in the country? I’ll take you with me to discover these iconic places!",
         "de": "Lausanne zählt nicht weniger als 35 Veranstaltungssäle! Jedes Jahr finden dort zu meiner grossen Freude tolle Aufführungen statt. Aber auch nach dem Ende der Vorstellung sind diese Lokalitäten sehr interessant. Ihre Schönheit entgeht meinem Sperberauge als leidenschaftlicher Architekturfotograf nicht. Also habe ich mich auf den Weg gemacht, um die beeindruckende Architektur dieser legendären Säle zu erkunden, die uns so einige Geheimnisse verbergen. Wusstet ihr, dass sich im ersten Hochhaus der Schweiz ein Konzertsaal befindet? Oder dass sich in Lausanne der grösste Kinosaal des Landes befindet? Gerne stelle ich euch diese einzigartigen Orte vor!"
       },
-      "content": [
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/opera-de-lausanne/\">L’Opéra de Lausanne</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-opera-house/\">The Opéra de Lausanne</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/opernhaus-in-lausanne/\">Oper Lausanne</a>",
-            "it": "",
-            "es": ""
+      "content": {
+        "fr": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/opera-de-lausanne/\">L’Opéra de Lausanne</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25930,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "3285d37523e5a411",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3285d37523e5a411.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1860-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26014,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "6a2054722bbc1f39",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "6a2054722bbc1f39.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1857-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26100,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "7fdc7c11004b2b7d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7fdc7c11004b2b7d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1848-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les origines du bâtiment de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/opera-de-lausanne/\">l’Opéra de Lausanne</a> se trouvent dans le Casino-théâtre construit à partir de 1869 selon les plans de Jules-Louis Verry. La salle d’environ 800 places est inaugurée le 10 mai 1871 avec une représentation du Barbier de Séville de Rossini. Dès le début du 20ème siècle, on commence à planifier la démolition de la salle devenue trop petite ayant des places peu confortables et trop serrées pour la remplacer par une nouvelle construction. Les architectes De Rahm et Peloux gagnent le concours lancé en 1912 avec une façade ressemblant au Palais Garnier de Paris. Le projet est toutefois abandonné avec le début de la 1ère guerre mondiale. C’est finalement en 1931 selon les plans de Charles Thévenaz que le Casino-théâtre est rénové et agrandi. La capacité de la salle passe à 1101 places, les décorations abandonnent les velours rouges et les dorures et passent au style Art Déco dans les tons de rose; même le nom change pour « Théâtre municipal”. De 1959 à 1969, Charles Apothéloz, avant de prendre la direction du Théâtre de Vidy, en est le co-directeur.  Le prochain changement de nom, créant l’Opéra de Lausanne, a lieu en 1995 lorsque Dominique Meyer accède à la direction. L’actuelle cage de scène d’une hauteur de 18m et sa façade en miroir sont le résultat des dernières rénovations effectuées entre 2007 et 2012 d’après les plans de Devanthéry &amp; Lamunière. La salle, maintenant avec 962 places, accueille chaque année environ 45000 spectateurs."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Le Capitole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26167,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "442648dff0ecfc6c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1789,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1789\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "442648dff0ecfc6c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4067-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26232,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "43f767c70d713ce2",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1790,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1790\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "43f767c70d713ce2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4066-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26298,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "18645e68f3b9c4c4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18645e68f3b9c4c4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4045-Edit-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "À quelques pas de l’Opéra de Lausanne, le cinéma <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Le Capitole</a> a aussi été conçu par l’architecte lausannois Charles Thévenaz. Pour s’adapter à la pente de l’avenue du Théâtre, Le Capitole n’est pas construit en hauteur mais plutôt en largeur et possède donc une façade beaucoup moins haute que ce qu’on s’attend d’une salle de cinéma classique. Le plus ancien cinéma de Lausanne ouvre ses portes le 29 décembre 1928 et compte alors 1077 places, 802 au parterre et 275 sur la galerie. Jusqu’en 1942, la salle comporte un orgue de cinéma et une fosse d’orchestre et accueille des concerts, spectacles et conférences. Jean-Paul Sartre s’est produit entre autres au Capitole. Dans les années 1950, le premier écran panoramique de Suisse y est installé. La salle compte aujourd’hui 876 places, ce qui en fait le plus grand cinéma de Suisse. En 2010, le bâtiment a été racheté par la ville de Lausanne et est utilisé par la Cinémathèque Suisse. Rénové dès 2020, c’est flambant neuf qu’il a rouvert ses portes en février 2024."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-salle-metropole-de-lausanne/\">La Salle Métropole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26346,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "87e9068956aca948",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87e9068956aca948.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2844-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26391,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "5ce0283d9fbcb283",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5ce0283d9fbcb283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1687-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26426,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "93d491f94bfe21ba",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "93d491f94bfe21ba.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1655-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "La <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-salle-metropole-de-lausanne/\">Salle Métropole</a> est située à l’intérieur de la Tour Bel-Air, premier gratte-ciel de Suisse, construit par Alphonse Laverrière et achevée en 1932. Le bâtiment et sa tour de 15 étages sont prévus dès la conception pour recevoir des bureaux, des logements (équipés des technologies les plus modernes de l’époque comme électricité, réfrigérateurs, douches et téléphone), un restaurant et la salle de spectacle. Alphonse Laverrière a également conçu plusieurs éléments décoratifs de la salle de spectacle comme les poignées de porte en laiton ainsi que le monumental lustre sur plusieurs étages qui s’y trouve toujours aujourd’hui. Joséphine Baker et Louis Armstrong se sont produits dans les années 30 dans la Salle Métropole qui a servi de salle de cinéma entre les années 1950 et 1988. Elle a été ouverte à nouveau en 1992 en tant que salle de spectacle et est maintenant la résidence de l’Orchestre de Chambre de Lausanne. Sa salle accueille d’ailleurs des spectacles variés allant des concerts à l’humour en passant par des pièces de théâtre, de la danse et du chant. Plusieurs rénovations ont eu lieu depuis et la salle Métropole peut désormais accueillir entre 500 et 2000 personnes."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-arsenic/\">L’Arsenic</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26461,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "c2c8360a32583475",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c2c8360a32583475.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2860-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26482,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "4216a160ca2749a1",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4216a160ca2749a1.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2864-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26495,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "65e9ed4bc431dcbc",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65e9ed4bc431dcbc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2900-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le bâtiment occupé maintenant par <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-arsenic/\">l’Arsenic</a> a été conçu en 1955 par les architectes Brugger, Perrelet, Stalé et Quillet pour abriter les ateliers mécaniques de l’Ecole Professionnelle des Métiers de l’Industrie et de l’Artisanat (EPSIC). Le théâtre de l’Arsenic, qui se spécialise dans la création scénique contemporaine, s’y installe en 1989, en partage avec l’Ecole romande d’arts et communication et le Centre de formation vaudois de l’industrie qui utilisent les niveaux supérieurs des ailes du bâtiment. À cette époque, seulement le Théâtre municipal et le Théâtre de Vidy existaient à Lausanne et l’Arsenic offrait donc une place aux artistes de la scène régionale qui devraient évoluer à l’extérieur de ces deux institutions. Le bâtiment a été entièrement rénové, notamment en surélevant la toiture et en mettant l’isolation à jour, entre 2011 et 2013 par Pont12 architectes. Après ces rénovations, et sans colocataires, l’Arsenic compte maintenant sept salles, ainsi qu’un grand café et une cuisine. Un voile d’une tôle d’aluminium perforée et ondulée habille le bâtiment sur tout son périmètre."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Le Théâtre de Vidy</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26509,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "77beabc3ad35ac5d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1784,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1784\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "77beabc3ad35ac5d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4860-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26520,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "b110191453d7b97d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b110191453d7b97d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4857-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26532,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": "Les plus belles salles de spectacle de Lausanne",
+              "cloudinary_id": "097daa0e9634eb4f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "097daa0e9634eb4f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1740-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Tel que son nom l’indique, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Théâtre de Vidy</a> est situé à quelques pas de la plage de Vidy. Situé dans un parc boisé, l’endroit offre une superbe vue sur le Léman et les Alpes. Conçu par l’architecte zurichois Max Bill pour le pavillon “Éduquer et créer” de l’Exposition nationale suisse de 1964, et en utilisant des méthodes de construction nouvelles avec des structures métalliques, le Théâtre de Vidy devait être démantelé à la fin des six mois d’exposition. Heureusement, Charles Apothéloz, alors co-directeur du Théâtre municipal, réussit à convaincre la Ville de Lausanne de racheter le bâtiment, afin de l’utiliser comme extension du Théâtre municipal en tant que salle de recherche et de répétition. Charles Apothéloz monte d’ailleurs en 1967 <em>La Muraille de Chine</em> de Max Frisch et la fait voyager jusqu’à l’exposition universelle de Montréal, où elle représente la Suisse avec la première nord-américaine de la pièce. La salle devient indépendante en 1972 sous le nom de Théâtre de Vidy et est à l’usage du Centre Dramatique Romand. Au fil des années, le nombre de salles sur place augmente à trois salles permanentes et un chapiteau. Inaugurée en 2017, une nouvelle salle de spectacle, ‘’le Pavillon en bois”, conçue par le laboratoire IBOIS de l’EPFL sous la direction d’Yves Weinand remplace le chapiteau. Sa structure par plis a été calculée pour obtenir une répartition uniforme des forces entre les différents panneaux de bois. Ses murs et les onze arches du toit ont été assemblés sans aucun élément métallique."
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "paragraph",
+            "value": "Riches du dynamisme de la ville, les salles de spectacle lausannoises ne cessent de se renouveler, mariant leur histoire à leurs nouvelles créations. A vous de les découvrir !"
           }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25930,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "3285d37523e5a411",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "3285d37523e5a411.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1860-Edit-scaled.jpg"
-            }
+        ],
+        "en": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-opera-house/\">The Opéra de Lausanne</a>"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26014,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
+          {
+            "type": "image",
+            "value": {
+              "id": 25930,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "3285d37523e5a411",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3285d37523e5a411.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1860-Edit-scaled.jpg"
+              }
             },
-            "cloudinary_id": "6a2054722bbc1f39",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "6a2054722bbc1f39.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1857-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26100,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
+          {
+            "type": "image",
+            "value": {
+              "id": 26014,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "6a2054722bbc1f39",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "6a2054722bbc1f39.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1857-scaled.jpg"
+              }
             },
-            "cloudinary_id": "7fdc7c11004b2b7d",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "7fdc7c11004b2b7d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1848-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Les origines du bâtiment de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/opera-de-lausanne/\">l’Opéra de Lausanne</a> se trouvent dans le Casino-théâtre construit à partir de 1869 selon les plans de Jules-Louis Verry. La salle d’environ 800 places est inaugurée le 10 mai 1871 avec une représentation du Barbier de Séville de Rossini. Dès le début du 20ème siècle, on commence à planifier la démolition de la salle devenue trop petite ayant des places peu confortables et trop serrées pour la remplacer par une nouvelle construction. Les architectes De Rahm et Peloux gagnent le concours lancé en 1912 avec une façade ressemblant au Palais Garnier de Paris. Le projet est toutefois abandonné avec le début de la 1ère guerre mondiale. C’est finalement en 1931 selon les plans de Charles Thévenaz que le Casino-théâtre est rénové et agrandi. La capacité de la salle passe à 1101 places, les décorations abandonnent les velours rouges et les dorures et passent au style Art Déco dans les tons de rose; même le nom change pour « Théâtre municipal”. De 1959 à 1969, Charles Apothéloz, avant de prendre la direction du Théâtre de Vidy, en est le co-directeur.  Le prochain changement de nom, créant l’Opéra de Lausanne, a lieu en 1995 lorsque Dominique Meyer accède à la direction. L’actuelle cage de scène d’une hauteur de 18m et sa façade en miroir sont le résultat des dernières rénovations effectuées entre 2007 et 2012 d’après les plans de Devanthéry &amp; Lamunière. La salle, maintenant avec 962 places, accueille chaque année environ 45000 spectateurs.",
-            "en": "The origin of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-opera-house/\">Opéra de Lausanne’s</a> building is to be found in the Casino Theatre. Its construction began in 1869 following Jules-Louis Verry’s plans. The venue, seating about 800 people, was inaugurated on May 10, 1871, with a production of Rossini’s Barber of Seville. As from the beginning of the 20<sup>th</sup> century, demolition of the building was planned as it had become too small – with rather uncomfortable seats too close together – to replace it with a new construction. Architects De Rahm and Peloux won the design competition that took place in 1912 with a façade similar to the Palais Garnier in Paris. The project was, however, abandoned with the start of the First World War. It was finally in 1931 that the Casino Theatre was renovated and extended following the blueprints of Charles Thévenaz. The venue’s capacity went up to 1,101 and the interior design moved away from red velvet and gilding in favour of an Art Deco style in shades of pink; even the name changed to “Municipal Theatre”. From 1959 to 1969, Charles Apothéloz was its co-director before he was appointed Director of the Théâtre de Vidy. The next name change, inaugurating the Opéra de Lausanne, intervened in 1995 when Dominique Meyer became director. The present 18-metre-high stage house and its mirror façade result from the most recent refurbishments that took place between 2007 and 2012 following Devanthéry &amp; Lamunière’s design. The venue, now seating 962, welcomes every year approximately 45,000 spectators.",
-            "de": "Die Ursprünge des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/opernhaus-in-lausanne/\">Opernhauses von Lausanne</a> gehen auf das Casino-Theater zurück, das ab 1869 nach den Plänen von Jules-Louis Verry gebaut wurde. Der Saal mit rund 800 Plätzen wurde am 10. Mai 1871 mit einer Aufführung von Rossinis Barbier von Sevilla eingeweiht. Zu Beginn des 20. Jahrhunderts begann man mit der Planung, die zu klein gewordene Oper mit ihren unbequemen und zu engen Plätzen abzureissen und durch einen Neubau zu ersetzen. Die Architekten De Rahm und Peloux gewannen den 1912 ausgeschriebenen Wettbewerb mit einer Fassade, die dem Palais Garnier in Paris ähnelte. Mit dem Ausbruch des Ersten Weltkriegs musste das Projekt jedoch aufgegeben werden. Schliesslich wurde das Casino-Theater 1931 nach den Plänen von Charles Thévenaz renoviert und vergrössert. Die Kapazität des Saals wurde auf 1101 Plätze erhöht, die Einrichtung von rotem Samt und Gold auf einen Art-déco-Stil mit rosa Farbtönen umgestellt und der Name in „Théâtre municipal“ (Stadttheater) geändert. 1959 bis 1969 war Charles Apothéloz dessen Co-Direktor, bevor er die Leitung des Theaters Vidy übernahm. Die nächste Namensänderung in „Opera de Lausanne“ erfolgte 1995, als Dominique Meyer die Leitung übernahm. Der 18 Meter hohe Bühnenkäfig und die Spiegelfassade sind das Ergebnis der letzten Renovierungsarbeiten, die zwischen 2007 und 2012 nach den Plänen von Devanthéry &amp; Lamunière durchgeführt wurden. Der Saal verfügt heute über 962 Plätze und empfängt jedes Jahr etwa 45 000 Zuschauerinnen und Zuschauer.",
-            "it": "",
-            "es": ""
+          {
+            "type": "image",
+            "value": {
+              "id": 26100,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "7fdc7c11004b2b7d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7fdc7c11004b2b7d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1848-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "The origin of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-opera-house/\">Opéra de Lausanne’s</a> building is to be found in the Casino Theatre. Its construction began in 1869 following Jules-Louis Verry’s plans. The venue, seating about 800 people, was inaugurated on May 10, 1871, with a production of Rossini’s Barber of Seville. As from the beginning of the 20<sup>th</sup> century, demolition of the building was planned as it had become too small – with rather uncomfortable seats too close together – to replace it with a new construction. Architects De Rahm and Peloux won the design competition that took place in 1912 with a façade similar to the Palais Garnier in Paris. The project was, however, abandoned with the start of the First World War. It was finally in 1931 that the Casino Theatre was renovated and extended following the blueprints of Charles Thévenaz. The venue’s capacity went up to 1,101 and the interior design moved away from red velvet and gilding in favour of an Art Deco style in shades of pink; even the name changed to “Municipal Theatre”. From 1959 to 1969, Charles Apothéloz was its co-director before he was appointed Director of the Théâtre de Vidy. The next name change, inaugurating the Opéra de Lausanne, intervened in 1995 when Dominique Meyer became director. The present 18-metre-high stage house and its mirror façade result from the most recent refurbishments that took place between 2007 and 2012 following Devanthéry &amp; Lamunière’s design. The venue, now seating 962, welcomes every year approximately 45,000 spectators."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">The Capitole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26167,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "442648dff0ecfc6c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1789,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1789\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "442648dff0ecfc6c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4067-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26232,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "43f767c70d713ce2",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1790,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1790\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "43f767c70d713ce2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4066-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26298,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "18645e68f3b9c4c4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18645e68f3b9c4c4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4045-Edit-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "A stone’s throw from the Opéra de Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">the Capitole Cinema</a> was also designed by Lausanne architect Charles Thévenaz. To adapt the building to the Avenue du Théâtre’s slope, the Capitole isn’t built upwards but sidewards, so that its façade isn’t as high as you’d expect for a traditional movie theatre. Lausanne’s oldest cinema opened on December 29, 1928, and offered seating for 1,077 people (802 in the parterre and 275 on the gallery). Until 1942, the venue possessed a cinema organ and an orchestra pit, and hosted concerts, shows and conferences. Jean-Paul Sartre performed at the Capitole, among other places. In the 1950s, the first panoramic screen in Switzerland was installed there. The venue now seats 876, which makes it the largest cinema in the country. In 2010, the building was bought by the City of Lausanne and is used by the Swiss Film Archives. Renovated in 2020, it reopened its doors in February 2024 in a brand new state."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/metropole-performance-hall-in-lausanne/\">The Salle Métropole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26346,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "87e9068956aca948",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87e9068956aca948.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2844-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26391,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "5ce0283d9fbcb283",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5ce0283d9fbcb283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1687-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26426,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "93d491f94bfe21ba",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "93d491f94bfe21ba.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1655-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/metropole-performance-hall-in-lausanne/\">The Salle Métropole</a> is located inside the Bel-Air Tower, Switzerland’s first skyscraper that was built by Alphonse Laverrière and finished in 1932. The building and its 15-floor tower were designed from the start to house offices, flats (equipped with the most modern technologies of the time, such as electricity, fridges, showers and phones), a restaurant and a performance venue. Alphonse Laverrière also designed various decorative elements in the performance venue, such as the brass door handles and the monumental chandelier that extends over several floors and is still in place today. Josephine Baker and Louis Armstrong performed in the 1930s in that venue, that was used as a cinema between 1950 and 1988. It was reopened as a performance hall in 1992 and is now home to the Lausanne Chamber Orchestra. Besides, the venue welcomes various shows, from concerts, theatre plays, dancing and singing to comedy. The Salle Métropole has been renovated several times and now seats between 500 and 2,000 people."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-arsenic/\">The Arsenic</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26461,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c2c8360a32583475",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c2c8360a32583475.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2860-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26482,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "4216a160ca2749a1",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4216a160ca2749a1.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2864-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26495,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "65e9ed4bc431dcbc",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65e9ed4bc431dcbc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2900-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "The building now occupied by <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-arsenic/\">the Arsenic</a> was designed in 1955 by architects Brugger, Perrelet, Stalé and Quillet to house the mechanical workshops of the Vocational School for Industry and Crafts Professions (Ecole Professionnelle des Métiers de l’Industrie et de l’Artisanat, or EPSIC). The Arsenic Theatre, which specialises in contemporary dramatic creation, moved there in 1989, sharing the premises with the Western Switzerland School of Arts and Communication (Ecole romande d’arts et communication) and the Vaud Industry Training Centre (Centre de formation vaudois de l’industrie) that used the upper floors of the building’s wings. At the time, only the Municipal Theatre and the Vidy Theatre existed in Lausanne, so the Arsenic provided a platform for local artists who had to evolve outside these two institutions. The building was entirely renovated between 2011 and 2013 by Pont12 Architectes, notably raising the roof and improving the insulation. Today, after these refurbishments, the Arsenic no longer shares the premises and comprises seven rooms, as well as a large café and a kitchen. A veil of perforated, grooved aluminium clads the building’s whole exterior."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Théâtre de Vidy</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26509,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "77beabc3ad35ac5d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1784,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1784\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "77beabc3ad35ac5d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4860-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26520,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "b110191453d7b97d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b110191453d7b97d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4857-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26532,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "097daa0e9634eb4f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "097daa0e9634eb4f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1740-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "As its name suggests, <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">the Théâtre de Vidy</a> is located a stone’s throw from Vidy beach. Set in a wooded park, the spot offers a superb view over Lake Geneva and the Alps. Designed by Zurich architect Max Bill as the “Educate and Create” pavilion for the Swiss National Exhibition held in 1964 and using new building methods with metal structures, the Théâtre de Vidy should have been dismantled after the six months of the exhibition. Luckily, Charles Apothéloz, who was then co-director of the Municipal Theatre, succeeded in convincing the City of Lausanne to buy the building in order to use it as a research and rehearsal hall extending the Municipal Theatre. Besides, Charles Apothéloz produced <em>The Chinese Wall</em> by Max Frisch there in 1967 and took the play on tour to the Montreal Universal Exhibition to represent Switzerland with its North American premiere. The theatre became independent in 1972 under the name Théâtre de Vidy and is home to the Western Switzerland Drama Centre (Centre Dramatique Romand). As the years went by, the number of auditoriums increased to three permanent auditoriums and one tent. Inaugurated in 2017, a new performance hall, the “Pavillon en bois” (“wooden pavilion”), designed by EPFL’s IBOIS lab under the leadership of Yves Weinand, replaced the tent. Its folded plate structure was calculated to obtain an even distribution of forces across the different wood panels. The walls and eleven roof arches were assembled without a single metallic element."
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "paragraph",
+            "value": "Enriched with the city’s vibrancy, Lausanne’s performance venues are constantly reinventing themselves, weaving together their history with new creations. It’s up to you to discover them!"
           }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Le Capitole</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">The Capitole</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Capitole</a>",
-            "it": "",
-            "es": ""
+        ],
+        "de": [
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/opernhaus-in-lausanne/\">Oper Lausanne</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25930,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "3285d37523e5a411",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3285d37523e5a411.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1860-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26014,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "6a2054722bbc1f39",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "6a2054722bbc1f39.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1857-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26100,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "7fdc7c11004b2b7d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7fdc7c11004b2b7d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1848-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Ursprünge des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/opernhaus-in-lausanne/\">Opernhauses von Lausanne</a> gehen auf das Casino-Theater zurück, das ab 1869 nach den Plänen von Jules-Louis Verry gebaut wurde. Der Saal mit rund 800 Plätzen wurde am 10. Mai 1871 mit einer Aufführung von Rossinis Barbier von Sevilla eingeweiht. Zu Beginn des 20. Jahrhunderts begann man mit der Planung, die zu klein gewordene Oper mit ihren unbequemen und zu engen Plätzen abzureissen und durch einen Neubau zu ersetzen. Die Architekten De Rahm und Peloux gewannen den 1912 ausgeschriebenen Wettbewerb mit einer Fassade, die dem Palais Garnier in Paris ähnelte. Mit dem Ausbruch des Ersten Weltkriegs musste das Projekt jedoch aufgegeben werden. Schliesslich wurde das Casino-Theater 1931 nach den Plänen von Charles Thévenaz renoviert und vergrössert. Die Kapazität des Saals wurde auf 1101 Plätze erhöht, die Einrichtung von rotem Samt und Gold auf einen Art-déco-Stil mit rosa Farbtönen umgestellt und der Name in „Théâtre municipal“ (Stadttheater) geändert. 1959 bis 1969 war Charles Apothéloz dessen Co-Direktor, bevor er die Leitung des Theaters Vidy übernahm. Die nächste Namensänderung in „Opera de Lausanne“ erfolgte 1995, als Dominique Meyer die Leitung übernahm. Der 18 Meter hohe Bühnenkäfig und die Spiegelfassade sind das Ergebnis der letzten Renovierungsarbeiten, die zwischen 2007 und 2012 nach den Plänen von Devanthéry &amp; Lamunière durchgeführt wurden. Der Saal verfügt heute über 962 Plätze und empfängt jedes Jahr etwa 45 000 Zuschauerinnen und Zuschauer."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Capitole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26167,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "442648dff0ecfc6c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1789,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1789\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "442648dff0ecfc6c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4067-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26232,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "43f767c70d713ce2",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1790,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1790\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "43f767c70d713ce2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4066-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26298,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "18645e68f3b9c4c4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18645e68f3b9c4c4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4045-Edit-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Das Kino Capitole</a>, das sich nur wenige Schritte von der Oper Lausanne entfernt befindet, wurde ebenfalls vom Lausanner Architekten Charles Thévenaz entworfen. Um sich dem Gefälle der Avenue du Théâtre anzupassen, wurde das Gebäude nicht in die Höhe, sondern eher in die Breite gebaut. Deshalb weist es eine viel niedrigere Fassade auf, als man es von einem klassischen Kino erwarten würde. Das älteste Kino in Lausanne wurde am 29. Dezember 1928 eröffnet und bot damals 1077 Plätze, 802 im Parkett und 275 auf der Galerie. Bis 1942 umfasste der Saal auch eine Kinoorgel und einen Orchestergraben und diente als Veranstaltungsort für Konzerte, Shows und Konferenzen. Unter anderem trat Jean-Paul Sartre im Capitole auf. In den 1950er-Jahren wurde hier die erste Panoramaleinwand der Schweiz installiert. Heute verfügt der Kinosaal über 876 Sitzplätze und ist damit das grösste Kino der Schweiz. 2010 wurde das Gebäude von der Stadt Lausanne erworben. Seither wird es von der Cinémathèque Suisse genutzt. Nach einer Renovierung im Jahr 2020 wurde es im Februar 2024 in einem völlig neuen Zustand wiedereröffnet."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-metropole-saal-in-lausanne/\">Salle Métropole</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26346,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "87e9068956aca948",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87e9068956aca948.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2844-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26391,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "5ce0283d9fbcb283",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5ce0283d9fbcb283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1687-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26426,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "93d491f94bfe21ba",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "93d491f94bfe21ba.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1655-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-metropole-saal-in-lausanne/\">Der Salle Métropole</a> befindet sich im Bel-Air-Turm, dem ersten Hochhaus der Schweiz, das von Alphonse Laverrière realisiert und 1932 fertiggestellt wurde. Das Gebäude mit seinem 15-stöckigen Turm wurde bereits bei der Planung für Büros, Wohnungen (mit den damals modernsten Technologien wie Elektrizität, Kühlschrank, Dusche und Telefon), ein Restaurant und einen Veranstaltungssaal vorgesehen. Alphonse Laverrière entwarf auch verschiedene dekorative Elemente für den Saal, wie die Türgriffe aus Messing und den riesigen, mehrstufigen Kronleuchter, der sich noch heute dort befindet. In den 1930er-Jahren traten Josephine Baker und Louis Armstrong im Salle Métropole auf. Zwischen 1950 und 1988 diente er als Kinosaal. 1992 wurde der Salle Métropole für Veranstaltungen wiedereröffnet. Heute ist das Kammerorchester Lausanne darin untergebracht. Im Saal finden übrigens verschiedenartige Anlässe statt, die von Konzerten über Theaterstücke, Tanz und Gesang bis hin zu Comedyshows reichen. Nach mehrmaliger Renovierung finden heute im Salle Metropole 500 bis 2000 Personen Platz."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/theatre-arsenic/\">Arsenic</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26461,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c2c8360a32583475",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c2c8360a32583475.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2860-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26482,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "4216a160ca2749a1",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4216a160ca2749a1.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2864-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26495,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "65e9ed4bc431dcbc",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65e9ed4bc431dcbc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2900-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Gebäude, in dem heute <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/theatre-arsenic/\">das Theater Arsenic</a> untergebracht ist, wurde 1955 von den Architekten Brugger, Perrelet, Stalé und Quillet für die mechanischen Werkstätten der Berufsschule EPSIC entworfen. Das Theater Arsenic, das sich auf zeitgenössisches Bühnenschaffen spezialisiert hat, zog 1989 in das Gebäude ein und teilte es sich mit der Westschweizer Schule für Kunst und Kommunikation ERACOM und dem Waadtländer Zentrum für industrielle Berufsbildung CFVI, die die oberen Stockwerke der Gebäudeflügel nutzten. Damals gab es in Lausanne lediglich das Stadttheater und das Theater Vidy. Das Theater Arsenic bot einen Platz für regionale Künstlerinnen und Künstler, um sich ausserhalb dieser beiden Institutionen zu entwickeln. Zwischen 2011 und 2013 wurde das Gebäude vom Architekturbüro Pont12 vollständig renoviert, wobei unter anderem das Dach angehoben und die Wärmedämmung auf den neuesten Stand gebracht wurde. Nach den Renovierungsarbeiten und ohne Mitbewohner verfügt das Theater Arsenic nun über sieben Säle sowie ein grosses Café und eine Küche. Das Gebäude ist rundum mit einem Schleier aus perforiertem, gewelltem Aluminiumblech eingekleidet."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">Theater Vidy</a>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26509,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "77beabc3ad35ac5d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1784,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1784\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "77beabc3ad35ac5d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4860-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26520,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "b110191453d7b97d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b110191453d7b97d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4857-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26532,
+              "name": "Les plus belles salles de spectacle de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "097daa0e9634eb4f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "097daa0e9634eb4f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1740-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wie es der Name schon sagt, befindet sich <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">das Theater Vidy</a> nur wenige Schritte vom Strand von Vidy entfernt. Es liegt in einem Park mit vielen Bäumen und bietet einen herrlichen Blick auf den Genfersee und die Alpen. Das vom Zürcher Architekten Max Bill für den Pavillon „Éduquer et Créer“ der Schweizerischen Landesausstellung 1964 und unter Verwendung neuer Baumethoden mit Metallstrukturen entworfene Theater Vidy hätte am Ende der sechsmonatigen Ausstellungsdauer abgerissen werden sollen. Glücklicherweise gelang es Charles Apothéloz, dem damaligen Co-Direktor des Stadttheaters, die Stadt Lausanne davon zu überzeugen, das Gebäude zu erwerben, um es als Erweiterung des Stadttheaters für Forschung und Proben zu nutzen. Charles Apothéloz führte übrigens 1967 <em>Die Chinesische Mauer</em> von Max Frisch auf und reiste damit bis zur Weltausstellung in Montreal, wo das Theaterstück die Schweiz vertrat und als nordamerikanische Premiere aufgeführt wurde. Im Jahr 1972 wurde das Theater unter dem Namen „Théâtre de Vidy“ unabhängig und vom Centre Dramatique Romand genutzt. Im Laufe der Jahre stieg die Anzahl der Säle auf drei permanente Säle und ein Zelt. Ein neuer Saal in der Form eines Holzpavillons, der vom Labor IBOIS der EPFL unter der Leitung von Yves Weinand realisiert wurde, ersetzte 2017 das Zelt. Seine Faltenstruktur wurde so berechnet, dass die Kräfte gleichmässig auf die einzelnen Holzplatten verteilt sind. Die Wände und die elf Bögen des Daches wurden ohne Metallteile zusammengefügt."
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Veranstaltungssäle in Lausanne widerspiegeln die hohe Dynamik der Stadt und erneuern sich ständig, indem sie ihre Geschichte mit neuem kulturellem Schaffen verflechten. Erkundet sie selbst!"
           }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26167,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "442648dff0ecfc6c",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1789,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1789\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "442648dff0ecfc6c.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4067-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26232,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "43f767c70d713ce2",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1790,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1790\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "43f767c70d713ce2.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4066-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26298,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "18645e68f3b9c4c4",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "18645e68f3b9c4c4.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4045-Edit-Edit-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "À quelques pas de l’Opéra de Lausanne, le cinéma <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Le Capitole</a> a aussi été conçu par l’architecte lausannois Charles Thévenaz. Pour s’adapter à la pente de l’avenue du Théâtre, Le Capitole n’est pas construit en hauteur mais plutôt en largeur et possède donc une façade beaucoup moins haute que ce qu’on s’attend d’une salle de cinéma classique. Le plus ancien cinéma de Lausanne ouvre ses portes le 29 décembre 1928 et compte alors 1077 places, 802 au parterre et 275 sur la galerie. Jusqu’en 1942, la salle comporte un orgue de cinéma et une fosse d’orchestre et accueille des concerts, spectacles et conférences. Jean-Paul Sartre s’est produit entre autres au Capitole. Dans les années 1950, le premier écran panoramique de Suisse y est installé. La salle compte aujourd’hui 876 places, ce qui en fait le plus grand cinéma de Suisse. En 2010, le bâtiment a été racheté par la ville de Lausanne et est utilisé par la Cinémathèque Suisse. Rénové dès 2020, c’est flambant neuf qu’il a rouvert ses portes en février 2024.",
-            "en": "A stone’s throw from the Opéra de Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">the Capitole Cinema</a> was also designed by Lausanne architect Charles Thévenaz. To adapt the building to the Avenue du Théâtre’s slope, the Capitole isn’t built upwards but sidewards, so that its façade isn’t as high as you’d expect for a traditional movie theatre. Lausanne’s oldest cinema opened on December 29, 1928, and offered seating for 1,077 people (802 in the parterre and 275 on the gallery). Until 1942, the venue possessed a cinema organ and an orchestra pit, and hosted concerts, shows and conferences. Jean-Paul Sartre performed at the Capitole, among other places. In the 1950s, the first panoramic screen in Switzerland was installed there. The venue now seats 876, which makes it the largest cinema in the country. In 2010, the building was bought by the City of Lausanne and is used by the Swiss Film Archives. Renovated in 2020, it reopened its doors in February 2024 in a brand new state.",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Das Kino Capitole</a>, das sich nur wenige Schritte von der Oper Lausanne entfernt befindet, wurde ebenfalls vom Lausanner Architekten Charles Thévenaz entworfen. Um sich dem Gefälle der Avenue du Théâtre anzupassen, wurde das Gebäude nicht in die Höhe, sondern eher in die Breite gebaut. Deshalb weist es eine viel niedrigere Fassade auf, als man es von einem klassischen Kino erwarten würde. Das älteste Kino in Lausanne wurde am 29. Dezember 1928 eröffnet und bot damals 1077 Plätze, 802 im Parkett und 275 auf der Galerie. Bis 1942 umfasste der Saal auch eine Kinoorgel und einen Orchestergraben und diente als Veranstaltungsort für Konzerte, Shows und Konferenzen. Unter anderem trat Jean-Paul Sartre im Capitole auf. In den 1950er-Jahren wurde hier die erste Panoramaleinwand der Schweiz installiert. Heute verfügt der Kinosaal über 876 Sitzplätze und ist damit das grösste Kino der Schweiz. 2010 wurde das Gebäude von der Stadt Lausanne erworben. Seither wird es von der Cinémathèque Suisse genutzt. Nach einer Renovierung im Jahr 2020 wurde es im Februar 2024 in einem völlig neuen Zustand wiedereröffnet.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-salle-metropole-de-lausanne/\">La Salle Métropole</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/metropole-performance-hall-in-lausanne/\">The Salle Métropole</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-metropole-saal-in-lausanne/\">Salle Métropole</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26346,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "87e9068956aca948",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 2048,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"2048\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "87e9068956aca948.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2844-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26391,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "5ce0283d9fbcb283",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "5ce0283d9fbcb283.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1687-Edit-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26426,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "93d491f94bfe21ba",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "93d491f94bfe21ba.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1655-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-salle-metropole-de-lausanne/\">Salle Métropole</a> est située à l’intérieur de la Tour Bel-Air, premier gratte-ciel de Suisse, construit par Alphonse Laverrière et achevée en 1932. Le bâtiment et sa tour de 15 étages sont prévus dès la conception pour recevoir des bureaux, des logements (équipés des technologies les plus modernes de l’époque comme électricité, réfrigérateurs, douches et téléphone), un restaurant et la salle de spectacle. Alphonse Laverrière a également conçu plusieurs éléments décoratifs de la salle de spectacle comme les poignées de porte en laiton ainsi que le monumental lustre sur plusieurs étages qui s’y trouve toujours aujourd’hui. Joséphine Baker et Louis Armstrong se sont produits dans les années 30 dans la Salle Métropole qui a servi de salle de cinéma entre les années 1950 et 1988. Elle a été ouverte à nouveau en 1992 en tant que salle de spectacle et est maintenant la résidence de l’Orchestre de Chambre de Lausanne. Sa salle accueille d’ailleurs des spectacles variés allant des concerts à l’humour en passant par des pièces de théâtre, de la danse et du chant. Plusieurs rénovations ont eu lieu depuis et la salle Métropole peut désormais accueillir entre 500 et 2000 personnes.",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/metropole-performance-hall-in-lausanne/\">The Salle Métropole</a> is located inside the Bel-Air Tower, Switzerland’s first skyscraper that was built by Alphonse Laverrière and finished in 1932. The building and its 15-floor tower were designed from the start to house offices, flats (equipped with the most modern technologies of the time, such as electricity, fridges, showers and phones), a restaurant and a performance venue. Alphonse Laverrière also designed various decorative elements in the performance venue, such as the brass door handles and the monumental chandelier that extends over several floors and is still in place today. Josephine Baker and Louis Armstrong performed in the 1930s in that venue, that was used as a cinema between 1950 and 1988. It was reopened as a performance hall in 1992 and is now home to the Lausanne Chamber Orchestra. Besides, the venue welcomes various shows, from concerts, theatre plays, dancing and singing to comedy. The Salle Métropole has been renovated several times and now seats between 500 and 2,000 people.",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-metropole-saal-in-lausanne/\">Der Salle Métropole</a> befindet sich im Bel-Air-Turm, dem ersten Hochhaus der Schweiz, das von Alphonse Laverrière realisiert und 1932 fertiggestellt wurde. Das Gebäude mit seinem 15-stöckigen Turm wurde bereits bei der Planung für Büros, Wohnungen (mit den damals modernsten Technologien wie Elektrizität, Kühlschrank, Dusche und Telefon), ein Restaurant und einen Veranstaltungssaal vorgesehen. Alphonse Laverrière entwarf auch verschiedene dekorative Elemente für den Saal, wie die Türgriffe aus Messing und den riesigen, mehrstufigen Kronleuchter, der sich noch heute dort befindet. In den 1930er-Jahren traten Josephine Baker und Louis Armstrong im Salle Métropole auf. Zwischen 1950 und 1988 diente er als Kinosaal. 1992 wurde der Salle Métropole für Veranstaltungen wiedereröffnet. Heute ist das Kammerorchester Lausanne darin untergebracht. Im Saal finden übrigens verschiedenartige Anlässe statt, die von Konzerten über Theaterstücke, Tanz und Gesang bis hin zu Comedyshows reichen. Nach mehrmaliger Renovierung finden heute im Salle Metropole 500 bis 2000 Personen Platz.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-arsenic/\">L’Arsenic</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-arsenic/\">The Arsenic</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/theatre-arsenic/\">Arsenic</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26461,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "c2c8360a32583475",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c2c8360a32583475.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2860-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26482,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "4216a160ca2749a1",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "4216a160ca2749a1.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2864-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26495,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "65e9ed4bc431dcbc",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "65e9ed4bc431dcbc.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_2900-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Le bâtiment occupé maintenant par <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-arsenic/\">l’Arsenic</a> a été conçu en 1955 par les architectes Brugger, Perrelet, Stalé et Quillet pour abriter les ateliers mécaniques de l’Ecole Professionnelle des Métiers de l’Industrie et de l’Artisanat (EPSIC). Le théâtre de l’Arsenic, qui se spécialise dans la création scénique contemporaine, s’y installe en 1989, en partage avec l’Ecole romande d’arts et communication et le Centre de formation vaudois de l’industrie qui utilisent les niveaux supérieurs des ailes du bâtiment. À cette époque, seulement le Théâtre municipal et le Théâtre de Vidy existaient à Lausanne et l’Arsenic offrait donc une place aux artistes de la scène régionale qui devraient évoluer à l’extérieur de ces deux institutions. Le bâtiment a été entièrement rénové, notamment en surélevant la toiture et en mettant l’isolation à jour, entre 2011 et 2013 par Pont12 architectes. Après ces rénovations, et sans colocataires, l’Arsenic compte maintenant sept salles, ainsi qu’un grand café et une cuisine. Un voile d’une tôle d’aluminium perforée et ondulée habille le bâtiment sur tout son périmètre.",
-            "en": "The building now occupied by <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-arsenic/\">the Arsenic</a> was designed in 1955 by architects Brugger, Perrelet, Stalé and Quillet to house the mechanical workshops of the Vocational School for Industry and Crafts Professions (Ecole Professionnelle des Métiers de l’Industrie et de l’Artisanat, or EPSIC). The Arsenic Theatre, which specialises in contemporary dramatic creation, moved there in 1989, sharing the premises with the Western Switzerland School of Arts and Communication (Ecole romande d’arts et communication) and the Vaud Industry Training Centre (Centre de formation vaudois de l’industrie) that used the upper floors of the building’s wings. At the time, only the Municipal Theatre and the Vidy Theatre existed in Lausanne, so the Arsenic provided a platform for local artists who had to evolve outside these two institutions. The building was entirely renovated between 2011 and 2013 by Pont12 Architectes, notably raising the roof and improving the insulation. Today, after these refurbishments, the Arsenic no longer shares the premises and comprises seven rooms, as well as a large café and a kitchen. A veil of perforated, grooved aluminium clads the building’s whole exterior.",
-            "de": "Das Gebäude, in dem heute <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/theatre-arsenic/\">das Theater Arsenic</a> untergebracht ist, wurde 1955 von den Architekten Brugger, Perrelet, Stalé und Quillet für die mechanischen Werkstätten der Berufsschule EPSIC entworfen. Das Theater Arsenic, das sich auf zeitgenössisches Bühnenschaffen spezialisiert hat, zog 1989 in das Gebäude ein und teilte es sich mit der Westschweizer Schule für Kunst und Kommunikation ERACOM und dem Waadtländer Zentrum für industrielle Berufsbildung CFVI, die die oberen Stockwerke der Gebäudeflügel nutzten. Damals gab es in Lausanne lediglich das Stadttheater und das Theater Vidy. Das Theater Arsenic bot einen Platz für regionale Künstlerinnen und Künstler, um sich ausserhalb dieser beiden Institutionen zu entwickeln. Zwischen 2011 und 2013 wurde das Gebäude vom Architekturbüro Pont12 vollständig renoviert, wobei unter anderem das Dach angehoben und die Wärmedämmung auf den neuesten Stand gebracht wurde. Nach den Renovierungsarbeiten und ohne Mitbewohner verfügt das Theater Arsenic nun über sieben Säle sowie ein grosses Café und eine Küche. Das Gebäude ist rundum mit einem Schleier aus perforiertem, gewelltem Aluminiumblech eingekleidet.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Le Théâtre de Vidy</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Théâtre de Vidy</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">Theater Vidy</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26509,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "77beabc3ad35ac5d",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1784,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1784\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "77beabc3ad35ac5d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4860-Edit-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26520,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "b110191453d7b97d",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "b110191453d7b97d.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSCF4857-Edit-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26532,
-            "name": "Les plus belles salles de spectacle de Lausanne",
-            "public_name": {
-              "fr": "Les plus belles salles de spectacle de Lausanne"
-            },
-            "cloudinary_id": "097daa0e9634eb4f",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "097daa0e9634eb4f.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/01/DSC_1740-scaled.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Tel que son nom l’indique, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Théâtre de Vidy</a> est situé à quelques pas de la plage de Vidy. Situé dans un parc boisé, l’endroit offre une superbe vue sur le Léman et les Alpes. Conçu par l’architecte zurichois Max Bill pour le pavillon “Éduquer et créer” de l’Exposition nationale suisse de 1964, et en utilisant des méthodes de construction nouvelles avec des structures métalliques, le Théâtre de Vidy devait être démantelé à la fin des six mois d’exposition. Heureusement, Charles Apothéloz, alors co-directeur du Théâtre municipal, réussit à convaincre la Ville de Lausanne de racheter le bâtiment, afin de l’utiliser comme extension du Théâtre municipal en tant que salle de recherche et de répétition. Charles Apothéloz monte d’ailleurs en 1967 <em>La Muraille de Chine</em> de Max Frisch et la fait voyager jusqu’à l’exposition universelle de Montréal, où elle représente la Suisse avec la première nord-américaine de la pièce. La salle devient indépendante en 1972 sous le nom de Théâtre de Vidy et est à l’usage du Centre Dramatique Romand. Au fil des années, le nombre de salles sur place augmente à trois salles permanentes et un chapiteau. Inaugurée en 2017, une nouvelle salle de spectacle, ‘’le Pavillon en bois”, conçue par le laboratoire IBOIS de l’EPFL sous la direction d’Yves Weinand remplace le chapiteau. Sa structure par plis a été calculée pour obtenir une répartition uniforme des forces entre les différents panneaux de bois. Ses murs et les onze arches du toit ont été assemblés sans aucun élément métallique.",
-            "en": "As its name suggests, <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">the Théâtre de Vidy</a> is located a stone’s throw from Vidy beach. Set in a wooded park, the spot offers a superb view over Lake Geneva and the Alps. Designed by Zurich architect Max Bill as the “Educate and Create” pavilion for the Swiss National Exhibition held in 1964 and using new building methods with metal structures, the Théâtre de Vidy should have been dismantled after the six months of the exhibition. Luckily, Charles Apothéloz, who was then co-director of the Municipal Theatre, succeeded in convincing the City of Lausanne to buy the building in order to use it as a research and rehearsal hall extending the Municipal Theatre. Besides, Charles Apothéloz produced <em>The Chinese Wall</em> by Max Frisch there in 1967 and took the play on tour to the Montreal Universal Exhibition to represent Switzerland with its North American premiere. The theatre became independent in 1972 under the name Théâtre de Vidy and is home to the Western Switzerland Drama Centre (Centre Dramatique Romand). As the years went by, the number of auditoriums increased to three permanent auditoriums and one tent. Inaugurated in 2017, a new performance hall, the “Pavillon en bois” (“wooden pavilion”), designed by EPFL’s IBOIS lab under the leadership of Yves Weinand, replaced the tent. Its folded plate structure was calculated to obtain an even distribution of forces across the different wood panels. The walls and eleven roof arches were assembled without a single metallic element.",
-            "de": "Wie es der Name schon sagt, befindet sich <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">das Theater Vidy</a> nur wenige Schritte vom Strand von Vidy entfernt. Es liegt in einem Park mit vielen Bäumen und bietet einen herrlichen Blick auf den Genfersee und die Alpen. Das vom Zürcher Architekten Max Bill für den Pavillon „Éduquer et Créer“ der Schweizerischen Landesausstellung 1964 und unter Verwendung neuer Baumethoden mit Metallstrukturen entworfene Theater Vidy hätte am Ende der sechsmonatigen Ausstellungsdauer abgerissen werden sollen. Glücklicherweise gelang es Charles Apothéloz, dem damaligen Co-Direktor des Stadttheaters, die Stadt Lausanne davon zu überzeugen, das Gebäude zu erwerben, um es als Erweiterung des Stadttheaters für Forschung und Proben zu nutzen. Charles Apothéloz führte übrigens 1967 <em>Die Chinesische Mauer</em> von Max Frisch auf und reiste damit bis zur Weltausstellung in Montreal, wo das Theaterstück die Schweiz vertrat und als nordamerikanische Premiere aufgeführt wurde. Im Jahr 1972 wurde das Theater unter dem Namen „Théâtre de Vidy“ unabhängig und vom Centre Dramatique Romand genutzt. Im Laufe der Jahre stieg die Anzahl der Säle auf drei permanente Säle und ein Zelt. Ein neuer Saal in der Form eines Holzpavillons, der vom Labor IBOIS der EPFL unter der Leitung von Yves Weinand realisiert wurde, ersetzte 2017 das Zelt. Seine Faltenstruktur wurde so berechnet, dass die Kräfte gleichmässig auf die einzelnen Holzplatten verteilt sind. Die Wände und die elf Bögen des Daches wurden ohne Metallteile zusammengefügt.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": " ",
-            "en": " ",
-            "de": " ",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Riches du dynamisme de la ville, les salles de spectacle lausannoises ne cessent de se renouveler, mariant leur histoire à leurs nouvelles créations. A vous de les découvrir !",
-            "en": "Enriched with the city’s vibrancy, Lausanne’s performance venues are constantly reinventing themselves, weaving together their history with new creations. It’s up to you to discover them!",
-            "de": "Die Veranstaltungssäle in Lausanne widerspiegeln die hohe Dynamik der Stadt und erneuern sich ständig, indem sie ihre Geschichte mit neuem kulturellem Schaffen verflechten. Erkundet sie selbst!",
-            "it": "",
-            "es": ""
-          }
-        }
-      ],
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "3285d37523e5a411",

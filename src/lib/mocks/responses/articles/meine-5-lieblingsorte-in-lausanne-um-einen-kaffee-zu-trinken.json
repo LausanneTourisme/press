@@ -18,466 +18,14 @@
         "en": "On waking, after a meal or just to meet up with friends, nothing could be better than a (really) good cup of coffee. In Lausanne, several excellent addresses serve proper coffee. Here’s my selection of favourite places to spend good times with friends while savouring this fabulous nectar that holds so many secrets.",
         "de": "Nichts geht über einen echten, guten Kaffee nach dem Aufstehen, nach dem Essen oder einfach nur, wenn man zusammen etwas trinken geht. In Lausanne gibt es mehrere ausgezeichnete Orte, an denen Kaffee nach allen Regeln der Kunst zubereitet und serviert wird. Hier stelle ich euch meine Lieblingsorte vor, um einen guten Moment unter Freunden zu verbringen und dabei diesen fantastischen Trank mit seinen vielen Geheimnissen zu geniessen."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 25921,
-            "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-            "public_name": {
-              "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-            },
-            "cloudinary_id": "edb83152f12b78db",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1200,
-              "height": 800,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1200\" height=\"800\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "edb83152f12b78db.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
-            }
-          },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Un petit coin reposant et chaleureux aux inspirations scandinaves qui est situé dans une magnifique cour en plein cœur de la ville. C’est ici que vous pourrez déguster de très bons cafés et de délicieuses pâtisseries/viennoiseries. Un endroit minimaliste mais très convivial que j’apprécie tout particulièrement et un accueil au petit soin avec de très bons conseils pour une expérience au top ! On sent que tout est fait avec passion, je ne peux que recommander.",
-            "en": "A small, restful and warm café with Scandinavian inspiration that is located in a magnificent courtyard in the heart of town. This is where you can savour excellent cups of coffee and delicious pastries/viennoiseries. A minimalist, yet very friendly place that I particularly appreciate and a very attentive welcome with great advice for the best experience! You feel there that everything is prepared with passion and I heartily recommend it.",
-            "de": "Dieses kleine, gemütliche Café mit skandinavischem Ambiente liegt in einem wunderschönen Innenhof im Herzen der Stadt und lädt zur Ruhe ein. Hier könnt ihr sehr guten Kaffee und köstliches Gebäck geniessen. Ich schätze diesen minimalistischen, aber zugleich sehr geselligen Ort sehr, nicht zuletzt aber auch den herzlichen Empfang und die gute Beratung ‒ das kann nur gut kommen! Man spürt, dass hier alles mit viel Herz gemacht wird. Ich kann dieses Café nur empfehlen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26091,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "d6609c9453d8ec28",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "8089bd83e522dd15.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-29.jpg"
-              }
-            },
-            {
-              "id": 26158,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "b00c94df46ebbb75",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "8d98faf9332e9682.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-28.jpg"
-              }
-            },
-            {
-              "id": 26224,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "0a6e82df36b51ca9",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "98064679fcf99080.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-30.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26292,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "bc06e7967ba7cffe",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "d2550f65d145e7f4.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-34.jpg"
-              }
-            },
-            {
-              "id": 26340,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "3a0745d36b129101",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "a8bc6fd7d018db81.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-36.jpg"
-              }
-            },
-            {
-              "id": 26386,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "2a7ecaeeeddd56f3",
-              "mime_type": "image/jpeg",
-              "copyright": "© Bel-Air Coffee",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "22f779f46c6bcb45.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-37.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/madeleine/\">Madeleine – Café, Livres &amp; Co</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/madeleine/\">Madeleine – Café, Livres &amp; Co</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/madeleine/\">Madeleine – Café, Livres &amp; Co</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Un très bel endroit, tout récent, situé en plein cœur de la ville où l’on est accueilli avec un grand sourire. Le lieu parfait où on resterait bien toute la journée à bouquiner et à boire toute la carte ! La décoration est très soignée et j’adore l’ambiance qui s’y dégage. Je trouve également hyper sympa d’avoir une librairie au même endroit. Un petit plus pour ce qu’ils appellent un “café suspendu” un concept qui permet aux personnes dans le besoin d’obtenir une boisson gratuite. Le but est très simple : un pour moi, un offert plus loin ! Un geste de solidarité que j’ai grandement apprécié.",
-            "en": "A beautiful café, very recent, located in the heart of the city and where you are welcomed with a large smile. The perfect place where you could stay all day reading and sampling everything on the drinks menu! The décor is very thoughtfully done and I love the atmosphere that emerges from it. I also love having a bookshop in the same space. I’ll give an extra point for what they call a “suspended coffee”, a concept that enables people in need to get a free drink. The idea is simple: one for me and one gifted down the line! A gesture of solidarity I appreciated a lot.",
-            "de": "In diesem sehr schönen, brandneuen Lokal im Stadtzentrum wird man mit einem grossen Lächeln empfangen. Das Madeleine ist der perfekte Ort, wo man am liebsten den ganzen Tag verweilen würde, um zu schmökern und sich durch die ganze Karte zu trinken! Die Einrichtung ist sehr gepflegt und ich liebe die Atmosphäre, die hier herrscht. Ich finde es auch supersympathisch, eine Buchhandlung am selben Ort zu haben. Und der Punkt auf dem i ist das, was sie den „Café suspendu“, den ausgesetzten Kaffee nennen, um bedürftigen Menschen ein kostenloses Getränk zu offerieren. Das Konzept ist ganz einfach: ein Getränk für mich, ein weiteres verschenkt! Diese Geste der Solidarität schätze ich sehr.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26422,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "1b4e0ab10fbd2431",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "2d9f2a5550e3185c.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-40.jpg"
-              }
-            },
-            {
-              "id": 26456,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "e22a481d10782f94",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "6e6227b066702e41.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-41.jpg"
-              }
-            },
-            {
-              "id": 26480,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "d7e450ea030293db",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "b88a053c97cea233.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-43.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26494,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "d5c05e8daed2d8db",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "242125c34e0ad755.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-49.jpg"
-              }
-            },
-            {
-              "id": 26507,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "d48edee2a122fd33",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "dab9510c84cd15b3.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-46.jpg"
-              }
-            },
-            {
-              "id": 26519,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "35781af1219472c9",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "b2db5616011bad47.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-47.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26530,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "94360a2752f87d49",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "5dca962408fa2a4e.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-54.jpg"
-              }
-            },
-            {
-              "id": 26541,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "60624be4e9aaa3aa",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "1355473b30027d24.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-53.jpg"
-              }
-            },
-            {
-              "id": 26548,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "2d65bc120c5ab98d",
-              "mime_type": "image/jpeg",
-              "copyright": "© Madeleine",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "28871e5b0b40a78e.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-52.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ca-passe-creme/\">Ça Passe Crème</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/ca-passe-creme/\">Ça Passe Crème</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ca-passe-creme/\">Ça Passe Crème</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Comment ne pas parler de ce lieu emblématique à deux pas de la gare. Une fois rentré dans l’établissement, vous êtes accueilli par Steeve et Davide qui partagent leur passion avec enthousiasme. Les boissons sont excellentes et sont accompagnées d’une petite carte avec la provenance du café ainsi qu’un petit texte explicatif. J’adore ! Jolie décoration et cadre chaleureux, bref tout pour s’y plaire!",
-            "en": "How could I not talk about this iconic place a stone’s throw from the train station? Once through the door, you’re welcomed by Steeve and Davide who enthusiastically share their passion. The drinks are delicious and served with a little card indicating the provenance of the coffee as well as a brief description. I love it! Pretty décor and warm setting; in short, everything to have a pleasant time!",
-            "de": "Natürlich gehört auch dieser legendäre Ort, der nur ein Steinwurf vom Bahnhof entfernt ist, zu meinen Favoriten. Beim Eintritt ins Lokal werdet ihr von Steeve und Davide begrüsst, die ihre Leidenschaft mit Begeisterung leben. Bei jedem der ausgezeichneten Getränke liegt ein Kärtchen mit der Herkunft des Kaffees und einem kurzen erklärenden Text bei. Ich liebe es einfach! Eine schöne Dekoration und ein gemütlicher Rahmen runden diesen Wohlfühlort ab!",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26555,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "ff94d91f314325f5",
-              "mime_type": "image/jpeg",
-              "copyright": "© Ca passe crème",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "b603ae8b40e04a71.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-4.jpg"
-              }
-            },
-            {
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
               "id": 25921,
               "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
+              "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
               "cloudinary_id": "edb83152f12b78db",
               "mime_type": "image/jpeg",
               "copyright": "© ",
@@ -493,548 +41,2616 @@
                 "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
               }
             },
-            {
-              "id": 26565,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Un petit coin reposant et chaleureux aux inspirations scandinaves qui est situé dans une magnifique cour en plein cœur de la ville. C’est ici que vous pourrez déguster de très bons cafés et de délicieuses pâtisseries/viennoiseries. Un endroit minimaliste mais très convivial que j’apprécie tout particulièrement et un accueil au petit soin avec de très bons conseils pour une expérience au top ! On sent que tout est fait avec passion, je ne peux que recommander."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26091,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "d6609c9453d8ec28",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8089bd83e522dd15.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-29.jpg"
+                }
               },
-              "cloudinary_id": "3d7ff52156424c21",
-              "mime_type": "image/jpeg",
-              "copyright": "© Ca passe crème",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "986a0c371672b0d9.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-3.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26570,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26158,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "b00c94df46ebbb75",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8d98faf9332e9682.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-28.jpg"
+                }
               },
-              "cloudinary_id": "436fdef4f59fcf68",
-              "mime_type": "image/jpeg",
-              "copyright": "© Ca passe crème",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "e6feb607a90e808c.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-9.jpg"
+              {
+                "id": 26224,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "0a6e82df36b51ca9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "98064679fcf99080.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-30.jpg"
+                }
               }
-            },
-            {
-              "id": 26574,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26292,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "bc06e7967ba7cffe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d2550f65d145e7f4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-34.jpg"
+                }
               },
-              "cloudinary_id": "a3b5ed3e73e3712c",
-              "mime_type": "image/jpeg",
-              "copyright": "© Ca passe crème",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "5a0c17daab84185d.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-6.jpg"
-              }
-            },
-            {
-              "id": 26578,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26340,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "3a0745d36b129101",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a8bc6fd7d018db81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-36.jpg"
+                }
               },
-              "cloudinary_id": "9c9571ca62c5b2ae",
-              "mime_type": "image/jpeg",
-              "copyright": "© Ca passe crème",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "5170482d778ec680.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-1.jpg"
+              {
+                "id": 26386,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "2a7ecaeeeddd56f3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "22f779f46c6bcb45.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-37.jpg"
+                }
               }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sleepy-bear/\">Sleepy Bear</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/sleepy-bear/\">Sleepy Bear</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sleepy-bear/\">Sleepy Bear</a>",
-            "it": "",
-            "es": ""
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/madeleine/\">Madeleine – Café, Livres &amp; Co</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Un très bel endroit, tout récent, situé en plein cœur de la ville où l’on est accueilli avec un grand sourire. Le lieu parfait où on resterait bien toute la journée à bouquiner et à boire toute la carte ! La décoration est très soignée et j’adore l’ambiance qui s’y dégage. Je trouve également hyper sympa d’avoir une librairie au même endroit. Un petit plus pour ce qu’ils appellent un “café suspendu” un concept qui permet aux personnes dans le besoin d’obtenir une boisson gratuite. Le but est très simple : un pour moi, un offert plus loin ! Un geste de solidarité que j’ai grandement apprécié."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26422,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "1b4e0ab10fbd2431",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2d9f2a5550e3185c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-40.jpg"
+                }
+              },
+              {
+                "id": 26456,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "e22a481d10782f94",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6e6227b066702e41.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-41.jpg"
+                }
+              },
+              {
+                "id": 26480,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "d7e450ea030293db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b88a053c97cea233.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-43.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26494,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "d5c05e8daed2d8db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "242125c34e0ad755.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-49.jpg"
+                }
+              },
+              {
+                "id": 26507,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "d48edee2a122fd33",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "dab9510c84cd15b3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-46.jpg"
+                }
+              },
+              {
+                "id": 26519,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "35781af1219472c9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b2db5616011bad47.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-47.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26530,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "94360a2752f87d49",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5dca962408fa2a4e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-54.jpg"
+                }
+              },
+              {
+                "id": 26541,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "60624be4e9aaa3aa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "1355473b30027d24.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-53.jpg"
+                }
+              },
+              {
+                "id": 26548,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "2d65bc120c5ab98d",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "28871e5b0b40a78e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-52.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ca-passe-creme/\">Ça Passe Crème</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Comment ne pas parler de ce lieu emblématique à deux pas de la gare. Une fois rentré dans l’établissement, vous êtes accueilli par Steeve et Davide qui partagent leur passion avec enthousiasme. Les boissons sont excellentes et sont accompagnées d’une petite carte avec la provenance du café ainsi qu’un petit texte explicatif. J’adore ! Jolie décoration et cadre chaleureux, bref tout pour s’y plaire!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26555,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "ff94d91f314325f5",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b603ae8b40e04a71.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-4.jpg"
+                }
+              },
+              {
+                "id": 25921,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "edb83152f12b78db",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb83152f12b78db.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
+                }
+              },
+              {
+                "id": 26565,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "3d7ff52156424c21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "986a0c371672b0d9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26570,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "436fdef4f59fcf68",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6feb607a90e808c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-9.jpg"
+                }
+              },
+              {
+                "id": 26574,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "a3b5ed3e73e3712c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5a0c17daab84185d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-6.jpg"
+                }
+              },
+              {
+                "id": 26578,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "9c9571ca62c5b2ae",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5170482d778ec680.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sleepy-bear/\">Sleepy Bear</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Un endroit cosy où bon café rime avec générosité. Accueilli par Diana, on se sent direct comme à la maison. Le café est très bon et j’ai adoré la spécialité glacée “Nitro Coffee”, une base de cold brew infusée en fût avec de l’azote. Même principe qu’une bière, excellent ! Les cookies sont faits maison à la minute et l’ambiance est relaxante. J’ai pu boire mon magnifique flat white avec un joli dessin d’ours très bien réalisé tout en parcourant un livre sur le latte art mis à disposition sur une étagère. Bon à savoir, ils ont lancé leur restaurant Hungry Bear juste à côté du Coffee Shop, une adresse que je vais m’empresser de tester !"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26581,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "3d6853347ebac57e",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "c7afe5464fe63f18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-13.jpg"
+                }
+              },
+              {
+                "id": 26584,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "98a51ebd321572d9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "07ffc3161f9c0464.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-16.jpg"
+                }
+              },
+              {
+                "id": 26586,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "08f44ad2df62dc21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b90c4b51cc3b4c06.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-24.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26590,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "5eecba1eea0f537b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b1d688256bf0c8a7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-26.jpg"
+                }
+              },
+              {
+                "id": 26593,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "efcba773f0d0a96b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "87f3b5a7c62093f3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-22.jpg"
+                }
+              },
+              {
+                "id": 26595,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "4267933c0382c737",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e638771e9ee3b2f5.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-21.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26597,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "14a9b0a67d9ca43c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "3197e5537ffdcacd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-20.jpg"
+                }
+              },
+              {
+                "id": 26599,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "6e90cc5a1ea5855b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6a1083a4c017b72.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-17.jpg"
+                }
+              },
+              {
+                "id": 26601,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "7c4567e17d755528",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2cb2623f432409ed.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-18.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/coffee-page/\">Coffee Page</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Une adresse à ne pas louper pour tous les amateurs de café de qualité ! Un superbe endroit logé dans une architecture des années 1920 et dans un cadre authentique avec de grandes baies vitrées, de la hauteur sous plafond. Une décoration très inspirante que j’adore avec une bibliothèque bien garnie ! Une présentation soignée, de bons produits. Bref, tout est fait pour se sentir comme chez soi et passer un agréable moment."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26603,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "385a1c8cae706d08",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-70",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2619debd4e85924d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-70.jpg"
+                }
+              },
+              {
+                "id": 26605,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "98339780eaec2ef5",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-56",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "69a7402a86d07bfc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-56.jpg"
+                }
+              },
+              {
+                "id": 26607,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "269ecfdddfe529e8",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-57",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e52d09dd8d1495e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-57.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26609,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "975ecea74fe2324f",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-58",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e0f7cac5f9a01b39.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-58.jpg"
+                }
+              },
+              {
+                "id": 26611,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "3e13b568da051c73",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-59",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4acdf2e21529e10b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-59.jpg"
+                }
+              },
+              {
+                "id": 26612,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "e396aa7d31f86523",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-60",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "171a44570e995967.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-60.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24734,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "9642158604259b87",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-69",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "11ace2b1ff2e8908.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-69.jpg"
+                }
+              },
+              {
+                "id": 24735,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "d8cf91e5075f021b",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-67",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb89d6b366a4a81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-67.jpg"
+                }
+              },
+              {
+                "id": 24736,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "cloudinary_id": "8c58d0a2d063e4e4",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-64",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "0e36e44d6dfdeb27.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-64.jpg"
+                }
+              }
+            ]
           }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Un endroit cosy où bon café rime avec générosité. Accueilli par Diana, on se sent direct comme à la maison. Le café est très bon et j’ai adoré la spécialité glacée “Nitro Coffee”, une base de cold brew infusée en fût avec de l’azote. Même principe qu’une bière, excellent ! Les cookies sont faits maison à la minute et l’ambiance est relaxante. J’ai pu boire mon magnifique flat white avec un joli dessin d’ours très bien réalisé tout en parcourant un livre sur le latte art mis à disposition sur une étagère. Bon à savoir, ils ont lancé leur restaurant Hungry Bear juste à côté du Coffee Shop, une adresse que je vais m’empresser de tester !",
-            "en": "A cosy place where good coffee is served with a nice dollop of generosity. Welcomed by Diana, we feel immediately like we’re at home. The coffee is delicious and I love the iced speciality “Nitro Coffee”, a cold-brew base infused in a barrel with nitrogen. Same principle as beer making, fantastic! The cookies are homemade fresh and the atmosphere is relaxing. I was able to drink my superb flat white with a pretty, very well done picture of a bear while leafing through a book on latte art available on a shelf. Good to know, they have launched their Hungry Bear restaurant next door from the Coffee Shop, an address that I’ll hasten to try!",
-            "de": "Ein gemütlicher Ort, wo der Kaffee ebenso gut wie grosszügig daherkommt. Wenn Diana einen begrüsst, fühlt man sich direkt wie zu Hause. Der Kaffee schmeckt hervorragend und ich liebe die eiskalte Spezialität „Nitro Coffee“, ein Cold-Brew-Getränk, das im Fass mit Stickstoff angereichert wird ‒ nach dem gleichen Prinzip wie ein Bier. Schlicht der Hammer! Die hausgemachten Cookies werden frisch zubereitet und die Atmosphäre ist entspannt. Da trinke ich meinen wunderschönen Flat White mit einer sehr gut gemachten Bärenzeichnung und blättere dabei ein Buch über Latte Art durch, das auf einem Regal für die Gäste bereitliegt. Gut zu wissen ist auch, dass sie gleich neben dem Coffee Shop ihr Restaurant eröffnet haben. Das muss ich sobald wie möglich ausprobieren!",
-            "it": "",
-            "es": ""
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 25921,
+              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+              "public_name": null,
+              "cloudinary_id": "edb83152f12b78db",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "edb83152f12b78db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A small, restful and warm café with Scandinavian inspiration that is located in a magnificent courtyard in the heart of town. This is where you can savour excellent cups of coffee and delicious pastries/viennoiseries. A minimalist, yet very friendly place that I particularly appreciate and a very attentive welcome with great advice for the best experience! You feel there that everything is prepared with passion and I heartily recommend it."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26091,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d6609c9453d8ec28",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8089bd83e522dd15.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-29.jpg"
+                }
+              },
+              {
+                "id": 26158,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "b00c94df46ebbb75",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8d98faf9332e9682.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-28.jpg"
+                }
+              },
+              {
+                "id": 26224,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "0a6e82df36b51ca9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "98064679fcf99080.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-30.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26292,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "bc06e7967ba7cffe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d2550f65d145e7f4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-34.jpg"
+                }
+              },
+              {
+                "id": 26340,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3a0745d36b129101",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a8bc6fd7d018db81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-36.jpg"
+                }
+              },
+              {
+                "id": 26386,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "2a7ecaeeeddd56f3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "22f779f46c6bcb45.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-37.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/madeleine/\">Madeleine – Café, Livres &amp; Co</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A beautiful café, very recent, located in the heart of the city and where you are welcomed with a large smile. The perfect place where you could stay all day reading and sampling everything on the drinks menu! The décor is very thoughtfully done and I love the atmosphere that emerges from it. I also love having a bookshop in the same space. I’ll give an extra point for what they call a “suspended coffee”, a concept that enables people in need to get a free drink. The idea is simple: one for me and one gifted down the line! A gesture of solidarity I appreciated a lot."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26422,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "1b4e0ab10fbd2431",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2d9f2a5550e3185c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-40.jpg"
+                }
+              },
+              {
+                "id": 26456,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "e22a481d10782f94",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6e6227b066702e41.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-41.jpg"
+                }
+              },
+              {
+                "id": 26480,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d7e450ea030293db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b88a053c97cea233.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-43.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26494,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d5c05e8daed2d8db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "242125c34e0ad755.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-49.jpg"
+                }
+              },
+              {
+                "id": 26507,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d48edee2a122fd33",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "dab9510c84cd15b3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-46.jpg"
+                }
+              },
+              {
+                "id": 26519,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "35781af1219472c9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b2db5616011bad47.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-47.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26530,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "94360a2752f87d49",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5dca962408fa2a4e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-54.jpg"
+                }
+              },
+              {
+                "id": 26541,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "60624be4e9aaa3aa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "1355473b30027d24.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-53.jpg"
+                }
+              },
+              {
+                "id": 26548,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "2d65bc120c5ab98d",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "28871e5b0b40a78e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-52.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/ca-passe-creme/\">Ça Passe Crème</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "How could I not talk about this iconic place a stone’s throw from the train station? Once through the door, you’re welcomed by Steeve and Davide who enthusiastically share their passion. The drinks are delicious and served with a little card indicating the provenance of the coffee as well as a brief description. I love it! Pretty décor and warm setting; in short, everything to have a pleasant time!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26555,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "ff94d91f314325f5",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b603ae8b40e04a71.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-4.jpg"
+                }
+              },
+              {
+                "id": 25921,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "edb83152f12b78db",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb83152f12b78db.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
+                }
+              },
+              {
+                "id": 26565,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3d7ff52156424c21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "986a0c371672b0d9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26570,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "436fdef4f59fcf68",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6feb607a90e808c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-9.jpg"
+                }
+              },
+              {
+                "id": 26574,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "a3b5ed3e73e3712c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5a0c17daab84185d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-6.jpg"
+                }
+              },
+              {
+                "id": 26578,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "9c9571ca62c5b2ae",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5170482d778ec680.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/sleepy-bear/\">Sleepy Bear</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A cosy place where good coffee is served with a nice dollop of generosity. Welcomed by Diana, we feel immediately like we’re at home. The coffee is delicious and I love the iced speciality “Nitro Coffee”, a cold-brew base infused in a barrel with nitrogen. Same principle as beer making, fantastic! The cookies are homemade fresh and the atmosphere is relaxing. I was able to drink my superb flat white with a pretty, very well done picture of a bear while leafing through a book on latte art available on a shelf. Good to know, they have launched their Hungry Bear restaurant next door from the Coffee Shop, an address that I’ll hasten to try!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26581,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3d6853347ebac57e",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "c7afe5464fe63f18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-13.jpg"
+                }
+              },
+              {
+                "id": 26584,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "98a51ebd321572d9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "07ffc3161f9c0464.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-16.jpg"
+                }
+              },
+              {
+                "id": 26586,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "08f44ad2df62dc21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b90c4b51cc3b4c06.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-24.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26590,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "5eecba1eea0f537b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b1d688256bf0c8a7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-26.jpg"
+                }
+              },
+              {
+                "id": 26593,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "efcba773f0d0a96b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "87f3b5a7c62093f3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-22.jpg"
+                }
+              },
+              {
+                "id": 26595,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "4267933c0382c737",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e638771e9ee3b2f5.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-21.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26597,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "14a9b0a67d9ca43c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "3197e5537ffdcacd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-20.jpg"
+                }
+              },
+              {
+                "id": 26599,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "6e90cc5a1ea5855b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6a1083a4c017b72.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-17.jpg"
+                }
+              },
+              {
+                "id": 26601,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "7c4567e17d755528",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2cb2623f432409ed.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-18.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/coffee-page/\">Coffee Page</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "An address not to be missed for all amateurs of quality coffee! A magnificent place located in a building with an architecture dating from the 1920s and in an authentic setting with large bay windows and high ceilings. A very inspiring décor that I love, with a well-stocked library! Particular care has been taken over the decoration and the products are good. In short, everything is designed so you feel at home and spend an enjoyable time."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26603,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "385a1c8cae706d08",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-70",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2619debd4e85924d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-70.jpg"
+                }
+              },
+              {
+                "id": 26605,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "98339780eaec2ef5",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-56",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "69a7402a86d07bfc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-56.jpg"
+                }
+              },
+              {
+                "id": 26607,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "269ecfdddfe529e8",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-57",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e52d09dd8d1495e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-57.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26609,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "975ecea74fe2324f",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-58",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e0f7cac5f9a01b39.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-58.jpg"
+                }
+              },
+              {
+                "id": 26611,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3e13b568da051c73",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-59",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4acdf2e21529e10b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-59.jpg"
+                }
+              },
+              {
+                "id": 26612,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "e396aa7d31f86523",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-60",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "171a44570e995967.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-60.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24734,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "9642158604259b87",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-69",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "11ace2b1ff2e8908.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-69.jpg"
+                }
+              },
+              {
+                "id": 24735,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d8cf91e5075f021b",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-67",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb89d6b366a4a81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-67.jpg"
+                }
+              },
+              {
+                "id": 24736,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "8c58d0a2d063e4e4",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-64",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "0e36e44d6dfdeb27.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-64.jpg"
+                }
+              }
+            ]
           }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26581,
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 25921,
               "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "3d6853347ebac57e",
+              "public_name": null,
+              "cloudinary_id": "edb83152f12b78db",
               "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
+              "copyright": "© ",
               "metadata": {
-                "width": 512,
-                "height": 768,
+                "width": 1200,
+                "height": 800,
                 "mimeType": "image/jpeg",
                 "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
+                "attr": "width=\"1200\" height=\"800\"",
                 "tags": null,
                 "description": null,
-                "file_name_from_url": "c7afe5464fe63f18.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-13.jpg"
+                "file_name_from_url": "edb83152f12b78db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
               }
             },
-            {
-              "id": 26584,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bel-air-coffee/\"><strong>Bel-Air Coffee</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieses kleine, gemütliche Café mit skandinavischem Ambiente liegt in einem wunderschönen Innenhof im Herzen der Stadt und lädt zur Ruhe ein. Hier könnt ihr sehr guten Kaffee und köstliches Gebäck geniessen. Ich schätze diesen minimalistischen, aber zugleich sehr geselligen Ort sehr, nicht zuletzt aber auch den herzlichen Empfang und die gute Beratung ‒ das kann nur gut kommen! Man spürt, dass hier alles mit viel Herz gemacht wird. Ich kann dieses Café nur empfehlen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26091,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d6609c9453d8ec28",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8089bd83e522dd15.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-29.jpg"
+                }
               },
-              "cloudinary_id": "98a51ebd321572d9",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "07ffc3161f9c0464.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-16.jpg"
-              }
-            },
-            {
-              "id": 26586,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26158,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "b00c94df46ebbb75",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8d98faf9332e9682.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-28.jpg"
+                }
               },
-              "cloudinary_id": "08f44ad2df62dc21",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "b90c4b51cc3b4c06.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-24.jpg"
+              {
+                "id": 26224,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "0a6e82df36b51ca9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "98064679fcf99080.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-30.jpg"
+                }
               }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26590,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26292,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "bc06e7967ba7cffe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d2550f65d145e7f4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-34.jpg"
+                }
               },
-              "cloudinary_id": "5eecba1eea0f537b",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "b1d688256bf0c8a7.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-26.jpg"
-              }
-            },
-            {
-              "id": 26593,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26340,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3a0745d36b129101",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a8bc6fd7d018db81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-36.jpg"
+                }
               },
-              "cloudinary_id": "efcba773f0d0a96b",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "87f3b5a7c62093f3.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-22.jpg"
+              {
+                "id": 26386,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "2a7ecaeeeddd56f3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Bel-Air Coffee",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "22f779f46c6bcb45.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-37.jpg"
+                }
               }
-            },
-            {
-              "id": 26595,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/madeleine/\">Madeleine – Café, Livres &amp; Co</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In diesem sehr schönen, brandneuen Lokal im Stadtzentrum wird man mit einem grossen Lächeln empfangen. Das Madeleine ist der perfekte Ort, wo man am liebsten den ganzen Tag verweilen würde, um zu schmökern und sich durch die ganze Karte zu trinken! Die Einrichtung ist sehr gepflegt und ich liebe die Atmosphäre, die hier herrscht. Ich finde es auch supersympathisch, eine Buchhandlung am selben Ort zu haben. Und der Punkt auf dem i ist das, was sie den „Café suspendu“, den ausgesetzten Kaffee nennen, um bedürftigen Menschen ein kostenloses Getränk zu offerieren. Das Konzept ist ganz einfach: ein Getränk für mich, ein weiteres verschenkt! Diese Geste der Solidarität schätze ich sehr."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26422,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "1b4e0ab10fbd2431",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2d9f2a5550e3185c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-40.jpg"
+                }
               },
-              "cloudinary_id": "4267933c0382c737",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "e638771e9ee3b2f5.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-21.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26597,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26456,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "e22a481d10782f94",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6e6227b066702e41.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-41.jpg"
+                }
               },
-              "cloudinary_id": "14a9b0a67d9ca43c",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "3197e5537ffdcacd.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-20.jpg"
+              {
+                "id": 26480,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d7e450ea030293db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b88a053c97cea233.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-43.jpg"
+                }
               }
-            },
-            {
-              "id": 26599,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26494,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d5c05e8daed2d8db",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "242125c34e0ad755.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-49.jpg"
+                }
               },
-              "cloudinary_id": "6e90cc5a1ea5855b",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "e6a1083a4c017b72.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-17.jpg"
-              }
-            },
-            {
-              "id": 26601,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
+              {
+                "id": 26507,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d48edee2a122fd33",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "dab9510c84cd15b3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-46.jpg"
+                }
               },
-              "cloudinary_id": "7c4567e17d755528",
-              "mime_type": "image/jpeg",
-              "copyright": "© Sleepy Bear",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "2cb2623f432409ed.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-18.jpg"
+              {
+                "id": 26519,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "35781af1219472c9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b2db5616011bad47.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-47.jpg"
+                }
               }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/coffee-page/\">Coffee Page</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/coffee-page/\">Coffee Page</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/coffee-page/\">Coffee Page</a>",
-            "it": "",
-            "es": ""
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26530,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "94360a2752f87d49",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5dca962408fa2a4e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-54.jpg"
+                }
+              },
+              {
+                "id": 26541,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "60624be4e9aaa3aa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "1355473b30027d24.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-53.jpg"
+                }
+              },
+              {
+                "id": 26548,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "2d65bc120c5ab98d",
+                "mime_type": "image/jpeg",
+                "copyright": "© Madeleine",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "28871e5b0b40a78e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-52.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/ca-passe-creme/\">Ça Passe Crème</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Natürlich gehört auch dieser legendäre Ort, der nur ein Steinwurf vom Bahnhof entfernt ist, zu meinen Favoriten. Beim Eintritt ins Lokal werdet ihr von Steeve und Davide begrüsst, die ihre Leidenschaft mit Begeisterung leben. Bei jedem der ausgezeichneten Getränke liegt ein Kärtchen mit der Herkunft des Kaffees und einem kurzen erklärenden Text bei. Ich liebe es einfach! Eine schöne Dekoration und ein gemütlicher Rahmen runden diesen Wohlfühlort ab!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26555,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "ff94d91f314325f5",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b603ae8b40e04a71.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-4.jpg"
+                }
+              },
+              {
+                "id": 25921,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "edb83152f12b78db",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb83152f12b78db.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-7.jpg"
+                }
+              },
+              {
+                "id": 26565,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3d7ff52156424c21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "986a0c371672b0d9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26570,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "436fdef4f59fcf68",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6feb607a90e808c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-9.jpg"
+                }
+              },
+              {
+                "id": 26574,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "a3b5ed3e73e3712c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5a0c17daab84185d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-6.jpg"
+                }
+              },
+              {
+                "id": 26578,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "9c9571ca62c5b2ae",
+                "mime_type": "image/jpeg",
+                "copyright": "© Ca passe crème",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5170482d778ec680.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sleepy-bear/\">Sleepy Bear</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein gemütlicher Ort, wo der Kaffee ebenso gut wie grosszügig daherkommt. Wenn Diana einen begrüsst, fühlt man sich direkt wie zu Hause. Der Kaffee schmeckt hervorragend und ich liebe die eiskalte Spezialität „Nitro Coffee“, ein Cold-Brew-Getränk, das im Fass mit Stickstoff angereichert wird ‒ nach dem gleichen Prinzip wie ein Bier. Schlicht der Hammer! Die hausgemachten Cookies werden frisch zubereitet und die Atmosphäre ist entspannt. Da trinke ich meinen wunderschönen Flat White mit einer sehr gut gemachten Bärenzeichnung und blättere dabei ein Buch über Latte Art durch, das auf einem Regal für die Gäste bereitliegt. Gut zu wissen ist auch, dass sie gleich neben dem Coffee Shop ihr Restaurant eröffnet haben. Das muss ich sobald wie möglich ausprobieren!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26581,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3d6853347ebac57e",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "c7afe5464fe63f18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-13.jpg"
+                }
+              },
+              {
+                "id": 26584,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "98a51ebd321572d9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "07ffc3161f9c0464.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-16.jpg"
+                }
+              },
+              {
+                "id": 26586,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "08f44ad2df62dc21",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b90c4b51cc3b4c06.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-24.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26590,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "5eecba1eea0f537b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b1d688256bf0c8a7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-26.jpg"
+                }
+              },
+              {
+                "id": 26593,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "efcba773f0d0a96b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "87f3b5a7c62093f3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-22.jpg"
+                }
+              },
+              {
+                "id": 26595,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "4267933c0382c737",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e638771e9ee3b2f5.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-21.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26597,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "14a9b0a67d9ca43c",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "3197e5537ffdcacd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-20.jpg"
+                }
+              },
+              {
+                "id": 26599,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "6e90cc5a1ea5855b",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e6a1083a4c017b72.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-17.jpg"
+                }
+              },
+              {
+                "id": 26601,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "7c4567e17d755528",
+                "mime_type": "image/jpeg",
+                "copyright": "© Sleepy Bear",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2cb2623f432409ed.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-18.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/coffee-page/\">Coffee Page</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn ihr hochwertigen Kaffee liebt, solltet ihr euch diesen Ort auf keinen Fall entgehen lassen! Dieses in einem Gebäude aus den 1920er-Jahren mit grossen Fensterfronten und hohen Decken untergebrachte Café bietet einen authentischen Rahmen. Einfach grossartig! Ich liebe die inspirierende Einrichtung mit einem gut ausgestatteten Bücherregal. Dazu kommen gute Produkte und eine sorgfältige Präsentation. Alles ist darauf ausgerichtet, sich wie zu Hause zu fühlen und einen angenehmen Moment zu verbringen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26603,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "385a1c8cae706d08",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-70",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2619debd4e85924d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-70.jpg"
+                }
+              },
+              {
+                "id": 26605,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "98339780eaec2ef5",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-56",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "69a7402a86d07bfc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-56.jpg"
+                }
+              },
+              {
+                "id": 26607,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "269ecfdddfe529e8",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-57",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e52d09dd8d1495e.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-57.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26609,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "975ecea74fe2324f",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-58",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "e0f7cac5f9a01b39.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-58.jpg"
+                }
+              },
+              {
+                "id": 26611,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "3e13b568da051c73",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-59",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4acdf2e21529e10b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-59.jpg"
+                }
+              },
+              {
+                "id": 26612,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "e396aa7d31f86523",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-60",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "171a44570e995967.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-60.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24734,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "9642158604259b87",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-69",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "11ace2b1ff2e8908.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-69.jpg"
+                }
+              },
+              {
+                "id": 24735,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "d8cf91e5075f021b",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-67",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "edb89d6b366a4a81.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-67.jpg"
+                }
+              },
+              {
+                "id": 24736,
+                "name": "Boire un café à Lausanne : mes 5 endroits préférés",
+                "public_name": null,
+                "cloudinary_id": "8c58d0a2d063e4e4",
+                "mime_type": "image/jpeg",
+                "copyright": "© coffee_lausanne-64",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Alexandre Puglisi",
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "0e36e44d6dfdeb27.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-64.jpg"
+                }
+              }
+            ]
           }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Une adresse à ne pas louper pour tous les amateurs de café de qualité ! Un superbe endroit logé dans une architecture des années 1920 et dans un cadre authentique avec de grandes baies vitrées, de la hauteur sous plafond. Une décoration très inspirante que j’adore avec une bibliothèque bien garnie ! Une présentation soignée, de bons produits. Bref, tout est fait pour se sentir comme chez soi et passer un agréable moment.",
-            "en": "An address not to be missed for all amateurs of quality coffee! A magnificent place located in a building with an architecture dating from the 1920s and in an authentic setting with large bay windows and high ceilings. A very inspiring décor that I love, with a well-stocked library! Particular care has been taken over the decoration and the products are good. In short, everything is designed so you feel at home and spend an enjoyable time.",
-            "de": "Wenn ihr hochwertigen Kaffee liebt, solltet ihr euch diesen Ort auf keinen Fall entgehen lassen! Dieses in einem Gebäude aus den 1920er-Jahren mit grossen Fensterfronten und hohen Decken untergebrachte Café bietet einen authentischen Rahmen. Einfach grossartig! Ich liebe die inspirierende Einrichtung mit einem gut ausgestatteten Bücherregal. Dazu kommen gute Produkte und eine sorgfältige Präsentation. Alles ist darauf ausgerichtet, sich wie zu Hause zu fühlen und einen angenehmen Moment zu verbringen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26603,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "385a1c8cae706d08",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-70",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "2619debd4e85924d.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-70.jpg"
-              }
-            },
-            {
-              "id": 26605,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "98339780eaec2ef5",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-56",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "69a7402a86d07bfc.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-56.jpg"
-              }
-            },
-            {
-              "id": 26607,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "269ecfdddfe529e8",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-57",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "5e52d09dd8d1495e.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-57.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26609,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "975ecea74fe2324f",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-58",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "e0f7cac5f9a01b39.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-58.jpg"
-              }
-            },
-            {
-              "id": 26611,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "3e13b568da051c73",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-59",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "4acdf2e21529e10b.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-59.jpg"
-              }
-            },
-            {
-              "id": 26612,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "e396aa7d31f86523",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-60",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "171a44570e995967.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-60.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 24734,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "9642158604259b87",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-69",
-              "metadata": {
-                "width": 512,
-                "height": 768,
-                "mimeType": "image/jpeg",
-                "copyright": "Alexandre Puglisi",
-                "attr": "width=\"512\" height=\"768\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "11ace2b1ff2e8908.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-69.jpg"
-              }
-            },
-            {
-              "id": 24735,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "d8cf91e5075f021b",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-67",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": "Alexandre Puglisi",
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "edb89d6b366a4a81.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-67.jpg"
-              }
-            },
-            {
-              "id": 24736,
-              "name": "Boire un café à Lausanne : mes 5 endroits préférés",
-              "public_name": {
-                "fr": "Boire un café à Lausanne : mes 5 endroits préférés"
-              },
-              "cloudinary_id": "8c58d0a2d063e4e4",
-              "mime_type": "image/jpeg",
-              "copyright": "© coffee_lausanne-64",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": "Alexandre Puglisi",
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": null,
-                "description": null,
-                "file_name_from_url": "0e36e44d6dfdeb27.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/07/coffee_lausanne-64.jpg"
-              }
-            }
-          ]
-        }
-      ],
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "9642158604259b87",

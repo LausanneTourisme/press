@@ -18,349 +18,803 @@
         "en": "Lausanne is above all green by nature. Nestling in the heart of an exceptional natural setting, between the mountains and the lake, the city breathes and enjoys a privileged environment. Built on three hills, it offers a multitude of breathtaking panoramas, with sublime views of the lake, the Alps and the Jura.",
         "de": "Lausanne ist schon von Natur aus in Grün gebettet. Die Stadt liegt vor einer herrlichen Kulisse mitten in einer aussergewöhnlichen Naturlandschaft zwischen Bergen und See. Sie wurde auf drei Hügeln erbaut und bietet atemberaubende Aussichten auf den Genfersee, die Alpen und den Jura."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 25884,
-            "name": "Lausanne, ville verte",
-            "public_name": {
-              "fr": "Lausanne, ville verte"
-            },
-            "cloudinary_id": "c89f5bc28fdefee2",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2000,
-              "height": 913,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2000\" height=\"913\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c89f5bc28fdefee2.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Panorama-Sauvablin-1.jpg"
-            }
-          },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Riche de la qualité de ses quelque 350 hectares de parcs et jardins, la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/capitale-olympique/\">Capitale Olympique</a> – qui figure parmi les villes les plus vertes du monde – offre également de nombreuses possibilités en matière de balades à pied ou à vélo, d’espaces de détente, de jeux et de sports de plein air, mais aussi d’itinéraires de visites au cœur de la nature.",
-            "en": "With some 350 hectares of parks and gardens, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/sport-and-the-olympic-movement/\">Olympic Capital</a> – one of the greenest cities in the world – also offers a wealth of opportunities for walking and cycling, relaxation,  outdoor games and sports, as well as sightseeing in the heart of nature.",
-            "de": "Mit über 350 Hektar Park- und Grünanlagen gehört die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sport-und-olympische-bewegung/\">Olympiahauptstadt</a> – zu den grünsten Städten der Welt und bietet zahlreiche Möglichkeiten zum Wandern und Radfahren, zur Erholung, für Spiel und Sport im Freien sowie Erkundungen in der Natur."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Un cadre à la beauté renversante</strong>",
-            "en": "A stunningly beautiful setting",
-            "de": "<strong>Umgebung umwerfender Schönheit</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Que ce soit grâce au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lac-leman/\">Léman</a> – plus grand lac d’Europe occidentale -, au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">vignoble de Lavaux</a> – inscrit au Patrimoine mondial de l’UNESCO – ou encore au charme des hauts de Lausanne avec les Bois du Jorat et la zone sportive du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/chalet-a-gobet/\">Chalet-à-Gobet,</a> Lausanne peut se targuer d’offrir en tout temps de réelles bouffées d’oxygène et de verdure. Tantôt urbaine, tantôt nature, la ville séduit indéniablement par sa douceur de vivre et la richesse de son patrimoine.",
-            "en": "Whether it’s thanks to <a href=\"https://www.lausanne-tourisme.ch/en/explore/lake-geneva/\">Lake Geneva</a> – the largest lake in Western Europe the <a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux vineyards</a>  – a UNESCO World Heritage Site – or the charm of the upper reaches of Lausanne with the Jura woodlands and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/chalet-a-gobet/\">Chalet-à-Gobet</a> sports area, Lausanne can pride itself on offering great bursts of fresh air and greenery at all times. Part urban, part natural, the city is undeniably appealing for its relaxed lifestyle gentle way of life and rich heritage.",
-            "de": "Ob am <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-genfersee/\">Genfersee</a>, dem grössten See Westeuropas, in den zum UNESCO-Weltkulturerbe gehörenden <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\">Weinbergen des Lavaux</a> oder auf den lieblichen Anhöhen von Lausanne mit dem Waldgebiet Bois du Jorat und den Sportanlagen in <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/chalet-a-gobet/\">Chalet-à-Gobet</a> geniesst man in Lausanne jederzeit frische Luft und viel Grün. Mal städtisches Umfeld, mal Natur pur, die Stadt besticht durch ihre sanfte Lebensweise und ihr reiches Kulturerbe."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>La vie en vert : « haies vives »</strong>",
-            "en": "Life in green",
-            "de": "<strong>Das Leben durch eine grüne Brille</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Favoriser la nature partout et dès que possible, tel est le crédo de la Ville de Lausanne dans la gestion de <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">ses parcs et jardins</a>. Ces précieux espaces sont comme autant de respirations dans la journée des habitants et des visiteurs. Et pour maintenir ces écrins de verdure aussi sains que possible, Lausanne abandonne progressivement depuis une vingtaine d’années l’usage des pesticides, invitant la nature sauvage à réinvestir la ville. Ainsi, au détour d’une promenade citadine, l’on aperçoit ici et là des allées de fleurs sauvages, des haies vive   s le long des trottoirs et même des prairies en fleurs.",
-            "en": "Encouraging nature wherever and whenever possible is the credo of the City of Lausanne in the management of its<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\"> parks and gardens</a>. These precious areas are like a breathing space during the day for residents and visitors alike. And to keep these green spaces as healthy as possible, Lausanne has been gradually abandoning the use of pesticides over the last twenty years, inviting the wilderness to reclaim the city. As a result, as you stroll through the city, you can spot here and there avenues of wild flowers, hedgerows along the pavements and even flowering meadows.",
-            "de": "Bei der Bewirtschaftung ihrer<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\"> Park- und Gartenanlagen</a> verfolgt die Stadt Lausanne das Credo, die Natur wenn immer möglich zu fördern. Die grünen Oasen stellen für Einheimische und Gäste wertvolle Verschnaufpausen dar. Um die Grünflächen so gesund wie möglich zu erhalten, verzichtet Lausanne seit rund zwanzig Jahren nach und nach auf den Einsatz von Pestiziden, damit die wilde Natur die Stadt zurückerobern kann. So sieht man bei einem Stadtspaziergang hier und da Wildblumenalleen, Hecken am Strassenrand, in denen Leben steckt, und sogar blühende Wiesen."
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26712,
-              "name": "Vue sur le vignoble le lac et un bateau CGN",
-              "public_name": {
-                "fr": "Vue sur le vignoble le lac et un bateau CGN",
-                "en": "Vue sur le vignoble le lac et un bateau CGN",
-                "de": "Vue sur le vignoble le lac et un bateau CGN",
-                "es": null
-              },
-              "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
-              "mime_type": "image/jpeg",
-              "copyright": "© Lausanne Tourisme",
-              "metadata": {
-                "width": 1600,
-                "height": 1067,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"1600\" height=\"1067\"",
-                "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
-                "description": null,
-                "file_name_from_url": "cdae71b438c14852.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
-              }
-            },
-            {
-              "id": 27083,
-              "name": "Lausanne, ville verte - Chexbres",
-              "public_name": {
-                "fr": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
-                "en": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
-                "de": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
-                "es": null
-              },
-              "cloudinary_id": "sbQEhCXQ8k41MDyUExPK0s1dZgEVejxzx57dzIDa",
-              "mime_type": "image/jpeg",
-              "copyright": "© Vue sur le Lac Leman et les Alpes depuis Chexbres",
-              "metadata": {
-                "width": 2560,
-                "height": 1701,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"2560\" height=\"1701\"",
-                "tags": "Lavaux; Vignoble; Lac",
-                "description": null,
-                "file_name_from_url": "bad020515a327bee.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Chexbres-scaled.jpg"
-              }
-            },
-            {
-              "id": 26002,
-              "name": "Où admirer le coucher du soleil à Lausanne ?",
-              "public_name": {
-                "fr": "Où admirer le coucher du soleil à Lausanne ?"
-              },
-              "cloudinary_id": "5d7d13cf241c7121",
-              "mime_type": "image/jpeg",
-              "copyright": "© ",
-              "metadata": {
-                "width": 1200,
-                "height": 800,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"1200\" height=\"800\"",
-                "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
-                "description": null,
-                "file_name_from_url": "5d7d13cf241c7121.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/visite/balade-des-panoramas/\"><strong>Balade des panoramas</strong></a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/visit/panoramic-stroll/\">Panorama stroll</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/fuehrungen/panorama-spaziergang/\"><strong>Panorama-Spaziergang</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Au gré de son dénivelé de 500 m, Lausanne offre autant de belles échappées sur la Cité, le Léman, le vignoble de Lavaux, les Alpes et le Jura. À la faveur de la très appréciée balade des panoramas, l’on aime à découvrir – à la descente – les 10 plus beaux points de vue de la ville. Ce sublime parcours, long de six kilomètres et réalisable en deux heures, garanti bon nombre d’émotions aux promeneurs.",
-            "en": "With its 500m difference in altitude, Lausanne offers as many beautiful viewpoints of the city, Lake Geneva, the Lavaux vineyards, the Alps and the Jura. On the popular Panorama Walk, you can discover the city’s 10 most beautiful vantage points on the way down. This sublime six-kilometre walk, which takes just two hours to complete, is guaranteed to thrill walkers.",
-            "de": "Mit 500 Meter Höhenunterschied bietet Lausanne herrliche Ausblicke auf die Altstadt, den Genfersee, die Weinberge von Lavaux, die Alpen und den Jura. Der beliebte, bergab führende Panorama-Spaziergang führt an den zehn schönsten Aussichtspunkten der Stadt vorbei. Der sechs Kilometer lange Spaziergang dauert etwa zwei Stunden und begeistert alle, die gern zu Fuss unterwegs sind."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Les joies du sport de plein air</strong>",
-            "en": "The joys of outdoor sports",
-            "de": "<strong>Spass am Sport im Freien</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Située à quelques minutes du centre-ville seulement, la vaste plaine de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/mauvernay-centre-sportif/\">Mauvernay</a>, bordée de forêt, offre une large palette d’activités sportives et de plein air. À choix :  course à pied, parcours VTT, balades à cheval ou encore parcours VITA. Les amateurs de grand bleu, eux, profiteront d’une virée sur l’eau en louant un pédalo, un kayak ou un petit bateau électrique. Et pour une échappée méditative sur le lac, cap sur le stand-up paddle. Debout sur une planche, une rame à la main, l’esprit s’évade, profitant dans le même temps d’une sublime vue sur Lausanne.",
-            "en": "Just a few minutes from the town centre, the vast <a href=\"https://www.lausanne-tourisme.ch/en/explore/mauvernay-sports-centre/\">Mauvernay</a> plain, bordered by forest, offers a wide range of sporting and outdoor activities. There’s a choice of running, mountain biking, horse riding and VITA trails (a sports trail with exercise stations). Lovers of nautical activities can enjoy an outing on the water by hiring a pedalo, kayak or small electric boat. And for a meditative escape on the lake, choose the stand-up paddle. Standing on a board with an oar in your hand, you can let your mind wander while enjoying a sublime view of Lausanne.",
-            "de": "Nur wenige Minuten vom Stadtzentrum entfernt bietet die von Wäldern gesäumte, weite Ebene von <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/mauvernay-sportzentrum/\">Mauvernay</a> zahlreiche Sport- und Outdoor-Aktivitäten. Zur Auswahl stehen unter anderem Jogging, Mountainbike-Strecken, Ausritte und ein Vitaparcours. Wasserratten können ein Pedalo, ein Kajak oder ein kleines Elektroboot mieten und über das blaue Wasser gleiten. Für einen meditativen Ausflug auf dem See bietet sich das Stand-up-Paddle an. Auf einem Brett stehend und mit einem Ruder in der Hand lässt es sich wunderbar die Gedanken schweifen lassen und gleichzeitig einen herrlichen Blick auf Lausanne geniessen."
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 27065,
-              "name": "Lausanne et le Léman - Paddle",
-              "public_name": {
-                "fr": "Paddle a Lutry sur le lac Leman",
-                "en": "Paddle a Lutry sur le lac Leman",
-                "de": "Paddle a Lutry sur le lac Leman",
-                "es": null
-              },
-              "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
-              "mime_type": "image/jpeg",
-              "copyright": "© Paddle a Lutry sur le lac Leman",
-              "metadata": {
-                "width": 2560,
-                "height": 1708,
-                "mimeType": "image/jpeg",
-                "copyright": "JONATHAN VIEY",
-                "attr": "width=\"2560\" height=\"1708\"",
-                "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
-                "description": null,
-                "file_name_from_url": "cdca0cbb2c423149.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
-              }
-            },
-            {
-              "id": 17750,
-              "name": "Vélo au Chalet-à-Gobet",
-              "public_name": {
-                "fr": "Vélo au Chalet-à-Gobet",
-                "es": null
-              },
-              "cloudinary_id": "10jcBuSMyWRuq6Z8LONOsKVrMgqzV5ALQV07A2qB",
-              "mime_type": "image/jpeg",
-              "copyright": "© LT / Laurent Kaczor",
-              "metadata": {
-                "attr": "width=\"7360\" height=\"4912\"",
-                "tags": "Sport; Forêt; Vélo;",
-                "width": 7360,
-                "height": 4912,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "description": null,
-                "file_name_from_url": "4a84028941568bca.jpeg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-velos.jpeg"
-              }
-            },
-            {
-              "id": 26018,
-              "name": "Lausanne : les activités outdoors de l’été",
-              "public_name": {
-                "fr": "Lausanne : les activités outdoors de l’été"
-              },
-              "cloudinary_id": "3ae52d8be95333cd",
-              "mime_type": "image/jpeg",
-              "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
-              "metadata": {
-                "width": 1600,
-                "height": 1067,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"1600\" height=\"1067\"",
-                "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
-                "description": null,
-                "file_name_from_url": "3ae52d8be95333cd.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\"><strong>Lavaux UNESCO</strong></a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux UNESCO</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\"><strong>UNESCO-Welterbe Lavaux</strong></a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Joyau parmi les joyaux, le vignoble de Lavaux, qui s’étend entre Lutry et Vevey, est classé comme site culturel au patrimoine mondial de l’UNESCO. Façonné par la main de l’homme depuis le 11<sup>e</sup> siècle en une mosaïque de terrasses qui semblent relier le lac, la terre et le ciel, il saisit l’âme de ses visiteurs tout comme il a fasciné nombre d’artistes habitant ses petits villages pittoresques.",
-            "en": "The jewel among jewels, the Lavaux vineyards, which stretch between Lutry and Vevey, are a UNESCO World Heritage Site. Shaped by the hand of man since the 11th century into a mosaic of terraces that seem to link the lake, the earth and the sky, it captures the soul of its visitors just as it has fascinated numerous artists living in its picturesque villages.",
-            "de": "Die Weinberge des Lavaux, die sich zwischen Lutry und Vevey erstrecken, sind das Juwel unter den Naturschönheiten von Lausanne und gehören zum UNESCO-Welterbe. Sie wurden ab dem 11. Jahrhundert von Menschenhand zu einem Terrassenmosaik geformt, das den See, die Erde und den Himmel zu verbinden scheint und Besuchende ebenso wie die zahlreichen in den malerischen Winzerdörfern lebenden Kunstschaffenden faszinieren."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Jalonné de sentiers balisés pour une balade pédestre avec vue sur le lac Léman et la chaine des Alpes, des petits trains sur pneus aident aussi à la montée, pour une promenade plus tranquille. Le long d’un sentier pédestre qui s’étend de Lausanne à Montreux, les vignerons de Lavaux – acteurs principaux de la préservation de ce site exceptionnel – invitent les visiteurs à découvrir en toutes saisons l’unique et authentique beauté de leur vignoble. Et puis, au détour de quelques exquises balades, des dégustations improvisées de vins et de produits typiques dans les caveaux ou en terrasse complètent à merveille ces promenades dans les vignes. Bonne visite !",
-            "en": "Signposted footpaths offer views of Lake Geneva and the Alps, while small rubber-tyred trains provide a more leisurely ascent. Along a footpath stretching from Lausanne to Montreux, the Lavaux winegrowers – key players in the preservation of this exceptional site – invite visitors to discover the unique and authentic beauty of their vineyards in all seasons. And as you stroll through the vineyards, you’ll find the perfect complement in the form of impromptu tastings of wines and local produce in the cellars or on the terraces. Enjoy your visit!",
-            "de": "Unterwegs auf den markierten Wanderwegen ist die Aussicht auf den Genfersee und die Alpenkette schlicht grossartig. Für einen gemächlicheren Aufstieg helfen Minizüge auf Rädern. Auf einem Wanderweg von Lausanne nach Montreux durch das Lavaux-Weingebiet laden die Winzerinnen und Winzer, die sich der Erhaltung dieses aussergewöhnlichen Ortes verschrieben haben, zu jeder Jahreszeit zur Erkundung der einzigartigen und authentischen Schönheit ihrer Weinberge ein. Der Spaziergang durch die Weinberge lässt sich wunderbar durch spontane Degustationen lokaler Weine und Produkte im Weinkeller oder auf der Terrasse eines Weinguts abrunden. Viel Vergnügen!"
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 24780,
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 25884,
               "name": "Lausanne, ville verte",
-              "public_name": {
-                "fr": "Lausanne, ville verte"
-              },
-              "cloudinary_id": "f4fe03751a16ebc1",
-              "mime_type": "image/jpeg",
-              "copyright": "© Le bus vintage dans les vignes en Lavaux",
-              "metadata": {
-                "width": 768,
-                "height": 512,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"768\" height=\"512\"",
-                "tags": "Laavux; Bus; Balade; Montagne, Lac; Environs; Van",
-                "description": null,
-                "file_name_from_url": "1fa06420c0305e23.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Bus-vintage-Lavaux.jpg"
-              }
-            },
-            {
-              "id": 26387,
-              "name": "La magie de Lavaux",
-              "public_name": {
-                "fr": "La magie de Lavaux"
-              },
-              "cloudinary_id": "7726b4e7d1ca1082",
-              "mime_type": "image/jpeg",
-              "copyright": "© Village au bord de lac",
-              "metadata": {
-                "width": 800,
-                "height": 524,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"800\" height=\"524\"",
-                "tags": "Eau, Lavaux, Unesco, Environs, Nature",
-                "description": null,
-                "file_name_from_url": "1ed358b7e279cbc2.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
-              }
-            },
-            {
-              "id": 26002,
-              "name": "Où admirer le coucher du soleil à Lausanne ?",
-              "public_name": {
-                "fr": "Où admirer le coucher du soleil à Lausanne ?"
-              },
-              "cloudinary_id": "5d7d13cf241c7121",
+              "public_name": "Lausanne, ville verte",
+              "cloudinary_id": "c89f5bc28fdefee2",
               "mime_type": "image/jpeg",
               "copyright": "© ",
               "metadata": {
-                "width": 1200,
-                "height": 800,
+                "width": 2000,
+                "height": 913,
                 "mimeType": "image/jpeg",
                 "copyright": null,
-                "attr": "width=\"1200\" height=\"800\"",
-                "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                "attr": "width=\"2000\" height=\"913\"",
+                "tags": null,
                 "description": null,
-                "file_name_from_url": "5d7d13cf241c7121.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                "file_name_from_url": "c89f5bc28fdefee2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Panorama-Sauvablin-1.jpg"
               }
-            }
-          ]
-        }
-      ],
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Riche de la qualité de ses quelque 350 hectares de parcs et jardins, la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/capitale-olympique/\">Capitale Olympique</a> – qui figure parmi les villes les plus vertes du monde – offre également de nombreuses possibilités en matière de balades à pied ou à vélo, d’espaces de détente, de jeux et de sports de plein air, mais aussi d’itinéraires de visites au cœur de la nature."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Un cadre à la beauté renversante</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Que ce soit grâce au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-lac-leman/\">Léman</a> – plus grand lac d’Europe occidentale -, au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">vignoble de Lavaux</a> – inscrit au Patrimoine mondial de l’UNESCO – ou encore au charme des hauts de Lausanne avec les Bois du Jorat et la zone sportive du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/chalet-a-gobet/\">Chalet-à-Gobet,</a> Lausanne peut se targuer d’offrir en tout temps de réelles bouffées d’oxygène et de verdure. Tantôt urbaine, tantôt nature, la ville séduit indéniablement par sa douceur de vivre et la richesse de son patrimoine."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>La vie en vert : « haies vives »</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Favoriser la nature partout et dès que possible, tel est le crédo de la Ville de Lausanne dans la gestion de <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">ses parcs et jardins</a>. Ces précieux espaces sont comme autant de respirations dans la journée des habitants et des visiteurs. Et pour maintenir ces écrins de verdure aussi sains que possible, Lausanne abandonne progressivement depuis une vingtaine d’années l’usage des pesticides, invitant la nature sauvage à réinvestir la ville. Ainsi, au détour d’une promenade citadine, l’on aperçoit ici et là des allées de fleurs sauvages, des haies vive   s le long des trottoirs et même des prairies en fleurs."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26712,
+                "name": "Vue sur le vignoble le lac et un bateau CGN",
+                "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+                "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne Tourisme",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                  "description": null,
+                  "file_name_from_url": "cdae71b438c14852.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+                }
+              },
+              {
+                "id": 27083,
+                "name": "Lausanne, ville verte - Chexbres",
+                "public_name": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "cloudinary_id": "sbQEhCXQ8k41MDyUExPK0s1dZgEVejxzx57dzIDa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1701,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1701\"",
+                  "tags": "Lavaux; Vignoble; Lac",
+                  "description": null,
+                  "file_name_from_url": "bad020515a327bee.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Chexbres-scaled.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": "Où admirer le coucher du soleil à Lausanne ?",
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/visite/balade-des-panoramas/\"><strong>Balade des panoramas</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Au gré de son dénivelé de 500 m, Lausanne offre autant de belles échappées sur la Cité, le Léman, le vignoble de Lavaux, les Alpes et le Jura. À la faveur de la très appréciée balade des panoramas, l’on aime à découvrir – à la descente – les 10 plus beaux points de vue de la ville. Ce sublime parcours, long de six kilomètres et réalisable en deux heures, garanti bon nombre d’émotions aux promeneurs."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Les joies du sport de plein air</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Située à quelques minutes du centre-ville seulement, la vaste plaine de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/mauvernay-centre-sportif/\">Mauvernay</a>, bordée de forêt, offre une large palette d’activités sportives et de plein air. À choix :  course à pied, parcours VTT, balades à cheval ou encore parcours VITA. Les amateurs de grand bleu, eux, profiteront d’une virée sur l’eau en louant un pédalo, un kayak ou un petit bateau électrique. Et pour une échappée méditative sur le lac, cap sur le stand-up paddle. Debout sur une planche, une rame à la main, l’esprit s’évade, profitant dans le même temps d’une sublime vue sur Lausanne."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27065,
+                "name": "Lausanne et le Léman - Paddle",
+                "public_name": "Paddle a Lutry sur le lac Leman",
+                "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Paddle a Lutry sur le lac Leman",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1708,
+                  "mimeType": "image/jpeg",
+                  "copyright": "JONATHAN VIEY",
+                  "attr": "width=\"2560\" height=\"1708\"",
+                  "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
+                  "description": null,
+                  "file_name_from_url": "cdca0cbb2c423149.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
+                }
+              },
+              {
+                "id": 17750,
+                "name": "Vélo au Chalet-à-Gobet",
+                "public_name": "Vélo au Chalet-à-Gobet",
+                "cloudinary_id": "10jcBuSMyWRuq6Z8LONOsKVrMgqzV5ALQV07A2qB",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT / Laurent Kaczor",
+                "metadata": {
+                  "attr": "width=\"7360\" height=\"4912\"",
+                  "tags": "Sport; Forêt; Vélo;",
+                  "width": 7360,
+                  "height": 4912,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "4a84028941568bca.jpeg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-velos.jpeg"
+                }
+              },
+              {
+                "id": 26018,
+                "name": "Lausanne : les activités outdoors de l’été",
+                "public_name": "Lausanne : les activités outdoors de l’été",
+                "cloudinary_id": "3ae52d8be95333cd",
+                "mime_type": "image/jpeg",
+                "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                  "description": null,
+                  "file_name_from_url": "3ae52d8be95333cd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\"><strong>Lavaux UNESCO</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Joyau parmi les joyaux, le vignoble de Lavaux, qui s’étend entre Lutry et Vevey, est classé comme site culturel au patrimoine mondial de l’UNESCO. Façonné par la main de l’homme depuis le 11<sup>e</sup> siècle en une mosaïque de terrasses qui semblent relier le lac, la terre et le ciel, il saisit l’âme de ses visiteurs tout comme il a fasciné nombre d’artistes habitant ses petits villages pittoresques."
+          },
+          {
+            "type": "paragraph",
+            "value": "Jalonné de sentiers balisés pour une balade pédestre avec vue sur le lac Léman et la chaine des Alpes, des petits trains sur pneus aident aussi à la montée, pour une promenade plus tranquille. Le long d’un sentier pédestre qui s’étend de Lausanne à Montreux, les vignerons de Lavaux – acteurs principaux de la préservation de ce site exceptionnel – invitent les visiteurs à découvrir en toutes saisons l’unique et authentique beauté de leur vignoble. Et puis, au détour de quelques exquises balades, des dégustations improvisées de vins et de produits typiques dans les caveaux ou en terrasse complètent à merveille ces promenades dans les vignes. Bonne visite !"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24780,
+                "name": "Lausanne, ville verte",
+                "public_name": "Lausanne, ville verte",
+                "cloudinary_id": "f4fe03751a16ebc1",
+                "mime_type": "image/jpeg",
+                "copyright": "© Le bus vintage dans les vignes en Lavaux",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": "Laavux; Bus; Balade; Montagne, Lac; Environs; Van",
+                  "description": null,
+                  "file_name_from_url": "1fa06420c0305e23.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Bus-vintage-Lavaux.jpg"
+                }
+              },
+              {
+                "id": 26387,
+                "name": "La magie de Lavaux",
+                "public_name": "La magie de Lavaux",
+                "cloudinary_id": "7726b4e7d1ca1082",
+                "mime_type": "image/jpeg",
+                "copyright": "© Village au bord de lac",
+                "metadata": {
+                  "width": 800,
+                  "height": 524,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"800\" height=\"524\"",
+                  "tags": "Eau, Lavaux, Unesco, Environs, Nature",
+                  "description": null,
+                  "file_name_from_url": "1ed358b7e279cbc2.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": "Où admirer le coucher du soleil à Lausanne ?",
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 25884,
+              "name": "Lausanne, ville verte",
+              "public_name": null,
+              "cloudinary_id": "c89f5bc28fdefee2",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 913,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"913\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c89f5bc28fdefee2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Panorama-Sauvablin-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "With some 350 hectares of parks and gardens, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/sport-and-the-olympic-movement/\">Olympic Capital</a> – one of the greenest cities in the world – also offers a wealth of opportunities for walking and cycling, relaxation,  outdoor games and sports, as well as sightseeing in the heart of nature."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "A stunningly beautiful setting"
+          },
+          {
+            "type": "paragraph",
+            "value": "Whether it’s thanks to <a href=\"https://www.lausanne-tourisme.ch/en/explore/lake-geneva/\">Lake Geneva</a> – the largest lake in Western Europe the <a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux vineyards</a>  – a UNESCO World Heritage Site – or the charm of the upper reaches of Lausanne with the Jura woodlands and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/chalet-a-gobet/\">Chalet-à-Gobet</a> sports area, Lausanne can pride itself on offering great bursts of fresh air and greenery at all times. Part urban, part natural, the city is undeniably appealing for its relaxed lifestyle gentle way of life and rich heritage."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Life in green"
+          },
+          {
+            "type": "paragraph",
+            "value": "Encouraging nature wherever and whenever possible is the credo of the City of Lausanne in the management of its<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\"> parks and gardens</a>. These precious areas are like a breathing space during the day for residents and visitors alike. And to keep these green spaces as healthy as possible, Lausanne has been gradually abandoning the use of pesticides over the last twenty years, inviting the wilderness to reclaim the city. As a result, as you stroll through the city, you can spot here and there avenues of wild flowers, hedgerows along the pavements and even flowering meadows."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26712,
+                "name": "Vue sur le vignoble le lac et un bateau CGN",
+                "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+                "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne Tourisme",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                  "description": null,
+                  "file_name_from_url": "cdae71b438c14852.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+                }
+              },
+              {
+                "id": 27083,
+                "name": "Lausanne, ville verte - Chexbres",
+                "public_name": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "cloudinary_id": "sbQEhCXQ8k41MDyUExPK0s1dZgEVejxzx57dzIDa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1701,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1701\"",
+                  "tags": "Lavaux; Vignoble; Lac",
+                  "description": null,
+                  "file_name_from_url": "bad020515a327bee.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Chexbres-scaled.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": null,
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/visit/panoramic-stroll/\">Panorama stroll</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "With its 500m difference in altitude, Lausanne offers as many beautiful viewpoints of the city, Lake Geneva, the Lavaux vineyards, the Alps and the Jura. On the popular Panorama Walk, you can discover the city’s 10 most beautiful vantage points on the way down. This sublime six-kilometre walk, which takes just two hours to complete, is guaranteed to thrill walkers."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "The joys of outdoor sports"
+          },
+          {
+            "type": "paragraph",
+            "value": "Just a few minutes from the town centre, the vast <a href=\"https://www.lausanne-tourisme.ch/en/explore/mauvernay-sports-centre/\">Mauvernay</a> plain, bordered by forest, offers a wide range of sporting and outdoor activities. There’s a choice of running, mountain biking, horse riding and VITA trails (a sports trail with exercise stations). Lovers of nautical activities can enjoy an outing on the water by hiring a pedalo, kayak or small electric boat. And for a meditative escape on the lake, choose the stand-up paddle. Standing on a board with an oar in your hand, you can let your mind wander while enjoying a sublime view of Lausanne."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27065,
+                "name": "Lausanne et le Léman - Paddle",
+                "public_name": "Paddle a Lutry sur le lac Leman",
+                "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Paddle a Lutry sur le lac Leman",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1708,
+                  "mimeType": "image/jpeg",
+                  "copyright": "JONATHAN VIEY",
+                  "attr": "width=\"2560\" height=\"1708\"",
+                  "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
+                  "description": null,
+                  "file_name_from_url": "cdca0cbb2c423149.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
+                }
+              },
+              {
+                "id": 17750,
+                "name": "Vélo au Chalet-à-Gobet",
+                "public_name": null,
+                "cloudinary_id": "10jcBuSMyWRuq6Z8LONOsKVrMgqzV5ALQV07A2qB",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT / Laurent Kaczor",
+                "metadata": {
+                  "attr": "width=\"7360\" height=\"4912\"",
+                  "tags": "Sport; Forêt; Vélo;",
+                  "width": 7360,
+                  "height": 4912,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "4a84028941568bca.jpeg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-velos.jpeg"
+                }
+              },
+              {
+                "id": 26018,
+                "name": "Lausanne : les activités outdoors de l’été",
+                "public_name": null,
+                "cloudinary_id": "3ae52d8be95333cd",
+                "mime_type": "image/jpeg",
+                "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                  "description": null,
+                  "file_name_from_url": "3ae52d8be95333cd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/unesco-listed-lavaux-vineyard-terraces/\">Lavaux UNESCO</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The jewel among jewels, the Lavaux vineyards, which stretch between Lutry and Vevey, are a UNESCO World Heritage Site. Shaped by the hand of man since the 11th century into a mosaic of terraces that seem to link the lake, the earth and the sky, it captures the soul of its visitors just as it has fascinated numerous artists living in its picturesque villages."
+          },
+          {
+            "type": "paragraph",
+            "value": "Signposted footpaths offer views of Lake Geneva and the Alps, while small rubber-tyred trains provide a more leisurely ascent. Along a footpath stretching from Lausanne to Montreux, the Lavaux winegrowers – key players in the preservation of this exceptional site – invite visitors to discover the unique and authentic beauty of their vineyards in all seasons. And as you stroll through the vineyards, you’ll find the perfect complement in the form of impromptu tastings of wines and local produce in the cellars or on the terraces. Enjoy your visit!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24780,
+                "name": "Lausanne, ville verte",
+                "public_name": null,
+                "cloudinary_id": "f4fe03751a16ebc1",
+                "mime_type": "image/jpeg",
+                "copyright": "© Le bus vintage dans les vignes en Lavaux",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": "Laavux; Bus; Balade; Montagne, Lac; Environs; Van",
+                  "description": null,
+                  "file_name_from_url": "1fa06420c0305e23.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Bus-vintage-Lavaux.jpg"
+                }
+              },
+              {
+                "id": 26387,
+                "name": "La magie de Lavaux",
+                "public_name": null,
+                "cloudinary_id": "7726b4e7d1ca1082",
+                "mime_type": "image/jpeg",
+                "copyright": "© Village au bord de lac",
+                "metadata": {
+                  "width": 800,
+                  "height": 524,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"800\" height=\"524\"",
+                  "tags": "Eau, Lavaux, Unesco, Environs, Nature",
+                  "description": null,
+                  "file_name_from_url": "1ed358b7e279cbc2.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": null,
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 25884,
+              "name": "Lausanne, ville verte",
+              "public_name": null,
+              "cloudinary_id": "c89f5bc28fdefee2",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 913,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"913\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c89f5bc28fdefee2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Panorama-Sauvablin-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Mit über 350 Hektar Park- und Grünanlagen gehört die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/sport-und-olympische-bewegung/\">Olympiahauptstadt</a> – zu den grünsten Städten der Welt und bietet zahlreiche Möglichkeiten zum Wandern und Radfahren, zur Erholung, für Spiel und Sport im Freien sowie Erkundungen in der Natur."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Umgebung umwerfender Schönheit</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ob am <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-genfersee/\">Genfersee</a>, dem grössten See Westeuropas, in den zum UNESCO-Weltkulturerbe gehörenden <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\">Weinbergen des Lavaux</a> oder auf den lieblichen Anhöhen von Lausanne mit dem Waldgebiet Bois du Jorat und den Sportanlagen in <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/chalet-a-gobet/\">Chalet-à-Gobet</a> geniesst man in Lausanne jederzeit frische Luft und viel Grün. Mal städtisches Umfeld, mal Natur pur, die Stadt besticht durch ihre sanfte Lebensweise und ihr reiches Kulturerbe."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Das Leben durch eine grüne Brille</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Bei der Bewirtschaftung ihrer<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\"> Park- und Gartenanlagen</a> verfolgt die Stadt Lausanne das Credo, die Natur wenn immer möglich zu fördern. Die grünen Oasen stellen für Einheimische und Gäste wertvolle Verschnaufpausen dar. Um die Grünflächen so gesund wie möglich zu erhalten, verzichtet Lausanne seit rund zwanzig Jahren nach und nach auf den Einsatz von Pestiziden, damit die wilde Natur die Stadt zurückerobern kann. So sieht man bei einem Stadtspaziergang hier und da Wildblumenalleen, Hecken am Strassenrand, in denen Leben steckt, und sogar blühende Wiesen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26712,
+                "name": "Vue sur le vignoble le lac et un bateau CGN",
+                "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+                "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne Tourisme",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                  "description": null,
+                  "file_name_from_url": "cdae71b438c14852.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+                }
+              },
+              {
+                "id": 27083,
+                "name": "Lausanne, ville verte - Chexbres",
+                "public_name": "Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "cloudinary_id": "sbQEhCXQ8k41MDyUExPK0s1dZgEVejxzx57dzIDa",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le Lac Leman et les Alpes depuis Chexbres",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1701,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1701\"",
+                  "tags": "Lavaux; Vignoble; Lac",
+                  "description": null,
+                  "file_name_from_url": "bad020515a327bee.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/02/Chexbres-scaled.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": null,
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/fuehrungen/panorama-spaziergang/\"><strong>Panorama-Spaziergang</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Mit 500 Meter Höhenunterschied bietet Lausanne herrliche Ausblicke auf die Altstadt, den Genfersee, die Weinberge von Lavaux, die Alpen und den Jura. Der beliebte, bergab führende Panorama-Spaziergang führt an den zehn schönsten Aussichtspunkten der Stadt vorbei. Der sechs Kilometer lange Spaziergang dauert etwa zwei Stunden und begeistert alle, die gern zu Fuss unterwegs sind."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Spass am Sport im Freien</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nur wenige Minuten vom Stadtzentrum entfernt bietet die von Wäldern gesäumte, weite Ebene von <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/mauvernay-sportzentrum/\">Mauvernay</a> zahlreiche Sport- und Outdoor-Aktivitäten. Zur Auswahl stehen unter anderem Jogging, Mountainbike-Strecken, Ausritte und ein Vitaparcours. Wasserratten können ein Pedalo, ein Kajak oder ein kleines Elektroboot mieten und über das blaue Wasser gleiten. Für einen meditativen Ausflug auf dem See bietet sich das Stand-up-Paddle an. Auf einem Brett stehend und mit einem Ruder in der Hand lässt es sich wunderbar die Gedanken schweifen lassen und gleichzeitig einen herrlichen Blick auf Lausanne geniessen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27065,
+                "name": "Lausanne et le Léman - Paddle",
+                "public_name": "Paddle a Lutry sur le lac Leman",
+                "cloudinary_id": "UoBUA5gi4arH9fPvb8Z4DVs0uBY7aPPgaWQSiytm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Paddle a Lutry sur le lac Leman",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1708,
+                  "mimeType": "image/jpeg",
+                  "copyright": "JONATHAN VIEY",
+                  "attr": "width=\"2560\" height=\"1708\"",
+                  "tags": "Sport; Paddle; Lavaux; Vigne; Lac",
+                  "description": null,
+                  "file_name_from_url": "cdca0cbb2c423149.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Paddle-Lavaux-scaled.jpg"
+                }
+              },
+              {
+                "id": 17750,
+                "name": "Vélo au Chalet-à-Gobet",
+                "public_name": null,
+                "cloudinary_id": "10jcBuSMyWRuq6Z8LONOsKVrMgqzV5ALQV07A2qB",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT / Laurent Kaczor",
+                "metadata": {
+                  "attr": "width=\"7360\" height=\"4912\"",
+                  "tags": "Sport; Forêt; Vélo;",
+                  "width": 7360,
+                  "height": 4912,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "4a84028941568bca.jpeg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-velos.jpeg"
+                }
+              },
+              {
+                "id": 26018,
+                "name": "Lausanne : les activités outdoors de l’été",
+                "public_name": null,
+                "cloudinary_id": "3ae52d8be95333cd",
+                "mime_type": "image/jpeg",
+                "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                  "description": null,
+                  "file_name_from_url": "3ae52d8be95333cd.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/unesco-weinterrassen-von-lavaux/\"><strong>UNESCO-Welterbe Lavaux</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Weinberge des Lavaux, die sich zwischen Lutry und Vevey erstrecken, sind das Juwel unter den Naturschönheiten von Lausanne und gehören zum UNESCO-Welterbe. Sie wurden ab dem 11. Jahrhundert von Menschenhand zu einem Terrassenmosaik geformt, das den See, die Erde und den Himmel zu verbinden scheint und Besuchende ebenso wie die zahlreichen in den malerischen Winzerdörfern lebenden Kunstschaffenden faszinieren."
+          },
+          {
+            "type": "paragraph",
+            "value": "Unterwegs auf den markierten Wanderwegen ist die Aussicht auf den Genfersee und die Alpenkette schlicht grossartig. Für einen gemächlicheren Aufstieg helfen Minizüge auf Rädern. Auf einem Wanderweg von Lausanne nach Montreux durch das Lavaux-Weingebiet laden die Winzerinnen und Winzer, die sich der Erhaltung dieses aussergewöhnlichen Ortes verschrieben haben, zu jeder Jahreszeit zur Erkundung der einzigartigen und authentischen Schönheit ihrer Weinberge ein. Der Spaziergang durch die Weinberge lässt sich wunderbar durch spontane Degustationen lokaler Weine und Produkte im Weinkeller oder auf der Terrasse eines Weinguts abrunden. Viel Vergnügen!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 24780,
+                "name": "Lausanne, ville verte",
+                "public_name": null,
+                "cloudinary_id": "f4fe03751a16ebc1",
+                "mime_type": "image/jpeg",
+                "copyright": "© Le bus vintage dans les vignes en Lavaux",
+                "metadata": {
+                  "width": 768,
+                  "height": 512,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"512\"",
+                  "tags": "Laavux; Bus; Balade; Montagne, Lac; Environs; Van",
+                  "description": null,
+                  "file_name_from_url": "1fa06420c0305e23.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Bus-vintage-Lavaux.jpg"
+                }
+              },
+              {
+                "id": 26387,
+                "name": "La magie de Lavaux",
+                "public_name": null,
+                "cloudinary_id": "7726b4e7d1ca1082",
+                "mime_type": "image/jpeg",
+                "copyright": "© Village au bord de lac",
+                "metadata": {
+                  "width": 800,
+                  "height": 524,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"800\" height=\"524\"",
+                  "tags": "Eau, Lavaux, Unesco, Environs, Nature",
+                  "description": null,
+                  "file_name_from_url": "1ed358b7e279cbc2.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
+                }
+              },
+              {
+                "id": 26002,
+                "name": "Où admirer le coucher du soleil à Lausanne ?",
+                "public_name": null,
+                "cloudinary_id": "5d7d13cf241c7121",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1200,
+                  "height": 800,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"800\"",
+                  "tags": "Vignoble; Vigne; Soleil; Lac; Lavaux",
+                  "description": null,
+                  "file_name_from_url": "5d7d13cf241c7121.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Vignoble-soleil-5.jpg"
+                }
+              }
+            ]
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "f4fe03751a16ebc1",
