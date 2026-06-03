@@ -11,6 +11,7 @@
   import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
   import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
+  import { SvelteSet } from 'svelte/reactivity';
   import { MapLibre, Marker, NavigationControl, Popup } from 'svelte-maplibre-gl';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -47,6 +48,16 @@
     });
 
     return markers;
+  });
+
+  const listMarkers = $derived.by(() => {
+    const seen = new SvelteSet<string>();
+    return markers.filter((marker) => {
+      const key = `poi#${marker.poi.id}|favorite#${marker.favorite.id}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   });
 
   let markerIndex: string | undefined = $state();
@@ -91,30 +102,42 @@
     );
   };
 
-  const handleLausannerClick = ({
-    favorite,
-    poi
-  }: {
-    favorite: Favorite<string>;
-    poi: Poi<string>;
-  }) => {
-    markerIndex = `poi#${poi.id}|favorite#${favorite.id}`;
-
+  const updateAside = ({ favorite, poi }: { favorite: Favorite<string>; poi: Poi<string> }) => {
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
-    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? 'default') : ''; // { w: 700 }
+    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? 'default') : '';
     aside.imageName = poi?.medias?.at(0)
       ? ((poi.medias[0].public_name as string | undefined) ?? '')
       : '';
     aside.imageCopyright = poi?.medias?.at(0) ? (poi.medias[0].copyright ?? '') : '';
     aside.lausanner = favorite.lausanner;
     aside.show = true;
+  };
 
+  const handleLausannerClick = ({
+    favorite,
+    poi,
+    coordinates
+  }: {
+    favorite: Favorite<string>;
+    poi: Poi<string>;
+    coordinates?: { lat: number; lng: number };
+  }) => {
     const geolocation = poi?.geolocations?.at(0);
-    if (!geolocation) return;
+    const coords = coordinates ?? (geolocation
+      ? { lat: Number(geolocation.latitude), lng: Number(geolocation.longitude) }
+      : undefined);
+
+    if (!coords) return;
+
+    markerIndex = coordinates
+      ? `poi#${poi.id}|favorite#${favorite.id}|${coords.lat},${coords.lng}`
+      : `favorite#${favorite.id}`;
+
+    updateAside({ favorite, poi });
 
     map?.flyTo({
-      center: [Number(geolocation.longitude ?? ''), Number(geolocation.latitude ?? '')],
+      center: [coords.lng, coords.lat],
       zoom: 15,
       essential: true
     });
@@ -187,7 +210,7 @@
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       {#key markers}
         <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-          {#each markers as marker, k (`${k}|${locale}|poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
+          {#each listMarkers as marker, k (`${k}|${locale}|poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
             <LausannerCard
               favorite={marker.favorite}
               poi={marker.poi}
@@ -299,12 +322,16 @@
             <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
           {/snippet}
           <Popup
-            open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
+            open={markerIndex === `favorite#${marker.favorite.id}` ||
+              markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}|${marker.coordinates.lat},${marker.coordinates.lng}`}
             onopen={() => {
-              setTimeout(
-                () => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }),
-                50
-              );
+              setTimeout(() => {
+                if (markerIndex === `favorite#${marker.favorite.id}`) {
+                  updateAside({ favorite: marker.favorite, poi: marker.poi });
+                } else {
+                  handleLausannerClick({ favorite: marker.favorite, poi: marker.poi, coordinates: marker.coordinates });
+                }
+              }, 50);
             }}
             onclose={closeAside}
             offset={{
