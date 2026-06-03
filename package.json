@@ -15,6 +15,7 @@
     "lint": "prettier --check . && eslint .",
     "deploy": "scripts/build.sh",
     "sync:cloudinary": "node scripts/cloudinary.js",
+    "sync:article-mocks": "node scripts/sync-article-mocks.js",
     "test": "vitest"
   },
   "devDependencies": {
