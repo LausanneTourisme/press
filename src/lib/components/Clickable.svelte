@@ -62,6 +62,8 @@
     {@render children()}
   </a>
 {:else}
+  <!-- Non-route links (`#`, `mailto:`, `tel:`) are used in map or contacts -->
+  <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
   <a {href} class={style} data-sveltekit-preload-data={preload} {title} {onclick} transition:fade>
     {@render children()}
   </a>
