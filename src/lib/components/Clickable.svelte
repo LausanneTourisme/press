@@ -36,7 +36,7 @@
   );
 </script>
 
-{#if target === '_blank'}
+{#if href === '#' || target === '_blank'}
   <a
     {href}
     rel="external"
