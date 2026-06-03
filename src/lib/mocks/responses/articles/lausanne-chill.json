@@ -18,359 +18,788 @@
         "en": "Having a full-on life is good, but come summer, life is also about relaxing and chilling! And that’s fortunate since, in addition to being Olympic Capital, Lausanne could well proclaim itself Chill Capital, packed as it is with spots sooooo ideal for relaxing and idleness. We’re taking you on a tour of the places where you might well find us all summer long!",
         "de": "Ein Leben auf der Überholspur ist schön und gut, aber der Sommer ist auch dazu da, um sich zu entspannen und zu chillen. In Lausanne geht das besonders gut: Die Olympia-Hauptstadt könnte sich auch zur Chill-Hauptstadt ernennen, denn sie ist voller Orte, die sich wunderbar dazu eignen, der Entspannung und dem Dolcefarniente zu frönen. Wir nehmen Sie mit auf einen Streifzug durch die Orte, wo Sie uns den ganzen Sommer über antreffen."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 26148,
-            "name": "Les rooftops de Lausanne",
-            "public_name": {
-              "fr": "Les rooftops de Lausanne"
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26148,
+              "name": "Les rooftops de Lausanne",
+              "public_name": "Les rooftops de Lausanne",
+              "cloudinary_id": "42dbc61a50b0c569",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1621,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1621\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "42dbc61a50b0c569.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Perchoir-scaled.jpg"
+              }
             },
-            "cloudinary_id": "42dbc61a50b0c569",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 2560,
-              "height": 1621,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1621\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "42dbc61a50b0c569.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Perchoir-scaled.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "Index du CHILL",
-            "en": "CHILL index:",
-            "de": "CHILL-Index:"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Perchoir\">hiller en sirotant un cocktail au Perchoir, devant un bon petit plat sur la terrasse d’Un po’ di più, ou en afterwork aux jardins du Vieux-Lausanne</a>",
-            "en": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Perchoir\">hilling while sipping a cocktail at the Perchoir, sitting down to a scrumptious meal on the terrace of Un Po’ Di Più or during an afterwork in the gardens of the Vieux-Lausanne</a>",
-            "de": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Perchoir\">hillen in der Rooftop-Bar Le Perchoir bei einem Cocktail, auf der Terrasse der Trattoria Un Po’ Di Più bei einem guten Essen oder nach Feierabend im Garten des Restaurants Le Vieux-Lausanne</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#paddle\">âler son teint à bord d’un bateau, d’un pédalo ou d’un paddle</a>",
-            "en": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Jet%C3%A9e\">itting Ouchy’s new Beach, the Jetée de la Compagnie’s Deck or an inlet along the lakeside walk to bask in the sun</a>",
-            "de": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Pedalo\">aut bräunen auf einem Schiff, Pedalo oder Stand-up-Paddle</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Hermitage\">nstaller une couverture au parc de l’Hermitage et déguster son panier pique-nique</a>",
-            "en": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Montriond\">dling in contemplation of the lake or reading your favourite novel on the Crêt de Montriond, the Languedoc Hillside or the Montbenon Esplanade</a>",
-            "de": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Hermitage\">m Hermitage-Park eine Decke ausbreiten und picknicken</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#l%C3%A9zarder\">ézarder au soleil à la nouvelle plage d’Ouchy, sur le Deck de la jetée de la compagnie ou dans les criques du sentier du bord du lac</a>",
-            "en": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#paddle\">apping up the sun on board a boat, pedal boat or on a stand-up paddle</a>",
-            "de": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Jet%C3%A9e\">iegend oder sitzend die Sonne geniessen am neuen Strand von Ouchy, auf dem Holzdeck der Jetée de la Compagnie oder in den Buchten am Seeuferweg</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Montriond\">ire son bouquin préféré face au lac, au Crêt de Montriond, sur la colline du Languedoc ou à l’esplanade de Montbenon</a>",
-            "en": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Hermitage\">aying down a blanket in the Hermitage Park and savouring the season’s first picnic basket</a>",
-            "de": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Montriond\">ieblingsbuch lesen mit Blick auf den See, auf dem Montriond-Hügel, dem Languedoc-Hügel oder auf der Montbenon-Esplanade</a>"
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Chiller en sirotant un cocktail au Perchoir, devant un bon petit plat sur la terrasse d’Un po’ di più, ou en afterwork aux Jardins du Vieux-Lausanne</strong>",
-            "en": "<strong>Chilling while sipping a cocktail at the Perchoir, sitting down to a scrumptious meal on the terrace of Un Po’ Di Più or during an afterwork in the gardens of the Vieux-Lausanne</strong>",
-            "de": "<strong>Chillen in der Rooftop-Bar Le Perchoir bei einem Cocktail, auf der Terrasse der Trattoria Un Po’ Di Più bei einem guten Essen  oder nach Feierabend im Garten des Restaurants Le Vieux-Lausanne</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Aaaah, ce moment sacré en été, juste après le travail, lorsque la chaleur est encore bien présente et que l’on peut enfin passer du temps au soleil, on ne le raterait pour rien au monde ! C’est presque une deuxième journée qui commence. Et pour en profiter au maximum, on a nos petites adresses fétiches :",
-            "en": "Oh, that treasured time in summer, just after work, when the day is still hot and we can at last spend time in the sun – we wouldn’t miss it for anything in the world! It’s almost like the start of a new day. And to make the most of it, we have our choicest addresses:",
-            "de": "Diesen Moment im Sommer, gleich nach Feierabend, wenn es noch schön warm ist und wir endlich nach draussen an die Sonne gehen können, diesen Moment würden wir um nichts in der Welt verpassen wollen! Es ist fast, als würde ein neuer Tag beginnen. Hier unsere Lieblingsadressen, damit Sie es in vollen Zügen geniessen können:"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "1. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-perchoir-rooftop-bar/\">Au Perchoir</a>, le rooftop incroyable du Vortex, un Spritz ou un Moscow Mule à la main, bien installés sur l’une des chaises longues du bar.",
-            "en": "1. At <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-perchoir-rooftop-bar/\">the Perchoir</a>, the Vortex’s incredible rooftop, Spritz or Moscow Mule in hand, comfortably settled in one of the bar’s loungers.",
-            "de": "1. Die unglaubliche Rooftop-Bar <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-perchoir-rooftop-bar/\">Le Perchoir</a> im Gebäude Vortex: Geniessen Sie den Abend auf einem der Liegestühle der Bar mit einen Aperol Spritz oder Moscow Mule in der Hand."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25889,
-            "name": "Lausanne CHILL",
-            "public_name": {
-              "fr": "Lausanne CHILL"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Index du CHILL"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Perchoir\">hiller en sirotant un cocktail au Perchoir, devant un bon petit plat sur la terrasse d’Un po’ di più, ou en afterwork aux jardins du Vieux-Lausanne</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#paddle\">âler son teint à bord d’un bateau, d’un pédalo ou d’un paddle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Hermitage\">nstaller une couverture au parc de l’Hermitage et déguster son panier pique-nique</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#l%C3%A9zarder\">ézarder au soleil à la nouvelle plage d’Ouchy, sur le Deck de la jetée de la compagnie ou dans les criques du sentier du bord du lac</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-chill/#Montriond\">ire son bouquin préféré face au lac, au Crêt de Montriond, sur la colline du Languedoc ou à l’esplanade de Montbenon</a>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Chiller en sirotant un cocktail au Perchoir, devant un bon petit plat sur la terrasse d’Un po’ di più, ou en afterwork aux Jardins du Vieux-Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Aaaah, ce moment sacré en été, juste après le travail, lorsque la chaleur est encore bien présente et que l’on peut enfin passer du temps au soleil, on ne le raterait pour rien au monde ! C’est presque une deuxième journée qui commence. Et pour en profiter au maximum, on a nos petites adresses fétiches :"
+          },
+          {
+            "type": "paragraph",
+            "value": "1. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-perchoir-rooftop-bar/\">Au Perchoir</a>, le rooftop incroyable du Vortex, un Spritz ou un Moscow Mule à la main, bien installés sur l’une des chaises longues du bar."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25889,
+              "name": "Lausanne CHILL",
+              "public_name": "Lausanne CHILL",
+              "cloudinary_id": "d04c194ac6e6a0a4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Apéritif; Lausanne; Détente; Bar",
+                "description": null,
+                "file_name_from_url": "d04c194ac6e6a0a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Apero-transat.jpg"
+              }
             },
-            "cloudinary_id": "d04c194ac6e6a0a4",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1067,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1067\" height=\"1600\"",
-              "tags": "Apéritif; Lausanne; Détente; Bar",
-              "description": null,
-              "file_name_from_url": "d04c194ac6e6a0a4.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Apero-transat.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "2. Sur la terrasse d’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/un-po-di-piu/\">Un po’ di più</a>, le restaurant italien de la rue du Tunnel, devant un délicieux plat de pâtes double truffe ou une pizza à la mozzarella di buffala.",
-            "en": "2. On the terrace of <a href=\"https://www.lausanne-tourisme.ch/en/explore/un-po-di-piu/\">Un Po’ Di Più</a>, the Italian restaurant at the Rue du Tunnel, feasting on a delicious plate of double truffle pasta or a pizza with mozzarella di bufala.",
-            "de": "2. Die Terrasse der Trattoria <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/un-po-di-piu/\">Un Po’ Di Più</a>: In diesem italienischen Restaurant an der Rue du Tunnel werden Sie mit leckerer Trüffelpasta oder einer Pizza mit Mozzarella di bufala verwöhnt."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25981,
-            "name": "Lausanne CHILL",
-            "public_name": {
-              "fr": "Lausanne CHILL"
+          {
+            "type": "paragraph",
+            "value": "2. Sur la terrasse d’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/un-po-di-piu/\">Un po’ di più</a>, le restaurant italien de la rue du Tunnel, devant un délicieux plat de pâtes double truffe ou une pizza à la mozzarella di buffala."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25981,
+              "name": "Lausanne CHILL",
+              "public_name": "Lausanne CHILL",
+              "cloudinary_id": "e62835df5cd3cb70",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1709,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "FEDIGIOIAt",
+                "attr": "width=\"1709\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e62835df5cd3cb70.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/DSC_0247-scaled.jpg"
+              }
             },
-            "cloudinary_id": "e62835df5cd3cb70",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1709,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": "FEDIGIOIAt",
-              "attr": "width=\"1709\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "e62835df5cd3cb70.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/DSC_0247-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "3. Dans <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">les Jardins du Vieux-Lausanne</a>, en afterwork accompagnés de nos collègues préférés et d’une planchette apéro.",
-            "en": "3. In <a href=\"https://www.lausanne-tourisme.ch/en/explore/restaurant-du-vieux-lausanne/\">the gardens of the Vieux-Lausanne</a> for an afterwork in the company of our favourite colleagues and an apéro snack board.",
-            "de": "3. Der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/restaurant-du-vieux-lausanne/\">Garten des Restaurants Le Vieux-Lausanne</a>: perfekt für einen Feierabend mit Ihren Kolleginnen und Kollegen bei einem Apéro-Plättli."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23365,
-            "name": "Les Jardins du Vieux-Lausanne",
-            "public_name": {
-              "fr": "Les Jardins du Vieux-Lausanne",
-              "en": "Les Jardins du Vieux-Lausanne",
-              "de": "Les Jardins du Vieux-Lausanne",
-              "es": null
+          {
+            "type": "paragraph",
+            "value": "3. Dans <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-jardins/\">les Jardins du Vieux-Lausanne</a>, en afterwork accompagnés de nos collègues préférés et d’une planchette apéro."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
             },
-            "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
-            "mime_type": "image/jpeg",
-            "copyright": "© Christian Meixner Fotografie",
-            "metadata": {
-              "width": 1600,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1200\"",
-              "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
-              "description": null,
-              "file_name_from_url": "03ff3da2452b1f66.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Hâler son teint à bord d’un bateau, d’un pédalo ou d’un paddle </strong>",
-            "en": "<strong>Hitting Ouchy beach, the Jetée de la Compagnie’s Deck or an inlet along the lakeside walk to bask in the sun</strong>",
-            "de": "<strong>Haut bräunen auf einem Schiff, Pedalo oder Stand-up-Paddle </strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Et non, il n’y a pas qu’en revenant de deux semaines à se dorer la pilule sur les plages de sable fin d’Ibiza, d’Italie ou de la Côte d’Azur que l’on peut obtenir un teint halé très flatteur. Pour avoir toutes les chances de son côté d’entendre un « Mais qu’est-ce que tu as bonne mine ! », on choisit <a href=\"https://www.lausanne-tourisme.ch/fr/activites-nautiques/\">des activités nautiques</a> comme le bateau, le pédalo et le paddle. En plus, on fait d’une pierre deux coups, puisque ce sont certainement les meilleures façons de profiter des eaux turquoise du Léman, au calme, loin de la rive et en se laissant doucement bercer par le clapotis des vagues. Comme dirait Gilbert Montagné, cet été, « on va s’aimer sur le pont d’un bateau (<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\">de la CGN</a>), on va s’aimer à s’en brûler la peau… » (attention aux coups de soleil tout de même, n’oubliez pas d’emporter votre crème 50 à bord).",
-            "en": "You know that feeling of total idleness, lying on the beach, headphones in, sunglasses on, eyes closed and the sun caressing our cheeks. Those days spent between a lounge chair and refreshing swims, and when the only decision required is which flavour of ice cream to choose. Well, Lausanne is simply brimming with spots to capture that feeling that we dream of all year long! Head to <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy-beach/\">Ouchy beach</a>, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">Jetée de la Compagnie’s</a> Deck or one of the many inlets along the lakeside walk for well-earned lazy days.",
-            "de": "Einen schmeichelhaften gebräunten Teint bekommt man nicht nur nach zwei Wochen Sonnenbaden an den feinen Sandstränden von Ibiza, der Côte d’Azur oder Italien.  Wenn Sie Ihre Chancen auf ein „Wow, du siehst toll aus!“ erhöhen wollen, dann sind <a href=\"https://www.lausanne-tourisme.ch/de/freizeitgestaltung-genfersee/\">Wasseraktivitäten</a> wie eine Schiff- oder Pedalofahrt oder Stand-up-Paddling genau das Richtige für Sie. Zudem schlagen Sie zwei Fliegen mit einer Klappe, denn diese Möglichkeiten sind zweifellos die besten, um in einer ruhigen Umgebung und weit weg vom Ufer das türkisfarbene Wasser des Genfersees und das Plätschern der Wellen zu geniessen. Wie es der Sänger Gilbert Montagné sagen würde: Diesen Sommer werden wir uns auf dem Deck eines Schiffes (<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schifffahrten-auf-dem-genfersee-cgn/\">der Genfersee-Schifffahrtsgesellschaft CGN</a>) lieben, wir werden uns lieben, bis wir uns die Haut verbrennen (Vorsicht vor Sonnenbrand, denken Sie daran, eine Sonnencreme mit Lichtschutzfaktor 50 mit an Bord zu nehmen)."
-          }
-        },
-        {
-          "type": "instagram",
-          "value": "https://www.instagram.com/reel/CQTgCNrgX0J/?utm_source=ig_embed&utm_campaign=loading"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Installer une couverture au parc de l’Hermitage et déguster son pique-nique</strong>",
-            "en": "<strong>Laying down a blanket in the Hermitage Park and savouring the season’s first picnic basket </strong>",
-            "de": "<strong>Im Hermitage-Park eine Decke ausbreiten und picknicken</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Notre définition du paradis : s’allonger dans l’herbe fraîche, entendre les oiseaux chanter et n’être entourés que de verdure et de prairies fleuries… Et si l’on vous disait que ce paradis existe à Lausanne ? Il s’appelle <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">le parc de l’Hermitage </a>et il se situe en plein centre-ville ! Alors on embarque une couverture à petits carreaux (l’accessoire phare du pro du pique-nique), et on part direction ce joli coin de nature qui vous plaira à coup sûr.",
-            "en": "Our definition of heaven: lying down in the cool grass, listening to birds singing amidst the greenery and flowering meadows… What if we told you that corner of heaven exists in Lausanne? It’s called <a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\">the Hermitage park</a> and is even in the town centre! We pick up pack a blanket (the top-ranking accessory of any self-respecting picnic aficionado) and set off towards that pretty spot of nature we adore.",
-            "de": "Unsere Definition von Paradies? Sich ins frische Gras legen, dem Zwitschern der Vögel lauschen und von nichts als Grün und blühenden Wiesen umgeben sein. Genau dieses Paradies finden Sie in Lausanne. Es heisst <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\">Hermitage Park</a> und befindet sich sogar mitten in der Stadt! Also, packen Sie eine Decke ein (ein Muss für Picknick-Profis) und machen Sie sich auf den Weg in dieses wunderschöne und beliebte Stück Natur."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26022,
-            "name": "Le printemps à Lausanne",
-            "public_name": {
-              "fr": "Le printemps à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Hâler son teint à bord d’un bateau, d’un pédalo ou d’un paddle </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et non, il n’y a pas qu’en revenant de deux semaines à se dorer la pilule sur les plages de sable fin d’Ibiza, d’Italie ou de la Côte d’Azur que l’on peut obtenir un teint halé très flatteur. Pour avoir toutes les chances de son côté d’entendre un « Mais qu’est-ce que tu as bonne mine ! », on choisit <a href=\"https://www.lausanne-tourisme.ch/fr/activites-nautiques/\">des activités nautiques</a> comme le bateau, le pédalo et le paddle. En plus, on fait d’une pierre deux coups, puisque ce sont certainement les meilleures façons de profiter des eaux turquoise du Léman, au calme, loin de la rive et en se laissant doucement bercer par le clapotis des vagues. Comme dirait Gilbert Montagné, cet été, « on va s’aimer sur le pont d’un bateau (<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\">de la CGN</a>), on va s’aimer à s’en brûler la peau… » (attention aux coups de soleil tout de même, n’oubliez pas d’emporter votre crème 50 à bord)."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CQTgCNrgX0J/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Installer une couverture au parc de l’Hermitage et déguster son pique-nique</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Notre définition du paradis : s’allonger dans l’herbe fraîche, entendre les oiseaux chanter et n’être entourés que de verdure et de prairies fleuries… Et si l’on vous disait que ce paradis existe à Lausanne ? Il s’appelle <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-lhermitage/\">le parc de l’Hermitage </a>et il se situe en plein centre-ville ! Alors on embarque une couverture à petits carreaux (l’accessoire phare du pro du pique-nique), et on part direction ce joli coin de nature qui vous plaira à coup sûr."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26022,
+              "name": "Le printemps à Lausanne",
+              "public_name": "Le printemps à Lausanne",
+              "cloudinary_id": "d06d7a9f1270fc94",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne; Détente; Parc; Vue; Couple",
+                "description": null,
+                "file_name_from_url": "2a4a0adfc51f37a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Couple-Hermitage.jpg"
+              }
             },
-            "cloudinary_id": "d06d7a9f1270fc94",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lausanne; Détente; Parc; Vue; Couple",
-              "description": null,
-              "file_name_from_url": "2a4a0adfc51f37a9.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Couple-Hermitage.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Lézarder au soleil à la plage d’Ouchy, sur le Deck de la Jetée de la compagnie ou dans les criques du sentier du bord du lac</strong>",
-            "en": "<strong>Lapping up the sun on board a boat, pedal boat or a on stand-up paddle </strong>",
-            "de": "<strong>Liegend oder sitzend die Sonne geniessen am Strand von Ouchy, auf dem Holzdeck der Jetée de la Compagnie oder in den Buchten am Seeuferweg</strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Vous le connaissez, ce sentiment de farniente absolu ? Allongés sur la plage, la musique dans les oreilles, les lunettes de soleil sur le nez, les yeux fermés et le soleil qui tape sur nos joues. Ces journées où l’on alterne avec bonheur chaise longue et trempette rafraîchissante et où la seule interrogation réside dans le choix de notre parfum de glace. Et bien à Lausanne, il existe une nuée d’endroits pour retrouver cette sensation rêvée toute l’année. Direction <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-douchy/\">la plage d’Ouchy</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">le Deck de la Jetée de la Compagnie</a> ou les criques du sentier du bord du lac pour des journées détentes bien méritées.",
-            "en": "There’s no need to spend two weeks basking in the sun on the sandy beaches of Ibiza, the Côte d’Azur or Italy to get a gorgeous, tanned complexion. To increase the odds of being told, “You have such a healthy glow!” we choose <a href=\"https://www.lausanne-tourisme.ch/en/leisure-lake-geneva/\">nautical activities</a> like sailing, going out on a pedal boat or on a stand-up paddle. What’s more, you’ll get double benefits, as they’re undoubtedly the best ways of making the most of the lake’s clear water, in a peaceful setting away from the shore being gently rocked by the lapping of the waves. As French singer Gilbert Montagné would put it, “We’ll love each other on the deck of a (<a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\">CGN</a>) boat, we’ll love each other to burn each other’s skin” (beware of sunburn all the same, and don’t forget to take your SPF 50 sun cream on board).",
-            "de": "Bestimmt kennen Sie es, dieses Gefühl des absoluten Nichtstuns, wenn Sie mit aufgesetzten Kopfhörern, der Sonnenbrille auf der Nase und geschlossenen Augen am Strand liegen und die Sonne auf Ihrer Haut spüren. Wir lieben jene Tage, an denen wir abwechselnd auf einem Liegestuhl faulenzen und uns mit einem Sprung ins Wasser abkühlen, und an denen wir nur eine einzige Entscheidung treffen müssen: Welche Sorte Eis darf es denn heute sein? Lausanne ist voller Orte, wo dieses Gefühl aufkommt, von dem wir das ganze Jahr über träumen. Also, auf zum <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-strand-von-ouchy/\">Strand von Ouchy</a>, zum Holzdeck der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> oder zu den Buchten am Seeuferweg für wohlverdiente Erholungsmomente."
-          }
-        },
-        {
-          "type": "instagram",
-          "value": "https://www.instagram.com/reel/COw-WOVgT4l/?utm_source=ig_embed&utm_campaign=loading"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26208,
-            "name": "Lausanne CHILL",
-            "public_name": {
-              "fr": "Lausanne CHILL"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lézarder au soleil à la plage d’Ouchy, sur le Deck de la Jetée de la compagnie ou dans les criques du sentier du bord du lac</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Vous le connaissez, ce sentiment de farniente absolu ? Allongés sur la plage, la musique dans les oreilles, les lunettes de soleil sur le nez, les yeux fermés et le soleil qui tape sur nos joues. Ces journées où l’on alterne avec bonheur chaise longue et trempette rafraîchissante et où la seule interrogation réside dans le choix de notre parfum de glace. Et bien à Lausanne, il existe une nuée d’endroits pour retrouver cette sensation rêvée toute l’année. Direction <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-douchy/\">la plage d’Ouchy</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">le Deck de la Jetée de la Compagnie</a> ou les criques du sentier du bord du lac pour des journées détentes bien méritées."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/COw-WOVgT4l/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26208,
+              "name": "Lausanne CHILL",
+              "public_name": "Lausanne CHILL",
+              "cloudinary_id": "62cf5ecddcc47e0f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac; Eau; Détente",
+                "description": null,
+                "file_name_from_url": "62cf5ecddcc47e0f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Detente-lac-1.jpg"
+              }
             },
-            "cloudinary_id": "62cf5ecddcc47e0f",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lac; Eau; Détente",
-              "description": null,
-              "file_name_from_url": "62cf5ecddcc47e0f.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Detente-lac-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Lire son bouquin préféré face au lac, au Crêt de Montriond, sur la colline du Languedoc ou à l’esplanade de Montbenon </strong>",
-            "en": "<strong>Idling in contemplation of the lake or reading your favourite novel on the Crêt de Montriond, the Languedoc Hillside or the Montbenon Esplanade</strong>",
-            "de": "<strong>Lieblingsbuch lesen mit Blick auf den See, auf dem Montriond-Hügel, dem Languedoc-Hügel oder auf der Montbenon-Esplanade </strong>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "C’est bien connu, à Lausanne, il suffit de prendre un peu de hauteur pour avoir une vue de dingue sur le lac Léman et les montagnes. La preuve avec <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">le Crêt de Montriond</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sur-la-colline-du-languedoc/\">la colline du Languedoc</a> et <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/esplanade-de-montbenon/\">l’esplanade de Montbenon</a>, qui offrent des vues différentes mais toutes aussi panoramiques les unes que les autres ! La bonne nouvelle, c’est que ces 3 endroits ont des espaces parfaits pour s’installer et bouquiner, parce que parfois, un bon livre et un joli paysage permettent d’apprécier un moment de qualité en sa propre compagnie.",
-            "en": "It’s well known that in Lausanne, you just need to gain some height to get a stunning view of the lake and mountains. Proof of that is the<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\"> Crêt de Montriond</a>, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/on-the-languedoc-hillside/\">Languedoc Hillside</a> and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/montbenon-esplanade/\">Montbenon Esplanade</a>, each offering different but equally panoramic views! The great news is that those 3 places have perfect spots to relax with a novel… because sometimes, all you need is a good book, a lovely landscape and to enjoy some me time.",
-            "de": "Wie Sie sicher wissen, muss man in Lausanne nur etwas an Höhe gewinnen, um eine herrliche Aussicht auf den Genfersee und die Berge zu geniessen. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">Der Montriond</a>– und der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-languedoc-hugel/\">Languedoc-Hügel</a> sowie <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/montbenon-esplanade/\">die Montbenon-Esplanade</a> sind ideal dafür, sie bieten unterschiedliche Ausblicke mit einem aussergewöhnlichen Panorama! Alle drei Orte bieten zudem perfekte Plätze, um entspannt zu lesen, denn manchmal braucht man nur ein gutes Buch, eine schöne Landschaft und etwas Zeit für sich selbst."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26274,
-            "name": "Lausanne CHILL",
-            "public_name": {
-              "fr": "Lausanne CHILL"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lire son bouquin préféré face au lac, au Crêt de Montriond, sur la colline du Languedoc ou à l’esplanade de Montbenon </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est bien connu, à Lausanne, il suffit de prendre un peu de hauteur pour avoir une vue de dingue sur le lac Léman et les montagnes. La preuve avec <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-cret-de-montriond/\">le Crêt de Montriond</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sur-la-colline-du-languedoc/\">la colline du Languedoc</a> et <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/esplanade-de-montbenon/\">l’esplanade de Montbenon</a>, qui offrent des vues différentes mais toutes aussi panoramiques les unes que les autres ! La bonne nouvelle, c’est que ces 3 endroits ont des espaces parfaits pour s’installer et bouquiner, parce que parfois, un bon livre et un joli paysage permettent d’apprécier un moment de qualité en sa propre compagnie."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26274,
+              "name": "Lausanne CHILL",
+              "public_name": "Lausanne CHILL",
+              "cloudinary_id": "4b076a947720b8bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Vue; Lac; Parc;",
+                "description": null,
+                "file_name_from_url": "4b076a947720b8bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/CRET-MONTRIOND-arbres-1.jpg"
+              }
             },
-            "cloudinary_id": "4b076a947720b8bd",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1068,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1068\"",
-              "tags": "Vue; Lac; Parc;",
-              "description": null,
-              "file_name_from_url": "4b076a947720b8bd.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/CRET-MONTRIOND-arbres-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26148,
+              "name": "Les rooftops de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "42dbc61a50b0c569",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1621,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1621\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "42dbc61a50b0c569.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Perchoir-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        }
-      ],
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "CHILL index:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Perchoir\">hilling while sipping a cocktail at the Perchoir, sitting down to a scrumptious meal on the terrace of Un Po’ Di Più or during an afterwork in the gardens of the Vieux-Lausanne</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Jet%C3%A9e\">itting Ouchy’s new Beach, the Jetée de la Compagnie’s Deck or an inlet along the lakeside walk to bask in the sun</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Montriond\">dling in contemplation of the lake or reading your favourite novel on the Crêt de Montriond, the Languedoc Hillside or the Montbenon Esplanade</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#paddle\">apping up the sun on board a boat, pedal boat or on a stand-up paddle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-chill/#Hermitage\">aying down a blanket in the Hermitage Park and savouring the season’s first picnic basket</a>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Chilling while sipping a cocktail at the Perchoir, sitting down to a scrumptious meal on the terrace of Un Po’ Di Più or during an afterwork in the gardens of the Vieux-Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Oh, that treasured time in summer, just after work, when the day is still hot and we can at last spend time in the sun – we wouldn’t miss it for anything in the world! It’s almost like the start of a new day. And to make the most of it, we have our choicest addresses:"
+          },
+          {
+            "type": "paragraph",
+            "value": "1. At <a href=\"https://www.lausanne-tourisme.ch/en/explore/le-perchoir-rooftop-bar/\">the Perchoir</a>, the Vortex’s incredible rooftop, Spritz or Moscow Mule in hand, comfortably settled in one of the bar’s loungers."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25889,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "d04c194ac6e6a0a4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Apéritif; Lausanne; Détente; Bar",
+                "description": null,
+                "file_name_from_url": "d04c194ac6e6a0a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Apero-transat.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "2. On the terrace of <a href=\"https://www.lausanne-tourisme.ch/en/explore/un-po-di-piu/\">Un Po’ Di Più</a>, the Italian restaurant at the Rue du Tunnel, feasting on a delicious plate of double truffle pasta or a pizza with mozzarella di bufala."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25981,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "e62835df5cd3cb70",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1709,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "FEDIGIOIAt",
+                "attr": "width=\"1709\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e62835df5cd3cb70.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/DSC_0247-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "3. In <a href=\"https://www.lausanne-tourisme.ch/en/explore/restaurant-du-vieux-lausanne/\">the gardens of the Vieux-Lausanne</a> for an afterwork in the company of our favourite colleagues and an apéro snack board."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Hitting Ouchy beach, the Jetée de la Compagnie’s Deck or an inlet along the lakeside walk to bask in the sun</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "You know that feeling of total idleness, lying on the beach, headphones in, sunglasses on, eyes closed and the sun caressing our cheeks. Those days spent between a lounge chair and refreshing swims, and when the only decision required is which flavour of ice cream to choose. Well, Lausanne is simply brimming with spots to capture that feeling that we dream of all year long! Head to <a href=\"https://www.lausanne-tourisme.ch/en/explore/ouchy-beach/\">Ouchy beach</a>, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">Jetée de la Compagnie’s</a> Deck or one of the many inlets along the lakeside walk for well-earned lazy days."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CQTgCNrgX0J/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Laying down a blanket in the Hermitage Park and savouring the season’s first picnic basket </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Our definition of heaven: lying down in the cool grass, listening to birds singing amidst the greenery and flowering meadows… What if we told you that corner of heaven exists in Lausanne? It’s called <a href=\"https://www.lausanne-tourisme.ch/en/explore/hermitage-park/\">the Hermitage park</a> and is even in the town centre! We pick up pack a blanket (the top-ranking accessory of any self-respecting picnic aficionado) and set off towards that pretty spot of nature we adore."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26022,
+              "name": "Le printemps à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d06d7a9f1270fc94",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne; Détente; Parc; Vue; Couple",
+                "description": null,
+                "file_name_from_url": "2a4a0adfc51f37a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Couple-Hermitage.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lapping up the sun on board a boat, pedal boat or a on stand-up paddle </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "There’s no need to spend two weeks basking in the sun on the sandy beaches of Ibiza, the Côte d’Azur or Italy to get a gorgeous, tanned complexion. To increase the odds of being told, “You have such a healthy glow!” we choose <a href=\"https://www.lausanne-tourisme.ch/en/leisure-lake-geneva/\">nautical activities</a> like sailing, going out on a pedal boat or on a stand-up paddle. What’s more, you’ll get double benefits, as they’re undoubtedly the best ways of making the most of the lake’s clear water, in a peaceful setting away from the shore being gently rocked by the lapping of the waves. As French singer Gilbert Montagné would put it, “We’ll love each other on the deck of a (<a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\">CGN</a>) boat, we’ll love each other to burn each other’s skin” (beware of sunburn all the same, and don’t forget to take your SPF 50 sun cream on board)."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/COw-WOVgT4l/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26208,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "62cf5ecddcc47e0f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac; Eau; Détente",
+                "description": null,
+                "file_name_from_url": "62cf5ecddcc47e0f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Detente-lac-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Idling in contemplation of the lake or reading your favourite novel on the Crêt de Montriond, the Languedoc Hillside or the Montbenon Esplanade</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s well known that in Lausanne, you just need to gain some height to get a stunning view of the lake and mountains. Proof of that is the<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-cret-de-montriond/\"> Crêt de Montriond</a>, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/on-the-languedoc-hillside/\">Languedoc Hillside</a> and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/montbenon-esplanade/\">Montbenon Esplanade</a>, each offering different but equally panoramic views! The great news is that those 3 places have perfect spots to relax with a novel… because sometimes, all you need is a good book, a lovely landscape and to enjoy some me time."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26274,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "4b076a947720b8bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Vue; Lac; Parc;",
+                "description": null,
+                "file_name_from_url": "4b076a947720b8bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/CRET-MONTRIOND-arbres-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26148,
+              "name": "Les rooftops de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "42dbc61a50b0c569",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1621,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1621\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "42dbc61a50b0c569.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Perchoir-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "CHILL-Index:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>C-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Perchoir\">hillen in der Rooftop-Bar Le Perchoir bei einem Cocktail, auf der Terrasse der Trattoria Un Po’ Di Più bei einem guten Essen oder nach Feierabend im Garten des Restaurants Le Vieux-Lausanne</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>H-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Pedalo\">aut bräunen auf einem Schiff, Pedalo oder Stand-up-Paddle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>I-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Hermitage\">m Hermitage-Park eine Decke ausbreiten und picknicken</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Jet%C3%A9e\">iegend oder sitzend die Sonne geniessen am neuen Strand von Ouchy, auf dem Holzdeck der Jetée de la Compagnie oder in den Buchten am Seeuferweg</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>L-</strong><a href=\"https://www.lausanne-tourisme.ch/de/the-lausanner/articles/lausanne-chill/#Montriond\">ieblingsbuch lesen mit Blick auf den See, auf dem Montriond-Hügel, dem Languedoc-Hügel oder auf der Montbenon-Esplanade</a>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Chillen in der Rooftop-Bar Le Perchoir bei einem Cocktail, auf der Terrasse der Trattoria Un Po’ Di Più bei einem guten Essen  oder nach Feierabend im Garten des Restaurants Le Vieux-Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Diesen Moment im Sommer, gleich nach Feierabend, wenn es noch schön warm ist und wir endlich nach draussen an die Sonne gehen können, diesen Moment würden wir um nichts in der Welt verpassen wollen! Es ist fast, als würde ein neuer Tag beginnen. Hier unsere Lieblingsadressen, damit Sie es in vollen Zügen geniessen können:"
+          },
+          {
+            "type": "paragraph",
+            "value": "1. Die unglaubliche Rooftop-Bar <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-perchoir-rooftop-bar/\">Le Perchoir</a> im Gebäude Vortex: Geniessen Sie den Abend auf einem der Liegestühle der Bar mit einen Aperol Spritz oder Moscow Mule in der Hand."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25889,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "d04c194ac6e6a0a4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Apéritif; Lausanne; Détente; Bar",
+                "description": null,
+                "file_name_from_url": "d04c194ac6e6a0a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Apero-transat.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "2. Die Terrasse der Trattoria <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/un-po-di-piu/\">Un Po’ Di Più</a>: In diesem italienischen Restaurant an der Rue du Tunnel werden Sie mit leckerer Trüffelpasta oder einer Pizza mit Mozzarella di bufala verwöhnt."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25981,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "e62835df5cd3cb70",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1709,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": "FEDIGIOIAt",
+                "attr": "width=\"1709\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e62835df5cd3cb70.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/DSC_0247-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "3. Der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/restaurant-du-vieux-lausanne/\">Garten des Restaurants Le Vieux-Lausanne</a>: perfekt für einen Feierabend mit Ihren Kolleginnen und Kollegen bei einem Apéro-Plättli."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23365,
+              "name": "Les Jardins du Vieux-Lausanne",
+              "public_name": "Les Jardins du Vieux-Lausanne",
+              "cloudinary_id": "yFlCRxXOkwQUXQDLVB0tlNSzNLtBJHGNhGDZ0Quv",
+              "mime_type": "image/jpeg",
+              "copyright": "© Christian Meixner Fotografie",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Lausanne, Terrasse, Gastronomie; Restaurant; Cité",
+                "description": null,
+                "file_name_from_url": "03ff3da2452b1f66.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Les-Jardins-Vieux-Lausanne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Haut bräunen auf einem Schiff, Pedalo oder Stand-up-Paddle </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Einen schmeichelhaften gebräunten Teint bekommt man nicht nur nach zwei Wochen Sonnenbaden an den feinen Sandstränden von Ibiza, der Côte d’Azur oder Italien.  Wenn Sie Ihre Chancen auf ein „Wow, du siehst toll aus!“ erhöhen wollen, dann sind <a href=\"https://www.lausanne-tourisme.ch/de/freizeitgestaltung-genfersee/\">Wasseraktivitäten</a> wie eine Schiff- oder Pedalofahrt oder Stand-up-Paddling genau das Richtige für Sie. Zudem schlagen Sie zwei Fliegen mit einer Klappe, denn diese Möglichkeiten sind zweifellos die besten, um in einer ruhigen Umgebung und weit weg vom Ufer das türkisfarbene Wasser des Genfersees und das Plätschern der Wellen zu geniessen. Wie es der Sänger Gilbert Montagné sagen würde: Diesen Sommer werden wir uns auf dem Deck eines Schiffes (<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schifffahrten-auf-dem-genfersee-cgn/\">der Genfersee-Schifffahrtsgesellschaft CGN</a>) lieben, wir werden uns lieben, bis wir uns die Haut verbrennen (Vorsicht vor Sonnenbrand, denken Sie daran, eine Sonnencreme mit Lichtschutzfaktor 50 mit an Bord zu nehmen)."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/CQTgCNrgX0J/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Im Hermitage-Park eine Decke ausbreiten und picknicken</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Unsere Definition von Paradies? Sich ins frische Gras legen, dem Zwitschern der Vögel lauschen und von nichts als Grün und blühenden Wiesen umgeben sein. Genau dieses Paradies finden Sie in Lausanne. Es heisst <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hermitage-park/\">Hermitage Park</a> und befindet sich sogar mitten in der Stadt! Also, packen Sie eine Decke ein (ein Muss für Picknick-Profis) und machen Sie sich auf den Weg in dieses wunderschöne und beliebte Stück Natur."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26022,
+              "name": "Le printemps à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d06d7a9f1270fc94",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne; Détente; Parc; Vue; Couple",
+                "description": null,
+                "file_name_from_url": "2a4a0adfc51f37a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Couple-Hermitage.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Liegend oder sitzend die Sonne geniessen am Strand von Ouchy, auf dem Holzdeck der Jetée de la Compagnie oder in den Buchten am Seeuferweg</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Bestimmt kennen Sie es, dieses Gefühl des absoluten Nichtstuns, wenn Sie mit aufgesetzten Kopfhörern, der Sonnenbrille auf der Nase und geschlossenen Augen am Strand liegen und die Sonne auf Ihrer Haut spüren. Wir lieben jene Tage, an denen wir abwechselnd auf einem Liegestuhl faulenzen und uns mit einem Sprung ins Wasser abkühlen, und an denen wir nur eine einzige Entscheidung treffen müssen: Welche Sorte Eis darf es denn heute sein? Lausanne ist voller Orte, wo dieses Gefühl aufkommt, von dem wir das ganze Jahr über träumen. Also, auf zum <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-strand-von-ouchy/\">Strand von Ouchy</a>, zum Holzdeck der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> oder zu den Buchten am Seeuferweg für wohlverdiente Erholungsmomente."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/reel/COw-WOVgT4l/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26208,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "62cf5ecddcc47e0f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac; Eau; Détente",
+                "description": null,
+                "file_name_from_url": "62cf5ecddcc47e0f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/06/Detente-lac-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lieblingsbuch lesen mit Blick auf den See, auf dem Montriond-Hügel, dem Languedoc-Hügel oder auf der Montbenon-Esplanade </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wie Sie sicher wissen, muss man in Lausanne nur etwas an Höhe gewinnen, um eine herrliche Aussicht auf den Genfersee und die Berge zu geniessen. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-cret-de-montriond/\">Der Montriond</a>– und der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-languedoc-hugel/\">Languedoc-Hügel</a> sowie <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/montbenon-esplanade/\">die Montbenon-Esplanade</a> sind ideal dafür, sie bieten unterschiedliche Ausblicke mit einem aussergewöhnlichen Panorama! Alle drei Orte bieten zudem perfekte Plätze, um entspannt zu lesen, denn manchmal braucht man nur ein gutes Buch, eine schöne Landschaft und etwas Zeit für sich selbst."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26274,
+              "name": "Lausanne CHILL",
+              "public_name": null,
+              "cloudinary_id": "4b076a947720b8bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": "Vue; Lac; Parc;",
+                "description": null,
+                "file_name_from_url": "4b076a947720b8bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/CRET-MONTRIOND-arbres-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "d04c194ac6e6a0a4",

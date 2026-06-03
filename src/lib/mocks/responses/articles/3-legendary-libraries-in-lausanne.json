@@ -18,373 +18,863 @@
         "de": "Wenn man sich im Studium, so wie ich, zu Hause einfach überhaupt nicht konzentrieren kann, sind Bibliotheken oft der einzige Ausweg. Und nach verschiedenen Besuchen der grossen Bibliotheken auf der ganzen Welt, wobei ich beispielsweise die Amsterdamer Bibliothek wirklich empfehlen kann, glaube ich behaupten zu können, dass die Bibliotheken in Lausanne sich mitnichten dahinter verstecken müssen.",
         "en": "When, like me, you are studying and find it impossible to concentrate at home, libraries are indispensable. Having visited the great libraries of the world, like the one in Amsterdam (you really should go there), I can say that the Lausanne libraries are of the same quality."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27234,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27234,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "c3f3767e89af6d33",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1280\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3f3767e89af6d33.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Rolex-Learning.jpg"
+              }
             },
-            "cloudinary_id": "c3f3767e89af6d33",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1920,
-              "height": 1280,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"1280\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c3f3767e89af6d33.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Rolex-Learning.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/palais-de-rumine/\">La Bibliothèque cantonale et universitaire</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\">Die kantonale Universitätsbibliothek</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\">The cantonal university library</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La première, sans doute une des plus anciennes, est celle de la Riponne. Installée au cœur du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/palais-de-rumine/\">Palais de Rumine</a>, cette petite bibliothèque a l’avantage d’être au centre-ville, proche des cafés pour les pauses de midi, et des discothèques si on révise jusqu’à la fermeture.",
-            "de": "Die erste und bestimmt eine der ältesten ist die Bibliothèque de la Riponne. Einer der Vorteile dieser kleinen, mitten im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\">Palais de Rumine</a> untergebrachten Bibliothek besteht darin, dass sie sich im Stadtzentrum befindet. Die Cafés in der Nähe eignen sich ganz wunderbar für die Mittagspause, und wenn man bis spät abends mit Lernen beschäftigt ist, sind auch die Diskotheken nicht weit.",
-            "en": "Number one and doubtless one of the oldest is the Riponne library. Located in the middle of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\">Palais de Rumine</a>, this small library has the advantage of being in the town centre and close to cafés for lunch-time breaks and also handy for the discothèques if you are working until the library closes."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25951,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/palais-de-rumine/\">La Bibliothèque cantonale et universitaire</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "La première, sans doute une des plus anciennes, est celle de la Riponne. Installée au cœur du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/palais-de-rumine/\">Palais de Rumine</a>, cette petite bibliothèque a l’avantage d’être au centre-ville, proche des cafés pour les pauses de midi, et des discothèques si on révise jusqu’à la fermeture."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25951,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "4a60f2c2c976fe28",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Sébastien Closuit",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4a60f2c2c976fe28.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Vue-sur-le-Palais-de-Rumine.jpg"
+              }
             },
-            "cloudinary_id": "4a60f2c2c976fe28",
-            "mime_type": "image/jpeg",
-            "copyright": "© LT/Sébastien Closuit",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "4a60f2c2c976fe28.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Vue-sur-le-Palais-de-Rumine.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>©LT/Sébastien Closuit</em>",
-            "de": "©LT/Sébastien Closuit",
-            "en": "©LT/Sébastien Closuit"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "A l’intérieur du bâtiment, on trouve une collection de DVD et de CD absolument unique, et un grand nombre de publications locales sur la Suisse et le Canton de Vaud. Si on s’y rend assez souvent, on peut identifier les figures récurrentes de cet endroit, comme par exemple le vieil homme qui découpe des articles de journaux, ou encore le type avec la casquette rouge qui reste sur son ordinateur toute la journée.",
-            "de": "Im Gebäude selbst wird man von einer absolut einzigartigen DVD- und CD-Kollektion sowie einer Vielzahl lokaler Publikationen über die Schweiz und den Kanton Waadt erwartet. Und wenn man oft genug hier ist, fängt man an, ein paar typische Bibliotheksbesucher wiederzuerkennen: Zum Beispiel den älteren Herrn, der Zeitungsartikel ausschneidet, oder auch den Kerl mit der roten Mütze, der den ganzen Tag an seinem Computer sitzt.",
-            "en": "The building contains an absolutely unique collection of DVDs and CDs as well as a large number of local publications on Switzerland and the Canton of Vaud. If you are a frequent visitor to the library you recognise the library’s regulars, for example the elderly man who cuts out articles from the newspapers or the person with the red cap who spends the entire day on his computer."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26035,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "paragraph",
+            "value": "<em>©LT/Sébastien Closuit</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A l’intérieur du bâtiment, on trouve une collection de DVD et de CD absolument unique, et un grand nombre de publications locales sur la Suisse et le Canton de Vaud. Si on s’y rend assez souvent, on peut identifier les figures récurrentes de cet endroit, comme par exemple le vieil homme qui découpe des articles de journaux, ou encore le type avec la casquette rouge qui reste sur son ordinateur toute la journée."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26035,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "7f183896cabd3efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 1529,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1529\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7f183896cabd3efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF9993-scaled.jpg"
+              }
             },
-            "cloudinary_id": "7f183896cabd3efa",
-            "mime_type": "image/jpeg",
-            "copyright": "© Dominik Gehl",
-            "metadata": {
-              "width": 1529,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1529\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "7f183896cabd3efa.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF9993-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>",
-            "de": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>",
-            "en": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La BCU de la Riponne a aussi un aspect singulier, qui est de se trouver juste à côté des musées de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-de-zoologie/\">zoologie</a> et de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-de-geologie/\">géologie</a>. Donc lorsque je perds de l’attention et que je n’arrive plus à travailler, je vais vite faire un petit tour du côté des animaux empaillés ou des cristaux pour me changer les idées. Légèrement glauque, mais assez amusant.",
-            "de": "Daneben bietet kantonale Universitätsbibliothek einen ganz besonderen Aspekt, nämlich die Museen für <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-zoologisches-museum/\">Zoologie</a> und <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-museum-fur-geologie/\">Geologie</a> direkt nebenan. Wenn mir also mal wieder die Aufmerksamkeit verloren geht und ich einfach nicht mehr weitermachen kann, mache ich einen kleinen Ausflug zu den ausgestopften Tieren oder den Kristallen, um auf andere Gedanken zu kommen. Das ist zwar etwas deprimierend, aber doch unterhaltsam.",
-            "en": "The cantonal university library as it is known, also has a unique feature – it is a close neighbour of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-zoology-museum/\">zoology</a> and <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-geology-museum/\">geology</a> museums. Therefore when I find my attention wandering and work is impossible, I take a short trip around the stuffed animals or the crystals to take my mind off things. Slightly creepy but quite entertaining."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26116,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "La BCU de la Riponne a aussi un aspect singulier, qui est de se trouver juste à côté des musées de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-de-zoologie/\">zoologie</a> et de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-de-geologie/\">géologie</a>. Donc lorsque je perds de l’attention et que je n’arrive plus à travailler, je vais vite faire un petit tour du côté des animaux empaillés ou des cristaux pour me changer les idées. Légèrement glauque, mais assez amusant."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26116,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "f466a1d503a0b342",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/ Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Art, Culture; Musée Zoologie; Rumine",
+                "description": null,
+                "file_name_from_url": "f466a1d503a0b342.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Palais-Rumine-Musee-KAZ_118-1.jpg"
+              }
             },
-            "cloudinary_id": "f466a1d503a0b342",
-            "mime_type": "image/jpeg",
-            "copyright": "© LT/ Laurent Kaczor",
-            "metadata": {
-              "width": 1600,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1200\"",
-              "tags": "Art, Culture; Musée Zoologie; Rumine",
-              "description": null,
-              "file_name_from_url": "f466a1d503a0b342.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Palais-Rumine-Musee-KAZ_118-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "©LT/ Laurent Kaczor",
-            "de": "©LT/ Laurent Kaczor",
-            "en": "©LT/ Laurent Kaczor"
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.bcu-lausanne.ch/\">La Banane (BCU Unithèque)</a>",
-            "de": "<a href=\"https://www.bcu-lausanne.ch/en/\">La Banane (BCU Unithèque)</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-zoology-museum/\">La Banane (BCU Unithèque)</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La seconde bibliothèque est sans doute une des plus cultes et emblématiques pour les communautés étudiantes lausannoises. Il s’agit de la BCU Unithèque, AKA la Banane. C’est un très grand bâtiment, plat et allongé, au charme vintage des années 1980. La première visite de la Banane peut être impressionnante, car on s’y perd facilement à travers les longs et vastes couloirs, les centaines de chaises et de tables, les milliers de livres de littérature, d’histoire, d’art, de sciences, etc. Il y a par ailleurs une vue assez belle sur les Alpes et le lac depuis les balcons de cette bibliothèque, ce qui n’aide pas du tout à se concentrer.",
-            "de": "Die zweite Bibliothek ist mit Sicherheit eine der kultigsten und berühmtesten Bibliotheken für die Lausanner Studenten und Studentinnen. Es handelt sich um die BCU Unithèque, auch bekannt als La Banane. Ein sehr grosses, flaches und langgezogenes Gebäude mit dem Vintage-Charme der 1980er Jahre. Der erste Besuch in La Banane kann sehr beeindruckend sein, weil man sich so leicht in den langen und breiten Gängen, den vielen Stühlen und Tischen sowie den unzähligen Büchern über Literatur, Geschichte, Kunst, Naturwissenschaft usw. verliert. Der Blick auf die Alpen und den See von den Balkonen der Bibliothek aus ist beeindruckend, trägt allerdings so gar nicht dazu bei, dass man sich besser konzentrieren kann.",
-            "en": "The second library is doubtless one of the most iconic and emblematic for the various student bodies of Lausanne. This is the BCU Unithèque, aka the “Banana”. It is a huge flat, elongated building with the vintage charm of the 1980s. The first visit to the Banana can be intimidating as it is easy to get lost in the vast, interminable corridors, the hundreds of chairs and tables, thousands of books on literature, history, art and the sciences etc. There is also a stunning view of the Alps and the lake from the library’s balconies – something which certainly doesn’t assist concentration."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26183,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "paragraph",
+            "value": "©LT/ Laurent Kaczor"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.bcu-lausanne.ch/\">La Banane (BCU Unithèque)</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "La seconde bibliothèque est sans doute une des plus cultes et emblématiques pour les communautés étudiantes lausannoises. Il s’agit de la BCU Unithèque, AKA la Banane. C’est un très grand bâtiment, plat et allongé, au charme vintage des années 1980. La première visite de la Banane peut être impressionnante, car on s’y perd facilement à travers les longs et vastes couloirs, les centaines de chaises et de tables, les milliers de livres de littérature, d’histoire, d’art, de sciences, etc. Il y a par ailleurs une vue assez belle sur les Alpes et le lac depuis les balcons de cette bibliothèque, ce qui n’aide pas du tout à se concentrer."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26183,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "3700eb40bc2f9172",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3700eb40bc2f9172.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00012875-scaled.jpg"
+              }
             },
-            "cloudinary_id": "3700eb40bc2f9172",
-            "mime_type": "image/jpeg",
-            "copyright": "© Université de Lausanne",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "3700eb40bc2f9172.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00012875-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26250,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "image",
+            "value": {
+              "id": 26250,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "d3d32f74cbe9b6cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d3d32f74cbe9b6cc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00010082-scaled.jpg"
+              }
             },
-            "cloudinary_id": "d3d32f74cbe9b6cc",
-            "mime_type": "image/jpeg",
-            "copyright": "© Université de Lausanne",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "d3d32f74cbe9b6cc.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00010082-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "©Université de Lausanne",
-            "de": "©Université de Lausanne",
-            "en": "©Université de Lausanne"
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-rolex-learning-center/\">Le Rolex Learning Center</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-rolex-learning-center/\">Das Rolex Learning Center</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/the-rolex-learning-center/\">The Rolex Learning Center</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Enfin, il faut parler du Rolex Learning Center. Appelée comme tel pour le prestige et le luxe, cette bibliothèque se veut une des plus hypes de Lausanne. Le bâtiment lui-même est très expérimental, et forme une sorte de bande longue et horizontale qui monte et qui descend.",
-            "de": "Abschliessend das Rolex Learning Center. Diese Bibliothek, die wegen ihres Prestiges und ihres Luxus so genannt wird, versteht sich als eine der angesagtesten Bibliotheken von Lausanne. Das Gebäude selbst ist schon sehr experimentell und bildet eine Art langes, horizontales Band, das nach oben und nach unten geschwungen ist.",
-            "en": "Finally we come to the Rolex Learning Center. Named as a reminder of prestige and luxury, this library is designed to be one of the most way-out structures in Lausanne. The building itself is very experimental, shaped like a sort of elongated, horizontal band which rises and falls."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26310,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "paragraph",
+            "value": "©Université de Lausanne"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-rolex-learning-center/\">Le Rolex Learning Center</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Enfin, il faut parler du Rolex Learning Center. Appelée comme tel pour le prestige et le luxe, cette bibliothèque se veut une des plus hypes de Lausanne. Le bâtiment lui-même est très expérimental, et forme une sorte de bande longue et horizontale qui monte et qui descend."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26310,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "4e5842f76516ebbd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 2129,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2129\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e5842f76516ebbd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DKGL2414-2-scaled.jpg"
+              }
             },
-            "cloudinary_id": "4e5842f76516ebbd",
-            "mime_type": "image/jpeg",
-            "copyright": "© Dominik Gehl",
-            "metadata": {
-              "width": 2560,
-              "height": 2129,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"2129\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "4e5842f76516ebbd.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DKGL2414-2-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26357,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "image",
+            "value": {
+              "id": 26357,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "57d3f60f3d8b832a",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "57d3f60f3d8b832a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0358-Edit-scaled.jpg"
+              }
             },
-            "cloudinary_id": "57d3f60f3d8b832a",
-            "mime_type": "image/jpeg",
-            "copyright": "© Dominik Gehl",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "57d3f60f3d8b832a.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0358-Edit-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>",
-            "de": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>",
-            "en": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "La bibliothèque est donc un peu à l’image de Lausanne : aucune région n’est plate, soit on monte, soit on descend. Je rêve justement de prendre un jour mon vélo à l’intérieur, et de faire des tours du bâtiment. La grande qualité du RLC est qu’il y a des coussins disposés un peu partout, ce qui invite à profiter du silence et s’offrir une sieste.",
-            "de": "Damit erinnert die Bibliothek ein wenig an die Stadt selbst: In Lausanne gibt es keine Ebenen, entweder geht es bergauf oder bergab. Ich träume tatsächlich davon, eines Tages mit dem Rad durch dieses Gebäude zu fahren. Der überzeugende Faktor am RLC sind die überall herumliegenden Kissen, die dazu einladen, die Ruhe überall für eine Siesta zu nutzen.",
-            "en": "The library therefore mirrors Lausanne, in a way: no part of it is flat; it is either rising or falling. One of my dreams is to take my bike inside the building and ride around its interior. The big plus of the RLC are the cushions spread everywhere – a sort of invitation to take advantage of the silence and treat yourself to a snooze."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26400,
-            "name": "3 bibliothèques lausannoises légendaires",
-            "public_name": {
-              "fr": "3 bibliothèques lausannoises légendaires"
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "La bibliothèque est donc un peu à l’image de Lausanne : aucune région n’est plate, soit on monte, soit on descend. Je rêve justement de prendre un jour mon vélo à l’intérieur, et de faire des tours du bâtiment. La grande qualité du RLC est qu’il y a des coussins disposés un peu partout, ce qui invite à profiter du silence et s’offrir une sieste."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26400,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": "3 bibliothèques lausannoises légendaires",
+              "cloudinary_id": "f1b266ae133505f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f1b266ae133505f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0352-scaled.jpg"
+              }
             },
-            "cloudinary_id": "f1b266ae133505f7",
-            "mime_type": "image/jpeg",
-            "copyright": "© Dominik Gehl",
-            "metadata": {
-              "width": 2560,
-              "height": 1707,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"2560\" height=\"1707\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "f1b266ae133505f7.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0352-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>",
-            "de": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>",
-            "en": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Trois ambiances, trois légendes, les bibliothèques de Lausanne sont des lieux sous-côtés selon moi, qui accueillent absolument tout le monde, même si l’on a rien à lire ou réviser."
           }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Trois ambiances, trois légendes, les bibliothèques de Lausanne sont des lieux sous-côtés selon moi, qui accueillent absolument tout le monde, même si l’on a rien à lire ou réviser.",
-            "de": "Drei Mal ein ganz unterschiedliches Ambiente und drei Legenden: Meiner Meinung nach werden die Bibliotheken von Lausanne viel zu oft vergessen, denn hier haben wirklich alle Leute Zutritt, auch wenn man nichts zu lesen oder zu lernen hat.",
-            "en": "Three atmospheres and three legends – in my opinion the libraries of Lausanne are under-valued; they are locations open to absolutely everyone, even if you have nothing to read or revise."
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27234,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "c3f3767e89af6d33",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1280\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3f3767e89af6d33.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Rolex-Learning.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\">Die kantonale Universitätsbibliothek</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die erste und bestimmt eine der ältesten ist die Bibliothèque de la Riponne. Einer der Vorteile dieser kleinen, mitten im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/palais-de-rumine-2/\">Palais de Rumine</a> untergebrachten Bibliothek besteht darin, dass sie sich im Stadtzentrum befindet. Die Cafés in der Nähe eignen sich ganz wunderbar für die Mittagspause, und wenn man bis spät abends mit Lernen beschäftigt ist, sind auch die Diskotheken nicht weit."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25951,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "4a60f2c2c976fe28",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Sébastien Closuit",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4a60f2c2c976fe28.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Vue-sur-le-Palais-de-Rumine.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/Sébastien Closuit"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Gebäude selbst wird man von einer absolut einzigartigen DVD- und CD-Kollektion sowie einer Vielzahl lokaler Publikationen über die Schweiz und den Kanton Waadt erwartet. Und wenn man oft genug hier ist, fängt man an, ein paar typische Bibliotheksbesucher wiederzuerkennen: Zum Beispiel den älteren Herrn, der Zeitungsartikel ausschneidet, oder auch den Kerl mit der roten Mütze, der den ganzen Tag an seinem Computer sitzt."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26035,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "7f183896cabd3efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 1529,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1529\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7f183896cabd3efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF9993-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Daneben bietet kantonale Universitätsbibliothek einen ganz besonderen Aspekt, nämlich die Museen für <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-zoologisches-museum/\">Zoologie</a> und <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-museum-fur-geologie/\">Geologie</a> direkt nebenan. Wenn mir also mal wieder die Aufmerksamkeit verloren geht und ich einfach nicht mehr weitermachen kann, mache ich einen kleinen Ausflug zu den ausgestopften Tieren oder den Kristallen, um auf andere Gedanken zu kommen. Das ist zwar etwas deprimierend, aber doch unterhaltsam."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26116,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "f466a1d503a0b342",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/ Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Art, Culture; Musée Zoologie; Rumine",
+                "description": null,
+                "file_name_from_url": "f466a1d503a0b342.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Palais-Rumine-Musee-KAZ_118-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/ Laurent Kaczor"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.bcu-lausanne.ch/en/\">La Banane (BCU Unithèque)</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die zweite Bibliothek ist mit Sicherheit eine der kultigsten und berühmtesten Bibliotheken für die Lausanner Studenten und Studentinnen. Es handelt sich um die BCU Unithèque, auch bekannt als La Banane. Ein sehr grosses, flaches und langgezogenes Gebäude mit dem Vintage-Charme der 1980er Jahre. Der erste Besuch in La Banane kann sehr beeindruckend sein, weil man sich so leicht in den langen und breiten Gängen, den vielen Stühlen und Tischen sowie den unzähligen Büchern über Literatur, Geschichte, Kunst, Naturwissenschaft usw. verliert. Der Blick auf die Alpen und den See von den Balkonen der Bibliothek aus ist beeindruckend, trägt allerdings so gar nicht dazu bei, dass man sich besser konzentrieren kann."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26183,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "3700eb40bc2f9172",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3700eb40bc2f9172.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00012875-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26250,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "d3d32f74cbe9b6cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d3d32f74cbe9b6cc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00010082-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©Université de Lausanne"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-rolex-learning-center/\">Das Rolex Learning Center</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Abschliessend das Rolex Learning Center. Diese Bibliothek, die wegen ihres Prestiges und ihres Luxus so genannt wird, versteht sich als eine der angesagtesten Bibliotheken von Lausanne. Das Gebäude selbst ist schon sehr experimentell und bildet eine Art langes, horizontales Band, das nach oben und nach unten geschwungen ist."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26310,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "4e5842f76516ebbd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 2129,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2129\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e5842f76516ebbd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DKGL2414-2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26357,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "57d3f60f3d8b832a",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "57d3f60f3d8b832a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0358-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Damit erinnert die Bibliothek ein wenig an die Stadt selbst: In Lausanne gibt es keine Ebenen, entweder geht es bergauf oder bergab. Ich träume tatsächlich davon, eines Tages mit dem Rad durch dieses Gebäude zu fahren. Der überzeugende Faktor am RLC sind die überall herumliegenden Kissen, die dazu einladen, die Ruhe überall für eine Siesta zu nutzen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26400,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "f1b266ae133505f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f1b266ae133505f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0352-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Drei Mal ein ganz unterschiedliches Ambiente und drei Legenden: Meiner Meinung nach werden die Bibliotheken von Lausanne viel zu oft vergessen, denn hier haben wirklich alle Leute Zutritt, auch wenn man nichts zu lesen oder zu lernen hat."
           }
-        }
-      ],
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27234,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "c3f3767e89af6d33",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1280\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3f3767e89af6d33.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/05/Rolex-Learning.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\">The cantonal university library</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Number one and doubtless one of the oldest is the Riponne library. Located in the middle of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/palais-de-rumine/\">Palais de Rumine</a>, this small library has the advantage of being in the town centre and close to cafés for lunch-time breaks and also handy for the discothèques if you are working until the library closes."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25951,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "4a60f2c2c976fe28",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Sébastien Closuit",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4a60f2c2c976fe28.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Vue-sur-le-Palais-de-Rumine.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/Sébastien Closuit"
+          },
+          {
+            "type": "paragraph",
+            "value": "The building contains an absolutely unique collection of DVDs and CDs as well as a large number of local publications on Switzerland and the Canton of Vaud. If you are a frequent visitor to the library you recognise the library’s regulars, for example the elderly man who cuts out articles from the newspapers or the person with the red cap who spends the entire day on his computer."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26035,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "7f183896cabd3efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 1529,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1529\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "7f183896cabd3efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF9993-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/?hl=fr\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The cantonal university library as it is known, also has a unique feature – it is a close neighbour of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-zoology-museum/\">zoology</a> and <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-geology-museum/\">geology</a> museums. Therefore when I find my attention wandering and work is impossible, I take a short trip around the stuffed animals or the crystals to take my mind off things. Slightly creepy but quite entertaining."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26116,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "f466a1d503a0b342",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/ Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Art, Culture; Musée Zoologie; Rumine",
+                "description": null,
+                "file_name_from_url": "f466a1d503a0b342.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/Palais-Rumine-Musee-KAZ_118-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/ Laurent Kaczor"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-zoology-museum/\">La Banane (BCU Unithèque)</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The second library is doubtless one of the most iconic and emblematic for the various student bodies of Lausanne. This is the BCU Unithèque, aka the “Banana”. It is a huge flat, elongated building with the vintage charm of the 1980s. The first visit to the Banana can be intimidating as it is easy to get lost in the vast, interminable corridors, the hundreds of chairs and tables, thousands of books on literature, history, art and the sciences etc. There is also a stunning view of the Alps and the lake from the library’s balconies – something which certainly doesn’t assist concentration."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26183,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "3700eb40bc2f9172",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3700eb40bc2f9172.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00012875-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26250,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "d3d32f74cbe9b6cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Université de Lausanne",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d3d32f74cbe9b6cc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/BCUL_00010082-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©Université de Lausanne"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/the-rolex-learning-center/\">The Rolex Learning Center</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Finally we come to the Rolex Learning Center. Named as a reminder of prestige and luxury, this library is designed to be one of the most way-out structures in Lausanne. The building itself is very experimental, shaped like a sort of elongated, horizontal band which rises and falls."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26310,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "4e5842f76516ebbd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 2129,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"2129\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e5842f76516ebbd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DKGL2414-2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26357,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "57d3f60f3d8b832a",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "57d3f60f3d8b832a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0358-Edit-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The library therefore mirrors Lausanne, in a way: no part of it is flat; it is either rising or falling. One of my dreams is to take my bike inside the building and ride around its interior. The big plus of the RLC are the cushions spread everywhere – a sort of invitation to take advantage of the silence and treat yourself to a snooze."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26400,
+              "name": "3 bibliothèques lausannoises légendaires",
+              "public_name": null,
+              "cloudinary_id": "f1b266ae133505f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Dominik Gehl",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f1b266ae133505f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/02/DSCF0352-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©<a href=\"https://www.instagram.com/dominikgehl/\">Dominik Gehl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Three atmospheres and three legends – in my opinion the libraries of Lausanne are under-valued; they are locations open to absolutely everyone, even if you have nothing to read or revise."
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "4a60f2c2c976fe28",

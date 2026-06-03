@@ -18,407 +18,812 @@
         "en": "Whether in Lausanne for leisure or business tourism, visitors particularly appreciate the cleanliness, respect for nature, diligent upkeep of green spaces, as well as the energy-saving and anti-nuisance policies put in place by the city.",
         "de": "Ob Freizeit- oder Geschäftstourismus, in Lausanne schätzen die Gäste die Sauberkeit, den respektvollen Umgang mit der Natur, die Aufwertung der Grünflächen und die von der Stadt getroffenen Massnahmen zum Energiesparen und zur Bekämpfung von Lärmbelästigungen."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27200,
-            "name": "Lausanne et la durabilité - Cathédrale",
-            "public_name": {
-              "fr": "Vue sur Lausanne Ouchy depuis le lac",
-              "en": "Vue sur Lausanne Ouchy depuis le lac",
-              "de": "Vue sur Lausanne Ouchy depuis le lac",
-              "es": null
-            },
-            "cloudinary_id": "NFCH6NGYX1EHJKOP3G32o22lgbL3rwyCwQyOkZx0",
-            "mime_type": "image/jpeg",
-            "copyright": "© Vue sur Lausanne Ouchy depuis le lac",
-            "metadata": {
-              "width": 1600,
-              "height": 1066,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1066\"",
-              "tags": "Parc; Arbre; Paysage; Cathédrale",
-              "description": null,
-              "file_name_from_url": "90a4d91c2fcacc69.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Ouchy-vert.jpg"
-            }
-          },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Ainsi, afin d’améliorer toujours plus la qualité de vie de ses habitant-e-s, Lausanne a choisi de faire du développement durable l’un des fers de lance de sa politique depuis de nombreuses années. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>",
-            "en": "To further improve the quality of life of its residents, Lausanne has made sustainable development one of the spearheads of its policy for many years.",
-            "de": "Im Bestreben, die Lebensqualität in der Stadt stetig zu verbessern, hat Lausanne die nachhaltige Entwicklung schon vor vielen Jahren zu einem der Schwerpunkte ihrer Politik erklärt.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<b><span data-contrast=\"none\">Mobilité douce et responsable</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "<strong>Soft and responsible mobility</strong>",
-            "de": "<strong>Sanfte und verantwortungsvolle Mobilität</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Fière détentrice du label suisse Cité de l’énergie, Lausanne offre la possibilité de parcourir la région via divers moyens de transport respectueux de l’environnement. En plus des visites à pied – individuelles ou guidées – favorisées par les multiples zones piétonnes de la ville, des vélos sont proposés à la location en libre-service. En outre, le M2 – unique métro automatique en Suisse – ainsi que des bus électriques ou au gaz naturel sont à disposition pour se déplacer aisément à travers la ville et sa région. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "Proud holder of the Swiss “Cité de l’énergie” label, Lausanne offers the opportunity to explore the region using a variety of environmentally friendly means of transport. As well as walking tours – individual or guided – encouraged by the city’s many pedestrian zones, self-service bicycles are available for hire. In addition, the M2 – the only automatic metro in Switzerland – and electric and natural gas buses are available for easy travel around the city and its region.",
-            "de": "Als stolze Trägerin des Labels „Energiestadt“ bietet Lausanne verschiedene umweltfreundliche Verkehrsmittel, um die Region zu erkunden. Neben individuellen und geführten Stadtrundgängen durch die zahlreichen Fussgängerzonen bietet sich auch das Mieten von Velos an Selbstbedienungsstationen an. Zudem sorgen die M2, die einzige automatische Metro der Schweiz, sowie Elektro- und Erdgasbusse für ein bequemes Erkunden der Stadt und der Region",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Par ailleurs, les touristes logeant dans un établissement qui paie la taxe de séjour reçoivent une </span><a href=\"https://www.lausanne-tourisme.ch/lausanne-transport-card-and-more/\"><b><span data-contrast=\"none\">Lausanne Transport Card &amp; More (LTC)</span></b></a><span data-contrast=\"none\">, leur permettant d’emprunter librement les transports publics de l’agglomération (bus, train, métro) durant toute la durée de leur séjour (max. 15 jours). </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "What’s more, tourists staying in an establishment that pays the tourist tax receive a <strong><a href=\"https://www.lausanne-tourisme.ch/en/lausanne-transport-card-and-more/\">Lausanne Transport Card &amp; More (LTC)</a></strong>, which allows them to use public transport in the urban area (bus, train, metro) freely for the duration of their stay (max. 15 days).",
-            "de": "Touristinnen und Touristen, die in einem Betrieb übernachten, wo die Kurtaxe zu entrichten ist, erhalten die <a href=\"https://www.lausanne-tourisme.ch/de/lausanne-transport-card-and-more/\"><strong>Lausanne Transport Card &amp; More (LTC)</strong></a>, mit der sie während ihres gesamten Aufenthalts (max. 15 Tage) die öffentlichen Verkehrsmittel (Bus, Zug, Metro) im Grossraum Lausanne kostenlos benutzen können.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 27051,
-              "name": "Lausanne et la durabilité -  Place de l'Europe",
-              "public_name": {
-                "fr": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
-                "en": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
-                "de": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
-                "es": null
-              },
-              "cloudinary_id": "Icpy6GYGJxNgnWI1M8gUiGk7Ah8XAow6NaEnpr5p",
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27200,
+              "name": "Lausanne et la durabilité - Cathédrale",
+              "public_name": "Vue sur Lausanne Ouchy depuis le lac",
+              "cloudinary_id": "NFCH6NGYX1EHJKOP3G32o22lgbL3rwyCwQyOkZx0",
               "mime_type": "image/jpeg",
-              "copyright": "© Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+              "copyright": "© Vue sur Lausanne Ouchy depuis le lac",
               "metadata": {
                 "width": 1600,
-                "height": 1067,
+                "height": 1066,
                 "mimeType": "image/jpeg",
                 "copyright": null,
-                "attr": "width=\"1600\" height=\"1067\"",
-                "tags": "Centre-ville; Lausanne",
+                "attr": "width=\"1600\" height=\"1066\"",
+                "tags": "Parc; Arbre; Paysage; Cathédrale",
                 "description": null,
-                "file_name_from_url": "c1823a5a7506207c.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Place-de-lEurope.jpg"
+                "file_name_from_url": "90a4d91c2fcacc69.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Ouchy-vert.jpg"
               }
             },
-            {
-              "id": 27054,
-              "name": "Lausanne et la durabilité - Vélo",
-              "public_name": {
-                "fr": "Detente au bord du lac Leman au coucher du soleil",
-                "en": "Detente au bord du lac Leman au coucher du soleil",
-                "de": "Detente au bord du lac Leman au coucher du soleil",
-                "es": null
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Ainsi, afin d’améliorer toujours plus la qualité de vie de ses habitant-e-s, Lausanne a choisi de faire du développement durable l’un des fers de lance de sa politique depuis de nombreuses années. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Mobilité douce et responsable</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Fière détentrice du label suisse Cité de l’énergie, Lausanne offre la possibilité de parcourir la région via divers moyens de transport respectueux de l’environnement. En plus des visites à pied – individuelles ou guidées – favorisées par les multiples zones piétonnes de la ville, des vélos sont proposés à la location en libre-service. En outre, le M2 – unique métro automatique en Suisse – ainsi que des bus électriques ou au gaz naturel sont à disposition pour se déplacer aisément à travers la ville et sa région. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Par ailleurs, les touristes logeant dans un établissement qui paie la taxe de séjour reçoivent une </span><a href=\"https://www.lausanne-tourisme.ch/lausanne-transport-card-and-more/\"><b><span data-contrast=\"none\">Lausanne Transport Card &amp; More (LTC)</span></b></a><span data-contrast=\"none\">, leur permettant d’emprunter librement les transports publics de l’agglomération (bus, train, métro) durant toute la durée de leur séjour (max. 15 jours). </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27051,
+                "name": "Lausanne et la durabilité -  Place de l'Europe",
+                "public_name": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "cloudinary_id": "Icpy6GYGJxNgnWI1M8gUiGk7Ah8XAow6NaEnpr5p",
+                "mime_type": "image/jpeg",
+                "copyright": "© Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Centre-ville; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "c1823a5a7506207c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Place-de-lEurope.jpg"
+                }
               },
-              "cloudinary_id": "FJsmB0PuLESXjh0DZfAyLgAB1T7jfbihfs6OnISe",
+              {
+                "id": 27054,
+                "name": "Lausanne et la durabilité - Vélo",
+                "public_name": "Detente au bord du lac Leman au coucher du soleil",
+                "cloudinary_id": "FJsmB0PuLESXjh0DZfAyLgAB1T7jfbihfs6OnISe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Detente au bord du lac Leman au coucher du soleil",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac, Vélo;",
+                  "description": null,
+                  "file_name_from_url": "23742b797c8a5185.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Detente-lac.jpg"
+                }
+              },
+              {
+                "id": 27055,
+                "name": "Lausanne et la durabilité - cathédrale",
+                "public_name": "Vue Cathedrale et metro m2",
+                "cloudinary_id": "Fwa1vK2m5SZTp2DopVRxDX6S3WD5aHwYFRr58zvA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue Cathedrale et metro m2",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Cathedrale, Cité; Transport; Métro; Pont",
+                  "description": null,
+                  "file_name_from_url": "56f3f550e7deaa84.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Vue-Cathedrale-et-metro-m2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Gestion des déchets</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Sacs taxés, calendrier de ramassage, campagnes de sensibilisation… En matière de recyclage et de gestion des déchets, la Ville de Lausanne met en place plusieurs initiatives pour aider la population lausannoise à mieux trier et valoriser. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Projets éco-responsables </span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">En outre, Lausanne peut compter sur plusieurs initiatives éco-responsables d’envergure, à l’instar de <a href=\"https://www.netleman.ch/\">Net’Léman</a> – le plus grand nettoyage lacustre d’Europe.  En effet, chaque année – depuis plus de 10 ans – ce grand nettoyage des rives et des fonds du lac est organisé, permettant de récupérer quelque 130000 kilos de déchets jusqu’alors. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25881,
+              "name": "Lausanne et la durabilité",
+              "public_name": "Lausanne et la durabilité",
+              "cloudinary_id": "0a95ceee36580f99",
               "mime_type": "image/jpeg",
-              "copyright": "© Detente au bord du lac Leman au coucher du soleil",
+              "copyright": "© Vue sur le lac Leman les montagnes et le Lavaux",
               "metadata": {
                 "width": 1600,
-                "height": 1067,
+                "height": 1198,
                 "mimeType": "image/jpeg",
                 "copyright": null,
-                "attr": "width=\"1600\" height=\"1067\"",
-                "tags": "Lac, Vélo;",
-                "description": null,
-                "file_name_from_url": "23742b797c8a5185.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Detente-lac.jpg"
-              }
-            },
-            {
-              "id": 27055,
-              "name": "Lausanne et la durabilité - cathédrale",
-              "public_name": {
-                "fr": "Vue Cathedrale et metro m2",
-                "en": "Vue Cathedrale et metro m2",
-                "de": "Vue Cathedrale et metro m2",
-                "es": null
-              },
-              "cloudinary_id": "Fwa1vK2m5SZTp2DopVRxDX6S3WD5aHwYFRr58zvA",
-              "mime_type": "image/jpeg",
-              "copyright": "© Vue Cathedrale et metro m2",
-              "metadata": {
-                "width": 1600,
-                "height": 1067,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"1600\" height=\"1067\"",
-                "tags": "Cathedrale, Cité; Transport; Métro; Pont",
-                "description": null,
-                "file_name_from_url": "56f3f550e7deaa84.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Vue-Cathedrale-et-metro-m2.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<b><span data-contrast=\"none\">Gestion des déchets</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>",
-            "en": "<strong>Waste management</strong>",
-            "de": "<strong>Abfallmanagement</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Sacs taxés, calendrier de ramassage, campagnes de sensibilisation… En matière de recyclage et de gestion des déchets, la Ville de Lausanne met en place plusieurs initiatives pour aider la population lausannoise à mieux trier et valoriser. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":0,\"335559739\":0,\"335559740\":276}'> </span>",
-            "en": "Taxed bin bags, a collection calendar, awareness campaigns… In terms of recycling and waste management, the City of Lausanne has put in place a number of initiatives to help the population of Lausanne sort and recycle more effectively.",
-            "de": "Unter anderem mit Gebührensäcken, Abfuhrkalender und Sensibilisierungskampagnen setzt die Stadt Lausanne im Recycling- und Abfallmanagement mehrere Initiativen um, die die Lausanner Bevölkerung beim Abfallsortieren und -recyceln unterstützen.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<b><span data-contrast=\"none\">Projets éco-responsables </span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "<strong>Eco-responsible projects</strong>",
-            "de": "<strong>Umweltschutzprojekte</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">En outre, Lausanne peut compter sur plusieurs initiatives éco-responsables d’envergure, à l’instar de <a href=\"https://www.netleman.ch/\">Net’Léman</a> – le plus grand nettoyage lacustre d’Europe.  En effet, chaque année – depuis plus de 10 ans – ce grand nettoyage des rives et des fonds du lac est organisé, permettant de récupérer quelque 130000 kilos de déchets jusqu’alors. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "In addition, Lausanne can count on a number of major eco-responsible initiatives, such as <a href=\"https://www.netleman.ch/\">Net’Léman</a> – the largest lake clean-up in Europe. Every two years – for over 10 years now – this major clean-up of the lake’s shores and bed has been organised, enabling some 130,000 kilos of waste to be recovered.",
-            "de": "Lausanne hat sich auch mehreren Grossprojekten zugunsten des Umweltschutzes verschrieben, beispielsweise <a href=\"https://www.netleman.ch/\">Net’Léman</a>, der grössten Seesäuberungsaktion Europas. Im Rahmen dieses Projekts werden seit über 10 Jahren jährlich das Seeufer und der Seegrund gereinigt, sodass bis heute rund 130 000 Kilo Abfall eingesammelt werden konnten.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25881,
-            "name": "Lausanne et la durabilité",
-            "public_name": {
-              "fr": "Lausanne et la durabilité"
-            },
-            "cloudinary_id": "0a95ceee36580f99",
-            "mime_type": "image/jpeg",
-            "copyright": "© Vue sur le lac Leman les montagnes et le Lavaux",
-            "metadata": {
-              "width": 1600,
-              "height": 1198,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1198\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "0a95ceee36580f99.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Ouchy_Lausanne-2.jpg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Terroir valorisé  </strong><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "<strong>Enhanced  “terroir”</strong>",
-            "de": "<strong>Aufwertung des Terroirs</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Et que dire de la richesse de ses produits régionaux ? Spécialités locales, produits du terroir et vins vaudois sont « certifiés d’ici », quand de plus en plus de restaurants et d’hébergements mettent en avant le label vert « Swisstainable ».",
-            "en": "And what about the wealth of regional products? Local specialities, local produce and Vaud wines are “certified from here”, while more and more restaurants and accommodation are promoting the “Swissstainable” green label.",
-            "de": "Wie sieht es mit der Vielfalt an regionalen Produkten aus? Lokale Spezialitäten, regionale Produkte und Waadtländer Weine tragen das Label „Certifié d’ici“ und immer mehr Restaurants und Unterkünfte werben mit dem Ökolabel „Swisstainable“.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.myswitzerland.com/fr-ch/planification/vie-pratique/la-suisse-durable-par-nature/?_gl=1*ksdrxw*_up*MQ..&amp;gclid=EAIaIQobChMI5vPO2LHxhwMVV52DBx1vIwuXEAAYASAAEgLiNvD_BwE\"><strong>Le programme « Swisstainable »</strong></a>",
-            "en": "<a href=\"https://www.myswitzerland.com/en-ch/planning/about-switzerland/sustainability/\"><strong>The “Swisstainable” programme</strong></a>",
-            "de": "<a href=\"https://www.myswitzerland.com/de-ch/planung/ueber-die-schweiz/nachhaltigkeit/?_gl=1*m46tet*_up*MQ..&amp;gclid=EAIaIQobChMI5vPO2LHxhwMVV52DBx1vIwuXEAAYASAAEgLiNvD_BwE\"><strong>Swisstainable-Programm</strong></a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Mis en place par Suisse Tourisme, ce programme vertueux valorise le développement durable de la Suisse en tant que destination touristique. Grâce au label « Swisstainable », les voyageurs engagés ou sensibilisés à l’éco-tourisme se voient ainsi orientés vers des lieux et des offres de séjours plus responsables. Hébergements, restaurants ou encore mobilité douce : les lieux certifiés sont évalués et tenus de répondre à divers critères de qualité en matière de durabilité. Trois niveaux sont à atteindre pour un engagement complet.</span>",
-            "en": "Set up by Switzerland Tourism, this virtuous programme promotes the sustainable development of Switzerland as a tourist destination. Thanks to the “Swisstainable” label, travellers who are committed to or aware of eco-tourism can identifiy more responsible places and holiday offers. From accommodation and restaurants to soft mobility, certified establishments are assessed and required to meet various quality criteria in terms of sustainability. Three levels are to be attained for a comprehensive commitment.",
-            "de": "Dieses vorbildliche, von Schweiz Tourismus ins Leben gerufene Programm fördert die nachhaltige Entwicklung der Schweiz als Reiseziel. Mit dem Swisstainable-Label werden Reisende, die sich im Ökotourismus wiedererkennen und dafür sensibilisiert sind, auf Destinationen und Reiseangebote aufmerksam gemacht, die auf Nachhaltigkeit setzen. Von den Unterkünften über die Restaurants bis hin zur sanften Mobilität werden die zertifizierten Betriebe bewertet und müssen verschiedene Qualitätskriterien in Bezug auf die Nachhaltigkeit erfüllen. Für ein umfassendes Nachhaltigkeitsengagement werden drei Zertifizierungsstufen verlangt.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25977,
-            "name": "Lausanne et la durabilité",
-            "public_name": {
-              "fr": "Lausanne et la durabilité"
-            },
-            "cloudinary_id": "24850bdff175e7c7",
-            "mime_type": "image/jpeg",
-            "copyright": "© Jour de marché, rue de Bourg Lausanne",
-            "metadata": {
-              "width": 1920,
-              "height": 1281,
-              "mimeType": "image/jpeg",
-              "copyright": "Laurent KACZOR",
-              "attr": "width=\"1920\" height=\"1281\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "24850bdff175e7c7.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Rue-de-Bourg-8.jpeg"
-            }
-          },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<b><span data-contrast=\"none\">Écotourisme</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "<strong>Ecotourism</strong>",
-            "de": "<strong>Ökotourismus</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Ces dernières années, en effet, le tourisme vert (ou doux) s’est fortement développé, qu’il s’agisse de visites dans les domaines viticoles de la ville, de chambres d’hôtes misant sur l’écotourisme, d’auberges proposant des produits locaux, de sentiers aménagés pour les piétons, les cyclistes et les cavaliers, ou encore d’activités sportives permettant d’associer nature et exercice physique. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "In recent years, green (or soft) tourism has grown significantly, with visits to the town’s wine estates, ecotourism bed and breakfasts, inns serving local produce, pedestrian, cycling and horse-riding trails, as well as sporting activities that combine nature and exercise.",
-            "de": "In den letzten Jahren hat sich der Ökotourismus, auch sanfter Tourismus genannt, stark entwickelt. Dazu zählen Besuche auf den Weingütern der Stadt, ökotouristische Bed &amp; Breakfasts, Hotels, die lokale Produkte verwenden, Wander-, Rad- und Reitwege sowie sportliche Aktivitäten, die Natur und sportliche Aktivitäten miteinander verbinden.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<b><i><span data-contrast=\"none\">« Créons une économie touristique solide, solidaire et régénérative ».</span></i></b><b><span data-contrast=\"none\"> </span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "<strong><em>“Let’s create a solid, supportive and regenerative tourism economy.”</em></strong>",
-            "de": "<strong><em>„Schaffung einer soliden, solidarischen und regenerativen Tourismuswirtschaft“</em></strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<span data-contrast=\"none\">Depuis 2021, le programme LMCare 2025 – porté par <a href=\"https://www.lausanne-montreux-congress.ch/fr/\">Lausanne Montreux Congrès</a> – œuvre à la promotion de la durabilité de la destination, de l’industrie touristique locale, de son personnel, de ses visiteurs et de la société civile en s’engageant sur 5 ans.</span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>",
-            "en": "Since 2021, the LMCare 2025 programme – supported by <a href=\"https://www.lausanne-montreux-congress.ch/en/\">Lausanne Montreux Congress</a>– has been working to promote the sustainability of the destination, the local tourism industry, its staff, visitors and civil society through a 5-year commitment.",
-            "de": "Seit 2021 setzt sich das von <a href=\"https://www.lausanne-montreux-congress.ch/de/\">Lausanne Montreux Congrès</a> getragene Programm LMCare 2025 im Rahmen einer fünfjährigen Verpflichtung aktiv für die Nachhaltigkeit der Destination, der lokalen Tourismusbranche, ihrer Mitarbeitenden, ihrer Gäste und der Bevölkerung ein.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "gallery",
-          "value": [
-            {
-              "id": 26129,
-              "name": "5 bonnes façons de commencer la journée à Lausanne",
-              "public_name": {
-                "fr": "5 bonnes façons de commencer la journée à Lausanne"
-              },
-              "cloudinary_id": "c04a60be2dc1cce6",
-              "mime_type": "image/jpeg",
-              "copyright": "© Stand au marche de Lausanne. Produits locaux",
-              "metadata": {
-                "width": 1067,
-                "height": 1600,
-                "mimeType": "image/jpeg",
-                "copyright": null,
-                "attr": "width=\"1067\" height=\"1600\"",
-                "tags": "Marché, Lausanne, produit, local",
-                "description": null,
-                "file_name_from_url": "c04a60be2dc1cce6.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Marche-legumes.jpg"
-              }
-            },
-            {
-              "id": 15507,
-              "name": "Cépages",
-              "public_name": {
-                "fr": "Cépages",
-                "en": "Cépages",
-                "de": "Cépages",
-                "it": "Cépages",
-                "es": "Cépages"
-              },
-              "cloudinary_id": "cuhblljuptdypufnuvby",
-              "mime_type": "image/jpeg",
-              "copyright": "© Lausanne à table",
-              "metadata": {
-                "attr": "width=\"2048\" height=\"1365\"",
+                "attr": "width=\"1600\" height=\"1198\"",
                 "tags": null,
-                "width": 2048,
-                "height": 1365,
-                "mimeType": "image/jpeg",
-                "copyright": null,
                 "description": null,
-                "file_name_from_url": "e13cee53a372b618.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Chateau-Rochefort.jpg"
+                "file_name_from_url": "0a95ceee36580f99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Ouchy_Lausanne-2.jpg"
               }
             },
-            {
-              "id": 27060,
-              "name": "Lausanne et la durabilité - Chalet-à-Gobet",
-              "public_name": {
-                "fr": "Balade à cheval et jogging dans les bois",
-                "en": "Balade à cheval et jogging dans les bois",
-                "de": "Balade à cheval et jogging dans les bois",
-                "es": null
-              },
-              "cloudinary_id": "hNf2hpxHq8EsxRjaucZfehayXt0iO0IZtAH4Bn73",
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Terroir valorisé  </strong><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et que dire de la richesse de ses produits régionaux ? Spécialités locales, produits du terroir et vins vaudois sont « certifiés d’ici », quand de plus en plus de restaurants et d’hébergements mettent en avant le label vert « Swisstainable »."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.myswitzerland.com/fr-ch/planification/vie-pratique/la-suisse-durable-par-nature/?_gl=1*ksdrxw*_up*MQ..&amp;gclid=EAIaIQobChMI5vPO2LHxhwMVV52DBx1vIwuXEAAYASAAEgLiNvD_BwE\"><strong>Le programme « Swisstainable »</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Mis en place par Suisse Tourisme, ce programme vertueux valorise le développement durable de la Suisse en tant que destination touristique. Grâce au label « Swisstainable », les voyageurs engagés ou sensibilisés à l’éco-tourisme se voient ainsi orientés vers des lieux et des offres de séjours plus responsables. Hébergements, restaurants ou encore mobilité douce : les lieux certifiés sont évalués et tenus de répondre à divers critères de qualité en matière de durabilité. Trois niveaux sont à atteindre pour un engagement complet.</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25977,
+              "name": "Lausanne et la durabilité",
+              "public_name": "Lausanne et la durabilité",
+              "cloudinary_id": "24850bdff175e7c7",
               "mime_type": "image/jpeg",
-              "copyright": "© LT/ Laurent Kaczor",
+              "copyright": "© Jour de marché, rue de Bourg Lausanne",
               "metadata": {
                 "width": 1920,
-                "height": 1280,
+                "height": 1281,
                 "mimeType": "image/jpeg",
-                "copyright": "Laurent Kaczor",
-                "attr": "width=\"1920\" height=\"1280\"",
+                "copyright": "Laurent KACZOR",
+                "attr": "width=\"1920\" height=\"1281\"",
                 "tags": null,
                 "description": null,
-                "file_name_from_url": "f4ec44cbe7b1f803.jpg",
-                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Chalet-%C3%A0-Gobet_008.jpg"
+                "file_name_from_url": "24850bdff175e7c7.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Rue-de-Bourg-8.jpeg"
               }
-            }
-          ]
-        }
-      ],
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Écotourisme</span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Ces dernières années, en effet, le tourisme vert (ou doux) s’est fortement développé, qu’il s’agisse de visites dans les domaines viticoles de la ville, de chambres d’hôtes misant sur l’écotourisme, d’auberges proposant des produits locaux, de sentiers aménagés pour les piétons, les cyclistes et les cavaliers, ou encore d’activités sportives permettant d’associer nature et exercice physique. </span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<b><i><span data-contrast=\"none\">« Créons une économie touristique solide, solidaire et régénérative ».</span></i></b><b><span data-contrast=\"none\"> </span></b><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Depuis 2021, le programme LMCare 2025 – porté par <a href=\"https://www.lausanne-montreux-congress.ch/fr/\">Lausanne Montreux Congrès</a> – œuvre à la promotion de la durabilité de la destination, de l’industrie touristique locale, de son personnel, de ses visiteurs et de la société civile en s’engageant sur 5 ans.</span><span data-ccp-props='{\"134233117\":false,\"134233118\":false,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559738\":240,\"335559739\":240,\"335559740\":276}'> </span>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26129,
+                "name": "5 bonnes façons de commencer la journée à Lausanne",
+                "public_name": "5 bonnes façons de commencer la journée à Lausanne",
+                "cloudinary_id": "c04a60be2dc1cce6",
+                "mime_type": "image/jpeg",
+                "copyright": "© Stand au marche de Lausanne. Produits locaux",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Marché, Lausanne, produit, local",
+                  "description": null,
+                  "file_name_from_url": "c04a60be2dc1cce6.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Marche-legumes.jpg"
+                }
+              },
+              {
+                "id": 15507,
+                "name": "Cépages",
+                "public_name": "Cépages",
+                "cloudinary_id": "cuhblljuptdypufnuvby",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne à table",
+                "metadata": {
+                  "attr": "width=\"2048\" height=\"1365\"",
+                  "tags": null,
+                  "width": 2048,
+                  "height": 1365,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "e13cee53a372b618.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Chateau-Rochefort.jpg"
+                }
+              },
+              {
+                "id": 27060,
+                "name": "Lausanne et la durabilité - Chalet-à-Gobet",
+                "public_name": "Balade à cheval et jogging dans les bois",
+                "cloudinary_id": "hNf2hpxHq8EsxRjaucZfehayXt0iO0IZtAH4Bn73",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT/ Laurent Kaczor",
+                "metadata": {
+                  "width": 1920,
+                  "height": 1280,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Laurent Kaczor",
+                  "attr": "width=\"1920\" height=\"1280\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f4ec44cbe7b1f803.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Chalet-%C3%A0-Gobet_008.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27200,
+              "name": "Lausanne et la durabilité - Cathédrale",
+              "public_name": "Vue sur Lausanne Ouchy depuis le lac",
+              "cloudinary_id": "NFCH6NGYX1EHJKOP3G32o22lgbL3rwyCwQyOkZx0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur Lausanne Ouchy depuis le lac",
+              "metadata": {
+                "width": 1600,
+                "height": 1066,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1066\"",
+                "tags": "Parc; Arbre; Paysage; Cathédrale",
+                "description": null,
+                "file_name_from_url": "90a4d91c2fcacc69.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Ouchy-vert.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "To further improve the quality of life of its residents, Lausanne has made sustainable development one of the spearheads of its policy for many years."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Soft and responsible mobility</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Proud holder of the Swiss “Cité de l’énergie” label, Lausanne offers the opportunity to explore the region using a variety of environmentally friendly means of transport. As well as walking tours – individual or guided – encouraged by the city’s many pedestrian zones, self-service bicycles are available for hire. In addition, the M2 – the only automatic metro in Switzerland – and electric and natural gas buses are available for easy travel around the city and its region."
+          },
+          {
+            "type": "paragraph",
+            "value": "What’s more, tourists staying in an establishment that pays the tourist tax receive a <strong><a href=\"https://www.lausanne-tourisme.ch/en/lausanne-transport-card-and-more/\">Lausanne Transport Card &amp; More (LTC)</a></strong>, which allows them to use public transport in the urban area (bus, train, metro) freely for the duration of their stay (max. 15 days)."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27051,
+                "name": "Lausanne et la durabilité -  Place de l'Europe",
+                "public_name": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "cloudinary_id": "Icpy6GYGJxNgnWI1M8gUiGk7Ah8XAow6NaEnpr5p",
+                "mime_type": "image/jpeg",
+                "copyright": "© Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Centre-ville; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "c1823a5a7506207c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Place-de-lEurope.jpg"
+                }
+              },
+              {
+                "id": 27054,
+                "name": "Lausanne et la durabilité - Vélo",
+                "public_name": "Detente au bord du lac Leman au coucher du soleil",
+                "cloudinary_id": "FJsmB0PuLESXjh0DZfAyLgAB1T7jfbihfs6OnISe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Detente au bord du lac Leman au coucher du soleil",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac, Vélo;",
+                  "description": null,
+                  "file_name_from_url": "23742b797c8a5185.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Detente-lac.jpg"
+                }
+              },
+              {
+                "id": 27055,
+                "name": "Lausanne et la durabilité - cathédrale",
+                "public_name": "Vue Cathedrale et metro m2",
+                "cloudinary_id": "Fwa1vK2m5SZTp2DopVRxDX6S3WD5aHwYFRr58zvA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue Cathedrale et metro m2",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Cathedrale, Cité; Transport; Métro; Pont",
+                  "description": null,
+                  "file_name_from_url": "56f3f550e7deaa84.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Vue-Cathedrale-et-metro-m2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Waste management</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Taxed bin bags, a collection calendar, awareness campaigns… In terms of recycling and waste management, the City of Lausanne has put in place a number of initiatives to help the population of Lausanne sort and recycle more effectively."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Eco-responsible projects</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In addition, Lausanne can count on a number of major eco-responsible initiatives, such as <a href=\"https://www.netleman.ch/\">Net’Léman</a> – the largest lake clean-up in Europe. Every two years – for over 10 years now – this major clean-up of the lake’s shores and bed has been organised, enabling some 130,000 kilos of waste to be recovered."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25881,
+              "name": "Lausanne et la durabilité",
+              "public_name": null,
+              "cloudinary_id": "0a95ceee36580f99",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur le lac Leman les montagnes et le Lavaux",
+              "metadata": {
+                "width": 1600,
+                "height": 1198,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1198\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0a95ceee36580f99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Ouchy_Lausanne-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Enhanced  “terroir”</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "And what about the wealth of regional products? Local specialities, local produce and Vaud wines are “certified from here”, while more and more restaurants and accommodation are promoting the “Swissstainable” green label."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.myswitzerland.com/en-ch/planning/about-switzerland/sustainability/\"><strong>The “Swisstainable” programme</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Set up by Switzerland Tourism, this virtuous programme promotes the sustainable development of Switzerland as a tourist destination. Thanks to the “Swisstainable” label, travellers who are committed to or aware of eco-tourism can identifiy more responsible places and holiday offers. From accommodation and restaurants to soft mobility, certified establishments are assessed and required to meet various quality criteria in terms of sustainability. Three levels are to be attained for a comprehensive commitment."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25977,
+              "name": "Lausanne et la durabilité",
+              "public_name": null,
+              "cloudinary_id": "24850bdff175e7c7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Jour de marché, rue de Bourg Lausanne",
+              "metadata": {
+                "width": 1920,
+                "height": 1281,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent KACZOR",
+                "attr": "width=\"1920\" height=\"1281\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "24850bdff175e7c7.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Rue-de-Bourg-8.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Ecotourism</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In recent years, green (or soft) tourism has grown significantly, with visits to the town’s wine estates, ecotourism bed and breakfasts, inns serving local produce, pedestrian, cycling and horse-riding trails, as well as sporting activities that combine nature and exercise."
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong><em>“Let’s create a solid, supportive and regenerative tourism economy.”</em></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Since 2021, the LMCare 2025 programme – supported by <a href=\"https://www.lausanne-montreux-congress.ch/en/\">Lausanne Montreux Congress</a>– has been working to promote the sustainability of the destination, the local tourism industry, its staff, visitors and civil society through a 5-year commitment."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26129,
+                "name": "5 bonnes façons de commencer la journée à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "c04a60be2dc1cce6",
+                "mime_type": "image/jpeg",
+                "copyright": "© Stand au marche de Lausanne. Produits locaux",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Marché, Lausanne, produit, local",
+                  "description": null,
+                  "file_name_from_url": "c04a60be2dc1cce6.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Marche-legumes.jpg"
+                }
+              },
+              {
+                "id": 15507,
+                "name": "Cépages",
+                "public_name": "Cépages",
+                "cloudinary_id": "cuhblljuptdypufnuvby",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne à table",
+                "metadata": {
+                  "attr": "width=\"2048\" height=\"1365\"",
+                  "tags": null,
+                  "width": 2048,
+                  "height": 1365,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "e13cee53a372b618.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Chateau-Rochefort.jpg"
+                }
+              },
+              {
+                "id": 27060,
+                "name": "Lausanne et la durabilité - Chalet-à-Gobet",
+                "public_name": "Balade à cheval et jogging dans les bois",
+                "cloudinary_id": "hNf2hpxHq8EsxRjaucZfehayXt0iO0IZtAH4Bn73",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT/ Laurent Kaczor",
+                "metadata": {
+                  "width": 1920,
+                  "height": 1280,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Laurent Kaczor",
+                  "attr": "width=\"1920\" height=\"1280\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f4ec44cbe7b1f803.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Chalet-%C3%A0-Gobet_008.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27200,
+              "name": "Lausanne et la durabilité - Cathédrale",
+              "public_name": "Vue sur Lausanne Ouchy depuis le lac",
+              "cloudinary_id": "NFCH6NGYX1EHJKOP3G32o22lgbL3rwyCwQyOkZx0",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur Lausanne Ouchy depuis le lac",
+              "metadata": {
+                "width": 1600,
+                "height": 1066,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1066\"",
+                "tags": "Parc; Arbre; Paysage; Cathédrale",
+                "description": null,
+                "file_name_from_url": "90a4d91c2fcacc69.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Ouchy-vert.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Bestreben, die Lebensqualität in der Stadt stetig zu verbessern, hat Lausanne die nachhaltige Entwicklung schon vor vielen Jahren zu einem der Schwerpunkte ihrer Politik erklärt."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Sanfte und verantwortungsvolle Mobilität</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Als stolze Trägerin des Labels „Energiestadt“ bietet Lausanne verschiedene umweltfreundliche Verkehrsmittel, um die Region zu erkunden. Neben individuellen und geführten Stadtrundgängen durch die zahlreichen Fussgängerzonen bietet sich auch das Mieten von Velos an Selbstbedienungsstationen an. Zudem sorgen die M2, die einzige automatische Metro der Schweiz, sowie Elektro- und Erdgasbusse für ein bequemes Erkunden der Stadt und der Region"
+          },
+          {
+            "type": "paragraph",
+            "value": "Touristinnen und Touristen, die in einem Betrieb übernachten, wo die Kurtaxe zu entrichten ist, erhalten die <a href=\"https://www.lausanne-tourisme.ch/de/lausanne-transport-card-and-more/\"><strong>Lausanne Transport Card &amp; More (LTC)</strong></a>, mit der sie während ihres gesamten Aufenthalts (max. 15 Tage) die öffentlichen Verkehrsmittel (Bus, Zug, Metro) im Grossraum Lausanne kostenlos benutzen können."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27051,
+                "name": "Lausanne et la durabilité -  Place de l'Europe",
+                "public_name": "Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "cloudinary_id": "Icpy6GYGJxNgnWI1M8gUiGk7Ah8XAow6NaEnpr5p",
+                "mime_type": "image/jpeg",
+                "copyright": "© Place de l'Europe avec vue sur la Cathedrale de Lausanne.",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Centre-ville; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "c1823a5a7506207c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Place-de-lEurope.jpg"
+                }
+              },
+              {
+                "id": 27054,
+                "name": "Lausanne et la durabilité - Vélo",
+                "public_name": "Detente au bord du lac Leman au coucher du soleil",
+                "cloudinary_id": "FJsmB0PuLESXjh0DZfAyLgAB1T7jfbihfs6OnISe",
+                "mime_type": "image/jpeg",
+                "copyright": "© Detente au bord du lac Leman au coucher du soleil",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac, Vélo;",
+                  "description": null,
+                  "file_name_from_url": "23742b797c8a5185.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Detente-lac.jpg"
+                }
+              },
+              {
+                "id": 27055,
+                "name": "Lausanne et la durabilité - cathédrale",
+                "public_name": "Vue Cathedrale et metro m2",
+                "cloudinary_id": "Fwa1vK2m5SZTp2DopVRxDX6S3WD5aHwYFRr58zvA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue Cathedrale et metro m2",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Cathedrale, Cité; Transport; Métro; Pont",
+                  "description": null,
+                  "file_name_from_url": "56f3f550e7deaa84.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Vue-Cathedrale-et-metro-m2.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Abfallmanagement</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Unter anderem mit Gebührensäcken, Abfuhrkalender und Sensibilisierungskampagnen setzt die Stadt Lausanne im Recycling- und Abfallmanagement mehrere Initiativen um, die die Lausanner Bevölkerung beim Abfallsortieren und -recyceln unterstützen."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Umweltschutzprojekte</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne hat sich auch mehreren Grossprojekten zugunsten des Umweltschutzes verschrieben, beispielsweise <a href=\"https://www.netleman.ch/\">Net’Léman</a>, der grössten Seesäuberungsaktion Europas. Im Rahmen dieses Projekts werden seit über 10 Jahren jährlich das Seeufer und der Seegrund gereinigt, sodass bis heute rund 130 000 Kilo Abfall eingesammelt werden konnten."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25881,
+              "name": "Lausanne et la durabilité",
+              "public_name": null,
+              "cloudinary_id": "0a95ceee36580f99",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur le lac Leman les montagnes et le Lavaux",
+              "metadata": {
+                "width": 1600,
+                "height": 1198,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1198\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0a95ceee36580f99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Ouchy_Lausanne-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Aufwertung des Terroirs</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wie sieht es mit der Vielfalt an regionalen Produkten aus? Lokale Spezialitäten, regionale Produkte und Waadtländer Weine tragen das Label „Certifié d’ici“ und immer mehr Restaurants und Unterkünfte werben mit dem Ökolabel „Swisstainable“."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.myswitzerland.com/de-ch/planung/ueber-die-schweiz/nachhaltigkeit/?_gl=1*m46tet*_up*MQ..&amp;gclid=EAIaIQobChMI5vPO2LHxhwMVV52DBx1vIwuXEAAYASAAEgLiNvD_BwE\"><strong>Swisstainable-Programm</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieses vorbildliche, von Schweiz Tourismus ins Leben gerufene Programm fördert die nachhaltige Entwicklung der Schweiz als Reiseziel. Mit dem Swisstainable-Label werden Reisende, die sich im Ökotourismus wiedererkennen und dafür sensibilisiert sind, auf Destinationen und Reiseangebote aufmerksam gemacht, die auf Nachhaltigkeit setzen. Von den Unterkünften über die Restaurants bis hin zur sanften Mobilität werden die zertifizierten Betriebe bewertet und müssen verschiedene Qualitätskriterien in Bezug auf die Nachhaltigkeit erfüllen. Für ein umfassendes Nachhaltigkeitsengagement werden drei Zertifizierungsstufen verlangt."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25977,
+              "name": "Lausanne et la durabilité",
+              "public_name": null,
+              "cloudinary_id": "24850bdff175e7c7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Jour de marché, rue de Bourg Lausanne",
+              "metadata": {
+                "width": 1920,
+                "height": 1281,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent KACZOR",
+                "attr": "width=\"1920\" height=\"1281\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "24850bdff175e7c7.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Rue-de-Bourg-8.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Ökotourismus</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In den letzten Jahren hat sich der Ökotourismus, auch sanfter Tourismus genannt, stark entwickelt. Dazu zählen Besuche auf den Weingütern der Stadt, ökotouristische Bed &amp; Breakfasts, Hotels, die lokale Produkte verwenden, Wander-, Rad- und Reitwege sowie sportliche Aktivitäten, die Natur und sportliche Aktivitäten miteinander verbinden."
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong><em>„Schaffung einer soliden, solidarischen und regenerativen Tourismuswirtschaft“</em></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Seit 2021 setzt sich das von <a href=\"https://www.lausanne-montreux-congress.ch/de/\">Lausanne Montreux Congrès</a> getragene Programm LMCare 2025 im Rahmen einer fünfjährigen Verpflichtung aktiv für die Nachhaltigkeit der Destination, der lokalen Tourismusbranche, ihrer Mitarbeitenden, ihrer Gäste und der Bevölkerung ein."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26129,
+                "name": "5 bonnes façons de commencer la journée à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "c04a60be2dc1cce6",
+                "mime_type": "image/jpeg",
+                "copyright": "© Stand au marche de Lausanne. Produits locaux",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Marché, Lausanne, produit, local",
+                  "description": null,
+                  "file_name_from_url": "c04a60be2dc1cce6.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Marche-legumes.jpg"
+                }
+              },
+              {
+                "id": 15507,
+                "name": "Cépages",
+                "public_name": "Cépages",
+                "cloudinary_id": "cuhblljuptdypufnuvby",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne à table",
+                "metadata": {
+                  "attr": "width=\"2048\" height=\"1365\"",
+                  "tags": null,
+                  "width": 2048,
+                  "height": 1365,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "description": null,
+                  "file_name_from_url": "e13cee53a372b618.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Chateau-Rochefort.jpg"
+                }
+              },
+              {
+                "id": 27060,
+                "name": "Lausanne et la durabilité - Chalet-à-Gobet",
+                "public_name": "Balade à cheval et jogging dans les bois",
+                "cloudinary_id": "hNf2hpxHq8EsxRjaucZfehayXt0iO0IZtAH4Bn73",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT/ Laurent Kaczor",
+                "metadata": {
+                  "width": 1920,
+                  "height": 1280,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Laurent Kaczor",
+                  "attr": "width=\"1920\" height=\"1280\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f4ec44cbe7b1f803.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Chalet-%C3%A0-Gobet_008.jpg"
+                }
+              }
+            ]
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "0a95ceee36580f99",

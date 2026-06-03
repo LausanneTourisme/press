@@ -18,462 +18,1061 @@
         "de": "Lausanne zu entdecken, ohne einen einzigen Franken auszugeben, das ist möglich! Denn das Schönste an der Stadt ist und bleibt ihre natürliche Umgebung.",
         "en": "Setting off to discover Lausanne without spending a penny? Yes, it’s possible, thanks to one of its most beautiful assets: the natural environment that surrounds it!"
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27185,
-            "name": "Des activités gratuites à Lausanne ? Par ici ! - Tour de Sauvablin",
-            "public_name": {
-              "fr": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
-              "en": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
-              "de": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
-              "es": null
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27185,
+              "name": "Des activités gratuites à Lausanne ? Par ici ! - Tour de Sauvablin",
+              "public_name": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
+              "cloudinary_id": "JAUARVwGlznOA0wPulh1hC26IkF2WRHzcIDemKwb",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maurizo Di Donato",
+              "metadata": {
+                "width": 1920,
+                "height": 1080,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1080\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65c44dc6e5285ba5.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/09/836a8d83439d7b98f46a6beb75cf3506a1dae793-1.jpeg"
+              }
             },
-            "cloudinary_id": "JAUARVwGlznOA0wPulh1hC26IkF2WRHzcIDemKwb",
-            "mime_type": "image/jpeg",
-            "copyright": "© Maurizo Di Donato",
-            "metadata": {
-              "width": 1920,
-              "height": 1080,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1920\" height=\"1080\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "65c44dc6e5285ba5.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/09/836a8d83439d7b98f46a6beb75cf3506a1dae793-1.jpeg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">Faire une balade au Parc de Mon Repos</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Durch den Park Mon-Repos spazieren</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">Wander in Mon-Repos Park</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">Le Parc de Mon repos</a>, c’est le poumon vert de Lausanne. Construit au XVII<sup>e</sup>, sa principale caractéristique est son dénivelé en phase avec celui de la ville. C’est le rendez-vous des citadins pour prendre un bain de soleil sur ses pelouses, profiter de ses places de jeux avec les enfants, tout en se désaltérant à la jolie buvette de la Folie Voltaire. On peut aussi faire un petit tour à travers les belles volières. Les plus courageux pourront monter jusqu’à la partie supérieure du parc et admirer la tour néogothique, perchée sur un rocher.",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Der Park Mon-Repos</a> ist die grüne Lunge von Lausanne. Er wurde im 17. Jahrhundert angelegt und erstreckt sich ebenso wie die Stadt am Hang. Hier treffen sich die Stadtbewohner gern, um sich auf den Rasenflächen zu sonnen, mit den Kindern auf den Spielplätzen zu tollen und an der hübschen Erfrischungsbar von La Folie Voltaire ihren Durst zu stillen. Ausserdem bietet sich ein Spaziergang durch die schönen Volieren an. Die Mutigeren können den oberen Teil des Parks erklimmen und den neugotischen Turm bewundern, der auf einem Felsen thront.</span>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">Mon-Repos Park</a> is Lausanne’s green oasis. Landscaped during the 17<sup>th</sup> century, its most noticeable feature is its slope – in keeping with the town. It’s a meeting place where city dwellers soak up the sun on its lawns or enjoy the playgrounds with children while quenching their thirst at the picturesque Folie Voltaire refreshment bar. You can also go and see the lovely aviaries. The bravest will climb to the top of the park to admire the neo-Gothic tower that is perched on a rock."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Comme Mon Repos, tous les autres parcs de la ville sont gratuits et accessibles 24h/24.</em>",
-            "de": "<em>Mon-Repos bietet wie alle Parks der Stadt freien Eintritt und ist rund um die Uhr zugänglich.</em>",
-            "en": "<em>All the parks in town, including Mon-Repos, are free and accessible 24/7.</em>"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25917,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">Faire une balade au Parc de Mon Repos</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">Le Parc de Mon repos</a>, c’est le poumon vert de Lausanne. Construit au XVII<sup>e</sup>, sa principale caractéristique est son dénivelé en phase avec celui de la ville. C’est le rendez-vous des citadins pour prendre un bain de soleil sur ses pelouses, profiter de ses places de jeux avec les enfants, tout en se désaltérant à la jolie buvette de la Folie Voltaire. On peut aussi faire un petit tour à travers les belles volières. Les plus courageux pourront monter jusqu’à la partie supérieure du parc et admirer la tour néogothique, perchée sur un rocher."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Comme Mon Repos, tous les autres parcs de la ville sont gratuits et accessibles 24h/24.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
             },
-            "cloudinary_id": "91744bac907d69cc",
-            "mime_type": "image/jpeg",
-            "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
-            "metadata": {
-              "width": 4288,
-              "height": 2844,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"4288\" height=\"2844\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "61e9919238ff1699.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26003,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "image",
+            "value": {
+              "id": 26003,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "c733a65edfff983e",
+              "mime_type": "image/jpeg",
+              "copyright": "© La Maison Mon-Repos et son parc",
+              "metadata": {
+                "width": 5120,
+                "height": 3413,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5120\" height=\"3413\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c733a65edfff983e.dpicard",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Mon-Repos-fontaine_%C2%A9LT-www.dpicard.ch_.jpeg"
+              }
             },
-            "cloudinary_id": "c733a65edfff983e",
-            "mime_type": "image/jpeg",
-            "copyright": "© La Maison Mon-Repos et son parc",
-            "metadata": {
-              "width": 5120,
-              "height": 3413,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"5120\" height=\"3413\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c733a65edfff983e.dpicard",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Mon-Repos-fontaine_%C2%A9LT-www.dpicard.ch_.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tour-de-sauvabelin/\">En prendre plein la vue à la Tour de Sauvabelin</a></strong>",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\">Die Aussicht vom Sauvabelin-Turm bewundern</a></span>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\">Be dazzled by the view at Sauvabelin Tower</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Sensible au vertige, s’abstenir ! <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tour-de-sauvabelin/\">La Tour de Sauvabelin</a> se trouve dans les hauts de Lausanne. Elle a été construite en 2003, entièrement en bois et fait pas moins de 35 mètres de hauteur.",
-            "de": "<span lang=\"DE-CH\">Wer unter Höhenangst leidet, ist hier am falschen Ort! <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\">Der Sauvabelin-Turm</a> befindet sich im oberen Teil von Lausanne. Es wurde 2003 vollständig aus Holz erbaut und ist sage und schreibe 35 Meter hoch.</span>",
-            "en": "If you’re prone to vertigo, give this one a miss! <a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\">Sauvabelin Tower</a> is located above Lausanne. It was built entirely from wood in 2003 and is no less than 35 metres (115 feet) high."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Une fois les 302 marches montées, attention les yeux ! Vous pouvez admirer un panorama à 360° sur tout le lac Léman, les Alpes, le Jura et la ville de Lausanne.",
-            "de": "<span lang=\"DE-CH\">Wer die 302 Stufen erklommen hat, wird mit einer atemberaubenden Aussicht belohnt. Bewundern Sie das 360°-Panorama über den gesamten Genfersee, die Alpen, das Jura-Gebirge und die Stadt Lausanne.</span>",
-            "en": "Once you have climbed the 302 steps, there’s eye candy galore! You can admire a 360-degree panorama over Lake Geneva, the Alps and Jura ranges of mountains as well as the town of Lausanne."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Vous arriverez facilement près de la tour, grâce à la ligne de bus 16. Ensuite, vous pourrez monter gratuitement toute l’année. Seules des conditions météorologiques difficiles peuvent en limiter l’accès.",
-            "de": "<span lang=\"DE-CH\">Mit der Buslinie 16 ist der Turm problemlos zu erreichen. Er ist das ganze Jahr kostenlos zugänglich. Der Zugang wird lediglich bei schlechten Wetterbedingungen eingeschränkt.</span>",
-            "en": "Bus no 16 will take you straight to Sauvabelin. Then, you can climb the tower for free, all year round. Only challenging weather conditions can limit its access."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26087,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tour-de-sauvabelin/\">En prendre plein la vue à la Tour de Sauvabelin</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Sensible au vertige, s’abstenir ! <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tour-de-sauvabelin/\">La Tour de Sauvabelin</a> se trouve dans les hauts de Lausanne. Elle a été construite en 2003, entièrement en bois et fait pas moins de 35 mètres de hauteur."
+          },
+          {
+            "type": "paragraph",
+            "value": "Une fois les 302 marches montées, attention les yeux ! Vous pouvez admirer un panorama à 360° sur tout le lac Léman, les Alpes, le Jura et la ville de Lausanne."
+          },
+          {
+            "type": "paragraph",
+            "value": "Vous arriverez facilement près de la tour, grâce à la ligne de bus 16. Ensuite, vous pourrez monter gratuitement toute l’année. Seules des conditions météorologiques difficiles peuvent en limiter l’accès."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26087,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "28ccad85657995df",
+              "mime_type": "image/jpeg",
+              "copyright": "© Tour Sauvabelin Lausanne",
+              "metadata": {
+                "width": 765,
+                "height": 1149,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"765\" height=\"1149\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28ccad85657995df.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Tour-Sauvabelin-3.jpeg"
+              }
             },
-            "cloudinary_id": "28ccad85657995df",
-            "mime_type": "image/jpeg",
-            "copyright": "© Tour Sauvabelin Lausanne",
-            "metadata": {
-              "width": 765,
-              "height": 1149,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"765\" height=\"1149\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "28ccad85657995df.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Tour-Sauvabelin-3.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26154,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "image",
+            "value": {
+              "id": 26154,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "d8313bdf4adf55f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Panorama depuis la Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d8313bdf4adf55f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Panorama-depuis-la-tour-de-sauvabelin.jpeg"
+              }
             },
-            "cloudinary_id": "d8313bdf4adf55f1",
-            "mime_type": "image/jpeg",
-            "copyright": "© Panorama depuis la Tour de Sauvabelin",
-            "metadata": {
-              "width": 1600,
-              "height": 1065,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1065\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "d8313bdf4adf55f1.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Panorama-depuis-la-tour-de-sauvabelin.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26222,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "image",
+            "value": {
+              "id": 26222,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "2776dab66418d934",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 797,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"797\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2776dab66418d934.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Tour-Sauvabelin-5-1.jpg"
+              }
             },
-            "cloudinary_id": "2776dab66418d934",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 797,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"797\" height=\"1200\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "2776dab66418d934.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Tour-Sauvabelin-5-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">Visiter un bâtiment historique comme la Cathédrale</a></strong>",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">Die historische Kathedrale besichtigen</a></span>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\">Visit a historical building such as the Cathedral</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">La Cathédrale de Lausanne</a>, sous sa forme actuelle, a été terminée en 1215. Perchée sur la Cité, elle est visible depuis toute la ville. On ne peut donc pas la rater. L’accès à ce monument – qui est le plus grand de style gothique en Suisse – est gratuit. A l’intérieur, plusieurs trésors architecturaux vous attendent :",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">Die Kathedrale von Lausanne</a> in ihrer heutigen Form wurde 1215 fertiggestellt. Sie thront hoch über der Stadt und ist von überall aus sichtbar. Sie können Sie also gar nicht verfehlen! Der Zugang zu diesem grössten gotischen Kulturdenkmal der Schweiz ist kostenlos und in seinem Inneren erwarten Sie architektonische Schätze:</span>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\">Lausanne Cathedral</a>, in its present form, was completed in 1215. Sitting atop the Cité Hill, it is visible from the whole town, so you just can’t miss it. Access to this monument – the largest gothic-style one in Switzerland – is free. Inside, several architectural gems await you:"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "&gt; La Rose et ses vitraux",
-            "de": "<span lang=\"DE-CH\">&gt; Die Fensterrose und ihre Bleiglasfenster</span>",
-            "en": "&gt; The Rose and its stained-glass windows"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "&gt; Le portail peint et ses peintures d’époque",
-            "de": "<span lang=\"DE-CH\">&gt; Das gemalte Portal und seine zeitgenössischen Gemälde</span>",
-            "en": "&gt; The painted doorway and its period paintings"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "&gt; Les grandes orgues et leurs 7’000 tuyaux",
-            "de": "<span lang=\"DE-CH\">&gt; Die grossen Orgeln und ihre 7’000 Pfeifen</span>",
-            "en": "&gt; The grand organs and their 7,000 pipes"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "De nuit, depuis l’extérieur du bâtiment, vous pourrez également assister à une tradition ancestrale : l’annonce des heures par le guet de la Cathédrale. Entre 22h et 2h du matin, le guet ou la guette crie les heures aux habitants de la ville. Initialement prévue pour donner l’alerte en cas d’incendies, la présence du guet perdure depuis 1405.",
-            "de": "<span lang=\"DE-CH\">Nachts können Sie zudem einer uralten Tradition beiwohnen: dem Ruf des Nachtwächters der Kathedrale, der jede Nacht zwischen 22 und 2 Uhr zur vollen Stunde die Uhrzeit verkündet. Diese Tradition war ursprünglich dazu gedacht, im Brandfall Alarm zu geben, und besteht seit 1405.</span>",
-            "en": "By night, from outside the building, you can also witness an age-old tradition: the calling of the hours by the Cathedral’s watchman. From 10 pm to 2 am, he calls out the time for the city inhabitants. Initially designed to provide early warning in case of fires, the watchman has been present ever since 1405."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Le bâtiment est accessible gratuitement toute l’année (sauf le 25 décembre, les 1-2 janvier et le dimanche entre 10h00 et 11h30 pour le culte), de 9h00 à 19h00 (17h30 en hiver).",
-            "de": "<span lang=\"DE-CH\">Das Gebäude ist das gesamte Jahr über von 9 bis 19 Uhr (bzw. bis 17:30 Uhr im Winter) kostenlos zugänglich – ausser am 25. Dezember, dem 1. und 2. Januar sowie sonntags zwischen 10 und 11:30 Uhr, wenn Gottesdienste stattfinden.</span>",
-            "en": "The building is accessible for free all year round (except on December 25, January 1-2 and on Sundays from 10 to 11.30 am for church service), from 9 am to 7 pm (5.30 pm in winter)."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26288,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">Visiter un bâtiment historique comme la Cathédrale</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">La Cathédrale de Lausanne</a>, sous sa forme actuelle, a été terminée en 1215. Perchée sur la Cité, elle est visible depuis toute la ville. On ne peut donc pas la rater. L’accès à ce monument – qui est le plus grand de style gothique en Suisse – est gratuit. A l’intérieur, plusieurs trésors architecturaux vous attendent :"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; La Rose et ses vitraux"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; Le portail peint et ses peintures d’époque"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; Les grandes orgues et leurs 7’000 tuyaux"
+          },
+          {
+            "type": "paragraph",
+            "value": "De nuit, depuis l’extérieur du bâtiment, vous pourrez également assister à une tradition ancestrale : l’annonce des heures par le guet de la Cathédrale. Entre 22h et 2h du matin, le guet ou la guette crie les heures aux habitants de la ville. Initialement prévue pour donner l’alerte en cas d’incendies, la présence du guet perdure depuis 1405."
+          },
+          {
+            "type": "paragraph",
+            "value": "Le bâtiment est accessible gratuitement toute l’année (sauf le 25 décembre, les 1-2 janvier et le dimanche entre 10h00 et 11h30 pour le culte), de 9h00 à 19h00 (17h30 en hiver)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26288,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "873de47d529db4d6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Cathédrale de Lausanne",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "873de47d529db4d6.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-8.jpeg"
+              }
             },
-            "cloudinary_id": "873de47d529db4d6",
-            "mime_type": "image/jpeg",
-            "copyright": "© Cathédrale de Lausanne",
-            "metadata": {
-              "width": 799,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"799\" height=\"1200\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "873de47d529db4d6.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-8.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26338,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "image",
+            "value": {
+              "id": 26338,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "00bd531f69e958f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Visite de la Cathédrale de Lausanne",
+              "metadata": {
+                "width": 1200,
+                "height": 799,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"799\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "00bd531f69e958f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-int-1.jpeg"
+              }
             },
-            "cloudinary_id": "00bd531f69e958f1",
-            "mime_type": "image/jpeg",
-            "copyright": "© Visite de la Cathédrale de Lausanne",
-            "metadata": {
-              "width": 1200,
-              "height": 799,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1200\" height=\"799\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "00bd531f69e958f1.jpeg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-int-1.jpeg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">Se cultiver gratuitement un samedi par mois dans les musées</a></strong>",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">Am ersten Samstag des Monats kostenlos Kultur geniessen</a></span>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">Educate our minds for free one Saturday a month in museums</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Tous les premiers samedis de chaque mois, <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">les musées cantonaux et communaux</a> de Lausanne sont gratuits. Au total, cela en fait 15. C’est l’occasion de découvrir des musées uniques comme celui de l’Art Brut par exemple. N’oubliez pas de faire un petit tour au jardin botanique qui vous ouvre ses serres, idéal pour une visite en plein air pendant l’été.",
-            "de": "<span lang=\"DE-CH\">Jeden ersten Samstag im Monat bieten <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">die kantonalen und kommunalen Museen</a> von Lausanne freien Eintritt. Und diese sind sage und schreibe 15 an der Zahl! Das ist die perfekte Gelegenheit, einzigartige Ausstellungen wie zum Beispiel das Musée de l’Art Brut zu entdecken. Lassen Sie es sich zudem nicht nehmen, den Botanischen Garten und seine Gewächshäuser zu besuchen – im Sommer ist dies der ideale Ort für einen Bummel an der frischen Luft.</span>",
-            "en": "Every first Saturday of the month, entrance to <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">the cantonal and town museums</a> in Lausanne is free. In all, there are 15 of them. It’s the opportunity to discover unique museums such as the Art Brut (Outsider’s Art) one. Don’t forget to visit the botanical garden that opens its greenhouses for you, an ideal outdoors attraction for the summer."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Pour tout savoir sur les musées lausannois, <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">c’est par ici</a>.",
-            "de": "<span lang=\"DE-CH\">Um mehr über die Lausanner Museen zu erfahren, <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">klicken Sie bitte hier</a>.</span>",
-            "en": "For all the information you need on Lausanne museums, <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">head this way</a>."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26384,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">Se cultiver gratuitement un samedi par mois dans les musées</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Tous les premiers samedis de chaque mois, <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">les musées cantonaux et communaux</a> de Lausanne sont gratuits. Au total, cela en fait 15. C’est l’occasion de découvrir des musées uniques comme celui de l’Art Brut par exemple. N’oubliez pas de faire un petit tour au jardin botanique qui vous ouvre ses serres, idéal pour une visite en plein air pendant l’été."
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour tout savoir sur les musées lausannois, <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">c’est par ici</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26384,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "d9a1dfab9f9ffa38",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d9a1dfab9f9ffa38.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Collection-Art-Brut.jpg"
+              }
             },
-            "cloudinary_id": "d9a1dfab9f9ffa38",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "d9a1dfab9f9ffa38.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Collection-Art-Brut.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Et puis, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-des-beaux-arts-mcb-a/\">le MCBA</a> propose un accès entièrement gratuit à sa collection permanente… tous les jours (excepté le lundi, jour de fermeture du musée). De quoi découvrir des œuvres exceptionnelles sans toucher à son porte-monnaie.",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-kunstmuseum-mcba/\">Das MCBA</a> gewährt jeden Tag (ausser montags, weil das Museum dann geschlossen ist) freien Eintritt zu seiner Dauerausstellung und bietet damit eine hervorragende Möglichkeit, aussergewöhnliche Werke zu entdecken, ohne das Portemonnaie zu strapazieren.",
-            "en": "What’s more, <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-museum-of-fine-arts-mcb-a/\">the MCBA</a> offers an entirely free access to its permanent collection … every day (except for Monday, the museum’s closing day). A chance to discover exceptional works of art without digging into your wallet."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26420,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "paragraph",
+            "value": "Et puis, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-des-beaux-arts-mcb-a/\">le MCBA</a> propose un accès entièrement gratuit à sa collection permanente… tous les jours (excepté le lundi, jour de fermeture du musée). De quoi découvrir des œuvres exceptionnelles sans toucher à son porte-monnaie."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26420,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "e6a442e0013e30ae",
+              "mime_type": "image/jpeg",
+              "copyright": "© Musee Cantonal des Beaux-Arts - MCBA Hall d'entree avec la sculpture Luce e ombra de lartiste italien Giuseppe Penone",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e6a442e0013e30ae.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/MCBA-entree-3.jpg"
+              }
             },
-            "cloudinary_id": "e6a442e0013e30ae",
-            "mime_type": "image/jpeg",
-            "copyright": "© Musee Cantonal des Beaux-Arts - MCBA Hall d'entree avec la sculpture Luce e ombra de lartiste italien Giuseppe Penone",
-            "metadata": {
-              "width": 1067,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1067\" height=\"1600\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "e6a442e0013e30ae.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/MCBA-entree-3.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong><a href=\"https://urbirun.com/fr/#courez-la-ville\">Faire du sport et découvrir la ville en même temps</a></strong>",
-            "de": "<span lang=\"DE-CH\"><a href=\"https://urbirun.com/en/#run-visit\">Sport treiben und dabei die Stadt entdecken</a></span>",
-            "en": "<a href=\"https://urbirun.com/en/#run-visit\">Be active and discover the town at the same time</a>"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Pourquoi ne pas <a href=\"https://urbirun.com/fr/#courez-la-ville\">visiter Lausanne</a>, tout en faisant son footing et avec un audioguide ? C’est ce que propose Urbirun, avec deux parcours : l’un <a href=\"https://urbirun.com/fr/circuits/lausanne-l-essentiel\">au centre-ville</a> et l’autre <a href=\"https://urbirun.com/fr/circuits/lausanne-lac\">au bord du lac</a>. Ces itinéraires passent par les coins incontournables de Lausanne, alors que votre smartphone vous guide et apporte quelques précisions sur les monuments croisés en chemin. Les boucles de 17.2 et 18.5 kilomètres sont également prévues pour des marcheurs. Les moins sportifs peuvent également se rabattre sur des boucles plus courtes, en dessous des 10 kilomètres. L’application ainsi que les parcours guidés sont téléchargeables gratuitement.",
-            "de": "<span lang=\"DE-CH\">Wie wäre es damit,<a href=\"https://urbirun.com/en/#run-visit%24\"> Lausanne beim Joggen zu erkunden</a> und dabei zudem von einem Audioguide zu profitieren? Urbirun bietet hierfür zwei Routen an: Eine führt durch das <a href=\"https://urbirun.com/fr/circuits/lausanne-l-essentiel\">Stadtzentrum</a> und die andere folgt dem <a href=\"https://urbirun.com/fr/circuits/lausanne-lac\">Seeufer</a>. Die Routen präsentieren Ihnen all die Ecken von Lausanne, die man unbedingt gesehen haben muss. Lassen Sie sich von Ihrem Smartphone leiten und lauschen Sie den Informationen zu den Bauwerken unterwegs. Die 17,2 bzw. 18,5 Kilometer langen Rundstrecken sind auch für Wanderer und Spaziergänger geeignet. Für weniger sportliche Besucher werden zudem kürzere Runden von unter 10 Kilometer angeboten. Die App sowie die Führungen können kostenlos heruntergeladen werden.</span>",
-            "en": "Why not <a href=\"https://urbirun.com/en/#run-visit\">visit Lausanne</a> while going for your daily run and with an audioguide? That’s what Urbirun offers, with two tours: one in the <a href=\"https://urbirun.com/en/circuits/lausanne-highlights-4-distances\">town centre</a> and one <a href=\"https://urbirun.com/en/circuits/lausanne-lake\">along the lakeside</a>. These trails go by Lausanne’s must-sees, while your smartphone guides you and gives you some information on the monuments you meet on your way. The 17.2- and 18.5-kilometre loops are also designed for walkers. The less sporty can choose the shorter loops, less than 10 kilometres. The app as well as the tours are downloadable for free."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26454,
-            "name": "Des activités gratuites à Lausanne ? Par ici !",
-            "public_name": {
-              "fr": "Des activités gratuites à Lausanne ? Par ici !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://urbirun.com/fr/#courez-la-ville\">Faire du sport et découvrir la ville en même temps</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pourquoi ne pas <a href=\"https://urbirun.com/fr/#courez-la-ville\">visiter Lausanne</a>, tout en faisant son footing et avec un audioguide ? C’est ce que propose Urbirun, avec deux parcours : l’un <a href=\"https://urbirun.com/fr/circuits/lausanne-l-essentiel\">au centre-ville</a> et l’autre <a href=\"https://urbirun.com/fr/circuits/lausanne-lac\">au bord du lac</a>. Ces itinéraires passent par les coins incontournables de Lausanne, alors que votre smartphone vous guide et apporte quelques précisions sur les monuments croisés en chemin. Les boucles de 17.2 et 18.5 kilomètres sont également prévues pour des marcheurs. Les moins sportifs peuvent également se rabattre sur des boucles plus courtes, en dessous des 10 kilomètres. L’application ainsi que les parcours guidés sont téléchargeables gratuitement."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26454,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": "Des activités gratuites à Lausanne ? Par ici !",
+              "cloudinary_id": "38b28183044b2ab4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38b28183044b2ab4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/jogging-lac-2.jpg"
+              }
             },
-            "cloudinary_id": "38b28183044b2ab4",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "38b28183044b2ab4.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/jogging-lac-2.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27185,
+              "name": "Des activités gratuites à Lausanne ? Par ici ! - Tour de Sauvablin",
+              "public_name": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
+              "cloudinary_id": "JAUARVwGlznOA0wPulh1hC26IkF2WRHzcIDemKwb",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maurizo Di Donato",
+              "metadata": {
+                "width": 1920,
+                "height": 1080,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1080\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65c44dc6e5285ba5.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/09/836a8d83439d7b98f46a6beb75cf3506a1dae793-1.jpeg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        }
-      ],
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Durch den Park Mon-Repos spazieren</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Der Park Mon-Repos</a> ist die grüne Lunge von Lausanne. Er wurde im 17. Jahrhundert angelegt und erstreckt sich ebenso wie die Stadt am Hang. Hier treffen sich die Stadtbewohner gern, um sich auf den Rasenflächen zu sonnen, mit den Kindern auf den Spielplätzen zu tollen und an der hübschen Erfrischungsbar von La Folie Voltaire ihren Durst zu stillen. Ausserdem bietet sich ein Spaziergang durch die schönen Volieren an. Die Mutigeren können den oberen Teil des Parks erklimmen und den neugotischen Turm bewundern, der auf einem Felsen thront.</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Mon-Repos bietet wie alle Parks der Stadt freien Eintritt und ist rund um die Uhr zugänglich.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26003,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "c733a65edfff983e",
+              "mime_type": "image/jpeg",
+              "copyright": "© La Maison Mon-Repos et son parc",
+              "metadata": {
+                "width": 5120,
+                "height": 3413,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5120\" height=\"3413\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c733a65edfff983e.dpicard",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Mon-Repos-fontaine_%C2%A9LT-www.dpicard.ch_.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\">Die Aussicht vom Sauvabelin-Turm bewundern</a></span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Wer unter Höhenangst leidet, ist hier am falschen Ort! <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-sauvabelin-turm/\">Der Sauvabelin-Turm</a> befindet sich im oberen Teil von Lausanne. Es wurde 2003 vollständig aus Holz erbaut und ist sage und schreibe 35 Meter hoch.</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Wer die 302 Stufen erklommen hat, wird mit einer atemberaubenden Aussicht belohnt. Bewundern Sie das 360°-Panorama über den gesamten Genfersee, die Alpen, das Jura-Gebirge und die Stadt Lausanne.</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Mit der Buslinie 16 ist der Turm problemlos zu erreichen. Er ist das ganze Jahr kostenlos zugänglich. Der Zugang wird lediglich bei schlechten Wetterbedingungen eingeschränkt.</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26087,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "28ccad85657995df",
+              "mime_type": "image/jpeg",
+              "copyright": "© Tour Sauvabelin Lausanne",
+              "metadata": {
+                "width": 765,
+                "height": 1149,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"765\" height=\"1149\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28ccad85657995df.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Tour-Sauvabelin-3.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26154,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "d8313bdf4adf55f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Panorama depuis la Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d8313bdf4adf55f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Panorama-depuis-la-tour-de-sauvabelin.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26222,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "2776dab66418d934",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 797,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"797\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2776dab66418d934.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Tour-Sauvabelin-5-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">Die historische Kathedrale besichtigen</a></span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">Die Kathedrale von Lausanne</a> in ihrer heutigen Form wurde 1215 fertiggestellt. Sie thront hoch über der Stadt und ist von überall aus sichtbar. Sie können Sie also gar nicht verfehlen! Der Zugang zu diesem grössten gotischen Kulturdenkmal der Schweiz ist kostenlos und in seinem Inneren erwarten Sie architektonische Schätze:</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">&gt; Die Fensterrose und ihre Bleiglasfenster</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">&gt; Das gemalte Portal und seine zeitgenössischen Gemälde</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">&gt; Die grossen Orgeln und ihre 7’000 Pfeifen</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Nachts können Sie zudem einer uralten Tradition beiwohnen: dem Ruf des Nachtwächters der Kathedrale, der jede Nacht zwischen 22 und 2 Uhr zur vollen Stunde die Uhrzeit verkündet. Diese Tradition war ursprünglich dazu gedacht, im Brandfall Alarm zu geben, und besteht seit 1405.</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Das Gebäude ist das gesamte Jahr über von 9 bis 19 Uhr (bzw. bis 17:30 Uhr im Winter) kostenlos zugänglich – ausser am 25. Dezember, dem 1. und 2. Januar sowie sonntags zwischen 10 und 11:30 Uhr, wenn Gottesdienste stattfinden.</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26288,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "873de47d529db4d6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Cathédrale de Lausanne",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "873de47d529db4d6.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-8.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26338,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "00bd531f69e958f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Visite de la Cathédrale de Lausanne",
+              "metadata": {
+                "width": 1200,
+                "height": 799,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"799\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "00bd531f69e958f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-int-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">Am ersten Samstag des Monats kostenlos Kultur geniessen</a></span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Jeden ersten Samstag im Monat bieten <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">die kantonalen und kommunalen Museen</a> von Lausanne freien Eintritt. Und diese sind sage und schreibe 15 an der Zahl! Das ist die perfekte Gelegenheit, einzigartige Ausstellungen wie zum Beispiel das Musée de l’Art Brut zu entdecken. Lassen Sie es sich zudem nicht nehmen, den Botanischen Garten und seine Gewächshäuser zu besuchen – im Sommer ist dies der ideale Ort für einen Bummel an der frischen Luft.</span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Um mehr über die Lausanner Museen zu erfahren, <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/museen/\">klicken Sie bitte hier</a>.</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26384,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "d9a1dfab9f9ffa38",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d9a1dfab9f9ffa38.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Collection-Art-Brut.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-kunstmuseum-mcba/\">Das MCBA</a> gewährt jeden Tag (ausser montags, weil das Museum dann geschlossen ist) freien Eintritt zu seiner Dauerausstellung und bietet damit eine hervorragende Möglichkeit, aussergewöhnliche Werke zu entdecken, ohne das Portemonnaie zu strapazieren."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26420,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "e6a442e0013e30ae",
+              "mime_type": "image/jpeg",
+              "copyright": "© Musee Cantonal des Beaux-Arts - MCBA Hall d'entree avec la sculpture Luce e ombra de lartiste italien Giuseppe Penone",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e6a442e0013e30ae.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/MCBA-entree-3.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<span lang=\"DE-CH\"><a href=\"https://urbirun.com/en/#run-visit\">Sport treiben und dabei die Stadt entdecken</a></span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span lang=\"DE-CH\">Wie wäre es damit,<a href=\"https://urbirun.com/en/#run-visit%24\"> Lausanne beim Joggen zu erkunden</a> und dabei zudem von einem Audioguide zu profitieren? Urbirun bietet hierfür zwei Routen an: Eine führt durch das <a href=\"https://urbirun.com/fr/circuits/lausanne-l-essentiel\">Stadtzentrum</a> und die andere folgt dem <a href=\"https://urbirun.com/fr/circuits/lausanne-lac\">Seeufer</a>. Die Routen präsentieren Ihnen all die Ecken von Lausanne, die man unbedingt gesehen haben muss. Lassen Sie sich von Ihrem Smartphone leiten und lauschen Sie den Informationen zu den Bauwerken unterwegs. Die 17,2 bzw. 18,5 Kilometer langen Rundstrecken sind auch für Wanderer und Spaziergänger geeignet. Für weniger sportliche Besucher werden zudem kürzere Runden von unter 10 Kilometer angeboten. Die App sowie die Führungen können kostenlos heruntergeladen werden.</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26454,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "38b28183044b2ab4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38b28183044b2ab4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/jogging-lac-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27185,
+              "name": "Des activités gratuites à Lausanne ? Par ici ! - Tour de Sauvablin",
+              "public_name": "836a8d83439d7b98f46a6beb75cf3506a1dae793 (1)",
+              "cloudinary_id": "JAUARVwGlznOA0wPulh1hC26IkF2WRHzcIDemKwb",
+              "mime_type": "image/jpeg",
+              "copyright": "© Maurizo Di Donato",
+              "metadata": {
+                "width": 1920,
+                "height": 1080,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1080\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "65c44dc6e5285ba5.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/09/836a8d83439d7b98f46a6beb75cf3506a1dae793-1.jpeg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">Wander in Mon-Repos Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">Mon-Repos Park</a> is Lausanne’s green oasis. Landscaped during the 17<sup>th</sup> century, its most noticeable feature is its slope – in keeping with the town. It’s a meeting place where city dwellers soak up the sun on its lawns or enjoy the playgrounds with children while quenching their thirst at the picturesque Folie Voltaire refreshment bar. You can also go and see the lovely aviaries. The bravest will climb to the top of the park to admire the neo-Gothic tower that is perched on a rock."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>All the parks in town, including Mon-Repos, are free and accessible 24/7.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25917,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "91744bac907d69cc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente dans le parc Mon-Repos, Folie Voltaire",
+              "metadata": {
+                "width": 4288,
+                "height": 2844,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"4288\" height=\"2844\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61e9919238ff1699.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/Mon-Repos-Voliere.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26003,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "c733a65edfff983e",
+              "mime_type": "image/jpeg",
+              "copyright": "© La Maison Mon-Repos et son parc",
+              "metadata": {
+                "width": 5120,
+                "height": 3413,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5120\" height=\"3413\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c733a65edfff983e.dpicard",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Mon-Repos-fontaine_%C2%A9LT-www.dpicard.ch_.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\">Be dazzled by the view at Sauvabelin Tower</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "If you’re prone to vertigo, give this one a miss! <a href=\"https://www.lausanne-tourisme.ch/en/explore/sauvabelin-tower/\">Sauvabelin Tower</a> is located above Lausanne. It was built entirely from wood in 2003 and is no less than 35 metres (115 feet) high."
+          },
+          {
+            "type": "paragraph",
+            "value": "Once you have climbed the 302 steps, there’s eye candy galore! You can admire a 360-degree panorama over Lake Geneva, the Alps and Jura ranges of mountains as well as the town of Lausanne."
+          },
+          {
+            "type": "paragraph",
+            "value": "Bus no 16 will take you straight to Sauvabelin. Then, you can climb the tower for free, all year round. Only challenging weather conditions can limit its access."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26087,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "28ccad85657995df",
+              "mime_type": "image/jpeg",
+              "copyright": "© Tour Sauvabelin Lausanne",
+              "metadata": {
+                "width": 765,
+                "height": 1149,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"765\" height=\"1149\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28ccad85657995df.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Tour-Sauvabelin-3.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26154,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "d8313bdf4adf55f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Panorama depuis la Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d8313bdf4adf55f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Panorama-depuis-la-tour-de-sauvabelin.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26222,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "2776dab66418d934",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 797,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"797\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2776dab66418d934.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Tour-Sauvabelin-5-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\">Visit a historical building such as the Cathedral</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\">Lausanne Cathedral</a>, in its present form, was completed in 1215. Sitting atop the Cité Hill, it is visible from the whole town, so you just can’t miss it. Access to this monument – the largest gothic-style one in Switzerland – is free. Inside, several architectural gems await you:"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; The Rose and its stained-glass windows"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; The painted doorway and its period paintings"
+          },
+          {
+            "type": "paragraph",
+            "value": "&gt; The grand organs and their 7,000 pipes"
+          },
+          {
+            "type": "paragraph",
+            "value": "By night, from outside the building, you can also witness an age-old tradition: the calling of the hours by the Cathedral’s watchman. From 10 pm to 2 am, he calls out the time for the city inhabitants. Initially designed to provide early warning in case of fires, the watchman has been present ever since 1405."
+          },
+          {
+            "type": "paragraph",
+            "value": "The building is accessible for free all year round (except on December 25, January 1-2 and on Sundays from 10 to 11.30 am for church service), from 9 am to 7 pm (5.30 pm in winter)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26288,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "873de47d529db4d6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Cathédrale de Lausanne",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "873de47d529db4d6.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-8.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26338,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "00bd531f69e958f1",
+              "mime_type": "image/jpeg",
+              "copyright": "© Visite de la Cathédrale de Lausanne",
+              "metadata": {
+                "width": 1200,
+                "height": 799,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"799\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "00bd531f69e958f1.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Cathedrale-int-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">Educate our minds for free one Saturday a month in museums</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Every first Saturday of the month, entrance to <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">the cantonal and town museums</a> in Lausanne is free. In all, there are 15 of them. It’s the opportunity to discover unique museums such as the Art Brut (Outsider’s Art) one. Don’t forget to visit the botanical garden that opens its greenhouses for you, an ideal outdoors attraction for the summer."
+          },
+          {
+            "type": "paragraph",
+            "value": "For all the information you need on Lausanne museums, <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">head this way</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26384,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "d9a1dfab9f9ffa38",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d9a1dfab9f9ffa38.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/Collection-Art-Brut.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "What’s more, <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-museum-of-fine-arts-mcb-a/\">the MCBA</a> offers an entirely free access to its permanent collection … every day (except for Monday, the museum’s closing day). A chance to discover exceptional works of art without digging into your wallet."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26420,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "e6a442e0013e30ae",
+              "mime_type": "image/jpeg",
+              "copyright": "© Musee Cantonal des Beaux-Arts - MCBA Hall d'entree avec la sculpture Luce e ombra de lartiste italien Giuseppe Penone",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "e6a442e0013e30ae.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/MCBA-entree-3.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://urbirun.com/en/#run-visit\">Be active and discover the town at the same time</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Why not <a href=\"https://urbirun.com/en/#run-visit\">visit Lausanne</a> while going for your daily run and with an audioguide? That’s what Urbirun offers, with two tours: one in the <a href=\"https://urbirun.com/en/circuits/lausanne-highlights-4-distances\">town centre</a> and one <a href=\"https://urbirun.com/en/circuits/lausanne-lake\">along the lakeside</a>. These trails go by Lausanne’s must-sees, while your smartphone guides you and gives you some information on the monuments you meet on your way. The 17.2- and 18.5-kilometre loops are also designed for walkers. The less sporty can choose the shorter loops, less than 10 kilometres. The app as well as the tours are downloadable for free."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26454,
+              "name": "Des activités gratuites à Lausanne ? Par ici !",
+              "public_name": null,
+              "cloudinary_id": "38b28183044b2ab4",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38b28183044b2ab4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/03/jogging-lac-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "91744bac907d69cc",

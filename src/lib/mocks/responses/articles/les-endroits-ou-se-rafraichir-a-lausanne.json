@@ -18,533 +18,1208 @@
         "de": "Der Sommer ist in Lausanne in vollem Gang! Und mit ihm sind ein strahlender Himmel mit intensiver Sonne sowie heisse Temperaturen zurück. Was kann man tun, um sich abzukühlen, wenn das Thermometer verrücktspielt? Verschafft euch hier einen Überblick über die besten Orte, um in Lausanne einen kühlen Kopf zu bewahren.",
         "en": "The summer is on us in Lausanne and with it come blue skies, sun and heat. So what can we do when it’s just getting too hot and we need to cool down? We selected for you the best places to stay chilled in Lausanne when temperatures are on the rise."
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 26429,
-            "name": "Les phrases les plus entendues à Lausanne",
-            "public_name": {
-              "fr": "Les phrases les plus entendues à Lausanne"
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26429,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": "Les phrases les plus entendues à Lausanne",
+              "cloudinary_id": "9164434dda94f590",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b7409e2adac9d91.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee-de-la-Compagnie-en-drone-2.jpg"
+              }
             },
-            "cloudinary_id": "9164434dda94f590",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1200\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "0b7409e2adac9d91.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee-de-la-Compagnie-en-drone-2.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "Les spots pour se baigner",
-            "de": "<strong>Badespots</strong>",
-            "en": "Spots for swimming"
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "La Jetée de la Compagnie",
-            "de": "<strong>Jetée de la Compagnie</strong>",
-            "en": "The Jetée de la Compagnie"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "L’indétrônable <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">Jetée de la Compagnie</a>, son deck, ses bars containers et son ponton menant au lac… Avis aux baigneurs de la première heure : il vous suffit d’emprunter la petite échelle pour accéder aux eaux rafraîchissantes du Léman. Qui dit mieux?",
-            "de": "Die unschlagbare <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> mit ihrem Holzdeck, den Containerbars und der Plattform bis zum See … Badegäste der ersten Stunde aufgepasst: Über die kleine Leiter gelangt ihr ins erfrischende Wasser des Genfersees. Was will man mehr?",
-            "en": "The absolute must to cool down is the <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">Jetée de la Compagnie</a>, with its deck, its bars made from containers and its easier access to the lake. The place has its own pontoon leading from the deck to the lake: you just walk along the pontoon and climb down the ladder for a refreshing dip in Lake Geneva. Isn’t that wonderful?"
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25909,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Les spots pour se baigner"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "La Jetée de la Compagnie"
+          },
+          {
+            "type": "paragraph",
+            "value": "L’indétrônable <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">Jetée de la Compagnie</a>, son deck, ses bars containers et son ponton menant au lac… Avis aux baigneurs de la première heure : il vous suffit d’emprunter la petite échelle pour accéder aux eaux rafraîchissantes du Léman. Qui dit mieux?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25909,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "340f4f8b40b1e754",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "340f4f8b40b1e754.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee_cLT-Laurent-Kaczor.jpg"
+              }
             },
-            "cloudinary_id": "340f4f8b40b1e754",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1200,
-              "height": 800,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1200\" height=\"800\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "340f4f8b40b1e754.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee_cLT-Laurent-Kaczor.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 27235,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "image",
+            "value": {
+              "id": 27235,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "61907dadb00a8f19",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61907dadb00a8f19.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Vue-drone-Jetee-Compagnie-rotated.jpg"
+              }
             },
-            "cloudinary_id": "61907dadb00a8f19",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1200,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1200\" height=\"1600\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "61907dadb00a8f19.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Vue-drone-Jetee-Compagnie-rotated.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Vidy",
-            "de": "<strong>Vidy</strong>",
-            "en": "Vidy"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Que ce soit pour une baignade rafraîchissante, un moment convivial autour d’un barbecue ou un apéro en terrasse dans l’une des buvettes éphémères ou dans un des restaurant-bars à deux pas de la plage, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-de-vidy/\">Vidy</a> est le spot parfait pour profiter de l’été entre amis ou en famille.",
-            "de": "Ob Sie nun ein erfrischendes Bad, ein gemütliches Beisammensein beim Grillen oder einen Aperitif auf der Terrasse in einer der Pop-up-Bars oder in einer der Restaurant-Bars nur wenige Schritte vom Strand entfernt suchen, <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plage-de-vidy-strand-von-vidy/\">Vidy</a> ist der perfekte Ort, um den Sommer mit Freunden oder der Familie zu genießen.",
-            "en": "Whether you’re looking for a refreshing swim, a nice get together over a barbecue or an aperitif on the terrace in one of the pop-up bars or in one of the restaurant-bars just a few steps from the beach, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-de-vidy/\">Vidy</a> is the perfect place to enjoy the summer with friends or family."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26081,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Vidy"
+          },
+          {
+            "type": "paragraph",
+            "value": "Que ce soit pour une baignade rafraîchissante, un moment convivial autour d’un barbecue ou un apéro en terrasse dans l’une des buvettes éphémères ou dans un des restaurant-bars à deux pas de la plage, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-de-vidy/\">Vidy</a> est le spot parfait pour profiter de l’été entre amis ou en famille."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26081,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "1da5c7bb6f4e3992",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": "Lac; Montagne; Été;",
+                "description": null,
+                "file_name_from_url": "594dd0443bd307db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
+              }
             },
-            "cloudinary_id": "1da5c7bb6f4e3992",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 799,
-              "height": 1200,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"799\" height=\"1200\"",
-              "tags": "Lac; Montagne; Été;",
-              "description": null,
-              "file_name_from_url": "594dd0443bd307db.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "La piscine de Bellerive",
-            "de": "<strong>Schwimmbad Bellerive</strong>",
-            "en": "Bellerive swimming pool"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Parfaite alternative à plage, la <a href=\"https://www.lausanne-tourisme.ch/fr/P8875/piscine-de-bellerive\">piscine de Bellerive</a> est un incontournable. 400 mètres d’accès au lac, une plage de sable d’un côté, trois bassins de baignade de l’autre et pas moins de quatre plongeoirs pour les amateurs de sensations.",
-            "de": "Die perfekte Alternative zum Strand, wenn nicht schlicht ein Muss, ist das <a href=\"https://www.lausanne-tourisme.ch/fr/P8875/piscine-de-bellerive\">Schwimmbad Bellerive</a>. Es bietet einerseits 400 Meter Zugang zum See mit einem Sandstrand und andererseits drei Becken und nicht weniger als vier Sprungbretter für diejenigen, die den Nervenkitzel suchen.",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/P8875/bellerive-swimming-pool\">Bellerive swimming pool</a> – a classic – is a part pool, part beach option. If you find it hard to make up your mind, it’s the right compromise. 400 metres of access to the lake, with a sandy beach on one side and three pools for a cooling dip on the other. There are even four diving boards for those in search of adrenaline."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23450,
-            "name": "Piscine de Bellerive",
-            "public_name": {
-              "fr": "Piscine de Bellerive",
-              "en": "Bellerive swimming pool",
-              "de": "Bellerive Freibad",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "La piscine de Bellerive"
+          },
+          {
+            "type": "paragraph",
+            "value": "Parfaite alternative à plage, la <a href=\"https://www.lausanne-tourisme.ch/fr/P8875/piscine-de-bellerive\">piscine de Bellerive</a> est un incontournable. 400 mètres d’accès au lac, une plage de sable d’un côté, trois bassins de baignade de l’autre et pas moins de quatre plongeoirs pour les amateurs de sensations."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Piscine de Bellerive",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
             },
-            "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
-            "mime_type": "image/jpeg",
-            "copyright": "© LT/www.diapo.ch",
-            "metadata": {
-              "width": 1600,
-              "height": 1063,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1063\"",
-              "tags": "Piscine; Lac; Montagne; Eté; Détente",
-              "description": null,
-              "file_name_from_url": "3ad0a837b0b94e47.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Sans oublier les plages, plus sauvages, des charmants petits villages qui longent le lac, en direction de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/saint-sulpice/\">Saint-Sulpice</a> ou encore de Cully.",
-            "de": "Nicht zu vergessen die wilderen Strände der charmanten kleinen Dörfer entlang des Sees, in Richtung <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/saint-sulpice/\">Saint-Sulpice</a> oder auch Cully.",
-            "en": "Not forgetting the wilder beaches of the charming little villages along the lake, on the way to <a href=\"https://www.lausanne-tourisme.ch/en/explore/saint-sulpice/\">Saint-Sulpice</a> and Cully."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26219,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "paragraph",
+            "value": "Sans oublier les plages, plus sauvages, des charmants petits villages qui longent le lac, en direction de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/saint-sulpice/\">Saint-Sulpice</a> ou encore de Cully."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
             },
-            "cloudinary_id": "2e85897f753b034f",
-            "mime_type": "image/jpeg",
-            "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
-              "description": null,
-              "file_name_from_url": "2e85897f753b034f.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "Les parcs",
-            "de": "<strong>Pärke</strong>",
-            "en": "Parks"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Et lorsque l’on recherche un peu de fraîcheur au cœur de la ville, quoi de mieux que de se promener à l’ombre de grands arbres ? Forte de ses 16 grands<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\"> parcs publics</a>, il faut bien reconnaitre que Lausanne n’est pas en reste côté verdure.",
-            "de": "Wenn ihr mitten in der Stadt nach Abkühlung sucht, gibt es nichts Besseres als ein Spaziergang im Schatten mächtiger Bäume. Mit ihren 16 grossen <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">öffentlichen Pärken </a> bietet die Stadt Lausanne viele grüne Oasen.",
-            "en": "With 16 large public parks, Lausanne has plenty of green spaces to offer. And when you’re looking for cooler spots in town, your best bet is in the shade of mighty trees."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Le parc de Sauvabelin",
-            "de": "<strong>Sauvabelin-Park</strong>",
-            "en": "Sauvabelin Park"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Très prisé à Lausanne, le <a href=\"https://www.lausanne-tourisme.ch/fr/P528/parc-de-sauvabelin\">parc de Sauvabelin</a> est le parfait symbole de la nature en ville. Les familles y font leur sortie du dimanche, les amoureux s’y baladent main dans la main et les bandes d’amis viennent y profiter de la vue. De par son altitude et ses nombreux grands arbres, ce poumon vert garde la fraîcheur dans l’air.",
-            "de": "Der in Lausanne sehr beliebte <a href=\"https://www.lausanne-tourisme.ch/fr/P528/parc-de-sauvabelin\">Sauvabelin-Park</a> ist die perfekte Verkörperung der Natur mitten in der Stadt. Familien pilgern am Sonntag hierher, Verliebte spazieren Hand in Hand und Freundesbanden treffen sich, um die Aussicht zu geniessen. Dank seiner erhöhten Lage und der vielen grossen Bäume bleibt die Luft in dieser grünen Lunge angenehm kühl.",
-            "en": "One of the symbols of nature in town in Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/P528/sauvabelin-park\">Sauvabelin Park</a> is loved by all: families for their Sunday outing, lovers wandering hand in hand and friends who wish to enjoy the view. The higher altitude and many large trees keep the atmosphere cooler."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26000,
-            "name": "Lausanne et le sport : ça match !",
-            "public_name": {
-              "fr": "Lausanne et le sport : ça match !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Les parcs"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et lorsque l’on recherche un peu de fraîcheur au cœur de la ville, quoi de mieux que de se promener à l’ombre de grands arbres ? Forte de ses 16 grands<a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\"> parcs publics</a>, il faut bien reconnaitre que Lausanne n’est pas en reste côté verdure."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Le parc de Sauvabelin"
+          },
+          {
+            "type": "paragraph",
+            "value": "Très prisé à Lausanne, le <a href=\"https://www.lausanne-tourisme.ch/fr/P528/parc-de-sauvabelin\">parc de Sauvabelin</a> est le parfait symbole de la nature en ville. Les familles y font leur sortie du dimanche, les amoureux s’y baladent main dans la main et les bandes d’amis viennent y profiter de la vue. De par son altitude et ses nombreux grands arbres, ce poumon vert garde la fraîcheur dans l’air."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26000,
+              "name": "Lausanne et le sport : ça match !",
+              "public_name": "Lausanne et le sport : ça match !",
+              "cloudinary_id": "28a553399d706fe7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Foret et Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Ville verte, promenade; Lausanne; tour",
+                "description": null,
+                "file_name_from_url": "28a553399d706fe7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
+              }
             },
-            "cloudinary_id": "28a553399d706fe7",
-            "mime_type": "image/jpeg",
-            "copyright": "© Foret et Tour de Sauvabelin",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Ville verte, promenade; Lausanne; tour",
-              "description": null,
-              "file_name_from_url": "28a553399d706fe7.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26330,
-            "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
-            "public_name": {
-              "fr": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?"
+          {
+            "type": "image",
+            "value": {
+              "id": 26330,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "cloudinary_id": "5c0c06e299c217b3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1308,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1308\"",
+                "tags": "Ville verte, forêt; Lausanne",
+                "description": null,
+                "file_name_from_url": "5c0c06e299c217b3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Sauvabelin-cascade.jpg"
+              }
             },
-            "cloudinary_id": "5c0c06e299c217b3",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1308,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1308\"",
-              "tags": "Ville verte, forêt; Lausanne",
-              "description": null,
-              "file_name_from_url": "5c0c06e299c217b3.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Sauvabelin-cascade.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Le parc de Mon-Repos",
-            "de": "<strong>Park Mon-Repos</strong>",
-            "en": "Mon-Repos Park"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Déjà de par son nom, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">parc de Mon-Repos</a> – aux arbres monumentaux  – invite à la détente et au repos. Une couverture et un bon livre sous le bras, qu’il est bon de s’allonger à l’ombre d’un arbre centenaire… Une petite soif ? La <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">Folie Voltaire</a> et sa terrasse de charme est le lieu idéal pour un petit rafraichissement.",
-            "de": "Allein schon vom Namen her lädt der <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Park Mon-Repos</a> («repos» bedeutet Erholung) mit seinen riesigen Bäumen zum Entspannen und Verweilen ein. Eine Decke und ein gutes Buch genügen: Wie herrlich es ist, sich in den Schatten eines hundertjährigen Baumes zu legen! Und wenn sich der Durst meldet? Das <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">Folie Voltaire</a> mit seiner charmanten Terrasse bietet sich für eine Erfrischung an.",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a> and its monumental trees are an invitation to relax (the clue is in the name, which means “My rest”). Take a blanket, a good book and settle down in the shade of a hundred-year-old tree. Feeling like a drink? The <a href=\"http://www.folievoltaire.ch/\">Folie Voltaire</a> and its home-made brews will be just the thing."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26382,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Le parc de Mon-Repos"
+          },
+          {
+            "type": "paragraph",
+            "value": "Déjà de par son nom, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">parc de Mon-Repos</a> – aux arbres monumentaux  – invite à la détente et au repos. Une couverture et un bon livre sous le bras, qu’il est bon de s’allonger à l’ombre d’un arbre centenaire… Une petite soif ? La <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">Folie Voltaire</a> et sa terrasse de charme est le lieu idéal pour un petit rafraichissement."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26382,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "6f9fd85a21331ffd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Lausanne; Détente, Ville verte; parc",
+                "description": null,
+                "file_name_from_url": "6f9fd85a21331ffd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Repos-1.jpg"
+              }
             },
-            "cloudinary_id": "6f9fd85a21331ffd",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1067,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1067\" height=\"1600\"",
-              "tags": "Lausanne; Détente, Ville verte; parc",
-              "description": null,
-              "file_name_from_url": "6f9fd85a21331ffd.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Repos-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26418,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "image",
+            "value": {
+              "id": 26418,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "e3c563e7044c7efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": "Parc; Détente; Terrasse",
+                "description": null,
+                "file_name_from_url": "e3c563e7044c7efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Cafe-Voltaire-1.jpg"
+              }
             },
-            "cloudinary_id": "e3c563e7044c7efa",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1200,
-              "height": 800,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1200\" height=\"800\"",
-              "tags": "Parc; Détente; Terrasse",
-              "description": null,
-              "file_name_from_url": "e3c563e7044c7efa.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Cafe-Voltaire-1.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Le parc naturel du Jorat",
-            "de": "Der Naturpark Jorat",
-            "en": "The Jorat nature park"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "En prenant un peu de hauteur, au nord de Lausanne, l’on découvre avec bonheur ce vaste parc périurbain offrant aux amateurs de nature près de 40 km de sentiers pédestres. Tel un poumon vert, le parc du Jorat n’est autre que le plus grand massif forestier d’un seul tenant sur le plateau suisse. Véritable havre de paix et de fraicheur, il constitue également une réserve d’eau importante pour la région lausannoise.",
-            "de": "Wenn man im Norden von Lausanne etwas höher steigt, entdeckt man mit Freude diesen weitläufigen Vorstadtpark, der Naturliebhabern fast 40 km Wanderwege bietet. Wie eine grüne Lunge ist der Jorat-Park das größte zusammenhängende Waldmassiv im Schweizer Mittelland. Er ist eine wahre Oase des Friedens und der Frische und stellt außerdem ein wichtiges Wasserreservoir für die Region Lausanne dar.",
-            "en": "Just north of Lausanne, this vast peri-urban park offers nature lovers almost 40 km of footpaths. Like a green lung, the Parc du Jorat is the largest continuous forest on the Swiss plateau. A haven of peace and freshness, it is also an important water reserve for the Lausanne region."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26474,
-            "name": "Les endroits où se rafraîchir à Lausanne",
-            "public_name": {
-              "fr": "Les endroits où se rafraîchir à Lausanne"
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Le parc naturel du Jorat"
+          },
+          {
+            "type": "paragraph",
+            "value": "En prenant un peu de hauteur, au nord de Lausanne, l’on découvre avec bonheur ce vaste parc périurbain offrant aux amateurs de nature près de 40 km de sentiers pédestres. Tel un poumon vert, le parc du Jorat n’est autre que le plus grand massif forestier d’un seul tenant sur le plateau suisse. Véritable havre de paix et de fraicheur, il constitue également une réserve d’eau importante pour la région lausannoise."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26474,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": "Les endroits où se rafraîchir à Lausanne",
+              "cloudinary_id": "c6d623e39f480162",
+              "mime_type": "image/jpeg",
+              "copyright": "© En velo dans les bois du Jorat",
+              "metadata": {
+                "width": 1066,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1066\" height=\"1600\"",
+                "tags": "Nature, Foret, Balade",
+                "description": null,
+                "file_name_from_url": "c6d623e39f480162.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Balade-en-foret.jpg"
+              }
             },
-            "cloudinary_id": "c6d623e39f480162",
-            "mime_type": "image/jpeg",
-            "copyright": "© En velo dans les bois du Jorat",
-            "metadata": {
-              "width": 1066,
-              "height": 1600,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1066\" height=\"1600\"",
-              "tags": "Nature, Foret, Balade",
-              "description": null,
-              "file_name_from_url": "c6d623e39f480162.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Balade-en-foret.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "Les musées",
-            "de": "<strong>Museen</strong>",
-            "en": "Museums"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "On n’y pense pas assez, mais les musées sont des endroits parfaits pour échapper à la chaleur extérieure et profiter d’être au frais tout en se cultivant ! Lausanne en compte une vingtaine, tous plus riches et variés les uns que les autres.",
-            "de": "Man denkt nicht immer daran, aber Museen sind eigentlich ideal, um der Hitze zu entfliehen und sich im Kühlen gleichzeitig weiterzubilden! In Lausanne gibt es rund zwanzig Museen, die sich in Reichhaltigkeit und Vielfalt überbieten.",
-            "en": "Why only visit museums when the weather is appalling? We don’t think of that often enough, but museums are brilliant places to escape from the heat and enjoy a refreshing visit, all the while educating ourselves!"
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Plateforme 10",
-            "de": "<strong><br>\nPlateforme 10</strong>",
-            "en": "Plateforme 10"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Quoi de mieux par exemple que de se rendre au récent quartier des arts de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">Plateforme 10 ?</a> Ce véritable lieu de vie – qui réunit le Musée cantonal des Beaux-Arts, le Musée cantonal de design et d’arts appliqués contemporains et le Musée cantonal pour la photographie – offre de se nourrir l’esprit mais pas que, grâce à ses délicieux cafés et restaurants.",
-            "de": "Warum nicht einen Abstecher ins neue Kunstviertel <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">Plateforme 10</a> machen? Dieser Ort, der das Kantonale Kunstmuseum, das Kantonale Museum für Design und angewandte Gegenwartskunst und das Kantonale Museum für Fotografie vereint, ist voller Leben und nährt den Geist, aber auch den Magen dank seiner angenehmen Cafés und Restaurants.",
-            "en": "What more could we want? We like to go to <a href=\"https://www.lausanne-tourisme.ch/en/explore/plateforme-10/\">Plateforme 10</a>, the brand new arts district: a real place to feed your mind… and your stomach too, with its delicious cafés and restaurants."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "Le Musée Olympique",
-            "de": "<strong>Olympisches Museum</strong>",
-            "en": "The Olympic Museum"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Envie de revivre les temps fort de l’Olympisme et de vibrer aux côtés des plus grands champions ? Au cœur de Lausanne, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">le fabuleux monde des Jeux</a> s’ouvre à vous pour vous faire vivre une expérience sportive inoubliable.",
-            "de": "Lust, Olympia-Höhepunkte noch einmal zu erleben und an der Seite der grössten Sportler und Sportlerinnen mitzufiebern? Taucht im Herzen von Lausanne <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">in die fabelhafte Welt der Olympischen Spiele</a> ein – ein unvergessliches Sporterlebnis ist garantiert.",
-            "en": "Would you like to relive the high points of Olympism and live alongside the greatest champions? In the heart of Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">the fabulous world of the Games</a> opens up to you for an unforgettable sporting experience."
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h3",
-          "value": {
-            "fr": "La Fondation de l’Hermitage",
-            "en": "The Fondation de l’Hermitage"
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Nichée au cœur d’un parc d’exception avec l’un des plus beaux panoramas sur Lausanne, cette splendide demeure du XIXe siècle — aujourd’hui <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> — célèbre les beaux-arts dans un cadre unique, à deux pas du parc de Sauvabelin. Un havre de culture et de nature pour les amateurs éclairés.",
-            "de": "<strong>Die Fondation de l’Hermitage</strong>",
-            "en": "Nestled in the heart of an exceptional park with one of the finest panoramic views of Lausanne, this splendid 19th-century residence – now the <a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> – celebrates the fine arts in a unique setting, just a few steps from Sauvabelin Park. A haven of culture and nature for lovers of the arts."
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Pour encore plus d’art, d’histoire et de culture, retrouvez en un clic un condensé de <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">tous les musées lausannois</a>.",
-            "de": "Eingebettet in einen aussergewöhnlichen Park mit einem der schönsten Panoramablicke auf Lausanne, zelebriert diese prächtige Residenz aus dem 19. Jahrhundert – heute die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> – die schönen Künste in einem einzigartigen Rahmen, nur wenige Schritte vom Sauvabelin-Park entfernt. Eine Oase der Kultur und Natur für Kunstliebhaber.",
-            "en": "For even more art, history and culture, find a summary of <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">all Lausanne’s museums</a> in just one click."
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26237,
-            "name": "Les phrases les plus entendues à Lausanne",
-            "public_name": {
-              "fr": "Les phrases les plus entendues à Lausanne",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Les musées"
+          },
+          {
+            "type": "paragraph",
+            "value": "On n’y pense pas assez, mais les musées sont des endroits parfaits pour échapper à la chaleur extérieure et profiter d’être au frais tout en se cultivant ! Lausanne en compte une vingtaine, tous plus riches et variés les uns que les autres."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Plateforme 10"
+          },
+          {
+            "type": "paragraph",
+            "value": "Quoi de mieux par exemple que de se rendre au récent quartier des arts de <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">Plateforme 10 ?</a> Ce véritable lieu de vie – qui réunit le Musée cantonal des Beaux-Arts, le Musée cantonal de design et d’arts appliqués contemporains et le Musée cantonal pour la photographie – offre de se nourrir l’esprit mais pas que, grâce à ses délicieux cafés et restaurants."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Le Musée Olympique"
+          },
+          {
+            "type": "paragraph",
+            "value": "Envie de revivre les temps fort de l’Olympisme et de vibrer aux côtés des plus grands champions ? Au cœur de Lausanne, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">le fabuleux monde des Jeux</a> s’ouvre à vous pour vous faire vivre une expérience sportive inoubliable."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "La Fondation de l’Hermitage"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nichée au cœur d’un parc d’exception avec l’un des plus beaux panoramas sur Lausanne, cette splendide demeure du XIXe siècle — aujourd’hui <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> — célèbre les beaux-arts dans un cadre unique, à deux pas du parc de Sauvabelin. Un havre de culture et de nature pour les amateurs éclairés."
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour encore plus d’art, d’histoire et de culture, retrouvez en un clic un condensé de <a href=\"https://www.lausanne-tourisme.ch/fr/guide/musees/\">tous les musées lausannois</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26237,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": "Les phrases les plus entendues à Lausanne",
+              "cloudinary_id": "7adfa48dd230ca74",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lorenz Richard",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Musée; Lausanne; Design",
+                "description": null
+              }
             },
-            "cloudinary_id": "7adfa48dd230ca74",
-            "mime_type": "image/jpeg",
-            "copyright": "© Lorenz Richard",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Culture; Musée; Lausanne; Design",
-              "description": null
-            }
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26429,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "9164434dda94f590",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b7409e2adac9d91.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee-de-la-Compagnie-en-drone-2.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        }
-      ],
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Badespots</strong>"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Jetée de la Compagnie</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die unschlagbare <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/jetee-de-la-compagnie/\">Jetée de la Compagnie</a> mit ihrem Holzdeck, den Containerbars und der Plattform bis zum See … Badegäste der ersten Stunde aufgepasst: Über die kleine Leiter gelangt ihr ins erfrischende Wasser des Genfersees. Was will man mehr?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25909,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "340f4f8b40b1e754",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "340f4f8b40b1e754.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee_cLT-Laurent-Kaczor.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27235,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "61907dadb00a8f19",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61907dadb00a8f19.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Vue-drone-Jetee-Compagnie-rotated.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Vidy</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ob Sie nun ein erfrischendes Bad, ein gemütliches Beisammensein beim Grillen oder einen Aperitif auf der Terrasse in einer der Pop-up-Bars oder in einer der Restaurant-Bars nur wenige Schritte vom Strand entfernt suchen, <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plage-de-vidy-strand-von-vidy/\">Vidy</a> ist der perfekte Ort, um den Sommer mit Freunden oder der Familie zu genießen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26081,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1da5c7bb6f4e3992",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": "Lac; Montagne; Été;",
+                "description": null,
+                "file_name_from_url": "594dd0443bd307db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Schwimmbad Bellerive</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die perfekte Alternative zum Strand, wenn nicht schlicht ein Muss, ist das <a href=\"https://www.lausanne-tourisme.ch/fr/P8875/piscine-de-bellerive\">Schwimmbad Bellerive</a>. Es bietet einerseits 400 Meter Zugang zum See mit einem Sandstrand und andererseits drei Becken und nicht weniger als vier Sprungbretter für diejenigen, die den Nervenkitzel suchen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Bellerive Freibad",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nicht zu vergessen die wilderen Strände der charmanten kleinen Dörfer entlang des Sees, in Richtung <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/saint-sulpice/\">Saint-Sulpice</a> oder auch Cully."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Pärke</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn ihr mitten in der Stadt nach Abkühlung sucht, gibt es nichts Besseres als ein Spaziergang im Schatten mächtiger Bäume. Mit ihren 16 grossen <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">öffentlichen Pärken </a> bietet die Stadt Lausanne viele grüne Oasen."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Sauvabelin-Park</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Der in Lausanne sehr beliebte <a href=\"https://www.lausanne-tourisme.ch/fr/P528/parc-de-sauvabelin\">Sauvabelin-Park</a> ist die perfekte Verkörperung der Natur mitten in der Stadt. Familien pilgern am Sonntag hierher, Verliebte spazieren Hand in Hand und Freundesbanden treffen sich, um die Aussicht zu geniessen. Dank seiner erhöhten Lage und der vielen grossen Bäume bleibt die Luft in dieser grünen Lunge angenehm kühl."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26000,
+              "name": "Lausanne et le sport : ça match !",
+              "public_name": null,
+              "cloudinary_id": "28a553399d706fe7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Foret et Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Ville verte, promenade; Lausanne; tour",
+                "description": null,
+                "file_name_from_url": "28a553399d706fe7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26330,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "5c0c06e299c217b3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1308,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1308\"",
+                "tags": "Ville verte, forêt; Lausanne",
+                "description": null,
+                "file_name_from_url": "5c0c06e299c217b3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Sauvabelin-cascade.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Park Mon-Repos</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Allein schon vom Namen her lädt der <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Park Mon-Repos</a> («repos» bedeutet Erholung) mit seinen riesigen Bäumen zum Entspannen und Verweilen ein. Eine Decke und ein gutes Buch genügen: Wie herrlich es ist, sich in den Schatten eines hundertjährigen Baumes zu legen! Und wenn sich der Durst meldet? Das <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-folie-voltaire/\">Folie Voltaire</a> mit seiner charmanten Terrasse bietet sich für eine Erfrischung an."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26382,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "6f9fd85a21331ffd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Lausanne; Détente, Ville verte; parc",
+                "description": null,
+                "file_name_from_url": "6f9fd85a21331ffd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Repos-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26418,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "e3c563e7044c7efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": "Parc; Détente; Terrasse",
+                "description": null,
+                "file_name_from_url": "e3c563e7044c7efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Cafe-Voltaire-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Der Naturpark Jorat"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn man im Norden von Lausanne etwas höher steigt, entdeckt man mit Freude diesen weitläufigen Vorstadtpark, der Naturliebhabern fast 40 km Wanderwege bietet. Wie eine grüne Lunge ist der Jorat-Park das größte zusammenhängende Waldmassiv im Schweizer Mittelland. Er ist eine wahre Oase des Friedens und der Frische und stellt außerdem ein wichtiges Wasserreservoir für die Region Lausanne dar."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26474,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c6d623e39f480162",
+              "mime_type": "image/jpeg",
+              "copyright": "© En velo dans les bois du Jorat",
+              "metadata": {
+                "width": 1066,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1066\" height=\"1600\"",
+                "tags": "Nature, Foret, Balade",
+                "description": null,
+                "file_name_from_url": "c6d623e39f480162.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Balade-en-foret.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Museen</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Man denkt nicht immer daran, aber Museen sind eigentlich ideal, um der Hitze zu entfliehen und sich im Kühlen gleichzeitig weiterzubilden! In Lausanne gibt es rund zwanzig Museen, die sich in Reichhaltigkeit und Vielfalt überbieten."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><br>\nPlateforme 10</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Warum nicht einen Abstecher ins neue Kunstviertel <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">Plateforme 10</a> machen? Dieser Ort, der das Kantonale Kunstmuseum, das Kantonale Museum für Design und angewandte Gegenwartskunst und das Kantonale Museum für Fotografie vereint, ist voller Leben und nährt den Geist, aber auch den Magen dank seiner angenehmen Cafés und Restaurants."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Olympisches Museum</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lust, Olympia-Höhepunkte noch einmal zu erleben und an der Seite der grössten Sportler und Sportlerinnen mitzufiebern? Taucht im Herzen von Lausanne <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">in die fabelhafte Welt der Olympischen Spiele</a> ein – ein unvergessliches Sporterlebnis ist garantiert."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "La Fondation de l’Hermitage"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Die Fondation de l’Hermitage</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Eingebettet in einen aussergewöhnlichen Park mit einem der schönsten Panoramablicke auf Lausanne, zelebriert diese prächtige Residenz aus dem 19. Jahrhundert – heute die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> – die schönen Künste in einem einzigartigen Rahmen, nur wenige Schritte vom Sauvabelin-Park entfernt. Eine Oase der Kultur und Natur für Kunstliebhaber."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26237,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "7adfa48dd230ca74",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lorenz Richard",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Musée; Lausanne; Design",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26429,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "9164434dda94f590",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b7409e2adac9d91.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee-de-la-Compagnie-en-drone-2.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Spots for swimming"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "The Jetée de la Compagnie"
+          },
+          {
+            "type": "paragraph",
+            "value": "The absolute must to cool down is the <a href=\"https://www.lausanne-tourisme.ch/en/explore/jetee-de-la-compagnie/\">Jetée de la Compagnie</a>, with its deck, its bars made from containers and its easier access to the lake. The place has its own pontoon leading from the deck to the lake: you just walk along the pontoon and climb down the ladder for a refreshing dip in Lake Geneva. Isn’t that wonderful?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25909,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "340f4f8b40b1e754",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "340f4f8b40b1e754.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Jetee_cLT-Laurent-Kaczor.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27235,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "61907dadb00a8f19",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"1600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "61907dadb00a8f19.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Vue-drone-Jetee-Compagnie-rotated.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Vidy"
+          },
+          {
+            "type": "paragraph",
+            "value": "Whether you’re looking for a refreshing swim, a nice get together over a barbecue or an aperitif on the terrace in one of the pop-up bars or in one of the restaurant-bars just a few steps from the beach, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plage-de-vidy/\">Vidy</a> is the perfect place to enjoy the summer with friends or family."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26081,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1da5c7bb6f4e3992",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 799,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"799\" height=\"1200\"",
+                "tags": "Lac; Montagne; Été;",
+                "description": null,
+                "file_name_from_url": "594dd0443bd307db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/06/Vidy-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Bellerive swimming pool"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/P8875/bellerive-swimming-pool\">Bellerive swimming pool</a> – a classic – is a part pool, part beach option. If you find it hard to make up your mind, it’s the right compromise. 400 metres of access to the lake, with a sandy beach on one side and three pools for a cooling dip on the other. There are even four diving boards for those in search of adrenaline."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Bellerive swimming pool",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Not forgetting the wilder beaches of the charming little villages along the lake, on the way to <a href=\"https://www.lausanne-tourisme.ch/en/explore/saint-sulpice/\">Saint-Sulpice</a> and Cully."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26219,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "2e85897f753b034f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Ambiance au port de Pully. Bar -restaurant La Generale",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lac, Port, Terrasse; Ambiance; Apéro, After work; Léman; Environ",
+                "description": null,
+                "file_name_from_url": "2e85897f753b034f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Pully-La-Generale-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Parks"
+          },
+          {
+            "type": "paragraph",
+            "value": "With 16 large public parks, Lausanne has plenty of green spaces to offer. And when you’re looking for cooler spots in town, your best bet is in the shade of mighty trees."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Sauvabelin Park"
+          },
+          {
+            "type": "paragraph",
+            "value": "One of the symbols of nature in town in Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/P528/sauvabelin-park\">Sauvabelin Park</a> is loved by all: families for their Sunday outing, lovers wandering hand in hand and friends who wish to enjoy the view. The higher altitude and many large trees keep the atmosphere cooler."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26000,
+              "name": "Lausanne et le sport : ça match !",
+              "public_name": null,
+              "cloudinary_id": "28a553399d706fe7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Foret et Tour de Sauvabelin",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Ville verte, promenade; Lausanne; tour",
+                "description": null,
+                "file_name_from_url": "28a553399d706fe7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Tour-et-foret-de-Sauvabelin.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26330,
+              "name": "Visite insolite : connaissez-vous ces 10 fun facts à propos de Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "5c0c06e299c217b3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1308,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1308\"",
+                "tags": "Ville verte, forêt; Lausanne",
+                "description": null,
+                "file_name_from_url": "5c0c06e299c217b3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Sauvabelin-cascade.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Mon-Repos Park"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a> and its monumental trees are an invitation to relax (the clue is in the name, which means “My rest”). Take a blanket, a good book and settle down in the shade of a hundred-year-old tree. Feeling like a drink? The <a href=\"http://www.folievoltaire.ch/\">Folie Voltaire</a> and its home-made brews will be just the thing."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26382,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "6f9fd85a21331ffd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1067,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1067\" height=\"1600\"",
+                "tags": "Lausanne; Détente, Ville verte; parc",
+                "description": null,
+                "file_name_from_url": "6f9fd85a21331ffd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Repos-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26418,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "e3c563e7044c7efa",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 800,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"800\"",
+                "tags": "Parc; Détente; Terrasse",
+                "description": null,
+                "file_name_from_url": "e3c563e7044c7efa.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2019/07/Cafe-Voltaire-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "The Jorat nature park"
+          },
+          {
+            "type": "paragraph",
+            "value": "Just north of Lausanne, this vast peri-urban park offers nature lovers almost 40 km of footpaths. Like a green lung, the Parc du Jorat is the largest continuous forest on the Swiss plateau. A haven of peace and freshness, it is also an important water reserve for the Lausanne region."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26474,
+              "name": "Les endroits où se rafraîchir à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c6d623e39f480162",
+              "mime_type": "image/jpeg",
+              "copyright": "© En velo dans les bois du Jorat",
+              "metadata": {
+                "width": 1066,
+                "height": 1600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1066\" height=\"1600\"",
+                "tags": "Nature, Foret, Balade",
+                "description": null,
+                "file_name_from_url": "c6d623e39f480162.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/05/Balade-en-foret.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Museums"
+          },
+          {
+            "type": "paragraph",
+            "value": "Why only visit museums when the weather is appalling? We don’t think of that often enough, but museums are brilliant places to escape from the heat and enjoy a refreshing visit, all the while educating ourselves!"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Plateforme 10"
+          },
+          {
+            "type": "paragraph",
+            "value": "What more could we want? We like to go to <a href=\"https://www.lausanne-tourisme.ch/en/explore/plateforme-10/\">Plateforme 10</a>, the brand new arts district: a real place to feed your mind… and your stomach too, with its delicious cafés and restaurants."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "The Olympic Museum"
+          },
+          {
+            "type": "paragraph",
+            "value": "Would you like to relive the high points of Olympism and live alongside the greatest champions? In the heart of Lausanne, <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">the fabulous world of the Games</a> opens up to you for an unforgettable sporting experience."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "The Fondation de l’Hermitage"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nestled in the heart of an exceptional park with one of the finest panoramic views of Lausanne, this splendid 19th-century residence – now the <a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> – celebrates the fine arts in a unique setting, just a few steps from Sauvabelin Park. A haven of culture and nature for lovers of the arts."
+          },
+          {
+            "type": "paragraph",
+            "value": "For even more art, history and culture, find a summary of <a href=\"https://www.lausanne-tourisme.ch/en/guide/museums/\">all Lausanne’s museums</a> in just one click."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26237,
+              "name": "Les phrases les plus entendues à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "7adfa48dd230ca74",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lorenz Richard",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Musée; Lausanne; Design",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "340f4f8b40b1e754",

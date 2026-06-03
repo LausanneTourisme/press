@@ -18,376 +18,701 @@
         "en": "When we think of Swiss food, cheese and chocolate usually spring to mind. But what local food is actually enjoyed in Lausanne? Which typical dishes should you absolutely taste during your stay?",
         "de": "Wenn man an die Schweizer Küche denkt, hat man oft Käse und Schokolade vor Augen. Aber wie ist es in Lausanne? Welche typischen Gerichte solltet ihr bei eurem Aufenthalt unbedingt probieren?"
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27197,
-            "name": "À la découverte de la gastronomie lausannoise - Brunch",
-            "public_name": {
-              "fr": "Brunch Terrasse (1)",
-              "en": "Brunch Terrasse (1)",
-              "de": "Brunch Terrasse (1)",
-              "es": null
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27197,
+              "name": "À la découverte de la gastronomie lausannoise - Brunch",
+              "public_name": "Brunch Terrasse (1)",
+              "cloudinary_id": "d7WMujQ6mpui2o2jINH33ZwkvWTWS9qP0TeuXVde",
+              "mime_type": "image/jpeg",
+              "copyright": "© GIGLIO PASQUA",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Gastronomie; Lausanne; Terrasse",
+                "description": null,
+                "file_name_from_url": "b04f5495b2ec6375.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Brunch-Terrasse-1.jpg"
+              }
             },
-            "cloudinary_id": "d7WMujQ6mpui2o2jINH33ZwkvWTWS9qP0TeuXVde",
-            "mime_type": "image/jpeg",
-            "copyright": "© GIGLIO PASQUA",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Gastronomie; Lausanne; Terrasse",
-              "description": null,
-              "file_name_from_url": "b04f5495b2ec6375.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Brunch-Terrasse-1.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Nous avons mis notre casquette de détectives, et nous avons mené l’enquête pour vous ! Objectif : dénicher LE plat à déguster lors de votre passage dans la capitale olympique.",
-            "en": "We’ve put on our detective caps and have conducted a thorough investigation for you! Our mission: to unearth THE dish to be savoured when you’re stopping off in the Olympic Capital.",
-            "de": "Wir haben uns für euch auf die Suche gemacht, um DAS Gericht zu finden, das ihr bei eurem Besuch der Olympia-Hauptstadt auf jeden Fall probieren solltet.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Le papet, avec une bonne saucisse aux choux</strong>",
-            "en": "<strong>“Papet”, with a lovely cabbage sausage</strong>",
-            "de": "<strong>Papet vaudois mit einer kräftigen Kabiswurst (saucisse aux choux)</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Même s’il est plus vaudois que lausannois, le papet est un met typique de la région, Lausanne étant le chef lieu du canton de Vaud. Ce plat hivernal se consomme entre septembre et avril. Le papet vaudois est également le plat idéal pour reprendre des forces après avoir affronté les pentes de la ville. <a href=\"http://www.suisse-romande.com/recette-papet-vaudois.html\">La recette</a> est très simple : des pommes de terre, des poireaux, un peu de vin blanc, de la crème et une saucisse aux choux.",
-            "en": "Admittedly, it’s more a Vaud speciality than a Lausanne one. Still, as Lausanne is the canton’s main town, papet is typical of the region. This winter dish is usually eaten from September to April. Papet Vaudois is also the ideal meal to tank up some energy after tackling the town’s steep streets. The <a href=\"https://www.suisse-romande.com/recette-papet-vaudois.html\">recipe</a> is very simple: potatoes, leeks, a splash of white wine, cream and a cabbage sausage.",
-            "de": "Das Papet kommt zwar eher aus dem Waadtland als aus Lausanne selbst, aber mit Lausanne als Hauptort des Kantons Waadt ist es dennoch ein typisches Gericht aus der Region. Dieser Wintereintopf kommt von September bis April auf den Tisch. Das Papet vaudois ist auch ideal, um sich nach dem Erklimmen der steilen Hänge der Stadt wieder zu stärken. <a href=\"http://www.suisse-romande.com/recette-papet-vaudois.html\">Das Rezept</a> ist ganz einfach: Kartoffeln, Lauch, ein wenig Weisswein, Rahm und eine Kabiswurst.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>L’anecdote qui tue : on ne sait pas vraiment comment, ni quand, la saucisse aux choux a été inventée. En revanche, on sait pourquoi. La viande venant à manquer, du chou a été rajouté au mélange pour allonger la farce.</em>",
-            "en": "<em>The killer anecdote: we don’t really know how nor when the cabbage sausage was invented. On the other hand, we do know why: when meat was in short supply, cabbage was added to the mix to make the stuffing go further.</em>",
-            "de": "<em>Lustige Anekdote: Man weiss nicht wirklich, wie und wann die Kabiswurst erfunden wurde. Warum hingegen schon: Als es an Fleisch mangelte, wurde das Wurstfleisch mit Kohl gestreckt.</em>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>Où le déguster ?</strong> Au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4",
-            "en": "<strong>Where to savour it?</strong> At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4",
-            "de": "<strong>Wo gibt es dieses Gericht?</strong> Im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 25919,
-            "name": "À la découverte de la gastronomie lausannoise",
-            "public_name": {
-              "fr": "À la découverte de la gastronomie lausannoise"
+          {
+            "type": "paragraph",
+            "value": "Nous avons mis notre casquette de détectives, et nous avons mené l’enquête pour vous ! Objectif : dénicher LE plat à déguster lors de votre passage dans la capitale olympique."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Le papet, avec une bonne saucisse aux choux</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Même s’il est plus vaudois que lausannois, le papet est un met typique de la région, Lausanne étant le chef lieu du canton de Vaud. Ce plat hivernal se consomme entre septembre et avril. Le papet vaudois est également le plat idéal pour reprendre des forces après avoir affronté les pentes de la ville. <a href=\"http://www.suisse-romande.com/recette-papet-vaudois.html\">La recette</a> est très simple : des pommes de terre, des poireaux, un peu de vin blanc, de la crème et une saucisse aux choux."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>L’anecdote qui tue : on ne sait pas vraiment comment, ni quand, la saucisse aux choux a été inventée. En revanche, on sait pourquoi. La viande venant à manquer, du chou a été rajouté au mélange pour allonger la farce.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Où le déguster ?</strong> Au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25919,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": "À la découverte de la gastronomie lausannoise",
+              "cloudinary_id": "dc13cb75c538adca",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assiette de Papet vaudois, spécialité  vaudoise",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dc13cb75c538adca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Papet-vaudois.jpg"
+              }
             },
-            "cloudinary_id": "dc13cb75c538adca",
-            "mime_type": "image/jpeg",
-            "copyright": "© Assiette de Papet vaudois, spécialité  vaudoise",
-            "metadata": {
-              "width": 1600,
-              "height": 1061,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1061\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "dc13cb75c538adca.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Papet-vaudois.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Les filets de perche</strong>",
-            "en": "<strong>Perch fillets</strong>",
-            "de": "<strong>Eglifilets</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "L’avantage de Lausanne, c’est sa situation. Entre la campagne et le lac, il y a de quoi faire au niveau gastronomique. En effet, le Léman compte de nombreuses espèces de poissons, dont les perches. Et ce sont leurs filets qui sont très prisés. Dans de nombreux restaurants, on vous proposera de les déguster <a href=\"https://www.bettybossi.ch/fr/Rezept/ShowRezept/BB_BBZE990515_0007A-40-fr\">façon meunière</a>, une recette typiquement lausannoise. En effet, elle a été inventée en 1933 par <a href=\"http://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?id=7726650\">Louis Rappaz</a>, dans le café-restaurant qui portait son nom, à Ouchy. Nous tenons donc certainement ici la plus lausannoise des assiettes.",
-            "en": "One of Lausanne’s assets is its location, between countryside and lake, providing plenty of scrumptious produce. Many species of fish swim in the waters of Lake Geneva, amongst which perch. And their fillets are a true delicacy. In many restaurants, they will be offered “<a href=\"https://www.bettybossi.ch/fr/Rezept/ShowRezept/BB_BBZE990515_0007A-40-fr\">meunière” fashion</a>, a typically Lausanner recipe. <a href=\"https://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?urn=urn:rts:video:7726650\">Louis Rappaz</a> invented it in 1933, in a café-restaurant bearing his name in Ouchy. We most certainly have here our most Lausanner dish.",
-            "de": "Ein Vorteil der Stadt Lausanne ist ihre Lage. Ob mit Zutaten vom Land oder aus dem See, die Gastronomie hat einiges zu bieten. So beherbergt der Genfersee viele verschiedene Fischarten, darunter auch das Egli. Besonders begehrt ist sein Filet. Zahlreiche Restaurants bieten Eglifilets nach <a href=\"https://ww2.bettybossi.ch/de/Rezept/ShowRezept/BB_BBZE990515_0007A-40-de\">Müllerinart</a> an, ein typisches Lausanner Rezept, das 1933 von <a href=\"http://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?id=7726650\">Louis Rappaz</a> im damals gleichnamigen Café-Restaurant in Ouchy erfunden wurde. Damit ist dieses Gericht sicherlich das typischste für Lausanne.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Le détail qui fait la différence : nous n’avons pas trouvé de recette mentionnant cette étape, mais, selon la famille Rappaz, il faut déposer les filets dans de la bière quelques instants avant de les tremper dans la farine. Cela les rend plus légers.</em>",
-            "en": "<em>The detail that makes all the difference: we haven’t found a recipe that mentions this stage, but according to the Rappaz family, you need to dip the fillets in beer for a few seconds before covering them in flour. It makes them lighter. </em>",
-            "de": "<em>Das Detail macht den Unterschied: Wir haben zwar kein Rezept gefunden, das diesen Schritt erwähnt, aber laut der Familie Rappaz sind die Eglifilets kurz in Bier einzulegen, bevor sie ins Mehl eingetaucht werden. Dies macht sie leichter.</em>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>Où les déguster ?</strong> Au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3",
-            "en": "<strong>Where to savour them? </strong>At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3",
-            "de": "<strong>Wo gibt es dieses Gericht?</strong> Im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26004,
-            "name": "À la découverte de la gastronomie lausannoise",
-            "public_name": {
-              "fr": "À la découverte de la gastronomie lausannoise"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Les filets de perche</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "L’avantage de Lausanne, c’est sa situation. Entre la campagne et le lac, il y a de quoi faire au niveau gastronomique. En effet, le Léman compte de nombreuses espèces de poissons, dont les perches. Et ce sont leurs filets qui sont très prisés. Dans de nombreux restaurants, on vous proposera de les déguster <a href=\"https://www.bettybossi.ch/fr/Rezept/ShowRezept/BB_BBZE990515_0007A-40-fr\">façon meunière</a>, une recette typiquement lausannoise. En effet, elle a été inventée en 1933 par <a href=\"http://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?id=7726650\">Louis Rappaz</a>, dans le café-restaurant qui portait son nom, à Ouchy. Nous tenons donc certainement ici la plus lausannoise des assiettes."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Le détail qui fait la différence : nous n’avons pas trouvé de recette mentionnant cette étape, mais, selon la famille Rappaz, il faut déposer les filets dans de la bière quelques instants avant de les tremper dans la farine. Cela les rend plus légers.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Où les déguster ?</strong> Au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26004,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": "À la découverte de la gastronomie lausannoise",
+              "cloudinary_id": "699c91847855ba14",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Gastronomie",
+                "description": null,
+                "file_name_from_url": "699c91847855ba14.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/filets-perche-assiette.jpg"
+              }
             },
-            "cloudinary_id": "699c91847855ba14",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 1600,
-              "height": 1063,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1063\"",
-              "tags": "Gastronomie",
-              "description": null,
-              "file_name_from_url": "699c91847855ba14.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/filets-perche-assiette.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Le carac</strong>",
-            "en": "<strong>The “carac”</strong>",
-            "de": "<strong>Carac</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Alors ça, c’est un mystère. D’où vient le carac ? Et pourquoi cette couleur le rend-il si alléchant ? On ne sait pas vraiment. Il n’en reste pas moins que cette pâtisserie au glaçage vert, au-delà d’un petit goût de mystère, est délicieuse. Nous avons interrogé des lausannois dans la rue sur l’origine du carac, sans succès. Alors, pour nous remonter le moral, rien de mieux que d’en déguster un. Tout ce qu’on a appris, c’est qu’on ne le trouve presque qu’en Suisse romande. Et que son nom viendrait du cacao de qualité supérieure, produit dans les origines de Caracas.",
-            "en": "Now this is quite a mystery. Where does the carac come from? And why that colour that makes it so tempting? We have to admit we don’t really know. The fact remains that this green-iced patisserie is delicious. We have stopped Lausanners on the street to ask them about the origins of the carac, with no success. So to cheer ourselves up, we ate one! The only thing we discovered was that they can be found almost only in French-speaking Switzerland, and that the name seems to come from the higher quality cacao that used to be imported from Caracas.",
-            "de": "Das bleibt ein Rätsel: Woher kommt das Carac? Und warum wirkt seine Farbe so verlockend? Man weiss es nicht genau. Das ändert aber nichts daran, dass diese Patisserie-Köstlichkeit mit grüner Glasur und geheimnisvollem Geschmack wunderbar mundet. Wir haben Lausannerinnen und Lausanner auf der Strasse nach der Herkunft dieses Gebäcks gefragt, leider ohne Erfolg. Die beste Art, um uns danach wieder aufzuheitern, war natürlich ein Carac zu essen. Alles, was wir herausgefunden haben, ist, dass man es fast nur in der Westschweiz findet, und dass sein Name vom edlen Kakao aus der Region von Caracas stammen soll.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>À ne pas confondre : un collectif d’humoristes romands a choisi le nom de </em><em>Carac Attak</em><em>. Leurs vidéos ne vont pas vous rester sur les hanches, mais plutôt faire travailler vos abdominaux. À déguster sans modération, donc.</em>",
-            "en": "<em>This pastry is not to be confused with the group of comedians from French-speaking Switzerland that has chosen the name Carac Attak. Their videos won’t add inches to your middle, but rather give your abs a workout. To be savoured without moderation!</em>",
-            "de": "<em>Nicht zu verwechseln: Es gibt ein Westschweizer Comedy-Kollektiv mit dem Namen „Carac Attack“. Seine Videos werden euch nicht auf die Hüfte gehen, sondern vielmehr eure Bauchmuskeln zum Brennen bringen und sind folglich ohne Zurückhaltung zu geniessen.</em>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<strong>Où l’acheter ?</strong> À la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6",
-            "en": "<strong>Where to buy it?</strong> At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6",
-            "de": "<strong>Wo kann man dieses Gebäck kaufen?</strong> In der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26089,
-            "name": "À la découverte de la gastronomie lausannoise",
-            "public_name": {
-              "fr": "À la découverte de la gastronomie lausannoise"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Le carac</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Alors ça, c’est un mystère. D’où vient le carac ? Et pourquoi cette couleur le rend-il si alléchant ? On ne sait pas vraiment. Il n’en reste pas moins que cette pâtisserie au glaçage vert, au-delà d’un petit goût de mystère, est délicieuse. Nous avons interrogé des lausannois dans la rue sur l’origine du carac, sans succès. Alors, pour nous remonter le moral, rien de mieux que d’en déguster un. Tout ce qu’on a appris, c’est qu’on ne le trouve presque qu’en Suisse romande. Et que son nom viendrait du cacao de qualité supérieure, produit dans les origines de Caracas."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>À ne pas confondre : un collectif d’humoristes romands a choisi le nom de </em><em>Carac Attak</em><em>. Leurs vidéos ne vont pas vous rester sur les hanches, mais plutôt faire travailler vos abdominaux. À déguster sans modération, donc.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Où l’acheter ?</strong> À la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26089,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": "À la découverte de la gastronomie lausannoise",
+              "cloudinary_id": "4e59f2f052b25076",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 432,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"432\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e59f2f052b25076.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Carac-Lausanne-min-768x432.jpg"
+              }
             },
-            "cloudinary_id": "4e59f2f052b25076",
-            "mime_type": "image/jpeg",
-            "copyright": "© ",
-            "metadata": {
-              "width": 768,
-              "height": 432,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"768\" height=\"432\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "4e59f2f052b25076.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Carac-Lausanne-min-768x432.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Le pavé en chocolat</strong>",
-            "en": "<strong>The chocolate “pavé”</strong>",
-            "de": "<strong>Pavé au chocolat (Schokoladen-Würfel)</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "En hommage aux nombreux pavés disposés dans tout le centre-ville, un confiseur lausannois a décidé de créer un chocolat spécial. Il s’agit du Pavé <a href=\"http://www.confiserietony.ch/\">de chez Tony</a>. C’est une génoise de forme carrée, au kirsch, enrobée de crème de noisette.",
-            "en": "As a tribute to the many cobblestones that pave a number of the streets in the town centre, a Lausanne confectioner decided to create a special chocolate delicacy: <a href=\"https://www.confiserietony.ch/\">Tony’s</a> Pavé, a chocolate cobblestone. This square genoise sponge with kirsch is coated in hazelnut cream and a layer of chocolate.",
-            "de": "Die vielen Pflastersteine im Stadtzentrum haben einen Confiseur aus Lausanne dazu inspiriert, ein spezielles Schokoladengebäck zu kreieren: den Pavé der Confiserie <a href=\"http://www.confiserietony.ch/\">Tony</a>, eine quadratische Biskuitmasse mit Kirsch, die mit einer Haselnusscrème überzogen ist.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23310,
-            "name": "Pavés lausannois",
-            "public_name": {
-              "fr": "Pavés lausannois",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Le pavé en chocolat</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "En hommage aux nombreux pavés disposés dans tout le centre-ville, un confiseur lausannois a décidé de créer un chocolat spécial. Il s’agit du Pavé <a href=\"http://www.confiserietony.ch/\">de chez Tony</a>. C’est une génoise de forme carrée, au kirsch, enrobée de crème de noisette."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23310,
+              "name": "Pavés lausannois",
+              "public_name": "Pavés lausannois",
+              "cloudinary_id": "5OzFYdfAr3va05hJUp9JVIpI4zTl2vD6rr4yixsP",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 768,
+                "height": 1024,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"1024\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "946b8edcbc3dcfb5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pav%C3%A9s-lausannois-min.jpg"
+              }
             },
-            "cloudinary_id": "5OzFYdfAr3va05hJUp9JVIpI4zTl2vD6rr4yixsP",
-            "mime_type": "image/jpeg",
-            "copyright": "© Lausanne Tourisme",
-            "metadata": {
-              "width": 768,
-              "height": 1024,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"768\" height=\"1024\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "946b8edcbc3dcfb5.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pav%C3%A9s-lausannois-min.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<strong>Les produits locaux</strong>",
-            "en": "<strong>Local products</strong>",
-            "de": "<strong>Lokale Produkte</strong>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Entre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/marche-du-centre-ville/\">le marché</a> – mercredi matin et samedi – et quelques boutiques qui vendent des produits régionaux, vous avez l’embarras du choix : fromages, charcuterie, vins, viandes, bières, poissons, desserts. Que vous soyez plutôt sucré ou salé, vous trouverez de quoi satisfaire vos papilles pendant votre séjour à Lausanne. Il ne vous reste qu’à trouver un banc, en ville ou dans un <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">parc</a>, pour déguster !",
-            "en": "At <a href=\"https://www.lausanne-tourisme.ch/en/explore/city-centre-market/\">the market</a> – Wednesday and Saturday mornings – and in the boutiques that sell regional products, you’ll be spoilt for choice, what with cheeses, charcuterie, wines, meats, beers, fish and desserts! Whether you prefer sweet or savoury, you’ll find food to satisfy your taste buds during your stay in Lausanne. Now all you need to is to find a bench in town or a <a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">park</a> to savour these delicacies!",
-            "de": "Auf dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/markt-in-der-innenstadt/\">Markt</a> – am Mittwochmorgen und am Samstag – und in einigen Geschäften mit regionalen Produkten habt ihr die Qual der Wahl: Käse, Aufschnitt, Wein, Fleisch, Bier, Fisch, Desserts. Egal, ob ihr Süsses oder Salziges bevorzugt, es ist für jeden Geschmack etwas dabei. Also sucht euch eine Bank in der Stadt oder in einem <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Park</a> und lasst es euch schmecken!",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 23347,
-            "name": "Paté",
-            "public_name": {
-              "fr": "paté vaudois",
-              "en": "paté vaudois",
-              "de": "paté vaudois",
-              "es": null
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Les produits locaux</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Entre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/marche-du-centre-ville/\">le marché</a> – mercredi matin et samedi – et quelques boutiques qui vendent des produits régionaux, vous avez l’embarras du choix : fromages, charcuterie, vins, viandes, bières, poissons, desserts. Que vous soyez plutôt sucré ou salé, vous trouverez de quoi satisfaire vos papilles pendant votre séjour à Lausanne. Il ne vous reste qu’à trouver un banc, en ville ou dans un <a href=\"https://www.lausanne-tourisme.ch/fr/guide/parcs-et-jardins/\">parc</a>, pour déguster !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23347,
+              "name": "Paté",
+              "public_name": "paté vaudois",
+              "cloudinary_id": "eTXKTwMfymrvJ0op0mM9ytSUtoz9DGuSGpJWMPTa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 767,
+                "height": 724,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"767\" height=\"724\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3b342afa0ca61384.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pat%C3%A9-min-e1583481290375.jpg"
+              }
             },
-            "cloudinary_id": "eTXKTwMfymrvJ0op0mM9ytSUtoz9DGuSGpJWMPTa",
-            "mime_type": "image/jpeg",
-            "copyright": "© Lausanne Tourisme",
-            "metadata": {
-              "width": 767,
-              "height": 724,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"767\" height=\"724\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "3b342afa0ca61384.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pat%C3%A9-min-e1583481290375.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Où aller : Passez sur la place de la Riponne, sur les stands du marché. Allez voir la Ferme vaudoise sur la place de la Palud. Entrez aussi Au Paradis du Fromage, à la rue du Simplon.</em>",
-            "en": "<em>Where to go: Stroll round the market stalls at Place de Riponne. Head to the Ferme Vaudoise at Place de la Palud. Push the door of the Paradis du Fromage at Rue du Simplon.</em>",
-            "de": "<em>Empfehlungen: Schaut euch die Marktstände auf dem Place de la Riponne an. Geht ins Geschäft La Ferme Vaudoise am Place de la Palud. Schaut auch im Paradis du Fromage an der Rue du Simplon vorbei.</em>",
-            "it": "",
-            "es": ""
+          {
+            "type": "paragraph",
+            "value": "<em>Où aller : Passez sur la place de la Riponne, sur les stands du marché. Allez voir la Ferme vaudoise sur la place de la Palud. Entrez aussi Au Paradis du Fromage, à la rue du Simplon.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Mais Lausanne, et c’est aussi en cela qu’elle est charmante, est une ville pluriculturelle. Vous trouverez des restaurants venus des quatre coins du monde et de l’Europe."
+          },
+          {
+            "type": "paragraph",
+            "value": "Finalement, le plat lausannois ne serait-il pas simplement celui qu’on goûte à Lausanne ?"
           }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Mais Lausanne, et c’est aussi en cela qu’elle est charmante, est une ville pluriculturelle. Vous trouverez des restaurants venus des quatre coins du monde et de l’Europe.",
-            "en": "However, Lausanne – and this is also what makes it so charming – is a multicultural city. You’ll find restaurants serving food from all around Europe and the globe.",
-            "de": "Lausanne ist eine multikulturelle Stadt, und auch das macht ihren Charme aus. Sie bietet Restaurants aus der ganzen Welt und aus Europa.",
-            "it": "",
-            "es": ""
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27197,
+              "name": "À la découverte de la gastronomie lausannoise - Brunch",
+              "public_name": "Brunch Terrasse (1)",
+              "cloudinary_id": "d7WMujQ6mpui2o2jINH33ZwkvWTWS9qP0TeuXVde",
+              "mime_type": "image/jpeg",
+              "copyright": "© GIGLIO PASQUA",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Gastronomie; Lausanne; Terrasse",
+                "description": null,
+                "file_name_from_url": "b04f5495b2ec6375.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Brunch-Terrasse-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "We’ve put on our detective caps and have conducted a thorough investigation for you! Our mission: to unearth THE dish to be savoured when you’re stopping off in the Olympic Capital."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>“Papet”, with a lovely cabbage sausage</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Admittedly, it’s more a Vaud speciality than a Lausanne one. Still, as Lausanne is the canton’s main town, papet is typical of the region. This winter dish is usually eaten from September to April. Papet Vaudois is also the ideal meal to tank up some energy after tackling the town’s steep streets. The <a href=\"https://www.suisse-romande.com/recette-papet-vaudois.html\">recipe</a> is very simple: potatoes, leeks, a splash of white wine, cream and a cabbage sausage."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The killer anecdote: we don’t really know how nor when the cabbage sausage was invented. On the other hand, we do know why: when meat was in short supply, cabbage was added to the mix to make the stuffing go further.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Where to savour it?</strong> At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25919,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "dc13cb75c538adca",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assiette de Papet vaudois, spécialité  vaudoise",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dc13cb75c538adca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Papet-vaudois.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Perch fillets</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "One of Lausanne’s assets is its location, between countryside and lake, providing plenty of scrumptious produce. Many species of fish swim in the waters of Lake Geneva, amongst which perch. And their fillets are a true delicacy. In many restaurants, they will be offered “<a href=\"https://www.bettybossi.ch/fr/Rezept/ShowRezept/BB_BBZE990515_0007A-40-fr\">meunière” fashion</a>, a typically Lausanner recipe. <a href=\"https://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?urn=urn:rts:video:7726650\">Louis Rappaz</a> invented it in 1933, in a café-restaurant bearing his name in Ouchy. We most certainly have here our most Lausanner dish."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>The detail that makes all the difference: we haven’t found a recipe that mentions this stage, but according to the Rappaz family, you need to dip the fillets in beer for a few seconds before covering them in flour. It makes them lighter. </em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Where to savour them? </strong>At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26004,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "699c91847855ba14",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Gastronomie",
+                "description": null,
+                "file_name_from_url": "699c91847855ba14.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/filets-perche-assiette.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The “carac”</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Now this is quite a mystery. Where does the carac come from? And why that colour that makes it so tempting? We have to admit we don’t really know. The fact remains that this green-iced patisserie is delicious. We have stopped Lausanners on the street to ask them about the origins of the carac, with no success. So to cheer ourselves up, we ate one! The only thing we discovered was that they can be found almost only in French-speaking Switzerland, and that the name seems to come from the higher quality cacao that used to be imported from Caracas."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>This pastry is not to be confused with the group of comedians from French-speaking Switzerland that has chosen the name Carac Attak. Their videos won’t add inches to your middle, but rather give your abs a workout. To be savoured without moderation!</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Where to buy it?</strong> At the <a href=\"https://www.lausanne-tourisme.ch/en/explore/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26089,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "4e59f2f052b25076",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 432,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"432\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e59f2f052b25076.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Carac-Lausanne-min-768x432.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The chocolate “pavé”</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "As a tribute to the many cobblestones that pave a number of the streets in the town centre, a Lausanne confectioner decided to create a special chocolate delicacy: <a href=\"https://www.confiserietony.ch/\">Tony’s</a> Pavé, a chocolate cobblestone. This square genoise sponge with kirsch is coated in hazelnut cream and a layer of chocolate."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23310,
+              "name": "Pavés lausannois",
+              "public_name": null,
+              "cloudinary_id": "5OzFYdfAr3va05hJUp9JVIpI4zTl2vD6rr4yixsP",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 768,
+                "height": 1024,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"1024\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "946b8edcbc3dcfb5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pav%C3%A9s-lausannois-min.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Local products</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "At <a href=\"https://www.lausanne-tourisme.ch/en/explore/city-centre-market/\">the market</a> – Wednesday and Saturday mornings – and in the boutiques that sell regional products, you’ll be spoilt for choice, what with cheeses, charcuterie, wines, meats, beers, fish and desserts! Whether you prefer sweet or savoury, you’ll find food to satisfy your taste buds during your stay in Lausanne. Now all you need to is to find a bench in town or a <a href=\"https://www.lausanne-tourisme.ch/en/guide/parks-gardens/\">park</a> to savour these delicacies!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23347,
+              "name": "Paté",
+              "public_name": "paté vaudois",
+              "cloudinary_id": "eTXKTwMfymrvJ0op0mM9ytSUtoz9DGuSGpJWMPTa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 767,
+                "height": 724,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"767\" height=\"724\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3b342afa0ca61384.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pat%C3%A9-min-e1583481290375.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Where to go: Stroll round the market stalls at Place de Riponne. Head to the Ferme Vaudoise at Place de la Palud. Push the door of the Paradis du Fromage at Rue du Simplon.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "However, Lausanne – and this is also what makes it so charming – is a multicultural city. You’ll find restaurants serving food from all around Europe and the globe."
+          },
+          {
+            "type": "paragraph",
+            "value": "At the end of the day, is the Lausanne dish not simply the one that we enjoy in Lausanne?"
           }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Finalement, le plat lausannois ne serait-il pas simplement celui qu’on goûte à Lausanne ?",
-            "en": "At the end of the day, is the Lausanne dish not simply the one that we enjoy in Lausanne?",
-            "de": "Ist das typische Lausanner Gericht schliesslich nicht einfach jenes, das man in Lausanne probiert?",
-            "it": "",
-            "es": ""
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27197,
+              "name": "À la découverte de la gastronomie lausannoise - Brunch",
+              "public_name": "Brunch Terrasse (1)",
+              "cloudinary_id": "d7WMujQ6mpui2o2jINH33ZwkvWTWS9qP0TeuXVde",
+              "mime_type": "image/jpeg",
+              "copyright": "© GIGLIO PASQUA",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Gastronomie; Lausanne; Terrasse",
+                "description": null,
+                "file_name_from_url": "b04f5495b2ec6375.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/10/Brunch-Terrasse-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wir haben uns für euch auf die Suche gemacht, um DAS Gericht zu finden, das ihr bei eurem Besuch der Olympia-Hauptstadt auf jeden Fall probieren solltet."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Papet vaudois mit einer kräftigen Kabiswurst (saucisse aux choux)</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Papet kommt zwar eher aus dem Waadtland als aus Lausanne selbst, aber mit Lausanne als Hauptort des Kantons Waadt ist es dennoch ein typisches Gericht aus der Region. Dieser Wintereintopf kommt von September bis April auf den Tisch. Das Papet vaudois ist auch ideal, um sich nach dem Erklimmen der steilen Hänge der Stadt wieder zu stärken. <a href=\"http://www.suisse-romande.com/recette-papet-vaudois.html\">Das Rezept</a> ist ganz einfach: Kartoffeln, Lauch, ein wenig Weisswein, Rahm und eine Kabiswurst."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Lustige Anekdote: Man weiss nicht wirklich, wie und wann die Kabiswurst erfunden wurde. Warum hingegen schon: Als es an Fleisch mangelte, wurde das Wurstfleisch mit Kohl gestreckt.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Wo gibt es dieses Gericht?</strong> Im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-du-grutli/\">Café du Grütli</a>, Rue Mercerie 4"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25919,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "dc13cb75c538adca",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assiette de Papet vaudois, spécialité  vaudoise",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dc13cb75c538adca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Papet-vaudois.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Eglifilets</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein Vorteil der Stadt Lausanne ist ihre Lage. Ob mit Zutaten vom Land oder aus dem See, die Gastronomie hat einiges zu bieten. So beherbergt der Genfersee viele verschiedene Fischarten, darunter auch das Egli. Besonders begehrt ist sein Filet. Zahlreiche Restaurants bieten Eglifilets nach <a href=\"https://ww2.bettybossi.ch/de/Rezept/ShowRezept/BB_BBZE990515_0007A-40-de\">Müllerinart</a> an, ein typisches Lausanner Rezept, das 1933 von <a href=\"http://www.rts.ch/play/tv/19h30/video/vd-les-filets-de-perche-meuniere-ont-ete-inventes-en-1933-par-un-cuisinier-lausannois-louis-rappaz?id=7726650\">Louis Rappaz</a> im damals gleichnamigen Café-Restaurant in Ouchy erfunden wurde. Damit ist dieses Gericht sicherlich das typischste für Lausanne."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Das Detail macht den Unterschied: Wir haben zwar kein Rezept gefunden, das diesen Schritt erwähnt, aber laut der Familie Rappaz sind die Eglifilets kurz in Bier einzulegen, bevor sie ins Mehl eingetaucht werden. Dies macht sie leichter.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Wo gibt es dieses Gericht?</strong> Im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/cafe-du-vieil-ouchy/\">Vieil Ouchy</a>, Place du Port 3"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26004,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "699c91847855ba14",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Gastronomie",
+                "description": null,
+                "file_name_from_url": "699c91847855ba14.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/filets-perche-assiette.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Carac</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das bleibt ein Rätsel: Woher kommt das Carac? Und warum wirkt seine Farbe so verlockend? Man weiss es nicht genau. Das ändert aber nichts daran, dass diese Patisserie-Köstlichkeit mit grüner Glasur und geheimnisvollem Geschmack wunderbar mundet. Wir haben Lausannerinnen und Lausanner auf der Strasse nach der Herkunft dieses Gebäcks gefragt, leider ohne Erfolg. Die beste Art, um uns danach wieder aufzuheitern, war natürlich ein Carac zu essen. Alles, was wir herausgefunden haben, ist, dass man es fast nur in der Westschweiz findet, und dass sein Name vom edlen Kakao aus der Region von Caracas stammen soll."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Nicht zu verwechseln: Es gibt ein Westschweizer Comedy-Kollektiv mit dem Namen „Carac Attack“. Seine Videos werden euch nicht auf die Hüfte gehen, sondern vielmehr eure Bauchmuskeln zum Brennen bringen und sind folglich ohne Zurückhaltung zu geniessen.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Wo kann man dieses Gebäck kaufen?</strong> In der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/maison-buet/\">Maison Buet</a>, Rue Grand-Saint-Jean 6"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26089,
+              "name": "À la découverte de la gastronomie lausannoise",
+              "public_name": null,
+              "cloudinary_id": "4e59f2f052b25076",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 432,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"432\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4e59f2f052b25076.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Carac-Lausanne-min-768x432.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Pavé au chocolat (Schokoladen-Würfel)</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die vielen Pflastersteine im Stadtzentrum haben einen Confiseur aus Lausanne dazu inspiriert, ein spezielles Schokoladengebäck zu kreieren: den Pavé der Confiserie <a href=\"http://www.confiserietony.ch/\">Tony</a>, eine quadratische Biskuitmasse mit Kirsch, die mit einer Haselnusscrème überzogen ist."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23310,
+              "name": "Pavés lausannois",
+              "public_name": null,
+              "cloudinary_id": "5OzFYdfAr3va05hJUp9JVIpI4zTl2vD6rr4yixsP",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 768,
+                "height": 1024,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"1024\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "946b8edcbc3dcfb5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pav%C3%A9s-lausannois-min.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lokale Produkte</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Auf dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/markt-in-der-innenstadt/\">Markt</a> – am Mittwochmorgen und am Samstag – und in einigen Geschäften mit regionalen Produkten habt ihr die Qual der Wahl: Käse, Aufschnitt, Wein, Fleisch, Bier, Fisch, Desserts. Egal, ob ihr Süsses oder Salziges bevorzugt, es ist für jeden Geschmack etwas dabei. Also sucht euch eine Bank in der Stadt oder in einem <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/parks-und-garten/\">Park</a> und lasst es euch schmecken!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23347,
+              "name": "Paté",
+              "public_name": "paté vaudois",
+              "cloudinary_id": "eTXKTwMfymrvJ0op0mM9ytSUtoz9DGuSGpJWMPTa",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 767,
+                "height": 724,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"767\" height=\"724\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3b342afa0ca61384.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Pat%C3%A9-min-e1583481290375.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Empfehlungen: Schaut euch die Marktstände auf dem Place de la Riponne an. Geht ins Geschäft La Ferme Vaudoise am Place de la Palud. Schaut auch im Paradis du Fromage an der Rue du Simplon vorbei.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne ist eine multikulturelle Stadt, und auch das macht ihren Charme aus. Sie bietet Restaurants aus der ganzen Welt und aus Europa."
+          },
+          {
+            "type": "paragraph",
+            "value": "Ist das typische Lausanner Gericht schliesslich nicht einfach jenes, das man in Lausanne probiert?"
           }
-        }
-      ],
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "dc13cb75c538adca",

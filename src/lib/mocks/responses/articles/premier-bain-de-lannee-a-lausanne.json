@@ -18,244 +18,500 @@
         "en": "The start of a new year inevitably means some soul-searching and big decisions. So it’s with good intentions – those famous ‘resolutions’ – that you head – you’re convinced – towards the long-awaited year of grace. But before you dive headlong into your list of new activities for the year, why not start by… taking a dip? After all, the symbolism is beautiful and could well contribute to that much sought-after ‘rebirth’. Whether it’s in the cool, crystalline waters of the lake, in an incredible sauna or in the cosy warmth of a spa, don’t hesitate: follow us and take the plunge!",
         "de": "Der Beginn eines neuen Jahres bedeutet unweigerlich, sich Gedanken zu machen und Entscheidungen zu treffen. Mit guten Vorsätzen – den berühmten „Vorsätzen“ – gehen Sie also – davon sind Sie überzeugt – in das lang erwartete Gnadenjahr. Doch bevor Sie sich kopfüber in Ihre Liste der neuen Aktivitäten für das Jahr stürzen, warum nicht erst einmal… ein Bad nehmen? Immerhin ist die Symbolik wunderschön und könnte durchaus zu der ersehnten „Wiedergeburt“ beitragen. Ob im kühlen, kristallklaren Wasser des Sees, in einer unglaublichen Sauna oder in der wohligen Wärme eines Spas, zögern Sie nicht: Folgen Sie uns und wagen Sie den Sprung!"
       },
-      "content": [
-        {
-          "type": "image",
-          "value": {
-            "id": 27233,
-            "name": "Premier bain de l’année à Lausanne !",
-            "public_name": {
-              "fr": "Premier bain de l’année à Lausanne !"
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27233,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": "Premier bain de l’année à Lausanne !",
+              "cloudinary_id": "4e404dc263ff9283",
+              "mime_type": "image/jpeg",
+              "copyright": "© Les Bains des Rives sur le site de Bellerive a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, lac Léman, hiver, yourtes, sauna, détente, bien-être",
+                "description": null,
+                "file_name_from_url": "4e404dc263ff9283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/Bains_des_Rives_8.jpg"
+              }
             },
-            "cloudinary_id": "4e404dc263ff9283",
-            "mime_type": "image/jpeg",
-            "copyright": "© Les Bains des Rives sur le site de Bellerive a Lausanne.",
-            "metadata": {
-              "width": 1600,
-              "height": 1067,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1600\" height=\"1067\"",
-              "tags": "Lausanne, lac Léman, hiver, yourtes, sauna, détente, bien-être",
-              "description": null,
-              "file_name_from_url": "4e404dc263ff9283.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/Bains_des_Rives_8.jpg"
-            }
+            "size": "parallax",
+            "focus": "auto"
           },
-          "size": "parallax",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/story/le-lac-leman/\">1. Dans l’eau claire et vivifiante du lac</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/story/lake-geneva/\">1. In the clear, invigorating waters of the lake</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-genfersee/\">1. Im klaren, belebenden Wasser des Sees</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Finalement, quoi de plus naturel que le Léman pour se jeter à l’eau ? Oui, même en plein hiver, c’est possible ! Et si la température vous refroidit, pensez plutôt aux incroyables bienfaits que ce bain glacé saura vous procurer : meilleure circulation, renforcement de l’immunité, amélioration du sommeil et même… de l’humeur ! Certes, c’est audacieux,  mais il n’y a rien de mieux pour commencer l’année en beauté : alors à vos maillots, prêts, plongez !",
-            "en": "After all, what could be more natural than Lake Geneva to take the plunge? Yes, even in the middle of winter, it’s possible! And if the temperature is chilling you, just think of the incredible benefits that this icy bath will bring you: better circulation, boosted immunity, improved sleep and even… your mood! Admittedly, it’s a daring idea, but there’s nothing better to start the year off in style: so get your swimming costumes on, and get ready to dive in!",
-            "de": "Was liegt näher als der Genfer See, um einen Sprung ins kühle Nass zu wagen? Ja, sogar mitten im Winter ist das möglich! Und wenn Sie bei den Temperaturen frösteln, denken Sie an die unglaublichen Vorteile, die Ihnen dieses Eisbad bringen wird: bessere Durchblutung, Stärkung des Immunsystems, besserer Schlaf und sogar… Ihre Stimmung! Zugegeben, es ist eine gewagte Idee, aber es gibt nichts Besseres, um das neue Jahr stilvoll zu beginnen: Ziehen Sie also Ihre Badesachen an und machen Sie sich bereit zum Eintauchen!",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 15470,
-            "name": "Piste du Renard",
-            "public_name": {
-              "fr": "Piste du Renard",
-              "en": "Piste du Renard",
-              "de": "Piste du Renard",
-              "it": "Piste du Renard",
-              "es": "Piste du Renard"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/story/le-lac-leman/\">1. Dans l’eau claire et vivifiante du lac</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Finalement, quoi de plus naturel que le Léman pour se jeter à l’eau ? Oui, même en plein hiver, c’est possible ! Et si la température vous refroidit, pensez plutôt aux incroyables bienfaits que ce bain glacé saura vous procurer : meilleure circulation, renforcement de l’immunité, amélioration du sommeil et même… de l’humeur ! Certes, c’est audacieux,  mais il n’y a rien de mieux pour commencer l’année en beauté : alors à vos maillots, prêts, plongez !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 15470,
+              "name": "Piste du Renard",
+              "public_name": "Piste du Renard",
+              "cloudinary_id": "bqegxjzmqfg401rskyuq",
+              "mime_type": "image/jpeg",
+              "copyright": "© Piste du Renard",
+              "metadata": {
+                "width": 4992,
+                "height": 3329,
+                "mimeType": "image/jpeg",
+                "copyright": "R..gis Colombo",
+                "attr": "width=\"4992\" height=\"3329\"",
+                "tags": "Lac; Montagne; ",
+                "description": null
+              }
             },
-            "cloudinary_id": "bqegxjzmqfg401rskyuq",
-            "mime_type": "image/jpeg",
-            "copyright": "© Piste du Renard",
-            "metadata": {
-              "width": 4992,
-              "height": 3329,
-              "mimeType": "image/jpeg",
-              "copyright": "R..gis Colombo",
-              "attr": "width=\"4992\" height=\"3329\"",
-              "tags": "Lac; Montagne; ",
-              "description": null
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bains-des-rives/\">2. Dans la chaleur d’un sauna insolite avec vue</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">2. In the warmth of an unusual sauna with a view</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bains-des-rives/\">2. In der Wärme einer ungewöhnlichen Sauna mit Aussicht</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "C’est la géniale proposition du projet de bains d’hiver – baptisé <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bains-des-rives/\">Bains des Rives</a> – qui a vu le jour à Bellerive. Au menu de cet espace inédit, bien-être et convivialité dans l’antre d’une yourte-sauna avec en prime, une vue à couper le souffle sur le lac et les montagnes. Bonus : les matériaux employés sont réutilisables et le tarif d’entrée est très abordable. Une façon originale d’entamer la nouvelle année en duo, en famille, entre amis ou en solo !",
-            "en": "This is the ingenious idea behind the <a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">Bains des Rives</a> winter bath project in Bellerive. On the menu for this unique space: well-being and conviviality in the lair of a yurt-sauna, with the added bonus of a breathtaking view of the lake and mountains. Bonus: the materials used are reusable and the entrance fee is very affordable. An original way to start the New Year for two, with family, friends or on your own!",
-            "de": "Das ist die geniale Idee hinter dem Projekt des Winterbads <a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">Bains des Rives</a> in Bellerive. Auf der Speisekarte dieses einzigartigen Ortes stehen Wohlbefinden und Geselligkeit in der Höhle einer Jurtensauna, mit dem zusätzlichen Bonus eines atemberaubenden Blicks auf den See und die Berge. Bonus: Die verwendeten Materialien sind wiederverwendbar und der Eintrittspreis ist sehr erschwinglich. Eine originelle Art, das neue Jahr zu zweit, mit der Familie, mit Freunden oder allein zu beginnen!",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "<em>Bon à savoir : il s’agit d’un pop-up lacustre, les installations sont éphémères et uniquement accessibles durant la période d’hiver.<br>\nVoir dates d’ouvertures et horaires sur le site officiel. </em>",
-            "en": "<em>Good to know: this is a lakeside pop-up, the installations are ephemeral and only accessible during the winter period.</em><br>\n<em>See opening dates and times on the official website. </em>",
-            "de": "Gut zu wissen: Es handelt sich um ein Pop-up am See, die Installationen sind vergänglich und nur während der Wintermonate zugänglich.<br>\nDie Öffnungszeiten finden Sie auf der offiziellen Website.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 27231,
-            "name": "Bains des rives",
-            "public_name": {
-              "fr": "Bains des rives"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bains-des-rives/\">2. Dans la chaleur d’un sauna insolite avec vue</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est la géniale proposition du projet de bains d’hiver – baptisé <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bains-des-rives/\">Bains des Rives</a> – qui a vu le jour à Bellerive. Au menu de cet espace inédit, bien-être et convivialité dans l’antre d’une yourte-sauna avec en prime, une vue à couper le souffle sur le lac et les montagnes. Bonus : les matériaux employés sont réutilisables et le tarif d’entrée est très abordable. Une façon originale d’entamer la nouvelle année en duo, en famille, entre amis ou en solo !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Bon à savoir : il s’agit d’un pop-up lacustre, les installations sont éphémères et uniquement accessibles durant la période d’hiver.<br>\nVoir dates d’ouvertures et horaires sur le site officiel. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27231,
+              "name": "Bains des rives",
+              "public_name": "Bains des rives",
+              "cloudinary_id": "bains-des-rives-ildfkk",
+              "mime_type": "image/jpeg",
+              "copyright": "© Matthieu Croizier",
+              "metadata": {
+                "width": 3200,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"3200\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c1e566fafef4ead3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/25_BainDesRives_MatthieuCroizier_web_117-scaled.jpg"
+              }
             },
-            "cloudinary_id": "bains-des-rives-ildfkk",
-            "mime_type": "image/jpeg",
-            "copyright": "© Matthieu Croizier",
-            "metadata": {
-              "width": 3200,
-              "height": 2560,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"3200\" height=\"2560\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "c1e566fafef4ead3.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/25_BainDesRives_MatthieuCroizier_web_117-scaled.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/spas-de-lausanne/\">3. Dans l’antre d’un luxueux spa</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/wellbeing-in-lausanne/\">3. Inside a luxurious spa</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/wohlbefinden-in-lausanne/\">3. Im Inneren eines luxuriösen Spas</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Que les amateurs d’échappées intimistes et feutrées se rassurent, ils n’auront que l’embarras du choix face à la qualité de l’offre de spa lausannois. Nichés au creux des hôtels 5 étoiles de la ville, ces temples du bien-être promettent luxe, calme et volupté à qui voudrait s’y prélasser. Intéressés ? Alors rendez-vous au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lausanne-palace-spa/\">Spa du Lausanne Palace</a>, au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/spa-cinq-mondes-beau-rivage-palace/\">Spa Guerlain du Beau-Rivage Palace</a> ou encore au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/hotel-royal-savoy/\">Spa du Royal Savoy</a> pour un moment de bien-être hors du temps…",
-            "en": "Lovers of intimate, hushed getaways can rest assured that they will be spoilt for choice when it comes to the quality of the spa on offer in Lausanne. Nestled in the heart of the city’s 5-star hotels, these temples to well-being promise luxury, calm and voluptuousness. Interested? Then head to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-palace-spa/\">Spa du Lausanne Palace</a>, the<a href=\"https://www.lausanne-tourisme.ch/en/explore/spa-cinq-mondes/\"> Spa Guerlain du Beau-Rivage Palace</a> or the<a href=\"https://www.lausanne-tourisme.ch/en/explore/hotel-royal-savoy/\"> Spa du Royal Savoy</a> for a timeless moment of well-being…",
-            "de": "Liebhaber von intimen und ruhigen Aufenthalten haben in Lausanne die Qual der Wahl, wenn es um die Qualität des Spa-Angebots geht. Im Herzen der 5-Sterne-Hotels der Stadt gelegen, versprechen diese Tempel des Wohlbefindens Luxus, Ruhe und Üppigkeit. Interessiert? Dann besuchen Sie das Spa du Lausanne Palace, das Spa Guerlain du Beau-Rivage Palace oder das Spa du Royal Savoy für einen zeitlosen Moment des Wohlbefindens…",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26065,
-            "name": "Premier bain de l’année à Lausanne !",
-            "public_name": {
-              "fr": "Premier bain de l’année à Lausanne !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/guide/spas-de-lausanne/\">3. Dans l’antre d’un luxueux spa</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Que les amateurs d’échappées intimistes et feutrées se rassurent, ils n’auront que l’embarras du choix face à la qualité de l’offre de spa lausannois. Nichés au creux des hôtels 5 étoiles de la ville, ces temples du bien-être promettent luxe, calme et volupté à qui voudrait s’y prélasser. Intéressés ? Alors rendez-vous au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lausanne-palace-spa/\">Spa du Lausanne Palace</a>, au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/spa-cinq-mondes-beau-rivage-palace/\">Spa Guerlain du Beau-Rivage Palace</a> ou encore au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/hotel-royal-savoy/\">Spa du Royal Savoy</a> pour un moment de bien-être hors du temps…"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26065,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": "Premier bain de l’année à Lausanne !",
+              "cloudinary_id": "029854f1b4a4d3d5",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente au Spa du Lausanne Palace",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "029854f1b4a4d3d5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Spa-Lausanne-Palace-1-e1581088675637.jpg"
+              }
             },
-            "cloudinary_id": "029854f1b4a4d3d5",
-            "mime_type": "image/jpeg",
-            "copyright": "© Détente au Spa du Lausanne Palace",
-            "metadata": {
-              "width": 800,
-              "height": 534,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"800\" height=\"534\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "029854f1b4a4d3d5.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Spa-Lausanne-Palace-1-e1581088675637.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "heading",
-          "tag": "h2",
-          "value": {
-            "fr": "<a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-cite-thermale/\">4. Au cœur de bains bouillonnants</a>",
-            "en": "<a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-spa-town/\">4. At the heart of bubbling baths</a>",
-            "de": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-bains-de-lavey/\">4. Im Herzen der sprudelnden Bäder</a>",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Et puis, non loin de Lausanne, de fabuleux bains thermaux s’offrent à vous. A seulement 1h de train de Lausanne, aux pieds des Alpes, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-bains-de-lavey/\">Les Bains de Lavey</a> sont régulièrement victimes de leur succès. Il faut dire que leur source d’eau est connue pour être la plus chaude de Suisse ! Et avec ses deux bassins à remous, ses divers espaces bien-être et sa vue imprenable sur les montagnes, difficile de faire mieux… On y vient en couple ou en famille pour se détendre et profiter des installations aquatiques : en somme, le bonheur.",
-            "en": "And then, not far from Lausanne, there are fabulous thermal baths on offer. Only 1 hour by train from Lausanne, at the foot of the Alps, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-bains-de-lavey/\">Les Bains de Lavey</a> are regularly the victims of their own success. It has to be said that their water source is known to be the hottest in Switzerland! And with its two whirlpools, its various wellness areas and its breathtaking view of the mountains, it’s hard to beat it… You can come as a couple or as a family to relax and enjoy the aquatic facilities: in short, happiness.",
-            "de": "Nicht weit von Lausanne entfernt gibt es fabelhafte Thermalbäder zu entdecken. Nur 1 Stunde mit dem Zug von Lausanne entfernt, am Fuße der Alpen, sind Les Bains de Lavey regelmäßig Opfer ihres eigenen Erfolgs. Das Wasser, das dort entspringt, gilt als das heisseste der Schweiz! Und mit ihren zwei Whirlpools, den verschiedenen Wellnessbereichen und dem atemberaubenden Blick auf die Berge ist sie kaum zu übertreffen… Sie können als Paar oder als Familie kommen, um sich zu entspannen und die Wassereinrichtungen zu genießen: kurzum, um glücklich zu sein.",
-            "it": "",
-            "es": ""
-          }
-        },
-        {
-          "type": "image",
-          "value": {
-            "id": 26141,
-            "name": "Premier bain de l’année à Lausanne !",
-            "public_name": {
-              "fr": "Premier bain de l’année à Lausanne !"
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/the-lausanner/articles/lausanne-cite-thermale/\">4. Au cœur de bains bouillonnants</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et puis, non loin de Lausanne, de fabuleux bains thermaux s’offrent à vous. A seulement 1h de train de Lausanne, aux pieds des Alpes, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-bains-de-lavey/\">Les Bains de Lavey</a> sont régulièrement victimes de leur succès. Il faut dire que leur source d’eau est connue pour être la plus chaude de Suisse ! Et avec ses deux bassins à remous, ses divers espaces bien-être et sa vue imprenable sur les montagnes, difficile de faire mieux… On y vient en couple ou en famille pour se détendre et profiter des installations aquatiques : en somme, le bonheur."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26141,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": "Premier bain de l’année à Lausanne !",
+              "cloudinary_id": "d015093e19df9b4c",
+              "mime_type": "image/jpeg",
+              "copyright": "© @A. BASCHENIS",
+              "metadata": {
+                "width": 1299,
+                "height": 723,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1299\" height=\"723\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d015093e19df9b4c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lavey_Alain-Baschenis.jpg"
+              }
             },
-            "cloudinary_id": "d015093e19df9b4c",
-            "mime_type": "image/jpeg",
-            "copyright": "© @A. BASCHENIS",
-            "metadata": {
-              "width": 1299,
-              "height": 723,
-              "mimeType": "image/jpeg",
-              "copyright": null,
-              "attr": "width=\"1299\" height=\"723\"",
-              "tags": null,
-              "description": null,
-              "file_name_from_url": "d015093e19df9b4c.jpg",
-              "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lavey_Alain-Baschenis.jpg"
-            }
+            "size": "medium",
+            "focus": "auto"
           },
-          "size": "medium",
-          "focus": "auto"
-        },
-        {
-          "type": "paragraph",
-          "value": {
-            "fr": "Alors ? Prêts à vous jeter à l’eau ? Cette année faites vos jeux, tout ira pour le mieux !",
-            "en": "What’s on your mind? Ready to take the plunge? This year, place your bets and all will be well!",
-            "de": "Woran denken Sie gerade? Sind Sie bereit, den Sprung zu wagen? Setzen Sie dieses Jahr Ihre Wetten und alles wird gut!",
-            "it": "",
-            "es": ""
+          {
+            "type": "paragraph",
+            "value": "Alors ? Prêts à vous jeter à l’eau ? Cette année faites vos jeux, tout ira pour le mieux !"
           }
-        }
-      ],
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27233,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "4e404dc263ff9283",
+              "mime_type": "image/jpeg",
+              "copyright": "© Les Bains des Rives sur le site de Bellerive a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, lac Léman, hiver, yourtes, sauna, détente, bien-être",
+                "description": null,
+                "file_name_from_url": "4e404dc263ff9283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/Bains_des_Rives_8.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/story/lake-geneva/\">1. In the clear, invigorating waters of the lake</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "After all, what could be more natural than Lake Geneva to take the plunge? Yes, even in the middle of winter, it’s possible! And if the temperature is chilling you, just think of the incredible benefits that this icy bath will bring you: better circulation, boosted immunity, improved sleep and even… your mood! Admittedly, it’s a daring idea, but there’s nothing better to start the year off in style: so get your swimming costumes on, and get ready to dive in!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 15470,
+              "name": "Piste du Renard",
+              "public_name": "Piste du Renard",
+              "cloudinary_id": "bqegxjzmqfg401rskyuq",
+              "mime_type": "image/jpeg",
+              "copyright": "© Piste du Renard",
+              "metadata": {
+                "width": 4992,
+                "height": 3329,
+                "mimeType": "image/jpeg",
+                "copyright": "R..gis Colombo",
+                "attr": "width=\"4992\" height=\"3329\"",
+                "tags": "Lac; Montagne; ",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">2. In the warmth of an unusual sauna with a view</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "This is the ingenious idea behind the <a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">Bains des Rives</a> winter bath project in Bellerive. On the menu for this unique space: well-being and conviviality in the lair of a yurt-sauna, with the added bonus of a breathtaking view of the lake and mountains. Bonus: the materials used are reusable and the entrance fee is very affordable. An original way to start the New Year for two, with family, friends or on your own!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Good to know: this is a lakeside pop-up, the installations are ephemeral and only accessible during the winter period.</em><br>\n<em>See opening dates and times on the official website. </em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27231,
+              "name": "Bains des rives",
+              "public_name": null,
+              "cloudinary_id": "bains-des-rives-ildfkk",
+              "mime_type": "image/jpeg",
+              "copyright": "© Matthieu Croizier",
+              "metadata": {
+                "width": 3200,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"3200\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c1e566fafef4ead3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/25_BainDesRives_MatthieuCroizier_web_117-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/guide/wellbeing-in-lausanne/\">3. Inside a luxurious spa</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lovers of intimate, hushed getaways can rest assured that they will be spoilt for choice when it comes to the quality of the spa on offer in Lausanne. Nestled in the heart of the city’s 5-star hotels, these temples to well-being promise luxury, calm and voluptuousness. Interested? Then head to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-palace-spa/\">Spa du Lausanne Palace</a>, the<a href=\"https://www.lausanne-tourisme.ch/en/explore/spa-cinq-mondes/\"> Spa Guerlain du Beau-Rivage Palace</a> or the<a href=\"https://www.lausanne-tourisme.ch/en/explore/hotel-royal-savoy/\"> Spa du Royal Savoy</a> for a timeless moment of well-being…"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26065,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "029854f1b4a4d3d5",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente au Spa du Lausanne Palace",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "029854f1b4a4d3d5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Spa-Lausanne-Palace-1-e1581088675637.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/articles/lausanne-spa-town/\">4. At the heart of bubbling baths</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "And then, not far from Lausanne, there are fabulous thermal baths on offer. Only 1 hour by train from Lausanne, at the foot of the Alps, <a href=\"https://www.lausanne-tourisme.ch/en/explore/les-bains-de-lavey/\">Les Bains de Lavey</a> are regularly the victims of their own success. It has to be said that their water source is known to be the hottest in Switzerland! And with its two whirlpools, its various wellness areas and its breathtaking view of the mountains, it’s hard to beat it… You can come as a couple or as a family to relax and enjoy the aquatic facilities: in short, happiness."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26141,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "d015093e19df9b4c",
+              "mime_type": "image/jpeg",
+              "copyright": "© @A. BASCHENIS",
+              "metadata": {
+                "width": 1299,
+                "height": 723,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1299\" height=\"723\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d015093e19df9b4c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lavey_Alain-Baschenis.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "What’s on your mind? Ready to take the plunge? This year, place your bets and all will be well!"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27233,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "4e404dc263ff9283",
+              "mime_type": "image/jpeg",
+              "copyright": "© Les Bains des Rives sur le site de Bellerive a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, lac Léman, hiver, yourtes, sauna, détente, bien-être",
+                "description": null,
+                "file_name_from_url": "4e404dc263ff9283.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/Bains_des_Rives_8.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/der-genfersee/\">1. Im klaren, belebenden Wasser des Sees</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Was liegt näher als der Genfer See, um einen Sprung ins kühle Nass zu wagen? Ja, sogar mitten im Winter ist das möglich! Und wenn Sie bei den Temperaturen frösteln, denken Sie an die unglaublichen Vorteile, die Ihnen dieses Eisbad bringen wird: bessere Durchblutung, Stärkung des Immunsystems, besserer Schlaf und sogar… Ihre Stimmung! Zugegeben, es ist eine gewagte Idee, aber es gibt nichts Besseres, um das neue Jahr stilvoll zu beginnen: Ziehen Sie also Ihre Badesachen an und machen Sie sich bereit zum Eintauchen!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 15470,
+              "name": "Piste du Renard",
+              "public_name": "Piste du Renard",
+              "cloudinary_id": "bqegxjzmqfg401rskyuq",
+              "mime_type": "image/jpeg",
+              "copyright": "© Piste du Renard",
+              "metadata": {
+                "width": 4992,
+                "height": 3329,
+                "mimeType": "image/jpeg",
+                "copyright": "R..gis Colombo",
+                "attr": "width=\"4992\" height=\"3329\"",
+                "tags": "Lac; Montagne; ",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bains-des-rives/\">2. In der Wärme einer ungewöhnlichen Sauna mit Aussicht</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das ist die geniale Idee hinter dem Projekt des Winterbads <a href=\"https://www.lausanne-tourisme.ch/en/explore/bains-des-rives/\">Bains des Rives</a> in Bellerive. Auf der Speisekarte dieses einzigartigen Ortes stehen Wohlbefinden und Geselligkeit in der Höhle einer Jurtensauna, mit dem zusätzlichen Bonus eines atemberaubenden Blicks auf den See und die Berge. Bonus: Die verwendeten Materialien sind wiederverwendbar und der Eintrittspreis ist sehr erschwinglich. Eine originelle Art, das neue Jahr zu zweit, mit der Familie, mit Freunden oder allein zu beginnen!"
+          },
+          {
+            "type": "paragraph",
+            "value": "Gut zu wissen: Es handelt sich um ein Pop-up am See, die Installationen sind vergänglich und nur während der Wintermonate zugänglich.<br>\nDie Öffnungszeiten finden Sie auf der offiziellen Website."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27231,
+              "name": "Bains des rives",
+              "public_name": null,
+              "cloudinary_id": "bains-des-rives-ildfkk",
+              "mime_type": "image/jpeg",
+              "copyright": "© Matthieu Croizier",
+              "metadata": {
+                "width": 3200,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"3200\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c1e566fafef4ead3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/11/25_BainDesRives_MatthieuCroizier_web_117-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/besuchen/wohlbefinden-in-lausanne/\">3. Im Inneren eines luxuriösen Spas</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Liebhaber von intimen und ruhigen Aufenthalten haben in Lausanne die Qual der Wahl, wenn es um die Qualität des Spa-Angebots geht. Im Herzen der 5-Sterne-Hotels der Stadt gelegen, versprechen diese Tempel des Wohlbefindens Luxus, Ruhe und Üppigkeit. Interessiert? Dann besuchen Sie das Spa du Lausanne Palace, das Spa Guerlain du Beau-Rivage Palace oder das Spa du Royal Savoy für einen zeitlosen Moment des Wohlbefindens…"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26065,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "029854f1b4a4d3d5",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente au Spa du Lausanne Palace",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "029854f1b4a4d3d5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Spa-Lausanne-Palace-1-e1581088675637.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/les-bains-de-lavey/\">4. Im Herzen der sprudelnden Bäder</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nicht weit von Lausanne entfernt gibt es fabelhafte Thermalbäder zu entdecken. Nur 1 Stunde mit dem Zug von Lausanne entfernt, am Fuße der Alpen, sind Les Bains de Lavey regelmäßig Opfer ihres eigenen Erfolgs. Das Wasser, das dort entspringt, gilt als das heisseste der Schweiz! Und mit ihren zwei Whirlpools, den verschiedenen Wellnessbereichen und dem atemberaubenden Blick auf die Berge ist sie kaum zu übertreffen… Sie können als Paar oder als Familie kommen, um sich zu entspannen und die Wassereinrichtungen zu genießen: kurzum, um glücklich zu sein."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26141,
+              "name": "Premier bain de l’année à Lausanne !",
+              "public_name": null,
+              "cloudinary_id": "d015093e19df9b4c",
+              "mime_type": "image/jpeg",
+              "copyright": "© @A. BASCHENIS",
+              "metadata": {
+                "width": 1299,
+                "height": 723,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1299\" height=\"723\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d015093e19df9b4c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lavey_Alain-Baschenis.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Woran denken Sie gerade? Sind Sie bereit, den Sprung zu wagen? Setzen Sie dieses Jahr Ihre Wetten und alles wird gut!"
+          }
+        ]
+      },
       "medias": [
         {
           "cloudinary_id": "1bb2868a49db8414",
