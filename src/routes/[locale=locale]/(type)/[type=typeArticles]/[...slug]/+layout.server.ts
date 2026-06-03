@@ -9,8 +9,8 @@ import { error } from '@sveltejs/kit';
 
 export const load = async ({ params, parent, url, fetch }) => {
   if (dev && isOfflineMode) {
-    const { server } = await import('$lib/mocks/handler');
-    server.listen();
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
   }
 
   const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([

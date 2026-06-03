@@ -6,16 +6,16 @@ import { supportedLocales, translations } from '$lib/translations';
 import type { Post } from '$types';
 import type { EntryGenerator } from './$types';
 
-export const load = async ({ params, parent, fetch, setHeaders }) => {
+export const load = async ({ params, parent, fetch }) => {
   if (dev && isOfflineMode) {
-    const { server } = await import('$lib/mocks/handler');
-    server.listen();
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
   }
 
   const { locale, translations } = await parent();
   const theme: Theme = Object.values(Themes).find(
-      (theme) => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme
-    )!;
+    (theme) => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme
+  )!;
 
   const tag = getTag(theme);
   const [postsRes, favoritesRes] = await Promise.all([
