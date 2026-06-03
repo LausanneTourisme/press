@@ -76,7 +76,6 @@
     // Guard so the restore only runs when we're actually arriving at the homepage.
     const arrivingHere = navigation.to?.url?.pathname === `/${locale}`;
 
-
     // Restore themes state synchronously before SvelteKit restores scroll (avoids layout shift)
     const saved = sessionStorage.getItem('homeThemesExpanded');
     if (saved !== null) displayAllThemes = saved === 'true';
@@ -86,13 +85,19 @@
       const savedY = Number(sessionStorage.getItem('homeScrollY') ?? 0);
       if (savedY > 0) {
         let cancelled = false;
-        cancelScrollRestore = () => { cancelled = true; };
-        let lastH = 0, stable = 0;
+        cancelScrollRestore = () => {
+          cancelled = true;
+        };
+        let lastH = 0,
+          stable = 0;
         const tryScroll = () => {
           if (cancelled) return;
           const h = document.documentElement.scrollHeight;
           if (h === lastH) stable++;
-          else { stable = 0; lastH = h; }
+          else {
+            stable = 0;
+            lastH = h;
+          }
           if (stable >= 3) window.scrollTo({ top: savedY, behavior: 'instant' });
           else requestAnimationFrame(tryScroll);
         };
@@ -412,7 +417,10 @@
     title={$t('themes.title')}
     paragraph={$t('themes.description')}
     expanded={displayAllThemes}
-    onShowMore={() => { displayAllThemes = true; sessionStorage.setItem('homeThemesExpanded', 'true'); }}
+    onShowMore={() => {
+      displayAllThemes = true;
+      sessionStorage.setItem('homeThemesExpanded', 'true');
+    }}
     {locale}
   />
 </Container>

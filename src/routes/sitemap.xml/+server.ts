@@ -82,7 +82,10 @@ const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[]) => {
     .join('\n');
 };
 
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string, fetchFn: typeof fetch) => {
+const generatePresskitAndPressReleasesUrlSets = async (
+  urlOrigin: string,
+  fetchFn: typeof fetch
+) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 
