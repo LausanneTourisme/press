@@ -1,4 +1,4 @@
-import type { Media, Translatable, Video as NovaVideo } from './nova';
+import type { Media, Video as NovaVideo } from './nova';
 
 export type Hero = {
   type: 'hero';

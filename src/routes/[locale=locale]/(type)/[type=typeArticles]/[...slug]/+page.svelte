@@ -5,7 +5,7 @@
   import PostContent from '$lib/components/PostContent.svelte';
   import { ucfirst } from '$lib/helpers';
   import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
-  import { t, type Locale } from '$lib/translations';
+  import { t } from '$lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';

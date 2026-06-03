@@ -16,7 +16,7 @@
     locale: Locale;
   };
 
-  const { class: additionalClass = '', hero, locale }: Props = $props();
+  const { class: additionalClass = '', hero }: Props = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
