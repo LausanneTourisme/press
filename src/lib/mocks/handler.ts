@@ -25,13 +25,8 @@ export const handlers = [
       console.warn('mock request: GetPosts (press)');
       key = `press_kit.${variables.locale}`;
     } else if (variables.type === 'post') {
-      if (variables.highlighted) {
-        console.warn('mock request: GetPosts (highlighted posts)');
-        key = `posts.highlighted.${variables.locale}`;
-      } else {
-        console.warn('mock request: GetPosts (posts)');
-        key = `posts.${variables.locale}`;
-      }
+      console.warn('mock request: GetPosts');
+      key = `posts.${variables.locale}`;
     } else if (variables.type === 'news') {
       console.warn('mock request: GetPosts (news)');
       key = `news.${variables.locale}`;
@@ -50,9 +45,28 @@ export const handlers = [
         }
       });
     }
+
     const path = `./responses/posts/${key}.json`;
-    const mock = await postsMocks[path]();
-    return HttpResponse.json(mock.default);
+    const mock = structuredClone((await postsMocks[path]()).default);
+
+    if (mock.data?.items && variables.tags) {
+      const tags: string[] = variables.tags.replace(/\s+/g, '').split(',');
+      if (!variables.operator || variables.operator === 'some') {
+        mock.data.items.data = mock.data.items.data.filter((post) =>
+          tags.some((tag) => post.tags?.some((t) => t.name === tag) ?? false)
+        );
+      } else if (variables.operator === 'all') {
+        mock.data.items.data = mock.data.items.data.filter((post) =>
+          tags.every((tag) => post.tags?.some((t) => t.name === tag) ?? false)
+        );
+      } else if (variables.operator === 'not') {
+        mock.data.items.data = mock.data.items.data.filter(
+          (post) => !tags.some((tag) => post.tags?.some((t) => t.name === tag) ?? false)
+        );
+      }
+    }
+
+    return HttpResponse.json(mock);
   }),
   graphql.query('GetGroup', async ({ variables }) => {
     console.warn('mock request: GetGroup');
@@ -91,3 +105,11 @@ export const handlers = [
 ];
 
 export const server = setupServer(...handlers);
+
+export function startServer() {
+  try {
+    server.listen({ onUnhandledRequest: 'bypass' });
+  } catch {
+    // already listening
+  }
+}
