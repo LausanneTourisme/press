@@ -15,11 +15,15 @@ on:
       environment:
         description: 'Environment to deploy to'
         required: true
-        default: 'stage'
+        default: 'Stage'
         type: choice
         options:
           - Stage
           - Production
+
+concurrency:
+  group: deploy-${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || (github.event.workflow_run.head_branch == 'main' && 'Production' || 'Stage') }}
+  cancel-in-progress: false
 
 jobs:
   resolve-env:
