@@ -124,9 +124,11 @@
     coordinates?: { lat: number; lng: number };
   }) => {
     const geolocation = poi?.geolocations?.at(0);
-    const coords = coordinates ?? (geolocation
-      ? { lat: Number(geolocation.latitude), lng: Number(geolocation.longitude) }
-      : undefined);
+    const coords =
+      coordinates ??
+      (geolocation
+        ? { lat: Number(geolocation.latitude), lng: Number(geolocation.longitude) }
+        : undefined);
 
     if (!coords) return;
 
@@ -323,13 +325,18 @@
           {/snippet}
           <Popup
             open={markerIndex === `favorite#${marker.favorite.id}` ||
-              markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}|${marker.coordinates.lat},${marker.coordinates.lng}`}
+              markerIndex ===
+                `poi#${marker.poi.id}|favorite#${marker.favorite.id}|${marker.coordinates.lat},${marker.coordinates.lng}`}
             onopen={() => {
               setTimeout(() => {
                 if (markerIndex === `favorite#${marker.favorite.id}`) {
                   updateAside({ favorite: marker.favorite, poi: marker.poi });
                 } else {
-                  handleLausannerClick({ favorite: marker.favorite, poi: marker.poi, coordinates: marker.coordinates });
+                  handleLausannerClick({
+                    favorite: marker.favorite,
+                    poi: marker.poi,
+                    coordinates: marker.coordinates
+                  });
                 }
               }, 50);
             }}
