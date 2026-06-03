@@ -21,9 +21,8 @@
     isMobile = false,
     focus = 'auto'
   }: Props = $props();
-  let transform: Transform = $state({
+  let transform: Transform = $derived({
     // default values, reactivity will update them
-    // svelte-ignore state_referenced_locally
     gravity: focus,
     crop: 'auto'
   });

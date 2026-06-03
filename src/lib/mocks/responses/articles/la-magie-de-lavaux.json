@@ -1,0 +1,673 @@
+{
+  "data": {
+    "item": {
+      "id": "306",
+      "languages": ["fr", "en"],
+      "name": {
+        "fr": "La magie de Lavaux",
+        "en": "Enchanting Lavaux"
+      },
+      "lead": {
+        "fr": "A deux pas de Lausanne, on se retrouve dans une toute autre ambiance. Au revoir la ville, bonjour les vignobles. Toujours avec le Lac Léman en toile de fond, la région de Lavaux est un must see pour tous visiteurs de la région, mais aussi pour les locaux.",
+        "en": "A stone’s throw from, the atmosphere is completely different. Goodbye city, hello vineyards. With Lake Geneva as the constant backdrop, Lavaux is a must-see for all visitors to the area, as well as for locals."
+      },
+      "summary": {
+        "fr": "A deux pas de Lausanne (seulement 5 minutes en train jusqu’à Lutry !), on se retrouve dans une toute autre ambiance. Au revoir la ville, bonjour les vignobles. Toujours avec le Lac Léman en toile de fond, la région de Lavaux est un must see pour tous visiteurs de la région, mais aussi pour les locaux.",
+        "en": "A stone’s throw from Lausanne (only five minutes by train to Lutry!), the atmosphere is completely different. Goodbye city, hello vineyards. With Lake Geneva as the constant backdrop, Lavaux is a must-see for all visitors to the area, as well as for locals."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26457,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "01819d728de85ec7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Le vignoble de Lavaux, patrimoine de l",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "01819d728de85ec7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Vignoble-de-Lavaux_KAZ5086-HDR.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "On adore se balader dans les vignes et on ne se lasse jamais des paysages incroyables qui s’offrent à nos yeux. A chaque fois, la magie opère et on se dit que l’on a vraiment de la chance d’habiter une région comme celle-ci !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25922,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "040e152295c5aec0",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "040e152295c5aec0.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-e1568792504168.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les vignobles en terrasses de Lavaux sont inscrits au patrimoine mondial de l’UNESCO. Ce titre attire le regard du monde entier et c’est bien mérité ! Il y a de quoi faire en Lavaux, et pas uniquement déguster du vin, même si c’est un passage obligé ! Voici nos suggestions pour une escapade réussie."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b>Les vins de la ville de Lausanne</b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Saviez-vous que la ville de Lausanne a son propre vin ? Oui oui ! En effet, la ville de Lausanne possède 33 hectares de vignes divisés en cinq domaines sous les appellations La Côte, Dézaley et Lavaux. Et oui, une partie du vin de la ville de Lausanne provient de la célèbre région des vignobles en terrasses."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26006,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "0cb2446d6f149317",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0cb2446d6f149317.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-apero-e1568791247463.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b>Randonnée au coeur des vignes</b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Rien de mieux pour découvrir un endroit que de s’y balader à pieds. Il est possible de randonner dans Lavaux depuis Lutry jusqu’à Vevey. Une jolie journée en perspective ! Si vous ne voulez pas y passer toute la journée, pas de soucis, Lavaux se découvre très bien petit à petit. Notre endroit coup de coeur se situe entre Epesses et Grandvaux. Il est facile de garer sa voiture du côté du joli village d’Epesses et d’ensuite emprunter la petite route goudronnée qui serpente entre les vignobles. Juste après Epesses, sur les hauteurs, on aperçoit même la Tour de Marsens. Cette maison forte semble dater du XIIe siècle et est classée comme bien culturel d’importance régionale. Sans oublier les différents points de vues à tomber tout au long du chemin, et cela en toute saison !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26092,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "0cfdfac281f77bcf",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0cfdfac281f77bcf.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-tour-marsens-e1568791613968.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26159,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "3f47c95b489163e3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur le Lavaux la vigne et le lac Leman",
+              "metadata": {
+                "width": 1600,
+                "height": 1143,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1143\"",
+                "tags": "Lavaux; Vignes; Vignoble; Lac",
+                "description": null,
+                "file_name_from_url": "3f47c95b489163e3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/09/Lavaux-vignes.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est incroyable de voir les vignes et les paysages changer au fil du temps. Nous vous conseillons donc de venir plus d’une fois dans le coin, d’autant que les idées de promenades ne manquent pas en Lavaux ! Parmi nos préférées, l’itinéraire de <a href=\"https://www.lausanne-tourisme.ch/fr/V1002/le-vignoble-de-lavaux-de-grandvaux-a-lutry\">Grandvaux à Lutry</a>, qui offre une jolie balade d’environ 2h. Le parcours menant de <a href=\"https://www.lausanne-tourisme.ch/fr/V1000/le-vignoble-de-lavaux-de-grandvaux-a-cully\">Grandvaux à Cully </a>saura également vous séduire, avec son panorama à couper le souffler !"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour une excursion plus complète, profitez d’une <a href=\"https://www.lausanne-tourisme.ch/fr/offres-speciales/\">visite guidée</a> avec dégustation !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26225,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "423776d59ff76c27",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "423776d59ff76c27.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-village-grandvaux-e1568791796350.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b>L’heure de l’apéro !</b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le plus beau moment de la journée est pour nous l’heure dorée comme on l’appelle. La fin de journée, juste avant le coucher du soleil. La lumière douce des rayons couchant illumine à merveille les vignes et le lac. C’est le moment idéal pour se balader tranquillement et avoir ainsi les lieux pour soi."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26293,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "003ac9bd7a160269",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "003ac9bd7a160269.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-coucher-soleil-e1568791386749.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<b>Le bon plan </b>: s’arrêter juste avant Rivaz à la petite cabane de dégustation de Didier Imhof, située au chemin de la dame. Vous aurez ici la possibilité de boire un verre de vin, ou de prendre une bouteille à emporter pour un apéro idyllique dans les vignes du Dézaley. Asseyez-vous sur le muret d’une des terrasses et admirez le coucher de soleil avec comme panorama les vignes, le lac et les montagnes (le tout avec un bon vin de la région). On peut difficilement faire mieux et le temps semble s’arrêter !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26341,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "c598109659425037",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c598109659425037.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-kiosque-degustation-e1568791101322.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b>Ohé ohé matelot !</b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Si vous avez plutôt le pied marin que randonneurs, Lavaux se découvre aussi sur l’eau. Embarquez au départ de Lausanne Ouchy pour une <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\">croisière</a> avec une vue imprenable et unique sur les vignobles. Si vous ne savez que choisir entre randonnée et croisière, combinez les deux ! Vous pouvez marcher depuis Lutry jusqu’à Rivaz / Saint-Saphorin et faire le retour en bateau. Pensez à bien regarder les <a href=\"https://www.cgn.ch/fr/\">horaires</a> avant votre départ !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26387,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "7726b4e7d1ca1082",
+              "mime_type": "image/jpeg",
+              "copyright": "© Village au bord de lac",
+              "metadata": {
+                "width": 800,
+                "height": 524,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"524\"",
+                "tags": "Eau, Lavaux, Unesco, Environs, Nature",
+                "description": null,
+                "file_name_from_url": "1ed358b7e279cbc2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26423,
+              "name": "La magie de Lavaux",
+              "public_name": "La magie de Lavaux",
+              "cloudinary_id": "8ebd5c74cbccb554",
+              "mime_type": "image/jpeg",
+              "copyright": "© Récolte du raisin. Vendanges",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": "Vignoble; Lavaux;Bateau",
+                "description": null,
+                "file_name_from_url": "8ebd5c74cbccb554.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Vendanges-Lavaux-e1568792300912.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lavaux et son vignoble en terrasses valent vraiment le détour et qu’on prenne le temps de le découvrir lors d’une escapade hors de la ville de Lausanne. Se balader entre les vignes est comme une petite pause dans la vie de tous les jours, un moyen de prendre l’air et de décompresser sans aller bien loin."
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Attention, Lavaux est un patrimoine naturel fragile, voici <a href=\"https://www.lavaux-unesco.ch/experience-positive-a-lavaux\">les recommandations</a> à suivre pour le préserver.</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26457,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "01819d728de85ec7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Le vignoble de Lavaux, patrimoine de l",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "01819d728de85ec7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Vignoble-de-Lavaux_KAZ5086-HDR.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "We love walking in the vineyards and we never tire of the amazing landscapes that stretch before our eyes. The magic operates every time and we say to ourselves that we are truly lucky to live in such a region!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25922,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "040e152295c5aec0",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "040e152295c5aec0.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-e1568792504168.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "The Lavaux terraced vineyards are listed as a UNESCO World Heritage site. This status attracts attention from all around the world, which is well deserved! There is plenty to do in Lavaux and not only wine tastings – although that is a given! Here are our suggestions for a successful outing."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The Town of Lausanne’s wines</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Did you know that the Town of Lausanne has its own wine? It does indeed! The City possesses 33 hectares of vineyards, divided in five estates under the appellations La Côte, Dézaley and Lavaux. That’s right: part of the Town of Lausanne’s wine comes from that famous region of terraced vineyards."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26006,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "0cb2446d6f149317",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0cb2446d6f149317.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-apero-e1568791247463.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>A walk in the heart of the vineyards</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The best way of discovering a place is to explore it on foot. It is possible to walk in Lavaux from Lutry to Vevey. A pleasant day to look forward to! If you don’t want to spend the whole day doing that, no worries, Lavaux can also be discovered bit by bit. Our favourite place is between Epesses and Grandvaux. It is easy to park your car next to the picturesque village of Epesses and then take the small tarmac road that winds amongst the vineyards. Just after Epesses, high up on the left, we can even see the Tour de Marsens. This stronghold appears to go back to the 12<sup>th</sup> century and is listed as a cultural asset of regional importance. Not forgetting the various stunning viewpoints along the way, whatever the season!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26092,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "0cfdfac281f77bcf",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0cfdfac281f77bcf.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-tour-marsens-e1568791613968.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26159,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "3f47c95b489163e3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue sur le Lavaux la vigne et le lac Leman",
+              "metadata": {
+                "width": 1600,
+                "height": 1143,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1143\"",
+                "tags": "Lavaux; Vignes; Vignoble; Lac",
+                "description": null,
+                "file_name_from_url": "3f47c95b489163e3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/09/Lavaux-vignes.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s incredible to see the vines and the landscape change with the seasons. We recommend therefore that you visit the area more than once, especially as the suggestions of walks abound in Lavaux! Among our favourites, the itinerary from <a href=\"https://www.lausanne-tourisme.ch/en/V1002/lavaux-vineyard-from-grandvaux-to-lutry\">Grandvaux to Lutry</a>, a pleasant walk that takes about two hours. The trail from <a href=\"https://www.lausanne-tourisme.ch/en/V1000/the-lavaux-vineyard-from-grandvaux-to-cully\">Grandvaux to Cully</a> will also win you over with its breathtaking panorama!"
+          },
+          {
+            "type": "paragraph",
+            "value": "For a more complete package, go for a <a href=\"https://www.lausanne-tourisme.ch/en/special-offers/\">guided tour</a> with wine tasting!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26225,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "423776d59ff76c27",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "423776d59ff76c27.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-village-grandvaux-e1568791796350.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Aperitif time!</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "For us, the best time of the day is what we call the golden hour: the end of the day, just before the sun goes down. The rays of the setting sun bathe the vineyards and the lake in the most beautiful soft light. It’s the ideal time to go for a quiet walk and have the place to ourselves."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26293,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "003ac9bd7a160269",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "003ac9bd7a160269.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-vue-coucher-soleil-e1568791386749.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>A good tip:</strong> stop just before you reach Grandvaux, in Didier Imhof’s small tasting cabin on the Chemin de la Dame. You will be able to drink a glass of wine or buy a bottle to take with you for an idyllic aperitif in the Dezaley vineyards. Sit down on the stone wall bordering one of the terraces and admire the sunset with a panorama of the vineyards, lake and mountains (while enjoying good wine from the area). It’s difficult to beat that and time seems to stand still!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26341,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "c598109659425037",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 533,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"533\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c598109659425037.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/awwway-mylausanne-lavaux-kiosque-degustation-e1568791101322.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Ahoy there, sailor!</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "If you have seafaring rather than walking legs, Lavaux can also be discovered from the lake. In Lausanne Ouchy, step aboard for a <a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\">cruise</a> with a spectacular, unique view of the vineyards. And if you can’t make up your mind between a walk and a cruise, do both! You can walk from Lutry to Rivaz / Saint-Saphorin and come back by boat. Do check the <a href=\"https://www.cgn.ch/en/\">timetables</a> before you leave!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26387,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "7726b4e7d1ca1082",
+              "mime_type": "image/jpeg",
+              "copyright": "© Village au bord de lac",
+              "metadata": {
+                "width": 800,
+                "height": 524,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"524\"",
+                "tags": "Eau, Lavaux, Unesco, Environs, Nature",
+                "description": null,
+                "file_name_from_url": "1ed358b7e279cbc2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Village-au-bord-du-lac.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26423,
+              "name": "La magie de Lavaux",
+              "public_name": null,
+              "cloudinary_id": "8ebd5c74cbccb554",
+              "mime_type": "image/jpeg",
+              "copyright": "© Récolte du raisin. Vendanges",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": "Vignoble; Lavaux;Bateau",
+                "description": null,
+                "file_name_from_url": "8ebd5c74cbccb554.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Vendanges-Lavaux-e1568792300912.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lavaux and its terraced vineyards are really worth your taking the time to discover them during an outing outside of Lausanne. A walk in the vineyards offers a short breather in everyday life, and is a way of getting some fresh air and relax without going too far afield."
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Remember that Lavaux is a fragile natural heritage site; here are <a href=\"https://en.lavaux-unesco.ch/experience-positive-a-lavaux\">the recommendations</a> to follow to preserve it. </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "040e152295c5aec0",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "La magie de Lavaux"
+          }
+        }
+      ],
+      "published_at": "1662933600",
+      "seo": {
+        "description": {
+          "fr": "A deux pas de Lausanne, on se retrouve dans une toute autre ambiance. Au revoir la ville, bonjour les vignobles. Toujours avec le Lac Léman en toile de fond, la région de Lavaux est un must see pour tous visiteurs de la région, mais aussi pour les locaux.",
+          "en": "A stone’s throw from, the atmosphere is completely different. Goodbye city, hello vineyards. With Lake Geneva as the constant backdrop, Lavaux is a must-see for all visitors to the area, as well as for locals."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "la-magie-de-lavaux",
+          "en": "enchanting-lavaux"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1257 @@
+{
+  "data": {
+    "item": {
+      "id": "282",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Les adresses design de Lausanne",
+        "en": "Lausanne’s design spots",
+        "de": "Die Lausanner Designer Adressen"
+      },
+      "lead": {
+        "fr": "Lausanne regorge de bonnes adresses où le design, l’architecture et le sens du détail se côtoient. Amoureuse du « beau » j’oriente toujours nos balades, nos repas en famille, mes pauses café ou le shopping vers des endroits où le « beau » est au rendez-vous. En famille, je privilégie évidemment le plus possible que ce soit « kids friendly ».",
+        "en": "Lausanne is packed full of great addresses that combine design, architecture and an eye for detail. A lover of aesthetics, I always guide our walks, family meals, coffee breaks or shopping trips towards places where “the beautiful” is present. With my family, I obviously favour kid-friendly options as much as possible.",
+        "de": "Gute Adressen, wo Design, Architektur und Liebe zum Detail aufeinandertreffen, gibt es in Lausanne in Hülle und Fülle. Ich liebe das Schöne dieser Welt und wähle Spaziergänge, Familienessen, Kaffeepausen und Shopping immer so aus, dass sie von Schönem umgeben sind. Aber mit der Familie soll es natürlich auch möglichst kinderfreundlich sein."
+      },
+      "summary": {
+        "fr": "Lausanne regorge de bonnes adresses où le design, l’architecture et le sens du détail se côtoient. Amoureuse du « beau » j’oriente toujours nos balades, nos repas en famille, mes pauses café ou le shopping vers des endroits où le « beau » est au rendez-vous. En famille, je privilégie évidemment le plus possible que ce soit « kids friendly ».",
+        "en": "Lausanne is packed full of great addresses that combine design, architecture and an eye for detail. A lover of aesthetics, I always guide our walks, family meals, coffee breaks or shopping trips towards places where “the beautiful” is present. With my family, I obviously favour kid-friendly options as much as possible.",
+        "de": "Gute Adressen, wo Design, Architektur und Liebe zum Detail aufeinandertreffen, gibt es in Lausanne in Hülle und Fülle. Ich liebe das Schöne dieser Welt und wähle Spaziergänge, Familienessen, Kaffeepausen und Shopping immer so aus, dass sie von Schönem umgeben sind. Aber mit der Familie soll es natürlich auch möglichst kinderfreundlich sein."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26433,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "c8ef5ffbaa1948cb",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1877,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1877\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c8ef5ffbaa1948cb.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01_3000-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Mes adresses préférées de boutiques décoration et design"
+          },
+          {
+            "type": "paragraph",
+            "value": "Je vous emmène tout d’abord découvrir mes adresses préférées de boutiques décoration et design. Ceux qui me connaissent savent mon amour pour le vintage. Situé dans le quartier du Flon, <a href=\"http://www.galerieportfranc.ch/\">La Galerie du port Franc</a> est superbe pour les passionnés comme moi. On trouve très souvent des pièces de grands designers. L’architecture brut du lieu met complètement les meubles en valeur. Il y a un espace café au fond. Les enfants eux, adorent s’installer à l’ancien bureau d’écolier et tapoter sur la vieille machine à écrire mise à leur disposition."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25952,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "4f12c6debc8f6e41",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4f12c6debc8f6e41.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauPortFranc01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "L’une de mes autres adresses « coup de coeur » c’est <a href=\"https://www.chiccham.com/fr/\">ChicCham</a>. Je suis fan de l’espace « postindustriel » de plus de 300m2 avec ses magnifiques verrières. On y retrouve une superbe sélection de marques contemporaines de design mais aussi des meubles et accessoires vintage. Un doux mélange entre deux styles que j’adore moi même utiliser en décoration."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CIDD9KCB6e1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour finir, il y a la boutique de Julie : <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lattribut-diris/\">L’Attribut d’Iris</a>. Une petite boutique pleine de pépites et trésors pour mon plus grand plaisir. Vous trouverez une sélection de plantes vertes et fleurs séchées pour votre intérieur mais aussi de superbes objets de décoration faits par de petits créateurs. Je vous mets au défi de ressortir les mains vides !"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27162,
+                "name": "Les adresses design de Lausanne - étagère",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "604JJGaBMkM3CF6YxruhMFynpijWisO8YzbAn4Dh",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8e5839496e411387.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01-scaled.jpg"
+                }
+              },
+              {
+                "id": 27163,
+                "name": "Les adresses design de Lausanne - bouquet de fleur",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "95a0EaiSOH3ohLTPZb0bNXbj3l05lFqgqVSEpmJf",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "116bf2e0094452cb.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27164,
+                "name": "Les adresses design de Lausanne - bouteilles de Jasmin",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "4ie14JmQhrDyeJx0QMi0tN391cWa9PDTfkcuPCuO",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2811a2fe69fc066d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris02-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Mes bonnes adresses culinaires"
+          },
+          {
+            "type": "paragraph",
+            "value": "Direction ensuite mes bonnes adresses culinaires… Pour que l’expérience soit réussie, il faut que la nourriture soit bonne mais j’accorde énormément d’importance au lieu. Si je ne devais retenir que 3 adresses, je citerais : <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-brasserie-de-montbenon/\">la Brasserie Montbenon</a> et son imposante architecture avec sa coupole, ses moulures, sa salle en mezzanine et sa superbe terrasse donnant sur le parc (idéal pour laisser les enfants jouer tout en gardant un œil sur eux)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26036,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "df572554031dbab3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "df572554031dbab3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26117,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "b8ef88868e6037f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b8ef88868e6037f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Direction ensuite <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/nandanam/\">le Nandanam</a> : « LE » restaurant indien de Lausanne. Une fois la porte poussée, la douce odeur d’épices vous projette directement en Inde. La décoration est sobre et épurée. Les motifs des carreaux de ciment au sol apportent la touche colorée et graphique au lieu. Là encore la superbe terrasse avec vue sur le bâtiment du MCBA à l’incroyable architecture, ne peut que vous séduire."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CNxGxbFBRjJ/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Je terminerai avec la toute nouvelle adresse italienne : <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/un-po-di-piu/\">Un Po’ di Più</a>. La décoration nous plonge dans l’ambiance italienne : la vaisselle dépareillée, les bocaux de fruits et légumes exposés sur l’étagère… J’adore ! Au menu, je vous recommande évidement « double truffle » : un généreux plat de pâtes à la truffe. Un délice ! La terrasse est l’une de mes préférées à Lausanne. Parfaite pour se retrouver entre amis après le marché le samedi matin, autour d’un bon café."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26184,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "05dc51d1755601d2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with a6 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "05dc51d1755601d2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauUnPoDiPiu-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne, c’est aussi des façades d’immeubles des années 30 avec leurs ornements et leurs allures de rues parisiennes. Il y a bien entendu les monuments incontournables comme la majestueuse <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-tour-bel-air-et-la-salle-metropole/\">Tour Bel Air</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">la Cathédrale</a> ou encore <a href=\"https://www.lausanne-tourisme.ch/fr/cio/\">le siège du CIO</a> avec son architecture futuriste."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26251,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "ae0dfa33eb0d3431",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ae0dfa33eb0d3431.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26311,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "18283e694fe7357e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18283e694fe7357e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26358,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "1ca2ed8577b535f2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1ca2ed8577b535f2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauCathedrale-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Vivre l’expérience d’un cours de céramique"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et puis, si vous aussi vous aimez les beaux objets, je vous invite à vivre l’expérience d’un cours de céramique chez <a href=\"https://klayit.ch/fr\">Klayit</a> dans l’ancienne ferblanterie du Valentin. Charles et Diana, un jeune couple de passionnés sont à l’origine de cet idée : ils organisent des workshops dans ce superbe atelier. Vous pourrez découvrir les fondamentaux du tour de potier ; et avec l’aide et les précieux conseils de Charles, réaliser votre toute première tasse, bol, vase ou ce que vous avez envie de créer. Une expérience inoubliable que je ne peux que vous conseiller."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26401,
+              "name": "Les adresses design de Lausanne",
+              "public_name": "Les adresses design de Lausanne",
+              "cloudinary_id": "cef40d2413929fee",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cef40d2413929fee.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27165,
+                "name": "Les adresses design de Lausanne - Poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "ClkoI81UEzLN9pmpu0EuTk8KtHmXysNn2xGePuFR",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "88a11985e0e48113.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt02-scaled.jpg"
+                }
+              },
+              {
+                "id": 27166,
+                "name": "Les adresses design de Lausanne - tasse et bol de poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "X39pTNFPLYTjnEbDF37JzzxArIa3s6KHr9bBz1AY",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4326da7218ecb500.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27167,
+                "name": "Les adresses design de Lausanne - atelier poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "sD80UqB655fndzDiAlSMADiNeIRYvu1NKlCsRqwP",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d1faa871533e0e03.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt01-scaled.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26433,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c8ef5ffbaa1948cb",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1877,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1877\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c8ef5ffbaa1948cb.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01_3000-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "My favourite addresses of decoration and design boutiques"
+          },
+          {
+            "type": "paragraph",
+            "value": "I’m first taking you to discover my favourite addresses of decoration and design boutiques. Those who know me know of my love for vintage. Located in the Flon District, <a href=\"http://www.galerieportfranc.ch/\">the <em>Galerie du Port Franc </em></a>is fantastic for enthusiasts like me. You very often find pieces by great designers. The place’s bare architecture completely highlights the furniture. There is a coffee corner in the back. As for the children, they love to sit down at the old school desk and type away at the ancient typewriter put at their disposal."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25952,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "4f12c6debc8f6e41",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4f12c6debc8f6e41.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauPortFranc01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Another of my best-loved addresses is <a href=\"https://www.chiccham.com/en/\">ChicCham</a>. I’m a fan of its “post-industrial” space that extends over more than 300 m<sup>2</sup>, with magnificent glass walls. You’ll find there a superb collection of contemporary design brands as well as vintage furniture and accessories. A nice blend of two styles that I myself love to use when decorating."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CIDD9KCB6e1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Finally, there is Julie’s boutique, <a href=\"https://www.lausanne-tourisme.ch/en/explore/lattribut-diris/\"><em>L’Attribut d’Iris</em></a>. A small shop packed full of nuggets and treasures to my greatest delight. You’ll find a selection of green plants and dried flowers for your home, as well as superb decorative items made by small creators. I challenge you to walk out empty-handed!"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27162,
+                "name": "Les adresses design de Lausanne - étagère",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "604JJGaBMkM3CF6YxruhMFynpijWisO8YzbAn4Dh",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8e5839496e411387.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01-scaled.jpg"
+                }
+              },
+              {
+                "id": 27163,
+                "name": "Les adresses design de Lausanne - bouquet de fleur",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "95a0EaiSOH3ohLTPZb0bNXbj3l05lFqgqVSEpmJf",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "116bf2e0094452cb.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27164,
+                "name": "Les adresses design de Lausanne - bouteilles de Jasmin",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "4ie14JmQhrDyeJx0QMi0tN391cWa9PDTfkcuPCuO",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2811a2fe69fc066d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris02-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "The addresses I recommend in the culinary realm"
+          },
+          {
+            "type": "paragraph",
+            "value": "Let’s now explore the addresses I recommend in the culinary realm… For a successful experience, the food needs to be good, but I attach huge importance to the setting as well. If I had to narrow it down to 3 addresses, I would start with <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-brasserie-de-montbenon/\">the Brasserie de Montbenon</a>, with its imposing architecture and dome, mouldings, space on the mezzanine and magnificent terrace overlooking the park (ideal to let the children play while keeping an eye of them)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26036,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "df572554031dbab3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "df572554031dbab3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26117,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "b8ef88868e6037f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b8ef88868e6037f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Then it would be the <a href=\"https://www.lausanne-tourisme.ch/en/explore/nandanam/\">Nandanam</a>, THE Indian restaurant in Lausanne. Once through the door, the sweet aroma of spices transports you directly to India. The decoration is sober and pared down. The patterns on the floor’s cement tiles add a colourful, graphic touch to the place. Once again, the superb terrace with a view on the MCBA building with its incredible architecture can’t fail to enchant you."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CNxGxbFBRjJ/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "I would finish with the brand new Italian address <a href=\"https://www.lausanne-tourisme.ch/en/explore/un-po-di-piu/\">Un Po’ di Più</a>. The setting immerses us into an Italian atmosphere: unmatched dishes, jars of fruits and vegetables displayed on the shelf… I love it! On the menu, I recommend of course “double truffle”, a generous pasta dish with truffle. It’s pure bliss! The terrace is one of my favourite in Lausanne and is perfect to meet up with friends over a nice coffee, after Saturday morning’s market."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26184,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "05dc51d1755601d2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with a6 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "05dc51d1755601d2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauUnPoDiPiu-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "In Lausanne, you’ll also see building façades dating back to the 1930s with their ornaments and air of Parisian streets. There are, of course, the must-see monuments such as <a href=\"https://www.lausanne-tourisme.ch/en/explore/bel-air-tower-and-salle-metropole/\">the Majestic Bel-Air Tower</a>, <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\">the Cathedral</a> and <a href=\"https://www.lausanne-tourisme.ch/en/ioc/\">the IOC Headquarters</a> with their futuristic architecture."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26251,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "ae0dfa33eb0d3431",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ae0dfa33eb0d3431.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26311,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "18283e694fe7357e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18283e694fe7357e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26358,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1ca2ed8577b535f2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1ca2ed8577b535f2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauCathedrale-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Experience a pottery class at Klayit"
+          },
+          {
+            "type": "paragraph",
+            "value": "And if you love beautiful objects, I invite you to experience a pottery class at <a href=\"https://klayit.ch/\">Klayit</a>, in the former ironmonger’s workshop, Rue du Valentin. Charles and Diana, a young passionate couple, are at the origin of the idea of organising classes in that superb location. You can discover the basics of the potter’s wheel and, with Charles’s valuable advice, make your very first cup, bowl, vase or whatever you feel like creating. An unforgettable experience that I can only recommend."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26401,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "cef40d2413929fee",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cef40d2413929fee.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27165,
+                "name": "Les adresses design de Lausanne - Poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "ClkoI81UEzLN9pmpu0EuTk8KtHmXysNn2xGePuFR",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "88a11985e0e48113.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt02-scaled.jpg"
+                }
+              },
+              {
+                "id": 27166,
+                "name": "Les adresses design de Lausanne - tasse et bol de poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "X39pTNFPLYTjnEbDF37JzzxArIa3s6KHr9bBz1AY",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4326da7218ecb500.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27167,
+                "name": "Les adresses design de Lausanne - atelier poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "sD80UqB655fndzDiAlSMADiNeIRYvu1NKlCsRqwP",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d1faa871533e0e03.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt01-scaled.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26433,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c8ef5ffbaa1948cb",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1877,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1877\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c8ef5ffbaa1948cb.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01_3000-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Meine Lieblingsboutiquen für Deko und Design"
+          },
+          {
+            "type": "paragraph",
+            "value": "Als Erstes stelle ich euch meine Lieblingsboutiquen für Deko und Design vor. Diejenigen, die mich kennen, wissen, dass ich auf Vintage stehe. <a href=\"http://www.galerieportfranc.ch/\">Die Galerie du Port Franc</a> im Flon-Quartier ist perfekt für Designfans wie mich. Nicht selten findet man hier Stücke von namhaften Designern. Die rohe Architektur des Ortes hebt die Möbel hervor und im hinteren Bereich gibt es eine Kaffee-Ecke. Die Kinder lieben es, an der Schulbank aus früheren Zeiten zu sitzen und auf der alten Schreibmaschine zu tippen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25952,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "4f12c6debc8f6e41",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "4f12c6debc8f6e41.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauPortFranc01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein anderer meiner Lieblingsorte ist <a href=\"https://www.chiccham.com/en/\">ChicCham</a>. Das postindustrielle Ambiente auf einer über 300 Quadratmeter grossen Fläche und die prächtigen Sprossenfenster faszinieren mich. Hier findet man eine tolle Auswahl an modernen Designermarken, aber auch Vintage-Möbel und -Accessoires. Ich mag diese harmonische Mischung aus zwei Stilen und verwende sie selbst gern für meine Einrichtung."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CIDD9KCB6e1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Und dann gibt es noch die Boutique von Julie: <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lattribut-diris/\">L’Attribut d’Iris</a>. Sie ist voller Perlen und Schätze und zieht mich immer wieder in ihren Bann. Hier findet ihr für euer Zuhause eine Auswahl an Grünpflanzen und Trockenblumen, aber auch tolle Dekoartikel von weniger bekannten Designern. Wetten, dass ihr die Boutique nicht mit leeren Händen verlasst?"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27162,
+                "name": "Les adresses design de Lausanne - étagère",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "604JJGaBMkM3CF6YxruhMFynpijWisO8YzbAn4Dh",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "8e5839496e411387.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris01-scaled.jpg"
+                }
+              },
+              {
+                "id": 27163,
+                "name": "Les adresses design de Lausanne - bouquet de fleur",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "95a0EaiSOH3ohLTPZb0bNXbj3l05lFqgqVSEpmJf",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "116bf2e0094452cb.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27164,
+                "name": "Les adresses design de Lausanne - bouteilles de Jasmin",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "4ie14JmQhrDyeJx0QMi0tN391cWa9PDTfkcuPCuO",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "2811a2fe69fc066d.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauLAttributdIris02-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Meinen kulinarischen Lieblingsorten"
+          },
+          {
+            "type": "paragraph",
+            "value": "Kommen wir zu meinen kulinarischen Lieblingsorten. Für mich muss natürlich das Essen gut sein, aber ich lege auch viel Wert auf den Ort selbst. Wenn ich nur drei Lokalitäten nennen dürfte, dann wäre sicher <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/brasserie-de-montbenon/\">die Brasserie Montbenon</a> mir ihrer imposanten Architektur dabei. Einfach herrlich mit dieser Kuppel, den Stuckaturen, dem Saal auf der Galerie und der herrlichen Terrasse, von der aus man den Park überblickt ‒ ideal, um die Kinder spielen zu lassen und sie gleichzeitig im Auge zu behalten."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26036,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "df572554031dbab3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "df572554031dbab3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26117,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "b8ef88868e6037f7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "b8ef88868e6037f7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauMontbenon04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dann das Restaurant <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/nandanam/\">Nandanam</a>, DAS indische Restaurant in Lausanne. Sobald man die Tür öffnet, entführt einen der süsse Geruch von Gewürzen direkt nach Indien. Die Einrichtung ist schlicht gehalten und der Boden mit gemusterten Zementkacheln verleiht dem Raum eine farbige, grafische Note. Auch hier ist die Terrasse herrlich und die beeindruckende Architektur des Gebäudes des Kunstmuseums, das sich gleich daneben befindet, zieht den Blick magisch an."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CNxGxbFBRjJ/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Abschliessen möchte ich mit einem brandneuen italienischen Restaurant: <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/un-po-di-piu/\">Un Po’ Di Più</a>. Die Einrichtung lässt euch ins italienische Ambiente eintauchen: Das Geschirr, das nicht zusammenpasst, oder das Regal, das voll von Gläsern mit Früchten und Gemüse ist ‒ ich liebe es einfach! Aus der Speisekarte empfehle ich natürlich „Double Truffle“, einen grosszügigen Teller Trüffelpasta. Ein Gedicht! Diese Terrasse ist eine meiner liebsten in ganz Lausanne. Sie ist perfekt, um sich am Samstagmorgen nach dem Markt mit Freunden auf einen guten Kaffee zu treffen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26184,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "05dc51d1755601d2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with a6 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "05dc51d1755601d2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauUnPoDiPiu-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne ist aber auch geprägt von den Gebäudefassaden aus den 1930er-Jahren, die mit ihren Ornamenten ans Pariser Strassenbild erinnern. Und dann gibt es natürlich die unumgänglichen Sehenswürdigkeiten wie die majestätische <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bel-air-turm-und-salle-metropole/\">Tour Bel Air</a>, <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">die Kathedrale</a> oder das Verwaltungsgebäude des <a href=\"https://www.lausanne-tourisme.ch/de/iok/\">IOK</a> mit seiner futuristischen Architektur."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26251,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "ae0dfa33eb0d3431",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ae0dfa33eb0d3431.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir01-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26311,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "18283e694fe7357e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "18283e694fe7357e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauBelAir02-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26358,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1ca2ed8577b535f2",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1ca2ed8577b535f2.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauCathedrale-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Töpferkurs bei Klayit"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn auch ihr schöne Dinge liebt, dann empfehle ich euch einen Töpferkurs bei <a href=\"https://klayit.ch/\">Klayit</a> in der alten Blechwarenfabrik Valentin. Das junge, motivierte Paar Charles und Diana hatte die Idee, Workshops in dieser tollen Werkstatt zu organisieren. Ihr könnt die Grundgriffe an der Töpferscheibe lernen und dank wertvoller Ratschläge von Charles eure erste Tasse, Schale, Vase oder was auch immer töpfern. Ein unvergessliches Erlebnis, das ich euch nur empfehlen kann."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26401,
+              "name": "Les adresses design de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "cef40d2413929fee",
+              "mime_type": "image/jpeg",
+              "copyright": "© Processed with VSCO with al1 preset",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "cef40d2413929fee.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt04-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27165,
+                "name": "Les adresses design de Lausanne - Poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "ClkoI81UEzLN9pmpu0EuTk8KtHmXysNn2xGePuFR",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "88a11985e0e48113.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt02-scaled.jpg"
+                }
+              },
+              {
+                "id": 27166,
+                "name": "Les adresses design de Lausanne - tasse et bol de poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "X39pTNFPLYTjnEbDF37JzzxArIa3s6KHr9bBz1AY",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "4326da7218ecb500.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt03-scaled.jpg"
+                }
+              },
+              {
+                "id": 27167,
+                "name": "Les adresses design de Lausanne - atelier poterie",
+                "public_name": "Processed with VSCO with al1 preset",
+                "cloudinary_id": "sD80UqB655fndzDiAlSMADiNeIRYvu1NKlCsRqwP",
+                "mime_type": "image/jpeg",
+                "copyright": "© KLOLAU",
+                "metadata": {
+                  "width": 1920,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1920\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "d1faa871533e0e03.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/08/KlolauKlayIt01-scaled.jpg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "4f12c6debc8f6e41",
+          "copyright": "© Processed with VSCO with al1 preset",
+          "public_name": {
+            "fr": "Les adresses design de Lausanne"
+          }
+        }
+      ],
+      "published_at": "1629669600",
+      "seo": {
+        "description": {
+          "fr": "Lausanne regorge de bonnes adresses où le design, l’architecture et le sens du détail se côtoient. Amoureuse du « beau » j’oriente toujours nos balades, nos repas en famille, mes pauses café ou le shopping vers des endroits où le « beau » est au rendez-vous. En famille, je privilégie évidemment le plus possible que ce soit « kids friendly ».",
+          "en": "Lausanne is packed full of great addresses that combine design, architecture and an eye for detail. A lover of aesthetics, I always guide our walks, family meals, coffee breaks or shopping trips towards places where “the beautiful” is present. With my family, I obviously favour kid-friendly options as much as possible.",
+          "de": "Gute Adressen, wo Design, Architektur und Liebe zum Detail aufeinandertreffen, gibt es in Lausanne in Hülle und Fülle. Ich liebe das Schöne dieser Welt und wähle Spaziergänge, Familienessen, Kaffeepausen und Shopping immer so aus, dass sie von Schönem umgeben sind. Aber mit der Familie soll es natürlich auch möglichst kinderfreundlich sein."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "les-adresses-design-de-lausanne",
+          "en": "lausannes-design-spots",
+          "de": "die-lausanner-designer-adressen"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-architecture",
+          "public_name": {
+            "fr": "Architecture",
+            "en": "Architecture",
+            "de": "Architektur"
+          }
+        },
+        {
+          "name": "lt-design",
+          "public_name": {
+            "fr": "Design",
+            "en": "Design",
+            "de": "Gestaltung"
+          }
+        }
+      ]
+    }
+  }
+}

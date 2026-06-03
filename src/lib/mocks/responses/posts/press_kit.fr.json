@@ -1,60 +1,17 @@
 {
   "data": {
     "items": {
-      "has_more_pages": false,
-      "current_page": 1,
-      "last_page": 1,
-      "per_page": 99999,
-      "total": 7,
       "data": [
         {
-          "id": "13",
-          "author": "The Lausanner",
-          "name": "Lausanne élue ‘Destination Culturelle Émergente’ par les LCD Berlin Awards 2021/2022",
-          "lead": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022.",
-          "summary": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022, qui se sont tenus hier soir dans la capitale allemande. Ce prix souligne l’engagement commun de la Ville de Lausanne et de Lausanne Tourisme en faveur du développement et de la promotion d’une scène culturelle ambitieuse et diversifiée, à l’aube de l’inauguration du nouveau quartier des arts lausannois : Plateforme 10.",
-          "highlight": false,
-          "link": null,
-          "content": [
-            {
-              "type": "paragraph",
-              "value": {
-                "fr": "<div>Chaque année, le réseau des <em>Leading Culture Destinations (LCD)</em> récompense les destinations et institutions culturelles établies et émergentes les plus prometteuses. Le jury international précise que ‘les LCD Berlin Awards 2021/22 mettent en lumière les thèmes de la culture, de l’art et du voyage, et présentent des expériences culturelles uniques dans le monde entier. Ces destinations et institutions primées montrent à quel point la symbiose entre l’art, la culture et les voyages est profonde’. Nominée aux côtés de Nantes et Jakarta, Lausanne a remporté le prix de ‘Destination Culturelle Emergente’ lors de la cérémonie de remise de prix qui s’est tenue hier soir à Berlin.<br><br></div><div>Assimilés aux ‘<em>Oscars de la Culture</em>’ par le New York Times, les <em>LCD</em> Awards visent à récompenser la créativité et l’innovation dans le domaine, et apportent une reconnaissance de poids aux acteurs qui s’y consacrent. Pour Michael Kinzer, Chef du Service de la Culture de la Ville de Lausanne, cette distinction est, en effet, ‘une magnifique reconnaissance pour le travail extraordinaire conduit par l’ensemble des actrices et acteurs culturels de la destination’. C’est aussi ‘une superbe opportunité pour l’office du tourisme de promouvoir l’offre culturelle lausannoise au niveau international’ selon Steeve Pasche, Directeur de Lausanne Tourisme.<br><br></div><div><strong>Les lauréats 2021/22 incluent notamment :</strong></div><ul><li>Meilleure destination culturelle émergente : Lausanne (Suisse)</li><li>Meilleur festival culturel : Serendipity Arts Festival Goa (India)</li><li>Meilleure expérience muséale digitale : Museum of Tomorrow (Rio de Janeiro)</li><li>Meilleure institution culturelle (Amérique du Nord) : Fotografiska (New York)</li></ul><div><br></div><div>Ce prix contribue à positionner la destination de Lausanne comme métropole européenne d’art et de culture innovante. Un statut qui se verra également renforcé, d’ici quelques mois, par l’ouverture officielle du nouveau quartier des arts : Plateforme 10, composé du Musée Cantonal des Beaux-Arts (MCBA), de Photo Elysée et du mudac. Arts visuels, photographie, design et arts appliqués contemporains dialogueront ensemble, dès le 18 juin prochain, pour dépasser les limites de leurs disciplines respectives. L’année 2022 marque ainsi un véritable tournant pour la scène culturelle lausannoise !<br><br></div>",
-                "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
-              }
-            }
-          ],
-          "type": "press_release",
-          "medias": [
-            {
-              "cloudinary_id": "1706536203_langmatt_renoir_labarque_vers1878",
-              "copyright": "© Photo Jean-Pierre Kuhn, SIK-ISEA, Zurich / Auguste Renoir, La barque, vers 1878. Museum Langmatt, Baden",
-              "public_name": "Chefs-d'œuvre du Musée Langmatt"
-            }
-          ],
-          "published_at": "1649368800",
-          "seo": {
-            "description": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022.",
-            "noindex": false,
-            "slug": "lausanne-elue-destination-culturelle-emergente-par-les-lcd-berlin-awards-20212022"
-          },
-          "tags": [
-            {
-              "name": "Business",
-              "public_name": "Business"
-            }
-          ]
-        },
-        {
           "id": "30",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "Lausanne a accueilli pour la première fois la rencontre annuelle du réseau international Great Wine Capitals",
+          "type": "press_release",
           "lead": "Le réseau international des Great Wine Capitals (GWC) regroupe les douze plus grandes capitales mondiales qui partagent un atout économique et culturel majeur : leur région viticole mondialement reconnue.",
           "summary": "Le réseau international des Great Wine Capitals (GWC) regroupe les douze plus grandes capitales mondiales qui partagent un atout économique et culturel majeur : leur région viticole mondialement reconnue. Pour la première fois, la Ville de Lausanne a accueilli du 22 au 26 octobre, la rencontre annuelle de ce réseau international. Les 120 délégués ont pu découvrir le vignoble helvétique ainsi qu’une Suisse entre innovation et tradition, lors d’une journée de conférence animée par des acteurs importants du tissu économique, touristique et viticole national. La rencontre s’est clôturée, le jeudi 26 octobre, par le gala et la cérémonie de remise des prix des « Regional Best Of Wine Tourism » et « Global Best of Wine Tourism».",
           "highlight": false,
+          "published_at": "1698793200",
           "link": null,
           "content": [
             {
@@ -89,7 +46,6 @@
               }
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "hdppiuhbqo0epkj3ndtl",
@@ -97,7 +53,6 @@
               "public_name": "Vignoble Lutry"
             }
           ],
-          "published_at": "1698793200",
           "seo": {
             "description": "Le réseau international des Great Wine Capitals (GWC) regroupe les douze plus grandes capitales mondiales qui partagent un atout économique et culturel majeur : leur région viticole mondialement reconnue.",
             "noindex": false,
@@ -105,18 +60,21 @@
           },
           "tags": [
             {
-              "name": "Vin",
+              "name": "lt-vin",
               "public_name": "Vin"
             }
           ]
         },
         {
           "id": "31",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "Lausanne accueillera la rencontre annuelle des \"Great Wine Capitals\"",
+          "type": "press_release",
           "lead": "Du 22 au 26 octobre 2023 se tiendra à Lausanne un événement tout particulier : la rencontre annuelle du réseau Great Wine Capitals.",
           "summary": "Du 22 au 26 octobre 2023 se tiendra à Lausanne un événement tout particulier : la rencontre annuelle du réseau Great Wine Capitals. Un programme alléchant mettant notamment en valeur les atouts œnotouristiques du Canton de Vaud attend les participantes et participants. Les « Best Of Wine Tourism Awards » seront également remis lors de la soirée de clôture.",
           "highlight": false,
+          "published_at": "1697148000",
           "link": null,
           "content": [
             {
@@ -130,7 +88,6 @@
               }
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "ctbj4upG4rDiDfwHjXOXa5eWddKiqxpeAPzG2R6B",
@@ -138,7 +95,6 @@
               "public_name": "Lavaux lac"
             }
           ],
-          "published_at": "1697148000",
           "seo": {
             "description": "Du 22 au 26 octobre 2023 se tiendra à Lausanne un événement tout particulier : la rencontre annuelle du réseau Great Wine Capitals.",
             "noindex": false,
@@ -146,18 +102,21 @@
           },
           "tags": [
             {
-              "name": "Vin",
+              "name": "lt-vin",
               "public_name": "Vin"
             }
           ]
         },
         {
           "id": "32",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "L’inauguration complète du quartier des arts ‘Plateforme 10’ promet un été culturel et festif à Lausanne",
+          "type": "press_release",
           "lead": "Dès le 18 juin 2022, le Musée Cantonal des Beaux-Arts (MCBA) sera rejoint par le musée de la photo, Photo Elysée, ainsi que le musée de design et d’arts appliqués contemporains (mudac), pour former le nouveau quartier des arts de Lausanne : Plateforme 10.",
           "summary": "Dès le 18 juin 2022, le Musée Cantonal des Beaux-Arts (MCBA) sera rejoint par le musée de la photo, Photo Elysée, ainsi que le musée de design et d’arts appliqués contemporains (mudac), pour former le nouveau quartier des arts de Lausanne : Plateforme 10. A cette occasion, et durant tout l’été, une programmation culturelle festive et conviviale rythmera le quartier mêlant danse, théâtre, cirque contemporain, performances ou encore pièces sonores.",
           "highlight": false,
+          "published_at": "1655157600",
           "link": null,
           "content": [
             {
@@ -200,7 +159,6 @@
               ]
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "d2L18gh5B36XtgF1l8VwEDTuwAIxa6SUlNUWDJmg",
@@ -208,7 +166,6 @@
               "public_name": null
             }
           ],
-          "published_at": "1655157600",
           "seo": {
             "description": "Dès le 18 juin 2022, le Musée Cantonal des Beaux-Arts (MCBA) sera rejoint par le musée de la photo, Photo Elysée, ainsi que le musée de design et d’arts appliqués contemporains (mudac), pour former le nouveau quartier des arts de Lausanne : Plateforme 10.",
             "noindex": false,
@@ -216,18 +173,21 @@
           },
           "tags": [
             {
-              "name": "Culture",
+              "name": "lt-culture",
               "public_name": "Culture"
             }
           ]
         },
         {
           "id": "33",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "Lausanne Tourisme lance la première version de son guide en ligne du voyageur responsable",
+          "type": "press_release",
           "lead": "Lausanne Tourisme lance la première version de son guide en ligne du voyageur responsable pour découvrir la ville de Lausanne d’une manière plus durable.",
           "summary": "Alors que la politique climatique de Lausanne s’est vue récompensée par le WWF il y a un peu plus d’un mois lors de la phase suisse de leur One Planet City Challenge, Lausanne Tourisme lance la première version de son guide en ligne du voyageur responsable réunissant des opportunités concrètes pour découvrir la destination d’une manière différente, plus durable.",
           "highlight": false,
+          "published_at": "1651701600",
           "link": null,
           "content": [
             {
@@ -266,7 +226,6 @@
               "focus": null
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "QgiNjjq24VjwXDNgwlM40Lj5Njwz0nMfYBxAti00",
@@ -274,7 +233,6 @@
               "public_name": "Les jardins de PAM"
             }
           ],
-          "published_at": "1651701600",
           "seo": {
             "description": "Lausanne Tourisme lance la première version de son guide en ligne du voyageur responsable pour découvrir la ville de Lausanne d’une manière plus durable.",
             "noindex": false,
@@ -282,18 +240,21 @@
           },
           "tags": [
             {
-              "name": "Durabilité",
+              "name": "lt-durabilite",
               "public_name": "Durabilité"
             }
           ]
         },
         {
           "id": "34",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "Lausanne élue ‘Destination Culturelle Émergente’ par les LCD Berlin Awards",
+          "type": "press_release",
           "lead": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022, qui se sont tenus hier soir dans la capitale allemande.",
           "summary": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022, qui se sont tenus hier soir dans la capitale allemande.",
           "highlight": false,
+          "published_at": "1649368800",
           "link": null,
           "content": [
             {
@@ -353,7 +314,6 @@
               }
             }
           ],
-          "type": "press_release",
           "medias": [
             {
               "cloudinary_id": "YUmhqOVs5rI9Z97ig4qDJZjJiivRvpQR0EU4sirf",
@@ -361,7 +321,6 @@
               "public_name": "Théâtre de Beaulieu"
             }
           ],
-          "published_at": "1649368800",
           "seo": {
             "description": "Lausanne s’est vue remettre le prix de ‘Destination Culturelle Émergente’ lors des Leading Culture Destinations (LCD) Berlin Awards 2021/2022, qui se sont tenus hier soir dans la capitale allemande.",
             "noindex": false,
@@ -369,29 +328,30 @@
           },
           "tags": [
             {
-              "name": "Culture",
+              "name": "lt-culture",
               "public_name": "Culture"
             }
           ]
         },
         {
           "id": "152",
+          "languages": ["fr"],
           "author": "Lausanne Tourisme",
           "name": "Symphonie lausannoise",
+          "type": "press_kit",
           "lead": "Découvrez une odyssée musicale à Lausanne.",
           "summary": "Avis aux amateurs d’accords parfaits : départ imminent pour une odyssée musicale\r\nen trois temps à travers la petite San Francisco du Léman. Au rythme de vos envies -\r\net de nos morceaux choisis – laissez-vous embarquer par une valse lausannoise\r\npleine d’entrain et de détours inédits.",
           "highlight": false,
+          "published_at": "1710198000",
           "link": null,
           "content": [
             {
               "type": "heading",
-              "tag": "h1",
+              "tag": "h2",
               "value": {
                 "fr": "Acte I : Lausanne en chœur",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -399,9 +359,7 @@
               "value": {
                 "fr": "<div>&nbsp;Au premier jour, pleins feux sur l’histoire d’amour que Lausanne entretien avec la musique depuis tant d’années. Car comme nous, les plus grands virtuoses de tous les temps en ont fait l’élue de leur cœur. Saviez-vous par exemple que le grand Richard Strauss avait ses habitudes au Beau-Rivage Palace ? Quant à David Bowie, il a fait du Château du Signal, perché dans les hauts de Lausanne, sa résidence principale pendant plus de 15 ans.&nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -410,9 +368,7 @@
               "value": {
                 "fr": "The Sweet Sage | NEW ",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -420,9 +376,7 @@
               "value": {
                 "fr": "<div>Si vous n’êtes pas encore repus par ces anecdotes people croustillantes, ne manquez pas d’aller tester cette nouveauté à croquer : la pâtisserie The Sweet Sage – tenue par l’ancien chef pâtissier d’Anne-Sophie Pic, Thibaut Honajzer - a ouvert ses portes en octobre dernier pour le plus grand plaisir des amateurs de douceurs. Nota Bene : L’accord pâtisseries-tisanes est un must à savourer. &nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -455,9 +409,7 @@
               "value": {
                 "fr": "<div>Après cet interlude gourmet, et si vous repreniez la flânerie là ou vous l’avez laissée ? Empruntez le pittoresque escalier du marché qui vous mènera tout droit à votre prochaine destination. Au cœur de la vieille ville, impossible de passer à côté de l’emblématique Cathédrale qui surplombe la Cité.&nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -466,9 +418,7 @@
               "value": {
                 "fr": "La Buvette vaudoise | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -476,9 +426,7 @@
               "value": {
                 "fr": "<div><strong><br></strong>&nbsp;Depuis le point de vue, rendez-vous à la Buvette du Parlement – cantine favorite des membres du Grand Conseil - qui ouvre depuis peu ses portes au public certains midis de la semaine. L’occasion de se délecter d'une cuisine sans fausse note : locale, de saison et assortie des vins des députés vignerons.&nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -512,9 +460,7 @@
               "value": {
                 "fr": "Plateforme 10",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -522,9 +468,7 @@
               "value": {
                 "fr": "<div>Après cette épopée gustative, offrez-vous donc quelques notes de culture contemplative.<br>On se retrouve à Plateforme 10, le flambant neuf quartier des arts qui a élu domicile près<br>de la Gare. Cette année, les trois musées y célèbrent à l’unisson les 100 ans du<br>Manifeste du Surréalisme au travers d’expositions passionnantes.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -560,9 +504,7 @@
               "value": {
                 "fr": "Bar Gala | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -570,9 +512,7 @@
               "value": {
                 "fr": "<div>A la nuit tombée, vous êtes attendus à la table du récent Bar Gala, où Noémie et Luca<br>jouent la carte de la simplicité mordante : concerto de pâtes fraîches et quatuor de vins<br>naturels jouent leur partition à merveille.&nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -605,9 +545,7 @@
               "value": {
                 "fr": "Jumeaux Jazz Club | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -615,9 +553,7 @@
               "value": {
                 "fr": "<div>Et pour terminer cette première journée en beauté, c'est du côté du nouveau club de jazz<br>Les Jumeaux que ça se passe, et ça promet de swinguer ! Sur le trajet de l’hôtel, tentez<br>d’attraper au vol les sonorités du guet, qui crie les heures religieusement, chaque soir,<br>depuis plus de 600 ans…</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -650,9 +586,7 @@
               "value": {
                 "fr": "Acte II : Harmonie lacustre",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -660,9 +594,7 @@
               "value": {
                 "fr": "<div>À Lausanne, la poésie est partout... Après une bonne nuit de récupération, prêts pour de<br>nouvelles explorations ? Cette deuxième journée s'annonce pleine de surprises !</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -671,9 +603,7 @@
               "value": {
                 "fr": "Acarré | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -681,9 +611,7 @@
               "value": {
                 "fr": "<div>Votre traditionnelle gourmandise matinale vous attend cette fois-ci du côté de la nouvelle<br>biscuiterie-pâtisserie-chocolaterie Acarré, où Arnaud – un ancien du Beau-Rivage et du<br>Royal Savoy – et Antoine y éveillent, de concert, vos papilles exaltées.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -717,9 +645,7 @@
               "value": {
                 "fr": "Le Musée Olympique ",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -727,9 +653,7 @@
               "value": {
                 "fr": "<div>Passé le réconfort, place à l’effort, direction la nouvelle exposition musclée du Musée<br>Olympique: « Paris Olympique™: un voyage immersif ». C'est aussi l'occasion de<br>souffler les bougies de \"Lausanne, Capitale Olympique\" qui célèbre cette année ses 30<br>ans !<br>Gardez le rythme et profitez d’un lunch bien mérité dans l’une des charmantes<br>guinguettes éphémères qui bordent le lac en été. A présent, quoi de mieux qu’une<br>enjambée digestive au fil de l’eau ? Depuis le port d’Ouchy, prenez le large et partez à la<br>découverte des adorables petits villages qui se font écho, du côté de Saint-Sulpice ou<br>de Lavaux. Et parce qu'un entracte s'impose, la buvette La Générale à Pully vous invite<br>à siroter un frais cocktail dans un cadre bucolique et familial.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -765,9 +689,7 @@
               "value": {
                 "fr": "Le Lacustre ",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -775,9 +697,7 @@
               "value": {
                 "fr": "<div>Il est déjà l'heure d’aller admirer le spectacle du coucher du soleil depuis la terrasse du<br>Lacustre: sa vue imprenable et ses pizzas à partager font toujours l’unanimité.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -798,9 +718,7 @@
                   "copyright": null,
                   "attr": "width=\"5027\" height=\"3351\"",
                   "tags": null,
-                  "description": null,
-                  "file_name_from_url": "2b594b230701e0c5.jpg",
-                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/03/LeLacustre_Maud-Guye-Vuilleme_20240605_11351_p-scaled.jpg"
+                  "description": null
                 }
               },
               "size": "medium",
@@ -812,9 +730,7 @@
               "value": {
                 "fr": "Le Capitole | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -822,9 +738,7 @@
               "value": {
                 "fr": "<div>De la magie de ce décor grandiose à celle du 7e art, il n’y a (quasi) qu’un pas. Passage<br>obligé au Cinéma le Capitole - plus grande salle obscure de Suisse - pour parfaire cette<br>belle journée. Fraichement rénové, ce chef d’œuvre de l’architecture Art Déco, qui a<br>rouvert ses portes en février, n’a rien perdu de son lustre d’antan. Lieu d’accueil des<br>Rencontres du 7e art, le mythique cinéma se fait aussi le théâtre de projections de films<br>d’archive et de ciné-concerts inédits.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -858,9 +772,7 @@
               "value": {
                 "fr": "Acte III : Envolées lyriques",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -868,9 +780,7 @@
               "value": {
                 "fr": "<div>Si à l’aube du troisième jour, il vous venait l'envie de prendre une peu de hauteur, tenez-<br>vous prêts pour le troisième couplet...</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -879,9 +789,7 @@
               "value": {
                 "fr": "Alpes vaudoises",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -889,9 +797,7 @@
               "value": {
                 "fr": "<div>Offrez-vous une virée oxygénée et sautez dans un train direction les Rochers-de-Naye !<br>En tout juste une heure, un véritable festival de saveurs et de couleurs vous y attend.<br>Quelle joie de pouvoir enfin tutoyer les montagnes et se délecter de cette symphonie<br>fleurie…<br>Derrière cette jolie tranche de vie, c’est une part de tarte à la crème qui vous attend chez<br>Séverine et Luca ; le duo de choc en est ressorti grand champion à l’occasion de<br>Lausanne à table, l’événement le plus gourmand de la ville qui fête déjà ses 10 ans !</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -907,12 +813,12 @@
                 "mime_type": "image/jpeg",
                 "copyright": "© ",
                 "metadata": {
-                  "attr": "width=\"1920\" height=\"1285\"",
-                  "tags": null,
                   "width": 1920,
                   "height": 1285,
                   "mimeType": "image/jpeg",
                   "copyright": "Inconnu",
+                  "attr": "width=\"1920\" height=\"1285\"",
+                  "tags": null,
                   "description": null
                 }
               },
@@ -925,9 +831,7 @@
               "value": {
                 "fr": "Festival de la Cité",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -935,9 +839,7 @@
               "value": {
                 "fr": "<div>Restons à table, direction l’un des fameux foodtrucks du Festival de la Cité ! Véritable<br>ode à la créativité, l’événement célèbre chaque été les arts scéniques et urbains dans<br>toute leur diversité.</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -971,9 +873,7 @@
               "value": {
                 "fr": "Renaud Capuçon",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -981,9 +881,7 @@
               "value": {
                 "fr": "<div>Autre option pour les amateurs de musique classique : l'Orchestre de Chambre de<br>Lausanne, mené d’une main de maître par le talentueux violoniste Renaud Capuçon,<br>offre à chaque saison des concerts d’une qualité exceptionnelle. Cette année, la<br>programmation donne le ton, avec notamment un vibrant hommage au pianiste et<br>compositeur français Gabriel Fauré.&nbsp;</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -1017,9 +915,7 @@
               "value": {
                 "fr": "Acte IV...? Les Quatre Saisons",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -1027,9 +923,7 @@
               "value": {
                 "fr": "<div>La charmante mélodie lausannoise se décline en quatre saisons inspirantes, pourquoi<br>ne pas choisir de faire durer le plaisir en prolongeant votre séjour de quelques jours ? A<br>bon entendeur...</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -1038,9 +932,7 @@
               "value": {
                 "fr": "Jorge Cardoso | NEW",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -1048,9 +940,7 @@
               "value": {
                 "fr": "<div>Et pour finir sur une note sucrée - et ramener un souvenir à croquer - dernier arrêt<br>fortement conseillé chez Jorge Cardoso, autre pâtissier-chocolatier de talent fraichement<br>installé au cœur de Lausanne. Parmi les créations 100% suisses orchestrées par ce<br>virtuose du chocolat, un Roger Federer plus vrai que nature, qui vous fera fondre à coup<br>sûr…</div>",
                 "en": "",
-                "de": "",
-                "it": "",
-                "es": ""
+                "de": ""
               }
             },
             {
@@ -1079,7 +969,6 @@
               "focus": "auto"
             }
           ],
-          "type": "press_kit",
           "medias": [
             {
               "cloudinary_id": "lkakS2sYb4y4UVErttgnCzIxzR2wDnEBJ5SYC5Ls",
@@ -1087,7 +976,6 @@
               "public_name": "vue cathédrale"
             }
           ],
-          "published_at": "1710198000",
           "seo": {
             "description": "Découvrez une odyssée musicale à Lausanne.",
             "noindex": false,
@@ -1095,20 +983,1166 @@
           },
           "tags": [
             {
-              "name": "Danse",
-              "public_name": "Danse"
-            },
-            {
-              "name": "Live Music",
-              "public_name": "Live Music"
-            },
-            {
-              "name": "Musique",
+              "name": "lt-musique",
               "public_name": "Musique"
             },
             {
-              "name": "Musique classique",
+              "name": "lt-musique-classique",
               "public_name": "Musique classique"
+            },
+            {
+              "name": "lt-live-music",
+              "public_name": "Live Music"
+            },
+            {
+              "name": "lt-danse",
+              "public_name": "Danse"
+            }
+          ]
+        },
+        {
+          "id": "327",
+          "languages": ["fr"],
+          "author": "Lausanner",
+          "name": "“Fan of Switzerland” : Lausanne, ville d'exploits",
+          "type": "press_kit",
+          "lead": "Cette année, Lausanne se prépare à accueillir plusieurs événements d'envergure, que ce soit sur les pistes d’athlétisme, les parquets de basket ou à travers les ruelles animées de la ville.",
+          "summary": "<p style=\"text-align: left\">Cette année, Lausanne se prépare à accueillir plusieurs événements d'envergure, que ce soit sur les pistes d’athlétisme, les parquets de basket ou à travers les ruelles animées de la ville. Et si la belle vaudoise attire depuis toujours les amateurs de sessions musclées, ce n’est pas un hasard. Grâce à ses infrastructures performantes et son cadre enchanteur, Lausanne regorge de possibilités pour pratiquer des activités physiques, en intérieur comme en extérieur. Capitale Olympique, Lausanne est toutefois bien plus qu’un simple terrain de sport : c’est un lieu où performance, inspiration et créativité se rencontrent. Alors, avis aux amateurs : suivez le guide et laissez-vous embarquer par notre séance d’entraînement en quatre temps à travers la perle du Léman.&nbsp;</p>",
+          "highlight": false,
+          "published_at": "1749074400",
+          "link": null,
+          "content": [
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "I – Échauffement | Un printemps aux premières loges ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28739,
+                "name": "Cerisier",
+                "public_name": {
+                  "fr": "Cerisier",
+                  "es": null
+                },
+                "cloudinary_id": "8DaDEahfmbXVAR1oysdM2hGsEsgzfR0ydRowpZKV",
+                "mime_type": "image/jpeg",
+                "copyright": "© Laurent Kaczor",
+                "metadata": {
+                  "width": 6000,
+                  "height": 4000,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Laurent Kaczor",
+                  "attr": "width=\"6000\" height=\"4000\"",
+                  "tags": "arbre; fleurs; printemps; détente; paysage",
+                  "description": null
+                }
+              },
+              "size": "parallax",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Dès l'arrivée du printemps, l'atmosphère se réchauffe et le temps se prête parfaitement à un bon échauffement. Sur terre ou sur l’eau, au sommet ou dans les airs, idéalement nichée entre montagnes et lac, Lausanne est un véritable paradis pour les créatifs comme pour les sportifs.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "Balade des panoramas ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28738,
+                "name": "Parc Hermitage",
+                "public_name": {
+                  "fr": "Parc Hermitage",
+                  "es": null
+                },
+                "cloudinary_id": "JMCjMMxZxspN702HwAE4KZ4LcVGTMd2zqkhPYhSH",
+                "mime_type": "image/jpeg",
+                "copyright": "© Alix Besson",
+                "metadata": {
+                  "width": 2160,
+                  "height": 2880,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2160\" height=\"2880\"",
+                  "tags": "Cathédrale; Lausanne;  Parc; Printemps;",
+                  "description": null
+                }
+              },
+              "size": "small",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Avec le Léman, les Alpes et le Jura pour toile de fond, cette ville à taille humaine – élue meilleure petite ville du monde – se visite facilement à pied. En guise de mise en jambes, profitez d'une balade sportive en descente pour découvrir les 10 plus beaux points de vue de Lausanne, mais aussi les incontournables de la Capitale Olympique et quelques adresses secrètes pour vous imprégner de l’atmosphère lausannoise.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "750 ans de la Cathédrale  ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28747,
+                "name": "Vue sur la Cahtedrale",
+                "public_name": {
+                  "fr": "Vue sur la Cahtedrale",
+                  "es": null
+                },
+                "cloudinary_id": "0wTuLM4ygTk9PxP4iZRkeFkJs6yWGj36peNNG0fM",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT Sebastien Closuit",
+                "metadata": {
+                  "width": 4480,
+                  "height": 6720,
+                  "mimeType": "image/jpeg",
+                  "copyright": "SEBASTIENCLOSUIT",
+                  "attr": "width=\"4480\" height=\"6720\"",
+                  "tags": "Vue; Cathédrale, Lausanne; Cité;",
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Parmi les temps forts de 2025, Lausanne célébrera les 750 ans de sa Cathédrale – monument incontournable de la ville – avec l’inauguration de son nouveau plan d'éclairage, jalonné de nombreuses festivités. Profitez d'y faire étape et gardez le rythme en tentant de gravir les quelque 224 marches qui mènent jusqu'à son beffroi : la vue y est à couper le souffle !&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "Exposition “Le sport à l’épreuve” ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Cette exposition musclée explore l'évolution de la photographie sportive, en mettant en lumière les collections du Musée Olympique et de Photo Elysée. À travers des images inédites, elle retrace la médiatisation du sport depuis les premiers Jeux Olympiques en 1896, la quête de la performance et l'impact visuel des photographes qui capturent l'émotion et l'exploit des athlètes. &nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28727,
+                "name": "Expo Sport a l'epreuve",
+                "public_name": {
+                  "fr": "Expo Sport a l'epreuve",
+                  "es": null
+                },
+                "cloudinary_id": "uIbnOTfMbtt5En6mrRT5DvxOky4izaLUQST0VtXa",
+                "mime_type": "image/jpeg",
+                "copyright": "© 2008 CIO ToblerHélène",
+                "metadata": {
+                  "width": 1664,
+                  "height": 2500,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1664\" height=\"2500\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "small",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Après ce bel échauffement, que diriez-vous d'un petit rafraîchissement ? Qu'elles soient lacustres, urbaines ou bucoliques, cap sur l'une des nombreuses terrasses lausannoises ! &nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "II – Le grand match |  Lausanne, terrain de légendes sportives ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Vous voilà bien hydraté·es, fins prêt·es pour une séance d’entraînement pleine de rebondissements ! Et dans la Capitale olympique, l’activité physique et sportive se pratique partout, tout le temps et par tous les temps.</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28728,
+                "name": "FFG 2025",
+                "public_name": {
+                  "fr": "FFG 2025",
+                  "es": null
+                },
+                "cloudinary_id": "8epHp0XRBJ2yXUmmI2D3qBzdEZl7BWUoOuZcZt47",
+                "mime_type": "image/jpeg",
+                "copyright": "© Jonathan Viey",
+                "metadata": {
+                  "width": 4096,
+                  "height": 2304,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"4096\" height=\"2304\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>En 2025, la ville vibrera justement au rythme d’événements sportifs nationaux et internationaux, parmi lesquels la Fête fédérale de gymnastique, plus grande manifestation sportive de Suisse, qui n’a lieu que tous les six ans.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "FIBA U19 Basketball World Cup ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Cet été, Lausanne se prépare également à accueillir pour la première fois la Coupe du Monde de basketball U19 masculin. Pour l'occasion, 16 équipes s'affronteront pour le titre mondial. Ce tournoi, souvent un tremplin pour des futures stars de la NBA, promet des matchs palpitants. Des activités culturelles et sociales jalonneront également la ville pendant la compétition.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 28729,
+                  "name": "FIBA U19",
+                  "public_name": {
+                    "fr": "FIBA U19",
+                    "es": null
+                  },
+                  "cloudinary_id": "cF3yMOInBd7UXsEwuhOUNGm1bm8aKJ2g8hGgsBIF",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© @FIBA",
+                  "metadata": {
+                    "width": 1200,
+                    "height": 1500,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1200\" height=\"1500\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 28743,
+                  "name": "Vidy Basket",
+                  "public_name": {
+                    "fr": "Vidy Basket",
+                    "es": null
+                  },
+                  "cloudinary_id": "pkDQ27ub3EUi9rWSTIrqeCYVwA5dn0LpdiQR3VeL",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Suisse Tourisme Lorenz Richard",
+                  "metadata": {
+                    "width": 2400,
+                    "height": 3600,
+                    "mimeType": "image/jpeg",
+                    "copyright": "Lorenz Richard",
+                    "attr": "width=\"2400\" height=\"3600\"",
+                    "tags": "Sport; Capitale, Olympique",
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "50 ans d'Athlétissima  ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>En outre, le prestigieux rassemblement d’athlétisme international, Athletissima, fêtera prochainement ses 50 ans. Comme chaque année, près de 15'000 spectateurs se réuniront pour assister aux exploits de 250 athlètes internationaux et des meilleur·e·s athlètes suisses, parmi lesquels la Lausannoise Sarah Atcho-Jaquier et la Bernoise – également ambassadrice de l’événement – Mujinga Kambundji !&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 28724,
+                  "name": "Athletissima stade",
+                  "public_name": {
+                    "fr": "Athletissima stade",
+                    "es": null
+                  },
+                  "cloudinary_id": "SUz5XbHsPBq5MCxEPBoL3iasqPOtCQMCrkEB2o4F",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LT",
+                  "metadata": {
+                    "width": 3008,
+                    "height": 1960,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"3008\" height=\"1960\"",
+                    "tags": "Evénement; Athlétisme; Meeting; Sport; Lausanne",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 28725,
+                  "name": "Athletissima",
+                  "public_name": {
+                    "fr": "Athletissima",
+                    "es": null
+                  },
+                  "cloudinary_id": "qXkyoKt2Cc2gL01wuXfuDRaM2PhOU8GoJXpa4Viz",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Droits reserves",
+                  "metadata": {
+                    "width": 1536,
+                    "height": 864,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1536\" height=\"864\"",
+                    "tags": null,
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Sans oublier les événements réguliers à Lausanne, tels que les 20km de Lausanne et le Lausanne Marathon, qui ponctuent chaque année le calendrier sportif de la ville.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "III – L’énergie des champions | Une scène gastronomique en pleine effervescence ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28741,
+                "name": "Royal Savoy lounge",
+                "public_name": {
+                  "fr": "Royal Savoy lounge",
+                  "es": null
+                },
+                "cloudinary_id": "U5x0mCwWhKQsb3JyIcwt74xQAzXOjTtvmFKahN1K",
+                "mime_type": "image/jpeg",
+                "copyright": "© Royal Savoy",
+                "metadata": {
+                  "width": 8027,
+                  "height": 5351,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"8027\" height=\"5351\"",
+                  "tags": "Hôtel; Hébergement; Lausanne; Fondue; Terrasse; Vue; Gastronomie",
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Tout·e athlète sait que la nutrition est essentielle pour la performance. En 2025, Lausanne innove avec des adresses gastronomiques à la hauteur de ses exploits sportifs.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "NEW | Réouverture du restaurant PIC ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Au cœur du mythique Beau-Rivage Palace, se niche une adresse d’exception. Anne-Sophie Pic, la funambule des saveurs et cheffe la plus étoilée au monde, y est aux commandes de son restaurant aux 2 étoiles Michelin et 18 points au Gault &amp; Millau. Une cuisine raffinée, spécialisée dans le pairing sans alcool, doublée d’une expérience unique pour les gourmets.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28740,
+                "name": "Restaurant Pic",
+                "public_name": {
+                  "fr": "Restaurant Pic",
+                  "es": null
+                },
+                "cloudinary_id": "x4iyNTF8xlqaTVUgCLyRD4bJJFu1sNtdH4gca18H",
+                "mime_type": "image/jpeg",
+                "copyright": "© Amaury Laparra",
+                "metadata": {
+                  "width": 1620,
+                  "height": 1080,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1620\" height=\"1080\"",
+                  "tags": "Lausanne, gastronomie, excellence, restaurant, hôtel, palace",
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "La Table du Lausanne Palace ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>À La Table du Lausanne Palace – 2 étoiles Michelin et 17 points Gault &amp; Millau – c’est le pétillant Franck Pelux qui déploie son talent et toute sa créativité en cuisine. Et côté salle, le savoir-faire hors pair de son épouse, Sarah Benahmed — seule femme primée des MICHELIN Award 2024 avec le \"Service Award\"-&nbsp; ne fait que sublimer l’expérience.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28734,
+                "name": "La Table du Lausanne Palace",
+                "public_name": {
+                  "fr": "La Table du Lausanne Palace",
+                  "es": null
+                },
+                "cloudinary_id": "TMHAApMKKbMuNnBLY417kxCQfA0TluTCFKnpPemh",
+                "mime_type": "image/jpeg",
+                "copyright": "© Anthony_Demierre",
+                "metadata": {
+                  "width": 4441,
+                  "height": 6661,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Anthony Demierre",
+                  "attr": "width=\"4441\" height=\"6661\"",
+                  "tags": "Gastronomie; Restaurant; Palace; Portrait",
+                  "description": null
+                }
+              },
+              "size": "small",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "NEW | DéCi ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Cap sur ce nouveau restaurant bistronomique à Lausanne où les mets travaillés se mêlent à l'excellence des vins locaux. Grâce à l'alliance de deux cuisiniers passionnés et de producteurs régionaux, chaque plat, revisité avec soin, offre une expérience culinaire unique. Une véritable invitation à la découverte pour les amateurs de cuisine et de bons vins.</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "NEW | Lausanne Food Tour ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Guidé·e par un·e Lausannois·e, partez pour une virée gourmande à la découverte des emblématiques restaurants et cafés historiques de la ville, parmi lesquels la plus ancienne pinte vaudoise, datant du XVIIIe siècle.</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 28731,
+                  "name": "Food Tour Fromage",
+                  "public_name": {
+                    "fr": "Food Tour",
+                    "es": null
+                  },
+                  "cloudinary_id": "ySzs2LrRFLDHiQkoMuQuaZd4nXMGFNpNZl2WQOMZ",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LakeProd",
+                  "metadata": {
+                    "width": 6336,
+                    "height": 9504,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"6336\" height=\"9504\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 28730,
+                  "name": "Food Tour",
+                  "public_name": {
+                    "fr": "Food Tour",
+                    "es": null
+                  },
+                  "cloudinary_id": "w9nLTCOGHZu4GgfwPIbFNqnK3MEP9SXJnY9hxesI",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© LakeProd",
+                  "metadata": {
+                    "width": 7097,
+                    "height": 4731,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"7097\" height=\"4731\"",
+                    "tags": null,
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Au menu de cette visite insolite : découverte et dégustation de savoureuses spécialités locales en quatre étapes. Une occasion unique et authentique de goûter à l’histoire et à la gastronomie lausannoise !&nbsp;Et pour connaître toutes les adresses gastronomiques de la ville, petits et grands gourmets se plairont à feuilleter la version numérisée de notre désormais fameux Guide Délicieux. Bonne dégustation !&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "IV – La récupération | Un été sur les rives du Léman et au cœur de la cité  ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Après l’effort, le réconfort ! Et l’été à Lausanne, le lac Léman est omniprésent. Rendez-vous sur l’eau, où paddle et natation attendent les adeptes de grandes émotions.</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28760,
+                "name": "Paddle lac",
+                "public_name": {
+                  "fr": "Paddle lac",
+                  "es": null
+                },
+                "cloudinary_id": "ZYct8chwuwKXGz23LNktpezbMbaCyeFgPs1YJyqB",
+                "mime_type": "image/jpeg",
+                "copyright": "© SuisseTourisme Nico Schaerer",
+                "metadata": {
+                  "width": 8192,
+                  "height": 5464,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"8192\" height=\"5464\"",
+                  "tags": "Sport, Nautique; Voile; Paddle; Lac.",
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\">À ciel ouvert, les piscines de Bellerive et Pully-Plage — dotées de bassins olympiques — font aussi le bonheur des nageur·se·s de la première heure. Et si vous préférez vous la couler douce en famille ou en solo, cap sur les pédalos !&nbsp;</p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28744,
+                "name": "Jetee de la Compagnie",
+                "public_name": {
+                  "fr": "Jetee de la Compagnie",
+                  "es": null
+                },
+                "cloudinary_id": "n2ITLROAFhtytdtCZH9BF6ukMj55y6EqQP3FlsrO",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT Blake Production",
+                "metadata": {
+                  "width": 3972,
+                  "height": 2979,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Blake Production",
+                  "attr": "width=\"3972\" height=\"2979\"",
+                  "tags": "Lausanne; Gastronomie; Eté; Détente; Lac;",
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "La gastronomie en fête ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Tout au long de l'année, de nombreux événements gourmands animent la capitale vaudoise. Pour les amateurs de street food, le Miam Festival et ses incontournables food trucks d’ici et d’ailleurs régalent les visiteurs en quête de nouvelles saveurs.</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 28732,
+                  "name": "Miam festival",
+                  "public_name": {
+                    "fr": "Miam festival",
+                    "es": null
+                  },
+                  "cloudinary_id": "99vV6fK03aBts17FWX0ICxlgIYkg8DRXxj1uVXpN",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Lausanne a Table Intuifilm",
+                  "metadata": {
+                    "width": 2259,
+                    "height": 1694,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"2259\" height=\"1694\"",
+                    "tags": "Gastronomie; Lausanne, Cuisine, Festival; Nourriture;",
+                    "description": null
+                  }
+                },
+                {
+                  "id": 28736,
+                  "name": "Miam Festival",
+                  "public_name": {
+                    "fr": "Miam Festival",
+                    "es": null
+                  },
+                  "cloudinary_id": "o2wo31aAbsLoqMfp37h1SMlbjlJJkDu0ZQCw03Mk",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Lausanne a table",
+                  "metadata": {
+                    "width": 4730,
+                    "height": 7087,
+                    "mimeType": "image/jpeg",
+                    "copyright": "Elise Heuberger",
+                    "attr": "width=\"4730\" height=\"7087\"",
+                    "tags": "Festival; Gastronomie; Détente",
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>La Fête des Vigneronnes, quant à elle, rend hommage au terroir et aux traditions viticoles locales autour d’une quinzaine de vigneronnes venues spécialement pour l’occasion.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h3",
+              "value": {
+                "fr": "Cinéma Open Air ",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Cet été, profitez également de projections inédites sous les étoiles, avec le Locarno Open Air Festival à Plateforme 10 ou encore le cinéma Open Air organisé en partenariat avec la Cinémathèque suisse dans le parc olympique. Au programme : des films sur le thème du sport à l’épreuve et une façon originale de vivre le cinéma à Lausanne.&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28726,
+                "name": "Cinema OpenAir",
+                "public_name": {
+                  "fr": "Cinema OpenAir",
+                  "es": null
+                },
+                "cloudinary_id": "BWD5UVTLhZKD08WMY6tADNRDOAmnc3ROav0r0TNa",
+                "mime_type": "image/jpeg",
+                "copyright": "© LT",
+                "metadata": {
+                  "width": 2268,
+                  "height": 4032,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2268\" height=\"4032\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "small",
+              "focus": "auto"
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Venez vivre l’expérience lausannoise !<strong> </strong>Du sport, de la culture, de la gastronomie, un cadre naturel exceptionnel… et autant de bonnes raisons d'être encore et toujours FAN de Lausanne !&nbsp;</span></p>",
+                "en": "",
+                "de": ""
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 28761,
+                "name": "Vue general Lausanne",
+                "public_name": {
+                  "fr": "Vue general Lausanne",
+                  "es": null
+                },
+                "cloudinary_id": "XrPPmj33GVdZhKXpLuUtsN9HlRBRXIebmjQXZmmV",
+                "mime_type": "image/jpeg",
+                "copyright": "© Suisse Tourisme Giglio Pasqua",
+                "metadata": {
+                  "width": 5136,
+                  "height": 3422,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5136\" height=\"3422\"",
+                  "tags": "Lausanne; ville verte; Cathédrale, lac, parc; Montagne",
+                  "description": null
+                }
+              },
+              "size": "large",
+              "focus": "auto"
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "XrPPmj33GVdZhKXpLuUtsN9HlRBRXIebmjQXZmmV",
+              "copyright": "© Suisse Tourisme Giglio Pasqua",
+              "public_name": "Vue general Lausanne"
+            }
+          ],
+          "seo": {
+            "description": "Cette année, Lausanne se prépare à accueillir plusieurs événements d'envergure, que ce soit sur les pistes d’athlétisme, les parquets de basket ou à travers les ruelles animées de la ville.",
+            "noindex": false,
+            "slug": "fan-of-switzerland-lausanne-ville-dexploits"
+          },
+          "tags": [
+            {
+              "name": "lt-sport",
+              "public_name": "Sport"
+            },
+            {
+              "name": "lt-gastronomie",
+              "public_name": "Gastronomie"
+            },
+            {
+              "name": "lt-culture",
+              "public_name": "Culture"
+            }
+          ]
+        },
+        {
+          "id": "331",
+          "languages": ["fr", "en", "de"],
+          "author": "Presse",
+          "name": "Le Guide Délicieux : une centaine d’adresses pour découvrir les pépites culinaires de Lausanne et de sa région !",
+          "type": "press_release",
+          "lead": "Le 1er octobre marque la sortie du Guide Délicieux, un projet ambitieux porté par les 14 communes de la région touristique lausannoise (FERL) et différents partenaires tels que GastroLausanne, l'Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion et Lausanne Tourisme.",
+          "summary": "<p style=\"text-align: left\"><span><strong>Le 1<sup>er</sup> octobre marque la sortie du Guide Délicieux, un projet ambitieux porté par les 14 communes de la région touristique lausannoise (FERL) et différents partenaires tels que GastroLausanne, l'Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion et Lausanne Tourisme. Ce guide vise à promouvoir et célébrer la scène gastronomique de notre région. Il illustre également la volonté de renforcer les liens et les leviers d’action entre les différents acteurs du secteur, avec l’ambition de promouvoir la région touristique lausannoise.</strong></span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+          "highlight": false,
+          "published_at": "1727733600",
+          "link": null,
+          "content": [
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Un guide inédit ",
+                "en": "An original guide ",
+                "de": "Ein ultimativer Guide "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Le Guide Délicieux, disponible en formats imprimé et numérique, est entièrement gratuit. Il se distingue par sa sélection de pépites culinaires, allant des stands de marché aux brasseries, en passant par les restaurants étoilés, épiceries fines, guinguettes, spécialités régionales, caveaux ou encore cafés de spécialité. Une centaine d'établissements ont été méticuleusement choisis par une équipe de neuf journalistes, blogueuses et blogueurs gastronomiques indépendants.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>The Delicious Guide, available in print and digital formats, is completely free. It stands out for its selection of culinary gems, from market stalls to brasseries, starred restaurants, delicatessens, open-air cafés, regional specialities, wine cellars and coffee shops. Around a hundred establishments have been meticulously chosen by a team of nine independent journalists and food bloggers.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Der Schlemmerführer besticht durch seine sorgfältige Auswahl kulinarischer Highlights: von Marktständen über Brasserien und Sternerestaurants bis hin zu Feinkostläden, Bistros, regionalen Spezialitäten, Weinkellern und besonderen Kaffeekulturorten. Ein Team von neun unabhängigen Journalistinnen und Bloggerinnen aus der Gastronomieszene hat die rund 100 empfohlenen Lokale mit viel Fachkenntnis ausgesucht. Der Guide ist sowohl in gedruckter als auch online kostenlos erhältlich.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Une source d’inspiration au quotidien ",
+                "en": "A daily source of inspiration ",
+                "de": "Ein täglicher Begleiter voller kulinarischer Inspiration "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Ce guide est conçu pour être un compagnon idéal tout au long de la journée, offrant des suggestions pour un brunch, un déjeuner ou un apéritif. Chaque adresse est accompagnée de recommandations spéciales, tels que les plats coups de cœur, pour une expérience culinaire inoubliable. Cerise sur le gâteau : une collaboration avec BDFIL a permis à 3 artistes de « croquer » Lausanne avec des illustrations remplies d’anecdotes.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>This guide is designed to be the perfect companion throughout the day, offering suggestions for brunch, lunch, or an aperitif. Each address is accompanied by curated recommendations, such as must-try dishes, ensuring an unforgettable culinary experience. In addition, a collaboration with BDFIL, Lausanne’s iconic comic strip festival, has allowed three artists to \"sketch\" Lausanne with illustrations filled with charming anecdotes.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Dieser Guide soll ein kulinarischer Begleiter durch den Tag sein und bietet Vorschläge für einen Brunch, ein Mittagessen oder einen Aperitif. Jede Empfehlung enthält persönliche Tipps wie zum Beispiel Lieblingsgerichte für ein unvergessliches kulinarisches Erlebnis. In Zusammenarbeit mit dem BDFIL, dem renommierten Lausanner Comic-Festival, konnten drei Kunstschaffende ihre ganz eigenen Illustrationen von Lausanne entwerfen, die die Stadt mit charmanten Anekdoten zum Leben erwecken.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Une vitrine de notre destination gastronomique ",
+                "en": "A showcase for our gastronomic destination ",
+                "de": "Schaufenster einer gastronomischen Destination "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Le Guide Délicieux, également traduit en anglais, s’adresse tant aux habitantes et habitants de la région qu’aux touristes. Il a pour ambition de positionner Lausanne et sa région comme une destination gastronomique incontournable, grâce à la diversité de ses établissements, la richesse de son terroir et le dynamisme de ses événements culinaires.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>The Delicious Guide, translated in English, is aimed at residents and tourists alike. Its purpose is to position Lausanne and the surrounding region as an essential gastronomic destination, thanks to the diversity of its establishments, the richness of its terroir and the dynamism of its culinary events.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Der Schlemmerführer richtet sich sowohl an die Einwohnerinnen und Einwohner der Region als auch an Touristen. Mit der Vielfalt ihrer Lokale, dem Reichtum ihres Terroirs und der Dynamik ihrer kulinarischen Veranstaltungen soll er Lausanne und ihre Region als unumgängliches gastronomisches Reiseziel positionieren.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Un projet évolutif ",
+                "en": "An evolving project ",
+                "de": "Ein fortlaufendes kulinarisches Rezept "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Edité chaque année, le Guide Délicieux verra sa sélection évoluer au fil des ans, avec l’objectif constant de soutenir la scène gastronomique locale et de mettre en lumière ses talents émergents.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>Published annually, the Delicious Guide’s selection will evolve over time, with the constant aim of supporting the local gastronomic scene and highlighting its emerging talents. In this edition, for example, the restaurant L'Appart is featured. Run by young chef Luis Zuzarte, L'Appart has been awarded an extra point in the Gault&amp;Millau 2025, in recognition of its creativity and commitment to responsible, local cuisine.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255)\">&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Geplant ist eine jährliche Ausgabe des Schlemmerführers. Dabei wird die Auswahl regelmässig aktualisiert, um die lokale Gastronomieszene zu unterstützen und neue Talente vorzustellen. So wird in der aktuellen Ausgabe beispielsweise das Restaurant «L'Appart» präsentiert. Unter der Leitung des jungen Küchenchefs Luis Zuzarte erhielt das Restaurant im Gault&amp;Millau 2025 einen zusätzlichen Punkt für seine Kreativität, sein Engagement und die Verwendung lokaler Produkte.&nbsp;</span></p><p style=\"text-align: justify\"><span>&nbsp;</span></p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Contact ",
+                "en": "Contact ",
+                "de": "Kontakt "
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left\"><span>Pour plus d'informations, interviews ou pour obtenir des exemplaires du Guide Délicieux, veuillez contacter :&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Responsable gastronomie, Unité développement et promotion de la Ville de Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / 021 315 24 47, 079 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span style=\"color: rgb(5, 99, 193)\">&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW140269131 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Télécharger les photos (utilisation digitale)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW140269131 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Télécharger les photos (utilisation print)</u></span></a><span>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left\"><span>For more information, interviews or to obtain copies of the Delicious Guide, please contact:&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Head of Gastronomy, Development and Promotion Unit, Ville de Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / +41 21 315 24 47, +41 79 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW35664955 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Download photos (digital use)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW35664955 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Download photos (for print use)</u></span></a><span>&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left\"><span>Für weitere Informationen, Interviews oder um Kopien des Schlemmerführers zu erhalten, wenden Sie sich bitte an:&nbsp;&nbsp;</span></p><p style=\"text-align: justify\"><span>Elise Rabaey, Leiterin Gastronomie, Einheit Entwicklung und Förderung der Stadt Lausanne&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"mailto:Elise.rabaey@lausanne.ch\" tt-mode=\"url\"><span><u>Elise.rabaey@lausanne.ch</u></span></a><span> / +41 21 315 24 47, +41 79 734 55 19&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" href=\"http://Guidedelicieux.com\" tt-mode=\"url\"><span><strong><u>Guidedelicieux.com</u></strong></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW255753915 BCX0\" href=\"https://www.swisstransfer.com/d/f91d45c7-3109-41cf-ae01-8a68d010fc51\" tt-mode=\"url\"><span><u>Fotos hochladen (digitale Nutzung)</u></span></a><span>&nbsp;</span></p><p style=\"text-align: justify\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW255753915 BCX0\" href=\"https://www.swisstransfer.com/d/fd9a3d99-2efa-458b-9942-e6cb16418608\" tt-mode=\"url\"><span><u>Fotos herunterladen (Printnutzung)</u></span></a><span>&nbsp;</span></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "WnZwYgsJY0CM5ebBJ9ESLhADCUyokx0DM5ZP0y89",
+              "copyright": "© Guide Délicieux",
+              "public_name": "Guide Délicieux"
+            }
+          ],
+          "seo": {
+            "description": "Le 1er octobre marque la sortie du Guide Délicieux, un projet ambitieux porté par les 14 communes de la région touristique lausannoise (FERL) et différents partenaires tels que GastroLausanne, l'Office des Vins Vaudois, Enjoy Lausanne, Vaud Promotion et Lausanne Tourisme.",
+            "noindex": false,
+            "slug": "le-guide-delicieux-une-centaine-dadresses-pour-decouvrir-les-pepites-culinaires-de-lausanne-et-de-sa-region"
+          },
+          "tags": [
+            {
+              "name": "lt-gastronomie",
+              "public_name": "Gastronomie"
+            }
+          ]
+        },
+        {
+          "id": "335",
+          "languages": ["fr", "en", "de"],
+          "author": "The Lausanner",
+          "name": "50 ANS D’ART BRUT À LAUSANNE : programme anniversaire annoncé pour 2026-2027",
+          "type": "press_release",
+          "lead": "Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027.",
+          "summary": "<p style=\"text-align: left;\">Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027. </p>",
+          "highlight": true,
+          "published_at": "1769468400",
+          "link": null,
+          "content": [
+            {
+              "type": "gallery",
+              "value": [
+                {
+                  "id": 31657,
+                  "name": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                  "public_name": {
+                    "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "en": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "de": "Atelier de numérisation – Ville de Lausanne, Collection de l’Art Brut, Lausanne",
+                    "es": null
+                  },
+                  "cloudinary_id": "BEzQx4JSzMj6Ca2awA315eUBMNdbeP0Qk3laUru0",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Hans Krüsi",
+                  "metadata": {
+                    "width": 2126,
+                    "height": 1908,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"2126\" height=\"1908\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31658,
+                  "name": "Archives de la Collection de l’Art Brut",
+                  "public_name": {
+                    "fr": "Archives de la Collection de l’Art Brut",
+                    "en": "Archives de la Collection de l’Art Brut",
+                    "de": "Archives de la Collection de l’Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "FSimkHY50MMM6KmVNZH2IY511HRqYJ8yXb9DdvN8",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Caroline Smyrliadis",
+                  "metadata": {
+                    "width": 1772,
+                    "height": 1323,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1772\" height=\"1323\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31659,
+                  "name": "Collection de l'Art Brut",
+                  "public_name": {
+                    "fr": "Collection de l'Art Brut",
+                    "en": "Collection de l'Art Brut",
+                    "de": "Collection de l'Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Delphine Burtin",
+                  "metadata": {
+                    "width": 9504,
+                    "height": 6336,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"9504\" height=\"6336\"",
+                    "tags": null,
+                    "description": null
+                  }
+                },
+                {
+                  "id": 31660,
+                  "name": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                  "public_name": {
+                    "fr": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "en": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "de": "Atelier de numérisation – Ville de Lausanne, Collection de l'Art Brut",
+                    "es": null
+                  },
+                  "cloudinary_id": "BZ7oWtq4IZ9xR1kELZHpcGV47HKSdfjeDsPdr24f",
+                  "mime_type": "image/jpeg",
+                  "copyright": "© Aloïse Corbaz",
+                  "metadata": {
+                    "width": 1317,
+                    "height": 2126,
+                    "mimeType": "image/jpeg",
+                    "copyright": null,
+                    "attr": "width=\"1317\" height=\"2126\"",
+                    "tags": null,
+                    "description": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\">Fondé en 1976 pour accueillir la collection donnée par le peintre Jean Dubuffet (1901-1985), le musée fut la première institution publique au monde entièrement dédiée à l’étude, à la conservation et à la présentation de l’Art Brut. Aujourd’hui, il conserve plus de 70 000 œuvres – dessins, peintures, sculptures, photographies et textiles – réalisées par des artistes autodidactes évoluant en dehors des circuits artistiques traditionnels. </p><p style=\"text-align: left;\">Le terme « Art Brut » lui est venu en 1945 lors d’un voyage en Suisse, au cours duquel Jean Dubuffet visita des asiles, des hôpitaux psychiatriques et des prisons. Selon Dubuffet, l’Art Brut se caractérise par « des œuvres créées en dehors de l’influence de l’art traditionnel, faisant appel aux couches les plus profondes de l’être humain ». </p><p style=\"text-align: left;\">Dubuffet considérait la Suisse comme une sorte de « pierre de touche pour les anarchistes anticulturels » et estimait qu’il s’agissait du lieu le plus approprié pour sa collection. En 1971, il fit don de sa collection d’Art Brut à la Ville de Lausanne et, en 1976, la Collection de l’Art Brut fut fondée. </p><p style=\"text-align: left;\">Depuis lors, ce musée municipal n’a cessé de s’enrichir grâce à de nombreuses acquisitions et donations, réunissant un vaste ensemble d’œuvres comprenant dessins, peintures, sculptures, assemblages, photographies et œuvres textiles. </p><p style=\"text-align: left;\">Aujourd’hui, cette institution de renommée internationale est reconnue pour la richesse et la diversité de ses collections, ainsi que pour son importance historique unique. Elle demeure également le premier musée public au monde entièrement consacré à l’étude, à la conservation et à la présentation de l’Art Brut. </p><p style=\"text-align: left;\">En dehors de la Collection de l’Art Brut, celles et ceux qui souhaitent approfondir leur découverte de l’Art Brut sont invités à se rendre à La Ferme des Tilleuls à Renens, à 15 minutes en train de Lausanne. L’artiste autodidacte française Danielle Jacqui (née en 1934) y a légué une œuvre intitulée Colossal d’Art Brut ORGANuGAMME II, une impressionnante pièce en céramique de 14 mètres de haut composée de 4 000 éléments sculpturaux uniques, érigée en structure permanente sur le site en 2022. </p><p style=\"text-align: left;\">Du 12 février au 21 juin 2026, La Ferme des Tilleuls présentera également « Maisons-mères », une exposition invitant à un voyage à la découverte d’architectures alternatives, imaginées, construites et habitées par des individus guidés par leurs idéaux utopiques. </p>",
+                "en": "<p style=\"text-align: left;\"><span>Founded in 1976 to house the collection donated by painter <strong>Jean Dubuffet</strong> (1901–1985), the museum was the first public institution in the world dedicated entirely to the study, conservation and presentation of Art Brut. Today it is home to over 70,000 works, drawings, paintings, sculptures, photographs and textiles, created by self-taught artists working outside the traditional art world.</span><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">&nbsp;</span></p><p style=\"text-align: left;\">The term “Art Brut” came to him in 1945 during a trip to Switzerland, where Jean Dubuffet visited asylums, psychiatric hospitals, and prisons. According to Dubuffet, Art Brut is characterised by “works created outside the influence of traditional art, while appealing to the deepest layers of the human being.” </p><p style=\"text-align: left;\">Dubuffet considered Switzerland something of a “touchstone for anti-cultural anarchists” and thought it was the most suitable location for his collection; in 1971, he donated his Art Brut collection to the City of Lausanne and in 1976, the Collection de l’Art Brut was founded.  </p><p style=\"text-align: left;\">Since then, this municipal museum has grown through numerous acquisitions and donations, bringing together a wide range of works, including drawings, paintings, sculptures, assemblages, photographs, and textile works.  </p><p style=\"text-align: left;\">Today, this internationally renowned institution is known for the richness and diversity of its collections as well as its unique historical significance. It was also the first public museum in the world dedicated entirely to the study, conservation, and presentation of Art Brut.  </p><p style=\"text-align: left;\">Outside of the Collection de l’Art Brut, those wanting to expand their Art Brut journey should pay a visit to La Ferme des Tilleuls in Renens, 15 minutes by train from Lausanne. The French self-taught artist Danielle Jacqui (1934) bequeathed a work of art to the art space named Colossal d’Art Brut ORGANuGAMME II, an impressive 14m-high ceramic piece made up of 4,000 unique sculptural elements that were erected into a permanent structure on the site in 2022. From 12th February to 21st June 2026 La Ferme des Tilleuls will also be showing “Maisons-mères”, an exhibition that takes viewers on a journey to discover alternative architectures, imagined, built, and inhabited by individuals guided by their utopian ideals. </p>",
+                "de": "<p style=\"text-align: left;\">Das Museum wurde 1976 gegründet, um die Sammlung des französischen Malers Jean Dubuffet (1901–1985) aufzunehmen. Es war weltweit die erste öffentliche Institution, die sich ausschliesslich der Erforschung, Bewahrung und Präsentation von Art Brut widmete. Heute beherbergt das Haus über 70'000 Werke – darunter Zeichnungen, Gemälde, Skulpturen, Fotografien und Textilarbeiten –, die von autodidaktischen Künstlerinnen und Künstlern geschaffen wurden, die ausserhalb des klassischen Kunstbetriebs arbeiten.</p><p style=\"text-align: left;\">Der Begriff «Art Brut» entstand 1945, als Jean Dubuffet auf einer Reise durch die Schweiz psychiatrische Kliniken, Heime und Gefängnisse besuchte. Für ihn bezeichnete Art Brut Werke, die unabhängig von kulturellen Normen entstehen und die tiefsten Schichten des Menschseins berühren.</p><p style=\"text-align: left;\">Für Dubuffet war die Schweiz der ideale Ort für seine Sammlung – ein «Bezugspunkt für antikulturelle Anarchistinnen und Anarchisten», wie er es ausdrückte. 1971 übergab er seine Werke der Stadt Lausanne, die daraufhin 1976 die Collection de l’Art Brut gründete.</p><p style=\"text-align: left;\">Seither ist das städtische Museum kontinuierlich gewachsen – durch Ankäufe ebenso wie durch bedeutende Schenkungen. Heute umfasst die Sammlung eine beeindruckende Bandbreite künstlerischer Ausdrucksformen: von Zeichnungen, Malerei und Skulpturen bis zu Assemblagen, Fotografien und Textilarbeiten.</p><p style=\"text-align: left;\">Die Collection de l’Art Brut geniesst heute internationale Anerkennung – sowohl für die Vielfalt ihrer Sammlung als auch für ihre historische Bedeutung als Pionierinstitution im Bereich der Art Brut.</p><p style=\"text-align: left;\">Wer Art Brut auch ausserhalb der Collection de l’Art Brut erleben möchte, findet in der Ferme des Tilleuls in Renens eine spannende Ergänzung. Der Ausstellungsort liegt nur 15 Zugminuten von Lausanne entfernt und beherbergt das monumentale Werk «ORGANuGAMME II» der französischen Autodidaktin Danielle Jacqui (Jahrgang 1934). Die 14 Meter hohe Keramikskulptur mit rund 4'000 einzeln gestalteten Elementen wurde 2022 dauerhaft auf dem Gelände installiert. Zwischen dem 12. Februar und dem 21. Juni 2026 zeigt die Ferme des Tilleuls zudem die Ausstellung «Maisons-mères», die sich alternativen Architekturformen widmet, welche von Einzelpersonen entworfen, gebaut und bewohnt wurden – inspiriert von persönlichen Utopien und einer starken gestalterischen Vision.</p>"
+              }
+            },
+            {
+              "type": "image",
+              "value": {
+                "id": 31661,
+                "name": "La Ferme des Tilleuls",
+                "public_name": {
+                  "fr": "La Ferme des Tilleuls",
+                  "en": "La Ferme des Tilleuls",
+                  "de": "La Ferme des Tilleuls",
+                  "es": null
+                },
+                "cloudinary_id": "4hkTwPdhMfJ9e3IpNVhBd6uqNtDvsbpGHMd93Qvm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Mario Del Curto",
+                "metadata": {
+                  "width": 5964,
+                  "height": 3981,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5964\" height=\"3981\"",
+                  "tags": null,
+                  "description": null
+                }
+              },
+              "size": "medium",
+              "focus": "auto"
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "Célébrités influencées par l’Art Brut ",
+                "en": "Celebrities influenced by Art Brut ",
+                "de": "Art Brut als Inspirationsquelle"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\"><span>La passion brute du mouvement de l’Art Brut a inspiré de nombreuses figures majeures, non seulement dans les arts plastiques, mais aussi dans la musique et la mode. Voici quelques témoignages de personnalités marquées par l’influence du mouvement de Dubuffet sur leur travail artistique :&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>David Bowie</strong>&nbsp;<br>« La Suisse m’a également permis de découvrir l’Art Brut, qui a eu un impact très fort sur ma vie et ma créativité. Je me souviens avoir emmené Brian Eno au musée de Lausanne et y avoir passé des heures à admirer les œuvres, à réfléchir au processus créatif et aux limites qu’un artiste est prêt à franchir dans sa quête… »&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Thom Yorke</strong>&nbsp;<br>« J’attendais avec impatience de venir enfin ici. Cela a dépassé toutes mes attentes. C’est vraiment le meilleur musée que j’aie jamais visité. Merci. »&nbsp;<br><em>Livre d’or, 15.08.2006</em>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Christian Lacroix</strong>&nbsp;<br>« J’ai toujours été fasciné par l’Art Brut. Je me souviens d’une robe brodée par l’une de ces artistes solitaires, cachée sous son lit. Cela m’impressionne bien davantage que tout ce que l’on peut voir au Louvre. »&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left;\">The raw passion of the Art Brut movement has inspired many seminal figures, not only in art, but in music and fashion as well. Here are quotes from just a few figureheads who felt the impact of Dubuffet’s movement on their artistic works:&nbsp;</p><p style=\"text-align: left;\"><strong>David Bowie</strong>&nbsp;<br>“Switzerland also allowed me to discover Art Brut, which had a very strong impact on my life and my creativity. I remember bringing Brian Eno to the Lausanne museum and spending hours there admiring the works, reflecting on the creative process and on the boundaries an artist is willing to cross in their quest…”&nbsp;<br><em>L’Hebdo, 06.06.2002</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Thom Yorke</strong>&nbsp;<br>“I was so looking forward to finally coming here. This has surpassed my expectations. It really is the best museum I have ever visited. Thank you.”&nbsp;<br><em>Guestbook, 15.08.2006</em>&nbsp;</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong>&nbsp;<br>“I have always been fascinated by Art Brut. I remember a dress embroidered by one of the solitary artists, hidden under her bed. That impresses me far more than anything in the Louvre.”&nbsp;<br><em>Le Temps, 12.07.2008</em>&nbsp;</p>",
+                "de": "<p style=\"text-align: left;\">Die kraftvolle Direktheit der Art Brut hat Künstlerinnen und Künstler weit über die bildende Kunst hinaus beeinflusst – von Musik über Mode bis zur Popkultur. Wie tief Dubuffets Werk nachwirkt, zeigen Aussagen prominenter Wegbegleiterinnen und Bewunderer.</p><p style=\"text-align: left;\"><strong>David Bowie</strong></p><p style=\"text-align: left;\">«Die Schweiz hat mir auch die Art Brut nähergebracht – sie hatte grossen Einfluss auf mein Leben und meine Kreativität. Ich erinnere mich, wie ich Brian Eno ins Museum in Lausanne mitnahm. Wir verbrachten Stunden damit, die Werke zu betrachten und über den kreativen Prozess nachzudenken – und darüber, welche Grenzen ein Kunstschaffender bereit ist zu überschreiten.» (L’Hebdo, 06.06.2002)</p><p style=\"text-align: left;\"><strong>Tom Yorke</strong></p><p style=\"text-align: left;\">«Ich habe mich sehr auf diesen Besuch gefreut – und er hat meine Erwartungen übertroffen. Es ist wirklich das beste Museum, das ich je besucht habe. Danke.» (Gästebuch, 15.08.2006)</p><p style=\"text-align: left;\"><strong>Christian Lacroix</strong></p><p style=\"text-align: left;\">«Ich war immer fasziniert von Art Brut. Ich erinnere mich an ein Kleid, das eine einsame Künstlerin bestickt und unter ihrem Bett versteckt hatte. Das beeindruckt mich viel mehr als alles im Louvre.» (Le Temps, 12.07.2008)</p>"
+              }
+            },
+            {
+              "type": "heading",
+              "tag": "h2",
+              "value": {
+                "fr": "EXPOSITIONS ANNIVERSAIRE ",
+                "en": "ANNIVERSARY EXHIBITIONS ",
+                "de": "Jubiläumsausstellungen"
+              }
+            },
+            {
+              "type": "paragraph",
+              "value": {
+                "fr": "<p style=\"text-align: left;\"><span><strong>Février – octobre 2026</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Art Brut en Suisse : des origines de la collection à aujourd’hui</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Sarah Lombardi</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>Cette exposition présentera un large éventail d’œuvres –&nbsp;dessins, peintures, sculptures, broderies et écrits –&nbsp;exclusivement issues de la collection du musée lausannois. Certaines appartiennent au noyau historique de la collection constituée par Jean Dubuffet, tandis que d’autres sont des œuvres contemporaines intégrées entre 1976 et aujourd’hui.&nbsp;</span></p><p style=\"text-align: left;\"><span>Toutes les œuvres auront été réalisées par des auteurs et autrices d’Art Brut suisses ou par des artistes ayant créé en Suisse.&nbsp;</span></p><p style=\"text-align: left;\"><span>Avec la Suisse comme fil conducteur, l’exposition met en lumière les liens forts et durables entre Jean Dubuffet et le pays, qui l’ont conduit à faire don de sa collection à Lausanne afin d’en garantir la conservation et l’accessibilité au public.&nbsp;</span></p><p style=\"text-align: left;\"><span>Des documents d’archives inédits et des extraits de films documentaires, notamment produits par la Radio Télévision Suisse (RTS), viendront compléter le parcours.&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>Novembre 2026 – avril 2027</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>L’univers d’Armand Schulthess</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Commissariat : Hans-Ulrich Schlumpf, cinéaste</em>&nbsp;</span></p><p style=\"text-align: left;\"><span>La seconde exposition anniversaire sera consacrée au créateur d’Art Brut suisse alémanique <strong>Armand Schulthess</strong> (1901-1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>Ancien employé de l’administration fédérale suisse à Berne, Schulthess a créé au Tessin un vaste environnement artistique aujourd’hui entièrement disparu. Cette œuvre in situ se composait d’innombrables objets et installations réalisés à partir de plaques métalliques de récupération, gravées d’inscriptions contenant un savoir encyclopédique, notamment dans les domaines de la science et de la philosophie.&nbsp;</span></p><p style=\"text-align: left;\"><span>L’exposition présentera plus de 300 pièces conservées et acquises par le musée en 2024, enrichissant de manière significative ses collections existantes.&nbsp;</span></p><p style=\"text-align: left;\"><span>Ces objets seront exposés aux côtés de photographies de grand format réalisées par Hans-Ulrich Schlumpf, qui a documenté et préservé cette œuvre monumentale avant sa destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>INFORMATIONS PRATIQUES</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span>- Entrée : 12 CHF &nbsp;<br>-&nbsp; Entrée gratuite durant le week-end d’ouverture du 50ᵉ anniversaire de la Collection de l’Art Brut : <strong>du 27 au 29 février 2026</strong>&nbsp;<br>- Ouvert du mardi au dimanche, de 11h à 18h. Également ouvert le lundi (11h–18h) en juillet et août&nbsp;<br>-&nbsp; Entrée gratuite le premier samedi de chaque mois&nbsp;<br>- À 25 minutes à pied de la gare de Lausanne. Arrêts de bus les plus proches : <strong>Jomini</strong> ou <strong>Beaulieu</strong>&nbsp;<br>-&nbsp; Adresse : <strong>Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne</strong>&nbsp;</span></p>",
+                "en": "<p style=\"text-align: left;\"><span><strong>February - October 2026:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>Swiss Art Brut</em>&nbsp;<br><em>From the Origins of the Collection to the Present </em>&nbsp;<br>Curated by Sarah Lombardi&nbsp;</span></p><p style=\"text-align: left;\"><span>This exhibition will present a wide range of works including drawings, paintings, sculptures, embroidery and writing, exclusively from the Lausanne museum’s collection. Some belong to the historical core collection of Jean Dubuffet, while others are contemporary, added between 1976 and now.&nbsp;</span></p><p style=\"text-align: left;\"><span>All works will have been created by Swiss Art Brut authors or artists who created in Switzerland.&nbsp;</span></p><p style=\"text-align: left;\"><span>With Switzerland as its central theme, the exhibition highlights the strong and lasting ties between Jean Dubuffet and the country, which led him to donate his collection to Lausanne to ensure its preservation and public accessibility.&nbsp;</span></p><p style=\"text-align: left;\"><span>Unpublished archival materials and excerpts from documentaries, including those produced by Radio Télévision Suisse (RTS), will complement the exhibition.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>November 2026 - April 2027:&nbsp;</strong>&nbsp;</span></p><p style=\"text-align: left;\"><span><em>The World of Armand Schulthess</em>&nbsp;<br>Curated by Hans-Ulrich Schlumpf, film maker&nbsp;</span></p><p style=\"text-align: left;\"><span>The second anniversary exhibition will focus on the Swiss-German Art Brut creator Armand Schulthess (1901–1972).&nbsp;</span></p><p style=\"text-align: left;\"><span>A former Swiss federal employee in Bern, Schulthess created a vast artistic environment in Ticino, now completely gone. This in-situ work consisted of countless objects and installations made from reclaimed metal plates, engraved with inscriptions containing encyclopedic knowledge, especially related to science and philosophy.&nbsp;</span></p><p style=\"text-align: left;\"><span>The exhibition will present over 300 pieces that were preserved and acquired by the museum in 2024, significantly enriching its existing holdings.&nbsp;</span></p><p style=\"text-align: left;\"><span>These objects will be shown alongside large-format photographs by Hans-Ulrich Schlumpf, who documented and preserved this monumental work before its destruction.&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: left;\"><span><strong>PRACTICAL INFORMATION</strong></span><span style=\"color: rgb(0, 0, 0);\">&nbsp;</span></p><ul><li><p style=\"text-align: left;\"><span>Entry costs 12 CHF (approx £11)&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry during the opening weekend of the 50th anniversary of the <em>Collection de l'Art Brut:</em> 27th-29th February 2026&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Open Tuesday to Sunday, 11am- 6pm. Also open Mondays (11am-6pm) in July and August&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Free entry on the first Saturday of each month&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>25-minute walk from Lausanne train station. Nearest bus stops: Jomini or Beaulieu.&nbsp;</span></p></li></ul><ul><li><p style=\"text-align: left;\"><span>Address: Collection de l’Art Brut, Avenue des Bergières 11, CH – 1004 Lausanne&nbsp;</span></p></li></ul><p style=\"text-align: left;\"><span>&nbsp;</span></p><p style=\"text-align: center;\"><span><strong>-ENDS-</strong>&nbsp;&nbsp;</span></p><p style=\"text-align: center;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>For more information on Lausanne please visit</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"http://www.lausanne-tourisme.ch/en/\" tt-mode=\"url\"><span> <u>Lausanne Tourism’s website</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Follow ‘Lausanne, Capitale Olympique’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.linkedin.com/company/lausanne-capitale-olympique\" tt-mode=\"url\"><span> <u>LinkedIn</u></span></a><span>,</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.facebook.com/LausanneCapitaleOlympique/\" tt-mode=\"url\"><span> <u>Facebook</u></span></a><span> and ‘The Lausanner’ on</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.instagram.com/thelausanner/\" tt-mode=\"url\"><span> <u>Instagram</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><span>Keep up to date with all the latest content on the</span><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://www.lausanne-tourisme.ch/en/the-lausanner/\" tt-mode=\"url\"><span> <u>blog The Lausanner</u></span></a><span>&nbsp;&nbsp;</span></p><p style=\"text-align: justify;\"><a target=\"_blank\" rel=\"noreferrer noopener\" class=\"Hyperlink SCXW117159492 BCX0\" href=\"https://ace.media/lookbooks/0km7\" tt-mode=\"url\"><span><u>Images can be downloaded from here</u></span></a><span style=\"color: rgb(5, 99, 193);\">&nbsp;</span></p><p style=\"text-align: left;\"><span>&nbsp;&nbsp;</span></p><p style=\"text-align: left;\"><span>For media enquiries please contact Alexandra Liste, Isabel Turner-Hicks or Jess Cochrane on&nbsp; </span><a target=\"_blank\" href=\"mailto:lausannetourism@lemongrassmarketing.com\" tt-mode=\"url\"><span>lausannetourism@lemongrassmarketing.com</span></a><span> / 01865 237 997&nbsp;&nbsp;&nbsp;</span></p>",
+                "de": "<p style=\"text-align: left;\"><strong>Februar bis Oktober 2026</strong></p><p style=\"text-align: left;\"><strong>Schweizer Art Brut</strong><br><em>Von den Ursprüngen der Sammlung bis heute</em><br>Kuratiert von Sarah Lombardi</p><p style=\"text-align: left;\">Die Ausstellung vereint eine breite Auswahl an Werken aus der Sammlung des Museums, darunter Zeichnungen, Gemälde, Skulpturen, Stickereien und Texte. Gezeigt werden sowohl Werke aus Jean Dubuffets historischer Sammlung als auch zeitgenössische Arbeiten, die zwischen 1976 und heute in die Sammlung aufgenommen wurden.</p><p style=\"text-align: left;\">Alle ausgestellten Werke stammen von Schweizer Kunstschaffenden der Art Brut oder wurden in der Schweiz geschaffen.</p><p style=\"text-align: left;\">Im Zentrum der Ausstellung steht die enge und nachhaltige Beziehung zwischen Jean Dubuffet und der Schweiz – jenem Land, dem er seine Sammlung schenkte, um deren Erhalt und öffentliche Zugänglichkeit langfristig zu sichern.</p><p style=\"text-align: left;\">Unveröffentlichtes Archivmaterial sowie Auszüge aus Dokumentarfilmen, unter anderem von Radio Télévision Suisse (RTS), ergänzen die Ausstellung.</p><p style=\"text-align: left;\"><br><strong>November 2026 bis April 2027</strong></p><p style=\"text-align: left;\"><strong>Die Welt von Armand Schulthess</strong><br>Kuratiert von Hans-Ulrich Schlumpf</p><p style=\"text-align: left;\">Die zweite Jubiläumsausstellung widmet sich dem Schweizer Art-Brut-Künstler Armand Schulthess (1901–1972).</p><p style=\"text-align: left;\">Der ehemalige Bundesbeamte aus Bern schuf in seinem Garten im Tessin ein einzigartiges künstlerisches Universum, das heute vollständig verschwunden ist. Sein Werk bestand aus unzähligen Objekten und Installationen aus wiederverwerteten Metallplatten, in die er enzyklopädisches Wissen eingravierte – mit Themen von Naturwissenschaft bis Philosophie.</p><p style=\"text-align: left;\">Die Ausstellung präsentiert über 300 Objekte, die das Museum 2024 übernehmen konnte und die eine bedeutende Erweiterung der bestehenden Sammlung darstellen.</p><p style=\"text-align: left;\">Ergänzt wird die Präsentation durch grossformatige Fotografien von Hans-Ulrich Schlumpf, der das Werk dokumentierte, bevor es zerstört wurde.</p><p style=\"text-align: left;\"><br><strong>Praktische Informationen</strong></p><p style=\"text-align: left;\">Der Eintritt kostet CHF 12.–. Freier Eintritt gilt am Jubiläumswochenende vom 27. bis 29. Februar 2026.</p><p style=\"text-align: left;\">Die Öffnungszeiten sind Dienstag bis Sonntag von 11 bis 18 Uhr; im Juli und August ist das Museum auch montags geöffnet. Zudem ist der Eintritt am ersten Samstag jedes Monats kostenlos.</p><p style=\"text-align: left;\">Das Museum liegt rund 25 Gehminuten vom Bahnhof Lausanne entfernt; die nächstgelegenen Busstationen sind Jomini und Beaulieu.<br>Adresse: Collection de l’Art Brut, Avenue des Bergières 11, CH–1004 Lausanne.</p><p style=\"text-align: left;\">Weitere Informationen finden Sie unter <a target=\"_blank\" href=\"http://www.lausanne-tourisme.ch\" tt-mode=\"url\">www.lausanne-tourisme.ch</a>.<br>Pressebilder sind online verfügbar.</p><p style=\"text-align: left;\"><strong>Medienkontakt Schweiz</strong><br>Natalie Zipsin<br>Tel.: 076 289 26 64<br>E-Mail: <a target=\"_blank\" href=\"mailto:natalie@wearepepper.ch\" tt-mode=\"url\">natalie@wearepepper.ch</a></p>"
+              }
+            }
+          ],
+          "medias": [
+            {
+              "cloudinary_id": "Ri7XFJ3L2G0N0apb3hAQnagV7IynZKc0zQtFUwTW",
+              "copyright": "© Delphine Burtin",
+              "public_name": "Collection de l'Art Brut"
+            }
+          ],
+          "seo": {
+            "description": "Octobre 2025 – La Collection de l’Art Brut de Lausanne célébrera son 50ᵉ anniversaire en février 2026 avec un programme s’étendant sur une année, articulé autour de deux expositions anniversaire présentées de février 2026 à avril 2027.",
+            "noindex": false,
+            "slug": "50-ans-dart-brut-a-lausanne-programme-anniversaire-annonce-pour-2026-2027"
+          },
+          "tags": [
+            {
+              "name": "lt-culture",
+              "public_name": "Culture"
+            },
+            {
+              "name": "lt-exposition",
+              "public_name": "Exposition"
             }
           ]
         }

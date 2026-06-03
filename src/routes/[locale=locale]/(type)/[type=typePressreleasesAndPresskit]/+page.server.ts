@@ -1,10 +1,10 @@
 import { dev } from '$app/environment';
+import { RouteTypes } from '$enums';
 import { isOfflineMode } from '$lib/helpers';
 import { sortByYears } from '$lib/helpers/date';
-import { getPosts } from '$lib/helpers/requests.server';
-import type { Release } from '$types';
-import { RouteTypes } from '$enums';
+import { getPosts } from '$lib/services/requests.server';
 import { supportedLocales, translations } from '$lib/translations';
+import type { Release } from '$types';
 import type { EntryGenerator } from './$types';
 
 export const config = {
@@ -13,15 +13,19 @@ export const config = {
   }
 };
 
-export const load = async ({ parent }) => {
+export const load = async ({ parent, fetch }) => {
   if (dev && isOfflineMode) {
-    const { server } = await import('$lib/mocks/handler');
-    server.listen();
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
   }
 
   const { locale } = await parent();
 
-  const releasesRes = await getPosts<Release<string>>({ type: 'press_release', locale });
+  const releasesRes = await getPosts<Release<string>>({
+    type: 'press_release',
+    locale,
+    fetchFn: fetch
+  });
 
   const releases = releasesRes.data?.items?.data ?? [];
 

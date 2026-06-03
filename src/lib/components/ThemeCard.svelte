@@ -88,7 +88,7 @@
 </script>
 
 <article class={style} in:blur={{ delay: 150 * gridIndex, opacity: 0.2 }}>
-  <Clickable href={route(RouteTypes.Themes, { theme, forceLocale: locale })}>
+  <Clickable href={route(RouteTypes.Themes, { theme, forceLocale: locale })} preload="hover">
     <Heading
       tag="h3"
       class="translate-y-0 p-2 text-white opacity-100 shadow-gray-950 transition-transform [text-shadow:_0_0_10px_var(--tw-shadow-color)] group-hover:translate-y-72 group-hover:opacity-0 md:p-4"

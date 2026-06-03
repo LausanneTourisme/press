@@ -1,10 +1,14 @@
 name: Deploy project !
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - Test
     branches:
       - main
       - develop
+    types:
+      - completed
 
   workflow_dispatch:
     inputs:
@@ -21,6 +25,7 @@ jobs:
   resolve-env:
     name: Resolve environment
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     outputs:
       environment: ${{ steps.set-env.outputs.environment }}
     steps:
@@ -30,7 +35,7 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "environment=${{ github.event.inputs.environment }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.ref_name }}" = "main" ]; then
+          elif [ "${{ github.event.workflow_run.head_branch }}" = "main" ] || [ "${{ github.ref_name }}" = "main" ]; then
             echo "environment=Production" >> $GITHUB_OUTPUT
           else
             echo "environment=Stage" >> $GITHUB_OUTPUT
@@ -53,6 +58,17 @@ jobs:
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
+          ENABLE_CRM=\"${{secrets.ENABLE_CRM}}\"
+          APSIS_CLIENT_ID=\"${{secrets.APSIS_CLIENT_ID}}\"
+          APSIS_CLIENT_SECRET=\"${{secrets.APSIS_CLIENT_SECRET}}\"
+          APSIS_KEYSPACE_DISCRIMINATOR=\"${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}\"
+          APSIS_SECTION_DISCRIMINATOR=\"${{secrets.APSIS_SECTION_DISCRIMINATOR}}\"
+          APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR=\"${{secrets.APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR}}\"
+          APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR=\"${{secrets.APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR}}\"
+          APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR=\"${{secrets.APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR}}\"
+          APSIS_JOURNALIST_FORM_EVENT_VERSION_ID=\"${{secrets.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID}}\"
+          APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID=\"${{secrets.APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID}}\"
+          APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID=\"${{secrets.APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID}}\"
           PUBLIC_ENABLE_OFFLINE_MODE=\"${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}\"
           PUBLIC_CLOUDINARY_CLOUD_NAME=\"${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}\"
           PUBLIC_CLOUDINARY_CNAME=\"${{ secrets.PUBLIC_CLOUDINARY_CNAME }}\"
@@ -68,6 +84,11 @@ jobs:
           MAIL_DEFAULT_RECIPIENTS=\"${{ secrets.MAIL_DEFAULT_RECIPIENTS }}\"
           MAIL_FROM=\"${{ secrets.MAIL_FROM }}\"
           MAIL_TO=\"${{ secrets.MAIL_TO }}\"
+          MAIL_HOST=\"${{ secrets.MAIL_HOST }}\"
+          MAIL_PORT=\"${{ secrets.MAIL_PORT }}\"
+          MAIL_USERNAME=\"${{ secrets.MAIL_USERNAME }}\"
+          MAIL_PASSWORD=\"${{ secrets.MAIL_PASSWORD }}\"
+          ENABLE_MAILCHIMP=\"${{ secrets.ENABLE_MAILCHIMP }}\"
           API_HTML_TO_PDF=\"${{ secrets.API_HTML_TO_PDF }}\"
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN=\"${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}\"
           EOF"
@@ -102,22 +123,50 @@ jobs:
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node npm run build'"
+            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node BUILD_DIR=build-next npm run build'"
 
-      - name: Restart service
+      - name: Swap builds
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ secrets.SSH_PROJECT_PATH }} && \
+             mv build build-old 2>/dev/null || true && \
+             mv build-next build"
+
+      - name: Restart
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "systemctl --user restart ${{ secrets.SERVICE_NAME }}"
 
+      # Wait a bit and check if the service is active, if not, rollback to the old build and restart again
+      - name: Verify
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "sleep 3 && \
+             systemctl --user is-active ${{ secrets.SERVICE_NAME }} || \
+             (rm -rf ${{ secrets.SSH_PROJECT_PATH }}/build && \
+              mv ${{ secrets.SSH_PROJECT_PATH }}/build-old ${{ secrets.SSH_PROJECT_PATH }}/build && \
+              systemctl --user restart ${{ secrets.SERVICE_NAME }} && \
+              exit 1)"
+
+      - name: Cleanup old build
+        run: |
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
+            "rm -rf ${{ secrets.SSH_PROJECT_PATH }}/build-old"
+
   clear-cache:
     name: Clear Cloudflare cache
     runs-on: ubuntu-latest
     needs:
-      - deploy
       - resolve-env
+      - deploy
     environment: ${{ needs.resolve-env.outputs.environment }}
     steps:
+      - name: wait for 10 seconds
+        run: sleep 10
       - name: Clear Cloudflare cache
         run: |
           RESPONSE=$(curl -s -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/purge_cache" \

@@ -1,0 +1,742 @@
+{
+  "data": {
+    "item": {
+      "id": "288",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Education, recherche et innovation à Lausanne",
+        "en": "Education, research and innovation in Lausanne",
+        "de": "Bildung, Forschung und Innovation in Lausanne"
+      },
+      "lead": {
+        "fr": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique.",
+        "en": "Lausanne may be a city of history and tradition, but it's also one that's open to the world – and strategically located.",
+        "de": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage."
+      },
+      "summary": {
+        "fr": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique. Aussi, sans doute, le secret de la belle vaudoise réside-t-il dans ce savant mélange qui lui est propre : nature, culture, traditions… mais aussi formation, recherche et innovation.",
+        "en": "Lausanne may be a city of history and tradition, but it’s also one that’s open to the world – and strategically located. The secret of Lausanne’s charm lies in its unique blend of nature, culture and tradition, as well as education, research and innovation.",
+        "de": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage. Zweifellos liegt das Geheimnis der schönen Waadtländer Hauptstadt in ihrer einzigartigen Mischung aus Natur, Kultur und Tradition, aus Bildung, Forschung und Innovation."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26136,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": "Education, recherche et innovation à Lausanne",
+                "cloudinary_id": "65cd25028f98f158",
+                "mime_type": "image/jpeg",
+                "copyright": "© L'ECAL (Ecole Cantonale d'Art de Lausanne)",
+                "metadata": {
+                  "width": 576,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"576\" height=\"768\"",
+                  "tags": "Haute Ecole; Design; Bâtiment; Moderne",
+                  "description": null,
+                  "file_name_from_url": "65cd25028f98f158.1_Building",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/1.1_Building.jpg"
+                }
+              },
+              {
+                "id": 26202,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": "Education, recherche et innovation à Lausanne",
+                "cloudinary_id": "6f1474d6911ae355",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue de nuit de l'extérieur de ArtLab, EPFL",
+                "metadata": {
+                  "width": 768,
+                  "height": 479,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Michel Denanc..",
+                  "attr": "width=\"768\" height=\"479\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "10531d586d4af237.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/ArtLab-nuit.jpg"
+                }
+              },
+              {
+                "id": 26268,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": "Education, recherche et innovation à Lausanne",
+                "cloudinary_id": "cf41b4553c496ec3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pole AGORA de recherche sur le cancer",
+                "metadata": {
+                  "width": 768,
+                  "height": 487,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"487\"",
+                  "tags": "Soin, santé; Lausanne; Recherche",
+                  "description": null,
+                  "file_name_from_url": "def093d4c0e70356.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pole-Agora-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "value": "<span class=\"TextRun SCXW9062327 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"none\"><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">À</span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\"> ce titre, la petite Suissesse a tout d’une grande. En matière médicale, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/centre-hospitalier-universitaire-vaudois/\">Centre Hospitalier Universitaire Vaudois</a> (CHUV) </span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">notamment </span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">s’impose comme une référence à l’internationale. </span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">L</span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">a Capitale vaudoise peut aussi se targuer d’être une ville universitaire de référence puisqu’elle compte en son sein parmi les meilleures écoles et universités d’Europe, à l’instar de l’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-polytechnique-federale-de-lausanne/\">Ecole Polytechnique Fédérale de Lausanne</a> (EPFL), de l’UNIL, de l’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-hoteliere-de-lausanne-ehl/\">Ecole Hôtelière de Lausanne</a> (EHL) ou encore de l’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-cantonale-dart-de-lausanne-ecal/\">Ecole Cantonale d’Art de Lausanne</a> (ECAL).</span> <span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">Ainsi</span><span class=\"NormalTextRun SCXW9062327 BCX0\" data-ccp-parastyle=\"Normal (Web)\">, l’image jeune et dynamique de Lausanne est sans doute due à sa réputation grandissante de ville-école.</span></span><span class=\"EOP SCXW9062327 BCX0\" data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Hospitalité </span></b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Fondée en 1893, l’Ecole hôtelière de Lausanne (EHL) est le premier et le plus ancien établissement de management hôtelier du monde. Au niveau international, elle est l’école la plus reconnue par la branche. Depuis sa création, L’EHL a formé plus de 25’000 cadres des professions de l’accueil et à l’heure actuelle, près de 3700 étudiants, représentant plus de 120 nationalités, suivent ses cours. En 2019, elle est classée meilleure université de gestion hôtelière dans le monde selon QS World University Ranking et le Ceoworld Magazine. Plusieurs personnalités ont étudié à l’EHL comme Samy Vischel, CEO à Fauchon Paris, Daria Quintini, Global Brand Executive à Belmond LVMH ou encore Tina Wang, responsable buzz marketing chez Apple."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Formation artistique</span></b><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">La scène culturelle lausannoise est sans cesse renouvelée par de jeunes talents, qui ont l’opportunité de suivre des études artistiques de grande qualité, quelle que soit leur expression artistique :</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"2\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"hybridMultilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"1\" data-aria-level=\"1\"><span data-contrast=\"none\">L<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-cantonale-dart-de-lausanne-ecal/\">’École cantonale d’art de Lausanne</a> (ECAL)</span><span data-contrast=\"none\">, un espace de créativité de réputation mondiale, forme des étudiants dans le domaine des arts et du design. Elle présente son travail dans le monde entier dans le cadre de salons, d’expositions et de conférences, à l’instar du Centre Pompidou à Paris, de Cooper Union à New York ou encore du Design Days à Dubaï ;</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"1\" data-aria-level=\"1\"><span data-contrast=\"none\">Lieu d’échanges et de rencontres des pratiques, la </span><a href=\"http://www.manufacture.ch/\"><span data-contrast=\"none\">Haute école de théâtre de Suisse romande « La Manufacture »  </span></a><span data-contrast=\"none\">figure parmi les importants pôles romands des arts et métiers de la scène ;</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"1\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"2\" data-aria-level=\"1\"><span data-contrast=\"none\">La </span><a href=\"http://www.hemu.ch/\"><span data-contrast=\"none\">Haute école de musique de Lausanne (HEMU)</span></a><span data-contrast=\"none\"> offre une formation musicale de type universitaire, portée par un corps enseignant de renom.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Sans compter la vingtaine d’écoles qui accueille une jeunesse désireuse de se former à tous les arts, du réputé Conservatoire de Lausanne, à l’école de jazz et de musiques actuelles. </span><span data-ccp-props='{\"335551550\":6,\"335551620\":6}'> </span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25880,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": "Education, recherche et innovation à Lausanne",
+              "cloudinary_id": "c3557bee75dcc886",
+              "mime_type": "image/jpeg",
+              "copyright": "© Etudiants devant L'ECAL (Ecole cantonale d'Art de Lausanne)",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3557bee75dcc886.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/4_Building_Opening-Diploma-Exhibition.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Le génie médical lausannois</span></b><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Dans le domaine biomédical, Lausanne accueille des centres de recherche à la pointe, en particulier en ce qui concerne la recherche contre le cancer.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Une combinaison de spécialistes de haut vol, de formations universitaires, de chercheurs et d’établissements à la pointe coexiste, à l’instar du pôle lausannois de la santé qui détient tous les atouts pour participer à des programmes très avancés en matière de génie médical. La ville tient d’ailleurs une place de choix au cœur de la </span><i><span data-contrast=\"none\">Health Valley</span></i><span data-contrast=\"none\">, cette région centrée sur l’arc lémanique qui regroupe des centaines de centres de recherche et d’entreprises dans les domaines des biotechnologies et des technologies médicales.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Dans un autre domaine, le nouveau pôle </span><a href=\"http://www.isrec.ch/agora\"><span data-contrast=\"none\">AGORA</span></a><span data-contrast=\"none\"> de recherche contre le cancer, situé près du CHUV, réunit sous un même toit plus de 300 médecins, chercheurs et bio-ingénieurs. Son bâtiment à l’architecture novatrice et ouverte vise à multiplier les échanges entre disciplines pour trouver des solutions aux multiples défis que pose cette maladie.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25976,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": "Education, recherche et innovation à Lausanne",
+              "cloudinary_id": "9db99f5640d17f5e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assemblee Generale de Lausanne Tourisme le 27 juin 2019 a l'AGORA /CHUV",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Tourisme; membre; association",
+                "description": null,
+                "file_name_from_url": "9db99f5640d17f5e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/AG-2019-Agora-CHUV-KAZ-HD_025.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<b><span data-contrast=\"none\">Congrès et manifestations</span></b><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Par ailleurs, les travaux de recherche médicaux d’intérêt mondial dans de multiples spécialités valent à Lausanne de recevoir de nombreux congrès internationaux, rassemblant parfois des milliers de participants. La vocation médicale de la ville n’y est pas étrangère, mais son succès dans ce registre dépend notamment de l’engagement des médecins, professeurs et scientifiques lausannois qui acceptent de s’investir dans l’organisation de ces réunions internationales et portent la candidature de leur ville.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Précisons qu’organiser la venue de congrès dépend de l’interaction réussie entre une série de facteurs :</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"3\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"1\" data-aria-level=\"1\"><span data-contrast=\"none\">La présence de pôles de recherches, de professeurs ou autres personnalités de renom ;</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"3\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"2\" data-aria-level=\"1\"><span data-contrast=\"none\">La logistique ;</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"3\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"3\" data-aria-level=\"1\"><span data-contrast=\"none\">Les infrastructures (centres de congrès à la capacité suffisante)</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li data-leveltext=\"\" data-font=\"Symbol\" data-listid=\"3\" data-list-defn-props='{\"335552541\":1,\"335559685\":720,\"335559991\":360,\"469769226\":\"Symbol\",\"469769242\":[8226],\"469777803\":\"left\",\"469777804\":\"\",\"469777815\":\"multilevel\"}' aria-setsize=\"-1\" data-aria-posinset=\"4\" data-aria-level=\"1\"><span data-contrast=\"none\">Le savoir-faire touristique, de la préparation du dossier de candidature à l’organisation des activités de loisirs pour les participants, en passant par la gestion des accréditations et de l’hébergement.</span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Le service </span><a href=\"http://www.lausanne-montreux-congress.ch/\"><span data-contrast=\"none\">Congrès-Manifestations de Lausanne Tourisme</span></a><span data-contrast=\"none\">  se tient à disposition des hôtes pour les soutenir dans l’organisation de leur congrès. Plus d’informations sur  </span><a href=\"https://www.lausanne-tourisme.ch/fr/business/\"><b><span data-contrast=\"none\">www.lausanne-tourisme.ch/business</span></b></a><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"none\">Ainsi, forte de sa situation géographique au centre de l’Europe, de ses centres de congrès et de ses pôles d’excellence dans les domaines du sport, de la technologie, de la recherche médicale et de l’innovation, Lausanne définitivement comme une destination d’affaires reconnue et prisée. </span><span data-ccp-props='{\"134233117\":true,\"134233118\":true,\"201341983\":0,\"335551550\":6,\"335551620\":6,\"335557856\":16777215,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26057,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": "Education, recherche et innovation à Lausanne",
+              "cloudinary_id": "1e344dc4753b381f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Congres PCMA - Professional Convention Management Association a eu lieu a Lausanne du 17 au 19 octobre 2021. Evenement au SwissTech Convention Center",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Congrès; Business; Affaires; Lausanne",
+                "description": null,
+                "file_name_from_url": "1e344dc4753b381f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Congres-PCMA-SwissTech-6.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26136,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "65cd25028f98f158",
+                "mime_type": "image/jpeg",
+                "copyright": "© L'ECAL (Ecole Cantonale d'Art de Lausanne)",
+                "metadata": {
+                  "width": 576,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"576\" height=\"768\"",
+                  "tags": "Haute Ecole; Design; Bâtiment; Moderne",
+                  "description": null,
+                  "file_name_from_url": "65cd25028f98f158.1_Building",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/1.1_Building.jpg"
+                }
+              },
+              {
+                "id": 26202,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "6f1474d6911ae355",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue de nuit de l'extérieur de ArtLab, EPFL",
+                "metadata": {
+                  "width": 768,
+                  "height": 479,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Michel Denanc..",
+                  "attr": "width=\"768\" height=\"479\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "10531d586d4af237.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/ArtLab-nuit.jpg"
+                }
+              },
+              {
+                "id": 26268,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "cf41b4553c496ec3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pole AGORA de recherche sur le cancer",
+                "metadata": {
+                  "width": 768,
+                  "height": 487,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"487\"",
+                  "tags": "Soin, santé; Lausanne; Recherche",
+                  "description": null,
+                  "file_name_from_url": "def093d4c0e70356.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pole-Agora-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "value": "In this respect, the little Swiss lady has all the makings of a great one. In the medical field, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/centre-hospitalier-universitaire-vaudois/\">canton’s University Hospital</a> (CHUV) is a benchmark for the world. The capital of Vaud also boasts a number of Europe’s top universities and colleges, including the <a href=\"https://www.lausanne-tourisme.ch/en/explore/swiss-federal-institute-of-technology-lausanne/\">Lausanne Federal Institute of Technology</a> (EPFL), UNIL, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-hotel-school-ehl/\">Ecole Hôtelière de Lausanne</a> (EHL) and the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-university-of-art-and-design-ecal/\">Lausanne University of Art and Design</a> (ECAL). Lausanne’s young, dynamic image is undoubtedly due to its growing reputation as a university town."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Hospitality"
+          },
+          {
+            "type": "paragraph",
+            "value": "Founded in 1893, the Ecole Hôtelière de Lausanne (EHL) is the world’s first and oldest hotel management school. Internationally, it is the most recognised school in the industry. Since it was founded, EHL has trained more than 25,000 hospitality executives, and its courses are currently attended by nearly 3,700 students of more than 120 nationalities. In 2019, it was ranked as the best hotel management university in the world by the QS World University Ranking and Ceoworld Magazine. A number of prominent figures have studied at EHL, including Samy Vischel, CEO of Fauchon Paris, Daria Quintini, Global Brand Executive at Belmond LVMH, and Tina Wang, buzz marketing manager at Apple."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Artistic training"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne’s cultural scene is constantly renewed by young talent, who have the opportunity to follow high-quality artistic studies, whatever their artistic expression:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>– The <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-university-of-art-and-design-ecal/\">Lausanne University of Art and Design </a> (ECAL), a world-renowned centre for creativity, trains students in the field of art and design. It presents its work at fairs, exhibitions and conferences around the world, including the Centre Pompidou in Paris, Cooper Union in New York and Design Days in Dubai;</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>– La Manufacture, <a href=\"https://www.manufacture.ch/en\">University of Performing Arts of Western Switzerland</a>, is one of the major centres for the performing arts and crafts in French-speaking Switzerland;</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>– The <a href=\"https://www.hemu.ch/en/home\">University of Music Lausanne </a>(HEMU) offers a university-style musical education, supported by a renowned teaching staff.</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Not to mention the twenty or so schools that cater for young people keen to learn all the arts, from the renowned Lausanne Conservatoire to the school of jazz and contemporary music."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25880,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c3557bee75dcc886",
+              "mime_type": "image/jpeg",
+              "copyright": "© Etudiants devant L'ECAL (Ecole cantonale d'Art de Lausanne)",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3557bee75dcc886.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/4_Building_Opening-Diploma-Exhibition.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Medical engineering in Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "In the biomedical field, Lausanne is home to cutting-edge research centres, particularly in cancer research."
+          },
+          {
+            "type": "paragraph",
+            "value": "A combination of high-calibre specialists, university training, researchers and cutting-edge establishments coexist, such as the Lausanne health cluster, which has all the assets needed to participate in highly advanced medical engineering programmes. The city also occupies a prime position at the heart of Health Valley, a region centred in the Lake Geneva area that brings together hundreds of research centres and companies in the fields of biotechnology and medical technology."
+          },
+          {
+            "type": "paragraph",
+            "value": "In another field, the new <a href=\"https://www.isrec.ch/en/agora/research-cluster/\">AGORA</a> cancer research centre, located near CHUV, brings together more than 300 doctors, researchers and bioengineers under one roof. The building’s innovative, open architecture aims to increase exchanges between disciplines in order to find solutions to the many challenges posed by this disease."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25976,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "9db99f5640d17f5e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assemblee Generale de Lausanne Tourisme le 27 juin 2019 a l'AGORA /CHUV",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Tourisme; membre; association",
+                "description": null,
+                "file_name_from_url": "9db99f5640d17f5e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/AG-2019-Agora-CHUV-KAZ-HD_025.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Conferences and events"
+          },
+          {
+            "type": "paragraph",
+            "value": "In addition, as a result of its world-class medical research in a wide range of specialities, Lausanne hosts numerous international congresses, sometimes bringing together thousands of participants. The city’s medical vocation is no stranger to this, but its success in this field depends in particular on the commitment of the doctors, professors and scientists in Lausanne contribute to the organisation of these international meetings and support their city’s bid."
+          },
+          {
+            "type": "paragraph",
+            "value": "Organising congresses depends on the successful interaction between a series of factors:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>The presence of research centres, professors and other renowned figures;</li>\n<li>Logistics ;</li>\n<li>Infrastructure (convention centres with sufficient capacity)</li>\n<li>Tourism expertise, from preparing the bid to managing accreditations and accommodation organising leisure activities for participants.</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul><a href=\"https://www.lausanne-montreux-congress.ch/en/\">Lausanne Tourisme’s Conventions and Events Department</a> is on hand to help guests organise their conference. For more information, visit <a href=\"https://www.lausanne-tourisme.ch/en/business/\">www.lausanne-tourisme.ch/business</a></ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>With its geographical location at the centre of Europe, its congress centres and its centres of excellence in the fields of sport, technology, medical research and innovation, Lausanne is definitely a recognised and sought-after business destination.</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26057,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1e344dc4753b381f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Congres PCMA - Professional Convention Management Association a eu lieu a Lausanne du 17 au 19 octobre 2021. Evenement au SwissTech Convention Center",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Congrès; Business; Affaires; Lausanne",
+                "description": null,
+                "file_name_from_url": "1e344dc4753b381f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Congres-PCMA-SwissTech-6.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 26136,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "65cd25028f98f158",
+                "mime_type": "image/jpeg",
+                "copyright": "© L'ECAL (Ecole Cantonale d'Art de Lausanne)",
+                "metadata": {
+                  "width": 576,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"576\" height=\"768\"",
+                  "tags": "Haute Ecole; Design; Bâtiment; Moderne",
+                  "description": null,
+                  "file_name_from_url": "65cd25028f98f158.1_Building",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/1.1_Building.jpg"
+                }
+              },
+              {
+                "id": 26202,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "6f1474d6911ae355",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue de nuit de l'extérieur de ArtLab, EPFL",
+                "metadata": {
+                  "width": 768,
+                  "height": 479,
+                  "mimeType": "image/jpeg",
+                  "copyright": "Michel Denanc..",
+                  "attr": "width=\"768\" height=\"479\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "10531d586d4af237.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/ArtLab-nuit.jpg"
+                }
+              },
+              {
+                "id": 26268,
+                "name": "Education, recherche et innovation à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "cf41b4553c496ec3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pole AGORA de recherche sur le cancer",
+                "metadata": {
+                  "width": 768,
+                  "height": 487,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"768\" height=\"487\"",
+                  "tags": "Soin, santé; Lausanne; Recherche",
+                  "description": null,
+                  "file_name_from_url": "def093d4c0e70356.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pole-Agora-1.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "value": "In dieser Hinsicht steht die überschaubare Schweizer Stadt ihren grossen Schwesterstädten in nichts nach. Das<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/centre-hospitalier-universitaire-vaudois/\"> Waadtländer Universitätsspital</a> (CHUV) ist eine internationale Referenz im medizinischen Bereich. Die Waadtländer Hauptstadt verfügt über einige der führenden Universitäten und Hochschulen Europas, darunter <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/eidgenossische-technische-hochschule-lausanne/\">die Eidgenössische Technische Hochschule Lausanne</a> (ETHL), die Universität Lausanne (UNIL), die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/hotelfachschule-lausanne-ehl/\">EHL Hospitality Business School</a> und die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonale-hochschule-fur-kunst-und-design/\">Kantonale Hochschule für Kunst und Design Lausanne</a> (ECAL). Das junge und dynamische Image der Stadt ist denn auch auf ihren wachsenden Ruf als Bildungsstadt zurückzuführen."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Hotellerie</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die 1893 gegründete EHL Hospitality Business School ist die erste und älteste Hotelfachschule der Welt und geniesst den besten weltweiten Ruf in ihrer Branche. Seit ihrer Gründung hat die EHL über 25 000 Führungskräfte im Bereich Hospitality Management ausgebildet. Gegenwärtig besuchen rund 3700 Studierende aus über 120 Nationen die angebotenen Kurse. Im Jahr 2019 wurde die Schule vom QS World University Ranking und dem Ceoworld Magazine zur besten Hotelmanagement-Hochschule der Welt erkoren. Verschiedene bekannte Persönlichkeiten haben an der EHL studiert, unter anderem Samy Vischel, CEO von Fauchon Paris, Daria Quintini, Global Brand Executive bei Belmond LVMH, und Tina Wang, Buzz Marketing Managerin bei Apple."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Künstlerische Ausbildung</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Lausanner Kulturszene erfreut sich fortwährend junger Talente, die unabhängig ihrer künstlerischen Ausdrucksform ein hochwertiges Kunststudium absolvieren:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-cantonale-dart-de-lausanne-ecal/\">Die Kantonale Hochschule für Kunst und Design Lausanne (ECAL)</a> ist ein weltweit anerkanntes Bildungszentrum für Kreativität in den Bereichen Kunst und Design. Sie präsentiert die Arbeiten auf Messen, Ausstellungen und Konferenzen in der ganzen Welt, unter anderem im Centre Pompidou in Paris, in der Cooper Union in New York und bei den Design Days in Dubai.</li>\n<li><a href=\"https://www.manufacture.ch/en\">Die Hochschule der Bühnenkünste La Manufacture</a> ist einer der wichtigsten Westschweizer Austausch- und Treffpunkte für darstellende Künste und Bühnenberufe.</li>\n<li>Die <a href=\"https://www.hemu.ch/en/home\">Musikhochschule Lausanne (HEMU)</a> bietet eine universitäre Musikausbildung mit einem renommierten Lehrkörper an.</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>Hinzu kommen rund zwanzig weitere Schulen, die sich an junge kunstorientierte Menschen richten, vom berühmten Lausanner Konservatorium bis zur Schule für Jazz und zeitgenössische Musik (EJMA).</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25880,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "c3557bee75dcc886",
+              "mime_type": "image/jpeg",
+              "copyright": "© Etudiants devant L'ECAL (Ecole cantonale d'Art de Lausanne)",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "c3557bee75dcc886.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/4_Building_Opening-Diploma-Exhibition.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Medizintechnik</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im biomedizinischen Bereich zählt Lausanne mehrere Spitzenforschungszentren, insbesondere für die Krebsforschung."
+          },
+          {
+            "type": "paragraph",
+            "value": "Hochkarätige Fachleute, universitäre Ausbildung, Forschende und Spitzeneinrichtungen bilden ein Kompetenzzentrum für Gesundheit, das über alle Voraussetzungen verfügt, um an fortgeschrittenen medizintechnischen Programmen teilzunehmen. So befindet sich die Stadt denn auch im Herzen des <em>Health Valley</em>, in jener Region am Genfersee, in der Hunderte von Forschungszentren und Unternehmen aus den Bereichen Biotechnologie und Medizintechnik angesiedelt sind."
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Bereich der Krebsforschung vereint das in der Nähe des CHUV gelegene, neue Kompetenzzentrum <a href=\"http://www.isrec.ch/agora\">AGORA</a> über 300 Ärztinnen, Forschende und Bio-Ingenieure unter einem Dach. Die innovative und offene Architektur des Gebäudes soll den Austausch zwischen den Disziplinen und damit die Lösungsfindung für die zahlreichen Herausforderungen fördern, die Krebskrankheiten mit sich bringen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25976,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "9db99f5640d17f5e",
+              "mime_type": "image/jpeg",
+              "copyright": "© Assemblee Generale de Lausanne Tourisme le 27 juin 2019 a l'AGORA /CHUV",
+              "metadata": {
+                "width": 1600,
+                "height": 1200,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1200\"",
+                "tags": "Tourisme; membre; association",
+                "description": null,
+                "file_name_from_url": "9db99f5640d17f5e.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/AG-2019-Agora-CHUV-KAZ-HD_025.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Kongresse und Veranstaltungen</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nebst den medizinischen Forschungstätigkeiten weltweiten Interesses in zahlreichen Fachgebieten empfängt Lausanne zahlreiche internationale Kongresse mit bis zu mehreren tausend Teilnehmenden. Die Stadt ist sich ihrer medizinischen Berufung ebenso bewusst wie der Tatsache, dass der Erfolg in diesem Bereich vor allem dem Engagement der Lausanner Ärzte, Professorinnen und Wissenschaftler zu verdanken ist, die bereit sind, die Organisation internationaler Treffen in Lausanne zu unterstützen und die Kandidatur der Stadt mitzutragen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Organisation von Kongressen hängt vom erfolgreichen Zusammenspiel zahlreicher Faktoren ab:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>Präsenz von Forschungszentren, Professorinnen und Professoren sowie weiteren bekannten Persönlichkeiten</li>\n<li>Logistik</li>\n<li>Infrastrukturen (Kongresszentren mit ausreichender Kapazität)</li>\n<li>Touristisches Know-how, von der Vorbereitung der Kandidatur über das Management von Akkreditierungen und der Buchung von Unterkünften bis hin zur Organisation von Freizeitaktivitäten für die Teilnehmenden</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>Die Abteilung für <a href=\"https://www.lausanne-montreux-congress.ch/de/\"><strong>Kongresse und Veranstaltungen von Lausanne Tourisme</strong></a> unterstützt die Gäste bei der Organisation ihres Anlasses. Weitere Informationen unter <a href=\"https://www.lausanne-tourisme.ch/de/business/\"><strong>www.lausanne-tourisme.ch/business</strong></a>.</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>Mit ihrer geografischen Lage im Herzen Europas, ihren Kongress- und Kompetenzzentren in den Bereichen Sport, Technologie, medizinische Forschung und Innovation ist die Stadt Lausanne eine anerkannte und beliebte Geschäftsdestination.</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26057,
+              "name": "Education, recherche et innovation à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1e344dc4753b381f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Congres PCMA - Professional Convention Management Association a eu lieu a Lausanne du 17 au 19 octobre 2021. Evenement au SwissTech Convention Center",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Congrès; Business; Affaires; Lausanne",
+                "description": null,
+                "file_name_from_url": "1e344dc4753b381f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Congres-PCMA-SwissTech-6.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "c3557bee75dcc886",
+          "copyright": "© Etudiants devant L'ECAL (Ecole cantonale d'Art de Lausanne)",
+          "public_name": {
+            "fr": "Education, recherche et innovation à Lausanne"
+          }
+        }
+      ],
+      "published_at": "1723672800",
+      "seo": {
+        "description": {
+          "fr": "Si Lausanne est une ville d’histoire et de tradition, elle n’en reste pas moins une ville ouverte sur le monde ; elle jouit d’ailleurs d’une situation géographique stratégique.",
+          "en": "Lausanne may be a city of history and tradition, but it's also one that's open to the world – and strategically located.",
+          "de": "Lausanne ist eine geschichts- und traditionsreiche, gleichzeitig aber auch weltoffene Stadt mit idealer Lage."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "education-recherche-et-innovation-a-lausanne",
+          "en": "education-research-and-innovation-in-lausanne",
+          "de": "bildung-forschung-und-innovation-in-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-education",
+          "public_name": {
+            "fr": "Éducation",
+            "en": "Education",
+            "de": "Bildung"
+          }
+        }
+      ]
+    }
+  }
+}

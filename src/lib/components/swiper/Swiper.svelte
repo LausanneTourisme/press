@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { onDestroy, onMount, type Snippet } from 'svelte';
+  import { onDestroy, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   // core version + navigation, pagination modules :
   import Swiper from 'swiper';
   import { Navigation, Pagination } from 'swiper/modules';
   // import Swiper and modules styles
-  import { ChevronLeft, ChevronRight } from 'lucide-svelte';
+  import { ChevronLeft, ChevronRight } from '@lucide/svelte';
   import 'swiper/css';
   import 'swiper/css/pagination';
 

@@ -1,0 +1,1222 @@
+{
+  "data": {
+    "item": {
+      "id": "303",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne, culturellement vôtre",
+        "en": "Lausanne, culturally yours",
+        "de": "Kultur ohne Ende in Lausanne"
+      },
+      "lead": {
+        "fr": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.  ",
+        "en": "An exhibition, a concert under the stars, a new theatrical creation... In Lausanne, culture comes in all its forms and all year round, to the delight of culture lovers. ",
+        "de": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf. "
+      },
+      "summary": {
+        "fr": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.",
+        "en": "An exhibition, a concert under the stars, a new theatrical creation… In Lausanne, culture comes in all its forms and all year round, to the delight of culture lovers.",
+        "de": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26137,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": "Lausanne, culturellement vôtre",
+              "cloudinary_id": "312830824198224f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Bejart Ballet Lausanne 2024 - spectacle Rhapsody au Theatre de Beaulieu",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Danse; Evénement; Musique; Lausanne",
+                "description": null,
+                "file_name_from_url": "312830824198224f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/BBL-Rhapsody.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "L’art de toute part"
+          },
+          {
+            "type": "paragraph",
+            "value": "Du design aux beaux-arts, en passant par le sport, l’histoire, les sciences, l’art brut et la photographie, à Lausanne, plus de 20 musées invitent les férus de culture à la découverte et à l’évasion. À l’automne, <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/la-nuit-des-musees-de-lausanne-et-pully/\">la Nuit des musées de Lausanne / Pully</a> – qui se propose d’ouvrir les portes de quelque 24 institutions culturelles jusque tard dans la nuit – est un immanquable."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Les musées incontournables de Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "Quoi de plus évident, lorsque vous vous trouvez au cœur de la Capitale Olympique, que d’aller visiter le musée dédié à l’histoire des Jeux ? Bienvenue au<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\"> Musée Olympique</a> – l’un des plus populaires de Suisse – qui présente de manière interactive et ludique les piliers de l’Olympisme, que sont le sport, l’art et la culture."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-des-beaux-arts-mcb-a/\">Lové dans son nouvel écrin urbain qu’est Plateforme 10, le Musée cantonal des Beaux-Arts</a> – riche des quelque 10’000 œuvres de sa superbe collection – donne à voir diverses expositions temporaires de qualité, tout au long de l’année."
+          },
+          {
+            "type": "paragraph",
+            "value": "Au sein du même écrin, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/mudac/\">mudac</a> – Musée cantonal de design et d’arts appliqués contemporains – pose son regard curieux et incisif sur ce qui façonne nos modes de vie, s’attachant à poser avec brio des questions délicieusement impertinentes."
+          },
+          {
+            "type": "paragraph",
+            "value": "Reconnu à l’international, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-de-lelysee/\">Photo Élysée</a> est l’un des plus importants musées du monde entièrement consacré à la photographie. Il a lui aussi pris ses quartiers au coeur de Plateforme 10, quartier des arts lausannois."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne abrite également la célèbre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinematheque-suisse/\">Cinémathèque suisse</a>, l’une des dix plus riches du monde grâce à ses collections de films, de photos, d’affiches et de documents. Elle propose une programmation éclectique à la découverte de la fabuleuse histoire du cinéma suisse et international."
+          },
+          {
+            "type": "paragraph",
+            "value": "Loin des codes artistiques conventionnels, découvrez les œuvres surprenantes et bouleversantes d’autodidactes au sein de la célèbre <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/collection-de-lart-brut/\">Collection de l’Art Brut</a>, autour de « l’inventeur » de l’art brut lui-même, l’artiste français Jean Dubuffet."
+          },
+          {
+            "type": "paragraph",
+            "value": "Situé dans les hauts de Lausanne, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/aquatis-aquarium-vivarium-lausanne/\">Aquatis</a>, le plus grand aquarium-vivarium d’Europe, vous propose d’explorer, non sans émerveillement, la faune et la flore d’eau douce des cinq continents."
+          },
+          {
+            "type": "paragraph",
+            "value": "Une palette de grandes émotions s’offre aux visiteurs de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/fondation-de-lhermitage/\">Fondation de l’Hermitage</a>, sublime demeure du XIX<sup>e</sup> siècle entourée de son parc, au détour de l’une des nombreuses expositions consacrées aux beaux-arts, de la Renaissance à nos jours."
+          },
+          {
+            "type": "paragraph",
+            "value": "Au pied de la Cathédrale, l’ancien bâtiment de l’évêché abrite depuis cent ans <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-historique-lausanne/\">le Musée historique de Lausanne</a>. Il présente aujourd’hui une nouvelle exposition permanente à la narration et à la scénographie totalement repensée."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-romain-lausanne-vidy/\">L’exposition permanente du Musée romain de Lausanne-Vidy</a> raconte la vie quotidienne des locaux s’habituant à la nouvelle culture de l’Empire romain, quelque vingt siècles en arrière, sur les rives de Lacus Lemannus."
+          },
+          {
+            "type": "paragraph",
+            "value": "La main humaine est un fabuleux instrument de préhension et de manipulation. C’est grâce à elle que l’homme a gagné la faculté de matérialiser les idées nées dans son cerveau. Cela méritait bien un musée dédié ! Le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-de-la-main-unil-chuv/\">Musée de la main</a> est installé tout près du Centre Hospitalier Universitaire Vaudois (CHUV)."
+          },
+          {
+            "type": "paragraph",
+            "value": "À tous ces incroyables musées viennent s’ajouter<a href=\"https://www.lausanne.ch/vie-pratique/culture/galeries-lieux-art\"> de nombreuses galeries d’art</a> grâce auxquelles la peinture, la sculpture et l’art appliqué ont pignon sur rue. Certaines d’entre elles se sont établies dans les anciens entrepôts du Flon, réhabilités en espaces d’art et de vie par des designers et architectes."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27076,
+                "name": "Lausanne, culturellement vôtre - MUDAC",
+                "public_name": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee - PHOTO Elysee",
+                "cloudinary_id": "uZhH5k1kh2MYNgyuRZlppe0HdSp6gthUimhAPZrp",
+                "mime_type": "image/jpeg",
+                "copyright": "© Nouveau quartier des arts Plateforme 10. Musee - mudac Musee",
+                "metadata": {
+                  "width": 1280,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1280\" height=\"1600\"",
+                  "tags": "Culture; Architecture; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "b3a4567b639fb7be.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/DSC_2680-Edit-1.jpg"
+                }
+              },
+              {
+                "id": 27077,
+                "name": "Lausanne, culturellement vôtre - Musee Olympique",
+                "public_name": "Facade-Musee-Olympique",
+                "cloudinary_id": "J2RCP1gGfeBm38zxrxOKzV2d3iwaX3KElF5P4l3g",
+                "mime_type": "image/jpeg",
+                "copyright": "© CIO/Lydie Nesvadba",
+                "metadata": {
+                  "width": 2500,
+                  "height": 1447,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2500\" height=\"1447\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "df45ee00dd91708a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Facade-Musee-Olympique.jpg"
+                }
+              },
+              {
+                "id": 26212,
+                "name": "Que faire à Lausanne quand il pleut ?",
+                "public_name": "Que faire à Lausanne quand il pleut ?",
+                "cloudinary_id": "509c5973d3bf5679",
+                "mime_type": "image/jpeg",
+                "copyright": "© Visite de l'exposition Train Zug Tren au Musee Cantonal des Beaux-Arts (MCBA) dans le quartier des arts de Plateforme 10\nEmmanuel Denis",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1065,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1065\"",
+                  "tags": "Famille; Visite; Exposition; Culture; Musée; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "509c5973d3bf5679.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/09/Visite-du-MCBA.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "La Cathédrale, emblème lausannois par excellence"
+          },
+          {
+            "type": "paragraph",
+            "value": "Érigée au XII<sup>e</sup> siècle sur la colline de l’ancienne Cité, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-cathedrale-de-lausanne/\">la Cathédrale de Lausanne</a> – la plus grande de Suisse – domine majestueusement la ville. Considérée comme l’un des plus beaux monuments d’art gothique en Europe, elle attire chaque année plus de 500’000 visiteurs."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>« C’est le guet, il a sonné dix, il a sonné dix… »</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A la nuit tombée, en vous baladant à travers les ruelles piétonnes de la Cité, ne soyez pas étonné d’entendre le cri du guet – ou de la guette – résonner par-delà les toits de la vieille ville. Juché au sommet du beffroi, il annonce chaque nuit les heures pleines, de 22h à 2h, perpétuant ainsi une tradition lausannoise vieille de plus de 600 ans."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25882,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": "Lausanne, culturellement vôtre",
+              "cloudinary_id": "5dfb42860874bfdf",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue generale sur la Cathedrale de Lausanne et le Lac Leman",
+              "metadata": {
+                "width": 1600,
+                "height": 946,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"946\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5dfb42860874bfdf.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Cathe.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Des résonances musicales multiples"
+          },
+          {
+            "type": "paragraph",
+            "value": "Il faut savoir écouter cette ville aux multiples résonances musicales, expression de la diversité des genres qui coexistent harmonieusement à Lausanne. Dans la gamme classique, l’<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/opera-de-lausanne/\">Opéra de Lausanne</a> arbore une façade aussi brillante que les virtuoses qui s’y produisent. Chanteurs, musiciens et danseurs classiques ou lyriques plébiscitent cette scène autant que le public. Créations « maison » et œuvres de renommée mondiale se succèdent, pour son plus grand plaisir."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.ocl.ch/\">L’Orchestre de Chambre de Lausanne (OCL)</a>, ensemble fétiche de l’Opéra de Lausanne, n’a cessé de déployer ses ailes ces dernières années. À sa tête depuis 2021, le virtuose du violon et chef d’orchestre français, Renaud Capuçon. L’OCL embrasse un vaste répertoire qui va des premiers baroques à la création contemporaine, et n’hésite pas à surprendre le public en se frottant à d’autres genres musicaux – comme lors d’une collaboration avec le fameux <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/mad-club/\">MAD CLUB</a> pour un mélange de musiques classique et électro."
+          },
+          {
+            "type": "paragraph",
+            "value": "Aux côtés de ces institutions de renom, la musique populaire sous toutes ses formes fait elle aussi battre de cœur de la Cité : clubs de jazz, cabarets, musiques du monde ou underground ne sont pas en reste !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25978,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": "Lausanne, culturellement vôtre",
+              "cloudinary_id": "8d98a522a189875a",
+              "mime_type": "image/jpeg",
+              "copyright": "© La salle de l'Opéra de Lausanne",
+              "metadata": {
+                "width": 1920,
+                "height": 1281,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent Kacozor",
+                "attr": "width=\"1920\" height=\"1281\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8d98a522a189875a.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Opera-Int.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Du théâtre pour tous les goûts"
+          },
+          {
+            "type": "paragraph",
+            "value": "Côté lac,<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\"> le Théâtre Vidy-Lausanne</a>, espace théâtral européen, offre près de 600 représentations chaque année. Présentées à Lausanne et à l’international, ses créations comme ses coproductions sont toujours la promesse d’expériences artistiques fortes."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dans le quartier de Malley, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/tkm-theatre-kleber-meleau/\">le Théâtre Kléber-Méleau</a>, lieu de création sans filtre installé au sein d’une ancienne usine à gaz, offre un contraste surprenant entre industrie et poésie. Au service des textes, classiques ou contemporains, ses pièces font la part belle à la musique."
+          },
+          {
+            "type": "paragraph",
+            "value": "Niché derrière la Cathédrale, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-petit-theatre/\">le Petit Théâtre</a> propose par ailleurs une excellente programmation pour le jeune public."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne est également une pépinière de petits théâtres d’essais et autres scènes ouvertes en tous genres ; on en dénombre plus d’une trentaine."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26059,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": "Lausanne, culturellement vôtre",
+              "cloudinary_id": "0b8848b6201ea421",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 528,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"528\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b8848b6201ea421.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Theatre_Vidy_1-min-768x528.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Un festival de culture"
+          },
+          {
+            "type": "paragraph",
+            "value": "À la belle saison, la ville s’embrase de sons, de formes et de couleurs ravissantes. Les divers festivals qui prennent leurs quartiers sont autant d’occasions de profiter des longues et belles soirées d’été où la chaleur se fait plus douce en s’attardant devant un concert ou un spectacle de plein air."
+          },
+          {
+            "type": "paragraph",
+            "value": "Chaque année, au mois de juillet, la ville fait notamment la part belle au <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/festival-de-la-cite-lausanne/\">Festival de la Cité</a>, événement culturel incontournable et gratuit, particulièrement apprécié des lausannois. Riverains, familles, touristes : au Festival de la Cité, chacun trouve son bonheur dans cette programmation qui marie savamment théâtre, musique, danse, cirque ou art de rue."
+          },
+          {
+            "type": "paragraph",
+            "value": "Profitez également du festival <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/rencontres-7e-art-lausanne/\">Rencontres 7e Art Lausanne</a>, un rendez-vous annuel initié par l’acteur lausannois Vincent Perez, qui célèbre la passion du cinéma au travers de nombreuses projections et invités de renom."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dans Programme Commun, le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-de-vidy/\">Théâtre de Vidy</a>, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/theatre-arsenic/\">l’Arsenic</a>, le Théâtre Sévelin 36 et la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Cinémathèque suisse</a> vous invitent à naviguer librement entre lieux et disciplines artistiques."
+          },
+          {
+            "type": "paragraph",
+            "value": "Au mois d’avril, le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/bdfil-festival-de-bande-dessinee-lausanne/\">festival de bande dessinée BDFIL</a> s’impose comme le rendez-vous annuel des amoureux de bande dessinée."
+          },
+          {
+            "type": "paragraph",
+            "value": "En mai, le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/chocolate-festival/\">Chocolate Festival</a> célèbre la musique électro au bord du lac Léman avec des artistes connus ou émergents."
+          },
+          {
+            "type": "paragraph",
+            "value": "En juin, le Festival <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/les-printemps-de-sevelin/\">Les Printemps de Sévelin</a> propose un programme de danse contemporaine mêlant spectacles d’envergure internationale et créations suisses."
+          },
+          {
+            "type": "paragraph",
+            "value": "À l’automne, le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/lausanne-underground-film-music-festival/\">Lausanne Underground Film &amp; Music Festival (LUFF)</a> s’amuse à caresser son public à rebrousse-poil."
+          },
+          {
+            "type": "paragraph",
+            "value": "Le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/jazzonze-festival-lausanne/\">JazzOnze+ Festival</a> vous emmène à la découverte de la diversité, de la richesse et de l’énergie créative du jazz d’aujourd’hui."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dédié aux amateurs de musique classique, le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/festival-bach-de-lausanne/\">Festival Bach de Lausanne</a> met à l’honneur les œuvres de Bach et de ses contemporains."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/evenement/les-urbaines/\">Les Urbaines</a>, festival interdisciplinaire et souvent indiscipliné, offre l’accès gratuit à une sélection de créations contemporaines étonnantes."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27079,
+                "name": "Lausanne, culturellement vôtre - Festival de la Cite",
+                "public_name": "Festival de la Cite edition 2013",
+                "cloudinary_id": "RUKEEKWrIu5zzlALxv2IIPovoNqmTfZEtSxSZ29S",
+                "mime_type": "image/jpeg",
+                "copyright": "© Festival de la Cite edition 2013",
+                "metadata": {
+                  "width": 1066,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1066\" height=\"1600\"",
+                  "tags": "Foule; Festival; Culture; Vieille-vie",
+                  "description": null,
+                  "file_name_from_url": "e2c90b7f160a856c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-Cite.jpg"
+                }
+              },
+              {
+                "id": 27027,
+                "name": "Lausanne en famille",
+                "public_name": "Lausanne en famille",
+                "cloudinary_id": "hZq7srTnlxnakbstOqiV89rfiHwmFBd4YMejRV3R",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne en famille",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1600\"",
+                  "tags": "Illumination; Lausanne; Lumières; Architecture; Hiver; Noël",
+                  "description": null,
+                  "file_name_from_url": "7461614d865347d3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Lumiere-Riponne.jpg"
+                }
+              },
+              {
+                "id": 26462,
+                "name": "Les phrases les plus entendues à Lausanne",
+                "public_name": "Les phrases les plus entendues à Lausanne",
+                "cloudinary_id": "d9abb5e9cb932bbc",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Spectacle; Manifestation; Evénement; Festival; Cité;",
+                  "description": null,
+                  "file_name_from_url": "d9abb5e9cb932bbc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-de-la-Cite-concert-1.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26137,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "312830824198224f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Bejart Ballet Lausanne 2024 - spectacle Rhapsody au Theatre de Beaulieu",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Danse; Evénement; Musique; Lausanne",
+                "description": null,
+                "file_name_from_url": "312830824198224f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/BBL-Rhapsody.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Art from every angle"
+          },
+          {
+            "type": "paragraph",
+            "value": "From design to fine art, sport, history, science, art brut and photography, more than 20 museums in Lausanne invite lovers of culture to discover and explore new worlds. In autumn, the<a href=\"https://www.lausanne-tourisme.ch/en/event/lausanne-and-pully-museum-night/\"> Lausanne / Pully Museum Night</a> – when some 24 cultural institutions open their doors late into the night … is a must."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Lausanne’s must-see museums"
+          },
+          {
+            "type": "paragraph",
+            "value": "What could be more obvious, when you find yourself in the heart of the Olympic Capital, than to visit the museum dedicated to the history of the Games? Welcome to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">Olympic Museum</a> – one of the most popular in Switzerland – that presents the cornerstones of Olympism – sport, art and culture – in an interactive and entertaining way."
+          },
+          {
+            "type": "paragraph",
+            "value": "Internationally renowned, <a href=\"https://www.lausanne-tourisme.ch/en/explore/musee-de-lelysee/\">Photo Élysée</a> is one of the world’s leading museums devoted entirely to photography. It has now taken up residence at the heart of Plateforme 10, Lausanne’s brand new arts district."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/mudac/\">Mudac</a> – the Museum of Contemporary Design and Applied Arts – takes an inquisitive and incisive look at the objects that shape our lives, brilliantly asking deliciously impertinent questions."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-museum-of-fine-arts-mcb-a/\">Nestling in its new Plateforme 10 urban setting, the Cantonal Museum of Fine Arts</a> – with its superb collection of some 10,000 works – presents a range of high-quality temporary exhibitions throughout the year."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is also home to the famous<a href=\"https://www.lausanne-tourisme.ch/en/explore/swiss-film-archives/\"> Swiss Film Archives</a>, one of the ten richest in the world thanks to its collections of films, photos, posters and documents. Its eclectic programme is an invitation to explore the fabulous history of Swiss and international cinema."
+          },
+          {
+            "type": "paragraph",
+            "value": "Far from conventional artistic codes, discover the surprising and moving works of self-taught artists in the famous <a href=\"https://www.lausanne-tourisme.ch/en/explore/collection-de-lart-brut/\">Collection de l’Art Brut</a>, around the “inventor” of Art Brut himself, French artist Jean Dubuffet."
+          },
+          {
+            "type": "paragraph",
+            "value": "At <a href=\"https://www.lausanne-tourisme.ch/en/explore/aquatis-aquarium-vivarium-lausanne/\">Aquatis</a>, the largest aquarium-vivarium in Europe located in the heights of the town, you can explore and marvel at the freshwater fauna and flora of the five continents."
+          },
+          {
+            "type": "paragraph",
+            "value": "Visitors to the<a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\"> Fondation de l’Hermitage</a>, a sublime nineteenth-century mansion surrounded by parkland, can experience a whole range of emotions as they contemplate one of the many exhibitions devoted to fine arts, from the Renaissance to the present day."
+          },
+          {
+            "type": "paragraph",
+            "value": "At the foot of the Cathedral, the former bishop’s palace has been home to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-history-museum/\">Lausanne History Museum</a> for a hundred years. It now features a new permanent exhibition with a completely redesigned narrative and scenography."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/roman-museum-lausanne-vidy/\">Roman museum of Lausanne-Vidy</a> tells the story of the daily lives of local people adjusting to the new culture of the Roman Empire, some twenty centuries ago, on the shores of Lacus Lemannus."
+          },
+          {
+            "type": "paragraph",
+            "value": "The human hand is a fabulous instrument for grasping and manipulating. It is thanks to the hand that man has gained the ability to materialise the ideas born in his brain. And that deserves a museum dedicated to it! The <a href=\"https://www.lausanne-tourisme.ch/en/explore/museum-of-the-hand-unil-chuv/\">Hand Museum</a> is located right next to the University Hospital of Lausanne (CHUV)."
+          },
+          {
+            "type": "paragraph",
+            "value": "In addition to all these incredible museums, there are <a href=\"https://www.lausanne.ch/vie-pratique/culture/galeries-lieux-art\">numerous art galleries</a> where painting, sculpture and applied art have a foothold. Some of them have set up shop in the old Flon warehouses, which designers and architects have converted into spaces dedicated to activities and art."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27076,
+                "name": "Lausanne, culturellement vôtre - MUDAC",
+                "public_name": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee - PHOTO Elysee",
+                "cloudinary_id": "uZhH5k1kh2MYNgyuRZlppe0HdSp6gthUimhAPZrp",
+                "mime_type": "image/jpeg",
+                "copyright": "© Nouveau quartier des arts Plateforme 10. Musee - mudac Musee",
+                "metadata": {
+                  "width": 1280,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1280\" height=\"1600\"",
+                  "tags": "Culture; Architecture; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "b3a4567b639fb7be.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/DSC_2680-Edit-1.jpg"
+                }
+              },
+              {
+                "id": 27077,
+                "name": "Lausanne, culturellement vôtre - Musee Olympique",
+                "public_name": "Facade-Musee-Olympique",
+                "cloudinary_id": "J2RCP1gGfeBm38zxrxOKzV2d3iwaX3KElF5P4l3g",
+                "mime_type": "image/jpeg",
+                "copyright": "© CIO/Lydie Nesvadba",
+                "metadata": {
+                  "width": 2500,
+                  "height": 1447,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2500\" height=\"1447\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "df45ee00dd91708a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Facade-Musee-Olympique.jpg"
+                }
+              },
+              {
+                "id": 26212,
+                "name": "Que faire à Lausanne quand il pleut ?",
+                "public_name": null,
+                "cloudinary_id": "509c5973d3bf5679",
+                "mime_type": "image/jpeg",
+                "copyright": "© Visite de l'exposition Train Zug Tren au Musee Cantonal des Beaux-Arts (MCBA) dans le quartier des arts de Plateforme 10\nEmmanuel Denis",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1065,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1065\"",
+                  "tags": "Famille; Visite; Exposition; Culture; Musée; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "509c5973d3bf5679.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/09/Visite-du-MCBA.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "The Cathedral, Lausanne’s landmark among landmarks"
+          },
+          {
+            "type": "paragraph",
+            "value": "Built in the 12<sup>th</sup> century on the hill of the ancient Cité,<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-cathedral/\"> Lausanne Cathedral</a> – the largest in Switzerland – majestically overlooks the city. Considered one of the finest Gothic monuments in Europe, it attracts more than 500,000 visitors every year."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>“It’s the watchman/watchwoman, the hour of 10 has struck…”</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "At nightfall, as you stroll through the pedestrianised streets of the Cité, don’t be surprised to hear the watch’s cry echoing over the old town’s rooftops. Perched at the top of the belfry, he or she calls out the full hours every night, from 10 pm to 2 am, perpetuating a Lausanne tradition that goes back more than 600 years."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25882,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "5dfb42860874bfdf",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue generale sur la Cathedrale de Lausanne et le Lac Leman",
+              "metadata": {
+                "width": 1600,
+                "height": 946,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"946\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5dfb42860874bfdf.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Cathe.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Multiple musical resonances"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s worth lending an ear to this city’s multiple musical resonances, an expression of the diversity of genres that coexist harmoniously in Lausanne. In the classical range, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-opera-house/\">Lausanne Opera House</a> boasts a façade as brilliant as the virtuosos who perform on its stage. Classical and operatic singers, musicians and dancers love this stage as much as the public. In-house creations and world-renowned works follow one another, to the delight of the public."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"http://www.ocl.ch/\">The Lausanne Chamber Orchestra (OCL)</a>, the Lausanne Opera House’s flagship ensemble, has continued to spread its wings in recent years. Since 2021, it has been led by French violin virtuoso and conductor Renaud Capuçon. The OCL embraces a vast repertoire ranging from early baroque to contemporary works, and has no qualms about surprising audiences by experimenting with other musical genres – such as a collaboration with the famous <a href=\"https://www.lausanne-tourisme.ch/en/explore/mad-club/\">MAD CLUB</a> to mix classical and electro music."
+          },
+          {
+            "type": "paragraph",
+            "value": "Alongside these renowned institutions, popular music in all its forms also makes the heart of the Cité beat: jazz clubs, cabarets, world music and underground music are not to be outdone!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25978,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "8d98a522a189875a",
+              "mime_type": "image/jpeg",
+              "copyright": "© La salle de l'Opéra de Lausanne",
+              "metadata": {
+                "width": 1920,
+                "height": 1281,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent Kacozor",
+                "attr": "width=\"1920\" height=\"1281\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8d98a522a189875a.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Opera-Int.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Theatre to cater for all tastes"
+          },
+          {
+            "type": "paragraph",
+            "value": "On the lakeside, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Théâtre Vidy-Lausanne</a>, a European theatre centre, puts on nearly 600 performances every year. Presented in Lausanne and abroad, its productions and co-productions always promise powerful artistic experiences."
+          },
+          {
+            "type": "paragraph",
+            "value": "In the Malley District, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/tkm-kleber-meleau-theatre/\">Théâtre Kléber-Méleau</a>, an unfiltered creative space housed in a former gasworks, offers a surprising contrast between industry and poetry. Its plays are based on both classical and contemporary texts, and place great emphasis on music."
+          },
+          {
+            "type": "paragraph",
+            "value": "Tucked in behind the Cathedral,<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-petit-theatre/\"> the Petit Théâtre</a> offers an excellent programme for young audiences."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is also a breeding ground for small experimental theatres and open stages of all kinds; there are more than thirty of them."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26059,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "0b8848b6201ea421",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 528,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"528\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b8848b6201ea421.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Theatre_Vidy_1-min-768x528.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "A festival of culture"
+          },
+          {
+            "type": "paragraph",
+            "value": "In the summer months, the city is ablaze with sounds, shapes and delightful colours. The various festivals that take place here are all opportunities to enjoy the long, beautiful summer evenings, when the temperature is cooler and you can linger over a concert or an open-air show."
+          },
+          {
+            "type": "paragraph",
+            "value": "Every year in July, the city puts on the<a href=\"https://www.lausanne-tourisme.ch/en/event/festival-de-la-cite-lausanne/\"> Festival de la Cité</a>, a not-to-be-missed free cultural event that is particularly popular with Lausanne residents. Whether you’re a local, a family or a tourist, there’s something for everyone at the Festival de la Cité, with a programme that skilfully combines theatre, music, dance, circus acts and street art."
+          },
+          {
+            "type": "paragraph",
+            "value": "You can also take advantage of the <a href=\"https://www.lausanne-tourisme.ch/en/event/rencontres-7e-art-lausanne/\">Think Cinema Lausanne (Rencontres 7e Art) festival</a>, an annual event initiated by Lausanne actor Vincent Perez, which celebrates the passion for cinema through a host of screenings and renowned guests."
+          },
+          {
+            "type": "paragraph",
+            "value": "In Programme Commun, the <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-de-vidy/\">Théâtre de Vidy</a>, <a href=\"https://www.lausanne-tourisme.ch/en/explore/theatre-arsenic/\">Arsenic</a>, Théâtre Sévelin 36 and <a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">Swiss Film Archives</a> invite you to move freely between artistic venues and disciplines."
+          },
+          {
+            "type": "paragraph",
+            "value": "In April, the<a href=\"https://www.lausanne-tourisme.ch/en/event/bdfil-lausanne-comic-strip-festival/\"> BDFIL comic strip festival</a> becomes the annual rendezvous for comic strip lovers."
+          },
+          {
+            "type": "paragraph",
+            "value": "In May, the<a href=\"https://www.lausanne-tourisme.ch/en/event/chocolate-festival/\"> Chocolate Festival</a> celebrates electro music on the shores of Lake Geneva, with both well-known and emerging artists."
+          },
+          {
+            "type": "paragraph",
+            "value": "In June, the <a href=\"https://www.lausanne-tourisme.ch/en/event/les-printemps-de-sevelin/\">Festival Les Printemps de Sévelin</a> offers a programme of contemporary dance combining international performances and Swiss premieres."
+          },
+          {
+            "type": "paragraph",
+            "value": "In the autumn, the <a href=\"https://www.lausanne-tourisme.ch/en/event/lausanne-underground-film-music-festival/\">Lausanne Underground Film &amp; Music Festival (LUFF)</a> has fun ruffling the feathers of its audience."
+          },
+          {
+            "type": "paragraph",
+            "value": "The <a href=\"https://www.lausanne-tourisme.ch/en/event/jazzonze-festival-lausanne/\">JazzOnze+ Festival</a> takes you on a discovery of the diversity, richness and creative energy of today’s jazz."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dedicated to classical music lovers, the <a href=\"https://www.lausanne-tourisme.ch/en/event/festival-bach/\">Lausanne Bach Festival</a> features works by Bach and his contemporaries."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/event/les-urbaines/\">Les Urbaines</a>, an interdisciplinary and often undisciplined festival, offers free access to a selection of astonishing contemporary creations."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27079,
+                "name": "Lausanne, culturellement vôtre - Festival de la Cite",
+                "public_name": "Festival de la Cite edition 2013",
+                "cloudinary_id": "RUKEEKWrIu5zzlALxv2IIPovoNqmTfZEtSxSZ29S",
+                "mime_type": "image/jpeg",
+                "copyright": "© Festival de la Cite edition 2013",
+                "metadata": {
+                  "width": 1066,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1066\" height=\"1600\"",
+                  "tags": "Foule; Festival; Culture; Vieille-vie",
+                  "description": null,
+                  "file_name_from_url": "e2c90b7f160a856c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-Cite.jpg"
+                }
+              },
+              {
+                "id": 27027,
+                "name": "Lausanne en famille",
+                "public_name": "Lausanne en famille",
+                "cloudinary_id": "hZq7srTnlxnakbstOqiV89rfiHwmFBd4YMejRV3R",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne en famille",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1600\"",
+                  "tags": "Illumination; Lausanne; Lumières; Architecture; Hiver; Noël",
+                  "description": null,
+                  "file_name_from_url": "7461614d865347d3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Lumiere-Riponne.jpg"
+                }
+              },
+              {
+                "id": 26462,
+                "name": "Les phrases les plus entendues à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "d9abb5e9cb932bbc",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Spectacle; Manifestation; Evénement; Festival; Cité;",
+                  "description": null,
+                  "file_name_from_url": "d9abb5e9cb932bbc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-de-la-Cite-concert-1.jpg"
+                }
+              }
+            ]
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26137,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "312830824198224f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Bejart Ballet Lausanne 2024 - spectacle Rhapsody au Theatre de Beaulieu",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Culture; Danse; Evénement; Musique; Lausanne",
+                "description": null,
+                "file_name_from_url": "312830824198224f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/BBL-Rhapsody.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Kunst aus jedem Blickwinkel</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Von Design und bildender Kunst über Sport, Geschichte und Wissenschaft bis hin zu Art Brut und Fotografie laden in Lausanne über 20 Museen zum Entdecken und Verweilen ein. Ein Muss im Herbst ist die <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/die-museumsnacht-in-lausanne-und-pully/\">Museumsnacht in Lausanne und Pully</a>, bei der die Türen von rund 24 kulturellen Einrichtungen bis spät in die Nacht geöffnet sind."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<b data-olk-copy-source=\"MailCompose\">Bedeutendste Lausanner Museen</b>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Was liegt näher, als in der Olympia-Hauptstadt das Museum zu besuchen, das der Geschichte der Olympischen Spiele gewidmet ist? Willkommen im<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\"> Olympischen Museum</a>, einem der beliebtesten Schweizer Museen, das die drei Pfeiler des Olympismus ‒ Sport, Kunst und Kultur ‒ auf interaktive und unterhaltsame Weise erlebbar macht."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-kunstmuseum-mcba/\">Das im neuen, urban geprägten Kunstviertel Plateforme 10 untergebrachte Kantonale Kunstmuseum</a> zeigt das ganze Jahr über hochwertige Wechselausstellungen mit Exponaten aus seiner reichen Sammlung von rund 10 000 Werken."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/mudac-museum-fur-design-und-angewandte-kunst/\">Das mudac, </a>Kantonales Museum für Design und angewandte Gegenwartskunst, wirft einen ebenso neugierigen wie scharfen Blick auf Alltagsgegenstände und stellt mit Bravour und Biss treffende Fragen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das international renommierte <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/musee-de-lelysee/\">Photo Élysée</a> ist eines der bedeutendsten Museen für Fotografie auf der Welt. Heute befindet es sich im brandneuen Lausanner Kunstviertel Plateforme 10."
+          },
+          {
+            "type": "paragraph",
+            "value": "In Lausanne befindet sich auch das berühmte <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schweizerisches-filmarchiv/\">Schweizer Filmarchiv</a>, das mit seinen Film-, Foto-, Plakat- und Dokumentarchiven zu den weltweit umfassendsten Archiven seiner Art gehört. Es bietet ein vielseitiges Programm, das die fabelhafte Geschichte der in- und ausländischen Filmwelt erzählt."
+          },
+          {
+            "type": "paragraph",
+            "value": "Fernab konventioneller künstlerischer Codes entdecken die Besucherinnen und Besucher in der berühmten <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/collection-de-lart-brut/\">Collection de l’Art Brut</a> überraschende und bewegende Werke von autodidaktischen Kunstschaffenden, die vom Begründer der Art Brut selbst, dem französischen Künstler Jean Dubuffet, gefördert wurden."
+          },
+          {
+            "type": "paragraph",
+            "value": "In den Anhöhen von Lausanne lädt <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/aquatis-aquarium-vivarium-lausanne/\">Aquatis</a>, das grösste Aquarium und Vivarium Europas, auf eine Entdeckungstour der Süsswasserfauna und -flora durch alle Kontinente ein."
+          },
+          {
+            "type": "paragraph",
+            "value": "Die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Fondation de l’Hermitage</a>, ein prächtiges Herrenhaus aus dem 19. Jahrhundert mit herrlichem Park, weckt mit ihren zahlreichen Kunstausstellungen von der Renaissance bis heute viele Emotionen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Im ehemaligen Bischofsgebäude am Fuss der Kathedrale befindet sich seit einem Jahrhundert das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/historisches-museum-lausanne/\">Historisches Museum Lausanne</a>. Es wurde unlängst einer Renovierung unterzogen und wartet nun mit einer Dauerausstellung mit einer völlig neuen Gestaltung und Szenografie auf."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/romisches-museum-vidy/\">Römisches Museum Lausanne-Vidy</a> erzählt vom Alltagsleben der Menschen, die sich vor rund 20 Jahrhunderten am Ufer des Lacus Lemannus an die neue Kultur des Römischen Reichs gewöhnen mussten."
+          },
+          {
+            "type": "paragraph",
+            "value": "Was für ein fabelhaftes Instrument zum Greifen und Handhaben die menschliche Hand doch ist! Dank ihr konnte der Mensch unzählige in seinem Kopf geborene Ideen verwirklichen. Ein ihr gewidmetes Museum hat sie mehr als verdient! Das Musée de la main befindet sich in unmittelbarer Nähe des Universitätsspitals CHUV."
+          },
+          {
+            "type": "paragraph",
+            "value": "Zu all diesen faszinierenden Museen kommen <a href=\"https://www.lausanne.ch/vie-pratique/culture/galeries-lieux-art\">zahlreiche Kunstgalerien</a> hinzu, die ein Schaufenster für Malerei, Skulpturen und angewandte Kunst bieten. Einige von ihnen haben sich in den alten Lagerhäusern im Flon-Viertel niedergelassen, die von Designerinnen und Architekten zu Kunst- und Lebensräumen umgestaltet wurden."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27076,
+                "name": "Lausanne, culturellement vôtre - MUDAC",
+                "public_name": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee",
+                "cloudinary_id": "uZhH5k1kh2MYNgyuRZlppe0HdSp6gthUimhAPZrp",
+                "mime_type": "image/jpeg",
+                "copyright": "© Nouveau quartier des arts Plateforme 10. Musee - mudac Musee",
+                "metadata": {
+                  "width": 1280,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1280\" height=\"1600\"",
+                  "tags": "Culture; Architecture; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "b3a4567b639fb7be.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/DSC_2680-Edit-1.jpg"
+                }
+              },
+              {
+                "id": 27077,
+                "name": "Lausanne, culturellement vôtre - Musee Olympique",
+                "public_name": "Facade-Musee-Olympique",
+                "cloudinary_id": "J2RCP1gGfeBm38zxrxOKzV2d3iwaX3KElF5P4l3g",
+                "mime_type": "image/jpeg",
+                "copyright": "© CIO/Lydie Nesvadba",
+                "metadata": {
+                  "width": 2500,
+                  "height": 1447,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2500\" height=\"1447\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "df45ee00dd91708a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/05/Facade-Musee-Olympique.jpg"
+                }
+              },
+              {
+                "id": 26212,
+                "name": "Que faire à Lausanne quand il pleut ?",
+                "public_name": null,
+                "cloudinary_id": "509c5973d3bf5679",
+                "mime_type": "image/jpeg",
+                "copyright": "© Visite de l'exposition Train Zug Tren au Musee Cantonal des Beaux-Arts (MCBA) dans le quartier des arts de Plateforme 10\nEmmanuel Denis",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1065,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1065\"",
+                  "tags": "Famille; Visite; Exposition; Culture; Musée; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "509c5973d3bf5679.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/09/Visite-du-MCBA.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Die Kathedrale, das Wahrzeichen von Lausanne schlechthin"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kathedrale-von-lausanne/\">Kathedrale von Lausanne</a> wurde im 12. Jahrhundert auf dem Hügel der alten Cité errichtet. Die grösste Kirche der Schweiz thront majestätisch über der Stadt. Sie gilt als eines der schönsten gotischen Bauwerke Europas und zieht jedes Jahr mehr als 500 000 Besucherinnen und Besucher an."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>„Hört den Turmwächter, es hat zehn geschlagen, es hat zehn geschlagen.“</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn Sie nach Einbruch der Dunkelheit durch die Fussgängerzone der Cité schlendern, sollten Sie sich nicht wundern, wenn Sie den Ruf des Turmwächters über den Dächern der Altstadt hallen hören. Zuoberst auf dem Glockenturm ruft er von 10 Uhr abends bis 2 Uhr morgens die vollen Stunden aus und setzt damit eine mehr als 600 Jahre alte Lausanner Tradition fort."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25882,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "5dfb42860874bfdf",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vue generale sur la Cathedrale de Lausanne et le Lac Leman",
+              "metadata": {
+                "width": 1600,
+                "height": 946,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"946\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5dfb42860874bfdf.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Cathe.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Vielfältige musikalische Resonanz</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Es ist eine wahre Kunst, die vielseitige musikalische Resonanz in Lausanne auszumachen, die sich durch ein harmonisches Zusammenspiel der Stilrichtungen auszeichnet. Bei der klassischen Musik glänzt die Fassade der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/opernhaus-in-lausanne/\">Oper von Lausanne</a> ebenso wie die Virtuosen, die auf ihrer Bühne auftreten. Gesang, Musik und Tanz in klassischer oder lyrischer Form finden grossen Anklang auf dieser Bühne und begeistern das Publikum. Eigene Kreationen und weltberühmte Werke wechseln sich zur grossen Freude des Publikums ab."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"http://www.ocl.ch/\">Das Kammerorchester (OCL)</a>, das Lieblingsorchester der Oper von Lausanne, hat seinen Zauber in den letzten Jahren immer weiter entfaltet. Seit 2021 wird es vom französischen Geigenvirtuosen und Dirigenten Renaud Capuçon geleitet. Das OCL ist bekannt für sein breites Repertoire, vom Frühbarock bis hin zu zeitgenössischem Schaffen, und überrascht das Publikum immer wieder mit Exkursionen in andere Musikstile, beispielsweise im Rahmen einer Zusammenarbeit mit dem legendären<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/mad-club/\"> MAD CLUB</a> für eine Mischung aus klassischer und Elektromusik."
+          },
+          {
+            "type": "paragraph",
+            "value": "Neben diesen renommierten Institutionen lässt aber auch die populäre Musik in all ihren Formen das Herz der Stadt höherschlagen: Jazzclubs, Kabaretts, Weltmusik und Underground-Musik sind allgegenwärtig!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25978,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "8d98a522a189875a",
+              "mime_type": "image/jpeg",
+              "copyright": "© La salle de l'Opéra de Lausanne",
+              "metadata": {
+                "width": 1920,
+                "height": 1281,
+                "mimeType": "image/jpeg",
+                "copyright": "Laurent Kacozor",
+                "attr": "width=\"1920\" height=\"1281\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8d98a522a189875a.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Opera-Int.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Theater für jeden Geschmack</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das am Seeufer gelegene <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\"> Theater Vidy-Lausanne</a>, ein europäischer Theaterraum, bietet jedes Jahr rund 600 Aufführungen. Die in Lausanne und international aufgeführten Eigenkreationen und Koproduktionen versprechen stets starke künstlerische Erlebnisse."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/tkm-theater-kleber-meleau/\">Theater Kléber-Méleau</a> im Stadtviertel Malley ist ein Raum für ungefiltertes, kreatives Schaffen in einem ehemaligen Gaswerk und bietet einen überraschenden Kontrast zwischen Industrie und Poesie. Die Stücke bedienen sich sowohl klassischer als auch zeitgenössischer Texte, wobei die Musik immer eine wichtige Rolle spielt."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das hinter der Kathedrale gelegene <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-petit-theatre/\">Petit Théâtre</a> bietet ein ausgezeichnetes Programm für das junge Publikum."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne zählt ausserdem über 30 kleine experimentelle Theater und offene Bühnen aller Art."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26059,
+              "name": "Lausanne, culturellement vôtre",
+              "public_name": null,
+              "cloudinary_id": "0b8848b6201ea421",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 528,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"528\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0b8848b6201ea421.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Theatre_Vidy_1-min-768x528.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Kulturelle Festivals  </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In den Sommermonaten ist die Stadt voller Klänge, Formen und herrlicher Farben. Die vielen Festivals bieten wunderbare Gelegenheiten, die schönen, langen Sommerabende bei angenehmeren Temperaturen bei einem Konzert oder einer Open-Air-Show zu geniessen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Jedes Jahr im Juli organisiert die Stadt das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/festival-de-la-cite-lausanne/\">Festival de la Cité</a>, ein bei den Einheimischen sehr beliebter kostenloser Kulturevent. Ob Einheimische, Familien oder Gäste, beim Festival de la Cité ist für jeden etwas dabei. Das Programm kombiniert geschickt Theater, Musik, Tanz, Zirkus und Strassenkunst."
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein weiteres jährlich stattfindendes Festival sind die <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/rencontres-7e-art-lausanne/\">Rencontres 7e Art Lausanne</a>. Es wurde vom Lausanner Schauspieler Vincent Perez initiiert und stellt die Filmkunst mit zahlreichen Filmvorführungen und namhaften Gästen ins Rampenlicht."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-theater/\">Theater Vidy</a>, <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/theatre-arsenic/\">Arsenic</a>, das Theater Sévelin 36 und das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schweizerisches-filmarchiv/\">Schweizer Filmarchiv</a> laden im Rahmen des Festivals Programme Commun ein, sich frei zwischen Kunstorten und -disziplinen zu bewegen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Im April wird das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/bdfil-comic-festival-lausanne/\">Comicfestival BDFIL</a> zum jährlichen Treffpunkt für alle, die Comics lieben."
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Mai ertönt am Seeufer am <a href=\"https://www.lausanne-tourisme.ch/en/event/chocolate-festival/\">Chocolate Festival</a> Elektromusik mit bekannten und aufstrebenden Musikerinnen und Musikern."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Festival <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/les-printemps-de-sevelin/\">Les Printemps de Sévelin</a> wartet im Juni mit internationalen Darbietungen und Schweizer Aufführungen in zeitgenössischem Tanz auf."
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Herbst verwöhnt das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/lausanne-underground-film-music-festival/\">Lausanne Underground Film &amp; Music Festival (LUFF)</a> sein Publikum mit besonderen Häppchen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/jazzonze-festival-lausanne/\">JazzOnze+ Festival</a> lädt auf eine Entdeckungsreise durch die Vielfalt, den Reichtum und den kreativen Geist der zeitgenössischen Jazzmusik ein."
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/festival-bach/\">Festival Bach de Lausanne</a> stellt die Werke von Bach und seiner Zeitgenossen in den Mittelpunkt und richtet sich an alle, die klassische Musik lieben."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/event/les-urbaines/\">Les Urbaines</a> ein interdisziplinäres und eher undiszipliniertes Festival, bringt sein Publikum mit einer Auswahl zeitgenössischer Kreationen kostenlos zum Staunen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27079,
+                "name": "Lausanne, culturellement vôtre - Festival de la Cite",
+                "public_name": "Festival de la Cite edition 2013",
+                "cloudinary_id": "RUKEEKWrIu5zzlALxv2IIPovoNqmTfZEtSxSZ29S",
+                "mime_type": "image/jpeg",
+                "copyright": "© Festival de la Cite edition 2013",
+                "metadata": {
+                  "width": 1066,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1066\" height=\"1600\"",
+                  "tags": "Foule; Festival; Culture; Vieille-vie",
+                  "description": null,
+                  "file_name_from_url": "e2c90b7f160a856c.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-Cite.jpg"
+                }
+              },
+              {
+                "id": 27027,
+                "name": "Lausanne en famille",
+                "public_name": "Lausanne en famille",
+                "cloudinary_id": "hZq7srTnlxnakbstOqiV89rfiHwmFBd4YMejRV3R",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne en famille",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1600\"",
+                  "tags": "Illumination; Lausanne; Lumières; Architecture; Hiver; Noël",
+                  "description": null,
+                  "file_name_from_url": "7461614d865347d3.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Lausanne-Lumiere-Riponne.jpg"
+                }
+              },
+              {
+                "id": 26462,
+                "name": "Les phrases les plus entendues à Lausanne",
+                "public_name": null,
+                "cloudinary_id": "d9abb5e9cb932bbc",
+                "mime_type": "image/jpeg",
+                "copyright": "© ",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Spectacle; Manifestation; Evénement; Festival; Cité;",
+                  "description": null,
+                  "file_name_from_url": "d9abb5e9cb932bbc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Festival-de-la-Cite-concert-1.jpg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "5dfb42860874bfdf",
+          "copyright": "© Vue generale sur la Cathedrale de Lausanne et le Lac Leman",
+          "public_name": {
+            "fr": "Lausanne, culturellement vôtre"
+          }
+        }
+      ],
+      "published_at": "1723703326",
+      "seo": {
+        "description": {
+          "fr": "Une exposition, un concert sous les étoiles, une création théâtrale inédite… À Lausanne, la culture se décline sous toutes ses formes et tout au long de l’année, pour le plus grand plaisir des amateurs.  ",
+          "en": "An exhibition, a concert under the stars, a new theatrical creation... In Lausanne, culture comes in all its forms and all year round, to the delight of culture lovers. ",
+          "de": "Eine Ausstellung, ein Konzert unter dem Sternenhimmel oder ein innovatives Theaterstück: Zur Freude aller Kulturliebenden ist Kultur in Lausanne in all ihren Facetten das ganze Jahr über Trumpf. "
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-culturellement-votre",
+          "en": "lausanne-culturally-yours",
+          "de": "kultur-ohne-ende-in-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-culture",
+          "public_name": {
+            "fr": "Culture",
+            "en": "Culture",
+            "de": "Kultur"
+          }
+        }
+      ]
+    }
+  }
+}

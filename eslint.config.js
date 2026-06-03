@@ -32,5 +32,14 @@ export default ts.config(
         parser: ts.parser
       }
     }
+  },
+  {
+    rules: {
+      'svelte/no-at-html-tags': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^_$', argsIgnorePattern: '^_$' }
+      ]
+    }
   }
 );

@@ -1,0 +1,1339 @@
+{
+  "data": {
+    "item": {
+      "id": "307",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "L’histoire d’amour entre Lausanne et le cinéma",
+        "en": "Lausanne’s love story with cinema",
+        "de": "Die Liebesgeschichte zwischen Lausanne und dem Kino"
+      },
+      "lead": {
+        "fr": "Lausanne et le cinéma, c’est toute une histoire ! Il est vrai qu’un lien fort unit les lausannois et le 7ème Art, et cela pour de nombreuses raisons. Si vous êtes d’humeur à passer un bon moment devant un film d’époque ou une avant-première, vous aurez l’embarras du choix, puisque Lausanne est la ville qui compte le plus de salles de cinéma en suisse romande. Mais ce n’est pas tout : Lausanne possède aussi une immense cinémathèque composée de pépites uniques, de quoi impressionner les plus grands fans du 7ème art. En plus, pour marquer son grand intérêt pour le cinéma, des festivals dédiés sont organisés tout au long de l’année. Sans oublier les personnalités liées à Lausanne super reconnues dans le milieu. On vous raconte tout !",
+        "en": "Lausanne and cinema is a story in itself! A strong bond links Lausanners and the seventh art, and for many reasons. If you’re in the mood to enjoy watching an old movie or a preview, you’ll be spoilt for choice as Lausanne is the town in French-speaking Switzerland with the highest number of movie theatres. But that’s not all: Lausanne also owns a huge cinematheque containing unique gems that will impress the greatest fans of the seventh art. In addition, to demonstrate its keen interest in cinema, dedicated festivals are organised during the whole year. Not to forget celebrities with ties to Lausanne who are massively recognised in the field. We’ll tell you all about it!",
+        "de": "Lausanne und das Kino, das ist schon fast eine Geschichte für sich! Es stimmt, dass zwischen den Einwohnern von Lausanne und der 7. Kunst aus vielerlei Gründen eine enge Verbindung besteht. Wenn Ihnen der Sinn danach steht, einen Filmklassiker oder eine Vorpremiere anzuschauen, dann haben Sie die Qual der Wahl, denn Lausanne ist die Stadt mit den meisten Kinosälen in der Westschweiz. Doch damit nicht genug: In Lausanne erwartet Sie auch eine umfassende Cinemathek voll von Raritäten, die es versteht, selbst die grössten Filmenthusiasten zu beeindrucken. Und zum Zeichen ihres grossen Interesses für das Kino organisiert die Stadt das ganze Jahr über entsprechende Festivals. Nicht zu vergessen sind ausserdem die in der Szene wirklich bekannten Personen mit Verbindung zu Lausanne. Hier erzählen wir Ihnen alles!"
+      },
+      "summary": {
+        "fr": "Lausanne et le cinéma, c’est toute une histoire ! Il est vrai qu’un lien fort unit les lausannois et le 7ème Art, et cela pour de nombreuses raisons. Si vous êtes d’humeur à passer un bon moment devant un film d’époque ou une avant-première, vous aurez l’embarras du choix, puisque Lausanne est la ville qui compte le plus de salles de cinéma en suisse romande. Mais ce n’est pas tout : Lausanne possède aussi une immense cinémathèque composée de pépites uniques, de quoi impressionner les plus grands fans du 7ème art. En plus, pour marquer son grand intérêt pour le cinéma, des festivals dédiés sont organisés tout au long de l’année. Sans oublier les personnalités liées à Lausanne super reconnues dans le milieu. On vous raconte tout !",
+        "en": "Lausanne and cinema is a story in itself! A strong bond links Lausanners and the seventh art, and for many reasons. If you’re in the mood to enjoy watching an old movie or a preview, you’ll be spoilt for choice as Lausanne is the town in French-speaking Switzerland with the highest number of movie theatres. But that’s not all: Lausanne also owns a huge cinematheque containing unique gems that will impress the greatest fans of the seventh art. In addition, to demonstrate its keen interest in cinema, dedicated festivals are organised during the whole year. Not to forget celebrities with ties to Lausanne who are massively recognised in the field. We’ll tell you all about it!",
+        "de": "Lausanne und das Kino, das ist schon fast eine Geschichte für sich! Es stimmt, dass zwischen den Einwohnern von Lausanne und der 7. Kunst aus vielerlei Gründen eine enge Verbindung besteht. Wenn Ihnen der Sinn danach steht, einen Filmklassiker oder eine Vorpremiere anzuschauen, dann haben Sie die Qual der Wahl, denn Lausanne ist die Stadt mit den meisten Kinosälen in der Westschweiz. Doch damit nicht genug: In Lausanne erwartet Sie auch eine umfassende Cinemathek voll von Raritäten, die es versteht, selbst die grössten Filmenthusiasten zu beeindrucken. Und zum Zeichen ihres grossen Interesses für das Kino organisiert die Stadt das ganze Jahr über entsprechende Festivals. Nicht zu vergessen sind ausserdem die in der Szene wirklich bekannten Personen mit Verbindung zu Lausanne. Hier erzählen wir Ihnen alles!"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26459,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "53d96b71a2d56345",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1575,
+                "height": 1050,
+                "mimeType": "image/jpeg",
+                "copyright": "Rebecca Bowring",
+                "attr": "width=\"1575\" height=\"1050\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "53d96b71a2d56345.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/20190307RebeccaBowring0089web.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>1.Une ville aux salles de cinéma centenaires </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne compte plus de 20 salles, dont certaines sont mythiques ! Sortez le pop-corn, on vous en présente quelques-unes."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Le Modern Cinéma </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Inauguré en 1907, Le Modern (non, il n’avait rien à voir avec le cinéma X Le Moderne créé dans les années 80) est tout simplement la première réelle salle de cinéma de Lausanne ! Si ça ne vous dit rien, c’est peut-être parce que Le Modern, Installé rue Saint-François, a changé plusieurs fois de nom (dont le CinéAc), pour finalement fermer ses portes en 1969. Difficile à imaginer, puisqu’aujourd’hui, le lieu accueille une chaîne de restauration rapide !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25929,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "87f517da364e878f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2310,
+                "height": 1565,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2310\" height=\"1565\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87f517da364e878f.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Le-Cineac.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/adresses-cinemas/\"><strong>Le Capitole </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le plus grand cinéma de Suisse toujours en activité ! Et qui n’est pas de la dernière jeunesse, puisqu’il a ouvert en 1928, avenue du Théâtre. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinema-capitole-cinematheque-suisse/\">Le Capitole</a> est définitivement l’une des salles les plus emblématiques de la ville, et d’ailleurs considérée comme l’une des plus belles et des plus confortables de Lausanne. À ses début la salle comptait presque 1.100 places, contre 876 aujourd’hui (et oui, les critères de confort ne sont plus les mêmes)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26013,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "2ab1aeb07289e58b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1125,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1125\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2ab1aeb07289e58b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/capitole-ouverture.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Le Cinéma Atlantic </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Situé rue Saint-Pierre et ouvert en 1949, L’Atlantic a régalé les fans du 7<sup>ème</sup> art durant 58 ans. Fermé en 2007, l’Atlantic est aujourd’hui une pizzeria très connue des fêtards lausannois et a gardé (presque) toute sa décoration authentique, mais rénovée. Un mélange surprenant qui a permis de garder quelques souvenirs de son lieu d’origine !"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>2. Une ville qui abrite la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinematheque-suisse/\">6ème cinémathèque</a> la plus importante du monde.</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Avec ce statut, vous vous imaginez bien les trouvailles cinématographiques exceptionnelles qu’on peut y faire. La preuve en quelque chiffres : 85.000 films, soit 700.000 bobines, 2.5 millions de photos, 500.000 affiches, 26.000 livres, 720.000 périodiques, 10.000 scénarios, 2.000 appareils cinématographiques… Un véritable paradis pour les plus grands connaisseurs du 7<sup>ème</sup> art ! Fondée en 1948, la plus grande partie de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/cinematheque-suisse/\">cinémathèque</a> se trouve dans son centre d’archivage à Penthaz et l’essentiel de l’activité publique a lieu au Capitole."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26099,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "f27d3ca294d472bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 960,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"960\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f27d3ca294d472bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Centre-de-recherche-et-darchivage-de-la-Cinematheque-suisse.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Collection Cinémathèque suisse. Tous droits réservés."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>3. Une ville de festivals diversifiés et internationaux</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est bien connu, les festivals font entièrement partie de la culture lausannoise. Et le monde du cinéma n’y échappe pas ! Toute l’année des festivals super variés sont organisés à Lausanne, on vous laisse les découvrir."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/evenement/rencontres-7e-art-lausanne/\"><strong>Rencontres 7e art Lausanne </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les Rencontres proposent de vivre le 7<sup>ème</sup> Art à fond en découvrant des films qui ont marqué l’histoire du cinéma. Pendant toute la durée de l’évènement, des masterclasses et des rencontres avec ceux qui font le cinéma permettent de s’immerger dans la magie du 7ème Art. Au fil des ans, les Rencontres ont accueilli Christopher Walken, Matt Dillon, Michel Hazanavicius, Paul Auster, Agnès Jaoui, Léa Seydoux, Rossy de Palma ou Joël Coen. Un événement unique à ne pas rater !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Prochaine édition : du 12 au 20 mars 2022.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26165,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "a3df6bb656de80ca",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1599,
+                "height": 1998,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1599\" height=\"1998\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a3df6bb656de80ca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/projo-film-christopher-walken-avec-plan-salle-de-dos.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://2024.luff.ch/\"><strong>LUFF – Lausanne Underground Film &amp; Music Festival </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://2024.luff.ch/\">Ce festival</a> tire son inspiration du New York Underground Film Festival et met un point d’honneur à présenter des films indépendants, souvent expérimentaux, peu distribués et s’éloignant des projections grand public. Des événements musicaux animés par des artistes proches de la scène underground font également partie intégrante de ce festival."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26230,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "38e11795f5a4d2a9",
+              "mime_type": "image/jpeg",
+              "copyright": "© LUFF Lausanne Underground Film & Music Fsetival",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": "Cueto 1988",
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38e11795f5a4d2a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/16_10_19_francesco-fonassi_lanacueto_6_48916314857_o-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LUFF Lausanne Underground Film &amp; Music Festival"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.cine-afrique.ch/#gsc.tab=0\"><strong>Festival Cinémas d’Afrique</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le but du <a href=\"https://www.cine-afrique.ch/#gsc.tab=0\">festival</a> : vous faire découvrir plus de 50 films africains ou ayant l’Afrique comme thématique, mais pas que… au programme : débats, rencontres, soirées thématiques, expos photos, concerts, gastronomie, de quoi profiter à fond de ce festival unique en Suisse !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Prochaine édition sera du 17 au 21 août 2021.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26296,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "bb40ff3cd6cf6e13",
+              "mime_type": "image/jpeg",
+              "copyright": "© Festival Cinémas d'Afrique Lausanne",
+              "metadata": {
+                "width": 800,
+                "height": 600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb40ff3cd6cf6e13.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/1603101078-image4-20975.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©Festival Cinémas d’Afrique Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>D’autres événements autour du cinéma à ne pas manquer</strong> : le <a href=\"https://festivalcinemajeunepublic.ch/\">Festival Cinéma Jeune Public</a> du 23 au 27 novembre, le <a href=\"https://tffl.ch/\">Tourne-films Festival</a> et le <a href=\"https://www.cine-festival.ch/\">Ciné-Festival</a>."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>4. Une ville qui entretient des relations fortes avec des personnalités du cinéma</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne, c’est aussi des personnalités qui ont marqué le cinéma, comme Jean-Luc Godard ou Vincent Perez."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><br>\nJean-Luc Godard</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Jean-Luc Godard n’est pas originaire de Lausanne, mais y est intimement lié. Pourquoi ? Parce qu’en 1981, le réalisateur franco-suisse, figure emblématique du mouvement de la Nouvelle Vague des années 50, accepte une commande du conseil communal de Lausanne : réaliser un film promotionnel sur la ville, où il a d’ailleurs passé de nombreuses années. Et bien, ils ne seront pas déçus ! Ce sera Lettre à Freddy Buache, dans lequel Jean-Luc Godard adresse une lettre audiovisuelle de 11 minutes à Freddy Buache, alors directeur de la Cinémathèque suisse et grand admirateur du cinéaste."
+          },
+          {
+            "type": "paragraph",
+            "value": "Dans ce film, Godard montre Lausanne comme une « ville qui a perdu toute sa poésie et ses habitants ». On vous l’accorde, drôle de façon de promouvoir la ville ! À la 6ème minute, le réalisateur explique d’ailleurs très directement : « On n’a pas rempli la commande, mais ce n’est peut-être pas très honnête de faire une commande comme ça […] Ils seront furieux »."
+          },
+          {
+            "type": "paragraph",
+            "value": "Et ça n’a pas loupé : le 8 décembre 1981, une motion présentée par 11 élus attaque le film – non sans un certain humour finalement ! – au motif que le cinéaste a confondu Lausanne avec Freddy Buache !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26344,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "0e3ea2723d1dc4db",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 512,
+                "height": 288,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"512\" height=\"288\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0e3ea2723d1dc4db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/66929.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong> Vincent Perez</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Comédien, réalisateur et photographe originaire de Lausanne, Vincent Perez vit aujourd’hui à Paris. Plusieurs fois nominé aux Césars, Vincent Perez a joué notamment avec Patrice Chéreau, Jean-Paul Rappeneau, Ettore Scola, Régis Wargnier Philippe de Broca, Alexandre Arcady, Roman Polanski ou Claude Lelouch…"
+          },
+          {
+            "type": "paragraph",
+            "value": "On le connaît pour ses rôles dans Cyrano de Bergerac, Indochine, Fanfan la Tulipe, La Reine Margot, Le Libertin, Dalida ou J’accuse. Et évidemment Bienvenue en Suisse."
+          },
+          {
+            "type": "paragraph",
+            "value": "Mais Vincent Perez a toujours tenu à préserver ses racines lausannoises, c’est pourquoi il a créé en 2018 le <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/rencontres-7e-art-lausanne/\">festival Rencontres 7e Art Lausanne</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26390,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "ed71d0bbc0910e6a",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1363,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1363\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ed71d0bbc0910e6a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/IMG_7547.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>5. Une ville qui forme ceux qui feront le cinéma de demain</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et pour ceux qui voudraient se lancer, c’est à Lausanne que ça se passe ! Oui oui, Lausanne propose plusieurs formations mondialement reconnues dans le domaine :"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/universite-de-lausanne-unil/\">L’Université de Lausanne</a> propose plusieurs formations théoriques et pratiques, avec notamment une section Cinéma."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/ecole-cantonale-dart-de-lausanne-ecal/\">L’École cantonale d’art de Lausanne</a> (ECAL) propose quant à elle un programme d’enseignement pluridisciplinaire pour tous les genres du cinéma et de l’image en mouvement."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://ecole-cinema.ch/\">L’École de cinéma de Genève</a>, Lausanne et de New-York propose plusieurs types de formations pour de nombreux métiers du cinéma et alterne les cours entre la Suisse et New-York."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://focal.ch/fr\">La Fondation de formation continue pour le cinéma et l’audiovisuel</a> (FOCAL) propose, comme son nom l’indique, une formation continue complète du 7ème art."
+          },
+          {
+            "type": "paragraph",
+            "value": "Mais le cinéma c’est aussi le film d’animation. <a href=\"https://www.ceruleum.ch/accueil.html\">L’École Ceruleum</a> enseigne, entre autres, les techniques de création et de fabrication du dessin animé, techniques traditionnelles mais aussi relevant des nouvelles technologies."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26425,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "cloudinary_id": "89d8ba7432cbf84b",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1200,
+                "height": 788,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"788\"",
+                "tags": "Architecture; Enseignement",
+                "description": null,
+                "file_name_from_url": "89d8ba7432cbf84b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/ECAL.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/www.diapo.ch, ECAL"
+          },
+          {
+            "type": "paragraph",
+            "value": "Si vous aimez le cinéma, vous l’aurez compris, vous ne serez pas déçus à Lausanne ! C’est indéniable, avec ses salles, sa cinémathèque, ses festivals et ses célèbres personnalités, le 7<sup>ème</sup> art détient une place importante dans la ville. Tout ça, ça nous a donné envie de nous faire <a href=\"https://www.lausanne-tourisme.ch/fr/adresses-cinemas/\">une petite soirée ciné</a>, pas vous ?"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26459,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "53d96b71a2d56345",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1575,
+                "height": 1050,
+                "mimeType": "image/jpeg",
+                "copyright": "Rebecca Bowring",
+                "attr": "width=\"1575\" height=\"1050\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "53d96b71a2d56345.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/20190307RebeccaBowring0089web.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>1. A city with century-old movie theatres</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "There are more than 20 movie theatres in Lausanne, some of which are legendary! Get the popcorn ready, we’ll introduce you to a few."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/cinemas-locations/\"><strong>The Modern Cinéma </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Inaugurated in 1907, the Modern (no, it doesn’t have anything to do with the X-rated cinema Le Moderne created during the 80s) is simply the first real movie theatre in Lausanne! If it doesn’t ring any bells, it might be because the Modern, located Rue Saint-François, changed names several times before finally closing down in 1969. Difficult to picture it as the premises now house a restaurant from a fast-food chain!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25929,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "87f517da364e878f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2310,
+                "height": 1565,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2310\" height=\"1565\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87f517da364e878f.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Le-Cineac.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">The Capitole</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The largest cinema in Switzerland still in operation! And it ain’t no spring chicken as it opened in 1928, at Avenue du Théâtre. <a href=\"https://www.lausanne-tourisme.ch/en/explore/capitole-cinema-cinematheque-suisse/\">The Capitole</a> is definitely one of the town’s most iconic movie theatres and is considered besides as one of the most beautiful and most comfortable in Lausanne. At its beginnings, the cinema seated close to 1,100, while today that number is 876 (indeed, the standards of comfort have changed)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26013,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "2ab1aeb07289e58b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1125,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1125\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2ab1aeb07289e58b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/capitole-ouverture.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/cinemas-locations/\"><strong>The Cinéma Atlantic </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Located Rue Saint-Pierre and opened in 1949, the Atlantic delighted fans of the seventh art for 58 years. Closed down in 2007, it has become a pizzeria extremely well known to Lausanne revellers and has kept (almost) all of its authentic setting, albeit renovated. A surprising blend that has enabled to hang on to a few souvenirs from its original vocation!"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>2. A city that houses <a href=\"https://www.lausanne-tourisme.ch/en/explore/swiss-film-archives/\">the 6<sup>th</sup> most important cinematheque</a> in the world</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "With such a status, you can well imagine the exceptional cinematographic treasures you can unearth there. A few figures go to prove that: 85,000 films, that is 700,000 reels, 2.5 million photos, 500,000 posters, 26,000 books, 720,000 periodicals, 10,000 scenarios, 2,000 cinematographic devices … A real paradise for the greatest connoisseurs of the seventh art! Founded in 1948, most of <a href=\"https://www.lausanne-tourisme.ch/en/explore/swiss-film-archives/\">the cinematheque’s collection</a> is housed in its archiving center in Penthaz and most of the public activity takes place at the Capitole."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26099,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "f27d3ca294d472bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 960,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"960\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f27d3ca294d472bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Centre-de-recherche-et-darchivage-de-la-Cinematheque-suisse.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Collection Cinémathèque suisse. Tous droits réservés."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>3. A city with diversified and international festivals</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s well known that festivals form an integral part of Lausanne culture. And the world of cinema is no exception! During the whole year, extremely varied festivals are organised in Lausanne. Read on to find out more."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/event/rencontres-7e-art-lausanne/\"><strong>Rencontres 7e art Lausanne (Think Cinema)</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The Rencontres let you experience the 7<sup>th</sup> art to the full by discovering films that have made the history of cinema. During the whole event, masterclasses and conversations with those who create cinema enable you to immerse in the magic of the seventh art. Over the years, the Rencontres have welcomed Christopher Walken, Matt Dillon, Michel Hazanavicius, Paul Auster, Agnès Jaoui, Léa Seydoux, Rossy de Palma and Joël Coen. A unique event, not to be missed!"
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26165,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "a3df6bb656de80ca",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1599,
+                "height": 1998,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1599\" height=\"1998\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a3df6bb656de80ca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/projo-film-christopher-walken-avec-plan-salle-de-dos.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><a href=\"https://2024.luff.ch/en\">LUFF – Lausanne Underground Film &amp; Music Festival</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://2024.luff.ch/en\">This festival</a> is inspired by the New York Underground Film Festival and places great emphasis on presenting films that are independent, often experimental, with limited distribution and steering clear of screenings for the general public. Musical events led by artists close to the underground scene are also an integral part of this festival."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26230,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "38e11795f5a4d2a9",
+              "mime_type": "image/jpeg",
+              "copyright": "© LUFF Lausanne Underground Film & Music Fsetival",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": "Cueto 1988",
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38e11795f5a4d2a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/16_10_19_francesco-fonassi_lanacueto_6_48916314857_o-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LUFF Lausanne Underground Film &amp; Music Fsetival"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.cine-afrique.ch/#gsc.tab=0\"><strong>Festival du cinéma d’Afrique (Festival of African Cinema)</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.cine-afrique.ch/#gsc.tab=0\">The festival’s</a> goal: to take you on a discovery of 50 African films or that have Africa as a theme, and much more… The programme includes debates, conversations, themed evenings, photo exhibitions, concerts, gastronomy; in short, everything you need to fully enjoy a festival unique in Switzerland!"
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26296,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "bb40ff3cd6cf6e13",
+              "mime_type": "image/jpeg",
+              "copyright": "© Festival Cinémas d'Afrique Lausanne",
+              "metadata": {
+                "width": 800,
+                "height": 600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb40ff3cd6cf6e13.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/1603101078-image4-20975.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©Festival Cinémas d’Afrique Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Other events linked to cinema that aren’t to be missed: </strong><a href=\"https://festivalcinemajeunepublic.ch/\">the Festival Cinéma Jeune Public</a> (Young Audiences Cinema Festival)  <a href=\"https://tffl.ch/\">the Tourne-films Festival</a> and <a href=\"https://www.cine-festival.ch/\">the Ciné-Festival</a>."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><br>\n4. A city that nurtures strong relationships with film personalities</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne also stands for personalities who have left their mark on cinema, such as Jean-Luc Godard or Vincent Perez."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Jean-Luc Godard</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Jean-Luc Godard does not come from Lausanne, but he has close ties with the town. Why? Because in 1981, the French-Swiss filmmaker, an iconic personality of the 1950s French New Wave movement, accepted a commission from the Lausanne town council: to produce a promotional film about the city in which he had spent many years. Well, they weren’t disappointed! It was named Letter to Freddy Buache and in it, Jean-Luc Godard sent an audiovisual letter lasting 11 minutes to Freddy Buache, the then director of the Swiss Cinematheque and great admirer of the filmmaker."
+          },
+          {
+            "type": "paragraph",
+            "value": "In his film, Godard described Lausanne as a “town that has lost all its poetry and its inhabitants”. Granted, a strange way to promote a town! At the sixth minute, the filmmaker explained it very clearly: “We might not have fulfilled the commission, but it wasn’t very honest to place such a commission […]. They will be furious.”"
+          },
+          {
+            "type": "paragraph",
+            "value": "And they were: on December 8, 1981, a motion put forward by 11 elected representatives attacked the film – with a fair bit of humour! – on the grounds that the filmmaker mistook Lausanne for Freddy Buache!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26344,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "0e3ea2723d1dc4db",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 512,
+                "height": 288,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"512\" height=\"288\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0e3ea2723d1dc4db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/66929.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Vincent Perez</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Actor, filmmaker and photographer originally from Lausanne, Vincent Perez now lives in Paris. Nominated several times for the French Césars, Vincent Perez has acted among others for Patrice Chéreau, Jean-Paul Rappeneau, Ettore Scola, Régis Wargnier, Philippe de Broca, Alexandre Arcady, Roman Polanski and Claude Lelouch…"
+          },
+          {
+            "type": "paragraph",
+            "value": "We know him for his roles in Cyrano de Bergerac, Indochina, Fanfan la Tulipe, Queen Margot, The Libertine, Dalida or An Officer and a Spy. And, of course, Welcome to Switzerland."
+          },
+          {
+            "type": "paragraph",
+            "value": "Yet Vincent Perez has always been intent on preserving his Lausanne roots, which is why he created <a href=\"https://www.lausanne-tourisme.ch/en/event/rencontres-7e-art-lausanne/\">the festival Rencontres 7e Art Lausanne</a> (Think Cinema)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26390,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "ed71d0bbc0910e6a",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1363,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1363\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ed71d0bbc0910e6a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/IMG_7547.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>5. A city that trains those who will create tomorrow’s cinema</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "For those who wish to embark in the world of cinema, this is where it’s all happening! Lausanne offers several world-renowned trainings in the field:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/university-of-lausanne-unil/\">Lausanne University</a> provides several theoretical and practical courses, in particular with a Cinema department."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-university-of-art-and-design-ecal/\">The Lausanne University of Art and Design</a> (ECAL), on the other hand, offers a multidisciplinary curriculum for all cinema and moving image genres."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://ecole-cinema.ch/\">The École de cinéma de Genève, Lausanne et de New York</a> (Geneva, Lausanne and New York School of Cinema) offers several types of courses for the many cinema professions and alternates classes in Switzerland and New York."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://focal.ch/en\">The Foundation for Professional Training in Cinema and Audiovisual Media</a> (FOCAL) offers, as its name suggests, comprehensive ongoing training in cinema."
+          },
+          {
+            "type": "paragraph",
+            "value": "Cinema also includes animated films.<a href=\"https://www.ceruleum.ch/accueil.html\"> The Ceruleum School</a> teaches, among other topics, techniques to create and produce animated movies, traditional techniques as well as those based on new technologies."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26425,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "89d8ba7432cbf84b",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1200,
+                "height": 788,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"788\"",
+                "tags": "Architecture; Enseignement",
+                "description": null,
+                "file_name_from_url": "89d8ba7432cbf84b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/ECAL.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/www.diapo.ch, ECAL"
+          },
+          {
+            "type": "paragraph",
+            "value": "As you can see, if you love cinema, you won’t be disappointed in Lausanne! It’s undeniable that with its movie theatres, cinematheque, festivals and famous personalities, the seventh art holds a prominent place in the town. And all that makes us want <a href=\"https://www.lausanne-tourisme.ch/en/cinemas-locations/\">to enjoy a good movie night</a>. How about you?"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26459,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "53d96b71a2d56345",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1575,
+                "height": 1050,
+                "mimeType": "image/jpeg",
+                "copyright": "Rebecca Bowring",
+                "attr": "width=\"1575\" height=\"1050\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "53d96b71a2d56345.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/20190307RebeccaBowring0089web.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>1.Eine Stadt mit 100 Jahren Kinovergangenheit </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne beheimatet über 20 Kinosäle, von denen einige wirklich mythisch sind! Her mit dem Popcorn, die Vorstellung beginnt."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/kinosaele-lausanne/\"><strong>Le Modern Cinéma </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nach seiner Gründung im Jahr 1907 war Le Modern (das nichts mit dem in den 1980er Jahren entstandenen Cinéma X Le Moderne zu tun hatte) ganz einfach der erste, echte Kinosaal in Lausanne! Wenn Ihnen dieses Kino jedoch gar nichts sagt, dann liegt das vielleicht daran, dass das Le Modern in der rue Saint-François mehrfach den Namen geändert hat, bevor es 1969 schliesslich geschlossen wurde. Kaum vorstellbar, denn dieser Standort wird heute von einer Fast-Food-Kette genutzt!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25929,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "87f517da364e878f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2310,
+                "height": 1565,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2310\" height=\"1565\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "87f517da364e878f.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Le-Cineac.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Le Capitole</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kino-capitole-cinematheque-suisse/\">Das grösste Kino</a> der Schweiz, das immer noch betrieben wird! Und dabei ist es alles andere als eine neuzeitliche Erscheinung, denn eröffnet wurde es bereits 1928 in der avenue du Théâtre. Le Capitole ist mit Sicherheit einer der symbolträchtigsten Kinosäle der Stadt, und ausserdem gilt es als eines der schönsten und gemütlichsten Kinos von Lausanne. In den Anfangsjahren zählte das Kino fast 1.100 Sitzplätze im Gegensatz zu den 876 Plätzen heute (naja, die Standards in Sachen Komfort haben sich eben geändert)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26013,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "2ab1aeb07289e58b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1125,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1125\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "2ab1aeb07289e58b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/capitole-ouverture.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/kinosaele-lausanne/\"><strong>Le Cinéma Atlantic </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In der rue Saint-Pierre gelegen und 1949 eröffnet hat das Atlantic über 58 Jahre für Begeisterung bei Filmenthusiasten gesorgt. Nach seiner Schliessung im Jahr 2007 wurde im Atlantic eine Pizzeria untergebracht, die bei den feierlustigen Bewohnern von Lausanne sehr beliebt ist. Das Lokal hat ihre authentische Ausstattung (fast) vollständig behalten, auch wenn es inzwischen renoviert worden ist. Eine erstaunliche Mischung, bei der ein paar Erinnerungsstücke an die ursprüngliche Verwendung dieses Orts erhalten werden konnten!"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>2. Eine Stadt, in der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schweizerisches-filmarchiv/\">die sechstgrösste Cinemathek</a> der Welt beheimatet ist</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Angesichts dieses Status können Sie sich sicher vorstellen, was für aussergewöhnliche kinematographische Fundstücke hier möglich sind. Ein paar Zahlen zum Beweis: 85.000 Filme oder 700.000 Filmrollen, 2,5 Millionen Fotos, 500.000 Plakate, 26.000 Bücher, 720.000 Zeitschriften, 10.000 Drehbücher, 2.000 Filmprojektoren… Ein wahres Paradies für die grössten Kenner der 7. Kunst! Seit ihrer Gründung im Jahr 1948 ist der grösste Teil <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schweizerisches-filmarchiv/\">der Cinemathek</a> im Archivzentrum in Penthaz und die meisten öffentlichen Aktivitäten finden im Capitole statt."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26099,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "f27d3ca294d472bd",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 768,
+                "height": 960,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"960\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f27d3ca294d472bd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/Centre-de-recherche-et-darchivage-de-la-Cinematheque-suisse.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Collection Cinémathèque suisse. Tous droits réservés."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>3. Eine Stadt mit vielfältigen und internationalen Festivals</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Es ist weithin bekannt, dass die Festivals einen zentralen Bestandteil der Kultur in Lausanne ausmachen. Und da darf natürlich auch die Welt der Filme und des Kinos nicht fehlen! In Lausanne finden das ganze Jahr über ganz vielfältige Festivals statt, die wir Ihnen hier gern vorstellen wollen."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/rencontres-7e-art-lausanne/\"><strong>Die Rencontres 7e Art Lausanne </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Rahmen der Rencontres haben Sie die Möglichkeit, der 7. Kunst wirklich auf den Grund zu gehen und dabei Filme zu entdecken, die Kinogeschichte geschrieben haben. Während der gesamten Veranstaltung finden Masterclasses und Begegnungen mit Filmschaffenden statt, um wirklich in die Magie der 7. Kunst einzutauchen. Im Laufe der Jahre sind Christopher Walken, Matt Dillon, Michel Hazanavicius, Paul Auster, Agnès Jaoui, Léa Seydoux, Rossy de Palma oder Joël Coen der Einladung zu den Rencontres gefolgt. Ein wirklich einzigartiges Ereignis, das Sie nicht verpassen dürfen!"
+          },
+          {
+            "type": "paragraph",
+            "value": ""
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26165,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "a3df6bb656de80ca",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1599,
+                "height": 1998,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1599\" height=\"1998\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a3df6bb656de80ca.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/projo-film-christopher-walken-avec-plan-salle-de-dos.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong><a href=\"https://2024.luff.ch/en\">LUFF – Lausanne Underground Film &amp; Music Festival</a> </strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://2024.luff.ch/en\">Dieses Festival</a> ist vom New York Underground Film Festival inspiriert worden und hat sich dem unabhängigen Film verschrieben, der oft experimentell ist, kaum vertrieben wird und sich dem Mainstream entzieht. Ein weiterer, fester Bestandteil dieses Festivals sind die musikalischen Darbietungen unter der Leitung von Künstlern, die der Underground-Szene nahestehen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26230,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "38e11795f5a4d2a9",
+              "mime_type": "image/jpeg",
+              "copyright": "© LUFF Lausanne Underground Film & Music Fsetival",
+              "metadata": {
+                "width": 2560,
+                "height": 1707,
+                "mimeType": "image/jpeg",
+                "copyright": "Cueto 1988",
+                "attr": "width=\"2560\" height=\"1707\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "38e11795f5a4d2a9.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/16_10_19_francesco-fonassi_lanacueto_6_48916314857_o-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LUFF Lausanne Underground Film &amp; Music Fsetival"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<a href=\"https://www.cine-afrique.ch/#gsc.tab=0\"><strong>Das Festival du cinéma d‘Afrique</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Ziel <a href=\"https://www.cine-afrique.ch/#gsc.tab=0\">dieses Festivals</a>: Ihnen über 50 afrikanische Filme oder Filme zum Thema Afrika näherzubringen, aber nicht nur… Auf dem Programm stehen auch: Debatten, Begegnungen, Themenabende, Foto-Ausstellungen, Konzerte, Gastronomie, also genug, um dieses einzigartige Festival in der Schweiz wirklich zu geniessen!"
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26296,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "bb40ff3cd6cf6e13",
+              "mime_type": "image/jpeg",
+              "copyright": "© Festival Cinémas d'Afrique Lausanne",
+              "metadata": {
+                "width": 800,
+                "height": 600,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"600\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb40ff3cd6cf6e13.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/1603101078-image4-20975.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©Festival Cinémas d’Afrique Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Andere Veranstaltungen, rund ums Kino, die Sie nicht verpassen sollten</strong>: das <a href=\"https://festivalcinemajeunepublic.ch/\">Festival Cinéma Jeune Public</a>, das <a href=\"https://tffl.ch/\">Tourne-films Festival </a>und das <a href=\"https://www.cine-festival.ch/\">Ciné-Festival</a>."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>4. Eine Stadt mit starken Beziehungen zu Kino-Persönlichkeiten</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne steht ausserdem für Persönlichkeiten, die Kinogeschichte geschrieben haben, wie beispielsweise Jean-Luc Godard oder Vincent Perez."
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong>Jean-Luc Godard</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Jean-Luc Godard stammt ursprünglich nicht aus Lausanne, aber er ist der Stadt eng verbunden. Warum? Weil der französisch-schweizerische Regisseur und typische Vertreter der Nouvelle Vague-Bewegung aus den 1950er Jahren im Jahr 1981 einen Auftrag des Stadtrats von Lausanne annimmt: Er soll nämlich einen Werbefilm für die Stadt, in der er selbst viele Jahre verbracht hat, drehen. Die Stadt sollte vom Ergebnis nicht enttäuscht werden! Es entsteht nämlich der Film Lettre à Freddy Buache, in dem Jean-Luc Godard in 11 Minuten einen audiovisuellen Brief an Freddy Buache richtet, der seinerzeit Direktor der Schweizer Cinemathek und ein grosser Bewunderer des Cineasten ist."
+          },
+          {
+            "type": "paragraph",
+            "value": "In diesem Film präsentiert Godard Lausanne als „eine Stadt, die all ihre Poesie und ihre Bewohner verloren hat“. Zugegeben, das ist schon eine etwas seltsame Art der Werbung für eine Stadt! In der 6. Minute erklärt der Regisseur übrigens gerade heraus: „On n’a pas rempli la commande, mais ce n’est peut-être pas très honnête de faire une commande comme ça […] Ils seront furieux.“ [Wir haben den Auftrag nicht erfüllt, aber es ist vielleicht nicht ganz ehrlich, einen solchen Auftrag zu erteilen. […] Sie werden wütend sein.]"
+          },
+          {
+            "type": "paragraph",
+            "value": "Und das ist nicht ohne Wirkung geblieben: Am 8. Dezember 1981 kritisieren 11 Politiker den Film –  wenn auch mit einem gewissen Augenzwinkern – mit dem Vorwurf, dass der Filmemacher die Stadt Lausanne und Freddy Buache verwechselt habe!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26344,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "0e3ea2723d1dc4db",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 512,
+                "height": 288,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"512\" height=\"288\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "0e3ea2723d1dc4db.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/66929.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "<strong> Vincent Perez</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Der ursprünglich aus Lausanne stammende Schauspieler, Regisseur und Fotograf lebt heute in Paris. Der mehrfach für den César nominierte Vincent Perez hat schon mit Patrice Chéreau, Jean-Paul Rappenau, Ettore Scola, Régis Wargnier, Philippe de Broca, Alexandre Arcady, Roman Polanski oder Claude Lelouch … gearbeitet."
+          },
+          {
+            "type": "paragraph",
+            "value": "Man kennt ihn für seine Rollen in Cyrano von Bergerac, Indochine, Fanfan, der Husar, Die Bartholomäusnacht, Liebeslust und Freiheit, Dalida oder Intrige. Und natürlich aus Bienvenue en Suisse."
+          },
+          {
+            "type": "paragraph",
+            "value": "Allerdings ist Vincent Perez seinen Lausanner Wurzeln immer treu geblieben und deshalb hat er im Jahr 2018 das <a href=\"https://www.lausanne-tourisme.ch/de/veranstaltung/rencontres-7e-art-lausanne/\">Festival Rencontres 7e Art Lausanne</a> gegründet."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26390,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "ed71d0bbc0910e6a",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1363,
+                "height": 2048,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1363\" height=\"2048\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ed71d0bbc0910e6a.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/IMG_7547.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>5. Eine Stadt, in der die Filmemacher von morgen ausgebildet werden</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Und für diejenigen, die sich dieser Kunst verschreiben möchten, führt der Weg ebenfalls nach Lausanne! Ganz klar, denn in Lausanne werden gleich mehrere Abschlüsse angeboten, die in der Branche weltweit anerkannt werden:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/universitat-lausanne-unil/\">Die Universität Lausanne</a> bietet verschiedene theoretische und praktische Studiengänge sowie eine Abteilung Kino an."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonale-hochschule-fur-kunst-und-design/\">An der Ecole cantonale d‘art de Lausanne</a> (ECAL) gibt es interdisziplinäre Ausbildungen für alle Filmgenres und das bewegte Bild."
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://ecole-cinema.ch/\">Die Ecole de Cinéma Genf, Lausanne und New York</a> bietet verschiedene Ausbildungsgänge für zahlreiche Kino-Berufe an. Der Unterricht findet abwechselnd in der Schweiz und in New York statt."
+          },
+          {
+            "type": "paragraph",
+            "value": "Und bei <a href=\"https://focal.ch/de\">der Fondation de formation continue pour le cinéma et l‘audiovisiuel</a> (FOCAL), also der Stiftung Weiterbildung Film und Audiovision, wird getreu dem Stiftungsnamen eine komplette Weiterbildung in der 7. Kunst angeboten."
+          },
+          {
+            "type": "paragraph",
+            "value": "Zugleich ist Kino aber auch der Animationsfilm. So werden an <a href=\"https://www.ceruleum.ch/accueil.html\">der École Ceruleum</a> unter anderem die Techniken für die Entwicklung und Herstellung von animierten Zeichnungen gelehrt, dies sowohl in traditioneller Form als auch mit modernen Technologien."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26425,
+              "name": "L’histoire d’amour entre Lausanne et le cinéma",
+              "public_name": null,
+              "cloudinary_id": "89d8ba7432cbf84b",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1200,
+                "height": 788,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"788\"",
+                "tags": "Architecture; Enseignement",
+                "description": null,
+                "file_name_from_url": "89d8ba7432cbf84b.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/03/ECAL.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "©LT/www.diapo.ch, ECAL"
+          },
+          {
+            "type": "paragraph",
+            "value": "Sie haben es bestimmt schon verstanden: Wenn Sie das Kino lieben, wird Lausanne Sie nicht enttäuschen! Mit seinen Kinosälen, der Cinemathek, den Festivals und den berühmten Persönlichkeiten lässt es sich nämlich gar nicht leugnen, dass die 7. Kunst von entscheidender Bedeutung für die Stadt ist. Und nach so vielen Worten über Filme haben wir jetzt richtig Lust auf <a href=\"https://www.lausanne-tourisme.ch/de/kinosaele-lausanne/\">einen schönen Abend im Kino</a>. Sie auch?"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "87f517da364e878f",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "L’histoire d’amour entre Lausanne et le cinéma"
+          }
+        }
+      ],
+      "published_at": "1646002800",
+      "seo": {
+        "description": {
+          "fr": "Lausanne et le cinéma, c’est toute une histoire ! Il est vrai qu’un lien fort unit les lausannois et le 7ème Art, et cela pour de nombreuses raisons. Si vous êtes d’humeur à passer un bon moment devant un film d’époque ou une avant-première, vous aurez l’embarras du choix, puisque Lausanne est la ville qui compte le plus de salles de cinéma en suisse romande. Mais ce n’est pas tout : Lausanne possède aussi une immense cinémathèque composée de pépites uniques, de quoi impressionner les plus grands fans du 7ème art. En plus, pour marquer son grand intérêt pour le cinéma, des festivals dédiés sont organisés tout au long de l’année. Sans oublier les personnalités liées à Lausanne super reconnues dans le milieu. On vous raconte tout !",
+          "en": "Lausanne and cinema is a story in itself! A strong bond links Lausanners and the seventh art, and for many reasons. If you’re in the mood to enjoy watching an old movie or a preview, you’ll be spoilt for choice as Lausanne is the town in French-speaking Switzerland with the highest number of movie theatres. But that’s not all: Lausanne also owns a huge cinematheque containing unique gems that will impress the greatest fans of the seventh art. In addition, to demonstrate its keen interest in cinema, dedicated festivals are organised during the whole year. Not to forget celebrities with ties to Lausanne who are massively recognised in the field. We’ll tell you all about it!",
+          "de": "Lausanne und das Kino, das ist schon fast eine Geschichte für sich! Es stimmt, dass zwischen den Einwohnern von Lausanne und der 7. Kunst aus vielerlei Gründen eine enge Verbindung besteht. Wenn Ihnen der Sinn danach steht, einen Filmklassiker oder eine Vorpremiere anzuschauen, dann haben Sie die Qual der Wahl, denn Lausanne ist die Stadt mit den meisten Kinosälen in der Westschweiz. Doch damit nicht genug: In Lausanne erwartet Sie auch eine umfassende Cinemathek voll von Raritäten, die es versteht, selbst die grössten Filmenthusiasten zu beeindrucken. Und zum Zeichen ihres grossen Interesses für das Kino organisiert die Stadt das ganze Jahr über entsprechende Festivals. Nicht zu vergessen sind ausserdem die in der Szene wirklich bekannten Personen mit Verbindung zu Lausanne. Hier erzählen wir Ihnen alles!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lhistoire-damour-entre-lausanne-et-le-cinema",
+          "en": "lausannes-love-story-with-cinema",
+          "de": "die-liebesgeschichte-zwischen-lausanne-und-dem-kino"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-culture",
+          "public_name": {
+            "fr": "Culture",
+            "en": "Culture",
+            "de": "Kultur"
+          }
+        }
+      ]
+    }
+  }
+}

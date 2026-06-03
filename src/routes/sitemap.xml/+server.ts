@@ -1,14 +1,14 @@
-import { RouteTypes, Themes } from '$enums';
-import { getMediaLibraryRegisterLink, route } from '$lib/helpers';
-import { menuItems } from '$lib/helpers/menu';
-import { getPosts } from '$lib/helpers/requests.server';
+import { RouteTypes } from '$enums';
+import { getMediaLibraryRegisterLink } from '$lib/helpers';
+import { menuItems } from '$lib/config/menu';
+import { getPosts } from '$lib/services/requests.server';
 import { defaultLocale, type Locale, supportedLocales, translations } from '$lib/translations';
 import type { Release, Translatable } from '$types';
 import type { RequestHandler } from '@sveltejs/kit';
-export const GET: RequestHandler = async ({ url }) => {
+export const GET: RequestHandler = async ({ url, fetch }) => {
   const urlSets = await Promise.all([
     generateUrlSets(url.origin),
-    generatePresskitAndPressReleasesUrlSets(url.origin)
+    generatePresskitAndPressReleasesUrlSets(url.origin, fetch)
   ]);
 
   return new Response(
@@ -82,17 +82,20 @@ const generateAlternateUrlBlocks = (urlOrigin: string, paths: string[]) => {
     .join('\n');
 };
 
-const generatePresskitAndPressReleasesUrlSets = async (urlOrigin: string) => {
+const generatePresskitAndPressReleasesUrlSets = async (
+  urlOrigin: string,
+  fetchFn: typeof fetch
+) => {
   const slugsAlreadyCreated: string[] = [];
   const urlSets: string[] = [];
 
-  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release' });
+  const releasesRes = await getPosts<Release<Translatable>>({ type: 'press_release', fetchFn });
   const releases = releasesRes.data?.items?.data ?? [];
 
   for (const release of releases) {
     const languages = release.languages!;
     const seo = release.seo!;
-    const type = release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease;
+    const type = release.type === 'press_kit' ? RouteTypes.Presskits : RouteTypes.Pressreleases;
     const alternates: string[] = [];
 
     languages.forEach((l) => {

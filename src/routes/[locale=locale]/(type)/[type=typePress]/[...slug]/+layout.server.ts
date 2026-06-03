@@ -1,24 +1,30 @@
+import { dev } from '$app/environment';
 import { RouteTypes } from '$enums';
+import { isOfflineMode } from '$lib/helpers';
 import { generateCloudinaryUrl } from '$lib/helpers/image.js';
-import { getPost } from '$lib/helpers/requests.server.js';
+import { getPost } from '$lib/services/requests.server';
 import { supportedLocales, type Locale } from '$lib/translations/index.js';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
-export const load = async ({ params, parent, url }) => {
+export const load = async ({ params, parent, url, fetch }) => {
+  if (dev && isOfflineMode) {
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
+  }
   const [{ i18n, translations }, releaseRes] = await Promise.all([
     parent(),
-    getPost(params.slug ?? '')
+    getPost(params.slug ?? '', fetch)
   ]);
 
-  const release = releaseRes.data.item;
+  const release = releaseRes.data?.item;
   if (!release || !release.languages?.includes(params.locale)) throw error(404);
 
   const lang = params.locale as Locale;
   const type =
-    translations[lang][`route.${RouteTypes.Presskit}.slug`] === params.type
-      ? RouteTypes.Presskit
-      : RouteTypes.Pressrelease;
+    translations[lang][`route.${RouteTypes.Presskits}.slug`] === params.type
+      ? RouteTypes.Presskits
+      : RouteTypes.Pressreleases;
 
   const seo: SeoHeader = {
     canonical: `${url.origin}${url.pathname}`,

@@ -1,14 +1,16 @@
 <script lang="ts">
+  import { resolve } from '$app/paths';
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import { route } from '$lib/helpers';
-  import { menuItems } from '$lib/helpers/menu';
+  import { menuItems } from '$lib/config/menu';
   import { t, type Locale } from '$lib/translations';
-  import { ChevronDown } from 'lucide-svelte';
+  import { ChevronDown } from '@lucide/svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
   import Link from '../Link.svelte';
   import Logo from './Logo.svelte';
+  import type { Pathname } from '$app/types';
 
   type Props = {
     class?: string;
@@ -18,18 +20,23 @@
   const { class: additionalClass, locale }: Props = $props();
 
   const style = $derived(twMerge('flex h-full items-center justify-between', additionalClass));
+  const multiLocale = $derived(
+    (page.data.seo.alternate && page.data.seo.alternate.length > 1) ||
+      (page.data.seo.articleAlternate && page.data.seo.articleAlternate.length > 1)
+  );
 </script>
 
 <nav class={style} aria-labelledby="desktop-navigation">
   <a
-    href={route(RouteTypes.Home, { forceLocale: locale })}
+    href={resolve(route(RouteTypes.Home, { forceLocale: locale }) as Pathname)}
+    rel="internal"
     class="nav-logo group my-2 flex max-w-[230px] cursor-pointer border-0 px-0 py-2 pl-[15px] transition-all"
   >
     <Logo {locale} />
   </a>
   <div class="ml-6 flex h-full grow items-center justify-start">
     <!-- Desktop menu -->
-    {#each menuItems(locale) as item}
+    {#each menuItems(locale) as item (item.title)}
       {#if !item.link}
         <div class="dropdown dropdown-hover group rounded-none">
           <div tabindex="0" role="button" class="menu-item m-3">
@@ -42,7 +49,7 @@
             <ul
               class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 z-1 w-[450px] border-t p-2 shadow-xs"
             >
-              {#each items as item}
+              {#each items as item (item.title)}
                 {#snippet icon()}
                   {#if item.icon}
                     {@const Component = item.icon}
@@ -54,6 +61,7 @@
                     class="items-list-element hover:text-brand-600 hover:bg-base-100 dark:hover:base-dark-hover justify-between px-6 py-4 text-left text-[20px] font-medium hover:rounded-sm hover:border-none hover:underline hover:opacity-100"
                     href={item.link}
                     preload="tap"
+                    noscroll={item.link?.includes('#')}
                     icon={item.icon ? icon : undefined}
                   >
                     {item.title}
@@ -93,18 +101,19 @@
       <div tabindex="0" role="button" class="mx-8 my-3 rounded-none">
         <p class="text-brand-600 flex items-center py-1.5 text-[17px] font-bold xl:py-9">
           <span>{locale.toUpperCase()}</span>
-          {#if page.data.seo.alternate.length > 1}
+          {#if multiLocale}
             <ChevronDown strokeWidth={3} class="text-base-content invertable ml-2 h-4 w-4" />
           {/if}
         </p>
       </div>
-      {#if page.data.seo.alternate.length > 1}
+      {#if multiLocale}
+        {@const alternates = page.data.seo.alternate ?? page.data.seo.articleAlternate}
         <div>
           <ul
             class="items-list dropdown-content bg-base-200 dark:bg-base-300 border-t-brand-600 left-5 z-1 w-16 border-t p-2 shadow-xs"
           >
             {#key page.url}
-              {#each page.data.seo.alternate as alternate}
+              {#each alternates as alternate (alternate.hreflang)}
                 <li>
                   <Link
                     class={`items-list-element text-brand-600 hover:bg-base-100 flex items-center justify-center py-3 text-center font-bold opacity-100 transition-all hover:rounded-sm hover:opacity-75 dark:hover:bg-slate-600 ${alternate.hreflang === locale ? 'hidden' : ''}`}

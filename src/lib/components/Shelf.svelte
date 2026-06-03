@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ChevronDown } from 'lucide-svelte';
+  import { ChevronDown } from '@lucide/svelte';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import { slide } from 'svelte/transition';

@@ -5,12 +5,13 @@
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
   import Image from '$lib/components/Media/Image.svelte';
   import Paragraph from '$lib/components/Paragraph.svelte';
-  import { getTailwindColor, isOfflineMode } from '$lib/helpers';
-  import { defaultLocale, t, type Locale } from '$lib/translations';
+  import { getTailwindColor } from '$lib/helpers';
+  import { t, type Locale } from '$lib/translations';
   import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
-  import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from 'lucide-svelte';
+  import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from '@lucide/svelte';
   import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
+  import { SvelteSet } from 'svelte/reactivity';
   import { MapLibre, Marker, NavigationControl, Popup } from 'svelte-maplibre-gl';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -24,14 +25,7 @@
     onclose?: () => void;
   };
 
-  const {
-    class: additionalClass,
-    themeColor,
-    listBorderColor,
-    favorites,
-    locale,
-    onclose
-  }: Props = $props();
+  const { themeColor, listBorderColor, favorites, locale, onclose }: Props = $props();
 
   const markers: MarkerType<string>[] = $derived.by(() => {
     let markers: MarkerType<string>[] = [];
@@ -54,6 +48,16 @@
     });
 
     return markers;
+  });
+
+  const listMarkers = $derived.by(() => {
+    const seen = new SvelteSet<string>();
+    return markers.filter((marker) => {
+      const key = `poi#${marker.poi.id}|favorite#${marker.favorite.id}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   });
 
   let markerIndex: string | undefined = $state();
@@ -98,30 +102,44 @@
     );
   };
 
-  const handleLausannerClick = ({
-    favorite,
-    poi
-  }: {
-    favorite: Favorite<string>;
-    poi: Poi<string>;
-  }) => {
-    markerIndex = `poi#${poi.id}|favorite#${favorite.id}`;
-
+  const updateAside = ({ favorite, poi }: { favorite: Favorite<string>; poi: Poi<string> }) => {
     aside.title = (poi?.name as string) ?? '';
     aside.content = favorite.content ?? '';
-    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? 'default') : ''; // { w: 700 }
+    aside.image = poi?.medias?.at(0) ? (poi.medias[0].cloudinary_id ?? 'default') : '';
     aside.imageName = poi?.medias?.at(0)
       ? ((poi.medias[0].public_name as string | undefined) ?? '')
       : '';
     aside.imageCopyright = poi?.medias?.at(0) ? (poi.medias[0].copyright ?? '') : '';
     aside.lausanner = favorite.lausanner;
     aside.show = true;
+  };
 
+  const handleLausannerClick = ({
+    favorite,
+    poi,
+    coordinates
+  }: {
+    favorite: Favorite<string>;
+    poi: Poi<string>;
+    coordinates?: { lat: number; lng: number };
+  }) => {
     const geolocation = poi?.geolocations?.at(0);
-    if (!geolocation) return;
+    const coords =
+      coordinates ??
+      (geolocation
+        ? { lat: Number(geolocation.latitude), lng: Number(geolocation.longitude) }
+        : undefined);
+
+    if (!coords) return;
+
+    markerIndex = coordinates
+      ? `poi#${poi.id}|favorite#${favorite.id}|${coords.lat},${coords.lng}`
+      : `favorite#${favorite.id}`;
+
+    updateAside({ favorite, poi });
 
     map?.flyTo({
-      center: [Number(geolocation.longitude ?? ''), Number(geolocation.latitude ?? '')],
+      center: [coords.lng, coords.lat],
       zoom: 15,
       essential: true
     });
@@ -160,7 +178,7 @@
         if (context && typeof context.getParameter == 'function') {
           return true;
         }
-      } catch (e) {
+      } catch {
         // WebGL is supported, but disabled
       }
       return false;
@@ -184,7 +202,7 @@
 
   // on locale change, close aside
   $effect(() => {
-    locale;
+    void locale;
     closeAside();
   });
 </script>
@@ -194,7 +212,7 @@
     <section class="map-tips z-0 h-full w-full overflow-y-hidden bg-gray-100 lg:w-3/6 xl:w-2/5">
       {#key markers}
         <div class={twMerge('relative h-full overflow-y-scroll p-4', aside.show ? 'hidden' : '')}>
-          {#each markers as marker}
+          {#each listMarkers as marker, k (`${k}|${locale}|poi#${marker.poi.id}|favorite#${marker.favorite.id}`)}
             <LausannerCard
               favorite={marker.favorite}
               poi={marker.poi}
@@ -242,7 +260,7 @@
             class="h-12 w-12 items-center rounded-full"
             alt={aside.lausanner?.name ?? ''}
             useCloudinaryPreset={aside.lausanner?.medias?.at(0)?.cloudinary_id ? false : true}
-            localSrc={'/pages/themes/user_not_found.png'}
+            localSrc="/pages/themes/user_not_found.png"
             src={aside.lausanner?.medias?.at(0)?.cloudinary_id ??
               '/pages/themes/user_not_found.png'}
             transform={{
@@ -299,19 +317,28 @@
       cooperativeGestures={true}
       bind:map
     >
-      <NavigationControl position={'top-right'} />
-      {#each markers as marker}
+      <NavigationControl position="top-right" />
+      {#each markers as marker, k (`${k}poi#${marker.poi.id}|favorite#${marker.favorite.id}|${locale}`)}
         <Marker lnglat={{ lat: marker.coordinates.lat, lng: marker.coordinates.lng }}>
           {#snippet content()}
             <MapPin class="stroke-brand-500 h-6 w-6 scale-90 text-transparent" strokeWidth={3} />
           {/snippet}
           <Popup
-            open={markerIndex === `poi#${marker.poi.id}|favorite#${marker.favorite.id}`}
+            open={markerIndex === `favorite#${marker.favorite.id}` ||
+              markerIndex ===
+                `poi#${marker.poi.id}|favorite#${marker.favorite.id}|${marker.coordinates.lat},${marker.coordinates.lng}`}
             onopen={() => {
-              setTimeout(
-                () => handleLausannerClick({ favorite: marker.favorite, poi: marker.poi }),
-                50
-              );
+              setTimeout(() => {
+                if (markerIndex === `favorite#${marker.favorite.id}`) {
+                  updateAside({ favorite: marker.favorite, poi: marker.poi });
+                } else {
+                  handleLausannerClick({
+                    favorite: marker.favorite,
+                    poi: marker.poi,
+                    coordinates: marker.coordinates
+                  });
+                }
+              }, 50);
             }}
             onclose={closeAside}
             offset={{

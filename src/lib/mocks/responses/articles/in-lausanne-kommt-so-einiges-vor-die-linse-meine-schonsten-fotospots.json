@@ -1,0 +1,740 @@
+{
+  "data": {
+    "item": {
+      "id": "275",
+      "languages": ["fr", "de", "en"],
+      "name": {
+        "fr": "À Lausanne, l’objectif (aussi) s’épanouit : mes meilleurs spots photos",
+        "de": "In Lausanne kommt so einiges vor die Linse: meine schönsten Fotospots",
+        "en": "In Lausanne, (even) the lens thrives: my best photo spots"
+      },
+      "lead": {
+        "fr": "Aujourd’hui, je laisse mon vélo électrique à la maison et je sors mon appareil photo fétiche pour une séance de street photography. Lorsque je voyage, j’essaie toujours de me documenter sur les meilleurs endroits à ne pas louper en tant que photographe. Que vous soyez de la région ou de passage, Lausanne offre une variété de décors uniques, alors suivez-moi et découvrez mes 10 meilleurs spots !",
+        "de": "Heute lasse ich mein E-Bike zu Hause und ziehe mit meinem Lieblingsfotoapparat los. Mein Ziel: Strassenfotografie. Auf Reisen versuche ich immer, die besten Orte ausfindig zu machen, die man sich als Fotografin oder Fotograf auf keinen Fall entgehen lassen sollte. Egal ob ihr aus der Region oder auf der Durchreise seid: Lausanne hält eine ganze Reihe an einzigartigen Kulissen bereit. Ich zeige euch meine 10 Lieblingsorte!",
+        "en": "Today, I’m leaving my electric bike at home and reaching for my favourite camera for a street photography session. When I’m travelling, I always try to read up on the best places, those not to be missed for a photographer. Whether you’re a local or a visitor, Lausanne offers a variety of unique settings, so follow me to discover my 10 best spots!"
+      },
+      "summary": {
+        "fr": "Aujourd’hui, je laisse mon vélo électrique à la maison et je sors mon appareil photo fétiche pour une séance de street photography. Lorsque je voyage, j’essaie toujours de me documenter sur les meilleurs endroits à ne pas louper en tant que photographe. Que vous soyez de la région ou de passage, Lausanne offre une variété de décors uniques, alors suivez-moi et découvrez mes 10 meilleurs spots !",
+        "de": "Heute lasse ich mein E-Bike zu Hause und ziehe mit meinem Lieblingsfotoapparat los. Mein Ziel: Strassenfotografie. Auf Reisen versuche ich immer, die besten Orte ausfindig zu machen, die man sich als Fotografin oder Fotograf auf keinen Fall entgehen lassen sollte. Egal ob ihr aus der Region oder auf der Durchreise seid: Lausanne hält eine ganze Reihe an einzigartigen Kulissen bereit. Ich zeige euch meine 10 Lieblingsorte!",
+        "en": "Today, I’m leaving my electric bike at home and reaching for my favourite camera for a street photography session. When I’m travelling, I always try to read up on the best places, those not to be missed for a photographer. Whether you’re a local or a visitor, Lausanne offers a variety of unique settings, so follow me to discover my 10 best spots!"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23411,
+              "name": "siège du CIO",
+              "public_name": "Comité International Olympique",
+              "cloudinary_id": "rJ7x7LPuLXtHwrw9yWrbYbcPNRbewcQbb3kWVp94",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28353a066812b268.-Siede-du-CIO-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/9.-Siede-du-CIO-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. La vieille ville"
+          },
+          {
+            "type": "paragraph",
+            "value": "Commencez votre aventure photographique par la vieille ville pour son héritage architectural et ses nombreux points de vue (notamment le point culminant de la ville : le Beffroi de la Cathédrale). C’est aussi stratégique de débuter sa promenade en haut de la ville afin de n’avoir plus qu’à descendre par la suite. Flânez dans les ruelles pavées, capturez les façades colorées des bâtiments, et laissez-vous charmer par l’atmosphère médiévale qui se dégage de ses rues. Les détails architecturaux, les places pittoresques, et les cafés en terrasse sont autant de sujets qui ne manqueront pas de satisfaire votre créativité photographique."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23412,
+              "name": "Armes",
+              "public_name": "Lausanne octobre",
+              "cloudinary_id": "fN2mBGLaAIeywReLsGcPTWZW3QHYN5HIm2NtmbVh",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 891,
+                "height": 1335,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"891\" height=\"1335\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "72c52011d58177a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Lausanne-Octobre-2023-11-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. Les galeries de Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les passages historiques de Lausanne, comme la Galerie du Commerce (qui se trouve derrière la Poste de Saint-François), sont pour certains des trésors relativement cachés de la ville. Ces passages relient différents endroits et présentent une architecture unique qui mérite d’être photographiée."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26209,
+              "name": "Lausanne et ses perles d’architecture",
+              "public_name": "Lausanne et ses perles d’architecture",
+              "cloudinary_id": "b881ff1aefe198e7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shopping au Galerie de St-Francois",
+              "metadata": {
+                "width": 1600,
+                "height": 948,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"948\"",
+                "tags": "Shopping; Lausanne",
+                "description": null,
+                "file_name_from_url": "b881ff1aefe198e7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Galeries-S-F.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3. L’Architecture moderne et ancienne de la Ville"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne regroupe une variété passionnante de bâtiments. Promenez-vous dans la ville pour découvrir ces structures architecturales uniques. Utilisez les contrastes entre l’ancien et le nouveau pour créer des compositions visuelles originales."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoSXrHvIwr8/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Le Quartier du Flon et de Sévelin"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dans le quartier du Flon, vous découvrirez de nombreux styles d’architecture qui se côtoient harmonieusement. Les graffitis colorés qui ornent certaines rues contrastent avec l’architecture des anciens entrepôts rénovés. Quartier animé, il offre également des opportunités de photographie uniques."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CwtEbtENwff/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/sur-la-colline-du-languedoc/\">5. La Colline du Languedoc</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour une vue panoramique à couper le souffle sur Lausanne, rendez-vous à la Colline du Languedoc. Là-haut, vous pouvez capturer la ville étalée devant vous, avec le lac scintillant en arrière-plan et les Alpes majestueuses en toile de fond. La colline est également entourée de vignobles, ce qui offre des opportunités de clichés inattendus."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoNyYKDoRA0/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/plateforme-10/\">6. Plateforme 10</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Plateforme 10, un lieu où l’art et l’architecture se rencontrent, est un paradis pour les amateurs de photographie. Ce complexe abrite trois musées d’art contemporain renommés et présente une architecture moderne et audacieuse. Les angles géométriques, les jeux de lumière et les sculptures en font un lieu idéal pour capturer des images artistiques."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cnbo__poJUD/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "7. Les parcs lausannois"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les parcs, tels que le Parc de Milan, offrent une oasis de verdure en plein coeur de la ville. Les jardins bien entretenus et les arbres majestueux créent un cadre idéal pour des photos de nature et de vie en plein air. Au printemps la floraison des cerisiers et en automne les couleurs flamboyantes de cette saison."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CkWb7_uIeRy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/promenade-de-la-ficelle/\">8. Le Chemin de la Ficelle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le Chemin de la Ficelle est un chemin piéton qui suit les anciens tracés de la Ficelle, l’ancêtre du métro M2 qui reliait le quartier sous-gare au bord du lac. Dorénavant, cette promenade vous permettra de relier les quais à l’abri de la circulation et de capturer la vie qui passe."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23414,
+              "name": "Chemin de la Ficelle",
+              "public_name": "Chemin de la Ficelle",
+              "cloudinary_id": "mpEHsS8NXWKEhgypiQ2FkTSd6Rd00bkvERXpFPCZ",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "664f427c6b2c4bea.-Chemin-de-la-ficelle-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/8.-Chemin-de-la-ficelle-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">9.Le Musée Olympique</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne abrite le Musée Olympique, un lieu d’intérêt touristique et culturel majeur, mais il offre également d’excellentes opportunités photographiques. Les lignes architecturales élégantes et les espaces ouverts sont des sujets fascinants pour les photographes en quête de belles compositions. Pour une expérience olympique complète, allez voir le siège du CIO un peu plus loin au bord du lac."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cx3Mre6Idxy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "10. Le Sentier du Lac"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le Sentier du Lac, qui relie la Tour Haldimand au Port de Pully, offre une expérience photographique inoubliable. Particulièrement tôt le matin ou en fin de journée, la lumière douce du soleil met en valeur la splendeur du Léman. Les reflets sur l’eau, les voiliers qui naviguent et les oiseaux qui survolent la surface du lac offrent une toile de fond parfaite pour vos photos."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJ34YqxBOog/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Vous l’aurez compris, Lausanne est une ville riche en histoire, en art et en architecture, offrant une multitude de possibilités de photographie. Que vous soyez attiré par le charme de la vieille ville, l’art contemporain de Plateforme 10, l’architecture moderne, les panoramas à couper le souffle, les contrastes entre l’ancien et le nouveau, ou les scènes de la vie quotidienne dans les rues, Lausanne est une destination incontournable. Alors, prenez votre appareil, explorez ces spots uniques et capturez la beauté de Lausanne sous tous ses angles."
+          },
+          {
+            "type": "paragraph",
+            "value": "N’oubliez pas de partager vos photos avec le hashtag #TheLausanner pour que nous puissions admirer votre travail."
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23411,
+              "name": "siège du CIO",
+              "public_name": "Das Internationale Olympische Komitee",
+              "cloudinary_id": "rJ7x7LPuLXtHwrw9yWrbYbcPNRbewcQbb3kWVp94",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28353a066812b268.-Siede-du-CIO-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/9.-Siede-du-CIO-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. Die Altstadt"
+          },
+          {
+            "type": "paragraph",
+            "value": "Startet euer Foto-Abenteuer am besten in der Altstadt. Sie besticht mit ihrem architektonischen Erbe und den vielen Aussichtspunkten (vor allem dem Glockenturm der Kathedrale, der über die Stadt hinausragt). Auch aus strategischer Sicht macht es Sinn, den Spaziergang in der Altstadt zu starten, denn von dort geht es nämlich nur noch hinunter. Schlendert durch die gepflasterten Gassen, haltet die farbenfrohen Gebäudefassaden fest und lasst den Charme der mittelalterlichen Atmosphäre auf euch wirken. Die architektonischen Details, die malerischen Plätze und die Terrassencafés gehören zu den vielen Motiven, die eure fotografische Kreativität wecken."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23412,
+              "name": "Armes",
+              "public_name": "Lausanne Oktober",
+              "cloudinary_id": "fN2mBGLaAIeywReLsGcPTWZW3QHYN5HIm2NtmbVh",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 891,
+                "height": 1335,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"891\" height=\"1335\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "72c52011d58177a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Lausanne-Octobre-2023-11-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. Die Passagen von Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die historischen Passagen von Lausanne gehören zum Teil zu den etwas versteckten Schätzen der Stadt. So zum Beispiel die Galerie du Commerce (hinter der Postfiliale Saint-François). Diese Passagen verbinden verschiedene Orte und kennzeichnen sich durch einzigartige Bauweisen, die auf jeden Fall ein Foto wert sind."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26209,
+              "name": "Lausanne et ses perles d’architecture",
+              "public_name": null,
+              "cloudinary_id": "b881ff1aefe198e7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shopping au Galerie de St-Francois",
+              "metadata": {
+                "width": 1600,
+                "height": 948,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"948\"",
+                "tags": "Shopping; Lausanne",
+                "description": null,
+                "file_name_from_url": "b881ff1aefe198e7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Galeries-S-F.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3.Moderne und alte Architektur der Stadt"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne vereint eine faszinierende Vielfalt an Gebäuden. Beim Spazieren durch die Stadt entdeckt ihr diese einzigartigen architektonischen Zeugnisse. Lasst euch von den Kontrasten zwischen Alt und Neu inspirieren, um originelle visuelle Kompositionen zu schaffen."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoSXrHvIwr8/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Flon-Viertel und Stadtteil Sévelin"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Flon-Viertel könnt ihr viele verschiedene Architekturstile bewundern, die hervorragend harmonieren. In einigen Gassen bilden bunte Graffitis einen starken Kontrast zu den renovierten ehemaligen Lagerhallen. Dieses lebendige Quartier ist der perfekte Ort, um einzigartige Fotos zu schiessen."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CwtEbtENwff/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/auf-dem-languedoc-hugel/\">5. Languedoc-Hügel</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ihr seid auf der Suche nach einem atemberaubenden Panoramablick auf die Stadt? Dann auf zum Languedoc-Hügel. Von dort aus könnt ihr Lausanne mit dem glitzernden See und den majestätischen Alpen im Hintergrund fotografieren. Auch die Weinberge rund um den Hügel bieten unerwartete Motive."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoNyYKDoRA0/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/plateforme-10/\">6. Plateforme 10</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Hier kommen Kunst und Architektur zusammen. Die Plateforme 10 ist ein Paradies für Fotografie-Begeisterte. Dieser Gebäudekomplex beherbergt drei renommierte Museen für zeitgenössische Kunst und ist von einer modernen, gewagten Architektur geprägt. Die geometrischen Winkel, die Skulpturen und das Spiel von Licht und Schatten machen die Plateforme 10 zum perfekten Ort für kunstvolle Bilder."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cnbo__poJUD/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "7. Die Lausanner Pärke"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Pärke von Lausanne, darunter auch der Milan-Park, sind grüne Oasen im Herzen der Stadt. Mit ihren gut gepflegten Gärten und majestätischen Bäumen schaffen sie einen idealen Rahmen für Fotos von der Natur und vom Leben im Freien. Besonders schön sind die blühenden Kirschbäume im Frühling und die leuchtenden Farben im Herbst."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CkWb7_uIeRy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/promenade-de-la-ficelle/\">8. Chemin de la Ficelle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieser Fussweg führt entlang der ehemaligen Zahnradbahn Ficelle, der Vorgängerin der heutigen Metrolinie M2, die das Stadtviertel Sous-Gare mit dem Seeufer verband. Hier könnt ihr einen Spaziergang fernab vom Verkehr geniessen und eure Eindrücke auf dem Weg mit dem Fotoapparat einfangen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23414,
+              "name": "Chemin de la Ficelle",
+              "public_name": "Chemin de la Ficelle",
+              "cloudinary_id": "mpEHsS8NXWKEhgypiQ2FkTSd6Rd00bkvERXpFPCZ",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "664f427c6b2c4bea.-Chemin-de-la-ficelle-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/8.-Chemin-de-la-ficelle-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">9. Olympisches Museum</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Olympische Museum in Lausanne ist eine wichtige touristische und kulturelle Attraktion, es eignet sich aber auch wunderbar zum Fotografieren. Die eleganten architektonischen Linien und die offenen Räume bilden faszinierende Motive für Fotografinnen und Fotografen auf der Suche nach schönen Kompositionen. Für ein komplettes Olympia-Erlebnis könnt ihr noch den Sitz des IOK besuchen. Er befindet sich etwas weiter entfernt am See."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cx3Mre6Idxy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "10. Seeuferweg"
+          },
+          {
+            "type": "paragraph",
+            "value": "Der Seeuferweg zwischen dem Tour Haldimand und dem Hafen von Pully bietet ein unvergessliches fotografisches Erlebnis. Besonders im sanften Licht der auf- oder untergehenden Sonne kommt der Genfersee in seiner vollen Pracht zur Geltung. Die Lichtreflexe und Segelboote auf dem Wasser und die knapp über der Wasseroberfläche gleitenden Vögel bieten eine perfekte Kulisse für eure Fotos."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJ34YqxBOog/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ihr seht, Lausanne ist eine Stadt mit einem reichen geschichtlichen, künstlerischen und architektonischen Erbe und damit vielen Orten, die sich zum Fotografieren eignen. Egal, wofür euer Herz schlägt – den Charme der Altstadt, die zeitgenössische Kunst der Plateforme 10, die moderne Architektur, die atemberaubenden Panoramablicke, die Kontraste zwischen Alt und Neu oder die Alltagsszenen in den Gassen – Lausanne ist eine absolute Muss-Destination. Also, ran an den Fotoapparat und auf zu diesen einzigartigen Orten, um die Schönheit der Stadt Lausanne aus allen Blickwinkeln einzufangen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Vergesst nicht, eure Fotos zu posten und mit dem Hashtag #TheLausanner zu versehen. So können wir eure Arbeit bewundern."
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23411,
+              "name": "siège du CIO",
+              "public_name": "The International Olympic Committee",
+              "cloudinary_id": "rJ7x7LPuLXtHwrw9yWrbYbcPNRbewcQbb3kWVp94",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "28353a066812b268.-Siede-du-CIO-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/9.-Siede-du-CIO-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. The old city"
+          },
+          {
+            "type": "paragraph",
+            "value": "Begin your photographic adventure with the old city for its architectural heritage and many viewpoints (particularly the highest point in the city, the Cathedral’s belfry). It’s also strategic to start your walk high up in the town so that you’re just walking down after that. Stroll along the paved streets, capture the colourful buildings and allow the mediaeval atmosphere emanating from the neighbourhood to charm you. The architectural details, picturesque squares and scenes of coffees enjoyed on a terrace are all photo opportunities that are sure to satisfy your creativity."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23412,
+              "name": "Armes",
+              "public_name": "Lausanne october",
+              "cloudinary_id": "fN2mBGLaAIeywReLsGcPTWZW3QHYN5HIm2NtmbVh",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent, le cyclo flash",
+              "metadata": {
+                "width": 891,
+                "height": 1335,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"891\" height=\"1335\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "72c52011d58177a4.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Lausanne-Octobre-2023-11-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. Lausanne’s galleries"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne’s historical passageways, such as the Galerie du Commerce (behind the Saint-François post office) are, for some, relatively hidden treasures of the city. These passageways link different places and present a unique architecture that deserves to be photographed."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26209,
+              "name": "Lausanne et ses perles d’architecture",
+              "public_name": null,
+              "cloudinary_id": "b881ff1aefe198e7",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shopping au Galerie de St-Francois",
+              "metadata": {
+                "width": 1600,
+                "height": 948,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"948\"",
+                "tags": "Shopping; Lausanne",
+                "description": null,
+                "file_name_from_url": "b881ff1aefe198e7.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/Galeries-S-F.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3. The city’s modern and ancient architecture"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne includes a fascinating variety of buildings. Walk around the town to discover these unique architectural structures. Use the contrasts between the old and the new to create original visual compositions."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoSXrHvIwr8/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. The Flon and the Sévelin District"
+          },
+          {
+            "type": "paragraph",
+            "value": "In the Flon District, you’ll discover many styles of architecture that coexist harmoniously. The colourful graffiti decorating some streets contrasts with the architecture of the renovated former warehouses. A lively district that also offers unique photo opportunities!"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CwtEbtENwff/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/on-the-languedoc-hillside/\">5. The Languedoc Hill</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "For a breathtaking panoramic view over Lausanne, head to the Languedoc Hill. From the top, you can capture the whole city spread out before your eyes, with the shimmering lake in the background and the majestic Alps as a backdrop. The hill is also surrounded by vineyards, which offer unexpected shooting opportunities."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CoNyYKDoRA0/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/plateforme-10/\">6. Plateforme 10</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Plateforme 10, a place where art and architecture meet, is a paradise for photo hunters. This complex houses three renowned museums of contemporary arts in modern and audacious buildings. The geometric angles, interplay of light and sculptures make it an ideal spot to capture artistic pictures."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cnbo__poJUD/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "7. Lausanne parks"
+          },
+          {
+            "type": "paragraph",
+            "value": "The parks, such as Milan Park, offer an oasis of greenery in the heart of the town. The well-tended gardens and majestic trees create an ideal setting for photos of nature and life outdoors. Blossoming trees in springtime and flamboyant seasonal colours in autumn."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CkWb7_uIeRy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/promenade-de-la-ficelle/\">8. Chemin de la Ficelle</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The Chemin de la Ficelle is a pedestrian path that follows the former line of the “Ficelle”, the ancestor of the M2 metro that linked the neighbourhood under the train station to the lakeside. Now, this path allows you to walk down to Ouchy away from the traffic and to capture scenes of daily life."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23414,
+              "name": "Chemin de la Ficelle",
+              "public_name": "Chemin de la Ficelle",
+              "cloudinary_id": "mpEHsS8NXWKEhgypiQ2FkTSd6Rd00bkvERXpFPCZ",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vincent le cyclo flash",
+              "metadata": {
+                "width": 2560,
+                "height": 1708,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1708\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "664f427c6b2c4bea.-Chemin-de-la-ficelle-scaled",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/10/8.-Chemin-de-la-ficelle-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">9. The Olympic Museum</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is home to the Olympic Museum, a tourist and cultural landmark that also offers excellent photo opportunities. The elegant architectural lines and open spaces are fascinating subjects for photographers in search of beautiful compositions. For the full Olympic experience, go and see the IOC headquarters a bit further along the lakeside."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Cx3Mre6Idxy/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "10. The Lake Trail"
+          },
+          {
+            "type": "paragraph",
+            "value": "The Lake Trail that links Haldimand Tower with the Pully Harbour offers an unforgettable photographic experience. Particularly early in the morning or at the end of the day, the soft sun rays highlight the splendour of Lake Geneva. The reflections on the water, sailing boats and birds flying over the surface of the lake offer the perfect backdrop for your pictures."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJ34YqxBOog/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "paragraph",
+            "value": "As you can see, Lausanne is a city steeped in history, art and architecture that offers a myriad of photo possibilities. Whether you’re attracted by the charm of the old city, the contemporary art at Plateforme 10, modern architecture, breathtaking panoramas, the contrasts between old and new or scenes of daily life in the streets, Lausanne is a must-visit destination. So, grab your camera, explore these unique spots and capture the beauty of Lausanne from every angle."
+          },
+          {
+            "type": "paragraph",
+            "value": "Don’t forget to share your photos with the hashtag #TheLausanner so we can admire your work."
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "rJ7x7LPuLXtHwrw9yWrbYbcPNRbewcQbb3kWVp94",
+          "copyright": "© Vincent, le cyclo flash",
+          "public_name": {
+            "fr": "Comité International Olympique",
+            "en": "The International Olympic Committee",
+            "de": "Das Internationale Olympische Komitee"
+          }
+        }
+      ],
+      "published_at": "1698271200",
+      "seo": {
+        "description": {
+          "fr": "Aujourd’hui, je laisse mon vélo électrique à la maison et je sors mon appareil photo fétiche pour une séance de street photography. Lorsque je voyage, j’essaie toujours de me documenter sur les meilleurs endroits à ne pas louper en tant que photographe. Que vous soyez de la région ou de passage, Lausanne offre une variété de décors uniques, alors suivez-moi et découvrez mes 10 meilleurs spots !",
+          "de": "Heute lasse ich mein E-Bike zu Hause und ziehe mit meinem Lieblingsfotoapparat los. Mein Ziel: Strassenfotografie. Auf Reisen versuche ich immer, die besten Orte ausfindig zu machen, die man sich als Fotografin oder Fotograf auf keinen Fall entgehen lassen sollte. Egal ob ihr aus der Region oder auf der Durchreise seid: Lausanne hält eine ganze Reihe an einzigartigen Kulissen bereit. Ich zeige euch meine 10 Lieblingsorte!",
+          "en": "Today, I’m leaving my electric bike at home and reaching for my favourite camera for a street photography session. When I’m travelling, I always try to read up on the best places, those not to be missed for a photographer. Whether you’re a local or a visitor, Lausanne offers a variety of unique settings, so follow me to discover my 10 best spots!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "a-lausanne-lobjectif-aussi-sepanouit-mes-meilleurs-spots-photos",
+          "de": "in-lausanne-kommt-so-einiges-vor-die-linse-meine-schonsten-fotospots",
+          "en": "in-lausanne-even-the-lens-thrives-my-best-photo-spots"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-architecture",
+          "public_name": {
+            "fr": "Architecture",
+            "en": "Architecture",
+            "de": "Architektur"
+          }
+        },
+        {
+          "name": "lt-design",
+          "public_name": {
+            "fr": "Design",
+            "en": "Design",
+            "de": "Gestaltung"
+          }
+        }
+      ]
+    }
+  }
+}

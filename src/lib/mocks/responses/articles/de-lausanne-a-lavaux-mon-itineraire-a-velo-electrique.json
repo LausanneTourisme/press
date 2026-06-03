@@ -1,0 +1,1093 @@
+{
+  "data": {
+    "item": {
+      "id": "277",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+        "en": "From Lausanne to Lavaux: my electric bike route",
+        "de": "Von Lausanne ins Lavaux: meine E-Bike-Route"
+      },
+      "lead": {
+        "fr": "Même en tant que lausannois, il est difficile de décrire ce que procure la vue majestueuse sur le Léman depuis ce vignoble d’exception. Haut lieu touristique de la région, le vignoble de Lavaux fait partie de ces endroits que l’on montre fièrement, un brin chauvin, à tout visiteur de passage.",
+        "en": "Even as a Lausanner, it’s hard to describe the elation felt when contemplating the majestic view over Lake Geneva from this exceptional vineyard. The region’s tourist hot spot, the Lavaux vineyard is one of those places that we proudly show off, with a touch of patriotism, to all visitors. ",
+        "de": "Selbst den Einheimischen fällt es schwer zu beschreiben, was der majestätische Blick auf den Genfersee von diesem aussergewöhnlichen Weingebiet aus in ihnen auslöst. Die Weinberge von Lavaux sind ein touristisches Highlight der Region und gehören zu den Orten, die man mit Stolz und einem Hauch von Patriotismus allen Gästen zeigt."
+      },
+      "summary": {
+        "fr": "Même en tant que lausannois, il est difficile de décrire ce que procure la vue majestueuse sur le Léman depuis ce vignoble d’exception. Haut lieu touristique de la région, le vignoble de Lavaux fait partie de ces endroits que l’on montre fièrement, un brin chauvin, à tout visiteur de passage. Et si le panorama risque de vous couper le souffle, pas de panique, l’itinéraire suivant se prête merveilleusement bien à la pratique du vélo à assistance électrique (VAE). Allez, à vos batteries, c’est parti pour une balade de 30km aller-retour.",
+        "en": "Even as a Lausanner, it’s hard to describe the elation felt when contemplating the majestic view over Lake Geneva from this exceptional vineyard. The region’s tourist hot spot, the Lavaux vineyard is one of those places that we proudly show off, with a touch of patriotism, to all visitors. And while the panorama might take your breath away, no worries, the following route lends itself wonderfully well to an outing on an electrically assisted pedal cycle (EAPC). Right, battery charged and let’s set off for a 30 km round trip.",
+        "de": "Selbst den Einheimischen fällt es schwer zu beschreiben, was der majestätische Blick auf den Genfersee von diesem aussergewöhnlichen Weingebiet aus in ihnen auslöst. Die Weinberge von Lavaux sind ein touristisches Highlight der Region und gehören zu den Orten, die man mit Stolz und einem Hauch von Patriotismus allen Gästen zeigt. Aber auch wenn euch das Panorama den Atem rauben könnte, keine Sorge: Die folgende Route eignet sich wunderbar für eine Velotour mit elektrischer Tretunterstützung. Los geht’s mit vollen Akkus auf eine 30-Kilometer-Rundtour."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26156,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "cloudinary_id": "3e09e95773a013c6",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 9593,
+                "height": 5388,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"9593\" height=\"5388\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3e09e95773a013c6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-9.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Point de départ : <a href=\"https://stage.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\" target=\"_blank\" rel=\"noopener\">Le Musée Olympique</a> de Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Honnêtement, quel autre meilleur endroit pour débuter une session sportive depuis Lausanne ? Une fois vos gourdes remplies d’eau fraiche à l’une des fontaines, suivez le quai de Belgique direction la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-tour-haldimand/\">Tour Haldimand</a>. D’ailleurs, au pied de la tour, se trouve une station publique de vélo électrique en libre-service pour ceux qui n’aurait pas de monture à disposition. Puis prenez la direction de Pully par la route du Lac, traversez Paudex et une fois arrivé sur Lutry, c’est là que la montée débute."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27130,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - PubliBike",
+                "public_name": "[Lausanne] Lavaux_3-2",
+                "cloudinary_id": "YPxIRrsmjllwX8MVBbPcjl82O4HSPcrcCUfszOGQ",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-2",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6d7ac7450bb8ef18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-2.jpg"
+                }
+              },
+              {
+                "id": 27132,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Musee Olympique",
+                "public_name": "[Lausanne] Lavaux_3",
+                "cloudinary_id": "CP90dy7nBGZ6wsj0wy4gPs6wVYvH7iG8qXhv1Nk9",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3",
+                "metadata": {
+                  "width": 1708,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1708\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "733369fe6e94a65b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-scaled.jpg"
+                }
+              },
+              {
+                "id": 27133,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Panneaux pour velo",
+                "public_name": "[Lausanne] Lavaux_3-3",
+                "cloudinary_id": "eScjUEZY8ZwBMVz8MdqU8mpOWGIbMUlWaHY2UvkC",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-3",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "413cf1df3980aec7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>En route via Lutry et sa Petite Corniche : Premières vignes</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span class=\"TextRun SCXW75718889 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW75718889 BCX0\">Repérez la </span><span class=\"NormalTextRun SCXW75718889 BCX0\">T</span><span class=\"NormalTextRun SCXW75718889 BCX0\">our </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW75718889 BCX0\">Bertholod</span><span class=\"NormalTextRun SCXW75718889 BCX0\"> qui surplombe la vieille ville et commencez votre ascension jusqu’à </span><span class=\"NormalTextRun SCXW75718889 BCX0\">son pied</span><span class=\"NormalTextRun SCXW75718889 BCX0\">. </span><span class=\"NormalTextRun SCXW75718889 BCX0\">De là, prenez </span></span><span class=\"TextRun Highlight SCXW75718889 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW75718889 BCX0\">le chemin de la </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW75718889 BCX0\">Plantaz</span></span><span class=\"TextRun SCXW75718889 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW75718889 BCX0\"> qui vous emmène sur la route de la </span></span><span class=\"TextRun Highlight SCXW75718889 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW75718889 BCX0\">Petite Corniche</span></span><span class=\"TextRun SCXW75718889 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW75718889 BCX0\">. Empruntez la route cantonale jusqu’au village de Aran. Les mollets commencent à chauffer quelque peu. N’hésitez pas à faire un premier arrêt sur le chemin afin d’admirer la vue plongeante sur le lac et la ville de Lutry en contrebas. Tout le long des chemins de Lavaux se trouvent des petits abris à pique-nique fort pratiques.</span></span><span class=\"EOP SCXW75718889 BCX0\" data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Domaines, Caveaux et Villages de Lavaux : cœur des vignerons</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"auto\">Traversez le joli village d’Aran, puis continuez sur la route de la </span><span data-contrast=\"auto\">Petite Corniche</span><span data-contrast=\"auto\"> jusqu’à Grandvaux. A l’entrée du village, vous pouvez </span><span data-contrast=\"auto\">rejoindre en contrebas le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/domaine-de-la-crausaz/\">domaine de la Crausaz</a></span><span data-contrast=\"auto\"> pour vous désaltérer avec une vue plongeante sur les vignes. C’est véritablement à partir de ce moment que l’on aperçoit les paysages emblématiques du vignoble en terrasse. Après quelques coups de pédales pour remonter dans le village de Grandvaux et arrêtez-vous quelques instants vers la statue de Corto Maltese pour une vue panoramique.</span><span data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> <span class=\"EOP SCXW197878528 BCX0\" data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> </span><br>\n</span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25914,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "cloudinary_id": "69dab18317ddae11",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "69dab18317ddae11.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-15.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'><span class=\"TextRun SCXW197878528 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW197878528 BCX0\">Continuez votre chemin </span><span class=\"NormalTextRun SCXW197878528 BCX0\">via la route de la</span> </span><span class=\"TextRun Highlight SCXW197878528 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW197878528 BCX0\">P</span><span class=\"NormalTextRun SCXW197878528 BCX0\">etite </span><span class=\"NormalTextRun SCXW197878528 BCX0\">C</span><span class=\"NormalTextRun SCXW197878528 BCX0\">orniche</span></span><span class=\"TextRun SCXW197878528 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW197878528 BCX0\"> et </span><span class=\"NormalTextRun SCXW197878528 BCX0\">prenez la direction d</span><span class=\"NormalTextRun SCXW197878528 BCX0\">e la boutique en</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> libre-service de Fischer Vins. Une petite adresse qui est née durant la période du Covid. Le concept est juste excellent</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> : v</span><span class=\"NormalTextRun SCXW197878528 BCX0\">ous pouvez</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> y</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> acheter des produits d</span><span class=\"NormalTextRun SCXW197878528 BCX0\">e </span><span class=\"NormalTextRun SCXW197878528 BCX0\">Lavaux et régler </span><span class=\"NormalTextRun SCXW197878528 BCX0\">par vous-mêmes. </span><span class=\"NormalTextRun SCXW197878528 BCX0\">Endroit idéal pour compléter votre sac</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> à </span><span class=\"NormalTextRun SCXW197878528 BCX0\">dos pi</span><span class=\"NormalTextRun SCXW197878528 BCX0\">que-nique</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> ou </span><span class=\"NormalTextRun SCXW197878528 BCX0\">faire le plein de souvenirs</span><span class=\"NormalTextRun SCXW197878528 BCX0\">. </span><span class=\"NormalTextRun SCXW197878528 BCX0\">Après quelques emplettes, prenez la direction du domaine de </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW197878528 BCX0\">Wa</span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW197878528 BCX0\">nnaz</span><span class=\"NormalTextRun SCXW197878528 BCX0\">, </span><span class=\"NormalTextRun SCXW197878528 BCX0\">à son contrebas, </span><span class=\"NormalTextRun SCXW197878528 BCX0\">descendez en direction du village de </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW197878528 BCX0\">Riex</span> </span><span class=\"TextRun Highlight SCXW197878528 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW197878528 BCX0\">par </span><span class=\"NormalTextRun SCXW197878528 BCX0\">la « Côte-aux-Vignes »</span></span><span class=\"TextRun SCXW197878528 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW197878528 BCX0\"> puis</span><span class=\"NormalTextRun SCXW197878528 BCX0\"> continuez jusqu’</span><span class=\"NormalTextRun SCXW197878528 BCX0\">au village d’</span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW197878528 BCX0\">Epesses</span><span class=\"NormalTextRun SCXW197878528 BCX0\">. Ces deux villages sont tout simplement </span><span class=\"NormalTextRun SCXW197878528 BCX0\">magnifiques et méritent amplement </span><span class=\"NormalTextRun SCXW197878528 BCX0\">de parquer son vélo un instant et se perdre dans </span><span class=\"NormalTextRun SCXW197878528 BCX0\">les ruelles étroites, le nez au vent.</span></span></span>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27135,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Vélo LT rouge",
+                "public_name": "[Lausanne] Lavaux-2",
+                "cloudinary_id": "jsGc8hFQZFtzu98Mf4ZgUafZljFSax4tp1Gtyekj",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-2",
+                "metadata": {
+                  "width": 5517,
+                  "height": 8267,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5517\" height=\"8267\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b51916f9db1e0705.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-2.jpg"
+                }
+              },
+              {
+                "id": 27137,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Lavaux",
+                "public_name": "[Lausanne] Lavaux-14",
+                "cloudinary_id": "Benn9R7FcNoDGhxFA7HRi3ENiqujFoF89luJ3FXX",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-14",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a72605c6d037e4ab.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-14.jpg"
+                }
+              },
+              {
+                "id": 27138,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Cave à vin",
+                "public_name": "[Lausanne] Lavaux-12",
+                "cloudinary_id": "aFGGVECws9mETEFUFxTB9hiuxbb9HpYCcnPWtG9z",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-12",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f8036993770f5de7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-12.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Royaume du Dézaley : Paradis photogénique</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "À la sortie d’Epesses, reprenez la route de la Corniche (attention : cet été, la route de la Corniche est en travaux et fermée à la circulation mais il est possible de passer le tronçon fermé comme piéton en poussant le vélo), avec un peu de chance vous apercevrez même le petit train des vignes. Prenez la direction du point de vue du Dézaley, c’est là que vous aurez une vue 360° sur l’ensemble de ce site inscrit au<span class=\"TextRun SCXW265718763 BCX0\" lang=\"FR-CH\" xml:lang=\"FR-CH\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW265718763 BCX0\"> <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">patrimoine mondial de l’UNESCO</a>. </span></span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26001,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "cloudinary_id": "fa2d715319ca985c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fa2d715319ca985c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-4.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "S’il vous reste encore un peu de place dans l’estomac, bifurquez à droite sur le chemin de la Dame et aller jusqu’à la <a href=\"https://stage.lausanne-tourisme.ch/fr/decouvrir/chapelle-de-didier-imhof/\">Chapelle de Didier</a> pour commander une planchette de saucisson vaudois agrémenté d’un cru de la région. Commencez par fermer les yeux, respirez l’air frais de la nature, rouvrez les yeux et contemplez la vue impressionnante qui s’offre à vous, probablement, l’un des panoramas les plus emblématiques de Suisse, parole de chauvin vaudois."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27139,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Dezaley",
+                "public_name": "[Lausanne] Lavaux_2-9",
+                "cloudinary_id": "wERsi07MldmhJkJR4dK01t61045uzN41l8tMpTPg",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_2-9",
+                "metadata": {
+                  "width": 1705,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1705\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "7bb1d4be2070ca14.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-9-scaled.jpg"
+                }
+              },
+              {
+                "id": 27140,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Maison Lavaux",
+                "public_name": "[Lausanne] Lavaux_3-4",
+                "cloudinary_id": "IX4Ro68yFw0dBT6hL70bZjG763PJbdK92g1ivZ8o",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-4",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "9395f061cf8334bc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-4.jpg"
+                }
+              },
+              {
+                "id": 27141,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Charcuterie",
+                "public_name": "Lausanne-Lavaux-6",
+                "cloudinary_id": "xSe427NuL3FS9zUqJqlNOFta1TSSJ4s70kMGCurm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne-Lavaux-6",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5860005b8a9e82f9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-6.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Retour sur Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"auto\">Le trajet de retour peut se faire par la même route à travers les vignes ou alors vous pouvez traverser le joli village de Rivaz et descendre au niveau du lac pour suivre la route cantonale jusqu’à Lausanne. Cette option peut s’avérer très plaisante en été où de nombreux points de baignade sur la route sont possibles.</span><span data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<span data-contrast=\"auto\">Découvrez </span><a href=\"https://schweizmobil.ch/fr/suisse-a-velo/itineraire-1/etape-6\"><span data-contrast=\"none\">l’itinéraire</span></a><span data-contrast=\"auto\"> détaillé sur SuisseMobile ainsi que des informations pour votre visite </span><a href=\"https://www.lavaux-unesco.ch/decouvrir/pour-une-experience-positive-lavaux/acces-transports#en-velo\"><span data-contrast=\"none\">à vélo</span></a><span data-contrast=\"none\"> en Lavaux.</span><span data-ccp-props='{\"201341983\":0,\"335559739\":0,\"335559740\":240}'> </span>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26085,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "cloudinary_id": "9df65d1d635e83e5",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1705,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1705\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9df65d1d635e83e5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-8-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26156,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "3e09e95773a013c6",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 9593,
+                "height": 5388,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"9593\" height=\"5388\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3e09e95773a013c6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-9.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Starting point: <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">The Olympic Museum</a> in Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "To be honest, what better place to start a sports session from in Lausanne? Once you’ve filled your water bottles with fresh water from one of the fountains, follow Quai de Belgique towards the east and <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-haldimand-tower/\">Haldimand Tower</a>. By the way, there’s a public bike-sharing station at the foot of the tower if you don’t have your own e-bike. Then, head to Pully on Route du Lac, cycle through Paudex and, once you arrive in Lutry, that’s where the ascent starts."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27130,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - PubliBike",
+                "public_name": "[Lausanne] Lavaux_3-2",
+                "cloudinary_id": "YPxIRrsmjllwX8MVBbPcjl82O4HSPcrcCUfszOGQ",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-2",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6d7ac7450bb8ef18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-2.jpg"
+                }
+              },
+              {
+                "id": 27132,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Musee Olympique",
+                "public_name": "[Lausanne] Lavaux_3",
+                "cloudinary_id": "CP90dy7nBGZ6wsj0wy4gPs6wVYvH7iG8qXhv1Nk9",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3",
+                "metadata": {
+                  "width": 1708,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1708\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "733369fe6e94a65b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-scaled.jpg"
+                }
+              },
+              {
+                "id": 27133,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Panneaux pour velo",
+                "public_name": "[Lausanne] Lavaux_3-3",
+                "cloudinary_id": "eScjUEZY8ZwBMVz8MdqU8mpOWGIbMUlWaHY2UvkC",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-3",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "413cf1df3980aec7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>On the way via Lutry and its Petite Corniche</strong><strong>: first vineyards</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Spot the Bertholod Tower that overlooks the old town and start your ascent up to its foot. From there, continue on Chemin de la Plantaz on to Route de la Petite Corniche. Carry on this cantonal road along to the village of Aran. You’ll start to feel your calves working. Do take the opportunity to stop along the way to admire the view overlooking the lake and town of Lutry. Along all the paths of Lavaux are very practical small picnic shelters."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lavaux Estates, Wine Cellars and Villages: the heart of winegrowers</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Cycle through the pretty village of Aran, then continue on Route de la Petite Corniche until you reach Grandvaux. As you enter the village, head down towards the Domaine de la Crausaz to quench your thirst with a bird’s-eye view over the vineyards. It’s really from here that you can see the iconic landscapes of the terraced vineyards. With a few turns of the pedal, head back up to the village of Grandvaux and take a short break near the statue of Corto Maltese to admire the panoramic view."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25914,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "69dab18317ddae11",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "69dab18317ddae11.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-15.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Carry on along Route de la Petite Corniche and aim for the self-service shop of Fischer Vins, a small place opened during the Covid period. The concept is simply fab: you purchase products from Lavaux and pay directly. It’s the ideal spot to complete your picnic or purchase some souvenirs. After that, go on towards the Domaine de Wannaz and, from below it, cycle down to the village of Riex by la “Côte-aux-Vignes”, then continue up towards Epesses. These two villages are simply magnificent and it’s well worth parking your bike for a while to get lost in the narrow streets, going wherever the fancy takes you."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27135,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Vélo LT rouge",
+                "public_name": "[Lausanne] Lavaux-2",
+                "cloudinary_id": "jsGc8hFQZFtzu98Mf4ZgUafZljFSax4tp1Gtyekj",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-2",
+                "metadata": {
+                  "width": 5517,
+                  "height": 8267,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5517\" height=\"8267\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b51916f9db1e0705.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-2.jpg"
+                }
+              },
+              {
+                "id": 27137,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Lavaux",
+                "public_name": "[Lausanne] Lavaux-14",
+                "cloudinary_id": "Benn9R7FcNoDGhxFA7HRi3ENiqujFoF89luJ3FXX",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-14",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a72605c6d037e4ab.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-14.jpg"
+                }
+              },
+              {
+                "id": 27138,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Cave à vin",
+                "public_name": "[Lausanne] Lavaux-12",
+                "cloudinary_id": "aFGGVECws9mETEFUFxTB9hiuxbb9HpYCcnPWtG9z",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-12",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f8036993770f5de7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-12.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The realm of Dézaley, a photogenic paradise</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "As you leave Epesses, head back on to Route de la Corniche (beware, this road is under work and closed to traffic this summer, but you can get through the closed section as a pedestrian by pushing your bike) and, with a bit of luck, you’ll even see the vineyard tourist train. Head towards the Dézaley viewpoint, from where you have a 360° view over the whole of this UNESCO-listed site."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26001,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "fa2d715319ca985c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fa2d715319ca985c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-4.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "If your stomach feels a bit empty, take a right turn on to Chemin de la Dame and go down to <a href=\"https://www.lausanne-tourisme.ch/en/explore/didier-imhofs-chapelle/\">Didier Imhof’s Chapel</a> to order a snack board of Vaud sausage to go with a glass of local wine. Start by closing your eyes, breathe in the fresh air of nature, then open your eyes to gaze at the impressive view unfolding before you – probably one of the most iconic panoramas in Switzerland, if you believe the word of a proud Vaudois."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27139,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Dezaley",
+                "public_name": "[Lausanne] Lavaux_2-9",
+                "cloudinary_id": "wERsi07MldmhJkJR4dK01t61045uzN41l8tMpTPg",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_2-9",
+                "metadata": {
+                  "width": 1705,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1705\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "7bb1d4be2070ca14.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-9-scaled.jpg"
+                }
+              },
+              {
+                "id": 27140,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Maison Lavaux",
+                "public_name": "[Lausanne] Lavaux_3-4",
+                "cloudinary_id": "IX4Ro68yFw0dBT6hL70bZjG763PJbdK92g1ivZ8o",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-4",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "9395f061cf8334bc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-4.jpg"
+                }
+              },
+              {
+                "id": 27141,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Charcuterie",
+                "public_name": "Lausanne-Lavaux-6",
+                "cloudinary_id": "xSe427NuL3FS9zUqJqlNOFta1TSSJ4s70kMGCurm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne-Lavaux-6",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5860005b8a9e82f9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-6.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Back to Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "For the route back, you can cycle along the same road through the vineyards or through the pretty village of Rivaz, then down to the lakeside to follow the cantonal road to Lausanne. This option can be very pleasant in summer as several bathing spots are available along the way."
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "paragraph",
+            "value": "Discover the detailed <a href=\"https://schweizmobil.ch/en/cycling-in-switzerland/route-1/stage-6\">route</a> on Switzerland Mobility as well as some information for your visit of <a href=\"https://www.lavaux-unesco.ch/decouvrir/pour-une-experience-positive-lavaux/acces-transports#en-velo\">Lavaux on a bike</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26085,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "9df65d1d635e83e5",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1705,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1705\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9df65d1d635e83e5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-8-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26156,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "3e09e95773a013c6",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 9593,
+                "height": 5388,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"9593\" height=\"5388\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3e09e95773a013c6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-9.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Ausgangspunkt: <a href=\"https://www.lausanne-tourisme.ch/fr/story/le-musee-olympique/\">Olympisches Museum</a> in Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ehrlich gesagt, es gibt wohl kaum einen besseren Startort in Lausanne für eine sportliche Aktivität. Füllt eure Trinkflasche an einem der Brunnen mit frischem Wasser und folgt dem Quai de Belgique in Richtung Tour Haldimand. Beim Turm befindet sich übrigens eine öffentliche Selbstbedienungsstation für E-Bikes für diejenigen, die keinen eigenen Drahtesel zur Verfügung haben. Fahrt nun auf der Route du Lac in Richtung Pully, durchquert Paudex und dann weiter bis Lutry, wo der Aufstieg beginnt."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27130,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - PubliBike",
+                "public_name": "[Lausanne] Lavaux_3-2",
+                "cloudinary_id": "YPxIRrsmjllwX8MVBbPcjl82O4HSPcrcCUfszOGQ",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-2",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "6d7ac7450bb8ef18.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-2.jpg"
+                }
+              },
+              {
+                "id": 27132,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Musee Olympique",
+                "public_name": "[Lausanne] Lavaux_3",
+                "cloudinary_id": "CP90dy7nBGZ6wsj0wy4gPs6wVYvH7iG8qXhv1Nk9",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3",
+                "metadata": {
+                  "width": 1708,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1708\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "733369fe6e94a65b.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-scaled.jpg"
+                }
+              },
+              {
+                "id": 27133,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Panneaux pour velo",
+                "public_name": "[Lausanne] Lavaux_3-3",
+                "cloudinary_id": "eScjUEZY8ZwBMVz8MdqU8mpOWGIbMUlWaHY2UvkC",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-3",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "413cf1df3980aec7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-3.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Erste Weinberge auf dem Weg nach Lutry über die Route de la Petite Corniche</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Haltet Ausschau nach dem Turm Bertholod, der die Altstadt überragt, und beginnt den Aufstieg bis zum Turm. Von dort aus führt der Chemin de la Plantaz auf die Kantonsstrasse Route de la Petite Corniche und diese bis zum Dorf Aran. Spürt ihr eure Waden schon? Dann legt einen ersten Halt ein, um die traumhafte Aussicht auf den See und das darunter liegende Städtchen Lutry zu geniessen. Im ganzen Lavaux gibt es kleine, praktische Picknickplätze."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Weingüter, Weinkeller und Dörfer im Lavaux: Wo das Herz der Winzer schlägt</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Weiter geht’s durch das hübsche Dorf Aran und dann auf der Route de la Petite Corniche bis nach Grandvaux. Eingangs des Dorfes könnt ihr etwas weiter unten im Domaine de la Crausaz euren Durst inmitten der Weinberge löschen. Ab hier erblickt ihr die spektakulären terrassenförmig angelegten Weinberge. Nach ein paar weiteren Tritten in die Pedalen seid ihr wieder in Grandvaux. Legt einen kurzen Stopp bei der Statue von Corto Maltese an, um den Panoramablick zu geniessen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25914,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "69dab18317ddae11",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "69dab18317ddae11.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-15.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Folgt weiter der Route de la Petite Corniche und biegt zum Selbstbedienungsladen von Fischer Vins ab. Dieser ist während der Covid-Zeit entstanden und das Konzept ist genial: Wählt Produkte aus dem Lavaux aus und bezahlt an der Selbstbedienungskasse. So könnt ihr euer Picknick vervollständigen oder euch mit Souvenirs eindecken. Nach dem Einkauf geht’s weiter in Richtung Domaine de Wannaz und unterhalb des Weinguts über die Route de la Côte-aux-Vignes nach Riex und dann bis nach Epesses. Es lohnt sich, in diesen beiden malerischen Dörfern das E-Bike kurz abzustellen und durch die engen Gassen zu streifen, immer der Nase nach."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27135,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Vélo LT rouge",
+                "public_name": "[Lausanne] Lavaux-2",
+                "cloudinary_id": "jsGc8hFQZFtzu98Mf4ZgUafZljFSax4tp1Gtyekj",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-2",
+                "metadata": {
+                  "width": 5517,
+                  "height": 8267,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5517\" height=\"8267\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "b51916f9db1e0705.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-2.jpg"
+                }
+              },
+              {
+                "id": 27137,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Lavaux",
+                "public_name": "[Lausanne] Lavaux-14",
+                "cloudinary_id": "Benn9R7FcNoDGhxFA7HRi3ENiqujFoF89luJ3FXX",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-14",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "a72605c6d037e4ab.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-14.jpg"
+                }
+              },
+              {
+                "id": 27138,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Cave à vin",
+                "public_name": "[Lausanne] Lavaux-12",
+                "cloudinary_id": "aFGGVECws9mETEFUFxTB9hiuxbb9HpYCcnPWtG9z",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux-12",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "f8036993770f5de7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-12.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Royaume du Dézaley: Fotoparadies</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ausgangs Epesses fahrt ihr auf der Route de la Corniche weiter (Achtung: Diesen Sommer wird die Route de la Corniche saniert und ist für den Verkehr gesperrt. Schiebt das Velo durch den gesperrten Abschnitt, denn zu Fuss darf man ihn passieren). Mit etwas Glück seht ihr sogar den touristischen Minizug durch die Weinberge tuckern. Weiter geht die Fahrt zum Aussichtspunkt in Dézaley. Von hier aus habt ihr eine Rundumaussicht auf die gesamte <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-terrasses-de-lavaux-unesco/\">UNESCO-Welterbestätte</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26001,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "fa2d715319ca985c",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 5584,
+                "height": 8368,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"5584\" height=\"8368\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "fa2d715319ca985c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-4.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Wenn sich ein kleiner Hunger bemerkbar macht, biegt rechts in den Chemin de la Dame ab, fahrt bis zur Chapelle von Didier Imhof und bestellt dort ein Plättli mit Waadtländer Wurst und einen Wein aus der Region. Schliesst die Augen, atmet die frische Luft in der freien Natur ein, öffnet die Augen wieder und geniesst die tolle Aussicht in vollen Zügen ‒ ziemlich sicher eine der schönsten der Schweiz, sagen die Einheimischen."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27139,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Dezaley",
+                "public_name": "[Lausanne] Lavaux_2-9",
+                "cloudinary_id": "wERsi07MldmhJkJR4dK01t61045uzN41l8tMpTPg",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_2-9",
+                "metadata": {
+                  "width": 1705,
+                  "height": 2560,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1705\" height=\"2560\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "7bb1d4be2070ca14.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-9-scaled.jpg"
+                }
+              },
+              {
+                "id": 27140,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Maison Lavaux",
+                "public_name": "[Lausanne] Lavaux_3-4",
+                "cloudinary_id": "IX4Ro68yFw0dBT6hL70bZjG763PJbdK92g1ivZ8o",
+                "mime_type": "image/jpeg",
+                "copyright": "© [Lausanne] Lavaux_3-4",
+                "metadata": {
+                  "width": 5584,
+                  "height": 8368,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"5584\" height=\"8368\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "9395f061cf8334bc.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_3-4.jpg"
+                }
+              },
+              {
+                "id": 27141,
+                "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique - Charcuterie",
+                "public_name": "Lausanne-Lavaux-6",
+                "cloudinary_id": "xSe427NuL3FS9zUqJqlNOFta1TSSJ4s70kMGCurm",
+                "mime_type": "image/jpeg",
+                "copyright": "© Lausanne-Lavaux-6",
+                "metadata": {
+                  "width": 512,
+                  "height": 768,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"512\" height=\"768\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5860005b8a9e82f9.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux-6.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Zurück nach Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Rückfahrt könnt ihr auf derselben Strasse durch die Weinberge antreten oder aber ihr durchquert das hübsche Dorf Rivaz bis zum Seeufer hinunter und folgt der Kantonsstrasse bis nach Lausanne. Diese Option ist insbesondere an heissen Sommertagen sehr angenehm, denn auf dem Weg gibt es viele Badestellen."
+          },
+          {
+            "type": "paragraph",
+            "value": " "
+          },
+          {
+            "type": "paragraph",
+            "value": "Auf SchweizMobil findet ihr Details zur <a href=\"https://schweizmobil.ch/fr/suisse-a-velo/itineraire-1/etape-6\">Route</a> und <a href=\"https://www.lavaux-unesco.ch/decouvrir/pour-une-experience-positive-lavaux/acces-transports#en-velo\">hier</a> Informationen zu Veloausflügen im Lavaux."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26085,
+              "name": "De Lausanne à Lavaux : mon itinéraire à vélo électrique",
+              "public_name": null,
+              "cloudinary_id": "9df65d1d635e83e5",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2560,
+                "height": 1705,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2560\" height=\"1705\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "9df65d1d635e83e5.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/07/Lausanne-Lavaux_2-8-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "69dab18317ddae11",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "De Lausanne à Lavaux : mon itinéraire à vélo électrique"
+          }
+        }
+      ],
+      "published_at": "1720706167",
+      "seo": {
+        "description": {
+          "fr": "Même en tant que lausannois, il est difficile de décrire ce que procure la vue majestueuse sur le Léman depuis ce vignoble d’exception. Haut lieu touristique de la région, le vignoble de Lavaux fait partie de ces endroits que l’on montre fièrement, un brin chauvin, à tout visiteur de passage.",
+          "en": "Even as a Lausanner, it’s hard to describe the elation felt when contemplating the majestic view over Lake Geneva from this exceptional vineyard. The region’s tourist hot spot, the Lavaux vineyard is one of those places that we proudly show off, with a touch of patriotism, to all visitors. ",
+          "de": "Selbst den Einheimischen fällt es schwer zu beschreiben, was der majestätische Blick auf den Genfersee von diesem aussergewöhnlichen Weingebiet aus in ihnen auslöst. Die Weinberge von Lavaux sind ein touristisches Highlight der Region und gehören zu den Orten, die man mit Stolz und einem Hauch von Patriotismus allen Gästen zeigt."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "de-lausanne-a-lavaux-mon-itineraire-a-velo-electrique",
+          "en": "from-lausanne-to-lavaux-my-electric-bike-route",
+          "de": "von-lausanne-ins-lavaux-meine-e-bike-route"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
+    }
+  }
+}

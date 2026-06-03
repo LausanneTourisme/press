@@ -1,0 +1,1393 @@
+{
+  "data": {
+    "item": {
+      "id": "278",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne, ville gourmande",
+        "en": "Lausanne, a foody city",
+        "de": "Schlemmerstadt Lausanne"
+      },
+      "lead": {
+        "fr": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais.",
+        "en": "Lausanne can pride itself on being the capital of a canton wholly entirely devoted to the pleasures of the palate. ",
+        "de": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. "
+      },
+      "summary": {
+        "fr": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais. Des diners dans des lieux branchés, aux soupers concoctés par des chefs étoilés exprimant leur talent dans des établissements mythiques, en passant par les cafés historiques servant les traditionnels plats du terroir : son offre gastronomique est d’une richesse et d’une diversité rares. Ajoutez à cela une région viticole qui produit des vins d’une grande finesse, et votre expérience épicurienne lausannoise sera aussi complète que parfaite.",
+        "en": "Lausanne can pride itself on being the capital of a canton wholly devoted to the pleasures of the palate. From dinners in trendy venues to historic cafés serving traditional local dishes to dinners concocted by Michelin-starred chefs expressing their talent in legendary establishments: its gastronomic offering is of a rare richness and diversity. Add to this a wine-growing region that produces wines of great finesse, and your epicurean experience in Lausanne will be as complete as it is perfect.",
+        "de": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. Vom Mittagessen in trendigen Lokalen, bis hin zu Abendessen, die Sterneköchinnen und -köchen in legendären Restaurants zubereiten, über historische Cafés, die traditionelle lokale Gerichte servieren: Das gastronomische Angebot ist von seltener Reichhaltigkeit und Vielfalt. Hinzu kommt eine Weinregion, die feinste Weine hervorbringt, um jedes Feinschmeckererlebnis in Lausanne perfekt abzurunden."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26062,
+              "name": "Lausanne, ville gourmande",
+              "public_name": "Lausanne, ville gourmande",
+              "cloudinary_id": "cb5c871780ffe52f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Fondue sur le Skylougne du Royal Savoy a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Hôtel; Hébergement; Lausanne; Fondue; Terrasse; Vue; Gastronomie",
+                "description": null,
+                "file_name_from_url": "cb5c871780ffe52f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Royal-Savoy-lounge.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Le génie des chefs"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne s’apprécie comme une destination gastronomique exceptionnelle grâce aux nombreux restaurants étoilés qu’elle a la chance de compter. Parmi ces-derniers, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/restaurant-de-lhotel-de-ville/\">le Restaurant de l’Hôtel de Ville de Crissier</a> – l’une des plus prestigieuses tables lausannoises qui suscite depuis près de 50 ans une remarquable émulation dans la région – tient le haut du pavé. Après Fredy Girardet, Philippe Rochat et Benoît Viollier, Franck Giovannini en est aujourd’hui le quatrième chef triplement étoilé. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/restaurant-anne-sophie-pic/\">Anne-Sophie Pic</a>, la funambule des saveurs et cheffe femme la plus étoilée du monde, est aux commandes du restaurant du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/beau-rivage-palace/\">Beau-Rivage Palace de Lausanne</a>, aux 2 étoiles Michelin et 18 points au Gault &amp; Millau. À La Table du Lausanne Palace – 2 étoiles Michelin et 17 points Gault &amp; Millau -, c’est le pétillant Franck Pelux qui déploie son talent et toute sa créativité en cuisine."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Retrouvez tous </em><a href=\"https://www.lausanne-tourisme.ch/fr/gastronomie-restaurant/\"><em>les restaurants de la région lausannoise qui figurent dans le Guide Michelin et le Gault&amp;Millau suisses</em></a><em> sur le site de Lausanne Tourisme. </em>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27168,
+                "name": "Lausanne, ville gourmande - Chef",
+                "public_name": "HoteL_Ville_Crissier",
+                "cloudinary_id": "NVBFUOuUdqcFi1EDWyv2rtqDF7EvTNyo14F7cJKt",
+                "mime_type": "image/jpeg",
+                "copyright": "© Hôtel de Ville de Crisser",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1758,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1758\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e2d66d125aee03a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/03/HoteL_Ville_Crissier-scaled.jpg"
+                }
+              },
+              {
+                "id": 27169,
+                "name": "Lausanne, ville gourmande - plat (1)",
+                "public_name": "Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "cloudinary_id": "O32pcR1iBv2o2SVJJBwUSZesAqym6Lqi01EElmpP",
+                "mime_type": "image/jpeg",
+                "copyright": "© Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 801,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"801\"",
+                  "tags": "Assiette; Gastronomie; ",
+                  "description": null,
+                  "file_name_from_url": "ef41135e084ba421.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Piperade-Violier.jpg"
+                }
+              },
+              {
+                "id": 27170,
+                "name": "Lausanne, ville gourmande - plat (2)",
+                "public_name": "Plat gastronomique chez B. Violier",
+                "cloudinary_id": "C22S20A3T2hkoCraDPgMeYZogvoCAJ8JVoGhmdKx",
+                "mime_type": "image/jpeg",
+                "copyright": "© Plat gastronomique chez B. Violier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 832,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"832\"",
+                  "tags": "Assiette; Cuisine; Gastronomie; Prix; Distinction; Crissier",
+                  "description": null,
+                  "file_name_from_url": "1fad5c7915870bf0.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Noisette-de-Chevreuil.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Des expériences culinaires mémorables"
+          },
+          {
+            "type": "paragraph",
+            "value": "En plus de ces distinctions, la ville de Lausanne et ses environs comptent de très nombreux établissements dédiés aux plaisirs de la table. Au cours d’un séjour coloré et gourmet, un large choix de cuisines et d’ambiances aussi diverses qu’inoubliables s’offre aux visiteurs :"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>L’atmosphère centenaire d’une pinte traditionnelle, dont la plus ancienne, <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-pinte-besson/\">la Pinte Besson</a>, a été fondée en 1780.</li>\n<li>Le plaisir de goûter à un plat de poisson tout en finesse ou à une salade estivale, assis en terrasse avec une vue spectaculaire sur le lac et les montagnes ;</li>\n<li>L’immersion dans une auberge typiquement vaudoise servant de copieux plats du terroir comme le papet vaudois (poireau et saucisse aux choux), de la charcuterie ou la traditionnelle tarte à la raisinée ;</li>\n<li>Le partage d’une onctueuse fondue au fromage, pleinement appréciée dans le cadre pittoresque d’un chalet suisse ;</li>\n<li>Le dépaysement d’un souper aux chandelles servi lors d’une croisière sur un bateau de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/croisieres-sur-le-lac-leman-cgn/\">Compagnie Générale de Navigation</a>.</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Il faut reconnaitre que la scène culinaire lausannoise bouge ! Une myriade de terrasses éphémères fleurit au début de l’été et<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/les-food-trucks-de-la-riponne/\"> les foodtrucks</a> présents tous les jours sur la Place de la Riponne s’ajoutent aux nombreux <a href=\"https://www.lausanne-tourisme.ch/fr/guide/les-take-away/\">take-away</a> que vous trouverez aux quatre coins de la ville. Pour les restos coups de cœurs, les nouveaux lieux végétariens ou véganes, ou les meilleurs brunchs de la ville (le dada des Lausannois), n’hésitez pas à glaner les bonnes adresses sur le blog The Lausanner."
+          },
+          {
+            "type": "paragraph",
+            "value": "Et pour une liste plus exhaustive, nous vous invitons à consulter la riche section <a href=\"https://www.lausanne-tourisme.ch/fr/restaurants/\">Sortir et Manger</a> du site de Lausanne Tourisme"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27171,
+                "name": "Lausanne, ville gourmande - Pinte Besson",
+                "public_name": "Pinte_Besson_1",
+                "cloudinary_id": "e9XIIyQqpLTFSsuYH6UHc78jGuLpVK7e5iDEyBwA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pinte_Besson_1",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Restaurants; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "e842706b2e2ed3b7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pinte_Besson_1.jpg"
+                }
+              },
+              {
+                "id": 27172,
+                "name": "Lausanne, ville gourmande - Dégustation vins",
+                "public_name": "Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "cloudinary_id": "mwme4U9h1IbQnad7BXKyiJPkQ4qalvwEIiVNaXf3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1107,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1107\"",
+                  "tags": "Lavaux; Vignoble; Vin; Gastronomie; Environ; Lac; Montagne",
+                  "description": null,
+                  "file_name_from_url": "2a1f074dd5527802.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-Vignoble.jpg"
+                }
+              },
+              {
+                "id": 27173,
+                "name": "Lausanne, ville gourmande - Terrasse",
+                "public_name": "Terrasse de l'Auberge de Grandvaux",
+                "cloudinary_id": "WhKb1PDtU7cvJrnUKJA3RuB6lk1Put1DKdCHxD0X",
+                "mime_type": "image/jpeg",
+                "copyright": "© Terrasse de l'Auberge de Grandvaux",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Terrasse; Environ; Lavaux; Détente",
+                  "description": null,
+                  "file_name_from_url": "7b66ca9aa4ddd220.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Auberge-Grandvaux.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "L’ambiance conviviale des marchés"
+          },
+          {
+            "type": "paragraph",
+            "value": "Chaque mercredi et samedi, les étals colorés des <a href=\"https://www.lausanne-tourisme.ch/fr/guide/les-marches-lausannois/\">marchés</a> avec leur abondance de fruits et légumes, de fromages et autres produits frais et locaux, emplissent les rues piétonnes du centre-ville d’une atmosphère méditerranéenne et décontractée."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25886,
+              "name": "Lausanne, ville gourmande",
+              "public_name": "Lausanne, ville gourmande",
+              "cloudinary_id": "f2179f49073d6be3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Marché du mercredi",
+              "metadata": {
+                "width": 1920,
+                "height": 1302,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1302\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f2179f49073d6be3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marche-lausannois-10.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "L’art du chocolat"
+          },
+          {
+            "type": "paragraph",
+            "value": "Parmi les univers gourmands qui se côtoient à Lausanne, celui du chocolat est sans doute l’un des plus oniriques. Une quarantaine<a href=\"https://www.lausanne-tourisme.ch/fr/guide/les-chocolatiers-lausannois/\"> d’artisans-chocolatiers</a> ont pignon sur rue dans l’agglomération, proposant tant des douceurs classiques que des spécialités. Des bouchées cacaotées intenses et envoûtantes, aux savoureuses tablettes artisanales de chocolat au lait, en passant par des pralinés à la cannelle ou aux piments, les aficionados de la fève de cacao se régaleront."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Lausanne Choco Tour"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lors de cette <a href=\"https://www.lausanne-tourisme.ch/fr/offre/lausanne-choco-tour/\">visite gourmande</a>, les meilleurs chocolatiers de la ville vous feront découvrir la célèbre histoire du chocolat suisse, qui a débuté à Lausanne en 1830 avec la fabrique des fils Kohler. Grâce à cette activité, vous pourrez visiter 5 des 11 chocolatiers de votre choix et repartir avec un coffret spécialement conçu pour vous, reprenant tout le savoir-faire local qui a fait de Lausanne l’une des villes les plus emblématiques de l’histoire du chocolat suisse."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25942,
+              "name": "Un tour gourmand à Lausanne",
+              "public_name": "Un tour gourmand à Lausanne",
+              "cloudinary_id": "185fb35a426fd1d8",
+              "mime_type": "image/jpeg",
+              "copyright": "© Chocolats de la Chocolaterie Blondel",
+              "metadata": {
+                "width": 1200,
+                "height": 801,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"801\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "185fb35a426fd1d8.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/chocolat-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/lausanne-a-table/\">Lausanne à Table</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/lausanne-a-table/\">Ce festival du goût</a> émoustillera vos papilles d’avril à décembre avec des expériences culinaires surprenantes, exquises et audacieuses. Serez-vous tenté par la visite guidée de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> suivie d’un déjeuner sur l’herbe, par une table éphémère dans un lieu inédit comme sur une digue lacustre ou par le traditionnel pique-nique du 1<sup>er</sup> août à l’occasion de la fête nationale ?"
+          },
+          {
+            "type": "paragraph",
+            "value": "Si vous êtes plutôt branché street food, le très populaire <a href=\"https://www.lausanne-tourisme.ch/fr/evenement/miam-festival/\">Miam Festival</a> réunit pendant le week-end de Pentecôte une cinquantaine d’artistes du goût sélectionnés aux petits oignons. La crème de la crème des restaurateurs, traiteurs, foodtrucks, artisans et producteurs locaux vous régalent pendant trois jours, au cœur de la ville. Le journal britannique <em>The Independant</em> a d’ailleurs classé l’événement parmi les dix meilleurs festivals et marchés de street food en Europe."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Le réseau gourmand Délice"
+          },
+          {
+            "type": "paragraph",
+            "value": "S’il fallait davantage de preuves que Lausanne nourrit bien son hôte, ce serait son appartenance au réseau des villes gourmandes du monde « Délice », avec 26 autres destinations issues d’une sélection rigoureuse, Délice met en lien et promeut les villes du monde entier reconnues pour leur tradition gastronomique, le savoir-faire de leurs professionnels, l’excellence de leurs produits et la richesse de leur art de vivre en matière culinaire."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26204,
+              "name": "Lausanne, ville gourmande",
+              "public_name": "Lausanne, ville gourmande",
+              "cloudinary_id": "ba60e01ebe98da64",
+              "mime_type": "image/jpeg",
+              "copyright": "© Degustation de vin en Lavaux a la Cave Joly a Grandvaux",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lavaux, vin, produits locaux, lac, terrasse, panorama",
+                "description": null,
+                "file_name_from_url": "ba60e01ebe98da64.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-de-vin-en-Lavaux-Cave-Joly-2.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "value": "Lausanne et le vin : l’alchimie entre l’homme et la nature"
+          },
+          {
+            "type": "paragraph",
+            "value": "Plus grand propriétaire viticole de Suisse, Lausanne ne possède pas moins de cinq domaines, répartis entre le vignoble de La Côte à l’ouest de Lausanne et celui de Lavaux à l’est : le Château Rochefort à Allaman, l’Abbaye de Mont entre Mont-sur-Rolle et Perroy ; <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/domaine-du-burignon/\">le Burignon</a>, perché sur les hauteurs de Saint-Saphorin ; et le Clos des Moines et le <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/clos-des-abbayes/\">Clos des Abbayes</a>, tous deux au cœur du Dézaley. Les vins qui y sont produits se retrouvent sur les meilleures tables de la Ville et du Canton."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27174,
+                "name": "Lausanne, ville gourmande - Vignobles",
+                "public_name": "Vignoble de la Cote",
+                "cloudinary_id": "0iUGGJJP4pvKr2JkReQkmEK5jlbhE69Qb7y71uRy",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vignoble de la Cote",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Vigne; Environ",
+                  "description": null,
+                  "file_name_from_url": "31efd0ae1c321eda.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-22.jpg"
+                }
+              },
+              {
+                "id": 27175,
+                "name": "Lausanne, ville gourmande - Terrasse dans les vignobles",
+                "public_name": "Vue sur le vignoble",
+                "cloudinary_id": "mCfGJ9u3YBFm7V3ZncARHn36p4QzUYqyJwVZqGBs",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le vignoble",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac; Lavaux, Environs",
+                  "description": null,
+                  "file_name_from_url": "978424e7068fd556.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/IMG_4940-1.jpg"
+                }
+              },
+              {
+                "id": 27176,
+                "name": "Lausanne, ville gourmande - \"Le Clos des Moines\"",
+                "public_name": "REGIS COLOMBO/www.diapo.ch",
+                "cloudinary_id": "NR3Tn0uhNGUr81Tu709Flo24ZvZvgyMITfQnjZR9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Régis Colombo",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1329,
+                  "mimeType": "image/jpeg",
+                  "copyright": "REGIS COLOMBO/diapo.ch",
+                  "attr": "width=\"2560\" height=\"1329\"",
+                  "tags": "Environ; Lavaux; Lac; Vignoble",
+                  "description": null,
+                  "file_name_from_url": "2d421639942ca9c4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Clos-des-Moines-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Lausanne, capitale viticole de Suisse"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne est fière de représenter la Suisse au sein du prestigieux « Réseau international des Capitales de Grands Vignobles ». Un honneur dû à son engagement pour la culture du vin dans ses domaines, sa situation géographie de porte d’entrée aux régions viticoles du canton et sa tradition millénaire dans la production de vin."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Cépages traditionnels et spécialités dans l’air du temps"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les cépages chouchous des vaudois sont sans conteste le Chasselas et le Pinot Noir, qui sont majoritaires dans les vignobles lausannois. Issu de belles grappes dorées, le Chasselas est un vin blanc fruité et délicat que les vaudois apprécient particulièrement à l’heure de l’apéro. Le Pinot Noir, quant à lui, est un vin rouge léger et fruité, sensuel et subtil. Les goûts se diversifiant, de nouveaux cépages font leur apparition, comme le Gamaret, le Garanoir, le Vionnier et le Merlot."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "La tradition séculaire de la mise aux enchères des vins de Lausanne"
+          },
+          {
+            "type": "paragraph",
+            "value": "Si vous êtes à la recherche d’une expérience authentique, immergez-vous dans la traditionnelle mise aux enchères des vins de la Ville de Lausanne, organisée chaque année, en décembre. À cette occasion, commerçants, restaurateurs, associations et privés rivalisent d’arguments pour acquérir des lots allant de 36 à 120 bouteilles de 75 cl."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lavaux-vinorama/\">Le Vinorama</a>, à la découverte des vins de Lavaux"
+          },
+          {
+            "type": "paragraph",
+            "value": "Un bâtiment moderne, conçu pour se fondre dans un décor de roches, de vignobles et d’eau… Bienvenue au<u> </u><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lavaux-vinorama/\">Lavaux Vinorama</a>, véritable invitation à l’exploration des vins de la région au détour d’images illustrant le travail du vigneron au fil des saisons au cœur de ce vignoble sans pareil. Si vous préférez une approche plus sensorielle, optez pour une dégustation à la carte de l’une des spécialités locales telles que le Chasselas ou le Plant Robert. Plus de 250 vins de Lavaux y sont proposés à la vente."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Unique, magique, panoramique Lavaux"
+          },
+          {
+            "type": "paragraph",
+            "value": "Suspendus entre terre, ciel et lac, les vignobles de Lavaux, façonnés par l’homme au fil des siècles et classés au patrimoine mondial de l’UNESCO, forment un paysage d’une rare beauté. Été comme hiver, la promenade au-dessus du Léman y est divine, la vue saisissante et Lausanne à deux pas. À découvrir à pied ou à bord d’un train des vignes, en prenant le temps de flâner ou faire escale dans un caveau le temps d’une <a href=\"https://www.lausanne-tourisme.ch/fr/offre/degustation-de-vin-en-lavaux/\">dégustation</a> typique et conviviale."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26712,
+              "name": "Vue sur le vignoble le lac et un bateau CGN",
+              "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+              "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                "description": null,
+                "file_name_from_url": "cdae71b438c14852.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26062,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "cb5c871780ffe52f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Fondue sur le Skylougne du Royal Savoy a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Hôtel; Hébergement; Lausanne; Fondue; Terrasse; Vue; Gastronomie",
+                "description": null,
+                "file_name_from_url": "cb5c871780ffe52f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Royal-Savoy-lounge.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The genius of chefs</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is an exceptional gastronomic destination thanks to the many Michelin-starred restaurants it is lucky enough to boast. Among the latter, the<a href=\"https://www.lausanne-tourisme.ch/en/explore/restaurant-de-lhotel-de-ville/\"> Restaurant de l’Hôtel de Ville in Crissier</a> one of Lausanne’s most prestigious restaurants, which for almost 50 years has been a source of remarkable emulation in the region is at the top of the list. After Fredy Girardet, Philippe Rochat and Benoît Viollier, Franck Giovannini is now its fourth three-star chef. <a href=\"https://www.lausanne-tourisme.ch/en/explore/restaurant-anne-sophie-pic/\">Anne-Sophie Pic</a>, the juggler of flavours and the most starred woman chef in the world, is at the helm of the restaurant at the <a href=\"https://www.lausanne-tourisme.ch/en/explore/beau-rivage-palace/\">Beau-Rivage Palace in Lausanne</a>, with 2 Michelin stars and 18 points in the Gault-Millau guide. At <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-table-du-lausanne-palace/\">La Table du Lausanne Palace</a> 2 Michelin stars and 17 GaultMillau points it’s the sparkling Franck Pelux who deploys his talent and creativity in the kitchen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne Tourisme’s website lists all the<a href=\"https://www.lausanne-tourisme.ch/en/gastronomy/\"> restaurants from the Lausanne area that are included in the Michelin Guide and Gault&amp;Millau for Switzerland.</a>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27168,
+                "name": "Lausanne, ville gourmande - Chef",
+                "public_name": "HoteL_Ville_Crissier",
+                "cloudinary_id": "NVBFUOuUdqcFi1EDWyv2rtqDF7EvTNyo14F7cJKt",
+                "mime_type": "image/jpeg",
+                "copyright": "© Hôtel de Ville de Crisser",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1758,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1758\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e2d66d125aee03a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/03/HoteL_Ville_Crissier-scaled.jpg"
+                }
+              },
+              {
+                "id": 27169,
+                "name": "Lausanne, ville gourmande - plat (1)",
+                "public_name": "Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "cloudinary_id": "O32pcR1iBv2o2SVJJBwUSZesAqym6Lqi01EElmpP",
+                "mime_type": "image/jpeg",
+                "copyright": "© Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 801,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"801\"",
+                  "tags": "Assiette; Gastronomie; ",
+                  "description": null,
+                  "file_name_from_url": "ef41135e084ba421.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Piperade-Violier.jpg"
+                }
+              },
+              {
+                "id": 27170,
+                "name": "Lausanne, ville gourmande - plat (2)",
+                "public_name": "Plat gastronomique chez B. Violier",
+                "cloudinary_id": "C22S20A3T2hkoCraDPgMeYZogvoCAJ8JVoGhmdKx",
+                "mime_type": "image/jpeg",
+                "copyright": "© Plat gastronomique chez B. Violier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 832,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"832\"",
+                  "tags": "Assiette; Cuisine; Gastronomie; Prix; Distinction; Crissier",
+                  "description": null,
+                  "file_name_from_url": "1fad5c7915870bf0.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Noisette-de-Chevreuil.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Memorable culinary experiences</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In addition to these distinctions, the city of Lausanne and its surroundings boast a large number of establishments dedicated to good food. During a colourful and gourmet stay, visitors can choose from a wide range of cuisines and atmospheres that are as diverse as they are unforgettable:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>The century-old atmosphere of a traditional bar, the oldest of which, <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-pinte-besson/\">Pinte Besson</a>, was founded in 1780.</li>\n<li>Enjoy a fine fish dish or a summer salad on the terrace with a spectacular view of the lake and mountains;</li>\n<li>Immerse yourself in a typical Vaud inn serving hearty local dishes such as papet vaudois (leek and cabbage sausage), charcuterie or the traditional tarte à la raisinée;</li>\n<li>The pleasure of sharing a creamy cheese fondue, fully savoured in the picturesque setting of a Swiss chalet;</li>\n<li>The change of scenery of a candlelit dinner served during a cruise on a <a href=\"https://www.lausanne-tourisme.ch/en/explore/cruise-on-lake-geneva-cgn/\">Compagnie Générale de Navigation</a> boat.</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "For sure, Lausanne’s culinary scene is a bustling one! A myriad of pup-up terraces spring up at the start of summer, and<a href=\"https://www.lausanne-tourisme.ch/en/explore/the-riponne-foodtrucks/\"> the foodtrucks</a> on Place de la Riponne add every day to the many <a href=\"https://www.lausanne-tourisme.ch/en/guide/takeaways-restaurants/\">takeaways</a> you’ll find all over the city. For our best picks, new vegetarian or vegan places, or the best brunches in town (a favourite with the locals), don’t hesitate to glean the best addresses from The Lausanner blog."
+          },
+          {
+            "type": "paragraph",
+            "value": "For a more exhaustive list, we invite you to visit <a href=\"https://press.lausanne-tourisme.ch/en/articles/252/lausanne-a-foody-city\">the extensive Eating out section</a> on the Lausanne Tourisme website."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27171,
+                "name": "Lausanne, ville gourmande - Pinte Besson",
+                "public_name": "Pinte_Besson_1",
+                "cloudinary_id": "e9XIIyQqpLTFSsuYH6UHc78jGuLpVK7e5iDEyBwA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pinte_Besson_1",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Restaurants; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "e842706b2e2ed3b7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pinte_Besson_1.jpg"
+                }
+              },
+              {
+                "id": 27172,
+                "name": "Lausanne, ville gourmande - Dégustation vins",
+                "public_name": "Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "cloudinary_id": "mwme4U9h1IbQnad7BXKyiJPkQ4qalvwEIiVNaXf3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1107,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1107\"",
+                  "tags": "Lavaux; Vignoble; Vin; Gastronomie; Environ; Lac; Montagne",
+                  "description": null,
+                  "file_name_from_url": "2a1f074dd5527802.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-Vignoble.jpg"
+                }
+              },
+              {
+                "id": 27173,
+                "name": "Lausanne, ville gourmande - Terrasse",
+                "public_name": "Terrasse de l'Auberge de Grandvaux",
+                "cloudinary_id": "WhKb1PDtU7cvJrnUKJA3RuB6lk1Put1DKdCHxD0X",
+                "mime_type": "image/jpeg",
+                "copyright": "© Terrasse de l'Auberge de Grandvaux",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Terrasse; Environ; Lavaux; Détente",
+                  "description": null,
+                  "file_name_from_url": "7b66ca9aa4ddd220.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Auberge-Grandvaux.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The friendly atmosphere of the markets</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Every Wednesday and Saturday, the colourful <a href=\"https://www.lausanne-tourisme.ch/en/guide/lausanne-markets/\">market stalls</a> with their abundance of fruit and vegetables, cheeses and other fresh local produce fill the pedestrian streets of the city centre with a relaxed Mediterranean atmosphere."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25886,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "f2179f49073d6be3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Marché du mercredi",
+              "metadata": {
+                "width": 1920,
+                "height": 1302,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1302\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f2179f49073d6be3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marche-lausannois-10.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The art of chocolate</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Chocolate is undoubtedly one of the most mesmerising of all the gourmet delights on offer in Lausanne. Some forty <a href=\"https://www.lausanne-tourisme.ch/en/guide/les-chocolatiers-lausannois/\">chocolate makers</a> are well established in the city, offering both classic sweets and specialities. From intense, bewitching cocoa mouthfuls to tasty artisan milk chocolate bars and cinnamon or chilli pralines, cocoa bean aficionados are in for a treat."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Lausanne Choco Tour"
+          },
+          {
+            "type": "paragraph",
+            "value": "During this <a href=\"https://www.lausanne-tourisme.ch/en/offer/lausanne-choco-tour/\">gourmet tour</a>, the city’s best chocolate makers will help you discover the famous history of Swiss chocolate, which began in Lausanne in 1830 with the Kohler sons’ factory. Thanks to this activity, you can visit 5 of the 11 chocolate makers of your choice and leave with a box specially designed for you, featuring all the local know-how that has made Lausanne one of the most emblematic cities in the history of Swiss chocolate."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25942,
+              "name": "Un tour gourmand à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "185fb35a426fd1d8",
+              "mime_type": "image/jpeg",
+              "copyright": "© Chocolats de la Chocolaterie Blondel",
+              "metadata": {
+                "width": 1200,
+                "height": 801,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"801\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "185fb35a426fd1d8.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/chocolat-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/lausanne-a-table/\"><strong>Lausanne à Table</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/lausanne-a-table/\">This festival of taste</a> will tantalise your taste buds from April to December with surprising, exquisite and daring culinary experiences. Will you be tempted by a guided tour of the <a href=\"https://www.lausanne-tourisme.ch/en/explore/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> followed by a lunch in the park, by an pop-up table in an unusual location such as on a lake pier, or by the traditional picnic on August 1<sup>st</sup> to celebrate Swiss national day?"
+          },
+          {
+            "type": "paragraph",
+            "value": "If you’re more into street food, the ever-popular <a href=\"https://www.lausanne-tourisme.ch/en/event/miam-festival/\">Miam Festival</a> brings together some fifty hand-picked craftsmen of taste over the Whitsun weekend. The crème de la crème of local restaurateurs, caterers, foodtrucks, artisans and producers will treat you to a three-day feast in the heart of the city. British newspaper <em>The Independent</em> ranked the event among the top ten street food festivals and markets in Europe."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The Délice gourmet network</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "If more evidence was needed that Lausanne feeds its guests well, it would be its membership of the Délice City Network on Food &amp; Gastronomy. Along with 26 other carefully selected destinations, Délice brings together and promotes cities around the world that are recognised for their gastronomic heritage, the expertise of their professionals, the excellence of their products and the richness of their culinary art de vivre."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26204,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "ba60e01ebe98da64",
+              "mime_type": "image/jpeg",
+              "copyright": "© Degustation de vin en Lavaux a la Cave Joly a Grandvaux",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lavaux, vin, produits locaux, lac, terrasse, panorama",
+                "description": null,
+                "file_name_from_url": "ba60e01ebe98da64.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-de-vin-en-Lavaux-Cave-Joly-2.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "value": "<strong>Lausanne and wine: the alchemy between man and nature</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is Switzerland’s largest winegrower, with no fewer than five estates, divided between the La Côte vineyards to the west of Lausanne and the Lavaux vineyards to the east: Château Rochefort in Allaman; Abbaye de Mont between Mont-sur-Rolle and Perroy; <a href=\"https://www.lausanne-tourisme.ch/en/explore/domaine-du-burignon/\">Burignon</a>, perched in the Lavaux vineyards of Saint-Saphorin; and Clos des Moines and <a href=\"https://www.lausanne-tourisme.ch/en/explore/clos-des-abbayes/\">Clos des Abbayes</a>, both in the heart of Dézaley. The wines produced here can be found on the best tables in the town and the canton."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27174,
+                "name": "Lausanne, ville gourmande - Vignobles",
+                "public_name": "Vignoble de la Cote",
+                "cloudinary_id": "0iUGGJJP4pvKr2JkReQkmEK5jlbhE69Qb7y71uRy",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vignoble de la Cote",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Vigne; Environ",
+                  "description": null,
+                  "file_name_from_url": "31efd0ae1c321eda.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-22.jpg"
+                }
+              },
+              {
+                "id": 27175,
+                "name": "Lausanne, ville gourmande - Terrasse dans les vignobles",
+                "public_name": "Vue sur le vignoble",
+                "cloudinary_id": "mCfGJ9u3YBFm7V3ZncARHn36p4QzUYqyJwVZqGBs",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le vignoble",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac; Lavaux, Environs",
+                  "description": null,
+                  "file_name_from_url": "978424e7068fd556.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/IMG_4940-1.jpg"
+                }
+              },
+              {
+                "id": 27176,
+                "name": "Lausanne, ville gourmande - \"Le Clos des Moines\"",
+                "public_name": "REGIS COLOMBO/www.diapo.ch",
+                "cloudinary_id": "NR3Tn0uhNGUr81Tu709Flo24ZvZvgyMITfQnjZR9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Régis Colombo",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1329,
+                  "mimeType": "image/jpeg",
+                  "copyright": "REGIS COLOMBO/diapo.ch",
+                  "attr": "width=\"2560\" height=\"1329\"",
+                  "tags": "Environ; Lavaux; Lac; Vignoble",
+                  "description": null,
+                  "file_name_from_url": "2d421639942ca9c4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Clos-des-Moines-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lausanne, wine capital of Switzerland</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne is proud to represent Switzerland in the prestigious ” Great Wine Capitals” network. It owes this honour to its commitment to the cultivation of grapes on its estates, its geographical location as a gateway to the canton’s wine-growing regions and its age-old tradition of wine production."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Traditional grape varieties and contemporary specialities</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The favourite grape varieties that are the local darlings are undoubtedly Chasselas and Pinot Noir, predominant in the Lausanne vineyards. Produced from beautiful golden grapes, Chasselas is a fruity, delicate white wine that is particularly popular with the locals as an aperitif. Pinot Noir, on the other hand, is a light, fruity, sensual and subtle red wine. As wine lovers seek greater diversity, new grape varieties are appearing, such as Gamaret, Garanoir, Vionnier and Merlot."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>The age-old tradition of auctioning off Lausanne wines</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "If you’re looking for an authentic experience, immerse yourself in the traditional City of Lausanne wine auction, held every year in December. Merchants, restaurateurs, associations and private individuals vie with each other to acquire lots ranging from 36 to 120 75 cl bottles."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Discovering Lavaux wines at <a href=\"https://www.lausanne-tourisme.ch/en/explore/lavaux-vinorama/\">Vinorama</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A modern building, designed to blend into a setting of rocks, vineyards and water… Welcome to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/lavaux-vinorama/\">Lavaux Vinorama</a>, a genuine invitation to explore the wines of the region through images illustrating the work of the winegrower over the seasons in the heart of this unique vineyard. If you prefer a more sensory approach, opt for an à la carte tasting of one of the local specialities, such as Chasselas or Plant Robert. More than 250 Lavaux wines are available for sale."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Unique, magical, panoramic Lavaux</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Suspended between land, sky and lake, the vineyards of Lavaux, shaped by man over the centuries and a UNESCO World Heritage Site, form a landscape of rare beauty. In summer and winter alike, the walk above Lake Geneva is divine, the views are breathtaking and Lausanne just a stone’s throw away. Discover it on foot or on board a vineyard train, taking the time to stroll around or stopping off at a wine cellar for a typical, friendly <a href=\"https://www.lausanne-tourisme.ch/en/offer/wine-tasting-in-lavaux-vineyards/\">tasting session</a>."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26712,
+              "name": "Vue sur le vignoble le lac et un bateau CGN",
+              "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+              "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                "description": null,
+                "file_name_from_url": "cdae71b438c14852.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26062,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "cb5c871780ffe52f",
+              "mime_type": "image/jpeg",
+              "copyright": "© Fondue sur le Skylougne du Royal Savoy a Lausanne.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Hôtel; Hébergement; Lausanne; Fondue; Terrasse; Vue; Gastronomie",
+                "description": null,
+                "file_name_from_url": "cb5c871780ffe52f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Royal-Savoy-lounge.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Geniale Küche</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dank seiner zahlreichen mit Michelin-Sternen ausgezeichneten Restaurants ist Lausanne ein aussergewöhnliches gastronomisches Ziel. Zu diesen gehört unter anderem das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/restaurant-de-lhotel-de-ville/\">Restaurant de l’Hôtel de Ville de Crissier</a>, eines der renommiertesten Lausanner Restaurants, das seit fast 50 Jahren die Nase vorn hat und für einen bemerkenswerten Wetteifer in der Region sorgt. Nach Fredy Girardet, Philippe Rochat und Benoît Viollier ist Franck Giovannini heute der vierte 3-Sterne-Koch.<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/restaurant-anne-sophie-pic/\"> Anne-Sophie Pic</a>, Akrobatin der Aromen und die mit den meisten Sternen ausgezeichnete Köchin der Welt, führt das Restaurant im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/beau-rivage-palace/\">Beau-Rivage Palace in Lausanne</a> mit zwei Michelin-Sternen und 18 Gault&amp;Millau-Punkten. Im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-table-du-lausanne-palace/\">La Table du Lausanne Palace</a> mit zwei Michelin-Sternen und 17 Gault&amp;Millau-Punkten lässt der fulminante Franck Pelux seinem Talent und seiner Kreativität freien Lauf am Herd."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Alle </em><a href=\"https://www.lausanne-tourisme.ch/fr/gastronomie-restaurant/\"><em>Restaurants der Region Lausanne, die im Michelin-Führer und im Gault&amp;Millau-Führer der Schweiz aufgeführt sind, finden Sie</em></a> <em>auf der Website von Lausanne Tourisme. </em>"
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27168,
+                "name": "Lausanne, ville gourmande - Chef",
+                "public_name": "HoteL_Ville_Crissier",
+                "cloudinary_id": "NVBFUOuUdqcFi1EDWyv2rtqDF7EvTNyo14F7cJKt",
+                "mime_type": "image/jpeg",
+                "copyright": "© Hôtel de Ville de Crisser",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1758,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"2560\" height=\"1758\"",
+                  "tags": null,
+                  "description": null,
+                  "file_name_from_url": "5e2d66d125aee03a.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/03/HoteL_Ville_Crissier-scaled.jpg"
+                }
+              },
+              {
+                "id": 27169,
+                "name": "Lausanne, ville gourmande - plat (1)",
+                "public_name": "Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "cloudinary_id": "O32pcR1iBv2o2SVJJBwUSZesAqym6Lqi01EElmpP",
+                "mime_type": "image/jpeg",
+                "copyright": "© Piperade a l'oeuf de caille. Restaurant de l'Hotel de ville de Crissier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 801,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"801\"",
+                  "tags": "Assiette; Gastronomie; ",
+                  "description": null,
+                  "file_name_from_url": "ef41135e084ba421.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Piperade-Violier.jpg"
+                }
+              },
+              {
+                "id": 27170,
+                "name": "Lausanne, ville gourmande - plat (2)",
+                "public_name": "Plat gastronomique chez B. Violier",
+                "cloudinary_id": "C22S20A3T2hkoCraDPgMeYZogvoCAJ8JVoGhmdKx",
+                "mime_type": "image/jpeg",
+                "copyright": "© Plat gastronomique chez B. Violier",
+                "metadata": {
+                  "width": 1200,
+                  "height": 832,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1200\" height=\"832\"",
+                  "tags": "Assiette; Cuisine; Gastronomie; Prix; Distinction; Crissier",
+                  "description": null,
+                  "file_name_from_url": "1fad5c7915870bf0.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/12/Noisette-de-Chevreuil.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Unvergessliche kulinarische Erlebnisse</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Neben diesen dekorierten Gourmettempeln zählt die Stadt Lausanne und ihre Umgebung zahlreiche weitere Lokale, die sich den Gaumenfreuden widmen. Den Gästen bietet sich eine grosse Auswahl an Geschmäckern und Atmosphären, die ebenso vielfältig wie unvergesslich sind und jeden Aufenthalt zum Gaumenschmaus machen:"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>Altmodisches Ambiente einer traditionellen Café-Bar wie in der ältesten ihrer Art, der 1780 gegründeten <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/la-pinte-besson/\">Pinte Besson</a></li>\n<li>Genuss eines feinen Fischgerichts oder eines Sommersalats auf einer Terrasse mit spektakulärem Blick auf den See und die Berge</li>\n<li>Herzhafte Gerichte aus der Region wie Papet vaudois (Lauch und Kohlwurst), Wurstwaren oder traditionellen Raisinée-Kuchen (Rosinenkuchen) in einem typischen Waadtländer Gasthaus</li>\n<li>Gemütliches Beisammensein bei einem cremigen Käsefondue in der malerischen Umgebung eines Schweizer Chalets</li>\n<li>Abendessen der ganz speziellen Art bei Kerzenschein auf einer Rundfahrt mit einem Schiff der <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/schifffahrten-auf-dem-genfersee-cgn/\">Compagnie Générale de Navigation.</a></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die kulinarische Szene von Lausanne hat in der Tat einiges zu bieten! Mit dem Sommer poppen unzählige Terrassen auf und auf dem Place de la Riponne stehen <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/die-foodtrucks-am-place-de-la-riponne/\">Foodtrucks</a>, die die zahlreichen <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/take-aways-in-lausanne/\">Take-aways</a> der Stadt ergänzen. Die Adressen neuer vegetarischer und veganer Lokale, die beliebtesten Brunchlokale der Stadt und weitere Lieblingsrestaurants der Einheimischen finden Sie auf dem Blog The Lausanner."
+          },
+          {
+            "type": "paragraph",
+            "value": "Eine umfassendere Liste ist im Bereich „<a href=\"https://www.lausanne-tourisme.ch/de/restaurants/\">Essen &amp; Trinken“ auf der Website</a> von Lausanne Tourisme verfügbar."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27171,
+                "name": "Lausanne, ville gourmande - Pinte Besson",
+                "public_name": "Pinte_Besson_1",
+                "cloudinary_id": "e9XIIyQqpLTFSsuYH6UHc78jGuLpVK7e5iDEyBwA",
+                "mime_type": "image/jpeg",
+                "copyright": "© Pinte_Besson_1",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Restaurants; Lausanne",
+                  "description": null,
+                  "file_name_from_url": "e842706b2e2ed3b7.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Pinte_Besson_1.jpg"
+                }
+              },
+              {
+                "id": 27172,
+                "name": "Lausanne, ville gourmande - Dégustation vins",
+                "public_name": "Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "cloudinary_id": "mwme4U9h1IbQnad7BXKyiJPkQ4qalvwEIiVNaXf3",
+                "mime_type": "image/jpeg",
+                "copyright": "© Weinprobe beim Winzer Henry  und Vincent Chollet Montagny Villette",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1107,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1107\"",
+                  "tags": "Lavaux; Vignoble; Vin; Gastronomie; Environ; Lac; Montagne",
+                  "description": null,
+                  "file_name_from_url": "2a1f074dd5527802.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-Vignoble.jpg"
+                }
+              },
+              {
+                "id": 27173,
+                "name": "Lausanne, ville gourmande - Terrasse",
+                "public_name": "Terrasse de l'Auberge de Grandvaux",
+                "cloudinary_id": "WhKb1PDtU7cvJrnUKJA3RuB6lk1Put1DKdCHxD0X",
+                "mime_type": "image/jpeg",
+                "copyright": "© Terrasse de l'Auberge de Grandvaux",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Gastronomie; Terrasse; Environ; Lavaux; Détente",
+                  "description": null,
+                  "file_name_from_url": "7b66ca9aa4ddd220.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Auberge-Grandvaux.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Gesellige Marktatmosphäre</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Jeden Mittwoch und Samstag beleben die bunten <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/markte-in-lausanne/\">Marktstände</a> mit ihrem grossen Angebot an Obst und Gemüse, Käse und anderen frischen Produkten aus der Region die Fussgängerzonen des Stadtzentrums und verbreiten eine entspannte, ja geradezu mediterrane Atmosphäre."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25886,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "f2179f49073d6be3",
+              "mime_type": "image/jpeg",
+              "copyright": "© Marché du mercredi",
+              "metadata": {
+                "width": 1920,
+                "height": 1302,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1302\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f2179f49073d6be3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Marche-lausannois-10.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Kunst der Schokoladenherstellung</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Schokolade ist zweifellos eine der traumhaftesten Gaumenfreuden, die Lausanne zu bieten hat. Rund vierzig <a href=\"https://www.lausanne-tourisme.ch/de/besuchen/chocolatiers-von-lausanne/\">Maîtres Chocolatiers</a> bieten in der Stadt und ihrer Umgebung sowohl klassische Leckereien als auch Spezialitäten an. Von intensiven und betörenden Schokoladenhäppchen über Zimt- und Chili-Pralinés bis hin zu feinsten hausgemachten Milchschokoladetafeln ist für alle Schokoladenbegeisterten etwas dabei."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Lausanner Schokoladen-Tour"
+          },
+          {
+            "type": "paragraph",
+            "value": "Bei dieser Gourmet-Tour entdecken Sie mit den besten Schokoladenherstellern der Stadt die berühmte Geschichte der Schweizer Schokolade, die in Lausanne 1830 mit der Fabrik der Kohler-Söhne begann. Dank dieser Aktivität können Sie 5 der 11 Schokoladenhersteller Ihrer Wahl besuchen und mit einer speziell für Sie gestalteten Schachtel mit all dem lokalen Know-how abreisen, das Lausanne zu einer der emblematischsten Städte in der Geschichte der Schweizer Schokolade gemacht hat."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25942,
+              "name": "Un tour gourmand à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "185fb35a426fd1d8",
+              "mime_type": "image/jpeg",
+              "copyright": "© Chocolats de la Chocolaterie Blondel",
+              "metadata": {
+                "width": 1200,
+                "height": 801,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"801\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "185fb35a426fd1d8.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/chocolat-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/lausanne-a-table/\"><strong>Lausanne à Table</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/lausanne-a-table/\">Dieses Festival des Geschmacks</a> verwöhnt Ihre Geschmacksnerven von April bis Dezember mit überraschenden, exquisiten und gewagten kulinarischen Erlebnissen. Lassen Sie sich verführen von einer Führung durch die <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Fondation de l’Hermitage</a> mit anschliessendem Mittagessen auf der Wiese, von einem feinen Essen an einem Pop-up-Tisch in einer einzigartigen Umgebung, beispielsweise auf einem Seedamm, oder von einem traditionellen Picknick am 1. August zur Feier des Nationaltags."
+          },
+          {
+            "type": "paragraph",
+            "value": "Wer eher auf Streetfood steht, wählt das beliebte <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/fondation-de-lhermitage/\">Miam Festival</a>, das am Pfingstwochenende rund 50 sorgfältig ausgewählte Genuss-Spezialisten vereint. An den drei Festivaltagen verwöhnen Sie mitten in der Stadt die besten lokalen Restaurants, Caterings, Foodtrucks und Produzenten. Die britische Zeitung <em>The Independant</em> wählte den Anlass unter die Top Ten der besten Streetfood-Festivals und -Märkte Europas."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Das Gourmet-Netzwerk Délice</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein weiterer Beweis dafür, dass die Stadt Lausanne seine Gäste gut verköstigt, ist ihre Mitgliedschaft im Délice-Netzwerk der Gourmetstädte der Welt. Zusammen mit 26 weiteren Städten, die nach einem strengen Auswahlverfahren ausgewählt wurden, verbindet und fördert Délice Städte auf der ganzen Welt, die für ihre gastronomische Tradition, ihr Know-how, ihre hervorragenden Produkte und erstklassige Küche bekannt sind und eine einzigartige kulinarische Lebenskunst pflegen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26204,
+              "name": "Lausanne, ville gourmande",
+              "public_name": null,
+              "cloudinary_id": "ba60e01ebe98da64",
+              "mime_type": "image/jpeg",
+              "copyright": "© Degustation de vin en Lavaux a la Cave Joly a Grandvaux",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lavaux, vin, produits locaux, lac, terrasse, panorama",
+                "description": null,
+                "file_name_from_url": "ba60e01ebe98da64.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Degustation-de-vin-en-Lavaux-Cave-Joly-2.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h1",
+            "value": "<strong>Lausanne und Wein: Alchemie zwischen Mensch und Natur</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne ist der grösste Winzer der Schweiz und besitzt nicht weniger als fünf Weingüter in den Weinbergen von La Côte im Westen von Lausanne und des Lavaux im Osten: Château Rochefort in Allaman, Abbaye de Mont zwischen Mont-sur-Rolle und Perroy, <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/domaine-du-burignon/\">Burignon</a> oberhalb von Saint-Saphorin sowie Clos des Moines und<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/clos-des-abbayes/\"> Clos des Abbayes</a> im Herzen von Dézaley. Die hier produzierten Weine werden in den besten Restaurants der Stadt und des Kantons serviert."
+          },
+          {
+            "type": "gallery",
+            "value": [
+              {
+                "id": 27174,
+                "name": "Lausanne, ville gourmande - Vignobles",
+                "public_name": "Vignoble de la Cote",
+                "cloudinary_id": "0iUGGJJP4pvKr2JkReQkmEK5jlbhE69Qb7y71uRy",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vignoble de la Cote",
+                "metadata": {
+                  "width": 1067,
+                  "height": 1600,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1067\" height=\"1600\"",
+                  "tags": "Vigne; Environ",
+                  "description": null,
+                  "file_name_from_url": "31efd0ae1c321eda.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-22.jpg"
+                }
+              },
+              {
+                "id": 27175,
+                "name": "Lausanne, ville gourmande - Terrasse dans les vignobles",
+                "public_name": "Vue sur le vignoble",
+                "cloudinary_id": "mCfGJ9u3YBFm7V3ZncARHn36p4QzUYqyJwVZqGBs",
+                "mime_type": "image/jpeg",
+                "copyright": "© Vue sur le vignoble",
+                "metadata": {
+                  "width": 1600,
+                  "height": 1067,
+                  "mimeType": "image/jpeg",
+                  "copyright": null,
+                  "attr": "width=\"1600\" height=\"1067\"",
+                  "tags": "Lac; Lavaux, Environs",
+                  "description": null,
+                  "file_name_from_url": "978424e7068fd556.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/IMG_4940-1.jpg"
+                }
+              },
+              {
+                "id": 27176,
+                "name": "Lausanne, ville gourmande - \"Le Clos des Moines\"",
+                "public_name": "REGIS COLOMBO/www.diapo.ch",
+                "cloudinary_id": "NR3Tn0uhNGUr81Tu709Flo24ZvZvgyMITfQnjZR9",
+                "mime_type": "image/jpeg",
+                "copyright": "© Régis Colombo",
+                "metadata": {
+                  "width": 2560,
+                  "height": 1329,
+                  "mimeType": "image/jpeg",
+                  "copyright": "REGIS COLOMBO/diapo.ch",
+                  "attr": "width=\"2560\" height=\"1329\"",
+                  "tags": "Environ; Lavaux; Lac; Vignoble",
+                  "description": null,
+                  "file_name_from_url": "2d421639942ca9c4.jpg",
+                  "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/10/Clos-des-Moines-scaled.jpg"
+                }
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Lausanne, Weinhauptstadt der Schweiz</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lausanne ist stolze Vertreterin der Schweiz im prestigeträchtigen internationalen Netzwerk Capitals of Great Vineyards. Diese Ehre verdankt die Stadt ihrem Engagement für den Weinbau, ihrer geografischen Lage als Tor zu den Waadtländer Weinbauregionen und ihrer jahrhundertealten Weinbautradition."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Traditionelle Rebsorten und trendige Spezialitäten</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Lieblingsrebsorten im Waadtland sind zweifellos der Chasselas und der Pinot Noir, die in den Lausanner Weinbergen vorherrschen. Die schön goldige Chasselas-Traube wird zu einem fruchtigen, feinen Weisswein gekeltert, der bei den Einheimischen als Aperitif besonders beliebt ist. Der Pinot Noir hingegen ist ein leichter, fruchtiger, sinnlicher und subtiler Rotwein. Mit zunehmender Diversifizierung der Geschmäcker sind neue Rebsorten wie Gamaret, Garanoir, Vionnier und Merlot hinzugekommen."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Jahrhundertealte Tradition der Versteigerung der Weine der Stadt Lausanne</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein sehr authentisches Erlebnis stellt die traditionelle Versteigerung der Weine der Stadt Lausanne dar, die jedes Jahr im Dezember stattfindet. Händler, Gastronomen, Vereine und Privatpersonen überbieten sich, um Lose von 36 bis 120 Flaschen à 75 cl zu ergattern."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Auf Entdeckungstour der Weine des Lavaux im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lavaux-vinorama/\">Vonorama</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das moderne Gebäude fügt sich nahtlos in eine Umgebung aus Felsen, Weinbergen und Wasser ein: willkommen im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lavaux-vinorama/\">Lavaux Vinorama</a>, das mit Bildern, die die Winzerarbeit im Laufe der Jahreszeiten in dieser einzigartigen Weinbauregion veranschaulichen, zum Eintauchen in die Welt der regionalen Weine einlädt. Wer einen konkreteren, sensorischen Ansatz bevorzugt, entscheidet sich für eine Degustation à la carte und probiert eine der lokalen Spezialitäten wie den Chasselas oder Plant Robert. Über 250 Weine aus dem Lavaux werden zum Verkauf angeboten."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Einzigartiges, magisches, atemberaubendes Lavaux</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Weinberge des Lavaux scheinen zwischen Erde, Himmel und See zu schweben. Die im Laufe der Jahrhunderte vom Menschen terrassenförmig gebauten Weinberge bilden Landschaften seltener Schönheit und gehören zum UNESCO-Welterbe. Im Sommer wie im Winter ist ein Spaziergang in den Weinbergen über dem Genfersee schlicht himmlisch und die Aussicht atemberaubend ‒ und dies nur einen Katzensprung von der Stadt entfernt. Die Weinberge lassen sich zu Fuss oder an Bord des Minizugs entdecken. Gemütliches Flanieren und ein Halt hier und dort in einem Weinkeller für eine gemütliche <a href=\"https://www.lausanne-tourisme.ch/de/angebot/weinverkostung-in-den-lavaux-weinbergen/\">Degustation</a> runden die Erkundungstour perfekt ab."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26712,
+              "name": "Vue sur le vignoble le lac et un bateau CGN",
+              "public_name": "Vue sur le vignoble le lac et un bateau CGN",
+              "cloudinary_id": "womO6g5S5LdUVRQ3ANjtRwWTv24xPsB2cIxXpp1A",
+              "mime_type": "image/jpeg",
+              "copyright": "© Lausanne Tourisme",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Unesco, Eau, Navigation, Environs, Excurions, Nature",
+                "description": null,
+                "file_name_from_url": "cdae71b438c14852.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/08/Vignoble-20.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "f2179f49073d6be3",
+          "copyright": "© Marché du mercredi",
+          "public_name": {
+            "fr": "Lausanne, ville gourmande"
+          }
+        }
+      ],
+      "published_at": "1723647343",
+      "seo": {
+        "description": {
+          "fr": "Lausanne peut se targuer d’être la capitale d’un canton tout entier voué aux plaisirs du palais.",
+          "en": "Lausanne can pride itself on being the capital of a canton wholly entirely devoted to the pleasures of the palate. ",
+          "de": "Lausanne ist eine Kantonshauptstadt, die sich ganz den Gaumenfreuden verschrieben hat. "
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-ville-gourmande",
+          "en": "lausanne-a-foody-city",
+          "de": "schlemmerstadt-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-gastronomie",
+          "public_name": {
+            "fr": "Gastronomie",
+            "en": "Gastronomy",
+            "de": "Gastronomie"
+          }
+        }
+      ]
+    }
+  }
+}

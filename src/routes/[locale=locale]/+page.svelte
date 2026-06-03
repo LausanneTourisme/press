@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { afterNavigate } from '$app/navigation';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
   import { RouteTypes } from '$enums';
   import Anchor from '$lib/components/Anchor.svelte';
@@ -17,12 +17,12 @@
   import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';
   import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
   import { t, type Locale } from '$lib/translations';
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
 
   const locale = $derived(page.params.locale as Locale);
-  let isDarkMode = $state(false);
   let isMobile = $state(false);
   let displayAllThemes = $state(false);
+  let cancelScrollRestore = () => {};
   let videoUrl = $derived.by(() => `/pages/home/welcome_card_${locale}.mp4`);
 
   const trophies: Trophy[] = [
@@ -55,47 +55,73 @@
   const updateSize = () => {
     isMobile = window.innerWidth < maxMobileWidth;
   };
-  // Listen for changes
-  const updateDarkMode = () => {
-    isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  };
 
   const onVideoIntersecting = (isIntersecting: boolean) => {
     const nav = document.getElementById('main-nav');
     if (nav && !isMobile) {
-      nav.classList.toggle('invisible-nav', isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('invisile-nav', !isIntersecting); // Use second arg to set state explicitly
-      // nav.classList.toggle('hidden-nav', isIntersecting);
+      nav.classList.toggle('invisible-nav', isIntersecting);
     }
   };
 
+  beforeNavigate(({ type }) => {
+    cancelScrollRestore();
+    if (type === 'popstate') return;
+    sessionStorage.setItem('homeScrollY', String(window.scrollY));
+    sessionStorage.setItem('homeThemesExpanded', String(displayAllThemes));
+  });
+
+  afterNavigate((navigation) => {
+    const { type } = navigation;
+    // afterNavigate fires on both the source and destination page during a transition.
+    // Guard so the restore only runs when we're actually arriving at the homepage.
+    const arrivingHere = navigation.to?.url?.pathname === `/${locale}`;
+
+    // Restore themes state synchronously before SvelteKit restores scroll (avoids layout shift)
+    const saved = sessionStorage.getItem('homeThemesExpanded');
+    if (saved !== null) displayAllThemes = saved === 'true';
+
+    if (type === 'popstate') {
+      if (!arrivingHere) return;
+      const savedY = Number(sessionStorage.getItem('homeScrollY') ?? 0);
+      if (savedY > 0) {
+        let cancelled = false;
+        cancelScrollRestore = () => {
+          cancelled = true;
+        };
+        let lastH = 0,
+          stable = 0;
+        const tryScroll = () => {
+          if (cancelled) return;
+          const h = document.documentElement.scrollHeight;
+          if (h === lastH) stable++;
+          else {
+            stable = 0;
+            lastH = h;
+          }
+          if (stable >= 3) window.scrollTo({ top: savedY, behavior: 'instant' });
+          else requestAnimationFrame(tryScroll);
+        };
+        requestAnimationFrame(tryScroll);
+      }
+    } else if (type === 'link' || type === 'goto') {
+      if (arrivingHere) {
+        displayAllThemes = false;
+        sessionStorage.removeItem('homeScrollY');
+        sessionStorage.removeItem('homeThemesExpanded');
+      }
+    }
+  });
+
+  onDestroy(() => cancelScrollRestore());
+
   onMount(() => {
     updateSize();
-    updateDarkMode();
-
-    afterNavigate(({ to, from, type }) => {
-      // If user used back/forward, we keep themes state
-      if (type === 'popstate') {
-        displayAllThemes = sessionStorage.getItem('homeThemesExpanded') === 'true';
-      } else {
-        displayAllThemes = false;
-      }
-    });
-
-    /*
-     *  Event listeners
-     */
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateDarkMode);
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);
 
-    // Cleanup event listener when the component is destroyed
     return () => {
       window.removeEventListener('resize', updateSize);
       window.removeEventListener('orientationchange', updateSize);
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', updateDarkMode);
     };
   });
 </script>
@@ -111,10 +137,10 @@
   -->
 <Container
   fullscreen={true}
-  class="relative min-h-[500px] items-end justify-start overflow-hidden md:flex md:items-center"
+  class="relative min-h-125 items-end justify-start overflow-hidden md:flex md:items-center"
 >
   <div
-    class="p-6 text-left shadow-gray-950 [text-shadow:_0_0_1px_var(--tw-shadow-color)] md:w-1/2 md:p-16 lg:w-1/2"
+    class="p-6 text-left shadow-gray-950 [text-shadow:0_0_1px_var(--tw-shadow-color)] md:w-1/2 md:p-16 lg:w-1/2"
   >
     <Heading tag="h1" class="w-full text-white">
       <span class="inline-block pb-3 text-4xl font-light tracking-[0.45px]">
@@ -312,7 +338,7 @@
         {@html $t('page.pressRelease.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Pressrelease)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Pressreleases)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>
@@ -351,7 +377,7 @@
         {@html $t('page.mediaCoverage.paragraph')}
       </Paragraph>
       <div>
-        <Button negative={true} href={route(RouteTypes.Coverage)} tag="a">
+        <Button negative={true} href={route(RouteTypes.Coverages)} tag="a">
           {@html $t('common.btn.learnMore')}
         </Button>
       </div>
@@ -391,7 +417,10 @@
     title={$t('themes.title')}
     paragraph={$t('themes.description')}
     expanded={displayAllThemes}
-    onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
+    onShowMore={() => {
+      displayAllThemes = true;
+      sessionStorage.setItem('homeThemesExpanded', 'true');
+    }}
     {locale}
   />
 </Container>
@@ -504,23 +533,6 @@
         </div>
         <Heading tag="h3">Olivia Bosshart</Heading>
         <Paragraph>Press & Public Relations Manager</Paragraph>
-      </article>
-    </div>
-    <div class="mt-12 md:mx-12">
-      <article>
-        <div class="avatar w-full">
-          <div class="mx-auto w-48 rounded-full md:w-64">
-            <Image
-              alt="Laura Ragonese"
-              title="Laura Ragonese"
-              localSrc="/laura.jpg"
-              src="/laura"
-              transform={{ width: 512, aspect_ratio: '1:1' }}
-            />
-          </div>
-        </div>
-        <Heading tag="h3">Laura Ragonese</Heading>
-        <Paragraph>Media & Press Coordinator</Paragraph>
       </article>
     </div>
   </div>

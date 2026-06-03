@@ -2,30 +2,29 @@ import { dev } from '$app/environment';
 import { RouteTypes } from '$enums';
 import { isOfflineMode } from '$lib/helpers';
 import { generateCloudinaryUrl } from '$lib/helpers/image.js';
-import { getPost } from '$lib/helpers/requests.server';
+import { getPost } from '$lib/services/requests.server';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
-export const load = async ({ params, parent, url }) => {
+export const load = async ({ params, parent, url, fetch }) => {
   if (dev && isOfflineMode) {
-    const { server } = await import('$lib/mocks/handler');
-    server.listen();
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
   }
 
   const [{ i18n, translations, locale, type }, articleRes] = await Promise.all([
     parent(),
-    getPost(params.slug ?? '')
+    getPost(params.slug ?? '', fetch)
   ]);
 
-  const article = articleRes.data.item;
-
+  const article = articleRes.data?.item;
   if (!article || !article.languages?.includes(locale)) throw error(404);
 
   await loadTranslations(locale, url.pathname);
 
   const seo: SeoHeader = {
-    canonical: `${url.origin}${url.pathname}`,
+    canonical: `https://www.lausanne-tourisme.ch/${locale}/the-lausanner/articles/${article.seo?.slug?.[locale]}`,
     title: article.name?.[locale as Locale] ?? translations[locale][`${RouteTypes.Articles}.title`],
     description:
       article.lead?.[locale as Locale] ??
@@ -35,7 +34,7 @@ export const load = async ({ params, parent, url }) => {
       usePreset: false,
       transform: { h: 720, w: 1280 }
     }),
-    alternate: supportedLocales
+    articleAlternate: supportedLocales
       .filter((l) => article.languages?.includes(l))
       .map((locale) => ({
         hreflang: locale,

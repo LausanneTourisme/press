@@ -1,35 +1,35 @@
 import { dev } from '$app/environment';
-import { RouteTypes, Themes } from '$enums';
-import { filterByTag, isOfflineMode } from '$lib/helpers';
-import { getFavorites, getPosts, getTag } from '$lib/helpers/requests.server';
+import { RouteTypes, Themes, type Theme } from '$enums';
+import { isOfflineMode } from '$lib/helpers';
+import { getFavorites, getPosts, getTag } from '$lib/services/requests.server';
 import { supportedLocales, translations } from '$lib/translations';
 import type { Post } from '$types';
 import type { EntryGenerator } from './$types';
 
-export const load = async ({ parent }) => {
+export const load = async ({ params, parent, fetch }) => {
   if (dev && isOfflineMode) {
-    const { server } = await import('$lib/mocks/handler');
-    server.listen();
+    const { startServer } = await import('$lib/mocks/handler');
+    startServer();
   }
 
-  const { locale, theme } = await parent();
+  const { locale, translations } = await parent();
+  const theme: Theme = Object.values(Themes).find(
+    (theme) => translations[locale][`route.${RouteTypes.Themes}.${theme}.slug`] === params.theme
+  )!;
 
   const tag = getTag(theme);
-  const [articlesRes, highlightedArticlesRes, favoritesRes] = await Promise.all([
-    getPosts<Post<string>>({ type: 'post', highlighted: false, locale }),
-    getPosts<Post<string>>({ type: 'post', highlighted: true, locale }),
-    getFavorites<string>({ locale, theme })
+  const [postsRes, favoritesRes] = await Promise.all([
+    getPosts<Post<string>>({ type: 'post', locale, tags: tag, fetchFn: fetch }),
+    getFavorites<string>({ locale, theme, fetchFn: fetch })
   ]);
 
-  // 0 highlighted posts in this list
-  const articles = articlesRes.data?.items?.data ?? [];
-  const highlightedArticles = highlightedArticlesRes.data?.items?.data ?? [];
+  const allArticles = postsRes.data?.items?.data ?? [];
   const favorites = favoritesRes.data?.items?.data ?? [];
 
   return {
     payload: {
-      articles: filterByTag(articles, tag),
-      highlightedArticle: filterByTag(highlightedArticles, tag)?.at(0),
+      articles: allArticles.filter((a) => !a.highlight),
+      highlightedArticle: allArticles.find((a) => a.highlight) as Post<string> | undefined,
       favorites
     }
   };

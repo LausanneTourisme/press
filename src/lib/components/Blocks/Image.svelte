@@ -1,6 +1,6 @@
 <!-- Used only for post content -->
 <script lang="ts">
-  import type { Metadata, Translatable } from '$types';
+  import type { Metadata } from '$types';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import HorizontalImage from './images/Horizontal.svelte';
@@ -16,7 +16,7 @@
     size: 'small' | 'medium' | 'large' | 'parallax';
     focus?: 'face' | 'auto' | 'null';
     fixed?: boolean;
-    metadata?: Metadata<Translatable>;
+    metadata?: Metadata<string>;
     children?: Snippet;
   };
 

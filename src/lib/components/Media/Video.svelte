@@ -1,9 +1,9 @@
 <script lang="ts">
   import { dev } from '$app/environment';
   import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-  import { filename, isOfflineMode } from '$lib/helpers';
-  import { CircleX, Pause, Play, Volume2 } from 'lucide-svelte';
-  import { onMount, type Snippet } from 'svelte';
+  import { isOfflineMode } from '$lib/helpers';
+  import { CircleX, Pause, Play, Volume2 } from '@lucide/svelte';
+  import { type Snippet } from 'svelte';
   import Device from 'svelte-device-info';
   import { twMerge } from 'tailwind-merge';
 

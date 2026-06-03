@@ -1,0 +1,700 @@
+{
+  "data": {
+    "item": {
+      "id": "290",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Où patiner à Lausanne ?",
+        "en": "Where can you skate in Lausanne?",
+        "de": "Wo kann man in Lausanne Schlittschuh laufen?"
+      },
+      "lead": {
+        "fr": "L’hiver est enfin arrivé, et avec lui, la saison des glissades est officiellement lancée ! Et les amateurs de patinage peuvent se réjouir car Lausanne compte plusieurs patinoires qui sauront séduire tous les passionnés, des novices aux plus expérimentés. ",
+        "en": "Winter has finally arrived, and with it the ice-skating season is officially under way! And skating fans can rejoice, as Lausanne has several ice rinks that will appeal to all enthusiasts, from novices to the most experienced.",
+        "de": "Der Winter ist endlich da und mit ihm beginnt offiziell die Schlittschuhsaison! Schlittschuhfans dürfen sich freuen, denn Lausanne bietet mehrere Eisbahnen, die sowohl Anfänger als auch erfahrene Läufer begeistern werden."
+      },
+      "summary": {
+        "fr": "L’hiver est enfin arrivé, et avec lui, la saison des glissades est officiellement lancée ! Et les amateurs de patinage peuvent se réjouir car Lausanne compte plusieurs patinoires qui sauront séduire tous les passionnés, des novices aux plus expérimentés. Que ce soit pour les amoureux de patinage artistique, les hockeyeurs ou simplement pour ceux qui veulent s’amuser entre amis ou en famille avant l’heure de la fondue, les patinoires de Lausanne vous accueillent tout l’hiver pour un moment de plaisir. Cap sur les adresses à ne pas manquer : à vos lames, prêts, partez !",
+        "en": "Winter has finally arrived, and with it the ice-skating season is officially under way! And skating fans can rejoice, as Lausanne has a number of ice rinks that will appeal to all enthusiasts, from novices to the most experienced. Whether you’re a figure skating fan, a hockey player or simply want to have some fun with friends or family before fondue time, Lausanne’s ice rinks are there to welcome you all winter long. Here are the addresses you won’t want to miss: on your blades, get set, go!",
+        "de": "Der Winter ist endlich da und mit ihm beginnt offiziell die Schlittschuhsaison! Schlittschuhfans dürfen sich freuen, denn Lausanne bietet mehrere Eisbahnen, die sowohl Anfänger als auch erfahrene Läufer begeistern werden. Ob Eiskunstlauf, Eishockey oder einfach nur Spaß mit Freunden oder der Familie vor dem Fondue: Die Eisbahnen von Lausanne stehen euch den ganzen Winter zur Verfügung. Hier sind die Adressen, die ihr nicht verpassen dürft: Auf die Kufen, fertig, los!"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27262,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": "Où patiner à Lausanne ?",
+              "cloudinary_id": "fbcea57e2717ce3c",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vaudoise arena complexe omnisports - nouveau centre sportif a Malley. Patinoire",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Lausanne;",
+                "description": null,
+                "file_name_from_url": "fbcea57e2717ce3c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/01/Patinoire-Vaudoise.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/vaudoise-arena/\">1. Les patinoires de la Vaudoise aréna</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dans le quartier de Malley, ce complexe multisports devenu incontournable à Lausanne déroule une foule d’activités, hiver comme été. Patinage artistique ou synchronisé, short-track, hockey sur glace et broomball : professionnels et amateurs s’y pressent pour fouler l’épaisse couche blanche. Avec ses trois patinoires – deux intérieures, une extérieure – l’arène des neiges possède un véritable Centre de glace."
+          },
+          {
+            "type": "paragraph",
+            "value": "La Vaudoise aréna est aussi la maison du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/lausanne-hockey-club-lhc/\">Lausanne Hockey Club (LHC)</a> et de plusieurs autres clubs de hockey, patinage et sports de glace locaux. L’aréna principale – avec sa capacité de 9600 spectateurs – est équipée pour les compétitions internationales, elle a d’ailleurs accueilli les <a href=\"https://www.lausanne-tourisme.ch/fr/jeux-olympiques-de-la-jeunesse-lausanne-2020/\">Jeux olympiques de la Jeunesse en 2020</a>."
+          },
+          {
+            "type": "paragraph",
+            "value": "La seconde patinoire intérieure, d’avantage destinée aux clubs, répond au doux nom de « Cooly ». Enfin, « Yodli », la patinoire extérieure, ouvre ses portes au grand public et aux écoles."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Ch. du Viaduc 14, 1008 Prilly</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pratique : la location de patins est possible sur place.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Ouverture de la patinoire extérieure le 2 novembre 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25896,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": "Où patiner à Lausanne ?",
+              "cloudinary_id": "ceee8905247d53fc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire de la Vaudoise Arena.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ceee8905247d53fc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Vaudoise-Arena.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/patinoire-de-montchoisi/\">2. La patinoire de Montchoisi</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Cette patinoire familiale, située à proximité du <a href=\"https://www.lausanne-tourisme.ch/fr/story/le-musee-olympique/\">Musée Olympique</a>, compte deux pistes en plein air ainsi qu’un bar-restaurant avec vue sur la glace. L’idéal pour les petits ou grands amateurs de glissades en cascade."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Pratique : la location de patins est possible sur place.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Av. du Servan 30, 1006 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Ouverture novembre 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25986,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": "Où patiner à Lausanne ?",
+              "cloudinary_id": "8ee3e7615e15e499",
+              "mime_type": "image/jpeg",
+              "copyright": "© Joies du patin a la Patinoire de Montchoisi Lausanne",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8ee3e7615e15e499.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-KAZ9900.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/patinoire-de-la-pontaise/\">3. La patinoire de la Pontaise</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Tout près du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/stade-olympique-de-la-pontaise/\">Stade de la Pontaise</a>, cette petite patinoire de quartier accueille les familles comme les patineurs chevronnés sur sa piste en plein air. Au programme : un délicieux moment de glisse… avec ou sans chute !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Rte des Plaines-du-Loup 11, 1018 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>A savoir : vestiaire disponible mais pas de location de patins sur place, n’oubliez pas les vôtres !</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Ouverture le 2 décembre 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26069,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": "Où patiner à Lausanne ?",
+              "cloudinary_id": "f873bb92b3bdeaa6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire communale de Lausanne a la Pontaise",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Patin; Patinoire; Hiver; Glace; Famille; Enfant; Lausanne; Activité; Loisirs",
+                "description": null,
+                "file_name_from_url": "f873bb92b3bdeaa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Pontaide.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. La patinoire de Lutry"
+          },
+          {
+            "type": "paragraph",
+            "value": "Au Grand Pont, le terrain de beach-volley se mue en piste de glace le temps d’un hiver. A la clé ? Pas moins de 360 m2 de glissades à gogo. Et après l’effort, rendez-vous à la buvette attenante pour s’octroyer une pause bien méritée !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Quai Gustave Doret, 1095 Lutry</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>A savoir : entrée gratuite et diverses animations proposées. </em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Ouverture le 23 novembre 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26145,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": "Où patiner à Lausanne ?",
+              "cloudinary_id": "adbba881a288a583",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1333,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1333\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "adbba881a288a583.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/236fe94bfb6199c02662703d4e558a7705227c23_2000.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27262,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "fbcea57e2717ce3c",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vaudoise arena complexe omnisports - nouveau centre sportif a Malley. Patinoire",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Lausanne;",
+                "description": null,
+                "file_name_from_url": "fbcea57e2717ce3c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/01/Patinoire-Vaudoise.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vaudoise-arena/\">1. The Vaudoise aréna ice rinks</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "In the Malley district, this multi-sports complex has become a must in Lausanne, offering a host of activities in winter and summer alike. Figure or synchronised skating, short-track, ice hockey and broomball: professionals and amateurs alike flock to the thick white ice. With its three ice rinks – two indoor, one outdoor – the snow arena has a veritable Ice Centre."
+          },
+          {
+            "type": "paragraph",
+            "value": "The Vaudoise arena is also the home of <a href=\"https://www.lausanne-tourisme.ch/en/explore/lausanne-hockey-club-lhc/\">Lausanne Hockey Club (LHC)</a> and several other local hockey, skating and ice sports clubs. The main arena – with a capacity of 9600 spectators – is equipped for international competitions, and in fact hosted <a href=\"https://www.lausanne-tourisme.ch/en/youth-olympic-games-2020/\">the Youth Olympic Games in 2020</a>."
+          },
+          {
+            "type": "paragraph",
+            "value": "The second indoor skating rink, designed more for clubs, is called “Cooly”. Finally, ‘Yodli’, the outdoor rink, is open to the general public and schools."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Ch. du Viaduc 14, 1008 Prilly</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information: skates can be hired on site.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Opening of the outdoor rink on 2 November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25896,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "ceee8905247d53fc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire de la Vaudoise Arena.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ceee8905247d53fc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Vaudoise-Arena.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/montchoisi-swimming-pool/\">2. The Montchoisi ice rink</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "This family ice rink, located near the <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Olympic Museum</a>, has two open-air lanes and a bar-restaurant with a view of the ice. It’s the ideal place for young and old alike to enjoy a cascading slide."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information: skates can be hired on site.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Av. du Servan 30, 1006 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Opening November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25986,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "8ee3e7615e15e499",
+              "mime_type": "image/jpeg",
+              "copyright": "© Joies du patin a la Patinoire de Montchoisi Lausanne",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8ee3e7615e15e499.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-KAZ9900.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/la-pontaise-open-air-rink/\">3. Pontaise ice rink</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Right next to the <a href=\"https://www.lausanne-tourisme.ch/en/explore/la-pontaise-olympic-stadium/\">Pontaise stadium</a>, this small neighbourhood rink welcomes families and experienced skaters alike to its open-air rink. On the programme: a delicious moment on the ice… with or without a fall!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Rte des Plaines-du-Loup 11, 1018 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Please note: cloakroom available but no skate hire on site, so don’t forget your own!</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Opening on 2 December 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26069,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "f873bb92b3bdeaa6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire communale de Lausanne a la Pontaise",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Patin; Patinoire; Hiver; Glace; Famille; Enfant; Lausanne; Activité; Loisirs",
+                "description": null,
+                "file_name_from_url": "f873bb92b3bdeaa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Pontaide.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Lutry ice rink"
+          },
+          {
+            "type": "paragraph",
+            "value": "At Grand Pont, the beach volleyball court is transformed into an ice rink for the winter. What’s on offer? No less than 360 m2 of slides galore. And after all that effort, why not head to the adjoining refreshment bar for a well-deserved break!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Quai Gustave Doret, 1095 Lutry</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>And don’t forget: free admission and a range of events.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Opening on 23 November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26145,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "adbba881a288a583",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1333,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1333\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "adbba881a288a583.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/236fe94bfb6199c02662703d4e558a7705227c23_2000.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27262,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "fbcea57e2717ce3c",
+              "mime_type": "image/jpeg",
+              "copyright": "© Vaudoise arena complexe omnisports - nouveau centre sportif a Malley. Patinoire",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Lausanne;",
+                "description": null,
+                "file_name_from_url": "fbcea57e2717ce3c.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2017/01/Patinoire-Vaudoise.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vaudoise-arena/\">1. Die Eisbahnen der Vaudoise Aréna</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Im Stadtteil Malley ist dieser Multisportkomplex zu einer festen Größe in Lausanne geworden und bietet sowohl im Winter als auch im Sommer zahlreiche Aktivitäten. Eiskunstlauf, Synchronlauf, Shorttrack, Eishockey und Eisstockschießen: Sowohl Profis als auch Amateure tummeln sich auf dem dicken weißen Eis. Mit seinen drei Eisbahnen – zwei überdacht, eine im Freien – verfügt die Anlage über ein echtes Eiszentrum."
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Vaudoise Aréna ist auch die Heimat des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/lausanne-hockey-club-lhc/\">Lausanne Hockey Club (LHC)</a> und mehrerer anderer lokaler Hockey-, Eiskunstlauf- und Eissportvereine. Die Hauptarena – mit einer Kapazität von 9.600 Zuschauern – ist für internationale Wettkämpfe ausgestattet und war <a href=\"https://www.lausanne-tourisme.ch/de/olympische-jugend-winterspiele-2020/\">2020 Austragungsort der Olympischen Jugendspiele</a>."
+          },
+          {
+            "type": "paragraph",
+            "value": "Die zweite überdachte Eisbahn, die eher für Vereine gedacht ist, heißt „Cooly“. Schließlich ist „Yodli“, die Außenbahn, für die Öffentlichkeit und Schulen zugänglich."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Ch. du Viaduc 14, 1008 Prilly</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Informationen: Schlittschuhe können vor Ort gemietet werden.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Eröffnung der Außenbahn am 2. November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25896,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "ceee8905247d53fc",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire de la Vaudoise Arena.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ceee8905247d53fc.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Vaudoise-Arena.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/montchoisi-eisbahn/\">2. Die Eisbahn Montchoisi</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Diese familienfreundliche Eisbahn in der Nähe des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Olympischen Museums</a> verfügt über zwei offene Bahnen und ein Bar-Restaurant mit Blick auf das Eis. Der ideale Ort für Jung und Alt, um eine Runde zu gleiten."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Av. du Servan 30, 1006 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Informationen: Schlittschuhe können vor Ort gemietet werden.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Eröffnung im November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25986,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "8ee3e7615e15e499",
+              "mime_type": "image/jpeg",
+              "copyright": "© Joies du patin a la Patinoire de Montchoisi Lausanne",
+              "metadata": {
+                "width": 1600,
+                "height": 1068,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1068\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8ee3e7615e15e499.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-KAZ9900.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-pontaise-eisbahn/\">3. Die Eisbahn Pontaise</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Direkt neben dem <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/la-pontaise-olympiastadion/\">Pontaise-Stadion</a> lädt diese kleine Nachbarschaftseisbahn Familien und erfahrene Läufer auf ihre Freiluftbahn ein. Auf dem Programm steht ein vergnüglicher Moment auf dem Eis… mit oder ohne Sturz!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Rte des Plaines-du-Loup 11, 1018 Lausanne</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Hinweis: Garderobe vorhanden, aber keine Schlittschuhmiete vor Ort – also nicht vergessen, eigene Schlittschuhe mitzubringen!</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Eröffnung am 2. Dezember 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26069,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "f873bb92b3bdeaa6",
+              "mime_type": "image/jpeg",
+              "copyright": "© Patinoire communale de Lausanne a la Pontaise",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Sport; Patin; Patinoire; Hiver; Glace; Famille; Enfant; Lausanne; Activité; Loisirs",
+                "description": null,
+                "file_name_from_url": "f873bb92b3bdeaa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/Patinoire-Pontaide.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Die Eisbahn Lutry"
+          },
+          {
+            "type": "paragraph",
+            "value": "Am Grand Pont wird das Beachvolleyballfeld für den Winter in eine Eisbahn verwandelt. Was gibt es zu erleben? Nicht weniger als 360 m² voller Rutschspaß. Und nach all der Anstrengung wartet die benachbarte Erfrischungsbar für eine wohlverdiente Pause!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Quai Gustave Doret, 1095 Lutry</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Und nicht vergessen: Der Eintritt ist frei und es gibt verschiedene Veranstaltungen.</em>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong>Eröffnung am 23. November 2024</strong>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26145,
+              "name": "Où patiner à Lausanne ?",
+              "public_name": null,
+              "cloudinary_id": "adbba881a288a583",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2000,
+                "height": 1333,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2000\" height=\"1333\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "adbba881a288a583.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2024/10/236fe94bfb6199c02662703d4e558a7705227c23_2000.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "ceee8905247d53fc",
+          "copyright": "© Patinoire de la Vaudoise Arena.",
+          "public_name": {
+            "fr": "Où patiner à Lausanne ?"
+          }
+        }
+      ],
+      "published_at": "1728890546",
+      "seo": {
+        "description": {
+          "fr": "L’hiver est enfin arrivé, et avec lui, la saison des glissades est officiellement lancée ! Et les amateurs de patinage peuvent se réjouir car Lausanne compte plusieurs patinoires qui sauront séduire tous les passionnés, des novices aux plus expérimentés. ",
+          "en": "Winter has finally arrived, and with it the ice-skating season is officially under way! And skating fans can rejoice, as Lausanne has several ice rinks that will appeal to all enthusiasts, from novices to the most experienced.",
+          "de": "Der Winter ist endlich da und mit ihm beginnt offiziell die Schlittschuhsaison! Schlittschuhfans dürfen sich freuen, denn Lausanne bietet mehrere Eisbahnen, die sowohl Anfänger als auch erfahrene Läufer begeistern werden."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "ou-patiner-a-lausanne",
+          "en": "where-can-you-skate-in-lausanne",
+          "de": "wo-kann-man-in-lausanne-schlittschuh-laufen"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
+    }
+  }
+}

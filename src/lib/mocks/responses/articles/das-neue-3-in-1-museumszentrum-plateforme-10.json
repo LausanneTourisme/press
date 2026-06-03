@@ -1,0 +1,435 @@
+{
+  "data": {
+    "item": {
+      "id": "319",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+        "en": "Plateforme 10: the new 3 in 1 museum hub",
+        "de": "Das neue 3-in-1-Museumszentrum Plateforme 10"
+      },
+      "lead": {
+        "fr": "Plateforme 10, c’est l’union et la collaboration de trois musées, le MCBA, Photo Elysée, et le mudac. Ces trois entités cantonales font résonner l’art et la culture à Lausanne depuis déjà de nombreuses années, seulement, leur nouvelle résidence aux abords de la gare, leur confère une toute autre dimension. Davantage d’espace pour les expositions, un accès au public accru, et une synergie entre les trois établissements.",
+        "en": "Plateforme 10 is the union of and collaboration between three museums, MCBA, Photo Elysée and the mudac. These three cantonal institutions have been making Lausanne reverberate with arts and culture for many years, yet their new home right by the train station gives them a totally new dimension: more space for exhibitions, increased access for the public and synergies between the three establishments. Read on to discover more about each museum.",
+        "de": "Plateforme 10 ist der Zusammenschluss und die Zusammenarbeit der drei Museen MCBA, Photo Elysée und mudac. Seit vielen Jahren bereichern diese drei kantonalen Museen die Stadt Lausanne mit Kunst und Kultur. Ihr neuer Standort beim Bahnhof verleiht ihnen eine neue Dimension: mehr Platz für Ausstellungen, verbesserter Zugang für die Öffentlichkeit und Synergien zwischen den drei Museen. In diesem Artikel erfährt ihr mehr über jedes dieser Museen ..."
+      },
+      "summary": {
+        "fr": "Plateforme 10, c’est l’union et la collaboration de trois musées, le MCBA, Photo Elysée, et le mudac. Ces trois entités cantonales font résonner l’art et la culture à Lausanne depuis déjà de nombreuses années, seulement, leur nouvelle résidence aux abords de la gare, leur confère une toute autre dimension. Davantage d’espace pour les expositions, un accès au public accru, et une synergie entre les trois établissements. Découvrez chacun de ces musées dans la suite de l’article…",
+        "en": "Plateforme 10 is the union of and collaboration between three museums, MCBA, Photo Elysée and the mudac. These three cantonal institutions have been making Lausanne reverberate with arts and culture for many years, yet their new home right by the train station gives them a totally new dimension: more space for exhibitions, increased access for the public and synergies between the three establishments. Read on to discover more about each museum.",
+        "de": "Plateforme 10 ist der Zusammenschluss und die Zusammenarbeit der drei Museen MCBA, Photo Elysée und mudac. Seit vielen Jahren bereichern diese drei kantonalen Museen die Stadt Lausanne mit Kunst und Kultur. Ihr neuer Standort beim Bahnhof verleiht ihnen eine neue Dimension: mehr Platz für Ausstellungen, verbesserter Zugang für die Öffentlichkeit und Synergien zwischen den drei Museen. In diesem Artikel erfährt ihr mehr über jedes dieser Museen …"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26205,
+              "name": "8 bonnes raisons de se réjouir de l’automne à Lausanne",
+              "public_name": "8 bonnes raisons de se réjouir de l’automne à Lausanne",
+              "cloudinary_id": "65311ab0041704ed",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shooting en collaboration avec Suisse Tourisme afin de faire la promotion de la balade des panoramas. Visite du MCBA - Musee cantonal des Beaux- Arts a Plateforme 10",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, Culture; Musée, Couple",
+                "description": null,
+                "file_name_from_url": "e7557c4965c936a6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Hall-MCBA-I-3.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Le MCBA"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-cantonal-des-beaux-arts-mcb-a/\">Le musée cantonal des beaux arts de Lausanne</a> met à l’honneur des courants artistiques singuliers, ayant marqué l’art ancien, moderne et contemporain. Parmi l’un de mes préférés, les Nabis (« prophètes » en Hébreu), qui revalorisent l’esthétique d’une œuvre avec spiritualité pour rompre avec l’intention de vérité des peintres réalistes. Les couleurs sont interprétées, et représentées avec la spiritualité que le sujet inspire. D’ailleurs, le restaurant du MCBA porte le nom du « <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-nabi/\">Nabi</a> ». Un lieu épuré, qui laisse toute la place à la créativité culinaire qui puise sa source chez les artisans locaux."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26009,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "cloudinary_id": "beba03ee21694766",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "beba03ee21694766.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_7888-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Photo Elysée"
+          },
+          {
+            "type": "paragraph",
+            "value": "Une toute nouvelle identité visuelle pour <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/musee-de-lelysee/\">Photo Elysée</a>, dont le « To see » prédit de belles expositions à voir. Un espace immense, dont la hauteur sous plafond et la lumière ouvrent les perspectives pour les œuvres photographiques. Photo Elysée, c’est un concept qui retrace l’histoire de la photo et qui dessine son avenir. Un des rares établissements spécialisé et dédié aux procédés photographiques, mettant l’accent sur les faits de sociétés associés à leur temps. La photo c’est un médium mais surtout un parti pris par l’artiste. Une volonté de figer l’instant, non pas pour ce que la caméra voit, mais pour ce que l’œil du photographe perçoit. Déroutantes, nostalgiques ou parfois provocantes, l’émotion ressort d’une quelconque manière des photographies. Une démarche artistique que Photo Elysée nous donne l’opportunité de découvrir par sa collection de plus de 1’200’000 phototypes."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26095,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "cloudinary_id": "670d8f02966d1add",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "670d8f02966d1add.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3420-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Le mudac"
+          },
+          {
+            "type": "paragraph",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/mudac/\">Le mudac – Musée cantonal de design et d’arts appliqués contemporains</a> se démarque en Suisse Romande. L’établissement est le seul de la région à proposer des expositions contemporaines dont le design est à l’honneur. La grande force de l’établissement réside probablement dans ses collaborations avec les hautes écoles qui forment les designers de demain. Ce qui me plaît tout particulièrement, c’est qu’il s’agit de représenter notre monde par les questions qu’il suscite, le mudac mène à repenser notre environnement, s’interroger sur le façonnage de notre société. Petite anecdote, passez au café « Lumen » dans la hall du bâtiment de Photo Elysée et du mudac, vous verrez l’ampoule qui a inspiré le nom du café et qui fait partie de la collection du mudac."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26161,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "cloudinary_id": "ee623a9f16ac1b4b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ee623a9f16ac1b4b.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3390-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26205,
+              "name": "8 bonnes raisons de se réjouir de l’automne à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "65311ab0041704ed",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shooting en collaboration avec Suisse Tourisme afin de faire la promotion de la balade des panoramas. Visite du MCBA - Musee cantonal des Beaux- Arts a Plateforme 10",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, Culture; Musée, Couple",
+                "description": null,
+                "file_name_from_url": "e7557c4965c936a6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Hall-MCBA-I-3.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "MCBA"
+          },
+          {
+            "type": "paragraph",
+            "value": "The <a href=\"https://www.lausanne-tourisme.ch/en/explore/vaud-museum-of-fine-arts-mcb-a/\">Vaud Museum of Fine Arts in Lausanne</a> highlights unique artistic movements that have left their stamp on ancient, modern and contemporary art. Among my favourites, the Nabis (“prophets” in Hebrew) enhance the aesthetics of works through spirituality to break away from realist painters, whose intention was to depict nature such as it is. Colours were interpreted and represented with the spirituality inspired by the subject. What’s more, the MCBA’s restaurant is named “<a href=\"https://www.lausanne-tourisme.ch/en/explore/le-nabi/\">Nabi</a>”! A pared-down space that provides ample room for the creative cuisine that finds its source in local artisans."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26009,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "beba03ee21694766",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "beba03ee21694766.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_7888-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Photo Elysée"
+          },
+          {
+            "type": "paragraph",
+            "value": "A brand new visual identity for <a href=\"https://www.lausanne-tourisme.ch/en/explore/musee-de-lelysee/\">PHO<strong>TO</strong> ELY<strong>SEE</strong></a>, with the “TO SEE” promising beautiful exhibitions to come. A huge space, where the high ceiling and the light open up perspectives for photographic works. Photo Elysée is a concept that retraces the history of photography and shapes its future. One of the rare establishments specialised and dedicated to photographic processes that focuses on societal phenomena in connection with their time. Photography is a medium, but more than anything it is the orientation chosen by the artist. A desire to freeze a moment not for the sake of what the camera sees, but for what the photographer’s eye perceives. Disconcerting, nostalgic or sometimes provocative, emotion is present one way or another in the photographs. An artistic approach that Photo Elysée gives us the opportunity to discover thanks to its collection of more than 1,200,000 phototypes."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26095,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "670d8f02966d1add",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "670d8f02966d1add.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3420-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "The mudac"
+          },
+          {
+            "type": "paragraph",
+            "value": "The <a href=\"https://www.lausanne-tourisme.ch/en/explore/mudac/\">mudac – Cantonal Museum of Contemporary Design and Applied Arts</a> – stands out in Western Switzerland. The institution is the only one in the area to offer contemporary exhibitions that highlight design. Its major strength probably resides in its collaborations with the universities that train the designers of the future. What I particularly like is that it seeks to represent our world through the questions raised by the latter, so that the mudac encourages us to rethink our environment and reflect on the shaping of our society. For a bit of trivia, drop in the “Lumen” café in the hall of the Photo Elysée and mudac building, and you will see the lightbulb that inspired the name of the café and belongs to the mudac’s collection."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26161,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "ee623a9f16ac1b4b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ee623a9f16ac1b4b.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3390-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26205,
+              "name": "8 bonnes raisons de se réjouir de l’automne à Lausanne",
+              "public_name": null,
+              "cloudinary_id": "65311ab0041704ed",
+              "mime_type": "image/jpeg",
+              "copyright": "© Shooting en collaboration avec Suisse Tourisme afin de faire la promotion de la balade des panoramas. Visite du MCBA - Musee cantonal des Beaux- Arts a Plateforme 10",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Lausanne, Culture; Musée, Couple",
+                "description": null,
+                "file_name_from_url": "e7557c4965c936a6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/01/Hall-MCBA-I-3.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "MCBA"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/kantonales-kunstmuseum-mcba/\">Kantonale Kunstmuseum von Lausanne</a> stellt einzigartige Kunstrichtungen in den Mittelpunkt, die die alte, moderne und zeitgenössische Kunst geprägt haben. Zu meinen Favoriten gehören die Werke der Künstlergruppe Nabis (hebräisch für „Propheten“). Sie werten die Ästhetik eines Werks mit Spiritualität auf und brechen damit mit dem Wahrheitsanspruch der Maler des Realismus. Die Farben werden interpretiert und mit der Spiritualität, die das Thema inspiriert, dargestellt. Übrigens trägt auch das Restaurant im MCBA den Namen „<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/le-nabi/\">Nabi</a>“. Es ist ein schlichter Ort, der viel Raum für kulinarische Kreativität lässt, die ihre Inspiration aus regionalen Produkten schöpft."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26009,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "beba03ee21694766",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "beba03ee21694766.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_7888-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "Photo Elysée"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das Museum <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/musee-de-lelysee/\">Photo Elysée</a> wartet mit einer völlig neuen visuellen Identität und einem vielsprechenden Programm mit schönen Ausstellungen auf. Der Raum ist riesig und die hohen Decken und viel Licht bieten ideale Blickwinkel auf die fotografischen Werke. Das Photo Elysée verfolgt das Konzept, die Geschichte der Fotografie vor Augen zu führen und ihre Zukunft zu gestalten. Als eines von wenigen Museen ist es auf fotografische Verfahren spezialisiert und legt den Schwerpunkt auf gesellschaftliche Fakten in Bezug zu ihrer Zeit. Fotografie ist ein Medium, aber mehr noch eine klare künstlerische Absicht. Sie ist der Wunsch, den Moment einzufangen, aber nicht um das abzubilden, was die Kamera fokussiert, sondern das, was das Auge des Fotografen oder der Fotografin wahrnimmt. Die verwirrenden, nostalgischen oder auch provokativen Emotionen treten sozusagen aus den Fotografien heraus. Genau diesen künstlerischen Ansatz bringt uns das Photo Elysée mit seiner Sammlung von über 1 200 000 Fototypen näher."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26095,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "670d8f02966d1add",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "670d8f02966d1add.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3420-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "mudac"
+          },
+          {
+            "type": "paragraph",
+            "value": "Das <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/mudac-museum-fur-design-und-angewandte-kunst/\">Kantonale Museum für Design und angewandte Gegenwartskunst</a> nimmt in der Westschweiz eine einzigartige Stellung ein. Es ist das einzige Museum der Region, das zeitgenössische Ausstellungen im Bereich des Designs anbietet. Die grosse Stärke des Museums liegt wahrscheinlich in der Zusammenarbeit mit den Hochschulen, die die Designer und Designerinnen von morgen ausbilden. Besonders gefällt mit, dass seine Kunst die Welt durch die Fragen, die sie aufwirft, darstellt. Das mudac ist ein Anstoss, unser Umfeld zu überdenken und die Gestaltung unserer Gesellschaft zu hinterfragen. Kleine Anekdote: Werft einen Blick ins Café „Lumen“ in der Eingangshalle des Gebäudes der beiden Museen Photo Elysée und mudac. Dort entdeckt ihr eine Glühbirne, die den Namen des Cafés inspiriert hat und Teil der Sammlung des mudac ist."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26161,
+              "name": "Plateforme 10 : le nouveau pôle muséal 3 en 1",
+              "public_name": null,
+              "cloudinary_id": "ee623a9f16ac1b4b",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "ee623a9f16ac1b4b.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/06/IMG_3390-scaled.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "uZhH5k1kh2MYNgyuRZlppe0HdSp6gthUimhAPZrp",
+          "copyright": "© Nouveau quartier des arts Plateforme 10. Musee - mudac Musee",
+          "public_name": {
+            "fr": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee - PHOTO Elysee",
+            "en": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee - PHOTO Elysee",
+            "de": "Nouveau quartier des arts Plateforme 10. Musee - mudac Musee"
+          }
+        }
+      ],
+      "published_at": "1655762400",
+      "seo": {
+        "description": {
+          "fr": "Plateforme 10, c’est l’union et la collaboration de trois musées, le MCBA, Photo Elysée, et le mudac. Ces trois entités cantonales font résonner l’art et la culture à Lausanne depuis déjà de nombreuses années, seulement, leur nouvelle résidence aux abords de la gare, leur confère une toute autre dimension. Davantage d’espace pour les expositions, un accès au public accru, et une synergie entre les trois établissements.",
+          "en": "Plateforme 10 is the union of and collaboration between three museums, MCBA, Photo Elysée and the mudac. These three cantonal institutions have been making Lausanne reverberate with arts and culture for many years, yet their new home right by the train station gives them a totally new dimension: more space for exhibitions, increased access for the public and synergies between the three establishments. Read on to discover more about each museum.",
+          "de": "Plateforme 10 ist der Zusammenschluss und die Zusammenarbeit der drei Museen MCBA, Photo Elysée und mudac. Seit vielen Jahren bereichern diese drei kantonalen Museen die Stadt Lausanne mit Kunst und Kultur. Ihr neuer Standort beim Bahnhof verleiht ihnen eine neue Dimension: mehr Platz für Ausstellungen, verbesserter Zugang für die Öffentlichkeit und Synergien zwischen den drei Museen. In diesem Artikel erfährt ihr mehr über jedes dieser Museen ..."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "plateforme-10-le-nouveau-pole-museal-3-en-1",
+          "en": "plateforme-10-the-new-3-in-1-museum-hub",
+          "de": "das-neue-3-in-1-museumszentrum-plateforme-10"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-culture",
+          "public_name": {
+            "fr": "Culture",
+            "en": "Culture",
+            "de": "Kultur"
+          }
+        }
+      ]
+    }
+  }
+}

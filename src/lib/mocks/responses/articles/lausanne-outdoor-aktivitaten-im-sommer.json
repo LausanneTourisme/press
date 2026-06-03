@@ -1,0 +1,892 @@
+{
+  "data": {
+    "item": {
+      "id": "313",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Lausanne : les activités outdoors de l’été",
+        "en": "Lausanne – the summer’s outdoor activities",
+        "de": "Lausanne: Outdoor-Aktivitäten im Sommer"
+      },
+      "lead": {
+        "fr": "Dès que le soleil pointe le bout de son nez, les Lausannois se précipitent au bord du lac Léman. Sortez votre maillot de bain, vos baskets, votre vélo ou votre skate, on vous dévoile nos activités préférées pour profiter à fond du lac et de sa côte cet été !",
+        "en": "As soon as the sun peeks out, Lausanners rush to the lake side. Prepare your bathing suit, your running shoes, your bike or your roller skates, we’re sharing our favourite activities to make the most of the lake and its shores this summer!",
+        "de": "Sobald die Sonne scheint, zieht es ganz Lausanne an den Genfersee. Holt Badeanzug, Turnschuhe, Fahrrad, Skateboard oder Inlineskates hervor! Wir zeigen euch unsere Lieblingsaktivitäten für diesen Sommer im und am See!"
+      },
+      "summary": {
+        "fr": "Dès que le soleil pointe le bout de son nez, les Lausannois se précipitent au bord du lac Léman. Sortez votre maillot de bain, vos baskets, votre vélo ou votre skate, on vous dévoile nos activités préférées pour profiter à fond du lac et de sa côte cet été !",
+        "en": "As soon as the sun peeks out, Lausanners rush to the lake side. Prepare your bathing suit, your running shoes, your bike or your roller skates, we’re sharing our favourite activities to make the most of the lake and its shores this summer!",
+        "de": "Sobald die Sonne scheint, zieht es ganz Lausanne an den Genfersee. Holt Badeanzug, Turnschuhe, Fahrrad, Skateboard oder Inlineskates hervor! Wir zeigen euch unsere Lieblingsaktivitäten für diesen Sommer im und am See!"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26032,
+              "name": "Le quartier de la gare et Ouchy",
+              "public_name": "Le quartier de la gare et Ouchy",
+              "cloudinary_id": "73a73c62fd9a0336",
+              "mime_type": "image/jpeg",
+              "copyright": "© Pédalos à Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 978,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"978\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "73a73c62fd9a0336.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Pedalo-Ouchy.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Footing, ballade, roller et vélo – de Lutry à Saint-Sulpice</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Sur pas moins de 9 kilomètres, on longe le lac à notre rythme, avec ou sans roues, en marchant ou en courant. S’il n’est pas possible d’être au bord de l’eau entre Ouchy et Bellerive, le reste du tracé est spécialement prévu pour les piétons. De Vidy jusqu’à l’Université de Lausanne, on profite même de la plage pour se rafraîchir dans les eaux claires du lac Léman, ou simplement pour s’allonger au soleil, les baskets en éventail. Un moment parfait pour reprendre  des forces et être au taquet pour passer à l’activité suivante."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23454,
+              "name": "Parc Bourget vélo",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                "description": null,
+                "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26018,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": "Lausanne : les activités outdoors de l’été",
+              "cloudinary_id": "3ae52d8be95333cd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                "description": null,
+                "file_name_from_url": "3ae52d8be95333cd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/vidy-parcours-vita/\">Parcours vita – Parc du Bourget</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Oui, courir c’est bien. Mais pouvoir travailler aussi le haut du corps, c’est mieux. Direction le Parcours vita du parc du Bourget. Sur 2.1 kilomètres, cette piste d’entraînement propose 15 postes, entre deux sessions de course, pour permettre de travailler les différentes parties du corps. La piste, plutôt facile, alterne entre des passages au soleil tout près de la plage, et des détours en forêt à l’ombre des arbres. Un parcours qui peut se faire en courant ou en marchant, mais la tête levée pour profiter du paysage. Et pour les plus compétitifs, un panneau permet de situer son niveau, selon le temps effectué. Après ces prouesses sportives de dingues, tous à l’eau pour se rafraîchir !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23355,
+              "name": "Parc Bourget",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "7IbjBKSTZSNTQKPo9IRY2p59wtVCkcLqUhyZOJfQ",
+              "mime_type": "image/jpeg",
+              "copyright": "© My Lausanne",
+              "metadata": {
+                "width": 768,
+                "height": 576,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"576\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5c1c36b44755e951.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/My_Lausanne_Sport_Le%E2%95%A0uman-4-768x576-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/piedsdanslo/\"><strong>Pédalo à Ouchy</strong><strong> </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le must de l’été : se prélasser sur le lac au soleil. Alors pour passer un bon moment entre potes, on prévoit un pédalo, un chapeau, une paire de lunettes de soleil, de la crème solaire et le tour est joué ! Les plus sportifs se placent à l’avant pour pédaler, et les autres (ou les plus malins, selon la perspective) profitent du moment. Nous voilà partis pour naviguer sur le lac et profiter du lac loin de la rive."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23357,
+              "name": "Pédalo à Vidy",
+              "public_name": "Pédalo à Vidy",
+              "cloudinary_id": "2U8XMaLvbsJjF2hrrcJiu5HXgn2pTffYvrPhqSkV",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT / Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "été; lac; pédalo;",
+                "description": null,
+                "file_name_from_url": "85aa47062e65afa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Vidy-KAZ-HD_018.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/paddle-et-pedalo/\"><strong>Paddle à </strong><strong>Vidy</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Une fois le tour en pédalo terminé, il est temps de se dépenser à nouveau. Allez hop, debout tout le monde ! Chacun son paddle et on pagaie. Après un petit temps d’adaptation, on s’habitude à ces larges planches qui sont excellentes pour travailler l’équilibre et le gainage du corps. Une fois à l’aise, on peut même pimenter l’exercice : qui se lance dans un poirier sur la planche ?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26349,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": "Lausanne : les activités outdoors de l’été",
+              "cloudinary_id": "b076ffed6ecf926f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1064,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1064\"",
+                "tags": "Sport, Lac; Paddle, Activité sportive;",
+                "description": null,
+                "file_name_from_url": "b076ffed6ecf926f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/05/Paddle-lac-Leman.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong><a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/bowl-de-vidy/\">Skate, rollers et BMX au Bowl de Vidy</a></strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Retour sur la terre ferme, et  direction le skatepark de Vidy, pour tester nos <em>tricks </em>dans le bowl, sur la rampe ou les barres installées pour les amateurs de glisse à Lausanne. On enfile son casque et on se prépare à mettre son équilibre à rude épreuve."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23359,
+              "name": "Bowl de Vidy",
+              "public_name": "Bowl de Vidy",
+              "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": "Vélo; Activité; Bowl; Enfant",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "PS : Pas de panique, on peut aussi choisir de profiter du spectacle proposé par les pros de la glisse… et du soleil !"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Mais encore…</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Vous pensiez peut-être que ce tour sportif était déjà fini ? Et bien non, on n’est pas dans la Capitale Olympique pour rien ! Il y a encore tant d’activités possibles au bord du lac. Un petit match de basket, ou de beach volley sur les terrains à côté du skatepark, ou encore une rencontre de foot sur un des terrains de Vidy ? On a l’embarras du choix !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26428,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": "Lausanne : les activités outdoors de l’été",
+              "cloudinary_id": "a0df7cd86b51097d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Loisirs; Sport; Lausanne",
+                "description": null,
+                "file_name_from_url": "a0df7cd86b51097d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Basket-vidy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Et pour ceux qui souhaitent se rafraîchir, il vous reste toujours une petite nage dans le lac (pas besoin d’aller jusqu’à Evian) ou dans le bassin olympique de la <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/piscine-de-bellerive/\">piscine de Bellerive</a> pour ceux qui préfèrent les eaux plus dociles."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Piscine de Bellerive",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26032,
+              "name": "Le quartier de la gare et Ouchy",
+              "public_name": null,
+              "cloudinary_id": "73a73c62fd9a0336",
+              "mime_type": "image/jpeg",
+              "copyright": "© Pédalos à Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 978,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"978\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "73a73c62fd9a0336.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Pedalo-Ouchy.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Run, walk, roller skate or cycle – from Lutry to Saint-Sulpice</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Over no less than 9 kilometres, we follow the lakeside at our own pace, with or without wheels, walking or running. While it’s not possible to be on the water’s edge between Ouchy and Bellerive, the rest of the route is specially designed for pedestrians. From Vidy to Lausanne University, we can even enjoy a dip in Lake Geneva’s clear waters to cool down, or simply stretch out on the beach and laze for a bit. Perfect to gather our strength in readiness for the next activity!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23454,
+              "name": "Parc Bourget vélo",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                "description": null,
+                "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26018,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "3ae52d8be95333cd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                "description": null,
+                "file_name_from_url": "3ae52d8be95333cd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vidy-parcours-vita/\">Parcours Vita – Bourget</a><a href=\"https://www.lausanne-tourisme.ch/en/explore/vidy-parcours-vita/\"> Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Yes, running is good. But working the upper body as well is even better. Let’s head to the Bourget Park’s Parcours Vita. Over 2.1 kilometres, this trail features 15 exercise stations between two running sections to work the various body parts. The trail itself is quite easy, alternating between segments in the sun close to the beach and detours in the forest in the shade of the trees. Whether you walk or run, it’s worth looking upwards to enjoy the scenery. And if you’re competitive, an information board lets you assess your level depending on your time. After this sporting prowess, let’s all take a dive in the lake to cool down!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23355,
+              "name": "Parc Bourget",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "7IbjBKSTZSNTQKPo9IRY2p59wtVCkcLqUhyZOJfQ",
+              "mime_type": "image/jpeg",
+              "copyright": "© My Lausanne",
+              "metadata": {
+                "width": 768,
+                "height": 576,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"576\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5c1c36b44755e951.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/My_Lausanne_Sport_Le%E2%95%A0uman-4-768x576-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/piedsdanslo/\"><strong>Pedal boats in Ouchy </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The must of the summer: chilling on the lake in the sun. To spend a good time with mates, all we need is a pedal boat, a hat, a pair of sunglasses and sunscreen! The more energetic will sit at the front to pedal while the others (or the smarter ones, depending on the point of view) enjoy the ride. We’re off for an outing and to chill on the lake some distance from the shore."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23357,
+              "name": "Pédalo à Vidy",
+              "public_name": "Pedal boat at Vidy",
+              "cloudinary_id": "2U8XMaLvbsJjF2hrrcJiu5HXgn2pTffYvrPhqSkV",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT / Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "été; lac; pédalo;",
+                "description": null,
+                "file_name_from_url": "85aa47062e65afa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Vidy-KAZ-HD_018.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/paddle-and-paddleboard/\"><strong>Paddleboard in Vidy</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Once we’ve pedalled the boat back to the shore, it’s time for some more exertion. Come on, everybody! We all take our paddleboard and start paddling. After a short period to adjust, we get used to these large boards that are fabulous to improve balance and increase core strength. Once we’re comfortable, we can even spice things up: who’s up for a headstand on the board?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26349,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "b076ffed6ecf926f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1064,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1064\"",
+                "tags": "Sport, Lac; Paddle, Activité sportive;",
+                "description": null,
+                "file_name_from_url": "b076ffed6ecf926f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/05/Paddle-lac-Leman.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/en/explore/vidy-bowl/\">Skateboard, roller skates and BMX at the Vidy Bowl</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Back on firm ground, we head towards the Vidy skatepark to practise our tricks in the bowl, on the ramps or rails installed for sliding fans in Lausanne. We don our helmet and get ready to put our balance severely to the test."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23359,
+              "name": "Bowl de Vidy",
+              "public_name": "Bowl in Vidy",
+              "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": "Vélo; Activité; Bowl; Enfant",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "PS: Don’t panic, we can also choose to enjoy the show offered by the sliding experts… and the sun."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>And more…</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Did you think that would be all for this sports tour? We’re in the Olympic Capital and not without reason, so it’s not! There’s still such a choice of activities by the lake. A basketball or beach-volley match on the courts next to the skatepark, or a friendly football competition on one of the Vidy pitches? There’s so much to choose from!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26428,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "a0df7cd86b51097d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Loisirs; Sport; Lausanne",
+                "description": null,
+                "file_name_from_url": "a0df7cd86b51097d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Basket-vidy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "And for those who wish to cool down, there’s always the option of swimming in the lake (no need to go all the way to Evian) or in the <a href=\"https://www.lausanne-tourisme.ch/en/explore/bellerive-swimming-pool/\">Bellerive Olympic swimming pool</a> for those who prefer calmer waters."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Bellerive swimming pool",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26032,
+              "name": "Le quartier de la gare et Ouchy",
+              "public_name": null,
+              "cloudinary_id": "73a73c62fd9a0336",
+              "mime_type": "image/jpeg",
+              "copyright": "© Pédalos à Ouchy",
+              "metadata": {
+                "width": 1600,
+                "height": 978,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"978\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "73a73c62fd9a0336.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/03/Pedalo-Ouchy.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Zu Fuss, mit Inlineskates oder dem Fahrrad von Lutry nach Saint-Sulpice</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Auf einer 9 Kilometer langen Strecke geniesst ihr den Uferweg in eurem eigenen Tempo, zu Fuss oder auf Rädern. Zwischen Ouchy und Bellerive ist man zwar nicht direkt am Wasser, doch die restliche Strecke ist speziell für den Langsamverkehr vorgesehen. Von Vidy bis zur Universität Lausanne könnt ihr euch im klaren Wasser des Genfersees abkühlen oder euch einfach am Strand an die Sonne legen. Ein perfekter Moment, um für die nächste Aktivität Energie zu tanken."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23454,
+              "name": "Parc Bourget vélo",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                "description": null,
+                "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26018,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "3ae52d8be95333cd",
+              "mime_type": "image/jpeg",
+              "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Course, jogging; Culture; Sport; Musée; Fontaine; Lausanne; Ville verte; Parc Sport; Couple",
+                "description": null,
+                "file_name_from_url": "3ae52d8be95333cd.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Musee-Olympique-fontaine-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/vidy-parcours-vita/\">Vitaparcours – Bourget-Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ja, Joggen ist gut. Aber gleichzeitig auch den Oberkörper zu trainieren ist noch besser. Also, auf gehts zum Vitaparcours im Bourget-Park. Die 2,1 Kilometer lange Strecke bietet insgesamt 15 Posten mit Übungen für den ganzen Körper. Sie ist eher einfach und führt abwechselnd an der Sonne dem Strand entlang und am Schatten durch den Wald. Der Parcours eignet sich zum Joggen oder Spazieren und bietet gleichzeitig eine schöne Landschaft. Die Wettkampfbegeisterten unter euch können anhand der Richtzeit auf einem Schild ihr Niveau überprüfen. Nach diesen verrückten sportlichen Leistungen heisst es für alle: Ab ins kühle Nass!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23355,
+              "name": "Parc Bourget",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "7IbjBKSTZSNTQKPo9IRY2p59wtVCkcLqUhyZOJfQ",
+              "mime_type": "image/jpeg",
+              "copyright": "© My Lausanne",
+              "metadata": {
+                "width": 768,
+                "height": 576,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"768\" height=\"576\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "5c1c36b44755e951.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/My_Lausanne_Sport_Le%E2%95%A0uman-4-768x576-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/piedsdanslo/\"><strong>Pedalofahren in Ouchy </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ein Muss im Sommer: An der Sonne langsam über den See gleiten. Dazu braucht ihr nur ein Pedalo, einen Hut, eine Sonnenbrille und Sonnencreme. Also, auf gehts zu einem vergnüglichen Moment unter Freunden! Die besonders Sportlichen sitzen vorne und treten in die Pedale, die anderen (oder die Cleveren, je nachdem) geniessen den Augenblick. Viel Spass auf dem See fernab des Ufers."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23357,
+              "name": "Pédalo à Vidy",
+              "public_name": "Tretbootfahren in Vidy",
+              "cloudinary_id": "2U8XMaLvbsJjF2hrrcJiu5HXgn2pTffYvrPhqSkV",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT / Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "été; lac; pédalo;",
+                "description": null,
+                "file_name_from_url": "85aa47062e65afa6.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Vidy-KAZ-HD_018.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/paddel-und-paddelbrett/\"><strong>Stand-up-Paddling in Vidy</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Nach der Pedalofahrt ist es Zeit, euch wieder auszutoben. Also, auf die Paddles, fertig, los! Schon nach kurzer Zeit werdet ihr euch an das lange Brett gewöhnen, das sich wunderbar zum Trainieren von Gleichgewicht und Körperspannung eignet. Und wer sich sicher fühlt, kann den Schwierigkeitsgrad erhöhen: Traut ihr euch, einen Kopfstand zu machen?"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26349,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "b076ffed6ecf926f",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1064,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1064\"",
+                "tags": "Sport, Lac; Paddle, Activité sportive;",
+                "description": null,
+                "file_name_from_url": "b076ffed6ecf926f.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2022/05/Paddle-lac-Leman.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/de/entdecken/skatepark-vidy/\">Skateboarden, Inlineskaten und BMX im Bowl de Vidy</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Zurück auf festen Boden und ab in den Skatepark Vidy, um im Bowl, auf der Rampe oder den für die Skatebegeisterten installierten Stangen <em>Tricks </em>zu üben. Setzt euren Helm auf und stellt euer Gleichgewicht auf die Probe."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23359,
+              "name": "Bowl de Vidy",
+              "public_name": "Bowl in Vidy",
+              "cloudinary_id": "gpA4xm4qZL1W6FsJ39y2a8ZeZq8e60iQfF8n8iZy",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1061,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1061\"",
+                "tags": "Vélo; Activité; Bowl; Enfant",
+                "description": null
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "PS: Keine Panik, ihr könnt auch nur zuschauen und die Show der Profis, und natürlich die Sonne, geniessen!"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Und weiter …</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Vielleicht dachtet ihr, dass diese Sporttour schon zu Ende ist? Natürlich nicht, Lausanne ist nicht umsonst die Olympia-Hauptstadt! Am See gibt es noch viele andere Aktivitäten zu entdecken. Ein Basketball- oder Beachvolleyball-Match auf den Feldern neben dem Skatepark oder ein Fussballspiel auf einem der Plätze in Vidy gefällig? Ihr habt die Qual der Wahl!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26428,
+              "name": "Lausanne : les activités outdoors de l’été",
+              "public_name": null,
+              "cloudinary_id": "a0df7cd86b51097d",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1600,
+                "height": 1067,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1067\"",
+                "tags": "Loisirs; Sport; Lausanne",
+                "description": null,
+                "file_name_from_url": "a0df7cd86b51097d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2018/03/Basket-vidy.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Und wer sich abkühlen will, kann eine kurze Strecke im See zurücklegen (es muss nicht gleich bis nach Evian sein) oder, wer es lieber ruhig mag, im olympischen Becken des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/bellerive-freibad/\">Schwimmbads Bellerive</a> ein paar Längen schwimmen."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23450,
+              "name": "Piscine de Bellerive",
+              "public_name": "Bellerive Freibad",
+              "cloudinary_id": "jhMT29cZ7Gzit7JWmYs4EoBuTVJ7VSDf77Fe6BQ3",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/www.diapo.ch",
+              "metadata": {
+                "width": 1600,
+                "height": 1063,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1063\"",
+                "tags": "Piscine; Lac; Montagne; Eté; Détente",
+                "description": null,
+                "file_name_from_url": "3ad0a837b0b94e47.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Piscine-11-1024x681.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "3ae52d8be95333cd",
+          "copyright": "© Course a pied devant la fontaine du Musee Olympique. campagne ST ete 2022 - ville sportive / olympique.",
+          "public_name": {
+            "fr": "Lausanne : les activités outdoors de l’été"
+          }
+        }
+      ],
+      "published_at": "1682978400",
+      "seo": {
+        "description": {
+          "fr": "Dès que le soleil pointe le bout de son nez, les Lausannois se précipitent au bord du lac Léman. Sortez votre maillot de bain, vos baskets, votre vélo ou votre skate, on vous dévoile nos activités préférées pour profiter à fond du lac et de sa côte cet été !",
+          "en": "As soon as the sun peeks out, Lausanners rush to the lake side. Prepare your bathing suit, your running shoes, your bike or your roller skates, we’re sharing our favourite activities to make the most of the lake and its shores this summer!",
+          "de": "Sobald die Sonne scheint, zieht es ganz Lausanne an den Genfersee. Holt Badeanzug, Turnschuhe, Fahrrad, Skateboard oder Inlineskates hervor! Wir zeigen euch unsere Lieblingsaktivitäten für diesen Sommer im und am See!"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "lausanne-les-activites-outdoors-de-lete",
+          "en": "lausanne-the-summers-outdoor-activities",
+          "de": "lausanne-outdoor-aktivitaten-im-sommer"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,7 @@
+import { dev } from '$app/environment';
 import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
-import type { ImageDimensions, Transform } from '$types';
+import type { ImageDimensions, Transform, TransformKeys } from '$types';
+import { isOfflineMode } from '.';
 
 export const defaultWidth: number = 1280;
 export const defaultHeight: number = 720;
@@ -21,8 +23,8 @@ export const transformToString = (
     const transformClean = clearDuplicatesInTransform(transform);
 
     for (const key in transformClean) {
-      // @ts-ignore keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
-      parameters.push(`${key}_${transformClean[key]}`);
+      // keys are same as the cloudinary documentation, requires to use `clearDuplicatesInTransform` before
+      parameters.push(`${key}_${transformClean[key as TransformKeys]}`);
     }
   }
 
@@ -46,16 +48,26 @@ const clearDuplicatesInTransform = (transform?: Transform) => {
   };
 
   return Object.fromEntries(
-    Object.entries(result).filter(([_, value]) => value !== undefined)
+    Object.entries(result).filter(([, value]) => value !== undefined)
   ) as Transform;
 };
 
 export const selectBestWidth = (width: number) => {
-  return defaultWidths.find((resolution) => width <= resolution) ?? defaultWidth;
+  return (
+    defaultWidths.find((resolution) => width <= resolution) ??
+    (width > defaultWidths[defaultWidths.length - 1]
+      ? defaultWidths[defaultWidths.length - 1]
+      : defaultWidth)
+  );
 };
 
 export const selectBestHeight = (height: number) => {
-  return defaultHeights.find((resolution) => height <= resolution) ?? defaultHeight;
+  return (
+    defaultHeights.find((resolution) => height <= resolution) ??
+    (height > defaultWidths[defaultHeights.length - 1]
+      ? defaultHeights[defaultHeights.length - 1]
+      : defaultHeight)
+  );
 };
 
 export const resizeWithAspectRatio = ({
@@ -83,11 +95,14 @@ export const generateCloudinaryUrl = ({
   usePreset?: boolean;
   transform?: Transform;
 }) => {
+  if (dev && isOfflineMode) {
+    return '/pages/themes/cathedrale_skate.jpg';
+  }
   const baseUrl = `https://${PUBLIC_CLOUDINARY_CNAME}/image/upload/`;
   if (!src) return `${baseUrl}${transformToString(transform)}/default`;
   let url = src;
   if (usePreset) {
-    url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}${url}`;
+    url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${url.replace(/^\//, '')}`;
   }
 
   return `${baseUrl}${transformToString(clearDuplicatesInTransform(transform), { suffixText: '/' })}${url}`;

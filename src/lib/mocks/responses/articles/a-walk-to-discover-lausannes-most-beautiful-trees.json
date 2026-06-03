@@ -1,0 +1,874 @@
+{
+  "data": {
+    "item": {
+      "id": "308",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Balade à la découverte des plus beaux arbres de Lausanne",
+        "en": "A walk to discover Lausanne’s most beautiful trees",
+        "de": "Spaziergang zu den schönsten Bäumen der Stadt"
+      },
+      "lead": {
+        "fr": "Lausanne, considérée comme l'une des villes les plus vertes d'Europe, possède une richesse végétale impressionnante, avec 8 000 arbres bordant ses avenues, 80 000 dans ses parcs et 800 000 dans ses forêts ! C’est sans doute pour cela que je m’y sens si bien. La nature en ville prend tout son sens à Lausanne. Impossible de venir ici sans y croiser le chemin d’un de ses nombreux arbres remarquables. Petite balade pour en découvrir 6 d’entre eux...",
+        "en": "Lausanne, considered one of the greenest cities in Europe, possesses an impressive wealth of plants, with 8,000 trees lining its streets, 80,000 in its parks and 800,000 in its forests! That is undoubtedly why I feel so good here. Nature in town takes on its full meaning in Lausanne and it’s impossible to come here without meeting its many majestic trees. A short walk to discover 6 of them…\n",
+        "de": "Mit seinem beeindruckenden Pflanzenreichtum gilt Lausanne als eine der grünsten Städte Europas. Die Strassen sind von 8000 Bäumen gesäumt, die Pärke zählen 80 000 und die Wälder 800 000 Bäume! Aus diesem Grund fühle ich mich hier auch so wohl. Natur in der Stadt erhält in Lausanne seinen ganzen Sinn. Es ist kaum möglich, mitten in der Stadt nicht einem der vielen bemerkenswerten Bäume zu begegnen. Machen wir uns auf einen kleinen Spaziergang zu sechs von ihnen!\n"
+      },
+      "summary": {
+        "fr": "Lausanne, considérée comme l’une des villes les plus vertes d’Europe, possède une richesse végétale impressionnante, avec 8 000 arbres bordant ses avenues, 80 000 dans ses parcs et 800 000 dans ses forêts ! C’est sans doute pour cela que je m’y sens si bien. La nature en ville prend tout son sens à Lausanne. Impossible de venir ici sans y croiser le chemin d’un de ses nombreux arbres remarquables. Petite balade à la découverte de 6 d’entre eux …",
+        "en": "Lausanne, considered one of the greenest cities in Europe, possesses an impressive wealth of plants, with 8,000 trees lining its streets, 80,000 in its parks and 800,000 in its forests! That is undoubtedly why I feel so good here. Nature in town takes on its full meaning in Lausanne and it’s impossible to come here without meeting its many majestic trees. A short walk to discover 6 of them…",
+        "de": "Mit seinem beeindruckenden Pflanzenreichtum gilt Lausanne als eine der grünsten Städte Europas. Die Strassen sind von 8000 Bäumen gesäumt, die Pärke zählen 80 000 und die Wälder 800 000 Bäume! Aus diesem Grund fühle ich mich hier auch so wohl. Natur in der Stadt erhält in Lausanne seinen ganzen Sinn. Es ist kaum möglich, mitten in der Stadt nicht einem der vielen bemerkenswerten Bäume zu begegnen. Machen wir uns auf einen kleinen Spaziergang zu sechs von ihnen!"
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-du-denantou/\">Cèdre du Denantou </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Notre promenade débute au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-du-denantou/\">Parc du Denantou</a>, au bord du lac. De là, vous vous retrouverez face à face avec un vénérable cèdre du Liban, âgé de 250 ans, se dressant fièrement à une hauteur de 18 mètres et possédant une circonférence impressionnante de 740 cm. En 2003, un éclair a endommagé l’une de ses branches. Mais malgré cela, l’arbre demeure en excellente santé et devrait continuer à gagner en circonférence au fil des siècles. Je trouve souvent refuge à l’ombre de ce cèdre spectaculaire, mon livre en main, tout en admirant le lac et les montagnes en toile de fond : un véritable tableau vivant !"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25933,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "774b540e7a3ad394",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2207,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2207\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "774b540e7a3ad394.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26017,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "decfbb800905f2a8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "decfbb800905f2a8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">Chêne du Musée Olympique </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Un peu plus loin, en traversant les magnifiques jardins du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/le-musee-olympique/\">Musée Olympique</a>, dirigez-vous vers l’entrée du Tom Café. C’est là que se cache un remarquable chêne européen, vieux de deux siècles, qui s’élève fièrement à une hauteur de 29 mètres et arbore une circonférence de 460 centimètres. Ouvrez l’oeil ! Il se dissimule habilement, et l’on peut facilement passer à côté sans le remarquer. Mais une fois découvert, il devient l’élément phare du décor. Son histoire est d’autant plus émouvante car il a été sauvé par l’intervention de Juan Antonio Samaranch, ancien président du Comité olympique international, qui a adapté les plans du musée lors de sa construction pour le préserver."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26102,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "a8448de5c52111f8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1912,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1912\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a8448de5c52111f8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26169,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "dcca7014592faa99",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dcca7014592faa99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3. <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">Ginkgo biloba du parc de Mon-Repos </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Le parcours se poursuit en direction du centre-ville, attention ça grimpe ! Bienvenue au <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/parc-de-mon-repos/\">parc de Mon-Repos</a>, l’un de mes parcs préférés à Lausanne. J’apprécie particulièrement la tranquillité de ce parc le matin, loin de l’agitation citadine. Niché derrière la maison de maître, ancien siège du comité olympique international, trône un ginkgo biloba de toute beauté. Âgé de 160 ans, c’est le premier arbre remarquable que j’ai rencontré en m’installant ici. Haut de 25 mètres et originaire de Chine, il appartient à la plus ancienne famille d’arbres, les ginkgoacées, datant de plus de 270 millions d’années, bien avant l’ère des dinosaures ! Selon moi, l’automne est la saison par excellence pour admirer et photographier ce spécimen. Au début du mois de novembre, sa splendeur est révélée par ses feuilles qui se transforment en un sublime jaune doré, avant de tomber et de former un tapis étincelant au pied de l’arbre."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26234,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "92680cd9e7b14895",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1385,
+                "height": 1731,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1385\" height=\"1731\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "92680cd9e7b14895.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Ginkgo_Monrepos_automne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Tilleul de Bon-Abri"
+          },
+          {
+            "type": "paragraph",
+            "value": "Allez, plus que de la descente maintenant ! Notre tour se poursuit en direction de la colline du Languedoc, réputée pour son vignoble éponyme. Un peu plus bas, là où les chemins du Languedoc et de Bon-Abri se croisent, vous rencontrerez un tilleul imposant de 260 ans, qui se distingue par sa circonférence impressionnante de 550 centimètres. J’ai une affection particulière pour le belvédère où il trône, car il offre l’un des plus beaux panoramas sur le Léman et les montagnes environnantes. Prenez place sur le banc installé à son pied et laissez-vous bercer par les dernières lueurs du jour tout en écoutant les récits que cet arbre séculaire a à partager …"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26393,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "d17778122bcdbfe3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d17778122bcdbfe3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_automne-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "5. Noyer du Parc de Rhodanie"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour clôturer cette « petite » escapade, je vous propose de vous diriger vers le parc de Rhodanie, blotti aux abords du lac.<br>\nJ’apprécie particulièrement l’atmosphère discrète et préservée de ce parc, un havre de tranquillité à l’abri des regards. Notre dernière rencontre arboricole nous met en présence d’un noyer noir, vénérable spécimen âgé de 150 ans, qui s’élève fièrement à 25 mètres de hauteur et affiche une circonférence de 350 centimètres. Sa présence en milieu urbain est particulièrement rare, ce qui ajoute à son charme. Bien que cousin du noyer commun de nos régions, il se distingue par ses folioles plus effilées et une écorce qui présente une structure différente."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26427,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "cloudinary_id": "8a8502cc0e42bc27",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8a8502cc0e42bc27.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Noyer_noir_Rhodanie-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Pour en savoir plus"
+          },
+          {
+            "type": "paragraph",
+            "value": "Pour explorer davantage et découvrir les bienfaits de l’immersion dans la nature en milieu urbain, je vous invite vivement à consulter le site de la <a href=\"https://homme-nature.ch\">Fondation Homme et Nature</a> et celui d’<a href=\"https://www.homoecologicus.ch.\">Homoecologicus</a>."
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. <a href=\"https://www.lausanne-tourisme.ch/en/explore/denantou-park/\">Denantou Park Cedar</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Our walk begins in <a href=\"https://www.lausanne-tourisme.ch/en/explore/denantou-park/\">Denantou Park</a>, on the lakeside. There, you will encounter a venerable cedar of Lebanon that is 250 years old, standing proudly at 18 metres tall and boasting an impressive 740 cm girth. In 2003, lightning damaged one of its branches. Despite that, the tree remains in excellent health and its girth should continue to expand as the centuries go by. I often take refuge in the shade of that spectacular cedar, book in hand, while admiring the lake and mountains in the background – a genuine living painting!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25933,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "774b540e7a3ad394",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2207,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2207\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "774b540e7a3ad394.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26017,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "decfbb800905f2a8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "decfbb800905f2a8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">Olympic Museum Oak</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "A little further, as you walk through <a href=\"https://www.lausanne-tourisme.ch/en/explore/the-olympic-museum/\">the Olympic Museum’s</a> magnificent gardens, head to the entrance of the Tom Café. This is where a remarkable European oak, two centuries old, has grown to reach a height of 29 metres and a girth of 460 cm. Look out for it! It cunningly conceals itself and can easily be missed. Once discovered, however, it becomes the focal point of the landscape. Its history is heartwarming: it was saved by the intervention of Juan Antonio Samaranch, former president of the International Olympic Committee, who changed the museum’s design during its construction in order to preserve this venerable oak."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26102,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "a8448de5c52111f8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1912,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1912\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a8448de5c52111f8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26169,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "dcca7014592faa99",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dcca7014592faa99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3. <a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park Ginkgo Biloba</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The walk takes us up towards the town centre. Be warned: there’s quite a climb! Welcome to <a href=\"https://www.lausanne-tourisme.ch/en/explore/parc-mon-repos/\">Mon-Repos Park</a>, one of my favourite parks in Lausanne. I particularly appreciate the park’s tranquillity in the morning, far from the city’s hustle and bustle. Nestled behind the mansion, the former headquarters of the International Olympic Committee, a magnificent ginkgo biloba takes centre stage. Aged 160, it’s the first majestic tree I encountered when I moved here. Twenty-five metres tall and originating from China, it belongs to the most ancient family of trees, the ginkgoaceae, that go back 270 million years, well before the age of the dinosaurs! According to me, autumn is the ideal season to admire and photograph this specimen. At the beginning of November, its splendour is revealed as its leaves take on a sublime golden-yellow colour before falling and forming a luminous carpet at the foot of the tree."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26234,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "92680cd9e7b14895",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1385,
+                "height": 1731,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1385\" height=\"1731\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "92680cd9e7b14895.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Ginkgo_Monrepos_automne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Bon-Abri Linden"
+          },
+          {
+            "type": "paragraph",
+            "value": "Good news, it’s all downhill from now on! Our tour continues in the direction of the Languedoc Hill, renowned for its eponymous vineyard. A little further down, where Chemin du Languedoc meets Chemin Bon-Abri, you will encounter an imposing, 160-year-old linden tree that distinguishes itself with an impressive 550 cm girth. I am particularly fond of the belvedere where it stands, as it offers one of the most beautiful panoramas over Lake Geneva and the surrounding mountains. Take a seat on the bench at its base and let yourself be soothed by the last light of the day as you listen to the stories this ancient tree has to share…"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26393,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d17778122bcdbfe3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d17778122bcdbfe3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_automne-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "5. Rhodanie Park Walnut"
+          },
+          {
+            "type": "paragraph",
+            "value": "To close this “short” excursion, I suggest you head towards Rhodanie Park, huddled by the lakeside. I particularly enjoy the discreet and preserved atmosphere of this park, a haven of tranquillity hidden from view. Our last arboreal encounter puts us in the presence of a black walnut, a genuine specimen aged 150 years old, that stands proudly at 25 metres tall and possesses a 350 cm girth. Its presence in an urban environment is particularly rare, which adds to its charm. Although it is a cousin of the common walnut native to our regions, it can be identified by its more pointed leaflets and a bark that presents a different structure."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26427,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "8a8502cc0e42bc27",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8a8502cc0e42bc27.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Noyer_noir_Rhodanie-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "To find out more"
+          },
+          {
+            "type": "paragraph",
+            "value": "To explore further and discover the benefits of an immersion in nature in an urban environment, I encourage you to explore the website of <a href=\"https://homme-nature.ch/\">the <em>Fondation Homme et Nature</em></a><a href=\"https://homme-nature.ch/\">,</a> as well as that of <em><a href=\"https://www.homoecologicus.ch/\">Homo Ecologicus</a>.</em>"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "1. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/denantou-park/\">Zeder im Denantou-Park</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Unser Spaziergang beginnt im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/denantou-park/\">Denantou-Park</a> am Seeufer. Dort trefft ihr auf eine ehrwürdige, 250 Jahre alte Libanonzeder, die sich mit einem beeindruckenden Umfang von 740 cm in eine stolze Höhe von 18 Metern reckt. 2003 beschädigte ein Blitz einen Ast. Der Baum ist aber nach wie vor kerngesund und dürfte im Laufe der Jahrhunderte weiter an Umfang zunehmen. Mit einem Buch in der Hand setze ich mich oft in den Schatten dieser spektakulären Zeder und bewundere die Aussicht auf den See und die Berge, die wie ein zum Leben erwachtes Gemälde anmutet!"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25933,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "774b540e7a3ad394",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 2207,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"2207\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "774b540e7a3ad394.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26017,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "decfbb800905f2a8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "decfbb800905f2a8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Cedre_Denantou_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "2. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Eiche des Olympischen Museums</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "<strong> </strong>Geht weiter, durchquert die wunderschönen Gärten des <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/das-olympische-museum/\">Olympischen Museums</a> in Richtung Tom Café. Hier versteckt sich eine aussergewöhnliche, zwei Jahrhunderte alte europäische Eiche, die sich stolze 29 Meter erhebt und einen Umfang von 460 Zentimetern aufweist. Haltet die Augen offen! Die alte Dame weiss sich zu verstecken und es kann durchaus geschehen, dass ihr an diesem Baum vorbeigeht, ohne ihn zu bemerken. Doch sobald ihr ihn wahrnehmt, wird er zum Highlight. Die Geschichte dieser Eiche ist umso bewegender, als sie durch den ehemaligen Präsidenten des Internationalen Olympischen Komitees gerettet wurde. Juan Antonio Samaranch passte nämlich die Pläne des Museums während dessen Baus an, um den Baum zu erhalten."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26102,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "a8448de5c52111f8",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1912,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1912\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "a8448de5c52111f8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_2-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26169,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "dcca7014592faa99",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "dcca7014592faa99.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Chene_Musee_Olympique_1-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "3. <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Ginkgo im Park Mon-Repos</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Weiter geht es in Richtung Stadtzentrum. Achtung, der Weg führt steil nach oben! Herzlich willkommen im <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/park-mon-repos/\">Park Mon-Repos</a>, an einem meiner Lieblingsorte in Lausanne. Ganz besonders schätze ich die Ruhe dieses Parks am Morgen, weil man sich weit weg von der Hektik der Stadt fühlt. Hinter dem Herrenhaus, dem ehemaligen Sitz des Internationalen Olympischen Komitees, thront ein wunderschöner Ginkgo. Dieser 160 Jahre alte Baum ist der erste bemerkenswerte Baum, dem ich in Lausanne begegnet bin, nachdem ich mich hier niedergelassen habe. Er ist 25 Meter hoch, stammt aus China und gehört zur ältesten Baumfamilie, der Ginkgoaceae. Diese ist über 270 Millionen Jahre alt und gab es schon lange vor den Dinosauriern! Für mich ist der Herbst die beste Jahreszeit, um diesen Baum zu bewundern und zu fotografieren. Anfang November verwandeln sich seine Blätter in ein prächtiges Goldgelb und bilden beim Herunterfallen einen glitzernden Teppich am Fuss des Baumes."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26234,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "92680cd9e7b14895",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1385,
+                "height": 1731,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1385\" height=\"1731\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "92680cd9e7b14895.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Ginkgo_Monrepos_automne.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "4. Linde am Platz Bon-Abri"
+          },
+          {
+            "type": "paragraph",
+            "value": "Gehen wir weiter, von jetzt an geht es nur noch abwärts! Unser Spaziergang führt nun zum Languedoc-Hügel, der für seinen gleichnamigen Weinberg bekannt ist. Etwas weiter unten, wo sich der Chemin du Languedoc und der Chemin de Bon-Abri kreuzen, trefft ihr auf eine stattliche 260-jährige Linde, die aufgrund ihres beeindruckenden Umfangs von 550 Zentimetern auffällt. Ich bin besonders angetan von diesem Aussichtspunkt, wo sie steht, denn er bietet eine der schönsten Panoramasichten auf den Genfersee und die umliegenden Berge. Setzt euch auf die Bank am Fusse des Baumes, lasst euch von den letzten Sonnenstrahlen des Tages kitzeln und lauscht den Geschichten, die dieser uralte Baum zu erzählen hat."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 27188,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne - Tilleul",
+              "public_name": "Tilleul_Bon_Abri_printemps",
+              "cloudinary_id": "G7FgW3oshnej4Jo2GDaUVTznNhvL1QUnL3d9J7zY",
+              "mime_type": "image/jpeg",
+              "copyright": "© Alix Besson",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "f8d9d718debda248.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_printemps-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26393,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "d17778122bcdbfe3",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "d17778122bcdbfe3.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Tilleul_Bon_Abri_automne-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "5. Nussbaum im Rhodanie-Park"
+          },
+          {
+            "type": "paragraph",
+            "value": "Geht zum Abschluss dieses „kleinen“ Baumrundgangs zum Rhodanie-Park am Seeufer. Ich schätze vor allem die friedliche und natürliche Atmosphäre dieses Parks. Er ist eine Oase der Ruhe, wo man vor neugierigen Blicken geschützt ist. Bei dieser letzten Begegnung mit einem Baum treffen wir auf einen ehrwürdigen, 150 Jahre alten Schwarznussbaum, der stolze 25 Meter hoch ist und einen Umfang von 350 Zentimetern hat. Seine Präsenz im städtischen Gebiet ist eine Seltenheit, was ihm einen ganz besonderen Charme verleiht. Er ist zwar mit unserem herkömmlichen Nussbaum verwandt, unterscheidet sich von diesem aber durch seine spitz zulaufenden Blätter und andersartige Rindenstruktur."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26427,
+              "name": "Balade à la découverte des plus beaux arbres de Lausanne",
+              "public_name": null,
+              "cloudinary_id": "8a8502cc0e42bc27",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1920,
+                "height": 2560,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"2560\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "8a8502cc0e42bc27.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2023/05/Noyer_noir_Rhodanie-scaled.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h3",
+            "value": "Weitere Informationen"
+          },
+          {
+            "type": "paragraph",
+            "value": "Mehr über die wohltuende Wirkung der Natur im städtischen Umfeld erfährt ihr auf den Websites <a href=\"https://homme-nature.ch\">Fondation Homme et Nature</a> und <a href=\"https://www.homoecologicus.ch\">Homo ecologicus</a>."
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "774b540e7a3ad394",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Balade à la découverte des plus beaux arbres de Lausanne"
+          }
+        }
+      ],
+      "published_at": "1684717462",
+      "seo": {
+        "description": {
+          "fr": "Lausanne, considérée comme l'une des villes les plus vertes d'Europe, possède une richesse végétale impressionnante, avec 8 000 arbres bordant ses avenues, 80 000 dans ses parcs et 800 000 dans ses forêts ! C’est sans doute pour cela que je m’y sens si bien. La nature en ville prend tout son sens à Lausanne. Impossible de venir ici sans y croiser le chemin d’un de ses nombreux arbres remarquables. Petite balade pour en découvrir 6 d’entre eux...",
+          "en": "Lausanne, considered one of the greenest cities in Europe, possesses an impressive wealth of plants, with 8,000 trees lining its streets, 80,000 in its parks and 800,000 in its forests! That is undoubtedly why I feel so good here. Nature in town takes on its full meaning in Lausanne and it’s impossible to come here without meeting its many majestic trees. A short walk to discover 6 of them…\n",
+          "de": "Mit seinem beeindruckenden Pflanzenreichtum gilt Lausanne als eine der grünsten Städte Europas. Die Strassen sind von 8000 Bäumen gesäumt, die Pärke zählen 80 000 und die Wälder 800 000 Bäume! Aus diesem Grund fühle ich mich hier auch so wohl. Natur in der Stadt erhält in Lausanne seinen ganzen Sinn. Es ist kaum möglich, mitten in der Stadt nicht einem der vielen bemerkenswerten Bäume zu begegnen. Machen wir uns auf einen kleinen Spaziergang zu sechs von ihnen!\n"
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "balade-a-la-decouverte-des-plus-beaux-arbres-de-lausanne",
+          "en": "a-walk-to-discover-lausannes-most-beautiful-trees",
+          "de": "spaziergang-zu-den-schonsten-baumen-der-stadt"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-nature",
+          "public_name": {
+            "fr": "Nature",
+            "en": "Nature",
+            "de": "Natur"
+          }
+        }
+      ]
+    }
+  }
+}

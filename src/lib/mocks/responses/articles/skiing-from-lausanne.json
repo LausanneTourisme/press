@@ -1,0 +1,631 @@
+{
+  "data": {
+    "item": {
+      "id": "286",
+      "languages": ["fr", "en", "de"],
+      "name": {
+        "fr": "Skier depuis Lausanne",
+        "en": "Skiing from Lausanne",
+        "de": "Skifreuden in der Nähe von Lausanne"
+      },
+      "lead": {
+        "fr": "Située à 50 kilomètres des Alpes, Lausanne peut être un point de départ pour tous ceux qui voudraient skier. Nous vous avons préparé une liste des possibilités pour dévaler les pentes enneigées depuis la ville.",
+        "en": "Located 50 kilometres from the Alps, Lausanne can well serve as the starting point for all those who enjoy skiing. We prepared for you a list of possibilities to hit the snowy slopes from the town.",
+        "de": "Lausanne liegt nur 50 Kilometer von den Alpen entfernt und ist ein hervorragender Ausgangspunkt für Skifans. Wir haben für Sie eine Liste der nächstgelegenen Pisten zusammengestellt."
+      },
+      "summary": {
+        "fr": "Située à 50 kilomètres des Alpes, Lausanne peut être un point de départ pour tous ceux qui voudraient skier. Nous vous avons préparé une liste des possibilités pour dévaler les pentes enneigées depuis la ville.",
+        "en": "Located 50 kilometres from the Alps, Lausanne can well serve as the starting point for all those who enjoy skiing. We prepared for you a list of possibilities to hit the snowy slopes from the town.",
+        "de": "Lausanne liegt nur 50 Kilometer von den Alpen entfernt und ist ein hervorragender Ausgangspunkt für Skifans. Wir haben für Sie eine Liste von Möglichkeiten zusammengestellt, um von der Stadt aus die verschneiten Hänge zu geniessen."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26155,
+              "name": "Skier depuis Lausanne",
+              "public_name": "Skier depuis Lausanne",
+              "cloudinary_id": "bb4c772a20223f3d",
+              "mime_type": "image/jpeg",
+              "copyright": "© Skieur au Glacier 3000",
+              "metadata": {
+                "width": 1920,
+                "height": 1920,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1920\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb4c772a20223f3d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Glacier-3000-ski-2-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.tele-leysin-mosses.ch/\">Leysin, dans les Alpes vaudoises</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Première station alpine la plus proche de Lausanne, Leysin vous permet de skier jusqu’à 2200 mètres d’altitude. A noter que vous pourrez profiter d’une vue magnifique sur la vallée du Rhône depuis La Berneuse et son restaurant panoramique tournant. Pour les amateurs de sensations fortes, à ski ou en snowboard, le domaine offre un snowpark et une piste de skicross permanents. Dans le village, le <a href=\"https://www.tele-leysin-mosses.ch/TOBOGGANING-PARK-LEYSIN\">Toboganning Park</a> vous fera dévaler des tubes gelés, sur des bouées."
+          },
+          {
+            "type": "paragraph",
+            "value": "Faisant partie du même domaine skiable que Leysin, <a href=\"https://www.stations-de-ski.ch/stations-de-ski-vaudoises/station-de-ski-les-mosses-la-lecherette/#apropos\">Les Mosses</a> restent une bonne alternative pour les débutants. Cette station familiale possède des pistes pour tous niveaux à des prix attractifs !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Infos pratiques :<br>\nLeysin est très facilement accessible en train depuis Lausanne. Le trajet dure 1h15, avec un changement à Aigle.<br>\nVous mettrez 60 minutes en voiture. Prenez l’autoroute jusqu’à Aigle. A partir de la sortie, Leysin est indiqué.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25918,
+              "name": "Skier depuis Lausanne",
+              "public_name": "Skier depuis Lausanne",
+              "cloudinary_id": "3604910babf90763",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 795,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"795\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3604910babf90763.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Leysin-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BtERrcZHXzH/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.villars-diablerets.ch/fr/Z8820/domaine-skiable\">Villars-Gryon-Les Diablerets et le glacier 3000 </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ce domaine skiable exceptionnel réunit 3 stations : Villars, Gryon et les Diablerets. Soyez prêts à rider plus de 112 km de pistes, avec une vue à couper le souffle ! Vous pourrez aussi profiter du <a href=\"https://www.lausanne-tourisme.ch/fr/decouvrir/glacier-3000/\">Glacier 3000</a>, avec ses pistes les plus les élevées des Alpes Vaudoises… et emprunter le seul pont suspendu au monde qui relie deux sommets ! Long de 170 mètres et large de 80cm, <a href=\"https://www.villars-diablerets.ch/fr/P4249/snow-park-glacier-3000\">le Peak Walk</a> vous permet d’observer le Cervin, le Mont Blanc et la Jungfrau."
+          },
+          {
+            "type": "paragraph",
+            "value": "Et pourquoi ne pas tester l’une des plus longues <a href=\"https://www.villars-diablerets.ch/fr/V1331/luge-aux-diablerets\">pistes de luge</a> de Suisse ? Aux Diablerets, une descente de 7.2 km vous attend, de quoi profiter pleinement d’une descente de folie !"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BrAxq5yA7i1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23429,
+              "name": "Peak Walk Glacier 3000",
+              "public_name": "Peak Walk Glacier 3000",
+              "cloudinary_id": "2sCbn4cZhd0kUNAkDDwam0XPS4WzgDcTARTAkymI",
+              "mime_type": "image/jpeg",
+              "copyright": "© Glacier 3000",
+              "metadata": {
+                "width": 1600,
+                "height": 1058,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1058\"",
+                "tags": "Hiver; Environ; Vue; Montagne",
+                "description": null,
+                "file_name_from_url": "a498c616b27a1af8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Glacier-peak-walk-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Infos pratiques :<br>\nDepuis Lausanne, vous mettrez moins de 1h30 de train : il n’y a qu’un seul changement, à Aigle.<br>\nEn voiture, cela vous prendra 60 minutes. Comme pour Leysin, prenez l’autoroute jusqu’à Aigle. A partir de là, tout est indiqué.</em>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.portesdusoleil.com/destination/stations/champery.html\"><br>\nChampéry et les Portes du soleil</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "La station valaisanne de Champéry est un accès intéressant à l’un des plus grands domaines skiables d’Europe : <a href=\"http://www.portesdusoleil.com/activites/hiver/autres-activites-neige.html\">les Portes du Soleil</a>. Avec 600 km de pistes, vous pourrez skier en Suisse et en France, avec un forfait unique. Les très bons skieurs profiteront de dévaler le Pas de Chavanette, aussi appelé « Le Mur Suisse » : une pente très raide (76% de déclivité) qui peut présenter des bosses de 2 mètres. Dans une ambiance bien plus zen et relaxante, vous pourrez aussi participer à une séance de yoga face au Mont-Blanc, profiter d’une balade en chiens de traîneaux ou vous initier au curling… <a href=\"http://www.portesdusoleil.com/activites/hiver/autres-activites-neige.html\">De nombreuses activités</a> sont proposées, et il y en a pour tous les goûts !"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Infos pratiques :<br>\nLe trajet en train dure 1h30 depuis Lausanne. Prenez un premier train pour Aigle, puis changez direction Champéry et descendez au terminus.<br>\nPrévoyez 55 minutes par la route. Prenez l’autoroute direction Martigny. Sortez à St-Triphon. Suivez Monthey, puis Troistorrents et finalement Champéry.</em>"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Ca-DBYloYS1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"http://www.station-les-paccots.ch/\">Les Paccots, au-dessus de Vevey</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est la station la plus proche de Lausanne. Le village des Paccots est situé à 1061m d’altitude, dans les Préalpes fribourgeoises. Ce domaine skiable familial compte 11 remontées mécaniques. Dont Le Pralet, qui vous permettra de monter jusqu’à 1568 mètres. Au total, ce sont 20 kilomètres de pistes qui vous attendent."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Infos pratiques :<br>\nEn transports publics, vous mettrez 50 minutes pour arriver aux Paccots, depuis Lausanne. Prenez la ligne S9 jusqu’à Palézieux, puis la S50 jusqu’à Châtel-St-Denis. Depuis la gare, le  bus 492 vous amènera au village.<br>\nEn voiture, comptez 30 minutes. Prenez l’autoroute direction Montreux. Après Vevey, suivez Berne/Fribourg et sortez à Châtel-St-Denis, Les Paccots.</em>"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/B5M2XSHDpD_/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.stations-de-ski.ch/stations-de-ski-vaudoises/ski-bob-luge-chalet-a-gobet/\">Le Chalet-à-Gobet</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Lorsque la neige se met à tomber, c’est LE rendez-vous des lausannois : situé à seulement 30 minutes du centre-ville en transports publics, le Chalet-à-Gobet est le domaine parfait pour une après-midi luge ou pour se lancer dans une bataille de boules de neige."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJsnVoIgHl9/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26088,
+              "name": "Skier depuis Lausanne",
+              "public_name": "Skier depuis Lausanne",
+              "cloudinary_id": "1d5eabc838784c69",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1d5eabc838784c69.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-neige-enfants-min-e1578986220922.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Infos pratiques :<br>\nL’ouverture dépend des conditions d’enneigement et de la météo.<br>\nRenseignements au+41 21 315 49 28</em>"
+          }
+        ],
+        "en": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26155,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "bb4c772a20223f3d",
+              "mime_type": "image/jpeg",
+              "copyright": "© Skieur au Glacier 3000",
+              "metadata": {
+                "width": 1920,
+                "height": 1920,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1920\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb4c772a20223f3d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Glacier-3000-ski-2-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.tele-leysin-mosses.ch/\">Leysin, in the Vaud Alps</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "First Alpine resort closest to Lausanne, Leysin’s slopes let you reach an altitude of 7,210 feet (2,200 metres). You’ll enjoy a magnificent view on the Rhone Valley from La Berneuse and its revolving panoramic restaurant. For thrill-seekers on skis or snowboard, the resort offers a permanent snowpark and ski-cross slope. In the village, you can race down steep slopes, seated on an inner tube, in the <a href=\"https://www.tele-leysin-mosses.ch/TOBOGGANING-PARK-LEYSIN\">Toboganning Park</a>."
+          },
+          {
+            "type": "paragraph",
+            "value": "Part of the same ski area as Leysin, <a href=\"https://www.stations-de-ski.ch/en/stations-de-ski-vaudoises/station-de-ski-les-mosses-la-lecherette/\">Les Mosses</a> remains a good alternative for beginners. This family resort has slopes for all levels at attractive prices!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information:<br>\n</em><em>Leysin is easy to access by train from Lausanne. The journey takes an hour and a quarter, changing in Aigle.</em><em>Allow an hour for the journey by car. Take the motorway to Aigle; Leysin is indicated after the exit.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25918,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "3604910babf90763",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 795,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"795\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3604910babf90763.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Leysin-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BtERrcZHXzH/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.villars-diablerets.ch/en/Z8820/ski-area\">Villars-Gyron-Les Diablerets and Glacier 3000<br>\n</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "This exceptional ski area comprises three resorts: Villars, Gryon and Les Diablerets. Be ready to ride over 112 km (69.6 miles) of slopes, with breathtaking views! You’ll also be able to enjoy <a href=\"https://www.lausanne-tourisme.ch/en/explore/glacier-3000/\">Glacier 3000</a> and its slopes, which are the highest in the Vaud Alps… and walk across the only suspension bridge in the world that connects two summits! The <a href=\"https://www.villars-diablerets.ch/fr/P4249/snow-park-glacier-3000\">Peak Walk</a> – 170 metres long and 80 cm wide (185 yards long by 31 inches wide) gives you a great viewpoint on the Matterhorn, Mont Blanc and Jungfrau."
+          },
+          {
+            "type": "paragraph",
+            "value": "And why not try out one of the <a href=\"https://www.villars-diablerets.ch/en/V1331/sledging-in-les-diablerets\">sledging runs</a> runs in Switzerland? In Les Diablerets, a 7.2-km (4.35-mile) run will let you fully enjoy a crazy ride!"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BrAxq5yA7i1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23429,
+              "name": "Peak Walk Glacier 3000",
+              "public_name": "Peak Walk Glacier 3000",
+              "cloudinary_id": "2sCbn4cZhd0kUNAkDDwam0XPS4WzgDcTARTAkymI",
+              "mime_type": "image/jpeg",
+              "copyright": "© Glacier 3000",
+              "metadata": {
+                "width": 1600,
+                "height": 1058,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1058\"",
+                "tags": "Hiver; Environ; Vue; Montagne",
+                "description": null,
+                "file_name_from_url": "a498c616b27a1af8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Glacier-peak-walk-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information:<br>\nYou’ll reach Les Diablerets from Lausanne by train in less than an hour and a half: there is a single change, in Aigle.<br>\nBy car, it will take you 60 minutes. Head towards Aigle on the motorway. The resort is well signposted after the exit.</em>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.regiondentsdumidi.ch/en/region/champery\">Champéry and the Portes du Soleil </a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "The Valais resort of Champéry is a good way to access one of the largest ski areas in Europe: the <a href=\"https://en.portesdusoleil.com/\">Portes du Soleil</a>. With 370 miles (600 km) of slopes, you can ski in both Switzerland and France on a single pass. Very good skiers will love tackling the Pas de Chavanette, AKA “The Swiss Wall”: a very steep slope (76% incline) with bumps measuring up to 6.5 feet (2 metres)."
+          },
+          {
+            "type": "paragraph",
+            "value": "In a much more Zen and relaxing atmosphere, you can also take part in a yoga session facing the Mont Blanc, enjoy the pleasure of dog sledging or try your hand at curling… Many activities are on offer and there is something for everyone!"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Ca-DBYloYS1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"http://www.station-les-paccots.ch/\">Les Paccots, above Vevey</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "It’s the resort that’s closest to Lausanne. The village of Les Paccots is located at an altitude of 3,481 feet (1,061 metres), in the pre-Alps of the canton of Fribourg. This family-friendly ski resort offers 11 ski lifts, amongst which Le Pralet that takes you up to 5,144 feet (1,568 metres). A total of 12.4 miles (20 kilometres) of slopes await you."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information:</em><br>\n<em>It will take you 50 minutes to reach Les Paccots from Lausanne using public transport. Board the S9 train to Palézieux, then the S50 to Châtel-St-Denis. From the train station, bus no 492 will take you to the village. By car, it will take you 30 minutes. Head towards Montreux on the motorway. After Vevey, follow Bern/Fribourg and exit at Châtel-St-Denis, Les Paccots.</em>"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/B5M2XSHDpD_/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.stations-de-ski.ch/stations-de-ski-vaudoises/ski-bob-luge-chalet-a-gobet/\">The Chalet-à-Gobet</a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "When snow starts to fall, this is THE place to be in Lausanne: located only 30 minutes away from the city centre by public transport, Chalet-à-Gobet is the perfect spot for snowball fights and sledding!"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJsnVoIgHl9/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26088,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1d5eabc838784c69",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1d5eabc838784c69.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-neige-enfants-min-e1578986220922.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Practical information:</em><br>\n<em>Opening depends on snow conditions and weather forecast.</em><br>\n<em>For further information, call +41 21 315 49 28</em>"
+          }
+        ],
+        "de": [
+          {
+            "type": "image",
+            "value": {
+              "id": 26155,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "bb4c772a20223f3d",
+              "mime_type": "image/jpeg",
+              "copyright": "© Skieur au Glacier 3000",
+              "metadata": {
+                "width": 1920,
+                "height": 1920,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1920\" height=\"1920\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bb4c772a20223f3d.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Glacier-3000-ski-2-1.jpg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.aigle-leysin-lesmosses.ch/de/\"><strong>Leysin in den Waadtländer Alpen</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Leysin ist die erste und Lausanne am nächsten gelegene alpine Skistation und verspricht Skifreuden in bis zu 2200 Metern Höhe! In La Berneuse mit einem fantastischen Panorama-Drehrestaurant können Sie zudem eine herrliche Aussicht auf das Rhonetal geniessen. Wer Nervenkitzel auf Skiern oder dem Snowboard sucht, der ist im hiesigen Snowpark und auf der Skicross-Piste genau richtig. Zudem erwartet Sie im <a href=\"https://www.tele-leysin-mosses.ch/TOBOGGANING-PARK-LEYSIN\">Toboganning Park</a> des Dorfes eine fantastische Rutschpartie auf Reifen!"
+          },
+          {
+            "type": "paragraph",
+            "value": "Als Teil desselben Skigebiets wie Leysin ist <a href=\"https://www.stations-de-ski.ch/en/stations-de-ski-vaudoises/station-de-ski-les-mosses-la-lecherette/\">Les Mosses</a> eine gute Alternative für Anfänger. Diese familienfreundliche Station bietet Pisten für alle Niveaus zu attraktiven Preisen!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Infos:<br>\nLeysin ist von Lausanne aus leicht mit dem Zug zu erreichen. Die Fahrt dauert 1 Std. 15 Minuten, mit einem Umstieg in Aigle.<br>\nDie Fahrt mit dem Auto dauert 60 Minuten. Nehmen Sie die Autobahn bis Aigle. Ab der Autobahnausfahrt ist Leysin ausgeschildert.</em>"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25918,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "3604910babf90763",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 1200,
+                "height": 795,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1200\" height=\"795\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "3604910babf90763.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Leysin-1.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BtERrcZHXzH/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.villars-diablerets.ch/de/Z8820/skigebiet\"><strong>Villars-Gryon-Les Diablerets und Glacier3000 </strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dieses aussergewöhnliche Skigebiet vereint drei Stationen: Villars, Gryon und Les Diablerets. Freuen Sie sich also auf über 112 Pistenkilometer mit atemberaubender Aussicht! Zudem erwartet Sie <a href=\"https://www.lausanne-tourisme.ch/de/entdecken/glacier-3000/\">Glacier3000</a> mit den höchstgelegenen Pisten der Waadtländer Alpen … sowie die einzige Hängebrücke der Welt, die zwei Gipfel verbindet! Auf dem 170 Meter langen und 80 cm breiten <a href=\"https://www.villars-diablerets.ch/fr/P4249/snow-park-glacier-3000\">Peak Walk</a> können Sie einen Blick auf das Matterhorn, den Mont Blanc und die Jungfrau werfen."
+          },
+          {
+            "type": "paragraph",
+            "value": "Haben Sie Lust, eine der längsten <a href=\"https://www.villars-diablerets.ch/fr/V1331/luge-aux-diablerets\">Rodelbahnen</a> der Schweiz auszuprobieren? In Les Diablerets erwartet Sie eine 7,2 km lange Piste, die fantastische Abfahrten verspricht!"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/BrAxq5yA7i1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23429,
+              "name": "Peak Walk Glacier 3000",
+              "public_name": "Peak Walk Glacier 3000",
+              "cloudinary_id": "2sCbn4cZhd0kUNAkDDwam0XPS4WzgDcTARTAkymI",
+              "mime_type": "image/jpeg",
+              "copyright": "© Glacier 3000",
+              "metadata": {
+                "width": 1600,
+                "height": 1058,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1058\"",
+                "tags": "Hiver; Environ; Vue; Montagne",
+                "description": null,
+                "file_name_from_url": "a498c616b27a1af8.jpg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2021/01/Glacier-peak-walk-2.jpg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Infos:<br>\nDie Zugfahrt ab Lausanne mit einem Umstieg in Aigle dauert weniger als 1,5 Stunden.<br>\nMit dem Auto benötigt man 60 Minuten. Nehmen Sie wie nach Leysin die Autobahn bis Aigle. Folgen Sie anschliessend der Ausschilderung.</em>"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.regiondentsdumidi.ch/de/region/champery\"><strong>Champéry und Les Portes du Soleil</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Die Walliser Station Champéry bietet Zugang zu einem der grössten Skigebiete Europas: <a href=\"https://de.portesdusoleil.com/\">Les Portes du Soleil</a>. Auf 600 Pistenkilometern können Sie mit ein und demselben Pass sowohl in der Schweiz, als auch in Frankreich Ski fahren. Sehr gute Skifahrer profitieren von der Abfahrt am Pas de Chavanette, die auch «Schweizer Wand» genannt wird: ein sehr steiler Hang mit 76 % Gefälle, der Buckel von 2 Metern Höhe aufweisen kann! Wer es lieber entspannter mag, kann zudem an einer Yogastunde mit Blick auf den Mont Blanc teilnehmen, eine Hundeschlittenfahrt geniessen oder sich im Curling probieren … Hier werden <a href=\"https://de.portesdusoleil.com/aktivitaeten/winter/andere-schnee-aktivitaeten.html\">zahlreiche Aktivitäten</a> angeboten und es ist für jeden etwas dabei!"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Infos:<br>\nDie Zugfahrt ab Lausanne dauert 1,5 Stunden. Fahren Sie zunächst nach Aigle, steigen Sie dort in Richtung Champéry und fahren Sie bis zur Endstation weiter.<br>\nMit dem Auto benötigt man etwa 55 Minuten. Nehmen Sie die Autobahn in Richtung Martigny. Fahren Sie in St-Triphon ab und anschliessend weiter in Richtung Monthey, Troistorrents und schliesslich Champéry.</em>"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/Ca-DBYloYS1/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"http://www.station-les-paccots.ch/\"><strong>Les Paccots oberhalb von Vevey</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Dies ist die Lausanne am nächsten gelegene Skistation. Das Dorf Les Paccots befindet sich auf 1061 Metern Höhe in den Freiburger Voralpen. Dieses familienfreundliche Skigebiet verfügt über 11 Skilifte. Le Pralet erreicht zum Beispiel eine Höhe von 1568 Metern! Insgesamt erwarten Sie hier 20 Pistenkilometer."
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Infos:<br>\nMit den öffentlichen Verkehrsmitteln ist Les Paccots von Lausanne aus in 50 Minuten zu erreichen. Fahren Sie mit der Linie S9 bis Palézieux sowie anschliessend mit der S50 bis Châtel-St-Denis. Vom Bahnhof aus bringt Sie der Bus Nr. 492 ins Dorf.<br>\nDie Fahrt mit dem Auto dauert etwa 30 Minuten. Nehmen Sie dazu die Autobahn in Richtung Montreux. Fahren Sie nach Vevey in Richtung Bern/Freiburg weiter bis Châtel-St-Denis, Les Paccots.</em>"
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/B5M2XSHDpD_/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.stations-de-ski.ch/stations-de-ski-vaudoises/ski-bob-luge-chalet-a-gobet/\"><strong>Chalet-à-Gobet</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Sobald der erste Schnee gefallen ist, heisst der Treffpunkt der Lausannerinnen und Lausanner Chalet-à-Gobet. Erreichbar vom Stadtzentrum in nur 30min mit öffentlichen Verkehrsmitteln ist Chalet-à-Gobet der perfekte Wintersportort für einen Schlittelnachmittag oder für eine Schneeballschlacht wie zu guten alten Zeiten."
+          },
+          {
+            "type": "instagram",
+            "value": "https://www.instagram.com/p/CJsnVoIgHl9/?utm_source=ig_embed&utm_campaign=loading"
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 26088,
+              "name": "Skier depuis Lausanne",
+              "public_name": null,
+              "cloudinary_id": "1d5eabc838784c69",
+              "mime_type": "image/jpeg",
+              "copyright": "© ",
+              "metadata": {
+                "width": 800,
+                "height": 534,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"800\" height=\"534\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "1d5eabc838784c69.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-neige-enfants-min-e1578986220922.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "<em>Praktische Infos:<br>\nDie Öffnung hängt von den Schnee- und Wetterbedingungen ab.<br>\nWeitere Informationen unter +41 21 315 49 28</em>"
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "3604910babf90763",
+          "copyright": "© ",
+          "public_name": {
+            "fr": "Skier depuis Lausanne"
+          }
+        }
+      ],
+      "published_at": "1704353719",
+      "seo": {
+        "description": {
+          "fr": "Située à 50 kilomètres des Alpes, Lausanne peut être un point de départ pour tous ceux qui voudraient skier. Nous vous avons préparé une liste des possibilités pour dévaler les pentes enneigées depuis la ville.",
+          "en": "Located 50 kilometres from the Alps, Lausanne can well serve as the starting point for all those who enjoy skiing. We prepared for you a list of possibilities to hit the snowy slopes from the town.",
+          "de": "Lausanne liegt nur 50 Kilometer von den Alpen entfernt und ist ein hervorragender Ausgangspunkt für Skifans. Wir haben für Sie eine Liste der nächstgelegenen Pisten zusammengestellt."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "skier-depuis-lausanne",
+          "en": "skiing-from-lausanne",
+          "de": "skifreuden-in-der-nahe-von-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
+    }
+  }
+}

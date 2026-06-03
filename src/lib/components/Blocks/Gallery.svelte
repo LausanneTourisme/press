@@ -1,17 +1,17 @@
 <script lang="ts">
   import { maxMobileWidth } from '$lib/helpers';
   import { type Locale } from '$lib/translations';
-  import type { Media, Translatable } from '$types';
+  import type { Media } from '$types';
   import { onMount } from 'svelte';
   import Figure from '../Figure.svelte';
 
   type HeadingProps = {
     class?: string;
-    images: Media<Translatable>[];
+    images: Media<string>[];
     locale: Locale;
   };
 
-  const { class: additionalClass = '', images, locale }: HeadingProps = $props();
+  const { images }: HeadingProps = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
@@ -34,7 +34,7 @@
 {#if images.length % 2 === 0}
   <!-- Block is even: simple grid-->
   <section class="my-6 grid auto-rows-auto grid-cols-2 gap-4">
-    {#each images as image}
+    {#each images as image (image.cloudinary_id)}
       <Figure
         useCloudinaryPreset={false}
         class="h-64"
@@ -44,7 +44,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${image?.public_name?.[locale]} - ${image?.copyright}`}
+        alt={`${image?.public_name} - ${image?.copyright}`}
       />
     {/each}
   </section>
@@ -60,7 +60,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[0]?.public_name?.[locale]} - ${images[0]?.copyright}`}
+        alt={`${images[0]?.public_name} - ${images[0]?.copyright}`}
       />
     </div>
     <div>
@@ -73,7 +73,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[1]?.public_name?.[locale]} - ${images[1]?.copyright}`}
+        alt={`${images[1]?.public_name} - ${images[1]?.copyright}`}
       />
     </div>
     <div class="col-start-2 row-start-2">
@@ -86,7 +86,7 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[2]?.public_name?.[locale]} - ${images[2]?.copyright}`}
+        alt={`${images[2]?.public_name} - ${images[2]?.copyright}`}
       />
     </div>
   </section>

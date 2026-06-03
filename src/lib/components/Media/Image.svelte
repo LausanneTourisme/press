@@ -46,7 +46,7 @@
 
     //offline mode and double check for empty src
     if (dev && isOfflineMode) {
-      if (src?.startsWith('http')) {
+      if (src?.startsWith('http') || !src?.startsWith('/')) {
         return '/pages/themes/cathedrale_skate.jpg';
       }
       return localSrc;
@@ -81,7 +81,7 @@
 
 <!-- <img class={style} {sizes} srcset={srcSetFinal} src={srcFinal} {alt} {title} /> -->
 <picture class={style}>
-  {#each srcSetFinal.reverse() as srcSet}
+  {#each srcSetFinal.reverse() as srcSet (srcSet.size)}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
   <img class={imgClass} src={srcFinal} {alt} {title} {onload} />

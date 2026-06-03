@@ -1,22 +1,20 @@
 <script lang="ts">
   import { dev } from '$app/environment';
+  import { isOfflineMode } from '$lib/helpers';
   import { applyAction, enhance } from '$app/forms';
   import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
   import type { SubmitFunction } from '@sveltejs/kit';
-  import { Send } from 'lucide-svelte';
+  import { Send } from '@lucide/svelte';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Container from '$lib/components/Container.svelte';
   import Loading from '$lib/components/Loading.svelte';
   import Button from '$lib/components/Button.svelte';
 
-  import { page } from '$app/state';
-  import type { ActionData } from './$types';
   import { RouteTypes } from '$enums';
 
-  const pageForm = $derived(page.form as ActionData);
   type Success = Record<string, unknown> | undefined;
   type Failure = Record<string, unknown> | undefined;
 
@@ -45,29 +43,23 @@
   let sendWithSuccess = $state(false);
   let botpoison: undefined | Botpoison = $state(undefined);
   let isLoading = $state(false);
-  let failedMessage: undefined | string = $state();
-
-  const submit: SubmitFunction<Success, Failure> = async ({
-    formElement,
-    formData,
-    action,
-    cancel
-  }) => {
+  const submit: SubmitFunction<Success, Failure> = async ({ formData, cancel }) => {
     isLoading = true;
 
-    if (!botpoison) {
+    if (!botpoison && !(dev && isOfflineMode)) {
       cancel();
       isLoading = false;
       return;
     }
 
     try {
-      const { solution } = await botpoison.challenge();
-      formData.append('_botpoison', solution);
+      if (!(dev && isOfflineMode)) {
+        const { solution } = await botpoison!.challenge();
+        formData.append('_botpoison', solution);
+      }
       const validationState = validation?.(formData);
       if (validationState?.status === 'failed') {
         incorrectData = true;
-        failedMessage = validationState?.message;
         isLoading = false;
         onFailure?.();
         cancel();

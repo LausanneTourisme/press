@@ -1,0 +1,217 @@
+{
+  "data": {
+    "item": {
+      "id": "284",
+      "languages": ["fr"],
+      "name": {
+        "fr": "Des parcours à vélo dans et aux alentours de Lausanne"
+      },
+      "lead": {
+        "fr": "Avec ce soleil estival, on a envie d’être dehors. Pour se détendre bien sûr, mais aussi pour se déplacer et faire des balades. Et le vélo est l’un des meilleurs alliés pour affronter les pentes lausannoises et découvrir la région."
+      },
+      "summary": {
+        "fr": "Avec ce soleil estival, on a envie d’être dehors. Pour se détendre bien sûr, mais aussi pour se déplacer et faire des balades. Et le vélo est l’un des meilleurs alliés pour affronter les pentes lausannoises et découvrir la région. Les passionnés de VTT pourront dévaler les pentes proches de Lausanne. A environ une heure de Lausanne, vous pourrez profiter du soleil pour dévaler à Leysin ou aux Paccots par exemple."
+      },
+      "content": {
+        "fr": [
+          {
+            "type": "image",
+            "value": {
+              "id": 23454,
+              "name": "Parc Bourget vélo",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                "description": null,
+                "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+              }
+            },
+            "size": "parallax",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Pour les sportifs – Pentes ardues, longues balades et sensations fortes</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Il y a 338 mètres de dénivelé entre Ouchy, au bord du lac, et les Croisettes qui dominent Lausanne. Si cette ascension peut se faire en métro, les plus courageux préféreront pédaler un peu plus de 6km pour arriver à la limite de Lausanne. Sachez que le parcours est sportif et qu’il se fait sur une piste cyclable, en bordure de la route. Mais une fois en haut, vous aurez le sentiment du devoir accompli (et des jambes incroyables)."
+          },
+          {
+            "type": "paragraph",
+            "value": "Et surtout, depuis là, vous pourrez vous aventurer dans la région pour de plus longs itinéraires. Il est par exemple possible de rejoindre le Chalet-à-Gobet, où <a href=\"https://www.lausanne-tourisme.ch/fr/P8483/mauvernay-parcours-vtt\">des parcours de VTT</a> de 10 et 20km vous attendent. Vous pourrez aussi parcourir le Jorat, en direction de Moudon (aller-retour de 50 km)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 17750,
+              "name": "Vélo au Chalet-à-Gobet",
+              "public_name": "Vélo au Chalet-à-Gobet",
+              "cloudinary_id": "10jcBuSMyWRuq6Z8LONOsKVrMgqzV5ALQV07A2qB",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT / Laurent Kaczor",
+              "metadata": {
+                "attr": "width=\"7360\" height=\"4912\"",
+                "tags": "Sport; Forêt; Vélo;",
+                "width": 7360,
+                "height": 4912,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "description": null,
+                "file_name_from_url": "4a84028941568bca.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Chalet-a-Gobet-velos.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Les passionnés de VTT pourront dévaler les pentes proches de Lausanne. A environ une heure de Lausanne, vous pourrez profiter du soleil pour dévaler <a href=\"https://www.aigle-leysin-lesmosses.ch/fr/GV406/velo-vtt-e-bike\">à Leysin</a> ou <a href=\"https://www.schweizmobil.ch/fr/suisse-a-vtt/itineraires/etappe-0868.html\">aux Paccots</a> par exemple."
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<strong>Pour se promener et se détendre – rouler le long du lac</strong>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Si vous n’avez pas une journée entière à consacrer à un tour à vélo, il vaut mieux ne pas trop s’éloigner de Lausanne. Et là, direction Ouchy pour des balades tranquilles le long du lac. On peut partir dans les deux directions : vers le Lavaux et ses vignes, ou vers Saint-Sulpice. Cette dernière option vous évitera de suivre la route trop longtemps : les vélos sont tolérés sur le chemin piéton qui longe le lac. Une petite baignade rafraichissante sera même parfaite pour marquer une pause dans votre tour."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 25999,
+              "name": "Des parcours à vélo dans et aux alentours de Lausanne",
+              "public_name": "Des parcours à vélo dans et aux alentours de Lausanne",
+              "cloudinary_id": "bf67e2af52269111",
+              "mime_type": "image/jpeg",
+              "copyright": "© Détente à vélo dans le vignoble de Lavaux",
+              "metadata": {
+                "width": 1497,
+                "height": 1444,
+                "mimeType": "image/jpeg",
+                "copyright": "Christof Sonderegger",
+                "attr": "width=\"1497\" height=\"1444\"",
+                "tags": null,
+                "description": null,
+                "file_name_from_url": "bf67e2af52269111.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Vignoble-couple-e1583402761872.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ah, et vous pouvez aussi prendre le métro jusqu’à l’arrêt <em>Croisettes</em> et redescendre. Vous croiserez certainement les grands sportifs du début de l’article ;-)."
+          },
+          {
+            "type": "image",
+            "value": {
+              "id": 23454,
+              "name": "Parc Bourget vélo",
+              "public_name": "Parc Bourget",
+              "cloudinary_id": "AHsbCzgTupEtHv4WxJScHbRwyblwRh5e1gVtY6Ej",
+              "mime_type": "image/jpeg",
+              "copyright": "© LT/Laurent Kaczor",
+              "metadata": {
+                "width": 1600,
+                "height": 1065,
+                "mimeType": "image/jpeg",
+                "copyright": null,
+                "attr": "width=\"1600\" height=\"1065\"",
+                "tags": "Lac, Parc; Bateau; Vélo; Sport;",
+                "description": null,
+                "file_name_from_url": "a7c4b4de5efbe223.jpeg",
+                "origin_url": "https://www.lausanne-tourisme.ch/app/uploads/2020/02/Parc-Bourget-1.jpeg"
+              }
+            },
+            "size": "medium",
+            "focus": "auto"
+          },
+          {
+            "type": "heading",
+            "tag": "h2",
+            "value": "<a href=\"https://www.lausanne-tourisme.ch/fr/lausanne-a-velo/\"><strong>Pour louer un vélo</strong></a>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Il y a plusieurs possibilités :"
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>Les stations en libre-service de <a href=\"https://www.publibike.ch/fr/home\">Publibike</a></li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "C’est pratique, il faut s’enregistrer via un app mobile pour déverrouiller son vélo sur la borne. Ensuite, on peut s’en aller et le déposer à une autre station."
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>La <a href=\"http://www.pro-velo-lausanne.ch/association/maison-du-velo/\">Maison du Vélo</a> à la Place de la Riponne</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Ce local sert de point d’information physique pour les vélos de Publibike et loue aussi des vélos électriques."
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li><a href=\"https://www.rentabike.ch/home\">Rent a Bike</a>, à la Gare de Lausanne</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "On peut y louer des VTT, vélos de route et vélos électriques pour un ou plusieurs jours."
+          },
+          {
+            "type": "paragraph",
+            "value": "<ul>\n<li>Dans un magasin spécialisé</li>\n</ul>"
+          },
+          {
+            "type": "paragraph",
+            "value": "Comme <a href=\"https://www.tandem.ch/location\">Tandem</a> (Montchoisi) ou <a href=\"http://www.recyclo.bike/location/\">Recyclobike</a> (Valency)."
+          }
+        ]
+      },
+      "medias": [
+        {
+          "cloudinary_id": "bf67e2af52269111",
+          "copyright": "© Détente à vélo dans le vignoble de Lavaux",
+          "public_name": {
+            "fr": "Des parcours à vélo dans et aux alentours de Lausanne"
+          }
+        }
+      ],
+      "published_at": "1709679600",
+      "seo": {
+        "description": {
+          "fr": "Avec ce soleil estival, on a envie d’être dehors. Pour se détendre bien sûr, mais aussi pour se déplacer et faire des balades. Et le vélo est l’un des meilleurs alliés pour affronter les pentes lausannoises et découvrir la région."
+        },
+        "noindex": false,
+        "slug": {
+          "fr": "des-parcours-a-velo-dans-et-aux-alentours-de-lausanne"
+        }
+      },
+      "tags": [
+        {
+          "name": "lt-sport",
+          "public_name": {
+            "fr": "Sport",
+            "en": "Sport",
+            "de": "Sport"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,156 @@
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  Syntax-check:
+    name: Lint & Type check
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '${{ vars.NODE_VERSION }}'
+          cache: 'npm'
+
+      - name: Deploy .env
+        run: |
+          cat > .env << 'EOF'
+          ENABLE_CRM="${{secrets.ENABLE_CRM}}"
+          APSIS_CLIENT_ID="${{secrets.APSIS_CLIENT_ID}}"
+          APSIS_CLIENT_SECRET="${{secrets.APSIS_CLIENT_SECRET}}"
+          APSIS_KEYSPACE_DISCRIMINATOR="${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}"
+          APSIS_SECTION_DISCRIMINATOR="${{secrets.APSIS_SECTION_DISCRIMINATOR}}"
+          APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR}}"
+          APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR}}"
+          APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR}}"
+          APSIS_JOURNALIST_FORM_EVENT_VERSION_ID="${{secrets.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID}}"
+          APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID="${{secrets.APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID}}"
+          APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID="${{secrets.APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID}}"
+          PUBLIC_ENABLE_OFFLINE_MODE="${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}"
+          PUBLIC_CLOUDINARY_CLOUD_NAME="${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}"
+          PUBLIC_CLOUDINARY_CNAME="${{ secrets.PUBLIC_CLOUDINARY_CNAME }}"
+          PUBLIC_CLOUDINARY_UPLOAD_PRESET="${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}"
+          GRAPHQL_URL="${{ secrets.GRAPHQL_URL }}"
+          GRAPHQL_TOKEN="${{ secrets.GRAPHQL_TOKEN }}"
+          GRAPHQL_AGENDA_TOKEN="${{ secrets.GRAPHQL_AGENDA_TOKEN }}"
+          GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
+          PUBLIC_MAPTILER_URL="${{ secrets.PUBLIC_MAPTILER_URL }}"
+          BOTPOISON_SKEY="${{ secrets.BOTPOISON_SKEY }}"
+          PUBLIC_BOTPOISON_PUBLICKEY="${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}"
+          PUBLIC_MANDRILL_API_KEY="${{ secrets.PUBLIC_MANDRILL_API_KEY }}"
+          MAIL_DEFAULT_RECIPIENTS="${{ secrets.MAIL_DEFAULT_RECIPIENTS }}"
+          MAIL_FROM="${{ secrets.MAIL_FROM }}"
+          MAIL_TO="${{ secrets.MAIL_TO }}"
+          MAIL_HOST="${{ secrets.MAIL_HOST }}"
+          MAIL_PORT="${{ secrets.MAIL_PORT }}"
+          MAIL_USERNAME="${{ secrets.MAIL_USERNAME }}"
+          MAIL_PASSWORD="${{ secrets.MAIL_PASSWORD }}"
+          ENABLE_MAILCHIMP="${{ secrets.ENABLE_MAILCHIMP }}"
+          API_HTML_TO_PDF="${{ secrets.API_HTML_TO_PDF }}"
+          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN="${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}"
+          EOF
+
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+
+      - uses: actions/cache@v5
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run check
+
+  Tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '${{ vars.NODE_VERSION }}'
+          cache: 'npm'
+
+      - name: Deploy .env
+        run: |
+          cat > .env << 'EOF'
+          ENABLE_CRM="${{secrets.ENABLE_CRM}}"
+          APSIS_CLIENT_ID="${{secrets.APSIS_CLIENT_ID}}"
+          APSIS_CLIENT_SECRET="${{secrets.APSIS_CLIENT_SECRET}}"
+          APSIS_KEYSPACE_DISCRIMINATOR="${{secrets.APSIS_KEYSPACE_DISCRIMINATOR}}"
+          APSIS_SECTION_DISCRIMINATOR="${{secrets.APSIS_SECTION_DISCRIMINATOR}}"
+          APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR}}"
+          APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR}}"
+          APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR="${{secrets.APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR}}"
+          APSIS_JOURNALIST_FORM_EVENT_VERSION_ID="${{secrets.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID}}"
+          APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID="${{secrets.APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID}}"
+          APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID="${{secrets.APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID}}"
+          PUBLIC_ENABLE_OFFLINE_MODE="${{ secrets.PUBLIC_ENABLE_OFFLINE_MODE }}"
+          PUBLIC_CLOUDINARY_CLOUD_NAME="${{ secrets.PUBLIC_CLOUDINARY_CLOUD_NAME }}"
+          PUBLIC_CLOUDINARY_CNAME="${{ secrets.PUBLIC_CLOUDINARY_CNAME }}"
+          PUBLIC_CLOUDINARY_UPLOAD_PRESET="${{ secrets.PUBLIC_CLOUDINARY_UPLOAD_PRESET }}"
+          GRAPHQL_URL="${{ secrets.GRAPHQL_URL }}"
+          GRAPHQL_TOKEN="${{ secrets.GRAPHQL_TOKEN }}"
+          GRAPHQL_AGENDA_TOKEN="${{ secrets.GRAPHQL_AGENDA_TOKEN }}"
+          GROUP_ID_PAGE_HIGHLIGHTS=${{ secrets.GROUP_ID_PAGE_HIGHLIGHTS }}
+          PUBLIC_MAPTILER_URL="${{ secrets.PUBLIC_MAPTILER_URL }}"
+          BOTPOISON_SKEY="${{ secrets.BOTPOISON_SKEY }}"
+          PUBLIC_BOTPOISON_PUBLICKEY="${{ secrets.PUBLIC_BOTPOISON_PUBLICKEY }}"
+          PUBLIC_MANDRILL_API_KEY="${{ secrets.PUBLIC_MANDRILL_API_KEY }}"
+          MAIL_DEFAULT_RECIPIENTS="${{ secrets.MAIL_DEFAULT_RECIPIENTS }}"
+          MAIL_FROM="${{ secrets.MAIL_FROM }}"
+          MAIL_TO="${{ secrets.MAIL_TO }}"
+          MAIL_HOST="${{ secrets.MAIL_HOST }}"
+          MAIL_PORT="${{ secrets.MAIL_PORT }}"
+          MAIL_USERNAME="${{ secrets.MAIL_USERNAME }}"
+          MAIL_PASSWORD="${{ secrets.MAIL_PASSWORD }}"
+          ENABLE_MAILCHIMP="${{ secrets.ENABLE_MAILCHIMP }}"
+          API_HTML_TO_PDF="${{ secrets.API_HTML_TO_PDF }}"
+          PUBLIC_GOOGLE_TAG_MANAGER_TOKEN="${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}"
+          EOF
+
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+
+      - uses: actions/cache@v5
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test

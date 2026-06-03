@@ -33,7 +33,7 @@
       {@html $t('press-releases-and-press-kits.no-releases')}
     {:else}
       {#key locale}
-        {#each releasesByDates as [year, releases]}
+        {#each releasesByDates as [year, releases] (year)}
           <Heading class="pt-3 pb-6 2xl:pt-8 2xl:pb-12 2xl:text-5xl">
             {year}
           </Heading>
@@ -44,7 +44,9 @@
                 {#if release?.seo?.slug}
                   <Slide>
                     {@const routeType =
-                      release.type === 'press_kit' ? RouteTypes.Presskit : RouteTypes.Pressrelease}
+                      release.type === 'press_kit'
+                        ? RouteTypes.Presskits
+                        : RouteTypes.Pressreleases}
                     <div class="block px-1 md:flex">
                       <Clickable
                         overflow={false}
