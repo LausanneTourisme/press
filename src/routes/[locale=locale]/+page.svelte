@@ -75,6 +75,12 @@
     // afterNavigate fires on both the source and destination page during a transition.
     // Guard so the restore only runs when we're actually arriving at the homepage.
     const arrivingHere = navigation.to?.url?.pathname === `/${locale}`;
+
+
+    // Restore themes state synchronously before SvelteKit restores scroll (avoids layout shift)
+    const saved = sessionStorage.getItem('homeThemesExpanded');
+    if (saved !== null) displayAllThemes = saved === 'true';
+
     if (type === 'popstate') {
       if (!arrivingHere) return;
       const savedY = Number(sessionStorage.getItem('homeScrollY') ?? 0);
@@ -104,10 +110,6 @@
   onDestroy(() => cancelScrollRestore());
 
   onMount(() => {
-    // Restore themes state synchronously before SvelteKit restores scroll (avoids layout shift)
-    const saved = sessionStorage.getItem('homeThemesExpanded');
-    if (saved !== null) displayAllThemes = saved === 'true';
-
     updateSize();
     window.addEventListener('resize', updateSize);
     window.addEventListener('orientationchange', updateSize);
@@ -410,7 +412,7 @@
     title={$t('themes.title')}
     paragraph={$t('themes.description')}
     expanded={displayAllThemes}
-    onShowMore={() => sessionStorage.setItem('homeThemesExpanded', 'true')}
+    onShowMore={() => { displayAllThemes = true; sessionStorage.setItem('homeThemesExpanded', 'true'); }}
     {locale}
   />
 </Container>
