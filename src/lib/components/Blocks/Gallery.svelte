@@ -11,7 +11,7 @@
     locale: Locale;
   };
 
-  const { images, locale }: HeadingProps = $props();
+  const { images }: HeadingProps = $props();
   let isMobile = $state(false);
 
   const updateSize = () => {
