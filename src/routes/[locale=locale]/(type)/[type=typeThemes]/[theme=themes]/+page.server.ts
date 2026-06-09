@@ -6,7 +6,8 @@ import { supportedLocales, translations } from '$lib/translations';
 import type { Post } from '$types';
 import type { EntryGenerator } from './$types';
 
-export const load = async ({ params, parent, fetch }) => {
+export const load = async ({ params, parent, fetch, setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
   if (dev && isOfflineMode) {
     const { startServer } = await import('$lib/mocks/handler');
     startServer();

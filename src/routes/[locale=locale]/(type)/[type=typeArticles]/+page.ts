@@ -1,13 +1,7 @@
-import { error } from '@sveltejs/kit';
-
 export const prerender = false;
 
 export const config = {
   isr: {
-    expiration: 86400
+    expiration: 31536000
   }
-};
-
-export const load = () => {
-  throw error(404);
 };

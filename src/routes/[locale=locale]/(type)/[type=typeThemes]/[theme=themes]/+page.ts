@@ -1,7 +1,8 @@
-export const prerender = false;
+export const prerender = true;
 
 export const config = {
   isr: {
-    expiration: 86400
+    expiration: 28800
   }
 };
+

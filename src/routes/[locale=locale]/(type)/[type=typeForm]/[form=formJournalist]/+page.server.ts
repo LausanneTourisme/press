@@ -29,7 +29,8 @@ import { schemaStep4, type Schema } from './schema';
 const countriesByLocale: Record<string, any> = { en, fr, de };
 const lastStep = zod4(schemaStep4);
 
-export const load = async ({ parent }) => {
+export const load = async ({ parent, setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
   const [{ locale }, form] = await Promise.all([parent(), superValidate(lastStep)]);
 
   countries.registerLocale(countriesByLocale[locale]);

@@ -20,7 +20,8 @@ type MailImage = {
   content: string;
 };
 
-export const load = async () => {
+export const load = async ({ setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
   return {
     form: await superValidate(zod4(schema))
   };
