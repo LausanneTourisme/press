@@ -13,6 +13,10 @@ const validateEmail = (email: string | null | undefined) => {
   );
 };
 
+export const load = ({ setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
+};
+
 export const actions: Actions = {
   default: async ({ request, params }) => {
     const data = await request.formData();

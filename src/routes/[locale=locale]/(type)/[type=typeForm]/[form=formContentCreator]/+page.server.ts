@@ -33,7 +33,8 @@ type MailImage = {
   content: string;
 };
 
-export const load = async ({ parent }) => {
+export const load = async ({ parent, setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
   const [{ locale }, form] = await Promise.all([parent(), superValidate(lastStep)]);
 
   countries.registerLocale(countriesByLocale[locale]);

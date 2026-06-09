@@ -7,13 +7,10 @@ import { supportedLocales, translations } from '$lib/translations';
 import type { Release } from '$types';
 import type { EntryGenerator } from './$types';
 
-export const config = {
-  isr: {
-    expiration: 86400
-  }
-};
+export const prerender = true;
 
-export const load = async ({ parent, fetch }) => {
+export const load = async ({ parent, fetch, setHeaders }) => {
+  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
   if (dev && isOfflineMode) {
     const { startServer } = await import('$lib/mocks/handler');
     startServer();

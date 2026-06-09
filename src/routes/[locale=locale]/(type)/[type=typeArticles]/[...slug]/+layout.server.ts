@@ -7,7 +7,7 @@ import { loadTranslations, supportedLocales, type Locale } from '$lib/translatio
 import type { SeoHeader } from '$types';
 import { error } from '@sveltejs/kit';
 
-export const load = async ({ params, parent, url, fetch }) => {
+export const load = async ({ params, parent, url, fetch, setHeaders }) => {
   if (dev && isOfflineMode) {
     const { startServer } = await import('$lib/mocks/handler');
     startServer();
@@ -20,6 +20,8 @@ export const load = async ({ params, parent, url, fetch }) => {
 
   const article = articleRes.data?.item;
   if (!article || !article.languages?.includes(locale)) throw error(404);
+
+  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
 
   await loadTranslations(locale, url.pathname);
 
