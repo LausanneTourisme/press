@@ -8,7 +8,7 @@ export const config = {
   }
 };
 
-export const load = ({ setHeaders}) => {
+export const load = ({ setHeaders }) => {
   setHeaders({ 'cache-control': 'public, s-maxage=31536000, immutable' });
   throw error(404);
 };
