@@ -1,0 +1,68 @@
+@namespace xhtml "http://www.w3.org/1999/xhtml";
+
+urlset {
+  display: block;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+url {
+  display: block;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+url:hover {
+  border-color: #94a3b8;
+}
+
+loc {
+  display: block;
+  background: white;
+  padding: 0.75rem 1.25rem 0.25rem;
+  color: #2563eb;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+lastmod {
+  display: block;
+  background: white;
+  padding: 0 1.25rem 0.75rem;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+lastmod::before {
+  content: "Last modified: ";
+  font-weight: 500;
+  color: #64748b;
+}
+
+xhtml|link[rel="alternate"] {
+  display: block;
+  background: #f8fafc;
+  padding: 0 1.25rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 2;
+}
+
+xhtml|link[rel="alternate"]::before {
+  content: attr(hreflang) ": " attr(href);
+}
+
+xhtml|link[rel="alternate"]:first-of-type {
+  padding-top: 0.5rem;
+}
+
+xhtml|link[rel="alternate"]:last-of-type {
+  padding-bottom: 0.5rem;
+}
