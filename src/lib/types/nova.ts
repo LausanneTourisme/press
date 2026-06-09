@@ -70,6 +70,7 @@ export type Seo<T extends Translatable | string> = {
 
 type PostBase<T extends Translatable | string> = {
   published_at?: string;
+  updated_at?: string;
   id?: number;
   languages?: string[];
   name?: T;
