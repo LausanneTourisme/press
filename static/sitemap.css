@@ -1,8 +1,11 @@
-@namespace xhtml "http://www.w3.org/1999/xhtml";
+@namespace xhtml 'http://www.w3.org/1999/xhtml';
 
 urlset {
   display: block;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   background: #f8fafc;
   color: #1e293b;
   padding: 2rem;
@@ -41,12 +44,12 @@ lastmod {
 }
 
 lastmod::before {
-  content: "Last modified: ";
+  content: 'Last modified: ';
   font-weight: 500;
   color: #64748b;
 }
 
-xhtml|link[rel="alternate"] {
+xhtml|link[rel='alternate'] {
   display: block;
   background: #f8fafc;
   padding: 0 1.25rem;
@@ -55,14 +58,14 @@ xhtml|link[rel="alternate"] {
   line-height: 2;
 }
 
-xhtml|link[rel="alternate"]::before {
-  content: attr(hreflang) ": " attr(href);
+xhtml|link[rel='alternate']::before {
+  content: attr(hreflang) ': ' attr(href);
 }
 
-xhtml|link[rel="alternate"]:first-of-type {
+xhtml|link[rel='alternate']:first-of-type {
   padding-top: 0.5rem;
 }
 
-xhtml|link[rel="alternate"]:last-of-type {
+xhtml|link[rel='alternate']:last-of-type {
   padding-bottom: 0.5rem;
 }
