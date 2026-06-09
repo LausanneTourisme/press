@@ -19,7 +19,9 @@
   let { children } = $props<{ children: Snippet }>();
   let isNavigating = $state(false);
   let hideBarTimer: ReturnType<typeof setTimeout> | undefined;
-  const locale = $derived((page.params.locale ?? defaultLocale) as Locale);
+  const locale = $derived(
+    (page.params.locale ?? (page.data as PageData).i18n?.locale ?? defaultLocale) as Locale
+  );
   let translations = $derived.by(() => (page.data as PageData).translations[locale]);
   let seo = $derived.by(() => {
     const pageData = page.data as PageData;
