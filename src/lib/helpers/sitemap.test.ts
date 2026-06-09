@@ -290,20 +290,35 @@ describe('Test helper: sitemap', () => {
 
     const allLocalesEntry: UrlEntry = { paths: { fr: '/fr/test', en: '/en/test', de: '/de/test' } };
     const deOnlyEntry: UrlEntry = { paths: { de: '/de/only' } };
-    const withLastmod: UrlEntry = { paths: { fr: '/fr/article', en: '/en/article' }, lastmod: '2024-01-15T10:00:00.000Z' };
+    const withLastmod: UrlEntry = {
+      paths: { fr: '/fr/article', en: '/en/article' },
+      lastmod: '2024-01-15T10:00:00.000Z'
+    };
 
     it('uses canonLocale path as <loc>', () => {
-      const [block] = generateUrlSets({ entries: [allLocalesEntry], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [allLocalesEntry],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).toContain(`<loc>${origin}/fr/test</loc>`);
     });
 
     it('skips entry when canonLocale path is not available', () => {
-      const result = generateUrlSets({ entries: [deOnlyEntry], urlOrigin: origin, canonLocale: 'fr' });
+      const result = generateUrlSets({
+        entries: [deOnlyEntry],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(result).toHaveLength(0);
     });
 
     it('includes entry when canonLocale matches', () => {
-      const result = generateUrlSets({ entries: [deOnlyEntry], urlOrigin: origin, canonLocale: 'de' });
+      const result = generateUrlSets({
+        entries: [deOnlyEntry],
+        urlOrigin: origin,
+        canonLocale: 'de'
+      });
       expect(result).toHaveLength(1);
       expect(result[0]).toContain(`<loc>${origin}/de/only</loc>`);
     });
@@ -315,31 +330,51 @@ describe('Test helper: sitemap', () => {
     });
 
     it('includes xhtml:link alternates for all locales in the entry', () => {
-      const [block] = generateUrlSets({ entries: [allLocalesEntry], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [allLocalesEntry],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).toContain(`hreflang="fr" href="${origin}/fr/test"`);
       expect(block).toContain(`hreflang="en" href="${origin}/en/test"`);
       expect(block).toContain(`hreflang="de" href="${origin}/de/test"`);
     });
 
     it('de-only entry has no fr or en alternate', () => {
-      const [block] = generateUrlSets({ entries: [deOnlyEntry], urlOrigin: origin, canonLocale: 'de' });
+      const [block] = generateUrlSets({
+        entries: [deOnlyEntry],
+        urlOrigin: origin,
+        canonLocale: 'de'
+      });
       expect(block).toContain(`hreflang="de"`);
       expect(block).not.toContain(`hreflang="fr"`);
       expect(block).not.toContain(`hreflang="en"`);
     });
 
     it('includes <lastmod> when present', () => {
-      const [block] = generateUrlSets({ entries: [withLastmod], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [withLastmod],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).toContain('<lastmod>2024-01-15T10:00:00.000Z</lastmod>');
     });
 
     it('omits <lastmod> when absent', () => {
-      const [block] = generateUrlSets({ entries: [allLocalesEntry], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [allLocalesEntry],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).not.toContain('<lastmod>');
     });
 
     it('prepends urlOrigin to all URLs', () => {
-      const [block] = generateUrlSets({ entries: [allLocalesEntry], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [allLocalesEntry],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).not.toContain('href="/');
       expect(block).not.toContain('<loc>/');
     });
@@ -349,7 +384,11 @@ describe('Test helper: sitemap', () => {
     });
 
     it('produces correct full XML block', () => {
-      const [block] = generateUrlSets({ entries: [withLastmod], urlOrigin: origin, canonLocale: 'fr' });
+      const [block] = generateUrlSets({
+        entries: [withLastmod],
+        urlOrigin: origin,
+        canonLocale: 'fr'
+      });
       expect(block).toBe(
         `\t<url>\n\t\t<loc>${origin}/fr/article</loc>\n\t\t<lastmod>2024-01-15T10:00:00.000Z</lastmod>\n\t\t<xhtml:link rel="alternate" hreflang="fr" href="${origin}/fr/article" />\n\t\t<xhtml:link rel="alternate" hreflang="en" href="${origin}/en/article" />\n\t</url>`
       );

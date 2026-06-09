@@ -39,10 +39,9 @@ export const getInternalLinks = async (params?: {
 };
 
 const generateMenuEntries = (): UrlEntry[] => {
-  const menus = Object.fromEntries(supportedLocales.map((locale) => [locale, menuItems(locale)])) as Record<
-    Locale,
-    ReturnType<typeof menuItems>
-  >;
+  const menus = Object.fromEntries(
+    supportedLocales.map((locale) => [locale, menuItems(locale)])
+  ) as Record<Locale, ReturnType<typeof menuItems>>;
   const entries: UrlEntry[] = [];
 
   menus[supportedLocales[0]].forEach((menu, menuIndex) => {
@@ -70,7 +69,10 @@ const generateMenuEntries = (): UrlEntry[] => {
 const generateThemeEntries = (): UrlEntry[] => {
   return getValues(Themes).map((theme) => ({
     paths: Object.fromEntries(
-      supportedLocales.map((locale) => [locale, route(RouteTypes.Themes, { forceLocale: locale, theme })])
+      supportedLocales.map((locale) => [
+        locale,
+        route(RouteTypes.Themes, { forceLocale: locale, theme })
+      ])
     ) as Record<Locale, string>
   }));
 };
@@ -78,7 +80,10 @@ const generateThemeEntries = (): UrlEntry[] => {
 const generateFormEntries = (): UrlEntry[] => {
   return getValues(Forms).map((form) => ({
     paths: Object.fromEntries(
-      supportedLocales.map((locale) => [locale, route(RouteTypes.Forms, { forceLocale: locale, form })])
+      supportedLocales.map((locale) => [
+        locale,
+        route(RouteTypes.Forms, { forceLocale: locale, form })
+      ])
     ) as Record<Locale, string>
   }));
 };
@@ -121,18 +126,25 @@ export const generateUrlSets = ({
   urlOrigin?: string;
   canonLocale?: Locale;
 }): string[] => {
-    const urlSets: string[] = [];
-    entries.forEach(({ paths, lastmod }) => {
-        if(canonLocale && !paths[canonLocale]) return; // skip entries that don't have the canonical locale
+  const urlSets: string[] = [];
+  entries.forEach(({ paths, lastmod }) => {
+    if (canonLocale && !paths[canonLocale]) return; // skip entries that don't have the canonical locale
 
-        const canonPath = (canonLocale && paths[canonLocale]) ?? (paths[defaultLocale] ? paths[defaultLocale] : Object.values(paths)[0]!);
-        const lastmodTag = lastmod ? `\n\t\t<lastmod>${lastmod}</lastmod>` : '';
-        const alternates = Object.entries(paths)
-          .map(([locale, path]) => `\t\t<xhtml:link rel="alternate" hreflang="${locale}" href="${urlOrigin ?? ''}${path}" />`)
-          .join('\n');
+    const canonPath =
+      (canonLocale && paths[canonLocale]) ??
+      (paths[defaultLocale] ? paths[defaultLocale] : Object.values(paths)[0]!);
+    const lastmodTag = lastmod ? `\n\t\t<lastmod>${lastmod}</lastmod>` : '';
+    const alternates = Object.entries(paths)
+      .map(
+        ([locale, path]) =>
+          `\t\t<xhtml:link rel="alternate" hreflang="${locale}" href="${urlOrigin ?? ''}${path}" />`
+      )
+      .join('\n');
 
-        urlSets.push(`\t<url>\n\t\t<loc>${urlOrigin}${canonPath}</loc>${lastmodTag}\n${alternates}\n\t</url>`);
-    });
+    urlSets.push(
+      `\t<url>\n\t\t<loc>${urlOrigin}${canonPath}</loc>${lastmodTag}\n${alternates}\n\t</url>`
+    );
+  });
 
-    return urlSets;
+  return urlSets;
 };
