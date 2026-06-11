@@ -93,7 +93,6 @@ jobs:
           MAIL_USERNAME='${{ secrets.MAIL_USERNAME }}'
           MAIL_PASSWORD='${{ secrets.MAIL_PASSWORD }}'
           ENABLE_MAILCHIMP='${{ secrets.ENABLE_MAILCHIMP }}'
-          API_HTML_TO_PDF='${{ secrets.API_HTML_TO_PDF }}'
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN='${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}'
           EOF"
 
