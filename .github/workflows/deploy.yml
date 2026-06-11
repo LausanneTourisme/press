@@ -99,7 +99,7 @@ jobs:
 
       - name: Sync src files
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -azsc --delete \
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -azc --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
             ./src/ \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/src/
