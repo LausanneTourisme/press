@@ -99,7 +99,7 @@ jobs:
 
       - name: Sync src files
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -az --delete \
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' rsync -azsc --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
             ./src/ \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/src/
@@ -134,7 +134,7 @@ jobs:
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
             "cd ${{ secrets.SSH_PROJECT_PATH }} && \
-             mv build build-old 2>/dev/null || true && \
+             mv build build-old && \
              mv build-next build"
 
       - name: Restart
