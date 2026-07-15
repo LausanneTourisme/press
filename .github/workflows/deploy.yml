@@ -59,9 +59,7 @@ jobs:
 
       - name: Deploy .env
         run: |
-          sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
-            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "cat > ${{ secrets.SSH_PROJECT_PATH }}/.env << 'EOF'
+          cat > .env << 'EOF'
           ENABLE_CRM='${{secrets.ENABLE_CRM}}'
           APSIS_CLIENT_ID='${{secrets.APSIS_CLIENT_ID}}'
           APSIS_CLIENT_SECRET='${{secrets.APSIS_CLIENT_SECRET}}'
@@ -89,12 +87,15 @@ jobs:
           MAIL_FROM='${{ secrets.MAIL_FROM }}'
           MAIL_TO='${{ secrets.MAIL_TO }}'
           MAIL_HOST='${{ secrets.MAIL_HOST }}'
-          MAIL_PORT='${{ secrets.MAIL_PORT }}'
+          MAIL_PORT=${{ secrets.MAIL_PORT }}
           MAIL_USERNAME='${{ secrets.MAIL_USERNAME }}'
           MAIL_PASSWORD='${{ secrets.MAIL_PASSWORD }}'
           ENABLE_MAILCHIMP='${{ secrets.ENABLE_MAILCHIMP }}'
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN='${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}'
-          EOF"
+          EOF
+          sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -o StrictHostKeyChecking=no \
+            .env \
+            ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/.env
 
       - name: Sync src files
         run: |
