@@ -20,7 +20,7 @@ pdfmake.addFonts({
 });
 
 // Form input is interpolated into the mail HTML unescaped, so a submitted field
-// could inject in a balise (E.g. <img src="file:///...">) or an external URL. 
+// could inject in a balise (E.g. <img src="file:///...">) or an external URL.
 pdfmake.setUrlAccessPolicy(() => false);
 pdfmake.setLocalAccessPolicy((path) => STANDARD_FONTS.includes(path));
 
