@@ -93,6 +93,9 @@ jobs:
           ENABLE_MAILCHIMP='${{ secrets.ENABLE_MAILCHIMP }}'
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN='${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}'
           EOF
+          # Vite's loadEnv expands $VAR when resolving $env/static/private,
+          # even inside single quotes. Escape so secrets keep literal $.
+          sed -i 's/\$/\\$/g' .env
           sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -o StrictHostKeyChecking=no \
             .env \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/.env
