@@ -1,15 +1,12 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '$enums';
-import {
-  API_HTML_TO_PDF,
-  APSIS_JOURNALIST_FORM_EVENT_VERSION_ID,
-  MAIL_FROM
-} from '$env/static/private';
+import { APSIS_JOURNALIST_FORM_EVENT_VERSION_ID, MAIL_FROM } from '$env/static/private';
 import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
+import { generatePdf } from '$lib/services/pdf.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
@@ -489,29 +486,9 @@ const sendFormByEmail = async ({
   const attachments: MailAttachment[] = [];
   const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale });
 
-  const pdfResponse = await fetch(API_HTML_TO_PDF, {
-    method: 'POST',
-    headers: {
-      'Cache-Control': 'no-cache',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      html,
-      filename: '[Formulaire] - Journaliste'
-    })
-  });
+  const pdf = await generatePdf({ html, filename: '[Formulaire] - Journaliste.pdf' });
 
-  if (pdfResponse.ok) {
-    // Convert stream to base64
-    const pdfBuffer = await pdfResponse.arrayBuffer();
-    const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
-
-    const pdf = {
-      name: '[Formulaire] - Journaliste.pdf',
-      type: 'application/pdf',
-      content: pdfBase64
-    };
-
+  if (pdf) {
     attachments.push(pdf);
   }
 

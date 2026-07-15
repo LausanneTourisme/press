@@ -1,8 +1,9 @@
 import { Forms, RouteTypes } from '$enums';
-import { API_HTML_TO_PDF, APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$env/static/private';
+import { APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$env/static/private';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
+import { generatePdf } from '$lib/services/pdf.server';
 import { supportedLocales, t, type Locale } from '$lib/translations';
 import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
@@ -156,34 +157,17 @@ const sendFormByEmail = async ({
   });
 
   const attachments: MailAttachment[] = [];
-  const pdfResponse = await fetch(API_HTML_TO_PDF, {
-    method: 'POST',
-    headers: {
-      'Cache-Control': 'no-cache',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      html: generateMailContent({
-        data: mediaCoverage,
-        userLocale: locale,
-        images,
-        useImageB64: true
-      }),
-      filename: '[Formulaire] - Retombées médiatiques.pdf'
-    })
+  const pdf = await generatePdf({
+    html: generateMailContent({
+      data: mediaCoverage,
+      userLocale: locale,
+      images,
+      useImageB64: true
+    }),
+    filename: '[Formulaire] - Retombées médiatiques.pdf'
   });
 
-  if (pdfResponse.ok) {
-    // Convert stream to base64
-    const pdfBuffer = await pdfResponse.arrayBuffer();
-    const pdfBase64 = Buffer.from(pdfBuffer).toString('base64');
-
-    const pdf = {
-      name: '[Formulaire] - Retombées médiatiques.pdf',
-      type: 'application/pdf',
-      content: pdfBase64
-    };
-
+  if (pdf) {
     attachments.push(pdf);
   }
 
