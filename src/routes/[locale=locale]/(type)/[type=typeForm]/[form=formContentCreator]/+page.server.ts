@@ -453,7 +453,8 @@ const sendFormByEmail = async ({
       data: mediaProfileContentCreator,
       userLocale: locale,
       images,
-      useImageB64: true
+      useImageB64: true,
+      forPdf: true
     }),
     filename: '[Formulaire] - Createur de contenu.pdf'
   });
@@ -556,16 +557,21 @@ const generateMailContent = ({
   data,
   userLocale,
   images,
-  useImageB64
+  useImageB64,
+  forPdf
 }: {
   data: Schema;
   userLocale: Locale;
   images: MailImage[];
   useImageB64?: boolean;
+  forPdf?: boolean;
 }) => {
   // convert undefine to false and keep bool with right value
   // eslint-disable-next-line no-extra-boolean-cast
   const isMailchimpEmail = !!!useImageB64; // default value false
+  // Email shows the country in the applicant's language; the PDF always in French
+  const countryLocale: Locale = forPdf ? 'fr' : userLocale;
+  if (forPdf) countries.registerLocale(fr);
 
   let html = `<!DOCTYPE html>
 <html lang="fr">
@@ -723,7 +729,7 @@ const generateMailContent = ({
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.city`)} :</span> <span>${data.travelDepartureCity ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country`)} :</span> <span>${data.travelDepartureCountry ?? ''}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.country`)} :</span> <span>${countries.getName(data.travelDepartureCountry, countryLocale) ?? ''}</span>
         </li>
         <li>
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span>${data.travelOutwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
@@ -758,7 +764,7 @@ const generateMailContent = ({
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.postal-code`)} :</span> <span style="word-break: break-all;">${data.addressPostalCode}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.addressCountry}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.address.country`)} :</span> <span style="word-break: break-all;">${countries.getName(data.addressCountry, countryLocale) ?? ''}</span>
         </li>
       </ul>
     </div>

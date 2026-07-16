@@ -486,7 +486,13 @@ const sendFormByEmail = async ({
   const attachments: MailAttachment[] = [];
   const html = generateMailContent({ data: mediaProfileJournalist, userLocale: locale });
 
-  const pdf = await generatePdf({ html, filename: '[Formulaire] - Journaliste.pdf' });
+  const pdfHtml = generateMailContent({
+    data: mediaProfileJournalist,
+    userLocale: locale,
+    forPdf: true
+  });
+
+  const pdf = await generatePdf({ html: pdfHtml, filename: '[Formulaire] - Journaliste.pdf' });
 
   if (pdf) {
     attachments.push(pdf);
@@ -517,7 +523,18 @@ const sendFormByEmail = async ({
   });
 };
 
-const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: Locale }) => {
+const generateMailContent = ({
+  data,
+  userLocale,
+  forPdf
+}: {
+  data: Schema;
+  userLocale: Locale;
+  forPdf?: boolean;
+}) => {
+  // Email shows the country in the applicant's language; the PDF always in French
+  const countryLocale: Locale = forPdf ? 'fr' : userLocale;
+  if (forPdf) countries.registerLocale(fr);
   let html = `<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -609,7 +626,7 @@ const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: L
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.city`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.city ?? ''}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${countries.getName(data.travelInformation.departurePoint.country, userLocale)}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.country`)} :</span> <span style="word-break: break-all;">${countries.getName(data.travelInformation.departurePoint.country, countryLocale) ?? ''}</span>
         </li>
         <li>
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.outward-journey.title`)} :</span> <span style="word-break: break-all;">${data.travelInformation?.departurePoint?.outwardJourney?.replaceAll('\n', ', ') ?? ''}</span>
@@ -644,7 +661,7 @@ const generateMailContent = ({ data, userLocale }: { data: Schema; userLocale: L
           <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.postal-code`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.postalcode}</span>
         </li>
         <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.city`)} :</span> <span style="word-break: break-all;">${data.personalInformation.address.country}</span>
+          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.address.country`)} :</span> <span style="word-break: break-all;">${countries.getName(data.personalInformation.address.country, countryLocale) ?? ''}</span>
         </li>
       </ul>
     </div>
