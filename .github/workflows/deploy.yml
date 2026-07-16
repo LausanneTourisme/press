@@ -94,10 +94,8 @@ jobs:
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN='${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}'
           EOF
           # Vite's loadEnv expands $VAR when resolving $env/static/private,
-          # even inside single quotes. Escape so secrets keep a literal $.
-          # Idempotent: collapses any leading backslashes to exactly one, so it
-          # is correct whether the secret is raw ($x) or already escaped (\$x).
-          sed -i 's/\\*\$/\\$/g' .env
+          # even inside single quotes. Escape so secrets keep literal $.
+          sed -i 's/\$/\\$/g' .env
           sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -o StrictHostKeyChecking=no \
             .env \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/.env
