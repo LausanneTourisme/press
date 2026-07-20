@@ -72,7 +72,7 @@
     },
     "confirmation-section": {
       "success": {
-        "title": "Request sent!",
+        "title": "Anfrage gesendet!",
         "message": "Wir werden uns so schnell wie möglich bei Ihnen melden."
       },
       "invalid": {
