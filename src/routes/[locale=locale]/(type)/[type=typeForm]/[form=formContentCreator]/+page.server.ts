@@ -361,6 +361,8 @@ const updateApsisProfileSuccessfully = async ({
       'usercreated.attributes.crm_-_field_-_account_manager-wg3agn5erk': 213,
       // CRM - Fields - Type
       'usercreated.attributes.crm_-_fields_-_type-kg83vtqoiv': 1, // Média
+      // CRM - Fields - Media Sub-Type
+      'usercreated.attributes.crm_-_field_-_media_sub-type-1htwf2zbbw': 3, // Influenceur
 
       //// ADRESSE
       // CRM - Fields - Country
