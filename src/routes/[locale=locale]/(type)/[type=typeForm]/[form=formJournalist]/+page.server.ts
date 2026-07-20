@@ -1,13 +1,13 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '$enums';
-import { APSIS_JOURNALIST_FORM_EVENT_VERSION_ID, MAIL_FROM } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { generatePdf } from '$lib/services/pdf.server';
-import { supportedLocales, t, type Locale } from '$lib/translations';
+import { loadTranslations, supportedLocales, t, type Locale } from '$lib/translations';
 import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
@@ -41,7 +41,9 @@ export const load = async ({ parent, setHeaders }) => {
 export const actions = {
   default: async ({ request, params, cookies, url }) => {
     const formdata = await request.formData();
+
     await verifyIfHuman(formdata);
+    await loadTranslations(params.locale as Locale, url.pathname);
 
     const form = await superValidate(formdata, lastStep);
 
@@ -429,7 +431,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
+    versionId: Number(env.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),
@@ -507,7 +509,7 @@ const sendFormByEmail = async ({
     },
     external_mail: mediaProfileJournalist.personalInformation?.email
       ? {
-          from_email: MAIL_FROM,
+          from_email: env.MAIL_FROM,
           from_name: t.get(`${RouteTypes.Forms}.email.from-name`),
           subject: t.get(`${RouteTypes.Forms}.email.subject`, {
             form: t.get(`${RouteTypes.Forms}.${Forms.Journalist}.title`)

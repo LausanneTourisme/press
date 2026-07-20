@@ -1,11 +1,11 @@
-import { MAIL_DEFAULT_RECIPIENTS, MAIL_FROM, MAIL_TO } from '$env/static/private';
-import { PUBLIC_MANDRILL_API_KEY } from '$env/static/public';
+import { env } from '$env/dynamic/private';
+import { env as envPub } from '$env/dynamic/public';
 import mailchimp, { type MessagesMessage } from '@mailchimp/mailchimp_transactional';
 import type { InternMail, ExternalMail } from '$types/mail.types';
 
-const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '')
+const recipients = (env.MAIL_DEFAULT_RECIPIENTS ?? '')
   .split(',')
-  .concat(MAIL_TO)
+  .concat(env.MAIL_TO)
   .filter((x) => x !== undefined && x !== '');
 
 /**
@@ -22,7 +22,7 @@ export const sendMail = async ({
   intern_mail: InternMail;
   external_mail?: ExternalMail;
 }) => {
-  const mailchimpTx = mailchimp(PUBLIC_MANDRILL_API_KEY);
+  const mailchimpTx = mailchimp(envPub.PUBLIC_MANDRILL_API_KEY);
 
   /**
    * Using the `send` API from Mandrill/Mailchimp, this is considered as an "outbound" email,
@@ -34,7 +34,7 @@ export const sendMail = async ({
    * mail provider.
    * */
   const mail: MessagesMessage = {
-    from_email: MAIL_FROM,
+    from_email: env.MAIL_FROM,
     subject: intern_mail.subject,
     html: intern_mail.html,
     to: recipients.map((recipient: string) => {
@@ -58,7 +58,7 @@ export const sendMail = async ({
     ? ((await mailchimpTx.messages.send({
         message: {
           ...external_mail,
-          from_email: MAIL_FROM
+          from_email: env.MAIL_FROM
         }
       })) as mailchimp.MessagesSendResponse[])
     : undefined;

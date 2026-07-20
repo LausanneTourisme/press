@@ -15,6 +15,12 @@ import {
 } from '$lib/helpers';
 import type { Post } from '$types';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+
+vi.mock('$env/dynamic/public', () => ({
+  env: {
+    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
+  }
+}));
 //assuming during this test 'defaultLocale' is in "fr"
 describe('Test helper: Index', () => {
   describe('Test blankable', () => {

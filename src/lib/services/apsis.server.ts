@@ -1,14 +1,6 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, type ConsentType } from '$enums';
-import {
-  APSIS_CLIENT_ID,
-  APSIS_CLIENT_SECRET,
-  APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR,
-  APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR,
-  APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR,
-  APSIS_KEYSPACE_DISCRIMINATOR,
-  APSIS_SECTION_DISCRIMINATOR
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import AuthenticationError from '$lib/exceptions/AuthenticationError';
 import MissingCredentialsError from '$lib/exceptions/MissingCredentialsError';
 
@@ -17,8 +9,8 @@ const baseUrl = 'https://api.apsis.one';
 let cachedToken: { token: string; expires: number } | undefined;
 
 const getApsisToken = async (): Promise<string> => {
-  const clientID = APSIS_CLIENT_ID;
-  const clientSecret = APSIS_CLIENT_SECRET;
+  const clientID = env.APSIS_CLIENT_ID;
+  const clientSecret = env.APSIS_CLIENT_SECRET;
 
   if (!clientID || !clientSecret) {
     throw new MissingCredentialsError(
@@ -71,7 +63,7 @@ const getAccessToken = async (clientID: string, clientSecret: string): Promise<s
  */
 export const createProfile = async (email: string): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/sections/${APSIS_SECTION_DISCRIMINATOR}/profiles`,
+    `${baseUrl}/audience/keyspaces/${env.APSIS_KEYSPACE_DISCRIMINATOR}/sections/${env.APSIS_SECTION_DISCRIMINATOR}/profiles`,
     {
       method: 'POST',
       headers: {
@@ -94,7 +86,7 @@ export const updateProfileAttributes = async ({
   attributes: Record<string, string | number | boolean | undefined>;
 }): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
+    `${baseUrl}/v2/audience/keyspaces/${env.APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${env.APSIS_SECTION_DISCRIMINATOR}/attributes`,
     {
       method: 'PATCH',
       headers: {
@@ -125,7 +117,7 @@ export const addProfileToMailConsents = async ({
   consentType: ConsentType;
 }): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/consents`,
+    `${baseUrl}/v2/audience/keyspaces/${env.APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${env.APSIS_SECTION_DISCRIMINATOR}/consents`,
     {
       method: 'POST',
       headers: {
@@ -136,11 +128,11 @@ export const addProfileToMailConsents = async ({
         topic_discriminator: (() => {
           switch (consentType) {
             case ConsentsTypes.MeidaPress:
-              return APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR;
+              return env.APSIS_CONSENTS_MEDIA_PRESS_DISCRIMINATOR;
             case ConsentsTypes.MediaContentCreator:
-              return APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR;
+              return env.APSIS_CONSENTS_CONTENT_MEDIA_CREATOR_DISCRIMINATOR;
             case ConsentsTypes.NewsletterPress:
-              return APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR;
+              return env.APSIS_CONSENTS_NEWSLETTER_PRESS_DISCRIMINATOR;
           }
         })(),
         channel_discriminator: 'com.apsis1.channels.email',
@@ -171,7 +163,7 @@ export const customEvent = async ({
   attributes: Record<string, string | number | boolean>;
 }): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/events`,
+    `${baseUrl}/audience/keyspaces/${env.APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${env.APSIS_SECTION_DISCRIMINATOR}/events`,
     {
       method: 'POST',
       headers: {
@@ -204,7 +196,7 @@ export const customEvent = async ({
 
 export const profileExists = async (email: string): Promise<boolean> => {
   const response = await fetch(
-    `${baseUrl}/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
+    `${baseUrl}/audience/keyspaces/${env.APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${env.APSIS_SECTION_DISCRIMINATOR}/attributes`,
     {
       method: 'GET',
       headers: {
