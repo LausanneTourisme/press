@@ -84,5 +84,5 @@
   {#each srcSetFinal.reverse() as srcSet (srcSet.size)}
     <source media="(width >= {srcSet.size}px)" srcset={srcSet.src} />
   {/each}
-  <img class={imgClass} src={srcFinal} {alt} {title} {onload} />
+  <img class={imgClass} src={srcFinal} alt={alt ?? '© Droits réservés'} title={title ?? ''} {onload} />
 </picture>
