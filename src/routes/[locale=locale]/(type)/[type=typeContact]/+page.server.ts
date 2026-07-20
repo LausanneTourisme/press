@@ -2,7 +2,7 @@ import { RouteTypes } from '$enums';
 import { env } from '$env/dynamic/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
-import { supportedLocales, t, translations } from '$lib/translations';
+import { loadTranslations, supportedLocales, t, translations } from '$lib/translations';
 import { fail } from '@sveltejs/kit';
 import type { Actions, EntryGenerator } from './$types';
 
@@ -18,9 +18,10 @@ export const load = ({ setHeaders }) => {
 };
 
 export const actions: Actions = {
-  default: async ({ request, params }) => {
+  default: async ({ request, params, url }) => {
     const data = await request.formData();
     await verifyIfHuman(data);
+    await loadTranslations(params.locale, url.pathname);
 
     const { title, name, email, job_title, message } = {
       title: data.get('title') as string | null,

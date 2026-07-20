@@ -4,7 +4,7 @@ import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { generatePdf } from '$lib/services/pdf.server';
-import { supportedLocales, t, type Locale } from '$lib/translations';
+import { loadTranslations, supportedLocales, t, type Locale } from '$lib/translations';
 import type { MailAttachment } from '$types/mail.types';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import { DateTime } from 'luxon';
@@ -33,6 +33,7 @@ export const actions = {
     const formdata = await request.formData();
 
     await verifyIfHuman(formdata);
+    await loadTranslations(params.locale as Locale, url.pathname);
 
     const form = await superValidate(formdata, zod4(schema));
 
