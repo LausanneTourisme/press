@@ -1,10 +1,10 @@
 import type { Pathname } from '$app/types';
 import { RouteTypes, type Form, type RouteType, type Theme } from '$enums';
-import { PUBLIC_ENABLE_OFFLINE_MODE } from '$env/static/public';
+import { env } from '$env/dynamic/public';
 import { defaultLocale, locale, translations, type Locale } from '$lib/translations';
 import type { PostType, Translatable } from '$lib/types';
 
-export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE === 'true';
+export const isOfflineMode = env.PUBLIC_ENABLE_OFFLINE_MODE === 'true';
 export const maxMobileWidth = 1280;
 export const blankable = (href: string | undefined): string | undefined =>
   href && href.includes('http') ? '_blank' : undefined;

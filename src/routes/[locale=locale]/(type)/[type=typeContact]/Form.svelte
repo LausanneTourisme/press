@@ -2,7 +2,7 @@
   import { dev } from '$app/environment';
   import { isOfflineMode } from '$lib/helpers';
   import { applyAction, enhance } from '$app/forms';
-  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
   import { t } from '$lib/translations';
   import Botpoison from '@botpoison/browser';
   import type { SubmitFunction } from '@sveltejs/kit';
@@ -93,7 +93,7 @@
 
   onMount(() => {
     botpoison = new Botpoison({
-      publicKey: PUBLIC_BOTPOISON_PUBLICKEY
+      publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY
     });
   });
 </script>

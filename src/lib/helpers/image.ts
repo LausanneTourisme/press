@@ -1,5 +1,5 @@
 import { dev } from '$app/environment';
-import { PUBLIC_CLOUDINARY_CNAME, PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$env/static/public';
+import { env } from '$env/dynamic/public';
 import type { ImageDimensions, Transform, TransformKeys } from '$types';
 import { isOfflineMode } from '.';
 
@@ -98,11 +98,11 @@ export const generateCloudinaryUrl = ({
   if (dev && isOfflineMode) {
     return '/pages/themes/cathedrale_skate.jpg';
   }
-  const baseUrl = `https://${PUBLIC_CLOUDINARY_CNAME}/image/upload/`;
+  const baseUrl = `https://${env.PUBLIC_CLOUDINARY_CNAME}/image/upload/`;
   if (!src) return `${baseUrl}${transformToString(transform)}/default`;
   let url = src;
   if (usePreset) {
-    url = `${PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${url.replace(/^\//, '')}`;
+    url = `${env.PUBLIC_CLOUDINARY_UPLOAD_PRESET}/${url.replace(/^\//, '')}`;
   }
 
   return `${baseUrl}${transformToString(clearDuplicatesInTransform(transform), { suffixText: '/' })}${url}`;

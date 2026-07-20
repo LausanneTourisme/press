@@ -1,5 +1,5 @@
 import { RouteTypes } from '$enums';
-import { MAIL_FROM } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { verifyIfHuman } from '$lib/helpers/index.server';
 import { sendEmail } from '$lib/services/mails.server';
 import { supportedLocales, t, translations } from '$lib/translations';
@@ -106,7 +106,7 @@ export const actions: Actions = {
         html
       },
       external_mail: {
-        from_email: MAIL_FROM,
+        from_email: env.MAIL_FROM,
         from_name: t.get(`${RouteTypes.Contact}.form.mail-section.response.from-name`),
         subject: t.get(`${RouteTypes.Contact}.form.mail-section.response.subject`),
         html: `<p>${t.get(`${RouteTypes.Contact}.form.mail-section.response.content`, { name })}</p><p><i>${t.get(`${RouteTypes.Contact}.form.mail-section.response.automatic-mail-disclaimer`)}</i></p>`,

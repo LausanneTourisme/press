@@ -1,7 +1,7 @@
 <script lang="ts">
   import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
-  import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
   import Button from '$lib/components/Button.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
@@ -189,7 +189,7 @@
         j.async = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', '${PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
+      })(window, document, 'script', 'dataLayer', '${env.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
   \u003C/script>
   `}
   <!-- End Google Tag Manager -->

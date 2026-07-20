@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { Forms, getValues, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
   import Container from '$lib/components/Container.svelte';
   import Heading from '$lib/components/Heading.svelte';
   import Loading from '$lib/components/Loading.svelte';
@@ -37,7 +37,7 @@
 
         // antibot
         if (!(dev && isOfflineMode)) {
-          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+          const botpoison = new Botpoison({ publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY });
           const { solution } = await botpoison.challenge();
           formData.append('_botpoison', solution);
         }

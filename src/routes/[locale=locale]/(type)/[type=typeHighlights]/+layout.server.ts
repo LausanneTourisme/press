@@ -1,5 +1,5 @@
 import { RouteTypes } from '$enums';
-import { GROUP_ID_PAGE_HIGHLIGHTS } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { getAgendaEvents, getGroup, getPosts } from '$lib/services/requests.server';
 import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
 import type { News, SeoHeader } from '$types';
@@ -11,7 +11,7 @@ export const load = async ({ url, params, parent, fetch }) => {
 
   const [eventsRes, groupRes, newsRes] = await Promise.all([
     getAgendaEvents({ fetchFn: fetch }),
-    getGroup<string>({ locale: lang, id: Number(GROUP_ID_PAGE_HIGHLIGHTS), fetchFn: fetch }),
+    getGroup<string>({ locale: lang, id: Number(env.GROUP_ID_PAGE_HIGHLIGHTS), fetchFn: fetch }),
     getPosts<News<string>>({ type: 'news', locale: lang, fetchFn: fetch }),
     loadTranslations(lang, url.pathname)
   ]);

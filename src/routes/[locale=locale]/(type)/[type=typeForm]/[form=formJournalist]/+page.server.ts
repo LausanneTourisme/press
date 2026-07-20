@@ -1,6 +1,6 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '$enums';
-import { APSIS_JOURNALIST_FORM_EVENT_VERSION_ID, MAIL_FROM } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
@@ -429,7 +429,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
+    versionId: Number(env.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),
@@ -507,7 +507,7 @@ const sendFormByEmail = async ({
     },
     external_mail: mediaProfileJournalist.personalInformation?.email
       ? {
-          from_email: MAIL_FROM,
+          from_email: env.MAIL_FROM,
           from_name: t.get(`${RouteTypes.Forms}.email.from-name`),
           subject: t.get(`${RouteTypes.Forms}.email.subject`, {
             form: t.get(`${RouteTypes.Forms}.${Forms.Journalist}.title`)

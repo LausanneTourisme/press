@@ -1,6 +1,6 @@
 import { dev } from '$app/environment';
 import { ConsentsTypes, Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-import { APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { isOfflineMode } from '$lib/helpers';
 import { selectCountryId, setConsents } from '$lib/helpers/apsis';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
@@ -392,7 +392,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID),
+    versionId: Number(env.APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),

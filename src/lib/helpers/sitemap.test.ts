@@ -2,6 +2,11 @@ import { supportedLocales } from '$lib/translations';
 import { describe, expect, it, test, vi } from 'vitest';
 import type { UrlEntry } from './sitemap';
 import { generateUrlSets, getInternalLinks } from './sitemap';
+vi.mock('$env/dynamic/public', () => ({
+  env: {
+    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
+  }
+}));
 vi.mock('$lib/services/requests.server', () => ({
   getPosts: vi.fn().mockResolvedValue({
     data: {

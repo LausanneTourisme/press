@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, type MediaType } from '$enums';
-  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
   import Container from '$lib/components/Container.svelte';
   import CountrySelect from '$lib/components/CountrySelect.svelte';
   import Heading from '$lib/components/Heading.svelte';
@@ -52,7 +52,7 @@
 
           // antibot
           if (!(dev && isOfflineMode)) {
-            const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+            const botpoison = new Botpoison({ publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY });
             const { solution } = await botpoison.challenge();
             formData.append('_botpoison', solution);
           }

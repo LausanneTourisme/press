@@ -1,5 +1,5 @@
 import { Themes, type Theme } from '$enums';
-import { GRAPHQL_AGENDA_TOKEN, GRAPHQL_TOKEN, GRAPHQL_URL } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import type { Locale } from '$lib/translations';
 import type { Event, Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '$types';
 import { DateTime } from 'luxon';
@@ -10,7 +10,7 @@ type FetchFn = typeof fetch;
 
 const baseHeaders = (typeRequests: 'agenda' | 'normal' = 'normal') => ({
   'Content-Type': 'application/json',
-  Authorization: `Bearer ${typeRequests === 'agenda' ? GRAPHQL_AGENDA_TOKEN : GRAPHQL_TOKEN}`
+  Authorization: `Bearer ${typeRequests === 'agenda' ? env.GRAPHQL_AGENDA_TOKEN : env.GRAPHQL_TOKEN}`
   // ...(dev && { 'cache-control': 'no-cache' })
 });
 
@@ -58,7 +58,7 @@ export const getPosts = async <T extends PostType<string | Translatable>>({
   operator?: 'some' | 'all' | 'not';
   fetchFn?: FetchFn;
 }) => {
-  const result = await fetchFn(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${env.GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -117,7 +117,7 @@ export const getGroup = async <T extends string | Translatable>({
   id: number;
   fetchFn?: FetchFn;
 }) => {
-  const result = await fetchFn(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${env.GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -157,7 +157,7 @@ export const getFavorites = async <T extends Translatable | string>({
   theme: Theme;
   fetchFn?: FetchFn;
 }) => {
-  const result = await fetchFn(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${env.GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({
@@ -212,7 +212,7 @@ export const getFavorites = async <T extends Translatable | string>({
 };
 
 export const getAgendaEvents = async ({ fetchFn = fetch }: { fetchFn?: FetchFn } = {}) => {
-  const result = await fetchFn(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${env.GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders('agenda'),
     body: JSON.stringify({
@@ -291,7 +291,7 @@ export const getAgendaEvents = async ({ fetchFn = fetch }: { fetchFn?: FetchFn }
 };
 
 export const getPost = async (slug: string, fetchFn: FetchFn = fetch) => {
-  const result = await fetchFn(`${GRAPHQL_URL}`, {
+  const result = await fetchFn(`${env.GRAPHQL_URL}`, {
     method: 'POST',
     headers: baseHeaders(),
     body: JSON.stringify({

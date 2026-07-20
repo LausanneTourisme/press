@@ -1,5 +1,5 @@
 import { Forms, RouteTypes } from '$enums';
-import { APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
 import * as apsis from '$lib/services/apsis.server';
 import { sendEmail } from '$lib/services/mails.server';
@@ -113,7 +113,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID),
+    versionId: Number(env.APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm')

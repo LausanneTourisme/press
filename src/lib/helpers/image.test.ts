@@ -10,10 +10,12 @@ import { describe, expect, it, vi } from 'vitest';
 let mockDev = false;
 let mockIsOfflineMode = false;
 
-vi.mock('$env/static/public', () => ({
-  PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
-  PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
-  PUBLIC_ENABLE_OFFLINE_MODE: 'false'
+vi.mock('$env/dynamic/public', () => ({
+  env: {
+    PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
+    PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
+    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
+  }
 }));
 
 // Mock the environment variables and modules dynamically

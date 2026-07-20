@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_MAPTILER_URL } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
   import Heading from '$lib/components/Heading.svelte';
   import Link from '$lib/components/Link.svelte';
   import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
@@ -310,7 +310,7 @@
   {:else}
     <MapLibre
       class="h-full w-full"
-      style={PUBLIC_MAPTILER_URL}
+      style={env.PUBLIC_MAPTILER_URL}
       zoom={initialState.zoom}
       center={initialState}
       pitchWithRotate={false}
