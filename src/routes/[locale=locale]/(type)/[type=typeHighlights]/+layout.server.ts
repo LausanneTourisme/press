@@ -1,8 +1,8 @@
-import { RouteTypes } from '$enums';
-import { env } from '$env/dynamic/private';
-import { getAgendaEvents, getGroup, getPosts } from '$lib/services/requests.server';
-import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
-import type { News, SeoHeader } from '$types';
+import { RouteTypes } from '#lib/enums';
+import { GROUP_ID_PAGE_HIGHLIGHTS } from '$app/env/private';
+import { getAgendaEvents, getGroup, getPosts } from '#lib/services/requests.server.js';
+import { loadTranslations, supportedLocales, type Locale } from '#lib/translations';
+import type { News, SeoHeader } from '#lib/types';
 
 export const load = async ({ url, params, parent, fetch }) => {
   const { i18n, translations } = await parent();
@@ -11,7 +11,11 @@ export const load = async ({ url, params, parent, fetch }) => {
 
   const [eventsRes, groupRes, newsRes] = await Promise.all([
     getAgendaEvents({ fetchFn: fetch }),
-    getGroup<string>({ locale: lang, id: Number(env.GROUP_ID_PAGE_HIGHLIGHTS), fetchFn: fetch }),
+    getGroup<string>({
+      locale: lang,
+      id: Number(GROUP_ID_PAGE_HIGHLIGHTS),
+      fetchFn: fetch
+    }),
     getPosts<News<string>>({ type: 'news', locale: lang, fetchFn: fetch }),
     loadTranslations(lang, url.pathname)
   ]);
@@ -41,6 +45,6 @@ export const load = async ({ url, params, parent, fetch }) => {
     type: RouteTypes.Highlights,
     events: eventsRes.data?.items?.data ?? [],
     group: groupRes.data?.item,
-    news: news
+    news
   };
 };

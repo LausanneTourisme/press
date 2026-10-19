@@ -1,19 +1,18 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
-  import { isOfflineMode } from '$lib/helpers';
-  import { applyAction, enhance } from '$app/forms';
-  import { env } from '$env/dynamic/public';
-  import { t } from '$lib/translations';
+  import { dev } from '$app/env';
+  import { isOfflineMode } from '#lib/helpers';
+  import { applyAction, enhance, type SubmitFunction } from '$app/forms';
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$app/env/public';
+  import { t } from '#lib/translations';
   import Botpoison from '@botpoison/browser';
-  import type { SubmitFunction } from '@sveltejs/kit';
   import { Send } from '@lucide/svelte';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
-  import Container from '$lib/components/Container.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import Button from '$lib/components/Button.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Loading from '#lib/components/Loading.svelte';
+  import Button from '#lib/components/Button.svelte';
 
-  import { RouteTypes } from '$enums';
+  import { RouteTypes } from '#lib/enums';
 
   type Success = Record<string, unknown> | undefined;
   type Failure = Record<string, unknown> | undefined;
@@ -92,9 +91,7 @@
   };
 
   onMount(() => {
-    botpoison = new Botpoison({
-      publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY
-    });
+    botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
   });
 </script>
 
@@ -131,14 +128,10 @@
         class={twMerge(
           !isLoading ? '' : 'hidden',
           'h-4 w-4 transition-transform group-hover:rotate-45'
-        )}
+        )}><Send class="h-4 w-4" /></span
       >
-        <Send class="h-4 w-4" />
-      </span>
-      <span class={twMerge(isLoading ? '' : 'hidden')}>
-        <Loading />
-      </span>
 
+      <span class={twMerge(isLoading ? '' : 'hidden')}><Loading /></span>
       {@html $t(`${RouteTypes.Contact}.form.mail-section.form.send`)}
     </Button>
   </div>

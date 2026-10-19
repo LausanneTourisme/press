@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { maxMobileWidth } from '$lib/helpers';
-  import { type Locale } from '$lib/translations';
-  import type { Media } from '$types';
+  import { maxMobileWidth } from '#lib/helpers';
+  import { type Locale } from '#lib/translations';
+  import type { Media } from '#lib/types';
   import { onMount } from 'svelte';
   import Figure from '../Figure.svelte';
 

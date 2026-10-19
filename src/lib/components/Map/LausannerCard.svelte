@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Image from '$lib/components/Media/Image.svelte';
-  import { isOfflineMode } from '$lib/helpers';
-  import { t } from '$lib/translations';
-  import type { Favorite, Lausanner, Poi } from '$types';
+  import Image from '#lib/components/Media/Image.svelte';
+  import { isOfflineMode } from '#lib/helpers';
+  import { t } from '#lib/translations';
+  import type { Favorite, Lausanner, Poi } from '#lib/types';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
 

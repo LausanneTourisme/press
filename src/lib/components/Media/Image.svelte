@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
-  import { isOfflineMode } from '$lib/helpers';
-  import { generateCloudinaryUrl } from '$lib/helpers/image';
-  import type { Transform } from '$types';
+  import { dev } from '$app/env';
+  import { isOfflineMode } from '#lib/helpers';
+  import { generateCloudinaryUrl } from '#lib/helpers/image.js';
+  import type { Transform } from '#lib/types';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {

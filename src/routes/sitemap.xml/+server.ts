@@ -1,6 +1,6 @@
-import { version } from '$app/environment';
+import { version } from '$app/env';
 import type { RequestHandler } from '@sveltejs/kit';
-import { generateUrlSets, getInternalLinks } from '$lib/helpers/sitemap';
+import { generateUrlSets, getInternalLinks } from '#lib/helpers/sitemap.js';
 
 export const GET: RequestHandler = async ({ url, fetch }) => {
   const entries = await getInternalLinks({ fetchFn: fetch });

@@ -4,27 +4,25 @@ import {
   selectBestHeight,
   selectBestWidth,
   transformToString
-} from '$lib/helpers/image';
+} from '#lib/helpers/image.js';
 import { describe, expect, it, vi } from 'vitest';
 
 let mockDev = false;
 let mockIsOfflineMode = false;
 
-vi.mock('$env/dynamic/public', () => ({
-  env: {
-    PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
-    PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
-    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
-  }
+vi.mock('$app/env/public', () => ({
+  PUBLIC_CLOUDINARY_CNAME: 'test-cloudinary.com',
+  PUBLIC_CLOUDINARY_UPLOAD_PRESET: 'test_preset',
+  PUBLIC_ENABLE_OFFLINE_MODE: false
 }));
 
 // Mock the environment variables and modules dynamically
-vi.mock('$app/environment', () => ({
+vi.mock('$app/env', () => ({
   get dev() {
     return mockDev;
   }
 }));
-vi.mock('$lib/helpers', () => ({
+vi.mock('#lib/helpers', () => ({
   get isOfflineMode() {
     return mockIsOfflineMode;
   }

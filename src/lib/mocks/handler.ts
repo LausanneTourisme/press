@@ -2,7 +2,7 @@ import { graphql, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 
 import eventsMock from './responses/events/all.json';
-import type { Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '$types';
+import type { Favorite, GraphQLResponse, Group, Post, PostType, Translatable } from '#lib/types';
 
 // lazy — files are only loaded when the handler is called
 const favoritesMocks = import.meta.glob<{ default: GraphQLResponse<Favorite<string>> }>(

@@ -1,5 +1,5 @@
-import { dev } from '$app/environment';
-import { Forms, RouteTypes, Themes } from '$enums';
+import { dev } from '$app/env';
+import { Forms, RouteTypes, Themes } from '#lib/enums';
 import i18n, { type Config } from 'sveltekit-i18n';
 import langDe from './de/lang.json';
 import routeTypeDe from './de/route.json';

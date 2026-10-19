@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Container from '$lib/components/Container.svelte';
-  import { maxMobileWidth } from '$lib/helpers';
-  import { generateCloudinaryUrl, selectBestWidth } from '$lib/helpers/image';
+  import Container from '#lib/components/Container.svelte';
+  import { maxMobileWidth } from '#lib/helpers';
+  import { generateCloudinaryUrl, selectBestWidth } from '#lib/helpers/image.js';
   import { onMount, type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 

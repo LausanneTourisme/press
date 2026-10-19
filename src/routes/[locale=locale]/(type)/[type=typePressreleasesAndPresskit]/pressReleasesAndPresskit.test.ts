@@ -1,5 +1,5 @@
-import { sortByYears } from '$lib/helpers/date';
-import type { GraphQLResponse, Release, Translatable } from '$types';
+import { sortByYears } from '#lib/helpers/date.js';
+import type { GraphQLResponse, Release, Translatable } from '#lib/types';
 import { describe, expect, it } from 'vitest';
 
 describe('Press releases and press kits page - FR', () => {

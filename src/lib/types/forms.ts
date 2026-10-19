@@ -1,4 +1,4 @@
-import type { MediaType, SocialNetwork, Title, TravelReduction } from '$enums';
+import type { MediaType, SocialNetwork, Title, TravelReduction } from '#lib/enums';
 
 export type MediaProfileJournalist = {
   mediaName?: string;

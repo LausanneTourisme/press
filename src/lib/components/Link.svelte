@@ -1,13 +1,13 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import { blankable, isInternalHref } from '$lib/helpers';
+  import { blankable, isInternalHref } from '#lib/helpers';
   import { ChevronRight } from '@lucide/svelte';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
   interface LinkProps {
     href: string;
-    preload?: true | '' | 'hover' | 'tap' | 'off';
+    preload?: true | '' | 'hover' | 'tap' | 'false';
     noscroll?: boolean;
     withIcon?: boolean;
     class?: string;
@@ -49,7 +49,7 @@
     rel="internal"
     {target}
     class={style}
-    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-reset={!noscroll}
     data-sveltekit-preload-data={preload}
     {onclick}
   >
@@ -68,7 +68,7 @@
     rel="external"
     {target}
     class={style}
-    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-reset={!noscroll}
     data-sveltekit-preload-data={preload}
     {onclick}
   >
@@ -87,7 +87,7 @@
   <a
     {href}
     class={style}
-    data-sveltekit-noscroll={noscroll}
+    data-sveltekit-reset={!noscroll}
     data-sveltekit-preload-data={preload}
     {onclick}
   >

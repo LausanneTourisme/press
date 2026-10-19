@@ -1,4 +1,4 @@
-import type { Favorite, Lausanner, Poi, Translatable } from '$types';
+import type { Favorite, Lausanner, Poi, Translatable } from '#lib/types';
 
 export type Latitude = number;
 export type Longitude = number;

@@ -1,4 +1,4 @@
-import { Forms, RouteTypes, Themes } from '$enums';
+import { Forms, RouteTypes, Themes } from '#lib/enums';
 import {
   blankable,
   chunkify,
@@ -12,14 +12,12 @@ import {
   route,
   shuffle,
   ucfirst
-} from '$lib/helpers';
-import type { Post } from '$types';
+} from '#lib/helpers';
+import type { Post } from '#lib/types';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-vi.mock('$env/dynamic/public', () => ({
-  env: {
-    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
-  }
+vi.mock('$app/env/public', () => ({
+  PUBLIC_ENABLE_OFFLINE_MODE: false
 }));
 //assuming during this test 'defaultLocale' is in "fr"
 describe('Test helper: Index', () => {

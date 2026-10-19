@@ -1,6 +1,6 @@
-import { Forms, RouteTypes } from '$enums';
-import { loadTranslations, supportedLocales, type Locale } from '$lib/translations';
-import type { SeoHeader } from '$types';
+import { Forms, RouteTypes } from '#lib/enums';
+import { loadTranslations, supportedLocales, type Locale } from '#lib/translations';
+import type { SeoHeader } from '#lib/types';
 
 export const load = async ({ url, params, parent }) => {
   const { i18n, translations } = await parent();

@@ -1,15 +1,16 @@
-import { dev } from '$app/environment';
-import { RouteTypes } from '$enums';
-import { isOfflineMode } from '$lib/helpers';
-import { generateCloudinaryUrl } from '$lib/helpers/image.js';
-import { getPost } from '$lib/services/requests.server';
-import { supportedLocales, type Locale } from '$lib/translations/index.js';
-import type { SeoHeader } from '$types';
+import { dev } from '$app/env';
+import { RouteTypes } from '#lib/enums';
+import { isOfflineMode } from '#lib/helpers';
+import { generateCloudinaryUrl } from '#lib/helpers/image.js';
+import { getPost } from '#lib/services/requests.server.js';
+import { supportedLocales, type Locale } from '#lib/translations';
+import type { SeoHeader } from '#lib/types';
 import { error } from '@sveltejs/kit';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
 export const load = async ({ params, parent, url, fetch, setHeaders }) => {
   if (dev && isOfflineMode) {
-    const { startServer } = await import('$lib/mocks/handler');
+    const { startServer } = await import('#lib/mocks/handler.js');
     startServer();
   }
   const [{ i18n, translations }, releaseRes] = await Promise.all([
@@ -20,7 +21,7 @@ export const load = async ({ params, parent, url, fetch, setHeaders }) => {
   const release = releaseRes.data?.item;
   if (!release || !release.languages?.includes(params.locale)) throw error(404);
 
-  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(28800));
 
   const lang = params.locale as Locale;
   const type =
@@ -45,12 +46,5 @@ export const load = async ({ params, parent, url, fetch, setHeaders }) => {
       }))
   };
 
-  return {
-    i18n,
-    translations,
-    seo,
-    locale: lang,
-    release,
-    type
-  };
+  return { i18n, translations, seo, locale: lang, release, type };
 };

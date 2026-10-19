@@ -1,4 +1,4 @@
-import type { Locale } from '$lib/translations';
+import type { Locale } from '#lib/translations';
 import type { Component } from 'svelte';
 
 export type * from './images';

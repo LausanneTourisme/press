@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Image from '$lib/components/Media/Image.svelte';
-  import Video from '$lib/components/Media/Video.svelte';
-  import Observer from '$lib/components/Observer.svelte';
-  import { filename } from '$lib/helpers';
+  import Image from '#lib/components/Media/Image.svelte';
+  import Video from '#lib/components/Media/Video.svelte';
+  import Observer from '#lib/components/Observer.svelte';
+  import { filename } from '#lib/helpers';
   import { Play } from '@lucide/svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';

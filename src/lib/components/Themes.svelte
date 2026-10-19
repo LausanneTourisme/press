@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Themes } from '$enums';
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { chunkify } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
+  import { Themes } from '#lib/enums';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { chunkify } from '#lib/helpers';
+  import { t, type Locale } from '#lib/translations';
   import { twMerge } from 'tailwind-merge';
   import Button from './Button.svelte';
   import ThemeCard from './ThemeCard.svelte';
