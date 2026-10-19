@@ -1,9 +1,10 @@
-import { RouteTypes } from '$enums';
-import { supportedLocales, translations } from '$lib/translations';
+import { RouteTypes } from '#lib/enums';
+import { edgeCache } from '#lib/helpers/cache.server.js';
+import { supportedLocales, translations } from '#lib/translations';
 import type { EntryGenerator } from './$types';
 
 export const load = ({ setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(28800));
 };
 
 export const entries: EntryGenerator = () => {

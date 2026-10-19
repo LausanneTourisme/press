@@ -1,14 +1,14 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, RouteTypes } from '$enums';
-  import Anchor from '$lib/components/Anchor.svelte';
-  import Container from '$lib/components/Container.svelte';
-  import Faq from '$lib/components/Faq.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { route } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
+  import { Forms, RouteTypes } from '#lib/enums';
+  import Anchor from '#lib/components/Anchor.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Faq from '#lib/components/Faq.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Image from '#lib/components/Media/Image.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { route } from '#lib/helpers';
+  import { t, type Locale } from '#lib/translations';
   import { ArrowLeft, Camera, Mail, Newspaper, Phone } from '@lucide/svelte';
   import { fade, fly } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -188,7 +188,7 @@
         {@html $t('contact.form.mail-section.title')}
       </Heading>
       <Form
-        action="/{locale}/contact"
+        action={route(RouteTypes.Contact, { forceLocale: locale })}
         {onSuccess}
         {onFailure}
         validation={validateFields}

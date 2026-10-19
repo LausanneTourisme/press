@@ -1,14 +1,14 @@
 <script lang="ts">
   import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
-  import { env } from '$env/dynamic/public';
-  import Button from '$lib/components/Button.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Link from '$lib/components/Link.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
-  import Nav from '$lib/components/Nav/Nav.svelte';
-  import SocialNetworks from '$lib/components/SocialNetworks.svelte';
-  import { defaultLocale, t, type Locale } from '$lib/translations';
+  import { PUBLIC_GOOGLE_TAG_MANAGER_TOKEN } from '$app/env/public';
+  import Button from '#lib/components/Button.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Link from '#lib/components/Link.svelte';
+  import Image from '#lib/components/Media/Image.svelte';
+  import Nav from '#lib/components/Nav/Nav.svelte';
+  import SocialNetworks from '#lib/components/SocialNetworks.svelte';
+  import { defaultLocale, t, type Locale } from '#lib/translations';
   import { Send } from '@lucide/svelte';
   import { type Snippet } from 'svelte';
   import { getFlash } from 'sveltekit-flash-message';
@@ -38,20 +38,19 @@
       image: pageData.seo.image
     };
   });
-  const flash = $derived.by(() =>
-    getFlash(page, {
-      clearAfterMs: 7000,
-      clearOnNavigate: true
-    })
-  );
 
-  beforeNavigate(({ type }) => {
+  const flash = $derived.by(() => getFlash(page, { clearAfterMs: 7000, clearOnNavigate: true }));
+
+  beforeNavigate(({ type, shallow }) => {
+    if (shallow) return;
     if (type === 'leave') return; // full-page unload, not an SPA transition
     clearTimeout(hideBarTimer);
     isNavigating = true;
   });
 
   afterNavigate((navigate) => {
+    if (navigate.shallow) return;
+
     hideBarTimer = setTimeout(() => {
       requestAnimationFrame(() => {
         isNavigating = false;
@@ -189,7 +188,7 @@
         j.async = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', '${env.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
+      })(window, document, 'script', 'dataLayer', '${PUBLIC_GOOGLE_TAG_MANAGER_TOKEN}');
   \u003C/script>
   `}
   <!-- End Google Tag Manager -->

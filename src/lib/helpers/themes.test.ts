@@ -1,5 +1,5 @@
-import { Themes } from '$enums';
-import { getThemeByTagName } from '$lib/helpers/themes';
+import { Themes } from '#lib/enums';
+import { getThemeByTagName } from '#lib/helpers/themes.js';
 import { describe, expect, it } from 'vitest';
 
 describe('Test helper: Themes', () => {

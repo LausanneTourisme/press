@@ -6,8 +6,8 @@ import {
   supportedLocales,
   translations,
   type Locale
-} from '$lib/translations';
-import type { SeoHeader } from '$types';
+} from '#lib/translations';
+import type { SeoHeader } from '#lib/types';
 import { loadFlash } from 'sveltekit-flash-message/server';
 
 const getUrlLocale = (pathname: string): undefined | Locale => {

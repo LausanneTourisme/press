@@ -1,4 +1,11 @@
-import type { Event, Period, PostType, ScheduleDate, SelectedDates, Translatable } from '$types';
+import type {
+  Event,
+  Period,
+  PostType,
+  ScheduleDate,
+  SelectedDates,
+  Translatable
+} from '#lib/types';
 import { DateTime } from 'luxon';
 
 /**

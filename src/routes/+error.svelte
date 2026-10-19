@@ -1,13 +1,13 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { locale, t } from '$lib/translations';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import Button from '$lib/components/Button.svelte';
-  import Container from '$lib/components/Container.svelte';
-  import Figure from '$lib/components/Figure.svelte';
-  import { getRandomTheme, ThemeDetails } from '$lib/helpers/themes';
-  import { ThemeKeys } from '$enums';
+  import { locale, t } from '#lib/translations';
+  import Heading from '#lib/components/Heading.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import Button from '#lib/components/Button.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Figure from '#lib/components/Figure.svelte';
+  import { getRandomTheme, ThemeDetails } from '#lib/helpers/themes.js';
+  import { ThemeKeys } from '#lib/enums';
 
   const currentLocale = $derived(page.params.locale ?? $locale);
 

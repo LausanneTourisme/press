@@ -1,4 +1,4 @@
-import type { MailAttachment } from '$types/mail.types';
+import type { MailAttachment } from '#lib/types/mail.types.js';
 import htmlToPdfmake from 'html-to-pdfmake';
 import { JSDOM } from 'jsdom';
 import pdfmake from 'pdfmake';

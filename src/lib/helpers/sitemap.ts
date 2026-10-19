@@ -1,8 +1,8 @@
-import { Forms, getValues, RouteTypes, Themes } from '$enums';
-import { menuItems } from '$lib/config/menu';
-import { getPosts } from '$lib/services/requests.server';
-import { defaultLocale, supportedLocales, type Locale } from '$lib/translations';
-import type { Release, Translatable } from '$types';
+import { Forms, getValues, RouteTypes, Themes } from '#lib/enums';
+import { menuItems } from '#lib/config/menu.js';
+import { getPosts } from '#lib/services/requests.server.js';
+import { defaultLocale, supportedLocales, type Locale } from '#lib/translations';
+import type { Release, Translatable } from '#lib/types';
 import { route } from '.';
 
 export type UrlEntry = {

@@ -1,17 +1,17 @@
 <script lang="ts">
-  import InstagramBlock from '$lib/components/Blocks/Embed/Instagram.svelte';
-  import YoutubeBlock from '$lib/components/Blocks/Embed/Youtube.svelte';
-  import GalleryBlock from '$lib/components/Blocks/Gallery.svelte';
-  import HeadingBlock from '$lib/components/Blocks/Heading.svelte';
-  import HeroBlock from '$lib/components/Blocks/Hero.svelte';
-  import ImageBlock from '$lib/components/Blocks/Image.svelte';
-  import ParagraphBlock from '$lib/components/Blocks/Paragraph.svelte';
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { type Locale } from '$lib/translations';
-  import type { PostType, Translatable } from '$types';
-  import type { Hero } from '$types/releaseContents';
+  import InstagramBlock from '#lib/components/Blocks/Embed/Instagram.svelte';
+  import YoutubeBlock from '#lib/components/Blocks/Embed/Youtube.svelte';
+  import GalleryBlock from '#lib/components/Blocks/Gallery.svelte';
+  import HeadingBlock from '#lib/components/Blocks/Heading.svelte';
+  import HeroBlock from '#lib/components/Blocks/Hero.svelte';
+  import ImageBlock from '#lib/components/Blocks/Image.svelte';
+  import ParagraphBlock from '#lib/components/Blocks/Paragraph.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { type Locale } from '#lib/translations';
+  import type { PostType, Translatable } from '#lib/types';
+  import type { Hero } from '#lib/types/releaseContents.js';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {

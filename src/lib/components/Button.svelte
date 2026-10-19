@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { blankable } from '$lib/helpers';
+  import { blankable } from '#lib/helpers';
   import type { Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 
   type ButtonProps = {
     tag?: 'a' | 'button';
-    preload?: true | '' | 'hover' | 'tap' | 'off';
+    preload?: true | '' | 'hover' | 'tap' | 'false';
     type?: string;
     negative?: boolean;
     inline?: boolean;

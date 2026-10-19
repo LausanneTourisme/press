@@ -1,19 +1,21 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, getValues, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-  import { env } from '$env/dynamic/public';
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import { t } from '$lib/translations';
+
+  import { Forms, getValues, RouteTypes, SocialNetworks, type SocialNetwork } from '#lib/enums';
+
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$app/env/public';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Loading from '#lib/components/Loading.svelte';
+  import { t } from '#lib/translations';
   import Botpoison from '@botpoison/browser';
   import { Trash2 } from '@lucide/svelte';
   import { superForm } from 'sveltekit-superforms';
   import { zod4 } from 'sveltekit-superforms/adapters';
   import type { PageData } from './$types';
   import { schema } from './schema';
-  import { humanFileSize, isOfflineMode } from '$lib/helpers';
-  import { dev } from '$app/environment';
+  import { humanFileSize, isOfflineMode } from '#lib/helpers';
+  import { dev } from '$app/env';
 
   let isSubmitting = $state(false);
   const socialNetworksRequirements = getValues(SocialNetworks).filter(
@@ -37,7 +39,7 @@
 
         // antibot
         if (!(dev && isOfflineMode)) {
-          const botpoison = new Botpoison({ publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY });
+          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
           const { solution } = await botpoison.challenge();
           formData.append('_botpoison', solution);
         }

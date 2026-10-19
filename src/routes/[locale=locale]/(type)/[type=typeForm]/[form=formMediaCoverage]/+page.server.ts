@@ -1,11 +1,11 @@
-import { Forms, RouteTypes } from '$enums';
-import { env } from '$env/dynamic/private';
-import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
-import * as apsis from '$lib/services/apsis.server';
-import { sendEmail } from '$lib/services/mails.server';
-import { generatePdf } from '$lib/services/pdf.server';
-import { loadTranslations, supportedLocales, t, type Locale } from '$lib/translations';
-import type { MailAttachment } from '$types/mail.types';
+import { Forms, RouteTypes } from '#lib/enums';
+import { APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID } from '$app/env/private';
+import { isCRMEnabled, verifyIfHuman } from '#lib/helpers/index.server.js';
+import * as apsis from '#lib/services/apsis.server.js';
+import { sendEmail } from '#lib/services/mails.server.js';
+import { generatePdf } from '#lib/services/pdf.server.js';
+import { loadTranslations, supportedLocales, t, type Locale } from '#lib/translations';
+import type { MailAttachment } from '#lib/types/mail.types.js';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
@@ -13,6 +13,7 @@ import { superValidate, type SuperValidated } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { EntryGenerator } from './$types';
 import { schema, type Schema } from './schema';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
 type MailImage = {
   filterName: string;
@@ -22,7 +23,7 @@ type MailImage = {
 };
 
 export const load = async ({ setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(86400));
   return {
     form: await superValidate(zod4(schema))
   };
@@ -41,12 +42,10 @@ export const actions = {
       console.log('fail!');
       return fail(400, { form });
     }
+
     if (isCRMEnabled && (await apsis.profileExists(form.data.personalEmail))) {
       if (
-        !(await sendApsisCustomEvent({
-          email: form.data.personalEmail,
-          url_source: url.origin
-        }))
+        !(await sendApsisCustomEvent({ email: form.data.personalEmail, url_source: url.origin }))
       ) {
         return failError({ form, cookies, message: `Form can't send Apsis custom event` });
       }
@@ -114,7 +113,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(env.APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID),
+    versionId: Number(APSIS_MEDIA_COVERAGE_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm')

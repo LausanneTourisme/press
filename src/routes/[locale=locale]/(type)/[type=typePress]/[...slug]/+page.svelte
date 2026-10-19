@@ -1,9 +1,9 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import Container from '$lib/components/Container.svelte';
-  import PostContent from '$lib/components/PostContent.svelte';
-  import { ucfirst } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
+  import Container from '#lib/components/Container.svelte';
+  import PostContent from '#lib/components/PostContent.svelte';
+  import { ucfirst } from '#lib/helpers';
+  import { t, type Locale } from '#lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import type { PageData } from './$types';

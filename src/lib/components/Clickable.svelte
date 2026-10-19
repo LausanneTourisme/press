@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import { blankable, isInternalHref } from '$lib/helpers';
+  import { blankable, isInternalHref } from '#lib/helpers';
   import type { Snippet } from 'svelte';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
@@ -8,7 +8,7 @@
   interface Props {
     href: string;
     title?: string;
-    preload?: true | '' | 'hover' | 'tap' | 'off';
+    preload?: true | '' | 'hover' | 'tap' | 'false';
     overflow?: boolean;
     class?: string;
     children: Snippet;

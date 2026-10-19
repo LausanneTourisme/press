@@ -15,7 +15,7 @@ import {
   TitlesKeys,
   TravelReductions,
   TravelReductionsKeys
-} from '$enums';
+} from '#lib/enums';
 import { describe, expect, it } from 'vitest';
 
 describe('get keys from enums', () => {

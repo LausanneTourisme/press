@@ -1,10 +1,11 @@
-import { RouteTypes } from '$enums';
-import { supportedLocales, translations } from '$lib/translations';
+import { RouteTypes } from '#lib/enums';
+import { supportedLocales, translations } from '#lib/translations';
 import { error } from '@sveltejs/kit';
 import type { EntryGenerator } from './$types';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
 export const load = ({ setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, max-age=31536000, immutable' });
+  setHeaders(edgeCache(31536000));
   throw error(404);
 };
 

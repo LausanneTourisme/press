@@ -1,26 +1,35 @@
-import { env } from '$env/dynamic/private';
+import {
+  MAIL_HOST,
+  MAIL_PORT,
+  MAIL_USERNAME,
+  MAIL_PASSWORD,
+  MAIL_DEFAULT_RECIPIENTS,
+  MAIL_TO,
+  MAIL_FROM
+} from '$app/env/private';
+
 import nodemailer from 'nodemailer';
 import type Mail from 'nodemailer/lib/mailer';
 import type SMTPTransport from 'nodemailer/lib/smtp-transport';
-import type { InternMail, ExternalMail, MailAttachment } from '$types/mail.types';
+import type { InternMail, ExternalMail, MailAttachment } from '#lib/types/mail.types.js';
 
 let transporter: Mail<SMTPTransport.SentMessageInfo> | undefined;
 
 const getTransporter = (): Mail<SMTPTransport.SentMessageInfo> => {
   if (!transporter) {
     transporter = nodemailer.createTransport({
-      host: env.MAIL_HOST,
-      port: Number(env.MAIL_PORT),
-      secure: Number(env.MAIL_PORT) === 465,
-      auth: { user: env.MAIL_USERNAME, pass: env.MAIL_PASSWORD }
+      host: MAIL_HOST,
+      port: Number(MAIL_PORT),
+      secure: Number(MAIL_PORT) === 465,
+      auth: { user: MAIL_USERNAME, pass: MAIL_PASSWORD }
     });
   }
   return transporter;
 };
 
-const recipients = (env.MAIL_DEFAULT_RECIPIENTS ?? '')
+const recipients = (MAIL_DEFAULT_RECIPIENTS ?? '')
   .split(',')
-  .concat(env.MAIL_TO)
+  .concat(MAIL_TO)
   .filter((x) => x !== undefined && x !== '');
 
 const toAttachment = (a: MailAttachment): Mail.Attachment => ({
@@ -39,7 +48,7 @@ export const sendMail = async ({
   const t = getTransporter();
 
   const internal_reponse = await t.sendMail({
-    from: `"${intern_mail.from_name}" <${env.MAIL_FROM}>`,
+    from: `"${intern_mail.from_name}" <${MAIL_FROM}>`,
     to: recipients,
     subject: intern_mail.subject,
     html: intern_mail.html,
@@ -51,7 +60,7 @@ export const sendMail = async ({
 
   const external_response = external_mail
     ? await t.sendMail({
-        from: `"${external_mail.from_name ?? ''}" <${env.MAIL_FROM}>`,
+        from: `"${external_mail.from_name ?? ''}" <${MAIL_FROM}>`,
         to: external_mail.to.map((r) => r.email),
         subject: external_mail.subject,
         html: external_mail.html

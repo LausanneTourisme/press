@@ -1,10 +1,10 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import { page } from '$app/state';
-  import { RouteTypes } from '$enums';
-  import { route } from '$lib/helpers';
-  import { menuItems } from '$lib/config/menu';
-  import { t, type Locale } from '$lib/translations';
+  import { RouteTypes } from '#lib/enums';
+  import { route } from '#lib/helpers';
+  import { menuItems } from '#lib/config/menu.js';
+  import { t, type Locale } from '#lib/translations';
   import { ChevronDown } from '@lucide/svelte';
   import { twMerge } from 'tailwind-merge';
   import Button from '../Button.svelte';
@@ -90,7 +90,7 @@
       href={route(RouteTypes.Contact, { forceLocale: locale })}
       class="invertable block px-3 dark:text-white"
       tag="a"
-      preload="off"
+      preload="false"
     >
       {@html $t('common.contact-us')}
     </Button>

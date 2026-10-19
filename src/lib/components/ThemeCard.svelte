@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { RouteTypes, ThemeKeys, type Theme } from '$enums';
-  import Figure from '$lib/components/Figure.svelte';
-  import { filename, route } from '$lib/helpers';
-  import { ThemeDetails } from '$lib/helpers/themes';
-  import { t, type Locale } from '$lib/translations';
+  import { RouteTypes, ThemeKeys, type Theme } from '#lib/enums';
+  import Figure from '#lib/components/Figure.svelte';
+  import { filename, route } from '#lib/helpers';
+  import { ThemeDetails } from '#lib/helpers/themes.js';
+  import { t, type Locale } from '#lib/translations';
   import { blur } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   import Clickable from './Clickable.svelte';

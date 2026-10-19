@@ -1,5 +1,5 @@
-import { Forms, getValues, RouteTypes, SocialNetworks, Titles, TravelReductions } from '$enums';
-import { zodRequiredString } from '$lib/helpers/zod';
+import { Forms, getValues, RouteTypes, SocialNetworks, Titles, TravelReductions } from '#lib/enums';
+import { zodRequiredString } from '#lib/helpers/zod.js';
 import { z } from 'zod/v4';
 
 const socialNetworkEnum = z.enum(getValues(SocialNetworks));

@@ -1,4 +1,4 @@
-import type { Geolocation } from '$types';
+import type { Geolocation } from '#lib/types';
 import type { ContentBlock } from './releaseContents';
 
 export type Translatable = {

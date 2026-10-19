@@ -1,5 +1,5 @@
-import { version } from '$app/environment';
-import { getInternalLinks, generateUrlSets } from '$lib/helpers/sitemap';
+import { version } from '$app/env';
+import { getInternalLinks, generateUrlSets } from '#lib/helpers/sitemap.js';
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async ({ url, fetch, params }) => {

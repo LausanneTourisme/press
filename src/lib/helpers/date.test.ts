@@ -6,8 +6,8 @@ import {
   sortByYears,
   sortDates,
   sortPeriods
-} from '$lib/helpers/date';
-import type { Event, Post, RawDate, ShortDay, Translatable } from '$types';
+} from '#lib/helpers/date.js';
+import type { Event, Post, RawDate, ShortDay, Translatable } from '#lib/types';
 import { DateTime } from 'luxon';
 import { beforeEach, describe, expect, it } from 'vitest';
 

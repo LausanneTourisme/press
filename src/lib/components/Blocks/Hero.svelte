@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { maxMobileWidth } from '$lib/helpers';
-  import type { Hero } from '$types/releaseContents';
+  import { maxMobileWidth } from '#lib/helpers';
+  import type { Hero } from '#lib/types/releaseContents.js';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Image from './Image.svelte';
-  import { type Locale } from '$lib/translations';
+  import { type Locale } from '#lib/translations';
   import Container from '../Container.svelte';
   import Heading from '../Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
-  import type { Transform } from '$types';
+  import type { Transform } from '#lib/types';
 
   type Props = {
     class?: string;

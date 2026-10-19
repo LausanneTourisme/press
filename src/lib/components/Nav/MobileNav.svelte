@@ -1,9 +1,9 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { RouteTypes } from '$enums';
-  import { maxMobileWidth, route } from '$lib/helpers';
-  import { menuItems } from '$lib/config/menu';
-  import { t, type Locale } from '$lib/translations';
+  import { RouteTypes } from '#lib/enums';
+  import { maxMobileWidth, route } from '#lib/helpers';
+  import { menuItems } from '#lib/config/menu.js';
+  import { t, type Locale } from '#lib/translations';
   import { ChevronDown, Menu, X } from '@lucide/svelte';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';

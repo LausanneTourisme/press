@@ -1,18 +1,19 @@
-import { dev } from '$app/environment';
-import { RouteTypes } from '$enums';
-import { isOfflineMode } from '$lib/helpers';
-import { sortByYears } from '$lib/helpers/date';
-import { getPosts } from '$lib/services/requests.server';
-import { supportedLocales, translations } from '$lib/translations';
-import type { Release } from '$types';
+import { dev } from '$app/env';
+import { RouteTypes } from '#lib/enums';
+import { isOfflineMode } from '#lib/helpers';
+import { sortByYears } from '#lib/helpers/date.js';
+import { getPosts } from '#lib/services/requests.server.js';
+import { supportedLocales, translations } from '#lib/translations';
+import type { Release } from '#lib/types';
 import type { EntryGenerator } from './$types';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
-export const prerender = true;
+export const prerender = false;
 
 export const load = async ({ parent, fetch, setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=28800, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(28800));
   if (dev && isOfflineMode) {
-    const { startServer } = await import('$lib/mocks/handler');
+    const { startServer } = await import('#lib/mocks/handler.js');
     startServer();
   }
 

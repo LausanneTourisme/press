@@ -1,7 +1,7 @@
-import { RouteTypes, ThemeKeys, Themes, type Theme } from '$enums';
-import { ThemeDetails } from '$lib/helpers/themes';
-import { loadTranslations, supportedLocales } from '$lib/translations';
-import type { SeoHeader } from '$types';
+import { RouteTypes, ThemeKeys, Themes, type Theme } from '#lib/enums';
+import { ThemeDetails } from '#lib/helpers/themes.js';
+import { loadTranslations, supportedLocales } from '#lib/translations';
+import type { SeoHeader } from '#lib/types';
 import { error } from 'console';
 
 export const load = async ({ params, parent, url }) => {
