@@ -107,6 +107,7 @@ export const params = defineParams({
   typeForm: (param) => (matchTypeForm(param) ? param : undefined),
   typeHighlights: (param) => (matchTypeHighlights(param) ? param : undefined),
   typePress: (param) => (matchTypePress(param) ? param : undefined),
-  typePressreleasesAndPresskit: (param) => (matchTypePressreleasesAndPresskit(param) ? param : undefined),
+  typePressreleasesAndPresskit: (param) =>
+    matchTypePressreleasesAndPresskit(param) ? param : undefined,
   typeThemes: (param) => (matchTypeThemes(param) ? param : undefined)
 });
