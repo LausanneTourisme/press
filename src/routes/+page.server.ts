@@ -1,5 +1,5 @@
-import { dev } from '$app/environment';
-import { defaultLocale, isValidLocale, type Locale } from '$lib/translations';
+import { dev } from '$app/env';
+import { defaultLocale, isValidLocale, type Locale } from '#lib/translations';
 import { redirect } from '@sveltejs/kit';
 
 const getNavLocale = (request: Request) => {

@@ -1,11 +1,20 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { Forms, MediaTypes, RouteTypes, Titles, TravelReductions, type MediaType } from '$enums';
-  import { env } from '$env/dynamic/public';
-  import Container from '$lib/components/Container.svelte';
-  import CountrySelect from '$lib/components/CountrySelect.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import { t } from '$lib/translations';
+
+  import {
+    Forms,
+    MediaTypes,
+    RouteTypes,
+    Titles,
+    TravelReductions,
+    type MediaType
+  } from '#lib/enums';
+
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$app/env/public';
+  import Container from '#lib/components/Container.svelte';
+  import CountrySelect from '#lib/components/CountrySelect.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import { t } from '#lib/translations';
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus } from '@lucide/svelte';
   import { superForm } from 'sveltekit-superforms';
@@ -13,9 +22,9 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
-  import Loading from '$lib/components/Loading.svelte';
-  import { dev } from '$app/environment';
-  import { isOfflineMode } from '$lib/helpers';
+  import Loading from '#lib/components/Loading.svelte';
+  import { dev } from '$app/env';
+  import { isOfflineMode } from '#lib/helpers';
 
   const countries = $derived(Object.entries((page.data as PageData).countries));
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
@@ -52,7 +61,7 @@
 
           // antibot
           if (!(dev && isOfflineMode)) {
-            const botpoison = new Botpoison({ publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY });
+            const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
             const { solution } = await botpoison.challenge();
             formData.append('_botpoison', solution);
           }
@@ -802,15 +811,17 @@
 
     {#if step === 2}
       <section class="step3 travel-information">
-        <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl">
-          {@html $t(`${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.title`)}
-        </Heading>
-
-        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {@html $t(
+        <Heading tag="h2" class="mt-6 mb-2 text-2xl md:text-2xl"
+          >{@html $t(
+            `${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.title`
+          )}</Heading
+        >
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg"
+          >{@html $t(
             `${RouteTypes.Forms}.${Forms.Journalist}.form.travel-information.departure-point.title`
-          )}
-        </Heading>
+          )}</Heading
+        >
+
         <fieldset
           class="fieldset departure-point bg-base-200/50 border-base-300 rounded-box border p-4"
         >
@@ -1591,13 +1602,12 @@
           </label>
         </fieldset>
 
-        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-          {@html $t(`${RouteTypes.Forms}.newsletter.title`)}
-        </Heading>
+        <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg"
+          >{@html $t(`${RouteTypes.Forms}.newsletter.title`)}</Heading
+        >
+
         <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
-          <p class="">
-            {@html $t(`${RouteTypes.Forms}.newsletter.paragraph`)}
-          </p>
+          <p class="">{@html $t(`${RouteTypes.Forms}.newsletter.paragraph`)}</p>
 
           <label
             class="label text-wrap break-words"

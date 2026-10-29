@@ -1,11 +1,11 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { ThemeKeys } from '$enums';
-  import Container from '$lib/components/Container.svelte';
-  import PostContent from '$lib/components/PostContent.svelte';
-  import { ucfirst } from '$lib/helpers';
-  import { getThemeByTagName, ThemeDetails } from '$lib/helpers/themes';
-  import { t } from '$lib/translations';
+  import { ThemeKeys } from '#lib/enums';
+  import Container from '#lib/components/Container.svelte';
+  import PostContent from '#lib/components/PostContent.svelte';
+  import { ucfirst } from '#lib/helpers';
+  import { getThemeByTagName, ThemeDetails } from '#lib/helpers/themes.js';
+  import { t } from '#lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';

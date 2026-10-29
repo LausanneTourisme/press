@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { RouteTypes } from '$enums';
-  import { t } from '$lib/translations';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Loading from '#lib/components/Loading.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { RouteTypes } from '#lib/enums';
+  import { t } from '#lib/translations';
   import { fade } from 'svelte/transition';
   import { twMerge } from 'tailwind-merge';
   let loading: boolean = $state(true);

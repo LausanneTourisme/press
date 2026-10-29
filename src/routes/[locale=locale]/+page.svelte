@@ -1,22 +1,22 @@
 <script lang="ts">
   import { afterNavigate, beforeNavigate } from '$app/navigation';
   import { page } from '$app/state';
-  import { RouteTypes } from '$enums';
-  import Anchor from '$lib/components/Anchor.svelte';
-  import Button from '$lib/components/Button.svelte';
-  import Container from '$lib/components/Container.svelte';
-  import Counter from '$lib/components/Counter.svelte';
-  import Faq from '$lib/components/Faq.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
-  import Player from '$lib/components/Media/Player.svelte';
-  import Observer from '$lib/components/Observer.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import Themes from '$lib/components/Themes.svelte';
-  import Trophies, { type Trophy } from '$lib/components/Trophies.svelte';
-  import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '$lib/helpers';
-  import { City, Museum, Park, People, School, Sport } from '$lib/Icons';
-  import { t, type Locale } from '$lib/translations';
+  import { RouteTypes } from '#lib/enums';
+  import Anchor from '#lib/components/Anchor.svelte';
+  import Button from '#lib/components/Button.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Counter from '#lib/components/Counter.svelte';
+  import Faq from '#lib/components/Faq.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Image from '#lib/components/Media/Image.svelte';
+  import Player from '#lib/components/Media/Player.svelte';
+  import Observer from '#lib/components/Observer.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import Themes from '#lib/components/Themes.svelte';
+  import Trophies, { type Trophy } from '#lib/components/Trophies.svelte';
+  import { getMediaLibraryRegisterLink, maxMobileWidth, route } from '#lib/helpers';
+  import { City, Museum, Park, People, School, Sport } from '#lib/Icons';
+  import { t, type Locale } from '#lib/translations';
   import { onDestroy, onMount } from 'svelte';
 
   const locale = $derived(page.params.locale as Locale);
@@ -63,7 +63,9 @@
     }
   };
 
-  beforeNavigate(({ type }) => {
+  beforeNavigate(({ type, shallow }) => {
+    if (shallow) return;
+
     cancelScrollRestore();
     if (type === 'popstate') return;
     sessionStorage.setItem('homeScrollY', String(window.scrollY));
@@ -71,6 +73,8 @@
   });
 
   afterNavigate((navigation) => {
+    if (navigation.shallow) return;
+
     const { type } = navigation;
     // afterNavigate fires on both the source and destination page during a transition.
     // Guard so the restore only runs when we're actually arriving at the homepage.
@@ -149,13 +153,14 @@
       <br />
       <span class="inline-block tracking-tight">{@html $t('page.hero.subtitle')}</span>
     </Heading>
-    <Paragraph class="w-full text-justify text-white xl:tracking-wide 2xl:tracking-normal">
-      {@html $t('page.hero.paragraph')}
-    </Paragraph>
 
-    <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true} tag="a">
-      {@html $t('common.contact-us')}
-    </Button>
+    <Paragraph class="w-full text-justify text-white xl:tracking-wide 2xl:tracking-normal"
+      >{@html $t('page.hero.paragraph')}</Paragraph
+    >
+
+    <Button class="hover:text-zinc-950" href={route(RouteTypes.Contact)} negative={true} tag="a"
+      >{@html $t('common.contact-us')}</Button
+    >
   </div>
   <div
     class="absolute top-0 left-0 -z-10 h-full w-full xl:scale-[120%] xl:object-left 2xl:scale-100"
@@ -510,13 +515,9 @@
   -
   -->
 <Container>
-  <Heading class="text-center">
-    {@html $t('page.contact.title')}
-  </Heading>
+  <Heading class="text-center">{@html $t('page.contact.title')}</Heading>
+  <Paragraph centered>{@html $t('page.contact.paragraph')}</Paragraph>
 
-  <Paragraph centered>
-    {@html $t('page.contact.paragraph')}
-  </Paragraph>
   <div class="text-center md:flex md:items-center md:justify-center">
     <div class="mt-12 md:mx-12">
       <article>
@@ -553,8 +554,6 @@
   -->
 <Anchor name="faq" />
 <Container class="mb-16">
-  <Heading class="my-8 text-center">
-    {@html $t('common.faq.title')}
-  </Heading>
+  <Heading class="my-8 text-center">{@html $t('common.faq.title')}</Heading>
   <Faq {locale} />
 </Container>

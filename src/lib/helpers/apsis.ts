@@ -1,5 +1,5 @@
-import type { ConsentType } from '$enums';
-import * as apsis from '$lib/services/apsis.server';
+import type { ConsentType } from '#lib/enums';
+import * as apsis from '#lib/services/apsis.server.js';
 
 const countries: Record<string, number> = {
   Switzerland: 210,

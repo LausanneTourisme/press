@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Container from '$lib/components/Container.svelte';
-  import Figure from '$lib/components/Figure.svelte';
-  import type { Transform } from '$types';
+  import Container from '#lib/components/Container.svelte';
+  import Figure from '#lib/components/Figure.svelte';
+  import type { Transform } from '#lib/types';
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 

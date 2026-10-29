@@ -1,5 +1,5 @@
-import { Themes, type Theme } from '$enums';
-import type { Transform } from '$types';
+import { Themes, type Theme } from '#lib/enums';
+import type { Transform } from '#lib/types';
 
 export type ThemeDetail = {
   [key in keyof typeof Themes]: {

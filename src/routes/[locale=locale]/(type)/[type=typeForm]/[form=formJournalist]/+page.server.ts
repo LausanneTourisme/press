@@ -1,14 +1,14 @@
-import { dev } from '$app/environment';
-import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '$enums';
-import { env } from '$env/dynamic/private';
-import { isOfflineMode } from '$lib/helpers';
-import { selectCountryId, setConsents } from '$lib/helpers/apsis';
-import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
-import * as apsis from '$lib/services/apsis.server';
-import { sendEmail } from '$lib/services/mails.server';
-import { generatePdf } from '$lib/services/pdf.server';
-import { loadTranslations, supportedLocales, t, type Locale } from '$lib/translations';
-import type { MailAttachment } from '$types/mail.types';
+import { dev } from '$app/env';
+import { ConsentsTypes, Forms, MediaTypes, RouteTypes } from '#lib/enums';
+import { APSIS_JOURNALIST_FORM_EVENT_VERSION_ID, MAIL_FROM } from '$app/env/private';
+import { isOfflineMode } from '#lib/helpers';
+import { selectCountryId, setConsents } from '#lib/helpers/apsis.js';
+import { isCRMEnabled, verifyIfHuman } from '#lib/helpers/index.server.js';
+import * as apsis from '#lib/services/apsis.server.js';
+import { sendEmail } from '#lib/services/mails.server.js';
+import { generatePdf } from '#lib/services/pdf.server.js';
+import { loadTranslations, supportedLocales, t, type Locale } from '#lib/translations';
+import type { MailAttachment } from '#lib/types/mail.types.js';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
@@ -21,13 +21,14 @@ import { zod4 } from 'sveltekit-superforms/adapters';
 import type { SuperValidated } from 'sveltekit-superforms/server';
 import type { EntryGenerator } from './$types';
 import { schemaStep4, type Schema } from './schema';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const countriesByLocale: Record<string, any> = { en, fr, de };
 const lastStep = zod4(schemaStep4);
 
 export const load = async ({ parent, setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(86400));
   const [{ locale }, form] = await Promise.all([parent(), superValidate(lastStep)]);
 
   countries.registerLocale(countriesByLocale[locale]);
@@ -67,7 +68,11 @@ export const actions = {
       isCRMEnabled &&
       !(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))
     ) {
-      return failError({ form, cookies, message: `Form can't update the Apsis profile` });
+      return failError({
+        form,
+        cookies,
+        message: `Form can't update the Apsis profile`
+      });
     }
 
     if (isCRMEnabled) {
@@ -98,11 +103,7 @@ export const actions = {
           locale: params.locale
         }))
       ) {
-        return failError({
-          form,
-          cookies,
-          message: `Form can't send Apsis custom event`
-        });
+        return failError({ form, cookies, message: `Form can't send Apsis custom event` });
       }
     }
     if (dev) {
@@ -343,46 +344,26 @@ const updateApsisProfileSuccessfully = async ({
       'usercreated.attributes.crm_-_field_-_title-lzfs6a6wjk': (() => {
         switch (data.personalInformation.title) {
           case 'mr':
-            return {
-              fr: 'M.',
-              en: 'Mr.',
-              de: 'Herr'
-            }[locale];
+            return { fr: 'M.', en: 'Mr.', de: 'Herr' }[locale];
+
           case 'mrs':
-            return {
-              fr: 'Mme',
-              en: 'Mrs.',
-              de: 'Frau'
-            }[locale];
+            return { fr: 'Mme', en: 'Mrs.', de: 'Frau' }[locale];
+
           case 'they':
-            return {
-              fr: '-',
-              en: '-',
-              de: '-'
-            }[locale];
+            return { fr: '-', en: '-', de: '-' }[locale];
         }
       })(),
       // CRM - Fields - Full Title
       'usercreated.attributes.crm_-_field_-_full_title-9ilaifqngn': (() => {
         switch (data.personalInformation.title) {
           case 'mr':
-            return {
-              fr: 'Monsieur',
-              en: 'Mister',
-              de: 'Herr'
-            }[locale];
+            return { fr: 'Monsieur', en: 'Mister', de: 'Herr' }[locale];
+
           case 'mrs':
-            return {
-              fr: 'Madame',
-              en: 'Mistress',
-              de: 'Frau'
-            }[locale];
+            return { fr: 'Madame', en: 'Mistress', de: 'Frau' }[locale];
+
           case 'they':
-            return {
-              fr: '-',
-              en: '-',
-              de: '-'
-            }[locale];
+            return { fr: '-', en: '-', de: '-' }[locale];
         }
       })(),
       // CRM - Fields - Account Manager
@@ -431,7 +412,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(env.APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
+    versionId: Number(APSIS_JOURNALIST_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),
@@ -509,17 +490,15 @@ const sendFormByEmail = async ({
     },
     external_mail: mediaProfileJournalist.personalInformation?.email
       ? {
-          from_email: env.MAIL_FROM,
+          from_email: MAIL_FROM,
           from_name: t.get(`${RouteTypes.Forms}.email.from-name`),
           subject: t.get(`${RouteTypes.Forms}.email.subject`, {
             form: t.get(`${RouteTypes.Forms}.${Forms.Journalist}.title`)
           }),
-          html: `<p>${t.get(`${RouteTypes.Forms}.email.content`, { name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}` })}</p><p><i>${t.get(`${RouteTypes.Forms}.email.automatic-mail-disclaimer`)}</i></p>`,
-          to: [
-            {
-              email: mediaProfileJournalist.personalInformation.email
-            }
-          ]
+          html: `<p>${t.get(`${RouteTypes.Forms}.email.content`, {
+            name: `${mediaProfileJournalist.personalInformation.firstName} ${mediaProfileJournalist.personalInformation.lastName}`
+          })}</p><p><i>${t.get(`${RouteTypes.Forms}.email.automatic-mail-disclaimer`)}</i></p>`,
+          to: [{ email: mediaProfileJournalist.personalInformation.email }]
         }
       : undefined
   });

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Facebook from '$lib/Icons/Facebook.svelte';
-  import Instagram from '$lib/Icons/Instagram.svelte';
-  import LinkedIn from '$lib/Icons/LinkedIn.svelte';
-  import Youtube from '$lib/Icons/Youtube.svelte';
-  import { t, type Locale } from '$lib/translations';
+  import Facebook from '#lib/Icons/Facebook.svelte';
+  import Instagram from '#lib/Icons/Instagram.svelte';
+  import LinkedIn from '#lib/Icons/LinkedIn.svelte';
+  import Youtube from '#lib/Icons/Youtube.svelte';
+  import { t, type Locale } from '#lib/translations';
   import { ChevronRight } from '@lucide/svelte';
   import { twMerge } from 'tailwind-merge';
   import Heading from './Heading.svelte';

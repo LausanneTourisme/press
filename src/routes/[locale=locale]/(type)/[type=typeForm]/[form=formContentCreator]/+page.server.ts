@@ -1,14 +1,17 @@
-import { dev } from '$app/environment';
-import { ConsentsTypes, Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '$enums';
-import { env } from '$env/dynamic/private';
-import { isOfflineMode } from '$lib/helpers';
-import { selectCountryId, setConsents } from '$lib/helpers/apsis';
-import { isCRMEnabled, verifyIfHuman } from '$lib/helpers/index.server';
-import * as apsis from '$lib/services/apsis.server';
-import { sendEmail } from '$lib/services/mails.server';
-import { generatePdf } from '$lib/services/pdf.server';
-import { loadTranslations, supportedLocales, t, type Locale } from '$lib/translations';
-import type { MailAttachment } from '$types/mail.types';
+import { dev } from '$app/env';
+import { edgeCache } from '#lib/helpers/cache.server.js';
+
+import { ConsentsTypes, Forms, RouteTypes, SocialNetworks, type SocialNetwork } from '#lib/enums';
+
+import { APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID } from '$app/env/private';
+import { isOfflineMode } from '#lib/helpers';
+import { selectCountryId, setConsents } from '#lib/helpers/apsis.js';
+import { isCRMEnabled, verifyIfHuman } from '#lib/helpers/index.server.js';
+import * as apsis from '#lib/services/apsis.server.js';
+import { sendEmail } from '#lib/services/mails.server.js';
+import { generatePdf } from '#lib/services/pdf.server.js';
+import { loadTranslations, supportedLocales, t, type Locale } from '#lib/translations';
+import type { MailAttachment } from '#lib/types/mail.types.js';
 import { fail, redirect, type Cookies } from '@sveltejs/kit';
 import countries from 'i18n-iso-countries';
 import de from 'i18n-iso-countries/langs/de.json';
@@ -35,7 +38,7 @@ type MailImage = {
 };
 
 export const load = async ({ parent, setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(86400));
   const [{ locale }, form] = await Promise.all([parent(), superValidate(lastStep)]);
 
   countries.registerLocale(countriesByLocale[locale]);
@@ -76,7 +79,11 @@ export const actions = {
       isCRMEnabled &&
       !(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))
     ) {
-      return failError({ form, cookies, message: `Form can't update the Apsis profile` });
+      return failError({
+        form,
+        cookies,
+        message: `Form can't update the Apsis profile`
+      });
     }
 
     if (isCRMEnabled) {
@@ -395,7 +402,7 @@ const sendApsisCustomEvent = async ({
 }) => {
   return await apsis.customEvent({
     email,
-    versionId: Number(env.APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID),
+    versionId: Number(APSIS_CONTENT_CREATOR_FORM_EVENT_VERSION_ID),
     attributes: {
       source: url_source,
       datetime: DateTime.now().toFormat('dd.MM.yyyy HH:mm'),

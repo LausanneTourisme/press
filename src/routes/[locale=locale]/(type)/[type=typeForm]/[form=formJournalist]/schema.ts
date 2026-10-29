@@ -1,5 +1,5 @@
-import { Forms, Titles, getValues, MediaTypes, RouteTypes, TravelReductions } from '$enums';
-import { zodOptionalString, zodRequiredString } from '$lib/helpers/zod';
+import { Forms, Titles, getValues, MediaTypes, RouteTypes, TravelReductions } from '#lib/enums';
+import { zodOptionalString, zodRequiredString } from '#lib/helpers/zod.js';
 import { z } from 'zod/v4';
 
 const mediaEnum = z.enum(getValues(MediaTypes));

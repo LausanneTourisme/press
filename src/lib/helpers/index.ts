@@ -1,10 +1,10 @@
-import type { Pathname } from '$app/types';
-import { RouteTypes, type Form, type RouteType, type Theme } from '$enums';
-import { env } from '$env/dynamic/public';
-import { defaultLocale, locale, translations, type Locale } from '$lib/translations';
-import type { PostType, Translatable } from '$lib/types';
+import type { Path } from '$app/types';
+import { RouteTypes, type Form, type RouteType, type Theme } from '#lib/enums';
+import { PUBLIC_ENABLE_OFFLINE_MODE } from '$app/env/public';
+import { defaultLocale, locale, translations, type Locale } from '#lib/translations';
+import type { PostType, Translatable } from '#lib/types';
 
-export const isOfflineMode = env.PUBLIC_ENABLE_OFFLINE_MODE === 'true';
+export const isOfflineMode = PUBLIC_ENABLE_OFFLINE_MODE;
 export const maxMobileWidth = 1280;
 export const blankable = (href: string | undefined): string | undefined =>
   href && href.includes('http') ? '_blank' : undefined;
@@ -14,7 +14,7 @@ export const blankable = (href: string | undefined): string | undefined =>
  * (starting with `/`), which matches SvelteKit's `Pathname` type. External
  * links (`http…`) and anchors (`#`) are left as plain strings.
  */
-export const isInternalHref = (href: string): href is Pathname => href.startsWith('/');
+export const isInternalHref = (href: string): href is Path => href.startsWith('/');
 
 /**
  * get filename from a path
@@ -47,11 +47,13 @@ export const getMediaLibraryRegisterLink = (locale: Locale): string => {
 
 export const route = (
   type: RouteType,
-  options: { forceLocale?: Locale | undefined; theme?: Theme; suffix?: string; form?: Form } = {
-    forceLocale: undefined,
-    theme: undefined
-  }
-): Pathname => {
+  options: {
+    forceLocale?: Locale | undefined;
+    theme?: Theme;
+    suffix?: string;
+    form?: Form;
+  } = { forceLocale: undefined, theme: undefined }
+): Path => {
   const lang = options.forceLocale ?? (locale.get() as Locale) ?? defaultLocale;
   const slug: string | undefined = translations.get()[lang][`route.${type}.slug`];
 

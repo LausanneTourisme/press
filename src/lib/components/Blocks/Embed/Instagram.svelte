@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { t } from '$lib/translations';
+  import { t } from '#lib/translations';
 
   type HeadingProps = {
     class?: string;

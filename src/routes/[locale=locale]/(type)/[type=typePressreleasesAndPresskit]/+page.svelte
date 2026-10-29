@@ -1,14 +1,14 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import { RouteTypes } from '$enums';
-  import Card from '$lib/components/Card.svelte';
-  import Clickable from '$lib/components/Clickable.svelte';
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { Slide, Swiper } from '$lib/components/swiper';
-  import { route } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
+  import { RouteTypes } from '#lib/enums';
+  import Card from '#lib/components/Card.svelte';
+  import Clickable from '#lib/components/Clickable.svelte';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { Slide, Swiper } from '#lib/components/swiper';
+  import { route } from '#lib/helpers';
+  import { t, type Locale } from '#lib/translations';
   import { DateTime } from 'luxon';
   import { fade } from 'svelte/transition';
   import type { PageData } from './$types';

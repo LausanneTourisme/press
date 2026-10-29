@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { type Transform } from '$types';
+  import { type Transform } from '#lib/types';
   import { twMerge } from 'tailwind-merge';
   import Image from './Media/Image.svelte';
-  import { filename } from '$lib/helpers';
+  import { filename } from '#lib/helpers';
 
   interface Props {
     src?: string;

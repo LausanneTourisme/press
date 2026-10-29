@@ -1,13 +1,11 @@
-import { supportedLocales } from '$lib/translations';
+import { supportedLocales } from '#lib/translations';
 import { describe, expect, it, test, vi } from 'vitest';
 import type { UrlEntry } from './sitemap';
 import { generateUrlSets, getInternalLinks } from './sitemap';
-vi.mock('$env/dynamic/public', () => ({
-  env: {
-    PUBLIC_ENABLE_OFFLINE_MODE: 'false'
-  }
+vi.mock('$app/env/public', () => ({
+  PUBLIC_ENABLE_OFFLINE_MODE: false
 }));
-vi.mock('$lib/services/requests.server', () => ({
+vi.mock('#lib/services/requests.server.js', () => ({
   getPosts: vi.fn().mockResolvedValue({
     data: {
       items: {
@@ -58,7 +56,7 @@ describe('Test helper: sitemap', () => {
   });
 
   it(`should return ${baseEntriesLength} internal links without press releases`, async () => {
-    const { getPosts } = await import('$lib/services/requests.server');
+    const { getPosts } = await import('#lib/services/requests.server.js');
     (getPosts as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       data: { items: { data: [] } }
     });
@@ -221,7 +219,7 @@ describe('Test helper: sitemap', () => {
     });
 
     it('calls getPosts once for all locales', async () => {
-      const { getPosts } = await import('$lib/services/requests.server');
+      const { getPosts } = await import('#lib/services/requests.server.js');
       (getPosts as ReturnType<typeof vi.fn>).mockClear();
 
       await getInternalLinks();
@@ -234,7 +232,7 @@ describe('Test helper: sitemap', () => {
 
     supportedLocales.forEach((locale) => {
       it(`calls getPosts once for ${locale} locales`, async () => {
-        const { getPosts } = await import('$lib/services/requests.server');
+        const { getPosts } = await import('#lib/services/requests.server.js');
         (getPosts as ReturnType<typeof vi.fn>).mockClear();
 
         await getInternalLinks({ canonLocale: locale });
@@ -254,7 +252,7 @@ describe('Test helper: sitemap', () => {
     });
 
     it('press release entries carry lastmod', async () => {
-      const { getPosts } = await import('$lib/services/requests.server');
+      const { getPosts } = await import('#lib/services/requests.server.js');
       (getPosts as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
         data: {
           items: {

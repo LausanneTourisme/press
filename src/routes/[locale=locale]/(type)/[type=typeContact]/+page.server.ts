@@ -1,20 +1,22 @@
-import { RouteTypes } from '$enums';
-import { env } from '$env/dynamic/private';
-import { verifyIfHuman } from '$lib/helpers/index.server';
-import { sendEmail } from '$lib/services/mails.server';
-import { loadTranslations, supportedLocales, t, translations } from '$lib/translations';
+import { RouteTypes } from '#lib/enums';
+import { MAIL_FROM } from '$app/env/private';
+import { verifyIfHuman } from '#lib/helpers/index.server.js';
+import { sendEmail } from '#lib/services/mails.server.js';
+import { loadTranslations, supportedLocales, t, translations } from '#lib/translations';
 import { fail } from '@sveltejs/kit';
 import type { Actions, EntryGenerator } from './$types';
+import { edgeCache } from '#lib/helpers/cache.server.js';
 
 const validateEmail = (email: string | null | undefined) => {
   if (!email) return false;
+
   return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
 };
 
 export const load = ({ setHeaders }) => {
-  setHeaders({ 'cache-control': 'public, s-maxage=86400, stale-while-revalidate=3600' });
+  setHeaders(edgeCache(86400));
 };
 
 export const actions: Actions = {
@@ -107,7 +109,7 @@ export const actions: Actions = {
         html
       },
       external_mail: {
-        from_email: env.MAIL_FROM,
+        from_email: MAIL_FROM,
         from_name: t.get(`${RouteTypes.Contact}.form.mail-section.response.from-name`),
         subject: t.get(`${RouteTypes.Contact}.form.mail-section.response.subject`),
         html: `<p>${t.get(`${RouteTypes.Contact}.form.mail-section.response.content`, { name })}</p><p><i>${t.get(`${RouteTypes.Contact}.form.mail-section.response.automatic-mail-disclaimer`)}</i></p>`,

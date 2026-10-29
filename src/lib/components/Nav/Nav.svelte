@@ -2,7 +2,7 @@
   import { twMerge } from 'tailwind-merge';
   import DesktopNav from './DesktopNav.svelte';
   import MobileNav from './MobileNav.svelte';
-  import type { Locale } from '$lib/translations';
+  import type { Locale } from '#lib/translations';
 
   type NavProps = {
     hide?: boolean;

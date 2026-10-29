@@ -1,6 +1,6 @@
-import { RouteTypes } from '$enums';
+import { RouteTypes } from '#lib/enums';
 import { redirect } from '@sveltejs/kit';
-import { supportedLocales, translations } from '$lib/translations';
+import { supportedLocales, translations } from '#lib/translations';
 import type { EntryGenerator } from './$types';
 
 // since there's no dynamic data here, we can prerender

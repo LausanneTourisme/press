@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Forms, RouteTypes } from '$enums';
-  import Container from '$lib/components/Container.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import { t } from '$lib/translations';
+  import { Forms, RouteTypes } from '#lib/enums';
+  import Container from '#lib/components/Container.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import { t } from '#lib/translations';
 </script>
 
 <svelte:head>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { dev } from '$app/environment';
-  import { env } from '$env/dynamic/public';
-  import { isOfflineMode } from '$lib/helpers';
+  import { dev } from '$app/env';
+  import { PUBLIC_CLOUDINARY_UPLOAD_PRESET } from '$app/env/public';
+  import { isOfflineMode } from '#lib/helpers';
   import { CircleX, Pause, Play, Volume2 } from '@lucide/svelte';
   import { type Snippet } from 'svelte';
   import Device from 'svelte-device-info';
@@ -59,7 +59,7 @@
     const videoRegex = new RegExp(`\\.(${videoExtensions.join('|')})$`, 'i');
     let path = src.replace(videoRegex, '.webm');
     path = path.startsWith('/') ? path : `/${path}`;
-    return `https://static.lausanne-tourisme.ch/video/upload/w_1920/${useCloudinaryPreset ? env.PUBLIC_CLOUDINARY_UPLOAD_PRESET : ''}${path}`;
+    return `https://static.lausanne-tourisme.ch/video/upload/w_1920/${useCloudinaryPreset ? PUBLIC_CLOUDINARY_UPLOAD_PRESET : ''}${path}`;
   });
 
   export function toggleVideoState() {

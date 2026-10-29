@@ -8,13 +8,13 @@
     TravelReductions,
     type SocialNetwork,
     type TravelReduction
-  } from '$enums';
-  import { env } from '$env/dynamic/public';
-  import Container from '$lib/components/Container.svelte';
-  import CountrySelect from '$lib/components/CountrySelect.svelte';
-  import Heading from '$lib/components/Heading.svelte';
-  import Loading from '$lib/components/Loading.svelte';
-  import { t } from '$lib/translations';
+  } from '#lib/enums';
+  import { PUBLIC_BOTPOISON_PUBLICKEY } from '$app/env/public';
+  import Container from '#lib/components/Container.svelte';
+  import CountrySelect from '#lib/components/CountrySelect.svelte';
+  import Heading from '#lib/components/Heading.svelte';
+  import Loading from '#lib/components/Loading.svelte';
+  import { t } from '#lib/translations';
   import Botpoison from '@botpoison/browser';
   import { CircleMinus, CirclePlus, Trash2 } from '@lucide/svelte';
   import { superForm } from 'sveltekit-superforms';
@@ -22,8 +22,8 @@
   import { twMerge } from 'tailwind-merge';
   import type { PageData } from './$types';
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
-  import { humanFileSize, isOfflineMode } from '$lib/helpers';
-  import { dev } from '$app/environment';
+  import { humanFileSize, isOfflineMode } from '#lib/helpers';
+  import { dev } from '$app/env';
 
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   const countries = $derived(Object.entries((page.data as PageData).countries));
@@ -51,7 +51,7 @@
         options.validators = steps[step - 1];
         // antibot
         if (!(dev && isOfflineMode)) {
-          const botpoison = new Botpoison({ publicKey: env.PUBLIC_BOTPOISON_PUBLICKEY });
+          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
           const { solution } = await botpoison.challenge();
           formData.append('_botpoison', solution);
         }
@@ -1401,13 +1401,12 @@
         </label>
       </fieldset>
 
-      <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
-        {@html $t(`${RouteTypes.Forms}.newsletter.title`)}
-      </Heading>
+      <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg"
+        >{@html $t(`${RouteTypes.Forms}.newsletter.title`)}</Heading
+      >
+
       <fieldset class="fieldset newsletter bg-base-200/50 border-base-300 rounded-box border p-4">
-        <p class="">
-          {@html $t(`${RouteTypes.Forms}.newsletter.paragraph`)}
-        </p>
+        <p class="">{@html $t(`${RouteTypes.Forms}.newsletter.paragraph`)}</p>
 
         <label
           class="label text-wrap break-words"

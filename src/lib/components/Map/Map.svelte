@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { env } from '$env/dynamic/public';
-  import Heading from '$lib/components/Heading.svelte';
-  import Link from '$lib/components/Link.svelte';
-  import LausannerCard from '$lib/components/Map/LausannerCard.svelte';
-  import Image from '$lib/components/Media/Image.svelte';
-  import Paragraph from '$lib/components/Paragraph.svelte';
-  import { getTailwindColor } from '$lib/helpers';
-  import { t, type Locale } from '$lib/translations';
-  import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '$types';
+  import { PUBLIC_MAPTILER_URL } from '$app/env/public';
+  import Heading from '#lib/components/Heading.svelte';
+  import Link from '#lib/components/Link.svelte';
+  import LausannerCard from '#lib/components/Map/LausannerCard.svelte';
+  import Image from '#lib/components/Media/Image.svelte';
+  import Paragraph from '#lib/components/Paragraph.svelte';
+  import { getTailwindColor } from '#lib/helpers';
+  import { t, type Locale } from '#lib/translations';
+  import type { Favorite, Geolocation, Lausanner, Marker as MarkerType, Poi } from '#lib/types';
   import { ArrowRight, MapPin, SquareArrowOutUpRight, X } from '@lucide/svelte';
   import maplibregl from 'maplibre-gl';
   import { onMount } from 'svelte';
@@ -276,10 +276,7 @@
             <Paragraph class="ml-2 inline-flex w-1/2 text-sm font-bold md:text-base lg:w-2/3">
               <Link
                 withIcon={true}
-                href={getLausannerUrl({
-                  lausanner: aside.lausanner,
-                  locale: locale
-                })}
+                href={getLausannerUrl({ lausanner: aside.lausanner, locale })}
                 class="text-left lg:text-center"
               >
                 {aside.lausanner?.name}
@@ -310,7 +307,7 @@
   {:else}
     <MapLibre
       class="h-full w-full"
-      style={env.PUBLIC_MAPTILER_URL}
+      style={PUBLIC_MAPTILER_URL}
       zoom={initialState.zoom}
       center={initialState}
       pitchWithRotate={false}

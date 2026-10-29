@@ -1,8 +1,7 @@
-import { defaultLocale, locale } from '$lib/translations';
-import type { MaybePromise } from '$types';
-import type { RequestEvent, ResolveOptions } from '@sveltejs/kit';
-import { sequence } from '@sveltejs/kit/hooks';
-import type { HandleServerError } from '@sveltejs/kit';
+import type { RequestEvent } from '@sveltejs/kit';
+import { defaultLocale, locale } from '#lib/translations';
+import type { MaybePromise } from '#lib/types';
+import { sequence, type ResolveOptions, type HandleServerError } from '@sveltejs/kit/hooks';
 
 const resolveLanguage = async ({
   event,
@@ -21,7 +20,9 @@ const resolveLanguage = async ({
 };
 export const handle = sequence(resolveLanguage);
 
-export const handleError: HandleServerError = ({ error, event }) => {
+export const handleError: HandleServerError = ({ kind, error, event }) => {
+  if (kind !== 'unknown') return;
+
   console.error(
     `[${new Date().toISOString()}] Unhandled error on ${event.request.method} ${event.url.pathname}`,
     error

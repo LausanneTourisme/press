@@ -1,4 +1,4 @@
-import { supportedLocales } from '$lib/translations';
+import { supportedLocales } from '#lib/translations';
 import type { EntryGenerator } from './$types';
 
 export const load = ({ setHeaders }) => {

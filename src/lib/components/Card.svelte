@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Image from '$lib/components/Media/Image.svelte';
-  import type { Transform } from '$types';
+  import Image from '#lib/components/Media/Image.svelte';
+  import type { Transform } from '#lib/types';
   import { type Snippet } from 'svelte';
   import { twMerge } from 'tailwind-merge';
 

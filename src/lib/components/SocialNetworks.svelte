@@ -1,10 +1,10 @@
 <script>
-  import Facebook from '$lib/Icons/Facebook.svelte';
-  import Instagram from '$lib/Icons/Instagram.svelte';
-  import LinkedIn from '$lib/Icons/LinkedIn.svelte';
-  import Tiktok from '$lib/Icons/Tiktok.svelte';
-  import Youtube from '$lib/Icons/Youtube.svelte';
-  import Link from '$lib/components/Link.svelte';
+  import Facebook from '#lib/Icons/Facebook.svelte';
+  import Instagram from '#lib/Icons/Instagram.svelte';
+  import LinkedIn from '#lib/Icons/LinkedIn.svelte';
+  import Tiktok from '#lib/Icons/Tiktok.svelte';
+  import Youtube from '#lib/Icons/Youtube.svelte';
+  import Link from '#lib/components/Link.svelte';
 </script>
 
 <Link withIcon={false} href="https://www.facebook.com/LausanneCapitaleOlympique/" class="mr-4">

@@ -1,4 +1,4 @@
-import { addTranslations, loadTranslations, setLocale, setRoute } from '$lib/translations';
+import { addTranslations, loadTranslations, setLocale, setRoute } from '#lib/translations';
 
 export const trailingSlash = 'never';
 
