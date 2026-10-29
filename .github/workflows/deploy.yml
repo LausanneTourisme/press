@@ -119,7 +119,6 @@ jobs:
             ./package.json \
             ./package-lock.json \
             ./.nvmrc \
-            ./svelte.config.js \
             ./vite.config.ts \
             ./tsconfig.json \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PROJECT_PATH }}/
@@ -128,7 +127,7 @@ jobs:
         run: |
           sshpass -p '${{ secrets.SSH_PASSWORD }}' ssh -o StrictHostKeyChecking=no \
             ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} \
-            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && npm ci && ENVIRONMENT=node BUILD_DIR=build-next npm run build'"
+            "/bin/bash -c '. \$HOME/.nvm/nvm.sh && cd ${{ secrets.SSH_PROJECT_PATH }} && rm -f svelte.config.js && npm ci &&ENVIRONMENT=node BUILD_DIR=build-next npm run build'"
 
       - name: Swap builds
         run: |
