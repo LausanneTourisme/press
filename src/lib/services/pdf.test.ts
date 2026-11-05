@@ -1,4 +1,5 @@
-import { describe, expect, it } from 'vitest';
+// @vitest-environment node
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { generatePdf } from './pdf.server';
 
 // 1x1 PNG
@@ -11,7 +12,18 @@ const wrap = (body: string) => `<!DOCTYPE html>
 
 const decode = (base64: string) => Buffer.from(base64, 'base64');
 
+const silenceConsoleError = () => vi.spyOn(console, 'error').mockImplementation(() => {});
+
+const policyDenial = (src: string) =>
+  expect.objectContaining({
+    message: `Access to local file denied by resource access policy: ${src}`
+  });
+
 describe('generatePdf', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   it('renders the form mail HTML into a PDF attachment', async () => {
     const attachment = await generatePdf({
       html: wrap(
@@ -27,20 +39,32 @@ describe('generatePdf', () => {
   });
 
   it('returns null instead of reading local files instead injection', async () => {
+    const consoleError = silenceConsoleError();
+
     const attachment = await generatePdf({
       html: wrap('<img src="file:///etc/passwd" />'),
       filename: 'injection.pdf'
     });
 
     expect(attachment).toBeNull();
+    expect(consoleError).toHaveBeenCalledWith(
+      'PDF generation failed',
+      policyDenial('file:///etc/passwd')
+    );
   });
 
   it('returns null instead of fetching external URLs provided from the form input', async () => {
+    const consoleError = silenceConsoleError();
+
     const attachment = await generatePdf({
       html: wrap('<img src="http://123.254.65.43/latest/meta-data/" />'),
       filename: 'ssrf.pdf'
     });
 
     expect(attachment).toBeNull();
+    expect(consoleError).toHaveBeenCalledWith(
+      'PDF generation failed',
+      policyDenial('http://123.254.65.43/latest/meta-data/')
+    );
   });
 });
