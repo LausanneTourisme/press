@@ -16,7 +16,7 @@
   import '../app.css';
   import { type PageData } from './[locale=locale]/$types';
 
-  let { children } = $props<{ children: Snippet }>();
+  let { children }: { children: Snippet } = $props();
   let isNavigating = $state(false);
   let hideBarTimer: ReturnType<typeof setTimeout> | undefined;
   const locale = $derived(
