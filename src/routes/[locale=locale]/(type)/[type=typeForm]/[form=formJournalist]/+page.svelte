@@ -260,8 +260,7 @@
             defaultValue={($form.objectRequest as string | undefined) ?? ''}
             bind:value={$form.objectRequest}
             class="textarea w-full {$errors.objectRequest ? 'textarea-error' : ''}"
-            aria-required={$errors.objectRequest ? 'true' : undefined}
-          ></textarea>
+            aria-required={$errors.objectRequest ? 'true' : undefined}></textarea>
         </fieldset>
 
         {#if $form.mediaTypes.includes(MediaTypes.Print)}
@@ -893,8 +892,7 @@
             maxlength="300"
             aria-invalid={$errors.travelInformation?.departurePoint?.outwardJourney
               ? 'true'
-              : undefined}
-          ></textarea>
+              : undefined}></textarea>
         </fieldset>
 
         <fieldset
@@ -922,8 +920,7 @@
               : ''}"
             bind:value={$form.travelInformation.returnJourney}
             maxlength="300"
-            aria-invalid={$errors.travelInformation?.returnJourney ? 'true' : undefined}
-          ></textarea>
+            aria-invalid={$errors.travelInformation?.returnJourney ? 'true' : undefined}></textarea>
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
@@ -1569,8 +1566,7 @@
             id="personal-information-remarks"
             defaultValue={($form.remarks as string | undefined) ?? ''}
             bind:value={$form.remarks}
-            class="textarea w-full"
-          ></textarea>
+            class="textarea w-full"></textarea>
         </fieldset>
 
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">

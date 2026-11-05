@@ -8,7 +8,6 @@ describe('Press releases and press kits page - FR', () => {
       '/src/lib/mocks/responses/posts/press_kit.fr.json',
       { eager: true }
     );
-    console.log(modules);
     const releases =
       modules['/src/lib/mocks/responses/posts/press_kit.fr.json'].default.data!.items!.data!;
     const byYear = new Map([...sortByYears(releases)].reverse());
