@@ -1096,7 +1096,6 @@ describe('Test helper: Index', () => {
       expect(humanFileSize(1_099_511_627_776)).toBe('1 To');
     });
     it('returns teraoctet', () => {
-      console.log(humanFileSize(1_125_899_906_842_624));
       expect(humanFileSize(1_125_899_906_842_624)).toBe('1024 To');
     });
   });
