@@ -53,12 +53,4 @@ export type Embed = {
 };
 
 export type ContentBlock =
-  | Hero
-  | Heading
-  | Paragraphe
-  | Gallery
-  | Image
-  | Instagram
-  | Youtube
-  | Video
-  | Embed;
+  Hero | Heading | Paragraphe | Gallery | Image | Instagram | Youtube | Video | Embed;

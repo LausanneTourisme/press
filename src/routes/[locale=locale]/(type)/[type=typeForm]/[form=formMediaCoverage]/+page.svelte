@@ -530,8 +530,7 @@
           class="textarea w-full {$errors.remarks ? 'textarea-error' : ''}"
           bind:value={$form.remarks}
           maxlength={$constraints.remarks?.maxlength}
-          aria-invalid={$errors.remarks ? 'true' : undefined}
-        ></textarea>
+          aria-invalid={$errors.remarks ? 'true' : undefined}></textarea>
       </fieldset>
     </section>
 

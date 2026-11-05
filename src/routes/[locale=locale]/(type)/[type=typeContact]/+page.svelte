@@ -396,8 +396,7 @@
             )}
             name="message"
             placeholder={$t('contact.form.mail-section.form.message-section.placeholder')}
-            required
-          ></textarea>
+            required></textarea>
           <div class="label w-full text-sm">
             <span class="label-text-alt">{pageForm?.fields?.message?.message}</span>
           </div>

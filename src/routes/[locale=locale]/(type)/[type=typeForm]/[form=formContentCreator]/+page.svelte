@@ -215,8 +215,7 @@
           defaultValue={($form.objectRequest as string | undefined) ?? ''}
           bind:value={$form.objectRequest}
           class="textarea w-full {$errors.objectRequest ? 'textarea-error' : ''}"
-          aria-required={$errors.objectRequest ? 'true' : undefined}
-        ></textarea>
+          aria-required={$errors.objectRequest ? 'true' : undefined}></textarea>
       </fieldset>
 
       <!-- Instagram Section -->
@@ -705,8 +704,7 @@
           bind:value={$form.coverageTimingAndPublicationDates}
           class="textarea w-full {$errors.coverageTimingAndPublicationDates
             ? 'textarea-error'
-            : ''}"
-        ></textarea>
+            : ''}"></textarea>
       </fieldset>
     </section>
 
@@ -781,8 +779,7 @@
           class="textarea w-full {$errors.travelOutwardJourney ? 'textarea-error' : ''}"
           bind:value={$form.travelOutwardJourney}
           maxlength={$constraints.travelOutwardJourney?.maxlength}
-          aria-invalid={$errors.travelOutwardJourney ? 'true' : undefined}
-        ></textarea>
+          aria-invalid={$errors.travelOutwardJourney ? 'true' : undefined}></textarea>
       </fieldset>
 
       <fieldset
@@ -803,8 +800,7 @@
           name="travelReturnJourney"
           class="textarea w-full {$errors.travelReturnJourney ? 'textarea-error' : ''}"
           bind:value={$form.travelReturnJourney}
-          aria-invalid={$errors.travelReturnJourney ? 'true' : undefined}
-        ></textarea>
+          aria-invalid={$errors.travelReturnJourney ? 'true' : undefined}></textarea>
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
@@ -1366,8 +1362,7 @@
           name="remarks"
           defaultValue={($form.remarks as string | undefined) ?? ''}
           bind:value={$form.remarks}
-          class="textarea w-full"
-        ></textarea>
+          class="textarea w-full"></textarea>
       </fieldset>
 
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
