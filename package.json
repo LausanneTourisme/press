@@ -23,9 +23,9 @@
     "@eslint/js": "^9.39.2",
     "@fontsource/fira-mono": "^5.2.7",
     "@neoconfetti/svelte": "^2.2.2",
-    "@sveltejs/adapter-node": "^6.0.0",
+    "@sveltejs/adapter-node": "^6.0.1",
     "@sveltejs/adapter-vercel": "^7.0.0",
-    "@sveltejs/kit": "^3.0.0",
+    "@sveltejs/kit": "^3.1.1",
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/typography": "^0.5.19",
@@ -101,5 +101,10 @@
     "#lib/translations": "./src/lib/translations/index.ts",
     "#lib/types": "./src/lib/types/index.ts",
     "#lib/*": "./src/lib/*"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "msw@2.15.0": true,
+    "@parcel/watcher@2.6.0": true
   }
 }
