@@ -1,7 +1,13 @@
 import type { RequestEvent } from '@sveltejs/kit';
+import { NOINDEX } from '$app/env/private';
 import { defaultLocale, locale } from '#lib/translations';
 import type { MaybePromise } from '#lib/types';
-import { sequence, type ResolveOptions, type HandleServerError } from '@sveltejs/kit/hooks';
+import {
+  sequence,
+  type Handle,
+  type ResolveOptions,
+  type HandleServerError
+} from '@sveltejs/kit/hooks';
 
 const resolveLanguage = async ({
   event,
@@ -18,7 +24,13 @@ const resolveLanguage = async ({
     }
   });
 };
-export const handle = sequence(resolveLanguage);
+const noIndex: Handle = async ({ event, resolve }) => {
+  const response = await resolve(event);
+  if (NOINDEX) response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+  return response;
+};
+
+export const handle = sequence(noIndex, resolveLanguage);
 
 export const handleError: HandleServerError = ({ kind, error, event }) => {
   if (kind !== 'unknown') return;

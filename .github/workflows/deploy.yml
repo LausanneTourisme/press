@@ -92,6 +92,7 @@ jobs:
           MAIL_PASSWORD='${{ secrets.MAIL_PASSWORD }}'
           ENABLE_MAILCHIMP='${{ secrets.ENABLE_MAILCHIMP }}'
           PUBLIC_GOOGLE_TAG_MANAGER_TOKEN='${{ secrets.PUBLIC_GOOGLE_TAG_MANAGER_TOKEN }}'
+          NOINDEX='${{ secrets.NOINDEX }}'
           EOF
 
           sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -o StrictHostKeyChecking=no \

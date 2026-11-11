@@ -40,6 +40,8 @@ export const variables = defineEnvVars({
   PUBLIC_CLOUDINARY_UPLOAD_PRESET: { public: true, schema: text },
   PUBLIC_MAPTILER_URL: { public: true, schema: url },
 
+  NOINDEX: { schema: flag },
+
   GRAPHQL_URL: { schema: url },
   GRAPHQL_TOKEN: { schema: text },
   GRAPHQL_AGENDA_TOKEN: { schema: text },
