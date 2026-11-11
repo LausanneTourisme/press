@@ -24,9 +24,18 @@ const resolveLanguage = async ({
     }
   });
 };
+const ROBOTS = 'noindex, nofollow';
+
+// Prerendered pages are served as static files without hooks, so they need the meta tag too.
 const noIndex: Handle = async ({ event, resolve }) => {
-  const response = await resolve(event);
-  if (NOINDEX) response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+  const response = await resolve(event, {
+    transformPageChunk: ({ html }) =>
+      html.replace(
+        '%robots%',
+        `<meta name="robots" content="${NOINDEX ? ROBOTS : 'index,follow'}" />`
+      )
+  });
+  if (NOINDEX) response.headers.set('X-Robots-Tag', ROBOTS);
   return response;
 };
 
