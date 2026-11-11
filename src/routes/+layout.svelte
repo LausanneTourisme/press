@@ -114,7 +114,6 @@
 <svelte:head>
   <title>{seo.title} • Lausanne Tourisme</title>
   <meta name="description" content={seo.description} />
-  <meta name="robots" content="index,follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
   <link rel="canonical" href={seo.canonical} />
