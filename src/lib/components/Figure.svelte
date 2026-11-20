@@ -8,6 +8,7 @@
     src?: string;
     useCloudinaryPreset?: boolean;
     alt?: string;
+    title?: string;
     transform?: Transform;
     class?: string;
     imgClass?: string;
@@ -20,6 +21,7 @@
     src = '',
     useCloudinaryPreset = true,
     alt = '',
+    title,
     transform,
     onclick
   }: Props = $props();
@@ -40,6 +42,7 @@
       <Image
         class={imgClass}
         {alt}
+        {title}
         src={filename(src)}
         localSrc={src}
         {useCloudinaryPreset}
@@ -53,6 +56,7 @@
     <Image
       class={imgClass}
       {alt}
+      {title}
       src={filename(src)}
       localSrc={src}
       {useCloudinaryPreset}

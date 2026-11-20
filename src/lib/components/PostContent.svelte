@@ -9,7 +9,7 @@
   import Container from '#lib/components/Container.svelte';
   import Heading from '#lib/components/Heading.svelte';
   import Paragraph from '#lib/components/Paragraph.svelte';
-  import { type Locale } from '#lib/translations';
+  import { t, type Locale } from '#lib/translations';
   import type { PostType, Translatable } from '#lib/types';
   import type { Hero } from '#lib/types/releaseContents.js';
   import { twMerge } from 'tailwind-merge';
@@ -72,7 +72,8 @@
           size={block.size}
           focus={block.focus}
           cloudinaryId={block.value.cloudinary_id ?? 'default'}
-          alt={`${block.value?.public_name ?? ''} - ${block.value?.copyright}`}
+          alt={block.value?.public_name || ''}
+          title={block.value?.copyright || $t('common.rights-reserved')}
         />
       {:else if block.type === 'instagram'}
         <Container width="medium" class="mb-6 flex justify-center py-0 md:py-0">

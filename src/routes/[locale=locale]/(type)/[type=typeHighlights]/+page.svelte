@@ -88,6 +88,7 @@
               crop: 'fill'
             }}
             alt={n.medias?.at(0)?.public_name}
+            title={n.medias?.at(0)?.copyright || $t('common.rights-reserved')}
             background="bg-glacier-300"
             class="carousel-item"
           >
@@ -177,7 +178,8 @@
                   }}
                   useCloudinaryPreset={false}
                   class="transition-opacity group-hover:opacity-50"
-                  alt={poi?.medias?.at(0)?.copyright ?? 'highlight'}
+                  alt={poi?.medias?.at(0)?.public_name ?? 'highlight'}
+                  title={poi?.medias?.at(0)?.copyright || $t('common.rights-reserved')}
                 />
               </header>
               <Heading
