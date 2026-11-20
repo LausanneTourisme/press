@@ -98,6 +98,7 @@
     "#lib/components/swiper": "./src/lib/components/swiper/index.ts",
     "#lib/enums": "./src/lib/enums/index.ts",
     "#lib/helpers": "./src/lib/helpers/index.ts",
+    "#lib/helpers/forms": "./src/lib/helpers/forms.ts",
     "#lib/translations": "./src/lib/translations/index.ts",
     "#lib/types": "./src/lib/types/index.ts",
     "#lib/*": "./src/lib/*"

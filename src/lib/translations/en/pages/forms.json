@@ -28,5 +28,6 @@
   "next": "Next",
   "previous": "Previous",
   "submit": "Submit",
-  "error-on-sending": "An error occured while sending. Please try again later"
+  "error-on-sending": "An error occured while sending. Please try again later",
+  "error-network": "Sending failed. Please check your internet connection and try again. If the problem persists, contact the site administrator."
 }

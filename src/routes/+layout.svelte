@@ -39,7 +39,7 @@
     };
   });
 
-  const flash = $derived.by(() => getFlash(page, { clearAfterMs: 7000, clearOnNavigate: true }));
+  const flash = getFlash(page, { clearAfterMs: 7000, clearOnNavigate: true });
 
   beforeNavigate(({ type, shallow }) => {
     if (shallow) return;
