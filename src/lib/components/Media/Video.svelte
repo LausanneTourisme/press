@@ -90,7 +90,7 @@
       <button class="cursor-pointer text-white shadow" onclick={mute}>
         <Volume2 class="absolute right-0 bottom-4 h-6 w-6 stroke-white" />
         <CircleX
-          fill="text-brand-500"
+          fill="currentColor"
           strokeWidth={0}
           class="{!muted
             ? 'opacity-0'
@@ -99,18 +99,18 @@
       </button>
       <button class="cursor-pointer text-white shadow" onclick={play}>
         <Play
-          fill="text-brand-500"
+          fill="currentColor"
           strokeWidth={0}
           class="{!playing
             ? 'opacity-0'
-            : 'opacity-100'} absolute right-8 bottom-4 h-6 w-6 transition-opacity"
+            : 'opacity-100'} text-brand-500 absolute right-8 bottom-4 h-6 w-6 transition-opacity"
         />
         <Pause
-          fill="text-brand-500"
+          fill="currentColor"
           strokeWidth={0}
           class="{playing
             ? 'opacity-0'
-            : 'opacity-100'} absolute right-8 bottom-4 h-6 w-6 transition-opacity"
+            : 'opacity-100'} text-brand-500 absolute right-8 bottom-4 h-6 w-6 transition-opacity"
         />
       </button>
     {/if}
