@@ -28,5 +28,6 @@
   "next": "Suivant",
   "previous": "Précédent",
   "submit": "Envoyer",
-  "error-on-sending": "Une erreur est survenue lors de l'envoie, veuillez réessayer plus tard."
+  "error-on-sending": "Une erreur est survenue lors de l'envoie, veuillez réessayer plus tard.",
+  "error-network": "L'envoi a échoué. Vérifiez votre connexion internet et réessayez. Si le problème persiste, contactez l'administrateur du site."
 }

@@ -122,7 +122,7 @@ export const actions = {
       );
     }
 
-    failError({ code: 500, form, cookies });
+    return failError({ code: 500, form, cookies });
   }
 };
 

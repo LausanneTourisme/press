@@ -16,8 +16,10 @@
   import { schema } from './schema';
   import { humanFileSize, isOfflineMode } from '#lib/helpers';
   import { dev } from '$app/env';
+  import { createFormNetowrkErrorFlash, isOffline } from '#lib/helpers/forms';
 
   let isSubmitting = $state(false);
+  const showSendError = createFormNetowrkErrorFlash();
   const socialNetworksRequirements = getValues(SocialNetworks).filter(
     (x) => x !== SocialNetworks.Blog
   );
@@ -37,13 +39,6 @@
       onSubmit: async ({ cancel, formData }) => {
         isSubmitting = true;
 
-        // antibot
-        if (!(dev && isOfflineMode)) {
-          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
-          const { solution } = await botpoison.challenge();
-          formData.append('_botpoison', solution);
-        }
-
         const result = await validateForm({ update: true });
 
         if (!result.valid) {
@@ -53,12 +48,31 @@
           return;
         }
 
+        if (isOffline()) {
+          cancel();
+          showSendError();
+          isSubmitting = false;
+          return;
+        }
+
+        // antibot
+        if (!(dev && isOfflineMode)) {
+          try {
+            const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+            const { solution } = await botpoison.challenge();
+            formData.append('_botpoison', solution);
+          } catch {
+            cancel();
+            showSendError();
+            isSubmitting = false;
+            return;
+          }
+        }
+
         document.querySelector('body')?.scrollIntoView();
       },
-      onError: (error) => {
-        console.error(
-          `Please contact us and explain us how to get this error please. (error ${error.result.status})`
-        );
+      onError: () => {
+        showSendError();
         isSubmitting = false;
       }
     }

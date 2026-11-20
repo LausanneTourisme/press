@@ -45,33 +45,38 @@ export const sendMail = async ({
   intern_mail: InternMail;
   external_mail?: ExternalMail;
 }) => {
-  const t = getTransporter();
+  try {
+    const t = getTransporter();
 
-  const internal_reponse = await t.sendMail({
-    from: `"${intern_mail.from_name}" <${MAIL_FROM}>`,
-    to: recipients,
-    subject: intern_mail.subject,
-    html: intern_mail.html,
-    attachments: [
-      ...(intern_mail.attachments ?? []).map(toAttachment),
-      ...(intern_mail.images ?? []).map((img) => ({ ...toAttachment(img), cid: img.name }))
-    ]
-  });
+    const internal_reponse = await t.sendMail({
+      from: `"${intern_mail.from_name}" <${MAIL_FROM}>`,
+      to: recipients,
+      subject: intern_mail.subject,
+      html: intern_mail.html,
+      attachments: [
+        ...(intern_mail.attachments ?? []).map(toAttachment),
+        ...(intern_mail.images ?? []).map((img) => ({ ...toAttachment(img), cid: img.name }))
+      ]
+    });
 
-  const external_response = external_mail
-    ? await t.sendMail({
-        from: `"${external_mail.from_name ?? ''}" <${MAIL_FROM}>`,
-        to: external_mail.to.map((r) => r.email),
-        subject: external_mail.subject,
-        html: external_mail.html
-      })
-    : undefined;
+    const external_response = external_mail
+      ? await t.sendMail({
+          from: `"${external_mail.from_name ?? ''}" <${MAIL_FROM}>`,
+          to: external_mail.to.map((r) => r.email),
+          subject: external_mail.subject,
+          html: external_mail.html
+        })
+      : undefined;
 
-  return (
-    internal_reponse.accepted.length > 0 &&
-    internal_reponse.rejected.length === 0 &&
-    (external_response
-      ? external_response.accepted.length > 0 && external_response.rejected.length === 0
-      : true)
-  );
+    return (
+      internal_reponse.accepted.length > 0 &&
+      internal_reponse.rejected.length === 0 &&
+      (external_response
+        ? external_response.accepted.length > 0 && external_response.rejected.length === 0
+        : true)
+    );
+  } catch (error) {
+    console.error('Nodemailer failed to send mail', error);
+    return false;
+  }
 };

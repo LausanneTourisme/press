@@ -4,7 +4,7 @@
   import { onMount } from 'svelte';
   import { twMerge } from 'tailwind-merge';
   import Image from './Image.svelte';
-  import { type Locale } from '#lib/translations';
+  import { t, type Locale } from '#lib/translations';
   import Container from '../Container.svelte';
   import Heading from '../Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
@@ -54,7 +54,8 @@
   fixed={false}
   focus="auto"
   cloudinaryId={hero.image.cloudinary_id ?? 'default'}
-  alt="{hero.image.public_name} - {hero.image.copyright}"
+  alt={hero.image.public_name || ''}
+  title={hero.image.copyright || $t('common.rights-reserved')}
 >
   <Container
     width="small"

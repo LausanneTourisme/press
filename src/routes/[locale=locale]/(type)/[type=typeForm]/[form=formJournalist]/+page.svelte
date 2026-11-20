@@ -25,12 +25,14 @@
   import Loading from '#lib/components/Loading.svelte';
   import { dev } from '$app/env';
   import { isOfflineMode } from '#lib/helpers';
+  import { createFormNetowrkErrorFlash, isOffline } from '#lib/helpers/forms';
 
   const countries = $derived(Object.entries((page.data as PageData).countries));
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
+  const showSendError = createFormNetowrkErrorFlash();
 
   const { form, errors, enhance, message, options, validateForm, constraints } = superForm(
     (page.data as PageData).form,
@@ -45,6 +47,7 @@
         isSubmitting = false;
       },
       onError: async () => {
+        showSendError();
         isSubmitting = false;
       },
       onSubmit: async ({ cancel, formData }) => {
@@ -59,11 +62,24 @@
               (x) => x.name !== undefined && x.phoneNumber !== undefined
             );
 
+          if (isOffline()) {
+            cancel();
+            showSendError();
+            isSubmitting = false;
+            return;
+          }
+
           // antibot
           if (!(dev && isOfflineMode)) {
-            const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
-            const { solution } = await botpoison.challenge();
-            formData.append('_botpoison', solution);
+            try {
+              const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+              const { solution } = await botpoison.challenge();
+              formData.append('_botpoison', solution);
+            } catch {
+              cancel();
+              showSendError();
+              isSubmitting = false;
+            }
           }
 
           return;

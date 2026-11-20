@@ -57,7 +57,8 @@
                           src={release.medias?.at(0)?.cloudinary_id ?? 'default'}
                           useCloudinaryPreset={false}
                           transform={{ height: 600 }}
-                          alt={`${release.medias?.at(0)?.public_name} - ${release.medias?.at(0)?.copyright}`}
+                          alt={release.medias?.at(0)?.public_name ?? ''}
+                          title={release.medias?.at(0)?.copyright || $t('common.rights-reserved')}
                           background="bg-shakespeare-700"
                           class="carousel-item w-auto"
                         >

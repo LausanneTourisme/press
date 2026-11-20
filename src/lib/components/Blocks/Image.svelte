@@ -13,6 +13,7 @@
     parallaxClass?: string;
     cloudinaryId: string;
     alt: string;
+    title?: string;
     size: 'small' | 'medium' | 'large' | 'parallax';
     focus?: 'face' | 'auto' | 'null';
     fixed?: boolean;
@@ -25,6 +26,7 @@
     parallaxClass,
     cloudinaryId,
     alt,
+    title,
     size,
     metadata,
     children,
@@ -96,9 +98,16 @@
     </Parallax>
   </div>
 {:else if imgFormat === 'vertical'}
-  <VerticalImage class="vertical-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <VerticalImage class="vertical-image" focus={getFocus()} {size} {alt} {title} {cloudinaryId} />
 {:else if imgFormat === 'horizontal'}
-  <HorizontalImage class="hotizontal-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <HorizontalImage
+    class="hotizontal-image"
+    focus={getFocus()}
+    {size}
+    {alt}
+    {title}
+    {cloudinaryId}
+  />
 {:else}
-  <SquareImage class="sqaure-image" focus={getFocus()} {size} {alt} {cloudinaryId} />
+  <SquareImage class="sqaure-image" focus={getFocus()} {size} {alt} {title} {cloudinaryId} />
 {/if}

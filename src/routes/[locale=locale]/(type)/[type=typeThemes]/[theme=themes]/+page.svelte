@@ -114,6 +114,7 @@
                   useCloudinaryPreset={false}
                   transform={{ width: 330, crop: 'auto' }}
                   alt={media?.public_name}
+                  title={media?.copyright || $t('common.rights-reserved')}
                 />
                 <div class="card-body h-64 px-4 sm:h-58">
                   <small class="text-sm text-gray-500">{publishedAt?.toFormat('dd.MM.yyyy')}</small>

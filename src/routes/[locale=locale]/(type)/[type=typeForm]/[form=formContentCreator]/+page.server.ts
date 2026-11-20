@@ -124,7 +124,7 @@ export const actions = {
     });
 
     if (!sendWithSuccess) {
-      failError({ code: 500, form, cookies });
+      return failError({ code: 500, form, cookies });
     }
 
     return redirect(

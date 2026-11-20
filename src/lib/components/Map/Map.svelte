@@ -241,8 +241,8 @@
           <button class="h-56 w-full shadow" onclick={closeAside}>
             <Image
               class="h-full w-full"
-              alt={aside.imageCopyright}
-              title={aside.imageName}
+              alt={aside.imageName}
+              title={aside.imageCopyright || $t('common.rights-reserved')}
               src={aside.image}
               localSrc="/pages/themes/user_not_found.png"
               useCloudinaryPreset={false}

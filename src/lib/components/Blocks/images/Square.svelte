@@ -10,6 +10,7 @@
     isMobile?: boolean;
     cloudinaryId: string;
     alt: string;
+    title?: string;
     size: 'small' | 'medium' | 'large' | 'parallax';
     focus?: 'face' | 'auto';
   };
@@ -17,6 +18,7 @@
     class: additionalClass = '',
     cloudinaryId,
     alt,
+    title,
     size,
     isMobile = false,
     focus = 'auto'
@@ -43,6 +45,7 @@
       src={cloudinaryId}
       {transform}
       {alt}
+      {title}
     />
   {:else if size === 'medium'}
     <Figure
@@ -51,6 +54,7 @@
       src={cloudinaryId}
       {transform}
       {alt}
+      {title}
     />
   {:else}
     <Figure
@@ -59,6 +63,7 @@
       src={cloudinaryId}
       {transform}
       {alt}
+      {title}
     />
   {/if}
 </Container>

@@ -3,6 +3,7 @@
   import { isOfflineMode } from '#lib/helpers';
   import { generateCloudinaryUrl } from '#lib/helpers/image.js';
   import type { Transform } from '#lib/types';
+  import { t } from '#lib/translations';
   import { twMerge } from 'tailwind-merge';
 
   type Props = {
@@ -87,8 +88,8 @@
   <img
     class={imgClass}
     src={srcFinal}
-    alt={alt ?? '© Droits réservés'}
-    title={title ?? ''}
+    alt={alt ?? $t('common.rights-reserved')}
+    title={title ?? alt}
     {onload}
   />
 </picture>

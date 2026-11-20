@@ -1,6 +1,6 @@
 <script lang="ts">
   import { maxMobileWidth } from '#lib/helpers';
-  import { type Locale } from '#lib/translations';
+  import { t, type Locale } from '#lib/translations';
   import type { Media } from '#lib/types';
   import { onMount } from 'svelte';
   import Figure from '../Figure.svelte';
@@ -44,7 +44,8 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${image?.public_name} - ${image?.copyright}`}
+        alt={image?.public_name || ''}
+        title={image?.copyright || $t('common.rights-reserved')}
       />
     {/each}
   </section>
@@ -60,7 +61,8 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[0]?.public_name} - ${images[0]?.copyright}`}
+        alt={images[0]?.public_name ?? ''}
+        title={images[0]?.copyright || $t('common.rights-reserved')}
       />
     </div>
     <div>
@@ -73,7 +75,8 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[1]?.public_name} - ${images[1]?.copyright}`}
+        alt={images[1]?.public_name ?? ''}
+        title={images[1]?.copyright || $t('common.rights-reserved')}
       />
     </div>
     <div class="col-start-2 row-start-2">
@@ -86,7 +89,8 @@
           gravity: 'auto',
           crop: 'fill'
         }}
-        alt={`${images[2]?.public_name} - ${images[2]?.copyright}`}
+        alt={images[2]?.public_name ?? ''}
+        title={images[2]?.copyright || $t('common.rights-reserved')}
       />
     </div>
   </section>

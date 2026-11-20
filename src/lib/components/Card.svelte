@@ -11,6 +11,7 @@
     localSrc?: string;
     transform?: Transform;
     alt?: string;
+    title?: string;
     border?: string;
     background?: string;
     negative?: boolean;
@@ -26,6 +27,7 @@
     localSrc = '/pages/themes/cathedrale_skate.jpg',
     transform,
     alt,
+    title,
     background,
     negative = false
   }: Props = $props();
@@ -52,7 +54,7 @@
 
 <div class={cardStyle}>
   <div class="image pointer-events-none absolute top-0 left-0 h-full w-full">
-    <Image alt={alt ?? ''} {src} {localSrc} {transform} {useCloudinaryPreset} />
+    <Image alt={alt ?? ''} {title} {src} {localSrc} {transform} {useCloudinaryPreset} />
   </div>
   <div
     class="to-shakespeare-950/80 pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent from-0% via-transparent via-40% to-100% transition-all group-hover:opacity-70"

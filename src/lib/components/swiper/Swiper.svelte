@@ -102,7 +102,7 @@
       showNavigationButtons ? '' : 'hidden'
     )}
   >
-    <ChevronRight stroke="3" class="h-6 w-6 sm:h-8 sm:w-8" />
+    <ChevronRight strokeWidth={3} class="h-6 w-6 sm:h-8 sm:w-8" />
   </div>
   <div
     bind:this={swiperPreviousEl}
@@ -111,6 +111,6 @@
       showNavigationButtons ? '' : 'hidden'
     )}
   >
-    <ChevronLeft stroke="3" class="h-6 w-6 sm:h-8 sm:w-8" />
+    <ChevronLeft strokeWidth={3} class="h-6 w-6 sm:h-8 sm:w-8" />
   </div>
 </div>

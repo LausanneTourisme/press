@@ -24,6 +24,7 @@
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import { humanFileSize, isOfflineMode } from '#lib/helpers';
   import { dev } from '$app/env';
+  import { createFormNetowrkErrorFlash, isOffline } from '#lib/helpers/forms';
 
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   const countries = $derived(Object.entries((page.data as PageData).countries));
@@ -31,6 +32,7 @@
   let emergencyContacts = $state([{ name: '', phonenunmber: '' }]);
   let canDeleteEmergencyContacts = $state(false);
   let isSubmitting = $state(false);
+  const showSendError = createFormNetowrkErrorFlash();
 
   const { form, errors, enhance, options, validateForm, constraints } = superForm(
     (page.data as PageData).form,
@@ -49,13 +51,6 @@
         isSubmitting = true;
         const isLast = steps.length === step;
         options.validators = steps[step - 1];
-        // antibot
-        if (!(dev && isOfflineMode)) {
-          const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
-          const { solution } = await botpoison.challenge();
-          formData.append('_botpoison', solution);
-        }
-
         emergencyContacts.forEach((contact, index) => {
           if ($form.emergencyContactNames === undefined) $form.emergencyContactNames = [];
           if ($form.emergencyContactPhones === undefined) $form.emergencyContactPhones = [];
@@ -65,6 +60,26 @@
         });
 
         if (isLast) {
+          if (isOffline()) {
+            cancel();
+            showSendError();
+            isSubmitting = false;
+            return;
+          }
+
+          // antibot
+          if (!(dev && isOfflineMode)) {
+            try {
+              const botpoison = new Botpoison({ publicKey: PUBLIC_BOTPOISON_PUBLICKEY });
+              const { solution } = await botpoison.challenge();
+              formData.append('_botpoison', solution);
+            } catch {
+              cancel();
+              showSendError();
+              isSubmitting = false;
+            }
+          }
+
           return;
         }
 
@@ -83,10 +98,8 @@
         step = step + 1;
         isSubmitting = false;
       },
-      onError: (error) => {
-        console.error(
-          `Please contact us and explain us how to get this error please. (error ${error.result.status})`
-        );
+      onError: () => {
+        showSendError();
         isSubmitting = false;
       }
     }
