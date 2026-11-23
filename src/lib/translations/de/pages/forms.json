@@ -5,7 +5,8 @@
     "non-empty-array": "Wählen Sie mindestens eine Option aus",
     "read-terms-of-acceptance": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren",
     "file-size": "Ihre Datei muss kleiner als 10 MB sein",
-    "file-invalid-type": "Bitte wählen Sie ein gültiges Format"
+    "file-invalid-type": "Bitte wählen Sie ein gültiges Format",
+    "phone-number-invalid": "Diese Telefonnummer ist ungültig. Bitte verwenden Sie das internationale Format, zum Beispiel +41 79 123 45 67"
   },
   "required": "(Erforderlich)",
   "newsletter": {

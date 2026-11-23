@@ -24,8 +24,9 @@
   import { schemaStep1, schemaStep2, schemaStep3, schemaStep4 } from './schema';
   import { humanFileSize, isOfflineMode } from '#lib/helpers';
   import { dev } from '$app/env';
-  import { createFormNetowrkErrorFlash, isOffline } from '#lib/helpers/forms';
+  import { createFormNetowrkErrorFlash, firstStepWithError, isOffline } from '#lib/helpers/forms';
 
+  const stepSchemas = [schemaStep1, schemaStep2, schemaStep3, schemaStep4];
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   const countries = $derived(Object.entries((page.data as PageData).countries));
   let step = $state(1);
@@ -44,7 +45,8 @@
       applyAction: true,
       clearOnSubmit: 'none',
       onUpdate: async ({ form }) => {
-        if (form.valid) step = 0;
+        const errorStep = firstStepWithError(form.errors, stepSchemas);
+        if (errorStep !== -1) step = errorStep + 1;
         isSubmitting = false;
       },
       onSubmit: async ({ cancel, formData }) => {
@@ -1160,6 +1162,9 @@
             {@html $t(`${RouteTypes.Forms}.required`)}
           </span>
         </label>
+        {#if $errors.personalPhoneNumber}
+          <p class="text-brand-600 my-1">{@html $t($errors.personalPhoneNumber[0])}</p>
+        {/if}
         <input
           type="text"
           id="personal-information-phone-number"

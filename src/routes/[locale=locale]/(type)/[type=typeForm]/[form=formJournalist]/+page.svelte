@@ -25,9 +25,10 @@
   import Loading from '#lib/components/Loading.svelte';
   import { dev } from '$app/env';
   import { isOfflineMode } from '#lib/helpers';
-  import { createFormNetowrkErrorFlash, isOffline } from '#lib/helpers/forms';
+  import { createFormNetowrkErrorFlash, firstStepWithError, isOffline } from '#lib/helpers/forms';
 
   const countries = $derived(Object.entries((page.data as PageData).countries));
+  const stepSchemas = [schemaStep1, schemaStep2, schemaStep3, schemaStep4];
   const steps = [zod4(schemaStep1), zod4(schemaStep2), zod4(schemaStep3), zod4(schemaStep4)];
   let step = $state(0);
   let canDeleteEmergencyContacts = $state(false);
@@ -43,7 +44,8 @@
       clearOnSubmit: 'none',
       errorSelector: '[aria-invalid="true"],[data-invalid]',
       onUpdate: async ({ form }) => {
-        if (form.valid) step = 0;
+        const errorStep = firstStepWithError(form.errors, stepSchemas);
+        if (errorStep !== -1) step = errorStep;
         isSubmitting = false;
       },
       onError: async () => {
@@ -1377,6 +1379,11 @@
               </span>
             {/if}
           </label>
+          {#if $errors.personalInformation?.phoneNumber}
+            <p class="text-brand-600 my-1">
+              {@html $t($errors.personalInformation?.phoneNumber[0])}
+            </p>
+          {/if}
           <input
             type="text"
             id="personal-information-phone-number"
