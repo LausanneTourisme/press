@@ -1039,41 +1039,6 @@
         />
       </fieldset>
 
-      <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
-        {@html $t(
-          `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.title`
-        )}
-      </Heading>
-      <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
-        <label for="personal-information-passport-number" class="label text-wrap break-words">
-          {@html $t(
-            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.number`
-          )}
-        </label>
-        <input
-          type="text"
-          id="personal-information-passport-number"
-          class="input w-full {$errors._errors?.length ? 'input-error' : ''}"
-          name="passportNumber"
-          bind:value={$form.passportNumber}
-          aria-invalid={$errors._errors?.length ? 'true' : undefined}
-        />
-
-        <label for="personal-information-passport-validity" class="label text-wrap break-words">
-          {@html $t(
-            `${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.passport.validity`
-          )}
-        </label>
-        <input
-          type="date"
-          id="personal-information-passport-validity"
-          class="input w-full {$errors._errors?.length ? 'input-error' : ''}"
-          name="passportValidity"
-          bind:value={$form.passportValidity}
-          aria-invalid={$errors._errors?.length ? 'true' : undefined}
-        />
-      </fieldset>
-
       <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
         {@html $t(`${RouteTypes.Forms}.${Forms.ContentCreator}.form.personal-information.title`)}
       </Heading>

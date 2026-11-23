@@ -25,8 +25,7 @@
         "city": "Please enter your home city.",
         "country": "Please enter your home country.",
         "postal-code": "Please enter your postcode."
-      },
-      "passport": "Please provide all information"
+      }
     },
     "emergency-contacts": {
       "name": "Please enter the name of your emergency contact.",
@@ -136,11 +135,6 @@
       "spoken-languages": {
         "title": "Spoken languages",
         "placeholder": "English, french, german, italian, ..."
-      },
-      "passport": {
-        "title": "Passport number and validity",
-        "number": "Number",
-        "validity": "Validity"
       },
       "birth-date": "Date of birth",
       "address": {

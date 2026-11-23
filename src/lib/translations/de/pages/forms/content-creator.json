@@ -126,11 +126,6 @@
         "title": "Sprachen",
         "placeholder": "Deutsch, Englisch, Französisch, Italien, ..."
       },
-      "passport": {
-        "title": "Reisepassnummer und Gültigkeit",
-        "number": "Nummer",
-        "validity": "Gültigkeit"
-      },
       "birth-date": "Geburtsdatum",
       "address": {
         "title": "Adresse",

@@ -25,8 +25,7 @@
         "city": "Veuillez indiquer votre ville de domicile",
         "country": "Veuillez indiquer votre pays de domicile",
         "postal-code": "Veuillez indiquer votre code postal"
-      },
-      "passport": "Veuillez indiquer toutes les informations"
+      }
     },
     "emergency-contacts": {
       "name": "Veuillez indiquer le nom de votre contact d'urgence",
@@ -136,11 +135,6 @@
       "spoken-languages": {
         "title": "Langue(s) parlée(s)",
         "placeholder": "français, anglais, allemand, italien, ..."
-      },
-      "passport": {
-        "title": "Numéro et validité du passport",
-        "number": "Numéro",
-        "validity": "Validité"
       },
       "birth-date": "Date de naissance",
       "address": {

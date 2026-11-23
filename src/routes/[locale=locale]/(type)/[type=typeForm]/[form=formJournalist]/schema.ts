@@ -1,5 +1,5 @@
 import { Forms, Titles, getValues, MediaTypes, RouteTypes, TravelReductions } from '#lib/enums';
-import { zodOptionalString, zodRequiredString } from '#lib/helpers/zod.js';
+import { zodRequiredString } from '#lib/helpers/zod.js';
 import { z } from 'zod/v4';
 
 const mediaEnum = z.enum(getValues(MediaTypes));
@@ -146,24 +146,6 @@ export const personalInformation = z
       error: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.spoken-languages`
     }),
     medicalAndPhysicalCondition: z.string().nullish(),
-    passport: z
-      .object({
-        number: zodOptionalString(),
-        validity: zodOptionalString({ min: 10 })
-      })
-      .optional()
-      .superRefine((data, ctx) => {
-        if (data === undefined || (data.number === undefined && data.validity === undefined))
-          return; // normal case, optionnal field
-        // when data not undefined fields required
-        if (data.number === undefined || data.validity === undefined) {
-          ctx.addIssue({
-            code: 'custom',
-            path: [],
-            message: `${RouteTypes.Forms}.${Forms.Journalist}.validations.personal-information.passport`
-          });
-        }
-      }),
     emergencyContacts: z
       .array(
         z.object({
