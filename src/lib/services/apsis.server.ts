@@ -18,8 +18,14 @@ const baseUrl = 'https://api.apsis.one';
 
 let cachedToken: { token: string; expires: number } | undefined;
 
-const logApsisError = async (action: string, response: Response) => {
-  console.error(`Apsis ${action} failed: ${response.status}`, await response.text());
+const logApsisError = async (action: string, response: Response): Promise<string> => {
+  const body = await response.text();
+  console.error(`Apsis ${action} failed: ${response.status}`, body);
+  try {
+    return (JSON.parse(body) as { message?: string }).message ?? body;
+  } catch {
+    return body;
+  }
 };
 
 const getApsisToken = async (): Promise<string> => {
@@ -97,10 +103,12 @@ export const createProfile = async (email: string): Promise<boolean> => {
 
 export const updateProfileAttributes = async ({
   email,
-  attributes
+  attributes,
+  onError
 }: {
   email: string;
   attributes: Record<string, string | number | boolean | undefined>;
+  onError?: (message: string) => void;
 }): Promise<boolean> => {
   const response = await fetch(
     `${baseUrl}/v2/audience/keyspaces/${APSIS_KEYSPACE_DISCRIMINATOR}/profiles/${email}/sections/${APSIS_SECTION_DISCRIMINATOR}/attributes`,
@@ -117,7 +125,7 @@ export const updateProfileAttributes = async ({
   const ok = response.status === 204;
 
   if (dev) console.log(`Apsis profile attributes update for ${email}`);
-  if (!ok) await logApsisError('profile attributes update', response);
+  if (!ok) onError?.(await logApsisError('profile attributes update', response));
 
   return ok;
 };

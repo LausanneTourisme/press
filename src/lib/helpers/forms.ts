@@ -10,3 +10,6 @@ export const createFormNetowrkErrorFlash = () => {
 
   return () => flash.set({ type: 'error', message: t.get(`${RouteTypes.Forms}.error-network`) });
 };
+
+export const firstStepWithError = (errors: object, stepSchemas: { shape: object }[]) =>
+  stepSchemas.findIndex((schema) => Object.keys(errors).some((key) => key in schema.shape));

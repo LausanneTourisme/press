@@ -19,7 +19,7 @@ import en from 'i18n-iso-countries/langs/en.json';
 import fr from 'i18n-iso-countries/langs/fr.json';
 import { DateTime } from 'luxon';
 import { setFlash } from 'sveltekit-flash-message/server';
-import { superValidate } from 'sveltekit-superforms';
+import { setError, superValidate } from 'sveltekit-superforms';
 import { zod4 } from 'sveltekit-superforms/adapters';
 import type { SuperValidated } from 'sveltekit-superforms/server';
 import type { EntryGenerator } from './$types';
@@ -75,10 +75,26 @@ export const actions = {
       return failError({ form, cookies, message: `Form can't create an Apsis profile` });
     }
 
+    let apsisError = '';
     if (
       isCRMEnabled &&
-      !(await updateApsisProfileSuccessfully({ data: form.data, locale: params.locale }))
+      !(await updateApsisProfileSuccessfully({
+        data: form.data,
+        locale: params.locale,
+        onError: (error) => (apsisError = error)
+      }))
     ) {
+      if (/phone number/i.test(apsisError)) {
+        const phoneError = `${RouteTypes.Forms}.validations.phone-number-invalid`;
+        setError(form, 'personalPhoneNumber', phoneError);
+        return failError({
+          form,
+          cookies,
+          message: `Apsis rejected the phone number: ${apsisError}`,
+          publicMessage: t.get(phoneError)
+        });
+      }
+
       return failError({
         form,
         cookies,
@@ -184,12 +200,15 @@ const failError = ({
 
 const updateApsisProfileSuccessfully = async ({
   data,
-  locale
+  locale,
+  onError
 }: {
   data: Schema;
   locale: string;
+  onError?: (message: string) => void;
 }) => {
   const attributesUpdated = await apsis.updateProfileAttributes({
+    onError,
     email: data.personalEmail,
     attributes: {
       // PRESS - Type de formulaire
