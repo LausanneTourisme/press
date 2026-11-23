@@ -60,10 +60,6 @@ export type MediaProfileJournalist = {
     spokenLanguages?: string;
     allergies?: string;
     medicalAndPhysicalCondition?: string;
-    passport: {
-      number?: string;
-      validity?: string;
-    };
     emergencyContacts: { name?: string; phoneNumber?: string }[];
   };
   travelInsuranceCoveringSwitzerland?: boolean;
@@ -129,10 +125,6 @@ export type MediaProfileContentCreatorFormData = {
   addressCity?: string;
   addressPostalCode?: string;
   addressCountry?: string;
-
-  // Passport - flattened
-  passportNumber?: string;
-  passportValidity?: string;
 
   // Emergency contacts - flattened arrays
   emergencyContactNames: string[];

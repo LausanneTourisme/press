@@ -212,10 +212,6 @@ export const schemaStep4 = schemaStep3
     addressPostalCode: zodRequiredString(),
     addressCountry: zodRequiredString(),
 
-    // Passport
-    passportNumber: z.string().nullish().nullable(),
-    passportValidity: z.string().nullish().nullable(),
-
     emergencyContactNames: z.array(zodRequiredString()).min(1, {
       error: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.emergency-contacts.name`
     }),
@@ -232,22 +228,6 @@ export const schemaStep4 = schemaStep3
   })
   .required()
   .superRefine((data, ctx) => {
-    // Either both passport fields or neither
-    const hasNumber = Number(data.passportNumber?.length) > 2;
-    const hasValidity = Number(data.passportValidity?.length) > 2;
-
-    if (
-      hasNumber !== hasValidity ||
-      (data.passportNumber && (data.passportNumber.trim() === '' || !hasNumber)) ||
-      (data.passportValidity && (data.passportValidity.trim() === '' || !hasValidity))
-    ) {
-      ctx.addIssue({
-        code: 'custom',
-        path: [],
-        message: `${RouteTypes.Forms}.${Forms.ContentCreator}.validations.personal-information.passport`
-      });
-    }
-
     // The two fields go hand in hand!
     if (data.emergencyContactNames.length !== data.emergencyContactPhones.length) {
       ctx.addIssue({

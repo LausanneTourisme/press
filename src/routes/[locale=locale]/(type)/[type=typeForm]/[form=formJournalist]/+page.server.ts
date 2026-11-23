@@ -300,12 +300,6 @@ const updateApsisProfileSuccessfully = async ({
       // PRESS - info personelles - freelance
       'usercreated.attributes.press_-_info_personelles_-_freelance-obp6v6zi8j':
         data.personalInformation.freelance,
-      // PRESS - info personelles - numéro de passport
-      'usercreated.attributes.press_-_info_personelles_-_numro_de_passp-qzpnkyyl64':
-        data.personalInformation.passport.number,
-      // PRESS - info personelles - validité du passport
-      'usercreated.attributes.press_-_info_personelles_-_validit_du_pas-63lbaolk83':
-        data.personalInformation.passport.validity,
       // PRESS - info personelles - Adresse
       'usercreated.attributes.press_-_info_personelles_-_adresse-4j5rjm99hd':
         data.personalInformation.address.streetAddress,
@@ -666,17 +660,6 @@ const generateMailContent = ({
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.spoken-languages.title`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.spokenLanguages ?? ''}</span></div>
     <div class="field" style="margin: 0.3rem 0;"><span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.freelance`)} :</span> <span>${data.personalInformation.freelance ? 'Oui' : 'Non'}</span></div>
 
-    <div class="field" style="margin: 0.3rem 0;">
-      <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.title`)} :</span>
-      <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">
-        <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.number`)} :</span> <span style="word-break: break-all;">${data.personalInformation.passport.number ?? ''}</span>
-        </li>
-        <li>
-          <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.validity`)} :</span> <span style="word-break: break-all;">${data.personalInformation?.passport?.validity ? DateTime.fromSQL(data.personalInformation.passport.validity).setLocale('fr').toFormat('dd MMMM yyyy') : ''}</span>
-        </li>
-      </ul>
-    </div>
     <div class="field" style="margin: 0.3rem 0;">
       <span class="label" style="color: #666;font-weight: 600;font-size: 16px;margin-right: 8px;">${t.get(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.emergency-contacts.title`)} :</span>
       <ul style="margin: 8px 0 0 20px;list-style: none;padding: 0">

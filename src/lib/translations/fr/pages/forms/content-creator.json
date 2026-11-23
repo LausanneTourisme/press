@@ -126,11 +126,6 @@
         "title": "Langue(s) parlée(s)",
         "placeholder": "français, anglais, allemand, italien, ..."
       },
-      "passport": {
-        "title": "Numéro et validité du passport",
-        "number": "Numéro",
-        "validity": "Validité"
-      },
       "birth-date": "Date de naissance",
       "address": {
         "title": "Adresse",

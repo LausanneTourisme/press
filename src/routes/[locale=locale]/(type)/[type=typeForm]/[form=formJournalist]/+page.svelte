@@ -1236,53 +1236,6 @@
           />
         </fieldset>
 
-        <Heading tag="h3" class="mt-6 mb-2 text-xl md:text-xl">
-          {@html $t(
-            `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.title`
-          )}
-        </Heading>
-        <fieldset class="fieldset passport bg-base-200/50 border-base-300 rounded-box border p-4">
-          {#if $errors.personalInformation?.passport?._errors?.length}
-            <p class="text-brand-600">
-              {@html $t($errors.personalInformation.passport._errors[0])}
-            </p>
-          {/if}
-          <label for="personal-information-passport-number" class="label text-wrap break-words">
-            {@html $t(
-              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.number`
-            )}
-            {#if $constraints.personalInformation?.passport?.number?.required}
-              <span class="text-brand-600 italic">
-                {@html $t(`${RouteTypes.Forms}.required`)}
-              </span>
-            {/if}
-          </label>
-          <input
-            type="text"
-            id="personal-information-passport-number"
-            class="input w-full {$errors.personalInformation?.passport?._errors
-              ? 'input-error'
-              : ''}"
-            bind:value={$form.personalInformation.passport.number}
-            aria-invalid={$errors.personalInformation?.passport?._errors ? 'true' : undefined}
-          />
-
-          <label for="personal-information-passport-validity" class="label text-wrap break-words">
-            {@html $t(
-              `${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.passport.validity`
-            )}
-          </label>
-          <input
-            type="date"
-            id="personal-information-passport-validity"
-            class="input w-full {$errors.personalInformation?.passport?._errors
-              ? 'input-error'
-              : ''}"
-            bind:value={$form.personalInformation.passport.validity}
-            aria-invalid={$errors.personalInformation?.passport?._errors ? 'true' : undefined}
-          />
-        </fieldset>
-
         <Heading tag="h3" class="mt-6 mb-2 text-lg md:text-lg">
           {@html $t(`${RouteTypes.Forms}.${Forms.Journalist}.form.personal-information.title`)}
         </Heading>

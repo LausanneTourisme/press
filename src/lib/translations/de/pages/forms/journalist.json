@@ -28,7 +28,6 @@
         "postal-code": "Bitte geben Sie Ihre Postleitzahl an."
       }
     },
-    "passport": "",
     "emergency-contacts": {
       "name": "Bitte geben Sie den Namen Ihrer Notfallkontaktperson an.",
       "phone-number": "Bitte geben Sie die Telefonnummer Ihrer Notfallkontaktperson an.",
@@ -136,11 +135,6 @@
       "spoken-languages": {
         "title": "Sprachen",
         "placeholder": "Deutsch, Englisch, Französisch, Italien, ..."
-      },
-      "passport": {
-        "title": "Reisepassnummer und Gültigkeit",
-        "number": "Nummer",
-        "validity": "Gültigkeit"
       },
       "birth-date": "Geburtsdatum",
       "address": {
