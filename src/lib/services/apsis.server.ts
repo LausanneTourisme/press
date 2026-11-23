@@ -18,6 +18,10 @@ const baseUrl = 'https://api.apsis.one';
 
 let cachedToken: { token: string; expires: number } | undefined;
 
+const logApsisError = async (action: string, response: Response) => {
+  console.error(`Apsis ${action} failed: ${response.status}`, await response.text());
+};
+
 const getApsisToken = async (): Promise<string> => {
   const clientID = APSIS_CLIENT_ID;
   const clientSecret = APSIS_CLIENT_SECRET;
@@ -85,7 +89,10 @@ export const createProfile = async (email: string): Promise<boolean> => {
       })
     }
   );
-  return response.status === 201 || response.status === 409;
+  const ok = response.status === 201 || response.status === 409;
+  if (!ok) await logApsisError('create profile', response);
+
+  return ok;
 };
 
 export const updateProfileAttributes = async ({
@@ -109,12 +116,8 @@ export const updateProfileAttributes = async ({
 
   const ok = response.status === 204;
 
-  if (dev) {
-    console.log(`Apsis profile attributes update for ${email}`);
-    if (!ok) {
-      console.error({ response: await response.text() });
-    }
-  }
+  if (dev) console.log(`Apsis profile attributes update for ${email}`);
+  if (!ok) await logApsisError('profile attributes update', response);
 
   return ok;
 };
@@ -153,12 +156,8 @@ export const addProfileToMailConsents = async ({
   );
 
   const ok = response.status === 201 || response.status === 204 || response.status === 409;
-  if (dev) {
-    console.log(`Apsis consent update for ${email} - ${consentType}`);
-    if (!ok) {
-      console.error({ response: await response.text() });
-    }
-  }
+  if (dev) console.log(`Apsis consent update for ${email} - ${consentType}`);
+  if (!ok) await logApsisError(`consent ${consentType}`, response);
 
   return ok;
 };
@@ -194,12 +193,8 @@ export const customEvent = async ({
 
   const ok = response.status === 204;
 
-  if (dev) {
-    console.log(`Apsis custom event triggered for ${email}`);
-    if (!ok) {
-      console.error({ response: await response.text() });
-    }
-  }
+  if (dev) console.log(`Apsis custom event triggered for ${email}`);
+  if (!ok) await logApsisError(`custom event (version ${versionId})`, response);
 
   return ok;
 };
